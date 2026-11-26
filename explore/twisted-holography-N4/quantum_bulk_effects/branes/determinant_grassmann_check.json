@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact Grassmann-matrix proof check of determinant fan colors; not a quantum bulk amplitude.",
+  "ranks_directly_checked": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "matrix_identity_checks": 60,
+  "gaussian_integral_checks": 162,
+  "rank_threshold_checks": 78,
+  "samples": [
+    {
+      "rank": 4,
+      "spokes": 2,
+      "eigenvalues": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "color_core": -69
+    },
+    {
+      "rank": 4,
+      "spokes": 3,
+      "eigenvalues": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "color_core": 2
+    },
+    {
+      "rank": 4,
+      "spokes": 4,
+      "eigenvalues": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "color_core": -16
+    },
+    {
+      "rank": 4,
+      "spokes": 5,
+      "eigenvalues": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "color_core": 0
+    }
+  ],
+  "convention": "barpsi_i before psi_i; normalized Gaussian integral equals det(M); color core divides out tau^spokes"
+}

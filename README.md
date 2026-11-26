@@ -31,6 +31,8 @@ positive and transcendental for every $N\ge3$.
 
 ### Twisted supergravity and string field theories
 
+**Quantum supercharges in brane sources:** [Quantum Supercharge Effects in Brane Sources and Twisted Holography](explore/twisted-holography-N4/quantum_bulk_effects/README.md). Every direct $Q_n$ has an exact determinant-source response, with independent cofactor and Grassmann proofs and explicit nonzero $Q_2,Q_3$ values. A ghost–field-strength contact identifies a missing quantum auxiliary gauge term. A separate bulk calculation gives a nonzero classical kernel in the glueball channel, and the sharp spin bound $2J_L\ge2n-1$ rules out the known low-spin three-loop lifts as direct higher-vertex tests. Five exact certificates accompany the calculations. The determinant coefficients are boundary-derived brane predictions; a normalized independent quantum bulk match remains open.
+
 **Independent bulk reconstruction of the N=4 supercharge:** [Precise target and first source calculation](explore/twisted-holography-N4/independent_bulk_reconstruction/README.md). The aim is to derive the paper's $Q_n$ from bulk observable dynamics with an independently fixed composite dictionary. The note specifies exact one- and two-loop benchmarks, distinguishes direct $Q_n$ kernels from physical lifting, and computes a nonzero flux-closed classical source residue. No positive-order boundary supercharge coefficient has yet been independently reproduced from the bulk.
 
 **All boundary orders in the holography test:** [All boundary supercharges as bulk multiparticle tests](explore/twisted-holography-N4/boundary_bulk_all_orders/README.md). For every $n\ge2$, an explicit ordinary product of $n+1$ protected gravitons isolates $Q_n$ with coefficient $-(ig\hbar)^n/((64\pi^2)^n(n!)^2)$ on a fixed root-color test; a separate protected pair detects $Q_1$. The complete trace law is $N^{n+2-r-b-2h}$. Explicit linear bulk states give zero in directly attached local primary trees, fixing the need for the quantum composite dictionary. Exact output channels, a Bessel generating function, and four independent certificates accompany the proofs; the full nonlinear bulk amplitude match remains open.
@@ -63,6 +65,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 | result | folder | command |
 |---|---|---|
+| determinant quantum source responses, auxiliary gauge contact, bulk scalar kernel, and spin selection | `explore/twisted-holography-N4/quantum_bulk_effects` | `python3 explore/twisted-holography-N4/quantum_bulk_effects/run_checks.py` |
 | all boundary $Q_n$, bulk particle channels, and composite Ward targets | `explore/twisted-holography-N4/boundary_bulk_all_orders` | `python3 explore/twisted-holography-N4/boundary_bulk_all_orders/run_checks.py` |
 | further twist, delayed genus-four bulk response, and higher-genus Ward tests | `notes/twisted-sugra-bulk-tests` | `python3 notes/twisted-sugra-bulk-tests/run_checks.py` |
 | generic $K_5$ | `explore/circuit-general/k5` | `python3 test_q3.py`; `python3 check_ref.py` |

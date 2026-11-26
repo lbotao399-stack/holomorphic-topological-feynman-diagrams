@@ -16,6 +16,16 @@ operators.
 
 **Current status: no nonzero positive-order $Q_n$ coefficient has yet been
 independently reproduced from the punctured fivefold bulk in this project.**
+
+**Continuation:** [Quantum Supercharge Effects in Brane Sources and Twisted Holography](../quantum_bulk_effects/README.md)
+now gives an exact all-order determinant-source response, two independent
+proofs of its color polynomial, and a nonzero contact requiring a quantum
+correction to a proposed auxiliary gauge action. An independent classical
+bulk operation reaches the glueball scalar channel. The spin theorem
+$2J_L\ge2n-1$ excludes direct $Q_{n\ge2}$ throughout the listed low-spin
+three-loop lifting chains. These results supply sharper brane and bulk
+tests; they do not change the independent quantum-matching status above.
+
 The [previous all-order work](../boundary_bulk_all_orders/README.md) provides
 exact boundary targets, ribbon topology, and linear bulk states. Its vanishing
 theorem concerns trees with particular normalizable representatives attached

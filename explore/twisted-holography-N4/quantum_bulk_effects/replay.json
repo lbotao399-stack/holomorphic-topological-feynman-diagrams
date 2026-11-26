@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "Exact boundary source predictions, classical bulk kernel, and spectral controls; no independent quantum bulk Q_n match.",
+  "verification": [
+    {
+      "script": "branes/determinant_color.py",
+      "script_sha256": "4e7a66063e407b5f6aaf56655c9fd2b12f447a414416e1841a4c179da43efb9a",
+      "certificate": "branes/determinant_color.json",
+      "certificate_sha256": "35130b2099bca90f422f2e21a30e82b42abf45ce17cf08076bb051a7ee6b3708",
+      "byte_for_byte_match": true
+    },
+    {
+      "script": "branes/determinant_grassmann_check.py",
+      "script_sha256": "2c37b68e83cdd83bc5390ec7487256e9387a7743d2dabf1536adfe46f130d945",
+      "certificate": "branes/determinant_grassmann_check.json",
+      "certificate_sha256": "084db5a8548a3574c5ebb6a80e590cb2dd7bc36df474b5f9503c5e1968517f09",
+      "byte_for_byte_match": true
+    },
+    {
+      "script": "branes/auxiliary_gauge_check.py",
+      "script_sha256": "8e302206f7889599a96e4e698277dbabb7b1468246bf1b1e8c85088dff567873",
+      "certificate": "branes/auxiliary_gauge_check.json",
+      "certificate_sha256": "70d0f30335daa3bad7aa66cd04da597411154b1261785311f78c62d9bdacdd54",
+      "byte_for_byte_match": true
+    },
+    {
+      "script": "bulk/flux_derived_kernel.py",
+      "script_sha256": "8e77c0aed13dcd666da8a3f2290a2254080265e8b98579473512bb7a9f988fb2",
+      "certificate": "bulk/flux_derived_kernel.json",
+      "certificate_sha256": "9d7481dd8468bb2147f08f0ebeda9f8e80eb9432efa61329ef4eb750cf8f0ec8",
+      "byte_for_byte_match": true
+    },
+    {
+      "script": "spectrum/verify.py",
+      "script_sha256": "4c95de8418149d599db9eb81736db2f4f36024637d5563ccdcfe11f26d36b7fc",
+      "certificate": "spectrum/results.json",
+      "certificate_sha256": "d365331ee2ed7b052f24bdbc38903b4a4fe8d3d42d3ef6c4634a7d927d850f8d",
+      "byte_for_byte_match": true
+    }
+  ]
+}

@@ -1,0 +1,1599 @@
+{
+  "status": "PASS",
+  "scope": "Exact boundary-induced quantum determinant-source correction; no independent bulk Q_n amplitude is claimed.",
+  "subset_checks": [
+    {
+      "spokes": 2,
+      "has_a": true,
+      "has_b": true,
+      "coefficient": -4
+    },
+    {
+      "spokes": 2,
+      "has_a": true,
+      "has_b": false,
+      "coefficient": -1
+    },
+    {
+      "spokes": 2,
+      "has_a": false,
+      "has_b": true,
+      "coefficient": -1
+    },
+    {
+      "spokes": 2,
+      "has_a": false,
+      "has_b": false,
+      "coefficient": 0
+    },
+    {
+      "spokes": 3,
+      "has_a": true,
+      "has_b": true,
+      "coefficient": 0
+    },
+    {
+      "spokes": 3,
+      "has_a": true,
+      "has_b": false,
+      "coefficient": 2
+    },
+    {
+      "spokes": 3,
+      "has_a": false,
+      "has_b": true,
+      "coefficient": -2
+    },
+    {
+      "spokes": 3,
+      "has_a": false,
+      "has_b": false,
+      "coefficient": 0
+    },
+    {
+      "spokes": 4,
+      "has_a": true,
+      "has_b": true,
+      "coefficient": -16
+    },
+    {
+      "spokes": 4,
+      "has_a": true,
+      "has_b": false,
+      "coefficient": -6
+    },
+    {
+      "spokes": 4,
+      "has_a": false,
+      "has_b": true,
+      "coefficient": -6
+    },
+    {
+      "spokes": 4,
+      "has_a": false,
+      "has_b": false,
+      "coefficient": 0
+    },
+    {
+      "spokes": 5,
+      "has_a": true,
+      "has_b": true,
+      "coefficient": 0
+    },
+    {
+      "spokes": 5,
+      "has_a": true,
+      "has_b": false,
+      "coefficient": 24
+    },
+    {
+      "spokes": 5,
+      "has_a": false,
+      "has_b": true,
+      "coefficient": -24
+    },
+    {
+      "spokes": 5,
+      "has_a": false,
+      "has_b": false,
+      "coefficient": 0
+    },
+    {
+      "spokes": 6,
+      "has_a": true,
+      "has_b": true,
+      "coefficient": -288
+    },
+    {
+      "spokes": 6,
+      "has_a": true,
+      "has_b": false,
+      "coefficient": -120
+    },
+    {
+      "spokes": 6,
+      "has_a": false,
+      "has_b": true,
+      "coefficient": -120
+    },
+    {
+      "spokes": 6,
+      "has_a": false,
+      "has_b": false,
+      "coefficient": 0
+    }
+  ],
+  "complete_color_checks": 74,
+  "complete_cases": [
+    {
+      "rank": 2,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5
+      ],
+      "value": -4
+    },
+    {
+      "rank": 2,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5
+      ],
+      "value": -4
+    },
+    {
+      "rank": 2,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2
+      ],
+      "value": -4
+    },
+    {
+      "rank": 2,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2
+      ],
+      "value": -4
+    },
+    {
+      "rank": 3,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7
+      ],
+      "value": -36
+    },
+    {
+      "rank": 3,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7
+      ],
+      "value": -36
+    },
+    {
+      "rank": 3,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3
+      ],
+      "value": -11
+    },
+    {
+      "rank": 3,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3
+      ],
+      "value": -11
+    },
+    {
+      "rank": 3,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7
+      ],
+      "value": 0
+    },
+    {
+      "rank": 3,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7
+      ],
+      "value": 0
+    },
+    {
+      "rank": 3,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3
+      ],
+      "value": 0
+    },
+    {
+      "rank": 3,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3
+      ],
+      "value": 0
+    },
+    {
+      "rank": 4,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "value": -380
+    },
+    {
+      "rank": 4,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "value": -380
+    },
+    {
+      "rank": 4,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "value": 47
+    },
+    {
+      "rank": 4,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "value": 47
+    },
+    {
+      "rank": 4,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "value": 4
+    },
+    {
+      "rank": 4,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "value": -4
+    },
+    {
+      "rank": 4,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "value": -6
+    },
+    {
+      "rank": 4,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "value": 6
+    },
+    {
+      "rank": 4,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "value": -16
+    },
+    {
+      "rank": 4,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "value": -16
+    },
+    {
+      "rank": 4,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "value": -16
+    },
+    {
+      "rank": 4,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "value": -16
+    },
+    {
+      "rank": 5,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": -4684
+    },
+    {
+      "rank": 5,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": -4684
+    },
+    {
+      "rank": 5,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": 223
+    },
+    {
+      "rank": 5,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": 223
+    },
+    {
+      "rank": 5,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": 108
+    },
+    {
+      "rank": 5,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": -108
+    },
+    {
+      "rank": 5,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": -24
+    },
+    {
+      "rank": 5,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": 24
+    },
+    {
+      "rank": 5,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": -480
+    },
+    {
+      "rank": 5,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": -480
+    },
+    {
+      "rank": 5,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": -58
+    },
+    {
+      "rank": 5,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": -58
+    },
+    {
+      "rank": 5,
+      "spokes": 5,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": 0
+    },
+    {
+      "rank": 5,
+      "spokes": 5,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "value": 0
+    },
+    {
+      "rank": 5,
+      "spokes": 5,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": 0
+    },
+    {
+      "rank": 5,
+      "spokes": 5,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5
+      ],
+      "value": 0
+    },
+    {
+      "rank": 6,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -66436
+    },
+    {
+      "rank": 6,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -66436
+    },
+    {
+      "rank": 6,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": -1398
+    },
+    {
+      "rank": 6,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": -1398
+    },
+    {
+      "rank": 6,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": 2360
+    },
+    {
+      "rank": 6,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -2360
+    },
+    {
+      "rank": 6,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": 246
+    },
+    {
+      "rank": 6,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": -246
+    },
+    {
+      "rank": 6,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -11360
+    },
+    {
+      "rank": 6,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -11360
+    },
+    {
+      "rank": 6,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": 644
+    },
+    {
+      "rank": 6,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": 644
+    },
+    {
+      "rank": 6,
+      "spokes": 5,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": 48
+    },
+    {
+      "rank": 6,
+      "spokes": 5,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -48
+    },
+    {
+      "rank": 6,
+      "spokes": 5,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": -72
+    },
+    {
+      "rank": 6,
+      "spokes": 5,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6
+      ],
+      "value": 72
+    },
+    {
+      "rank": 7,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -1068612
+    },
+    {
+      "rank": 7,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -1068612
+    },
+    {
+      "rank": 7,
+      "spokes": 2,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": -9426
+    },
+    {
+      "rank": 7,
+      "spokes": 2,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": -9426
+    },
+    {
+      "rank": 7,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": 50600
+    },
+    {
+      "rank": 7,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -50600
+    },
+    {
+      "rank": 7,
+      "spokes": 3,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": 1470
+    },
+    {
+      "rank": 7,
+      "spokes": 3,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": -1470
+    },
+    {
+      "rank": 7,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -259520
+    },
+    {
+      "rank": 7,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -259520
+    },
+    {
+      "rank": 7,
+      "spokes": 4,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": 3590
+    },
+    {
+      "rank": 7,
+      "spokes": 4,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": 3590
+    },
+    {
+      "rank": 7,
+      "spokes": 5,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": 2640
+    },
+    {
+      "rank": 7,
+      "spokes": 5,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -2640
+    },
+    {
+      "rank": 7,
+      "spokes": 5,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": -360
+    },
+    {
+      "rank": 7,
+      "spokes": 5,
+      "root": [
+        2,
+        1
+      ],
+      "diagonal": [
+        1,
+        -2,
+        3,
+        -4,
+        5,
+        -6,
+        7
+      ],
+      "value": 360
+    },
+    {
+      "rank": 6,
+      "spokes": 6,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "value": -288
+    },
+    {
+      "rank": 7,
+      "spokes": 6,
+      "root": [
+        1,
+        2
+      ],
+      "diagonal": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "value": -16800
+    }
+  ],
+  "independent_q1_inverse_matrix_checks": 24,
+  "odd_source_sign_checks": 6,
+  "phase_and_factorial_checks": [
+    {
+      "n": 2,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/4"
+    },
+    {
+      "n": 3,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/36"
+    },
+    {
+      "n": 4,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/576"
+    },
+    {
+      "n": 5,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/14400"
+    },
+    {
+      "n": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/518400"
+    },
+    {
+      "n": 7,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/25401600"
+    },
+    {
+      "n": 8,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/1625702400"
+    },
+    {
+      "n": 9,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/131681894400"
+    },
+    {
+      "n": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/13168189440000"
+    },
+    {
+      "n": 11,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/1593350922240000"
+    },
+    {
+      "n": 12,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/229442532802560000"
+    },
+    {
+      "n": 13,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/38775788043632640000"
+    },
+    {
+      "n": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/7600054456551997440000"
+    },
+    {
+      "n": 15,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/1710012252724199424000000"
+    },
+    {
+      "n": 16,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/437763136697395052544000000"
+    },
+    {
+      "n": 17,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/126513546505547170185216000000"
+    },
+    {
+      "n": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/40990389067797283140009984000000"
+    },
+    {
+      "n": 19,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/14797530453474819213543604224000000"
+    },
+    {
+      "n": 20,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/5919012181389927685417441689600000000"
+    },
+    {
+      "n": 21,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/2610284371992958109269091785113600000000"
+    },
+    {
+      "n": 22,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/1263377636044591724886240423994982400000000"
+    },
+    {
+      "n": 23,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/668326769467589022464821184293345689600000000"
+    },
+    {
+      "n": 24,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/384956219213331276939737002152967117209600000000"
+    },
+    {
+      "n": 25,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/240597637008332048087335626345604448256000000000000"
+    },
+    {
+      "n": 26,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/162644002617632464507038883409628607021056000000000000"
+    },
+    {
+      "n": 27,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/118567477908254066625631346005619254518349824000000000000"
+    },
+    {
+      "n": 28,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/92956902680071188234494975268405495542386262016000000000000"
+    },
+    {
+      "n": 29,
+      "phase": [
+        0,
+        -1
+      ],
+      "factorial": "1/78176755153939869305210274200729021751146846355456000000000000"
+    },
+    {
+      "n": 30,
+      "phase": [
+        1,
+        0
+      ],
+      "factorial": "1/70359079638545882374689246780656119576032161719910400000000000000"
+    },
+    {
+      "n": 31,
+      "phase": [
+        0,
+        1
+      ],
+      "factorial": "1/67615075532642592962076366156210530912566907412833894400000000000000"
+    },
+    {
+      "n": 32,
+      "phase": [
+        -1,
+        0
+      ],
+      "factorial": "1/69237837345426015193166198943959583654468513190741907865600000000000000"
+    }
+  ],
+  "q2_rank4_example": {
+    "diagonal": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "tau": "1/2",
+    "color": 4,
+    "coefficient_removing_hbar2_g2_and_Kminus2": "1/4",
+    "K": "32*pi^2"
+  },
+  "q3_rank4_example": {
+    "diagonal": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "tau": "1/2",
+    "color": -16,
+    "coefficient_removing_hbar3_g3_and_Kminus3": "-i/18"
+  }
+}

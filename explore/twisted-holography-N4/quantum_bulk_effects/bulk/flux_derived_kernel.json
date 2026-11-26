@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Independent classical flux-derived bulk kernel; not an evaluated quantum Ward amplitude or a Q1 coefficient match.",
+  "coordinate_order": [
+    "z1",
+    "z2",
+    "w1",
+    "w2",
+    "w3"
+  ],
+  "schouten_convention": "[vector, function] = vector(function)",
+  "polynomial_pair_checks": 1296,
+  "nonzero_polynomial_pair_checks": 1126,
+  "diagonal_scaling_checks": 3125,
+  "linear_flux_tangent_ideal_checks": 7776,
+  "unit_example": "[[F,z1],z2] = -1/(w1*w2*w3)",
+  "general_polynomial_kernel": "-N*(a*d-b*c)*z1^(a+c-1)*z2^(b+d-1)/(w1*w2*w3)",
+  "plane_wave_kernel": "-N*(p1*q2-p2*q1)*exp((p+q).z)/(w1*w2*w3)",
+  "normal_euler_relation": "D(sum_i w_i d/dw_i) = 3*t + 3*N*F",
+  "linear_type_obstruction": "Every [F,regular polyvector] has at least one tangent vector, so it cannot equal the scalar glueball mode.",
+  "unresolved": [
+    "full composite/source dictionary",
+    "normalization relating bulk source fields to N=4 fields",
+    "Ward graph and external kernels",
+    "higher Q_n matching"
+  ]
+}
