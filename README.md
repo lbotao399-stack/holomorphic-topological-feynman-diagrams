@@ -52,6 +52,8 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 ### Feynman-diagram technology and other theories
 
+**Cubic forests without chart tables (27 November 2026):** [Local current messages and bounded-state fan jets](explore/circuit-general/forest-moments/README.md). Every finite current word on a cubic product forest in $\mathbb C^2$ is reduced recursively through three boundary currents, integrating only two or four local ratios at a time. Exact marked-current degree shifts and complete source translations retain correlations between branches and all component-root sources. The implementation accepts arbitrary tree shapes without the former seven-vertex chart table. Independent original-chart checks cover all 100 forest topologies through five loops in 2,292 exact comparisons. Complete higher-loop certificates include a twenty-loop alternating tree, asymmetric and nonparallel-source nine-loop forests, and a known thirty-six-loop fork control. A separate fan transfer computes all nine Taylor coefficients through order eight at 128 loops using 165 coefficient states. Higher-valence series-parallel forests use the existing all-source exact integrator; the remaining sourced non-series-parallel forests are explicitly unresolved.
+
 **Complete six-loop core integration (27 November 2026):** [Reciprocal core reconstruction and three complete K5 kernels](explore/circuit-general/series-fibres/CORE_RESULTS.md). The numerator degree falls from 35 to 15; graphic-flat constraints leave 683,834 core samples per prime, and exact finite-field chain integration uses 27 contracted determinants per sample. Seven primes certify every coefficient against a proved integer height bound. All three admissible $K_5$ subdivision shapes at six loops and $H=2$ now have complete nonzero bare kernels at explicitly recorded conserved source assignments, with independent rational replays and no remaining core integrals. The evaluator accepts other exact source assignments. A new period bridge exposes all 54,391 existing $K_5$ orbits at levels 3 through 8.
 
 **Exact reduction before reconstruction (26 November 2026):** [Series-chain integration and graph-rank numerator bounds](explore/circuit-general/series-fibres/README.md). Constant source columns reduce the full current determinant from $N-1$ to $m-1$ for $m$ maximal chains; exact rational cubature integrates every chain fraction while retaining all sources and original current insertions. The all-loop bound $\deg_S P\le n\operatorname{rank}C_S-1$ now prunes the assembly and five-loop interpolation grids. Complete coefficient replays, a complete five-loop fan control, pointwise checks through twelve loops, and 1,110 independent determinant checks for nonzero five/six-loop fibre integrals accompany the implementation. The remaining core periods and the $T=1$ extension are open.
@@ -69,6 +71,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 | result | folder | command |
 |---|---|---|
+| cubic forest local moments, source-complete series-parallel forest dispatch, and 128-loop fan Taylor coefficients | `explore/circuit-general/forest-moments` | `python3 explore/circuit-general/forest-moments/run_checks.py --examples` |
 | exact series fibres, graph-rank support bounds, full-source determinant contraction | `explore/circuit-general/series-fibres` | `python3 explore/circuit-general/series-fibres/run_checks.py --examples --periods` |
 | certified reciprocal reconstruction; complete six-loop K5 family fixtures | `explore/circuit-general/series-fibres` | `python3 explore/circuit-general/series-fibres/run_checks.py --reciprocal --k5-family` |
 | determinant quantum source responses, auxiliary gauge contact, bulk scalar kernel, and spin selection | `explore/twisted-holography-N4/quantum_bulk_effects` | `python3 explore/twisted-holography-N4/quantum_bulk_effects/run_checks.py` |
@@ -82,7 +85,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 | Ohm locality | `explore/circuit-general/locality` | `python3 check_locality.py`; `python3 check_locality_T1.py` |
 | 5d CS, order $\hbar^4$ (trees + marked theta graphs) | `deepen/o3/higher_orders` | `python3 order_four.py` |
 
-Python ≥ 3.10 with `numpy`, `sympy`, `networkx`; a C compiler for the `*.c` / `*.cpp` solvers. Scripts find the repository root through `.htp-root` or `HTP_ROOT`.
+Python ≥ 3.10 with `numpy`, `sympy`, `networkx`; `python-flint>=0.9.0` for the new cubic forest messages; a C compiler for the `*.c` / `*.cpp` solvers. Scripts find the repository root through `.htp-root` or `HTP_ROOT`.
 
 Not included: intermediate data above 0.5 MB (pickles, SQLite, binary caches, the BCOV path-integral cache), apart from the final period tables; copies of other authors' papers. `code/holography/census_io.py` and `explore/twoloop-universal/*formscheck*.py` call separate local projects.
 

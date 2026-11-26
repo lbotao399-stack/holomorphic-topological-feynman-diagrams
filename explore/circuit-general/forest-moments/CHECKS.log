@@ -1,0 +1,76 @@
+Recorded 2026-11-27 (Asia/Shanghai)
+Command: python3 explore/circuit-general/forest-moments/run_checks.py --examples
+
+Running code/tests/test_forest_model.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.257s
+
+OK
+Running code/tests/test_fan_moments.py
+test_all_original_edge_taylor_against_ratio_integration (__main__.FanMomentChecks.test_all_original_edge_taylor_against_ratio_integration) ... ok
+test_budgets_and_exact_input_guards (__main__.FanMomentChecks.test_budgets_and_exact_input_guards) ... ok
+test_collinear_sources_and_zero_displacements (__main__.FanMomentChecks.test_collinear_sources_and_zero_displacements) ... ok
+test_endpoint_exponents_beyond_one_byte (__main__.FanMomentChecks.test_endpoint_exponents_beyond_one_byte) ... ok
+test_gradient_displacement_phase_identity (__main__.FanMomentChecks.test_gradient_displacement_phase_identity) ... ok
+test_mixed_raw_original_current_words (__main__.FanMomentChecks.test_mixed_raw_original_current_words) ... ok
+test_optional_flint_import_boundary (__main__.FanMomentChecks.test_optional_flint_import_boundary) ... ok
+test_prior_ordered_uniform_identity (__main__.FanMomentChecks.test_prior_ordered_uniform_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.797s
+
+OK
+Running explore/circuit-general/forest-moments/tests_exact.py
+test_all_topologies_through_five_loops (__main__.ExactForestMoments.test_all_topologies_through_five_loops)
+All 100 topologies; every linear edge word and two mixed higher words. ... exact original-edge word replay: loops 1 forests 1
+exact original-edge word replay: loops 2 forests 3
+exact original-edge word replay: loops 3 forests 8
+exact original-edge word replay: loops 4 forests 23
+exact original-edge word replay: loops 5 forests 65
+ok
+test_asymmetric_branched_trees (__main__.ExactForestMoments.test_asymmetric_branched_trees) ... ok
+test_complete_fork_first_spinors (__main__.ExactForestMoments.test_complete_fork_first_spinors) ... ok
+test_complete_one_and_two_loop_bare_controls (__main__.ExactForestMoments.test_complete_one_and_two_loop_bare_controls) ... ok
+test_exact_budgets_and_input_validation (__main__.ExactForestMoments.test_exact_budgets_and_input_validation) ... ok
+test_known_fan_formula_at_higher_loops (__main__.ExactForestMoments.test_known_fan_formula_at_higher_loops) ... ok
+test_known_repeated_fork_formula_at_higher_loops (__main__.ExactForestMoments.test_known_repeated_fork_formula_at_higher_loops) ... ok
+test_oriented_words_and_original_edge_order (__main__.ExactForestMoments.test_oriented_words_and_original_edge_order) ... ok
+test_source_translation_polynomials (__main__.ExactForestMoments.test_source_translation_polynomials) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.751s
+
+OK
+Running code/tests/test_product_forests.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.059s
+
+OK
+Running code/tests/test_known.py test_S1_fans test_S1_fan_general_sources test_S1_triangle_displacements
+test_S1_fans
+  fan n=1: I^{S1} = (-1)^{n(n+1)/2} K = (a1*b2 - a2*b1)/2 ; general sources K = -3
+  fan n=2: I^{S1} = (-1)^{n(n+1)/2} K = (a1*b2 - a2*b1)**2/24 ; general sources K = -125
+  fan n=3: I^{S1} = (-1)^{n(n+1)/2} K = (a1*b2 - a2*b1)**3/864 ; general sources K = -155/54
+  PASS (0.2s)
+test_S1_fan_general_sources
+  n = 1..4: density (eq-1-40) and currents (eq-1-38), (eq-1-39) reproduced
+  PASS (0.6s)
+test_S1_triangle_displacements
+  triangle: Taylor orders 0..3 in z: ['-10', '560/3', '-13075/6', '55265/3']
+  PASS (0.1s)
+passed 3, failed 0
+Running explore/circuit-general/forest-moments/certify_forests.py --check
+twenty_loop_alternating_tree : 51063405172108037818499/12808478037547423258484132867205600038721945600000000000
+  loops=20 current_degree=3 maximum_terms=3509 local_ratios=2
+nine_loop_asymmetric_branched_tree : 330274357/292188041773056000
+  loops=9 current_degree=4 maximum_terms=540 local_ratios=4
+nine_loop_nonparallel_three_root_forest : -228258973157261949061/2192323400928460800000
+  loops=9 current_degree=4 maximum_terms=538 local_ratios=4
+thirty_six_loop_repeated_fork_known_formula : 1/11805783789483870322440822060126121595397476067369105346800411100447600803840000000000
+  loops=36 current_degree=12 maximum_terms=4 local_ratios=4
+All stored forest certificates replay exactly.
+Running explore/circuit-general/forest-moments/certify_fans.py
+verified 128-loop fan: all 9 exact coefficients through degree 8; 165/165 states; 384549 transfer additions; 1.729 s
+All exact forest/fan checks passed (17.811 s).

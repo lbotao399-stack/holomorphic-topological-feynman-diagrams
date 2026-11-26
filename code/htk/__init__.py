@@ -11,6 +11,10 @@ Layers (see CONVENTIONS.md):
     fibres     series-fibre integration before core reconstruction
     support    graph-rank bounds on numerator monomials
     catalog    graph utilities (enumeration, series-parallel test, parallel-chain reducibility)
+    forest_model    marked product-forest recognition and canonical cubic trees
+    forest_moments  exact local current messages for cubic product forests
+    product_forests cubic messages or the existing all-source series-parallel method
+    fan_moments     all-loop fan words and bounded-state displacement Taylor coefficients
     conventions  conversion to the normalizations of the source notes
 """
 from .graph import (Graph, polygon, theta, banana, fan, box, graph_A, graph_B, ladder,
@@ -19,11 +23,41 @@ from . import linalg, brute, simplex, spred, oracle, catalog, conventions
 from .brute import Density
 from .simplex import PiNumber
 from .spred import sp_reduce, SPReduction, RatioDensity
+from .forest_model import (CubicForest, ProductForestStructure, NotProductForest,
+                           NonCubicProductForest, UnsupportedForestSources,
+                           recognize_product_forest, forest_graph, forest_counts)
+from .fan_moments import (FanTaylorResult, fan_endpoint_moment, fan_current_moment,
+                          fan_taylor)
 
 __all__ = ["Graph", "polygon", "theta", "banana", "fan", "box", "graph_A", "graph_B", "ladder",
            "glued_polygons", "from_networkx", "linalg", "brute", "simplex", "spred", "oracle",
            "catalog", "conventions", "Density", "PiNumber", "sp_reduce", "SPReduction", "RatioDensity",
-           "kernel_exact", "kernel_numeric"]
+           "kernel_exact", "kernel_numeric", "CubicForest", "ProductForestStructure",
+           "NotProductForest", "NonCubicProductForest", "UnsupportedForestSources",
+           "recognize_product_forest", "forest_graph", "forest_counts", "ForestMoments",
+           "forest_moment", "ForestBudgetExceeded", "FanTaylorResult", "fan_endpoint_moment",
+           "fan_current_moment", "fan_taylor", "ProductForestMoments", "product_forest_moment",
+           "UnsupportedProductForestReduction"]
+
+
+def __getattr__(name):
+    # Exact sparse forest messages use optional python-flint. Keep the
+    # existing engine and the pure-Python fan transfer independent of it.
+    if name in ("ForestMoments", "forest_moment", "ForestBudgetExceeded"):
+        from . import forest_moments
+        value = getattr(forest_moments, name)
+        globals()[name] = value
+        return value
+    if name in ("ProductForestMoments", "product_forest_moment", "UnsupportedProductForestReduction"):
+        from . import product_forests
+        value = getattr(product_forests, name)
+        globals()[name] = value
+        return value
+    raise AttributeError("module %r has no attribute %r" % (__name__, name))
+
+
+def __dir__():
+    return sorted(set(globals()) | set(__all__))
 
 
 def kernel_exact(G, lam, T=0, powers=None, plan=None, check=2):
