@@ -31,6 +31,8 @@ positive and transcendental for every $N\ge3$.
 
 ### Twisted supergravity and string field theories
 
+**All boundary orders in the holography test:** [All boundary supercharges as bulk multiparticle tests](explore/twisted-holography-N4/boundary_bulk_all_orders/README.md). For every $n\ge2$, an explicit ordinary product of $n+1$ protected gravitons isolates $Q_n$ with coefficient $-(ig\hbar)^n/((64\pi^2)^n(n!)^2)$ on a fixed root-color test; a separate protected pair detects $Q_1$. The complete trace law is $N^{n+2-r-b-2h}$. Explicit linear bulk states give zero in directly attached local primary trees, fixing the need for the quantum composite dictionary. Exact output channels, a Bessel generating function, and four independent certificates accompany the proofs; the full nonlinear bulk amplitude match remains open.
+
 **New research development (26 November 2026):** [Exact Bulk Tests in Twisted Supergravity](notes/twisted-sugra-bulk-tests/README.md). The complete further-twist momentum complex reveals normal-momentum singularities and formal coupling torsion. An admissible scalar-descendant polarization has zero response through genus three and $(2\pi i)^{20}Q_4\phi(0)=31/64012032000$. Two complete momentum tests eliminate unknown genus-four, genus-five and genus-six binary periods from Ward identities. The note also proves a sharp compact-momentum routing criterion. Five independent exact certificates accompany the proofs; the type-IIB results retain the announced vertex prescription and the stated flat local scope.
 
 1. **Twisted 11d supergravity** (minimal model of Raghavendran–Saberi–Williams on $\mathbb R\times\mathbb C^5$; `explore/sugra-11d-qme/`): the two-loop order-$g$ local defect is nonzero. The five theta shapes sum to $1008\pi$ on a balanced three-planar, six-transverse cycle:
@@ -59,6 +61,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 | result | folder | command |
 |---|---|---|
+| all boundary $Q_n$, bulk particle channels, and composite Ward targets | `explore/twisted-holography-N4/boundary_bulk_all_orders` | `python3 explore/twisted-holography-N4/boundary_bulk_all_orders/run_checks.py` |
 | further twist, delayed genus-four bulk response, and higher-genus Ward tests | `notes/twisted-sugra-bulk-tests` | `python3 notes/twisted-sugra-bulk-tests/run_checks.py` |
 | generic $K_5$ | `explore/circuit-general/k5` | `python3 test_q3.py`; `python3 check_ref.py` |
 | 6d $(Q^2)_{\hbar^3}$, $(Q^2)_{\hbar^4}$ | `explore/physics/6d-nilpotency` | `python3 run_nilp.py 3 so5 b,b,b,b c,c,c,c,g1,g2 3 13`; `python3 run_nilp.py 4 so5 b,b,b,b,b c,c,c,c,c,g1,g2 2 23 --prime 2147483629` (~8 min) |

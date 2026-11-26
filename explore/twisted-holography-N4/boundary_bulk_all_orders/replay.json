@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "certificate": "boundary/all_order_join.json",
+      "certificate_sha256": "4b58b330d25e4432885766999c45585a1d435bbd3c0e5a0eb0083ab5beebfafc",
+      "saved_output_reproduced": true,
+      "script": "boundary/all_order_join.py",
+      "script_sha256": "c6a1b1666be7e0750c26c93661b39627f8111af3ca31c8c21a82809779ea1b36",
+      "status": "PASS"
+    },
+    {
+      "certificate": "matching/ribbon_dictionary.json",
+      "certificate_sha256": "982abca27077c206b18a181b29a5ca199bb484e922e00a8206cc52d0f2784399",
+      "saved_output_reproduced": true,
+      "script": "matching/ribbon_dictionary.py",
+      "script_sha256": "d3af921994e49364453c784e517e5fbc13db5e7bf8b1ec4d3af62865c75c4066",
+      "status": "PASS"
+    },
+    {
+      "certificate": "bulk/primary_tree_test.json",
+      "certificate_sha256": "2d990670474362939ba4c898f7cba026d049e853f376486dfbf39cd33eaab840",
+      "saved_output_reproduced": true,
+      "script": "bulk/primary_tree_test.py",
+      "script_sha256": "7d3f76b9743b157ea5aec4b90fbf488694e45509e6042314c4cd9d1f459e728e",
+      "status": "PASS"
+    },
+    {
+      "certificate": "resummation/all_order_response.json",
+      "certificate_sha256": "30a83534284b7749f55c3535e920f5a8108c29dc18c0fe4b087ea24d24f2efb1",
+      "saved_output_reproduced": true,
+      "script": "resummation/all_order_response.py",
+      "script_sha256": "e3dea6091e4f9f61a80d2a3c2380c918623041c94fa69283f9cbf55056220c08",
+      "status": "PASS"
+    }
+  ],
+  "independent_certificates": 4,
+  "python": "3.12.14",
+  "scope": "Boundary all-order detector, ribbon topology, linear bulk states, and Ward targets; full nonlinear bulk amplitude remains open.",
+  "status": "PASS",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,2528 @@
+{
+  "all_topologies": [
+    {
+      "boundary_order": 0,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 1,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 1,
+      "commutator_terms": 6,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 1,
+      "commutator_terms": 8,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 24,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 16,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 6,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 30,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 114,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 2,
+      "commutator_terms": 48,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 120,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 34,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 200,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 28,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 96,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 1152,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 808,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 632,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 408,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 1896,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 3,
+      "commutator_terms": 384,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 4,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 412,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 1280,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 68,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 1548,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 90,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 440,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 310,
+      "input_traces": 2,
+      "internal_color_faces": 3,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 13260,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 4190,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 31540,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 7000,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 1300,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 2600,
+      "input_traces": 3,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 38400,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 25880,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 29120,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 5880,
+      "input_traces": 4,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 32520,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 4,
+      "commutator_terms": 3840,
+      "input_traces": 5,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 5,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 20,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 63,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 4,
+      "input_traces": 1,
+      "internal_color_faces": 4,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 32,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 57,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 12,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 1,
+      "input_traces": 2,
+      "internal_color_faces": 4,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 18,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 64,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 5,
+      "input_traces": 2,
+      "internal_color_faces": 3,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 62,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 7,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 32,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 3,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 24,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 4,
+      "input_traces": 3,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 136,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 16,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 12,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 1,
+      "input_traces": 4,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 64,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 23,
+      "input_traces": 4,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 104,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 3,
+      "input_traces": 5,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 189,
+      "input_traces": 5,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 5,
+      "commutator_terms": 192,
+      "input_traces": 6,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 6,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 22,
+      "input_traces": 1,
+      "internal_color_faces": 4,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 74,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 96,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 3
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 4,
+      "input_traces": 1,
+      "internal_color_faces": 5,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 36,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 109,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 4,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 14,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 25,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 1,
+      "input_traces": 2,
+      "internal_color_faces": 5,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 11,
+      "input_traces": 2,
+      "internal_color_faces": 3,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 100,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 5,
+      "input_traces": 2,
+      "internal_color_faces": 4,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 58,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 148,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 7,
+      "input_traces": 2,
+      "internal_color_faces": 3,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 45,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 3,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 6,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 4,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 4,
+      "input_traces": 3,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 144,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 102,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 2,
+      "input_traces": 3,
+      "internal_color_faces": 2,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 130,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 2,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 24,
+      "input_traces": 4,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 4,
+      "input_traces": 4,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 264,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 42,
+      "input_traces": 4,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 50,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 1,
+      "input_traces": 5,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 192,
+      "input_traces": 5,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 40,
+      "input_traces": 5,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 151,
+      "input_traces": 5,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 10,
+      "input_traces": 6,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 374,
+      "input_traces": 6,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 6,
+      "commutator_terms": 384,
+      "input_traces": 7,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 7,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 26,
+      "input_traces": 1,
+      "internal_color_faces": 5,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 108,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 207,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 3
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 4,
+      "input_traces": 1,
+      "internal_color_faces": 6,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 44,
+      "input_traces": 1,
+      "internal_color_faces": 4,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 146,
+      "input_traces": 1,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 169,
+      "input_traces": 1,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 3
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 2,
+      "input_traces": 1,
+      "internal_color_faces": 5,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 18,
+      "input_traces": 1,
+      "internal_color_faces": 3,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 42,
+      "input_traces": 1,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 1,
+      "input_traces": 2,
+      "internal_color_faces": 6,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 10,
+      "input_traces": 2,
+      "internal_color_faces": 4,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 89,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 144,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 3
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 5,
+      "input_traces": 2,
+      "internal_color_faces": 5,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 52,
+      "input_traces": 2,
+      "internal_color_faces": 3,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 287,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 7,
+      "input_traces": 2,
+      "internal_color_faces": 4,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 54,
+      "input_traces": 2,
+      "internal_color_faces": 2,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 104,
+      "input_traces": 2,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 3,
+      "input_traces": 2,
+      "internal_color_faces": 3,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 12,
+      "input_traces": 2,
+      "internal_color_faces": 1,
+      "output_traces": 4,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 155,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 19,
+      "input_traces": 3,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 485,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 86,
+      "input_traces": 3,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 23,
+      "input_traces": 3,
+      "internal_color_faces": 0,
+      "output_traces": 4,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 256,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 2
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 120,
+      "input_traces": 4,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 16,
+      "input_traces": 4,
+      "internal_color_faces": 2,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 312,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 44,
+      "input_traces": 4,
+      "internal_color_faces": 1,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 20,
+      "input_traces": 4,
+      "internal_color_faces": 0,
+      "output_traces": 5,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 48,
+      "input_traces": 5,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 4,
+      "input_traces": 5,
+      "internal_color_faces": 2,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 592,
+      "input_traces": 5,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 40,
+      "input_traces": 5,
+      "internal_color_faces": 1,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 84,
+      "input_traces": 5,
+      "internal_color_faces": 0,
+      "output_traces": 4,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 1,
+      "input_traces": 6,
+      "internal_color_faces": 2,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 256,
+      "input_traces": 6,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 1
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 39,
+      "input_traces": 6,
+      "internal_color_faces": 1,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 472,
+      "input_traces": 6,
+      "internal_color_faces": 0,
+      "output_traces": 3,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 3,
+      "input_traces": 7,
+      "internal_color_faces": 1,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 765,
+      "input_traces": 7,
+      "internal_color_faces": 0,
+      "output_traces": 2,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_order": 7,
+      "commutator_terms": 768,
+      "input_traces": 8,
+      "internal_color_faces": 0,
+      "output_traces": 1,
+      "ribbon_genus": 0
+    }
+  ],
+  "arithmetic": "integers and finite-field ranks; standard library only",
+  "cases_by_boundary_order": {
+    "0": 1,
+    "1": 4,
+    "2": 30,
+    "3": 360,
+    "4": 6240,
+    "5": 18,
+    "6": 21,
+    "7": 24
+  },
+  "complete_color_cases": 6698,
+  "direct_matrix_unit_controls": [
+    {
+      "boundary_order": 0,
+      "exact_value": 44,
+      "input_blocks": [
+        [
+          "a0"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 1,
+      "exact_value": 102,
+      "input_blocks": [
+        [
+          "a0"
+        ],
+        [
+          "a1"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 1,
+      "exact_value": -64,
+      "input_blocks": [
+        [
+          "a0",
+          "a1"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": 322,
+      "input_blocks": [
+        [
+          "a0"
+        ],
+        [
+          "a1"
+        ],
+        [
+          "a2"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": -250,
+      "input_blocks": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "a2"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": -74,
+      "input_blocks": [
+        [
+          "a1"
+        ],
+        [
+          "a0",
+          "a2"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": -278,
+      "input_blocks": [
+        [
+          "a0"
+        ],
+        [
+          "a1",
+          "a2"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": 152,
+      "input_blocks": [
+        [
+          "a0",
+          "a1",
+          "a2"
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "boundary_order": 0,
+      "exact_value": 96,
+      "input_blocks": [
+        [
+          "a0"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 1,
+      "exact_value": 184,
+      "input_blocks": [
+        [
+          "a0"
+        ],
+        [
+          "a1"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 1,
+      "exact_value": -116,
+      "input_blocks": [
+        [
+          "a0",
+          "a1"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": 563,
+      "input_blocks": [
+        [
+          "a0"
+        ],
+        [
+          "a1"
+        ],
+        [
+          "a2"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": -511,
+      "input_blocks": [
+        [
+          "a0",
+          "a1"
+        ],
+        [
+          "a2"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": -59,
+      "input_blocks": [
+        [
+          "a1"
+        ],
+        [
+          "a0",
+          "a2"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": -420,
+      "input_blocks": [
+        [
+          "a0"
+        ],
+        [
+          "a1",
+          "a2"
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "boundary_order": 2,
+      "exact_value": 474,
+      "input_blocks": [
+        [
+          "a0",
+          "a1",
+          "a2"
+        ]
+      ],
+      "rank": 3
+    }
+  ],
+  "exact_scope": "Direct connected fan color topology. Cochain transfer and bulk amplitudes are separate.",
+  "gluing": {
+    "exact_gluing_checks": 7680,
+    "examples": [
+      {
+        "N_power_after_boundary_loop_reweighting": -3,
+        "genus": 0,
+        "glued_traces": 1,
+        "input_traces": 3,
+        "output_traces": 2
+      },
+      {
+        "N_power_after_boundary_loop_reweighting": -3,
+        "genus": 1,
+        "glued_traces": 2,
+        "input_traces": 2,
+        "output_traces": 1
+      }
+    ]
+  },
+  "independent_methods": [
+    "fundamental trace splitting and joining",
+    "ribbon half-edge face cycles",
+    "spanning-tree contraction and intersection-form rank over F2"
+  ],
+  "individual_commutator_terms": 215682,
+  "selected_complete_color_polynomials": {
+    "n=0,input_traces=1": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=1,input_traces=1": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E"
+          ],
+          [
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 1,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=1,input_traces=2": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=2,input_traces=1": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      },
+      {
+        "N_power": 2,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=2,input_traces=3": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0",
+            "S1",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E",
+            "S1",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "E",
+            "S0",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "S0",
+            "E",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "E",
+            "S0",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S0",
+            "E",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S1",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S1",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=3,input_traces=1": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E"
+          ],
+          [
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 1,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      },
+      {
+        "N_power": 3,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=3,input_traces=4": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0",
+            "S1",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E",
+            "S1",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "E",
+            "S0",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "S0",
+            "E",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "E",
+            "S0",
+            "S1",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S0",
+            "E",
+            "S1",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S1",
+            "E",
+            "S0",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S1",
+            "S0",
+            "E",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "E",
+            "S0",
+            "S1",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S0",
+            "E",
+            "S1",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S1",
+            "E",
+            "S0",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S1",
+            "S0",
+            "E",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "E",
+            "S0",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "S0",
+            "E",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "S1",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "S1",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=4,input_traces=1": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      },
+      {
+        "N_power": 2,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      },
+      {
+        "N_power": 4,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ],
+    "n=4,input_traces=5": [
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "E",
+            "S0",
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S0",
+            "E",
+            "S1",
+            "S2",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "E",
+            "S0",
+            "S2",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S1",
+            "S0",
+            "E",
+            "S2",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "E",
+            "S0",
+            "S1",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S0",
+            "E",
+            "S1",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S1",
+            "E",
+            "S0",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S2",
+            "S1",
+            "S0",
+            "E",
+            "S3",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "E",
+            "S0",
+            "S1",
+            "S2",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S0",
+            "E",
+            "S1",
+            "S2",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S1",
+            "E",
+            "S0",
+            "S2",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S1",
+            "S0",
+            "E",
+            "S2",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "E",
+            "S0",
+            "S1",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "S0",
+            "E",
+            "S1",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "S1",
+            "E",
+            "S0",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S3",
+            "S2",
+            "S1",
+            "S0",
+            "E",
+            "S4"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "E",
+            "S0",
+            "S1",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S0",
+            "E",
+            "S1",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S1",
+            "E",
+            "S0",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S1",
+            "S0",
+            "E",
+            "S2",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S2",
+            "E",
+            "S0",
+            "S1",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S2",
+            "S0",
+            "E",
+            "S1",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S2",
+            "S1",
+            "E",
+            "S0",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S2",
+            "S1",
+            "S0",
+            "E",
+            "S3"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "E",
+            "S0",
+            "S1",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S0",
+            "E",
+            "S1",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S1",
+            "E",
+            "S0",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S1",
+            "S0",
+            "E",
+            "S2"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S2",
+            "E",
+            "S0",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S2",
+            "S0",
+            "E",
+            "S1"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": 1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S2",
+            "S1",
+            "E",
+            "S0"
+          ]
+        ]
+      },
+      {
+        "N_power": 0,
+        "integer_coefficient": -1,
+        "traces": [
+          [
+            "D",
+            "S4",
+            "S3",
+            "S2",
+            "S1",
+            "S0",
+            "E"
+          ]
+        ]
+      }
+    ]
+  },
+  "source_revision": "29ef4be3c92b8055ac51067357524c1048e6cda0",
+  "status": "PASS"
+}

@@ -1,0 +1,288 @@
+{
+  "all_order_series_recurrence_checked_through": 64,
+  "arithmetic": "integers and Gaussian rational numbers",
+  "independent_phase_color_and_area_checks": 299,
+  "inherited_input": "sources/LLC_main.tex, eq-Qnzero and eq-A-16",
+  "one_loop_protected_pair_after_removing_g_squared_over_pi_squared": "1/32",
+  "rows": [
+    {
+      "boundary_loop_order": 2,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 3,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "1/16384"
+      },
+      "fixed_tHooft_N_power": -2,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 3,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 4,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "1/9437184",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -3,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 4,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 5,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "-1/9663676416"
+      },
+      "fixed_tHooft_N_power": -4,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 5,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 6,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "-1/15461882265600",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -5,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 6,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 7,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "1/35624176739942400"
+      },
+      "fixed_tHooft_N_power": -6,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 7,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 8,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "1/111717418256459366400",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -7,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 8,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 9,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "-1/457594545178457564774400"
+      },
+      "fixed_tHooft_N_power": -8,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 9,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 10,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "-1/2372170122205124015790489600",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -9,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 10,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 11,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "1/15181888782112793701059133440000"
+      },
+      "fixed_tHooft_N_power": -10,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 11,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 12,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "1/117568546728681474421001929359360000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -11,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 12,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 13,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "-1/1083511726651528468263953780975861760000"
+      },
+      "fixed_tHooft_N_power": -12,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 13,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 14,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "-1/11719262835462931912742924095034920796160000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -13,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 14,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 15,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "1/147006433008047017913447239848118046467031040000"
+      },
+      "fixed_tHooft_N_power": -14,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 15,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 16,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "1/2116892635315877057953640253812899869125246976000000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -15,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 16,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 17,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "-1/34683168937015329717512441918470551455748046454784000000"
+      },
+      "fixed_tHooft_N_power": -16,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 17,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 18,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "-1/641499892659035538455110125724031319725515867227684864000000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -17,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 18,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 19,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "1/13302141774177760925405163567013513445828297022833273339904000000"
+      },
+      "fixed_tHooft_N_power": -18,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 19,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 20,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "1/307332683550602988420560899052280214652416974415539947245142016000000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -19,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 20,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 21,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "-1/7867716698895436503566359015738373495101874545037822649475635609600000000"
+      },
+      "fixed_tHooft_N_power": -20,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 21,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 22,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "-1/222058436109624799876656916860199853525755307159147506458800339445350400000000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -21,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 22,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 23,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "1/6878482116931737800979324656661550662813796394561753160067799314659173990400000000"
+      },
+      "fixed_tHooft_N_power": -22,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 23,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 24,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "1/232877890550840914989956015575933459240223890734282714987255413597100994618982400000000",
+        "real": "0"
+      },
+      "fixed_tHooft_N_power": -23,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    },
+    {
+      "boundary_loop_order": 24,
+      "bulk_output_traces": 1,
+      "bulk_touched_input_traces": 25,
+      "coefficient_after_removing_g_power_and_pi_power": {
+        "imaginary": "0",
+        "real": "-1/8584810557266199490189738558191211041431613508028598005290183566843531065634167193600000000"
+      },
+      "fixed_tHooft_N_power": -24,
+      "internal_color_faces": 0,
+      "ribbon_genus": 0
+    }
+  ],
+  "scope": "Boundary detector and required composite-map Ward sum; not a computed bulk amplitude.",
+  "source_revision": "29ef4be3c92b8055ac51067357524c1048e6cda0",
+  "status": "PASS"
+}
