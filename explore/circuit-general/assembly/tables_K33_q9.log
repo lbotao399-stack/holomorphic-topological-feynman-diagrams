@@ -1,0 +1,4 @@
+q=9 unknowns 56407 rows 538934 {'T': 0, 'D': 515568, 'I': 0, 'B': 23366, 'S': 0}  1136.1s  maxrss 0.95 GB
+rank 56407 of 56407 unknowns, determined 56407  1263.0s
+K33 q=9: determined 56407 of 56407 (2399.1s, maxrss 1.47 GB)
+  written /Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/assembly/tables/K33_q9.json

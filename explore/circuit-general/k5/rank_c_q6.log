@@ -1,0 +1,6 @@
+q=6: classes 7195 (T1 5447, T2 1275, G 473 of which K5-decompletable 123)
+  mode A : unknown 7195, rank 7192, determined 0 of 7195; generic K5-decompletable determined 0 of 123 (19s)
+  mode B : unknown 473, rank 7192, determined 473 of 473; generic K5-decompletable determined 123 of 123 (42s)
+  mode Bd: unknown 6272, rank 7192, determined 6272 of 6272; generic K5-decompletable determined 123 of 123 (52s)
+  mode B1: unknown 1748, rank 7192, determined 1748 of 1748; generic K5-decompletable determined 123 of 123 (48s)
+  mode B2: unknown 5920, rank 7192, determined 5920 of 5920; generic K5-decompletable determined 123 of 123 (121s)

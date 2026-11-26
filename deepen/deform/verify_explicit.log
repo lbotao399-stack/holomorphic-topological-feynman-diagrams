@@ -1,0 +1,54 @@
+==== sl2 (dim 3) ====
+  invariant tensors nonzero: {'D': False}
+  J_D = [p1p2] T: alt([p1p2]T) = 6 J: False, d J = 0: True
+  {J_D, J_D}: closed True
+  rank B^4 = 2, rank [B^4 | F_223] = 2  -> [F_223] != 0: False
+  J = {'D': '1'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  time 1s
+==== gl2 (dim 4) ====
+  invariant tensors nonzero: {'D': True, 'S1': True, 'S0': True}
+  J_D = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  J_S1 = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  J_S0 = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  {J_D, J_D}: closed True
+  {J_D, J_S1}: closed True
+  {J_D, J_S0}: closed True
+  {J_S1, J_S1}: closed True
+  {J_S1, J_S0}: closed True
+  {J_S0, J_S0}: closed True
+  rank B^4 = 5, rank [B^4 | F_223] = 5  -> [F_223] != 0: False
+  J = {'D': '1', 'S1': '0', 'S0': '0'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  J = {'D': '0', 'S1': '1', 'S0': '0'}: (1/2){J,J} exact: False; = lam F_223 + exact: False, lam = None
+  J = {'D': '0', 'S1': '0', 'S0': '1'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  J = {'D': '1', 'S1': '-1', 'S0': '0'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  J = {'D': '1', 'S1': '-1', 'S0': '1'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  J = {'D': '2', 'S1': '1', 'S0': '1'}: (1/2){J,J} exact: False; = lam F_223 + exact: False, lam = None
+  J = {'D': '0', 'S1': '1', 'S0': '-1'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  time 2s
+==== sl3 (dim 8) ====
+  invariant tensors nonzero: {'D': True}
+  J_D = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  {J_D, J_D}: closed True
+  rank B^4 = 3, rank [B^4 | F_223] = 4  -> [F_223] != 0: True
+  J = {'D': '1'}: (1/2){J,J} exact: False; = lam F_223 + exact: True, lam = 1/108
+  time 1s
+==== gl3 (dim 9) ====
+  invariant tensors nonzero: {'D': True, 'S1': True, 'S0': True}
+  J_D = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  J_S1 = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  J_S0 = [p1p2] T: alt([p1p2]T) = 6 J: True, d J = 0: True
+  {J_D, J_D}: closed True
+  {J_D, J_S1}: closed True
+  {J_D, J_S0}: closed True
+  {J_S1, J_S1}: closed True
+  {J_S1, J_S0}: closed True
+  {J_S0, J_S0}: closed True
+  rank B^4 = 6, rank [B^4 | F_223] = 7  -> [F_223] != 0: True
+  J = {'D': '1', 'S1': '0', 'S0': '0'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  J = {'D': '0', 'S1': '1', 'S0': '0'}: (1/2){J,J} exact: False; = lam F_223 + exact: False, lam = None
+  J = {'D': '0', 'S1': '0', 'S0': '1'}: (1/2){J,J} exact: True; = lam F_223 + exact: True, lam = 0
+  J = {'D': '1', 'S1': '-2/3', 'S0': '0'}: (1/2){J,J} exact: False; = lam F_223 + exact: True, lam = 1/108
+  J = {'D': '1', 'S1': '-2/3', 'S0': '4/9'}: (1/2){J,J} exact: False; = lam F_223 + exact: True, lam = 1/108
+  J = {'D': '2', 'S1': '1', 'S0': '1'}: (1/2){J,J} exact: False; = lam F_223 + exact: False, lam = None
+  J = {'D': '0', 'S1': '1', 'S0': '-2/3'}: (1/2){J,J} exact: False; = lam F_223 + exact: True, lam = -1/48
+  time 3s

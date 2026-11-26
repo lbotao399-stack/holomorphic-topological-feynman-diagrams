@@ -1,0 +1,13 @@
+abelian2 eta_S pi^*phi = sign(k,S) psi_S(phi), arity k = 1..4, all S: True
+   signs (k,S): {(1, 0): [1], (1, 1): [1], (1, 2): [1], (1, 3): [1], (1, 4): [1], (1, 5): [1], (1, 6): [1], (1, 7): [1], (2, 0): [1], (2, 1): [-1], (2, 2): [-1], (2, 3): [1], (2, 4): [-1], (2, 5): [1], (2, 6): [1], (2, 7): [-1], (3, 0): [1], (3, 1): [1], (3, 2): [1], (3, 3): [1], (3, 4): [1], (3, 5): [1], (3, 6): [1], (3, 7): [1], (4, 0): [1], (4, 1): [-1], (4, 2): [-1], (4, 3): [1], (4, 4): [-1], (4, 5): [1], (4, 6): [1], (4, 7): [-1]}
+sl2 eta_S pi^*phi = sign(k,S) psi_S(phi), arity k = 1..4, all S: True
+   signs (k,S): {(1, 0): [1], (1, 1): [1], (1, 2): [1], (1, 3): [1], (1, 4): [1], (1, 5): [1], (1, 6): [1], (1, 7): [1], (2, 0): [1], (2, 1): [-1], (2, 2): [-1], (2, 3): [1], (2, 4): [-1], (2, 5): [1], (2, 6): [1], (2, 7): [-1], (3, 0): [1], (3, 1): [1], (3, 2): [1], (3, 3): [1], (3, 4): [1], (3, 5): [1], (3, 6): [1], (3, 7): [1], (4, 0): [1], (4, 1): [-1], (4, 2): [-1], (4, 3): [1], (4, 4): [-1], (4, 5): [1], (4, 6): [1], (4, 7): [-1]}
+check1 all: True
+sl2: Q(6 S_free) in DM: True   Q(6 I) in DM: True
+sl2: kernel of (Q(2N), 6S_free, 6I) mod D M^0: [{0: 1}]
+sl2: 6I exact in V: False   6S_free exact in V: False
+sl2: N = (1/2) kappa(A,A) top coefficient vanishes identically: True
+sl2: kernel of (6S_free, 6I) modulo B^0(V) = Q M^-1 + D M^0: [{0: 2, 1: 3}]
+sl2: eta_tau(6I) in DM: True   eta_tau(6S_free) in DM: False
+sl2: eta_zb1(6I) in DM: True   eta_zb1(6S_free) in DM: False
+sl2: eta_zb2(6I) in DM: True   eta_zb2(6S_free) in DM: False

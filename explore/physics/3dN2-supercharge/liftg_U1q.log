@@ -1,0 +1,16 @@
+R-charges ['1/2', '1/2', '1/2'] weights scaled by 4
+theory U(1) charges [1, 2, -3] W no
+Jw=3 charges=(1, 1, 1): dim C = {6: 1, 10: 1} ; dim H(Q0) = {6: 1, 10: 1}
+Jw=4 charges=(0, 0, 0): dim C = {0: 1, 4: 5, 8: 4} ; dim H(Q0) = {4: 3, 8: 3}
+Jw=4 charges=(3, 0, 1): dim C = {8: 1, 12: 1} ; dim H(Q0) = {8: 1, 12: 1}
+Jw=5 charges=(0, 3, 2): dim C = {10: 1, 14: 1} ; dim H(Q0) = {10: 1, 14: 1}
+Jw=5 charges=(2, -1, 0): dim C = {6: 1, 10: 1} ; dim H(Q0) = {6: 1, 10: 1}
+Jw=6 charges=(-1, 2, 1): dim C = {8: 1, 12: 1} ; dim H(Q0) = {8: 1, 12: 1}
+Jw=6 charges=(2, 2, 2): dim C = {12: 1, 16: 1} ; dim H(Q0) = {12: 1, 16: 1}
+Jw=7 charges=(1, 1, 1): dim C = {6: 4, 10: 8, 14: 4} ; dim H(Q0) = {6: 2, 10: 4, 14: 2}
+Jw=7 charges=(4, 1, 2): dim C = {14: 1, 18: 1} ; dim H(Q0) = {14: 1, 18: 1}
+Jw=8 charges=(0, 0, 0): dim C = {0: 2, 4: 13, 8: 17, 12: 6} ; dim H(Q0) = {4: 4, 8: 5, 12: 1}
+Jw=8 charges=(1, 4, 3): dim C = {16: 1, 20: 1} ; dim H(Q0) = {16: 1, 20: 1}
+Jw=8 charges=(3, 0, 1): dim C = {8: 3, 12: 7, 16: 4} ; dim H(Q0) = {8: 1, 12: 3, 16: 2}
+Jw=8 charges=(6, 0, 2): dim C = {16: 1, 20: 1} ; dim H(Q0) = {16: 1, 20: 1}
+time 0s

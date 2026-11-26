@@ -1,0 +1,28 @@
+n = 2
+  (A,B) (A,B)                              roots [0, 1] tight True SP True  K = -pi*l0*l1/3  (0.0s)
+  (A,(A,B))                                roots [0] tight True SP True  K = pi*l0*(l0 + lA)/3  (0.0s)
+  (B,(A,B))                                roots [0] tight True SP True  K = pi*l0*lA/3  (0.0s)
+n = 4
+  (A,B) (A,B) (A,B) (A,B)                  roots [0, 1, 2, 3] tight True SP True  K = pi**2*l0*l1*l2*l3/5  (0.4s)
+  (A,(A,B)) (A,B) (A,B)                    roots [0, 2, 3] tight True SP True  K = -pi**2*l0*l2*l3*(8*l0 + 3*l2 + 3*l3 + 6*lA)/90  (0.1s)
+  (A,(A,B)) (A,(A,B))                      roots [0, 2] tight True SP True  K = pi**2*l0*l2*(10*l0**2 + 21*l0*l2 + 22*l0*lA + 10*l2**2 + 22*l2*lA + 12*lA**2)/180  (0.2s)
+  (B,(A,B)) (A,B) (A,B)                    roots [0, 2, 3] tight True SP True  K = pi**2*l0*l2*l3*(2*l0 - 3*l2 - 3*l3 - 6*lA)/90  (1.4s)
+  (B,(A,B)) (A,(A,B))                      roots [0, 2] tight True SP True  K = pi**2*l0*l2*(l0*l2 + 2*l0*lA + 10*l2**2 + 22*l2*lA + 12*lA**2)/180  (0.5s)
+  (B,(A,B)) (B,(A,B))                      roots [0, 2] tight True SP True  K = pi**2*l0*l2*(l0*l2 + 2*l0*lA + 2*l2*lA + 12*lA**2)/180  (0.2s)
+  (A,(A,(A,B))) (A,B)                      roots [0, 3] tight True SP True  K = pi**2*l0**2*l3*(2*l0 + l3 + 2*lA)/180  (0.2s)
+  (A,(B,(A,B))) (A,B)                      roots [0, 3] tight True SP False
+  (B,(A,(A,B))) (A,B)                      roots [0, 3] tight True SP False
+  (B,(B,(A,B))) (A,B)                      roots [0, 3] tight True SP True  K = -pi**2*l0**2*l3*(l3 + 2*lA)/180  (0.8s)
+  ((A,B),(A,B)) (A,B)                      roots [0, 3] tight True SP False
+  (A,(A,(A,(A,B))))                        roots [0] tight True SP True  K = -pi**2*l0**2*(l0 + lA)**2/180  (1.1s)
+  (A,(A,(B,(A,B))))                        roots [0] tight True SP False
+  (A,(B,(A,(A,B))))                        roots [0] tight True SP False
+  (A,(B,(B,(A,B))))                        roots [0] tight True SP False
+  (A,((A,B),(A,B)))                        roots [0] tight True SP False
+  (B,(A,(A,(A,B))))                        roots [0] tight True SP False
+  (B,(A,(B,(A,B))))                        roots [0] tight True SP False
+  (B,(B,(A,(A,B))))                        roots [0] tight True SP False
+  (B,(B,(B,(A,B))))                        roots [0] tight True SP True  K = pi**2*l0**2*lA**2/180  (0.6s)
+  (B,((A,B),(A,B)))                        roots [0] tight True SP False
+  ((A,(A,B)),(A,B))                        roots [0] tight True SP False
+  ((B,(A,B)),(A,B))                        roots [0] tight True SP False

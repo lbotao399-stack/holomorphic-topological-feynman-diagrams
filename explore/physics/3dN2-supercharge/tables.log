@@ -1,0 +1,26 @@
+== U(1) charges [1] (I = (1/2) f B c c + psi c rho phi, eta(c,B) = eta(phi,psi) = 1, kappa = W = 0)
+  Qh2 1*[B0][B0] = fan: 0 ; tad: 2/3*[ddc0]
+  Qh2 1*[B0][B0][c0] = fan: 0 ; tad: -2/3*[c0][ddc0]
+  Qh2 1*[B0][B0][B0] = fan: -2*[dp00][ds00] ; tad: 2*[B0][ddc0]
+  Qh2 1*[B0][B0][p00] = fan: 2/3*[dc0][dp00] ; tad: 2/3*[ddc0][p00]
+  Qh2 1*[B0][B0][s00] = fan: -2/3*[dc0][ds00] ; tad: 2/3*[ddc0][s00]
+  (5 nonzero)
+== SU(2)+1 adj (I = (1/2) f B c c + psi c rho phi, eta(c,B) = eta(phi,psi) = 1, kappa = W = 0)
+  Qh2 1*[B0][B0][c0] = fan: -2*[dc1][dc2] ; tad: 0
+  Qh2 1*[B0][B1][c0] = fan: 2/3*[dc0][dc2] ; tad: 0
+  Qh2 1*[B0][B2][c0] = fan: -2/3*[dc0][dc1] ; tad: 0
+  Qh2 1*[B1][B1][c0] = fan: -2/3*[dc1][dc2] ; tad: 0
+  Qh2 1*[B2][B2][c0] = fan: -2/3*[dc1][dc2] ; tad: 0
+  Qh2 1*[B0][B0][c1] = fan: 2/3*[dc0][dc2] ; tad: 0
+  Qh2 1*[B0][B1][c1] = fan: -2/3*[dc1][dc2] ; tad: 0
+  Qh2 1*[B1][B1][c1] = fan: 2*[dc0][dc2] ; tad: 0
+  Qh2 1*[B1][B2][c1] = fan: -2/3*[dc0][dc1] ; tad: 0
+  Qh2 1*[B2][B2][c1] = fan: 2/3*[dc0][dc2] ; tad: 0
+  Qh2 1*[B0][B0][c2] = fan: -2/3*[dc0][dc1] ; tad: 0
+  Qh2 1*[B0][B2][c2] = fan: -2/3*[dc1][dc2] ; tad: 0
+  (75 nonzero)
+== U(1), one chiral q=1: first-derivative examples
+  Qh2 1*[B0][B0][dB0] = 2/3*[B0][dddc0] + 2/3*[dB0][ddc0] + -2/3*[dp00][dds00] + -2/3*[ddp00][ds00]
+  Qh2 1*[B0][dB0][dB0] = 13/105*[B0][d^4c0] + 2/3*[dB0][dddc0] + -2/15*[dp00][ddds00] + -1/2*[ddp00][dds00] + -2/15*[dddp00][ds00]
+  Qh2 1*[B0][B0][ds00] = -1/15*[dc0][dds00] + 4/15*[ddc0][ds00]
+  Qh2 1*[B0][dB0] = 1/3*[dddc0]

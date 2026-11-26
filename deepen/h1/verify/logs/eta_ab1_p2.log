@@ -1,0 +1,207 @@
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=-2 dimVeta=1 I_in_K=True H=1 pred=1 OK dimC^1_0=1 dim(eta_U V)=1
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^2_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^3_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^4_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^5_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^6_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^7_0=0 dim(eta_U V)=0
+# Veta (1, 1, 1, 0, 0) 0.0s
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^1_0=1 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=-1 dimVeta=1 I_in_K=True H=1 pred=1 OK dimC^2_0=1 dim(eta_U V)=1
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^3_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^4_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^5_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^6_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^7_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^8_0=0 dim(eta_U V)=0
+# Veta (1, 1, 1, 1, 0) 0.1s
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^1_0=1 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^2_0=2 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=0 dimVeta=1 I_in_K=True H=1 pred=1 OK dimC^3_0=1 dim(eta_U V)=1
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^4_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^5_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^6_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^7_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^8_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=6 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^9_0=0 dim(eta_U V)=0
+# Veta (1, 1, 1, 1, 1) 0.5s
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^1_0=1 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=-1 dimVeta=1 I_in_K=True H=1 pred=1 OK dimC^2_0=3 dim(eta_U V)=1
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=0 dimVeta=1 I_in_K=True H=1 pred=1 OK dimC^3_0=2 dim(eta_U V)=1
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^4_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^5_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^6_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^7_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^8_0=0 dim(eta_U V)=0
+ab1 Veta t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=6 dimVeta=0 I_in_K=True H=0 pred=0 OK dimC^9_0=0 dim(eta_U V)=0
+# Veta (1, 1, 1, 2, 1) 2.6s
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=-2 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=-1 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (2, 1, 1, 0, 0) 0.0s
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=-2 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=-1 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (1, 2, 1, 0, 0) 0.1s
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-4 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-3 dimVeta=4 I_in_K=True H=0 pred=0 OK dim(eta_U V)=4
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-2 dimVeta=7 I_in_K=True H=0 pred=0 OK dim(eta_U V)=7
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-1 dimVeta=7 I_in_K=True H=0 pred=0 OK dim(eta_U V)=7
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=0 dimVeta=4 I_in_K=True H=0 pred=0 OK dim(eta_U V)=4
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=1 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (2, 2, 2, 0, 0) 1.8s
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=-1 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=0 dimVeta=1 I_in_K=True H=0 pred=0 OK dim(eta_U V)=1
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (2, 1, 1, 1, 0) 0.3s
+ab1 Veta t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (0, 1, 1, 0, 0) 0.0s
+ab1 Veta t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (1, 0, 1, 1, 0) 0.0s
+ab1 Veta t=(0, 0, 0, 1, 1) w=(-1, -1, -1) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 0, 0, 1, 1) w=(-1, -1, -1) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 0, 0, 1, 1) w=(-1, -1, -1) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (0, 0, 0, 1, 1) 0.0s
+ab1 Veta t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (1, 1, 0, 0, 0) 0.0s
+ab1 Veta t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+ab1 Veta t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK dim(eta_U V)=0
+# Veta (0, 1, 1, 1, 0) 0.0s
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=-2 dimVeta=1 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=-1 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=0 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 0, 0) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 1, 1, 0, 0) 0.0s
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=-1 dimVeta=1 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=0 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=1 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 0) w=(0, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 1, 1, 1, 0) 0.0s
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=-1 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=0 dimVeta=3 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=1 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=2 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 1, 1) w=(0, 0, 0) g=6 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 1, 1, 1, 1) 0.4s
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=-1 dimVeta=1 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=0 dimVeta=3 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=1 dimVeta=4 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=2 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 1, 2, 1) w=(0, 0, 0) g=6 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 1, 1, 2, 1) 1.9s
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=-2 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=-1 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=0 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 0, 0) w=(1, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (2, 1, 1, 0, 0) 0.0s
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=-2 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=-1 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=0 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=1 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 2, 1, 0, 0) w=(0, 1, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 2, 1, 0, 0) 0.0s
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-4 dimVeta=1 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-3 dimVeta=5 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-2 dimVeta=13 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=-1 dimVeta=22 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=0 dimVeta=23 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=1 dimVeta=13 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=2 dimVeta=3 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 2, 2, 0, 0) w=(1, 1, 1) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (2, 2, 2, 0, 0) 1.2s
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=-2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=-1 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=0 dimVeta=4 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=1 dimVeta=2 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(2, 1, 1, 1, 0) w=(1, 0, 0) g=5 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (2, 1, 1, 1, 0) 0.3s
+ab1 Veta12 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=-1 dimVeta=1 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (0, 1, 1, 0, 0) 0.0s
+ab1 Veta12 t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 0, 1, 1, 0) w=(0, -1, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 0, 1, 1, 0) 0.0s
+ab1 Veta12 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (0, 0, 0, 1, 1) 0.0s
+ab1 Veta12 t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=0 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(1, 1, 0, 0, 0) w=(0, 0, -1) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (1, 1, 0, 0, 0) 0.0s
+ab1 Veta12 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=-1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=0 dimVeta=1 I_in_K=True H=1 pred=1 OK
+ab1 Veta12 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=1 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=2 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=3 dimVeta=0 I_in_K=True H=0 pred=0 OK
+ab1 Veta12 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) g=4 dimVeta=0 I_in_K=True H=0 pred=0 OK
+# Veta12 (0, 1, 1, 1, 0) 0.0s
+TOTAL ab1 eta charge0=False prime=998244353: compared 180 mismatches 0

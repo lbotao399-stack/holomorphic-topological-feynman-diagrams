@@ -1,0 +1,40 @@
+theta(1, 3, 3): (60/pi) K / ([p1p2][p3p4]) = -3
+theta(2, 2, 3): (60/pi) K / ([p1p2][p3p4]) = 2
+
+==== formal gl_N, weight (2,2) ====
+dim C^3_inv(2,2) = 8, dim C^4_inv(2,2) = 36  (ambient trace coordinates: 54, 864)
+rank d: C^3 -> C^4 = 6  (minor det 32, 2 exact kernel vectors checked, mod-p ranks [6, 6])
+rank d: C^4 -> C^5 = 26  (minor det -1024, 10 exact kernel vectors checked, mod-p ranks [26, 26]; C^5 coordinates 12000)
+dim Z^4 = 10 (all exactly closed: True), dim B^4 = 6, dim H^4 = 4
+F_133: N-powers [0, 1, 2]; d F = 0 (formal): True
+F_223: N-powers [0, 1]; d F = 0 (formal): True
+H^4 basis (mod B^4): ['F_223[N^1]', 'F_223[N^0]', 'z8', 'z9']
+dual functionals: Phi(B^4) = 0 and Phi(h_j) = delta_ij exactly: True
+  [F_133[N^0]] coordinates [Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1)] ; exact (in B^4): False
+  [F_133[N^1]] coordinates [Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)] ; exact (in B^4): False
+  [F_133[N^2]] coordinates [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)] ; exact (in B^4): True
+  [F_223[N^0]] coordinates [Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)] ; exact (in B^4): False
+  [F_223[N^1]] coordinates [Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)] ; exact (in B^4): False
+  [F_223](N) = {'F_223[N^0]': {0: '1'}, 'F_223[N^1]': {1: '1'}}
+  [F_133](N) = {'F_223[N^0]': {0: '-1'}, 'F_223[N^1]': {1: '-1'}}
+  [F_133+F_223](N) = {'F_223[N^0]': {}, 'F_223[N^1]': {}}
+
+==== formal sl_N, weight (2,2) ====
+dim C^3_inv(2,2) = 3, dim C^4_inv(2,2) = 15  (ambient trace coordinates: 18, 324)
+rank d: C^3 -> C^4 = 3  (minor det 4, 0 exact kernel vectors checked, mod-p ranks [3, 3])
+rank d: C^4 -> C^5 = 11  (minor det 16, 4 exact kernel vectors checked, mod-p ranks [11, 11]; C^5 coordinates 4400)
+dim Z^4 = 4 (all exactly closed: True), dim B^4 = 3, dim H^4 = 1
+F_133: N-powers [0, 1, 2]; d F = 0 (formal): True
+F_223: N-powers [0, 1]; d F = 0 (formal): True
+H^4 basis (mod B^4): ['F_223[N^1]']
+dual functionals: Phi(B^4) = 0 and Phi(h_j) = delta_ij exactly: True
+  [F_133[N^0]] coordinates [Fraction(0, 1)] ; exact (in B^4): True
+  [F_133[N^1]] coordinates [Fraction(-1, 1)] ; exact (in B^4): False
+  [F_133[N^2]] coordinates [Fraction(0, 1)] ; exact (in B^4): True
+  [F_223[N^0]] coordinates [Fraction(0, 1)] ; exact (in B^4): True
+  [F_223[N^1]] coordinates [Fraction(1, 1)] ; exact (in B^4): False
+  [F_223](N) = {'F_223[N^1]': {1: '1'}}
+  [F_133](N) = {'F_223[N^1]': {1: '-1'}}
+  [F_133+F_223](N) = {'F_223[N^1]': {}}
+
+total 8s

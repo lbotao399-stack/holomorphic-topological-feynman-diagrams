@@ -1,0 +1,148 @@
+  sl2      w=(0, 0, 0)    (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(0, 0) g=-2  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(0, 0) g=-1  dim M=    15 rkD=3 rkQbar=11  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(0, 0) g= 0  dim M=    70 rkD=21 rkQbar=37  H(V)=1 [modp 1 1]  pred H^3(Q)=1  OK
+      psi_S, S=7: dim Z^3(Q)=1, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  sl2      w=(0, 0, 0)    (a,b)=(0, 0) g= 1  dim M=   171 rkD=58 rkQbar=76  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.1s]
+  sl2      w=(-1, -1, -1) (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-3(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(0, 0) g= 0  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(0, 0) g= 1  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, -1, -1)  (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(0, 0) g= 0  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(0, 0) g= 1  dim M=     4 rkD=1 rkQbar=2  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+    [0.0s]
+  sl2      w=(-1, 0, -1)  (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(0, 0) g= 0  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(0, 0) g= 1  dim M=     4 rkD=1 rkQbar=2  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+    [0.0s]
+  sl2      w=(-1, -1, 0)  (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(0, 0) g= 0  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(0, 0) g= 1  dim M=     4 rkD=1 rkQbar=2  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, 0, -1)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(0, 0) g=-1  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(0, 0) g= 0  dim M=     8 rkD=2 rkQbar=5  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(0, 0) g= 1  dim M=    23 rkD=7 rkQbar=10  H(V)=1 [modp 1 1]  pred H^3(Q)=1  OK
+      psi_S, S=3: dim Z^3(Q)=1, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(0, -1, 0)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(0, 0) g=-1  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(0, 0) g= 0  dim M=     8 rkD=2 rkQbar=5  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(0, 0) g= 1  dim M=    23 rkD=7 rkQbar=10  H(V)=1 [modp 1 1]  pred H^3(Q)=1  OK
+      psi_S, S=5: dim Z^3(Q)=1, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(-1, 0, 0)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(0, 0) g=-1  dim M=     1 rkD=0 rkQbar=1  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(0, 0) g= 0  dim M=     8 rkD=2 rkQbar=5  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(0, 0) g= 1  dim M=    23 rkD=7 rkQbar=10  H(V)=1 [modp 1 1]  pred H^3(Q)=1  OK
+      psi_S, S=6: dim Z^3(Q)=1, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(0, 0, 0)    (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(1, 0) g=-2  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(1, 0) g=-1  dim M=    27 rkD=15 rkQbar=11  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=7: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^-1(V) = 1 (= H): True
+  sl2      w=(0, 0, 0)    (a,b)=(1, 0) g= 0  dim M=   169 rkD=88 rkQbar=70  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(1, 0) g= 1  dim M=   538 rkD=261 rkQbar=207  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [1.2s]
+  sl2      w=(-1, -1, -1) (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-3(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 0) g= 0  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 0) g= 1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, -1, -1)  (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(1, 0) g= 0  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, -1, -1)  (a,b)=(1, 0) g= 1  dim M=     7 rkD=4 rkQbar=2  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=1: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(-1, 0, -1)  (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(1, 0) g= 0  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, 0, -1)  (a,b)=(1, 0) g= 1  dim M=     7 rkD=4 rkQbar=2  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=2: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(-1, -1, 0)  (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(1, 0) g= 0  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, -1, 0)  (a,b)=(1, 0) g= 1  dim M=     7 rkD=4 rkQbar=2  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=4: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(0, 0, -1)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 0) g=-1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 0) g= 0  dim M=    14 rkD=8 rkQbar=5  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=3: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  sl2      w=(0, 0, -1)   (a,b)=(1, 0) g= 1  dim M=    56 rkD=29 rkQbar=22  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, -1, 0)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(1, 0) g=-1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, -1, 0)   (a,b)=(1, 0) g= 0  dim M=    14 rkD=8 rkQbar=5  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=5: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  sl2      w=(0, -1, 0)   (a,b)=(1, 0) g= 1  dim M=    56 rkD=29 rkQbar=22  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.0s]
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 0) g=-1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 0) g= 0  dim M=    14 rkD=8 rkQbar=5  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=6: dim Z^2(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 0) g= 1  dim M=    56 rkD=29 rkQbar=22  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, 0, 0)    (a,b)=(1, 1) g=-2  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(1, 1) g=-1  dim M=    51 rkD=39 rkQbar=12  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(1, 1) g= 0  dim M=   430 rkD=286 rkQbar=132  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(1, 1) g= 1  dim M=  1765 rkD=1058 rkQbar=575  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [56.4s]
+  sl2      w=(-1, -1, -1) (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 1) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 1) g= 0  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 1) g= 1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, 0, -1)   (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 1) g=-1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 1) g= 0  dim M=    26 rkD=20 rkQbar=6  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 1) g= 1  dim M=   143 rkD=95 rkQbar=42  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.2s]
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 1) g=-1  dim M=     1 rkD=1 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 1) g= 0  dim M=    26 rkD=20 rkQbar=6  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  sl2      w=(-1, 0, 0)   (a,b)=(1, 1) g= 1  dim M=   143 rkD=95 rkQbar=42  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.3s]
+  sl2      w=(1, 0, 0)    (a,b)=(0, 0) g=-2  dim M=     7 rkD=1 rkQbar=6  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(1, 0, 0)    (a,b)=(0, 0) g=-1  dim M=    71 rkD=21 rkQbar=44  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(1, 0, 0)    (a,b)=(0, 0) g= 0  dim M=   309 rkD=108 rkQbar=157  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(1, 0, 0)    (a,b)=(0, 0) g= 1  dim M=   766 rkD=284 rkQbar=325  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [1.4s]
+  sl2      w=(1, 0, 0)    (a,b)=(1, 0) g=-2  dim M=    13 rkD=7 rkQbar=6  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(1, 0, 0)    (a,b)=(1, 0) g=-1  dim M=   170 rkD=89 rkQbar=75  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(1, 0, 0)    (a,b)=(1, 0) g= 0  dim M=   924 rkD=467 rkQbar=382  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(1, 0, 0)    (a,b)=(1, 0) g= 1  dim M=  2825 rkD=1381 rkQbar=1062  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [106.4s]
+  sl2      w=(0, 1, -1)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(0, 1, -1)   (a,b)=(0, 0) g=-1  dim M=     4 rkD=1 rkQbar=3  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(0, 1, -1)   (a,b)=(0, 0) g= 0  dim M=    28 rkD=10 rkQbar=15  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(0, 1, -1)   (a,b)=(0, 0) g= 1  dim M=    83 rkD=30 rkQbar=38  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.0s]
+  sl2      w=(0, 1, -1)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(0, 1, -1)   (a,b)=(1, 0) g=-1  dim M=     7 rkD=4 rkQbar=3  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(0, 1, -1)   (a,b)=(1, 0) g= 0  dim M=    64 rkD=35 rkQbar=26  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  sl2      w=(0, 1, -1)   (a,b)=(1, 0) g= 1  dim M=   245 rkD=126 rkQbar=93  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.3s]
+case sl2a: all checks passed: True   total 166.3s

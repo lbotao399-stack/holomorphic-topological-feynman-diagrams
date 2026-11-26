@@ -1,0 +1,11 @@
+(a) d = 2: dx^{1..d} ^ dxbar^{1..d} = 4 d^{4}x_E
+(a) d = 3: dx^{1..d} ^ dxbar^{1..d} = -8*I d^{6}x_E
+(a) d = 4: dx^{1..d} ^ dxbar^{1..d} = 16 d^{8}x_E
+(c) d = 3: [K_t] - dt ^ dbar^*[K_t] == (2 pi)^{-3} e^{-y.x} d^3y, (2 pi)^{-3} = 1/(8*pi**3): True
+(b) d = 3: int Omega ^ [K_t] = 2^3 * (2 pi t)^3 / (2^3 (2 pi t)^3) = 1
+    dbar^*[K_t] has form degree [2] -> propagator parity even
+(c) d = 4: [K_t] - dt ^ dbar^*[K_t] == (2 pi)^{-4} e^{-y.x} d^4y, (2 pi)^{-4} = 1/(16*pi**4): True
+(b) d = 4: int Omega ^ [K_t] = 2^4 * (2 pi t)^4 / (2^4 (2 pi t)^4) = 1
+    dbar^*[K_t] has form degree [3] -> propagator parity odd
+(d) d = 3: c_Omega i^d (2 pi)^d = 8*pi**3
+(d) d = 4: c_Omega i^d (2 pi)^d = 16*pi**4

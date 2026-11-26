@@ -1,0 +1,273 @@
+V7_0 q=3: 64 convergent orbits
+  (1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2)  -38/3*z3 + 20/3*z5 + 2*z3*z3 + 35/6*z7  (10.9s, direct, 6 appends) ref:OK
+  (1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1)  -4*z3 + -35/6*z5 + -1*z3*z3 + 301/24*z7  (1.0s, direct, 7 appends) ref:OK
+  (1, 1, 1, 1, 2, 2, 1, 2, 1, 1, 2)  5/3 + 13/3*z3 + -35/3*z5 + 35/6*z7  (0.8s, direct, 6 appends) ref:OK
+  (1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1)  -5/3 + 161/6*z3 + 70/3*z5 + 1*z3*z3 + -441/8*z7  (0.7s, direct, 6 appends) ref:OK
+  (1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 1)  -38/3*z3 + 20/3*z5 + 2*z3*z3 + 35/6*z7  (0.7s, direct, 7 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 2)  -4*z3 + -35/6*z5 + -1*z3*z3 + 301/24*z7  (0.5s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (0.7s, direct, 6 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 2)  8/3*z3 + -35/6*z5 + -1*z3*z3 + 147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 1, 1, 2, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.6s, direct, 6 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2)  -1 + -3*z3 + 5*z5  (0.5s, direct, 5 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 1)  1 + -11*z3 + -10*z5 + 735/32*z7  (0.4s, direct, 5 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 1, 2, 2, 1, 1)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (0.6s, direct, 6 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2)  -1/6 + -1/3*z3 + 20/3*z5 + -35/6*z7  (0.7s, direct, 5 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 2, 1, 1, 2, 1)  8/3*z3 + -35/6*z5 + -1*z3*z3 + 147/32*z7  (1.1s, direct, 6 appends) ref:OK
+  (1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 1)  1/6 + -16/3*z3 + -25/4*z5 + -1/2*z3*z3 + 441/32*z7  (1.0s, direct, 5 appends) ref:OK
+  (1, 1, 2, 1, 2, 2, 1, 1, 1, 1, 2)  -1/6 + -1/3*z3 + 20/3*z5 + -35/6*z7  (1.4s, direct, 6 appends) ref:OK
+  (1, 1, 2, 1, 2, 2, 1, 1, 1, 2, 1)  1/6 + -16/3*z3 + -25/4*z5 + -1/2*z3*z3 + 441/32*z7  (1.0s, direct, 6 appends) ref:OK
+  (1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 1)  8/3*z3 + -35/6*z5 + -1*z3*z3 + 147/32*z7  (0.9s, direct, 6 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.4s, direct, 5 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 1, 1, 1, 2, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1)  -7/6*z3 + 5/3*z5  (0.4s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2)  -7/6*z3 + 5/3*z5  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 1)  5/3*z3 + -5/3*z5  (0.5s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2)  1/6 + 5/3*z3 + -5/3*z5  (0.4s, direct, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 2, 1, 2, 1)  -1/6 + 1/2*z3  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1)  -7/6*z3 + 5/3*z5  (0.2s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2)  -1/3*z3 + -5*z5 + 35/6*z7  (0.6s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 2, 1, 1, 1, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 2, 1, 1, 2, 1, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2)  5/3*z3 + -5/3*z5  (0.1s, direct, 4 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1)  -7/6*z3 + 5/3*z5  (0.2s, direct, 4 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 2)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (0.4s, direct, 5 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 2)  8/3*z3 + -35/6*z5 + -1*z3*z3 + 147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.6s, direct, 6 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2)  -1 + -3*z3 + 5*z5  (1.0s, decomplete 0, 4 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1)  1 + -11*z3 + -10*z5 + 735/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 1, 2, 2, 1, 1)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (0.7s, direct, 6 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2)  -1/6 + -1/3*z3 + 20/3*z5 + -35/6*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1)  8/3*z3 + -35/6*z5 + -1*z3*z3 + 147/32*z7  (1.1s, direct, 6 appends) ref:OK
+  (2, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1)  1/6 + -16/3*z3 + -25/4*z5 + -1/2*z3*z3 + 441/32*z7  (0.6s, direct, 5 appends) ref:OK
+  (2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (2, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1)  -7/6*z3 + 5/3*z5  (0.6s, decomplete 0, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.3s, direct, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.2s, direct, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2)  1/2  (0.2s, direct, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 1, 2, 1, 2, 1)  -1/2 + 7*z3 + 25/4*z5 + -441/32*z7  (0.4s, direct, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2)  -1/3*z3 + -5*z5 + 35/6*z7  (0.6s, direct, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.9s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.4s, direct, 4 appends) ref:OK
+  (2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2)  1/6 + 5/3*z3 + -5/3*z5  (0.3s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1)  -1/6 + 1/2*z3  (0.3s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1)  -7/6*z3 + 5/3*z5  (0.2s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2)  -1/3*z3 + -5*z5 + 35/6*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 2, 1, 1, 1, 1, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (2, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.2s, direct, 4 appends) ref:OK
+  (2, 1, 2, 2, 1, 1, 1, 1, 1, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.4s, direct, 4 appends) ref:OK
+  (2, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1)  5/3*z3 + -5/3*z5  (0.2s, direct, 4 appends) ref:OK
+  (2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2)  35/6*z5 + -35/6*z7  (0.3s, direct, 4 appends) ref:OK
+  (2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1)  -35/12*z5 + -1*z3*z3 + 147/32*z7  (0.3s, direct, 4 appends) ref:OK
+V7_0 q=3: computed 64/64 orbits in 43.7s
+  reference ../fiveloop/tables/V7_0_q3.json: 64 compared, 64 agree
+V7_2 q=3: 52 convergent orbits
+  (1, 1, 1, 1, 2, 1, 1, 2, 1, 2, 2)  -1/6 + -1/3*z3 + 20/3*z5 + -35/6*z7  (10.8s, direct, 6 appends) ref:OK
+  (1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1)  -4*z3 + -35/6*z5 + -1*z3*z3 + 301/24*z7  (1.2s, direct, 7 appends) ref:OK
+  (1, 1, 1, 1, 2, 1, 2, 2, 1, 2, 1)  1/2  (0.8s, direct, 6 appends) ref:OK
+  (1, 1, 1, 1, 2, 1, 2, 2, 2, 1, 1)  -1/3*z3 + -5*z5 + 35/6*z7  (0.8s, direct, 7 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2)  1/6 + 5/3*z3 + -5/3*z5  (0.2s, direct, 5 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 2)  -1/3*z3 + -5*z5 + 35/6*z7  (0.2s, direct, 5 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.7s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 2)  -1/3*z3 + -5*z5 + 35/6*z7  (0.4s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.8s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 2)  1/6 + -16/3*z3 + -25/4*z5 + -1/2*z3*z3 + 441/32*z7  (0.6s, direct, 5 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1)  -1/2 + 7*z3 + 25/4*z5 + -441/32*z7  (0.9s, decomplete 0, 4 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.5s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 2, 2, 1, 1, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.8s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 2)  8/3*z3 + -35/6*z5 + -1*z3*z3 + 147/32*z7  (0.7s, direct, 5 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.6s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 1, 2, 1, 1, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.6s, direct, 6 appends) ref:OK
+  (1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (0.8s, direct, 6 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2)  35/6*z5 + -35/6*z7  (0.2s, direct, 5 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 1, 1, 1, 2, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 1, 2, 1, 1, 1)  5/3*z3 + -5/3*z5  (0.6s, direct, 6 appends) ref:OK
+  (1, 1, 2, 2, 2, 1, 2, 1, 1, 1, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.3s, direct, 5 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 2)  -1/6 + 1/2*z3  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 1, 1, 2, 1, 2)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.5s, direct, 5 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.9s, direct, 5 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 1, 2, 2, 1, 1)  -7/6*z3 + 5/3*z5  (0.4s, direct, 5 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1)  1/2  (0.3s, direct, 4 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.4s, direct, 5 appends) ref:OK
+  (1, 2, 1, 2, 1, 1, 2, 2, 1, 1, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.5s, decomplete 0, 4 appends) ref:OK
+  (1, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1)  2*z3 + -3/2*z3*z3  (0.4s, direct, 4 appends) ref:OK
+  (1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (0.7s, direct, 5 appends) ref:OK
+  (1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1)  2*z3 + -3/2*z3*z3  (0.9s, direct, 6 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 1, 2, 1, 2)  -7/6*z3 + 5/3*z5  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 1)  -7/6*z3 + 5/3*z5  (0.5s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.6s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 1, 2, 1, 2, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.6s, decomplete 2, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.3s, direct, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 2, 1, 2, 1, 1)  5/3*z3 + -5/3*z5  (0.5s, decomplete 0, 4 appends) ref:OK
+  (1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.6s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 2, 1, 1, 1, 2, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (0.8s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 1, 2, 1, 2, 1, 1, 1)  2*z3 + -3/2*z3*z3  (0.9s, direct, 5 appends) ref:OK
+  (1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (0.9s, direct, 6 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2)  -35/12*z5 + -1*z3*z3 + 147/32*z7  (0.3s, direct, 4 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.3s, direct, 4 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1)  5/3*z3 + -5/3*z5  (0.2s, direct, 4 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 1)  -7/6*z3 + 5/3*z5  (0.7s, decomplete 0, 4 appends) ref:OK
+  (1, 2, 2, 2, 1, 1, 2, 1, 1, 1, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.3s, direct, 4 appends) ref:OK
+  (1, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (0.3s, direct, 4 appends) ref:OK
+  (1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (0.4s, direct, 5 appends) ref:OK
+  (2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1)  2*z3 + -3/2*z3*z3  (0.3s, direct, 4 appends) ref:OK
+V7_2 q=3: computed 52/52 orbits in 37.7s
+  reference ../fiveloop/tables/V7_2_q3.json: 52 compared, 52 agree
+V7_1 q=3: 10 convergent orbits
+  (1, 1, 1, 1, 2, 1, 2, 2, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 2, 2, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1)  1/2  (10.6s, decomplete 0, 4 appends)
+  (1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 2, 2, 1, 1, 1)  -1/6 + 1/2*z3  (0.2s, decomplete 0, 4 appends)
+  (1, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1)  no sequential plan
+V7_1 q=3: computed 2/10 orbits in 10.8s
+V7_3 q=3: 65 convergent orbits
+  (1, 1, 1, 1, 2, 1, 1, 1, 2, 2, 2)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 2)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 2, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 2)  1/6 + -16/3*z3 + -25/4*z5 + -1/2*z3*z3 + 441/32*z7  (11.9s, decomplete 0, 4 appends)
+  (1, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 1, 2, 2, 1, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1)  no sequential plan
+  (1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 2, 2, 2, 1, 2, 1, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2)  no sequential plan
+  (1, 2, 1, 1, 1, 1, 1, 2, 1, 2, 2)  no sequential plan
+  (1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2)  no sequential plan
+  (1, 2, 1, 1, 1, 1, 2, 1, 2, 2, 1)  no sequential plan
+  (1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 1)  no sequential plan
+  (1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 2)  no sequential plan
+  (1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2)  no sequential plan
+  (1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1)  no sequential plan
+  (1, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2)  no sequential plan
+  (1, 2, 1, 1, 1, 2, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2)  no sequential plan
+  (1, 2, 1, 1, 2, 1, 1, 1, 2, 2, 1)  no sequential plan
+  (1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1)  no sequential plan
+  (1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 1)  11/2*z3 + -5/6*z5 + -1/2*z3*z3 + -147/32*z7  (1.2s, decomplete 0, 5 appends)
+  (1, 2, 1, 2, 1, 1, 1, 1, 2, 1, 2)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 1)  5/3*z3 + -5/3*z5  (0.9s, decomplete 2, 6 appends)
+  (1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 2)  2*z3 + -3/2*z3*z3  (1.8s, decomplete 2, 6 appends)
+  (1, 2, 1, 2, 1, 1, 1, 2, 1, 2, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 1, 2, 2, 1, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (1.2s, decomplete 2, 6 appends)
+  (1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 2)  -1/6 + 1/2*z3  (0.3s, decomplete 0, 4 appends)
+  (1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1)  -7/6*z3 + 5/3*z5  (0.3s, decomplete 2, 5 appends)
+  (1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 2, 2, 1, 1, 1)  1*z3 + -5/3*z5 + 1/2*z3*z3  (1.0s, decomplete 2, 6 appends)
+  (1, 2, 1, 2, 1, 2, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.9s, decomplete 2, 5 appends)
+  (1, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 2, 2, 1, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 2, 1, 1, 1, 1, 1, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.7s, decomplete 0, 4 appends)
+  (1, 2, 1, 2, 2, 1, 1, 1, 1, 2, 1)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (0.8s, decomplete 2, 5 appends)
+  (1, 2, 1, 2, 2, 1, 1, 1, 2, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (0.6s, decomplete 2, 4 appends)
+  (1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2)  1*z3 + -5/3*z5 + 1/2*z3*z3  (1.0s, decomplete 2, 6 appends)
+  (1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1)  no sequential plan
+  (1, 2, 2, 2, 1, 1, 2, 1, 1, 1, 1)  2*z3 + -3/2*z3*z3  (0.8s, decomplete 2, 6 appends)
+  (1, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1)  no sequential plan
+  (1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1)  no sequential plan
+  (2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2)  no sequential plan
+  (2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2)  no sequential plan
+  (2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1)  no sequential plan
+  (2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.7s, decomplete 1, 5 appends)
+  (2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 2)  -7/6*z3 + 5/3*z5  (0.5s, decomplete 1, 5 appends)
+  (2, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2)  -35/12*z5 + -1*z3*z3 + 147/32*z7  (0.7s, decomplete 0, 5 appends)
+  (2, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1)  no sequential plan
+  (2, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (1.1s, decomplete 0, 5 appends)
+  (2, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1)  5/3*z3 + -5/3*z5  (0.5s, decomplete 0, 4 appends)
+  (2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1)  no sequential plan
+V7_3 q=3: computed 19/65 orbits in 27.2s
+V8_1 q=3: 22 convergent orbits
+  (1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (11.2s, decomplete 2, 6 appends) ref:OK
+  (1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (2.2s, decomplete 1, 6 appends) ref:OK
+  (1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1)  -1/2 + 7*z3 + 25/4*z5 + -441/32*z7  (1.0s, decomplete 1, 5 appends) ref:OK
+  (1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (1.1s, decomplete 2, 6 appends) ref:OK
+  (1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2)  no sequential plan
+  (2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2)  no sequential plan
+  (2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2)  no sequential plan
+  (2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2)  no sequential plan
+V8_1 q=3: computed 4/22 orbits in 15.8s
+  reference ../fiveloop/tables/V8_1_q3.json: 4 compared, 4 agree
+V8_2 q=3: 13 convergent orbits
+  (1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2)  -35/12*z5 + -1*z3*z3 + 147/32*z7  (12.1s, decomplete 1, 6 appends)
+  (1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2)  -5/2*z3 + -5/4*z5 + 147/32*z7  (0.5s, decomplete 1, 5 appends)
+  (1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (1.6s, decomplete 1, 6 appends)
+  (1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 1)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1)  no sequential plan
+V8_2 q=3: computed 3/13 orbits in 14.3s
+V8_3 q=3: 8 convergent orbits
+  (1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2)  no sequential plan
+  (1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (11.1s, decomplete 3, 5 appends) ref:OK
+  (1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1)  no sequential plan
+V8_3 q=3: computed 1/8 orbits in 11.2s
+  reference ../fiveloop/tables/V8_3_q3.json: 1 compared, 1 agree
+V8_4 q=3: 19 convergent orbits
+  (1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2)  5/3*z3 + -5/3*z5  (10.4s, decomplete 3, 6 appends)
+  (1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2)  4/3*z3 + 5/2*z5 + 1/2*z3*z3 + -147/32*z7  (2.5s, decomplete 1, 6 appends)
+  (1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.4s, decomplete 3, 6 appends)
+  (1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2)  -1/2*z3 + 55/12*z5 + 1/2*z3*z3 + -147/32*z7  (1.1s, decomplete 1, 6 appends)
+  (1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2)  1*z3 + -5/3*z5 + 1/2*z3*z3  (0.5s, decomplete 3, 6 appends)
+  (1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2, 1)  -35/12*z5 + -1*z3*z3 + 147/32*z7  (1.1s, decomplete 3, 6 appends)
+  (1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1)  -3/2*z3 + -5/2*z5 + 147/32*z7  (0.8s, decomplete 3, 5 appends)
+  (1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 2)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2)  no sequential plan
+  (1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1)  no sequential plan
+  (1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1)  no sequential plan
+V8_4 q=3: computed 7/19 orbits in 17.0s

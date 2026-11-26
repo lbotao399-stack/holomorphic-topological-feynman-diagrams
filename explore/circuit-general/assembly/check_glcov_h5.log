@@ -1,0 +1,2 @@
+bulk3_5 #30 order 2: det g = -2, 6962 values compared, 0 mismatches; bare {'1': '-74372538547/209018880000'} (41.3s)
+bulk3_5 #45 order 2: det g = -3, 6962 values compared, 0 mismatches; bare {'1': '443364781986157/57940033536000', 'z3': '-42843043/6985440'} (42.5s)

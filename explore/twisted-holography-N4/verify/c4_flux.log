@@ -1,0 +1,17 @@
+quadratic jets: multilinear coefficient = 2/(w1**3*w2*w3) ;  (N/24)*it = N/(12*w1**3*w2*w3) ; equals N/(12 w1^3 w2 w3): True
+   equals (N/24) d_w1^2 F coefficient: True
+   dictionary: {(2, 0, 0): 1/24} (times N)
+   residue against w1^2 dw1^dw2^dw3: coefficient of (w1w2w3)^-1 = N/12
+mixed jets z1w2,z1w3,z2w2,z2w3: multilinear coefficient = -4/(w1**3*w2*w3) ; (N/24)*it = -N/(6*w1**3*w2*w3) ; residue = -N/6
+   complementary 4-row minor for a0 = s1 z1w2 + s2 z1w3 + s3 z2w2 + s4 z2w3: (s1*s4 - s2*s3)**2 ; s1s2s3s4 coefficient: -2
+   probe p=(0, 1, 0) q=(0, 0, 1): v=p x q=[1, 0, 0], response = v^T Hess(f) v: True, coords [1, 0, 0, 0, 0, 0]
+   probe p=(0, 0, 1) q=(1, 0, 0): v=p x q=[0, 1, 0], response = v^T Hess(f) v: True, coords [0, 1, 0, 0, 0, 0]
+   probe p=(1, 0, 0) q=(0, 1, 0): v=p x q=[0, 0, 1], response = v^T Hess(f) v: True, coords [0, 0, 1, 0, 0, 0]
+   probe p=(0, 0, 1) q=(1, -1, 0): v=p x q=[1, 1, 0], response = v^T Hess(f) v: True, coords [1, 1, 0, 2, 0, 0]
+   probe p=(0, 1, 0) q=(-1, 0, 1): v=p x q=[1, 0, 1], response = v^T Hess(f) v: True, coords [1, 0, 1, 0, 2, 0]
+   probe p=(1, 0, 0) q=(0, 1, -1): v=p x q=[0, 1, 1], response = v^T Hess(f) v: True, coords [0, 1, 1, 0, 0, 2]
+six-direction response determinant (without N/24): 8  with (N/24) per row: N**6/23887872
+genus-two P on configuration: -a**2*b**2*c**4*d**4*e**4*q3**4/31104 ; equals claim: True
+   P invariant under 30 random slot permutations of a generic conserved 7-tuple: True
+   P coefficient = -1/31104 ; P-coeff * N * d_w3^4(f) * w3^2 = -N/(1296*w1*w2*w3**3) ; equals -N/(1296 w1 w2 w3^3): True
+   P has no s,t dependence: True ; P depends on q only via q3: True

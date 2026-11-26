@@ -1,0 +1,21 @@
+V3  BV Wick signs
+Part A: obstruction thetas, engine labelling, local order L' (externals first, then incident half-edges by (edge, end))
+  theta(1, 3, 3): edges [(0, 5), (0, 1), (1, 2), (2, 5), (0, 3), (3, 4), (4, 5)] ext [1, 2, 3, 4] ; sigma = -1 ; sigma*C_{L'} == W^Gamma (c3 strings), nonzero: [('so3', True, True), ('so4', True, True)]
+  theta(2, 2, 3): edges [(0, 1), (1, 5), (0, 2), (2, 5), (0, 3), (3, 4), (4, 5)] ext [1, 2, 3, 4] ; sigma = -1 ; sigma*C_{L'} == W^Gamma (c3 strings), nonzero: [('so3', True, True), ('so4', True, True)]
+  sigma_133 * sigma_223 = +1
+  |Aut theta(1, 3, 3)| (external legs unlabelled) = 4
+  |Aut theta(2, 2, 3)| (external legs unlabelled) = 4
+Part B: relabelling invariance of sigma*K*C, (H,T) = (2,1), so(4), mod sum p = 0 (own relabelling code)
+  theta(1, 3, 3): K_ref = -pi*(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/20 ; invariant under 5 random relabellings: [True, True, True, True, True] ; controls: orientation-blind pairs (smaller label first): [False, False, True, True, True] ; sigma dropped: [True, True, False, True, False]
+  theta(2, 2, 3): K_ref = pi*(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/30 ; invariant under 5 random relabellings: [True, True, True, True, True] ; controls: orientation-blind pairs (smaller label first): [True, False, False, False, False] ; sigma dropped: [False, False, False, True, True]
+Part C: Q_n graphs (local orders parsed from the source T-strings)
+  S2 (3,0):  sigma(box, A, B) = [1, 1, 1] ;  S2: box sign derived (eq-box-amp) +, kappa_A = kappa_B = +1/2 (eq-Q2, eq-kAkB)
+  six-d-Q3 (n=3): sigma/|Aut| = [-1/2, 1/2, -1, 1/8, -1/2] ; nilpotency (C7) kappa = [-1/2, 1/2, -1, 1/8, -1/2] ; equal: True
+  msym-odd rootN + arm tensor: sigma(133), sigma(223) = [-1, -1] ; nilpotency null space (k_A,k_B) = (1,1) (run-1 verified)
+Part D: rule-free relative sign: nilpotency-fixed Q_2 data acting on O_N = (1/6) f C C C vs K^eng W^Gamma
+  prod_j delta/delta C^{A_j} [(1/6) f C C C] = -f_{A1 A2 A3} (so(3), brute-force Grassmann): True
+  so3: [K^rootN X^arm] / [K^eng W] = [-1, -1] ; [K^S2lab X^S2] / [K^eng W] = [1, 1]
+       equal ratios for the two thetas (=> relative sign +1 of K W): rootN data True ; S2 data True
+  so4: [K^rootN X^arm] / [K^eng W] = [-1, -1] ; [K^S2lab X^S2] / [K^eng W] = [1, 1]
+       equal ratios for the two thetas (=> relative sign +1 of K W): rootN data True ; S2 data True
+  K^eng: 133 = -pi*(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/20 ; 223 = pi*(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/30

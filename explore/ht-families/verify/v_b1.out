@@ -1,0 +1,50 @@
+==========================================================================================
+G0 edges [(0, 4), (0, 5), (1, 4), (1, 5), (2, 4), (2, 5), (3, 4), (3, 5), (4, 5)] root 5
+  lambda [-6, -2, 2, 2, 4]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 48*pi**2/5 ; claim = 48*pi**2/5 ; equal: True  (0.4s)
+    V2 own QMC 2^15 x 16: 94.748202 +- 5.4e-12 ; claim 94.74820225 ; diff/err = -2.82 ; rel diff 1.6e-13 ; 2011 points exact  (17.7s)
+  lambda [2, 2, -3, -3, 1]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 36*pi**2/5 ; claim = 36*pi**2/5 ; equal: True  (0.4s)
+    V2 own QMC 2^15 x 16: 71.061152 +- 4.2e-12 ; claim 71.06115169 ; diff/err = -2.87 ; rel diff 1.7e-13 ; 2017 points exact  (17.7s)
+  lambda [4, -6, 5, 3, -1]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -72*pi**2 ; claim = -72*pi**2 ; equal: True  (0.4s)
+==========================================================================================
+G1 edges [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 2), (2, 3), (2, 5), (3, 4)] root 5
+  lambda [1, 2, 6, 7, 1]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -221*pi**2/15 ; claim = -221*pi**2/15 ; equal: True  (0.1s)
+    V2 own QMC 2^15 x 16: -145.41168 +- 0.00082 ; claim -145.4121715 ; diff/err = 0.59 ; rel diff 3.4e-06 ; 3904 points exact  (29.2s)
+  lambda [6, 2, -3, 4, 6]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -170*pi**2 ; claim = -170*pi**2 ; equal: True  (0.2s)
+    V2 own QMC 2^15 x 16: -1677.8291 +- 0.0077 ; claim -1677.832748 ; diff/err = 0.47 ; rel diff 2.2e-06 ; 3902 points exact  (29.2s)
+  lambda [6, -7, -7, 2, 1]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -203*pi**2/9 ; claim = -203*pi**2/9 ; equal: True  (0.1s)
+==========================================================================================
+G2 edges [(0, 1), (0, 2), (0, 4), (0, 5), (1, 2), (1, 3), (1, 4), (3, 4), (4, 5)] root 5
+  lambda [-5, -5, 4, 7, -5]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 0 ; claim = 0 ; equal: True  (0.1s)
+    V2 own QMC 2^15 x 16: 0.061780842 +- 0.057 ; claim 0 ; diff/err = 1.08 ; rel diff nan ; 7033 points exact  (51.9s)
+  lambda [-4, -6, 3, 5, -3]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 0 ; claim = 0 ; equal: True  (0.1s)
+    V2 own QMC 2^15 x 16: 0.024185981 +- 0.035 ; claim 0 ; diff/err = 0.69 ; rel diff nan ; 7024 points exact  (52.0s)
+  lambda [3, 7, -2, -2, 6]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 0 ; claim = 0 ; equal: True  (0.1s)
+==========================================================================================
+G3 edges [(0, 1), (0, 2), (0, 5), (1, 2), (1, 3), (1, 4), (1, 5), (3, 4), (4, 5)] root 5
+  lambda [-6, -6, -7, -5, 2]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -11543*pi**2/12 ; claim = -11543*pi**2/12 ; equal: True  (0.1s)
+    V2 own QMC 2^15 x 16: -9493.791 +- 0.024 ; claim -9493.736967 ; diff/err = -2.23 ; rel diff 5.7e-06 ; 3838 points exact  (31.1s)
+  lambda [6, 5, -2, -7, 4]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -217*pi**2/9 ; claim = -217*pi**2/9 ; equal: True  (0.1s)
+    V2 own QMC 2^15 x 16: -237.9708 +- 0.0065 ; claim -237.9671283 ; diff/err = -0.57 ; rel diff 1.5e-05 ; 3828 points exact  (31.4s)
+  lambda [2, 5, -3, -5, 5]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = -149*pi**2/12 ; claim = -149*pi**2/12 ; equal: True  (0.1s)
+==========================================================================================
+G4 edges [(0, 2), (0, 3), (0, 4), (0, 5), (1, 2), (1, 3), (2, 3), (3, 4), (4, 5)] root 5
+  lambda [2, -5, 5, 2, -7]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 13*pi**2/4 ; claim = 13*pi**2/4 ; equal: True  (1.6s)
+    V2 own QMC 2^15 x 16: 32.097096 +- 0.0078 ; claim 32.0762143 ; diff/err = 2.66 ; rel diff 6.5e-04 ; 3902 points exact  (32.5s)
+  lambda [-6, 6, 1, 6, -3]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 656*pi**2/3 ; claim = 656*pi**2/3 ; equal: True  (1.6s)
+    V2 own QMC 2^15 x 16: 2158.165 +- 0.017 ; claim 2158.153496 ; diff/err = 0.66 ; rel diff 5.3e-06 ; 3890 points exact  (32.7s)
+  lambda [-2, -5, 2, 6, -6]
+    V1 pointwise engine g == own brute force (4 pts): True ; own Dirichlet K = 325*pi**2/36 ; claim = 325*pi**2/36 ; equal: True  (1.4s)

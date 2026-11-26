@@ -1,0 +1,64 @@
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^0=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(0, 0) g=-2  dim V^eta=    1  H(V^eta)=1  pred=1  dim Q^1=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(0, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^2=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(0, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^3=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^4=0 (cochains; V^eta_0 = psi(Q): True)  OK
+    [0.0s]
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^0=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^1=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 0) g=-1  dim V^eta=    1  H(V^eta)=1  pred=1  dim Q^2=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^3=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^4=0 (cochains; V^eta_0 = psi(Q): True)  OK
+    [0.1s]
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 1) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^0=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 1) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^1=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 1) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^2=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 1) g= 0  dim V^eta=    1  H(V^eta)=1  pred=1  dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(1, 1) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^4=0 (cochains; V^eta_0 = psi(Q): True)  OK
+    [0.8s]
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(2, 1) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^0=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(2, 1) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^1=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(2, 1) g=-1  dim V^eta=    1  H(V^eta)=1  pred=1  dim Q^2=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(2, 1) g= 0  dim V^eta=    1  H(V^eta)=1  pred=1  dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  abelian1 V^eta w=(0, 0, 0)    (a,b)=(2, 1) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^4=0 (cochains; V^eta_0 = psi(Q): True)  OK
+    [3.2s]
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(0, 0) g=-2  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(0, 0) g=-1  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(0, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.1s]
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(0, 0) g=-2  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(0, 0) g=-1  dim V^eta=    2  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(0, 0) g= 0  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.4s]
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(1, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(1, 0) g=-1  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(1, 0) g= 0  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(1, 0, 0)    (a,b)=(1, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.5s]
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(1, 0) g=-3  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(1, 0) g=-2  dim V^eta=    3  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(1, 0) g=-1  dim V^eta=    4  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(1, 0) g= 0  dim V^eta=    3  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 1, 1)    (a,b)=(1, 0) g= 1  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+    [3.5s]
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(0, 0) g=-2  dim V^eta=    1  H(V^eta)=0  pred=0  dim Q^1=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(0, 0) g=-1  dim V^eta=    1  H(V^eta)=0  pred=0  dim Q^2=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(0, 0) g= 0  dim V^eta=    1  H(V^eta)=1  pred=1  dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)  OK
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^4=0 (cochains; V^eta_0 = psi(Q): True)  OK
+    [0.8s]
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  dim Q^1=0 (cochains; V^eta_0 = psi(Q): True)  OK
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(1, 0) g=-1  dim V^eta=    2  H(V^eta)=1  pred=1  dim Q^2=2 (cochains; V^eta_0 = psi(Q): True)  OK
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(1, 0) g= 0  dim V^eta=    2  H(V^eta)=0  pred=0  dim Q^3=2 (cochains; V^eta_0 = psi(Q): True)  OK
+  sl2      V^eta w=(0, 0, 0)    (a,b)=(1, 0) g= 1  dim V^eta=    1  H(V^eta)=0  pred=0  dim Q^4=1 (cochains; V^eta_0 = psi(Q): True)  OK
+    [10.3s]
+  sl2      V^eta w=(1, 0, 0)    (a,b)=(0, 0) g=-2  dim V^eta=    2  H(V^eta)=0  pred=0  OK
+  sl2      V^eta w=(1, 0, 0)    (a,b)=(0, 0) g=-1  dim V^eta=    4  H(V^eta)=0  pred=0  OK
+  sl2      V^eta w=(1, 0, 0)    (a,b)=(0, 0) g= 0  dim V^eta=    3  H(V^eta)=0  pred=0  OK
+  sl2      V^eta w=(1, 0, 0)    (a,b)=(0, 0) g= 1  dim V^eta=    1  H(V^eta)=0  pred=0  OK
+    [6.9s]
+case eta: all checks passed: True   total 26.6s

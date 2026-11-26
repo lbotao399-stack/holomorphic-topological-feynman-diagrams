@@ -1,0 +1,4 @@
+q=8 unknowns 19807 rows 181451 {'T': 0, 'D': 173306, 'I': 0, 'B': 8145, 'S': 0}  415.2s  maxrss 0.38 GB
+rank 19807 of 19807 unknowns, determined 19807  285.8s
+K33 q=8: determined 19807 of 19807 (701.1s, maxrss 0.54 GB)
+  compared with existing table: 0 differences

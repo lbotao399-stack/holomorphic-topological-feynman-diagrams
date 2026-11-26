@@ -1,0 +1,1 @@
+prism SA=1/3 SB=2/5 h=0.8 tol=1e-06 m=3: K(shift 0) = -1.2188322808e-04  K(shift h/2) = -1.2188327886e-04  points 438351 440457  sub-threshold 1.36e-08  time 136s

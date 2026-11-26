@@ -1,0 +1,9 @@
+n=2 point 0: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = -10086/319 * sqrt(7656/68921)
+n=2 point 1: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = -15129/245 * sqrt(4410/68921)
+n=2 point 2: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = -5043/8 * sqrt(800/68921)
+n=4 point 0: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = 16038/119 * sqrt(218312640/194754273881)
+n=4 point 1: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = 46/51 * sqrt(174420000/194754273881)
+n=4 point 2: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = 40425/152 * sqrt(24275160/194754273881)
+n=6 point 0: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = -114122531250/90251980579 * sqrt(8769930624000/550329031716248441)
+n=6 point 1: sign(det[t;dt/dr]) = -1; P0-P4 hold; g_11 = -4399821296640000/61751355133 * sqrt(11687339664000/550329031716248441)
+all pointwise identities hold

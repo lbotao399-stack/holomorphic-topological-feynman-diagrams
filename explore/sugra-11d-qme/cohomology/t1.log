@@ -1,0 +1,45 @@
+T1 (t1_checks.py)
+Q^2 = 0 on generators phi_a, all types, |a| <= maxord; Q X^i = sX X^j d_j X^i
+  n=1 |a|<=3 sX=-1 : generators 16, Q^2 != 0 on 0
+  n=1 |a|<=3 sX=+1 : generators 16, Q^2 != 0 on 4
+     Q^2(nu) = +2 X1*X1_2 -2 X1*X1_1*nu_1 -2 X1*X1_2*nu
+     Q^2(nu_1) = +2 X1*X1_3 +2 X1_1*X1_2 -2 X1*X1_1*nu_2 -4 X1*X1_2*nu_1 -2 X1*nu*X1_3 -2 X1_1*X1_2*nu
+     Q^2(nu_2) = +2 X1*X1_4 +4 X1_1*X1_3 -2 X1*X1_1*nu_3 -6 X1*X1_2*nu_2 -2 X1*nu*X1_4 -6 X1*nu_1*X1_3 ... (8 terms)
+     Q^2(nu_3) = +2 X1*X1_5 +6 X1_1*X1_4 +4 X1_2*X1_3 -2 X1*X1_1*nu_4 -8 X1*X1_2*nu_3 -2 X1*nu*X1_5 ... (12 terms)
+  n=2 |a|<=3 sX=-1 : generators 60, Q^2 != 0 on 0
+  n=2 |a|<=3 sX=+1 : generators 60, Q^2 != 0 on 40
+     Q^2(nu) = +2 X1*X1_20 +2 X1*X2_11 +2 X2*X1_11 +2 X2*X2_02 -2 X1*X1_10*nu_10 -2 X1*X1_20*nu ... (12 terms)
+     Q^2(g1) = -2 X1*X2_10*g1_01 +2 X1*X2_10*g2_10 -2 X2*X2_01*g1_01 +2 X2*X2_01*g2_10
+     Q^2(g2) = +2 X1*X1_10*g1_01 -2 X1*X1_10*g2_10 +2 X2*X1_01*g1_01 -2 X2*X1_01*g2_10
+     Q^2(b) = -2 X1*X1_10*X2*g1_01 +2 X1*X1_10*X2*g2_10 +2 X1*X2*X2_01*g1_01 -2 X1*X2*X2_01*g2_10
+  n=3 |a|<=3 sX=-1 : generators 160, Q^2 != 0 on 0
+  n=3 |a|<=3 sX=+1 : generators 160, Q^2 != 0 on 100
+     Q^2(nu) = +2 X1*X1_200 +2 X1*X2_110 +2 X1*X3_101 +2 X2*X1_110 +2 X2*X2_020 +2 X2*X3_011 ... (27 terms)
+     Q^2(g1) = -2 X1*X2_100*g1_010 +2 X1*X2_100*g2_100 -2 X1*X3_100*g1_001 +2 X1*X3_100*g3_100 -2 X2*X2_010*g1_010 +2 X2*X2_010*g2_100 ... (12 terms)
+     Q^2(g2) = +2 X1*X1_100*g1_010 -2 X1*X1_100*g2_100 -2 X1*X3_100*g2_001 +2 X1*X3_100*g3_010 +2 X2*X1_010*g1_010 -2 X2*X1_010*g2_100 ... (12 terms)
+     Q^2(g3) = +2 X1*X1_100*g1_001 -2 X1*X1_100*g3_100 +2 X1*X2_100*g2_001 -2 X1*X2_100*g3_010 +2 X2*X1_010*g1_001 -2 X2*X1_010*g3_100 ... (12 terms)
+  n=5 |a|<=1 sX=-1 : generators 72, Q^2 != 0 on 0
+  n=5 |a|<=1 sX=+1 : generators 72, Q^2 != 0 on 42
+     Q^2(nu) = +2 X1*X1_20000 +2 X1*X2_11000 +2 X1*X3_10100 +2 X1*X4_10010 +2 X1*X5_10001 +2 X2*X1_11000 ... (75 terms)
+     Q^2(g1) = -2 X1*X2_10000*g1_01000 +2 X1*X2_10000*g2_10000 -2 X1*X3_10000*g1_00100 +2 X1*X3_10000*g3_10000 -2 X1*X4_10000*g1_00010 +2 X1*X4_10000*g4_10000 ... (40 terms)
+     Q^2(g2) = +2 X1*X1_10000*g1_01000 -2 X1*X1_10000*g2_10000 -2 X1*X3_10000*g2_00100 +2 X1*X3_10000*g3_01000 -2 X1*X4_10000*g2_00010 +2 X1*X4_10000*g4_01000 ... (40 terms)
+     Q^2(g3) = +2 X1*X1_10000*g1_00100 -2 X1*X1_10000*g3_10000 +2 X1*X2_10000*g2_00100 -2 X1*X2_10000*g3_01000 -2 X1*X4_10000*g3_00010 +2 X1*X4_10000*g4_00100 ... (40 terms)
+gradings (sX=-1): Q preserves w, G, t, raises N=#X+#beta by 1, arity >= 1; letter types of arity-1 terms of Q:
+  n=1 |a|<=3 : True ; arity-preserving terms: {'n': ['X'], 'g': ['b']}
+  n=2 |a|<=3 : True ; arity-preserving terms: {'n': ['X'], 'g': ['b']}
+  n=3 |a|<=3 : True ; arity-preserving terms: {'n': ['X'], 'g': ['b']}
+  n=5 |a|<=1 : True ; arity-preserving terms: {'n': ['X'], 'g': ['b']}
+dg ideal: Q(d^a div X) reduces to 0 modulo the div ideal (X-subalgebra), |a|<=3:
+  n=1 : True
+  n=2 : True
+  n=3 : True
+  n=5 (|a|<=1) : True
+substitution (exact): Q_strict(D^a((1-nu)X^i)) == -D^a D_j((1-nu) X^j X^i):
+  n=2 |a|<=2 sX=-1 : True (12 checks)
+  n=2 |a|<=2 sX=+1 : False (12 checks)
+  n=3 |a|<=2 sX=-1 : True (30 checks)
+  n=3 |a|<=2 sX=+1 : False (30 checks)
+substitution (series): Q_source(psi phi_a) == psi(Q_strict phi_a) mod nu-degree > 2, psi(X)=f mu, f=sum_{k<=4} nu^k:
+  n=2 |a|<=2 : True (36 generators)
+  n=3 |a|<=2 : True (80 generators)
+time 0.4 s

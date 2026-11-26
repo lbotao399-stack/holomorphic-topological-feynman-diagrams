@@ -1,0 +1,6 @@
+weight (4, 4) sl dim C2,C3,C4 = 0 9 87 t=286.0
+rank d2 = 0
+rank d3 = 9
+rank d4 = 77 t=379.9
+H3 = 0  H4 = 1
+done

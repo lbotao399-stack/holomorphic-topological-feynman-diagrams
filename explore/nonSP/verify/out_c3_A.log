@@ -1,0 +1,3 @@
+K4[1,1,1,1,3,3] h=0.80 tol=1e-09  K(shift0)=7.949092625444e-06  K(shift h/2)=7.949092918987e-06  claim=7.949093733527e-06  rel dev -1.39e-07 -1.02e-07  boundary-layer mass 2.5e-12  pts 7885391  345s
+K4[1,1,1,2,2,3]a h=0.80 tol=1e-09  K(shift0)=-1.286007948236e-05  K(shift h/2)=-1.286007973335e-05  claim=-1.286008230453e-05  rel dev -2.19e-07 -2.00e-07  boundary-layer mass 4.5e-12  pts 5984903  295s
+K4[1,1,1,2,2,3]b h=0.80 tol=1e-09  K(shift0)=-7.189565615267e-06  K(shift h/2)=-7.189565738186e-06  claim=-7.189567442895e-06  rel dev -2.54e-07 -2.37e-07  boundary-layer mass 3.2e-12  pts 6219614  326s

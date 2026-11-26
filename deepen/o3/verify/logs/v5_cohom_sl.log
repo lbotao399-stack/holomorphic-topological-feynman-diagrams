@@ -1,0 +1,87 @@
+faithful ranks: {(3, 2): 1, (3, 3): 2, (3, 4): 8, (3, 5): 32, (4, 2): 1, (4, 3): 2, (4, 4): 9, (4, 5): 43, (5, 2): 1, (5, 3): 2, (5, 4): 9, (5, 5): 44, (7, 2): 1, (7, 3): 2, (7, 4): 9, (7, 5): 44, (11, 2): 1, (11, 3): 2, (11, 4): 9, (11, 5): 44}
+== full complex ==
+  full deg (2, 2) N=3: dim C^2,C^3,C^4 = 0,3,14; rank d2,d3,d4 = 0,3,10 (mod p: 0,3,10); H^3 = 0, H^4 = 1
+  full deg (2, 2) N=4: dim C^2,C^3,C^4 = 0,3,15; rank d2,d3,d4 = 0,3,11 (mod p: 0,3,11); H^3 = 0, H^4 = 1
+  full deg (2, 2) N=5: dim C^2,C^3,C^4 = 0,3,15; rank d2,d3,d4 = 0,3,11 (mod p: 0,3,11); H^3 = 0, H^4 = 1
+  full deg (2, 2) N=7: dim C^2,C^3,C^4 = 0,3,15; rank d2,d3,d4 = 0,3,11 (mod p: 0,3,11); H^3 = 0, H^4 = 1
+  full deg (2, 2) N=11: dim C^2,C^3,C^4 = 0,3,15; rank d2,d3,d4 = 0,3,11 (mod p: 0,3,11); H^3 = 0, H^4 = 1
+  full deg (3, 3) N=3: dim C^2,C^3,C^4 = 0,6,35; rank d2,d3,d4 = 0,6,28 (mod p: 0,6,28); H^3 = 0, H^4 = 1
+  full deg (3, 3) N=4: dim C^2,C^3,C^4 = 0,6,39; rank d2,d3,d4 = 0,6,32 (mod p: 0,6,32); H^3 = 0, H^4 = 1
+  full deg (3, 3) N=5: dim C^2,C^3,C^4 = 0,6,39; rank d2,d3,d4 = 0,6,32 (mod p: 0,6,32); H^3 = 0, H^4 = 1
+  full deg (3, 3) N=7: dim C^2,C^3,C^4 = 0,6,39; rank d2,d3,d4 = 0,6,32 (mod p: 0,6,32); H^3 = 0, H^4 = 1
+  full deg (3, 3) N=11: dim C^2,C^3,C^4 = 0,6,39; rank d2,d3,d4 = 0,6,32 (mod p: 0,6,32); H^3 = 0, H^4 = 1
+== C-odd / C-even subcomplexes, weight (3,3) ==
+  C=-1 deg (3, 3) N=3: dim C^2,C^3,C^4 = 0,3,13; rank d2,d3,d4 = 0,3,10 (mod p: 0,3,10); H^3 = 0, H^4 = 0
+  C=-1 deg (3, 3) N=4: dim C^2,C^3,C^4 = 0,3,13; rank d2,d3,d4 = 0,3,10 (mod p: 0,3,10); H^3 = 0, H^4 = 0
+  C=-1 deg (3, 3) N=5: dim C^2,C^3,C^4 = 0,3,13; rank d2,d3,d4 = 0,3,10 (mod p: 0,3,10); H^3 = 0, H^4 = 0
+  C=-1 deg (3, 3) N=7: dim C^2,C^3,C^4 = 0,3,13; rank d2,d3,d4 = 0,3,10 (mod p: 0,3,10); H^3 = 0, H^4 = 0
+  C=-1 deg (3, 3) N=11: dim C^2,C^3,C^4 = 0,3,13; rank d2,d3,d4 = 0,3,10 (mod p: 0,3,10); H^3 = 0, H^4 = 0
+  C=+1 deg (3, 3) N=3: dim C^2,C^3,C^4 = 0,3,22; rank d2,d3,d4 = 0,3,18 (mod p: 0,3,18); H^3 = 0, H^4 = 1
+  C=+1 deg (3, 3) N=4: dim C^2,C^3,C^4 = 0,3,26; rank d2,d3,d4 = 0,3,22 (mod p: 0,3,22); H^3 = 0, H^4 = 1
+  C=+1 deg (3, 3) N=5: dim C^2,C^3,C^4 = 0,3,26; rank d2,d3,d4 = 0,3,22 (mod p: 0,3,22); H^3 = 0, H^4 = 1
+  C=+1 deg (3, 3) N=7: dim C^2,C^3,C^4 = 0,3,26; rank d2,d3,d4 = 0,3,22 (mod p: 0,3,22); H^3 = 0, H^4 = 1
+  C=+1 deg (3, 3) N=11: dim C^2,C^3,C^4 = 0,3,26; rank d2,d3,d4 = 0,3,22 (mod p: 0,3,22); H^3 = 0, H^4 = 1
+== SL2-invariant subcomplex ==
+  SL2-inv deg (3, 3) N=3: dim C^2,C^3,C^4 = 0,1,2; rank d2,d3,d4 = 0,1,1 (mod p: 0,1,1); H^3 = 0, H^4 = 0
+  SL2-inv deg (3, 3) N=4: dim C^2,C^3,C^4 = 0,1,3; rank d2,d3,d4 = 0,1,2 (mod p: 0,1,2); H^3 = 0, H^4 = 0
+  SL2-inv deg (3, 3) N=5: dim C^2,C^3,C^4 = 0,1,3; rank d2,d3,d4 = 0,1,2 (mod p: 0,1,2); H^3 = 0, H^4 = 0
+  SL2-inv deg (3, 3) N=7: dim C^2,C^3,C^4 = 0,1,3; rank d2,d3,d4 = 0,1,2 (mod p: 0,1,2); H^3 = 0, H^4 = 0
+  SL2-inv deg (3, 3) N=11: dim C^2,C^3,C^4 = 0,1,3; rank d2,d3,d4 = 0,1,2 (mod p: 0,1,2); H^3 = 0, H^4 = 0
+  SL2-inv C=-1 deg (3, 3) N=3: dim C^2,C^3,C^4 = 0,1,1; rank d2,d3,d4 = 0,1,0 (mod p: 0,1,0); H^3 = 0, H^4 = 0
+  SL2-inv C=-1 deg (3, 3) N=4: dim C^2,C^3,C^4 = 0,1,1; rank d2,d3,d4 = 0,1,0 (mod p: 0,1,0); H^3 = 0, H^4 = 0
+  SL2-inv C=-1 deg (3, 3) N=5: dim C^2,C^3,C^4 = 0,1,1; rank d2,d3,d4 = 0,1,0 (mod p: 0,1,0); H^3 = 0, H^4 = 0
+  SL2-inv C=-1 deg (3, 3) N=7: dim C^2,C^3,C^4 = 0,1,1; rank d2,d3,d4 = 0,1,0 (mod p: 0,1,0); H^3 = 0, H^4 = 0
+  SL2-inv C=-1 deg (3, 3) N=11: dim C^2,C^3,C^4 = 0,1,1; rank d2,d3,d4 = 0,1,0 (mod p: 0,1,0); H^3 = 0, H^4 = 0
+  SL2-inv C=+1 deg (3, 3) N=3: dim C^2,C^3,C^4 = 0,0,1; rank d2,d3,d4 = 0,0,1 (mod p: 0,0,1); H^3 = 0, H^4 = 0
+  SL2-inv C=+1 deg (3, 3) N=4: dim C^2,C^3,C^4 = 0,0,2; rank d2,d3,d4 = 0,0,2 (mod p: 0,0,2); H^3 = 0, H^4 = 0
+  SL2-inv C=+1 deg (3, 3) N=5: dim C^2,C^3,C^4 = 0,0,2; rank d2,d3,d4 = 0,0,2 (mod p: 0,0,2); H^3 = 0, H^4 = 0
+  SL2-inv C=+1 deg (3, 3) N=7: dim C^2,C^3,C^4 = 0,0,2; rank d2,d3,d4 = 0,0,2 (mod p: 0,0,2); H^3 = 0, H^4 = 0
+  SL2-inv C=+1 deg (3, 3) N=11: dim C^2,C^3,C^4 = 0,0,2; rank d2,d3,d4 = 0,0,2 (mod p: 0,0,2); H^3 = 0, H^4 = 0
+== H^4 at the other bidegrees of total degree 6 (SL2 structure) ==
+  deg (4, 2) N=3: dim C^4 33, rank d3 5, rank d4 27, H^4 = 1
+  deg (4, 2) N=4: dim C^4 36, rank d3 5, rank d4 30, H^4 = 1
+  deg (4, 2) N=5: dim C^4 36, rank d3 5, rank d4 30, H^4 = 1
+  deg (4, 2) N=7: dim C^4 36, rank d3 5, rank d4 30, H^4 = 1
+  deg (4, 2) N=11: dim C^4 36, rank d3 5, rank d4 30, H^4 = 1
+  deg (5, 1) N=3: dim C^4 22, rank d3 4, rank d4 18, H^4 = 0
+  deg (5, 1) N=4: dim C^4 24, rank d3 4, rank d4 20, H^4 = 0
+  deg (5, 1) N=5: dim C^4 24, rank d3 4, rank d4 20, H^4 = 0
+  deg (5, 1) N=7: dim C^4 24, rank d3 4, rank d4 20, H^4 = 0
+  deg (5, 1) N=11: dim C^4 24, rank d3 4, rank d4 20, H^4 = 0
+  deg (6, 0) N=3: dim C^4 11, rank d3 3, rank d4 8, H^4 = 0
+  deg (6, 0) N=4: dim C^4 12, rank d3 3, rank d4 9, H^4 = 0
+  deg (6, 0) N=5: dim C^4 12, rank d3 3, rank d4 9, H^4 = 0
+  deg (6, 0) N=7: dim C^4 12, rank d3 3, rank d4 9, H^4 = 0
+  deg (6, 0) N=11: dim C^4 12, rank d3 3, rank d4 9, H^4 = 0
+== classes at (3,3) ==
+  N=3 theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=3 {D,iota}: nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=3 o_3' = {D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=3 -{D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=3: dim Z^4 = 7 (kernel vectors exactly closed: True), rank B^4 = 6 -> H^4 = 1;  generator h: h - Ch in B^4: True, h + Ch in B^4: False
+      h's momentum polynomials SL2-invariant (E h = 0 as cochain): False
+  N=4 theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=4 {D,iota}: nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=4 o_3' = {D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=4 -{D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=4: dim Z^4 = 7 (kernel vectors exactly closed: True), rank B^4 = 6 -> H^4 = 1;  generator h: h - Ch in B^4: True, h + Ch in B^4: False
+      h's momentum polynomials SL2-invariant (E h = 0 as cochain): False
+  N=5 theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=5 {D,iota}: nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=5 o_3' = {D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=5 -{D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=5: dim Z^4 = 7 (kernel vectors exactly closed: True), rank B^4 = 6 -> H^4 = 1;  generator h: h - Ch in B^4: True, h + Ch in B^4: False
+      h's momentum polynomials SL2-invariant (E h = 0 as cochain): False
+  N=7 theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=7 {D,iota}: nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=7 o_3' = {D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=7 -{D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=7: dim Z^4 = 7 (kernel vectors exactly closed: True), rank B^4 = 6 -> H^4 = 1;  generator h: h - Ch in B^4: True, h + Ch in B^4: False
+      h's momentum polynomials SL2-invariant (E h = 0 as cochain): False
+  N=11 theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=11 {D,iota}: nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=11 o_3' = {D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=11 -{D,iota}+theta': nonzero True, closed True, rank[B^4|c] = 6, rank B^4 = 6 -> exact: True
+  N=11: dim Z^4 = 7 (kernel vectors exactly closed: True), rank B^4 = 6 -> H^4 = 1;  generator h: h - Ch in B^4: True, h + Ch in B^4: False
+      h's momentum polynomials SL2-invariant (E h = 0 as cochain): False
+time 569.5s

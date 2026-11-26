@@ -1,0 +1,12 @@
+  sl2      w=(0, 0, -1)   (a,b)=(1, 1) g= 2  dim M=   395 rkD=229 rkQbar=124  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+  sl2      w=(0, 0, -1)   (a,b)=(1, 1) g= 3  dim M=   646 rkD=328 rkQbar=193  H(V)=1 [modp 1 1]  pred H^5(Q)=1  OK
+      psi_S, S=3: dim Z^5(Q)=3, psi(Z) closed in V: True, rank increase over B^3(V) = 1 (= H): True
+    [1.7s]
+  sl2      w=(-1, -1, -1) (a,b)=(1, 1) g= 4  dim M=     8 rkD=2 rkQbar=2  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+  sl2      w=(-1, -1, -1) (a,b)=(1, 1) g= 5  dim M=     3 rkD=0 rkQbar=0  H(V)=1 [modp 1 1]  pred H^5(Q)=1  OK
+      psi_S, S=0: dim Z^5(Q)=3, psi(Z) closed in V: True, rank increase over B^5(V) = 1 (= H): True
+    [0.0s]
+  sl2      w=(0, 0, 0)    (a,b)=(1, 1) g= 2  dim M=  4291 rkD=2373 rkQbar=1342  H(V)=1 [modp 1 1]  pred H^5(Q)=1  OK
+      psi_S, S=7: dim Z^5(Q)=3, psi(Z) closed in V: True, rank increase over B^2(V) = 1 (= H): True
+    [513.2s]
+case sl2d: all checks passed: True   total 514.9s

@@ -1,0 +1,22 @@
+(0,1) bananas, root = vertex 1 at 0, edges 0 -> 1:
+  banana(3), n=2, eps=0.30: position integral 0.250000000000000 ; K_htk = 1*pi, vs_ext*s1*s2 = +1, prediction 0.250000000000000 ; digits 15.7
+  banana(3), n=2, eps=0.01: position integral 0.250000000000000 ; K_htk = 1*pi, vs_ext*s1*s2 = +1, prediction 0.250000000000000 ; digits 15.7
+  banana(5), n=4, eps=0.30: position integral 0.062500000000000 ; K_htk = 1*pi^2, vs_ext*s1*s2 = +1, prediction 0.062500000000000 ; digits 15.7
+  banana(5), n=4, eps=0.01: position integral 0.062500000000000 ; K_htk = 1*pi^2, vs_ext*s1*s2 = +1, prediction 0.062500000000000 ; digits 15.4
+(1,0) bananas, root = vertex 1 at 0, edges 0 -> 1, plane wave e^{lam z} at vertex 0:
+  banana(2), n=1, lam=(0.8+0.3j), eps=0.20: position integral (-0.0477464829276+0.1273239544735j) ; K_htk(lam) = l, vs_ext*s1*s2 = +1, prediction (-0.0477464829276+0.1273239544735j) ; digits 15.4
+      control without s1: prediction (0.0477464829276-0.1273239544735j) ; |val - pred|/|pred| = 2.00e+00
+  banana(2), n=1, lam=(0.8+0.3j), eps=0.05: position integral (-0.0477464829276+0.1273239544735j) ; K_htk(lam) = l, vs_ext*s1*s2 = +1, prediction (-0.0477464829276+0.1273239544735j) ; digits 15.4
+      control without s1: prediction (0.0477464829276-0.1273239544735j) ; |val - pred|/|pred| = 2.00e+00
+  banana(2), n=1, lam=(-0.5+1.1j), eps=0.20: position integral (-0.1750704374011-0.0795774715459j) ; K_htk(lam) = l, vs_ext*s1*s2 = +1, prediction (-0.1750704374011-0.0795774715459j) ; digits 15.8
+      control without s1: prediction (0.1750704374011+0.0795774715459j) ; |val - pred|/|pred| = 2.00e+00
+  banana(2), n=1, lam=(-0.5+1.1j), eps=0.05: position integral (-0.1750704374011-0.0795774715459j) ; K_htk(lam) = l, vs_ext*s1*s2 = +1, prediction (-0.1750704374011-0.0795774715459j) ; digits 15.8
+      control without s1: prediction (0.1750704374011+0.0795774715459j) ; |val - pred|/|pred| = 2.00e+00
+  banana(3), n=2, lam=(0.8+0.3j), eps=0.20: position integral (-0.0069658313754-0.0060792710185j) ; K_htk(lam) = l**2/2, vs_ext*s1*s2 = +1, prediction (-0.0069658313754-0.0060792710185j) ; digits 15.2
+      control without s1: prediction (-0.0069658313754-0.0060792710185j) ; |val - pred|/|pred| = 6.01e-16
+  banana(3), n=2, lam=(0.8+0.3j), eps=0.05: position integral (-0.0069658313754-0.0060792710185j) ; K_htk(lam) = l**2/2, vs_ext*s1*s2 = +1, prediction (-0.0069658313754-0.0060792710185j) ; digits 15.2
+      control without s1: prediction (-0.0069658313754-0.0060792710185j) ; |val - pred|/|pred| = 6.29e-16
+  banana(3), n=2, lam=(-0.5+1.1j), eps=0.20: position integral (0.0121585420371+0.0139316627508j) ; K_htk(lam) = l**2/2, vs_ext*s1*s2 = +1, prediction (0.0121585420371+0.0139316627508j) ; digits 15.4
+      control without s1: prediction (0.0121585420371+0.0139316627508j) ; |val - pred|/|pred| = 4.20e-16
+  banana(3), n=2, lam=(-0.5+1.1j), eps=0.05: position integral (0.0121585420371+0.0139316627508j) ; K_htk(lam) = l**2/2, vs_ext*s1*s2 = +1, prediction (0.0121585420371+0.0139316627508j) ; digits 15.2
+      control without s1: prediction (0.0121585420371+0.0139316627508j) ; |val - pred|/|pred| = 5.93e-16

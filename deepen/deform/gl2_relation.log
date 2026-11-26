@@ -1,0 +1,1 @@
+2x2: tr(X{Y,Z}) = trX tr(YZ) + trY tr(XZ) + trZ tr(XY) - trX trY trZ on 20 random integer triples (exact integers): True

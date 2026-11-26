@@ -1,0 +1,49 @@
+T4 operator identities (t4_homotopy.py); Q with s_X = -1
+n=2 C_full: 60 generators |a|<=3 + 150 random monomials
+   [Q,D_k]=0                                     True
+   [Q,iota_k+h_k]=+D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=+D_k, h_k beta=-1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=-1 gamma_k      True
+   [eta_k,eta_l]=0                               True
+   [eta_k,D_l]=0                                 True
+n=2 C_quot: 44 generators |a|<=3 + 150 random monomials
+   [Q,D_k]=0                                     True
+   [Q,iota_k+h_k]=+D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=+D_k, h_k beta=-1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=-1 gamma_k      True
+   [eta_k,eta_l]=0                               True
+   [eta_k,D_l]=0                                 True
+   eta_k(ideal) in ideal                         True
+   D_k(ideal) in ideal                           True
+n=3 C_full: 160 generators |a|<=3 + 150 random monomials
+   [Q,D_k]=0                                     True
+   [Q,iota_k+h_k]=+D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=+D_k, h_k beta=-1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=-1 gamma_k      True
+   [eta_k,eta_l]=0                               True
+   [eta_k,D_l]=0                                 True
+n=3 C_quot: 130 generators |a|<=3 + 150 random monomials
+   [Q,D_k]=0                                     True
+   [Q,iota_k+h_k]=+D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=+1 gamma_k      False
+   [Q,iota_k+h_k]=+D_k, h_k beta=-1 gamma_k      False
+   [Q,iota_k+h_k]=-D_k, h_k beta=-1 gamma_k      True
+   [eta_k,eta_l]=0                               True
+   [eta_k,D_l]=0                                 True
+   eta_k(ideal) in ideal                         True
+   D_k(ideal) in ideal                           True
+n=2 C_quot gl_n Cartan: 44 generators + 150 random monomials
+   [Q, iota_xi + h_xi] = -E_ba, xi = z^b d_a (a!=b)        False
+   [Q, iota_xi + h_xi] = +E_ba, xi = z^b d_a (a!=b)        True
+   [Q, E_ab] = 0 (a!=b)                                    True
+   [Q, iota_c + h_c] = -(c.t) Id, c = e_a - e_b            False
+   [Q, iota_c + h_c] = +(c.t) Id, c = e_a - e_b            True
+n=3 C_quot gl_n Cartan: 130 generators + 150 random monomials
+   [Q, iota_xi + h_xi] = -E_ba, xi = z^b d_a (a!=b)        False
+   [Q, iota_xi + h_xi] = +E_ba, xi = z^b d_a (a!=b)        True
+   [Q, E_ab] = 0 (a!=b)                                    True
+   [Q, iota_c + h_c] = -(c.t) Id, c = e_a - e_b            False
+   [Q, iota_c + h_c] = +(c.t) Id, c = e_a - e_b            True

@@ -1,0 +1,59 @@
+(D,n) = 2,4 13 graphs
+  core K33      class B   : 1
+  core K4       class B   : 4
+  core SP       class SP  : 5
+  core W4       class B   : 2
+  core prism    class B   : 1
+  K33      indices [12]
+  K4       indices [4, 5, 6, 8]
+  SP       indices [0, 1, 2, 3, 7]
+  W4       indices [9, 10]
+  prism    indices [11]
+(D,n) = 2,5 70 graphs
+  core K33      class B   : 1
+  core K33+e    class B   : 3
+  core K4       class B   : 15
+  core K4       class R1  : 5
+  core K4+K4    class B   : 2
+  core K5-e     class B   : 3
+  core K5-e     class R2  : 2
+  core SP       class SP  : 12
+  core V7_0     class B   : 1
+  core V7_1     class B   : 1
+  core V7_2     class B   : 1
+  core V7_3     class B   : 1
+  core W4       class B   : 12
+  core W4       class R1  : 1
+  core W5       class B   : 2
+  core Z5       class B   : 6
+  core prism    class B   : 2
+  K33      indices [63]
+  K33+e    indices [57, 61, 65]
+  K4       indices [7, 8, 9, 10, 12, 14, 15, 16, 17, 20, 22, 25, 27, 28, 30, 34, 40, 43, 46, 60]
+  K4+K4    indices [55, 64]
+  K5-e     indices [32, 37, 39, 42, 44]
+  SP       indices [0, 1, 2, 3, 4, 5, 6, 11, 13, 18, 24, 38]
+  V7_0     indices [66]
+  V7_1     indices [69]
+  V7_2     indices [68]
+  V7_3     indices [67]
+  W4       indices [19, 21, 23, 26, 29, 31, 33, 35, 36, 41, 47, 52, 59]
+  W5       indices [45, 48]
+  Z5       indices [49, 50, 51, 53, 54, 58]
+  prism    indices [56, 62]
+(D,n) = 3,4 230 graphs
+  core K33      class R2  : 8
+  core K33      class R3  : 3
+  core K4       class B   : 11
+  core K4       class R1  : 72
+  core SP       class SP  : 66
+  core W4       class R1  : 14
+  core W4       class R2  : 28
+  core prism    class R1  : 3
+  core prism    class R2  : 23
+  core prism    class R3  : 2
+  K33      indices [219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229]
+  K4       indices [38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 183, 184, 185, 186, 187, 188, 189, 190]
+  SP       indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 180, 181, 182]
+  W4       indices [138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179]
+  prism    indices [191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218]

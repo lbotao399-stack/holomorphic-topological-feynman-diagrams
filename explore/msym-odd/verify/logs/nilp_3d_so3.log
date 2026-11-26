@@ -1,0 +1,5 @@
+3d, so3 (dim 3), H=1, k=3, graphs ['122'], signs s = [-1], mutate=None
+   122: K(lam;0)/pi weights for undifferentiated letters: {((1,), (1,)): '-1/3'}
+Q0hat^2 = 0 on 8 random operators: True (0.0s)
+TOTAL: 1500 operators, 269 with some Q_G O != 0: all anticommutators vanish
+total 2.9s

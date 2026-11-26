@@ -1,0 +1,10 @@
+(1) alt((1/3)(p1a^2 p2b^2 - p1a p1b p2a p2b) f) == [p1p2]^2 f: True
+    alt((1/3)(p1a^3 p2b^3 - 3 p1a^2 p1b p2a p2b^2) d) == [p1p2]^3 d: True
+(2) gl_3: d([p1p2]^3 d) == sum_{i<j} (-1)^{i+j}[p_k p_l]^3 tr([X_i,X_j]{X_k,X_l}) at 6 random points: True (nonzero values: True)
+(2) sl_3: d([p1p2]^3 d) == sum_{i<j} (-1)^{i+j}[p_k p_l]^3 tr([X_i,X_j]{X_k,X_l}) at 6 random points: True (nonzero values: True)
+(3) a^2 = N**2*U*epsilon/(256*pi**4) ; i_2 = (U*epsilon*(3*N**2 + 10)/(1280*pi**4)) [p1p2]^2 f ; i_3 = (U*a*epsilon*(2*N**2 + 5)/(1920*pi**4)) [p1p2]^3 d ; theta = (N**2*U*a/(3840*pi**4)) d([p1p2]^3 d)
+    a^2 eta_N + eps zeta, eta_N = ((N^2+4)/(2N^2)) u2f, zeta = -(pi nu N^2/40) u2f:  coefficient U*epsilon*(3*N**2 + 10)/(1280*pi**4) == U*epsilon*(3*N**2 + 10)/(1280*pi**4): True
+    eps = U (U^2 = 1):  a^2 = N**2/(256*pi**4) ; i_2 coefficient (3*N**2 + 10)/(1280*pi**4) ; i_3 coefficient a*(2*N**2 + 5)/(1920*pi**4) ; theta coefficient N**2*U*a/(3840*pi**4)
+    N = 3: a^2 = 9/(256*pi**4), i_2 coefficient 37/(1280*pi**4), i_3 coefficient / a 23/(1920*pi**4)
+    N = 4: a^2 = 1/(16*pi**4), i_2 coefficient 29/(640*pi**4), i_3 coefficient / a 37/(1920*pi**4)
+    N = 5: a^2 = 25/(256*pi**4), i_2 coefficient 17/(256*pi**4), i_3 coefficient / a 11/(384*pi**4)

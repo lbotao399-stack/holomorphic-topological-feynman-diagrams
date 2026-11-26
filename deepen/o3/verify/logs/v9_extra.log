@@ -1,0 +1,15 @@
+sl: {D, o'} = 0: True;  {D, F_133} = 0: True;  {D, F_223} = 0: True
+sl: control {D, r} (r random alternating 4-cochain of weight (2,2)): number of nonzero coordinates 10320
+sl: d{D,iota} = -{D, o' - (N^2/8){D,D}}: True;  d{D,iota} = 0: True;  {D,{D,D}} = 0: True
+gl: {D, o'} = 0: True;  {D, F_133} = 0: True;  {D, F_223} = 0: True
+gl: {S1, o'} = 0: True;  {S1, F_133} = 0: True;  {S1, F_223} = 0: True
+gl: {S0, o'} = 0: True;  {S0, F_133} = 0: True;  {S0, F_223} = 0: True
+gl: control {D, r} (r random alternating 4-cochain of weight (2,2)): number of nonzero coordinates 12480
+gl_N (N=7) SL2-inv C-odd (3,3): dim C^3 3, dim C^4 2, rank d3 2 -> C^4 = d C^3: True
+/Users/libotao/Desktop/holomorphic-twist-program/deepen/o3/verify/v9_extra.py:78: RuntimeWarning: divide by zero encountered in log10
+  np.round(rh, 12), np.round(ph, 12), -np.log10(abs(rh - ph) / abs(ph))), flush=True)
+banana(2), t = (0.70, 1.30), lam = (0.8+0.3j): tail ratio (-0.52-0.195j) vs -y_0 lam (-0.52-0.195j) (digits 16.3); head ratio (0.28+0.105j) vs +y_1 lam (0.28+0.105j) (digits inf)
+banana(2), t = (0.70, 1.30), lam = (-0.5+1.1j): tail ratio (0.325-0.715j) vs -y_0 lam (0.325-0.715j) (digits 15.6); head ratio (-0.175+0.385j) vs +y_1 lam (-0.175+0.385j) (digits 15.6)
+banana(2), t = (0.25, 2.00), lam = (0.8+0.3j): tail ratio (-0.711111111111-0.266666666667j) vs -y_0 lam (-0.711111111111-0.266666666667j) (digits 15.8); head ratio (0.088888888889+0.033333333333j) vs +y_1 lam (0.088888888889+0.033333333333j) (digits 15.8)
+banana(2), t = (0.25, 2.00), lam = (-0.5+1.1j): tail ratio (0.444444444444-0.977777777778j) vs -y_0 lam (0.444444444444-0.977777777778j) (digits 15.4); head ratio (-0.055555555556+0.122222222222j) vs +y_1 lam (-0.055555555556+0.122222222222j) (digits 15.3)
+time 57.7s

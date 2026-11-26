@@ -1,0 +1,38 @@
+(d) Holomorphic derivative on a propagator end = current insertion; end-to-end numerical check.
+
+Pointwise (normalization b2, edge form):  Theta_e ~ exp(-eta_e^2 - y_e.(z_{e(0)} - z_{e(1)} + z_e)),
+y_e = (zb_{e(0)} - zb_{e(1)})/(4 t_e), so
+    d/dz^i_{e(0)} Theta_e = -y^i_e Theta_e,     d/dz^i_{e(1)} Theta_e = +y^i_e Theta_e,
+and after the holomorphic Gaussian (normalization b6: G(zb) -> G(4 Lambda^{-1} lambda)) y_e becomes the htk
+Kirchhoff current.  Prediction for the raw integral with derivatives:
+    G[prod d] = vs_ext s1 s2 c^{-n} K_htk(powers) prod_(e,end) (-1 if end = 0 else +1).
+Check: (1,0) bananas (X = C, Omega = dz, v = -2i), plane wave e^{lam z} at vertex 0, root = vertex 1 at 0,
+the configuration of normalization n4 with derivatives added:
+    k_t(z) = e^{-|z|^2/4t}/(4 pi t)  (density of Omega ^ [K_t]),  P(z) = (1 - e^{-|z|^2/4eps})/(pi v z),
+    G[ins] = int d^2x e^{lam z} sum_j prod_i X_i,   X_j = D_j k_eps, X_i = D_i P (i != j),
+    D_i = d_z (derivative at vertex 0 on edge i), -d_z (derivative at the root on edge i), 1 (none).
+
+banana(2) ders=['v0', None] powers={(0, 0): 1} end-sign -1 lam=(0.8+0.3j) eps=0.20: position (0.0381971863421-0.0437676093503j) ; K_htk = l**2/2 ; prediction (0.0381971863421-0.0437676093503j) ; digits 15.8 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', None] powers={(0, 0): 1} end-sign -1 lam=(0.8+0.3j) eps=0.05: position (0.0381971863421-0.0437676093503j) ; K_htk = l**2/2 ; prediction (0.0381971863421-0.0437676093503j) ; digits 15.3 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', None] powers={(0, 0): 1} end-sign -1 lam=(-0.5+1.1j) eps=0.20: position (-0.0875352187005+0.0763943726841j) ; K_htk = l**2/2 ; prediction (-0.0875352187005+0.0763943726841j) ; digits 15.9 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', None] powers={(0, 0): 1} end-sign -1 lam=(-0.5+1.1j) eps=0.05: position (-0.0875352187005+0.0763943726841j) ; K_htk = l**2/2 ; prediction (-0.0875352187005+0.0763943726841j) ; digits 15.4 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=[None, 'root'] powers={(1, 0): 1} end-sign +1 lam=(0.8+0.3j) eps=0.20: position (-0.0381971863421+0.0437676093503j) ; K_htk = l**2/2 ; prediction (-0.0381971863421+0.0437676093503j) ; digits 15.8 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=[None, 'root'] powers={(1, 0): 1} end-sign +1 lam=(0.8+0.3j) eps=0.05: position (-0.0381971863421+0.0437676093503j) ; K_htk = l**2/2 ; prediction (-0.0381971863421+0.0437676093503j) ; digits 15.3 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=[None, 'root'] powers={(1, 0): 1} end-sign +1 lam=(-0.5+1.1j) eps=0.20: position (0.0875352187005-0.0763943726841j) ; K_htk = l**2/2 ; prediction (0.0875352187005-0.0763943726841j) ; digits 15.9 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=[None, 'root'] powers={(1, 0): 1} end-sign +1 lam=(-0.5+1.1j) eps=0.05: position (0.0875352187005-0.0763943726841j) ; K_htk = l**2/2 ; prediction (0.0875352187005-0.0763943726841j) ; digits 15.4 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', 'v0'] powers={(0, 0): 1, (1, 0): 1} end-sign +1 lam=(0.8+0.3j) eps=0.20: position (-0.0145626772929+0.0078516438592j) ; K_htk = l**3/6 ; prediction (-0.0145626772929+0.0078516438592j) ; digits 15.4 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', 'v0'] powers={(0, 0): 1, (1, 0): 1} end-sign +1 lam=(0.8+0.3j) eps=0.05: position (-0.0145626772929+0.0078516438592j) ; K_htk = l**3/6 ; prediction (-0.0145626772929+0.0078516438592j) ; digits 14.7 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', 'v0'] powers={(0, 0): 1, (1, 0): 1} end-sign +1 lam=(-0.5+1.1j) eps=0.20: position (0.0134220668674+0.0448286423042j) ; K_htk = l**3/6 ; prediction (0.0134220668674+0.0448286423042j) ; digits 15.8 ; control (opposite end sign) rel.diff 2.00
+banana(2) ders=['v0', 'v0'] powers={(0, 0): 1, (1, 0): 1} end-sign +1 lam=(-0.5+1.1j) eps=0.05: position (0.0134220668674+0.0448286423042j) ; K_htk = l**3/6 ; prediction (0.0134220668674+0.0448286423042j) ; digits 15.0 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', None, None] powers={(0, 0): 1} end-sign -1 lam=(0.8+0.3j) eps=0.20: position (0.0012496279316+0.0023177220758j) ; K_htk = l**3/6 ; prediction (0.0012496279316+0.0023177220758j) ; digits 15.3 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', None, None] powers={(0, 0): 1} end-sign -1 lam=(0.8+0.3j) eps=0.05: position (0.0012496279316+0.0023177220758j) ; K_htk = l**3/6 ; prediction (0.0012496279316+0.0023177220758j) ; digits 14.4 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', None, None] powers={(0, 0): 1} end-sign -1 lam=(-0.5+1.1j) eps=0.20: position (0.0071347000148-0.0021361882885j) ; K_htk = l**3/6 ; prediction (0.0071347000148-0.0021361882885j) ; digits 15.9 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', None, None] powers={(0, 0): 1} end-sign -1 lam=(-0.5+1.1j) eps=0.05: position (0.0071347000148-0.0021361882885j) ; K_htk = l**3/6 ; prediction (0.0071347000148-0.0021361882885j) ; digits 14.9 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', 'root', None] powers={(0, 0): 1, (1, 0): 1} end-sign -1 lam=(0.8+0.3j) eps=0.20: position (7.60964306e-05+0.00055726651j) ; K_htk = l**4/24 ; prediction (7.60964306e-05+0.00055726651j) ; digits 14.5 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', 'root', None] powers={(0, 0): 1, (1, 0): 1} end-sign -1 lam=(0.8+0.3j) eps=0.05: position (7.60964306e-05+0.00055726651j) ; K_htk = l**4/24 ; prediction (7.60964306e-05+0.00055726651j) ; digits 13.5 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', 'root', None] powers={(0, 0): 1, (1, 0): 1} end-sign -1 lam=(-0.5+1.1j) eps=0.20: position (-0.0003043857225+0.0022290660401j) ; K_htk = l**4/24 ; prediction (-0.0003043857225+0.0022290660401j) ; digits 15.3 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=['v0', 'root', None] powers={(0, 0): 1, (1, 0): 1} end-sign -1 lam=(-0.5+1.1j) eps=0.05: position (-0.0003043857225+0.0022290660401j) ; K_htk = l**4/24 ; prediction (-0.0003043857225+0.0022290660401j) ; digits 14.2 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=[None, 'root', 'root'] powers={(1, 0): 1, (2, 0): 1} end-sign +1 lam=(0.8+0.3j) eps=0.20: position (-7.60964306e-05-0.00055726651j) ; K_htk = l**4/24 ; prediction (-7.60964306e-05-0.00055726651j) ; digits 14.5 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=[None, 'root', 'root'] powers={(1, 0): 1, (2, 0): 1} end-sign +1 lam=(0.8+0.3j) eps=0.05: position (-7.60964306e-05-0.00055726651j) ; K_htk = l**4/24 ; prediction (-7.60964306e-05-0.00055726651j) ; digits 13.5 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=[None, 'root', 'root'] powers={(1, 0): 1, (2, 0): 1} end-sign +1 lam=(-0.5+1.1j) eps=0.20: position (0.0003043857225-0.0022290660401j) ; K_htk = l**4/24 ; prediction (0.0003043857225-0.0022290660401j) ; digits 15.3 ; control (opposite end sign) rel.diff 2.00
+banana(3) ders=[None, 'root', 'root'] powers={(1, 0): 1, (2, 0): 1} end-sign +1 lam=(-0.5+1.1j) eps=0.05: position (0.0003043857225-0.0022290660401j) ; K_htk = l**4/24 ; prediction (0.0003043857225-0.0022290660401j) ; digits 14.3 ; control (opposite end sign) rel.diff 2.00

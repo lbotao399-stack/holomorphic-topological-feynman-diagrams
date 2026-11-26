@@ -1,0 +1,5 @@
+weight (2, 2) sl dim C2,C3,C4 = 0 3 15 t=0.5
+rank d2 = 0
+rank d3 = 3
+rank d4 = 11 t=1.0
+H3 = 0  H4 = 1

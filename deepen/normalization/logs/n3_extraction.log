@@ -1,0 +1,16 @@
+(H,T) = (2,1), c = (1,4,4):
+  theta(1,3,3)             n=2 |V|-1=5 |I|=7: LHS/(16^n psi) at 3 random points = [-1] ; htk formula -1 ; s1 = (-1)^{9n(|V|-1)} = 1 ; s2 (reorder to prod_v) = 1 ; vs_ext*s1*s2 = [-1]
+  theta(2,2,3)             n=2 |V|-1=5 |I|=7: LHS/(16^n psi) at 3 random points = [-1] ; htk formula -1 ; s1 = (-1)^{9n(|V|-1)} = 1 ; s2 (reorder to prod_v) = 1 ; vs_ext*s1*s2 = [-1]
+  graph_A (S2 labelling)   n=2 |V|-1=5 |I|=7: LHS/(16^n psi) at 3 random points = [-1] ; htk formula -1 ; s1 = (-1)^{9n(|V|-1)} = 1 ; s2 (reorder to prod_v) = 1 ; vs_ext*s1*s2 = [-1]
+  graph_B (S2 labelling)   n=2 |V|-1=5 |I|=7: LHS/(16^n psi) at 3 random points = [-1] ; htk formula -1 ; s1 = (-1)^{9n(|V|-1)} = 1 ; s2 (reorder to prod_v) = 1 ; vs_ext*s1*s2 = [-1]
+  theta_rootN(1,3,3)       n=2 |V|-1=5 |I|=7: LHS/(16^n psi) at 3 random points = [-1] ; htk formula -1 ; s1 = (-1)^{9n(|V|-1)} = 1 ; s2 (reorder to prod_v) = 1 ; vs_ext*s1*s2 = [-1]
+  theta_rootN(2,2,3)       n=2 |V|-1=5 |I|=7: LHS/(16^n psi) at 3 random points = [-1] ; htk formula -1 ; s1 = (-1)^{9n(|V|-1)} = 1 ; s2 (reorder to prod_v) = 1 ; vs_ext*s1*s2 = [-1]
+(H,T) = (0,1), c = (1,):
+  banana(3): vs_ext = {1} ; htk formula 1
+  banana(5): vs_ext = {1} ; htk formula 1
+(H,T) = (1,0), c = (4,):
+  banana(2): vs_ext = {-1} ; htk formula -1
+  banana(3): vs_ext = {1} ; htk formula 1
+constant n=1: (4pi^{5/2})^{-|I|} (4 (4pi)^{5/2})^{|V|-1} 4^{2n} prod_e t^{5/2}/(2 sqrt t (4t)^2) = 1/(8*pi**(5/2)) ; (8 pi^{5/2})^{-n} = 1/(8*pi**(5/2))
+constant n=2: (4pi^{5/2})^{-|I|} (4 (4pi)^{5/2})^{|V|-1} 4^{2n} prod_e t^{5/2}/(2 sqrt t (4t)^2) = 1/(64*pi**5) ; (8 pi^{5/2})^{-n} = 1/(64*pi**5)
+constant n=3: (4pi^{5/2})^{-|I|} (4 (4pi)^{5/2})^{|V|-1} 4^{2n} prod_e t^{5/2}/(2 sqrt t (4t)^2) = 1/(512*pi**(15/2)) ; (8 pi^{5/2})^{-n} = 1/(512*pi**(15/2))

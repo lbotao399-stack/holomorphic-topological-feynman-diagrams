@@ -1,0 +1,37 @@
+D=2 n=6: irreducible by explicit Kron DFS: 32 graphs; census I: 32; same set: True
+  graph 146: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 153: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 306: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 309: degrees [4, 4, 4, 4, 4, 2, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 338: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 345: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 347: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 350: degrees [4, 4, 4, 4, 4, 2, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 357: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 358: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 382: degrees [4, 4, 4, 4, 4, 2, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 383: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 384: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 431: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 434: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 441: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 444: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 453: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 463: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 467: degrees [4, 4, 4, 4, 3, 3, 2, 2], planar False, contains K5 minor-free check skipped
+  graph 497: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 515: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 539: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 558: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 560: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 566: degrees [4, 4, 4, 3, 3, 3, 3, 2], planar False, contains K5 minor-free check skipped
+  graph 583: degrees [4, 4, 3, 3, 3, 3, 3, 3], planar False, contains K5 minor-free check skipped
+  graph 588: degrees [4, 4, 3, 3, 3, 3, 3, 3], planar False, contains K5 minor-free check skipped
+  graph 591: degrees [4, 4, 3, 3, 3, 3, 3, 3], planar False, contains K5 minor-free check skipped
+  graph 594: degrees [4, 4, 3, 3, 3, 3, 3, 3], planar False, contains K5 minor-free check skipped
+  graph 601: degrees [4, 4, 3, 3, 3, 3, 3, 3], planar False, contains K5 minor-free check skipped
+  graph 603: degrees [4, 4, 3, 3, 3, 3, 3, 3], planar False, contains K5 minor-free check skipped
+A-cores D=2 n=6 by topology: {'|V|=5 |E|=7': 44, '|V|=6 |E|=9': 41, '|V|=7 |E|=11': 77, '|V|=8 |E|=13': 78, 'prism': 24, 'K33': 5}
+D=2 n=6: non-planar graphs 99; irreducible ones all non-planar: True; non-planar and reducible: 67
+D=2 n=4: non-planar 1, irreducible 0
+D=2 n=5: non-planar 5, irreducible 0

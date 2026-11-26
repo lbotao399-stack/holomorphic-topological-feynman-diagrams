@@ -1,0 +1,4 @@
+unknowns 2030 (level 3: 74, level 4: 1956), engine values 970, symmetry rows 16309, dimension links 74
+rank 2022 of 2030 unknowns, determined 1016  0.9s
+determined: level 3 30/74, level 4 986/1956
+P(Z5) = sum_C I_3(1+1_C) = not determined  expected {z7: 441/8}: False  (104.4s)

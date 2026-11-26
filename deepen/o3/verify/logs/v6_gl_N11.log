@@ -1,0 +1,39 @@
+gl_N at N = 11 (trace basis)
+C^2_(2,2) spanning set nonzero elements: 0 -> dim 0
+C^3_(2,2): dim 8, rank d3 6 -> Z^3 = H^3 = 2
+  kernel vectors exactly closed: True
+  C on Z^3_(2,2): C h = -h for all kernel vectors: True
+  h: 10 terms; E h = 0 (SL2-invariant momentum polynomials): False; perms: ['tr(1)tr(23)', 'tr(12)tr(3)', 'tr(13)tr(2)']
+  h: 6 terms; E h = 0 (SL2-invariant momentum polynomials): False; perms: ['tr(1)tr(2)tr(3)']
+C^3_inv(2,2): dim 1; rank d on it: 1 -> (H^3_(2,2))^{SL2} = 0
+  C^3_inv(2,2) = C u2f: rank[C3inv|u2f] = 1
+C^3_(3,3): dim 17, rank d3 13
+C^4_(3,3): dim 101 (1s)
+  d of the C^4 basis computed (9s)
+rank d4 = 79 (mod p 79);  H^4_(3,3) = 101 - 79 - 13 = 9
+  check d C = C d on 3 basis elements: True
+C-odd subcomplex (3,3): dim C^4_- 32, rank d4|_- 22, rank d3|_- 10 -> H^4_- = 0
+SL2-invariant subcomplex (3,3): dim C^3 3, C^4 11, rank d3 2, rank d4 8 -> H^4_inv = 1
+  {D,h1}: closed True, C-even True, class nonzero: True
+  {D,h2}: closed True, C-even True, class nonzero: True
+  {S1,h1}: closed True, C-even True, class nonzero: True
+  {S1,h2}: closed True, C-even True, class nonzero: True
+  {S0,h1}: closed True, C-even True, class nonzero: True
+  {S0,h2}: closed True, C-even True, class nonzero: True
+dim span of all classes [{T,h_i}] = 4
+rank{[{D,h1}], [{S0,h1}], [{D,h2}], [{S0,h2}]} = 4
+  N(2 phi_S1 - N phi_D) - 4 phi_S0 on h1: class zero: True
+  N(2 phi_S1 - N phi_D) - 4 phi_S0 on h2: class zero: True
+  J = pi^*D_sl: rank of h -> [{J,h}] on H^3_(2,2) = 0
+  J = j_M = D/2: rank of h -> [{J,h}] on H^3_(2,2) = 2
+  J = S1: rank of h -> [{J,h}] on H^3_(2,2) = 2
+  J = S0: rank of h -> [{J,h}] on H^3_(2,2) = 2
+  J = D: rank of h -> [{J,h}] on H^3_(2,2) = 2
+  J = s j_M + t pi^*D_sl (s=1,t=3): rank of h -> [{J,h}] on H^3_(2,2) = 2
+  J = branch beta=0: pi^*D_sl + 5 S0: rank of h -> [{J,h}] on H^3_(2,2) = 2
+  J = random (a,b,c): rank of h -> [{J,h}] on H^3_(2,2) = 2
+  theta'(d): exact at N=11: True
+  {D,u2f}: exact at N=11: True
+  {S1,u2f}: exact at N=11: True
+  {S0,u2f}: exact at N=11: zero cochain
+time 36.4s

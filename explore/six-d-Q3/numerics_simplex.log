@@ -1,0 +1,20 @@
+G1: lam(outputs) = [[0, 2, -1], [-1, 3, 3], [3, 4, 4], [3, 2, 0], [-4, 3, -4]]
+    exact (bracket expansion) = 52924313/311040 = 170.1527553
+    htk.kernel_exact          = 52924313/311040  equal: True  [0.0s]
+    Sobol, 8 x 1048576 points    = 175.295 +- 6.4   rel. dev. 3.0e-02 (1.5 digits)  [16s]
+G2: lam(outputs) = [[3, 2, -1], [1, 4, 4], [3, 1, -4], [-4, -2, 4], [2, 0, 3]]
+    exact (bracket expansion) = -85183/25920 = -3.286381173
+    htk.kernel_exact          = -85183/25920  equal: True  [0.0s]
+    Sobol, 8 x 1048576 points    = -3.43947 +- 0.17   rel. dev. 4.7e-02 (1.3 digits)  [17s]
+G3: lam(outputs) = [[-1, -1, 4], [-1, -4, -3], [-4, -4, 2], [3, 3, -1], [-4, 3, 3]]
+    exact (bracket expansion) = 58733/25920 = 2.265933642
+    htk.kernel_exact          = 58733/25920  equal: True  [0.0s]
+    Sobol, 8 x 1048576 points    = 2.81082 +- 0.47   rel. dev. 2.4e-01 (0.6 digits)  [16s]
+G4: lam(outputs) = [[3, -4, 1], [0, -1, -3], [-1, -3, -1], [0, -1, -3], [1, -3, -2]]
+    exact (bracket expansion) = 7757/1440 = 5.386805556
+    htk.kernel_exact          = 7757/1440  equal: True  [0.0s]
+    Sobol, 8 x 1048576 points    = 5.68036 +- 0.18   rel. dev. 5.4e-02 (1.3 digits)  [15s]
+G5: lam(outputs) = [[-1, -2, -2], [1, 3, -1], [-4, -1, 0], [1, -1, -4], [0, 4, 2]]
+    exact (bracket expansion) = -18409/51840 = -0.3551118827
+    htk.kernel_exact          = -18409/51840  equal: True  [0.0s]
+    Sobol, 8 x 1048576 points    = -0.568399 +- 0.18   rel. dev. 6.0e-01 (0.2 digits)  [15s]

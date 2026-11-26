@@ -1,0 +1,5 @@
+G1: exact I(lambda;0) = 170.1527553; Sobol 8 x 1048576 of the brute-force density (cotree [0, 4, 9]): 170.1504455 +- 0.0022; rel. dev. 1.36e-05 (4.9 digits), deviation/sigma 1.06  [76s]
+G2: exact I(lambda;0) = -3.286381173; Sobol 8 x 1048576 of the brute-force density (cotree [0, 4, 9]): -3.284684213 +- 0.0013; rel. dev. 5.16e-04 (3.3 digits), deviation/sigma 1.29  [71s]
+G3: exact I(lambda;0) = 2.265933642; Sobol 8 x 1048576 of the brute-force density (cotree [0, 4, 9]): 2.266798598 +- 0.00047; rel. dev. 3.82e-04 (3.4 digits), deviation/sigma 1.83  [71s]
+G4: exact I(lambda;0) = 5.386805556; Sobol 8 x 1048576 of the brute-force density (cotree [0, 4, 9]): 5.386803288 +- 4.2e-05; rel. dev. 4.21e-07 (6.4 digits), deviation/sigma 0.05  [77s]
+G5: exact I(lambda;0) = -0.3551118827; Sobol 8 x 1048576 of the brute-force density (cotree [0, 4, 9]): -0.354322914 +- 0.00066; rel. dev. 2.22e-03 (2.7 digits), deviation/sigma 1.19  [1477s]

@@ -1,0 +1,5 @@
+so5: T_1 = [-1/16, 1/16] (fit ok True); T_3 = [0, -1/46080] (ok True); T_3 zeta3 part = [0, 0] (ok True)
+so6: T_1 = [-1/24, 1/16] (fit ok True); T_3 = [-1/41472, -1/46080] (ok True); T_3 zeta3 part = [0, 0] (ok True)
+so7: T_1 = [-1/48, 1/16] (fit ok True); T_3 = [-11/414720, -1/34560] (ok True); T_3 zeta3 part = [0, 0] (ok True)
+so8: T_1 = [0, 1/16] (fit ok True); T_3 = [0, -1/23040] (ok True); T_3 zeta3 part = [0, 0] (ok True)
+so9: T_1 = [1/48, 1/16] (fit ok True); T_3 = [13/207360, -1/15360] (ok True); T_3 zeta3 part = [0, 0] (ok True)

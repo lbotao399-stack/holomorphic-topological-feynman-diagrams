@@ -1,0 +1,18 @@
+# k=2 N=1 x^8 p=2147483647 (267.5s)  H_g = {0: 1}
+  g=-16: dimV_T=590 dimR=0 rankd=0 H=0
+  g=-15: dimV_T=3120 dimR=0 rankd=0 H=0
+  g=-14: dimV_T=9808 dimR=0 rankd=0 H=0
+  g=-13: dimV_T=24472 dimR=1 rankd=1 H=0
+  g=-12: dimV_T=52498 dimR=5 rankd=4 H=0
+  g=-11: dimV_T=98588 dimR=9 rankd=5 H=0
+  g=-10: dimV_T=163312 dimR=23 rankd=18 H=0
+  g=-9: dimV_T=238964 dimR=55 rankd=37 H=0
+  g=-8: dimV_T=306414 dimR=118 rankd=81 H=0
+  g=-7: dimV_T=337924 dimR=215 rankd=134 H=0
+  g=-6: dimV_T=311960 dimR=357 rankd=223 H=0
+  g=-5: dimV_T=232992 dimR=540 rankd=317 H=0
+  g=-4: dimV_T=135256 dimR=682 rankd=365 H=0
+  g=-3: dimV_T=58296 dimR=691 rankd=326 H=0
+  g=-2: dimV_T=17688 dimR=533 rankd=207 H=0
+  g=-1: dimV_T=3492 dimR=320 rankd=113 H=0
+  g=0: dimV_T=374 dimR=114 rankd=0 H=1

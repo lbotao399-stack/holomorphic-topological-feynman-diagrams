@@ -1,0 +1,154 @@
+so5(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 794802 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+sp4(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 538169 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+G2(phi in so7)   p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 739788 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+so7(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 782689 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+sp6(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 711900 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+so8(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 494130 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+F4(so9+S16)      p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 189015 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+so9(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 107900 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+sp8(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 997361 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+E6(FK)           p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 486467 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+E7(FK)           p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 661712 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+E8(FK)           p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 725900 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+sl3(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 342557 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True
+sl4(mat)         p=1048573: rank of (T1, T3) values at 6 random points = 2
+   (0,0): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 1, H^3 1
+   (0,1): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (0,2): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,0): dim C^3 0, rank d3 (evaluation at 6 points) 0, rank d2 0, Z^3 0, H^3 0
+   (1,1): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (1,2): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,0): dim C^3 1, rank d3 (evaluation at 6 points) 1, rank d2 0, Z^3 0, H^3 0
+   (2,1): dim C^3 1, rank d3 (evaluation at 6 points) 0, rank d2 1, Z^3 1, H^3 0
+   (2,2): dim C^3 2, rank d3 (evaluation at 6 points) 2, rank d2 0, Z^3 0, H^3 0
+   d E_f at a random point = 160640 (nonzero: True) ; equals 2[B(p0-p3,p2-p1)T1 + B(p0-p1,p2-p3)T3]: True

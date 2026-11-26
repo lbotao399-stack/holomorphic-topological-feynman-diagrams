@@ -1,0 +1,4 @@
+n=2: 1 terms, min doubled exponent -1 (> -2 required)
+  K = pi*l1*l3/3
+n=4: 12 terms, min doubled exponent -1 (> -2 required)
+  K = pi**2*l1*l5*(2*l1*l3 + 2*l1*l4 + l1*l5 + 4*l2*l3 + 4*l2*l4 + 2*l2*l5 + 12*l3**2 + 4*l3*l4 + 2*l3*l5)/180

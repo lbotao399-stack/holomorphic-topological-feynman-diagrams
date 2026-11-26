@@ -1,0 +1,14 @@
+graph (A): paths (edges) [[3], [0, 1, 2], [6, 5, 4]], n_P = [1, 3, 3], alpha_P = ['3/2', '-1/2', '-1/2'], s = +1
+   D_A(lam) = -(l0_0*l1_1 - l0_1*l1_0)*(l3_0*l4_1 - l3_1*l4_0)
+   X_1 = z1*(-wB*xB2 - wB*xB3 + wB + xB2 + xB3) + z2*(-wA*xB2 - wA*xB3 + wA) + z3*(-wC*xB2 - wC*xB3 + wC)
+   X_2 = z1*(-wB*xB3 + wB + xB3) + z2*(-wA*xB3 + wA) + z3*(-wC*xB3 + wC)
+   X_4 = z1*(-wB*xC3 + wB) + z2*(-wA*xC3 + wA) + z3*(-wC*xC3 + wC + xC3)
+   X_5 = z1*(-wB*xC2 - wB*xC3 + wB) + z2*(-wA*xC2 - wA*xC3 + wA) + z3*(-wC*xC2 - wC*xC3 + wC + xC2 + xC3)
+   sum of coefficients of z in X_v: [-wA*xB2 - wA*xB3 + wA - wB*xB2 - wB*xB3 + wB - wC*xB2 - wC*xB3 + wC + xB2 + xB3, -wA*xB3 + wA - wB*xB3 + wB - wC*xB3 + wC + xB3, -wA*xC3 + wA - wB*xC3 + wB - wC*xC3 + wC + xC3, -wA*xC2 - wA*xC3 + wA - wB*xC2 - wB*xC3 + wB - wC*xC2 - wC*xC3 + wC + xC2 + xC3]
+graph (B): paths (edges) [[0, 1], [2, 3], [6, 5, 4]], n_P = [2, 2, 3], alpha_P = ['1/2', '1/2', '-1/2'], s = -1
+   D_B(lam) = -(l0_0*l1_1 - l0_1*l1_0)*(l3_0*l4_1 - l3_1*l4_0)
+   X_u = z1*(-wA*xA2 + wA + xA2) + z2*(-wB*xA2 + wB) + z3*(-wC*xA2 + wC)
+   X_w = z1*(-wA*xB2 + wA) + z2*(-wB*xB2 + wB + xB2) + z3*(-wC*xB2 + wC)
+   X_a = z1*(-wA*xC3 + wA) + z2*(-wB*xC3 + wB) + z3*(-wC*xC3 + wC + xC3)
+   X_b = z1*(-wA*xC2 - wA*xC3 + wA) + z2*(-wB*xC2 - wB*xC3 + wB) + z3*(-wC*xC2 - wC*xC3 + wC + xC2 + xC3)
+   sum of coefficients of z in X_v: [-wA*xA2 + wA - wB*xA2 + wB - wC*xA2 + wC + xA2, -wA*xB2 + wA - wB*xB2 + wB - wC*xB2 + wC + xB2, -wA*xC3 + wA - wB*xC3 + wB - wC*xC3 + wC + xC3, -wA*xC2 - wA*xC3 + wA - wB*xC2 - wB*xC3 + wB - wC*xC2 - wC*xC3 + wC + xC2 + xC3]

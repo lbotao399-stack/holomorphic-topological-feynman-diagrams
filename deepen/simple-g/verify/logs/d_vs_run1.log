@@ -1,0 +1,3 @@
+arith: {'float': 0, 'int64': 0, 'object': 0, 'maxbound': 0.0}
+sl2 (run-1 basis): my d = run-1 d_CE on all 5-tensor entries at 6 configs: True ; output nonzero: True
+sl3 (run-1 basis): my d = run-1 d_CE on all 5-tensor entries at 6 configs: True ; output nonzero: True

@@ -1,0 +1,6 @@
+q=4 unknowns 1956 rows 4634 {'T': 3208, 'D': 0, 'I': 740, 'B': 84, 'S': 602}  2.8s
+rank 1813 of 1956 unknowns, determined 686  2.7s
+Z5 q=4: unknowns 1956, rows 4634, rank 1813, determined 686  5.4s  maxrss 0.05 GB
+q=4 unknowns 429 rows 805 {'T': 0, 'D': 518, 'I': 180, 'B': 28, 'S': 79}  2.3s
+rank 354 of 429 unknowns, determined 79  0.2s
+K33+e q=4: unknowns 429, rows 805, rank 354, determined 79  2.6s  maxrss 0.04 GB

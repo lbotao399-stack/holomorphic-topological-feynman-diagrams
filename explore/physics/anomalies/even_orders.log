@@ -1,0 +1,5 @@
+n=2 theta133: formal gl(t) Alt(W) == 0: True ; Sym(W) nonzero: True
+n=2 theta223: formal gl(t) Alt(W) == 0: True ; Sym(W) nonzero: False
+n=4: 50 graphs (37 with c_Gamma != 0): formal gl(t) Alt(W_Gamma) == 0 for all: True
+so5: Alt(W_Gamma) == 0 for both thetas and the 11 four-loop graphs with banana/wheel(K4) core [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] (24 permuted evaluations, one random sample): True []
+sp4: Alt(W_Gamma) == 0 for both thetas and the 11 four-loop graphs with banana/wheel(K4) core [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] (24 permuted evaluations, one random sample): True []

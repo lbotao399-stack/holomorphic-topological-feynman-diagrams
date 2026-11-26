@@ -1,0 +1,2 @@
+theory: U(1) charges [1, -1] W: {((0, 0), (1, 0)): 1} kappa: 2 pool size 12
+monomials 506 (deg<=4, total derivatives<=1): Q2 != 0 on 97, tadpole part != 0 on 0, Q0Q2 and Q2Q0 both != 0 on 85, {Q0,Q2} != 0 on 0   [2s]

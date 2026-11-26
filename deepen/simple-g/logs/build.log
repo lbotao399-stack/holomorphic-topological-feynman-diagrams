@@ -1,0 +1,39 @@
+sl2(Kac A1)    dim   3  s(kappa^-1 denominator) 2  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1
+    rank 1, roots 2, Cartan matrix [[2]], theta = basis 1 weight (2,)  (0.0s)
+sl2(run-1 basis) dim   3  s(kappa^-1 denominator) 2  form: tr_2(XY), run-1 lie.sl(2)
+    rank 1, roots 2, Cartan matrix [[2]], theta = basis 0 weight (2,)  (0.0s)
+sl3(Kac A2)    dim   8  s(kappa^-1 denominator) 3  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1
+    rank 2, roots 6, Cartan matrix [[2, -1], [-1, 2]], theta = basis 3 weight (2, -1)  (0.0s)
+sl3(run-1 basis) dim   8  s(kappa^-1 denominator) 3  form: tr_3(XY), run-1 lie.sl(3)
+    rank 2, roots 6, Cartan matrix [[2, -1], [-1, 2]], theta = basis 0 weight (2, -1)  (0.0s)
+sl4(Kac A3)    dim  15  s(kappa^-1 denominator) 4  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1
+    rank 3, roots 12, Cartan matrix [[2, -1, -1], [-1, 2, 0], [-1, 0, 2]], theta = basis 5 weight (2, -1, 0)  (0.0s)
+sl4(run-1 basis) dim  15  s(kappa^-1 denominator) 4  form: tr_4(XY), run-1 lie.sl(4)
+    rank 3, roots 12, Cartan matrix [[2, -1, -1], [-1, 2, 0], [-1, 0, 2]], theta = basis 0 weight (2, -1, 0)  (0.0s)
+sl5(Kac A4)    dim  24  s(kappa^-1 denominator) 5  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1
+    rank 4, roots 20, Cartan matrix [[2, -1, 0, -1], [-1, 2, -1, 0], [0, -1, 2, 0], [-1, 0, 0, 2]], theta = basis 7 weight (2, -1, 0, 0)  (0.0s)
+so5            dim  10  s(kappa^-1 denominator) 2  form: tr_5(XY), defining (vector) representation of so(5)
+    rank 2, roots 8, Cartan matrix [[2, -1], [-2, 2]], theta = basis 3 weight (1, 1)  (0.0s)
+sp4            dim  10  s(kappa^-1 denominator) 2  form: tr_4(XY), defining representation of sp(4)
+    rank 2, roots 8, Cartan matrix [[2, -2], [-1, 2]], theta = basis 3 weight (2, 0)  (0.0s)
+sp4(fold A3)   dim  10  s(kappa^-1 denominator) 2  form: restriction of the sl4(Kac A3) Kac form to the fixed subalgebra
+    rank 2, roots 8, Cartan matrix [[2, -1], [-2, 2]], theta = basis 5 weight (2, 0)  (0.0s)
+so6            dim  15  s(kappa^-1 denominator) 2  form: tr_6(XY), defining (vector) representation of so(6)
+    rank 3, roots 12, Cartan matrix [[2, 0, -1], [0, 2, -1], [-1, -1, 2]], theta = basis 4 weight (1, 1, 0)  (0.0s)
+so7            dim  21  s(kappa^-1 denominator) 2  form: tr_7(XY), defining (vector) representation of so(7)
+    rank 3, roots 18, Cartan matrix [[2, -1, 0], [-2, 2, -1], [0, -1, 2]], theta = basis 5 weight (1, 1, 0)  (0.0s)
+so7(fold D4)   dim  21  s(kappa^-1 denominator) 4  form: restriction of the so8(Kac D4) Kac form to the fixed subalgebra
+    rank 3, roots 18, Cartan matrix [[2, 0, -1], [0, 2, -1], [-2, -1, 2]], theta = basis 5 weight (2, -1, 0)  (0.0s)
+sp6            dim  21  s(kappa^-1 denominator) 2  form: tr_6(XY), defining representation of sp(6)
+    rank 3, roots 18, Cartan matrix [[2, -2, 0], [-1, 2, -1], [0, -1, 2]], theta = basis 5 weight (2, 0, 0)  (0.0s)
+sp6(fold A5)   dim  21  s(kappa^-1 denominator) 2  form: restriction of the sl6(Kac A5) Kac form to the fixed subalgebra
+    rank 3, roots 18, Cartan matrix [[2, 0, -1], [0, 2, -2], [-1, -1, 2]], theta = basis 11 weight (2, 0, 0)  (0.1s)
+so8            dim  28  s(kappa^-1 denominator) 2  form: tr_8(XY), defining (vector) representation of so(8)
+    rank 4, roots 24, Cartan matrix [[2, 0, -1, 0], [0, 2, -1, 0], [-1, -1, 2, -1], [0, 0, -1, 2]], theta = basis 6 weight (1, 1, 0, 0)  (0.0s)
+so8(Kac D4)    dim  28  s(kappa^-1 denominator) 2  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1
+    rank 4, roots 24, Cartan matrix [[2, 0, 0, -1], [0, 2, 0, -1], [0, 0, 2, -1], [-1, -1, -1, 2]], theta = basis 7 weight (2, -1, 0, 0)  (0.0s)
+G2(oct)        dim  14  s(kappa^-1 denominator) 6  form: tr_7(XY), 7-dim representation of G2 inside so(7)  (0.2s)
+G2(fold D4)    dim  14  s(kappa^-1 denominator) 3  form: restriction of the so8(Kac D4) Kac form to the fixed subalgebra
+    rank 2, roots 12, Cartan matrix [[2, -3], [-1, 2]], theta = basis 6 weight (3, -1)  (0.0s)
+F4(fold E6)    dim  52  s(kappa^-1 denominator) 2  form: restriction of the E6(Kac) Kac form to the fixed subalgebra
+    rank 4, roots 48, Cartan matrix [[2, 0, -1, -1], [0, 2, -1, 0], [-2, -1, 2, 0], [-1, 0, 0, 2]], theta = basis 21 weight (2, 1, 0, -1)  (2.4s)

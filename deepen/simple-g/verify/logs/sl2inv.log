@@ -1,0 +1,6 @@
+free vectors 2, bidegree (2,2): monomials 9, dim ker E = 1 ; bracket products 1, rank 1, killed by E: True
+free vectors 3, bidegree (2,2): monomials 36, dim ker E = 6 ; bracket products 6, rank 6, killed by E: True
+free vectors 4, bidegree (2,2): monomials 100, dim ker E = 20 ; bracket products 21, rank 20, killed by E: True
+free vectors 1, bidegree (1,1): monomials 1, dim ker E = 0
+free vectors 2, bidegree (1,1): monomials 4, dim ker E = 1 ; brackets 1, rank 1, killed: True
+[q_s0 q_s1] = sgn(s)[q0 q1] mod conservation, all s in S3: True

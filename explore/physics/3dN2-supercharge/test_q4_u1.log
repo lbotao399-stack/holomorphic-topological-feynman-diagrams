@@ -1,0 +1,5 @@
+theory U(1) charges [1] : 80 undifferentiated monomials of degree 2..6
+n=2: general engine vs path/cycle-pattern engine: mismatches 0 (Q2 != 0 on 13)  [0s]
+ħ^4: 60 monomials (degree >= 4) sampled; Qh2^2 != 0 on 11, {Q0,Qh4fan} != 0 on 11, {Q0,T50} != 0 on 0; 19 coefficient equations  [4s]
+solution of Qh2^2 + u {Q0,Qh4fan} + v {Q0,T(5,0)} = 0: [{u: 1}]
+   residual nonzero equations: 0

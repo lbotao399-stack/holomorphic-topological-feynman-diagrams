@@ -1,0 +1,916 @@
+{
+ "bulk3 D=2 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [],
+  "legs": 3
+ },
+ "bulk3 D=2 n=2": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [],
+  "legs": 2
+ },
+ "bulk3 D=2 n=3": {
+  "count": 1,
+  "SP": 0,
+  "B_nonSP": 1,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [
+   "K4, chain lengths [1, 1, 1, 1, 1, 2] k=0"
+  ],
+  "legs": 1
+ },
+ "bulk3 D=2 n=4": {
+  "count": 2,
+  "SP": 0,
+  "B_nonSP": 2,
+  "tight": 0,
+  "k": {
+   "0": 2
+  },
+  "nonSP_names": [
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1] k=0",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1] k=0"
+  ],
+  "legs": 0
+ },
+ "bulk3 D=2 n=5": {
+  "count": 0,
+  "SP": 0,
+  "B_nonSP": 0,
+  "tight": 0,
+  "k": {},
+  "nonSP_names": [],
+  "legs": -1
+ },
+ "bulk3 D=2 n=6": {
+  "count": 0,
+  "SP": 0,
+  "B_nonSP": 0,
+  "tight": 0,
+  "k": {},
+  "nonSP_names": [],
+  "legs": -2
+ },
+ "bulk3 D=3 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [],
+  "legs": 4
+ },
+ "bulk3 D=3 n=2": {
+  "count": 2,
+  "SP": 2,
+  "B_nonSP": 0,
+  "tight": 2,
+  "k": {
+   "0": 2
+  },
+  "nonSP_names": [],
+  "legs": 4
+ },
+ "bulk3 D=3 n=3": {
+  "count": 9,
+  "SP": 3,
+  "B_nonSP": 1,
+  "tight": 3,
+  "k": {
+   "0": 4,
+   "1": 5
+  },
+  "nonSP_names": [
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=0",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 2, 2] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 1, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 2, 2] k=1"
+  ],
+  "legs": 4
+ },
+ "bulk3 D=3 n=4": {
+  "count": 50,
+  "SP": 3,
+  "B_nonSP": 2,
+  "tight": 3,
+  "k": {
+   "0": 5,
+   "1": 9,
+   "2": 31,
+   "3": 5
+  },
+  "nonSP_names": [
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=1",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=0",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=1",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=0",
+   "skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=1",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=1",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=3",
+   "prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=3",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2",
+   "K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=3",
+   "K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=3",
+   "K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=3"
+  ],
+  "legs": 4
+ },
+ "bulk3 D=4 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [],
+  "legs": 5
+ },
+ "bulk3 D=4 n=2": {
+  "count": 3,
+  "SP": 3,
+  "B_nonSP": 0,
+  "tight": 3,
+  "k": {
+   "0": 3
+  },
+  "nonSP_names": [],
+  "legs": 6
+ },
+ "bulk3 D=4 n=3": {
+  "count": 27,
+  "SP": 7,
+  "B_nonSP": 1,
+  "tight": 7,
+  "k": {
+   "0": 8,
+   "1": 19
+  },
+  "nonSP_names": [
+   "K4, chain lengths [1, 1, 1, 3, 3, 4] k=0",
+   "K4, chain lengths [1, 1, 2, 2, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 1, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 2, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 3, 3] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 2, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 3, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 3, 3] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 3, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 2, 2, 3] k=1"
+  ],
+  "legs": 7
+ },
+ "bulk3 D=5 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [],
+  "legs": 6
+ },
+ "bulk3 D=5 n=2": {
+  "count": 4,
+  "SP": 4,
+  "B_nonSP": 0,
+  "tight": 4,
+  "k": {
+   "0": 4
+  },
+  "nonSP_names": [],
+  "legs": 8
+ },
+ "bulk3 D=5 n=3": {
+  "count": 83,
+  "SP": 27,
+  "B_nonSP": 1,
+  "tight": 24,
+  "k": {
+   "0": 28,
+   "1": 55
+  },
+  "nonSP_names": [
+   "K4, chain lengths [1, 1, 1, 4, 4, 5] k=0",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 1, 1, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 1, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 1, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 5, 5] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 3, 3] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 3, 4] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 3, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 2, 3, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 2, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 3, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 3, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 3, 4] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 3, 3] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 3, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 2, 3, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 2, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 3, 3] k=1"
+  ],
+  "legs": 10
+ },
+ "bulk3 D=6 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": [],
+  "legs": 7
+ },
+ "bulk3 D=6 n=2": {
+  "count": 5,
+  "SP": 5,
+  "B_nonSP": 0,
+  "tight": 5,
+  "k": {
+   "0": 5
+  },
+  "nonSP_names": [],
+  "legs": 10
+ },
+ "bulk3 D=6 n=3": {
+  "count": 185,
+  "SP": 54,
+  "B_nonSP": 1,
+  "tight": 42,
+  "k": {
+   "0": 55,
+   "1": 130
+  },
+  "nonSP_names": [
+   "K4, chain lengths [1, 1, 1, 5, 5, 6] k=0",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 5, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 4, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 1, 1, 5, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 5, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 1, 5, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 1, 4, 6, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 6, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 4, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 2, 5, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 4, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 2, 2, 6, 6] k=1",
+   "K4, chain lengths [1, 1, 2, 3, 6, 6] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 3, 6] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 3, 6] k=1",
+   "K4, chain lengths [1, 3, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 3, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 3, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 3, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 3, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 4, 6] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 4, 6] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 4, 4, 5] k=1",
+   "K4, chain lengths [1, 2, 3, 3, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 4, 5, 5] k=1",
+   "K4, chain lengths [1, 1, 3, 3, 5, 6] k=1",
+   "K4, chain lengths [1, 2, 4, 4, 4, 4] k=1",
+   "K4, chain lengths [1, 1, 4, 4, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 4, 6] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 5, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 4, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 3, 6] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 4, 6] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 5, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 4, 6] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 3, 6] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 4, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 2, 4, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 4, 6] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 3, 5, 5] k=1",
+   "K4, chain lengths [2, 2, 2, 2, 5, 6] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 3, 6] k=1",
+   "K4, chain lengths [2, 3, 3, 3, 3, 5] k=1",
+   "K4, chain lengths [2, 3, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [2, 3, 3, 3, 3, 5] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 3, 6] k=1",
+   "K4, chain lengths [2, 3, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [2, 3, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [2, 3, 3, 3, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 3, 4, 4, 4] k=1",
+   "K4, chain lengths [2, 2, 3, 3, 4, 5] k=1",
+   "K4, chain lengths [3, 3, 3, 3, 3, 4] k=1"
+  ],
+  "legs": 13
+ },
+ "cone D=3 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=3 n=2": {
+  "count": 2,
+  "SP": 2,
+  "B_nonSP": 0,
+  "tight": 2,
+  "k": {
+   "0": 2
+  },
+  "nonSP_names": []
+ },
+ "cone D=3 n=3": {
+  "count": 5,
+  "SP": 5,
+  "B_nonSP": 0,
+  "tight": 5,
+  "k": {
+   "0": 5
+  },
+  "nonSP_names": []
+ },
+ "cone D=3 n=4": {
+  "count": 15,
+  "SP": 15,
+  "B_nonSP": 0,
+  "tight": 14,
+  "k": {
+   "0": 15
+  },
+  "nonSP_names": []
+ },
+ "cone D=4 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=4 n=2": {
+  "count": 3,
+  "SP": 3,
+  "B_nonSP": 0,
+  "tight": 3,
+  "k": {
+   "0": 3
+  },
+  "nonSP_names": []
+ },
+ "cone D=4 n=3": {
+  "count": 12,
+  "SP": 12,
+  "B_nonSP": 0,
+  "tight": 9,
+  "k": {
+   "0": 12
+  },
+  "nonSP_names": []
+ },
+ "cone D=5 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=5 n=2": {
+  "count": 4,
+  "SP": 4,
+  "B_nonSP": 0,
+  "tight": 4,
+  "k": {
+   "0": 4
+  },
+  "nonSP_names": []
+ },
+ "cone D=5 n=3": {
+  "count": 28,
+  "SP": 28,
+  "B_nonSP": 0,
+  "tight": 21,
+  "k": {
+   "0": 28
+  },
+  "nonSP_names": []
+ },
+ "cone D=6 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=6 n=2": {
+  "count": 5,
+  "SP": 5,
+  "B_nonSP": 0,
+  "tight": 5,
+  "k": {
+   "0": 5
+  },
+  "nonSP_names": []
+ },
+ "cone D=6 n=3": {
+  "count": 51,
+  "SP": 51,
+  "B_nonSP": 0,
+  "tight": 30,
+  "k": {
+   "0": 51
+  },
+  "nonSP_names": []
+ },
+ "cone D=2 n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=2 n=2": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=2 n=3": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=2 n=4": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=2 n=5": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "cone D=2 n=6": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "fan n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "fan n=2": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "fan n=3": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "fan n=4": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "fan n=5": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "fan n=6": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "twistor tree n=1": {
+  "count": 1,
+  "SP": 1,
+  "B_nonSP": 0,
+  "tight": 1,
+  "k": {
+   "0": 1
+  },
+  "nonSP_names": []
+ },
+ "twistor unicyclic n=1": {
+  "count": 0,
+  "SP": 0,
+  "B_nonSP": 0,
+  "tight": 0,
+  "k": {},
+  "nonSP_names": []
+ },
+ "twistor tree n=2": {
+  "count": 2,
+  "SP": 2,
+  "B_nonSP": 0,
+  "tight": 2,
+  "k": {
+   "0": 2
+  },
+  "nonSP_names": []
+ },
+ "twistor unicyclic n=2": {
+  "count": 3,
+  "SP": 3,
+  "B_nonSP": 0,
+  "tight": 3,
+  "k": {
+   "0": 3
+  },
+  "nonSP_names": []
+ },
+ "twistor tree n=3": {
+  "count": 5,
+  "SP": 5,
+  "B_nonSP": 0,
+  "tight": 5,
+  "k": {
+   "0": 5
+  },
+  "nonSP_names": []
+ },
+ "twistor unicyclic n=3": {
+  "count": 18,
+  "SP": 4,
+  "B_nonSP": 2,
+  "tight": 4,
+  "k": {
+   "0": 6,
+   "1": 12
+  },
+  "nonSP_names": [
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=0",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=0",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 2, 2] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 2, 2] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 2, 2] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 2, 2, 3] k=1",
+   "K4, chain lengths [1, 1, 1, 1, 3, 3] k=1",
+   "K4, chain lengths [1, 1, 2, 2, 2, 2] k=1"
+  ]
+ },
+ "twistor tree n=4": {
+  "count": 15,
+  "SP": 15,
+  "B_nonSP": 0,
+  "tight": 14,
+  "k": {
+   "0": 15
+  },
+  "nonSP_names": []
+ },
+ "twistor unicyclic n=4": {
+  "count": 95,
+  "SP": 10,
+  "B_nonSP": 7,
+  "tight": 10,
+  "k": {
+   "0": 17,
+   "1": 50,
+   "2": 28
+  },
+  "nonSP_names": [
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=0",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 1, 2, 3, 3] k=1",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 2, 2, 2, 2, 2] k=2",
+   "skeleton |V|=5 |E|=8, chain lengths [1, 1, 1, 1, 2, 2, 2, 3] k=2"
+  ]
+ }
+}

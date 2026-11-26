@@ -1,0 +1,5 @@
+so5 O=bbbbb -> cccccb: nonzero graphs ['G4.1', 'G4.2', 'G4.3', 'G4.4', 'G4.5', 'G4.6', 'G4.7', 'G4.8', 'G4.9', 'G4.10', 'G4.11', 'G4.12', 'G4.13', 'G4.14', 'G4.15']
+so5 O=bbbbb -> ccccg1g2: nonzero graphs ['G4.1', 'G4.2', 'G4.3', 'G4.4', 'G4.5', 'G4.6', 'G4.7', 'G4.8', 'G4.9', 'G4.10', 'G4.11', 'G4.12', 'G4.13', 'G4.14', 'G4.15']
+so5 O=g1g2bbb -> cccccc: nonzero graphs ['G4.1', 'G4.2', 'G4.3', 'G4.4', 'G4.5', 'G4.6', 'G4.7', 'G4.8', 'G4.9', 'G4.10', 'G4.11', 'G4.12', 'G4.13', 'G4.14', 'G4.15']
+so5 O=g1bbbb -> cccccg1: nonzero graphs []
+so5 O=bbbbc -> cccccc: nonzero graphs ['G4.1', 'G4.2', 'G4.3', 'G4.4', 'G4.5', 'G4.6', 'G4.7', 'G4.8', 'G4.9', 'G4.10', 'G4.11', 'G4.12', 'G4.13', 'G4.14', 'G4.15']

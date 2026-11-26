@@ -1,0 +1,297 @@
+h1 VERIFY: Hypothesis H1 (cochain model), commutative CS on R x C^2
+=====================================================================
+
+Folder P/deepen/h1/verify/ (P = /Users/libotao/Desktop/holomorphic-twist-program).
+Own code (nothing imported from P/deepen/h1/code): code/vjet.py (jet model), code/vcohom.py (slice cohomology of V,
+V^eta, V^{eta_1b,eta_2b}), code/run_checks.py (Theorem A table, psi_S representatives, eta checks), code/cetable.py
+(H(C_g^0)), code/extra.py (S_free, I, G_eps, T_lam, eta_v I), code/misc.py (abelian counts by subset counting + Koszul and by
+Molien; sympy operator identities of the heat-kernel gauge; character enumeration), code/eta_psi.py (eta_S phi = +- psi_S(phi)),
+code/test_identities.py, code/tally.py.
+Logs: logs/*.log.  Sources read (arXiv PDFs fetched in this run, pdftotext): sources/williams.txt (1809.02661v2),
+sources/gw.txt (1810.06534v2), sources/costello.txt (1610.04144v1).
+Arithmetic: integer matrices; ranks modulo P1 = 1000000007 and P2 = 998244353 in every entry; in addition exactly over Q
+(fractions.Fraction elimination) in every entry of logs A_ab1, A_ab1_rest2, A_ab2, A_aff1, A_heis, A_sl2nc, ce_ab, ce_sl2_nc
+and in extra.log.  Entries of sl2/gl2 runs with charge restriction and A_ab1_rest: two primes only.  V^eta kernels: mod P1
+(all), mod P2 in addition for ab1, sl2.  Floating point: none in decisive steps (eta_psi.log compares +-1 integer ratios).
+
+
+0. Model (verifier's conventions, chosen independently)
+-------------------------------------------------------
+
+u = 0 tau, 1 zb1, 2 zb2, 3 z1, 4 z2;  form directions v in {0,1,2}, T bitmask, dx_T ordered 0<1<2.
+A^a = sum_{T,al} c^a_{T,al} x^al/al! dx_T,  |c_{T,al}| = 1-|T|,  ghost(c_{T,al}) = 1-|T|.
+R = C[c] (x) Lambda[dx] (x) C[[x]],  (c1 y1)(c2 y2) = (-1)^{|y1||c2|} c1c2 y1y2.
+  Q c^a_{T,b} := [x^b/b! dx_T]( 2 dA^a + f^a_{bc} A^b A^c )            (Q = 2 x CE; same kernels and images)
+  [dA]_{T,b}   = sum_{v in T} (-1)^{1-|T-v|} eps(v,T-v) c_{T-v,b+e_v},   eps(v,T') = (-1)^{#{t in T': t<v}}
+  [A^bA^c]_{T,b} = sum_{T1|T2=T} (-1)^{|T1|(1-|T2|)} sigma(T1,T2) sum_{al1+al2=b} (b!/(al1!al2!)) c^b_{T1,al1} c^c_{T2,al2}
+  D_u c_{T,al} = c_{T,al+e_u};   eta_v c_{T,al} = (-1)^{1-|T+v|} eps(v,T) c_{T+v,al}  (v not in T), 0 otherwise.
+cost(c_{T,al}) = (al_0+[0 in T], al_1+[1 in T], al_2+[2 in T], al_3, al_4) =: (n; a, b);  w = n - 1.
+V_t := M_t / sum_u D_u M_{t-e_u}  (complete finite complex for each cost t; c^a_{0,0} the only cost-0 generators).
+dim H^g(V_t) = dim M_t^g - rk I_t^g - rkQbar^g - rkQbar^{g-1},  rkQbar^g = rk(I_t^{g+1} + Q M_t^g) - rk I_t^{g+1}.
+Prediction (Theorem A): n in {0,1}^3, S = {v: n_v = 1}:  dim H^g(V_t) = dim H^{g+|S|}(V_{(0,0,0,a,b)}) = dim H^{g+|S|}(C_g^0)_{(a,b)};
+  n not in {0,1}^3: 0.
+V^eta_t := { x in M_t : eta_v x in I_{t+e_v}, v = 0,1,2 } / I_t  (kernel computed mod p);  V^{eta12}: v = 1,2 only.
+Algebras: ab1, ab2 (abelian), aff1 ([x,y] = y; not unimodular, no invariant form), heis ([x,y] = z), sl2 ([e,f] = h,
+[h,e] = 2e, [h,f] = -2f), gl2 = sl2 + C u.  charge0: restriction to ad(h)-charge 0 (sl2, gl2); sl2 also unrestricted.
+
+0.1 Identities (logs/test_identities.log; 150 monomials per algebra from six slices):
+  ab2, sl2, aff1, heis, gl2:  Q^2 = 0,  [Q, D_u] = 0,  Q eta_v + eta_v Q = -2 D_v,  eta_v eta_w + eta_w eta_v = 0:  all True.
+  Control (logs/control_sign.log): removing (-1)^{|T1|(1-|T2|)} from the quadratic term gives Q^2 != 0 on 271 of 418 sl2 monomials.
+
+
+1. Sources: cited statement vs. text
+------------------------------------
+
+Williams 1809.02661v2 (williams.txt lines 365-440, 1150-1345):
+  Def. 2.5 (C*_loc(L) = Dens (x)_D C*_Lie,red(JL)), Prop. 2.8 (= [CG] Prop. 5.4.0.2, BV theory <-> local L_infty algebra with
+  (-3)-shifted pairing), eq. (12) (translation-invariant local functionals = sums of int F(D_1 phi,..,D_k phi) d^dz with D in
+  C[dzb, d_z, d_zb, eta]), Def. 2.28 (translation invariant and eta^i I = 0), Lemma 2.29 (free holomorphically translation-invariant
+  theory on C^d, inclusion O^{hol,trans}_loc -> O_loc^{C^{2d|d}} quasi-iso; proof: spectral sequence, first d-bar cohomology, E1 page
+  from C^d -> (C^{2d|d}, d-bar)), Cor. 2.30 (hypothesis Q_hol = 0; shift [d]; proof asserts flatness of O_red(J_0E_V) over U(C^{2d|d}),
+  E1 quasi-iso O_red(V_0[[z,zb]][dzb]) ~ O_red(V_0[[z]]), U(C^{2d|d}) ~ U(C^d)): as stated in REPORT P1, P10.  Hypotheses of
+  Lemma 2.29/Cor. 2.30: T = 0, fields Omega^{0,*}(C^d,V); R x C^2 is outside them (REPORT P10 says so).
+  Text after Def. 2.28 ("eta^i I = 0 means none of the D_i have dzb dependence"): at cochain level V^eta has positive-weight
+  elements built from iota_v A (Section 3.3 below: dim V^eta_t > 0 at w = (1,0,0), (0,1,0), (1,1,1) for ab1, sl2), acyclic.
+Gwilliam-Williams 1810.06534v2 (gw.txt lines 690-700, 3769-4030):
+  Def. 1.14 (de Rham model Omega*_X[2d] (x)_D C*_Lie,red(JL)), Def. A.1, Lemma A.2 (C[d_z] -> U(C^d_hol) quasi-iso), Lemma A.7
+  (graded statement: translation invariants = (Omega^#(C^d))^{C^d}[2d] (x) C^#_red(g[[z,zb,dzb]]); proof: translation-invariant
+  sections of a trivial bundle are fixed by the value at 0), Lemma A.8 (graded statement: C^d_hol-invariants = C[dz][2d] (x)
+  C^#_red(g[[z]])), Prop. A.6 (T = 0, degree 1, U(d)-invariant): as stated in REPORT P1, P10.  All are T = 0 and graded-level;
+  the extension to the factor R in REPORT P1 is an argument of the explorer, not a citation.
+Costello 1610.04144v1 (costello.txt lines 1870-1905, 5040-5330):
+  App. B theorem: X conical symplectic surface, gl_N, uniformly in N, C^x-compatible, negative powers of e with positive powers
+  of delta.  Proof: at e = 0, omega_{RxX} (x)_D O(pi^* J Omega^{-*}_hol[t^{-1}][1])[N][-6(k-1)]; with e: cyclic homology of
+  JO_X((e)) ~ C^infty_X[t^{-1}]((e))[3]; complex Omega*(R x X) (x) (C[eta3,eta5,..]/C)[N]((e))[5]; for holomorphically
+  translation-invariant quantizations on R x C^2: C[eta3,eta5,..]/C (x) C[N] (x) C((e)) (x) C[dz1,dz2][5], dz_i of degree 1.
+  The R x C^2 complex carries C((e)): it is the e != 0 complex.  Degree of dz1dz2: 2 - 5 = -3 (matches ghost = CE degree - 3).
+  Lemma B.0.2, proof, first sentence (equivalence to Lagrangians with d_z1, d_z2 only, no d_t, d_zb, dt, dzb): stated without proof;
+  Phi an invariant polynomial on gl_N.  Sec. 9 before Thm 9.0.3: "holomorphically translation invariant" is defined there with
+  d/dzb_i acting homotopically trivially; d_t is not mentioned, while the complex C[dz1,dz2][5] has no dt (i.e. eta_t is used).
+Flagship (notes/flagship/flagship.tex lines 67-70): Hypothesis H-CE is formulated for translation-invariant local functionals,
+  without eta-invariance.  Lines 133-138: D, D^*, [D,D^*], [P]_Omega as used in REPORT 3.1.  Line 348ff (assembly): external
+  fields with holomorphic jets only (plane waves e^{lambda.z}).
+deform/REPORT.txt lines 79-92: Q_(1)J_1 = 0 is derived for J_1 = int dz1dz2 P(d_z) T(A,A,A) (holomorphic derivatives only).
+
+
+2. Proof steps (REPORT Sec. 2): re-derivation
+----------------------------------------------
+
+P1  cited; matches the sources (Sec. 1).  The identification of translation-invariant local functionals with V (constant-
+    coefficient densities modulo constant-coefficient total derivatives) is Williams' description (12) taken as definition;
+    not derived from Dens (x)_D O_red(JE) (REPORT Sec. 5 states this).  Global sign of {S_cl,-} vs Q: not fixed (REPORT).
+P2  M^(k) = (C[p_1..p_k] (x) W^{(x)k})^{S_k,+-};  C[p_1..p_k] = C[P] (x) Sym(U_0) S_k-equivariantly, S_k trivial on C[P]
+    ==> M free over C[P_1..P_5]  ==> K(D;M) -> V quasi-iso.  Re-derived; correct.  Numerical: abelian C_g^0 dims from
+    subset counting + Koszul (uses freeness) agree with Molien sign-isotypic counts restricted to sum p = 0 (misc.log (1)), and
+    with the jet code (ce_ab.log): ab1 (2,2): n=3:1, n=4:1;  ab2 (2,2): n=2..6: 1, 10, 18, 10, 1;  ab2 (3,1): 1, 10, 17, 8.
+P3  cost bound: monomials of V_t have total cost t, cost-0 generators c^a_{0,0} odd ==> dim M_t < infinity, slices complete.
+    Re-derived; correct.  (The "truncated jet complex" of the task is therefore the full complex in each weight.)
+P4  i^*: M -> C_g kills c_{T,al} unless T = 0, al_U = 0;  i^* Q = Q_hol i^*: Q c_{0,(0,al_z)} = (1/2)[A,A]_{0,al} involves only
+    T = 0, al_U = 0 generators; for T != 0 or al_U != 0 every term of Q c contains such a generator.  Formal Poincare-Dolbeault on
+    B_v = C[[x_v]] + C[[x_v]]dx_v weight by weight; Sym^k preserves quasi-isos (char 0); arity filtration finite per slice.
+    Re-derived; correct.
+P5  K(D;-) exact functor (finite free resolution), i^* C[D]-linear with D_v -> 0 on C_g  ==>  H^g(V) = sum_S eps_S H^{g+|S|}(C_g^0).
+    Re-derived; correct.  cost(eps_v) = e_v ==> the S-summand sits at n = 1_S, i.e. w = -1_{U-S}.
+P6  explicit representatives: the e^{-Theta} construction not re-derived; replaced by (i) the representative test (Sec. 3.2:
+    psi_S of an exact Z^n(C_g^0) basis is closed in V_t and has rank dim H^g(V_t) modulo B^g, 376 of 376 tests) and (ii)
+    eta_S phi = +- psi_S(phi) exactly for monomials phi of arity 1..4, all S, ab2, sl2, aff1, sign depending only on
+    (arity mod 2, S) (logs/eta_psi.log).
+P7  Gamma-characters pairwise distinct; Q preserves cost.  Re-derived; correct.
+P8  (a) span_T{c^a_{T,al}} = Lambda[eta] c^a_{0,al}; shearing; S_k-summand projective over local Lambda[eta], free; V free over
+    Lambda[eta] ==> V^eta = eta_U V.  (b) linear generators U(t) (x) span{c^a_{0,0}}, Q_1 c^a_{0,0} = 0, Q_1(eta_v c) = -D_v c;
+    U(t) = C[D] (x) Lambda[eta], d eta_v = -D_v, cohomology C[D_z] (Koszul in each v).  Re-derived; correct.  The
+    K-projectivity of Sym^k via the shearing isomorphism is asserted in REPORT without detail; verifier's reasoning (not written
+    out further): U(t) is a dg Hopf algebra (D_u, eta_v primitive, d eta_v = -D_v compatible with the coproduct), so the shearing
+    map h (x) n -> sum h_(1) (x) h_(2) n is an isomorphism of dg U(t)-modules.  Computation: Sec. 3.3.
+P9  iota_X = X^a d/dc^a_{0,0}; [iota_X, D_u] = 0, [iota_X, eta_v] = 0 on generators (neither D_u nor eta_v produces c_{0,0});
+    [Q, iota_X] = coadjoint action (dX = 0 for constant X).  Re-derived; correct.  Computation: sl2 with and without charge
+    restriction agree (A_sl2c vs A_sl2nc, ce_sl2 vs ce_sl2_nc).
+P10 comparison with sources: matches Sec. 1, with the remarks there (R x C^2 complex in Costello is the e != 0 one; Costello's
+    verbal definition mentions only d_zb).
+
+
+3. Computations (verifier's code)
+---------------------------------
+
+3.1 Theorem A table (logs/A_*.log; code/tally.py -> logs/tally.log).  Every entry: (alg, t, g): dim M_t^g, dim V_t^g,
+    dim H^g(V_t) mod P1, mod P2 (and over Q where stated), prediction, status.
+    Coverage:
+      ab1 (Q exact): n in {0,1}^3 at (a,b) in {(0,0),(1,0),(0,1),(1,1),(2,1),(2,2),(3,1)}, all ghosts; n in {(2,0,0),(0,2,0),
+        (0,0,2),(2,1,1),(1,2,1),(1,1,2),(2,2,0),(2,2,2),(3,0,0),(3,1,1)} at (0,0),(1,0),(1,1),(2,1) [(2,2,2,2,1): see 3.6].
+      ab2 (Q exact): n in {0,1}^3 at (0,0),(1,0),(1,1),(2,1); n in {(2,0,0),(2,1,1),(1,2,0)} at (0,0),(1,0),(1,1).
+      aff1 (Q exact): n in {0,1}^3 at (0,0),(1,0),(0,1),(1,1),(2,1); n in {(2,0,0),(2,1,1),(0,2,1)} at (0,0),(1,0).
+      heis (Q exact): n in {0,1}^3 at (0,0),(1,0); (2,1,1,0,0), (2,0,0,1,0).
+      sl2 unrestricted (Q exact): n in {0,1}^3 at (0,0),(1,0).
+      sl2 charge 0: n in {0,1}^3 at (0,0),(1,0),(0,1) all ghosts; at (1,1) ghosts -3..3; (2,1,1,0,0),(2,0,0,1,0),(1,2,0,0,0),
+        (0,2,1,1,0),(1,1,2,0,0),(2,1,1,1,0); (1,1,1,2,1),(1,1,1,2,0),(0,1,1,2,1) ghosts -1..1; (1,1,1,2,2) ghosts 0,1 [3.6].
+      gl2 charge 0: n in {0,1}^3 at (0,0),(1,0) all ghosts; (1,1,1,1,1) g = -1,0,1; (0,1,1,1,1),(1,1,0,1,1),(1,0,0,1,1),
+        (2,1,1,0,0) g = -1..1; (0,0,1,2,2),(1,0,0,2,2),(0,1,0,2,2) g = 2,3; (0,1,1,2,2) g = 1,2; (1,1,1,2,2) g = 1 [3.6].
+    Selected entries (printed lines):
+      gl2 t=(1,1,1,1,1) w=(0,0,0) (a,b)=(1,1) g=0 dimM=1102 dimV=396 H(p1,p2)=[2,2] pred=2 OK | psi_S rep: closed=True rank mod B=2
+      gl2 t=(1,1,1,1,1) w=(0,0,0) (a,b)=(1,1) g=1 dimM=5590 dimV=2390 H(p1,p2)=[0,0] pred=0 OK
+      gl2 t=(0,1,1,2,2) w=(-1,0,0) (a,b)=(2,2) g=2 dimM=6696 dimV=1986 H(p1,p2)=[3,3] pred=3 OK | psi_S rep: closed=True rank mod B=3
+      gl2 t=(0,1,0,2,2) w=(-1,0,-1) (a,b)=(2,2) g=3 dimM=1408 dimV=452 H(p1,p2)=[3,3] pred=3 OK | psi_S rep: closed=True rank mod B=3
+      gl2 t=(1,0,0,0,0) w=(0,-1,-1) (a,b)=(0,0) g=0 dimM=2 dimV=2 H(p1,p2)=[1,1] pred=1 OK            (T_lam class)
+      gl2 t=(1,1,0,1,0) w=(0,0,-1) (a,b)=(1,0) g=0 dimM=28 dimV=12 H(p1,p2)=[2,2] pred=2 OK
+      sl2 t=(1,1,1,1,1) w=(0,0,0) (a,b)=(1,1) g=2 dimM=4291 dimV=1918 H(p1,p2)=[1,1] pred=1 OK | psi_S rep: closed=True rank mod B=1
+      sl2 t=(1,1,0,1,1) w=(0,0,-1) (a,b)=(1,1) g=3 dimM=646 dimV=318 H(p1,p2)=[1,1] pred=1 OK | psi_S rep: closed=True rank mod B=1
+      (gl2 H^4(C_g^0)_(2,2) = 3 is a nonabelian H^4_(2,2) != 0 case under the full differential; REPORT Sec. 4 lists such cases
+       as not computed.)
+    Slice dimensions agree with the explorer's printed ones where both exist (gl2 w=0 (1,1) g=0: 1102; sl2 w=0 (1,1) g=2:
+    4291; sl2 w=(0,0,-1) (1,1) g=3: 646; gl2 w=(0,0,-1) (1,1) g=1: 366; sl2 w=0 (0,0) g=0: 70 at charge 0).
+    TALLY: see logs/tally.log (Sec. 6 below).
+
+3.2 Representatives (Theorem A3, P6): for every entry with prediction > 0 in 3.1: exact-mod-P1 basis of Z^{g+|S|}(C_g^0)_{(a,b)},
+    Phi(A) substituted via c^a_{0,al} -> sum_T c^a_{T,al} dx_T in R, component dx_S; closed in V_t and rank modulo B^g(V_t)
+    equal to the prediction: 376 of 376 (REP-OK).
+
+3.3 V^eta and V^{eta_1b,eta_2b} (logs/eta_*.log; mod P1; ab1, sl2 also mod P2, line-by-line identical):
+    ab1: t in {(1,1,1)+(0,0),(1,0),(1,1),(2,1); (2,1,1),(1,2,1),(2,2,2) at (0,0); (2,1,1,1,0); (0,1,1,0,0),(1,0,1,1,0),(0,0,0,1,1),
+    (1,1,0,0,0),(0,1,1,1,0)};  sl2, gl2 (charge 0): t in {(1,1,1,0,0),(1,1,1,1,0),(2,1,1,0,0),(0,1,1,0,0),(1,1,0,1,0),(0,1,1,1,0)};
+    aff1: as ab1;  heis: V^eta at the first seven t of the ab1 list (Sec. 6).
+    Results: H^g(V^eta_t) = H^{g+3}(C_g^0) at n = (1,1,1), 0 otherwise; H^g(V^{eta12}_t) = H^{g+3}(C_g^0) at n = (1,1,1),
+    H^{g+2}(C_g^0) at n = (0,1,1), 0 otherwise: all entries OK.
+    B1 at cochain level: dim V^eta_t^g = dim (eta_U V_{t-(1,1,1)}^{g+3} mod I_t) in every entry;  at n = (1,1,1):
+      dim V^eta_t^g = dim (C_g^0)^{g+3}_{(a,b)}: ab1 (0,0),(1,0),(1,1),(2,1); sl2 (0,0): 1,1,1; (1,0): 2,2,1; gl2 (0,0): 2,2,2,1;
+      (1,0): 4,6,5,2 (= dim C_g^0 from ce_sl2.log, ce_gl2.log).
+    Negative weights: dim V^eta_t = 0 in all 104 entries with some n_v = 0 (ab1, sl2, aff1, gl2 logs).
+    Positive weights, cochain level nonzero, H = 0:
+      ab1 Veta t=(2,1,1,0,0) w=(1,0,0) g=-2 dimVeta=1 H=0;  g=-1 dimVeta=1 H=0
+      ab1 Veta t=(2,2,2,0,0) w=(1,1,1) g=-4..1 dimVeta=1,4,7,7,4,1 H=0
+      sl2 Veta t=(2,1,1,0,0) w=(1,0,0) g=-2..1 dimVeta=2,4,3,1 H=0
+    I_t subset K_t checked in every entry (I_in_K=True).
+
+3.4 CE side cross-checks (logs/ce_*.log, misc.log):
+    sl2 (charge 0 and unrestricted, Q exact for the latter): (0,0) H^3 = 1; (1,0) H^2 = 1; (1,1) H^5 = 1; (2,0),(2,1),(3,0),(2,2),
+      (3,1): 0.  Agrees with deform/REPORT.txt (sl2: H^3_(1,1) = 0, H^3_(2,0) = 0, H^4_(2,2) = 0).
+    gl2 (charge 0): (1,1): H^3 = 2, H^5 = 1, H^6 = 2;  (2,0): 0;  (2,2): H^3 = 2, H^4 = 3, H^5 = 1, H^6 = 2, H^7 = 3, H^8 = 1.
+      Agrees with deform/REPORT.txt (gl2: dim H^3_(1,1) = 2 (D, S1), H^3_(2,0) = 0, H^4_(2,2) = 3), an independent G-invariant
+      trace-basis code.
+    abelian: Sec. 2, P2.
+
+3.5 Explicit functionals (logs/extra.log, exact over Q and mod P1; t = cost):
+    sl2, gl2: 6S_free, 6I closed in V_{(1,1,1,0,0)}; NF(6S_free) = -(3/2) NF(6I) modulo B^0 coordinatewise ==> 2 S_free + 3 I in B^0(V);
+      rank{6S_free, 6I} modulo B^0 = 1.  ab1: S_free in B^0 (I = 0).
+    eta_v(6I) = 0 identically in M (v = 0,1,2; sl2, gl2: 27 monomials);  eta_v(6S_free) not in D M (v = 0,1,2; ab1, sl2, gl2).
+    G_eps components [kappa(d_z2 A, A)]_{dtau dzb2} (t = (1,0,1,0,1)) and [kappa(d_z1 A, A)]_{dtau dzb1} (t = (1,1,0,1,0)), ghost 0:
+      closed, rank 1 modulo B^0, for ab1 (kappa = 1), sl2, gl2 (trace form).
+    T_lam = [u(A)]_{dtau}, gl2 (t = (1,0,0,0,0)), ghost 0: closed, rank 1 modulo B^0.
+    U(2): z -> gz, G_c(phi_g^*A) = G_{c'}(A), c'_{lk} = det(g)^{-1} sum_{ij} (gb^{-1})_{il} c_{ij} g_{kj} = det(g)^{-1} (g c g^T)_{lk}
+      for g unitary (gb^{-1} = g^T); g eps g^T = det(g) eps ==> c' = eps.  T_lam: d^2z d^2zb invariant.  (by hand)
+
+3.6 Largest slices (two primes; charge 0):
+      gl2 t=(1,1,1,2,2) w=(0,0,0) (a,b)=(2,2) g=1 dimM=28566 dimV=8246 H(p1,p2)=[3,3] pred=3 OK | psi_S rep: closed=True rank mod B=3 (dim Z^n=173) REP-OK
+      sl2 t=(1,1,1,2,2) w=(0,0,0) (a,b)=(2,2) g=0 dimM=1459 dimV=301 H(p1,p2)=[0,0] pred=0 OK
+      sl2 t=(1,1,1,2,2) w=(0,0,0) (a,b)=(2,2) g=1 dimM=8628 dimV=2360 H(p1,p2)=[0,0] pred=0 OK
+    The gl2 entry is the obstruction slot (ghost 1, w = 0, bidegree (2,2)) with H^4(C_g^0)_(2,2) = 3 != 0, full differential, in V
+    without eta.  Reduced cases: ab1 t=(2,2,2,2,1) ghosts -4..0 only (mod primes; the all-ghost exact run exceeded 25 min and was
+    stopped); ab1 (3,0,0,2,1), (3,1,1,2,1) exact.  aff1: all cases exact over Q (A_aff1.log) and again mod primes (A_aff1_rest.log).
+
+3.7 Heat-kernel gauge (misc.log (2), sympy, generic coefficient functions f_T(tau,z,zb), T in Lambda[dtau,dzb1,dzb2]):
+      [D^*, iota_v] = 0, [D, iota_v] = d_v, [D,D^*] = -(d_tau^2 + 4 sum d_zi d_zbi), [[D,D^*], iota_v] = 0 (v = tau, 1b, 2b): True.
+    On X x X with K = k(x-y) prod_v (dx_v - dy_v):  (iota^x_v + iota^y_v) K = 0, (iota^x_v + iota^y_v) D^*_x K = 0: True;
+      control (iota^x_v - iota^y_v): False.
+    Kernel invariance without the E (x) E sign identification (verifier's derivation): for an odd derivation X of E, omega-skew,
+      and an operator Phat with graded [X, Phat] = 0:  (X(x)1 + 1(x)X)(Phat(x)1) = [X,Phat](x)1 + (-1)^{|Phat|}(Phat(x)1)(X(x)1 + 1(x)X)
+      (sign for |X| odd), and (X(x)1+1(x)X) omega^{-1} = 0 (X symplectic)  ==>  X . ((Phat(x)1)omega^{-1}) = 0.
+      Phat = P_eps^L (odd, [iota_v, D^*] = 0, [iota_v, e^{-tH}] = 0) and Phat = K_t (even).  X = iota_v is symplectic for
+      omega = int Omega kappa: X is induced by the vector field d/d theta_v of the source supermanifold, which preserves the Berezin
+      integral (int d^3theta d/dtheta_v(.) = 0).
+    eta_v I = 0 (3.5), [eta_v, Q] = -D_v vanishes on translation-invariant functionals, [eta_v, d_P] = d_{eta.P} = 0,
+      [eta_v, Delta_L] = 0, eta_v a derivation of (,)_L  ==>  eta_v I[L] = 0, eta_v O[L] = 0, eta_v O = 0.
+    No Feynman-graph computation of eta_v O[L] was run.
+
+3.8 Characters (misc.log (3)): psi_S(phi), phi in C_g^0_(a,b), w = -1_{U-S}; character l1^{a-1-w_1b} l2^{b-1-w_2b} (U(1)^2),
+    lam^{w_tau + a + b - 2 + w_1b + w_2b} (joint dilation).  I_k: (l1 l2)^{k-1}, lam^{2k-2}.
+    Enumeration k = 0..5, all S, 0 <= a,b <= 2k+3:  U(1)^2 + dilation solutions: exactly (k, S = U, a = b = k).
+    U(1)^2 alone at k = 1: S = {tau} (0,0) [T_lam], {tau,1b} (1,0), {tau,2b} (0,1) [G_eps components], {1b} (1,0), {2b} (0,1),
+    {1b,2b} (1,1), {} (0,0).  Ghost 0 needs deg phi = |S|:  {}: none (reduced);  {1b} (1,0), {2b} (0,1): H^1(C_g^0) at nonzero
+    bidegree = 0;  {1b,2b} (1,1): H^2(C_g^0)_(1,1) = 0 for ab1, sl2, gl2 and = 1 for ab2 (ce_ab.log, ce_sl2.log, ce_gl2.log).
+    Dilation equivariance of the heat-kernel quantization: D^*, [D,D^*] are homogeneous of degree -2 under (tau,z) -> lam(tau,z)
+    (by inspection of flagship line 133); no proof of equivariance of the L -> 0 limit was written.
+
+
+4. Verdicts
+-----------
+
+A        confirmed.  P2-P5, P7 re-derived; 3.1 (all entries OK, including aff1, heis outside the explorer's set), 3.2, 3.4.
+B        confirmed.  P8 re-derived at the level stated; 3.3 (H(V^eta), B1 at cochain level, negative/positive weights).
+B4       confirmed.  3.3 (V^{eta12} at n = (1,1,1), (0,1,1), others 0).
+C        confirmed.  P9 re-derived; sl2 charge-0 vs unrestricted agree; gl2/sl2 C_g^0 agree with deform's independent code.
+H1-flagship-false  confirmed.  Flagship H-CE (lines 67-70) has no eta condition; Theorem A gives summands S != U; G_eps, T_lam
+         closed, non-exact (3.5), U(2)-invariant (3.5, by hand), weights with a component -1 hence not in V^eta.
+chars    confirmed (as an implication about characters; 3.8).  The dilation equivariance it would need is not proved (as the
+         claim says).
+eta-scheme  confirmed by derivation and symbolic checks of its ingredients (3.5, 3.7); no graph-level computation.
+O2       confirmed by derivation from A, B, C and eta-scheme; the plane-wave extraction (REPORT 3.2) re-derived; the w = 0 part of
+         an eta-invariant closed functional lies in V_ht (3.3 cochain-level B1).
+J1       confirmed.  gl2 w=0 (1,1) g=0: H = 2 with psi_U representatives (3.1); |S| = 2 summands at g = 1: H = 2 (gl2 t=(0,1,1,1,1),
+         (1,1,0,1,1)).
+sources  confirmed (Sec. 1), with two additions: Costello's R x C^2 complex is the e != 0 one; Costello's verbal definition of
+         holomorphic translation invariance mentions only d/dzb_i.
+eps      unverified (open; not derived by explorer or verifier).
+oneloop  unverified (open).  The description is accurate (deform lines 79-92 use J_1 with holomorphic derivatives only).
+         Verifier's derivation, not checked at scale L: from Q_L^2 = 0 at order hbar, Q_0 Q_(1) + Q_(1) Q_0 = 0;
+         J_1 -> J_1 + Q_0 K changes Q_(1)J_1 + (1/2){J_1,J_1} by Q_0( -Q_(1)K + {K,J_1} + (1/2){K,Q_0K} ) (Q_0 J_1 = 0).
+
+
+5. Logical gaps
+---------------
+
+G1  V = constant-coefficient densities modulo constant-coefficient total derivatives is the definition used; comparison with
+    (Dens (x)_D O_red(JE))^{translations} and with homotopy invariants not made (explorer and verifier).
+G2  Sign between {S_cl,-} and Q, dictionary sign eps, compatibility of psi_U with the BV bracket: not derived.
+G3  eta-scheme: kernel-level argument; the passage to I[L] (non-local, L > 0) and the limit L -> 0 use the general
+    statement [X, W(P,.)] = 0 for X symplectic with X.P = 0 and X I = 0; not written out with the regulator's cutoffs.
+G4  Williams Lemma 2.29/Cor. 2.30 and GW Lemmas A.7/A.8 are T = 0 statements; the R-factor is handled by the explorer's own
+    argument (P4, P8 with B_tau, eta_tau), not by a citation.  Costello App. B is uniformly in N, cyclic, e != 0.
+G5  Costello's verbal definition (Sec. 9) imposes d/dzb_i homotopically trivial only; with eta_zb only, B4 gives an additional
+    H^{g+2}(C_g^0) summand (dtau factor).  Its complex C[dz1,dz2][5] corresponds to eta_t included.
+G6  Joint-dilation equivariance of the quantization: not proved.
+G7  e != 0 (Moyal) version: no computation (explorer and verifier).
+G8  P6 (explicit Koszul representatives with e^{-Theta}): not re-derived symbolically; replaced by the representative test.
+
+
+6. Tally (logs/tally.log, code/tally.py)
+----------------------------------------
+  log                       entries mismatch  pred>0   rep  repOK  exactQ
+  A_ab1.log                     583        0      80    80     80     583
+  A_ab1_rest.log                  5        0       0     0      0       0
+  A_ab1_rest2.log                16        0       0     0      0      16
+  A_ab2.log                     280        0      88    88     88     280
+  A_aff1.log                    301        0      48    48     48     301
+  A_aff1_rest.log               109        0      16    16     16       0
+  A_gl2c.log                    120        0      40    40     40       0
+  A_gl2c_11.log                   2        0       1     1      1       0
+  A_gl2c_11g1.log                 1        0       0     0      0       0
+  A_gl2c_22a.log                  6        0       6     6      6       0
+  A_gl2c_22b.log                  2        0       2     2      2       0
+  A_gl2c_22w0.log                 1        0       1     1      1       0
+  A_gl2c_b.log                   11        0       2     2      2       0
+  A_heis.log                    121        0      48    48     48     121
+  A_sl2c.log                    160        0      24    24     24       0
+  A_sl2c_11.log                  36        0       4     4      4       0
+  A_sl2c_21.log                   9        0       0     0      0       0
+  A_sl2c_22w0.log                 2        0       0     0      0       0
+  A_sl2c_out.log                 55        0       0     0      0       0
+  A_sl2nc.log                   104        0      16    16     16     104
+  eta_ab1.log                   180        0      12     0      0       0
+  eta_ab1_p2.log                180        0      12     0      0       0
+  eta_aff1.log                  218        0      12     0      0       0
+  eta_gl2.log                   116        0      15     0      0       0
+  eta_heis.log                   76        0      15     0      0       0
+  eta_sl2.log                   104        0       6     0      0       0
+  eta_sl2_p2.log                104        0       6     0      0       0
+  TOTAL entries 2902, mismatches 0, representative tests 376, passed 376
+  Duplicates in the total: A_aff1_rest (109, mod primes, same cases as the exact A_aff1), eta_ab1_p2 (180), eta_sl2_p2 (104)
+  (second prime, line-by-line identical to the P1 runs).  Distinct entries: 2509, mismatches 0.
+  heis eta run stopped at the 40-minute limit during t = (2,1,1,1,0): V^eta covered at t = (1,1,1)+(0,0),(1,0),(1,1),(2,1) and
+  (2,1,1,0,0), (1,2,1,0,0), (2,2,2,0,0); V^{eta_1b,eta_2b} for heis not run.
+
+7. Not done
+-----------
+- Explorer's scripts were not run; all numbers above are from the verifier's code.
+- No BV-bracket computation; eps and the global sign not derived.
+- No Feynman-graph computation of eta_v O[L]; dilation equivariance not proved.
+- e != 0 (Moyal) complex: no computation.
+- V versus (Dens (x)_D O_red(JE))^{translations}: not compared.
+- Costello-Gwilliam Vols. 1-2, Costello's book, Williams' thesis: not read.

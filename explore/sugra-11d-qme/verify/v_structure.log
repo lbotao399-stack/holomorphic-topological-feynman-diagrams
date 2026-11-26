@@ -1,0 +1,23 @@
+key = (m, n_a, ext mu, ext gamma, ext nu, ext beta)
+(1, 6, 6) no Dtheta rule, kmax=1: total maps 198893259456 ; with m=0: 0 ; with n_a>0: 76826430144 ; min m = 1
+(1, 6, 6) Dtheta rule, kmax=1: maps 122066829312 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 11, 2: 10, 3: 9, 4: 8, 5: 7}
+   K=0 maps by m: {1: 491520, 2: 17694720, 3: 111476736, 4: 159252480, 5: 39813120}
+   comparison with structure.log lines for this graph: 50 lines, all equal ; keys of mine not in log: 0
+(1, 6, 6) Dtheta rule, kmax=2: maps 4458050224128 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 22, 2: 20, 3: 18, 4: 16, 5: 14}
+(2, 5, 6) no Dtheta rule, kmax=1: total maps 206433493248 ; with m=0: 0 ; with n_a>0: 84366663936 ; min m = 1
+(2, 5, 6) Dtheta rule, kmax=1: maps 122066829312 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 11, 2: 10, 3: 9, 4: 8, 5: 7}
+   K=0 maps by m: {1: 491520, 2: 17694720, 3: 111476736, 4: 159252480, 5: 39813120}
+(2, 5, 6) Dtheta rule, kmax=2: maps 4458050224128 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 22, 2: 20, 3: 18, 4: 16, 5: 14}
+(3, 4, 6) no Dtheta rule, kmax=1: total maps 206429828256 ; with m=0: 0 ; with n_a>0: 84362998944 ; min m = 1
+(3, 4, 6) Dtheta rule, kmax=1: maps 122066829312 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 11, 2: 10, 3: 9, 4: 8, 5: 7}
+   K=0 maps by m: {1: 491520, 2: 17694720, 3: 111476736, 4: 159252480, 5: 39813120}
+(3, 4, 6) Dtheta rule, kmax=2: maps 4458050224128 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 22, 2: 20, 3: 18, 4: 16, 5: 14}
+(3, 5, 5) no Dtheta rule, kmax=1: total maps 206427516384 ; with m=0: 0 ; with n_a>0: 84360687072 ; min m = 1
+(3, 5, 5) Dtheta rule, kmax=1: maps 122066829312 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 11, 2: 10, 3: 9, 4: 8, 5: 7}
+   K=0 maps by m: {1: 491520, 2: 17694720, 3: 111476736, 4: 159252480, 5: 39813120}
+(3, 5, 5) Dtheta rule, kmax=2: maps 4458050224128 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 22, 2: 20, 3: 18, 4: 16, 5: 14}
+(4, 4, 5) no Dtheta rule, kmax=1: total maps 206456023680 ; with m=0: 0 ; with n_a>0: 84389194368 ; min m = 1
+(4, 4, 5) Dtheta rule, kmax=1: maps 122066829312 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 11, 2: 10, 3: 9, 4: 8, 5: 7}
+   K=0 maps by m: {1: 491520, 2: 17694720, 3: 111476736, 4: 159252480, 5: 39813120}
+   comparison with structure.log lines for this graph: 50 lines, all equal ; keys of mine not in log: 0
+(4, 4, 5) Dtheta rule, kmax=2: maps 4458050224128 ; m=0: 0 ; n_a>0: 0 ; ext beta>0: 0 ; m values [1, 2, 3, 4, 5] ; keys violating (mu,ga)=(11-2m,2m-1): 0 ; max K by m: {1: 22, 2: 20, 3: 18, 4: 16, 5: 14}

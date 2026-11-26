@@ -1,0 +1,35 @@
+C^3 K4 subdivisions, sources e1,e2,e3,-(sum) at the degree-two vertices:
+  K4[1,1,1,1,3,3] Dc=1  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,1,1,3,3] Dc=2  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,1,1,3,3] Dc=4  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,1,3,3] Dc=5  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]a Dc=1  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]a Dc=2  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]a Dc=4  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]a Dc=5  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]b Dc=1  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,1,2,2,3]b Dc=2  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,1,2,2,3]b Dc=4  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,1,2,2,3]b Dc=6  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,1,2,2,3]c Dc=2  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]c Dc=3  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]c Dc=4  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,1,2,2,3]c Dc=5  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,2,2,2,2]a Dc=0  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,2,2,2,2]a Dc=2  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,2,2,2,2]a Dc=3  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,2,2,2,2]a Dc=5  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,2,2,2,2]b Dc=0  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,2,2,2,2]b Dc=1  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['-1', '-1', '-1']
+  K4[1,1,2,2,2,2]b Dc=3  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+  K4[1,1,2,2,2,2]b Dc=4  currents(formula) == Kirchhoff: True   g_ref / [det/Q^10]: ['1', '1', '1']
+C^3 K4 subdivisions, generic sources at all vertices (currents only):
+  K4[1,1,1,1,3,3] Dc=1 currents ok: True
+  K4[1,1,1,1,3,3] Dc=2 currents ok: True
+  K4[1,1,1,2,2,3]a Dc=1 currents ok: True
+  K4[1,1,1,2,2,3]a Dc=2 currents ok: True
+C^2 n=3 graph, sources lam3, lam0, lam2 generic, lam1 = 0, lam4 = -(sum):
+  Dc=0 currents ok: True
+  Dc=1 currents ok: True
+  Dc=2 currents ok: True
+  Dc=4 currents ok: True

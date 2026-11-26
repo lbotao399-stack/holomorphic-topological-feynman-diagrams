@@ -1,0 +1,8 @@
+(i) formal sl_N, total degree 6
+  sl_N (3, 3): dim C^2,C^3,C^4 = 0,6,39; rank d2,d3,d4 = 0,6,32; H^3 = 0, H^4 = 1   (t=23)
+  sl_N (4, 2): dim C^2,C^3,C^4 = 0,5,36; rank d2,d3,d4 = 0,5,30; H^3 = 0, H^4 = 1   (t=39)
+  sl_N (5, 1): dim C^2,C^3,C^4 = 0,4,24; rank d2,d3,d4 = 0,4,20; H^3 = 0, H^4 = 0   (t=44)
+  sl_N (6, 0): dim C^2,C^3,C^4 = 0,3,12; rank d2,d3,d4 = 0,3,9; H^3 = 0, H^4 = 0   (t=45)
+  m_0 = dim H^4_(3,3) - dim H^4_(4,2) = 0
+(ii) SL2-invariant subcomplex at (3,3)
+  dim C^3_inv = 1, dim C^4_inv = 3, rank d3|inv = 1, rank d4|inv = 2: dim Z^4_inv = 1, dim H^4_inv = 0   (t=47)

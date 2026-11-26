@@ -1,0 +1,74 @@
+{
+  "fixture": "Fermat ternary cubic and planar Jacobi waves (1,0),(0,1),(1,2)",
+  "period_basis": [
+    "1",
+    "zeta(3)"
+  ],
+  "heat_projection": "2(Phi_0-Phi_9)(e_2)-3(Phi_1-Phi_9)(e_1)",
+  "hexagon": "-1/580608",
+  "double_square": {
+    "value": "-3361/27433728000",
+    "known_denominator": 12059002868077042031237529600000000,
+    "numerator_bound": 6185511948875763845695417956961672733310571990080437988282,
+    "primes": [
+      [
+        9999991,
+        4976531
+      ],
+      [
+        9999973,
+        5654126
+      ],
+      [
+        9999971,
+        5180336
+      ],
+      [
+        9999943,
+        3679716
+      ],
+      [
+        9999937,
+        3892386
+      ],
+      [
+        9999931,
+        6350787
+      ],
+      [
+        9999929,
+        2897442
+      ],
+      [
+        9999907,
+        8198432
+      ],
+      [
+        9999901,
+        6450118
+      ]
+    ],
+    "modulus": 999948301150825584115376863831211370538898569012380278344977739,
+    "reserved_prime": 1009,
+    "reserved_residue": 782
+  },
+  "tetrahedron": {
+    "values": [
+      "13904672281/177843714048000",
+      "-74897/1176215040"
+    ],
+    "derivation": "exact Ward sum minus double square and hexagon",
+    "residues_at_1009": [
+      416,
+      45
+    ]
+  },
+  "cubature_nodes": {
+    "double_square": 841,
+    "tetrahedron": 2540
+  },
+  "symmetry_divisors": {
+    "double_square": 16,
+    "tetrahedron": 24
+  }
+}

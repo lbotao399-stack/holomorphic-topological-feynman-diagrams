@@ -1,0 +1,6 @@
+theta133 insertion y^0_0: F_rule nonzero False; rho over 6 roots [0, 0, 0, 0, 0, 0]
+theta133 insertion y^1_3: F_rule nonzero True; rho over 6 roots [-1, -1, -1, -1, -1, -1]
+theta133 insertion y^2_6: F_rule nonzero True; rho over 6 roots [-1, -1, -1, -1, -1, -1]
+theta223 insertion y^0_0: F_rule nonzero True; rho over 6 roots [-1, -1, -1, -1, -1, -1]
+theta223 insertion y^1_3: F_rule nonzero True; rho over 6 roots [-1, -1, -1, -1, -1, -1]
+theta223 insertion y^2_6: F_rule nonzero True; rho over 6 roots [-1, -1, -1, -1, -1, -1]

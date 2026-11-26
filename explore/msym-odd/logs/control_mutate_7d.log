@@ -1,0 +1,7 @@
+7d (H=3, k=1), so3: graphs ['(1, 4, 4)', '(2, 3, 4)', '(3, 3, 3)'], |Aut| = [2, 1, 6], s = [1, 1, 1]  (4.1s)
+Q0^2 = 0 on 8 random operators: True (0.0s)
+1_2^001 1_1 1_1                |Q_G O|: [360, 360, 360], |{Q0,Q_G}O|: [14, 14, 14], equations 14, rank 1; cumulative: 14 equations, null space [[1/10, 1, 0], [99/80, 0, 1]]  (44.8s)
+1_2^010 0_2 1_0                |Q_G O|: [60, 60, 60], |{Q0,Q_G}O|: [2, 2, 2], equations 2, rank 1; cumulative: 16 equations, null space [[1/10, 1, 0], [99/80, 0, 1]]  (41.6s)
+2 operators, 2 with Q_G O != 0, 2 with nonzero anticommutators; total equations 16, rank 1, null space [[1/10, 1, 0], [99/80, 0, 1]]
+   1/|Aut| per graph: [1/2, 1, 1/6]
+total 96.1s

@@ -1,0 +1,206 @@
+{
+ "convention": "K_Gamma of code/htk/CONVENTIONS.md Sec. 2 (H=2, T=0); <u,v> = u^1 v^2 - u^2 v^1; I^{S1} = (-1)^{n + C(n,2)} K",
+ "prism_4src": {
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ]
+  ],
+  "sources": "lam0=e1, lam1=e2, lam2=(SA,SB), lam3=-(lam0+lam1+lam2), lam4=lam5=0",
+  "expansion": "K = sum c_ijk <l0,l1>^i <l0,l2>^j <l1,l2>^k",
+  "table": {
+   "c_400": [
+    "-1/34560",
+    "0"
+   ],
+   "c_301": [
+    "1667/1209600",
+    "-3/2800"
+   ],
+   "c_202": [
+    "-193/403200",
+    "1/2800"
+   ],
+   "c_103": [
+    "299/1209600",
+    "-1/2800"
+   ],
+   "c_004": [
+    "0",
+    "0"
+   ],
+   "c_310": [
+    "79/134400",
+    "-3/5600"
+   ],
+   "c_211": [
+    "19/16800",
+    "-1/1400"
+   ],
+   "c_112": [
+    "-29/134400",
+    "-1/2800"
+   ],
+   "c_013": [
+    "0",
+    "0"
+   ],
+   "c_220": [
+    "-79/134400",
+    "3/5600"
+   ],
+   "c_121": [
+    "41/44800",
+    "-3/2800"
+   ],
+   "c_022": [
+    "0",
+    "0"
+   ],
+   "c_130": [
+    "-1/11520",
+    "0"
+   ],
+   "c_031": [
+    "0",
+    "0"
+   ],
+   "c_040": [
+    "0",
+    "0"
+   ]
+  },
+  "numeric_check": {
+   "point": "SA=1/3, SB=2/5",
+   "exact": "-1.21886659917810e-4",
+   "lattice_h0.8_tol1e-6": "prism SA=1/3 SB=2/5 h=0.8 tol=1e-06 m=3: K(shift 0) = -1.2188322808e-04  K(shift h/2) = -1.2188327886e-04  points 438351 440457  sub-threshold 1.36e-08  time 136s"
+  }
+ },
+ "prism_3src": {
+  "sources": "lam0=e1, lam1=e2, lam2=-(e1+e2)",
+  "K": "1/34560 <l0,l1>^4",
+  "centers": "Dc=4 (source-free, b=0) and Dc=0 (sourced, b=4) both give it"
+ },
+ "K33": {
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    5
+   ]
+  ],
+  "vanishing": "K=0 whenever two source-free vertices lie on the same side (transposition = odd edge permutation, sgn^{D+1} = -1 at D=2); exact pipeline: P == 0 for sources {0,1,3,5} (two centers) and {0,1,2} (two centers); brute lattice 7e-19",
+  "sources_0123_numeric": [
+   "K33x SA=1/3 SB=2/5 h=1 tol=1e-05 m=6: K(shift 0) = 6.4187707019e-05  K(shift h/2) = 6.4186796930e-05  points 134836 129946  sub-threshold 7.25e-08  time 465s",
+   "K33x SA=1/3 SB=2/5 h=1 tol=1e-05 m=8: K(shift 0) = 6.3875597361e-05  K(shift h/2) = 6.3874316851e-05  points 137001 131932  sub-threshold 7.29e-08  time 968s"
+  ]
+ },
+ "C2_n3_nonSP": {
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    4
+   ]
+  ],
+  "[3;0,2,4]": {
+   "sources": "lam3=e1, lam0=e2, lam2=(SA,SB), lam4=-(sum), lam1=0",
+   "K": "-(p^3 + p^2 q - 3 p^2 s - 5 p q^2 - 12 p q s - 3 p s^2)/576, p=<l3,l0>, q=<l3,l2>, s=<l0,l2>",
+   "oracle_check": "SA=1/3,SB=2/5: oracle -0.0049764815 +- 4.7e-6, exact -43/8640 = -0.0049768519"
+  },
+  "[3;0,2]": {
+   "K": "-1/576 <l3,l0>^3",
+   "oracle": "-0.00173596 +- 1.4e-6"
+  },
+  "[3;2,4]": {
+   "K": "0 (automorphism 0<->1)"
+  }
+ }
+}

@@ -1,0 +1,34 @@
+K4    q=3 orbits 2  graphs with >=2 tabulated decompletions 2  pairs 8  mismatches 0  | cut criterion vs gutil.convergent: 10 decompletions, 0 disagreements  (0.0s)
+      pair types: {('W3', 'SP'): 3, ('W3', 'W3'): 5}
+K4    q=4 orbits 9  graphs with >=2 tabulated decompletions 9  pairs 33  mismatches 0  | cut criterion vs gutil.convergent: 42 decompletions, 0 disagreements  (0.0s)
+      pair types: {('W3', 'W3'): 30, ('W3', 'SP'): 3}
+K4    q=5 orbits 25  graphs with >=2 tabulated decompletions 25  pairs 94  mismatches 0  | cut criterion vs gutil.convergent: 119 decompletions, 0 disagreements  (0.0s)
+      pair types: {('W3', 'W3'): 79, ('W3', 'SP'): 15}
+K4    q=6 orbits 66  graphs with >=2 tabulated decompletions 66  pairs 243  mismatches 0  | cut criterion vs gutil.convergent: 309 decompletions, 0 disagreements  (0.1s)
+      pair types: {('W3', 'W3'): 213, ('W3', 'SP'): 30}
+K4    q=7 orbits 145  graphs with >=2 tabulated decompletions 145  pairs 529  mismatches 0  | cut criterion vs gutil.convergent: 674 decompletions, 0 disagreements  (0.2s)
+      pair types: {('W3', 'W3'): 460, ('W3', 'SP'): 69}
+W4    q=3 orbits 9  graphs with >=2 tabulated decompletions 9  pairs 28  mismatches 0  | cut criterion vs gutil.convergent: 46 decompletions, 0 disagreements  (0.0s)
+      pair types: {('W4', 'W4'): 19, ('W3', 'W4'): 4, ('W3', 'SP'): 2, ('W3', 'W3'): 3}
+W4    q=4 orbits 89  graphs with >=2 tabulated decompletions 86  pairs 239  mismatches 0  | cut criterion vs gutil.convergent: 434 decompletions, 0 disagreements  (0.1s)
+      pair types: {('W4', 'W4'): 153, ('W3', 'W4'): 39, ('W3', 'SP'): 8, ('W3', 'W3'): 34, ('SP', 'W3'): 2, ('SP', 'SP'): 2, ('SP', 'W4'): 1}
+W4    q=5 orbits 541  graphs with >=2 tabulated decompletions 505  pairs 1248  mismatches 0  | cut criterion vs gutil.convergent: 2529 decompletions, 0 disagreements  (0.3s)
+      pair types: {('W4', 'W4'): 741, ('W3', 'W4'): 236, ('W3', 'SP'): 40, ('W3', 'W3'): 206, ('SP', 'W3'): 10, ('SP', 'SP'): 10, ('SP', 'W4'): 5}
+W4    q=6 orbits 2377  graphs with >=2 tabulated decompletions 2147  pairs 4867  mismatches 0  | cut criterion vs gutil.convergent: 10691 decompletions, 0 disagreements  (1.4s)
+      pair types: {('W4', 'W4'): 2913, ('W3', 'W4'): 924, ('W3', 'SP'): 122, ('W3', 'W3'): 813, ('SP', 'W3'): 38, ('SP', 'SP'): 38, ('SP', 'W4'): 19}
+W5    q=3 orbits 16  graphs with >=2 tabulated decompletions 16  pairs 20  mismatches 0  | cut criterion vs gutil.convergent: 52 decompletions, 0 disagreements  (0.1s)
+      pair types: {('W5', 'W5'): 11, ('W4', 'W5'): 5, ('W4', 'W4'): 4}
+W5    q=4 orbits 342  graphs with >=2 tabulated decompletions 324  pairs 399  mismatches 0  | cut criterion vs gutil.convergent: 1090 decompletions, 0 disagreements  (0.6s)
+      pair types: {('W5', 'W5'): 218, ('W4', 'W5'): 99, ('W4', 'W4'): 58, ('W3', 'W5'): 9, ('W3', 'SP'): 3, ('W3', 'W3'): 7, ('W3', 'W4'): 5}
+prism q=3 orbits 6  graphs with >=2 tabulated decompletions 5  pairs 13  mismatches 0  | cut criterion vs gutil.convergent: 42 decompletions, 0 disagreements  (0.0s)
+      pair types: {('W4', 'W4'): 5, ('W4', 'prism'): 4, ('W3', 'W4'): 2, ('W3', 'W3'): 1, ('W3', 'prism'): 1}
+prism q=4 orbits 106  graphs with >=2 tabulated decompletions 72  pairs 172  mismatches 0  | cut criterion vs gutil.convergent: 631 decompletions, 0 disagreements  (0.2s)
+      pair types: {('W4', 'W4'): 52, ('W4', 'prism'): 58, ('W3', 'W4'): 13, ('W3', 'W3'): 22, ('W3', 'prism'): 21, ('W3', 'SP'): 2, ('W4', 'W3'): 4}
+prism q=5 orbits 951  graphs with >=2 tabulated decompletions 536  pairs 1142  mismatches 0  | cut criterion vs gutil.convergent: 4977 decompletions, 0 disagreements  (1.1s)
+      pair types: {('W4', 'W4'): 300, ('W4', 'prism'): 458, ('W3', 'W4'): 55, ('W3', 'W3'): 124, ('W3', 'prism'): 122, ('W4', 'W3'): 62, ('W3', 'SP'): 9, ('W4', 'SP'): 8, ('prism', 'W3'): 3, ('prism', 'prism'): 1}
+K33   q=3 orbits 3  graphs with >=2 tabulated decompletions 1  pairs 4  mismatches 0  | cut criterion vs gutil.convergent: 21 decompletions, 0 disagreements  (0.0s)
+      pair types: {('W4', 'W4'): 3, ('W4', 'K33'): 1}
+K33   q=4 orbits 35  graphs with >=2 tabulated decompletions 10  pairs 40  mismatches 0  | cut criterion vs gutil.convergent: 204 decompletions, 0 disagreements  (0.2s)
+      pair types: {('W4', 'W4'): 30, ('W4', 'K33'): 10}
+K33   q=5 orbits 279  graphs with >=2 tabulated decompletions 49  pairs 196  mismatches 0  | cut criterion vs gutil.convergent: 1417 decompletions, 0 disagreements  (1.4s)
+      pair types: {('W4', 'W4'): 147, ('W4', 'K33'): 49}

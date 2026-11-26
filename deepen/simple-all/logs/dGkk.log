@@ -1,0 +1,1 @@
+structures kappa_lm f_abc: 10 ; all 10 coefficient polynomials vanish identically: True

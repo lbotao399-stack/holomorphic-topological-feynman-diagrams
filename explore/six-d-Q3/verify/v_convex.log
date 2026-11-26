@@ -1,0 +1,6 @@
+G1: coefficient sums == 1 identically (sympy): True; 2000 random rational points of D: negative coefficients 0, minimum coefficient 1.48e-05
+G2: coefficient sums == 1 identically (sympy): True; 2000 random rational points of D: negative coefficients 0, minimum coefficient 5.05e-06
+G3: coefficient sums == 1 identically (sympy): True; 2000 random rational points of D: negative coefficients 0, minimum coefficient 1.79e-06
+G4: coefficient sums == 1 identically (sympy): True; 2000 random rational points of D: negative coefficients 0, minimum coefficient 9.47e-06
+G5: coefficient sums == 1 identically (sympy): True; 2000 random rational points of D: negative coefficients 0, minimum coefficient 1.54e-05
+C5 statement G1 list (36 terms) == json intJ G1: True 36 36

@@ -1,0 +1,4 @@
+4_4^1 3_2^1 5_7 6_3            |Q_G O|: [6], |{Q0,Q_G}O|: [4], equations 4, rank 1; cumulative: 398 equations, null space []  (0.4s)
+200 operators, 33 with Q_G O != 0, 18 with nonzero anticommutators; total equations 398, rank 1, null space []
+   1/|Aut| per graph: [1/2]
+total 23.4s

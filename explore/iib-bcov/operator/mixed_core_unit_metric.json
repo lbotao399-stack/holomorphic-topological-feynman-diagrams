@@ -1,0 +1,58 @@
+{
+  "unit_metric": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "cores": [
+    {
+      "core": 0,
+      "kirchhoff": 45,
+      "placements": 32,
+      "colors": 797,
+      "fixed_length_integral": "2492428729177/750816367598144531250",
+      "projective_density": "2492428729177/3078816367382141418457031250"
+    },
+    {
+      "core": 1,
+      "kirchhoff": 36,
+      "placements": 0,
+      "colors": 0,
+      "fixed_length_integral": "0",
+      "projective_density": "0"
+    },
+    {
+      "core": 2,
+      "kirchhoff": 56,
+      "placements": 102,
+      "colors": 3995,
+      "fixed_length_integral": "335746482150517/3778730251116871680000",
+      "projective_density": "335746482150517/37161907539687870069473280000"
+    },
+    {
+      "core": 3,
+      "kirchhoff": 75,
+      "placements": 189,
+      "colors": 11732,
+      "fixed_length_integral": "-16717590319514419/107284003143310546875000",
+      "projective_density": "-16717590319514419/3394532911956310272216796875000"
+    },
+    {
+      "core": 4,
+      "kirchhoff": 81,
+      "placements": 54,
+      "colors": 2575,
+      "fixed_length_integral": "5033220989519/470804388723097380000",
+      "projective_density": "5033220989519/20266585166938719172690980000"
+    }
+  ],
+  "placements": 377,
+  "colors": 19099,
+  "projective_density": "9277624090747753060520411797721155138060662396539/1795300005626402189032326209293740672000000000000000000000000000"
+}

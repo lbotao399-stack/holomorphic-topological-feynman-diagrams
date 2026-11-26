@@ -1,0 +1,211 @@
+check_abelian1.log       compared entries  444   mismatches 0
+check_abelian2.log       compared entries  180   mismatches 0
+check_abelian2b.log      compared entries    5   mismatches 0
+check_abelian2c.log      compared entries   41   mismatches 0
+check_eta.log            compared entries   52   mismatches 0
+check_eta12.log          compared entries   70   mismatches 0
+check_etaneg.log         compared entries   84   mismatches 0
+check_gl2.log            compared entries   57   mismatches 0
+check_gl2b.log           compared entries    4   mismatches 0
+check_sl2a.log           compared entries  112   mismatches 0
+check_sl2b.log           compared entries    2   mismatches 0
+check_sl2c.log           compared entries    1   mismatches 0
+check_sl2d.log           compared entries    5   mismatches 0
+check_sl2nc.log          compared entries   30   mismatches 0
+total compared entries 1087, mismatches 0
+
+nonzero entries (log, algebra, complex, w, (a,b), g, dim slice, computed H, CE degree, predicted, status, representative test):
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(0, 0) g=-2 dim=1 H=1 n=1 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(0, 0) g=1 dim=1 H=1 n=1 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(0, 0) g=0 dim=1 H=1 n=1 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(0, 0) g=0 dim=1 H=1 n=1 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(0, 0) g=0 dim=1 H=1 n=1 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(0, 0) g=-1 dim=1 H=1 n=1 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(0, 0) g=-1 dim=1 H=1 n=1 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(0, 0) g=-1 dim=1 H=1 n=1 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=11 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(1, 0) g=2 dim=1 H=1 n=2 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(1, 0) g=1 dim=3 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(1, 0) g=1 dim=3 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(1, 0) g=1 dim=3 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=6 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(1, 0) g=0 dim=6 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=6 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(0, 1) g=-1 dim=11 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(0, 1) g=2 dim=1 H=1 n=2 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(0, 1) g=1 dim=3 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(0, 1) g=1 dim=3 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(0, 1) g=1 dim=3 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(0, 1) g=0 dim=6 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(0, 1) g=0 dim=6 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(0, 1) g=0 dim=6 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(1, 1) g=0 dim=91 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(1, 1) g=3 dim=1 H=1 n=3 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(1, 1) g=2 dim=8 H=1 n=3 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(1, 1) g=2 dim=8 H=1 n=3 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(1, 1) g=2 dim=8 H=1 n=3 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(1, 1) g=1 dim=30 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(1, 1) g=1 dim=30 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(1, 1) g=1 dim=30 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(2, 1) g=-1 dim=27 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(2, 1) g=0 dim=155 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(2, 1) g=2 dim=3 H=1 n=2 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(2, 1) g=3 dim=2 H=1 n=3 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(2, 1) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(2, 1) g=2 dim=14 H=1 n=3 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(2, 1) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(2, 1) g=2 dim=14 H=1 n=3 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(2, 1) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(2, 1) g=2 dim=14 H=1 n=3 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(2, 1) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(2, 1) g=1 dim=51 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(2, 1) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(2, 1) g=1 dim=51 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(2, 1) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(2, 1) g=1 dim=51 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(2, 2) g=0 dim=271 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, 0) (a,b)=(2, 2) g=1 dim=824 H=1 n=4 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, -1) (a,b)=(2, 2) g=3 dim=4 H=1 n=3 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(2, 2) g=2 dim=25 H=1 n=3 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, -1) (a,b)=(2, 2) g=3 dim=25 H=1 n=4 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(2, 2) g=2 dim=25 H=1 n=3 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, -1) (a,b)=(2, 2) g=3 dim=25 H=1 n=4 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(2, 2) g=2 dim=25 H=1 n=3 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, -1, 0) (a,b)=(2, 2) g=3 dim=25 H=1 n=4 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(2, 2) g=1 dim=89 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, 0, -1) (a,b)=(2, 2) g=2 dim=173 H=1 n=4 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(2, 2) g=1 dim=89 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(0, -1, 0) (a,b)=(2, 2) g=2 dim=173 H=1 n=4 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(2, 2) g=1 dim=89 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian1.log   abelian1 V      w=(-1, 0, 0) (a,b)=(2, 2) g=2 dim=173 H=1 n=4 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(0, 0) g=-2 dim=2 H=2 n=1 pred=2 OK psi_S S=7: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(0, 0) g=-1 dim=22 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, -1) (a,b)=(0, 0) g=1 dim=2 H=2 n=1 pred=2 OK psi_S S=0: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, -1) (a,b)=(0, 0) g=2 dim=1 H=1 n=2 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, -1, -1) (a,b)=(0, 0) g=0 dim=2 H=2 n=1 pred=2 OK psi_S S=1: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, -1, -1) (a,b)=(0, 0) g=1 dim=6 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, -1) (a,b)=(0, 0) g=0 dim=2 H=2 n=1 pred=2 OK psi_S S=2: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, -1) (a,b)=(0, 0) g=1 dim=6 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, 0) (a,b)=(0, 0) g=0 dim=2 H=2 n=1 pred=2 OK psi_S S=4: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, 0) (a,b)=(0, 0) g=1 dim=6 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(0, 0) g=-1 dim=2 H=2 n=1 pred=2 OK psi_S S=3: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(0, 0) g=0 dim=12 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(0, 0) g=-1 dim=2 H=2 n=1 pred=2 OK psi_S S=5: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(0, 0) g=0 dim=12 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(0, 0) g=-1 dim=2 H=2 n=1 pred=2 OK psi_S S=6: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(0, 0) g=0 dim=12 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=38 H=3 n=2 pred=3 OK psi_S S=7: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(1, 0) g=0 dim=208 H=2 n=3 pred=2 OK psi_S S=7: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, -1) (a,b)=(1, 0) g=2 dim=4 H=3 n=2 pred=3 OK psi_S S=0: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(0, -1, -1) (a,b)=(1, 0) g=1 dim=10 H=3 n=2 pred=3 OK psi_S S=1: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(0, -1, -1) (a,b)=(1, 0) g=2 dim=18 H=2 n=3 pred=2 OK psi_S S=1: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, -1) (a,b)=(1, 0) g=1 dim=10 H=3 n=2 pred=3 OK psi_S S=2: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, -1) (a,b)=(1, 0) g=2 dim=18 H=2 n=3 pred=2 OK psi_S S=2: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, 0) (a,b)=(1, 0) g=1 dim=10 H=3 n=2 pred=3 OK psi_S S=4: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, 0) (a,b)=(1, 0) g=2 dim=18 H=2 n=3 pred=2 OK psi_S S=4: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=20 H=3 n=2 pred=3 OK psi_S S=3: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(1, 0) g=1 dim=68 H=2 n=3 pred=2 OK psi_S S=3: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(1, 0) g=0 dim=20 H=3 n=2 pred=3 OK psi_S S=5: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(1, 0) g=1 dim=68 H=2 n=3 pred=2 OK psi_S S=5: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=20 H=3 n=2 pred=3 OK psi_S S=6: closed True, rank incr 3, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(1, 0) g=1 dim=68 H=2 n=3 pred=2 OK psi_S S=6: closed True, rank incr 2, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(1, 1) g=-1 dim=70 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(1, 1) g=0 dim=520 H=6 n=3 pred=6 OK psi_S S=7: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(0, 0, 0) (a,b)=(1, 1) g=1 dim=1780 H=4 n=4 pred=4 OK psi_S S=7: closed True, rank incr 4, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, -1) (a,b)=(1, 1) g=2 dim=8 H=1 n=2 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, -1, -1) (a,b)=(1, 1) g=1 dim=18 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, -1, -1) (a,b)=(1, 1) g=2 dim=50 H=6 n=3 pred=6 OK psi_S S=1: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, -1) (a,b)=(1, 1) g=1 dim=18 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, -1) (a,b)=(1, 1) g=2 dim=50 H=6 n=3 pred=6 OK psi_S S=2: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, 0) (a,b)=(1, 1) g=1 dim=18 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, -1, 0) (a,b)=(1, 1) g=2 dim=50 H=6 n=3 pred=6 OK psi_S S=4: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(1, 1) g=0 dim=36 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(1, 1) g=1 dim=172 H=6 n=3 pred=6 OK psi_S S=3: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(0, 0, -1) (a,b)=(1, 1) g=2 dim=384 H=4 n=4 pred=4 OK psi_S S=3: closed True, rank incr 4, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(1, 1) g=0 dim=36 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(1, 1) g=1 dim=172 H=6 n=3 pred=6 OK psi_S S=5: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(0, -1, 0) (a,b)=(1, 1) g=2 dim=384 H=4 n=4 pred=4 OK psi_S S=5: closed True, rank incr 4, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(1, 1) g=0 dim=36 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(1, 1) g=1 dim=172 H=6 n=3 pred=6 OK psi_S S=6: closed True, rank incr 6, True
+  check_abelian2.log   abelian2 V      w=(-1, 0, 0) (a,b)=(1, 1) g=2 dim=384 H=4 n=4 pred=4 OK psi_S S=6: closed True, rank incr 4, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 2) g=0 dim=1726 H=10 n=3 pred=10 OK psi_S S=7: closed True, rank incr 10, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 2) g=1 dim=8310 H=18 n=4 pred=18 OK psi_S S=7: closed True, rank incr 18, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 1) g=-1 dim=102 H=3 n=2 pred=3 OK psi_S S=7: closed True, rank incr 3, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 1) g=0 dim=938 H=8 n=3 pred=8 OK psi_S S=7: closed True, rank incr 8, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 1) g=1 dim=3802 H=7 n=4 pred=7 OK psi_S S=7: closed True, rank incr 7, True
+  check_abelian2c.log  abelian2 V      w=(-1, -1, -1) (a,b)=(2, 2) g=2 dim=17 H=1 n=2 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(-1, -1, -1) (a,b)=(2, 2) g=3 dim=40 H=10 n=3 pred=10 OK psi_S S=0: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, -1) (a,b)=(2, 2) g=1 dim=38 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, -1) (a,b)=(2, 2) g=2 dim=172 H=10 n=3 pred=10 OK psi_S S=1: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, -1) (a,b)=(2, 2) g=3 dim=340 H=18 n=4 pred=18 OK psi_S S=1: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, -1) (a,b)=(2, 2) g=1 dim=38 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, -1) (a,b)=(2, 2) g=2 dim=172 H=10 n=3 pred=10 OK psi_S S=2: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, -1) (a,b)=(2, 2) g=3 dim=340 H=18 n=4 pred=18 OK psi_S S=2: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(-1, -1, 0) (a,b)=(2, 2) g=1 dim=38 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(-1, -1, 0) (a,b)=(2, 2) g=2 dim=172 H=10 n=3 pred=10 OK psi_S S=4: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(-1, -1, 0) (a,b)=(2, 2) g=3 dim=340 H=18 n=4 pred=18 OK psi_S S=4: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=0 dim=76 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=1 dim=570 H=10 n=3 pred=10 OK psi_S S=3: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=2 dim=1860 H=18 n=4 pred=18 OK psi_S S=3: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=3 dim=3272 H=10 n=5 pred=10 OK psi_S S=3: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, 0) (a,b)=(2, 2) g=0 dim=76 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, 0) (a,b)=(2, 2) g=1 dim=570 H=10 n=3 pred=10 OK psi_S S=5: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, 0) (a,b)=(2, 2) g=2 dim=1860 H=18 n=4 pred=18 OK psi_S S=5: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(0, -1, 0) (a,b)=(2, 2) g=3 dim=3272 H=10 n=5 pred=10 OK psi_S S=5: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, 0) (a,b)=(2, 2) g=0 dim=76 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, 0) (a,b)=(2, 2) g=1 dim=570 H=10 n=3 pred=10 OK psi_S S=6: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, 0) (a,b)=(2, 2) g=2 dim=1860 H=18 n=4 pred=18 OK psi_S S=6: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(-1, 0, 0) (a,b)=(2, 2) g=3 dim=3272 H=10 n=5 pred=10 OK psi_S S=6: closed True, rank incr 10, True
+  check_eta.log        abelian1 Veta   w=(0, 0, 0) (a,b)=(0, 0) g=-2 dim=1 H=1 n=- pred=1 OK dim Q^1=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        abelian1 Veta   w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=1 H=1 n=- pred=1 OK dim Q^2=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        abelian1 Veta   w=(0, 0, 0) (a,b)=(1, 1) g=0 dim=1 H=1 n=- pred=1 OK dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        abelian1 Veta   w=(0, 0, 0) (a,b)=(2, 1) g=-1 dim=1 H=1 n=- pred=1 OK dim Q^2=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        abelian1 Veta   w=(0, 0, 0) (a,b)=(2, 1) g=0 dim=1 H=1 n=- pred=1 OK dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        sl2      Veta   w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=1 H=1 n=- pred=1 OK dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        sl2      Veta   w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=2 H=1 n=- pred=1 OK dim Q^2=2 (cochains; V^eta_0 = psi(Q): True)
+  check_eta12.log      abelian1 Veta12 w=(0, 0, 0) (a,b)=(0, 0) g=-2 dim=1 H=1 n=- pred=1 OK 
+  check_eta12.log      abelian1 Veta12 w=(-1, 0, 0) (a,b)=(0, 0) g=-1 dim=1 H=1 n=- pred=1 OK 
+  check_eta12.log      abelian1 Veta12 w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=1 H=1 n=- pred=1 OK 
+  check_eta12.log      abelian1 Veta12 w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=1 H=1 n=- pred=1 OK 
+  check_eta12.log      abelian1 Veta12 w=(0, 0, 0) (a,b)=(1, 1) g=0 dim=3 H=1 n=- pred=1 OK 
+  check_eta12.log      abelian1 Veta12 w=(-1, 0, 0) (a,b)=(1, 1) g=1 dim=1 H=1 n=- pred=1 OK 
+  check_eta12.log      sl2      Veta12 w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=5 H=1 n=- pred=1 OK 
+  check_eta12.log      sl2      Veta12 w=(-1, 0, 0) (a,b)=(0, 0) g=1 dim=1 H=1 n=- pred=1 OK 
+  check_eta12.log      sl2      Veta12 w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=3 H=1 n=- pred=1 OK 
+  check_eta12.log      sl2      Veta12 w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=2 H=1 n=- pred=1 OK 
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=-2 dim=2 H=1 n=1 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=166 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=1 dim=498 H=1 n=4 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, -1, -1) (a,b)=(0, 0) g=1 dim=2 H=1 n=1 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, -1, -1) (a,b)=(0, 0) g=0 dim=2 H=1 n=1 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, 0, -1) (a,b)=(0, 0) g=0 dim=2 H=1 n=1 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, -1, 0) (a,b)=(0, 0) g=0 dim=2 H=1 n=1 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=-1 dim=2 H=1 n=1 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=1 dim=54 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, -1, 0) (a,b)=(0, 0) g=-1 dim=2 H=1 n=1 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, -1, 0) (a,b)=(0, 0) g=1 dim=54 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, 0, 0) (a,b)=(0, 0) g=-1 dim=2 H=1 n=1 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, 0, 0) (a,b)=(0, 0) g=1 dim=54 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=54 H=2 n=2 pred=2 OK psi_S S=7: closed True, rank incr 2, True
+  check_gl2.log        gl2      V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=28 H=2 n=2 pred=2 OK psi_S S=3: closed True, rank incr 2, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(1, 1) g=0 dim=1102 H=2 n=3 pred=2 OK psi_S S=7: closed True, rank incr 2, True
+  check_gl2b.log       gl2      V      w=(0, 0, -1) (a,b)=(1, 1) g=1 dim=366 H=2 n=3 pred=2 OK psi_S S=3: closed True, rank incr 2, True
+  check_gl2b.log       gl2      V      w=(-1, 0, 0) (a,b)=(1, 1) g=1 dim=366 H=2 n=3 pred=2 OK psi_S S=6: closed True, rank incr 2, True
+  check_sl2a.log       sl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=70 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=1 dim=23 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, -1, 0) (a,b)=(0, 0) g=1 dim=23 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, 0, 0) (a,b)=(0, 0) g=1 dim=23 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=27 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, -1, -1) (a,b)=(1, 0) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, 0, -1) (a,b)=(1, 0) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, -1, 0) (a,b)=(1, 0) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, -1, 0) (a,b)=(1, 0) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_sl2d.log       sl2      V      w=(0, 0, -1) (a,b)=(1, 1) g=3 dim=646 H=1 n=5 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2d.log       sl2      V      w=(-1, -1, -1) (a,b)=(1, 1) g=5 dim=3 H=1 n=5 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_sl2d.log       sl2      V      w=(0, 0, 0) (a,b)=(1, 1) g=2 dim=4291 H=1 n=5 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=234 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=81 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=1 dim=75 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=42 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True

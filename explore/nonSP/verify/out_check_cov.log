@@ -1,0 +1,4 @@
+K4[1,1,1,1,3,3] D(t, g lam) = det(g)^n D(t, lam): [True, True]
+K4[1,1,1,2,2,3]c D(t, g lam) = det(g)^n D(t, lam): [True, True]
+prism D(t, g lam) = det(g)^n D(t, lam): [True, True]
+K33 D(t, g lam) = det(g)^n D(t, lam): [True, True]

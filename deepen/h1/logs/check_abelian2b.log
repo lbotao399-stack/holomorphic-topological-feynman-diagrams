@@ -1,0 +1,13 @@
+  abelian2 w=(0, 0, 0)    (a,b)=(2, 2) g= 0  dim M=  1726 rkD=1380 rkQbar=321  H(V)=10 [modp 10 10]  pred H^3(Q)=10  OK
+      psi_S, S=7: dim Z^3(Q)=40, psi(Z) closed in V: True, rank increase over B^0(V) = 10 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(2, 2) g= 1  dim M=  8310 rkD=6178 rkQbar=1793  H(V)=18 [modp 18 18]  pred H^4(Q)=18  OK
+      psi_S, S=7: dim Z^4(Q)=38, psi(Z) closed in V: True, rank increase over B^1(V) = 18 (= H): True
+    [33.9s]
+  abelian2 w=(0, 0, 0)    (a,b)=(2, 1) g=-1  dim M=   102 rkD=86 rkQbar=13  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=7: dim Z^2(Q)=12, psi(Z) closed in V: True, rank increase over B^-1(V) = 3 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(2, 1) g= 0  dim M=   938 rkD=698 rkQbar=219  H(V)=8 [modp 8 8]  pred H^3(Q)=8  OK
+      psi_S, S=7: dim Z^3(Q)=20, psi(Z) closed in V: True, rank increase over B^0(V) = 8 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(2, 1) g= 1  dim M=  3802 rkD=2622 rkQbar=954  H(V)=7 [modp 7 7]  pred H^4(Q)=7  OK
+      psi_S, S=7: dim Z^4(Q)=12, psi(Z) closed in V: True, rank increase over B^1(V) = 7 (= H): True
+    [5.7s]
+case abelian2b: all checks passed: True   total 39.6s

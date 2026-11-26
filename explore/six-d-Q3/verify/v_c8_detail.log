@@ -1,0 +1,9 @@
+G1 Q0 (bbb): part f c b -> 13654980383/3240, part f g1 g2 -> -13654980383/3240, both -> 0
+G2 Q0 (bbb): part f c b -> 53472198043/3888, part f g1 g2 -> -53472198043/3888, both -> 0
+G3 Q0 (bbb): part f c b -> -244160257597/12960, part f g1 g2 -> 244160257597/12960, both -> 0
+G4 Q0 (bbb): part f c b -> 70041013/10, part f g1 g2 -> -70041013/10, both -> 0
+G5 Q0 (bbb): part f c b -> -37115538109/2160, part f g1 g2 -> 37115538109/2160, both -> 0
+A acting after box on bbb: 0 histories (all types), value 0
+box acting after A on bbb: 0 histories (all types), value 0
+B acting after box on bbb: 0 histories (all types), value 0
+box acting after B on bbb: 0 histories (all types), value 0

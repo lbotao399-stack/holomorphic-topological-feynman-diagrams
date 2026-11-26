@@ -1,0 +1,14 @@
+q=8 classes 117744
+q=8 classes 117744 X rows 8050256 DS rows 193122 missing-term rows 0
+q=8 p=2147483647: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (1809.1s)
+q=8 p=2147483629: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (1876.6s)
+q=8 p=2147483587: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (1945.0s)
+q=8 p=2147483579: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (2014.0s)
+q=8 p=2147483563: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (2082.6s)
+q=8 p=2147483549: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (2149.1s)
+q=8 p=2147483543: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (2216.1s)
+q=8 p=2147483497: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (2282.9s)
+q=8 p=2147483489: rank 117744 rows 2205686 skipped 0 inconsistent 0, determined 117744 of 117744 (2350.2s)
+q=8: reconstruction failures 0; undetermined 0 [] (2360.2s)
+q=8: exact check on 8243378 rows: 0 fail (2564.2s)
+q=8 kinds {'T1a': 69773, 'Ga': 11564, 'Gd': 3536, 'T2a': 17759, 'T2d': 7668, 'T1d': 7444}; labels ['1', 'z3', 'z5']

@@ -1,0 +1,8 @@
+sl2 charge0=True (a,b)=(0,0) n=1:dimC=1,dimC0=1,H=[0, 0] n=2:dimC=1,dimC0=1,H=[0, 0] n=3:dimC=1,dimC0=1,H=[1, 1] [0.0s]
+sl2 charge0=True (a,b)=(1,0) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=3,dimC0=2,H=[1, 1] n=3:dimC=3,dimC0=2,H=[0, 0] n=4:dimC=1,dimC0=1,H=[0, 0] [0.0s]
+sl2 charge0=True (a,b)=(2,0) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=4,dimC0=1,H=[0, 0] n=3:dimC=6,dimC0=3,H=[0, 0] n=4:dimC=4,dimC0=3,H=[0, 0] n=5:dimC=1,dimC0=1,H=[0, 0] [0.0s]
+sl2 charge0=True (a,b)=(1,1) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=6,dimC0=1,H=[0, 0] n=3:dimC=10,dimC0=5,H=[0, 0] n=4:dimC=8,dimC0=6,H=[0, 0] n=5:dimC=3,dimC0=3,H=[1, 1] [0.0s]
+sl2 charge0=True (a,b)=(2,1) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=9,dimC0=2,H=[0, 0] n=3:dimC=20,dimC0=7,H=[0, 0] n=4:dimC=22,dimC0=11,H=[0, 0] n=5:dimC=13,dimC0=9,H=[0, 0] n=6:dimC=3,dimC0=3,H=[0, 0] [0.0s]
+sl2 charge0=True (a,b)=(3,0) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=6,dimC0=2,H=[0, 0] n=3:dimC=11,dimC0=5,H=[0, 0] n=4:dimC=9,dimC0=5,H=[0, 0] n=5:dimC=4,dimC0=3,H=[0, 0] n=6:dimC=1,dimC0=1,H=[0, 0] [0.0s]
+sl2 charge0=True (a,b)=(2,2) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=13,dimC0=1,H=[0, 0] n=3:dimC=40,dimC0=10,H=[0, 0] n=4:dimC=61,dimC0=25,H=[0, 0] n=5:dimC=50,dimC0=27,H=[0, 0] n=6:dimC=20,dimC0=14,H=[0, 0] n=7:dimC=3,dimC0=3,H=[0, 0] [0.0s]
+sl2 charge0=True (a,b)=(3,1) n=1:dimC=1,dimC0=0,H=[0, 0] n=2:dimC=12,dimC0=1,H=[0, 0] n=3:dimC=34,dimC0=9,H=[0, 0] n=4:dimC=49,dimC0=22,H=[0, 0] n=5:dimC=38,dimC0=22,H=[0, 0] n=6:dimC=13,dimC0=9,H=[0, 0] n=7:dimC=1,dimC0=1,H=[0, 0] [0.0s]

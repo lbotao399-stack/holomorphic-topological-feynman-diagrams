@@ -1,0 +1,2 @@
+theory: SU(2)+2 adj W: {((0, 0), (1, 0)): 1, ((0, 1), (1, 1)): 1, ((0, 2), (1, 2)): 1} kappa: 2/5 pool size 18
+monomials 1158 (deg<=3, total derivatives<=0): Q2 != 0 on 126, tadpole part != 0 on 0, Q0Q2 and Q2Q0 both != 0 on 126, {Q0,Q2} != 0 on 0   [377s]

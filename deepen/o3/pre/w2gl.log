@@ -1,0 +1,5 @@
+weight (2, 2) gl dim C2,C3,C4 = 0 8 36 t=4.7
+rank d2 = 0
+rank d3 = 6
+rank d4 = 26 t=6.4
+H3 = 2  H4 = 4

@@ -1,0 +1,25 @@
+{'name': 'banana2', 'H': 1, 'n': 1, 'N': 2, 'nv': 2, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.0, 'nonzero': True, 'component_degrees': [[1]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 0.0}
+{'name': 'banana3', 'H': 1, 'n': 2, 'N': 3, 'nv': 2, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.0, 'nonzero': True, 'component_degrees': [[2]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 0.0}
+{'name': 'banana4', 'H': 1, 'n': 3, 'N': 4, 'nv': 2, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.0, 'nonzero': True, 'component_degrees': [[3]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 0.0}
+{'name': 'banana5', 'H': 1, 'n': 4, 'N': 5, 'nv': 2, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.0, 'nonzero': True, 'component_degrees': [[4]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 0.0}
+{'name': 'D2_n1_0', 'H': 2, 'n': 1, 'N': 3, 'nv': 3, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.0, 'nonzero': True, 'component_degrees': [[1], [1]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 0.0}
+{'name': 'D2_n2_0', 'H': 2, 'n': 2, 'N': 5, 'nv': 4, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.01, 'nonzero': True, 'component_degrees': [[2], [2]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 6, 't': 0.0}
+{'name': 'D2_n3_0', 'H': 2, 'n': 3, 'N': 7, 'nv': 5, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.07, 'nonzero': True, 'component_degrees': [[3], [3]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 56, 't': 0.6}
+{'name': 'D2_n3_1', 'H': 2, 'n': 3, 'N': 7, 'nv': 5, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.12, 'nonzero': True, 'component_degrees': [[3], [3]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 56, 't': 0.8}
+{'name': 'D2_n3_2(nonSP)', 'H': 2, 'n': 3, 'N': 7, 'nv': 5, 'pointwise': True, 'pointwise_via': 'minors', 't': 0.0}
+{'name': 'D2_n4_0', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 3.71, 'nonzero': True, 'component_degrees': [[4], [4]], 'homog': True, 'GL_cov': True, 't': 16.2}
+{'name': 'D2_n4_1', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 17.53, 'nonzero': True, 'component_degrees': [[4], [4]], 'homog': True, 'GL_cov': True, 't': 49.6}
+{'name': 'D2_n4_2', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 47.69, 'nonzero': True, 'component_degrees': [[4], [4]], 'homog': True, 'GL_cov': True, 't': 70.6}
+{'name': 'D2_n4_3', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 22.42, 'nonzero': True, 'component_degrees': [[4], [4]], 'homog': True, 'GL_cov': True, 't': 53.0}
+{'name': 'D2_n4_4(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 4.7}
+{'name': 'D2_n4_5', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 558.44, 'nonzero': True, 'component_degrees': [[4], [4]], 'homog': True, 'GL_cov': True, 't': 601.5}
+{'name': 'D2_n4_6(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 5.1}
+{'name': 'D2_n4_7(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 2.7}
+{'name': 'D2_n4_8(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 3.2}
+{'name': 'D2_n4_9(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 3.5}
+{'name': 'D2_n4_10(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 3.7}
+{'name': 'D2_n4_11(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 5.5}
+{'name': 'D2_n4_12(nonSP)', 'H': 2, 'n': 4, 'N': 9, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't': 7.2}
+{'name': 'D3_n1_0', 'H': 3, 'n': 1, 'N': 4, 'nv': 4, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.01, 'nonzero': True, 'component_degrees': [[1], [1], [1]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 0.0}
+{'name': 'D3_n2_0', 'H': 3, 'n': 2, 'N': 7, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.94, 'nonzero': True, 'component_degrees': [[2], [2], [2]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 55, 't': 17.7}
+{'name': 'D3_n2_1', 'H': 3, 'n': 2, 'N': 7, 'nv': 6, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.69, 'nonzero': True, 'component_degrees': [[2], [2], [2]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 55, 't': 11.7}

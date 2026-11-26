@@ -1,0 +1,2 @@
+D=2 n=5 (|I|=11): graphs with simple skeleton = K5-e 5, W5 2, K33+e 3, Z5 6, K4+K4 2, V7_0 1, V7_1 1, V7_2 1, V7_3 1, V8_0 0, V8_1 0, V8_2 0, V8_3 0, V8_4 0
+D=3 n=5 (|I|=16): graphs with simple skeleton = K5-e 111, W5 120, K33+e 157, Z5 681, K4+K4 104, V7_0 456, V7_1 85, V7_2 325, V7_3 416, V8_0 11, V8_1 136, V8_2 74, V8_3 38, V8_4 93

@@ -1,0 +1,24 @@
+V5  assembly and counting
+  O_2 = Nnorm/4 (K133 W133 + K223 W223) = Delta*U*hbar**2*(3*W133 - 2*W223)/(15360*pi**4)
+  O_2 / (Delta (-3 W133 + 2 W223)) = -U*hbar**2/(15360*pi**4) ; pi Nnorm/240 = -U*hbar**2/(15360*pi**4)
+  [O_2] with [F133] = -[F223]: -F223*U*hbar**2/(3072*pi**4) ; pi Nnorm/48 [F223] = -F223*U*hbar**2/(3072*pi**4) ; equal: True
+  opposite relative sign: K223 flipped -> -F223*U*hbar**2/(15360*pi**4) ; K133 flipped -> F223*U*hbar**2/(15360*pi**4) (= -+ pi Nnorm/240 [F223])
+  |c| = hbar^2/15360 pi^4 ; |c'| = hbar^2/3072 pi^4
+(e) counting: tight |I| = Dn+1 (Schwinger degree), position degree (|V|-1) D = (D-1)|I| + 1, cubic: E = 3|V| - 2|I|
+  |V| = D*n - n + 2 ; E = D*n - 3*n + 4 ; gh = E - D = D*n - D - 3*n + 4
+  D=2 n=1: |I|= 3 |V|= 3 E= 3 gh= 1  (n odd: rho_n = 0 at T = 1)
+  D=2 n=2: |I|= 5 |V|= 4 E= 2 gh= 0
+  D=2 n=3: |I|= 7 |V|= 5 E= 1 gh=-1  (n odd: rho_n = 0 at T = 1)
+  D=2 n=4: |I|= 9 |V|= 6 E= 0 gh=-2
+  D=2 n=5: |I|=11 |V|= 7 E=-1 gh=-3  (n odd: rho_n = 0 at T = 1)
+  D=2 n=6: |I|=13 |V|= 8 E=-2 gh=-4
+  D=3 n=1: |I|= 4 |V|= 4 E= 4 gh= 1  (n odd: rho_n = 0 at T = 1)
+  D=3 n=2: |I|= 7 |V|= 6 E= 4 gh= 1
+  D=3 n=3: |I|=10 |V|= 8 E= 4 gh= 1  (n odd: rho_n = 0 at T = 1)
+  D=3 n=4: |I|=13 |V|=10 E= 4 gh= 1
+  D=3 n=5: |I|=16 |V|=12 E= 4 gh= 1  (n odd: rho_n = 0 at T = 1)
+  D=3 n=6: |I|=19 |V|=14 E= 4 gh= 1
+  catalog D=2 n=1: 1 tight graphs; max degree <= 3: [([2, 2, 2], 3)]
+  catalog D=2 n=2: 1 tight graphs; max degree <= 3: [([2, 2, 3, 3], 2)]
+  catalog D=3 n=1: 1 tight graphs; max degree <= 3: [([2, 2, 2, 2], 4)]
+  catalog D=3 n=2: 2 tight graphs; max degree <= 3: [([2, 2, 2, 2, 3, 3], 4), ([2, 2, 2, 2, 3, 3], 4)]

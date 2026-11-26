@@ -1,0 +1,2 @@
+theory: SU(2)+1 adj W: {((0, 0), (0, 0)): Fraction(1, 2), ((0, 1), (0, 1)): Fraction(1, 2), ((0, 2), (0, 2)): Fraction(1, 2)} kappa: 1/3 pool size 24
+monomials 1396 (deg<=3, total derivatives<=1): Q2 != 0 on 309, tadpole part != 0 on 0, Q0Q2 and Q2Q0 both != 0 on 309, {Q0,Q2} != 0 on 0   [162s]

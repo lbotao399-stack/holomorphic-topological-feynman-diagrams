@@ -1,0 +1,15 @@
+ys = {-gA*s1x1 + s1x1 + (1 - rB)*(-gA*(1 - rA)*(s1x1*(-gA - gB + 1) - 1) + (1 - rC)*(-gA - gB + 1)*(gA*s1x1 - s1x1 + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) + (1 - rC)*(-gA*gB*s1x1*(1 - rA) + gB*(1 - rB)*(gA*s1x1 - s1x1 + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) - 1, gA*(1 - rA)*(1 - rB)/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) - gA*(1 - rA)*(1 - rC)/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rB*(-gA*(1 - rA)*(s1x1*(-gA - gB + 1) - 1) + (1 - rC)*(-gA - gB + 1)*(gA*s1x1 - s1x1 + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), gA*rB*(1 - rA)/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rA*(gB*s1x1*(1 - rC)*(-gA - gB + 1) - gB*(1 - rB)*(s1x1*(-gA - gB + 1) - 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rA*(gB*(1 - rB) + (1 - rC)*(-gA - gB + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1))};
+Qp = gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1);
+vars = {s1x1, gA, gB, rA, rB, rC};
+Ns = Expand[Together[ys*Qp]];
+If[Union[Denominator /@ Ns] =!= {1}, Print["NOT POLYNOMIAL"]; Exit[1]];
+bord = Prepend[Table[Prepend[D[Ns[[j]], #] & /@ vars, Ns[[j]]], {j, 6}], Prepend[D[Qp, #] & /@ vars, Qp]];
+detB = Expand[Det[bord]];
+Print["detB terms ", Length[detB]];
+Print["gsym0 ", InputForm[(detB/Qp^7) /. {s1x1 -> 80/97, gA -> 68/97, gB -> 4/97, rA -> 60/97, rB -> 32/97, rC -> 84/97}]];
+Print["gsym1 ", InputForm[(detB/Qp^7) /. {s1x1 -> 7/97, gA -> 21/97, gB -> 15/97, rA -> 48/97, rB -> 61/97, rC -> 32/97}]];
+Print["gsym2 ", InputForm[(detB/Qp^7) /. {s1x1 -> 49/97, gA -> 70/97, gB -> 14/97, rA -> 74/97, rB -> 32/97, rC -> 2/97}]];
+P = detB;
+P = Expand[Integrate[P, {s1x1, 0, 1}]];
+Print["P terms ", Length[P]];
+Put[P, "out/c2n3_D0_P.m"]; Put[Qp, "out/c2n3_D0_Q.m"];

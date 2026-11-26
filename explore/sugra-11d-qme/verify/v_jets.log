@@ -1,0 +1,12 @@
+n_mu=1 n_der=5 target=(1, 1, 1, 1, 1): brute 640, generating function 640, equal True (0.0 s)
+n_mu=2 n_der=6 target=(1, 1, 1, 1, 1): brute 23330, generating function 23330, equal True (0.2 s)
+n_mu=4 n_der=3 target=(0, 0, 0, 0, 0): brute 5870, generating function 5870, equal True (0.2 s)
+n_mu=3 n_der=2 target=(0, 0, 0, 0, 0): brute 660, generating function 660, equal True (0.2 s)
+n_mu=3 n_der=5 target=(1, 1, 1, 0, 0): brute 41370, generating function 41370, equal True (0.8 s)
+n_mu=5 n_der=6 target=(1, 1, 0, 0, 0): brute 1086934, generating function 1086934, equal True (29.7 s)
+n_mu=5 n_der=4 target=(0, 0, 0, 0, 0): brute 45420, generating function 45420, equal True (30.5 s)
+n_mu=9 n_der=6 target=(0, 0, 0, -1, -1): brute 356196, generating function 356196, equal True (46.0 s)
+n_mu=9 n_der=7 target=(1, 0, 0, -1, -1): brute 3001889, generating function 3001889, equal True (226.4 s)
+n_mu=6 n_der=6 target=(2, 0, -1, 0, 0): brute 834970, generating function 834970, equal True (270.0 s)
+mu^9 gamma, weight (3,3,3,3,3) [23 derivatives]: 63414968175297950 ; explorer 63414968175297950: True
+sec 270.3

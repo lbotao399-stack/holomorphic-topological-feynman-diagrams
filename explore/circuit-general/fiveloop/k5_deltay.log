@@ -1,0 +1,30 @@
+D=2 n=6 graphs without reduction: 32
+  SP core other(V=5,E=10), triangles 2, Delta-Y cores {'K33+e': 2} : 1 graphs
+  SP core other(V=5,E=10), triangles 3, Delta-Y cores {'K33+e': 3} : 2 graphs
+  SP core other(V=6,E=11), triangles 0, Delta-Y cores {} : 1 graphs
+  SP core other(V=6,E=11), triangles 2, Delta-Y cores {'K33+e': 1, 'V7_3': 1} : 1 graphs
+  SP core other(V=6,E=11), triangles 2, Delta-Y cores {'K33+e': 2} : 1 graphs
+  SP core other(V=6,E=11), triangles 2, Delta-Y cores {'V7_3': 2} : 1 graphs
+  SP core other(V=6,E=11), triangles 3, Delta-Y cores {'K33+e': 1, 'V7_3': 2} : 4 graphs
+  SP core other(V=6,E=11), triangles 3, Delta-Y cores {'K33+e': 2, 'V7_3': 1} : 1 graphs
+  SP core other(V=6,E=11), triangles 4, Delta-Y cores {'K33+e': 2, 'V7_3': 2} : 1 graphs
+  SP core other(V=7,E=12), triangles 1, Delta-Y cores {'K33+e': 1} : 1 graphs
+  SP core other(V=7,E=12), triangles 1, Delta-Y cores {'V7_3': 1} : 1 graphs
+  SP core other(V=7,E=12), triangles 2, Delta-Y cores {'V7_3': 1, 'V8_4': 1} : 2 graphs
+  SP core other(V=7,E=12), triangles 2, Delta-Y cores {'V7_3': 2} : 1 graphs
+  SP core other(V=7,E=12), triangles 3, Delta-Y cores {'K33+e': 1, 'V7_3': 1, 'V8_2': 1} : 1 graphs
+  SP core other(V=7,E=12), triangles 3, Delta-Y cores {'K33+e': 1, 'V7_3': 2} : 1 graphs
+  SP core other(V=7,E=12), triangles 3, Delta-Y cores {'V7_3': 2, 'V8_2': 1} : 2 graphs
+  SP core other(V=7,E=12), triangles 3, Delta-Y cores {'V7_3': 2, 'V8_4': 1} : 3 graphs
+  SP core other(V=7,E=12), triangles 4, Delta-Y cores {'K33+e': 1, 'V7_3': 2, 'V8_2': 1} : 1 graphs
+  SP core other(V=8,E=13), triangles 0, Delta-Y cores {} : 1 graphs
+  SP core other(V=8,E=13), triangles 1, Delta-Y cores {'V8_4': 1} : 1 graphs
+  SP core other(V=8,E=13), triangles 2, Delta-Y cores {'V7_3': 1, 'V8_2': 1} : 1 graphs
+  SP core other(V=8,E=13), triangles 2, Delta-Y cores {'V7_3': 2} : 1 graphs
+  SP core other(V=8,E=13), triangles 2, Delta-Y cores {'V8_4': 2} : 1 graphs
+  SP core other(V=8,E=13), triangles 4, Delta-Y cores {'K33+e': 1, 'V8_2': 3} : 1 graphs
+K5 q=3: 2 convergent orbits
+  I_3(K5; [1, 1, 2, 2, 2, 2, 2, 2, 2, 2]) = 5/3*z3 + -5/3*z5   [5 unique triangles, all equal: True]
+     (C) relations to evaluable graphs: 4 checked, 0 bad
+  I_3(K5; [1, 2, 2, 2, 2, 2, 2, 1, 2, 2]) = -2*z3 + 5/2*z5   [4 unique triangles, all equal: True]
+     (C) relations to evaluable graphs: 0 checked, 0 bad

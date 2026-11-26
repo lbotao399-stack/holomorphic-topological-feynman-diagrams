@@ -1,0 +1,8 @@
+C2 prism             {'1': '-577/40320', 'z3': '-2/35', 'z5': '5/63'} MATCH 2.1s
+C2 K33               {'1': '-789/640', 'z3': '59/80'} MATCH 2.3s
+  grid 8209410 points (cube 9765625), core edges 8  0.9s
+  prime 1: samples 48.1s, interpolation 1.7s, 69674 monomials, 980 core vectors (980 periods cached), total 52.0s
+  prime 2: samples 48.5s, interpolation 1.6s, 69674 monomials, 980 core vectors (980 periods cached), total 52.1s
+  prime 3: samples 47.2s, interpolation 1.6s, 69674 monomials, 980 core vectors (980 periods cached), total 50.8s
+  stable after 3 primes, total 155.8s
+n=5 SP graph 5: kernel_exact 1432537/86400 (0.1s), fk5 {'1': Fraction(1432537, 86400)} (155.8s) MATCH

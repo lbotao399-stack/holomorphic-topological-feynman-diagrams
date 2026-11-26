@@ -1,0 +1,23 @@
+(a) dx^1^..^dx^4^dxbar^1^..^dxbar^4 = {(0, 1, 2, 3, 4, 5, 6, 7): 16}  -> Omega = dx^{1234}: Omega ^ dxbar^{1234} = 16 d^8x_E: True
+    d = 2: dx^{1..d} ^ dxbar^{1..d} = {(0, 1, 2, 3): 4}
+    d = 3: dx^{1..d} ^ dxbar^{1..d} = {(0, 1, 2, 3, 4, 5): -8*I}
+(b) d = 2: [K_t] - dt ^ dbar^*[K_t] == (2 pi)^{-2} e^{-y.x} d^2y: True
+(b) d = 3: [K_t] - dt ^ dbar^*[K_t] == (2 pi)^{-3} e^{-y.x} d^3y: True
+(b) d = 4: [K_t] - dt ^ dbar^*[K_t] == (2 pi)^{-4} e^{-y.x} d^4y: True
+(c) s_d(n):
+    d = 2: s_d(n), n = 1..6: [-1, -1, 1, 1, -1, -1]
+    d = 3: s_d(n), n = 1..6: [-1, -1, 1, 1, -1, -1]
+    d = 4: s_d(n), n = 1..6: [1, 1, 1, 1, 1, 1]
+    d = 5: s_d(n), n = 1..6: [1, 1, 1, 1, 1, 1]
+    d = 2 against S1 eq-1-7 (G = (-8 pi^2)^{-n} I^{S1}, I^{S1} = (-1)^{n(n+1)/2} K): agree for n = 1..8: True
+    d = 3 against S2 eq-B-norm: ratio (this derivation)/(S2), n = 1..8: [-1, 1, -1, 1, -1, 1, -1, 1]
+    d = 4: a = 1/(16 pi^4), b = (2 pi)^4 = 16 pi^4 (c_Omega i^4 = 1):  G = s_4(n) (16 pi^4)^{-n} K, s_4(n) = [1, 1, 1, 1, 1, 1, 1, 1]
+    varsigma^ext(pent, D = 4): formula +1, htk +1, own determinant +1
+    varsigma^ext((1, 4, 4), D = 4): formula +1, htk +1, own determinant +1
+    varsigma^ext((2, 3, 4), D = 4): formula +1, htk +1, own determinant +1
+    varsigma^ext((3, 3, 3), D = 4): formula +1, htk +1, own determinant +1
+    pent: own D(t) for wedge_{c in [4]} d^4y_c == htk D(t) of K (positive C), 2 random points: True
+    (1, 4, 4): own D(t) for wedge_{c in [4, 8]} d^4y_c == htk D(t) of K (positive C), 2 random points: True
+    (2, 3, 4): own D(t) for wedge_{c in [4, 8]} d^4y_c == htk D(t) of K (positive C), 2 random points: True
+    (3, 3, 3): own D(t) for wedge_{c in [5, 8]} d^4y_c == htk D(t) of K (positive C), 2 random points: True
+(d) so(5): int dtheta (1/3!) f C C C == (1/2) f gamma c c : True

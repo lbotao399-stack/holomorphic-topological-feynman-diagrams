@@ -1,0 +1,5 @@
+3.1 tight: Laplace terms 1, sign +1, block det == local factors: [True, True] [0.0s]
+3.4 tight: Laplace terms 1, sign +1, block det == local factors: [True, True] [0.0s]
+4.1 tight: Laplace terms 1, sign -1, block det == local factors: [True, True] [0.1s]
+4.10 tight: Laplace terms 1, sign -1, block det == local factors: [True, True] [0.1s]
+4.11 generic: Laplace terms 4, sign +1, I = ['-37/19906560', '-4898417/5184000']; block det == spred generic: [True, True] [0.1s + 25.8s]

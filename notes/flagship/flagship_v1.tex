@@ -1,0 +1,733 @@
+% compile in holomorphic-twist-program/notes/flagship:  pdflatex flagship.tex  (twice)
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{xcolor}
+\numberwithin{equation}{section}
+\allowdisplaybreaks
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\emergencystretch=3em
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{dstatement}[theorem]{Statement}
+\newtheorem{hypothesis}{Hypothesis}
+\renewcommand{\thehypothesis}{H\arabic{hypothesis}}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\RPp}[1]{\mathbb{RP}^{#1}_{>0}}
+\newcommand{\Pf}{\operatorname{Pf}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\alt}{\operatorname{alt}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\g}{\mathfrak g}
+\newcommand{\fsl}{\mathfrak{sl}}
+\newcommand{\fgl}{\mathfrak{gl}}
+\newcommand{\fso}{\mathfrak{so}}
+\newcommand{\fsp}{\mathfrak{sp}}
+\newcommand{\dbar}{\bar\partial}
+\newcommand{\zb}{\bar z}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\ver}[1]{\textup{[verified: #1]}}
+\newcommand{\der}{\textup{[derived, not independently checked]}}
+\newcommand{\src}[1]{\textup{[sourced: #1]}}
+\newcommand{\htk}{\mathrm{htk}}
+
+\title{Two-loop obstruction of commutative Chern--Simons theory on $\mathbb R\times\mathbb C^2$\\ and the two-loop theta kernels on $\mathbb R^T\times\mathbb C^H$}
+\author{}
+\date{2026-11-21}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Two-loop theta kernels on $\mathbb R^T\times\mathbb C^H$ ($T\le1$, $H+T\le6$) in closed form. Commutative CS on $\mathbb R\times\mathbb C^2$: $[O_2]=\frac{\pi\cN}{48}[F_{223}]$, $\cN=-U\hbar^2/(64\pi^5)$, nonzero for $\fsl_N,\fgl_N$ ($N\ge3$), $\fso_{5,6,7,8}$, $\fsp_6$, $G_2$, $F_4$, zero for $\fsl_2,\fgl_{1,2}$; cancelled by an order-$\hbar$ term for $\fsl_N,\fgl_N$; no invariant order-$\hbar$ term for $\fso_{5,7,8}$, $\fsp_6$, $G_2$, $F_4$.
+\end{abstract}
+
+\tableofcontents
+
+%======================================================================
+\section{Setting, conventions, dictionary}\label{sec-setting}
+%======================================================================
+
+\paragraph{Status labels.} Theorem, Proposition, Lemma: confirmed by an independent verifier; the bracket gives the run and claim (R1 $=$ run 1, \path{deepen/run1_digest.json}; R2 $=$ run 2, \path{deepen/<task>/verify/VERIFY.txt}). \der: no verifier ran. \src{$\cdot$}: read in the cited source (web extraction or PDF text layer unless TeX is stated), transcription not independently checked.
+
+\begin{hypothesis}[cochain model]\label{H-CE}
+Translation-invariant local functionals on $\mathbb R\times\mathbb C^2$ of ghost number $g$, modulo total derivatives, with the BRST differential $\{S_{\rm cl},\cdot\}$, are identified with alternating $\g$-invariant Chevalley--Eilenberg cochains of $\g[[z_1,z_2]]$ of degree $g+3$, polynomial in the momenta and restricted to $\sum_ip_i=0$ (R1 anomaly-structure c5; argued there, not sourced; Section~\ref{sec-lit-coh}).
+\end{hypothesis}
+\begin{hypothesis}[weights]\label{H-w}
+The quantization is equivariant under $\phi_l:(\tau,z_1,z_2)\mapsto(\tau,l_1z_1,l_2z_2)$ with $\hbar\mapsto(l_1l_2)^{-1}\hbar$ (imposed; the heat-kernel regulator is invariant only under $U(1)^2$; R2 deform d1 verifier).
+\end{hypothesis}
+Every cohomological statement below is a statement about CE cohomology; its reading as a statement about BRST cohomology uses \ref{H-CE}.
+
+\subsection{Network variables and reduced kernel}\label{sec-net}
+
+Graph $\Gamma=(V,I)$, edges $e=(e(0),e(1))$ oriented and totally ordered (edge order), $n=|I|-|V|+1$, root $v_*$ with $\lambda_{v_*}=-\sum_{v\ne v_*}\lambda_v$, $\lambda_v\in\mathbb C^H$; $B_{ev}=\delta_{v,e(0)}-\delta_{v,e(1)}$ ($v\ne v_*$); cycle matrix $C\in\mathbb Z^{n\times|I|}$; $D=H+T$.
+\begin{gather}
+B^{\mathsf T}y=\lambda,\qquad \sum_eC_{re}t_ey_e=0,\qquad M=C\,t\,C^{\mathsf T},\qquad U=\det M,\qquad \psi^i_r=\sum_eC_{re}y^i_e\,dt_e,\\
+\rho_n(M)=(\det M)^{-1/2}\Pf\big(-\tfrac12\,dM\,M^{-1}dM\big),\qquad \Pf(A)=\sum_{j=2}^n(-1)^jA_{1j}\Pf(A_{\hat1\hat\jmath}),\qquad\rho_{2k+1}=0,\label{eq-rho}\\
+\rho_2=-\frac{M_{11}\,dM_{12}\,dM_{22}-M_{12}\,dM_{11}\,dM_{22}+M_{22}\,dM_{11}\,dM_{12}}{2(\det M)^{3/2}}\qquad(\text{S3 Prop.~5.5, (5.13), (5.14)}),\\
+K_\Gamma(\lambda;z)=\int_{\RPp{|I|-1}}e^{-\sum_ey_e\cdot z_e}\,U^{-H}\rho_n(M)^T\wedge\prod_{i=1}^H\prod_{r=1}^n\psi^i_r .\label{eq-K}
+\end{gather}
+Orientation of $\RPp{|I|-1}$: $\iota_E\prod_edt_e$ in the edge order, $E=\sum_et_e\partial_{t_e}$. Factor order: $\rho_n$, then $i=1..H$ (outer), $r=1..n$ (inner). Degree: $n(H+T)=|I|-1$, hence
+\begin{equation}
+|I|=Dn+1,\qquad |V|=(D-1)n+2 .
+\end{equation}
+Density: $U^{-H}\rho_n^T\wedge\prod\psi=D(t)\,\iota_E(dt_0\wedge\dots\wedge dt_{|I|-1})$, $K_\Gamma=\int_{t>0,\sum t=1}D(t)\,e^{-\sum y\cdot z}\,dt_0\cdots dt_{|I|-2}$; $-\partial/\partial z^i_e$ inserts $y^i_e$. Determinants: $[u_1\cdots u_H]=\det(u_1,\dots,u_H)$, at $H=2$: $[ab]=a^1b^2-a^2b^1$.
+
+Cycle bases. $C_T$: fundamental cycles of a spanning tree $T$, $(C_T)_{rc_r}=+1$ on the chord $c_r$; $\sigma_T=\varepsilon_T\det B_T$. Positive basis: $\det\binom{B^{\mathsf T}}{C}>0$ ($=\#$ spanning trees); $K_\htk$ denotes $K_\Gamma$ in the positive basis.
+
+\begin{proposition}[transformation rules; \texttt{code/htk/CONVENTIONS.md} \S2]\label{prop-rules}
+$C\to AC$, $|\det A|=1$: $K_\Gamma\to(\det A)^{D}K_\Gamma$. For $K_\htk$: reversal of $k$ edges with $z_e\to-z_e$: $(-1)^{Dk}$; permutation $\pi$ of the edge order: $\sgn(\pi)^{D+1}$; relabelling $\pi$ of the vertices (root $=$ last label): $\sgn(\pi)^D$. $T=0$, fundamental cycles of $T$, chords $c_r$:
+\begin{equation}
+K_\htk=\sigma_T^{\,H}\,\epsilon(n,H)\int e^{-\sum y\cdot z}\bigwedge_rd^Hy_{c_r},\qquad \epsilon(n,H)=(-1)^{nH+\binom n2\binom H2}.
+\end{equation}
+\ver{R1 engine, \path{code/tests/verify_independent.py}, 138 PASS, 0 FAIL: transformation rules pointwise exact on 11 graph/$(H,T)$ pairs and at the level of exact kernels on 9 graphs; R1 anomaly-structure a1 verifier: $D_\psi=\sigma_T^H\epsilon(n,H)D_{dy}$ on 45 graphs}
+\end{proposition}
+
+\subsection{Dictionary to S1, S2, S3}\label{sec-dict}
+
+S1: Li--Liu--Chang, \path{sources/LLC_main.tex}, version \texttt{20261120-231110}; S2: 6d note (holomorphic CS on $\mathbb C^{3|2}$); S3: 11d note ($\mathbb R\times\mathbb C^5$). Entries from \path{notes/compendium.tex} (Section ``Conventions dictionary'', with the source equation numbers given there); last column: Section~\ref{sec-gauge}.
+
+{\footnotesize
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{3.3cm}@{}}
+\toprule
+ & S1 & S2 & S3 & $\mathbb R\times\mathbb C^2$\\
+\midrule\endhead
+$(H,T)$, $D$ & $(2,0)$, $2$ & $(3,0)$, $3$ & $(5,1)$, $6$ & $(2,1)$, $3$\\
+$\Omega$ & $2\,dx^{+\dot+}\wedge dx^{+\dot-}$ & $i\,dx^1dx^2dx^3$ & $d^5z$ & $dz_1\wedge dz_2$\\
+$\Omega\wedge d\tau^T\wedge d^H\bar x$ & $-8\,d^4x_E$ & $8\,d^6x_E$ & $32i\,d\tau\,d^{10}x$ & $4\,d\tau\,d^4x$\\
+$[K_t]_\Omega$, $\int\Omega\wedge K_t=1$ & $-\dfrac{e^{-|x|^2/2t}}{32\pi^2t^2}dx^{-\dot+}dx^{-\dot-}$ & $\dfrac{e^{-x\cdot\bar x/2t}}{8(2\pi t)^3}d^3\bar x$ & $\dfrac{e^{-(\tau^2+z\cdot\zb)/4t}}{32i\,(4\pi t)^{11/2}}d\tau\,d^5\zb$ & $\dfrac{e^{-(\tau^2+|z|^2)/4t}}{4\,(4\pi t)^{5/2}}d\tau\,d^2\zb$\\
+currents & $y_{e,+\dot a}=\frac{(x_{e(0)}-x_{e(1)})^-_{\dot a}}{2t_e}$ & $y_{e,a}=\frac{(\bar x_{e(0)}-\bar x_{e(1)})^a}{2t_e}$ & $y_e=\frac{\zb_{e(0)}-\zb_{e(1)}}{4t_e}$, $\eta_e=\frac{\tau_{e(0)}-\tau_{e(1)}}{2\sqrt{t_e}}$ & as S3\\
+edge form & $-\frac1{8\pi^2}e^{-y_e\cdot(\cdots)}d^2y_e$ & $\frac1{8\pi^3}e^{-y_e\cdot(\cdots)}d^3y_e$ & $-\frac{i}{32\pi^{11/2}}e^{-\eta_e^2-y_e\cdot\Delta_e}$\newline$d\eta_e\,d^5y_e$ & $\frac1{4\pi^{5/2}}e^{-\eta_e^2-y_e\cdot\Delta_e}$\newline$d\eta_e\,d^2y_e$\\
+heat-edge sum & $(-1)^{j-1}$ & no signs & $(-1)^{j-1}$ & no signs ($P$ even)\\
+raw integral & $(-8\pi^2)^{-n}I^{\rm S1}$ & $(-8\pi^3)^{-n}I^{\rm S2}$ (S2 (5.9)) & $\big(\frac{-i}{64\pi^{11/2}}\big)^n\mathcal K^{\rm S3}$ & $(-1)^{\frac{n(n-1)}2}$\newline$\times(8\pi^{5/2})^{-n}K_\htk$\\
+source kernel & $I^{\rm S1}=(-1)^{\frac{n(n+1)}2}K_\htk$ & $I^{\rm S2}=(-1)^{\frac{n(n+1)}2}K_\htk$ & $\mathcal K^{\rm S3}=(-1)^{\frac{n(n+1)}2}K_\htk$ & $K_\htk$\\
+\bottomrule
+\end{longtable}}
+
+$\Delta_e=z_{e(0)}-z_{e(1)}+z_e$. Schwinger times: $t^{\rm S3}=\tfrac12t^{\rm S1}=\tfrac12t^{\rm S2}$; GKW (2403.13049): $t^{\rm GKW}=2t^{\rm S1}=4t^{\rm S3}$, $s=\eta$. The kernels are projective in $t$.
+Status of the last two rows: $I^{\rm S}=(-1)^{n(n+1)/2}K_\htk$ \ver{R1 engine: \path{code/tests/test_known.py} 16/16 (S1 fans $n\le3$, S2 box, $A$, $B$, S3 heptagon and five $\theta_{pqr}$); R1 twoloop-universal C7: $I^{\rm S1}=-K_\htk$, $I^{\rm S2}=-K_\htk$, $\mathcal K^{\rm S3}=-K_\htk$ at $n=2$}. Raw/source-kernel columns S1--S3: \src{S1 (3.69), S2 (5.9), S3 Thm~5.4 (5.12)}; column $\mathbb R\times\mathbb C^2$: Proposition~\ref{prop-raw}.
+
+\begin{proposition}[S2 raw normalization]\label{prop-S2norm}
+With the real-contour Gaussian and S2's $\Omega=i\,dx^1dx^2dx^3$: $G=+(8\pi^3)^{-n}I^{\rm S2}$ for the box ($n=1$) and the graphs $A$, $B$ ($n=2$). S2 (5.9) states $(-1/8\pi^3)^nI^{\rm S2}$: equal at $n=2$, opposite at $n=1$; the difference is $Q_n\to(-1)^nQ_n$. \ver{R2 normalization c2: exact pointwise identity, $\Phi_j/(D(t)(-1)^jt_j)=-1/(8\pi^3)$ (box, 3 points), $-1/(64\pi^6)$ ($A$, $B$, 2 points each)}
+\end{proposition}
+
+\subsection{\texorpdfstring{Heat-kernel gauge on $\mathbb R\times\mathbb C^2$}{Heat-kernel gauge on R x C2}}\label{sec-gauge}
+
+\begin{proposition}[edge data]\label{prop-gauge}
+$D=d\tau\,\partial_\tau+d\zb_i\,\partial_{\zb_i}$, $D^*=-\iota_{\partial_\tau}\partial_\tau-4\sum_i\iota_{\partial_{\zb_i}}\partial_{z_i}$, $[D,D^*]=-\partial_\tau^2-4\sum_i\partial_{z_i}\partial_{\zb_i}=-\Delta_{\mathbb R^5}$;
+\begin{gather}
+[D^*K_t]_\Omega=t^{-1}\iota_{E_x}[K_t]_\Omega,\qquad E_x=\tfrac\tau2\partial_\tau+\zb^i\partial_{\zb^i},\\
+[P]_\Omega=\int_0^\infty dt\,[D^*K_t]_\Omega=\frac{3}{16\pi^2r^5}\Big[\frac\tau2\,d\zb_1\wedge d\zb_2-d\tau\wedge(\zb_1d\zb_2-\zb_2d\zb_1)\Big],\qquad r^2=\tau^2+|z|^2,\\
+D[P]_\Omega=D^*[P]_\Omega=0\ (r>0),\qquad \int_{S^4_R}\Omega\wedge[P]_\Omega=1,\qquad [P]_\Omega(-x)=-[P]_\Omega(x),\\
+\Theta_e=[K_{t_e}]_\Omega-dt_e\wedge[D^*K_{t_e}]_\Omega=\frac1{4\pi^{5/2}}\,e^{-\eta_e^2-y_e\cdot\Delta_e}\,d\eta_e\wedge dy^1_e\wedge dy^2_e,\qquad(d_t+D)\Theta_e=0 .
+\end{gather}
+$[P]_\Omega$ equals Ishtiaque--Jeong--Zhou 2408.15712 (2.12) with $(x,z,t)\to(z_1,z_2,\tau)$, $\epsilon_1\to1$. Wang--Williams gauge: $D^*_{\rm WW}=\frac12D^*$, $H_{\rm WW}=\frac12H$ under $x=\sqrt2\,\tau$; WW (22) as printed has $\int\Omega\wedge H_{\rm WW}=4$, so $P_{\rm WW}=4P$ componentwise for the printed kernel.
+\ver{R2 normalization a1: own sympy exterior algebra; flux $1.000000000000008$ at $R=0.7,1.3$ ($24^4$ Gauss--Legendre); WW (22) factor 4 is the verifier's correction}
+\end{proposition}
+
+\begin{proposition}[raw two-loop integral]\label{prop-raw}
+Let $G_\Gamma(\lambda)=\lim_{\varepsilon\to0}\int_{X^{|V|-1}}\big(\bigwedge_{v\neq v_*}\Omega_v\big)e^{\sum_v\lambda_v\cdot z_v}\,D\big(\bigwedge_e[P_e]_\Omega\big)\big|_{\rm UV}$, $P_e=P(x_{e(0)}-x_{e(1)})$, $X_v$ oriented by $d\tau\,d^4x$, vertex order. For $\theta(1,3,3)$, $\theta(2,2,3)$ (engine labelling, Section~\ref{sec-graphs}), graph$_A$, graph$_B$ and $\theta^{\rm rootN}(1,3,3)$, $\theta^{\rm rootN}(2,2,3)$ at $(H,T)=(2,1)$:
+\begin{equation}
+G_\Gamma(\lambda)=-\frac{1}{64\pi^5}\,K_{\Gamma,\htk}(\lambda;0).
+\end{equation}
+Derivation chain: $\Theta_e$ odd, $\beta_e=[D^*K_{t_e}]$ even, $\Pi_*(dt_1\cdots dt_N\wedge a)=\int a\,d^Nt$;
+\begin{gather}
+\bigwedge_eP_e=(-1)^N\Pi_*\big(\textstyle\bigwedge_e\Theta_e\big),\qquad D\Pi_*=(-1)^N\Pi_*D,\qquad D\textstyle\bigwedge_e\Theta_e=-d_t\bigwedge_e\Theta_e,\\
+D\textstyle\bigwedge_eP_e\big|_{\rm UV}=\sum_j(-1)^{j-1}\int_{t_j=\varepsilon}\big[\bigwedge_e\Theta_e\big]_{dt_1..\widehat{dt_j}..dt_N}=\int_{\partial{\rm UV},\ \iota_Edt^N}\bigwedge_e\Theta_e\quad(\text{no }(-1)^{\binom N2});
+\end{gather}
+extraction, reorderings, Gaussians, constant:
+\begin{gather}
+\theta^a_e=dX^a_e-c_aJ^a_edt_e,\quad c=(1,4,4),\quad J=(w,y^1,y^2):\qquad \varsigma^{\rm ext}=(-1)^{\binom{3n+1}2}=(-1)^{\frac{n(n-1)}2},\\
+s_1=(-1)^{9n(|V|-1)}=(-1)^n,\qquad s_2=(-1)^{3\binom{|V|-1}2}=(-1)^n,\\
+\int\prod_vd^4x_v\,e^{-\frac14z^\dagger\Lambda z+\lambda\cdot z}G(\zb)=(4\pi)^{2(|V|-1)}\Big(\frac{\prod_et_e}U\Big)^2G(4\Lambda^{-1}\lambda),\qquad \Lambda=B^{\mathsf T}t^{-1}B,\quad \det\Lambda=\frac{U}{\prod_et_e},\\
+\int\prod_vd\tau_v\,e^{-\frac14\tau^{\mathsf T}\Lambda\tau}=(4\pi)^{\frac{|V|-1}2}\Big(\frac{\prod_et_e}U\Big)^{1/2},\\ \langle w_ew_f\rangle=\tfrac12\big[\delta_{ef}/t_e-(C^{\mathsf T}M^{-1}C)_{ef}\big],\qquad U^{-1/2}\Big\langle\prod_r\psi^\tau_r\Big\rangle=\rho_n,
+\end{gather}
+\begin{equation}
+(4\pi^{5/2})^{-|I|}(4(4\pi)^{5/2})^{|V|-1}4^{2n}\prod_e\frac{t_e^{5/2}}{2\sqrt{t_e}(4t_e)^2}=(8\pi^{5/2})^{-n} .
+\end{equation}
+\ver{R2 normalization b1--b4: exact pointwise identity in the verifier's own code, $\Phi_j/(D_\htk(t)(-1)^jt_j)=-1/(64\pi^5)$ at every component $j$, 3 random rational $(t,\lambda)$ per theta, 2 per other graph; fiber integration re-derived; end-to-end heat-edge integrals of $(0,1)$ banana(3), banana(5) and $(1,0)$ banana(2), banana(3) agree with the same chain to 15.6--17.0 digits}
+\end{proposition}
+
+\begin{dstatement}[general $n$]
+$G_\Gamma=(-1)^{n(n-1)/2}(8\pi^{5/2})^{-n}K_{\Gamma,\htk}$ for every tight graph at $(H,T)=(2,1)$ (exponent and constant checked arithmetically for all $n$, pointwise only at $n=2$). General $(H,T)$: $G=\varsigma^{\rm ext}s_1s_2\,c_{H,T}^{-n}K$, $c_{H,1}=2v_H\pi^{H+1/2}$, $c_{H,0}=v_H\pi^H$, $\Omega\wedge d\tau^T\wedge d^H\zb=v_H\,d^{2H+T}x$. \der\ (R2 normalization b10)
+\end{dstatement}
+
+%======================================================================
+\section{\texorpdfstring{Two-loop theta kernels at $T=1$ and $T=0$}{Two-loop theta kernels at T=1 and T=0}}\label{sec-theta}
+%======================================================================
+
+\subsection{Labelling and orientation}\label{sec-theta-lab}
+$\theta(p,q,r)$: trivalent vertices $N=0$ and $N'=v_*$; paths $P\in\{A,B,C\}$ with $n_P=p,q,r$ edges $P_1,\dots,P_{n_P}$, all oriented $N\to N'$; edge order $(A_1..A_p,B_1..B_q,C_1..C_r)$; interior vertex $P_k$ between $P_k$ and $P_{k+1}$, numbered $1,2,\dots$ along $A$, then $B$, then $C$; source $\lambda^P_k$; $\Lambda_P=(\lambda^P_1,\dots,\lambda^P_{n_P-1})\in\mathbb C^{H\times(n_P-1)}$. Tight: $p+q+r=2D+1$, $n_P\le D$. Cycle matrix $C_3$: rows $A-B$, $B-C$.
+\begin{gather}
+R_P=\sum_jt_{P_j},\quad x^P_j=\frac{t_{P_j}}{R_P},\quad \sigma^P_k=\sum_{j>k}x^P_j,\quad w_P=\frac{R_P^{-1}}{\sum_{P'}R_{P'}^{-1}},\quad U=R_AR_B+R_BR_C+R_CR_A,\\
+Q^P_j=\sum_{k<j}\lambda^P_k,\qquad \hat m_P=\sum_k\sigma^P_k\lambda^P_k,\qquad L=\lambda_N+\sum_P\hat m_P,\qquad y_{P_j}=w_PL-\hat m_P+Q^P_j,\\
+D_\theta=\det\begin{pmatrix}\Lambda_A&\Lambda_B&0\\0&\Lambda_B&\Lambda_C\end{pmatrix}\ (T=1),\qquad
+Q(v)=\det\begin{pmatrix}v&0&\Lambda_A&\Lambda_B&0\\0&v&0&\Lambda_B&\Lambda_C\end{pmatrix}\ (T=0).
+\end{gather}
+Both are $2H\times2H$ determinants.
+
+\subsection{Densities}
+
+\begin{theorem}[Schwinger-space densities]\label{thm-dens}
+In the cycle basis $C_3$, edge order $A,B,C$:
+\begin{align}
+T=1:&\qquad D(t)=(-1)^{\frac{H(H+1)}2}\,\frac{D_\theta}{2\,U^{H+3/2}},\\
+T=0:&\qquad D(t)=(-1)^{\frac{H(H+1)}2+1}\,\frac{R_AR_BR_C\,Q(L(t))}{U^{H+2}},\qquad L(t)=\lambda_N+\sum_{P,k}\sigma^P_k(t)\lambda^P_k .
+\end{align}
+At $T=1$ the density depends on $t$ only through $U$ and does not depend on $\lambda_N$. For any other labelling, orientation or edge order, $D_G=\sgn(\pi_{\rm std})D_{\rm std}$, $\pi_{\rm std}$ listing the edges in the order $A,B,C$.
+\ver{R1 twoloop-universal C1, C2: fresh exact Kirchhoff and forms solver, 32 graphs ($T=0$: $H=1..6$; $T=1$: $H=0..5$), 3 random rational points and 2 transforms each; 53 graphs with unsorted $(p,q,r)$}
+\end{theorem}
+Derivation chain (C1):
+\begin{gather}
+\phi^i_P=\sum_jy^i_{P_j}dt_{P_j}=V^i\,d\log R_P+R_P\,d\hat m^i_P,\quad V=\frac{L}{\sum_PR_P^{-1}},\quad \psi_1=\phi_A-\phi_B,\ \ \psi_2=\phi_B-\phi_C,\\
+a=d\log\frac{R_A}{R_B},\quad b=d\log\frac{R_B}{R_C},\quad a\wedge b=\frac{\Omega_R}{R_AR_BR_C},\quad \Omega_R=R_A\,dR_BdR_C-R_B\,dR_AdR_C+R_C\,dR_AdR_B,\\
+\Big[\prod_i\psi^i_1\psi^i_2\Big]_{\rm fibre}=(-1)^{\frac{H(H-1)}2+H+q-1}\prod_PR_P^{n_P-1}D_\theta\,d\sigma,\qquad
+\iota_E{\rm vol}=(-1)^{q-1}\prod_PR_P^{n_P-1}\,\Omega_R\wedge dx,\\
+\rho_2=\frac{\Omega_R}{2U^{3/2}}\quad(M_{11}=R_A+R_B,\ M_{12}=-R_B,\ M_{22}=R_B+R_C),\qquad R_P=1/w_P:\ U=\frac1{w_Aw_Bw_C}.
+\end{gather}
+($\Omega_R\wedge a=\Omega_R\wedge b=0$ removes the non-fibre terms at $T=1$. The signs of the intermediate steps are asserted in C1; the final densities fix them and were verified.)
+
+\subsection{Integral representations}
+
+\begin{theorem}[general sources and displacements]\label{thm-intrep}
+With $d^2w=dw_A\,dw_B$ on $\Delta^2$ and $dx=\prod_Pdx^P_2\cdots dx^P_{n_P}$ on $\prod_P\Delta^{n_P-1}$ (Lebesgue):
+\begin{align}
+K^{T=1}[C_3](\lambda;z)&=(-1)^{\frac{H(H+1)}2}\frac{D_\theta}2\int_{\Delta^2}d^2w\prod_Pw_P^{H+\frac12-n_P}\int dx\,\exp\Big(\sum_v\lambda_v\cdot X_v\Big),\\
+K^{T=0}[C_3](\lambda;z)&=(-1)^{\frac{H(H+1)}2+1}\int_{\Delta^2}d^2w\prod_Pw_P^{H-n_P}\int dx\,Q(L(x))\exp\Big(\sum_v\lambda_v\cdot X_v\Big),
+\end{align}
+\begin{equation}
+Z_P=\sum_jz_{P_j},\quad W=\sum_Pw_PZ_P,\quad X_N=-W,\quad X_{P_k}=\sigma^P_k(Z_P-W)-\sum_{j>k}z_{P_j},\quad X_{N'}=0,
+\end{equation}
+and for a root at an interior vertex $\varrho$: $X^{(\varrho)}_v=X_v-X_\varrho$. At $(H,T)=(5,1)$ this is S3 (7.3) with $\mathcal K^{\rm S3}=-K[C_3]$.
+\ver{R1 twoloop-universal C3, C4: chart densities 32/32; at $z\neq0$ direct versus representation 13.2--15.0 digits (5 cases)}
+\end{theorem}
+
+\subsection{\texorpdfstring{Values at $z=0$}{Values at z=0}}
+
+\begin{theorem}[closed forms]\label{thm-closed}
+\begin{align}
+T=1:&\quad K[C_3](\lambda;0)=(-1)^{\frac{H(H+1)}2}\,\frac{D_\theta}2\,\frac{\prod_P\Gamma(H+\frac32-n_P)}{\Gamma(H+\frac32)\prod_P(n_P-1)!},\label{eq-T1}\\
+T=0:&\quad K[C_3](\lambda;0)=(-1)^{\frac{H(H+1)}2+1}\,c_0\,Q(\bar L),\qquad c_0=\frac{\prod_P(H-n_P)!}{(H+1)!\prod_P(n_P-1)!},\label{eq-T0}\\
+&\quad \bar L=\sum_v\mu_v\lambda_v,\qquad \mu_N=1,\quad\mu_{N'}=0,\quad \mu_{P_k}=\frac{n_P-k}{n_P}.\notag
+\end{align}
+Lemma used at $T=0$: the polarization of $Q$ vanishes on ${\rm span}(\Lambda_P)\times{\rm span}(\Lambda_P)$ for each $P$, so $\langle Q(L)\rangle=Q(\langle L\rangle)$, $\langle\sigma^P_k\rangle=(n_P-k)/n_P$. Basis: $\sgn\det\binom{B^{\mathsf T}}{C_3}=(-1)^{q+1}$, hence
+\begin{equation}
+K_\htk=(-1)^{(q+1)D}K[C_3].
+\end{equation}
+Root at an interior vertex: $K[C_3]$, as a function of the full source vector ($\sum_v\lambda_v=0$), does not depend on the root; $K_\htk[\varrho\leftrightarrow N']=(-1)^DK_\htk$.
+\ver{R1 twoloop-universal C5, C6, C7, C8: $c_1$, $c_0$, signs and examples 16/16 each, equal to \texttt{htk.kernel\_exact}; basis sign on 32 tight graphs, 343 graphs $\theta(p,q,r)$ with $p,q,r\le7$, 53 unsorted orders; interior roots on all 32 graphs}
+\end{theorem}
+
+Coefficients $c_1=K[C_3]/(\pi\,(-1)^{H(H+1)/2}D_\theta)$ at $T=1$ and $c_0$ at $T=0$; $\sgn_\htk$ is the sign of $K_\htk$ relative to $c_1\pi D_\theta$, resp.\ $c_0Q(\bar L)$:
+{\small
+\begin{longtable}{@{}l>{\raggedright\arraybackslash}p{11.2cm}l@{}}
+\toprule
+$T=1$, $H$ & $(p,q,r)$: $c_1$ & $\sgn_\htk$\\
+\midrule
+0 & $(111)$: $1$ & $+$\\
+1 & $(122)$: $\frac13$ & $-$\\
+2 & $(133)$: $\frac1{20}$;\ \ $(223)$: $\frac1{30}$ & $-,+$\\
+3 & $(144)$: $\frac1{252}$;\ \ $(234)$: $\frac1{420}$;\ \ $(333)$: $\frac1{840}$ & $+,+,+$\\
+4 & $(155)$: $\frac1{5184}$;\ \ $(245)$: $\frac1{9072}$;\ \ $(335)$: $\frac1{10080}$;\ \ $(344)$: $\frac1{22680}$ & $+,-,+,-$\\
+5 & $(166)$: $\frac1{158400}$;\ \ $(256)$: $\frac1{285120}$;\ \ $(346)$: $\frac1{332640}$;\ \ $(355)$: $\frac1{798336}$;\ \ $(445)$: $\frac1{997920}$ & $-,-,-,-,-$\\
+\midrule
+$T=0$, $H$ & $(p,q,r)$: $c_0$ & $\sgn_\htk$\\
+\midrule
+1 & $(111)$: $\frac12$ & $+$\\
+2 & $(122)$: $\frac16$ & $+$\\
+3 & $(133)$: $\frac1{48}$;\ \ $(223)$: $\frac1{48}$ & $-,+$\\
+4 & $(144)$: $\frac1{720}$;\ \ $(234)$: $\frac1{720}$;\ \ $(333)$: $\frac1{960}$ & $-,-,-$\\
+5 & $(155)$: $\frac1{17280}$;\ \ $(245)$: $\frac1{17280}$;\ \ $(335)$: $\frac1{17280}$;\ \ $(344)$: $\frac1{25920}$ & $+,-,+,-$\\
+6 & $(166)$: $\frac1{604800}$;\ \ $(256)$: $\frac1{604800}$;\ \ $(346)$: $\frac1{604800}$;\ \ $(355)$: $\frac1{967680}$;\ \ $(445)$: $\frac1{1088640}$ & $+,+,+,+,+$\\
+\bottomrule
+\end{longtable}}
+At $T=1$: $K_\htk=s\,c_1\pi D_\theta$, $s=(-1)^{\lceil H/2\rceil+(H+1)(q+1)}$. Examples (vertex names for sources):
+\begin{gather}
+(1,1):\ K_\htk(\theta_{122})=-\tfrac\pi3\lambda_{B_1}\lambda_{C_1};\\
+(2,1):\ K_\htk(\theta_{133})=-\tfrac\pi{20}[B_1B_2][C_1C_2],\quad K_\htk(\theta_{223})=+\tfrac\pi{30}[A_1B_1][C_1C_2];\\
+(3,1):\ K_\htk(\theta_{333})=\tfrac{\pi}{840}\big([A_1A_2B_1][B_2C_1C_2]-[A_1A_2B_2][B_1C_1C_2]\big);\\
+(2,0):\ K_\htk(\theta_{122})=-\tfrac16[\bar LB_1][\bar LC_1],\ \bar L=N+\tfrac12B_1+\tfrac12C_1;\\
+(3,0):\ K_\htk(\theta_{133})=-\tfrac1{48}[\bar LB_1B_2][\bar LC_1C_2],\ \bar L=N+\tfrac23B_1+\tfrac13B_2+\tfrac23C_1+\tfrac13C_2;\\
+(3,0):\ K_\htk(\theta_{223})=+\tfrac1{48}[\bar LA_1B_1][\bar LC_1C_2],\ \bar L=N+\tfrac12A_1+\tfrac12B_1+\tfrac23C_1+\tfrac13C_2 .
+\end{gather}
+Laplace expansions ($B'\sqcup B''=\{1,..,q-1\}$):
+\begin{gather}
+D_\theta=\sum_{|B'|=H-p+1}\varepsilon_1(B')[\Lambda_A\Lambda_{B'}][\Lambda_{B''}\Lambda_C],\quad \varepsilon_1=(-1)^{\frac{H(H+1)}2+\frac{p(p-1)}2+(H-p+1)(p-1)+\sum_{b\in B'}b},\\
+Q(v)=\sum_{|B'|=H-p}\varepsilon_0(B')[v\Lambda_A\Lambda_{B'}][v\Lambda_{B''}\Lambda_C],\quad \varepsilon_0=(-1)^{\frac{H(H+1)}2+\frac{(p+1)(p+2)}2+(H-p)(p+1)+\sum_{b\in B'}b}.
+\end{gather}
+\ver{R1 twoloop-universal C9: 168 graph/$T$ cases, $D\le7$, all path orders; reproduces the S3 signs of $D_{355}$, $D_{445}$}
+
+\begin{proposition}[source values reproduced]\label{prop-sourcevals}
+S1 two-loop fan ($\theta(1,2,2)$ at $(2,0)$, S1 vertex $i=$ engine $i-1$): $I^{\rm S1}(\lambda;0)=-\frac1{24}[\lambda_1,\lambda_3+2\lambda_2][\lambda_3,\lambda_1+2\lambda_2]$, $=\det(\lambda_1,\lambda_3)^2/24$ at $\lambda_2=0$ (S1 (5.6)); it equals minus the right side of S1 (7.13) with $(v_{11},v_{21},A)=(1,3,2)$. S2 graphs $A=\theta(1,3,3)$, $B=\theta(2,2,3)$ with general sources at the trivalent vertex: $I_A=\frac1{432}(3\langle123\rangle+2\langle124\rangle+\langle125\rangle)(\langle145\rangle+2\langle245\rangle+3\langle345\rangle)$, $I_B=-\frac1{288}(3\langle uwq\rangle+2\langle uwa\rangle+\langle uwb\rangle)(2\langle qab\rangle+\langle uab\rangle+\langle wab\rangle)$, reducing to S2 (7.10), (7.14). S3: $c_{pqr}$ of S3 (7.5). S4 ladder: $I/\Delta^2=-1/432$.
+\ver{R1 twoloop-universal C10, C11, C5, C8}
+\end{proposition}
+
+%======================================================================
+\section{\texorpdfstring{The two-loop obstruction of commutative CS on $\mathbb R\times\mathbb C^2$}{The two-loop obstruction of commutative CS on R x C2}}\label{sec-obs}
+%======================================================================
+
+\subsection{Classical theory, regularization, obstruction}\label{sec-classical}
+
+\src{Wang--Williams 2407.08667 v3 (8), (9), (26)--(30), Def.~2.5, Cor.~2.8, Sec.~3.3.2; Costello 1610.04144 Sec.~5; R2 normalization a2, verifier: confirmed as reading}
+\begin{gather}
+X=\mathbb R\times\mathbb C^2\ni(\tau,z_1,z_2),\quad \Omega=dz_1\wedge dz_2,\quad \mathcal E=\Omega^*(\mathbb R)\otimes\Omega^{0,*}(\mathbb C^2)\otimes\g[1],\quad A=c+A^{(1)}+A^{(2)}+A^{(3)},\\
+S_{\rm cl}(A)=\int_X\Omega\wedge\Big(\tfrac12\kappa(A,DA)+\tfrac16\kappa(A,[A,A])\Big),\qquad \omega(a,b)=\int_X\Omega\,\kappa(a,b),\quad \deg\omega=2-D=-1,\\
+I=\int_X\Omega\,\tfrac16\kappa(A,[A,A]),\qquad QI=\{I,I\}=0,\\
+P_\varepsilon^L=\int_\varepsilon^Ldt\,D^*K_t,\quad DP_\varepsilon^L=K_\varepsilon-K_L,\quad I[L]=\lim_{\varepsilon\to0}W(P_\varepsilon^L,I),\quad W(P,I)=\sum_\gamma|\Aut\gamma|^{-1}\hbar^{g(\gamma)}w_\gamma(P,I),\\
+O[L]=\hbar\,e^{-I[L]/\hbar}(Q+\hbar\Delta_L)e^{I[L]/\hbar}=QI[L]+\hbar\Delta_LI[L]+\tfrac12(I[L],I[L])_L,\\
+O[L]=\lim_{\varepsilon\to0}\sum_\Gamma|\Aut\Gamma|^{-1}\sum_{j\in I(\Gamma)}w_\Gamma\big(K_\varepsilon\text{ on }e_j;\ P^L_\varepsilon\text{ on }e\neq e_j\big),\qquad O=\lim_{L\to0}O[L].
+\end{gather}
+$\kappa$: nondegenerate invariant form; $A$ has form degree $k$ and ghost number $1-k$ in $A^{(k)}$; $c$ ghost; $A^{(2)},A^{(3)}$ antifields. No counterterms (WW Thm~1.1, UV finiteness). $O_n$: the $b_1=n$ part of $O$; it carries $\hbar^n$. Odd $n$: $O_n=0$ ($\rho_1=0$, S3 Prop.~5.5, Cor.~5.6; WW Prop.~3.23).
+
+\begin{proposition}[counting]\label{prop-count}
+One heat edge, cubic vertices, $E$ external fields $A$ (total degree 1 each):
+\begin{equation}
+|I|=Dn+1,\quad |V|=(D-1)n+2,\quad E=3|V|-2|I|=(D-3)n+4,\quad {\rm gh}=E-D=(D-3)(n-1)+1 .
+\end{equation}
+$D=3$: $E=4$, ${\rm gh}=1$ for all $n$; tight graphs with degrees $\le3$: $n=1$ box, $n=2$ $\theta(1,3,3)$, $\theta(2,2,3)$ (degrees $[2,2,2,2,3,3]$). $D=2$: $(n,E,{\rm gh})=(1,3,1),(2,2,0),(3,1,-1),(4,0,-2)$; the $D=2$ two-loop graph $\theta(1,2,2)$ gives a ghost-number-0 two-leg term. BF vertex $\langle B,[A,A]\rangle$ with $\langle AB\rangle$ propagators: $b_1\le1$.
+\ver{R2 normalization e1: table $n=1..6$, htk catalog for $D=2,3$, $n=1,2$}
+\end{proposition}
+At $D=3$, $n=2$: $3|V|=2|I|+4$, WW (74).
+
+\subsection{Graphs and kernels}\label{sec-graphs}
+
+Engine labelling ($N=0$, $N'=v_*=5$, external vertices $1,2,3,4$ in path order, edges in the order listed, positive cycle basis):
+\begin{align}
+\theta(1,3,3):&\ (0,5),(0,1),(1,2),(2,5),(0,3),(3,4),(4,5);\quad C=\begin{pmatrix}-1&1&1&1&0&0&0\\-1&0&0&0&1&1&1\end{pmatrix},\\
+\theta(2,2,3):&\ (0,1),(1,5),(0,2),(2,5),(0,3),(3,4),(4,5);\quad C=\begin{pmatrix}1&1&-1&-1&0&0&0\\-1&-1&0&0&1&1&1\end{pmatrix}.
+\end{align}
+$|\Aut\theta(1,3,3)|=|\Aut\theta(2,2,3)|=4$ (external legs unlabelled).
+
+\begin{theorem}[obstruction kernels]\label{thm-kernels}
+At $(H,T)=(2,1)$, in the engine labelling, with $p_v=\lambda_v$ ($v=1..4$) and $\lambda_N$ arbitrary:
+\begin{equation}
+K_{133}(\lambda;0)=-\frac{\pi}{20}[p_1p_2][p_3p_4],\qquad K_{223}(\lambda;0)=+\frac{\pi}{30}[p_1p_2][p_3p_4].
+\end{equation}
+Both are \eqref{eq-T1} with $K_\htk=s\,c_1\pi D_\theta$, $s=-1,+1$.
+\ver{R1 anomaly-structure c1: $U=1/(w_Aw_Bw_C)$ and the chart density exact at 5 random points with sources at all five non-root vertices; $K/D_\theta=-0.15707963267949$, $0.10471975511966$; float integrals 14 and 13 digits; R1 twoloop-universal C5}
+\end{theorem}
+
+\subsection{Wick sign and assembly}\label{sec-wick}
+
+Rule: vertex $f_{h_1h_2h_3}A_{h_1}A_{h_2}A_{h_3}$ in a chosen local half-edge order, $f_{abc}=\kappa([T_a,T_b],T_c)$; $\langle A^a(x)A^b(y)\rangle=s_P\hbar\kappa^{ab}[P](x-y)$, $[P]$ even; Koszul rule for the total degree;
+\begin{gather}
+\sigma_\Gamma=\sgn(\text{source}\to\text{target}),\quad\text{source}=\text{half-edges in local order, vertices in vertex order},\notag\\
+\text{target}=(e,0),(e,1)\ \text{for }e\text{ in edge order, then }x_{v_1},\dots,x_{v_4},\notag\\
+w_\Gamma(A)=U\hbar^2\sigma_\Gamma\int_X\Omega\wedge\big[G_\Gamma(\partial^{(1)},..,\partial^{(4)})\,C_\Gamma^{a_1a_2a_3a_4}A_{a_1}A_{a_2}A_{a_3}A_{a_4}\big]_{3\text{-form}},\\
+C_\Gamma=\prod_vf_{(\text{local order})}\prod_e\kappa^{-1}_{(e,0)(e,1)},
+\end{gather}
+$O_2=\sum_\Gamma|\Aut\Gamma|^{-1}w_\Gamma$; $U=\pm1$ collects $s_P^7$, $(-1)^{5\binom62}$, the sign of the heat-edge identity, the placement of the external 3-form and the CE identification (one sign for all graphs with $(|V|,|I|,E)=(6,7,4)$).
+
+\begin{proposition}[relative Wick sign]\label{prop-wick}
+In the engine labelling with the local order $L'$ (externals first, then incident half-edges by (edge, end)): $\sigma_{133}=\sigma_{223}=-1=\sgn(L\to L')$ and $\sigma_\Gamma C_\Gamma=W^\Gamma$,
+\begin{align}
+W_{133}(A_1,..,A_4)&=-f_{xyz}\,f_{a_1y'u}\,f_{a_2u'w}\,f_{a_3z's}\,f_{a_4s'r}\,f_{x'w'r'},\\
+W_{223}(A_1,..,A_4)&=-f_{xyz}\,f_{a_1x'u}\,f_{a_2y'w}\,f_{a_3z's}\,f_{a_4s'r}\,f_{u'w'r'},
+\end{align}
+primed pairs contracted with $\kappa^{-1}$. The relative sign of $\theta(1,3,3)$ and $\theta(2,2,3)$ in the $K_\Gamma W^\Gamma$ convention is $+1$; $\sigma_\Gamma K_\Gamma C_\Gamma$ is invariant under vertex relabelling (root included), edge reversal, edge order and local orders.
+The same rule gives the signs fixed by nilpotency: S2 box, $A$, $B$: $(+1,+1,+1)$; six-d-$Q_3$ $G_1..G_5$: $\sigma/|\Aut|=(-\frac12,\frac12,-1,\frac18,-\frac12)$; 5d MSYM $\theta^{\rm rootN}$ with arm tensor: $(-1,-1)$, null space $(1,1)$.
+\ver{R2 normalization b5, c1: own permutation-sign code; $\sigma C_{L'}=W^\Gamma$ for $\fso(3)$, $\fso(4)$; relabelling invariance 5/5 per graph with failing controls; rule-free check: nilpotency-fixed $Q_2$ data acting on $O_N=\frac16fCCC$ give equal ratios $[K^{\rm rootN}X^{\rm arm}]/[K^{\rm eng}W]=(-1,-1)$ and $[K^{\rm S2}X^{\rm S2}]/[K^{\rm eng}W]=(1,1)$ for the two thetas}
+\end{proposition}
+
+\begin{theorem}[assembly]\label{thm-assembly}
+\begin{gather}
+O_2=\cN\sum_\Gamma|\Aut\Gamma|^{-1}\int_X\Omega\,K_\Gamma(\partial;0)\,W^\Gamma(A,A,A,A),\qquad \cN=-\frac{U\hbar^2}{64\pi^5},\\
+O_2=\frac{\pi\cN}{240}\int_X\Omega\,[\partial_1\partial_2][\partial_3\partial_4]\,W_{\rm tot}(A,A,A,A),\qquad W_{\rm tot}=-3W_{133}+2W_{223},\qquad \frac{\pi\cN}{240}=-\frac{U\hbar^2}{15360\,\pi^4},
+\end{gather}
+$\partial_i$: holomorphic derivative on the $i$-th $A$, $[\partial_i\partial_j]=\partial^{(i)}_{z_1}\partial^{(j)}_{z_2}-\partial^{(i)}_{z_2}\partial^{(j)}_{z_1}$; holomorphic jets of the external fields only (plane waves $e^{\lambda\cdot z}$).
+\ver{R2 normalization d1 (V5, exact sympy), b4, b5; R1 anomaly-structure c4 (prefactor)}
+\end{theorem}
+Assembly chain: $|\Aut|=4$, $-\frac\pi{20}=\frac{\pi}{60}(-3)$, $\frac\pi{30}=\frac\pi{60}\cdot2$, $\frac{\cN}4\cdot\frac\pi{60}=\frac{\pi\cN}{240}$.
+
+\begin{theorem}[colour factors, $\kappa=\tr$]\label{thm-colour}
+$\fgl_N$, $\tr(ijkl)=\tr(X_iX_jX_kX_l)$:
+\begin{multline}
+W_{\rm tot}=-10\tr(1234)-(10+3N^2)\tr(1243)+20\tr(1324)-(10+3N^2)\tr(1342)+20\tr(1423)-10\tr(1432)\\
+-26N\tr(12)\tr(34)+4N\tr(13)\tr(24)+4N\tr(14)\tr(23)\\
++3N\big[\tr(1)\tr(234)+\tr(1)\tr(243)+\tr(123)\tr(4)+\tr(124)\tr(3)\\
++\tr(132)\tr(4)+\tr(134)\tr(2)+\tr(142)\tr(3)+\tr(143)\tr(2)\big]
++20\big[\tr(1)\tr(2)\tr(34)+\tr(12)\tr(3)\tr(4)\big]\\
+-10\big[\tr(1)\tr(23)\tr(4)+\tr(1)\tr(24)\tr(3)+\tr(13)\tr(2)\tr(4)+\tr(14)\tr(2)\tr(3)\big].
+\end{multline}
+$\fsl_N$: the first nine terms; separately
+\begin{align}
+W_{133}&=2\tr(1234)+(2+N^2)\tr(1243)-4\tr(1324)+(2+N^2)\tr(1342)-4\tr(1423)+2\tr(1432)\notag\\&\quad+6N\tr(12)\tr(34),\\
+W_{223}&=-2\tr(1234)-2\tr(1243)+4\tr(1324)-2\tr(1342)+4\tr(1423)-2\tr(1432)-4N\tr(12)\tr(34)\notag\\&\quad+2N\tr(13)\tr(24)+2N\tr(14)\tr(23).
+\end{align}
+$\fsl_2$: $W_{\rm tot}=-104\,k_{12}k_{34}+16\,k_{13}k_{24}+40\,k_{14}k_{23}$, $k_{ij}=\tr(X_iX_j)$.
+\ver{R1 anomaly-structure c4: $\fgl_2,\fgl_3,\fgl_4$, $\fsl_2,\fsl_3,\fsl_4$; R2 deform verifier \texttt{t\_weights.log}: own Casimir contraction of the index forms equals these}
+\end{theorem}
+
+\subsection{Cochains and closedness}\label{sec-cochains}
+
+$x_i=X_ie^{p_i\cdot z}$, $[Xe^{p\cdot z},Ye^{q\cdot z}]=[X,Y]e^{(p+q)\cdot z}$, $(\sigma.f)(x_1..x_k)=f(x_{\sigma1}..x_{\sigma k})$, $\alt f=\sum_\sigma\sgn(\sigma)\,\sigma.f$;
+\begin{gather}
+(d\omega)(x_0,..,x_k)=\sum_{i<j}(-1)^{i+j}\,\omega([x_i,x_j],x_0,..,\widehat{x_i},..,\widehat{x_j},..,x_k),\\
+F=\int\Omega\,P(\partial^{(1)},..,\partial^{(k)})\,W(A,..,A)\ \longleftrightarrow\ w=\alt(PW),\qquad F=\tfrac1{k!}w(A,..,A),\\
+F_G=\sum_{s\in S_4}\sgn(s)\,[p_{s1}p_{s2}][p_{s3}p_{s4}]\,W_G(X_{s1},..,X_{s4}),\qquad \omega_{133}:=\alt\big(\tfrac{60}\pi K_{133}W_{133}\big)=-3F_{133},\quad \omega_{223}=2F_{223},\\
+o_2:=\text{cochain of }O_2/\hbar^2=\frac{\pi\nu}{240}\big(-3F_{133}+2F_{223}\big),\qquad \nu=\cN/\hbar^2=-\frac{U}{64\pi^5}.
+\end{gather}
+Ghost number $1$ $\leftrightarrow$ CE degree $4=1+H+T$; bidegree $(a,b)$ $=$ degree in the first, second momentum components; $O_2$ has bidegree $(2,2)$.
+
+\begin{proposition}[closedness]\label{prop-closed}
+$dF_{133}=dF_{223}=0$ for $\fsl_2,\fgl_2,\fsl_3,\fgl_3,\fsl_4,\fgl_4,\fsl_5,\fgl_5$ ($\kappa=\tr$), for formal $\fgl_N$, $\fsl_N$, and for $\fso_5,\fsp_4,\fso_6,\fso_7,\fsp_6,\fso_8,G_2,F_4$ (Killing form).
+\ver{R1 anomaly-structure c5 (8 algebras; large-range Schwartz--Zippel checks for 4); R2 deform verifier \texttt{vformal.log} (formal); R2 simple-g s5 (12 own constructions, 24 five-momentum configurations, controls $d\beta=0$, $d(\text{random})\ne0$)}
+\end{proposition}
+
+\subsection{\texorpdfstring{The class for $\fsl_N$ and $\fgl_N$}{The class for sl(N) and gl(N)}}\label{sec-class-slN}
+
+\begin{theorem}[$H^4_{(2,2)}$ and {$[O_2]$}, $\kappa=\tr$]\label{thm-class-slN}
+(i) Formal $\fgl_N$ (faithful for $N\ge5$): $\dim C^3=8$, $\dim C^4=36$, ${\rm rank}\,d_3=6$, ${\rm rank}\,d_4=26$, $\dim Z^4=10$, $\dim B^4=6$, $\dim H^4_{(2,2)}=4$, basis $\{[F_1],[F_0],[z_8],[z_9]\}$, $F_{223}=F_0+NF_1$ ($F_k$ $N$-independent),
+\begin{equation}
+[F_{223}]=N[F_1]+[F_0],\qquad [F_{133}]=-N[F_1]-[F_0],\qquad [F_{133}+F_{223}]=0 .
+\end{equation}
+Formal $\fsl_N$: $\dim C^3=3$, $\dim C^4=15$, ${\rm rank}\,d_3=3$, ${\rm rank}\,d_4=11$, $Z^4=4$, $B^4=3$, $H^4_{(2,2)}=\mathbb C[F_1]$, $[F_{223}]=N[F_1]=-[F_{133}]$.
+
+(ii) Fixed $N$, $(\dim C^4,Z^4,B^4,H^4)$: $\fgl_1$ $(1,1,0,1)$; $\fgl_2$ $(22,8,5,3)$; $\fgl_3$ $(35,10,6,4)$; $\fgl_4,\fgl_5$ $(36,10,6,4)$; $\fsl_2$ $(5,2,2,0)$; $\fsl_3$ $(14,4,3,1)$; $\fsl_4,\fsl_5$ $(15,4,3,1)$. $[F_{223}]\neq0$ exactly for $N\ge3$; $[F_{133}+F_{223}]=0$ for all nine.
+
+(iii)
+\begin{equation}
+[o_2]=\frac{\pi\nu}{240}(3+2)[F_{223}]=\frac{\pi\nu}{48}[F_{223}],\qquad [O_2]=\frac{\pi\cN}{48}[F_{223}]=-\frac{U\hbar^2}{3072\,\pi^4}[F_{223}],
+\end{equation}
+nonzero for $\fsl_N,\fgl_N$ with $N\ge3$, zero for $\fsl_2,\fgl_1,\fgl_2$.
+\ver{R1 anomaly-structure c6, c7 (ranks $\mathrm{rank}\,d\to\mathrm{rank}[d|\omega]$: $\fsl_2$ $2\to2$, $\fgl_2$ $5\to5$, $\fsl_3$ $3\to4$, $\fgl_3$ $6\to7$, $\fsl_4$ $3\to4$, $\fgl_4$ $6\to7$, $\fgl_5$ $6\to7$, $\fsl_5$ $3\to4$; formal non-exactness for all $N\ge4$); R2 deform d6 verifier: exact elimination over $\mathbb Q$, fixed-$N$ evaluation certified faithful by exact Gram ranks; R2 normalization d1 for the coefficient}
+\end{theorem}
+Coefficient chain: $-3[F_{133}]+2[F_{223}]=5[F_{223}]$; $\frac{\pi}{240}\cdot5=\frac\pi{48}$; $\frac{\pi}{48}\cdot\frac{-U\hbar^2}{64\pi^5}=-\frac{U\hbar^2}{3072\pi^4}$.
+
+\subsection{\texorpdfstring{Simple $\g$}{Simple g}}\label{sec-simple}
+
+$G$: adjoint group; $SL_2(\mathbb C)$ acts on $(z_1,z_2)$; ${\rm inv}$: $G\times SL_2$-invariant part. $q_i$: momenta of a 3-cochain ($q_2=-q_0-q_1$), $f(X,Y,Z)=\kappa([X,Y],Z)$;
+\begin{equation}
+\beta:=d\big([q_0q_1]^2f\big)=\sum_{i<j}(-1)^{i+j}[p_kp_l]^2\,\kappa([X_i,X_j],[X_k,X_l]),\qquad\{k<l\}=\{0,1,2,3\}\setminus\{i,j\},
+\end{equation}
+using $[p_i+p_j,p_k]=[p_kp_l]$ on $\sum p=0$.
+
+\begin{lemma}[reduction]\label{lem-red}
+(a) $w\in C^4_{\rm inv}$, $w=d\eta$ $\Rightarrow$ $w=d(R\eta)$, $R$ the Reynolds projector of $G\times SL_2$ on the 3-cochains of momentum degree 4; $H^4_{\rm inv}\hookrightarrow H^4_{(2,2)}$. (b) The $SL_2$-invariant quartics in $(q_0,q_1)$ are $\mathbb C[q_0q_1]^2$, $[q_{s0}q_{s1}]=\sgn(s)[q_0q_1]$, $\dim(\Lambda^3\g^*)^\g=1$, hence $C^3_{\rm inv}=\mathbb C[q_0q_1]^2f$ and $B^4\cap C^4_{\rm inv}=\mathbb C\beta$. (c) For $X\in Z^4_{\rm inv}$: $[X]=0\iff X\in\mathbb C\beta$. (d) $\g$ simple, $T\in(\g^{*\otimes k})^\g$, $T(b,\cdot,..)=0$ for one $b\ne0$ $\Rightarrow$ $T=0$.
+\ver{R2 simple-g s1, s2: Reynolds and ideal arguments re-derived; $\dim\ker(\sum_iq_i^1\partial/\partial q_i^2)=1,6,20$ for $2,3,4$ vectors at bidegree $(2,2)$; $d_{\rm CE}(\alt([q_0q_1]^2f))=6\beta$ against run-1 code; unreduced complex for $\fsl_2,\fsl_3,\fso_5,G_2$ gives the same exactness answers}
+\end{lemma}
+
+\begin{theorem}[classes for simple $\g$]\label{thm-simple}
+Let $\kappa$ be the Killing form. For $\g\in\{\fsl_3,\fsl_4=\fso_6,\fsl_5,\fso_5=\fsp_4,\fso_7,\fsp_6,\fso_8,G_2,F_4\}$:
+\begin{equation}
+F_{133}+F_{223}=\tfrac12\beta,\qquad F_{133},\ F_{223},\ -3F_{133}\pm2F_{223}\notin\mathbb C\beta .
+\end{equation}
+For $\fsl_2$: $F_{133}=\frac72\beta$, $F_{223}=-3\beta$, $-3F_{133}+2F_{223}=-\frac{33}2\beta$. Hence $[F_{133}]=-[F_{223}]$, $[\omega_{133}]=3[F_{223}]$, $[\omega_{223}]=2[F_{223}]$ and
+\begin{equation}
+O_2=\frac{\pi\cN}{48}F_{223}-\frac{\pi\cN}{160}\beta,\qquad [O_2]=\frac{\pi\cN}{48}[F_{223}]\ \begin{cases}\neq0,&\g\neq\fsl_2,\\=0,&\g=\fsl_2.\end{cases}
+\end{equation}
+For $\kappa={\rm Killing}/r$: $F_{133}+F_{223}=\frac{r^2}2\beta_\kappa$; values $\frac{r^2}{2}$ in trace forms: $\fso_5$ $\frac92$ ($\tr_5$), $\fsp_4$ $18$ ($\tr_4$), $\fso_6$ $8$ ($\tr_6$), $\fso_7$ $\frac{25}2$ ($\tr_7$), $\fsp_6$ $32$ ($\tr_6$), $\fso_8$ $18$ ($\tr_8$), $G_2$ $8$ ($\tr_7$), $\fsl_3,\fsl_4,\fsl_5$ $18,32,50$ ($\tr_N$). Under $\kappa\to c\kappa$: $W,F,\omega,O_2\to c^{-1}(\cdot)$, $\beta\to c\beta$.
+\ver{R2 simple-g s3, s4, s7, s9: verifier's own constructions ($\fso_N$, $\fsp_{2m}$, $\fsl_N$ as matrices, $G_2=\mathrm{Der}(\mathbb O)$, $F_4=\fso_9\oplus S_{16}$), full coefficient 4-tensors, exact membership on all entries or a printed nonzero $2\times2$ minor (e.g.\ $X=F_{223}$: $\fsl_3$ $-1451329941600$, $\fso_5$ $-1926955008$, $G_2$ $-116095057920$, $F_4$ $-19670999040$); $c_{\rm Killing}=\frac12$ on all entries (43869696 for $F_4$); rescaling exact for $c=2,3$}
+\end{theorem}
+The $F_4$ value $162$ in the restricted $E_6$ Kac form ($r=18$) is from the explorer only \der.
+
+\begin{proposition}[invariant dimensions]\label{prop-inv}
+Weyl-formula dimensions of invariants:
+{\small
+\begin{longtable}{@{}lrrrrrrrr@{}}
+\toprule
+ & $S^2$ & $\Lambda^2$ & $S^3$ & $\Lambda^3$ & $T^3$ & $S^4$ & $\Lambda^4$ & $T^4$\\
+\midrule
+$\fsl_2$ & 1&0&0&1&1&1&0&3\\
+$\fsl_3$ & 1&0&1&1&2&1&0&8\\
+$\fsl_4=\fso_6$ & 1&0&1&1&2&2&0&9\\
+$\fsl_5$ & 1&0&1&1&2&2&0&9\\
+$\fso_5=\fsp_4$ & 1&0&0&1&1&2&0&6\\
+$\fso_7$ & 1&0&0&1&1&2&0&6\\
+$\fsp_6$ & 1&0&0&1&1&2&0&6\\
+$\fso_8$ & 1&0&0&1&1&3&0&7\\
+$G_2$ & 1&0&0&1&1&1&0&5\\
+$F_4$ & 1&0&0&1&1&1&0&5\\
+\bottomrule
+\end{longtable}}
+Over this list: $[O_2]\neq0\iff\dim(\g^{\otimes4})^\g>3$; ``$[O_2]\ne0\iff(S^3\g^*)^\g\ne0$'' fails ($\fso_5,\fso_7,\fso_8,\fsp_6,G_2,F_4$); ``$[O_2]\ne0\iff\dim(S^4\g^*)^\g\ge2$'' fails ($\fsl_3,G_2,F_4$). For $\fsl_2$: $C^4_{\rm inv}=\mathbb C\beta$.
+\ver{R2 simple-g s6, s8: own Weyl implementation; linear algebra modulo two primes on own constructions (all but $F_4$), lower bounds by explicit invariants}
+\end{proposition}
+
+\begin{dstatement}[computed by the simple-g verifier only]
+$\dim C^4_{\rm inv}=1$ ($\fsl_2$), $3$ ($\fsl_N$, $N=3,4,5$), $2$ ($\fso_5,\fso_7,\fsp_6,\fso_8,G_2,F_4$) (character computation); rank of $d$ on $C^4_{\rm inv}$: $0$ ($\fsl_2,\fso_5,G_2$), $1$ ($\fsl_3$); $H^4_{\rm inv}=\mathbb C[F_{223}]$ for $\fsl_3,\fso_5,G_2$, $H^4_{\rm inv}(\fsl_2)=0$. \der\ (\path{deepen/simple-g/verify/logs/c4span.log}, \path{c4inv.log})
+\end{dstatement}
+
+%======================================================================
+\section{\texorpdfstring{Order-$\hbar$ deformations}{Order-hbar deformations}}\label{sec-deform}
+%======================================================================
+
+\subsection{\texorpdfstring{Weights and the order-$\hbar^2$ equation}{Weights and the order-hbar2 equation}}
+
+\begin{proposition}[scaling]\label{prop-scal}
+$\phi_l^*(dz_1dz_2)=l_1l_2\,dz_1dz_2$, $S_{\rm cl}(\phi_l^*A)=(l_1l_2)^{-1}S_{\rm cl}(A)$, $\omega(\phi_l^*a,\phi_l^*b)=(l_1l_2)^{-1}\omega(a,b)$; for $F_P=\int\Omega\,P(\partial)W$, $P$ of bidegree $(a,b)$: $F_P(\phi_l^*A)=l_1^{a-1}l_2^{b-1}F_P(A)$. Under \ref{H-w}, $S/\hbar=\sum_k\hbar^{k-1}I_k$ with $I_k(\phi^*_lA)=(l_1l_2)^{k-1}I_k(A)$: $J_1=I_1$ has bidegree $(1,1)$, $I_2$ and $O_2$ bidegree $(2,2)$. $GL_2$-invariance forces $J_1=[p_1p_2]\,T(X_1,X_2,X_3)$.
+\ver{R2 deform d1; gap: \ref{H-w} imposed}
+\end{proposition}
+
+\begin{proposition}[QME at orders $\hbar$, $\hbar^2$]\label{prop-qme}
+With $S=S_{\rm cl}+\hbar J_1+\hbar^2I_2$ and $\mathrm{QME}_L(I+\delta)=\mathrm{QME}_L(I)+\mathbf Q_L\delta+\frac12(\delta,\delta)_L$ (S1 \S9.3, (9.57)):
+\begin{equation}
+\hbar^1:\ \{S_{\rm cl},J_1\}=0,\qquad \hbar^2:\ \{S_{\rm cl},I_2\}+\tfrac12\{J_1,J_1\}+O_2/\hbar^2=0 .\label{eq-qme2}
+\end{equation}
+$O_1=0$ and $Q_{(1)}J_1=0$: a $J_1$ vertex has only holomorphic derivatives (they insert $y_e$, S3 \S4.3), so the $\tau$-factor of a $b_1=1$ graph is $U^{-1/2}\langle\psi^\tau_1\rangle=\sum_eC_e\langle w_e\rangle dt_e=0$; equivalently S3 Cor.~5.6, $K=(-1)^{|I|+|V|-1}K=(-1)^{b_1}K$ with $\sigma^*[P]=-[P]$ (S3 (4.7)).
+\ver{R2 deform d2: S1 (9.57), S3 Prop.~5.5, Cor.~5.6 read in source; expansion re-done. Gaps: the factor $\frac12$ relative to $O_2$ requires $O_2$ to be the $\hbar^2$ part of $\mathrm{QME}_L(I[L])$ as $L\to0$ (Section~\ref{sec-classical} defines it so); S1 (6.4) uses the bookkeeping $\sum_n\frac{\hbar^n}{n+2}Q_n\mathcal I$, not matched; reflection argument stated in S3 for $\tau$-independent external legs; no graph integral re-run by the verifier}
+\end{proposition}
+
+\subsection{Taylor cochains and bracket}
+
+\begin{gather}
+\{a,b\}(x_1..x_{m+n-2})=\sum_{s\in{\rm Sh}(m-1,n-1)}\sgn(s)\,a(x_{s(1)}..x_{s(m-1)},X_e)\,\kappa^{ee'}\,b(X_{e'},x_{s(m)}..),\\
+\{a,b\}=\frac{\alt(\gamma_0)}{(m-1)!(n-1)!},\qquad
+\gamma_0=a(x_1..x_{m-1},X_e)\,\kappa^{ee'}\,b(X_{e'},y_1..y_{n-1}),\\
+\text{contracted momenta }q,-q\text{ fixed by conservation};\\
+\fgl_N:\ \tr(AX_e)\tr(BX^e)=\tr(AB),\ \tr(X_eAX^eB)=\tr A\tr B;\\
+\fsl_N:\ \text{additionally }-\tfrac1N\tr A\tr B,\ -\tfrac1N\tr(AB);\\
+s_0(x_1,x_2,x_3)=\kappa(X_1,[X_2,X_3])=\tr(123)-\tr(132)\qquad(\text{cubic Taylor cochain of }S_{\rm cl}).
+\end{gather}
+
+\begin{proposition}[cochain form]\label{prop-cochain}
+$\{s_0,w\}=-dw$; $\{a,b\}=\{b,a\}$ on arity $(3,3)$; $d\{a,b\}=\{da,b\}-\{a,db\}$ ($a$ of arity 3); $\{F_a,F_b\}_{\rm BV}=\epsilon\,F_{\{a,b\}}$, $\epsilon=\pm1$ one sign. With $j,i_2$ the cochains of $J_1,I_2$, \eqref{eq-qme2} reads
+\begin{equation}
+\epsilon\big(-d\,i_2+\tfrac12\{j,j\}\big)+o_2=0,\qquad \big[\tfrac12\{j,j\}\big]=-\epsilon\,[o_2]\ \ \text{in }H^4_{(2,2)} .\label{eq-cochain}
+\end{equation}
+\ver{R2 deform d3: own engine, $d^2=0$, $\{s_0,w\}=-dw$ ($k=2,3,4$), $\{s_0,s_0\}=0$, graded symmetry, derivation property; formal $d$ and bracket equal explicit CE sums and dual-basis shuffle sums on $\fgl_2,\fgl_3,\fsl_2,\fsl_3$; dictionary factor $\frac1{r!}\{a,b\}(c..c)=\gamma_0(c..c)/((m-1)!(n-1)!)$ derived. $\epsilon$ not determined}
+\end{proposition}
+
+\subsection{\texorpdfstring{$H^3$ at total weight 2}{H3 at total weight 2}}
+
+\begin{theorem}[closed order-$\hbar$ terms]\label{thm-H3}
+For $\fgl_N,\fsl_N$, in each of the settings $GL_2$-invariant, $U(1)^2$ weight $(1,1)$, total weight 2:
+\begin{equation}
+H^3=H^3_{(1,1)}=\{[p_1p_2]\,T:\ T\in(\mathrm{Sym}^3\g^*)^\g\},\qquad H^3_{(2,0)}=H^3_{(0,2)}=0,\qquad \alt([p_1p_2]T)=6[p_1p_2]\,\mathrm{Sym}(T).
+\end{equation}
+$\fgl_N$ ($N\ge3$) basis: $D=[p_1p_2]\tr(1\{23\})$, $S_1=[p_1p_2](\tr1\tr23+\tr2\tr13+\tr3\tr12)$, $S_0=[p_1p_2]\tr1\tr2\tr3$; $\fsl_N$ ($N\ge3$): $D$. $(\dim C^3_{(1,1)},\dim H^3_{(1,1)})$: $\fgl_1$ $(1,1)$, $\fgl_2$ $(4,2)$ [$D=S_1-S_0$], $\fgl_{3,4,5}$ $(5,3)$, $\fsl_2$ $(1,0)$, $\fsl_{3,4,5}$ $(2,1)$. $E_f=2(\sum_ip^1_ip^2_i)\tr(1[23])$, $E_{\rm mix}=\alt((p^1_1p^2_2+p^2_1p^1_2)\tr1\tr23)$ are not closed.
+Simple $\g$, $G\times SL_2$-invariant weight $(1,1)$: every such 3-cochain is $[q_0q_1]T$, $T\in(S^3\g^*)^\g$; all are closed, none nonzero is exact; $\dim(S^3\g^*)^\g=0$ for $\fsl_2,\fso_5=\fsp_4,\fso_7,\fso_8,\fsp_6,G_2,F_4$ and $1$ for $\fsl_3,\fsl_4=\fso_6,\fsl_5$.
+\ver{R2 deform d4 (formal and faithful fixed-$N$, $\fgl_2$ relation $\tr(X\{Y,Z\})=\tr X\tr YZ+\tr Y\tr XZ+\tr Z\tr XY-\tr X\tr Y\tr Z$ proved symbolically by the verifier); R2 simple-g s6 ($dJ_1=0$ analytically: each coefficient is minus an invariance identity; non-exactness: no $SL_2$-invariant weight-$(1,1)$ 2-cochain)}
+\end{theorem}
+
+\subsection{Moyal term}
+
+\begin{proposition}[first and second order of the Moyal product]\label{prop-moyal}
+$f*g=fg+\frac e2\epsilon^{ij}\partial_if\partial_jg+O(e^2)$, $e_p*e_q=e^{\frac e2[pq]}e_{p+q}$; the $\fgl_N$ cubic cochain of $\frac16\int\Omega\,\kappa(A,[A,A]_*)$:
+\begin{gather}
+s_e=\tfrac13\alt\big(\tr(123)e^{\frac e2[p_1p_2]}\big)=\tr(123)e^{\frac e2[p_1p_2]}-\tr(132)e^{-\frac e2[p_1p_2]}=s_0+e\,j_M+e^2i_M+O(e^3),\\
+j_M=\tfrac12[p_1p_2]\tr(1\{23\})=\tfrac12D,\qquad i_M=\tfrac18[p_1p_2]^2\tr(1[23]),\\
+dj_M=0,\qquad \tfrac12\{j_M,j_M\}=d\,i_M,\qquad\{j_M,j_M\}\ne0 .
+\end{gather}
+$\pi X=X-\tr X/N$: $\pi^*D_{\fsl}=D-\frac2NS_1+\frac4{N^2}S_0$, $M_1:=S_1-\frac3NS_0$, $j_M=\frac12\pi^*D_{\fsl}+\frac1NM_1+\frac1{N^2}S_0$.
+\ver{R2 deform d5: formal (all $N$) and explicit $\fgl_2$, $\fgl_3$ matrices; basis change at $N=3,4,5$. Normalization of $e$ against 1610.04144 not compared}
+\end{proposition}
+
+\subsection{\texorpdfstring{The quadratic map $q[J]=[\frac12\{J,J\}]$}{The quadratic map q}}
+
+\begin{theorem}[brackets of $H^3$ classes]\label{thm-quad}
+Formal $\fgl_N$, classes in the basis $\{[F_1],[F_0],[z_8],[z_9]\}$:
+\begin{gather}
+\{D,D\}=0,\quad\{D,S_1\}=-\tfrac1{12}[F_1],\quad\{D,S_0\}=\tfrac1{24}[F_0],\\
+\{S_1,S_1\}=-\tfrac N{24}[F_1]+\tfrac1{24}[F_0],\quad\{S_1,S_0\}=\tfrac N{48}[F_0],\quad\{S_0,S_0\}=0;\\
+J=aD+bS_1+cS_0:\quad q[J]=\lambda[F_{223}]+\mu[F_1],\\
+\lambda=\frac{2ac+b^2+Nbc}{48},\qquad \mu=-\frac{(2a+Nb)(2b+Nc)}{48};\\
+J=\alpha\,\pi^*D_{\fsl}+\beta M_1+\gamma S_0:\quad \lambda=\frac{4\alpha^2-2N^2\beta^2+N^3\beta\gamma}{48N^2},\qquad \mu=-\frac{N\beta(N\gamma-\beta)}{48}.
+\end{gather}
+Formal $\fsl_N$: $\{D,D\}=\frac1{6N}[F_1]$, $q[aD]=\frac{a^2}{12N^2}[F_{223}]$, with
+\begin{equation}
+\tfrac12\{D,D\}_{\fsl}=\frac{F_{223}}{12N^2}+d\Big[\frac{N^2+4}{2N^2}[p_1p_2]^2\tr(1[23])\Big],\qquad \big[\alt([p_1p_2][p_3p_4]\tr12\tr34)\big]=-\frac{[F_{223}]}{6N}.
+\end{equation}
+Fixed $N$ ($x_0,x_1,x_2$ the coefficients of $D,S_1,S_0$): $\fsl_3,\fsl_4,\fsl_5$: $q=\frac{x_0^2}{108},\frac{x_0^2}{192},\frac{x_0^2}{300}[F_{223}]$; $\fgl_N$, $N=3,4,5$: $\frac{2x_0x_2+x_1^2+Nx_1x_2}{48}[F_{223}]-\frac{(2x_0+Nx_1)(2x_1+Nx_2)}{48}[F_1]$; $\fgl_2$ ($J=x_0D+x_1S_1$): $q=-\frac{x_1(x_0+x_1)}{12}[F_1]$, $[F_1]\ne0$, $[F_{223}]=0$; $\fgl_1$: $q=0$.
+\ver{R2 deform d7, d8: formal Laurent identities in $N$, faithful fixed-$N$ classes, explicit $\fsl_3$ coboundary with matrices; $\lambda$ depends on the choice of complement of $[F_{223}]$, the statement holds for the basis $\{[F_{223}],[F_1],[z_8],[z_9]\}$}
+\end{theorem}
+
+\subsection{\texorpdfstring{Cancellation of $[O_2]$}{Cancellation of [O2]}}
+
+$c_O:=[o_2]/[F_{223}]=\frac{\pi\nu}{48}=-\frac{U}{3072\pi^4}$ (Theorem~\ref{thm-class-slN}). By \eqref{eq-cochain} the order-$\hbar^2$ equation is solvable iff $q[j]=-\epsilon c_O[F_{223}]$.
+
+\begin{theorem}[order $\hbar^2$, $\fsl_N$ and $\fgl_N$, $\kappa=\tr$]\label{thm-Q1}
+Under \ref{H-CE}, \ref{H-w}, $J_1$ of arity 3:
+(i) $\fsl_N$, $N\ge3$: $[O_2]\in q(H^3)$; $J_1=a\,D$, i.e.\ $j=a[p_1p_2]d_{abc}$, $d_{abc}=\tr(T_a\{T_b,T_c\})$, local functional $\hbar\,a\,\frac13\int dz_1dz_2\,d_{abc}\,\partial_{z_1}A^a\,\partial_{z_2}A^b\,A^c$, with $\frac{a^2}{12N^2}=-\epsilon c_O$.
+(ii) $\fgl_N$, $N\ge3$: $[O_2]\in q(H^3)$; solutions $\beta(N\gamma-\beta)=0$ and $\frac{\alpha^2}{12N^2}-\frac{\beta^2}{48}=-\epsilon c_O$; examples $J_1=a\,\pi^*D_{\fsl}$ ($\frac{a^2}{12N^2}=-\epsilon c_O$), $J_1=b(S_1-\frac2NS_0)$ ($-\frac{b^2}{48}=-\epsilon c_O$), $J_1=s\,j_M+t\,\pi^*D_{\fsl}$ ($\frac{t(t+s)}{12N^2}=-\epsilon c_O$). The pure Moyal direction $J_1=s\,j_M$ has $q=0$ and does not cancel $[O_2]$.
+(iii) $N\le2$ ($\fgl_1,\fgl_2,\fsl_2$): $[O_2]=0$; $J_1=0$ solves \eqref{eq-qme2}.
+Over $\mathbb C$; over $\mathbb R$ the sign of $\epsilon U$ decides.
+\ver{R2 deform d9: exact witnesses with classes in a basis containing $[F_{223}]$: $\pi^*D_{\fsl}$ gives $(F_1{:}\,0,\ F_{223}{:}\,\frac1{108},\frac1{192},\frac1{300})$ at $N=3,4,5$; $S_1-\frac2NS_0$ gives $(0,-\frac1{48})$; $j_M$ gives $(0,0)$; conditional on \ref{H-CE}}
+\end{theorem}
+
+$I_2$ for $\fsl_N$, $j=aD$: by \eqref{eq-cochain}, $d\,i_2=\frac12\{j,j\}+\epsilon o_2=a^2\big(\frac{F_{223}}{12N^2}+d\eta_N\big)+\epsilon o_2=a^2d\eta_N+\epsilon(o_2-c_OF_{223})$, so $i_2=a^2\eta_N+\epsilon\zeta$, $\eta_N=\frac{N^2+4}{2N^2}[p_1p_2]^2\tr(1[23])$, $d\zeta=o_2-c_OF_{223}$ ($\zeta$ exists by Theorem~\ref{thm-class-slN}). \der
+
+\begin{dstatement}[coefficients]
+With $c_O=-U/(3072\pi^4)$: $a^2=-12N^2\epsilon c_O=\epsilon U\,\frac{N^2}{256\pi^4}$ ($\fsl_N$, and $\fgl_N$ with $J_1=a\pi^*D_{\fsl}$); $b^2=48\epsilon c_O=-\frac{\epsilon U}{64\pi^4}$ ($J_1=b(S_1-\frac2NS_0)$); $t(t+s)=\epsilon U\frac{N^2}{256\pi^4}$. $\epsilon$, $U$ not determined. \der\ (R2 deform d10, arithmetic checked by its verifier, \texttt{t\_coeff.log}; relative sign input now from Proposition~\ref{prop-wick})
+\end{dstatement}
+
+\begin{corollary}\label{cor-B}
+For $\g\in\{\fso_5=\fsp_4,\fso_7,\fso_8,\fsp_6,G_2,F_4\}$ there is no nonzero $G\times SL_2$-invariant closed $J_1$ of weight $(1,1)$ (Theorem~\ref{thm-H3}); under \ref{H-CE}, \ref{H-w} and $G\times SL_2$ invariance, \eqref{eq-qme2} has no solution, since $[O_2]\ne0$ (Theorem~\ref{thm-simple}). \der\ (combination of verified statements; the combined statement was not run by a verifier)
+\end{corollary}
+
+Quantizations through order $\hbar^2$ (within \ref{H-CE}, \ref{H-w}, arity-3 $J_1$, $\kappa$ invariant form as stated):
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+$\g$ & $[O_2]$ & closed $J_1$ solving \eqref{eq-qme2}\\
+\midrule
+$\fgl_1$ & $0$ & any $x_0D$\\
+$\fgl_2$ & $0$ & $x_0D+x_1S_1$ with $x_1(x_0+x_1)=0$\\
+$\fsl_2$ & $0$ & $0$ ($H^3=0$)\\
+$\fsl_N$, $N\ge3$ & $\ne0$ & $aD$, $a^2=-12N^2\epsilon c_O$\\
+$\fgl_N$, $N\ge3$ & $\ne0$ & $\alpha\pi^*D_{\fsl}+\beta M_1+\gamma S_0$, $\beta(N\gamma-\beta)=0$, $\frac{\alpha^2}{12N^2}-\frac{\beta^2}{48}=-\epsilon c_O$\\
+$\fso_5,\fso_7,\fso_8,\fsp_6,G_2,F_4$ & $\ne0$ & none ($G\times SL_2$-invariant; Corollary~\ref{cor-B})\\
+\bottomrule
+\end{tabular}
+\end{center}
+Rows $\fgl_1$, $\fgl_2$ from Theorem~\ref{thm-quad} (fixed $N$); $\fso_6=\fsl_4$ is in the $\fsl_N$ row (rescaling of $\kappa$ does not change existence over $\mathbb C$). Not analysed: order $\hbar^3$; $J_1$ components of arity $\ge4$; $J_1$ not $G\times SL_2$-invariant for the simple algebras outside $\fsl_N$.
+
+%======================================================================
+\section{Literature}\label{sec-lit}
+%======================================================================
+
+All items \src{R2 lit, PDF text layers, unless stated}; R2 lit had no verifier.
+
+\subsection{Wang--Williams 2407.08667 (v3)}
+\begin{itemize}\itemsep1pt
+\item Sec.~2.2 (8), (9): $\alpha\in\Omega^*(\mathbb R^{d'})\otimes\Omega^{0,*}(\mathbb C^d)\otimes\g[1]$, $S=\int d^dz\,(\frac12\langle\alpha,d\alpha\rangle+\frac16\langle\alpha,[\alpha,\alpha]\rangle)$, $d+d'$ odd; list item (3): $d'=1$, $d=2$, with the non-commutative $\fgl_k$ deformation of 1610.04144.
+\item Sec.~2.3: $Q^{\rm GF}=d^*_{\rm dR}+\dbar^*$, $P_\Phi=\frac12Q^{\rm GF}\Phi$ (17), $\dbar^*=-2\sum_i\partial_{z_i}\iota_{\partial/\partial\zb_i}$, $d^*_{\rm dR}=-\sum_i\partial_{x_i}\iota_{\partial/\partial x_i}$ (21), $H=(2^{d+d'}(\pi t)^{d+d'/2})^{-1}e^{-(2\sum|z_i|^2+\sum x_i^2)/4t}d^d\zb\,d^{d'}x$ (22), (25)--(28).
+\item Thm~1.1: UV finite to all orders. Thm~1.2: $d'>1$: anomaly free to all orders. Text after Thm~1.2 (new in v3): $d'=1$ theories quantize over $\mathbb C[[\hbar]]/\hbar^2$; topological-holomorphic CS on $\mathbb R\times\mathbb C^2$ is expected to have a two-loop anomaly (``suffers from a two-loop anomaly'', WW Sec.~1); no computation, no citation.
+\item Prop.~3.23: connected decorated Laman graph, $d'\ge1$, $h_1$ odd $\Rightarrow$ $O_{(\Gamma,n)}=0$ (reflection, $O=(-1)^{h_1}O$). Prop.~3.21: non-Laman $\Rightarrow$ $O=0$; Laman: $O$ local, holomorphic derivatives only. (73), (74): $(d+d')|\Gamma'_0|\ge(d+d'-1)|\Gamma'_1|+d+d'+1$, equality for $\Gamma$. Cor.~3.28 excludes items (3), (5). No cohomological description of the obstruction.
+\end{itemize}
+Overlap: Prop.~3.23 $\leftrightarrow$ $\rho_1=0$, $K_\Gamma=0$ for odd $n$ at $T=1$; (74) at $d+d'=3$ $\leftrightarrow$ $|I|=3n+1$, $|V|=2n+2$ at $n=2$. Theorems~\ref{thm-assembly}, \ref{thm-class-slN}, \ref{thm-simple}: the two-loop obstruction of the theory of WW (9) in the heat-kernel gauge of Section~\ref{sec-gauge}.
+
+\subsection{Costello 1610.04144 (v1)}
+\begin{itemize}\itemsep1pt
+\item Prop.~1.2.1: twisted M-theory on $TN_k\times\mathbb R^3\times\mathbb C^2$ $\simeq$ non-commutative 5d CS on $\mathbb R\times\mathbb C^2$, $GL(k+1)$. Action (Sec.~1.2): $\frac1{2\delta}\int\Tr A\,dA\,dz_1dz_2+\frac1{3\delta}\int\Tr A^3dz_1dz_2+\sum_{n\ge1}\frac{e^n}{3\delta2^nn!}\epsilon^{i_1j_1}..\epsilon^{i_nj_n}\int\Tr A\,\partial_{z_{i_1}}..\partial_{z_{i_n}}A\wedge\partial_{z_{j_1}}..\partial_{z_{j_n}}A\,dz_1dz_2$; $n=1$: $\frac{e}{6\delta}\epsilon^{ij}\int\Tr A\,\partial_{z_i}A\wedge\partial_{z_j}A\,dz_1dz_2$.
+\item Thm~9.0.2 ($\mathbb R\times X$, $X$ conical symplectic surface, $\fgl_N$ uniformly in $N$, $e^{-k}$ only with $\delta^k$): no obstructions. Thm~9.0.3 ($\mathbb R\times\mathbb C^2$, uniformly in $N$, $\fsl(2)$-invariant, translation invariant, $e^{-r}\delta^n$, $r\le n$): no obstructions, two deformations absorbed into $e$, $\delta$. Sec.~9: negative powers of $e$ admitted to cancel potential higher-loop anomalies.
+\item Sec.~9.1, App.~B: at $e=0$ the cyclic homology is infinite-dimensional; the $e=0$ $k$-loop complex $\omega_{\mathbb R\times X}\otimes_{\mathcal D}\mathcal O(\pi^*J\Omega^{-*}_{\rm hol}[t^{-1}][1])[N][-6(k-1)]$ is written, its cohomology not computed. No mention of a two-loop obstruction of the commutative theory; no statement on an order-$\hbar$ term cancelling an $\hbar^2$ obstruction.
+\end{itemize}
+Overlap: $j_M=\frac12D$ (Proposition~\ref{prop-moyal}) is the order-$e$ cochain for $f*g=fg+\frac e2\epsilon^{ij}\partial_if\partial_jg$; its normalization relative to 1610.04144 was not compared. At finite $N$, $e=0$, $\hbar$-expansion: $q[s\,j_M]=0$ (Theorem~\ref{thm-quad}).
+
+\subsection{Other 5d CS computations}
+\begin{itemize}\itemsep1pt
+\item Oh--Zhou 2002.07343: 0- and 1-loop defect diagrams; Sec.~5.3 diagram bounded ((136), (137)), not evaluated. Oh--Zhou 2103.00963: propagator (38); $P_{32}\wedge P_{24}\wedge P_{43}=0$ (117), $P_{34}\wedge P_{43}=0$ (118); conjecture (119) for single cycles.
+\item Ishtiaque--Jeong--Zhou 2408.15712: gauge (2.11), propagator (2.12), non-commutative $\fgl(1)$; footnote 14 and (C.1) (double edges vanish) remove two-loop defect diagrams. Ashwinkumar 2408.15732: (3.1), (3.2); leading order in $\hbar$. Gaiotto--Oh 1907.06495: defect anomalies only.
+\item Gwilliam--Rabinovich--Williams 2107.06734: Thm~5.1 one loop; Prop.~6.4: finite one-loop quantization of 5d CS on $\mathbb R\times\mathbb C^2$. Costello 1705.02500 Sec.~9.3: one-loop (run-1 novelty-lit).
+\item Search record: INSPIRE citers of 2407.08667 (14) and 1610.04144 (75), full-text queries listed in \path{deepen/lit/REPORT.txt} (c8): no computation of the order-$\hbar^2$ obstruction of 5d CS on $\mathbb R\times\mathbb C^2$ found.
+\end{itemize}
+Cycle lengths: $\theta(1,3,3)$: $4,4,6$; $\theta(2,2,3)$: $4,5,5$; no double edge; (117), (118), (119), (C.1), (3.1), (3.2) do not apply. \der\
+arXiv:2111.00955 is K.~Zeng (monopole operators in HT theories); the Gwilliam--Williams one-loop exact quantization of CS is arXiv:1910.05230. \ver{R2 normalization e2 (abstract pages)}
+
+\subsection{Local cohomology and CE cohomology}\label{sec-lit-coh}
+\begin{itemize}\itemsep1pt
+\item Williams 1809.02661 Def.~2.28, Lemma~2.29, Cor.~2.30 ($T=0$, free holomorphically translation-invariant theory on $\mathbb C^d$): $(\mathrm{Def}\,\mathcal E_V)^{\mathbb C^{2d|d}}\simeq\mathbb C\,d^dz\otimes^{\mathbb L}_{\mathbb C[\partial_{z_1},..,\partial_{z_d}]}C^*_{\rm Lie,red}(V_0[[z_1,..,z_d]][-1])[d]$.
+\item Gwilliam--Williams 1810.06534 App.~A: Lemma~A.7, Lemma~A.8 ($\mathbb C^d_{\rm hol}$-invariant local cochains $=\mathbb C[dz_1..dz_d][2d]\otimes C^\#_{\rm Lie,red}(\g[[z]])$), Prop.~A.6, eq.~(5.1). Costello 1303.2632 Sec.~16.1: $\mathbb C\otimes^{\mathbb L}_{\mathbb C[\partial_z,\partial_w]}C^*_{\rm red}(\g[[z,w,e]])$, stated without proof.
+\item $T\ge1$: no theorem found (WW: none; GRW 2107.06734: analytic one-loop; Saberi--Williams 1910.04120 Thm~5.5: $T=0$; 1610.04144 Sec.~9.1, App.~B: needs $e\ne0$, uniformly in $N$, complex $\mathbb C[dz_1,dz_2][5]$; Raghavendran--Saberi--Williams 2111.03049 Sec.~4: descent argument).
+\end{itemize}
+\begin{dstatement}[\ref{H-CE} at $T=0$]
+$\mathbb C\,d^Hz\otimes_{\mathbb C[\partial_z]}M=M/(P^1,..,P^H)M$, $P^i=\sum_jp^i_j$, equals the alternating cochains restricted to $\sum p=0$; $\mathbb C[p_1..p_k]=\mathbb C[P]\otimes\mathbb C[q]$ with $S_k$ acting on $q$ only, so each isotypic part is free over $\mathbb C[P]$ and derived $=$ underived. Exact Koszul check ($H=2$, $k=3,4$, $w=1,2$, bidegrees $(1,1),(2,1),(2,2)$): exact in degrees 1, 2 and $\dim\mathrm{coker}=$ rank of restriction to $\sum p=0$, all six cases. Degree: CE degree $1+H+T=4$; 1610.04144 App.~B $\mathbb C[dz_1,dz_2][5]$ gives $4$. Not sourced: the shift $[T]$, the homotopy triviality of $d_\tau$. \der\ (R2 lit d-c5-match, \path{deepen/lit/code/koszul_check.log})
+\end{dstatement}
+
+\subsection{\texorpdfstring{The form $\rho_n$}{The form rho\_n}}
+\begin{itemize}\itemsep1pt
+\item Brown--Hu--Panzer 2406.12734 (v2): $\Pf(M)=(2^nn!)^{-1}\sum_{\pi\in S_{2n}}\sgn\pi\,M_{\pi1\pi2}\cdots$ (2.5); $\Pf(\lambda M)=\lambda^n\Pf(M)$ (P2); Def.~2.1 (2.6): $\phi_X=(\det X)^{-1/2}\Pf(dX\,X^{-1}dX)$, $\phi=0$ for $n$ odd; Def.~5.4: $\phi_G=\phi_{\Lambda_C}$, (5.4) sign $\det P$ under change of cycle basis; Lemma~5.5 (5.5) dipole.
+\item Balduf--Hu 2503.09558: Def.~2: $\phi_G=(-2\pi)^{-l/2}\Pf(d\Lambda_C\Lambda_C^{-1}d\Lambda_C)/\sqrt{\det\Lambda_C}$, $\Lambda_C=C^{\mathsf T}DC$; (1.5): $\phi_{D_3}=\frac1{2\pi}\frac{a_1da_2da_3-a_2da_1da_3+a_3da_1da_2}{(a_1a_2+a_2a_3+a_1a_3)^{3/2}}$; Thm~1: $\alpha_G=\det(C|P)2^{-l}\phi_G$; Lemma~3(ii): $\phi_G=0$ for odd $l$.
+\item Balduf--Gaiotto 2408.03192: (4.7), Thm~1 (spanning-tree/Dodgson form of $\alpha_\Gamma$), Lemma~4 ($\alpha=0$, odd $L$), Thm~2 ($\alpha\wedge\alpha=0$ for non-trees) (run-1 novelty-lit, web extraction).
+\item GKW 2403.13049 (TeX), eq:omegafactorize: $\omega_\Gamma=\alpha_\Gamma^T\prod_{i=1}^H\rho_\Gamma[\lambda^i;z^i]$, $\alpha_\Gamma=\int\prod_e\pi^{-1/2}e^{-s_e^2}ds_e$, $s_e=t_e^{-1/2}(x_{e(0)}-x_{e(1)})$.
+\end{itemize}
+\begin{dstatement}
+$M=CtC^{\mathsf T}=\Lambda_C$; $\rho_n(M)=(-\frac12)^{n/2}\phi^{\rm BHP}_M=\pi^{n/2}\phi^{\rm BH}_G=\det(C|P)\,(2\sqrt\pi)^n\alpha_G$ for even $n$, up to the cycle-basis sign (BHP (5.4)). Exact check at $n=2$, $M=\begin{pmatrix}x_1+x_3&x_3\\x_3&x_2+x_3\end{pmatrix}$: $\det M=\Psi$, $\rho_2=-\frac12\phi^{\rm BHP}$, $\rho_2=\pi\phi^{\rm BH}$ (R2 lit \path{rho2_dipole.log}; also R1 novelty-lit chk-rho2). $n\ge4$: (P2) only. \der
+\end{dstatement}
+
+\subsection{Odd-loop vanishing}
+$T=1$, $n$ odd: S3 Cor.~5.6 (reflection $(\tau,z)\mapsto(-\tau,z)$, $\sigma^*[P]_\Omega=-[P]_\Omega$, S3 (4.7)); WW Prop.~3.23; GKW sec:projective ($x\mapsto-x$ reflects an odd number of $\frac{ds_e}{dt_e}dt_e$, TeX); Balduf--Gaiotto Lemma~4; Balduf--Hu Lemma~3(ii); 2207.14321, subsection ``Three-Dimensional Holomorphic-Topological (HT) Twist'' ($\omega^{3d}_\Gamma=\rho\wedge\eta$, odd loops vanish; TeX, run-1 novelty-lit). Present form: $\rho_{2k+1}=0$ in \eqref{eq-rho}.
+
+\subsection{GKW bitriangle and earlier values}
+GKW 2403.13049 (TeX, sec:projective), bitriangle $=\theta(1,2,2)$, edges $t_{12},t_{23},t_{24},t_{31},t_{43}$:
+\begin{gather}
+\alpha=\frac1{8\pi}\big[t_{31}(t_{24}+t_{43})+t_{12}(t_{23}+t_{24}+t_{43})+t_{23}(t_{24}+t_{31}+t_{43})\big]^{-3/2}\Big[(t_{24}+t_{43})(dt_{12}dt_{23}+dt_{31}dt_{23})\notag\\
++(t_{12}+t_{31})(dt_{23}dt_{24}+dt_{23}dt_{43})-t_{23}(dt_{12}dt_{24}+dt_{12}dt_{43}+dt_{31}dt_{24}+dt_{31}dt_{43})\Big],\qquad\alpha^2=0,\\
+H=T=1:\ \ \omega=-\frac{\pi^2}4\,U^{-5/2}\,(t_{12}t_{23}t_{31}t_{24}t_{43})\,e^{-\lambda A^{-1}Bz}\,\lambda_1(\lambda_1+\lambda_2+\lambda_3)\,d\mathrm{Vol}_t,
+\end{gather}
+no integrated value; GKW Introduction: no non-renormalization theorem for $T=1$. In the present normalization: $K_\htk(\theta_{122})=-\frac\pi3\lambda_{B_1}\lambda_{C_1}$ at $(H,T)=(1,1)$ (Theorem~\ref{thm-closed}).
+\begin{dstatement}
+In GKW's edge list the trivalent vertices are $2,3$; at $\sum\lambda=0$, $\lambda_1(\lambda_1+\lambda_2+\lambda_3)=-\lambda_1\lambda_4$, the product of the bivalent-vertex sources, as $D_\theta=\lambda_{B_1}\lambda_{C_1}$; $(t_{12}t_{23}t_{31}t_{24}t_{43})\,d\mathrm{Vol}_t=\pm\iota_E\prod dt_e$; GKW's $\omega$ and Theorem~\ref{thm-dens} at $(1,1)$ have the same $t$-dependence $U^{-5/2}$ up to a $t$-independent factor, not checked. \der
+\end{dstatement}
+Earlier values ($H=0$): BHP Thm~1.3: $I_{D_3}(1)=1$; Balduf--Hu Sec.~2.2: $\int\phi_{D_{2i+1}}=1$, $I_{D_{2i+1}}=2^{-2i}$; GKW sec:exampleH0T1: $I_N=2^{1-N}$, $N$ odd; S3 remark after Cor.~5.6: $\frac1{4\pi}K=\frac14$; here $K_\htk(\theta_{111})=\pi$. No closed value of a two-loop graph integral with $T=1$, $H\ge1$ found (R1 novelty-lit verdict-O1, verdict-C1, search record).
+
+%======================================================================
+\section{Checks}\label{sec-checks}
+%======================================================================
+
+Paths relative to \path{/Users/libotao/Desktop/holomorphic-twist-program/}. Exact $=$ Fractions, sympy rationals or Python integers.
+
+{\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}p{6.7cm}>{\raggedright\arraybackslash}p{6.3cm}@{}}
+\toprule
+statement & method (who) & outcome\\
+\midrule\endhead
+Engine $K_\Gamma$ (Prop.~\ref{prop-rules}) & R1 engine verifier, own code \path{code/tests/verify_independent.py}: two Kirchhoff solutions, random bases, $T=1$ Pfaffian from the definition, pointwise exact densities on 16 graphs; one-loop exact integrals; theta integrals by path-resistance rule and semi-analytic mpmath; 6-dim lattice; transformation rules; \texttt{test\_known.py} & 138 PASS, 0 FAIL; pointwise 16/16; one-loop 24/24; theta integrals 12.1--12.5 digits (path rule), 14.7--22.6 digits (semi-analytic), 5.4--5.8 digits (lattice); test\_known 16/16\\
+Theorems~\ref{thm-dens}--\ref{thm-closed} & R1 twoloop-universal verifier: fresh exact KCL/KVL solver, BFS cycle basis; own Cheng--Wu/Liouville integration; Dirichlet moments; own direct numerical integrals & C0--C14 confirmed; 32/32 densities; $z=0$ values 13.0--15.9 digits (e.g.\ $0.698131700797724$ vs $2\pi/9$), $z\ne0$ 13.2--15.0 digits; oracle re-run 2 of 6\\
+S3 \path{forms_check.py} Monte Carlo, $(1,1)$ & R1 twoloop-universal C13, C14: replay of the random stream; tail analysis & mean $-0.2539835710$, err $0.0041449808$, $K=-0.2843069064266$; printed closed value lacks $-1$; $\langle f^2\rangle=\infty$, tail exponent $6/5$ (fitted $-1.202$)\\
+Proposition~\ref{prop-gauge} & R2 normalization V1: own sympy exterior algebra, Wirtinger generators & identities True; flux $=1$; WW (22) factor 4 found\\
+Proposition~\ref{prop-raw} & R2 normalization V2: every term of $\bigwedge_e\prod_a(dX^a_e-c^a_edt_e)$ expanded, Gaussian moments, compared with $D_\htk$ at random rational $(t,\lambda)$; V4: end-to-end heat-edge integrals of bananas & $-1/(64\pi^5)$ at all components for both thetas, graph$_{A,B}$, $\theta^{\rm rootN}$; bananas $0.250000000000000$, $0.0625$, $(1,0)$ banana(2), (3): 15.6--17.0 digits\\
+Proposition~\ref{prop-S2norm} & R2 normalization V2 at $(3,0)$ & $-1/(8\pi^3)$ (box), $-1/(64\pi^6)$ ($A$, $B$)\\
+Proposition~\ref{prop-wick} & R2 normalization V3: own permutation signs; $\sigma C_{L'}$ vs index forms for $\fso(3),\fso(4)$; 5 random relabellings with controls; Part D rule-free with nilpotency-fixed $Q_2$ data & $\sigma=-1,-1$; invariance 5/5; controls fail (2/5, 4/5; 2/5, 3/5); ratios $(-1,-1)$, $(1,1)$; $\prod\delta O_N=-f_{A_1A_2A_3}$\\
+Theorem~\ref{thm-assembly} & R2 normalization V5, sympy & $O_2/(\Delta(-3W_{133}+2W_{223}))=-U\hbar^2/(15360\pi^4)$; $[O_2]=-U\hbar^2/(3072\pi^4)[F_{223}]$: True\\
+Proposition~\ref{prop-count} & R2 normalization V5, symbolic count and htk catalog & table $n=1..6$; catalog $D=2$: $[2,2,3,3]$, $E=2$; $D=3$: two graphs, $E=4$\\
+Theorem~\ref{thm-kernels} & R1 anomaly-structure verifier: exact chart identity at 5 points; float integrals & $K/D_\theta=-\pi/20$, $\pi/30$; 14, 13 digits\\
+Theorem~\ref{thm-colour} & R1 anomaly-structure verifier; R2 deform verifier \texttt{t\_weights.log} & $\fgl_{2,3,4}$, $\fsl_{2,3,4}$ True; own $W_{\rm tot}$ equal (True)\\
+Proposition~\ref{prop-closed} & R1 anomaly-structure verifier (8 algebras, large range $R=30$); R2 simple-g verifier (12 constructions, 24 configurations, slot mode for large algebras); R2 deform verifier (formal) & all True; controls: $d\beta=0$, random non-invariant input $\ne0$\\
+Theorem~\ref{thm-class-slN} & R1 anomaly-structure verifier (ranks, formal $N$); R2 deform verifier \texttt{vformal.py}, \texttt{vfixed.py}: exact elimination over $\mathbb Q$, fixed-$N$ faithfulness by exact Gram ranks ($\fgl_N$) and binomial inversion ($\fsl_N$) & $36/26/10/6/4$ (formal $\fgl_N$), $15/11/4/3/1$ (formal $\fsl_N$); fixed-$N$ table as stated; no modular ranks\\
+Lemma~\ref{lem-red}, Theorem~\ref{thm-simple} & R2 simple-g verifier: own constructions, full 4-tensors, 6 momentum configurations with invertible monomial matrix plus interpolation check; unreduced complex for 4 algebras; pointwise minors at random integer points (explorer) & as stated; interpolation True for all; $c_{\rm Killing}=1/2$ for 12 constructions\\
+Proposition~\ref{prop-inv} & R2 simple-g verifier: own Weyl formula; nullity modulo $1000003$, $999983$ & tables identical to the explorer's\\
+Propositions~\ref{prop-scal}, \ref{prop-qme} & R2 deform verifier: re-derivation; S1 (9.57), S3 Prop.~5.5, Cor.~5.6 read & confirmed with the gaps stated; one-loop insertion check (explorer, htk polygon(4), 4 patterns): $K=0$, not re-run\\
+Proposition~\ref{prop-cochain} & R2 deform verifier \texttt{t\_engine.py} & all identities True; formal $=$ explicit on $\fgl_2,\fgl_3,\fsl_2,\fsl_3$\\
+Theorem~\ref{thm-H3} & R2 deform verifier \texttt{vformal.py}, \texttt{vfixed.py}, \texttt{t\_explicit.py}; R2 simple-g verifier \texttt{t\_j1.py}, \texttt{t\_sl2inv.py} & dimensions as stated; $\fgl_2$ relation symbolic True; $dJ_1=0$ True, random symmetric $T$: $dJ\ne0$\\
+Proposition~\ref{prop-moyal} & R2 deform verifier: formal; explicit $\fgl_2$, $\fgl_3$ (3 random points each) & True; nonzero\\
+Theorem~\ref{thm-quad} & R2 deform verifier: formal Laurent in $N$; fixed $N=3,4,5$; explicit $\fsl_3$ coboundary & True\\
+Theorem~\ref{thm-Q1} & R2 deform verifier: exact witnesses & as stated\\
+coefficients (Statement after Thm~\ref{thm-Q1}) & R2 deform verifier \texttt{t\_coeff.log}, arithmetic only & True; inputs $\epsilon$, $U$ open\\
+Statements of Section~\ref{sec-lit} & R2 lit explorer (no verifier): \texttt{koszul\_check.py}, \texttt{rho2\_dipole.py}; R1 novelty-lit explorer (no verifier) & all checks True (explorer)\\
+Tables of $c_1$, $c_0$ & writer: exact sympy re-evaluation of \eqref{eq-T1}, \eqref{eq-T0} and of the sign rules (\path{notes/flagship/arith_check.py}, \path{arith_check.log}) & equal to the table\\
+\bottomrule
+\end{longtable}}
+
+Not done: no end-to-end position-space integral of the $(2,1)$ thetas; the universal sign $U$ and the dictionary sign $\epsilon$ not fixed; \ref{H-CE} not proved; nilpotency checks of S2, six-d-$Q_3$, 5d MSYM not re-run in R2; terms with $\partial_{\zb}$, $\partial_\tau$ on external fields not examined; order $\hbar^3$ not analysed; $E_6,E_7,E_8$, $\fso_N$ ($N\ge9$), $\fsp_{2n}$ ($n\ge4$), $\fsl_N$ ($N\ge6$) not computed; Costello--Gwilliam, Costello's book and Williams' thesis not read.
+
+%======================================================================
+\begin{thebibliography}{99}\small
+\bibitem{S1} Li, Liu, Chang, \emph{Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring}, manuscript \path{sources/LLC_main.tex}, version 20261120-231110; INSPIRE lists arXiv:2611.24160 with this title.
+\bibitem{S2} 6d note, holomorphic Chern--Simons theory on $\mathbb C^{3|2}$, \path{Desktop/6d-holomorphic-twist-note/} (18 November 2026).
+\bibitem{S3} 11d note, twisted 11d supergravity on $\mathbb R\times\mathbb C^5$, \path{Twisted_11d_sugra_loops_2026-11-18/} (18 November 2026).
+\bibitem{Op} K.~Budzik, D.~Gaiotto, J.~Kulp, J.~Wu, M.~Yu, \emph{Feynman Diagrams in Four-Dimensional Holomorphic Theories and the Operatope}, arXiv:2207.14321.
+\bibitem{GKW} D.~Gaiotto, J.~Kulp, J.~Wu, \emph{Higher Operations in Perturbation Theory}, arXiv:2403.13049.
+\bibitem{WW} Wang, Williams, arXiv:2407.08667 (v3, 13 April 2026; v1, v2: \emph{Factorization algebras from topological-holomorphic field theories}).
+\bibitem{C16} Costello, arXiv:1610.04144.
+\bibitem{C17} Costello, arXiv:1705.02500.
+\bibitem{C13} Costello, arXiv:1303.2632.
+\bibitem{CL15} Costello, Li, arXiv:1505.06703.
+\bibitem{Wil} Williams, arXiv:1809.02661.
+\bibitem{GW18} Gwilliam, Williams, arXiv:1810.06534.
+\bibitem{GW19} O.~Gwilliam, B.~R.~Williams, \emph{A one-loop exact quantization of Chern--Simons theory}, arXiv:1910.05230.
+\bibitem{SW} Saberi, Williams, arXiv:1910.04120.
+\bibitem{RSW} Raghavendran, Saberi, Williams, arXiv:2111.03049.
+\bibitem{GRW} Gwilliam, Rabinovich, Williams, arXiv:2107.06734.
+\bibitem{GWB} N.~Garner, B.~R.~Williams, P.-H.~Balduf, arXiv:2611.23377.
+\bibitem{OZ1} Oh, Zhou, arXiv:2002.07343.
+\bibitem{OZ2} Oh, Zhou, arXiv:2103.00963.
+\bibitem{IJZ} Ishtiaque, Jeong, Zhou, arXiv:2408.15712.
+\bibitem{Ash} Ashwinkumar, arXiv:2408.15732.
+\bibitem{GO} Gaiotto, Oh, arXiv:1907.06495.
+\bibitem{BHP} Brown, Hu, Panzer, arXiv:2406.12734.
+\bibitem{BH} Balduf, Hu, \emph{The Topological form is the Pfaffian form}, arXiv:2503.09558.
+\bibitem{BG} Balduf, Gaiotto, arXiv:2408.03192.
+\bibitem{Zeng} K.~Zeng, \emph{Monopole Operators and Bulk-Boundary Relation in Holomorphic Topological Theories}, arXiv:2111.00955.
+\bibitem{Kac} V.~G.~Kac, \emph{Infinite-dimensional Lie algebras}, Sec.~7.8 (construction of the simple algebras used by the simple-g explorer).
+\end{thebibliography}
+
+\end{document}

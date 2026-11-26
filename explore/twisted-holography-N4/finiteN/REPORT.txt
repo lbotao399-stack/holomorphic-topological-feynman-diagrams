@@ -1,0 +1,298 @@
+FINITE-N TEST OF THE BUDZIK-GAIOTTO GIANT-GRAVITON CONJECTURE AGAINST THE LLC CENSUS
+2026-11-21
+
+Tags: [source: location]  [derived]  [checked] = exact computation (ranks over F_p, p = 2^31-1, repeated
+at p' = 2147483629; over Q where stated)  [conjectural].
+B-G = K. Budzik, D. Gaiotto, arXiv:2611.18539v1; equation numbers are those printed in the PDF.
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Code (new modules): P/code/holography/{giant.py, census_io.py, bg_words.py, bg_complex.py,
+  bg_complex_k.py, uN_q0.py, rank_mod.py}.  Drivers and logs: P/explore/twisted-holography-N4/finiteN/.
+
+
+======================================================================================================
+B1. THE CONJECTURE
+======================================================================================================
+
+B1.0 Moduli space and its quantization.                                       [source: B-G §1.1, §3]
+  free d-matrix model (Q = 0):  H^v_{d;N} = ker_{D_{+-,.}} C[t_., m_.]^N  (3.5, solid box = proven),
+  k-determinants:  H^v_{d;N} = ker_{D_{+-,.}} C[t_., m_.]^{U(k)_N x U(k)_N}  for all k  (3.12, solid box),
+  m_. = k x k matrices = coordinates on the giant-graviton moduli space of complexes C^k ->_d C^k (3.27);
+  degree-N (det^N) polynomials in m = geometric quantization; C[t_.] = closed-string Fock space;
+  open loop equations D_{+-,alpha} (3.3), (3.10), D_{+-,0} = N - ... (3.11) = gauge constraints;
+  BRST form:  S_BV (4.42),  Qcal = Q^v + sum_alpha (-1)^|alpha| (c^-_alpha D_{-,alpha} - c^+_alpha D_{+,alpha}) + ...
+  on C[t_., c_.], c_. = (m_., c^+-_., r_.)  (4.44)-(4.45);  trace relations (3.8), (3.16) dashed.
+
+B1.1 Gauge-theory side.                                                         [source: B-G §4.1]
+  Q Phi_i = sum_alpha q_i^alpha W_alpha (4.1),  Q Phi = Phi^2 (4.2),  Phi = C + sum_i Phi_i a^i (4.5),
+  Q Phi_i = [C, Phi_i] + Q_r Phi_i,  Q C = (1/2)[C, C] (4.6),
+  H_{A;N} := H^.(gl_N[A] | gl_N)  (U(N)-invariant polynomials in the Phi_i, differential Q_r)  (4.7),
+  H^.(gl_N[A]) = H_{A;N} (x) C[Tr C, Tr C^3, ..., Tr C^{2N-1}]  (4.8),
+  H_{A;inf} = S^.(HC_r^{.-1}(A))  (LQT)  (4.15).
+  Gauge group U(N) (§1.1, (4.7), (5.3)).  Supercharge: leading (tree-level) action only; loop
+  corrections deferred (§1.2; footnote 4).
+  1/16-BPS N=4: A = C[theta_1,theta_2,theta_3,z_1,z_2] (§4.1, p.22); A^! ~ C[x_1,x_2,x_3,zeta_1,zeta_2],
+  zeta odd of ghost number 1 (§4.2); Koszul-dual branes = D5-branes in C^5, giant gravitons = B-model
+  D3-branes from tachyon condensation on D5/anti-D5 (§1.3).
+  Identification with the LLC paper: H_{A;N} = E_1 = H(Q_0) of the relative twisted U(N) complex,
+  Q_0 = d_CE of gl_N (x) C[[z_1,z_2]] (x) Lambda[theta_1,theta_2,theta_3].       [derived; NOTE.md §1]
+
+B1.2 Brane side.                                                              [source: B-G §4.3-4.5]
+  mesons  M_a = psibar W_a psi,  M_a^+ = psibar W_a u,  M_a^- = ubar W_a psi,  M_a^r = ubar W_a u  (4.24),
+  u, ubar antifields (ghost number -1) of psibar, psi;
+  Delta_BV = Tr_N d_psibar d_u + Tr_N d_ubar d_psi  (4.19),
+  Delta_BV M_a^+ = T_[a],  Delta_BV M_a^- = (-1)^|a| T_[a],  Delta_BV M_0^+- = N  (4.25)-(4.26),
+  C_.(L, Ber^N) := (C[T_., M_.], Q + Delta_BV),  L = gl'_{k|k}[A^!]  (4.33),
+  relative complex C_.(gl'_{k|k}[A^!] | b_{k|k}; Ber^N), b_{k|k} = <sM_0^+-, sM_0^r>  (4.48):
+  M_0^+- = M_0^r = 0 and quotient by the symmetries they generate, including {ubar u, .} (§4.5),
+  H_.(gl_{k|k} | b_{k|k}, Ber^N) = C (det M_0)^N  (4.50).
+
+B1.3 Conjecture.                                                                [source; conjectural]
+  (1.7) = (4.51) (dashed box):   lim_{k->inf} H_.(gl'_{k|k}[A^!] | b_{k|k}, Ber^N) = H_{Q;N} (= H_{A;N}),
+  (5.2) = (5.18) (dashed box):   lim_{k->inf} H^.(gl'_{k|k}[A^!] | b_{k|k}, Ber^N) = H^v_{A;N},
+  (4.52), (5.19), (5.20): absolute and gl_k+gl_k-relative variants (extra zero-mode classes),
+  (4.56)-(4.57) (dashed): gl'_{k|k}[HA^!] ~ gl'_{k|k}[A^!].
+  Gradings: ghost number and all fugacities of A (characters with 1 - f = character of A, (5.3)).
+
+B1.4 Index statements.                                                                  [source]
+  Z_N = Molien-Weyl (5.3);  Z_inf = PE[vbar v/(1-f)] / prod_k (1 - f_k)  (5.4);
+  Z_N = Z_inf sum_{k>=0} G_N^(k)  (5.5)  (Murthy; stated in §5.1 to be proven);
+  G_N^(k) = contour integral (5.6) = Z^+_{k|k}[f^!; N] (5.13),  f^! = -f/(1-f)  (5.9);
+  (5.14) (dashed):  chi(H^.(gl_{K|K}[A] | b_{K|K}, Ber^N)) = sum_{k<=K} Z^+_{k|k}[f; N];
+  (5.16) (dashed):  chi(H^.(gl_{k|k}[A] | gl_{k|k}, Ber^N)) = Z^+_{k|k}[f; N], N > 0;
+  (1.10) = (5.17):  chi(H(gl'_{k|k}[A^!] | b_{k|k}, Ber^N)) = Z_inf sum_{l<=k} G_N^(l)  (conjectural, §1.3).
+
+B1.5 Data in the paper.                                                                  [source]
+  App. B (B.1)-(B.28): gl_{k|k}[A] characters, A = C[theta], C[z], N = 0, 1, k = 1, 2.
+  App. C Tables 1-5: H^.(gl'_{k|k}[A^!] | b_{k|k}, Ber^N) for A = C[theta] (N=0: Table 1, N=1: Table 2)
+  and A = C[z] (N=0: Table 3; N=1: Tables 4-5), k = 1, 2, through x^8 - x^10.
+  No computation for the 1/16-BPS algebra at any N, k.  No statement on fortuitous classes.
+  Loop corrections deferred (§1.2, fn. 4).  Finite k: spurious classes (§4.3, §4.5-4.6); §1.2 reports
+  examples where the map of the uniform-in-N cohomology into H_{Q;N} is not injective, and no example
+  of non-surjectivity.
+
+
+======================================================================================================
+B2. IMPLEMENTATION OF THE PREDICTION, U(1), U(2), U(3)
+======================================================================================================
+
+B2.1 Word algebra A^! for 1/16-BPS N=4.                                                 [derived]
+  letters X_(m,S), m in N^2, S in {1,2,3}, (m,S) != (0,{}),  C(z,theta) = sum z^m theta^S X_(m,S),
+  weight lambda = (1_S; m) = (theta_1,theta_2,theta_3; n_+, n_-),  parity 1+|S|,  gh 1-|S|,
+  level 2|S| + 3|m| = 2(E+J_L);
+  QC = C.C  =>  (-1)^{|S_C|} Q X_C = sum_{A.B=C} (-1)^{(1+|S_A|)|S_B|} eps(S_A,S_B) X_A X_B,
+  Q_r = Q with X_(0,{}) = 0 (relative complex).
+  (X_(0,I), X_(0,JK), X_(0,123), X_(e_a,{})) = (gamma^I, beta_I, b, d_a c) up to normalization.
+  Q_r^2 = 0 on every letter through level 33.                                            [checked]
+
+B2.2 Meson complex as implemented (bg_complex.py: k=1; bg_complex_k.py: any k).          [derived]
+  generators T_w (graded-cyclic class, w != {}), M_w, P_w := M_w^+, MM_w := M_w^-, R_w := M_w^r;
+  parity |w|, |w|, 1+|w|, 1+|w|, |w|;  ghost number gh(w), gh(w), gh(w)-1, gh(w)-1, gh(w)-2;
+  d = Q + Delta_BV, Delta_BV evaluated by explicit psibar_i-u_i and ubar_i-psi_i contractions with
+  Koszul signs, Tr_N 1 = N; brackets concatenate words as in (4.34)-(4.41).
+  k = 1:  {P_0, M_w} = -M_w,  Delta_BV P_0 = N  =>  b_0-coinvariants of Ber^N:  #M - #R = N;
+          b_1 = <R_0>:  R_N = C'_N / D_r C'_{N+1},  D_r = {R_0, .},
+          C' = C[T_w, M_w, P_w, MM_w, R_w] with P_0 = MM_0 = R_0 = 0.
+  k >= 1: R_N = V_T / ( sum_{x!=y} {P_{0,xy}, V} + sum_{x!=y} {MM_{0,xy}, V} + sum_{x,y} {R_{0,xy}, V} ),
+          T: #psibar_x - #u_x = #psi_x - #ubar_x = N for every flavour x.
+  H_g(R_N), g = ghost number;  physical letter number  Y = g + Theta.
+  The full word algebra A^! (cobar, all words) is used, not HA^!: (4.56)-(4.57) are not assumed.
+  d^2 = 0 (absolute complex with zero modes, numeric N; relative complex), d D_r + D_r d = 0.  [checked]
+
+B2.3 Validation on the paper's own tables (A = C[theta]: one even letter; A = C[z]: odd letters c_n,
+  Q c_n = sum_{a+b=n} c_a c_b).  Their H^n = our H_{g=-n}.                       [checked, F_p]
+  Table 1 (C[theta], N=0)  k=1: H^0 = 1 (x^0); H^3 = 1,2,5,8,14 (x^4..x^8)         reproduced
+                           k=2: H = C at x^0 only, x^0..x^6                          reproduced
+  Table 2 (C[theta], N=1)  k=1: H^0 = 1 (x^0..x^9); H^3 = 1,2,5,9 (x^6..x^9)        reproduced
+                           k=2: H^0 = 1, x^0..x^6 (the k=1 class H^3 at x^6 is absent)   reproduced
+  Table 3 (C[z], N=0)      k=1: H^-1 = 1,1,2,2,3 (x^4..x^8); H^-2 = 1,2 (x^7,x^8)   reproduced
+  Tables 4-5 (C[z], N=1)   k=1: x^0..x^8                                             reproduced
+
+B2.4 1/16-BPS, k = 1: dim H_g^BG = dim H^{Y=g+Theta}(Q_0)^{U(N)} in every sector representative
+  (theta_1>=theta_2>=theta_3, n_+>=n_-):                                                   [checked]
+    U(1): levels 2-9, 23/23 sectors;  U(2): levels 2-12, 54/54 (F_p), levels 2-11 also F_p' (38/38),
+    levels 2-10 also over Q (32/32);  U(3): levels 2-10, 32/32;
+    U(4): levels 2-10, 32/32 (trace relations from level 10, e.g. (5,0,0;0,0): U(inf) 7, U(4) 6).
+  k = 2 (bg_complex_k.py), U(2): levels 2-6, 10/10 sectors, H^BG_{k=2} = H^BG_{k=1} = E_1^{U(2)}
+  (bg_vs_U2_k2.log).                                                                       [checked]
+  Per-sector table: tables_k1.txt.  Finite-N content of the test (stable = no trace relations),
+  b3_sector_table.log, e.g.
+    (3,0,0;0,0):  U(inf) 3@Y3,          U(2) 2@Y3,           U(3) 3@Y3
+    (1,1,1;0,0):  U(inf) 1,5,5@Y1,2,3,  U(2) 1,5,4,          U(3) 1,5,5
+    (4,0,0;0,0):  U(inf) 5@Y4,          U(2) 3@Y4,           U(3) 4@Y4
+    (2,2,1;0,0):  U(inf) 1,11,32,26@Y2..5, U(2) 1,10,19,9,   U(3) 1,11,30,20
+    (2,1,1;1,0):  U(inf) 5,32,61,36@Y2..5, U(2) 5,29,38,12,  U(3) 5,32,58,28
+  U(2) differs from U(inf) in 27 of the 38 representatives of levels 2-11 (first at level 6); U(3) in
+  14 of the 32 representatives of levels 2-10 (first at level 8).  Every difference is reproduced by
+  the N-independent meson complex at #M - #R = N.                                          [checked]
+
+B2.5 Index of the prediction.                                                            [checked]
+  per sector:  sum_g (-1)^g dim H_g^BG = [Z_inf (1 + G_N^(1))]_lambda   (refined, all sectors above)
+  = (1.10) at k = 1 sector by sector.
+  per level (sum over S_3 x Z_2 orbits):
+    U(2) dim  3, 2, 15, 18, 51, 90, 195, 362, 699, 1308, 2431 (levels 2-12) = Chang-Lin Table 3 d_u
+    U(2) ind  3,-2,  9, -6, 11, -6,   9,  14, -21,   36,  -17               = Chang-Lin Table 3 i_u
+    U(3) dim  3, 2, 15, 18, 61, 102, 249, 470, 996 (levels 2-10) = Chang-Lin Table 4 d_u
+    U(3) ind  3,-2,  9, -6, 21, -18,  33, -22,  36               = Chang-Lin Table 4 i_u
+    U(4) dim  3, 2, 15, 18, 61, 102, 264, 490, 1086 (levels 2-10) = Chang-Lin Table 5 d_u
+    U(4) ind  3,-2,  9, -6, 21, -18,  48, -42,  78               = Chang-Lin Table 5 i_u
+  (Chang-Lin tables as transcribed in BPS枚举/python版/reference_tables.py.)
+
+B2.6 Where k = 1 fails.
+  one matrix (A = C[theta]), N = 2, k = 1:  H_0 = dim C[Tr X, Tr X^2] (x^0..x^11) and spurious
+  H_{-3} = 1, 2, 5, 9 at x^8, x^9, x^10, x^11.                                          [checked]
+  In the 1/16-BPS complex the sector (n,0,0;0,0) contains only words in gamma^1, so its complex is the
+  one-matrix complex at x^n.                                                              [derived]
+  => k=1 complex for U(2) has a spurious class at (8,0,0;0,0), g = -3 (Y = 5), level 16.  [checked]
+  Index: Z_inf(1 + G_2^(1)) - Z_2 = -Z_inf (G_2^(2) + ...) starts at level 16.          [checked]
+  Onset of G_N^(k): level 2k(N+k) (lower bound: (prod mu/prod nu)^{N+k} requires k(N+k) factors
+  nu/mu of f^!, each of level >= 2)                                                       [derived]
+  equality: N=2, k=1,2 -> 6, 16; N=3, k=1,2 -> 8, 20; N=4, k=1 -> 10; N=0, k=3 -> 18;
+  N=2, k=3 -> 30.                                                                           [checked]
+  => truncation k reproduces the index below level 2(k+1)(N+k+1): U(2): k=1 below 16, k=2 below 30.
+
+
+======================================================================================================
+B3. COMPARISON WITH THE CENSUS
+======================================================================================================
+
+B3.1 U(N) versus SU(N) in the twisted complex.                                            [derived]
+  gl_N = sl_N + gl_1 (orthogonal for tr),  C = C_0 + (1/N) c 1,  c = tr C;
+  S^{U(N)}[C] = S^{SU(N)}[C_0] + S_free[c]  (cubic vertex ~ f_abc, f_{0bc} = 0; no mixed propagator),
+  invariants: Sym(gl_N (x) V)^{PSU(N)} = Sym(sl_N (x) V)^{SU(N)} (x) Sym(V),
+  V_1 := abelian letters without the constant ghost (= the p=1 single-graviton multiplet Tr dC),
+  C^{U(N)} = C^{SU(N)} (x) Sym(V_1),  Q_n^{U(N)} = Q_n^{SU(N)} (x) 1  (n >= 0; every graph of Q_n has
+  cubic vertices only, so a U(1) letter is a spectator),
+  => E_r^{U(N)} = E_r^{SU(N)} (x) Sym(V_1),  d_r^{U(N)} = d_r^{SU(N)} (x) 1  (r >= 1),
+     multi-graviton subalgebra M^{U(N)} = M^{SU(N)} (x) Sym(V_1)  (Tr(dC)^p = tr_{SU}(dC_0)^p + U(1)
+     letters x lower SU(N) traces, by induction in p),  fortuitous quotient F^{U(N)} = F^{SU(N)} (x) Sym(V_1),
+     Z^{U(N)} = PE[f] Z^{SU(N)},  f = 1 - (1-t_1)(1-t_2)(1-t_3)/((1-p)(1-q)).
+  Checks:  dim H^{U(2)}(lambda,Y) = sum H^{SU(2)}(lambda',Y') dim Sym(V_1)(lambda-lambda',Y-Y'), all
+  sectors, levels <= 11, 0 failures (b3_U2_vs_SU2.log);  Z_{U(2)} = PE[f] (census B-F), levels <= 33.
+                                                                                           [checked]
+
+B3.1b Other groups.  The B-G construction is formulated for U(N) only (extension to other classical
+  groups left open, §2); the SO(2N+1), Sp(N), G_2 census data have no B-G counterpart.      [source]
+
+B3.2 Census E_1 (SU(2)).  Per-level (bosonic, fermionic) of the census = this computation
+  (uN_q0.py, traceless 2x2 evaluation), levels 2-11:
+  (0,0) (0,0) (6,0) (0,6) (1,8) (18,0) (18,12) (2,38) (36,30) (102,18).                  [checked]
+  Per-sector SU(2) dims (not in the census files): b3_sector_table.log.
+
+B3.3 B-G versus E_1 sector by sector.  Through level 12 (U(2), all 54 representatives):
+  H^BG_{k=1} = E_1^{U(2)};  through level 11 also = E_1^{SU(2)} (x) Sym(V_1) sector by sector. [checked]
+  Largest sector: (2,2,2;0,0), dim C' = 115596, H = 1,9,29,35,14 at Y = 2..6.
+  All classes in this range are multi-graviton (SU(2): stable for level <= 5, fortuitous threshold 24
+  [source: LLC Table tab-su-frontier]); the test probes the kernel of pi_N (trace relations), not
+  fortuity.
+
+B3.4 Multi-graviton and fortuitous classes in the B-G complex.                            [derived]
+  k = 1, chain X = X_0 + X_1, X_0 = X|_{u=ubar=0}, X_1 of degree >= 1 in u, ubar;
+  #M - #R = N and #P = #MM = #R = 0 on X_0  =>  X_0 = sum (exactly N mesons M_w) x P(T);
+  I = int dpsi dpsibar (integration map, B-G §4.5):  I(X) = I(X_0),
+  I(M_{w_1}...M_{w_N} P) = pi_N( E(M_{w_1}...M_{w_N}) P ),
+  E(M_{w_1}...M_{w_N}) = +- sum_{sigma in S_N} sgn(sigma) prod_{cycles c of sigma} T_{[prod_{i in c} w_i]}
+  (generalized determinant (2.7)), Q E = E Q;
+  dX = 0  =>  Q X_0 + (Delta_BV X_1)|_{u=ubar=0} = 0   ((4.49));
+  X_1 = 0  =>  Q X_0 = 0 in C[T,M]  =>  I(X) = pi_N(E X_0) with Q(E X_0) = 0: stable image;
+  stable class pi_N(P), QP = 0  =  I(M_0^N P)/c, c = +-N!, with X_1 = 0;
+  => wherever I is an isomorphism (conjectured for k -> inf by (1.7); found at k = 1 through level 12):
+     class multi-graviton  <=>  some representative has X_1 = 0;
+     class fortuitous  <=>  every representative needs the antifield (open-string BRST) tail X_1 != 0.
+  (For k > 1 the same holds with X_0 in C[T, M]^{U(k)_N x U(k)_N} and E the k-determinant expansion.)
+  SU(2) fortuitous generators [source: LLC table local-ch9-su-classes]:
+    O_0  (4,4,4;0,0)_7,   level 24,  (19/2; 3/2,3/2,3/2; 5/2, 0)
+    O_1  (6,6,6;0,0)_9,   level 36,  (27/2; 3/2,3/2,3/2; 9/2, 0),  d_1 != 0
+    P39  (5,5,5;3,0)_9,   level 39;   X40  (7,5,5;1,1)_10,  level 40.
+  In U(2): O_0 (x) Sym(V_1) etc. (B3.1).  O_0 lies in the window 16 <= level < 30 where k >= 2 is
+  required (G_2^(2) != 0, G_2^(3) = 0); O_1, P39, X40 need k >= 3.  Not computed: the k=2 complex at
+  level 24 is out of reach of this implementation.  Whether lim_k H^BG contains them = (1.7).
+                                                                                       [conjectural]
+
+B3.5 Quantum lifts.
+  B-G use the tree-level Q only (§1.2, fn. 4)  =>  their H_{Q;N} is E_1.                   [source]
+  d_1: (lambda)_Y -> (lambda - d)_Y:  d_1 O_1 in (5,5,5;1,1)_9, level 36.                 [derived]
+  Every lift pairs a fortuitous class with a multi-graviton or fortuitous class (multi-gravitons are
+  closed to all orders, LLC Thm b-00630); SU(2) through level 31: all non-graviton blocks are O_0
+  multiplet blocks (Y = 7), with d_r = 0 and d_r-exact for no r; levels 32-33: three Y>=9 blocks still
+  open (product/hair test).  [source: census README, N4_SU2_nongraviton_blocks.csv, LLC §2, l.4097]
+  => E_inf^{U(2)} = E_1^{U(2)} through level 31, so the tree-level B-G prediction equals the quantum
+     BPS space there; levels 32-33 undecided (three open blocks); first known difference at level 36:
+     the pair (O_1, d_1 O_1) (x) Sym(V_1) is in E_1 but not in E_2.                       [derived]
+  The one-loop d_1 has no counterpart in C[T_., M_.] with tree-level Q (no loop-corrected Q on
+  mesons is defined in B-G).                                                         [conjectural]
+
+
+======================================================================================================
+B4. INDEX: GIANT GRAVITON EXPANSION AT N = 2 VERSUS THE CENSUS
+======================================================================================================
+
+  unrefined x^{2(E+J_L)}:  f = 1 - (1-x^2)^3/(1-x^3)^2,  f^! = 1 - (1-x^3)^2/(1-x^2)^3.
+  Z_{SU(2)} = census B-F per level, levels 2-33 (0 mismatches);
+  Z_{U(2)} = Chang-Lin i_u, levels 0-25;  Z_{SU(2)} = Chang-Lin i_su, levels 0-25;
+  Z_2/Z_inf = Chang-Lin ratio_i, levels 0-25;
+  Z_2/Z_inf = 1 + G_2^(1) + G_2^(2), levels 0-29;  Z_2 = Z_inf (1 + G_2^(1) + G_2^(2) + G_2^(3)), levels 0-33;
+  Z_3/Z_inf = 1 + G_3^(1), levels 0-19 (= Chang-Lin Table 4 ratio_i).                     [checked]
+  G_2^(1), G_2^(2), G_2^(3) computed from (5.6) as constant terms (giant.py G1, G2, G3; G3 also
+  validated by Z_inf(1 + G_0^(1) + G_0^(2) + G_0^(3)) = Z_0 = 1 through level 22).       [checked]
+  => census B-F (SU(2)) = [Z_inf (1 + G_2^(1) + G_2^(2) + G_2^(3)) / PE[f]]_j for every level j <= 33.
+
+  j | census B-F SU(2) | Z_U(2) | Z_2/Z_inf | 1+G^(1)+G^(2) | residual
+  0 |      .  |       1 |       1 |       1 |       0
+  2 |      0  |       3 |       0 |       0 |       0
+  3 |      0  |      -2 |       0 |       0 |       0
+  4 |      6  |       9 |       0 |       0 |       0
+  5 |     -6  |      -6 |       0 |       0 |       0
+  6 |     -7  |      11 |     -10 |     -10 |       0
+  7 |     18  |      -6 |      12 |      12 |       0
+  8 |      6  |       9 |      -9 |      -9 |       0
+  9 |    -36  |      14 |       0 |       0 |       0
+ 10 |      6  |     -21 |      21 |      21 |       0
+ 11 |     84  |      36 |     -54 |     -54 |       0
+ 12 |    -80  |     -17 |      83 |      83 |       0
+ 13 |   -132  |     -18 |    -102 |    -102 |       0
+ 14 |    309  |     114 |      72 |      72 |       0
+ 15 |    -18  |    -194 |     128 |     128 |       0
+ 16 |   -567  |     258 |    -459 |    -459 |       0
+ 17 |    516  |    -168 |     744 |     744 |       0
+ 18 |    613  |    -112 |    -697 |    -697 |       0
+ 19 |  -1392  |     630 |      12 |      12 |       0
+ 20 |   -180  |   -1089 |    1440 |    1440 |       0
+ 21 |   2884  |    1130 |   -3240 |   -3240 |       0
+ 22 |  -1926  |    -273 |    4182 |    4182 |       0
+ 23 |  -4242  |   -1632 |   -2580 |   -2580 |       0
+ 24 |   7890  |    4104 |   -2971 |   -2971 |       0
+ 25 |    792  |   -5364 |   12132 |   12132 |       0
+ 26 | -15876  |    3426 |  -20220 |  -20220 |       0
+ 27 |  13804  |    3152 |   18118 |   18118 |       0
+ 28 |  15177  |  -13233 |    2526 |    2526 |       0
+ 29 | -37536  |   21336 |  -41874 |  -41874 |       0
+ 30 |   7049  |  -18319 |   82815 |   85103 |   -2288
+ 31 |  57522  |   -2994 |  -88362 | -102090 |   13728
+ 32 | -58704  |   40752 |   18666 |   73767 |  -55101
+ 33 | -53722  |  -76884 |  134368 |  -34988 |  169356
+  G_2^(1): onset 6 (-10x^6 + 12x^7 - 9x^8 + 21x^10 - ...);  G_2^(2): onset 16 (126x^16 - 378x^17 + ...).
+  residual (levels 30-33) = G_2^(3) = -2288 x^30 + 13728 x^31 - 55101 x^32 + 169356 x^33 + ...,
+  computed directly from (5.6) at k = 3 (b4_G3_N2.log); G_2^(4) starts at level >= 48.     [checked]
+  B-F at fixed level does not separate fortuitous from multi-graviton states; the O_0 multiplet
+  (levels 24-33) is inside these numbers.
+
+
+======================================================================================================
+CHECKED / CONJECTURAL / FAILURES
+======================================================================================================
+  checked:  B-G k=1 meson complex = E_1^{U(N)} sector by sector, N = 1 (<=9), 2 (<=12), 3 (<=10),
+            4 (<=10); k=2 = E_1^{U(2)} (<=6); sector Euler characteristics = [Z_inf(1+G_N^(1))]_lambda;
+            B-G Tables 1-5 (k=1) and Tables 1-2 (k=2, through x^6) reproduced, including the
+            disappearance at k=2 of the k=1 spurious classes at x^4..x^6 (N=0) and x^6 (N=1);
+            U(2) = SU(2) (x) Sym(V_1) per sector (<=11); census B-F = Molien-Weyl SU(2) index (<=33);
+            Murthy GGE with k <= 2 = U(2) index (<=29), with k <= 3 (<=33).
+  derived:  U(N)/SU(N) relation for all E_r, d_r, M, F and the index; in the k=1 complex, under (1.7)
+            via integration, multi-graviton <=> a representative without antifield tail, fortuitous
+            <=> every representative has X_1 != 0 (closure only through Delta_BV, i.e. the open loop
+            equations); onset 2k(N+k) of G_N^(k) (lower bound derived, equality checked);
+            first known E_1 != E_inf difference for U(2) at level 36 (O_1 pair).
+  conjectural:  presence of O_0, P39, X40, O_1 in lim_k H^BG (only the index is reproduced);
+            any loop-corrected version of the B-G complex.
+  failures: k=1 truncation fails from level 16 (U(2)): spurious H_{-3} at (8,0,0;0,0); 1/16-BPS
+            sectors not tested beyond level 12 (k=1) and level 6 (k=2); k=2 not run where k=1 fails
+            for N = 2 (one-matrix x^8: out of reach); no direct test of fortuitous classes or of d_1.

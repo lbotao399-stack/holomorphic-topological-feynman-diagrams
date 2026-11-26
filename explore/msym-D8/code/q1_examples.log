@@ -1,0 +1,6 @@
+su2 A=0 B=1: hatQ1(gamma gamma) closed form: True (80 terms); hatQ1(gamma c) closed form: True (20 terms)
+su2 A=0 B=0: hatQ1(gamma gamma) closed form: True (80 terms); hatQ1(gamma c) closed form: True (20 terms)
+su2 A=1 B=2: hatQ1(gamma gamma) closed form: True (80 terms); hatQ1(gamma c) closed form: True (20 terms)
+so5 A=0 B=1: hatQ1(gamma gamma) closed form: True (2160 terms); hatQ1(gamma c) closed form: True (540 terms)
+so5 A=0 B=0: hatQ1(gamma gamma) closed form: True (2256 terms); hatQ1(gamma c) closed form: True (564 terms)
+so5 A=1 B=2: hatQ1(gamma gamma) closed form: True (2160 terms); hatQ1(gamma c) closed form: True (540 terms)

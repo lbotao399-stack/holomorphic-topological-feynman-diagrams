@@ -1,0 +1,386 @@
+[
+ {
+  "id": "L1",
+  "statement": "S_tw = int_{C^2} Omega ^ [ b_A (dbar c^A - (g/2) C^A_BC c^B c^C) + (dbar gamma_i - i g c^A (t_A)^j_i gamma_j) beta^i + Wbar(gamma,w) ]_(0,2), w^A_adot = (1/2) d_{+adot} c^A; I = -(g/2) C^A_BC b_A c^B c^C - i g c^A (t_A)^j_i gamma_j beta^i + Wbar(gamma,w); Q = sum_n hbar^n Q_n, Q_n O = {I,...,I,O}/(n+1)! (n+1 copies of I); Q_0 c^A = -(g/2) C^A_BC c^B c^C, Q_0 gamma_i = -i g c^A (t_A)^j_i gamma_j, Q_0 beta^i = i g c^A (t_A)^i_j beta^j - dWbar(gamma,0)/dgamma_i, Q_0 b_A = -g C^B_AC c^C b_B - i g (t_A)^j_i gamma_j beta^i",
+  "source": "LLC main.tex v20261120-231110: (2.2) local-ch9-common-action = (3.13) eq-B-8; (2.3) eq-sum-interaction-density = (3.15) eq-B-10; (2.4) eq-sum-Q-expansion = (3.64) eq-1-1; (2.5) eq-sum-Q0-explicit = (3.32) eq-B-15; Prop. 3.2 b-00164",
+  "status": "proved in source"
+ },
+ {
+  "id": "L2",
+  "statement": "N=4: C^A(theta) = i g c^A + theta_I delta^AB (gamma^I)_B - (1/2) eps^IJK theta_I theta_J (beta_K)^A + theta_1 theta_2 theta_3 delta^AB b_B/(i g); S_tw = int Omega ^ [ int d^3theta ( (1/2) delta_AB C^A dbar C^B + (i/3!) C_ABC C^A C^B C^C ) ]_(0,2); Q_0 C^A = (i/2) C^A_BC C^B C^C; delta C^B(y,theta')/delta C^A(y',theta) = delta_A^B delta^4(y-y') prod_I (theta_I - theta'_I); Delta_vw = - delta^DE int d^3theta (delta/delta C_v^D(theta)) (delta/delta C_w^E(theta))",
+  "source": "LLC main.tex v20261120-231110: (A.2) eq-A-13; (2.6) local-ch9-su-action = (A.3) eq-A-15; (2.7) eq-sum-deltaC-norm = (8.2) eq-2-10; (A.4) eq-A-16; (A.5) eq-A-17",
+  "status": "definitions"
+ },
+ {
+  "id": "L3",
+  "statement": "Q_n O = (-1)^n / ((n+1)! (8 pi^2)^n) * sum_{Gamma labelled, rooted, Laman} I_Gamma(lambda; z) W_Gamma[I_1,...,I_{n+1},O]; lambda_{v,+adot} -> d/dx_v^{+adot} = -(1/2) d_{v,+adot}",
+  "source": "LLC main.tex v20261120-231110: (8.1) eq-2-3; (3.65) eq-D-lambda; (7.14) eq-spider-supercharge",
+  "status": "proved in source"
+ },
+ {
+  "id": "L4",
+  "statement": "N=4, n>=1: Q_n = (-1)^n i^(n+1) / (2 (32 pi^2)^n) * int d^{2n}r [prod_{j=1}^{n-1} r_{2j-1}^{n-j} r_{2j} (1-r_{2j})^{j-1}] r_{2n}^{n-1} int d^3theta int prod_j d^4z_j C_{A_1 D R_1} (prod_{j=2}^n C_{A_j R_{j-1} R_j}) C_{A_{n+1} R_n E} (d_{+a_1}..d_{+a_n} C^D)(x + x_1(r,z), theta) (d_+^{a_1}..d_+^{a_n} C^E)(x + x_{n+1}(r,z), theta) prod_{j=1}^{n+1} delta/delta C^{A_j}(x+z_j, theta); domain 0<r_j<1 (j<=2n-2), r_{2n-1}, r_{2n} > 0, r_{2n-1}+r_{2n} < 1; x_1 = sum_{j=1}^n (1-r_{2j-1}) (prod_{k<j} r_{2k-1}) [ (prod_{k<j} (1-r_{2k})) z_1 + sum_{i=2}^j r_{2i-2} (prod_{k=i}^{j-1} (1-r_{2k})) z_i ] + (prod_{k=1}^n r_{2k-1}) z_{n+1}; x_{n+1} = r_{2n} [ (prod_{k<n} (1-r_{2k})) z_1 + sum_{i=2}^n r_{2i-2} (prod_{k=i}^{n-1} (1-r_{2k})) z_i ] + (1-r_{2n}) z_{n+1}",
+  "source": "LLC main.tex v20261120-231110: Thm 2.1 b-00088 (2.8) eq-sum-N4, (2.9), (2.10) = Thm 8.1 b-00431 (8.3) eq-2-8, (5.1) eq-1-37, (5.26) eq-fan-output-points",
+  "status": "proved in source; source reports cross-checks against BK, KKLP, GWW 4.5, FortuityAI; prefactor identity re-evaluated exactly"
+ },
+ {
+  "id": "L5",
+  "statement": "Taylor coefficients of Q_n: c^(n)_{r0,s0,{r_ik},{s_i}} = (sum_i r_in)! (n-1+sum_i s_i)! / (n+1+sum_i r_in+sum_i s_i)! * prod_{j=1}^{n-1} 1/(n-j+1+sum_{k=j}^n sum_{i=1}^k r_ik) * prod_{j=1}^{n-1} (1+sum_{i<=j} r_ij)! (j-1+sum_{i<=j}[s_i+sum_{k>j} r_ik])! / (j+1+sum_{i<=j}[s_i+sum_{k>=j} r_ik])!; c^(n)_0 = 1/((n!)^3 (n+1)); Q_n|_{no input derivatives} = (-1)^n i^(n+1) / (2 (32 pi^2)^n (n!)^3 (n+1)) int d^3theta C_{A_1 D R_1} (prod C_{A_j R_{j-1} R_j}) C_{A_{n+1} R_n E} (d^n C^D)(d^n C^E) prod_j delta/delta C^{A_j}(theta)",
+  "source": "LLC main.tex v20261120-231110: (2.11) eq-sum-N4-taylor, (2.12) eq-sum-N4-coeff, (2.13) eq-sum-N4-letters, (2.14) eq-sum-Qnzero = (8.4) eq-Qnzero; (5.28) eq-fan-full-taylor",
+  "status": "proved in source; c^(n)_0 re-evaluated exactly n<=6"
+ },
+ {
+  "id": "L6",
+  "statement": "Q_1 = -(1/(64 pi^2)) int_0^1 dr_2 int_0^{1-r_2} dr_1 int d^3theta int d^4z_1 d^4z_2 C_ARD C_BRE (d_{+a} C^D)(x+(1-r_1)z_1+r_1 z_2) (d_+^a C^E)(x+r_2 z_1+(1-r_2)z_2) delta/delta C^A(x+z_1) delta/delta C^B(x+z_2); Q_2 = -(i/(2 (32 pi^2)^2)) int r_1 r_2 r_4 [r_1,r_2 in (0,1), (r_3,r_4) in simplex] C_{A_1 D R} C_{A_2 R S} C_{A_3 S E} (d d C^D)(x+x_1)(d d C^E)(x+x_3) prod delta/delta C^{A_j}(x+z_j), x_1 = (1-r_1)z_1 + r_1(1-r_3)[(1-r_2)z_1+r_2 z_2] + r_1 r_3 z_3, x_3 = r_4[(1-r_2)z_1+r_2 z_2] + (1-r_4)z_3; Q_1(gamma^1_A beta_1^B) = (g^2/(64 pi^2)) C_ARD C_BRE (d c^D)(d c^E); Q_2(beta_1 beta_2 beta_3) = -(i g^2/(48 (32 pi^2)^2)) sum_{sigma in S_3} C_{A_s1 D R} C_{A_s2 R S} C_{A_s3 S E} (d d c^D)(d d c^E)",
+  "source": "LLC main.tex v20261120-231110: (6.1) eq-2-16; (8.5) eq-2-17; (8.6) eq-2-26; (8.7) eq-2-27; (8.8) eq-2-28",
+  "status": "proved in source; (8.6),(8.7) agree with BK (3.66),(3.67) up to field normalization (stated in source)"
+ },
+ {
+  "id": "L7",
+  "statement": "#(b,beta in output) = #(b,beta in O) - n - #(Wbar vertices); Q_n O = 0 for n > #(b,beta in O); [hbar^n](A*B) = 0 for n > #(b,beta in A) + #(b,beta in B)",
+  "source": "LLC main.tex v20261120-231110: (4.6) eq-antifield-loss, Cor. 4.12 b-00235, (2.15) eq-sum-finite; (7.16), (6.30), (9.43)",
+  "status": "proved in source"
+ },
+ {
+  "id": "L8",
+  "statement": "QME: sum_{n>=0} hbar^n/(n+2) Q_n I = 0 implies Q^2 = 0; Q_0 I = 0, Q_1 I = (i g^3/(128 pi^2)) Tr_R(t_A {t_B,t_C}) c^A (d_{+a} c^B)(d_+^a c^C), Q_{n>=2} I = 0",
+  "source": "LLC main.tex v20261120-231110: Lemma 6.1 b-00452 (6.4) eq-2-40; Thm 6.2 b-00465 (6.10) b-00478 = (2.16) eq-sum-QI",
+  "status": "proved in source"
+ },
+ {
+  "id": "L9",
+  "statement": "A*B = sum_n (hbar^n/n!) {I^n, A, B}^{gamma,0} = sum_n (hbar^n/n!) {I^n, A a, b_aux B}|_{aux=0}; Q(A*B) = (QA)*B + (-1)^|A| A*(QB); on H(Q): associative, graded commutative, unit 1; A*(D*B) - (-1)^{|A||D|} D*(A*B) = (-1)^|D| Q sum_n (hbar^{n+1}/n!) {I^n, A, D, B}^{gamma,gamma'}; contour product (A*'B)[L] = int_{S^3_R} Omega ^ [P_{0,inf}(x)]_Omega (A(x)B(0))[L] = (A*B)[L] - Q_L int_{B_R} Omega ^ [P_{0,inf}]_Omega ^ (A(x)B(0))^(1)[L]",
+  "source": "LLC main.tex v20261120-231110: (6.11) b-00504 = (2.17) eq-sum-star; Thm 6.3 (6.13) eq-chain; Thm 6.4 b-00513 (6.20)-(6.22), (6.26); Thm 6.6 b-00598 (6.34), (6.41); Thm 2.4 b-00106",
+  "status": "proved in source; Leibniz rule verified through four loops per source (repository, not re-run)"
+ },
+ {
+  "id": "L10",
+  "statement": "(1/n!) {I^n, A, B}^{gamma,0} = (-1)^n/(n! (8 pi^2)^n) sum_{Gamma labelled Laman, |V|=n+2, |I|=2n+1, (n+1,n+2) in I} [ int e^{-sum y_e z_e} wedge_{e in I\\T} (-d^2 y_e) prod^{edge order}_{(v,w) != (n+1,n+2)} Delta_vw (I_1...I_n A B) ]_{jets, x_v=x, z=0}",
+  "source": "LLC main.tex v20261120-231110: (6.28) eq-2-31; (6.29) eq-product-current-insertion",
+  "status": "proved in source"
+ },
+ {
+  "id": "L11",
+  "statement": "{I,A,B}^{{(2,3)},0}(x) = (i/(32 pi^2)) int_0^1 dr_1 int_0^{1-r_1} dr_2 int d^3theta C_X^{YZ} int d^4z_1 d^4z_2 (d_{+a} C^X)(x + r_1 z_1 + (1-r_1) z_2) d_{2,+}^a (delta A(x_2)/delta C^Y(x_2+z_1))|_{x_2 = x + r_2(z_2-z_1)} delta B(x)/delta C^Z(x+z_2); no input derivatives: (i hbar/(64 pi^2)) int d^3theta C_X^{YZ} (d C^X) d(delta A/delta C^Y) delta B/delta C^Z; Q_1(AB) - (Q_1 A)B - (-1)^|A| A(Q_1 B) = -(1/(64 pi^2)) int d^3theta C_XRD C_YRE (d C^D)(d C^E) (delta A/delta C^X)(delta B/delta C^Y); two-loop product: three graphs Gamma_fan (13,14,23,24,34), Gamma_A (12,13,23,24,34), Gamma_B (12,14,23,24,34) with prefactors hbar^2/(2(32 pi^2)^2), hbar^2/(32 pi^2)^2, -hbar^2/(32 pi^2)^2 and measures (1-r_2-r_4), r_2(1-r_1)(1-r_3-r_4), r_1 r_2 r_4; associator (A*B)*D - A*(B*D) = Q{ (hbar/(64 pi^2)) [ (d_{+a} B) d_+^a (dA/d(gamma^2)_X) + (d_{+a} A) d_+^a (dB/d(gamma^2)_X) ] (gamma^3)_X } for D = (gamma^3)_X (beta_2)^X",
+  "source": "LLC main.tex v20261120-231110: (6.31) eq-2-34 = (2.19) eq-sum-product1; (6.2) eq-2-29; (6.32) eq-productedges, (6.33) eq-product2A; (6.46) eq-ring-scalar-associator",
+  "status": "proved in source"
+ },
+ {
+  "id": "L12",
+  "statement": "I_Gamma(lambda; z) = int_{y in Delta_Gamma, Kirchhoff} e^{-sum_e y_e z_e} wedge_{e notin T} (- dy_{e,+dot+} ^ dy_{e,+dot-}); sum_{e in C} +- t_e y_e = 0; I_Gamma(c lambda; z/c)|_{fixed adot} = c^n I_Gamma(lambda; z); -d/dz_e inserts y_e",
+  "source": "LLC main.tex v20261120-231110: Prop. 3.5 b-00169 (3.66) eq-C-current-delta-integral, (3.77) eq-operatope = (2.38), (2.39); (A.11) eq-derivative-homogeneity; Table 2.16 tab-sum-dictionary",
+  "status": "proved in source (from operatope, Wang)"
+ },
+ {
+  "id": "L13",
+  "statement": "C^2 counting: |I| = 2|V|-3, |V| = n+2, |I| = 2n+1, |I_S| <= 2|V_S|-3; no self-loops, no parallel edges; cubic vertices: every nonzero connected graph of Q_n is a fan; Wbar of any degree: at most one Wbar vertex, fan or spider (arms l_1+...+l_a = n, deg Wbar >= a+1); A*B at order hbar^n: Gamma\\{A,B} is a forest of trees T_j with |I_j| = |T_j|-1, |E_j| = |T_j|+1",
+  "source": "LLC main.tex v20261120-231110: Lemma 4.1 (4.1) eq-1-12; Lemma 4.2 b-00194; Cor. 4.3; Lemma 4.4 (4.3) eq-1-11; Prop. 4.5 b-00210; Cor. 4.8; Prop. 4.9 b-00225; Prop. 4.13 b-00240 (4.8); Cor. 4.15 b-00247; Thm 7.3 b-00249 (7.15), (7.17)",
+  "status": "proved in source"
+ },
+ {
+  "id": "L14",
+  "statement": "Triangle, (t_12,t_13,t_23) = (1-r_1-r_2, r_1, r_2): y_12 = t_13 lambda_1 - t_23 lambda_2; -d^2 y_12 = <lambda_1,lambda_2> dr_1 ^ dr_2; I_triangle(lambda; z) = <lambda_1,lambda_2> int_0^1 dr_1 int_0^{1-r_1} dr_2 e^{-sum y z} = <lambda_1,lambda_2> e^{-lambda_1 z_13 - lambda_2 z_23} sum_{i,j>=0} [-lambda_1 zeta]^i [lambda_2 zeta]^j/(i+j+2)!, zeta = z_12+z_23-z_13; I_triangle(lambda;0) = <lambda_1,lambda_2>/2",
+  "source": "LLC main.tex v20261120-231110: (5.7) eq-triangle-current, (5.8) b-00267, (5.9) eq-1-25, (5.10) eq-1-46",
+  "status": "proved in source; equals BK (2.47),(2.48) per source; orientation checked exactly (check_llc_fan.py, n=1)"
+ },
+ {
+  "id": "L15",
+  "statement": "Fan, edge order (12, 1O, 23, 2O, ..., (n+1)O): I(lambda; z) = int d^{2n}r prod_{i=1}^{n-1} r_{2i} <lambda_i^red, lambda_{i+1} - y_{i+1,i+2}(r)> <lambda_n^red, lambda_{n+1}> e^{-sum y_e(r) z_e}; lambda_i^red = sum_{j<=i} (prod_{k=j}^{i-1} r_{2k-1}) lambda_j; y_{n,n+1} = r_{2n-1} lambda_n^red - r_{2n} lambda_{n+1}; y_{i,i+1} = r_{2i-1} r_{2i} lambda_i^red - (1-r_{2i}) lambda_{i+1} + (1-r_{2i}) y_{i+1,i+2}; endpoint sources: <lambda_1,lambda_{n+1}>^n int d^{2n}r [prod_{j=1}^{n-1} r_{2j-1}^{n-j} r_{2j} (1-r_{2j})^{j-1}] r_{2n}^{n-1} e^{lambda_1 x_1 + lambda_{n+1} x_{n+1}}; I(lambda;0)|_{lambda_2..lambda_n=0} = <lambda_1,lambda_{n+1}>^n / ((n!)^3 (n+1))",
+  "source": "LLC main.tex v20261120-231110: Thm 5.1 thm-fan-kernel (5.2) eq-1-40, (5.3) eq-1-38, (5.4) eq-1-39, (5.5) eq-1-41, (5.6) eq-1-42; (5.21), (5.22), (5.27) eq-1-44; Thm 2.5 (2.42)",
+  "status": "proved in source; n<=3 agree with operatope (4.20),(4.44),(4.67) and GWW per source; density and currents checked pointwise exactly for general sources n<=4 (check_llc_fan.py); value re-evaluated exactly n<=6"
+ },
+ {
+  "id": "L16",
+  "statement": "Spider (arms l_1..l_a at A, spokes to B): lambda^red_{v_ij} = sum_{h<=j} (prod_{k=h}^{j-1} r_{i,2k-1}) lambda_{v_ih}; y^red_AB = lambda_A + sum_i r_{i,2l_i-1} lambda^red_{v_{i,l_i}}; I = int prod dr_ij (1 - sum_i r_{i,2l_i}) prod_i [ <lambda^red_{v_{i,l_i}}, y^red_AB> prod_{j<l_i} (1-r_{i,2j}) <lambda^red_{v_ij}, y^red_{v_{i,j+1}B}> ] e^{-sum y z}; Q_n sources: integrand (1 - sum_i r_{i,2l_i}) prod_i [ r_{i,2l_i}^{l_i-1} prod_{j<l_i} r_{i,2j-1}^{l_i-j} r_{i,2j}^{j-1} (1-r_{i,2j}) <lambda_{v_i1}, y^red_AB>^{l_i} ]; z=0: 1/((n+1)! prod_i l_i!) int_{(0,1)^n} prod_i [ (prod_j dr_{i,2j-1} r_{i,2j-1}^{l_i-j}) <lambda_{v_i1}, y^red_AB>^{l_i} ]; a=2, l=(1,1): (1/24) <lambda_1, lambda_2 + 2 lambda_A> <lambda_2, lambda_1 + 2 lambda_A>",
+  "source": "LLC main.tex v20261120-231110: Def. 7.1 b-00380 (7.1); Thm 7.2 thm-spider-kernel (7.2)-(7.5); (7.10), (7.11) eq-1-54 = (2.43), (7.12) eq-spider-zero-displacement, (7.13) eq-spider-two-arm-value",
+  "status": "proved in source; (7.13) re-derived exactly from (7.12); (7.13) equals f_bitriangle of operatope (4dDiffPaper.tex l. 2337)"
+ },
+ {
+  "id": "L17",
+  "statement": "Cubic product forests reduce to the marked edge by series-parallel, single and paired source-free star-triangle moves; Dirichlet: int_{simplex} prod r_j^{k_j} = prod k_j! / (dim + sum k_j)!; counts of product forests n=1..7: 1,3,8,23,65,194,576; three loops: I(lambda;0) = +1/864 <lambda_1,lambda_A>^3 for (A,(A,(A,B))) and (B,(B,(A,B))), -1/576 <lambda_1,lambda_A>^3 for (A,(B,(A,B))) and (B,(A,(A,B))), 0 for ((A,B),(A,B)); I_{(A,(B,(A,B)))} = -<lambda_1,lambda_A>^3 int_{(0,1)^4} int_{simplex} r_1 r_2 r_3 r_4^2 r_5 (1-r_5-r_6) e^{-sum y z}; I_{((A,B),(A,B))} = <lambda_1,lambda_A>^3 int (r_1-r_2)(1-r_3-r_4) r_5 (1-r_5-r_6) e^{-sum y z}; -d/dz_{2A} I_{((A,B),(A,B))}|_{z=0} = (1/8640) <lambda_1,lambda_A>^3 (2 lambda_1 - lambda_A)",
+  "source": "LLC main.tex v20261120-231110: Thm 7.6 b-00405 (7.32) eq-Dirichlet; Table 7.1 tab-ch7-three-loop-forests; (7.33)-(7.36)",
+  "status": "proved in source; 1/576, 0 and 1/8640 re-evaluated exactly"
+ },
+ {
+  "id": "L18",
+  "statement": "Multi-gravitons: Q_n G = 0 (n>=0) for G in Tr(dC)^p; O = G_1*...*G_m, Q O = 0; deg_theta(Q_n X) = deg_theta X - 3n; sum_{r<=R} rank d_r^k <= dim F^k; d_1 = pi_0 Q_1 i_0, d_2 = pi_1 pi_0 (Q_2 - Q_1 h_0 Q_1) i_0 i_1, d_3 = pi_2 pi_1 pi_0 [Q_3 - Q_2 h_0 Q_1 - Q_1 h_0 Q_2 + Q_1 h_0 Q_1 h_0 Q_1 - (Q_2 - Q_1 h_0 Q_1) i_0 h_1 pi_0 (Q_2 - Q_1 h_0 Q_1)] i_0 i_1 i_2; Q_n: C^Y(lambda) -> C^{Y+1-n}(lambda - n d), d = (1,1,1;-1,-1)",
+  "source": "LLC main.tex v20261120-231110: Thm 9.1 b-00630 (9.2), (9.5); (A.8), (A.9); Cor. 9.4 (9.42) = (2.21); (9.33) b-00699; Prop. 9.2 (9.22); (A.12), Cor. A.2",
+  "status": "proved in source"
+ },
+ {
+  "id": "L19",
+  "statement": "Omega ^ dx^{-dot+} ^ dx^{-dot-} = -8 d^4x_E; beta^(0)i = Fbar_old^{dagger i} - (i/sqrt2) psi_+^i; b_A^(0) = -(i/2) lambda^{dagger -}_{A,old} + (1/4) delta_AB f^B_{++}; w^A_adot = (1/2) d_{+adot} c^A; H((S_tw,.)) = H((S_BV,.)) = H(Q_-; gauge-invariant local operators / equations of motion)",
+  "source": "LLC main.tex v20261120-231110: (3.12) b-00919; (3.18) eq-B-13; (3.20), (3.21); (3.10) eq-twist-cohomology, Prop. B.1",
+  "status": "proved in source"
+ },
+ {
+  "id": "L20",
+  "statement": "y_e(t) = sum_T (prod_{h notin T} t_h) y_e^T / sum_T prod_{h notin T} t_h, y_e^T = sum of lambda_v over the component of e(0) in T\\{e} (e in T), 0 otherwise",
+  "source": "LLC main.tex v20261120-231110: (C.1) eq-1-24 (Wang, Thm 4, Cor. 2)",
+  "status": "quoted in source"
+ },
+ {
+  "id": "L21",
+  "statement": "Census: every computed d_r, r>=2, vanishes in the N=4 and N=2 SCFT sectors scanned; d_2 != 0 in 12 sector pairs of SU(3) Leigh-Strassler (level <= 22) and one of the beta-deformation (level 21); d_1 != 0 in 16 sectors of SO(7) and one of SO(9) through level 22; thresholds SU(3) level 24, SU(4) level 28; massive SQED: d_2[O_0] = -(2 (ig)^2 y^4/(m^2 (64 pi^2)^2)) [ d_a(g+ g-) d_b d_c(g+ g-) d^b d^c(g+ g-) ] != 0; lifts at r = 2,3,4 in abelian and N=2 theories",
+  "source": "LLC main.tex v20261120-231110: Section 2.3, Tables 2.1-2.15; (2.24), (2.26), (2.28), (2.35), (2.37)",
+  "status": "checked in source (ranks over Q, mod p, or two primes); not re-run"
+ },
+ {
+  "id": "L22",
+  "statement": "N=4 gradings: E = (Theta+Y)/2 + n_+ + n_-, R_I = theta_I - (Theta-Y)/2, J_L = (Theta-Y+n_++n_-)/2, J_R = (n_+-n_-)/2, 2(E+J_L) = 2 Theta + 3(n_++n_-); deg_theta(c,gamma,beta,b) = (0,1,2,3); Q_0^2 = 0, Q_0Q_1+Q_1Q_0 = 0, Q_0Q_2+Q_1^2+Q_2Q_0 = 0, Q_0Q_3+Q_1Q_2+Q_2Q_1+Q_3Q_0 = 0; (A*B)_1 = A_1B_0 + A_0B_1 + {I,A_0,B_0}^{gamma,0}; (A*B)_2 = A_2B_0 + A_1B_1 + A_0B_2 + {I,A_1,B_0} + {I,A_0,B_1} + (1/2){I,I,A_0,B_0}; completion: O_0 = i_0 i_1 i_2 a, O_1 = -h_0 Q_1 O_0 - i_0 h_1 pi_0 (Q_2 - Q_1 h_0 Q_1) O_0, O_2 = -h_0 (Q_2 O_0 + Q_1 O_1)",
+  "source": "LLC main.tex v20261120-231110: (A.6) eq-E-sector, (A.7) eq-2-62, (A.10) eq-E-charges; (6.5) eq-nilpotence; (6.19) eq-2-33; (9.35) eq-two-loop-representative-transfer",
+  "status": "proved in source"
+ },
+ {
+  "id": "S1",
+  "statement": "S_tw = int_{C^3} Omega ^ [ int d^2theta ( (1/2) delta_AB C^A dbar C^B + (i/3!) C_ABC C^A C^B C^C ) ]_(0,3), hbar = g^2/4, weight e^{S_tw/hbar}; C^A|_{dxbar=0} = i c^A + theta_i gamma^{iA} + theta_1 theta_2 b^A, gamma^i = -i phi_i, b = -(i/4) chi_45, d_a c <-> xi^a",
+  "source": "6d note (2026-11-18): (1.1), (1.2), (3.18), (3.22)",
+  "status": "proved in source; twist10d.py, twist10d_check.py re-run"
+ },
+ {
+  "id": "S2",
+  "statement": "Q A_ibar = 0, Q A_i = -xi^i, Q xi^i = 0, Q chi_ij = 4 f_{ibar jbar}, Q eta = D, Q D = 0; V = chi_ij f_ij + eta (D/2 - 2 Phi); (1/4) f^2 + (1/2) Psi^T C Gamma D Psi = Q V + L_hol + 2 T, L_hol = -(1/4) eps^{ijklm} chi_jk D_ibar chi_lm; (S_tw^phys, C) = dbar C + (i/2) C^A_BC C^B C^C; S_tw^phys = S_tw/hbar",
+  "source": "6d note (2026-11-18): (3.6), (3.7), (3.8), (3.10), (3.19), (3.22)",
+  "status": "proved in source; exact checks re-run"
+ },
+ {
+  "id": "S3",
+  "statement": "Q_0 C^A = (i/2) C^A_BC C^B C^C; Q_0 c = -(1/2) C c c, Q_0 gamma^i = -C c gamma^i, Q_0 b = -C c b + i C gamma^1 gamma^2; delta C^B(y',theta')/delta C^A(y,theta) = delta_A^B delta^6(y-y') (theta_1-theta_1')(theta_2-theta_2'); delta/delta C^A(theta) = (theta_1 theta_2/i) d/dc + theta_2 d/dgamma^1 - theta_1 d/dgamma^2 + d/db",
+  "source": "6d note (2026-11-18): (1.3) = (4.1), (4.2), (4.3), (4.4)",
+  "status": "proved in source; Q_0^2 = 0 re-run"
+ },
+ {
+  "id": "S4",
+  "statement": "C^3: |I| = 3n+1, |V| = 2n+2, 2|I_S| <= 3|V_S| - 4, cycle length >= 4, sum_v (deg v - 2) = 2n-2; deg_Gamma O = n + p with Gamma\\O a forest of p trees; Q_n = i^{2n+1} (-1/(8 pi^3))^n sum_Gamma I_Gamma(d; z) W_Gamma/|Aut Gamma| = (i/(8 pi^3)^n) sum_Gamma I_Gamma W_Gamma/|Aut Gamma|; n=1: box; n=2: (A) double box theta(1,3,3), (B) spider theta(2,2,3), |Aut| = 2",
+  "source": "6d note (2026-11-18): (5.11), (5.12), (5.13), (5.14), (5.15) = (1.10)",
+  "status": "proved in source; graph lists re-run (enumerate_graphs.py)"
+ },
+ {
+  "id": "S5",
+  "statement": "Box: r_j = (1/T) sum_{k>j} t_k, y_1 = -sum_j r_j lambda_j, d^3 y_1 = -det(lambda_1,lambda_2,lambda_3) dr_1 dr_2 dr_3, eps_T det B_T = -1; I_box(lambda; z) = det(lambda_1,lambda_2,lambda_3) int_{1>r_1>r_2>r_3>0} d^3r e^{sum_j lambda_j . x_j}, x_j = r_j z_1 + (1-r_j) z_2; I_box(lambda;0) = det(lambda_1,lambda_2,lambda_3)/6",
+  "source": "6d note (2026-11-18): (6.1)-(6.5), (6.9)",
+  "status": "proved in source; check_twoloop_kernels.py, check_z_dependence.py re-run (exact)"
+ },
+ {
+  "id": "S6",
+  "statement": "Q_1 = (i/(16 pi^3)) int_{1>r_1>r_2>r_3>0} d^3r int d^2theta int d^6z_1 d^6z_2 eps^{abc} C_{A_1 D_1 R_1} C_{R_1 D_2 R_2} C_{R_2 D_3 A_2} d_a C^{D_1}(x+x_1) d_b C^{D_2}(x+x_2) d_c C^{D_3}(x+x_3) delta/delta C^{A_1}(x+z_1) delta/delta C^{A_2}(x+z_2); no input derivatives: prefactor i/(96 pi^3); Q_1(gamma^1_A gamma^2_B) = (1/(48 pi^3)) eps^{abc} C C C d_a c d_b c d_c c; hbar Q_1(phi_1 phi_2) = -(g^2/(192 pi^3)) eps^{abc} C C C xi_a xi_b xi_c",
+  "source": "6d note (2026-11-18): (1.4) = (6.8), (6.10), (6.11), (6.12), (6.13), (6.7)",
+  "status": "proved in source; {Q_0,Q_1} = 0 re-run for su(2), eleven operators"
+ },
+ {
+  "id": "S7",
+  "statement": "J_A = r_1^2 [r_5 <124> + r_6 <125>] [(1-r_2) <145> + (1-r_3) <245>] on D_A: 0<r_1<1, 1>r_2>r_3>0, 1>r_4>r_5>r_6>0; J_B = r_1 (1-r_1) [r_5 <uwa> + r_6 <uwb>] [(1-r_2) <uab> + (1-r_3) <wab>] on D_B: 0<r_1,r_2,r_3<1, 1>r_4>r_5>r_6>0; I_A = + int_{D_A} J_A e^{sum lambda_v . X_v}, I_B = - int_{D_B} J_B e^{sum lambda_v . X_v}; W = (1-r_1) z_1 + r_1 z_2 - z_3; (A): X_1 = r_2 z_1 + (1-r_2)(z_3 + r_4 W), X_2 = r_3 z_1 + (1-r_3)(z_3 + r_4 W), X_4 = z_3 + r_5 W, X_5 = z_3 + r_6 W; (B): X_u = r_2 z_1 + (1-r_2)(z_3 + r_4 W), X_w = r_3 z_2 + (1-r_3)(z_3 + r_4 W), X_a = z_3 + r_5 W, X_b = z_3 + r_6 W; int J_A = (2<124>+<125>)(<145>+2<245>)/432; int J_B = (2<uwa>+<uwb>)(<uab>+<wab>)/288",
+  "source": "6d note (2026-11-18): (1.6)-(1.9), (7.7)-(7.14)",
+  "status": "proved in source; densities pointwise incl. sign and z-dependence re-run (exact); eps_T det B_T = -1, +1, -1 for box, (A), (B); integrals re-evaluated exactly"
+ },
+ {
+  "id": "S8",
+  "statement": "Q_2 = (i/(128 pi^6)) int d^2theta int prod d^6z_j [ int_{D_A} J_A T_A - int_{D_B} J_B T_B ] prod_{j=1}^3 delta/delta C^{A_j}(x+z_j, theta); T_A = C_{A_1 D_1 R_1} C_{R_1 D_2 R_2} C_{R_2 A_2 R_3} C_{R_3 D_4 R_4} C_{R_4 D_5 A_3} C^{D_1}(x+X_1) C^{D_2}(x+X_2) C^{D_4}(x+X_4) C^{D_5}(x+X_5); T_B = C_{A_1 D_u R_u} C_{A_2 D_w R_w} C_{R_u R_w R_q} C_{R_q D_a R'} C_{R' D_b A_3} C^{D_u}(x+X_u) C^{D_w}(x+X_w) C^{D_a}(x+X_a) C^{D_b}(x+X_b); Q_2 = (i/(256 pi^6)) (k_A Qhat_A + k_B Qhat_B), k_A = 2, k_B = -2",
+  "source": "6d note (2026-11-18): (1.5) = (7.15), (1.6), (1.7), (7.16), (7.17), (7.18)",
+  "status": "magnitude and relative sign derived in source; overall sign fixed by nilpotency (source check); re-run: so(5) gamma^1 gamma^2 b (8316 equations, rank 2, consistent), su(2) with one input derivative (620 equations, rank 2, consistent)"
+ },
+ {
+  "id": "S9",
+  "statement": "Q_0^2 = 0, {Q_0,Q_1} = 0, Q_1^2 + {Q_0,Q_2} = 0",
+  "source": "6d note (2026-11-18): (1.11)",
+  "status": "checked in source by exact linear algebra on test operators; re-run except so(5) {Q_0,Q_1} and so(5) with one input derivative"
+ },
+ {
+  "id": "E1",
+  "statement": "S = int Omega ^ [gamma_i D mu^i + beta D nu + W], W = beta d_i mu^i + f(nu) mu^i mu^j d_i gamma_j + (g/6) eps^{ijklm} gamma_i d_j gamma_k d_l gamma_m, f = 1/(1-nu), D = d_tau + dbar; Q_0 nu = d_i mu^i, Q_0 mu^i = -d_j(f mu^j mu^i) + (g/2) eps^{ijklm} d_j gamma_k d_l gamma_m, Q_0 beta = f^2 mu^i mu^j d_i gamma_j, Q_0 gamma_i = d_i beta + f mu^k (d_i gamma_k - d_k gamma_i); Q_0^2 = 0; (hbar, g) ~ (hbar/c, c^2 g)",
+  "source": "11d note (2026-11-18): (0.1), (2.7), (2.8); (0.2), (3.2), (3.3)",
+  "status": "action from RSW (not derived in source); Q_0^2 = 0 proved on nu, beta and checked through degree six (q0_check.py, re-run)"
+ },
+ {
+  "id": "E2",
+  "statement": "Q = |0>, a_i Q = 0: Gamma^M(Q,Q) = 0, Q^T C Gamma^{MN} Q = 0; {Gamma^M(Q,chi) d_M} = span{d_zbar^1..d_zbar^5, d_tau}; dim{X in so(11,C): X Q in C Q} = 40; dim so(11,C).Q = 16",
+  "source": "11d note (2026-11-18): Prop. 2.1, (2.1)-(2.4)",
+  "status": "checked in source with explicit 32x32 matrices (floating point); re-run"
+ },
+ {
+  "id": "E3",
+  "statement": "R x C^5: |V| = 5n+2, |I| = 6n+1, 5|I_S| <= 6|V_S| - 7, girth >= 7, deg v >= 2; n=1: C_7; n=2: theta_pqr with (p,q,r) = (1,6,6), (2,5,6), (3,4,6), (3,5,5), (4,4,5)",
+  "source": "11d note (2026-11-18): (0.4); Lemmas 5.1, 5.2, Cor. 5.3, (5.3)",
+  "status": "proved in source; list equals d=6 row of graph_counts.txt (re-run)"
+ },
+ {
+  "id": "E4",
+  "statement": "K_Gamma(lambda; z) = varsigma_Gamma int_{RP^{6n}_{>0}} e^{-sum y_e . z_e} U^{-11/2} <prod_r psi^tau_r> ^ prod_{i=1}^5 prod_r psi^i_r, varsigma_Gamma = (-1)^n (-1)^{(5n+1)5n/2} varsigma^ext_Gamma; raw graph integral = (-i/(64 pi^{11/2}))^n K_Gamma; M = C t C^T, U = det M, psi^a_r = sum_e C_re J^a_e dt_e; <w_e w_e'> = (1/2)[delta_ee'/t_e - (C^T M^{-1} C)_ee']; U^{-1/2} <prod_r psi^tau_r> = rho_n(M) = det(M)^{-1/2} Pf(-(1/2) dM M^{-1} dM); rho_2 = -(M_11 dM_12 dM_22 - M_12 dM_11 dM_22 + M_22 dM_11 dM_12)/(2 det(M)^{3/2})",
+  "source": "11d note (2026-11-18): Thm 5.4 (5.12) = (0.5); (5.10); (5.6), (5.7); Prop. 5.5 (5.13) = (0.6), (5.14); (9.1)",
+  "status": "proved in source; forms_check.py (floating point) re-run: varsigma^ext = -1 (C_7), +1 (five thetas)"
+ },
+ {
+  "id": "E5",
+  "statement": "rho_{2k+1} = 0; K_Gamma = 0 for odd n; Q_{2k+1} O = 0 for O in H(D)",
+  "source": "11d note (2026-11-18): Cor. 5.6, (0.6), (0.7), (4.7)",
+  "status": "proved in source"
+ },
+ {
+  "id": "E6",
+  "statement": "H=0, T=1, n=2 (three parallel edges): raw integral = (1/(4 pi)) Gamma(1/2)^3/(2 Gamma(3/2)) = 1/4",
+  "source": "11d note (2026-11-18): remark after Cor. 5.6",
+  "status": "proved in source; re-evaluated exactly"
+ },
+ {
+  "id": "E7",
+  "statement": "Heptagon: K_7(lambda,kappa; z) = -det[q_1..q_6] int_{Delta^6} d^6t exp[sum_e t_e w_e^2 - sum_e y_e . z_e]; K_7(lambda,kappa;0) = -det[q_1..q_6]/6! (1 + O(kappa^2)); varsigma_{C_7} = -1; Q_1 O|_unprojected = (-i/(64 pi^{11/2})) (1/6!) sum_{C_7} [ -eps^{a_1..a_6} d_{1,a_1}..d_{6,a_6} int_{Delta^6} d^6t e^{...} ] o W_{C_7}[I^6, O]; Q_1 O = 0 on H(D)",
+  "source": "11d note (2026-11-18): (6.1); Thm 6.1 (6.2), (6.3) = (0.8); Cor. 6.2 (6.4), (6.5)",
+  "status": "proved in source; forms_check.py re-run (D U = det[q])"
+ },
+ {
+  "id": "E8",
+  "statement": "K_{theta_pqr}(lambda; z) = (D_theta/2) int_{Delta^2} d^2w w_A^{11/2-p} w_B^{11/2-q} w_C^{11/2-r} int_{Delta^{p-1} x Delta^{q-1} x Delta^{r-1}} dx e^{-sum y_e(x,w) . z_e}; D_theta = det [[Lambda_A, Lambda_B, 0],[0, Lambda_B, Lambda_C]]; y^P_j = l_P + Q^P_j, l_P = w_P (lambda_N + sum_P' m_P') - m_P, w_P = (1/R_P)/sum(1/R_P'); K_theta(lambda;0) = Gamma(13/2-p) Gamma(13/2-q) Gamma(13/2-r) / (2 Gamma(13/2) (p-1)! (q-1)! (r-1)!) D_theta = c_pqr pi D_theta; c_166 = 1/158400, c_256 = 1/285120, c_346 = 1/332640, c_355 = 1/798336, c_445 = 1/997920",
+  "source": "11d note (2026-11-18): (7.1), (7.2); Thm 7.1 (7.3) = (0.9), (7.4), (7.5), (0.10); (7.6)-(7.12)",
+  "status": "proved in source; forms_check.py, pointwise.py, consts.py, extra_checks.py re-run (floating point); constants re-evaluated exactly"
+ },
+ {
+  "id": "E9",
+  "statement": "Q_2 O = (1/11!) {I^{x11}, O}_0 = -(1/(4096 pi^11)) (1/11!) sum_{theta_pqr} K_Gamma(d; z) o W_Gamma[I^{x11}, O]; Q_n^(m): N_{gamma beta} -> N_{gamma beta} + 2m - n, zero unless in(O) >= n - 2m",
+  "source": "11d note (2026-11-18): (8.1) = (0.11); Lemma 8.1 (8.2); (8.3)",
+  "status": "proved in source; not expanded into components"
+ },
+ {
+  "id": "C1",
+  "statement": "D = H + T: |I| = D n + 1, |V| = (D-1) n + 2, (D-1)|I_S| <= D|V_S| - D - 1, cycle length >= D+1, sum_v (deg v - 2) = 2n - 2; all vertices cubic, no insertion: 3|V| - 2|I| = (d-3) n + 4 legs",
+  "source": "PLAN.md 3.1, 3.3 E8, 4; Higher.tex l. 636-643; 6d (5.11), (5.12); 11d (0.4)",
+  "status": "proved in LLC, 6d, 11d for D = 2, 3, 6; general D from Gaiotto-Kulp-Wu; legs count tagged [drv] in PLAN"
+ },
+ {
+  "id": "C2",
+  "statement": "(d+1)-gon, 1 > sigma_1 > ... > sigma_d > 0: y_1 = -sum_j sigma_j lambda_j, density = (-1)^d det(lambda_1..lambda_d), |I(lambda;0)| = |det(lambda_1..lambda_d)|/d!",
+  "source": "PLAN.md 3.1; check_cd.py",
+  "status": "checked exactly d = 2..5; re-run"
+ },
+ {
+  "id": "C3",
+  "statement": "Chain move on C^d: sigma_j = (1/T) sum_{k>j} t_k, rho = T/(T+t_0), y_0 = rho y^red, y_1 = (1-rho) y^red - sum_j sigma_j lambda_j, local density rho^{d-1} det(y^red, lambda_1..lambda_{d-1}), lambda_u^red = lambda_u + sum sigma_j lambda_j, lambda_w^red = lambda_w + sum (1-sigma_j) lambda_j",
+  "source": "PLAN.md 3.1; check_cd.py",
+  "status": "checked pointwise with sign, exactly, d = 2..5; re-run"
+ },
+ {
+  "id": "C4",
+  "statement": "n-box ladder on C^3, corner sources, Delta = det(A,B,C): I/Delta^n = (-1)^{n-1} 2^{n+1} / ((n+2)! n!^2 (n+1)!^2) = 1/6, -1/432, 1/155520, -1/186624000, 1/587865600000, -1/4147979673600000 (n = 1..6)",
+  "source": "PLAN.md 3.1; check_cd.py, check_ladder.py",
+  "status": "direct Kirchhoff density n <= 4 (exact, 3 points), recursion n <= 6; re-run"
+ },
+ {
+  "id": "C5",
+  "statement": "k chains of lengths a_1..a_k replaced by one edge on C^d: sum_i (a_i - 1) + (k-1) = d (k-1), i.e. sum_i a_i = d (k-1) + 1",
+  "source": "PLAN.md 3.3 E1",
+  "status": "counting only; local density open"
+ },
+ {
+  "id": "C6",
+  "statement": "Two-loop theta graphs on C^d (a<=b<=c<=d, a+b+c = 2d+1): d=2: (1,2,2); d=3: (1,3,3),(2,2,3); d=4: (1,4,4),(2,3,4),(3,3,3); d=5: (1,5,5),(2,4,5),(3,3,5),(3,4,4); d=6: (1,6,6),(2,5,6),(3,4,6),(3,5,5),(4,4,5); graph counts d=2: 1,1,3,13,70,608 (n=1..6); d=3: 1,2,16 (n=1..3); d=4: 1,3",
+  "source": "PLAN.md 3.2; results/graph_counts.txt",
+  "status": "enumerate_graphs.py re-run, output identical"
+ },
+ {
+  "id": "C7",
+  "statement": "Observations: (i) T=1 two-loop theta kernel at z=0: (D_theta/2) prod_P Gamma(H+3/2-n_P)/(n_P-1)! / Gamma(H+3/2); pi/3 for (H,T)=(1,1) theta(1,2,2); pi/20, pi/30 for (2,1) theta(1,3,3), theta(2,2,3). (ii) hCS on C^3 without odd directions: n-loop obstruction with cubic vertices has four legs and kernel c_n Delta^n; for even n it pairs with an invariant in Lambda^4(g) = H^4(g) = 0. (iii) maximal SYM twists: hCS on C^{H|k} x R^T, H+T+k = 5; odd D: Q_odd = 0; Q_2 graphs are theta graphs with O at a trivalent vertex",
+  "source": "RESEARCH_STATE.md",
+  "status": "observation, not verified in sources; (i) numbers follow from the displayed formula (exact); for (1,1): pointwise.py ratio -1 at 3 points and base integral pi/3 by quadrature (floating point); Monte Carlo of forms_check.py does not agree within its printed error"
+ },
+ {
+  "id": "M1",
+  "statement": "Series elimination: r = t_vw/(t_vu+t_vw), t^red_uw = t_vu + t_vw, lambda_u^red = lambda_u + r lambda_v, lambda_w^red = lambda_w + (1-r) lambda_v, y_vu = r lambda_v - y^red_uw, y_vw = (1-r) lambda_v + y^red_uw",
+  "source": "LLC main.tex v20261120-231110: (5.12) eq-1-64",
+  "status": "proved in source"
+ },
+ {
+  "id": "M2",
+  "statement": "Parallel merge: 1/t^red = sum_j 1/t^(j), r_j = t^red/t^(j), sum r_j = 1, y^(j) = r_j y^red",
+  "source": "LLC main.tex v20261120-231110: (5.14) eq-1-63",
+  "status": "proved in source"
+ },
+ {
+  "id": "M3",
+  "statement": "Series-parallel move on C^2: r_1 = t_vw/(t_vu+t_vw), r_2 = (t_vu+t_vw)/(t_vu+t_vw+t_uw); y_uw = r_2 y^red_uw, y_vu = r_1 lambda_v - (1-r_2) y^red_uw, y_vw = lambda_v - y_vu; z^red_uw = r_2 z_uw + (1-r_2)(z_vw - z_vu); kernel factor r_2 <lambda_v, y^red_uw> on (0,1)^2",
+  "source": "LLC main.tex v20261120-231110: Thm 5.2 b-01142 (5.15) eq-kernel-series-parallel, (5.16) b-01151; (2.40)",
+  "status": "proved in source; iterated move checked pointwise exactly in the fan n <= 4"
+ },
+ {
+  "id": "M4",
+  "statement": "Star-triangle without source on C^2: t^red_uw = t_vu + t_vw + t_vu t_vw/t_vx, 1/t^red_ux = 1/t_ux + t_vw/Sigma, 1/t^red_wx = 1/t_wx + t_vu/Sigma, Sigma = t_vu t_vw + t_vw t_vx + t_vx t_vu, r_1 = t^red_ux/t_ux, r_2 = t^red_wx/t_wx; y_vu = -y^red_uw - (1-r_1) y^red_ux, y_vw = y^red_uw - (1-r_2) y^red_wx, y_vx = (1-r_1) y^red_ux + (1-r_2) y^red_wx, y_ux = r_1 y^red_ux, y_wx = r_2 y^red_wx; kernel factor r_1 r_2 <y^red_ux, y^red_wx> on (0,1)^2",
+  "source": "LLC main.tex v20261120-231110: Thm 7.4 b-01159 (7.22) b-01166, (7.23) eq-kernel-star-triangle; (2.41)",
+  "status": "proved in source"
+ },
+ {
+  "id": "M5",
+  "statement": "Paired star-triangle: kernel factor (r_1 - r_2)(1 - r_3 - r_4) <y^red_uA, y^red_AB> <y^red_uB, y^red_AB> on (0,1)^2 x simplex; y_{v1 u} = -r_1 y^red_uA - r_2 y^red_uB, y_{v2 u} = -(1-r_1) y^red_uA - (1-r_2) y^red_uB, y_{v1 A} = r_1 y^red_uA - r_3 y^red_AB, y_{v2 A} = (1-r_1) y^red_uA - r_4 y^red_AB, y_{v1 B} = r_2 y^red_uB + r_3 y^red_AB, y_{v2 B} = (1-r_2) y^red_uB + r_4 y^red_AB, y_AB = (1-r_3-r_4) y^red_AB",
+  "source": "LLC main.tex v20261120-231110: Thm 7.5 b-01173 (7.27) b-01180, (7.28) eq-kernel-two-leaves",
+  "status": "proved in source"
+ },
+ {
+  "id": "M6",
+  "statement": "Star-triangle with source: Sigma = t^red_uw + t^red_ux/(1-r_1) + t^red_wx/(1-r_2); lambda_u^red = lambda_u + t^red_wx/((1-r_2) Sigma) lambda_v, lambda_w^red = lambda_w + t^red_ux/((1-r_1) Sigma) lambda_v, lambda_x^red = lambda_x + (t^red_uw/Sigma) lambda_v; kernel = - int_{(0,1)^2 x RP} e^{-sum y z} [-d(r_1 y^red_ux)^2] ^ [-d(r_2 y^red_wx)^2] ^ wedge_{e != uw} (-d^2 y^red_e); rational in the remaining resistances",
+  "source": "LLC main.tex v20261120-231110: Thm E.1 thm-sourced-star (E.1)-(E.3)",
+  "status": "proved in source"
+ },
+ {
+  "id": "M7",
+  "statement": "Spider terminal merge: wedge_i (-d^2 y_{v_{i,l_i} A}) = (1 - sum_i r_{i,2l_i}) prod_i <lambda^red_{v_{i,l_i}}, y^red_AB> wedge_i (dr_{i,2l_i-1} ^ dr_{i,2l_i})",
+  "source": "LLC main.tex v20261120-231110: (7.8) eq-ch7-rewrite-08",
+  "status": "proved in source"
+ },
+ {
+  "id": "M8",
+  "statement": "Polygon on C^d: d^d y_1 = (-1)^d det(lambda_1..lambda_d) dsigma_1 ^ ... ^ dsigma_d",
+  "source": "PLAN.md 3.1; 6d (6.1)-(6.3); check_cd.py",
+  "status": "proved for d=3 in 6d note; checked exactly d = 2..5"
+ },
+ {
+  "id": "M9",
+  "statement": "Chain move on C^3: T = t_1+t_2+t_3, r_1 = T/(T+t_0), r_2 = (t_2+t_3)/T, r_3 = t_3/T; y_0 = r_1 y^red, y_1 = (1-r_1) y^red - r_2 lambda_v - r_3 lambda_v'; lambda_p^red = lambda_p + r_2 lambda_v + r_3 lambda_v', lambda_q^red = lambda_q + (1-r_2) lambda_v + (1-r_3) lambda_v'; d^3 y_1 = -r_1^2 det(y^red, lambda_v, lambda_v') dr_1 dr_2 dr_3 (mod retained); kernel factor r_1^2 det(y^red, lambda_v, lambda_v') on (0,1) x {1>r_2>r_3>0}",
+  "source": "6d note (2026-11-18): (7.1), (7.2), (7.3)",
+  "status": "proved in source; checked pointwise with sign (exact)"
+ },
+ {
+  "id": "M10",
+  "statement": "Bubble move on C^3: T_1 = t_pv + t_vq, T_2 = t_pv' + t_v'q, r_1 = T_1/(T_1+T_2), r_2 = t_vq/T_1, r_3 = t_v'q/T_2; y_pv = (1-r_1) y^red - r_2 lambda_v, y_pv' = r_1 y^red - r_3 lambda_v'; kernel factor r_1 (1-r_1) det(y^red, lambda_v, lambda_v') on (0,1)^3",
+  "source": "6d note (2026-11-18): (7.4), (7.5), (7.6)",
+  "status": "proved in source; checked pointwise with sign (exact)"
+ },
+ {
+  "id": "M11",
+  "statement": "Theta reduction at T=1, H=5: series R_P = sum_j t^P_j, x^P_j = t^P_j/R_P; parallel w_P = (1/R_P)/sum(1/R_P'); <psi^tau_1 psi^tau_2> = Omega_R/(2U), Omega_R = R_A dR_B dR_C - R_B dR_A dR_C + R_C dR_A dR_B; fibre form +- R_A^{p-1} R_B^{q-1} R_C^{r-1} D_theta dx; measure (D_theta/2) prod_P w_P^{11/2-n_P} d^2w prod_P d^{n_P-1}x^P",
+  "source": "11d note (2026-11-18): Thm 7.1 (7.3), (7.6)-(7.9); Section 9",
+  "status": "proved in source; floating-point checks re-run"
+ },
+ {
+  "id": "M12",
+  "statement": "General k-chain series-parallel move on C^d: local density with sources on all interior vertices",
+  "source": "PLAN.md 3.3 E1",
+  "status": "open"
+ },
+ {
+  "id": "K1",
+  "statement": "Conventions: LLC: Omega = 2 dx^{+dot+} ^ dx^{+dot-}, [K_t]_Omega = -e^{-|x|^2/(2t)}/(32 pi^2 t^2) dx^{-dot+} ^ dx^{-dot-}, y_e = (x_{e(0)}-x_{e(1)})^-/(2 t_e), edge form -e^{-y.(x+z)}/(8 pi^2) d^2y, raw integral = (-8 pi^2)^{-n} I_Gamma. 6d: Omega = i dx^1 dx^2 dx^3, [K_t]_Omega = e^{-x xbar/(2t)}/(8 (2 pi t)^3) d^3xbar, y_e = (xbar_{e(0)}-xbar_{e(1)})/(2 t_e), edge form e^{-y.(x+z)}/(8 pi^3) d^3y, raw integral = (-8 pi^3)^{-n} I_Gamma, I_Gamma = eps_T det(B_T) int_{RP, omega_m} e^{-sum y.z} wedge_{e notin T} d^3 y_e. 11d: Omega = d^5z, [K_t]_Omega = (1/(32 i)) e^{-(tau^2 + z zbar)/(4t)}/(4 pi t)^{11/2} dtau ^ d^5 zbar, [P]_Omega = (945/(1024 i pi^5)) (tau/2 d^5zbar - dtau ^ theta)/r^11, y_e = (zbar_{e(0)}-zbar_{e(1)})/(4 t_e), eta_e = (tau_{e(0)}-tau_{e(1)})/(2 sqrt t_e), edge form -(i/(32 pi^{11/2})) e^{-eta^2 - y.(z+z_e)} deta ^ d^5y, raw integral = (-i/(64 pi^{11/2}))^n K_Gamma",
+  "source": "LLC (2.1), (3.12), (3.37)-(3.41), (3.66)-(3.77); 6d (3.20), (5.1)-(5.10); 11d (0.3), (4.1)-(4.14), (5.12)",
+  "status": "from sources; normalization identities re-evaluated exactly"
+ },
+ {
+  "id": "K2",
+  "statement": "t^{11d} = t^{LLC}/2 = t^{6d}/2; y is the same variable; Gaiotto-Kulp-Wu: y = xbar/t, s = x^R/t^{1/2}, t^{GKW} = 2 t^{LLC} = 4 t^{11d}, s = eta",
+  "source": "LLC (3.39), (3.72); 6d (5.1), (5.6); 11d (4.3), (4.9); Higher.tex l. 789-797",
+  "status": "comparison of source formulas"
+ },
+ {
+  "id": "K3",
+  "statement": "T = 0, C = fundamental cycles of the chords of T (edge order, oriented along the chords): wedge_{e notin T} d^H y_e = (-1)^{n H + binom(n,2) binom(H,2)} U^{-H} prod_{i=1}^H prod_{r=1}^n psi^i_r, psi^i_r = sum_e C_re y^i_e dt_e",
+  "source": "11d remark after Thm 5.4 (sign given as +-); compendium Section 2.3; notes/_aux/check_conversion.py",
+  "status": "derived in the compendium; checked pointwise in exact arithmetic for H = 1..6 on 15 graphs"
+ },
+ {
+  "id": "K4",
+  "statement": "Conversion to the reduced kernel K: I^{LLC}_Gamma = (-1)^{n(n+1)/2} K_Gamma (H=2); I^{6d}_Gamma = eps_T det(B_T) (-1)^{n(n+1)/2} K^T_Gamma (H=3, cycles of T); K^{11d}_Gamma = varsigma_Gamma K_Gamma, varsigma_{C_7} = -1, varsigma_theta = -1; under C -> A C: K -> det(A)^{H+T} K; K_{(H+1)-gon}(lambda;0) = det(lambda_1..lambda_H)/H!",
+  "source": "compendium Section 2.3; LLC (3.77); 6d (5.10); 11d (5.12); notes/_aux/check_conversion.py",
+  "status": "derived in the compendium; checked exactly"
+ },
+ {
+  "id": "K5",
+  "statement": "LLC fan density (5.2) is the density of int wedge(-d^2 y) with respect to iota_E prod dt_e for the edge order (12, 1O, 23, 2O, ..., (n+1)O); for the order (12, 23, 1O, 2O, 3O) of the caption of LLC Fig. 3.1 the n=2 kernel has the opposite sign",
+  "source": "LLC Thm 5.1, Thm 5.2, Def. 7.1, Fig. 3.1; notes/_aux/check_llc_fan.py",
+  "status": "checked pointwise in exact arithmetic, n <= 4"
+ }
+]

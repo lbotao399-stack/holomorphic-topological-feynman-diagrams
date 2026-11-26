@@ -1,0 +1,38 @@
+/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributeschanged in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+twistor4 #57: root relabel sign 1
+twistor4 #57 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {} | reference {} | equal True | kappa=1 | P_beta terms 0, moment monomials 0, S^ periods 0 | S data 11.6s, Gamma' 0.1s, moments 0.0s
+twistor4 #63: root relabel sign 1
+twistor4 #63 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '567633107/27216000', 'z3': '-45457/2625'} | reference {'1': '567633107/27216000', 'z3': '-45457/2625'} | equal True | kappa=1 | P_beta terms 6, moment monomials 12430, S^ periods 2562 | S data 15.1s, Gamma' 0.1s, moments 0.7s
+twistor4 #64: root relabel sign 1
+twistor4 #64 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '16731/8960', 'z3': '-429/280'} | reference {'1': '16731/8960', 'z3': '-429/280'} | equal True | kappa=1 | P_beta terms 12, moment monomials 20242, S^ periods 3534 | S data 15.4s, Gamma' 0.2s, moments 0.8s
+twistor4 #65: root relabel sign 1
+twistor4 #65 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-20551/18662400'} | reference {'1': '-20551/18662400'} | equal True | kappa=1 | P_beta terms 1, moment monomials 179, S^ periods 3643 | S data 15.2s, Gamma' 0.0s, moments 0.0s
+twistor4 #66: root relabel sign 1
+twistor4 #66 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-26780143/2519424000', 'z3': '1793/243000'} | reference {'1': '-26780143/2519424000', 'z3': '1793/243000'} | equal True | kappa=1 | P_beta terms 6, moment monomials 21391, S^ periods 5675 | S data 15.5s, Gamma' 0.1s, moments 1.6s
+twistor4 #67: root relabel sign 1
+twistor4 #67 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-10963897641253/188116992000', 'z3': '1772424991/36288000'} | reference {'1': '-10963897641253/188116992000', 'z3': '1772424991/36288000'} | equal True | kappa=1 | P_beta terms 12, moment monomials 26718, S^ periods 7505 | S data 15.5s, Gamma' 0.2s, moments 1.2s
+bulk3(3,4) #3: root relabel sign -1
+bulk3(3,4) #3 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {} | reference {} | equal True | kappa=1 | P_beta terms 12, moment monomials 21458, S^ periods 8460 | S data 15.3s, Gamma' 0.1s, moments 0.8s
+bulk3(3,4) #5: root relabel sign -1
+bulk3(3,4) #5 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '1/48600'} | reference {'1': '1/48600'} | equal True | kappa=1 | P_beta terms 6, moment monomials 17483, S^ periods 10110 | S data 15.1s, Gamma' 0.1s, moments 0.7s
+bulk3(3,4) #6: root relabel sign -1
+bulk3(3,4) #6 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '348715/846526464', 'z3': '-55/163296'} | reference {'1': '348715/846526464', 'z3': '-55/163296'} | equal True | kappa=1 | P_beta terms 6, moment monomials 21895, S^ periods 12127 | S data 15.1s, Gamma' 0.1s, moments 1.0s
+bulk3(3,4) #7: root relabel sign -1
+bulk3(3,4) #7 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {} | reference {} | equal True | kappa=1 | P_beta terms 12, moment monomials 5226, S^ periods 12153 | S data 15.2s, Gamma' 0.1s, moments 0.2s
+bulk3(3,4) #8: root relabel sign -1
+bulk3(3,4) #8 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {} | reference {} | equal True | kappa=1 | P_beta terms 12, moment monomials 6964, S^ periods 12724 | S data 15.3s, Gamma' 0.1s, moments 0.2s
+bulk3(3,4) #9: root relabel sign -1
+bulk3(3,4) #9 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {} | reference {} | equal True | kappa=1 | P_beta terms 6, moment monomials 5519, S^ periods 12724 | S data 15.0s, Gamma' 0.1s, moments 0.2s
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/locality/routeA_general.py", line 362, in <module>
+    run_logged(st, ix)
+    ~~~~~~~~~~^^^^^^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/locality/routeA_general.py", line 345, in run_logged
+    sign = d1 / d0
+           ~~~^~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py", line 665, in forward
+    return monomorphic_operator(a, b)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py", line 813, in _div
+    raise ZeroDivisionError('Fraction(%s, 0)' % db)
+ZeroDivisionError: Fraction(1, 0)

@@ -1,0 +1,151 @@
+Twisted-holography dictionary: bulk complex, source/operator pairing, cyclic homology, index.   2026-11-21
+[chk] = exact computation over Q (no floating point); [drv] = derivation; [src] = read in the source.
+Code: P/code/holography/{linalg,bulk_x,derham,cyclic,charges}.py, tests/test_{bulk,cyclic,charges}.py (all pass).
+Runs in this folder: run_A1.py > A1.log (66 s), run_A2.py 4 > A2.log, run_A3.py > A3.log, run_A4.py 30 > A4.log.
+P = /Users/libotao/Desktop/holomorphic-twist-program.  x = (z1,z2,w1,w2,w3), xi_x = d/dx, W = T^5-weight, beta(W) = (W_z+1, -W_w-1).
+
+======================================================================== A1  bulk complex
+Model [drv]
+  T = A0[[t]] (+) A2[[t]],   D = t del + N{F,-},   F = (w1w2w3)^(-1) xi_z1 xi_z2.
+  Cech model of C^3\0 (3 opens, Cech degree <= 2). d_w commutes with the projection C[w^+-1] -> C[w] (d_w w^0 = 0),
+    so there is a homotopy h with h del + del h = 0, p del = del p, del i = i del.
+  The transferred differential is  sum_r p delta (h delta)^r i,  delta = t del + N{F,-}:
+    chains containing a del vanish:  h del h = -del h^2 = 0,  p del h = del p h = 0,  h del i = -del h i = 0;
+    pure F-chains  p F (hF)^r i, r >= 1,  have Cech degree >= 3, so they vanish.
+  Hence D = t del + N{F,-} exactly on T.
+Bracket [drv, chk]
+  {a,b} = del(ab) - del(a) b - (-1)^{|a|} a del(b) = sum_x [(d_xi_x a)(d_x b) + (-1)^{|a|}(d_x a)(d_xi_x b)]
+  {a,b} = (-1)^{|a||b|} {b,a},   del{a,b} = -{del a,b} - (-1)^{|a|}{a, del b}
+  del F = 0,   {F,F} = 0,   {F, A2} = 0
+  D^2 = t^2 del^2 + tN(del{F,.} + {F,del .}) + N^2 {F,{F,.}} = 0
+  [chk] D^2 = 0 order by order in N on 206143 basis elements of T.
+  [chk] BV formula = explicit Schouten on {F, all 3125 A0 monomials with W in [-1,1]^5} and on 300 random triples (A0xA0, A2xA0, A0xA2);
+        antisymmetry and derivation identities hold on random homogeneous pairs.
+  [chk] Phi o del = d o Phi on 16807 A2 monomials:
+        Phi(z^m w^(-a-1) xi_z^Sz xi_w^J) = eps(Sz)(-1)^|a|/a!  z^m dz^{Sz^c} theta^J dtheta^a,
+        eps(12) = eps(2) = 1, eps(1) = eps() = -1,   Phi(F) = 1.
+Grading [drv]
+  del has T^5-weight 0.  N{F,-} maps W to W - (1^5) and A0 to A2.
+  What = W - (1^5)[A0],   h = k - [A0]   (A2: h = k;  A0: h = k-1).
+  D: T(What,h) -> T(What,h+1),   T(What,h) = t^h A2_What (+) t^(h+1) A0_(What+1),   dim <= 64.
+  The suggested h_task = k - W_tot/5 equals h - What_tot/5 on both summands.
+  The (T^4-class, h_task) pieces are infinite-dimensional: they contain t^(h+m+1) A0_(What+1+m(1^5)) for every m >= 0.
+  The fifth conserved weight is What_tot = W_tot - 5[A0].
+Cohomology [drv]
+  0 -> coker phi_* -> H(T) -> ker phi_* -> 0,    phi_* = [N{F,-}]: H(A0[[t]], t del) -> H(A2[[t]], t del)
+  H(A0[[t]], t del) = ker del|A0 (+) (+)_{k>=1} C xi_top t^k        ((A0,del) = (Omega(C^5),d) by contraction with Omega)
+  H(A2[[t]], t del) = ker del|A2 (+) (+)_{k>=1} C F t^k             ((A2,del) = (Omega(C^{2|3}),d) by Phi)
+  {F, xi_top} = 0, so phi_* = 0 on t^{>=1}.
+  coker phi_* = [ker del|A2 / del(F.ker del|A0)]_{t^0} (+) (+)_{k>=1} C F t^k = B^{>=2}(beta) (+) (+)_{k>=0} C F t^k
+  ker phi_*   = {alpha in A0 : del alpha = 0, {F,alpha} = 0} (+) (+)_{k>=1} C xi_top t^k
+    {F,alpha} = del(F alpha),   Phi(F alpha) = alpha_0 := alpha|_{w=0, xi_z=0},   so {F,alpha} = 0 <=> d alpha_0 = 0 <=> alpha_0 in C.
+  dim ker phi_*|t^0 (W_r) = 2^(s-1) - [W_r,z >= 0, W_r,w in {0,-1}^3, W_r != 0]   (s = #{x: W_r,x >= 0} >= 1; all W_r,x >= -1)
+                          = 1 at W_r = -(1^5)  (xi_top).
+  Sample:
+    W_r              (-1^5)  (-1,-1;0,-1,-1)  (0,0;-1,-1,-1)  (0,0;0,0,-1)  (0^5)  (1,1;0,0,0)  (2^5)
+    dim ker phi_*      1          1               1               7          16       15         16
+    dim ker del|A0     1          1               2               8          16       16         16
+[chk] H^h(T(What)) for What_z in [-2,2], What_w in [-5,1] (mod S2 x S3), h in [-1,3]
+  (Laurent t^0..t^3, regular t^0..t^4): 6300 pieces, 653 nonzero.
+  The Laurent part equals B^{>=2}(beta) + [beta=0] at h = 0 and [What = -(1^5)] (F t^h) at h >= 1.
+  The regular part equals the formula at h = -1 and [What = -(2^5)] (xi_top t^(h+1)) at h >= 0.
+  0 mismatches.  dim H = coker + ker everywhere.  The LES ranks of phi_* agree with the direct image/projection ranks everywhere.
+[chk] ker phi_*|t^0 formula: 200 weights W_r in [-1,2]^5 (mod S2 x S3), 0 mismatches.
+[chk] t^0 60-slot rerun (tests/test_bulk.py): 60 slots, 0 mismatches.
+  It matches single_particle.py slot by slot: bulk coker, and B^p lists from both de Rham implementations.
+
+======================================================================== A2  regular <-> Laurent
+Weight rule [drv]
+  W_r = beta(W_n) - (1^5) = (W_n,z, -2 - W_n,w),   t^k <-> t^k   (xi_top t^k <-> F t^k).
+  Per active coordinate, A0_{W_r} and A2_{W_n} are tensor products of 2-term acyclic complexes,
+    so dim ker del|A0_{W_r} = 2^(s-1) = dim ker del|A2_{W_n}.
+  Coordinatewise-affine rules with this property: W_r = pi(beta) - (1^5), pi a permutation of the 5 coordinates.
+    For every pi the dimensions differ at beta = (0,0;1,0,0): dim ker phi_* = 1, dim coker phi_* = 0.
+  A T^5-invariant pairing (W_r + W_n fixed) meets only finitely many Laurent z-weights, so the z-directions must be paired by Taylor coefficients.
+Pairing P_A (Taylor in (z, xi_z), Res_{w=0} with complementary xi_w):
+  P_A(z^m w^b xi_z^Sz xi_w^Sw, z^m' w^(-a-1) xi_z^Sz' xi_w^Sw') = m1! m2! d_{mm'} d_{ab} d_{Sz,Sz'} eps(Sw,Sw'),
+  xi_w^Sw xi_w^Sw' = eps xi_w1 xi_w2 xi_w3.
+  KS form:  K(alpha,beta) = P_A(alpha, del^{-1} beta).
+Dimensions [drv, chk 525 weights beta in [0,4]^5 mod S2 x S3]
+  dim ker phi_*(beta - 1^5) - dim coker phi_*(beta) = [beta in M1] + [beta = 1^5]
+     M1 = {beta != 0 : beta_theta in {0,1}^3, min(beta_z) = 0}
+  The two dimensions differ at 20 of the 525 weights, which is exactly M1 u {1^5} in the window.
+  dim ker phi_*(beta - 1^5) = dim B^{>=1}(beta) + [beta = 0] - [beta in R']
+     R' = {beta_theta in {0,1}^3, beta_z >= (1,1), beta != 1^5}
+  (B^1(beta) != 0 <=> beta != 0, beta_theta in {0,1}^3 <=> a U(1) single letter tr X has weight beta.)
+  The regular modes therefore count SU(N) operators at R', and U(N) operators at M1 u {1^5}.
+  Examples:
+    beta = (0,0;1,0,0): K = <d_z1 d_z2 d_w2 d_w3>, coker = 0, and B^1 = <d theta1> (tr gamma^1).
+    beta = (0,1;1,1,1): dim K = 8 (contains xi_z1 = d_z1) vs coker 7.
+    beta = 1^5 (W_r = 0): dim K = 16 (contains 1 and the Cartan vector fields) vs coker 15.
+Ranks [chk, A2.log]
+  P_A on Z(A0)_{W_r} x Z(A2)_{W_n}, Z = ker del:
+    perfect at all 490 weights with beta_z != 0 and at beta = 0;  identically 0 for beta_z = 0, beta != 0.
+  Induced on ker phi_* x coker phi_*:
+    beta_z != 0, beta_theta not in {0,1}^3 (434 weights) and beta = 0:
+      P_A descends (P_A(ker phi_*, im phi_*) = 0) and is nondegenerate.
+    beta_z = 0, beta_theta not in {0,1}^3 (31 weights):
+      K is independent of the primitive, descends, and is nondegenerate.
+    The 59 B^1-weights (beta != 0, beta_theta in {0,1}^3):
+      beta_z != 0: P_A(ker phi_*, B^1) != 0, so the pairing does not descend.
+                   At R' (dims equal) the annihilator of B^1 in K has dimension dim K - 1.
+      beta_z = 0:  P_A(ker phi_*, F.Z(A0)) != 0, so K does not descend.
+      At M1 u {1^5} the dimensions differ anyway.
+D-invariance [drv]  (omega pairing A0[[t]] with A2[[t]] only)
+  omega(t^k a, t^l b) = d_{k0} d_{l0} P(a,b) is t del-invariant.
+  N{F,-}-invariance <=> P(alpha', {F,alpha}) = +-P(alpha, {F,alpha'}).
+  Under the weight rule the two sides need W'_z = W_z - 1 and W_z = W'_z - 1 respectively, so both vanish:
+    P(A0, {F,A0}) = 0,  hence B^1 = {F, Z(A0)} lies in the right radical of P on Z(A0) x Z(A2).
+  P_A violates this at every B^1-weight with beta_z != 0.
+Result: there is no perfect pairing ker phi_* x coker phi_* -> C homogeneous for the weights.
+  The precise mismatch is +1 regular mode at each beta in M1 u {1^5}.
+  P_A (beta_z != 0 or beta = 0) and K = P_A o del^{-1} (beta_z = 0) are nondegenerate on cohomology at every weight with B^1(beta) = 0,
+    and fail to descend at every weight with B^1(beta) != 0.
+
+======================================================================== A3  cyclic homology, boundary
+Connes complex of A = C[z1,z2] (x) Lambda[theta1,theta2,theta3]:
+  b(x) = sum_{i<n} (-1)^i (..a_i a_{i+1}..) + s(x)(a_n a_0, a_1, ..., a_{n-1}),   t(x) = s(x)(a_n, a_0, ..., a_{n-1}),
+  s(x) = (-1)^{n + |a_n|(|a_0|+...+|a_{n-1}|)},   C^lambda = C/(1-t).
+  [chk] b^2 = 0, and b descends to C^lambda (checked chain by chain).
+[chk] HC_n(A)_beta = B^{n+1}(beta) (+) C[n even][beta = 0]:  290 slots (|beta| <= 5, n <= 4), 0 mismatches.
+      HC_n(A)_beta = Omega^n/dOmega^{n-1} (+) C[n even, n >= 2][beta = 0]:  290 slots, 0 mismatches.
+      Omega^n/dOmega^{n-1} (+) C[n even] overcounts by 1 at (n, beta) = (0, 0), since Omega^0 already contains C.
+[chk] reduced (augmentation ideal):  HCbar_n(A)_beta = B^{n+1}(beta):
+      290 slots with |beta| <= 5 and 195 slots with |beta| = 6 (n <= 4), 0 mismatches.
+LLC translation [drv]
+  Single trace with Y letters <-> HC_{Y-1}.
+  (theta1,theta2,theta3; n+, n-)_Y <-> beta = (n+, n-; theta1,theta2,theta3), form degree p = Y.
+  Letter d^m C|_{theta^J} <-> z^m theta^J;  gamma^I <-> theta_I,  beta_I <-> theta_J theta_K,  b <-> theta1 theta2 theta3,  d^m c <-> z^m.
+  E = (Theta+Y)/2 + n,   R_I = theta_I - (Theta-Y)/2,   J_L = (Theta-Y+n)/2,   J_R = (n+ - n-)/2.
+[chk] Planar single-trace CE cochains as cyclic words:
+  Q C_{M,K} = (-1)^{|K|} sum binom(M,m) eps(J,J') (-1)^{|J'|(1+|J|)} C_{m,J} C_{m',J'}   (from Q C = C.C).
+  Q^2 = 0.  The relative complex (no undifferentiated c) is a subcomplex: the c-terms form ad_c and cancel in traces.
+  H_rel^Y(beta) = B^Y(beta),   H_abs^Y(beta) = B^Y(beta) (+) C[beta = 0, Y odd] (tr c^Y),   H_abs = HC_{Y-1}.
+  290 sectors (|beta| <= 5, Y <= 5), 0 mismatches.
+  Sample sectors, dim H_rel = B^Y:
+    sector             (E; R1,R2,R3; J_L,J_R)       dim
+    (1,1,1;0,0)_2      (5/2; 1/2,1/2,1/2; 1/2,0)     2
+    (1,1,0;1,0)_2      (3; 1,1,0; 1/2,1/2)           2
+    (1,1,1;1,1)_1..5                                 1,4,6,4,1
+    (0,0,0;0,0)_{2k+1}                               0  (absolute: 1, tr c^{2k+1})
+
+======================================================================== A4  index
+[src] KMMR hep-th/0510251:
+  (4.2)   f = [t^2(v+1/w+w/v) - t^3(y+1/y) - t^4(w+1/v+v/w) + 2t^6] / ((1-t^3 y)(1-t^3/y))
+  (4.13)  I_sp = sum_{n>=2} chi_{S_n} + chi_{S_1}
+  (4.14)  I_sp = sum_{u in {t^2 v, t^2/w, t^2 w/v}} u/(1-u) - t^3y/(1-t^3y) - (t^3/y)/(1-t^3/y)
+  (4.8)   I_sp = Z_s.t.(U(N))
+  [drv] chi_{S_1} = f, since the n = 1 multiplet at Delta = 0 consists of the letters.
+Charge map [drv]
+  (theta; n+,n-)_Y -> (-1)^{Y+Theta} t^{2Theta+3n} y^{n+-n-} v^{theta1-theta2} w^{theta2-theta3}
+  2(E + J_L) = 2Theta + 3n,   [R1,R2,R3]_Dynkin = [q2+q3, q1-q2, q2-q3],   q = (R_1,R_2,R_3)_LLC,   (-1)^F = form parity = (-1)^{Y+Theta}.
+[drv]
+  Omega(s) = sum_p s^p sch Omega^p = prod_I (1 - u_I t^2)/(1 - s u_I t^2) . prod_+- (1 - s t^3 y^{+-})/(1 - t^3 y^{+-}),   Omega(1) = 1
+  sch B^{p+1} = sch B^p - sch Omega^p  =>  sch B^p = sum_{q>=p} sch Omega^q
+  sum_{p>=1} sch B^p = Omega'(1) = sum_I u_I t^2/(1 - u_I t^2) - sum_+- t^3 y^{+-}/(1 - t^3 y^{+-}) = I_sp
+  sch B^1 = 1 - Omega(0) = f
+  sum_{p>=2} sch B^p = I_sp - f = sum_{n>=2} chi_{S_n}
+[chk] Through t^30, from ranks of d on every weight with 2Theta + 3n <= 30:
+  sch B^1 = f,   sum_{p>=1} sch B^p = I_sp,   sum_{p>=2} sch B^p = I_sp - f:  exact agreement.
+  Against I_sp itself, sum_{p>=2} sch B^p first differs at t^2: the coefficient of t^2 w/v (likewise t^2 v, t^2/w) is 0 instead of 1.
+  This difference is exactly the S_1 multiplet.

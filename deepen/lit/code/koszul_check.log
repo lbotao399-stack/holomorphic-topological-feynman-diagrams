@@ -1,0 +1,7 @@
+k=3 w=2 (a,b)=(1,1): dim M_ab=10, M_(a-1,b)=2, M_(a,b-1)=2, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=4 (exact in middle True); dim coker=6, rank of restriction to sum p=0: 6, equal True
+k=3 w=2 (a,b)=(2,2): dim M_ab=40, M_(a-1,b)=20, M_(a,b-1)=20, M_(a-1,b-1)=10; rank d2=10 (injective True), rank d1=30 (exact in middle True); dim coker=10, rank of restriction to sum p=0: 10, equal True
+k=4 w=1 (a,b)=(2,2): dim M_ab=1, M_(a-1,b)=0, M_(a,b-1)=0, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=0 (exact in middle True); dim coker=1, rank of restriction to sum p=0: 1, equal True
+k=4 w=2 (a,b)=(1,1): dim M_ab=4, M_(a-1,b)=0, M_(a,b-1)=0, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=0 (exact in middle True); dim coker=4, rank of restriction to sum p=0: 4, equal True
+k=4 w=2 (a,b)=(2,1): dim M_ab=12, M_(a-1,b)=4, M_(a,b-1)=1, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=5 (exact in middle True); dim coker=7, rank of restriction to sum p=0: 7, equal True
+k=4 w=2 (a,b)=(2,2): dim M_ab=38, M_(a-1,b)=12, M_(a,b-1)=12, M_(a-1,b-1)=4; rank d2=4 (injective True), rank d1=20 (exact in middle True); dim coker=18, rank of restriction to sum p=0: 18, equal True
+all checks: True

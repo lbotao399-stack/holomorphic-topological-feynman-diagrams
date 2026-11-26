@@ -1,0 +1,4 @@
+theta(1, 4, 4): -sum y.z == sum lam_v.(sigma_v z_j + (1-sigma_v) Z_N) at 5 random rational points: True
+theta(2, 3, 4): -sum y.z == sum lam_v.(sigma_v z_j + (1-sigma_v) Z_N) at 5 random rational points: True
+theta(3, 3, 3): -sum y.z == sum lam_v.(sigma_v z_j + (1-sigma_v) Z_N) at 5 random rational points: True
+pentagon: -sum y.z == sum lam_j.(r_j z_1 + (1-r_j) z_2) at 5 random rational points: True

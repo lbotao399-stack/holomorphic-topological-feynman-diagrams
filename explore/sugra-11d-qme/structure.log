@@ -1,0 +1,108 @@
+flow orientations with K = 0 (all (b) of type b_0):
+(1, 6, 6) admissible flows: 2048  (m, #ext mu, #ext gamma): count = {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40}
+(2, 5, 6) admissible flows: 2048  (m, #ext mu, #ext gamma): count = {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40}
+(3, 4, 6) admissible flows: 2048  (m, #ext mu, #ext gamma): count = {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40}
+(3, 5, 5) admissible flows: 2048  (m, #ext mu, #ext gamma): count = {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40}
+(4, 4, 5) admissible flows: 2048  (m, #ext mu, #ext gamma): count = {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40}
+
+brute force over vertex types a, b_0, b_1, c and letter-to-edge maps (theta_166, theta_445):
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9} maps: 491520
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 1} maps: 5406720
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 2} maps: 27033600
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 3} maps: 81100800
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 4} maps: 162201600
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 5} maps: 227082240
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 6} maps: 227082240
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 7} maps: 162201600
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 8} maps: 81100800
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 9} maps: 27033600
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 10} maps: 5406720
+(1, 6, 6) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 11} maps: 491520
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7} maps: 17694720
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 1} maps: 176947200
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 2} maps: 796262400
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 3} maps: 2123366400
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 4} maps: 3715891200
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 5} maps: 4459069440
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 6} maps: 3715891200
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 7} maps: 2123366400
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 8} maps: 796262400
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 9} maps: 176947200
+(1, 6, 6) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 10} maps: 17694720
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5} maps: 111476736
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 1} maps: 1003290624
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 2} maps: 4013162496
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 3} maps: 9364045824
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 4} maps: 14046068736
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 5} maps: 14046068736
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 6} maps: 9364045824
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 7} maps: 4013162496
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 8} maps: 1003290624
+(1, 6, 6) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 9} maps: 111476736
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3} maps: 159252480
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 1} maps: 1274019840
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 2} maps: 4459069440
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 3} maps: 8918138880
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 4} maps: 11147673600
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 5} maps: 8918138880
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 6} maps: 4459069440
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 7} maps: 1274019840
+(1, 6, 6) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 8} maps: 159252480
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1} maps: 39813120
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 1} maps: 278691840
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 2} maps: 836075520
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 3} maps: 1393459200
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 4} maps: 1393459200
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 5} maps: 836075520
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 6} maps: 278691840
+(1, 6, 6) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 7} maps: 39813120
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9} maps: 491520
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 1} maps: 5406720
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 2} maps: 27033600
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 3} maps: 81100800
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 4} maps: 162201600
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 5} maps: 227082240
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 6} maps: 227082240
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 7} maps: 162201600
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 8} maps: 81100800
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 9} maps: 27033600
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 10} maps: 5406720
+(4, 4, 5) m = 1 n_a = 0 external {'gamma': 1, 'mu': 9, 'nu': 11} maps: 491520
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7} maps: 17694720
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 1} maps: 176947200
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 2} maps: 796262400
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 3} maps: 2123366400
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 4} maps: 3715891200
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 5} maps: 4459069440
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 6} maps: 3715891200
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 7} maps: 2123366400
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 8} maps: 796262400
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 9} maps: 176947200
+(4, 4, 5) m = 2 n_a = 0 external {'gamma': 3, 'mu': 7, 'nu': 10} maps: 17694720
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5} maps: 111476736
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 1} maps: 1003290624
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 2} maps: 4013162496
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 3} maps: 9364045824
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 4} maps: 14046068736
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 5} maps: 14046068736
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 6} maps: 9364045824
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 7} maps: 4013162496
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 8} maps: 1003290624
+(4, 4, 5) m = 3 n_a = 0 external {'gamma': 5, 'mu': 5, 'nu': 9} maps: 111476736
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3} maps: 159252480
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 1} maps: 1274019840
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 2} maps: 4459069440
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 3} maps: 8918138880
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 4} maps: 11147673600
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 5} maps: 8918138880
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 6} maps: 4459069440
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 7} maps: 1274019840
+(4, 4, 5) m = 4 n_a = 0 external {'gamma': 7, 'mu': 3, 'nu': 8} maps: 159252480
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1} maps: 39813120
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 1} maps: 278691840
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 2} maps: 836075520
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 3} maps: 1393459200
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 4} maps: 1393459200
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 5} maps: 836075520
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 6} maps: 278691840
+(4, 4, 5) m = 5 n_a = 0 external {'gamma': 9, 'mu': 1, 'nu': 7} maps: 39813120

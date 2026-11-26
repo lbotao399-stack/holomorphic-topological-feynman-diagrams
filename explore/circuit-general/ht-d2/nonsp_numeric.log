@@ -1,0 +1,13 @@
+(A,(B,(A,B))) (A,B)          centre 2  K/pi^2 = 0.10111 +- 0.00049  (171s)
+(B,(A,(A,B))) (A,B)          centre 2  K/pi^2 = -0.06053 +- 0.00218  (177s)
+((A,B),(A,B)) (A,B)          no single-move chart with SP reduced graph
+(A,(A,(B,(A,B))))            centre 3  K/pi^2 = -0.00000 +- 0.00001  (169s)
+(A,(B,(A,(A,B))))            no single-move chart with SP reduced graph
+(A,(B,(B,(A,B))))            no single-move chart with SP reduced graph
+(A,((A,B),(A,B)))            no single-move chart with SP reduced graph
+(B,(A,(A,(A,B))))            no single-move chart with SP reduced graph
+(B,(A,(B,(A,B))))            no single-move chart with SP reduced graph
+(B,(B,(A,(A,B))))            centre 3  K/pi^2 = 0.16449 +- 0.00057  (173s)
+(B,((A,B),(A,B)))            no single-move chart with SP reduced graph
+((A,(A,B)),(A,B))            no single-move chart with SP reduced graph
+((B,(A,B)),(A,B))            no single-move chart with SP reduced graph

@@ -1,0 +1,19 @@
+compositions read: 44, functional sets: 1
+kappa = wick/|Aut|: residual [0]
+nonzero composition values: 44 of 44
+  G4.1 kappa 1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.2 kappa -1/4: flipped -> zero residual False; dropped -> zero residual False
+  G4.3 kappa -1/8: flipped -> zero residual False; dropped -> zero residual False
+  G4.4 kappa 1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.5 kappa -1: flipped -> zero residual False; dropped -> zero residual False
+  G4.6 kappa 1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.7 kappa -1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.8 kappa -1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.9 kappa 1: flipped -> zero residual False; dropped -> zero residual False
+  G4.10 kappa -1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.11 kappa 1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.12 kappa -1/2: flipped -> zero residual False; dropped -> zero residual False
+  G4.13 kappa 1: flipped -> zero residual False; dropped -> zero residual False
+  G4.14 kappa 1/8: flipped -> zero residual False; dropped -> zero residual False
+  G4.15 kappa -1/2: flipped -> zero residual False; dropped -> zero residual False
+kappa = +1/|Aut| (no Wick sign): zero residual False

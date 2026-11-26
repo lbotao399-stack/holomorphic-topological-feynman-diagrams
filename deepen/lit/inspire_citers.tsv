@@ -1,0 +1,92 @@
+# INSPIRE API, query refersto:recid:<R>, fetched 2026-11-21; columns: cited_recid, citer_recid, preprint_date, arXiv, title
+# recid 2806832 total 14
+2806832	3230858	2026-11-18	2611.24160	Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring
+2806832	3179670	2026-07-10	2607.09486	Factorization Algebras and Quantum Groups from Generalized Poisson Sigma Models
+2806832	3145486	2026-04-15	2604.13439	A core representation theorem for scheme-invariant collinear factorization in QCD
+2806832	3139375	2026-04-03	2604.03500	Poisson Vertex Algebra of Seiberg-Witten Theory
+2806832	3090379	2025-12-08	2512.07771	Loop corrected supercharges from holomorphic anomalies
+2806832	3075808	2025-10-30	2510.26608	Higher-dimensional Chiral Algebras in the Jouanolou Model and free-field realization
+2806832	2961722	2025-08-15	2508.11749	Line Operators in 3d Holomorphic QFT: Meromorphic Tensor Categories and dg-Shifted Yangians
+2806832	2949247	2025-07-12	2507.09170	Feynman Graph Integrals on Kähler Manifolds
+2806832	2941322	2025-07-02	2507.01858	Infinite dimensional topological-holomorphic symmetry in three dimensions
+2806832	2928971	2025-06-02	2506.02246	Higher Symmetries in Twisted Eleven-Dimensional Supergravity
+2806832	2899568	2025-03-12	2503.09558	The Topological form is the Pfaffian form
+2806832	2891223	2025-02-18	2502.13227	Poisson Vertex Algebras and Three-Dimensional Gauge Theory
+2806832	2815334	2024-08-06	2408.03192	Combinatorial proof of a non-renormalization theorem
+2806832	2161764	2022-10-06	2210.03009	Perturbative BV-BFV formalism with homotopic renormalization: a case study
+# recid 1491968 total 75
+1491968	3229875	2026-11-15	2611.19856	On $ι$Quiver (BPS) Algebras and (Strict) Partitions
+1491968	3227892	2026-11-12	2611.17270	Twisting IKKT with branes
+1491968	3208462	2026-09-25	2609.31829	Localizing the M-Theory Path Integral
+1491968	3166371	2026-06-05	2606.07737	Moduli spaces of type II twists
+1491968	3150150	2026-04-29	2604.26418	Quarter-indices for basic ortho-symplectic corners
+1491968	3128778	2026-03-12	2603.12113	Integrability from Homotopy Algebras
+1491968	3128159	2026-03-09	2603.08783	Interface Minimal Model Holography and Topological String Theory
+1491968	3123922	2026-02-25	2602.22318	Twisting BFSS & IKKT
+1491968	3120475			The (higher) Hamiltonians of (generalized) trigonometric and rational Calogero-Sutherland models by MO R-matrix
+1491968	3115465	2026-02-04	2602.04658	Kodaira-Spencer theory for Courant algebroids
+1491968	3103178	2026-01-12	2601.07662	Refined Invariants and Quantum Curves from Supersymmetric Localization
+1491968	3103993	2026-01-12	2601.07949	A Scattering Transform for Noncommutative Instantons
+1491968	3093586	2025-12-17	2512.15566	Integrable models from 4d holomorphic BF theory
+1491968	2973344	2025-09-25	2509.20643	Non-Commutative Gauge Theory at the Beach
+1491968	2968062	2025-09-09	2509.07628	Gauge Theory and Integrability: An Overview
+1491968	2940862	2025-07-01	2507.00772	Celestial Chiral Algebras and Self-Dual Gravity
+1491968	2928971	2025-06-02	2506.02246	Higher Symmetries in Twisted Eleven-Dimensional Supergravity
+1491968	2878356	2025-02-10	2502.06647	Twists of Supersymmetric Yang–mills Theory in Topological String Theory
+1491968	2846380	2024-11-07	2411.04849	5d-4d correspondence in twisted M-theory on a conifold
+1491968	2830396	2024-09-19	2409.12486	On the Hilbert Space of the Chern-Simons Matrix Model, Deformed Double Current Algebra Action, and the Conformal Limit
+1491968	2822469	2024-08-28	2408.15712	R-matrices and Miura operators in 5d Chern-Simons theory
+1491968	2822672	2024-08-28	2408.15732	R-matrices from Feynman Diagrams in 5d Chern-Simons Theory and Twisted M-theory
+1491968	2815334	2024-08-06	2408.03192	Combinatorial proof of a non-renormalization theorem
+1491968	2810393	2024-07-22	2407.15990	Miura operators as R-matrices from M-brane intersections
+1491968	2806832	2024-07-11	2407.08667	On the renormalization and quantization of topological-holomorphic field theories
+1491968	2760389	2024-02-21	2402.13889	Bispectral duality and separation of variables from surface defect transition
+1491968	2757199			The Pure Spinor Superfield Formalism and Twisted Supergravity
+1491968	2832307			A holomorphic approach to fivebranes
+1491968	2850470			Twisted Holography in B-model
+1491968	2715818	2023-10-30	2310.20086	On $\frac{1}{8}$-BPS black holes and the chiral algebra of $\mathcal{N}=4$ SYM
+1491968	2714235	2023-10-25	2310.16721	Giant gravitons and non-conformal vacua in twisted holography.
+1491968	2704880	2023-09-28	2309.16929	Deformed Double Current Algebras, Matrix Extended ${\mathcal {W}}_{\infty }$ Algebras, Coproducts, and Intertwiners from the M2-M5 Intersection
+1491968	2654087	2023-04-24	2304.12371	Eleven-dimensional supergravity as a Calabi–Yau twofold
+1491968	2650150	2023-04-10	2304.04656	Parallel Surface Defects, Hecke Operators, and Quantum Hitchin System
+1491968	2593315	2022-11-23	2211.13269	From equivariant volumes to equivariant periods
+1491968	2181073	2022-11-11	2211.06417	On the associativity of 1-loop corrections to the celestial operator product in gravity
+1491968	2165680	2022-10-14	2210.07910	A holographic approach to the six-dimensional superconformal index
+1491968	2139542	2022-08-19	2208.09442	Evidence for an algebra of $G_2$ instantons II
+1491968	2121041	2022-07-22	2207.11138	M-theory on AdS$_{4}$× S$^{7}$ at 1-loop and beyond
+1491968	2122391	2022-07-21	2207.10712	Topological holography: Towards a unification of Landau and beyond-Landau physics
+1491968	1997903	2021-12-27	2112.13878	Branes, Quivers and BPS Algebras
+1491968	1967441	2021-11-12	2111.06876	2d BF Theory Coupled to 1d Quantum Mechanics: The Phase Space and Its Quantization
+1491968	1960395	2021-11-04	2111.03049	Twisted Eleven-Dimensional Supergravity
+1491968	1915704	2021-09-02	2109.01110	Evidence for an algebra of G$_{2}$ instantons
+1491968	1883881	2021-07-14	2107.06734	Quantization of topological-holomorphic field theories: local aspects
+1491968	1876674	2021-07-05	2107.01924	Fermi-gas correlators of ADHM theory and triality symmetry
+1491968	1873393	2021-06-29	2106.15640	Maximally Twisted Eleven-Dimensional Supergravity
+1491968	1864410	2021-05-20	2105.09537	A domain wall in twisted M-theory
+1491968	1852302	2021-03-18	2103.10271	Playing With the Index of M-Theory
+1491968	1849351	2021-03-01	2103.00963	Twisted holography of defect fusions
+1491968	2832916			Mini-workshop: Three facets of R-matrices. Abstracts from the mini-workshop held October 17–23, 2021 (hybrid meeting).
+1491968	1835341	2020-12-07	2012.04118	Miura operators, degenerate fields and the M2-M5 intersection
+1491968	1824264			Line defects in 5d gauge theories
+1491968	1802896	2020-06-24	2006.14025	A slow review of the AGT correspondence
+1491968	1797687	2020-05-25	2005.12228	On a gravity dual to flavored topological quantum mechanics
+1491968	1793449	2020-04-28	2004.13810	Twisted M2 brane holography and sphere correlation functions
+1491968	1782253	2020-03-19	2002.10488	Disk, interval, point: on constructions of quantum field theories with holomorphic action functionals
+1491968	1782239	2020-02-24	2002.10517	A taxonomy of twists of supersymmetric Yang–Mills theory
+1491968	1781303	2020-02-18	2002.07343	Feynman diagrams and $\Omega$-deformed M-theory
+1491968	1774344	2020-01-07	2001.02177	Twisted Supergravity and Koszul Duality: A case study in AdS$_3$
+1491968	1762217	2019-10-29	1910.13653	Twisted S-duality
+1491968	1757407	2019-10-02	1910.01134	Unifying lattice models, links and quantum geometric Langlands via branes in string theory
+1491968	1757028	2019-09-30	1910.00031	On extensions of $ \mathfrak{gl}\widehat{\left(\left.m\right|n\right)} $ Kac-Moody algebras and Calabi-Yau singularities
+1491968	1744112	2019-07-15	1907.06495	Aspects of Ω-deformed M-theory
+1491968	1739348	2019-06-10	1906.04221	Twisted characters and holomorphic symmetries
+1491968	1729125	2019-04-09	1904.04976	New T-duality for Chern-Simons Theory
+1491968	1726898	2019-03-26	1903.11123	Chiral algebras from $\Omega$-deformation
+1491968	1725185	2019-03-15	1903.06433	A String Dual for Partially Topological Chern-Simons-Matter Theories
+1491968	1693414	2018-09-07	1809.02661	Renormalization for holomorphic field theories
+1491968	1692591	2018-09-02	1809.00372	Topological holography: The example of the D2-D4 brane system
+1491968	1676838	2018-06-07	1806.02821	Branes and Categorifying Integrable Lattice Models
+1491968	1637237	2017-11-18	1711.06888	Webs of W-algebras
+1491968	1608181	2017-06-29	1706.09977	Topological Chern-Simons/Matter Theories
+1491968	1516023	2017-03-02	1703.00982	Vertex Algebras at the Corner
+1491968	1495881	2016-11-01	1611.00311	Degenerate Classical Field Theories and Boundary Theories

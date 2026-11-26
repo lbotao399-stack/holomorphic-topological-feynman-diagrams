@@ -1,0 +1,21 @@
+so: N in [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+   n4(tr)(N) = -3*N*(N - 2)*(N - 1)*(N**2 - 14*N + 32)/16   [interpolated through N = [5, 6, 7, 8, 9, 10, 11, 12, 13]; equal at all 18 computed N: True]
+   Killing/tr_V = N - 2 (all N: True) ; d = N*(N - 1)/2 (all N: True)
+   8 n4_K - 3d = -3*N*(N - 4)*(N - 3)*(N - 1)*(N + 2)/(2*(N - 2)**3)
+   a = (8n4_K-3d)/(4d(d-3)) = -3*(N - 4)/(2*(N - 2)**3)
+   mu(F223) = 2d(8n4_K - 3d) = -3*N**2*(N - 4)*(N - 3)*(N - 1)**2*(N + 2)/(2*(N - 2)**3)
+   integer roots of the numerator: [-2, 0, 1, 2, 3, 4]
+sp: N in [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
+   n4(tr)(N) = 3*N*(N + 1)*(N + 2)*(N**2 + 14*N + 32)/16   [interpolated through N = [4, 6, 8, 10, 12, 14, 16, 18, 20]; equal at all 11 computed N: True]
+   Killing/tr_V = N + 2 (all N: True) ; d = N*(N + 1)/2 (all N: True)
+   8 n4_K - 3d = -3*N*(N - 2)*(N + 1)*(N + 3)*(N + 4)/(2*(N + 2)**3)
+   a = (8n4_K-3d)/(4d(d-3)) = -3*(N + 4)/(2*(N + 2)**3)
+   mu(F223) = 2d(8n4_K - 3d) = -3*N**2*(N - 2)*(N + 1)**2*(N + 3)*(N + 4)/(2*(N + 2)**3)
+   integer roots of the numerator: [-4, -3, -2, -1, 0, 2]
+sl: N in [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+   n4(tr)(N) = 24*N**2*(N - 1)*(N + 1)   [interpolated through N = [2, 3, 4, 5, 6, 7, 8, 9, 10]; equal at all 15 computed N: True]
+   Killing/tr_V = 2*N (all N: True) ; d = N**2 - 1 (all N: True)
+   8 n4_K - 3d = -3*(N - 2)*(N - 1)*(N + 1)*(N + 2)/N**2
+   a = (8n4_K-3d)/(4d(d-3)) = -3/(4*N**2)
+   mu(F223) = 2d(8n4_K - 3d) = -6*(N - 2)*(N - 1)**2*(N + 1)**2*(N + 2)/N**2
+   integer roots of the numerator: [-2, -1, 1, 2]

@@ -1,0 +1,301 @@
+deform: order-hbar deformations J_1 of commutative CS on R x C^2 and the two-loop class [O_2]
+=====================================================================================
+
+Folder P/deepen/deform/ (P = /Users/libotao/Desktop/holomorphic-twist-program).
+Code: code/ce.py (cochains, d, bracket; trace basis, formal N), code/la.py (exact linear algebra),
+code/spaces.py, code/explicit.py (faithful evaluation at fixed N), code/test_core.py, code/h3.py,
+code/h4.py, code/quad.py, code/algebras.py, code/extras.py, code/c3_decomp.py,
+code/verify_explicit.py, code/verify_moyal_explicit.py.
+Logs: test_core.log, h3.log, h4.log, quad.log, algebras_small.log, algebras_N3.log, algebras_N45.log,
+extras.log, c3_decomp.log, verify_explicit.log, verify_moyal_explicit.log, oneloop_insertions.log,
+gl2_relation.log.
+Reused from P/explore/anomaly-structure/code: formal_gl.colour_weight_formal (W_Gamma, trace basis),
+c_obstruction.kernel_poly (engine kernels), and, in the independent check only, lie.py,
+cochain.alternate, cochain.d_CE, cochain.colour_weight.
+
+Arithmetic: every rank below is certified over Q: rank r from elimination mod p1 = 2147483629 and
+p2 = 2147483587, an r x r minor with nonzero exact (Bareiss) determinant (rank >= r), and
+(#cols - r) exact kernel vectors checked on all rows (rank <= r). Membership in a span: exact
+rational solve on pivot rows plus exact check on all rows. Polynomial membership: Groebner bases
+over Q (sympy). No floating point is used anywhere in this folder.
+
+
+0. Conventions
+--------------
+
+x_i = X_i e^{p_i.z}, X_i in g, p_i in C^2, [p q] = p^1 q^2 - p^2 q^1.  k-cochains: alternating,
+g-invariant, polynomial in p_1..p_k modulo sum_i p_i (canonical form: p_k eliminated).  Bidegree
+(a,b) = degree in the first / second components.  Trace basis: tau(X_1..X_k) = prod_cycles tr(...);
+sl_N cochains = restrictions (taus with a 1-cycle dropped).
+
+  (sigma.f)(x_1..x_k) = f(x_sigma(1)..x_sigma(k)),   alt f = sum_sigma sgn(sigma) sigma.f
+  d w(x_0..x_k) = sum_{i<j} (-1)^{i+j} w([x_i,x_j], x_0..^i..^j..x_k)                       (anomaly-structure c5)
+  {a,b}(x_1..x_{m+n-2}) = sum_{s in Sh(m-1,n-1)} sgn(s) a(x_s(1)..x_s(m-1), X_e) kappa^{ee'} b(X_e', x_s(m)..)
+                        = alt(gamma_0)/((m-1)!(n-1)!),
+  gamma_0 = a(x_1..x_{m-1}, X_e) kappa^{ee'} b(X_e', y_1..y_{n-1}),  contracted momenta q, -q fixed by
+  conservation on each side (kappa^{-1} with delta(q+q'): inverse of omega_BV = int dz1 dz2 kappa(A,B)).
+  Casimir: gl_N: tr(A X_e) tr(B X^e) = tr(AB), tr 1 = N;  sl_N: additionally -(1/N) tr(A) tr(B).
+  kappa = tr (defining representation) for gl_N and sl_N, as in anomaly-structure c4.
+
+Dictionary local functional <-> Taylor cochain:
+  F = int dz1 dz2 P(d^(1),..,d^(k)) W(A,..,A)   <->   w = alt(P W),   F = (1/k!) w(A,..,A),
+  d^(i) = holomorphic derivative on the i-th factor.  Then {F_a, F_b}_BV = eps F_{{a,b}}, with one sign
+  eps = +-1 for two ghost-number-0 functionals (Koszul sign of the descent dictionary; not determined
+  here, see Section 7).
+  S_0 = int dz1dz2 [ (1/2) kappa(A, dA) + (1/6) kappa(A,[A,A]) ]:  cubic Taylor cochain
+      s_0(x1,x2,x3) = kappa(X1,[X2,X3]) = tr(123) - tr(132).
+
+
+1. Scaling weight of hbar and of J_1
+------------------------------------
+
+phi_l(tau,z1,z2) = (tau, l1 z1, l2 z2).  phi_l^*(dz1 dz2) = l1 l2 dz1 dz2, d = d_tau + dbar commutes with
+phi_l^*, so
+  S_0(phi_l^* A) = (l1 l2)^{-1} S_0(A),   omega_BV(phi_l^*A, phi_l^*B) = (l1 l2)^{-1} omega_BV(A,B).
+(S_0/hbar, omega_BV/hbar) is invariant under  A -> phi_l^* A,  hbar -> (l1 l2)^{-1} hbar.
+For F_P = int dz1dz2 P(d) W, P of bidegree (a,b):  F_P(phi_l^*A) = l1^{a-1} l2^{b-1} F_P(A).
+Equivariant quantization S/hbar = sum_k hbar^{k-1} I_k:
+  I_k(phi_l^*A) = (l1 l2)^{k-1} I_k(A)   <=>   P(I_k) of bidegree (k,k).
+  k = 1:  J_1 bidegree (1,1);   k = 2:  I_2, O_2 bidegree (2,2)  (O_2 ~ [d1d2][d3d4], consistent).
+Diagonal l1 = l2: total degree 2k (setting iii).  GL(2): phi_g^*(dz1dz2) = det(g) dz1dz2, hbar -> det(g)^{-1}
+hbar, I_1 GL(2)-invariant; with SL(2)-invariants of p_1,p_2,p_3 (sum p = 0) of degree 2 spanned by
+[p_a p_b] = +-[p1 p2]:  J = [p1 p2] T(X1,X2,X3)  (setting i).
+The heat-kernel regulator (S3 Section 4.1, e^{-(tau^2 + z.zbar)/4t}) is invariant under the unitary
+subgroup; the weight assignment is the one under which O_2 of anomaly-structure c4 is homogeneous.
+
+
+2. QME at orders hbar, hbar^2
+-----------------------------
+
+Regularized QME functional (S1 Section 9.3, proof of eq-finite-action-QME, eq. ch9-action-proof):
+  QME_L(X) = Q_BV X + hbar Delta_L X + (1/2)(X,X)_L,
+  QME_L(I + delta) = QME_L(I) + Q_L delta + (1/2)(delta,delta)_L,   Q_L = Q_BV + hbar Delta_L + (I[L], .)_L
+(algebraic identity; S1 uses it with QME_L(I) = 0).  I = S_0-interaction, QME_L(I) = hbar O_1 + hbar^2 O_2
++ O(hbar^3) as L -> 0;  delta = hbar J_1 + hbar^2 I_2;  Q_L = Q_0 + hbar Q_(1) + ...,
+Q_0 = Q_BV + (I^(0)[L], .)_L -> {S_0, .},  Q_(1) = Delta_L + (I^(1)[L], .)_L.
+  order hbar  :  {S_0, J_1} + O_1 = 0
+  order hbar^2:  {S_0, I_2} + Q_(1) J_1 + (1/2){J_1, J_1} + O_2/hbar^2 = 0       (O_2 contains hbar^2 via Nnorm)
+
+Vanishing of the one-loop terms O_1 and Q_(1) J_1.  Q_(1) J_1 is a sum of graphs with b_1 = 1 and one J_1
+vertex.  In the CE representative J_1 = int dz1dz2 P(d_z) T(A,A,A) contains only holomorphic derivatives.
+(i) S3 Section 4.3: a holomorphic derivative on a contracted letter inserts -+ y_e^i; it does not touch
+the tau-variables w_e.  The tau-factor stays U^{-1/2}<prod_{r=1}^{n} psi^tau_r> = rho_n(M), psi^tau_r =
+sum_e C_re w_e dt_e, <w_e> = 0 (S3 Prop. 5.5, eq. (5.13); E4 of the compendium): n = 1 gives <psi^tau_1> = 0, rho_1 = 0.
+(ii) S3 Cor. 5.6 (remark): sigma:(tau,z) -> (-tau,z), sigma^*[P]_Omega = -[P]_Omega (eq-reflection), and
+[K_eps]_Omega ~ e^{-(tau^2+..)/4eps} dtau ^ d^2zbar is also odd;  the J_1 vertex is sigma-invariant;
+K_Gamma = (-1)^{|I| + |V| - 1} K_Gamma = (-1)^{b_1} K_Gamma = -K_Gamma = 0 for b_1 = 1.
+Engine check, (H,T) = (2,1), tight one-loop graph polygon(4), current insertions prod (y^i_e)^p
+(oneloop_insertions.log):
+  polygon(4) powers=None: K = 0;  {(0,0):1}: K = 0;  {(0,0):1,(1,1):1}: K = 0;  {(0,1):2,(2,0):1}: K = 0
+(non-tight one-loop graphs are refused by the engine: degree mismatch).  Hence O_1 = 0, Q_(1)J_1 = 0:
+  order hbar  :  {S_0, J_1} = 0
+  order hbar^2:  {S_0, I_2} + (1/2){J_1, J_1} + O_2/hbar^2 = 0                                  (2.1)
+The relative factor 1/2 between {J_1,J_1} and O_2 is that of (1/2)(X,X)_L in QME_L; O_2 is the
+hbar^2 coefficient of QME_L(I) as L -> 0 (normalization of anomaly-structure c2, c3: not verified).
+
+Cochain form.  For w of arity k, the (2,k-1) shuffle putting (x_i, x_j), i < j (0-based), in front has sign
+(-1)^{i+j-1}, and s_0(x_i, x_j, X_e) kappa^{ee'} = kappa([x_i,x_j], X_e) kappa^{ee'}:
+  {s_0, w}(x_0..x_k) = sum_{i<j} (-1)^{i+j-1} w([x_i,x_j], ..) = -d w.
+Checked (test_core.log, all True):
+  {s_0, w} = -d w   (k = 2, 3, 4; gl and sl; random cochains of bidegree (1,0), (1,1), (2,2))
+  {s_0, s_0} = 0;   {a,b} = {b,a} (arity 3,3);   d{a,b} = {da,b} - {a,db} (a of arity 3);   d^2 = 0
+  formal bracket == explicit dual-basis contraction at N = 2, 3 (gl and sl, (m,n) = (3,3), (3,4))
+  ce.d_ce == formal_gl.d_formal (k = 3, 4) and == direct CE formula on explicit gl2, sl3 matrices
+With j, i_2, o_2 the Taylor cochains of J_1, I_2, O_2/hbar^2, (2.1) reads
+  eps( -d i_2 + (1/2){j,j} ) + o_2 = 0,      [ (1/2){j,j} ] = -eps [o_2]  in H^4_(2,2).          (2.2)
+o_2 = (pi nu/240)(-3 F_133 + 2 F_223),  nu = Nnorm/hbar^2,  F_G = alt([p1p2][p3p4] W_G)
+(anomaly-structure c4; (60/pi) K_133 = -3[p1p2][p3p4], (60/pi) K_223 = 2[p1p2][p3p4], h4.log line 1-2).
+
+
+3. (a) H^3 at total weight 2
+----------------------------
+
+C^2 at bidegree (2,0),(1,1),(0,2): monomial (p_1)^2-type is even under 1<->2, invariant 2-tensors
+tr(12), tr1 tr2 are symmetric, alt = 0:  C^2 = 0, B^3 = 0, H^3 = Z^3.
+
+GL(2) part.  Modulo sum p:  [p2 p1] = -[p1p2], [p3 p2] = -[p1 p2], [p1 p3] = -[p1 p2], so
+[p_s(1) p_s(2)] = sgn(s) [p1 p2] and
+  alt([p1p2] T) = sum_s sgn(s)[p_s(1)p_s(2)] T^s = [p1p2] sum_s T^s = 6 [p1p2] Sym(T)
+(h3.log: True for all six taus).  Allowed T: (Sym^3 g*)^g.  gl_N: D = [p1p2] tr(1{23}),
+S1 = [p1p2](tr1 tr23 + tr2 tr13 + tr3 tr12), S0 = [p1p2] tr1 tr2 tr3;  sl_N: D.  N = 2: rank{D,S1,S0} = 2
+(algebras_small.log), relation tr(1{23}) = tr1 tr23 + tr2 tr13 + tr3 tr12 - tr1 tr2 tr3, i.e. D = S1 - S0
+(gl2_relation.log, 20 random integer triples); N = 1: all proportional; sl2: D = 0.
+d D = d S1 = d S0 = 0 formally (h3.log), hence for every N.
+
+Full bidegrees (h3.log, algebras_*.log, c3_decomp.log):
+  gl_N formal  (1,1): dim C^3 = 5, rank d = 2 (det 1), dim H^3 = 3 = span{D, S1, S0}
+               (2,0),(0,2): dim C^3 = 2, rank d = 2, dim H^3 = 0
+  sl_N formal  (1,1): dim C^3 = 2, rank d = 1, dim H^3 = 1 = span{D};  (2,0),(0,2): 1, 1, 0
+  C^3_(1,1)(gl_N) = span{D, S1, S0, E_f, E_mix}, E_f = 2(sum_i p_i^1 p_i^2) tr(1[23]),
+  E_mix = alt((p1^1 p2^2 + p1^2 p2^1) tr1 tr23):  rank 5;  rank{d E_f, d E_mix} = 2;  sl_N: {D, E_f}, rank{dE_f} = 1.
+Per algebra (faithful evaluation at N; explicit tensors for N < k, formal coordinates for N >= k):
+
+  alg   dim C^3_(1,1)  dim H^3_(1,1)  dim H^3_(2,0) = dim H^3_(0,2)   basis of H^3_(1,1)
+  gl1        1              1                 0                       D (= 2 S0 = (2/3) S1)
+  gl2        4              2                 0                       D, S1
+  gl3        5              3                 0                       D, S1, S0
+  gl4        5              3                 0                       D, S1, S0
+  gl5        5              3                 0                       D, S1, S0
+  sl2        1              0                 0                       -
+  sl3        2              1                 0                       D
+  sl4        2              1                 0                       D
+  sl5        2              1                 0                       D
+
+  H^3_(total weight 2) = H^3_(1,1) = { [p1p2] T : T in (Sym^3 g*)^g }  for all nine algebras:
+  settings (i), (ii), (iii) have the same space of J_1.
+
+Moyal term.  f *_e g = fg + (e/2) eps^{ij} d_i f d_j g + O(e^2),  e_p * e_q = e^{(e/2)[pq]} e_{p+q}.
+gl_N cubic Taylor cochain of (1/6) int dz kappa(A,[A,A]_*):
+  s_e = tr(123) e^{(e/2)[p1p2]} - tr(132) e^{-(e/2)[p1p2]}     ([p2p3] = [p3p1] = [p1p2] on sum p = 0)
+      = s_0 + e j_M + e^2 i_M + O(e^3),
+  j_M = (1/2)[p1p2] tr(1{23}) = D/2,     i_M = (1/8)[p1p2]^2 tr(1[23]).
+Basis change (extras.log, checked at N = 3,4,5 on central and traceless arguments):
+  pi^*D_sl = D - (2/N) S1 + (4/N^2) S0,   M1 := S1 - (3/N) S0 = [p1p2] sum_cyc tr X_1 tr(X_2' X_3'),  U := S0,
+  j_M = (1/2) pi^*D_sl + (1/N) M1 + (1/N^2) U.
+The normalization of e relative to the parameter of 1610.04144 was not checked (TeX not available).
+
+
+4. (b) H^4_(2,2) and the quadratic map  q[J] = [(1/2){J,J}]
+------------------------------------------------------------
+
+4.1 Formal H^4_(2,2) (h4.log), exact:
+  gl_N: dim C^3 = 8, dim C^4 = 36; rank d: C^3 -> C^4 = 6 (minor det 32); rank d: C^4 -> C^5 = 26
+        (minor det -1024, 10 exact kernel vectors, 12000 C^5 coordinates);  Z^4 = 10, B^4 = 6, H^4 = 4.
+  sl_N: dim C^3 = 3, dim C^4 = 15; rank d3 = 3 (det 4); rank d4 = 11 (det 16, 4 kernel vectors);
+        Z^4 = 4, B^4 = 3, H^4 = 1.
+  F_223 = F_0 + N F_1, F_133 = sum_{k<=2} N^k F_133[k] (trace basis, N-independent pieces F_k):
+  gl_N: basis of H^4: {[F_1], [F_0], [z8], [z9]}  (z8, z9 kernel vectors of d4);
+        [F_223] = N[F_1] + [F_0],  [F_133] = -N[F_1] - [F_0],  [F_133 + F_223] = 0.
+  sl_N: H^4 = C [F_1],  [F_0] = 0,  [F_223] = N[F_1],  [F_133] = -N[F_1].
+  [o_2] = (pi nu/240)(3 + 2)[F_223] = (pi nu/48)[F_223]  (anomaly-structure c7 reproduced).
+  Basis used below: gl_N {[F_223], [F_1], [z8], [z9]};  sl_N {[F_223]}.
+
+4.2 Brackets of H^3 classes, formal N (quad.log), classes in {[F_1],[F_0],[z8],[z9]} (gl) / {[F_1]} (sl):
+  gl_N: {D,D} = 0;  {D,S1} = -(1/12)[F_1];  {D,S0} = (1/24)[F_0];  {S1,S1} = -(N/24)[F_1] + (1/24)[F_0];
+        {S1,S0} = (N/48)[F_0];  {S0,S0} = 0 (as a cochain);  all closed, all of bidegree (2,2).
+  sl_N: {D,D} = (1/(6N))[F_1].
+J = a D + b S1 + c S0:
+  [(1/2){J,J}] = -b(Nb+4a)/48 [F_1] + (Nbc + 2ac + b^2)/48 [F_0]
+               = lam [F_223] + mu [F_1],
+  lam = (2ac + b^2 + Nbc)/48,    mu = -(2a + Nb)(2b + Nc)/48,    [z8], [z9]-components 0.
+In the basis J = alpha pi^*D_sl + beta M1 + gamma U (extras.log):
+  lam = (4 alpha^2 - 2N^2 beta^2 + N^3 beta gamma)/(48 N^2),     mu = -N beta (N gamma - beta)/48.
+sl_N, J = a D:
+  [(1/2){J,J}] = (a^2/(12N)) [F_1] = (a^2/(12 N^2)) [F_223].
+Coboundary (extras.log, N = 5,6,7 formal; verify_moyal_explicit.log, sl3 explicit tensors):
+  (1/2){D,D}_sl = F_223/(12 N^2) + d eta_N,    eta_N = ((N^2+4)/(2N^2)) [p1p2]^2 tr(1[23]).
+Double-trace cochain on sl_N: G = alt([p1p2][p3p4] tr(12) tr(34)):  dG = 0,  [G] = -(1/6)[F_1] = -[F_223]/(6N).
+
+4.3 Per algebra (algebras_small.log, algebras_N3.log, algebras_N45.log); x_i = coefficients on the
+H^3 basis of Section 3; H^4 basis starting with [F_223] when [F_223] != 0:
+  gl1: H^4 = 1, [F_223] = 0;  (1/2){J,J} = 0.
+  gl2: H^4 = 3, [F_223] = 0;  J = x0 D + x1 S1:  (1/2){J,J} = -4 x1(x0 + x1) [z6].
+  sl2: H^4 = 0, H^3 = 0.
+  gl3: H^4 = 4;  (1/2){J,J} = (2x0x2 + x1^2 + 3x1x2)/48 [F_223] - (2x0 + 3x1)(2x1 + 3x2) [z6].
+  gl4: H^4 = 4;  (1/2){J,J} = (2x0x2 + x1^2 + 4x1x2)/48 [F_223] - 4(x0 + 2x1)(x1 + 2x2) [z6].
+  gl5: H^4 = 4;  (1/2){J,J} = (2x0x2 + x1^2 + 5x1x2)/48 [F_223] - (2x0 + 5x1)(2x1 + 5x2) [z6].
+  sl3: H^4 = 1;  (1/2){J,J} = x0^2/108 [F_223].
+  sl4: H^4 = 1;  (1/2){J,J} = x0^2/192 [F_223].
+  sl5: H^4 = 1;  (1/2){J,J} = x0^2/300 [F_223].
+  (z6 at N = 3,4,5 a Z^4 vector independent of [F_223] mod B^4; x0,x1,x2 = a,b,c.)
+  [F_133 + F_223] = 0 for all nine algebras;  [F_223] != 0 exactly for gl3, gl4, gl5, sl3, sl4, sl5.
+
+4.4 Membership of [F_223] in q(H^3) over C.
+Decision: [F_223] in q(H^3) iff the system q_t(x) = 0 (t >= 2), q_1(x) != 0 has a solution over C, iff
+1 is not in <q_2,..,q_h, 1 - y q_1> (Nullstellensatz).  Groebner bases over Q (algebras_N3.log, _N45.log):
+  sl3: [x0^2 y - 108]   sl4: [x0^2 y - 192]   sl5: [x0^2 y - 300]                 -> member
+  gl3, gl4, gl5: three-element bases, not [1]                                      -> member
+Formal N: sl_N: q(aD) = a^2/(12N^2) [F_223], member for every N >= 3.
+          gl_N: q(J) in C^*[F_223]  <=>  (2a + Nb)(2b + Nc) = 0,  lam != 0
+                <=>  beta (N gamma - beta) = 0,  alpha^2/(12N^2) - beta^2/48 != 0.
+  Branch beta = 0:          J = alpha pi^*D_sl + gamma U,         lam = alpha^2/(12N^2)
+  Branch beta = N gamma:    J = alpha pi^*D_sl + beta (M1 + U/N) = alpha pi^*D_sl + beta (S1 - (2/N) S0),
+                            lam = alpha^2/(12N^2) - beta^2/48.
+  Moyal direction j_M (alpha, beta, gamma) = (1/2, 1/N, 1/N^2): beta = N gamma, lam = 0, mu = 0.
+  N <= 2 (gl1, gl2, sl2): [O_2] = 0, J_1 = 0 solves (2.1).
+
+4.5 Explicit J_1 and coefficient relation, from (2.2):  q[J_1] = -eps [o_2] = -eps c_O [F_223],
+c_O = pi nu/48 with the relative Wick sign of c3;  c_O = -pi nu/240 (K_133 sign flipped),
+c_O = +pi nu/240 (K_223 sign flipped);  nu = Nnorm/hbar^2.
+  sl_N, N >= 3:  S = S_0 + hbar a F_D + hbar^2 I_2 + ...,
+     F_D = int dz1dz2 (1/6)[d^(1) d^(2)] d_{abc} A^a A^b A^c = (1/3) int dz1dz2 d_{abc} d_{z1}A^a d_{z2}A^b A^c,
+     d_{abc} = tr(T_a {T_b, T_c})  (Taylor cochain D_sl = [p1p2] tr(1{23}) on sl_N),
+     a^2 = -12 N^2 eps c_O:
+       c3 sign:        a^2 = -eps N^2 pi Nnorm/(4 hbar^2)   (Nnorm = +-hbar^2/(64 pi^5):  a^2 = -+ eps N^2/(256 pi^4))
+       K_133 flipped:  a^2 = +eps N^2 pi Nnorm/(20 hbar^2)
+       K_223 flipped:  a^2 = -eps N^2 pi Nnorm/(20 hbar^2)
+     I_2: d i_2 = (1/2){j,j} + eps o_2;  i_2 = a^2 eta_N + eps zeta,  d zeta = o_2 - c_O F_223
+     (exact since [F_133 + F_223] = 0, 4.1).
+  gl_N, N >= 3:  J_1 = alpha pi^*D_sl + beta M1 + gamma U with beta(N gamma - beta) = 0 and
+     eps (4 alpha^2 - N^2 beta^2)/(48 N^2) = -c_O,  e.g.
+       J_1 = a pi^*D_sl = a (D - (2/N) S1 + (4/N^2) S0):  a^2 = -12 N^2 eps c_O  (same as sl_N);
+       J_1 = b (S1 - (2/N) S0):                          b^2 = 48 eps c_O;
+       J_1 = s j_M + t pi^*D_sl:                          t (t + s) = -12 N^2 eps c_O.
+     In (a,b,c): (2a + Nb)(2b + Nc) = 0 and eps (2ac + b^2 + Nbc) = -48 c_O.
+     The pure Moyal direction J_1 = s j_M has (1/2){J_1,J_1} exact for every s and does not cancel [O_2].
+  Signs: eps (dictionary Koszul sign) and the sign of Nnorm are not determined (Section 7); over C a
+  solution a exists for either sign.
+
+4.6 Moyal test (bracket implementation against a known answer):
+  formal, all N (test_core.log):   d j_M = 0;   (1/2){j_M, j_M} = d i_M,  {j_M,j_M} != 0      True
+  explicit tensors (verify_moyal_explicit.log, lie.py + cochain.py, no ce.py):
+    gl2: d j_M = 0: True; (1/2){j_M,j_M} = d i_M: True
+    gl3: d j_M = 0: True; (1/2){j_M,j_M} = d i_M: True
+  i.e. the order-e^2 CME of S_e, 2{s_0,i_M} + {j_M,j_M} = 0, holds with {s_0,.} = -d.
+
+4.7 Independent check (verify_explicit.log): explicit structure constants (lie.py), cochain.alternate,
+cochain.d_CE, cochain.colour_weight (F_223 from the orientation rule), bracket by explicit kappa^{-1}
+contraction written separately; exact solve of (1/2){J,J} = lam F_223 + d(eta):
+  sl2:  [F_223] = 0;  J = D (= 0): exact.
+  gl2:  [F_223] = 0;  D: exact;  S1: not exact;  S0: exact;  (1,-1,0), (1,-1,1), (0,1,-1): exact;  (2,1,1): not exact.
+  sl3:  rank B^4 = 3, rank [B^4|F_223] = 4;  J = D:  lam = 1/108.
+  gl3:  rank B^4 = 6, rank [B^4|F_223] = 7;  (1,0,0): exact;  (0,1,0): no lam;  (0,0,1): exact;
+        (1,-2/3,0): lam = 1/108;  (1,-2/3,4/9): lam = 1/108;  (2,1,1): no lam;  (0,1,-2/3): lam = -1/48.
+  All values agree with 4.2-4.3 ((a,b,c) at N = 2 reduced by S0 = S1 - D).
+  sl3 explicit: (1/2){D,D} = F_223/(12N^2) + d eta_3: True.
+
+
+5. (c) Exactness of the decisive ranks
+--------------------------------------
+
+All ranks in Sections 3-4 are certified (minor determinant + exact kernel), printed with determinants in
+h3.log, h4.log.  Evaluation at small N: trace monomials evaluated on all entries of the explicit tensors
+(lie.py bases), rank certified:
+  gl3 k=4: rank 23 (24 taus, 1 relation);  gl3 k=5: rank 103 (17 relations);  sl3 k=4: 8;  sl3 k=5: 32;
+  gl2 k=3,4,5: 5, 14, 42;  sl2 k=3,4,5: 1, 3, 6;  gl1: 1.
+N = 4, k = 5 (only for Z^4 at N = 4): sample evaluation, rank 119 of 120 (gl4), 43 of 44 (sl4), lower
+bounds; the antisymmetrizer identity sum_s sgn(s) tau_s = 0 (Lambda^5 C^4 = 0) gives the upper bound and
+holds exactly on 6 fresh random samples:  rank exact.
+dim H^4_(2,2)(formal gl_N, N >= 5) = 4 with exact ranks (run-1 c8 had mod-p ranks).
+
+
+6. Answer to Q1
+---------------
+
+(2.1)-(2.2):  {S_0, J_1} = 0,   {S_0, I_2} + (1/2){J_1,J_1} + O_2/hbar^2 = 0,   [(1/2){j,j}] = -eps [o_2].
+H^3 (all three symmetry settings) = { [p1p2] T, T in (Sym^3 g*)^g }.
+sl_N, N >= 3:  [(1/2){aD,aD}] = a^2/(12 N^2) [F_223] != 0:  [O_2] is in the image; J_1 = a [p1p2] d_abc.
+gl_N, N >= 3:  [O_2] is in the image; solutions beta(N gamma - beta) = 0, (4alpha^2 - N^2 beta^2)/(48N^2) = -eps c_O;
+               the Moyal direction alone has exact square.
+N <= 2:        [O_2] = 0.
+Algebras covered explicitly: gl1, gl2, gl3, gl4, gl5, sl2, sl3, sl4, sl5; formal gl_N, sl_N (N >= 5 for
+H^4, rational in N).
+
+
+7. Not done / not determined
+----------------------------
+
+- eps (sign between BV bracket of two ghost-number-0 local functionals and the shuffle bracket under the
+  descent dictionary) not derived; with the undetermined sign of Nnorm (c2) the sign of a^2 is open.
+- Nnorm and the relative Wick sign (c2, c3) taken from run 1 unverified; the coefficient relation is
+  stated for the three possible relative signs.
+- That O_2 of anomaly-structure is normalized as the hbar^2 coefficient of QME_L with (1/2)(X,X)_L
+  (relative factor 1/2 in (2.1)) rests on c2/c3, not re-derived.
+- Identification of local BRST cohomology with CE cohomology of g[[z1,z2]] mod sum p (c5) inherited,
+  not proved; invariant cochains used by the Cartan formula L_x = [d, i_x] for x in g (reductive action).
+- 1610.04144: normalization of its noncommutativity parameter not compared (no local TeX); the Moyal
+  identification uses f*g = fg + (e/2)eps^{ij}d_i f d_j g.
+- Order hbar^3 equation with J_1 != 0 not analysed.  I_2 not written out beyond eta_N.
+- Other simple g (Q2) not treated.  Invariant forms on gl_N other than kappa = tr not treated.
+- Independent explicit-tensor pipeline run only for N <= 3; N = 4, 5 rely on the formal trace pipeline
+  evaluated at N (faithful for k <= 4 at N = 4, k <= 5 at N = 5).

@@ -1,0 +1,9 @@
+c3 sign: c_O = pi*nu/48;  a^2 = -pi*N**2*epsilon*nu/4;  matches d10: True
+K_133 flipped: c_O = -pi*nu/240;  a^2 = pi*N**2*epsilon*nu/20;  matches d10: True
+K_223 flipped: c_O = pi*nu/240;  a^2 = -pi*N**2*epsilon*nu/20;  matches d10: True
+  Nnorm = +hbar^2/(64 pi^5): a^2 = -N**2*epsilon/(256*pi**4)
+  Nnorm = -hbar^2/(64 pi^5): a^2 = N**2*epsilon/(256*pi**4)
+J = b(S1-(2/N)S0): mu = 0  lam = -b**2/48
+J = s j_M + t pi^*D_sl: mu = 0  12N^2 lam = t*(s + t)
+branch beta = N gamma: lam - (alpha^2/(12N^2) - beta^2/48) = 0
+branch beta = 0:       lam - alpha^2/(12N^2) = 0

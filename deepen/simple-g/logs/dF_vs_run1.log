@@ -1,0 +1,4 @@
+sl2: d C nonzero: False ; dF_exact(C)(b_theta,...) = run-1 d_CE(C)(b_theta,...) on all 72 monomials: True
+sl3: d C nonzero: False ; dF_exact(C)(b_theta,...) = run-1 d_CE(C)(b_theta,...) on all 72 monomials: True
+sl2: shifted-label input: d C nonzero: True ; dF_exact = run-1 d_CE at b_theta on all 72 monomials: True
+sl3: shifted-label input: d C nonzero: True ; dF_exact = run-1 d_CE at b_theta on all 72 monomials: True

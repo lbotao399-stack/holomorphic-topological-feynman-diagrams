@@ -1,0 +1,5 @@
+twistor4 #58: locality K = {'1': '-4321/3110400'} | log K = {'1': '-4321/3110400'} | equal: True | kappa=-1 chains=[2, 2] N_S=4 N'=10 | moments 0.7s, 16 Gamma' kernels 123.5s
+twistor4 #59: locality K = {'1': '-151475861/125411328', 'z3': '25553/24192'} | log K = {'1': '-151475861/125411328', 'z3': '25553/24192'} | equal: True | kappa=-1 chains=[2, 2] N_S=4 N'=10 | moments 0.5s, 16 Gamma' kernels 124.3s
+twistor4 #60: locality K = {'1': '83285/839808', 'z3': '-1897/32400'} | log K = {'1': '83285/839808', 'z3': '-1897/32400'} | equal: True | kappa=-1 chains=[2, 2] N_S=4 N'=10 | moments 0.5s, 16 Gamma' kernels 123.4s
+twistor4 #61: locality K = {'1': '-59398823627/4702924800', 'z3': '19385413/1814400'} | log K = {'1': '-59398823627/4702924800', 'z3': '19385413/1814400'} | equal: True | kappa=-1 chains=[2, 2] N_S=4 N'=10 | moments 0.5s, 16 Gamma' kernels 132.3s
+twistor4 #62: locality K = {'1': '-18032027/2116316160', 'z3': '3029/408240'} | log K = {'1': '-18032027/2116316160', 'z3': '3029/408240'} | equal: True | kappa=-1 chains=[2, 2] N_S=4 N'=10 | moments 0.5s, 16 Gamma' kernels 132.4s

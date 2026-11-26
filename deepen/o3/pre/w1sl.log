@@ -1,0 +1,5 @@
+weight (1, 1) sl dim C2,C3,C4 = 0 2 3 t=0.0
+rank d2 = 0
+rank d3 = 1
+rank d4 = 2 t=0.0
+H3 = 1  H4 = 0

@@ -1,0 +1,4 @@
+weights 980 (beta_z in [0,6]^2, beta_theta in [0,4]^3 mod S2xS3), mismatches 0
+real 0.31
+user 0.31
+sys 0.00

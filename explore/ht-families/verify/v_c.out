@@ -1,0 +1,15 @@
+(D,n)=(2,2): 1 SP graphs ; C1 U == monomial (5 decompositions x 2 points): True ; C3 p == ceil(n/2)+2E (25 decompositions): True ; E distribution (min over decompositions) {0: 1} ; graphs with decomposition-dependent E: []  (0.0s)
+(D,n)=(2,4): 5 SP graphs ; C1 U == monomial (5 decompositions x 2 points): True ; C3 p == ceil(n/2)+2E (25 decompositions): True ; E distribution (min over decompositions) {0: 4, 1: 1} ; graphs with decomposition-dependent E: []  (0.0s)
+(D,n)=(2,6): 39 SP graphs ; C1 U == monomial (5 decompositions x 2 points): True ; C3 p == ceil(n/2)+2E (25 decompositions): True ; E distribution (min over decompositions) {0: 33, 1: 5, 2: 1} ; graphs with decomposition-dependent E: []  (1.5s)
+(D,n)=(3,2): 2 SP graphs ; C1 U == monomial (5 decompositions x 2 points): True ; C3 p == ceil(n/2)+2E (25 decompositions): True ; E distribution (min over decompositions) {0: 2} ; graphs with decomposition-dependent E: []  (0.0s)
+(D,n)=(3,3): 10 SP graphs ; C1 U == monomial (5 decompositions x 2 points): True ; C3 p == ceil(n/2)+2E (25 decompositions): True ; E distribution (min over decompositions) {0: 10} ; graphs with decomposition-dependent E: [(1, [0, 1]), (2, [0, 1]), (3, [0, 1]), (4, [0, 1]), (6, [0, 1]), (7, [0, 1]), (8, [0, 1]), (9, [0, 1])]  (0.1s)
+(D,n)=(4,2): 3 SP graphs ; C1 U == monomial (5 decompositions x 2 points): True ; C3 p == ceil(n/2)+2E (25 decompositions): True ; E distribution (min over decompositions) {0: 3} ; graphs with decomposition-dependent E: []  (0.0s)
+C2 G0                 exponent == -Uexp/2 mod 1 for all 13 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 G1                 exponent == -Uexp/2 mod 1 for all 14 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 G2                 exponent == -Uexp/2 mod 1 for all 15 ratios: True ; min exponent -0.5 ; p = 4, E = 1
+C2 G3                 exponent == -Uexp/2 mod 1 for all 15 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 G4                 exponent == -Uexp/2 mod 1 for all 15 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 banana(1, 3, 3, 3, 3) exponent == -Uexp/2 mod 1 for all 17 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 banana(2, 2, 3, 3, 3) exponent == -Uexp/2 mod 1 for all 18 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 nested(1, 3, 3)    exponent == -Uexp/2 mod 1 for all 18 ratios: True ; min exponent -0.5 ; p = 2, E = 0
+C2 nested(2, 2, 3)    exponent == -Uexp/2 mod 1 for all 19 ratios: True ; min exponent -0.5 ; p = 2, E = 0

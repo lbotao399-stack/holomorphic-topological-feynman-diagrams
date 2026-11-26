@@ -1,0 +1,2 @@
+twistor4 #30 order 1: det g = -2, 40 values compared, 0 mismatches; bare {'1': '37427/93312000'} (273.3s)
+twistor4 #60 order 1: det g = 2, 80 values compared, 0 mismatches; bare {'1': '83285/839808', 'z3': '-1897/32400'} (354.6s)

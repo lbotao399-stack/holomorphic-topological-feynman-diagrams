@@ -1,0 +1,4 @@
+gl_N: rank{D, S1, S0, E_f, E_mix} = 5 = dim C^3(1,1) = 5: True;  rank{d E_f, d E_mix} = 2
+   E_f = 2 (p1^a p1^b + p2^a p2^b + p3^a p3^b) tr(1[23]): True
+sl_N: rank{D, E_f} = 2 = dim C^3(1,1) = 2: True;  rank{d E_f} = 1
+   E_f = 2 (p1^a p1^b + p2^a p2^b + p3^a p3^b) tr(1[23]): True

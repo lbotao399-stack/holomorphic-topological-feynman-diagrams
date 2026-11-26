@@ -1,0 +1,3 @@
+q=7: classes 32187 (T1 22660, T2 6494, G 3033 of which K5-decompletable 735)
+  mode A : unknown 32187, rank 32183, determined 0 of 32187; generic K5-decompletable determined 0 of 735 (320s)
+  mode Bd: unknown 28016, rank 32183, determined 28015 of 28016; generic K5-decompletable determined 735 of 735 (468s)

@@ -1,0 +1,8 @@
+F4: dim 52, kappa = Killing/72, s = 1, det[mu(P_j)] = -37233471312236279808, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: config 0, entry 795, 2x2 minor with entry 53 of config 0: 19670999040
+   F223                       NOT in C beta: config 0, entry 795, 2x2 minor with entry 53 of config 0: -19670999040
+   F133+F223                  = c beta exactly on all 43869696 entries: c(kappa) = 2592, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: config 0, entry 795, 2x2 minor with entry 53 of config 0: -98354995200
+   w133-w223 = -3F133-2F223   NOT in C beta: config 0, entry 795, 2x2 minor with entry 53 of config 0: -19670999040
+   arithmetic: {'float': 14, 'int64': 0, 'object': 0, 'maxbound': 9088.0} ; time build 0.1s, W 0.7s, total 5.0s

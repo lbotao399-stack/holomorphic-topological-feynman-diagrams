@@ -1,0 +1,23 @@
+twistor3 #0 core=banana bare={'1': '-239/720'} moments=495 spred_match=True 2s
+twistor3 #1 core=banana bare={'1': '-39937/25920'} moments=495 spred_match=True 0s
+twistor3 #2 core=banana bare={'1': '5/1152'} moments=495 spred_match=True 0s
+twistor3 #3 core=banana bare={'1': '11/1920'} moments=495 spred_match=True 0s
+twistor3 #4 core=banana bare={'1': '-2933/17280'} moments=495 spred_match=True 0s
+twistor3 #5 core=banana bare={'1': '-86/1215'} moments=495 spred_match=True 0s
+twistor3 #6 core=banana bare={'1': '-25/62208'} moments=483 spred_match=True 1s
+twistor3 #7 core=banana bare={'1': '-22/405'} moments=495 spred_match=True 0s
+twistor3 #8 core=banana bare={'1': '-1/8640'} moments=495 spred_match=True 0s
+twistor3 #9 core=wheel bare={'1': '179786563/5443200', 'z3': '-33723/1400'} moments=495  2s
+twistor3 #10 core=wheel bare={'1': '79/19440'} moments=495  1s
+twistor3 #11 core=wheel bare={'1': '1891/77760'} moments=495  1s
+twistor3 #12 core=wheel bare={'1': '14134153/10886400', 'z3': '-2643/2800'} moments=495  1s
+twistor3 #13 core=wheel bare={'1': '129511/272160', 'z3': '-67/210'} moments=495  1s
+twistor3 #14 core=wheel bare={'1': '269/1260', 'z3': '-369/1120'} moments=495  1s
+twistor3 #15 core=wheel bare={'1': '1307/42525', 'z3': '48/175'} moments=495  1s
+twistor3 #16 core=wheel bare={'1': '7439/45360', 'z3': '-1/7'} moments=495  1s
+twistor3 #17 core=wheel bare={'1': '-7345/1792', 'z3': '1395/224'} moments=495  1s
+twistor3 #18 core=wheel bare={'1': '3207523/1451520', 'z3': '-1957/1120'} moments=495  1s
+twistor3 #19 core=wheel bare={'1': '-1597/806400', 'z3': '9/5600'} moments=495  1s
+twistor3 #20 core=wheel bare={'1': '-171117911/5443200', 'z3': '118313/4200'} moments=495  1s
+twistor3 #21 core=wheel bare={'1': '-5239/6400', 'z3': '403/600'} moments=495  1s
+twistor3 #22 core=wheel bare={'1': '207871/120960', 'z3': '-3133/2240'} moments=495  1s

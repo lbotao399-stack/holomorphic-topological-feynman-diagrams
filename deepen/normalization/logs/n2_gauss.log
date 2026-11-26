@@ -1,0 +1,21 @@
+(F) one Fourier step
+  k=0: quadrature (1.3361602114373+0.0267267678928j)  exact (1.3361602114373+0.0267267678928j)  agreeing digits 15.8
+  k=1: quadrature (2.1089985563035-1.1875736366095j)  exact (2.1089985563035-1.1875736366095j)  agreeing digits 15.7
+  k=2: quadrature (2.1974700021528-3.79289354491j)  exact (2.1974700021528-3.79289354491j)  agreeing digits 15.4
+  k=3: quadrature (-0.0614088579588-7.9385863320402j)  exact (-0.0614088579588-7.9385863320402j)  agreeing digits 15.5
+(V) one vertex with three heat edges
+  (k1,k2)=(0,0): quadrature (2.258910567204-0.102054483742j) exact (2.258910567204-0.102054483742j) digits 15.2
+  (k1,k2)=(1,0): quadrature (0.884698476368+0.294603084358j) exact (0.884698476368+0.294603084358j) digits 15.8
+  (k1,k2)=(1,1): quadrature (-0.245909366271-0.11026649979j) exact (-0.245909366271-0.11026649979j) digits 15.8
+  (k1,k2)=(2,1): quadrature (-0.078369267484-0.078797363584j) exact (-0.078369267484-0.078797363584j) digits 15.6
+  tau, k=0: quadrature 0.967625105580198 exact 0.967625105580198 digits 15.9
+  tau, k=1: quadrature 0.056397084556006 exact 0.056397084556006 digits 16.0
+  tau, k=2: quadrature 0.305598324600658 exact 0.305598324600658 digits 16.0
+(M) two integrated vertices, one holomorphic component
+  G = 1        : quadrature (7.52412194342+0j) exact 7.52412194342 digits 15.1
+  G = zb1      : quadrature (2.07134651148-0.15933434704j) exact (2.07134651148-0.15933434704j) digits 15.2
+  G = zb1 zb2  : quadrature (-0.33066563315+0.86377961311j) exact (-0.33066563315+0.86377961311j) digits 14.9
+  G = zb2^2 zb1: quadrature (-0.28452328837-0.29767052219j) exact (-0.28452328837-0.29767052219j) digits 14.9
+(T) theta graphs, exact rational identities
+  theta(1, 3, 3): [det Lam = U/prod t, <ww> formula, zb = 4 Lam^-1 lam gives htk currents, <psi psi> = rho-form] at 3 random t: [(True, True, True, True), (True, True, True, True), (True, True, True, True)]
+  theta(2, 2, 3): [det Lam = U/prod t, <ww> formula, zb = 4 Lam^-1 lam gives htk currents, <psi psi> = rho-form] at 3 random t: [(True, True, True, True), (True, True, True, True), (True, True, True, True)]

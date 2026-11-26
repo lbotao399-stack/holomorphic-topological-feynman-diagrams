@@ -1,0 +1,4 @@
+assembled moments (exact) 66s
+lower set 44227105 points (6s)
+bulk3 #12 (std sources) m[0][0]: direct whole-graph route mod p {'1': 102155201, 'z3': 147988674, 'z5': 1544963314}, assembled {'z3': 147988674, '1': 102155201, 'z5': 1544963314}: EQUAL  (samples 72s, Newton 22s, push-forward + periods 4s; 1841 core monomials)
+bulk3 #12 (std sources) m[12][2]: direct whole-graph route mod p {'1': 650015338, 'z3': 1286220351, 'z5': 987497640}, assembled {'z5': 987497640, '1': 650015338, 'z3': 1286220351}: EQUAL  (samples 69s, Newton 20s, push-forward + periods 4s; 2440 core monomials)

@@ -1,0 +1,28 @@
+s0 = tr(012) - tr(021) alternating: True
+sl=False k=2 (1,0) |w|=3: alternating True, d^2=0 True, d w alternating dw=0
+sl=False k=3 (1,1) |w|=20: alternating True, d^2=0 True, d w alternating True
+sl=False k=3 (2,2) |w|=34: alternating True, d^2=0 True, d w alternating True
+sl=False k=4 (1,1) |w|=78: alternating True, d^2=0 True, d w alternating True
+sl=False k=2 (1,0): {s0,w} = -dw True;  {w,s0} = {s0,w} True;  {w,s0} = -{s0,w} True
+sl=False k=3 (1,1): {s0,w} = -dw True;  {w,s0} = {s0,w} True;  {w,s0} = -{s0,w} False
+sl=False k=3 (2,2): {s0,w} = -dw True;  {w,s0} = {s0,w} True;  {w,s0} = -{s0,w} False
+sl=False k=4 (2,2): {s0,w} = -dw True;  {w,s0} = {s0,w} False;  {w,s0} = -{s0,w} True
+sl=False: {s0,s0} = 0: True
+sl=False: {a,b} = {b,a} (3,3): True
+sl=False: d{a,b} = 1{da,b} + -1{a,db}  (a,b arity 3)
+sl=True k=2 (1,0) |w|=2: alternating True, d^2=0 True, d w alternating dw=0
+sl=True k=3 (1,1) |w|=14: alternating True, d^2=0 True, d w alternating True
+sl=True k=3 (2,2) |w|=18: alternating True, d^2=0 True, d w alternating True
+sl=True k=4 (1,1) |w|=102: alternating True, d^2=0 True, d w alternating True
+sl=True k=2 (1,0): {s0,w} = -dw True;  {w,s0} = {s0,w} True;  {w,s0} = -{s0,w} True
+sl=True k=3 (1,1): {s0,w} = -dw True;  {w,s0} = {s0,w} True;  {w,s0} = -{s0,w} False
+sl=True k=3 (2,2): {s0,w} = -dw True;  {w,s0} = {s0,w} True;  {w,s0} = -{s0,w} False
+sl=True k=4 (2,2): {s0,w} = -dw True;  {w,s0} = {s0,w} False;  {w,s0} = -{s0,w} True
+sl=True: {s0,s0} = 0: True
+sl=True: {a,b} = {b,a} (3,3): True
+sl=True: d{a,b} = 1{da,b} + -1{a,db}  (a,b arity 3)
+gl2: formal d == explicit CE sum: True;  formal bracket == explicit dual-basis shuffle sum: True
+gl3: formal d == explicit CE sum: True;  formal bracket == explicit dual-basis shuffle sum: True
+sl2: formal d == explicit CE sum: True;  formal bracket == explicit dual-basis shuffle sum: True
+sl3: formal d == explicit CE sum: True;  formal bracket == explicit dual-basis shuffle sum: True
+time 26.3s

@@ -1,0 +1,4 @@
+free level-5 classes: [(-1, -1, 4, 4, 4, -1, 4, 4, 4, 4, 4, 4, -1, -1, -1)]
+DS rows from the free class: 6; values agree: True
+J_5 (-1, -1, 4, 4, 4, -1, 4, 4, 4, 4, 4, 4, -1, -1, -1) = {'1': Fraction(23, 69984)}
+written

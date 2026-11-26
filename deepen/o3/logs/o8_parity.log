@@ -1,0 +1,12 @@
+sl_N parities: f-cochain s_0 +1, D -1, [p1p2]^2 f +1, o' +1, theta'(d) -1
+  {D, iota} -1
+  C d theta' == d C theta': True
+  C {D, u2f} == {C D, C u2f}: True
+gl_N parities: f-cochain s_0 +1, D -1, [p1p2]^2 f +1, o' +1, theta'(d) -1
+  gl_N: S1 -1, S0 -1
+  C d theta' == d C theta': True
+  C {D, u2f} == {C D, C u2f}: True
+sl_N weight (3,3): [C h] = 1 [h]  (h = z6 (kernel vector of d4 in the basis C^4))
+  Z^4 basis parities: [0, 0, 0, 0, 0, 0, 1]
+  B^4 basis parities: [1, 0, 0, 0, 0, 0]
+time 0.4s

@@ -1,0 +1,173 @@
+VERIFY  normalization (Q3)   explorer folder P/deepen/normalization/   verifier folder P/deepen/normalization/verify/
+
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Code (own; explorer files not imported; htk imported as the reference definition of K_Gamma):
+  vext.py  v1_edge_forms.py  v2_pointwise.py  v2b_rootN.py  v3_wick.py  v4_calibration.py  v5_assembly_count.py
+Logs: logs/v1_edge_forms.log  v2_pointwise.log  v2b_rootN.log  v3_wick.log  v4_calibration.log  v5_assembly_count.log
+Arithmetic: exact (sympy, Fraction) in V1, V2, V2b, V3, V5; floating point only in V4 (digits stated).
+Sources read: WW 2407.08667v3 html (eqs (8),(9),(21)-(23),(26)-(28), Def.2.5, Cor.2.8 (30), Sec.3.3.2, Prop.3.23, Thm.1.2, Intro);
+  IJZ 2408.15712v2 html (2.8)-(2.14); C16 1610.04144v1 html Sec.5, Sec.9; abstract pages 2111.00955, 1910.05230, 2611.23377;
+  S2 sec1, sec5, sec6, sec7, sec8; run1_digest.json (anomaly-structure, six-d-Q3, msym-odd claims and verdicts); htk CONVENTIONS.md;
+  msym-odd code/kernels_check.py (theta_rootN), code/opsk.py (arm tensor docstring).
+
+======================================================================================================================
+a1  BV data, heat kernel, propagator                                                         CONFIRMED (one correction)
+======================================================================================================================
+V1 (Wirtinger generators dtau,dz1,dz2,dzb1,dzb2,dt; D = dtau d_tau + dzb_i d_zb_i, D* = -iota_tau d_tau - 4 iota_zb_i d_z_i):
+  (a) [D,D*] f = -f_tautau - 4 sum f_{z zb}: True
+  (b) [D,D*]K_t = -d_t K_t: True ;  D*K_t = t^-1 iota_E K_t, E = (tau/2)d_tau + zb^i d_zb^i: True
+  (c) K_t - dt ^ D*K_t = (4 pi^{5/2})^-1 e^{-eta^2 - y.z} deta ^ dy1 ^ dy2: True ;  (d_t + D)Theta = 0: True
+  (d) int_0^oo D*K_t dt = {(3,4): 3tau/(32pi^2), (0,4): -3zb1/(16pi^2), (0,3): 3zb2/(16pi^2)} / r^5
+      = (3/(16 pi^2 r^5))[(tau/2)dzb1 dzb2 - dtau^(zb1 dzb2 - zb2 dzb1)]: True ;  D P = 0: True ; D* P = 0: True
+      IJZ (2.12), (x,z,t) -> (z1,z2,tau), eps1 -> 1: True
+  (e) Omega ^ dtau ^ dzb1 ^ dzb2 = 4 dtau dx1 dy1 dx2 dy2 ;  int Omega ^ [K_t] = 1 ;
+      Omega ^ [P] = iota_V d^5x, x.V = (3/(8pi^2)) r^-3, div V = 0, flux = (x.V/r) r^4 Area(S^4) = 1, Area(S^4) = 8pi^2/3
+      = IJZ (2.9),(2.10): (1/eps1) Omega ^ dP = delta^(5), int delta^(5) = 1.
+  (f) WW (22) read literally, H_WW = e^{-(2|z|^2+x^2)/4t}/(2^3 (pi t)^{5/2}) d^2zb dx, pulled back by x = sqrt2 tau:
+      H_WW(t)/K_{t/2} = 4 ;  int Omega ^ H_WW = 4 ;  P_WW/P = 4 componentwise.
+Correction: "P_WW = P" holds for the gauge operator (D*_WW = D*/2, H_WW = H/2, verified) but WW (22) as printed is normalized
+  to int Omega ^ H = 4; P_WW = P only after WW's kernel is divided by 4. The explorer's normalization int Omega ^ K = 1 is the one
+  of IJZ (2.9),(2.10) and the one that inverts D with respect to omega = int Omega kappa. No effect on b-d.
+
+======================================================================================================================
+a2  I[L], O_n definition                                                                     CONFIRMED (sourced)
+======================================================================================================================
+WW html: (27) I[L] = W(P_{eps<L}, I[eps]); (28) (Q + hbar Delta_L) e^{I[L]/hbar} = 0; Def.2.5 W = sum_gamma |Aut gamma|^-1 hbar^{g}
+  w_gamma; Cor.2.8 (30) sum over edges of w_{gamma,e}(P, Q P, I) - lim_t w_{gamma,e}(P, K_t, I) + w_{gamma,e}(P, K_L, I);
+  Sec.3.3.2 O_(Gamma,n)(Phi) = int_{dC_{Gamma_1}} t_square^*( int W~((Gamma,n),Phi) ); Prop.3.23 d' >= 1, h_1 odd => O_(Gamma,n) = 0;
+  Intro: TH CS on R x C^2 "suffers from a two-loop anomaly" (expected, no computation); Thm.1.2 d' = 1: quantization to first order.
+S2 eq-Ward (sec5) is the same heat-edge identity. C16 Sec.9: Thm 9.0.1, 9.0.2 no obstruction for the eps-deformed theory; negative
+  powers of eps admitted "to cancel certain potential higher loop anomalies".
+
+======================================================================================================================
+b1  odd-Theta fiber integration                                                              CONFIRMED
+======================================================================================================================
+Re-derivation. Theta_e = K_{t_e} - dt_e ^ beta_e (K odd, beta even), Pi_*(dt_1..dt_N ^ a) := int a d^N t.
+  wedge_e Theta_e |_{dt^N} = wedge_e(-dt_e ^ beta_e) = (-1)^N dt_1..dt_N ^ beta_1..beta_N  =>  wedge_e P_e = (-1)^N Pi_*(wedge Theta)
+  D(dt^N ^ a) = (-1)^N dt^N ^ Da  =>  D Pi_* = (-1)^N Pi_* D  =>  D wedge P = Pi_*(D wedge Theta) = -Pi_*(d_t wedge Theta)
+  wedge Theta |_{N-1} = sum_j dt_1..^j..dt_N ^ a_j,  d_t(...) = sum_j (-1)^{j-1} d_j(..) dt^N
+  D wedge P |_UV = sum_j (-1)^{j-1} int_{t_j = eps} a_j ,   iota_E dt^N |_{t_j = eps} = (-1)^{j-1} eps dt_1..^j..dt_N
+  => D wedge P |_UV = int_{RP^{N-1}_{>0}, iota_E dt^N} Phi,  Phi = sum_j dt_1..^j..dt_N ^ a_j   (no (-1)^{C(N,2)}).
+End-to-end calibration (V4: heat-edge sum computed directly in position space, no Schwinger fiber integration), against
+  c_V2 * K_htk with c_V2 the pointwise constant of V2 (same code as for the flagship):
+  (0,1) banana(k): G = k int (erf(tau/2sqrt eps)/2)^{k-1} K_eps = 2^{-k}(1-(-1)^k) exactly.
+     banana(3): 0.250000000000000 (eps = 0.3, 0.01) ; c_V2 K_htk = (1/4pi) pi = 0.25 ; 17.0, 17.0 digits
+     banana(5): 0.062500000000000 (eps = 0.3, 0.01) ; c_V2 K_htk = (1/16pi^2) pi^2 ; 17.0, 15.6 digits
+  (1,0) banana(k), Omega = dz odd: G = lam^{k-1}/((k-1)!(-2 pi i)^{k-1}) exactly.
+     banana(2), lam = 0.8+0.3i: (-0.047746482927568605+0.1273239544735163j) ; c_V2 K_htk = (i/2pi) lam ; 15.7, 15.6 digits
+       lam = -0.5+1.1i: (-0.1750704374010849-0.07957747154594769j) ; 15.8, 15.8 digits
+     banana(3), lam = 0.8+0.3i: (-0.006965831375410723-0.006079271018540266j) ; c_V2 K_htk = (-1/4pi^2) lam^2/2 ; 17.0, 15.7 digits
+       lam = -0.5+1.1i: (0.012158542037080538+0.013931662750821446j) ; 16.0, 15.7 digits
+     2d quadrature without the angular shortcut agrees: (-0.0477464829275686+0.1273239544735163j), (-0.006965831375410725-0.006079271018540267j)
+
+======================================================================================================================
+b2, b3, b4  constant and sign of the raw integral                                            CONFIRMED (n = 2)
+======================================================================================================================
+V2: exact pointwise identity, every term of wedge_e prod_a (dX^a_e - c^a_e dt_e) expanded explicitly (no extraction formula):
+  T-type deta_e = (2sqrt t_e)^-1 (dtau_e - w_e dt_e), w_e = tau_e/2t_e ; hol. dy^i_e = (alpha t_e)^-1 (dzb^i_e - (zb^i_e/t_e) dt_e)
+  int d^m tau e^{-tau Lam tau/4} P = (4pi)^{m/2} det Lam^{-1/2} E[P], E[tau tau^T] = 2 Lam^-1
+  int d^{2m}x e^{-zb Lam z/alpha + lam z} f(zb) = (alpha pi)^m det Lam^-1 f(alpha Lam^-1 lam)
+  mu: Omega_v ^ (wedge_a dX^a_v) = mu d^D x_v :  (2,1) 4 ; (3,0) 8 ; (0,1) 1 ; (1,0) -2i     c0: 1/(4pi^{5/2}), 1/(8pi^3), 1/sqrt(pi), i/(2pi)
+  Phi_j / (D_htk(t) (-1)^j t_j), all j = 0..N-1, random rational (t, lam), sources at all non-root vertices:
+    theta(1,3,3) engine (2,1), 3 points:      -1/(64 pi^5)
+    theta(2,2,3) engine (2,1), 3 points:      -1/(64 pi^5)
+    graph_A, graph_B (2,1), 2 points each:    -1/(64 pi^5)
+    theta_rootN(1,3,3), (2,2,3) (2,1), 2 each: -1/(64 pi^5)       (V2b)
+    assert det(Lam) prod t = U_htk: passed at every point.
+  => G_Gamma = -K_Gamma(lam;0)/(64 pi^5) = (-1)^{n(n-1)/2} (8 pi^{5/2})^{-n} K_Gamma at n = 2.  varsigma = +1 of run-1 c2 is refuted;
+     magnitude hbar^2/(64 pi^5) confirmed.
+General n (arithmetic only): htk varsigma^ext = (-1)^{C(N,2)C(D,2)+nD+(nv-1)nC(D,2)} at D = 3, N = 3n+1, nv-1 = 2n+1:
+  exponent = C(3n+1,2) mod 2 = C(n,2) mod 2 (difference 4n^2+2n);  s1 = (-1)^{9n(2n+1)} = (-1)^n ; s2 = (-1)^{3C(2n+1,2)} = (-1)^n ;
+  (4pi^{5/2})^{-N}(4(4pi)^{5/2})^{nv-1}4^{2n}(32)^{-N}: pi^{-5n/2}, 2^{-7N+7(nv-1)+4n} = 2^{-3n}.  Pointwise check only at n = 2.
+The individual factors vs_ext = -1, s1 = s2 = +1 were not reproduced one by one (V2 does not factor that way); their product is.
+
+======================================================================================================================
+b5  BV Wick sign, relative sign of theta(1,3,3), theta(2,2,3)                                CONFIRMED
+======================================================================================================================
+V3 Part A (own perm-sign code): engine labelling, local order L' (externals first, then half-edges by (edge,end)):
+  theta(1,3,3): sigma = -1 ; sigma*C_{L'} == W^Gamma of c3 strings: so(3) True, so(4) True (nonzero)
+  theta(2,2,3): sigma = -1 ; sigma*C_{L'} == W^Gamma of c3 strings: so(3) True, so(4) True (nonzero)
+  |Aut| (external legs unlabelled, networkx) = 4, 4.
+V3 Part B: sigma K C (so(4), K = htk.kernel_exact, mod sum p = 0), 5 random relabellings (vertices incl. root, edge order, edge
+  reversals, local orders): theta(1,3,3) [True]*5 ; theta(2,2,3) [True]*5.
+  controls: orientation-blind pairs: [False,False,True,True,True], [True,False,False,False,False];
+            sigma dropped: [True,True,False,True,False], [False,False,False,True,True].
+V3 Part D (rule-free cross-check of the relative sign). Identification: I^6/6! with the special vertex trivalent (2 of 6 vertices
+  in both thetas) gives O_2|_theta = 3 (universal sign) int Omega_N ^ [Q_2 O_N]_{fully contracted}, O_N = (1/6) f_abc A^a A^b A^c;
+  prod_j delta/delta C^{A_j} O_N = -f_{A1A2A3} (brute-force Grassmann, so(3): True).  The Q_2 relative coefficients are those fixed
+  by nilpotency (msym-odd rootN + arm tensor (k_A,k_B) = (1,1); S2 kappa_A = kappa_B, msym-odd S2 data (1,1)).
+  [K^rootN X^arm]/[K^eng W]:  so(3) [-1,-1], so(4) [-1,-1] ;  [K^S2lab X^S2]/[K^eng W]:  so(3) [1,1], so(4) [1,1]
+  equal ratios for theta(1,3,3), theta(2,2,3) in both data sets  =>  O_2 proportional to K_133 W_133 + K_223 W_223 (relative +1).
+K^eng mod sum p: K_133 = -(pi/20)[p1p2][p3p4], K_223 = (pi/30)[p1p2][p3p4] (V3 output, 0-based p0..p2 with p3 = -p0-p1-p2).
+
+======================================================================================================================
+c1  rule on nilpotency-fixed signs                                                            CONFIRMED
+======================================================================================================================
+V3 Part C (local orders parsed from the source T-strings: S2 eq-res-Q1, eq-res-TA, eq-res-TB; six-d-Q3 C1/C6; opsk.py arm tensor):
+  S2 (3,0): sigma(box, A, B) = [1,1,1] ; S2 eq-box-amp sign +, eq-Q2/eq-kAkB kappa_A = kappa_B = +1/2.
+  six-d-Q3: sigma/|Aut| = [-1/2, 1/2, -1, 1/8, -1/2] = C7 kappa: True.
+  msym-odd rootN + arm: sigma = [-1,-1] ; S2 data (same graphs/tensors as S2): [+1,+1] ; null space (1,1) in both.
+  C9 order (pairs, spokes, outputs) vs explorer order (pairs, outputs, spokes): differ by (-1)^{(n+1)(n+2)} = +1.
+Not re-run: the explorer's Part D relabelling test of sigma K T for graph_A, graph_B; nilpotency itself.
+
+======================================================================================================================
+c2  S2 raw normalization                                                     CONFIRMED (status was derived-unchecked)
+======================================================================================================================
+V2 (3,0), Omega = i dx1dx2dx3, Omega ^ d^3xb = 8 d^6x_E (S2 sec3), alpha = 2:
+  box n=1: Phi/(D(-1)^j t_j) = -1/(8 pi^3) (3 points)  => G = -K/(8pi^3) = +I^S2/(8pi^3)   (I^S2 = (-1)^{n(n+1)/2} K)
+  A, B n=2: -1/(64 pi^6) (2 points each)               => G = +I^S2/(64 pi^6)
+  S2 eq-B-norm (-1/8pi^3)^n I^S2: equal at n = 2, opposite at n = 1.  The calibration (1,0) banana (Omega odd) uses the same placement
+  of Omega_v as eq-B-norm.
+
+======================================================================================================================
+d1  final constants                                                                           CONFIRMED
+======================================================================================================================
+V5 (exact): O_2 = (Nnorm/4)(K_133 W_133 + K_223 W_223) = c Delta (-3 W_133 + 2 W_223),  c = pi Nnorm/240 = -U hbar^2/(15360 pi^4)
+  [O_2] (with [F_133] = -[F_223], run-1 c7) = -U hbar^2/(3072 pi^4) [F_223] = (pi Nnorm/48)[F_223]: True
+  opposite relative sign: K_223 flipped -U hbar^2/(15360 pi^4)[F_223], K_133 flipped +U hbar^2/(15360 pi^4)[F_223].
+pi Nnorm/48 holds, by b5 Part A/B (rule) and by Part D (nilpotency-fixed data). U = +-1 open.
+
+======================================================================================================================
+e1  counting                                                                                  CONFIRMED
+======================================================================================================================
+|I| = Dn+1, (|V|-1)D = (D-1)|I| + 1 => |V| = (D-1)n + 2 ; E = 3|V| - 2|I| = (D-3)n + 4 ; gh = E - D = (D-3)(n-1) + 1.
+  D=3: E = 4, gh = 1, n = 1..6.  D=2: (n,E,gh) = (1,3,1), (2,2,0), (3,1,-1), (4,0,-2), (5,-1,-3), (6,-2,-4).
+  htk catalog: D=2 n=2 one tight graph, degrees [2,2,3,3], E = 2 ; D=3 n=2 two graphs [2,2,2,2,3,3], E = 4 ; D=3 n=1 box E = 4.
+  BF vertex <B,[A,A]>, <AB> propagator: |I| <= #B legs = |V| => b1 <= 1.
+Remark: for D = 2 the pairing int Omega kappa has even degree (form degrees summing to D = 2 give ghost numbers summing to 0); gh is the
+  naive form+ghost count, in which the D = 2 two-loop heat-edge graphs are two-leg, gh-0 terms.
+
+======================================================================================================================
+e2  literature identifications                                                                CONFIRMED
+======================================================================================================================
+2111.00955: K. Zeng, "Monopole Operators and Bulk-Boundary Relation in Holomorphic Topological Theories" (abstract: no one-loop
+  exactness statement).  1910.05230: O. Gwilliam, B. R. Williams, "A one-loop exact quantization of Chern-Simons theory" (CS as a
+  deformation of 3d BF theory; a gauge giving one-loop exact quantization).  2611.23377: N. Garner, B. R. Williams, P.-H. Balduf (abstract:
+  CS near a principal nilpotent background, holomorphic gauge, finite and 1-loop exact).  WW Intro, C16 Thms 9.0.1, 9.0.2: as in a2.
+
+======================================================================================================================
+LOGICAL GAPS
+======================================================================================================================
+1. U (universal sign) not fixed: overall signs of Nnorm, c = pi Nnorm/240, c' = pi Nnorm/48 open; magnitudes hbar^2/(15360 pi^4),
+   hbar^2/(3072 pi^4) fixed.
+2. Relative sign: the explorer's derivation of the Wick rule (odd superfields, even contraction, Koszul) and the Part D identification
+   O_2|_theta = 3 int Omega_N ^ [Q_2 O_N] are arguments, not an end-to-end BV computation; Part D also uses that the theta factors of
+   S2/msym-odd (k = 2: delta^2(theta - theta'), int d^2theta, both even) do not change the relative graph signs.  The nilpotency inputs
+   (S2 kappa_A = kappa_B, six-d-Q3 C7, msym-odd (1,1)) are run-1 results, not re-run.
+3. Pointwise identity verified at n = 2 only; no end-to-end position integral for the (2,1) thetas; end-to-end only for D = 1 bananas.
+4. O_2 is computed with plane waves e^{lam.z} only: terms with d_zb or d_tau derivatives of the external fields are not examined.
+   The identification of local BRST cohomology with CE cochains of g[[z1,z2]] (run-1 c5) and F_133 = -F_223 mod exact (run-1 c7) are
+   not re-examined.
+5. [O_2] as the obstruction class presumes the order-hbar term J_1 = 0 (I[L] built from the classical I only); Q1 is open.
+6. WW (22) normalization differs from int Omega ^ K = 1 by a factor 4 (a1 (f)).
+7. S2 eq-B-norm sign at n = 1 differs from the real-contour Gaussian (c2); this flips S2's Q_1 sign (Q_n -> (-1)^n Q_n), invisible to
+   nilpotency (S2 sec8 item 4).
+
+======================================================================================================================
+NOT DONE
+======================================================================================================================
+Nilpotency checks (S2, six-d-Q3, msym-odd) not re-run.  Cohomology ([F_223], F_133 + F_223 exact) not recomputed.  No end-to-end
+(2,1) theta position integral.  The explorer's n2 numerical Gaussian checks and n3 factor-by-factor extraction ratios not re-run
+(replaced by the exact pointwise identity V2).  The explorer's Part D relabelling test for graph_A/graph_B not re-run.  C17 Sec.9.3
+propagator constant not compared; Costello's renormalization book not read.  Odd-P cases (7d, 3d) not treated.  Run-1 c2's GKW
+normalization statement not checked.

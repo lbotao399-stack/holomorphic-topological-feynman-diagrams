@@ -1,0 +1,3 @@
+q=3 unknowns 74 rows 46 {'T': 28, 'D': 0, 'I': 10, 'B': 0, 'S': 8}  0.1s
+rank 25 of 74 unknowns, determined 8  0.0s
+Z5 q=3: 74 unknowns, 8 determined (0.1s)

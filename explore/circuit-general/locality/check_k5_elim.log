@@ -1,0 +1,6 @@
+D=2 n=6 graphs without reduction: 32
+  ('v sourced', 'R')           : ['+1', '+1', '+1', '+1', '+1', '+1', '+1', '+1']
+  ('v sourced', 'P')           : ['FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL']
+  ('v unsourced', 'R')         : ['+1', '+1', '+1', '+1', '+1', '+1', '+1', '+1']
+  ('v unsourced', 'P')         : ['+1', '+1', '+1', '+1', '+1', '+1', '+1', '+1']
+  Lr = g g^T/G, h = g/G        : [True, True, True, True, True, True, True, True]

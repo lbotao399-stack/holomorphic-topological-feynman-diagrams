@@ -1,0 +1,34 @@
+ab1 field=Q: 6S_free, 6I closed in V: [True, True]; cumulative rank mod B^0(V): [0, 0]
+ab1 field=1000000007: 6S_free, 6I closed in V: [True, True]; cumulative rank mod B^0(V): [0, 0]
+ab1: NF(6S_free)/NF(6I) over all coordinates = None   (=> (6S_free) - r (6I) in B^0)
+ab1 v=0: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+ab1 v=1: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+ab1 v=2: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+ab1 G-component d_z2 T=5 t=(1, 0, 1, 0, 1) ghost 0: closed [True], rank mod B^0 [1]  (field Q)
+ab1 G-component d_z2 T=5 t=(1, 0, 1, 0, 1) ghost 0: closed [True], rank mod B^0 [1]  (field 1000000007)
+ab1 G-component d_z1 T=3 t=(1, 1, 0, 1, 0) ghost 0: closed [True], rank mod B^0 [1]  (field Q)
+ab1 G-component d_z1 T=3 t=(1, 1, 0, 1, 0) ghost 0: closed [True], rank mod B^0 [1]  (field 1000000007)
+sl2 field=Q: 6S_free, 6I closed in V: [True, True]; cumulative rank mod B^0(V): [1, 1]
+sl2 field=1000000007: 6S_free, 6I closed in V: [True, True]; cumulative rank mod B^0(V): [1, 1]
+sl2: NF(6S_free)/NF(6I) over all coordinates = {Fraction(-3, 2)}   (=> (6S_free) - r (6I) in B^0)
+sl2 v=0: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+sl2 v=1: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+sl2 v=2: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+sl2 G-component d_z2 T=5 t=(1, 0, 1, 0, 1) ghost 0: closed [True], rank mod B^0 [1]  (field Q)
+sl2 G-component d_z2 T=5 t=(1, 0, 1, 0, 1) ghost 0: closed [True], rank mod B^0 [1]  (field 1000000007)
+sl2 G-component d_z1 T=3 t=(1, 1, 0, 1, 0) ghost 0: closed [True], rank mod B^0 [1]  (field Q)
+sl2 G-component d_z1 T=3 t=(1, 1, 0, 1, 0) ghost 0: closed [True], rank mod B^0 [1]  (field 1000000007)
+gl2 field=Q: 6S_free, 6I closed in V: [True, True]; cumulative rank mod B^0(V): [1, 1]
+gl2 field=1000000007: 6S_free, 6I closed in V: [True, True]; cumulative rank mod B^0(V): [1, 1]
+gl2: NF(6S_free)/NF(6I) over all coordinates = {Fraction(-3, 2)}   (=> (6S_free) - r (6I) in B^0)
+gl2 v=0: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+gl2 v=1: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+gl2 v=2: eta_v(6I) in D M: True;  eta_v(6S_free) in D M: False
+gl2 G-component d_z2 T=5 t=(1, 0, 1, 0, 1) ghost 0: closed [True], rank mod B^0 [1]  (field Q)
+gl2 G-component d_z2 T=5 t=(1, 0, 1, 0, 1) ghost 0: closed [True], rank mod B^0 [1]  (field 1000000007)
+gl2 G-component d_z1 T=3 t=(1, 1, 0, 1, 0) ghost 0: closed [True], rank mod B^0 [1]  (field Q)
+gl2 G-component d_z1 T=3 t=(1, 1, 0, 1, 0) ghost 0: closed [True], rank mod B^0 [1]  (field 1000000007)
+gl2 T_lam = [u(A)]_dtau t=(1,0,0,0,0) ghost 0: closed [True], rank mod B^0 [1] (field Q)
+gl2 T_lam = [u(A)]_dtau t=(1,0,0,0,0) ghost 0: closed [True], rank mod B^0 [1] (field 1000000007)
+sl2 number of monomials in 6I: 27 ; eta_v(6I) identically zero in M for v=0,1,2: [True, True, True]
+gl2 number of monomials in 6I: 27 ; eta_v(6I) identically zero in M for v=0,1,2: [True, True, True]

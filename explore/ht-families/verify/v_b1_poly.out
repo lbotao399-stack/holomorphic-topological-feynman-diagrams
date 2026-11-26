@@ -1,0 +1,5 @@
+G0: exact K == claimed formula (and pointwise check passed) at 20/20 random source vectors  (7.3s)
+G1: exact K == claimed formula (and pointwise check passed) at 20/20 random source vectors  (2.3s)
+G2: exact K == claimed formula (and pointwise check passed) at 20/20 random source vectors  (2.0s)
+G3: exact K == claimed formula (and pointwise check passed) at 20/20 random source vectors  (1.5s)
+G4: exact K == claimed formula (and pointwise check passed) at 20/20 random source vectors  (30.5s)

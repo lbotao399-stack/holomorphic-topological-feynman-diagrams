@@ -1,0 +1,20 @@
+S3 mc_theta(1,2,2,1,200000) [seed 1]: mean -0.2539835710  err 0.0041449808  closed 0.2843069064   (19.3 s)
+seed-1 sources (N, B1, C1): [0.34558419 0.82161814 0.33043708]
+own exact K[C3]/pi = -22026136797979191689044246579867/243388915243820045087367015432192  = claimed fraction: True   K = -0.2843069064265951   -(pi/3) lam_B lam_C = -0.28430690642659506
+mc_theta 'closed' / K[C3] = -0.9999999999999994
+own replay: mean -0.2539835710  err 0.0041449808   rel. diff of mean vs S3: 3.66e-15 ; err rel diff: 3.26e-14
+sampled f: min -10644.1034  max -2.1161 ; (exact - mean)/err = -7.32
+float brute force = exact brute force (rel < 1e-10) at 3 sampled points: True
+S3 mc_theta single-sample summand = own brute-force D(t)/4! at 5 seeds (rel < 1e-12): True
+own stream n=4000000: f < 0 everywhere: True
+tail P(|f|>x): x=100: emp 3.340e-03 pred 8(c/x)^(6/5) 2.900e-03  x=1000: emp 1.900e-04 pred 8(c/x)^(6/5) 1.830e-04  x=10000: emp 1.150e-05 pred 8(c/x)^(6/5) 1.154e-05  x=100000: emp 7.500e-07 pred 8(c/x)^(6/5) 7.284e-07
+fitted log-log slope (x = 1e3..1e5): -1.202  (claim -6/5)
+corner {tA1,tC1,tC2 -> 0}: max |U/rho - 1| on rho < r for r = 0.04, 0.02, 0.01: ['3.978e-02 (929 pts)', '1.906e-02 (136 pts)', '8.276e-03 (12 pts)']
+corner {tA1,tB1,tB2 -> 0}: max |U/rho - 1| on rho < r for r = 0.04, 0.02, 0.01: ['3.947e-02 (945 pts)', '1.936e-02 (135 pts)', '8.784e-03 (18 pts)']
+P(rho_AC < r)/(4 r^3) at r = 0.02, 0.05: 1.062 0.937
+sample second moments <f^2> at n = 1e4, 1e5, 1e6, 4e6: ['816.9', '1.981e+05', '3.855e+04', '5.517e+04']
+n=   2000 runs=2000  median(mean/exact) 0.8634  fraction |mean|<|exact| 0.844  fraction |exact-mean|/err > 3: 0.378
+n=  20000 runs= 600  median(mean/exact) 0.9054  fraction |mean|<|exact| 0.817  fraction |exact-mean|/err > 3: 0.405
+n= 200000 runs= 120  median(mean/exact) 0.9467  fraction |mean|<|exact| 0.767  fraction |exact-mean|/err > 3: 0.317
+slope of log(1 - median ratio) vs log n: -0.204  (claim -0.184, stable-law exponent -1/6)
+time 23.7 s

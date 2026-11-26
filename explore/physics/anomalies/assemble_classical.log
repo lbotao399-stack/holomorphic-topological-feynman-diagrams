@@ -1,0 +1,16 @@
+so5: basis ['tr x^4', '(tr x^2)^2']
+   T_1         = ['-1/16', '1/16']  fit consistent on extra samples: True
+   T_3 [1]     = ['0', '-1/46080']  fit consistent: True
+   T_3 [zeta3] = ['0', '0']  fit consistent: True
+so8: basis ['tr x^4', '(tr x^2)^2', 'Pf x']
+   T_1         = ['0', '1/16', '0']  fit consistent on extra samples: True
+   T_3 [1]     = ['0', '-1/23040', '0']  fit consistent: True
+   T_3 [zeta3] = ['0', '0', '0']  fit consistent: True
+sp4: basis ['tr x^4', '(tr x^2)^2']
+   T_1         = ['1/4', '1/16']  fit consistent on extra samples: True
+   T_3 [1]     = ['0', '-1/2880']  fit consistent: True
+   T_3 [zeta3] = ['0', '0']  fit consistent: True
+so6: basis ['tr x^4', '(tr x^2)^2']
+   T_1         = ['-1/24', '1/16']  fit consistent on extra samples: True
+   T_3 [1]     = ['-1/41472', '-1/46080']  fit consistent: True
+   T_3 [zeta3] = ['0', '0']  fit consistent: True

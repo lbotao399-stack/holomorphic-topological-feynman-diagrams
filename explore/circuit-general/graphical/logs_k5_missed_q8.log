@@ -1,0 +1,5 @@
+I_8(K5; (5, 6, 4, 1, 6, 5, 6, 7, 2, 6)) = 263371/7472424960000 + -1/34594560*z3   beta_oo=[0, 6, 5, 6, -1]  [decomplete 1, 6 appends, 35s]  engine: not reached
+I_8(K5; (3, 3, 7, 5, 5, 4, 7, 3, 5, 6)) = -8711086259/3923023104000 + -26946407/4540536000*z3 + 5689/630630*z5   beta_oo=[2, 3, 0, 4, 7]  [decomplete 0, 6 appends, 108s]  engine: not reached
+I_8(K5; (2, 5, 7, 6, 6, 5, 4, 7, 4, 2)) = 378433667/4707627724800 + 21719/100900800*z3 + -5/15288*z5   beta_oo=[4, 1, 6, 5, 0]  [decomplete 0, 5 appends, 50s]  engine: not reached
+I_8(K5; (5, 5, 7, 1, 7, 2, 7, 6, 4, 4)) = -735555239/201180672000 + -17797783/1816214400*z3 + 3755/252252*z5   beta_oo=[2, 5, 6, 3, 0]  [decomplete 0, 6 appends, 114s]  engine: not reached
+tried 762 random vectors

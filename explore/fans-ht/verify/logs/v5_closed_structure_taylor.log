@@ -1,0 +1,39 @@
+a7 / d1 closed forms
+  n= 2: int g_end = pi/3
+  n= 4: int g_end = pi**2/180
+  n= 6: int g_end = pi**3/56700
+  n= 8: int g_end = pi**4/57153600
+  n=10: int g_end = pi**5/141455160000
+  (2,0): int eq-1-41 density = 1/((n!)^3 (n+1)) exact, n = 1..30;  (1,1) endpoint: own Beta product = (4 pi)^{n/2}/((n+1)(n!)^2) = pi^{n/2+1}/(2^{n+1} Gamma(n/2+1)^2 Gamma((n+1)/2) Gamma((n+3)/2)), n = 2..30 even
+a8 ensemble form: g_n = w(r) Haf_n(l, m)/(n-1)!!, w = endpoint density at lam_1 = lam_{n+1} = 1
+  n=2: m_j P_n u_n v_n = M_j and g = w Haf(l,m)/(n-1)!! exact at 3 points
+  n=4: m_j P_n u_n v_n = M_j and g = w Haf(l,m)/(n-1)!! exact at 3 points
+  n=6: m_j P_n u_n v_n = M_j and g = w Haf(l,m)/(n-1)!! exact at 3 points
+  n=8: m_j P_n u_n v_n = M_j and g = w Haf(l,m)/(n-1)!! exact at 3 points
+a11 structure
+  n=2: (g/m_0)/lam_1 with lam_2 = s - u_1 lam_1 is free of u_1 and lam_1: True (m_0 is free of u_1)
+  n=4: (g/m_0)/lam_1 with lam_2 = s - u_1 lam_1 is free of u_1 and lam_1: True (m_0 is free of u_1)
+  n=2 (general_kernels.txt): lam_1 lam_{n+1} divides K: True; K(lam_1, lam_2, 0.., lam_{n+1}) = C_n lam_{n+1}^{n/2}[(lam_1+lam_2)^{n/2} - lam_2^{n/2}]: True
+  n=4 (general_kernels.txt): lam_1 lam_{n+1} divides K: True; K(lam_1, lam_2, 0.., lam_{n+1}) = C_n lam_{n+1}^{n/2}[(lam_1+lam_2)^{n/2} - lam_2^{n/2}]: True
+  n=6 (general_kernels.txt): lam_1 lam_{n+1} divides K: True; K(lam_1, lam_2, 0.., lam_{n+1}) = C_n lam_{n+1}^{n/2}[(lam_1+lam_2)^{n/2} - lam_2^{n/2}]: True
+  n=8 (general_kernels.txt): lam_1 lam_{n+1} divides K: True; K(lam_1, lam_2, 0.., lam_{n+1}) = C_n lam_{n+1}^{n/2}[(lam_1+lam_2)^{n/2} - lam_2^{n/2}]: True
+a12 reflection
+  n=2: D(phi(t); lam reversed) / D(t; lam) = ['1', '1'] at random rational t (brute force);  sgn(pi_E) = +1
+  n=4: D(phi(t); lam reversed) / D(t; lam) = ['1', '1'] at random rational t (brute force);  sgn(pi_E) = +1
+  n=6: D(phi(t); lam reversed) / D(t; lam) = ['1', '1'] at random rational t (brute force);  sgn(pi_E) = +1
+  n=8: D(phi(t); lam reversed) / D(t; lam) = ['1'] at random rational t (brute force);  sgn(pi_E) = +1
+  sgn(pi_E) for even n = 2..40: [1]
+  sgn(pi_E) for odd  n = 1..39: [-1, -1, -1, -1, -1, -1] ...
+  n=2: K(lam_{n+1},..,lam_1) - K(lam_1,..,lam_{n+1}) = 0 (general_kernels.txt)
+  n=4: K(lam_{n+1},..,lam_1) - K(lam_1,..,lam_{n+1}) = 0 (general_kernels.txt)
+  n=6: K(lam_{n+1},..,lam_1) - K(lam_1,..,lam_{n+1}) = 0 (general_kernels.txt)
+  n=8: K(lam_{n+1},..,lam_1) - K(lam_1,..,lam_{n+1}) = 0 (general_kernels.txt)
+b1 Taylor (endpoint sources)
+  n=2: y_{i,i+1} = sum_k mu_ik lam_1 - nu_i lam_{n+1} (mesh solver) and sum_e y_e z_e decomposition: exact at 3 points
+  n=4: y_{i,i+1} = sum_k mu_ik lam_1 - nu_i lam_{n+1} (mesh solver) and sum_e y_e z_e decomposition: exact at 3 points
+  n=6: y_{i,i+1} = sum_k mu_ik lam_1 - nu_i lam_{n+1} (mesh solver) and sum_e y_e z_e decomposition: exact at 3 points
+  n=2: c^(n) formula = direct Beta integration of g_end prod mu^r nu^s for 60 multi-indices (incl. 0); c_0 = pi/3
+  n=4: c^(n) formula = direct Beta integration of g_end prod mu^r nu^s for 60 multi-indices (incl. 0); c_0 = pi**2/180
+  n=6: c^(n) formula = direct Beta integration of g_end prod mu^r nu^s for 60 multi-indices (incl. 0); c_0 = pi**3/56700
+  n=2 order 1: -sum_e z_e int g_end y_e = -pi*l1*lN*(4*l1*z_a1 + l1*z_a2 + 6*l1*z_b1 + 3*l1*z_b2 + l1*z_b3 - lN*z_a1 - 4*lN*z_a2 + lN*z_b1 + 3*lN*z_b2 + 6*lN*z_b3)/30;  equals claim: True
+  n=4 order 1: -sum_e z_e int g_end y_e = -pi**2*l1**2*lN**2*(20*l1*z_a1 + 10*l1*z_a2 + 4*l1*z_a3 + l1*z_a4 + 15*l1*z_b1 + 10*l1*z_b2 + 6*l1*z_b3 + 3*l1*z_b4 + l1*z_b5 - lN*z_a1 - 4*lN*z_a2 - 10*lN*z_a3 - 20*lN*z_a4 + lN*z_b1 + 3*lN*z_b2 + 6*lN*z_b3 + 10*lN*z_b4 + 15*lN*z_b5)/6300;  equals claim: True

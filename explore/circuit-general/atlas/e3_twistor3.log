@@ -1,0 +1,26 @@
+twistor3 #0 SP=True fastker K = {'1': '-239/720'} (0s) | spred K = -239/720
+twistor3 #1 SP=True fastker K = {'1': '-39937/25920'} (0s) | spred K = -39937/25920
+twistor3 #2 SP=True fastker K = {'1': '5/1152'} (0s) | spred K = 5/1152
+twistor3 #3 SP=True fastker K = {'1': '11/1920'} (0s) | spred K = 11/1920
+twistor3 #4 SP=True fastker K = {'1': '-2933/17280'} (0s) | spred K = -2933/17280
+twistor3 #5 SP=True fastker K = {'1': '-86/1215'} (0s) | spred K = -86/1215
+twistor3 #6 SP=True fastker K = {'1': '-25/62208'} (0s) | spred K = -25/62208
+twistor3 #7 SP=True fastker K = {'1': '-22/405'} (0s) | spred K = -22/405
+twistor3 #8 SP=True fastker K = {'1': '-1/8640'} (0s) | spred K = -1/8640
+twistor3 #9 SP=False fastker K = {'1': '179786563/5443200', 'z3': '-33723/1400'} (0s)
+twistor3 #10 SP=False fastker K = {'1': '79/19440'} (0s)
+twistor3 #11 SP=False fastker K = {'1': '1891/77760'} (0s)
+twistor3 #12 SP=False fastker K = {'1': '14134153/10886400', 'z3': '-2643/2800'} (0s)
+twistor3 #13 SP=False fastker K = {'1': '129511/272160', 'z3': '-67/210'} (0s)
+twistor3 #14 SP=False fastker K = {'1': '269/1260', 'z3': '-369/1120'} (0s)
+twistor3 #15 SP=False fastker K = {'1': '1307/42525', 'z3': '48/175'} (0s)
+twistor3 #16 SP=False fastker K = {'1': '7439/45360', 'z3': '-1/7'} (0s)
+twistor3 #17 SP=False fastker K = {'1': '-7345/1792', 'z3': '1395/224'} (0s)
+twistor3 #18 SP=False fastker K = {'1': '3207523/1451520', 'z3': '-1957/1120'} (0s)
+twistor3 #19 SP=False fastker K = {'1': '-1597/806400', 'z3': '9/5600'} (0s)
+twistor3 #20 SP=False fastker K = {'1': '-171117911/5443200', 'z3': '118313/4200'} (0s)
+twistor3 #21 SP=False fastker K = {'1': '-5239/6400', 'z3': '403/600'} (0s)
+twistor3 #22 SP=False fastker K = {'1': '207871/120960', 'z3': '-3133/2240'} (0s)
+real 3.77
+user 3.54
+sys 0.09

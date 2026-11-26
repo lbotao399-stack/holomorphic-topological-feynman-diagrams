@@ -1,0 +1,4 @@
+  sl2      w=(0, 0, 0)    (a,b)=(2, 1) g= 0  dim M=   785 rkD=578 rkQbar=195  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  sl2      w=(0, 0, 0)    (a,b)=(2, 1) g= 1  dim M=  3862 rkD=2583 rkQbar=1084  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [1512.4s]
+case sl2b: all checks passed: True   total 1512.4s

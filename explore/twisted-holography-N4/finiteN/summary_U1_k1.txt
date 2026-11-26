@@ -1,0 +1,36 @@
+U(1), k = 1: per-level totals (sum over sectors with orbit multiplicity)
+level | sectors(reps) | all agree | dim H^BG | dim H^U(N) | Chang-Lin d_u | index BG | Chang-Lin i_u
+  2 | 1 | True | 3 | 3 | None | 3 | None
+  3 | 1 | True | 2 | 2 | None | -2 | None
+  4 | 2 | True | 9 | 9 | None | 3 | None
+  5 | 1 | True | 12 | 12 | None | 0 | None
+  6 | 5 | True | 24 | 24 | None | 0 | None
+  7 | 2 | True | 42 | 42 | None | 6 | None
+  8 | 6 | True | 72 | 72 | None | -6 | None
+  9 | 5 | True | 124 | 124 | None | 0 | None
+
+per-sector Euler characteristic of the k=1 complex vs [Z_inf (1 + G_N^(1))]_lam:
+  2 (1, 0, 0, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  3 (0, 0, 0, 1, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  4 (2, 0, 0, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  4 (1, 1, 0, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  5 (1, 0, 0, 1, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  6 (3, 0, 0, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  6 (2, 1, 0, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  6 (1, 1, 1, 0, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  6 (0, 0, 0, 2, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  6 (0, 0, 0, 1, 1): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  7 (2, 0, 0, 1, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  7 (1, 1, 0, 1, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  8 (4, 0, 0, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  8 (3, 1, 0, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  8 (2, 2, 0, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  8 (2, 1, 1, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  8 (1, 0, 0, 2, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  8 (1, 0, 0, 1, 1): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  9 (3, 0, 0, 1, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  9 (2, 1, 0, 1, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  9 (1, 1, 1, 1, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  9 (0, 0, 0, 3, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  9 (0, 0, 0, 2, 1): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+mismatches: 0

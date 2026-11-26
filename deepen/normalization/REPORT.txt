@@ -1,0 +1,248 @@
+NORMALIZATION AND WICK SIGN OF THE TWO-LOOP OBSTRUCTION, COMMUTATIVE CS ON R x C^2   (task Q3)
+
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Folder P/deepen/normalization/
+  code/  extalg.py  n1_edge_forms.py  n2_gauss.py  n3_extraction.py  n4_endtoend.py  wick.py  n5_wick.py
+         n6_count_assembly.py  n7_S2_bnorm.py
+  logs/  n1_edge_forms.log  n2_gauss.log  n3_extraction.log  n4_endtoend.log  n5_wick.log  n6_count_assembly.log  n7_S2_bnorm.log
+Arithmetic: exact (sympy, Fraction) in every decisive step; floating point only in n1 (8), n2 (F),(V),(M), n4, digits stated.
+Kernels K_Gamma: htk.kernel_exact (engine orientation, positive cycle basis, root = last vertex).
+
+Sources read (no TeX downloaded):
+  WW  = Wang-Williams 2407.08667v3, arxiv.org/html (WebFetch extraction): eq.(8),(9), Sec.2.3 eqs.(16)-(30), Def.2.5, Cor.2.8,
+        Sec.3.3.2, Props.3.21, 3.23, Thm.1.2, Introduction.
+  C16 = Costello 1610.04144v1, arxiv.org/html (WebFetch extraction): Sec.5, Sec.9 (Thms 9.0.1, 9.0.2), Sec.9.1.
+  IJZ = Ishtiaque-Jeong-Zhou 2408.15712v2, arxiv.org/html (WebFetch extraction): eqs.(2.3),(2.8)-(2.15).
+  C17 = Costello 1705.02500, arxiv.org/pdf (pdftotext of the fetched file): Sec.9.3.
+  S2 (6d note sec1, sec4-sec8), S3 (11d note Sec.4-5), htk CONVENTIONS.md, run-1 VERIFY.md files.
+
+======================================================================================================================
+(a) CLASSICAL THEORY, BV EXTENSION, GAUGE, PROPAGATOR, I[L], O_2
+======================================================================================================================
+
+a1  X = R x C^2, (tau, z1, z2), Omega = dz1 ^ dz2, D = dtau d_tau + dzb_i d_{zb_i}.
+    E = Omega^*(R) (x) Omega^{0,*}(C^2) (x) g[1]                                    WW (8);  C16 Sec.5: A_c (x) gl_N[1], A = C^oo[dt,dzb1,dzb2]
+    S(A) = int_X Omega ^ ( 1/2 kappa(A, DA) + 1/6 kappa(A,[A,A]) )                  WW (9) (d = 2, d' = 1)
+    C16 Sec.5: int dz1dz2 Tr{ 1/2 A dA + 1/3 A (A *_eps A) }, eps = 0: 1/3 Tr A^3 = 1/6 Tr A[A,A];  IJZ (2.8) same with prefactor 1/eps_1 (gl(1)).
+    BV: A = c + A^(1) + A^(2) + A^(3), form degree k, ghost number 1-k; c ghost, A^(1) = A_tau dtau + A_{zb_i} dzb_i, A^(2), A^(3)
+        antifields of A^(1), c.  S above (superfield form) is the BV action.
+    omega(a,b) = int_X Omega kappa(a,b)  (C16 Sec.5: <a,b> = int dz1 dz2 a b),  degree 2 - D = -1.
+    {S,S} = 0  <=>  Q I = 0 (Stokes) and {I,I} = 0 (Jacobi),  I = int Omega 1/6 kappa(A,[A,A]).
+
+a2  Heat-kernel gauge (n1, exact unless stated):
+    D* = -iota_{d_tau} d_tau - 4 sum_i iota_{d_zb_i} d_{z_i},   H = [D,D*] = -d_tau^2 - 4 sum_i d_{z_i} d_{zb_i} = -Laplacian(R^5)
+    Omega ^ dtau ^ dzb1 ^ dzb2 = 4 dtau d^4x                                                          n1 (1): {(0,1,2,3,4): 4}
+    [K_t]_Omega = (1/4) e^{-(tau^2+|z|^2)/4t} (4 pi t)^{-5/2} dtau ^ dzb1 ^ dzb2,   int_X Omega ^ [K_t]_Omega = 1        n1 (2): 1
+    [D* K_t]_Omega = t^{-1} iota_E [K_t]_Omega,  E = (tau/2) d_tau + zb^i d_{zb^i}                                       n1 (3): True
+    iota_E(dtau dzb1 dzb2) = (tau/2) dzb1 dzb2 - dtau ^ (zb1 dzb2 - zb2 dzb1)                                           n1 (3): True
+    D D* K_t = -d_t K_t,  D* D K_t = 0                                                                                 n1 (5): True, True
+    [P]_Omega = int_0^oo dt [D*K_t]_Omega = (3/(16 pi^2 r^5)) [ (tau/2) dzb1 ^ dzb2 - dtau ^ (zb1 dzb2 - zb2 dzb1) ]       n1 (6): True
+    D[P]_Omega = 0 (r > 0),  D*[P]_Omega = 0,  [P](-x) = -[P](x) (coefficients); P even 2-form                            n1 (7): True, True, True
+    Omega ^ [P]_Omega = iota_V d^5x,  Re(r^5 V) = (3/(8 pi^2)) x,  Im(r^5 V) tangent to S^4                              n1 (8): True
+    int_{S^4_R} Omega ^ [P]_Omega = (8 pi^2/3)(3/(8 pi^2)) = 1 = int_B Omega ^ K_0
+        numerical, 24^4-point Gauss-Legendre: R = 0.7: 1.000000000000008, R = 1.3: 1.000000000000008  (|F - 1| = 7.5e-15)
+    IJZ (2.12): P = (3 eps1/(16 pi^2)) ( (1/2) t dxb^dzb + xb dzb^dt - zb dxb^dt ) / (t^2+|x|^2+|z|^2)^{5/2}
+        = ours for (x,z,t) -> (z1,z2,tau), eps1 -> 1                                                             n1 (6): True
+    IJZ (2.11) (d_t iota_{d_t} + 4 d_x iota_{d_xb} + 4 d_z iota_{d_zb}) P = 0  is  D*P = 0;  IJZ (2.9),(2.10),(2.14): (1/eps1) Omega ^ dP = delta^(5),
+        int delta^(5) = 1  is the flux above.
+    WW (21),(22): d* = -d_x iota_{d_x}, dbar* = -2 d_z iota_{d_zb}, H_WW = -d_x^2 - 2 d_z d_zb, kernel e^{-(2|z|^2+x^2)/4t}/(2^3 (pi t)^{5/2}).
+        x = sqrt2 tau:  D*_WW = (1/2) D*,  H_WW = (1/2) H,  P_WW = D*_WW H_WW^{-1} = P.  tau -> c tau leaves S invariant (integral of forms,
+        Omega tau-independent); the WW-gauge obstruction is the pull-back of the one below.
+    C17 Sec.9.3: D* = -iota_{d_zb1} d_{z1} - iota_{d_zb2} d_{z2} - iota_{d_t} d_t, [D,D*] = -d_{z1}d_{zb1} - d_{z2}d_{zb2} - d_t^2 (different metric),
+        propagator -(5/(48 pi^2)) D*(d^2zb dt / r^3) with "the constant appearing here will play no role" (C17); not compared numerically.
+
+a3  Regularized interaction, obstruction.
+    P_eps^L = int_eps^L dt D*K_t  (WW (26)),   D P_eps^L = K_eps - K_L.
+    I[L] = lim_{eps->0} W(P_eps^L, I),   W(P,I) = sum_gamma |Aut gamma|^{-1} hbar^{g(gamma)} w_gamma(P,I)          WW (27), Def.2.5 (UV finite: no counterterms)
+    (Q + hbar Delta_L) e^{I[L]/hbar} = 0                                                                       WW (28)
+    (Q + hbar Delta_L) e^{I[L]/hbar} = hbar^{-1} O[L] e^{I[L]/hbar},   O[L] = sum_n hbar^n O_n[L].
+    Q I = {I,I} = 0  =>  (Q + hbar Delta_L) e^{hbar d_P} e^{I/hbar} = e^{hbar d_P} hbar Delta_eps e^{I/hbar}    (same identity as S2 eq-Ward)
+    O_n[L] = lim_{eps->0} sum_{Gamma, b1(Gamma) = n} |Aut Gamma|^{-1} sum_{j in I(Gamma)} w_Gamma( K_eps on e_j, P_eps^L on e != e_j ),
+    O_n = lim_{L->0} O_n[L]   (WW Sec.3.3.2: O_(Gamma,n) = integral over the boundary of the Schwinger compactification; WW Cor.2.8 (30)).
+    O_odd = 0:  rho_1 = 0 (S3 prop-rho, cor-odd);  WW Prop.3.23 (d' >= 1, h_1 odd).
+    Sourced: WW Introduction: "we expect that topological-holomorphic Chern-Simons theory on R x C^2 ... suffers from a two-loop anomaly"
+             (no computation); WW Thm.1.2: d' = 1 theories quantize to first order.  C16 Thms 9.0.1, 9.0.2: eps != 0 theory unobstructed;
+             C16 Sec.9: negative powers of eps admitted to cancel higher-loop anomalies.
+
+======================================================================================================================
+(b) RAW TWO-LOOP OBSTRUCTION IN TERMS OF K_Gamma(lam;0)
+======================================================================================================================
+
+b1  G_Gamma(lam) := lim_{eps->0} int_{X^{|V|-1}} (wedge_{v<root} Omega_v) e^{sum_v lam_v.z_v} D( wedge_e [P_e]_Omega )|_UV,
+        P_e = P(x_{e(0)} - x_{e(1)}),  root at 0,  X_v oriented by dtau d^4x, product orientation in vertex order;
+    D( wedge_e P_e )|_UV = sum_j (wedge_{i != j} P_i) ^ K_{eps;j}      (P even: no signs; S2 eq-heat-sum).
+
+b2  Edge form (n1 (4),(5)):
+    Theta_e = [K_{t_e}] - dt_e ^ [D*K_{t_e}] = (4 pi^{5/2})^{-1} e^{-eta_e^2 - y_e.(z_{e(0)} - z_{e(1)} + z_e)} deta_e ^ dy^1_e ^ dy^2_e,
+    eta_e = (tau_{e(0)} - tau_{e(1)})/(2 sqrt t_e),  y_e = (zb_{e(0)} - zb_{e(1)})/(4 t_e),  (d_t + D) Theta_e = 0                  True, True
+    Theta_e odd (3-form), beta_e := [D*K_{t_e}] even,  [P_e] = int_eps^L beta_e dt_e.
+
+b3  Fiber integration for odd Theta (Pi_*(dt_1..dt_N ^ a) := int a d^N t):
+    wedge_e Theta_e  contains  wedge_e(-dt_e ^ beta_e) = (-1)^N dt_1..dt_N ^ beta_1..beta_N   =>   wedge_e P_e = (-1)^N Pi_*(wedge_e Theta_e)
+    D Pi_* = (-1)^N Pi_* D,   D(wedge_e Theta_e) = -d_t(wedge_e Theta_e)
+    D wedge_e P_e = Pi_*(D wedge Theta) = -Pi_*(d_t wedge Theta),   UV faces:
+    D wedge_e P_e |_UV = sum_j (-1)^{j-1} int_{t_j = eps} [wedge_e Theta_e]_{dt_1..^j..dt_N} = int_{dUV, iota_E dt^N} wedge_e Theta_e   (dt's moved to the front)
+    (S3 eq-UV has (-1)^{|I|(|I|-1)/2}: even Theta, H = 5.)
+
+b4  Extraction (S3 eq-extraction; htk CONVENTIONS Sec.4): theta^a_e = dX^a_e - c_a J^a_e dt_e, c = (1,4,4), J = (w, y^1, y^2), w_e = tau_e/(2t_e),
+    deta_e = theta^0_e/(2 sqrt t_e), dy^i_e = theta^i_e/(4 t_e):
+    wedge_e (deta_e ^ d^2y_e) = vs_ext 4^{2n} prod_e (2 sqrt t_e (4t_e)^2)^{-1} [prod_v dtau_v prod_v dzb^1_v prod_v dzb^2_v] ^ prod_r psi^tau_r prod_r psi^1_r prod_r psi^2_r + (lower in dX),
+    psi^a_r = sum_e C_re J^a_e dt_e.
+    n3, coefficient ratio (21x21 determinant / 16^n x 6x6 determinant), exact, 3 random rational points each:
+        theta(1,3,3) -1;  theta(2,2,3) -1;  graph_A -1;  graph_B -1;  theta_rootN(1,3,3) -1;  theta_rootN(2,2,3) -1;  htk formula -1 (all six)
+    D = 3:  vs_ext = (-1)^{C(3n+1,2)} = (-1)^{n(n-1)/2}.
+
+b5  Reordering:
+    s1 = (-1)^{(3n)(3(|V|-1))}   ([dX top] ^ Psi = s1 Psi ^ [dX top])                    = (-1)^n
+    s2 = (-1)^{C(|V|-1,2) C(3,2)} ([prod_v dX^1 prod_v dX^2 prod_v dX^3] -> prod_v(dtau_v dzb^1_v dzb^2_v), Omega_v even)   = (-1)^n
+    s1 s2 = +1.   n3: s1 = +1, s2 = +1 at n = 2 for all six graphs.
+
+b6  Holomorphic Gaussians (S3 "Holomorphic directions", eq-KCL):
+    int prod_v d^4x_v e^{-(1/4) z^dag Lam z + lam.z} G(zb) = (4 pi)^{2(|V|-1)} (prod_e t_e/U)^2 G(4 Lam^{-1} lam),  Lam = B^T t^{-1} B.
+    n2 (F) one Fourier step  int d^2x (4pi t)^{-1} e^{-|z-w|^2/4t} e^{lam z} zb^k = e^{lam w}(wb + 4t lam)^k,  k = 0,1,2,3:  15.8, 15.7, 15.4, 15.5 digits
+    n2 (V) one vertex, three heat edges, both components, (k1,k2) = (0,0),(1,0),(1,1),(2,1):          15.2, 15.8, 15.8, 15.6 digits
+    n2 (M) two integrated vertices, generic Lam, G = 1, zb1, zb1 zb2, zb2^2 zb1:                       15.1, 15.2, 14.9, 14.9 digits
+    n2 (T) theta(1,3,3), theta(2,2,3), 3 random t each, exact:  det Lam = U/prod t: True;  zb = 4 Lam^{-1} lam gives the htk currents: True
+
+b7  Topological Gaussian (S3 eq-ww, prop-rho):
+    int prod_v dtau_v e^{-(1/4) tau^T Lam tau} = (4 pi)^{(|V|-1)/2} (prod_e t_e/U)^{1/2},  <tau tau^T> = 2 Lam^{-1},
+    <w_e w_f> = (1/2)[ delta_ef/t_e - (C^T M^{-1} C)_ef ],   <psi^tau_1 psi^tau_2> = -(1/2) sum_ab (M^{-1})_ab dM_1a ^ dM_b2,   U^{-1/2} <prod_r psi^tau_r> = rho_n.
+    n2 (V) one vertex, tau^k, k = 0,1,2:  15.9, 16.0, 16.0 digits
+    n2 (T) <ww> identity, rho-form identity: True, True (both thetas, 3 random t)
+
+b8  Constant (n3, exact):
+    (4 pi^{5/2})^{-|I|} (4 (4pi)^{5/2})^{|V|-1} 4^{2n} prod_e t_e^{5/2}/(2 sqrt t_e (4 t_e)^2) U^{-5/2} = (8 pi^{5/2})^{-n} U^{-5/2}
+    n = 1, 2, 3:  1/(8 pi^{5/2}), 1/(64 pi^5), 1/(512 pi^{15/2}).
+
+b9  G_Gamma(lam) = vs_ext s1 s2 (8 pi^{5/2})^{-n} int_{RP^{3n}_>0} e^{-sum y.z} U^{-2} rho_n ^ prod_{i,r} psi^i_r
+                 = (-1)^{n(n-1)/2} (8 pi^{5/2})^{-n} K_Gamma(lam;0),
+    n = 2:   G_Gamma = - K_Gamma(lam;0) / (64 pi^5).
+    Claim c2: magnitude (8 pi^{5/2})^{-n} confirmed; varsigma = +1 not confirmed: (-1)^{C(|I|,2)} in c2 is the even-Theta sign of S3 eq-UV,
+    absent for odd Theta (b3); varsigma = vs_ext s1 s2 = -1 at n = 2.  (Agrees with msym-odd raw-normalization s_n = (-1)^{n(n-1)/2}.)
+
+b10 End-to-end numerical checks of b1-b9 where the position integral is low-dimensional, same parity structure (P even; K, Theta odd) (n4).
+    General constant: G = vs_ext s1 s2 c_{H,T}^{-n} K,  c_{H,1} = 2 v_H pi^{H+1/2},  c_{H,0} = v_H pi^H,  Omega ^ dtau^T ^ d^H zb = v_H d^{2H+T}x;
+    (2,1): v = 4, c = 8 pi^{5/2}.
+    (0,1) banana(3), n=2, P = (1/2) erf(tau/(2 sqrt eps)):  int 3 P^2 K_eps = 0.250000000000000 (eps = 0.3, 0.01);
+          prediction (2 sqrt pi)^{-2} K_htk, K_htk = pi:  0.25;  15.7, 15.7 digits
+    (0,1) banana(5), n=4:  0.062500000000000;  prediction (2 sqrt pi)^{-4} pi^2 = 1/16;  15.7, 15.4 digits
+    (1,0) banana(2), n=1, v_1 = -2i, P = (1 - e^{-|z|^2/4eps})/(pi v z), plane wave e^{lam z}:
+          position integral = (-0.0477464829276+0.1273239544735i) (lam = 0.8+0.3i), (-0.1750704374011-0.0795774715459i) (lam = -0.5+1.1i),
+          eps = 0.2, 0.05;  K_htk = lam, vs_ext = -1, s1 = -1:  prediction equal, 15.4-15.8 digits;  control without s1: |val-pred|/|pred| = 2.00
+    (1,0) banana(3), n=2:  K_htk = lam^2/2;  15.2-15.4 digits
+
+b11 BV Wick sign (derivation):
+    (i)   I_v = int_{X_v} omega_v, omega_v = Omega_v (1/6) f_abc A^a A^b A^c (x_v), f_abc = kappa([T_a,T_b],T_c).  I_v even, int_{X_v} odd (dim 5):
+          prod_{v=1}^m I_v = (-1)^{5 C(m,2)} int_1 .. int_m omega_1 .. omega_m;  Omega_v even.
+    (ii)  A odd superfield, Koszul rule for the total degree (S3 Sec.4.2).  <A^a(x) A^b(y)> = s_P hbar kappa^{ab} [P](x-y), [P] even;
+          the heat edge hbar kappa^{ab} [K_eps] (odd) comes from hbar Delta_eps acting first (a3); with all other contractions even, the sum
+          over its position is D wedge_e P_e (b1) at a fixed place.
+    (iii) the 3! leg assignments at a cubic vertex give equal terms (f totally antisymmetric, A odd): vertex = f_{h1 h2 h3} A_{h1} A_{h2} A_{h3}
+          for one chosen local order (h1,h2,h3); this cancels 1/6.
+    (iv)  sigma_Gamma = sgn(source -> target),
+          source = half-edges in local order, vertices in vertex order;
+          target = (e,0),(e,1) for e in edge order (each pair -> P_e(x_{e(0)} - x_{e(1)}), the raw integral of b1), then x_{v1},..,x_{v4}.
+          The external block A_{v1}..A_{v4} has even total degree and commutes with all forms.
+    (v)   w_Gamma(A) = U hbar^2 sigma_Gamma int_X Omega ^ [ G_Gamma(d^(1),..,d^(4)) C_Gamma^{a1a2a3a4} A_a1 A_a2 A_a3 A_a4 ]_{3-form},
+          C_Gamma = prod_v f_(local order) prod_e kappa^{-1}_{(e,0)(e,1)},   O_2 = sum_Gamma |Aut Gamma|^{-1} w_Gamma,
+          U = (-1)^{5C(6,2)} s_P^7 x (sign of the heat-edge identity a3) x (placement of the external 3-form): one sign for all graphs with
+          (|V|,|I|,E) = (6,7,4); not fixed here.
+    Covariance: vertex transposition sigma -> -sigma, K -> -K (sgn^3); edge reversal sigma -> -sigma, K -> (-1)^3 K;
+                edge order: sigma, K invariant; local order pi_v: sigma -> sgn(pi_v) sigma, C -> sgn(pi_v) C.
+    n5 Part B: sigma K C (so(3), momenta at the physical external vertices, modulo sum p = 0), 6 random relabellings (root moved, edge
+               reversals, edge order, local orders) per graph:
+               theta(1,3,3) [True]*6;  theta(2,2,3) [True]*6;  controls (sigma -> +1 where sigma = -1): False in all 6 such cases.
+
+b12 Engine labelling theta(p,q,r) (N = 0, N' = root, ext = interior vertices in path order), local order L' of anomaly-structure
+    cochain.colour_weight (n5 Part A):
+        theta(1,3,3):  sigma = -1,  sgn(L -> L') = -1
+        theta(2,2,3):  sigma = -1,  sgn(L -> L') = -1
+    => sigma_Gamma C_Gamma = W^Gamma (anomaly-structure c3 index forms) for both graphs;
+    O_2 = Nnorm sum_Gamma |Aut Gamma|^{-1} int_X Omega K_Gamma(d;0) W^Gamma(A,A,A,A),   Nnorm = U vs_ext s1 s2 hbar^2/(64 pi^5) = -U hbar^2/(64 pi^5),
+    one Nnorm for both graphs: relative Wick sign of theta(1,3,3) and theta(2,2,3) = +1 in the K_Gamma W^Gamma convention (claim c3).
+
+======================================================================================================================
+(c) THE RULE ON SIGNS FIXED BY NILPOTENCY
+======================================================================================================================
+
+Q_n graphs: O = root (not integrated); a vertex field contracted with a letter of O is replaced in place by delta/delta C (odd, left),
+kernel P(x_v - 0); the raw integral uses P_e(x_{e(0)} - x_{e(1)}) = -P(x_v - 0) for a spoke O -> v:
+    sigma = sgn(source -> target) (-1)^{#spokes with tail O},
+    target = internal pairs (tail, head) in edge order, outputs in output order, spoke fields in delta order;
+    coefficient of I_Gamma (or K_Gamma) T_Gamma prod delta in Q_n = U_n sigma_Gamma / |Aut Gamma|,  U_n one factor per n.
+Decorations: S2 leg pattern (in-edges in edge order, output, out-edges in edge order), spoke j -> A_j in edge order, outputs in vertex order.
+    n5 Part C: generated index strings = S2 eq-res-Q1, eq-res-TA, eq-res-TB [box: A1 D1 R12|R12 D2 R23|R23 D3 A2; A, B as in S2] and six-d-Q3 C6 (G1..G5: True).
+Values (n5 Part C, exact):
+    S2 (H,T,k) = (3,0,2):  box +1,  A +1,  B +1
+        S2 eq-box-amp / eq-Q1 box sign (derived there): +.  S2 eq-kAkB (k_A,k_B) = (2,-2), I_B = -int J_B  <=>  kappa_A = kappa_B = +1/2;
+        predicted sigma/|Aut| = (+1/2, +1/2).                                                                   agree
+    six-d-Q3, n = 3:  G1 -1, G2 +1, G3 -1, G4 +1, G5 -1;  |Aut| = 2,2,1,8,2;  sigma/|Aut| = (-1/2, 1/2, -1, 1/8, -1/2)
+        six-d-Q3 VERIFY C7: kappa = (-1/2, 1/2, -1, 1/8, -1/2) with U_3 = i/(512 pi^9) = i^7 (-1/8pi^3)^3 (S2 eq-Qn).          agree
+    msym-odd (H,T,k) = (2,1,2), S2 data (graph_A, graph_B, T_A, T_B):  +1, +1  =>  (k_A,k_B) ~ (1,1);  VERIFY nilpotency-5d null space [1,1].   agree
+    msym-odd theta_rootN(1,3,3), theta_rootN(2,2,3), arm tensor (= S2 pattern in that labelling: True; 3 spokes O -> v):  -1, -1  =>  (1,1);
+        VERIFY 5dN null space [1,1].                                                                                      agree
+    Kernels of those tests = htk kernels (n6, exact): K_rootN(1,3,3) = (pi/20)[B1B2][C1C2], K_rootN(2,2,3) = -(pi/30)[A1B1][C1C2],
+        K_graph_A = -(pi/20)<12><45>, K_graph_B = (pi/30)<uw><ab> (= msym-odd theta-kernels claim: True, True).
+    n5 Part D: sigma K T invariant under 4 random relabellings (tree vertices, edge reversals incl. spokes, edge order, local orders):
+        graph_A (2,1), (3,0); graph_B (2,1), (3,0): all True.
+The rule equals the fitted rule of six-d-Q3 claim C9; here it follows from b11 (ii)-(iv).  The msym-odd closure tests the relative sign of the
+theta(1,3,3)-type and theta(2,2,3)-type graphs with the same kernels, the same (H,T) = (2,1) propagator and the same rule as b12.
+Across loop orders: U_n is tested only up to (-1)^n (relations invariant under Q_n -> (-1)^n Q_n, S2 Sec.8.2 item 4).
+    n7, same chain for S2 (Omega = i dx^1dx^2dx^3 odd, v_3 = 8, s2' with Omega_v as three odd generators):
+        box n=1: vs_ext +1, s1 -1, s2' +1 -> G = -(8pi^3)^{-1} K_htk = +(8pi^3)^{-1} I^{S2};  S2 eq-B-norm: -(8pi^3)^{-1} I^{S2}
+        A, B n=2: vs_ext -1, s1 +1, s2' +1 -> G = +(8pi^3)^{-2} I^{S2};                     S2 eq-B-norm: +(8pi^3)^{-2} I^{S2}
+        (difference (-1)^n, = msym-odd S2-Bnorm-sign; no end-to-end S2 position integral done.)
+
+======================================================================================================================
+(d) FINAL
+======================================================================================================================
+
+K_133(lam;0) = -(pi/20)[p1p2][p3p4] = -(3pi/60)[p1p2][p3p4],   K_223(lam;0) = (pi/30)[p1p2][p3p4] = (2pi/60)[p1p2][p3p4],   |Aut| = 4, 4.
+O_2 = (Nnorm/4) int_X Omega ( K_133(d;0) W_133 + K_223(d;0) W_223 ) = c int_X Omega [d1d2][d3d4] W_tot',
+    W_tot' = -3 W_133 + 2 W_223  (= W_tot of anomaly-structure c4),
+    c = pi Nnorm/240,   Nnorm = -U hbar^2/(64 pi^5),   c = -U hbar^2/(15360 pi^4),   |c| = hbar^2/(15360 pi^4).
+F_133 = -F_223 mod exact (anomaly-structure c7, confirmed in run 1):
+    [O_2] = c (-3[F_133] + 2[F_223]) = 5c [F_223] = c' [F_223],   c' = pi Nnorm/48 = -U hbar^2/(3072 pi^4),   |c'| = hbar^2/(3072 pi^4)     (n6)
+pi Nnorm/48 holds.  pi Nnorm/240 is the value for the opposite relative sign, excluded by b12 and by the msym-odd closure (c).
+U = +-1 not fixed.
+
+======================================================================================================================
+(e) COUNTING
+======================================================================================================================
+
+Anomaly graphs: one heat edge, cubic vertices, E external A (total degree 1 each), tight |I| = Dn + 1, |V| = (D-1)n + 2.
+    E = 3|V| - 2|I| = (D-3)n + 4,  holomorphic derivatives (D-1)n (n per component);
+    edge forms fill the relative positions, the external block supplies the D-form at the common point:  gh = E - D = (D-3)(n-1) + 1;
+    independent parity count |V| D + (D-1)(|I|-1) + D + E = gh (mod 2)  (n6, all rows).
+D = 3, (H,T) = (2,1):  E = 4, gh = 1 for every n;  n odd: 0 (rho_n = 0; WW Prop.3.23);  n = 2,4,6,...: four-leg ghost-number-1, weight (n,n).
+    n = 1..6: |I| = 4,7,10,13,16,19;  |V| = 4,6,8,10,12,14;  E = 4;  gh = 1.
+D = 2, (H,T) = (1,1):
+    n = 1: |I| = 3, |V| = 3, E = 3, gh = 1  (rho_1 = 0)
+    n = 2: |I| = 5, |V| = 4, E = 2, gh = 0  (theta(1,2,2), degrees [2,2,3,3])
+    n = 3: E = 1, gh = -1;  n = 4: E = 0, gh = -2;  n >= 5: E < 0 (no cubic graphs).
+    The D = 2 two-loop graphs give ghost-number-0 two-leg functionals; no D = 2 graph with n >= 2 gives a ghost-number-1 functional.
+    htk catalog: D=2 n=2: one tight graph, degrees [2,2,3,3], E = 2;  D=3 n=2: two, degrees [2,2,2,2,3,3], E = 4 each.
+Pairing degree of int Omega kappa on Omega^*(R) (x) Omega^{0,*}(C^H) (x) g[1]: 2 - D  (D = 3: -1; D = 2: 0, not odd symplectic).
+BF vertex <B,[A,A]> with propagator <AB>: one B half-edge per vertex and per internal edge => |I| <= |V| => b1 <= 1.
+Literature: arXiv 2111.00955 = K. Zeng, "Monopole Operators and Bulk-Boundary Relation in Holomorphic Topological Theories" (abstract: no
+    statement on one-loop exactness).  Gwilliam-Williams one-loop exactness: arXiv 1910.05230 (abstract: CS as a deformation of a partially
+    holomorphic, partially topological 3d BF theory; a gauge giving one-loop exact quantization of BF and CS).  Garner-Williams-Balduf
+    2611.23377 (abstract: HT Poisson sigma model, CS near a principal nilpotent background; finite and one-loop exact in holomorphic gauge).
+    A comparison of D = 2 two-loop kernels with these statements concerns gh-0 two-leg terms, not obstructions; the two-loop obstruction graphs
+    with E = 4, gh = 1 exist for D = 3.
+
+======================================================================================================================
+NOT DONE
+======================================================================================================================
+1. No end-to-end position-space integral for the (2,1) thetas (15 position + 6 Schwinger dimensions); b1-b9 checked piecewise (n1-n3) and
+   end-to-end only on (0,1) bananas n = 2, 4 and (1,0) bananas n = 1, 2 (n4).
+2. The universal sign U (s_P, vertex-measure order, sign of the heat-edge identity, placement of the external 3-form, CE identification) is not
+   fixed: the overall signs of Nnorm, c, c' are open.
+3. The restriction of O_2 to holomorphic jets of the external fields (terms with d_zb, d_tau on A dropped) and the identification of local BRST
+   cohomology with CE cochains of g[[z1,z2]] (claim c5) are not examined; F_133 = -F_223 mod exact taken from run-1 c7, not recomputed.
+4. Nilpotency not re-run: (c) compares with the run-1 verified kappa values and null spaces.
+5. U_n across loop orders tested only up to (-1)^n; the (-1)^n difference with S2 eq-B-norm (n7) is not settled by an S2 position integral.
+6. Odd-P / odd-k cases (7d (3,1,1), 3d (1,1,3)) not treated.
+7. Costello's book (renormalization framework) not read; the obstruction definition is cited from WW Sec.2.3, Sec.3.3.2 through WebFetch
+   extractions; WW, C16, IJZ read only through WebFetch extractions, C17 through pdftotext.
+8. c2's GKW normalization statement (I^GKW = +-pi^{-n/2} K) not checked.

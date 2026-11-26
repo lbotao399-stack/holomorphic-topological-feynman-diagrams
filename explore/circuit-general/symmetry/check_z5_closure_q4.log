@@ -1,0 +1,7 @@
+q=4 unknowns 1956 rows 3109 {'T': 2074, 'D': 0, 'I': 740, 'B': 60, 'S': 235}  2.6s
+rank 1493 of 1956 unknowns, determined 260  22.3s
+engine-evaluated orbits 940 of 1956
+rank 1864 of 1956 unknowns, determined 972  7.0s
+symmetry equalities 16093
+rank 1948 of 1956 unknowns, determined 986  0.7s
+Z5 q=4: orbits 1956 | msys alone: determined 260 | + engine values (940): determined 972 | + symmetry equalities: determined 986  (139.5s)

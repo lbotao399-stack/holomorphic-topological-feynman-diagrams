@@ -1,0 +1,65 @@
+formal ingredients built (1.5s)
+==================== gl4 ====================
+  tau-span dims (exact): k=2: 2, k=3: 6, k=4: 24, k=5: 119
+  (1,1): dim C^3 = 5, dim Z^3 = dim H^3 = 3
+      J closed: {'D': True, 'S1': True, 'S0': True};  independent J's at N: ['D', 'S1', 'S0']; span dim 3 == dim Z^3: True
+  (2,0): dim C^3 = 2, dim Z^3 = dim H^3 = 0
+  (0,2): dim C^3 = 2, dim Z^3 = dim H^3 = 0
+  (2,2): dim C^4 = 36, dim Z^4 = 10, dim B^4 = 6, dim H^4 = 4
+  H^4 representatives: ['F223', 'F1', 'z8', 'z9'] (count 4 == dim H^4: True)
+  [F_223] != 0: True;  [F_133 + F_223] = {}
+  J = x0*D + x1*S1 + x2*S0
+  (1/2){J,J} class: {'F1': -(x0 + 2*x1)*(x1 + 2*x2)/12, 'F223': (2*x0*x2 + x1**2 + 4*x1*x2)/48}
+    F_223-coefficient == (2x0x2 + x1^2 + N x1x2)/48: True
+    F1-coefficient / ((2x0 + N x1)(2x1 + N x2)) = -1/48
+    claimed mu = -(2x0 + N x1)(2x1 + N x2)/48 on [F_1]: True; other components zero: True
+    in (alpha,beta,gamma): lam == (4a^2 - 2N^2 b^2 + N^3 b g)/(48N^2): True;  mu == -N b (N g - b)/48: True
+    at J = pi^*D_sl = D - (2/N)S1 + (4/N^2)S0: {'F1': 0, 'F223': 1/192}
+    at J = S1 - (2/N)S0: {'F1': 0, 'F223': -1/48}
+    at J = j_M = D/2: {'F1': 0, 'F223': 0}
+  time 22.0s
+==================== gl5 ====================
+  tau-span dims (exact): k=2: 2, k=3: 6, k=4: 24, k=5: 120
+  (1,1): dim C^3 = 5, dim Z^3 = dim H^3 = 3
+      J closed: {'D': True, 'S1': True, 'S0': True};  independent J's at N: ['D', 'S1', 'S0']; span dim 3 == dim Z^3: True
+  (2,0): dim C^3 = 2, dim Z^3 = dim H^3 = 0
+  (0,2): dim C^3 = 2, dim Z^3 = dim H^3 = 0
+  (2,2): dim C^4 = 36, dim Z^4 = 10, dim B^4 = 6, dim H^4 = 4
+  H^4 representatives: ['F223', 'F1', 'z8', 'z9'] (count 4 == dim H^4: True)
+  [F_223] != 0: True;  [F_133 + F_223] = {}
+  J = x0*D + x1*S1 + x2*S0
+  (1/2){J,J} class: {'F1': -(2*x0 + 5*x1)*(2*x1 + 5*x2)/48, 'F223': (2*x0*x2 + x1**2 + 5*x1*x2)/48}
+    F_223-coefficient == (2x0x2 + x1^2 + N x1x2)/48: True
+    F1-coefficient / ((2x0 + N x1)(2x1 + N x2)) = -1/48
+    claimed mu = -(2x0 + N x1)(2x1 + N x2)/48 on [F_1]: True; other components zero: True
+    in (alpha,beta,gamma): lam == (4a^2 - 2N^2 b^2 + N^3 b g)/(48N^2): True;  mu == -N b (N g - b)/48: True
+    at J = pi^*D_sl = D - (2/N)S1 + (4/N^2)S0: {'F1': 0, 'F223': 1/300}
+    at J = S1 - (2/N)S0: {'F1': 0, 'F223': -1/48}
+    at J = j_M = D/2: {'F1': 0, 'F223': 0}
+  time 46.0s
+==================== sl4 ====================
+  tau-span dims (exact): k=2: 1, k=3: 2, k=4: 9, k=5: 43
+  (1,1): dim C^3 = 2, dim Z^3 = dim H^3 = 1
+      J closed: {'D': True};  independent J's at N: ['D']; span dim 1 == dim Z^3: True
+  (2,0): dim C^3 = 1, dim Z^3 = dim H^3 = 0
+  (0,2): dim C^3 = 1, dim Z^3 = dim H^3 = 0
+  (2,2): dim C^4 = 15, dim Z^4 = 4, dim B^4 = 3, dim H^4 = 1
+  H^4 representatives: ['F223'] (count 1 == dim H^4: True)
+  [F_223] != 0: True;  [F_133 + F_223] = {}
+  J = x0*D
+  (1/2){J,J} class: {'F223': x0**2/192}
+    F_223-coefficient == x0^2/(12N^2) = x0^2/192: True
+  time 46.9s
+==================== sl5 ====================
+  tau-span dims (exact): k=2: 1, k=3: 2, k=4: 9, k=5: 44
+  (1,1): dim C^3 = 2, dim Z^3 = dim H^3 = 1
+      J closed: {'D': True};  independent J's at N: ['D']; span dim 1 == dim Z^3: True
+  (2,0): dim C^3 = 1, dim Z^3 = dim H^3 = 0
+  (0,2): dim C^3 = 1, dim Z^3 = dim H^3 = 0
+  (2,2): dim C^4 = 15, dim Z^4 = 4, dim B^4 = 3, dim H^4 = 1
+  H^4 representatives: ['F223'] (count 1 == dim H^4: True)
+  [F_223] != 0: True;  [F_133 + F_223] = {}
+  J = x0*D
+  (1/2){J,J} class: {'F223': x0**2/300}
+    F_223-coefficient == x0^2/(12N^2) = x0^2/300: True
+  time 47.9s

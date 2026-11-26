@@ -1,0 +1,246 @@
+VERIFY simple-g.  Folder P/deepen/simple-g/verify/, P = /Users/libotao/Desktop/holomorphic-twist-program.
+Own code: valg.py (algebras), vcoch.py (W, F, beta, exact products), t_*.py (checks).  Logs: logs/*.log.
+No explorer file imported.  Run-1 code (explore/anomaly-structure/code: lie, cochain, c_obstruction; code/htk)
+imported read-only only in t_vs_run1.py, t_d_vs_run1.py, t_beta_vs_run1.py, as reference definitions.
+Arithmetic: integers throughout.  vcoch.mm: float64 product only if the abs-value bound of all partial sums is
+< 2^52 (exact), else int64 below 2^62, else Python integers; every float result is checked integral and finite.
+Largest bound met: 5.2e12 (closedness, F4).  Ranks: sympy DomainMatrix over QQ (exact).  Invariant dimensions by
+linear algebra: nullity modulo p1 = 1000003, p2 = 999983 (upper bounds), matched by explicit invariants (lower bounds).
+
+=====================================================================================================
+1. Re-derivations
+=====================================================================================================
+
+1.1 beta.  eta_0(y0,y1,y2) = [q0 q1]^2 f(Y0,Y1,Y2), f(X,Y,Z) = kappa([X,Y],Z).
+  (d eta_0)(x0..x3) = sum_{i<j} (-1)^{i+j} eta_0([x_i,x_j], x_k, x_l),  (q0,q1,q2) = (p_i+p_j, p_k, p_l)
+  [p_i+p_j, p_k] = [-(p_k+p_l), p_k] = [p_k p_l],   f([X_i,X_j],X_k,X_l) = kappa([X_i,X_j],[X_k,X_l])
+  => beta = sum_{i<j} (-1)^{i+j} [p_k p_l]^2 kappa([X_i,X_j],[X_k,X_l]).
+  logs/beta_vs_run1.log: run-1 d_CE(alt([q0q1]^2 f)) / beta = 6 on all entries at 4 configurations, sl2 and sl3.
+
+1.2 Lemma 1 (Reynolds).  The degree-4 cochains C^k_4 form a finite-dimensional rational G x GL2-module, G the
+  adjoint group; d is equivariant ([X e^{pz}, Y e^{qz}] = [X,Y] e^{(p+q)z}, linear in p).  Weight (2,2) is the
+  weight space of the diagonal torus; SL2-invariants of degree 4 have weight (2,2).  w in C^4_inv, w = d eta,
+  eta in C^3_(2,2) subset C^3_4  =>  w = R w = d(R eta), R the Reynolds projector of G x SL2 on C^3_4.
+  Hence B^4 cap C^4_inv = d(C^3_inv) and H^4_inv -> H^4_(2,2) is injective.  No gap found.
+
+1.3 Lemma 2.  C^3_inv = (SL2-invariant quartics in q0, q1) (x) (g^{*(x)3})^g, alternating part.
+  logs/sl2inv.log:  free vectors 2, bidegree (2,2): monomials 9, dim ker E = 1, spanned by [q0q1]^2.
+                    [q_s0 q_s1] = sgn(s)[q0 q1] mod conservation, all s in S3: True.
+  [q0q1]^2 is S3-invariant, so alt requires T in (Lambda^3 g*)^g; dim = 1 for every algebra (section 5), so
+  C^3_inv = C [q0q1]^2 f, B^4 cap C^4_inv = C beta, and for X in Z^4_inv:  [X] = 0  <=>  X in C beta.
+
+1.4 Lemma 3 (fixed slot).  T in (g^{*(x)k})^g, Phi(X) = T(X,.,..): Phi([Y,X]) = Y.Phi(X), so ker Phi is an ideal;
+  g simple, b in ker Phi, b != 0  =>  T = 0.  Valid.  Not used for the 4-cochain ranks below (full tensors used);
+  used for the 5-cochain closedness checks of the larger algebras ('slot' mode, x0 = e_0).
+
+1.5 d J_1 = 0 for J_1 = [q0 q1] T(Y0,Y1,Y2), T in (S^3 g*)^g.
+  dJ = sum_{i<j} (-1)^{i+j} [p_k p_l] T([X_i,X_j],X_k,X_l);  with p3 = -(p0+p1+p2):
+  [p2p3] = v + w, [p1p3] = u - w, [p0p3] = -u - v  (u = [p0p1], v = [p0p2], w = [p1p2]).
+  coeff(u) = T([X0,X2],X1,X3) + T([X1,X2],X0,X3) - T([X2,X3],X0,X1)
+           = -( T([X2,X0],X1,X3) + T(X0,[X2,X1],X3) + T(X0,X1,[X2,X3]) ) = 0   (ad_{X2}-invariance, T symmetric);
+  coeff(v), coeff(w) likewise.  Exactness: 2-cochains of weight (1,1) depend on q0 only (q1 = -q0);
+  logs/sl2inv.log: free vectors 1, bidegree (1,1): dim ker E = 0, so C^2_inv = 0 and no nonzero J_1 is exact.
+  Free vectors 2, bidegree (1,1): dim ker E = 1 (spanned by [q0q1]), so every G x SL2-invariant 3-cochain of
+  weight (1,1) has the form [q0q1] T with T in (S^3 g*)^g.
+
+1.6 Rescaling kappa -> c kappa: f -> c f, kappa^{-1} -> c^{-1} kappa^{-1}; W has 6 f and 7 kappa^{-1}: W -> c^{-1} W;
+  beta -> c beta; X = lambda beta => lambda -> c^{-2} lambda.  logs/misc.log (2), exact full tensors:
+     so5, G2, sl3: c = 2, 3: W_133, W_223 -> W/c: True, beta -> c beta: True.
+
+1.7 Assembly (logs/misc.log (4), sympy), F_133 = -F_223 + beta_K/2:
+     c3 sign        O_2 = (pi Nnorm/48) F223 - (pi Nnorm/160) beta_K
+     K_223 flipped  O_2 = (pi Nnorm/240) F223 - (pi Nnorm/160) beta_K
+     K_133 flipped  O_2 = -(pi Nnorm/240) F223 + (pi Nnorm/160) beta_K
+     (1/4)(-pi/20) = (pi/240)(-3), (1/4)(pi/30) = (pi/240)(2): True.
+
+=====================================================================================================
+2. Own constructions (logs/build.log)
+=====================================================================================================
+
+so(N): E_ij - E_ji;  sp(2m): J S, S symmetric;  sl(N): E_ij, E_ii - E_NN;
+G2: Der(O), O Cayley-Dickson over H (alternative and normed at 30 random integer pairs: True), nullspace of the
+    derivation system: dim 14;
+F4: so(9) + S_16, gamma_i = [[0, L_i^T],[L_i, 0]] (i = 0..7), gamma_8 = diag(1,-1), Y_ij = 2(E_ij - E_ji),
+    [Y_ij, s] = gamma_i gamma_j s, [s,t] = sum_{i<j} (s^T gamma_i gamma_j t) Y_ij;
+    Clifford relations and symmetry: True; rho representation: True; Jacobi on all triples: True.
+All 12: antisymmetry, Jacobi (all index triples), Killing form K = tr(ad ad) invariant and nondegenerate: True;
+dim of invariant symmetric bilinear forms mod p1, p2 = (1, 1) (so simple); dim ker ad_X at random X =
+1,2,3,4 (sl2..sl5), 2 (so5, sp4), 3 (so6, so7, sp6), 4 (so8), 2 (G2), 4 (F4); dim 52 simple => F4, dim 14 => G2.
+Form used in the cochain code: kappa = K/g, g = gcd of the entries of K; results are converted to the Killing form
+by X_K = X_kappa/g, beta_K = g beta_kappa.
+
+=====================================================================================================
+3. Definitions against run 1
+=====================================================================================================
+
+logs/vs_run1.log (W from the c3 index forms here; run-1 omega_G = alt((60/pi)K_G W_G) from the engine graphs and the
+orientation rule; same matrices, kappa = tr in both):
+   sl2: omega_133/F_133 = -3, -3, -3 ; omega_223/F_223 = 2, 2, 2   (3 random points)
+   sl3: omega_133/F_133 = -3, -3, -3 ; omega_223/F_223 = 2, 2, 2
+   (60/pi) K_133 = -3 [p0p1][p2p3], (60/pi) K_223 = 2 [p0p1][p2p3], ext = [1,2,3,4].
+logs/d_vs_run1.log: own d = run-1 d_CE on all 5-tensor entries at 6 configurations, non-invariant input, sl2, sl3:
+   True, output nonzero True.
+logs/selftest.log: full-tensor W = pointwise W (Python integers) at random 4-tuples; alternated tensors and beta
+   tensors = pointwise evaluation: True for sl2, sl3, so5, sp4, G2, sl4, so7.
+
+=====================================================================================================
+4. Decisive ranks (logs/classes.log, logs/classes_F4.log)
+=====================================================================================================
+
+Method: full coefficient 4-tensors W_G[a0..a3] (no fixed slot).  F_G(P), beta(P) at 6 configurations P_j with
+det[mu(P_j)] != 0, mu in (u^2,v^2,w^2,uv,uw,vw) (injective on span(mu) (x) tensors); a 7th configuration is
+interpolated exactly on 3000 random entries (True for every algebra), i.e. the cochains lie in that span.
+X in C beta is decided exactly: c fixed at an entry with beta != 0, then X*den(c) - beta*num(c) = 0 on all entries,
+or a nonzero 2x2 minor is printed.
+
+            entries     F133         F223         F133+F223 = c beta   -3F133+2F223   -3F133-2F223   c(Killing)
+sl2         486         = 7/2 beta   = -3 beta    yes                  = -33/2 beta   = -9/2 beta    1/2
+sl3         24576       not in C b   not in C b   yes                  not            not            1/2
+sl4         303750      not          not          yes                  not            not            1/2
+sl5         1990656     not          not          yes                  not            not            1/2
+so5         60000       not          not          yes                  not            not            1/2
+sp4         60000       not          not          yes                  not            not            1/2
+so6         303750      not          not          yes                  not            not            1/2
+so7         1166886     not          not          yes                  not            not            1/2
+sp6         1166886     not          not          yes                  not            not            1/2
+so8         3687936     not          not          yes                  not            not            1/2
+G2          230496      not          not          yes                  not            not            1/2
+F4          43869696    not          not          yes                  not            not            1/2
+printed minors (beta[i0] X[j] - X[i0] beta[j], X = F223): sl3 -1451329941600, sl4 1059474898944,
+sl5 2455142400000000, so5 -1926955008, sp4 374949347328, so6 -82673664, so7 -6588244224, sp6 -1804861440,
+so8 -15552000000, G2 -116095057920, F4 -19670999040.
+c(kappa) printed: sl3 18, sl4 32, sl5 50, so5 18, sp4 18, so6 32, so7 50, sp6 32, so8 72, G2 32, F4 2592
+(= g^2/2 with g = Killing/kappa = 6, 8, 10, 6, 6, 8, 10, 8, 12, 8, 72).
+
+Forms of the explorer (logs/misc.log (1)): K = 3 tr_5 (so5), 4 tr_6 (so6), 5 tr_7 (so7), 6 tr_8 (so8), 6 tr_4 (sp4),
+8 tr_6 (sp6), 4 tr_7 (G2), 6 tr_3, 8 tr_4, 10 tr_5 (sl3, sl4, sl5), on all entries; lambda_tr = r^2/2 =
+9/2, 8, 25/2, 18, 18, 32, 8, 18, 32, 50: equal to the explorer's values.  The F4 value 162 (restricted E6 Kac
+form, r = 18) is not recomputed here (different construction); lambda_K = 1/2 is.
+
+4.1 Without the SL2 reduction (logs/nonreduced.log): eta over all G-invariant alternating 3-cochains of weight
+(2,2): alt(mu T), mu over the 9 monomials, T over a basis of (g^{*(x)3})^g ({f} for sl2, so5, G2: dim 1; {f, d}
+for sl3: dim 2; section 5); values at 40 configurations of rank 36 on the 36 weight-(2,2) monomials.
+   sl2: rank d(eta) = 2; F133, F223, all combinations exact (solution verified on all 3240 rows).
+   sl3: rank d(eta) = 3; F133, F223, -3F133+-2F223: rank [d eta|X] = 4 > 3; F133+F223 exact (verified, 163840 rows).
+   so5: rank d(eta) = 2; F133, F223, -3F133+-2F223: rank 3 > 2;  F133+F223 exact (verified, 400000 rows).
+   G2:  rank d(eta) = 2; F133, F223, -3F133+-2F223: rank 3 > 2;  F133+F223 exact (verified, 1536640 rows).
+   (non-exactness from an inconsistent exact subsystem of 2500 rows.)  Agrees with Lemma 1 and with section 4.
+
+=====================================================================================================
+5. Invariant dimensions
+=====================================================================================================
+
+logs/inv_weyl.log, own root systems from Cartan matrices, dim V^g = sum_w sgn(w) mult_V(rho - w rho):
+           S2 L2 S3 L3 T3 S4 L4 T4
+  sl2       1  0  0  1  1  1  0  3
+  sl3       1  0  1  1  2  1  0  8
+  sl4=so6   1  0  1  1  2  2  0  9
+  sl5       1  0  1  1  2  2  0  9
+  so5=sp4   1  0  0  1  1  2  0  6
+  so7       1  0  0  1  1  2  0  6
+  sp6       1  0  0  1  1  2  0  6
+  so8       1  0  0  1  1  3  0  7
+  G2        1  0  0  1  1  1  0  5
+  F4        1  0  0  1  1  1  0  5
+Identical to the explorer's table.
+Linear algebra on the own constructions (logs/inv_lin.log, logs/inv_lin_part2.log; invariance under two elements
+that generate g, generated dimension printed = dim g), nullity mod p1, p2:
+           L3     S3     T3
+  sl2      1,1    0,0    1,1
+  sl3      1,1    1,1    2,2
+  so5      1,1    0,0    1,1
+  sp4      1,1    0,0    1,1
+  G2       1,1    0,0    -
+  sl4      1,1    1,1    -
+  so6      1,1    1,1    -
+  so7      1,1    0,0    -
+  sp6      1,1    0,0    -
+  sl5      1,1    1,1    -
+  so8      1,1    0,0    -      (1519 s)
+  F4: not run by linear algebra (S^3: 24804 unknowns); Weyl values only.
+Upper bounds 1 (L3) are attained by f; upper bounds 1 (S3, sl_N) by d = tr(X{Y,Z}) (section 7); T3 = 2 for sl3
+attained by f, d.  So these are exact dimensions.
+
+=====================================================================================================
+6. Closedness and d on C^4_inv
+=====================================================================================================
+
+logs/closedness.log: 24 five-momentum configurations, rank 20 on the 21 products of two brackets (= dim of their
+span), 'full' (all 5-tensor entries: sl2, sl3, so5, sp4, G2) or 'slot' (x0 = e_0, all basis 4-tuples: sl4, sl5,
+so6, so7, sp6, so8, F4):  d F_133 = 0: True, d F_223 = 0: True for all 12; control d beta = 0: True;
+control d alt([p0p1][p2p3] R), R random non-invariant: nonzero (False) for all 12.
+
+logs/c4inv.log: dim C^4_inv = m_T(sgn) + m_T(V211) + m_T(V22), P = triv + V31 + V22 (chi_P computed directly:
+[6, 2, 2, 0, 0] on e, (01), (01)(23), (012), (0123)), T = (g^{(x)4})^g:
+   sl2 1 ; sl3, sl4, sl5 3 ; so5, so7, sp6, so8, G2, F4 2.
+logs/c4span.log (direct: basis of (g^{(x)4})^g from permutations of kappa kappa, kappa([,],[,]), W_133, W_223,
+tr(ad^4) and for sl_N tr_N(XYZU); its rank equals the Weyl dimension in each case):
+   sl2: dim C^4_inv = 1 = C beta ; rank d = 0 ; dim H^4_inv = 0.
+   sl3: dim C^4_inv = 3 ; rank d on C^4_inv = 1 ; dim Z^4_inv = 2 = span(beta, F223) ; dim H^4_inv = 1.
+   so5: dim C^4_inv = 2 ; rank d = 0 ; Z^4_inv = C^4_inv = span(beta, F223) ; dim H^4_inv = 1.
+   G2:  dim C^4_inv = 2 ; rank d = 0 ; Z^4_inv = C^4_inv = span(beta, F223) ; dim H^4_inv = 1.
+   (pool ranks 3, 8, 6, 5 = Weyl dims 3, 8, 6, 5; dim C^4_inv equal to the character values.)
+So d does not vanish on all of C^4_inv (sl3); for sl3, so5, G2, H^4_inv = C [F223].
+
+=====================================================================================================
+7. J_1 (logs/j1.log)
+=====================================================================================================
+
+sl3, sl4, sl5: d(X,Y,Z) = tr(X(YZ+ZY)): symmetric True, invariant (all basis entries) True, nonzero True;
+d J_1 = 0 at 4 configurations (rank 3 on u, v, w), all entries: True; random symmetric non-invariant T: dJ != 0.
+With section 5 (S3 = 0 for sl2, so5, sp4, so7, sp6, so8, G2, F4; 1 for sl3, sl4 = so6, sl5) and 1.5:
+closed J_1 of the form [q0q1]T modulo exact = (S^3 g*)^g.
+
+=====================================================================================================
+8. Verdicts
+=====================================================================================================
+
+s1 confirmed.  1.2, 1.3 re-derived; sl2inv counts 1, 6, 20; beta = d eta_0 / 6 against run-1 d_CE; dim Lambda^3 = 1
+   (Weyl, all; linear algebra on the own constructions, section 5); independent check in the unreduced complex (4.1).
+s2 confirmed.  Ideal argument re-derived (1.4).  The ranks it was used for are reproduced here with full tensors
+   (section 4), so the explorer's fixed-slot evaluation gave the same answers.
+s3 confirmed.  Section 4 (12 own constructions, full tensors, exact) and 4.1.  The explorer's folded constructions
+   were not re-run; the same algebras were built differently (Der(O), so9 + S16, matrix forms).
+s4 confirmed.  F133 + F223 = (1/2) beta_K on all entries for all 12; assembly 1.7; forms of the explorer: lambda
+   values for the matrix forms reproduced; F4 value 162 (E6 form) not recomputed.
+s5 confirmed.  Section 6 with own d validated against run-1 d_CE.  The explorer's caveat holds for its 122 inputs;
+   on the full C^4_inv d is not zero for sl3 (rank 1).
+s6 confirmed.  Section 5 (Weyl, all 10 algebras; linear algebra for the smaller ones), 1.5 (analytic proof of
+   d J_1 = 0 and of non-exactness), section 7 (numerical).
+s7 confirmed.  Combination of s3, s4, s6; rescaling 1.6.
+s8 confirmed (as a statement over the computed list).  Dimensions reproduced (section 5).  'non-exact iff
+   (S^3)^g != 0' fails on so5, so7, so8, sp6, G2, F4; 'non-exact iff dim (S^4)^g >= 2' fails on sl3, G2, F4;
+   'non-exact iff dim (g^{(x)4})^g > 3' holds on the 10 algebras.  Also observed here: non-exact iff
+   dim C^4_inv > 1 on the 10 algebras.  sl2: C^4_inv = C beta (logs/misc.log (3): 63 alternated kappa kappa
+   cochains have rank 1, with beta rank 1; logs/c4span.log).
+s9 confirmed.  so6 and sl4 (own matrix constructions): same ranks, c(Killing) = 1/2; run-1 sl4 result
+   (F133 + F223 exact, F223 not exact) reproduced.
+
+=====================================================================================================
+9. Logical gaps
+=====================================================================================================
+
+G1. Identification of local BRST cohomology on R x C^2 with CE cohomology of g[[z1,z2]] modulo sum p (run-1 c5):
+    taken over, not sourced.  Lemma 1 needs only the G x SL2-equivariance of that model.
+G2. Nnorm and the relative Wick sign (run-1 c2, c3) underived; the three sign choices give nonzero classes for
+    g != sl2 (1.7), so non-vanishing does not depend on them; the coefficient does.
+G3. The index forms of W_133, W_223 are the c3 forms; they reproduce the run-1 orientation-rule cochains (section 3),
+    whose relation to the Wick expansion is c3 (derived-unchecked).
+G4. Q1 open: whether (1/2){J_1,J_1} cancels [O_2] for sl3, sl4 = so6, sl5.  The (B)/(C) split concerns only
+    G x SL2-invariant order-hbar 3-cochains of weight (1,1), which by 1.5 are exactly [q0q1]T; non-invariant
+    order-hbar deformations are not covered.
+G5. dim H^4_inv: obtained here only for sl2 (0), sl3 (1), so5 (1), G2 (1); for the other algebras only
+    dim C^4_inv (characters: 3 for sl4, sl5; 2 for so7, sp6, so8, F4) and the classes listed.  The explorer did
+    not compute it (its open issue); it is not needed for the decision X in C beta.
+G6. No statement for algebras outside the list.
+
+=====================================================================================================
+10. Not done
+=====================================================================================================
+
+- The explorer's specific constructions (Kac/folded sp4, so7, sp6, so8, G2, F4; G2 from the 3-form) were not
+  re-run; the algebras were rebuilt independently (section 2).
+- The F4 form ratio r = 18 of the explorer's restricted E6 Kac form (lambda = 162) was not recomputed.
+- Linear-algebra invariant dimensions for F4 (S^3: 24804 unknowns) and T^3 for dim > 10 were not run; Weyl values used.
+- Nnorm, the Wick sign (run-1 c2, c3), the BRST/CE identification (run-1 c5) and Q1 were not examined.
+- rank of d on C^4_inv for sl4, sl5, so6, so7, sp6, so8, F4 not computed.

@@ -1,0 +1,3 @@
+box      n=1: vs_ext=[1] s1=-1 s2'=+1 -> G = -1 (8pi^3)^{-n} K_htk = +1 (8pi^3)^{-n} I^S2 ; S2 eq-B-norm: -1 (8pi^3)^{-n} I^S2 ; agree: False
+graph_A  n=2: vs_ext=[-1] s1=+1 s2'=+1 -> G = -1 (8pi^3)^{-n} K_htk = +1 (8pi^3)^{-n} I^S2 ; S2 eq-B-norm: +1 (8pi^3)^{-n} I^S2 ; agree: True
+graph_B  n=2: vs_ext=[-1] s1=+1 s2'=+1 -> G = -1 (8pi^3)^{-n} K_htk = +1 (8pi^3)^{-n} I^S2 ; S2 eq-B-norm: +1 (8pi^3)^{-n} I^S2 ; agree: True

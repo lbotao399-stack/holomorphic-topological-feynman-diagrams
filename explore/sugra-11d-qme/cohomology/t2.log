@@ -1,0 +1,33 @@
+T2 (t2_linear.py)
+n=2: arity-1 terms of Q occur only for (source, target) types [('g', 'b'), ('n', 'X')]; odd letters have none
+  Q_lin nu_a = sum_i X^i_{a+e_i}, Q_lin gamma_{i,a} = beta_{a+e_i}: True
+  slots (G, t) with G <= 4: 48 ; all predictions hold: True
+  [H^0 = ker(gamma->beta) = span{gamma_{j,a+e_i}-gamma_{i,a+e_j}}, H^1 = coker(nu->X) (+ C beta_0 at (G,t)=(-1,0)), nu->X injective]
+  X mod p.X : dim per (|a|, t)   [X^i_a has G=|a|-1, t=e_i-a]
+    |a|=0 total 2 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 2): (0, 1):1 (1, 0):1
+    |a|=1 total 3 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 3): (-1, 1):1 (0, 0):1 (1, -1):1
+    |a|=2 total 4 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 4): (-2, 1):1 (-1, 0):1 (0, -1):1 (1, -2):1
+    |a|=3 total 5 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 5): (-3, 1):1 (-2, 0):1 (-1, -1):1 (0, -2):1 (1, -3):1
+    |a|=4 total 6 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 6): (-4, 1):1 (-3, 0):1 (-2, -1):1 (-1, -2):1 (0, -3):1 (1, -4):1
+    |a|=5 total 7 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 7): (-5, 1):1 (-4, 0):1 (-3, -1):1 (-2, -2):1 (-1, -3):1 (0, -4):1 (1, -5):1
+  Z(gamma) = functions of p^gamma : dim per (|a|, t)   [gamma_{i,a} has G=|a|, t=-e_i-a]
+    |a|=1 total 1 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 1): (-1, -1):1
+    |a|=2 total 2 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 2): (-2, -1):1 (-1, -2):1
+    |a|=3 total 3 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 3): (-3, -1):1 (-2, -2):1 (-1, -3):1
+    |a|=4 total 4 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 4): (-4, -1):1 (-3, -2):1 (-2, -3):1 (-1, -4):1
+  beta part of H^1: [(-1, (0, 0), 1)]
+n=3: arity-1 terms of Q occur only for (source, target) types [('g', 'b'), ('n', 'X')]; odd letters have none
+  Q_lin nu_a = sum_i X^i_{a+e_i}, Q_lin gamma_{i,a} = beta_{a+e_i}: True
+  slots (G, t) with G <= 3: 100 ; all predictions hold: True
+  [H^0 = ker(gamma->beta) = span{gamma_{j,a+e_i}-gamma_{i,a+e_j}}, H^1 = coker(nu->X) (+ C beta_0 at (G,t)=(-1,0)), nu->X injective]
+  X mod p.X : dim per (|a|, t)   [X^i_a has G=|a|-1, t=e_i-a]
+    |a|=0 total 3 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 3): (0, 0, 1):1 (0, 1, 0):1 (1, 0, 0):1
+    |a|=1 total 8 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 8): (-1, 0, 1):1 (-1, 1, 0):1 (0, -1, 1):1 (0, 0, 0):2 (0, 1, -1):1 (1, -1, 0):1 (1, 0, -1):1
+    |a|=2 total 15 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 15): (-2, 0, 1):1 (-2, 1, 0):1 (-1, -1, 1):1 (-1, 0, 0):2 (-1, 1, -1):1 (0, -2, 1):1 (0, -1, 0):2 (0, 0, -1):2 (0, 1, -2):1 (1, -2, 0):1 (1, -1, -1):1 (1, 0, -2):1
+    |a|=3 total 24 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 24): (-3, 0, 1):1 (-3, 1, 0):1 (-2, -1, 1):1 (-2, 0, 0):2 (-2, 1, -1):1 (-1, -2, 1):1 (-1, -1, 0):2 (-1, 0, -1):2 (-1, 1, -2):1 (0, -3, 1):1 (0, -2, 0):2 (0, -1, -1):2 (0, 0, -2):2 (0, 1, -3):1 (1, -3, 0):1 (1, -2, -1):1 (1, -1, -2):1 (1, 0, -3):1
+    |a|=4 total 35 (formula n*C(m+n-1,n-1)-C(m+n-2,n-1) = 35): (-4, 0, 1):1 (-4, 1, 0):1 (-3, -1, 1):1 (-3, 0, 0):2 (-3, 1, -1):1 (-2, -2, 1):1 (-2, -1, 0):2 (-2, 0, -1):2 (-2, 1, -2):1 (-1, -3, 1):1 (-1, -2, 0):2 (-1, -1, -1):2 (-1, 0, -2):2 (-1, 1, -3):1 (0, -4, 1):1 (0, -3, 0):2 (0, -2, -1):2 (0, -1, -2):2 (0, 0, -3):2 (0, 1, -4):1 (1, -4, 0):1 (1, -3, -1):1 (1, -2, -2):1 (1, -1, -3):1 (1, 0, -4):1
+  Z(gamma) = functions of p^gamma : dim per (|a|, t)   [gamma_{i,a} has G=|a|, t=-e_i-a]
+    |a|=1 total 3 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 3): (-1, -1, 0):1 (-1, 0, -1):1 (0, -1, -1):1
+    |a|=2 total 8 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 8): (-2, -1, 0):1 (-2, 0, -1):1 (-1, -2, 0):1 (-1, -1, -1):2 (-1, 0, -2):1 (0, -2, -1):1 (0, -1, -2):1
+    |a|=3 total 15 (formula n*C(m+n-1,n-1)-C(m+n,n-1) = 15): (-3, -1, 0):1 (-3, 0, -1):1 (-2, -2, 0):1 (-2, -1, -1):2 (-2, 0, -2):1 (-1, -3, 0):1 (-1, -2, -1):2 (-1, -1, -2):2 (-1, 0, -3):1 (0, -3, -1):1 (0, -2, -2):1 (0, -1, -3):1
+  beta part of H^1: [(-1, (0, 0, 0), 1)]

@@ -1,0 +1,171 @@
+VERIFY o3: order hbar^3 of the J_1-deformed commutative CS on R x C^2, (H,T) = (2,1), heat-kernel gauge, kappa = tr
+==================================================================================================================
+
+P = /Users/libotao/Desktop/holomorphic-twist-program.  Folder P/deepen/o3/verify/.
+Code (own; no import of P/deepen/o3/code, P/deepen/deform/code, P/explore/*):
+  vlib.py   trace-basis cochains, coefficients Laurent polynomials in N (formal N); alt, d, shuffle bracket, C, sl2 E/F
+  vla.py    exact ranks (sympy sparse rref over QQ; also GF(2147483629) as cross-check), exact solves
+  vexp.py   explicit matrices at fixed N: cochain evaluation, CE formula, bracket by explicit dual basis (shuffle formula)
+  vfix.py   faithful fixed-N coordinates (evaluation of trace monomials on explicit tuples; relation spaces)
+  vgraph.py theta graphs (htk.theta), own local orders, own Wick sign, own colour calculus, own J_1 insertion
+  v1_libtests.py  v2_kernels.py  v3_assemble.py  v4_faithful.py  v5_cohom_sl.py  v6_gl.py  v7_misc.py  v7b_controls.py
+  v7c_threeloop.py  v8_oracle.py  v9_extra.py;  logs/<script>.log (v6: _N5, _N7, _N11);  data/*.pkl
+Reused: P/code/htk only (sp_reduce/integrate with an insertion callable, brute.density, brute.currents, oracle.kernel,
+  catalog.tight_graphs, theta, polygon, banana).
+Shared with the explorer by definition (not re-derived): the dictionary F = int P(d) W <-> w = alt(PW), F = (1/k!) w(A..A);
+  the shuffle bracket {a,b} = alt(gamma_0)/((m-1)!(n-1)!); the Wick rule sigma = sgn(source -> target) of normalization
+  b5/b11; Nnorm = -U hbar^2/(64 pi^5) (normalization b9).
+Arithmetic: all identities exact (Fraction, Laurent polynomials in N); all ranks exact over Q (sparse rref), mod-p ranks
+  printed alongside and equal; floating point only in v8 (htk oracle) and v9 (4) (scipy dblquad), digits stated.
+
+Notation as in the explorer's REPORT: [pq] = p^1q^2 - p^2q^1, b_ij = [p_i p_j], f = tr(1[23]), d = tr(1{23}),
+D = [p1p2]d, u2f = [p1p2]^2 f, D3 = [p1p2]^3 d, S1, S0, S1_3, S0_3; pi nu = -U/(64 pi^4);
+o' = sum_G |Aut G|^{-1} alt(K_G/pi W_G),  theta'(T) = sum_G |Aut G|^{-1} sum_v alt(K_G^(v)/pi W_G^(v,T)),  |Aut| = 4, 4.
+
+
+0. Library tests (v1_libtests.log)
+----------------------------------
+  gl, sl: d^2 w = 0 and {s_0,w} = -dw for k = 2,3,3,4, weights (1,0),(1,1),(2,2),(1,1): all True;  {s_0,s_0} = 0: True
+  {a,b} = {b,a} (arity 3,3): True;  d{a,c} = {da,c} - {a,dc} (a arity 3, c arity 4): True   (gl and sl)
+  Moyal (gl_N, convention-independent CME of s_e = tr(123)e^{(e/2)[p1p2]} - tr(132)e^{-(e/2)[p1p2]}):
+    d j_M = 0: True;  (1/2){j_M,j_M} = d i_M: True;  order e^3: {s_0,k_M} + {j_M,i_M} = 0, k_M = (1/48) D3: True
+  formal bracket == explicit dual-basis shuffle bracket at N = 3 (gl_3, sl_3, 4 random integer points): True, True
+  formal d == explicit CE formula at N = 3: True, True
+
+
+1. J_1-vertex kernels (v2_kernels.log, v8_oracle.log)
+-----------------------------------------------------
+Own construction: local order A (internal half-edges by (edge,end) descending, external last); q_(e,0) = -y_e,
+q_(e,1) = +y_e; external q = lambda_v written as sum_{e(0)=v} y_e - sum_{e(1)=v} y_e (Kirchhoff, so sum q = 0 at every
+vertex identically); K^(v) = int Omega_G [q_h1 q_h2] by spred (check=2 brute-force density checks).
+  base:  K_133/pi = -(1/20)[p1p2][p3p4],  K_223/pi = (1/30)[p1p2][p3p4];  sigma(A) = sigma(B) = -1 for both graphs
+  theta(1,3,3), K^(v)/pi (order A):
+    v=0 -b12(b13+b23)(b12-2b13-b23)/252   v=1 -b12(7b12-b13)(b13+b23)/420   v=2 -b12(8b12-b23)(b13+b23)/420
+    v=3 -b12(b13+b23)(8b13+7b23)/420     v=4  b12(b13+b23)(b12-7b13-8b23)/420 v=5  b12(b13+b23)(2b12-b13-2b23)/252
+  theta(2,2,3):
+    v=0 -b12(b13+b23)(5b12-2b13+2b23)/840 v=1 -b12(b12+2b13)(b13+b23)/420  v=2  b12(b12-2b23)(b13+b23)/420
+    v=3  b12(b13+b23)^2/84                v=4  b12(b13+b23)^2/84           v=5 -b12(b13+b23)(9b12+2b13-2b23)/840
+  order B (= explorer's L'): K_B = sgn(A->B) K_A with sgn = -1, 12/12 True.  Hence K_A = -(explorer table) entry by
+  entry; with W_A = -W_B the products K W agree: the explorer's 12 kernels are reproduced.
+  oracle (lattice rule, no reduction code), lambda_1..4 = (3/2,-1), (1/2,2), (-2,1/3), (1,-3/2):
+    theta(1,3,3) v=1:  exact -101 pi/180 = -1.7627825445,  oracle -1.7625165090 +- 2.0e-3,  3.8 digits
+    theta(2,2,3) v=5:  exact pi/15 = 0.2094395102,         oracle 0.2094172406 +- 5.7e-4,   4.0 digits
+    (both within the oracle's error estimate; the explorer's o16 used theta(2,2,3) v=3 and theta(1,3,3) v=0)
+
+2. Colour factors, Wick sign, assembly (v3_assemble.log)
+--------------------------------------------------------
+Own double-line contraction (gl: tr(A X_e)tr(B X^e) = tr(AB), tr(A X_e B X^e) = trA trB; sl: minus (1/N) terms), sigma
+from the target ((e,0),(e,1))_e, x_1..x_4; W^(v,T) = sigma prod_{u != v} f(L_u) T(L_v) prod_e kappa^{-1}.
+  sl_N:  W_133^(v,d) = N^2(tr(1243) - tr(1342)) (v = 0,1,2),  N^2(tr(1342) - tr(1243)) (v = 3,4,5);  W_223^(v,d) = 0, v = 0..5
+         (order A; = -(explorer's W^(v,d)) as required by W_A = -W_B)
+  explicit einsum with lie bases and exact kappa^{-1} at N = 3 vs formal colour: gl_3 16/16, sl_3 10/10 equal
+  local order C (rotation at every vertex): o' and theta'(d) identical: True
+Order hbar^2 (formal N, exact):
+  o' closed;  o' = (1/240)(-3F_133 + 2F_223);  F_133 + F_223 = 2N^2 d(u2f)                                  True (sl, gl)
+  sl: (1/2){D,D} = F_223/(12N^2) + d eta_N, eta_N = ((N^2+4)/(2N^2)) u2f                                    True
+  sl: (I)  o' - (N^2/8){D,D} = d iota,  iota = -((3N^2+10)/20) u2f                                          True
+  gl: (1/2){D,D} = (1/2) beta; {D,S1} = -(1/12)F_1; {D,S0} = (1/24)F_0 + beta; (1/2){S1,S1} = (1/48)F_0 - (N/48)F_1 + (1/2)beta;
+      {S1,S0} = (N/48)F_0 + (N/2)beta; {S0,S0} = 0;  F_223 = F_0 + N F_1;  o' = (1/48)F_223 - (N^2/40)beta    all True
+Order hbar^3 (formal N, exact):
+  sl: theta'(d) closed, nonzero;  theta'(d) = -(N^2/60) d D3                                                True
+      {D,u2f} = (1/3) d D3                                                                                   True
+      (II) theta'(d) + {D,iota} = d xi,  xi = -((2N^2+5)/30) D3                                              True
+           opposite relative sign: theta'(d) - {D,iota} = d(((N^2+5)/30) D3)                                 True
+      C theta' = -theta', C{D,iota} = -{D,iota}, C D = -D, C u2f = u2f;  E theta' = F theta' = 0             True
+  gl: theta'(d) = d(-(N^2/60) D3 + (N/30) S1_3);  theta'(s1) = theta'(s0) = 0 (as cochains)                 True
+      {D,u2f} = (1/3) d D3;  {S1,u2f} = (1/3) d S1_3;  {S0,u2f} = 0;  d S0_3 = 0                              True
+  explicit formula: d D3 (x_0..x_3) = sum_{i<j} (-1)^{i+j} [p_k p_l]^3 tr([X_i,X_j]{X_k,X_l})  (gl_3, sl_3, 4 points): True (v7)
+Chain (sl_N):
+  d i_2 = (1/2){j,j} + eps o_2,  j = aD,  o_2 = pi nu o',  a^2 = -eps pi nu N^2/4
+    => i_2 = eps pi nu iota = eps U (3N^2+10)/(1280 pi^4) u2f
+  o_3 := eps{j,i_2} + theta = eps a eps pi nu {D,iota} + a pi nu theta' = a pi nu ({D,iota} + theta') = a pi nu d xi
+  eps d i_3 = o_3  =>  i_3 = a eps pi nu xi = a eps U ((2N^2+5)/(1920 pi^4)) D3
+  eps enters o_3 only through eps^2 = 1; U, a only as the overall factor a pi nu.
+
+3. Cohomology, sl_N (v5_cohom_sl.log; N = 3, 4, 5 faithful fixed-N coordinates; N = 7, 11 trace basis)
+--------------------------------------------------------------------------------------------------------
+Faithful trace-monomial dimensions (v4_faithful.log): sl3 k=3,4,5: 2, 8 (of 9), 32 (of 44) exact on all basis tuples;
+  sl4 k=5: 43 (of 44), lower bound by evaluation, upper bound by the antisymmetrizer identity (Lambda^5 C^4 = 0; vanishes
+  on all 142 tuples); sl4, sl5 k <= 4 and sl5 k = 5: full rank.
+                      dim C^2,C^3,C^4   rank d2,d3,d4   H^3  H^4
+  (2,2) N=3            0, 3, 14          0, 3, 10        0    1
+  (2,2) N=4,5,7,11     0, 3, 15          0, 3, 11        0    1
+  (3,3) N=3            0, 6, 35          0, 6, 28        0    1
+  (3,3) N=4,5,7,11     0, 6, 39          0, 6, 32        0    1
+  (3,3) C-odd  N=3..11 0, 3, 13          0, 3, 10        0    0
+  (3,3) C-even N=3     0, 3, 22          0, 3, 18        0    1;   N=4..11: 0, 3, 26 / 0, 3, 22 / 0 / 1
+  (3,3) SL2-inv N=3    0, 1, 2           0, 1, 1         0    0;   N=4..11: 0, 1, 3 / 0, 1, 2 / 0 / 0
+  (3,3) SL2-inv C-odd  0, 1, 1           0, 1, 0         0    0    (all N): C^4_{inv,-}(3,3) = d C^3_{inv,-}(3,3) = C d D3
+  H^4 at (4,2), (5,1), (6,0): 1, 0, 0 (all five N)  =>  H^4 in total degree 6 = spin-1, (H^4_(3,3))^{SL2} = 0
+Classes at (3,3), every N in {3,4,5,7,11}:
+  theta', {D,iota}, {D,iota} + theta', -{D,iota} + theta': nonzero, closed, rank[B^4|c] = rank B^4 = 6: exact
+  dim Z^4 = 7 (kernel vectors exactly closed), rank B^4 = 6, H^4 = 1; generator h: h - Ch in B^4 (True), h + Ch in B^4
+  (False): H^4_(3,3) is C-even;  E h != 0 (h not SL2-invariant).
+=> [O_3] = 0 in H^4_(3,3)(sl_N), X_N = 0 for N = 3, 4, 5 (and formal N); also forced, independently of every kernel value,
+   by C^4_{inv,-}(3,3) = C dD3.
+
+4. gl_N (v6_gl_N5.log, v6_gl_N7.log, v6_gl_N11.log; trace basis, faithful for k <= 5 at N >= 5)
+---------------------------------------------------------------------------------------------
+  C^2_(2,2) = 0;  dim C^3_(2,2) = 8, rank d3 = 6  =>  H^3_(2,2) = Z^3_(2,2) = 2; kernel vectors exactly closed;
+    C h = -h on Z^3_(2,2); h1 ~ {tr1 tr23, tr12 tr3, tr13 tr2}, h2 ~ tr1 tr2 tr3; E h != 0 for both
+  C^3_inv(2,2) = C u2f, d u2f != 0  =>  (H^3_(2,2))^{SL2} = 0
+  (3,3): dim C^3 17, rank d3 13; dim C^4 101, rank d4 79  =>  H^4_(3,3) = 9
+         C-odd subcomplex: dim C^4_- 32, rank d4|_- 22, rank d3|_- 10  =>  H^4_- = 0 (H^4_(3,3) C-even)
+         SL2-inv: C^3 3, C^4 11, rank d3 2, rank d4 8  =>  H^4_inv = 1;  SL2-inv C-odd (N=7): C^3 3, C^4 2, rank d3 2 (v9)
+  phi_T(h) := [{T,h}]:  all six {T,h_i} closed and C-even, classes nonzero; dim span = 4;
+    rank{[{D,h1}],[{S0,h1}],[{D,h2}],[{S0,h2}]} = 4;  N(2 phi_S1 - N phi_D) - 4 phi_S0 = 0 on h1, h2;
+    rank(h -> [{J,h}]) = 0 for J = pi^*D_sl;  = 2 for J = j_M, D, S1, S0, j_M + 3 pi^*D_sl, pi^*D_sl + 5 S0, random
+  These relations are equivalent to the explorer's table with e1 := -(1/3)[{D,h1}], v := -(1/N)[{S0,h1}],
+  u := (1/2)[{D,h2}], w := (1/N)[{S0,h2}].  theta'(d), {D,u2f}, {S1,u2f} exact at N = 5, 7, 11; {S0,u2f} = 0.
+  [O_3] = eps(y1 phi_j(h1) + y2 phi_j(h2)) with i_2 = kappa_2 u2f + y1 h1 + y2 h2:  = 0 iff y = 0 or j in C pi^*D_sl.
+
+5. Other checks
+---------------
+  (v7) alt((1/3)p1^1p2^2 d) = D;  alt((1/3)((p1^1)^2(p2^2)^2 - p1^1p1^2p2^1p2^2) f) = u2f;
+       alt((1/3)((p1^1)^3(p2^2)^3 - 3(p1^1)^2p1^2p2^1(p2^2)^2) d) = D3                         gl, sl: True
+  (v7) tree, one heat edge, own Wick sign, q_(e,0) = -(p1+p2), q_(e,1) = p1+p2:
+       (1/4) alt(sigma a(L0) kappa^{-1} b(L1)) = {a,b}, 36 local-order pairs x 2 points, gl_3, exact:
+       (D,u2f), (D,D), (s0,u2f), (S1,u2f): True (e.g. 1152 = 1152)
+  (v7, v7b, v7c) vanishing: polygon(4) at (2,1), insertions None, y^1_0, y^1_0y^2_1, (y^1_0)^2(y^2_2)^2, y^1_1y^2_3y^1_2y^2_0: K = 0 (5/5);
+       control polygon(4) at (3,0): K = 29/36;  16 tight three-loop graphs: brute T=1 density zero at 2 random
+       non-degenerate points each, 16/16; control thetas: nonzero 3/3 each.
+  (v9) {D,o'} = {D,F_133} = {D,F_223} = 0 (sl, gl); {S1,.}, {S0,.} = 0 on o', F_133, F_223 (gl); controls {D,r}: 10320 (sl),
+       12480 (gl) nonzero coordinates;  d{D,iota} = -{D, o' - (N^2/8){D,D}} = 0;  {D,{D,D}} = 0.
+  (v9) derivative rule, H = 1 position integral at fixed t, banana(2):
+       int d^2z [d_{z_tail} e^{-|z|^2/4t0}] e^{-|z|^2/4t1} e^{lam z} / int e^{..} = -y_0 lam, head (root) end = +y_1 lam,
+       y = htk.brute.currents;  t = (0.7,1.3), (0.25,2.0), lam = 0.8+0.3i, -0.5+1.1i:  15.3 - 16.3 digits (one exact in double).
+       Analytic: Theta_e ~ exp(-y_e.(z_e(0) - z_e(1))), y_e = (zb_e(0) - zb_e(1))/(4t_e), dy_e, deta_e z-independent;
+       holomorphic Gaussian replaces zb polynomially by 4 Lambda^{-1} lambda.
+
+6. Verdicts
+-----------
+  a1 confirmed (re-derived: weight hbar^{b_1 + sum k(v)}; b_1 + sum k = 3 cases; orbit-stabilizer; inputs a3 inherited)
+  a2 confirmed (rho_n odd Pfaffian; engine 5/5, 16/16 with nonzero controls)
+  b1 confirmed      b2 confirmed      b3 confirmed      b4 unverified      b5 confirmed
+  c1 confirmed (i_2 = eps U (3N^2+10)/(1280 pi^4) u2f; the eps-free coefficient needs b4)
+  d1 confirmed      d2 confirmed      d3 confirmed      e1 confirmed
+  f1 confirmed      f2 confirmed      g1 confirmed      g2 confirmed (N = 5, 7, 11)
+
+7. Logical gaps
+---------------
+G1. eps = U (explorer b4) is a sign-bookkeeping argument; checked here only: (m-1)^2 + 5(m-1) = (m-1)(m+4) even, and
+    |I| odd for the tree (1) and the thetas (7).  s_h, s_P, the CE identification and the external-block placement are
+    not re-derived.  It fixes the signs of a^2 = eps U N^2/(256 pi^4) and of the i_2, i_3 coefficients; not X_N.
+G2. Hypothesis H1 and the restriction to holomorphic jets of the external fields (d_zb, d_tau terms of Theta(J_1)) are
+    assumed, not examined.
+G3. The heat-edge identity and the graph normalization Nnorm (normalization a3, b9) are inherited; Theta(J_1) uses the same
+    U as O_2 because the J_1 vertex has the parity of an S_0 vertex and d_z is even.
+G4. The coefficient -N^2/60 of theta' is not tested by any consistency relation: C^4_{inv,-}(3,3)(sl_N) = C dD3, and every
+    piece is closed; it is tested only by recomputation (shared htk engine and shared Wick-rule definition; oracle 3.8, 4.0 digits).
+G5. The C-parity argument uses C-equivariance of the quantization (C an automorphism of (g, kappa); the gauge fixing does not
+    involve g); the SL2 argument uses U(2)-equivariance (bidegree (k,k), SU(2)-invariance => SL2(C)-invariance of polynomial
+    cochains).  Either argument alone gives [O_3] = 0 for sl_N.
+G6. The fixed-N sl statements follow from the formal identity (II) with Laurent-polynomial coefficients (valid at each N);
+    the fixed-N ranks were recomputed in faithful coordinates.
+
+Not done
+--------
+- gl_N at N = 3, 4 (classes of {J_T, h_i}); other invariant forms on gl_N; other simple g.
+- No position-space integral of a (2,1) theta with a J_1 vertex; derivative rule checked at H = 1 on banana(2).
+- U, s_h, s_P not fixed; b4 not re-derived.
+- Order hbar^4.

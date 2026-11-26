@@ -1,0 +1,28 @@
+=== C12: z = 0, explorer's sources (read from numerics_own.json as data) ===
+=== C3 at z != 0: direct Schwinger integral vs claimed representation (same grids), and convergence ===
+H=1 T=1 (1, 2, 2)   K(lam;0) = 10.471975511966
+    m=(24,24,4) points     9216  direct 8.286679243060874  representation 8.286679243061085  digits(direct vs rep, same grid) 13.6  (0.0 s)
+    m=(30,30,5) points    22500  direct 8.286679243086382  representation 8.286679243085912  digits(direct vs rep, same grid) 13.2  (0.1 s)
+    m=(30,30,6) points    32400  direct 8.286679243086073  representation 8.286679243085921  digits(direct vs rep, same grid) 13.7  (0.1 s)
+    m=(36,36,7) points    63504  direct 8.286679243087496  representation 8.286679243088082  digits(direct vs rep, same grid) 13.2  (0.2 s)
+H=2 T=0 (1, 2, 2)   K(lam;0) = 10.000000000000
+    m=(24,24,4) points     9216  direct 5.755189168303662  representation 5.755189168303670  digits(direct vs rep, same grid) 14.8  (0.0 s)
+    m=(30,30,5) points    22500  direct 5.755189168301198  representation 5.755189168301207  digits(direct vs rep, same grid) 14.8  (0.1 s)
+    m=(30,30,6) points    32400  direct 5.755189168301207  representation 5.755189168301209  digits(direct vs rep, same grid) 15.5  (0.1 s)
+    m=(36,36,7) points    63504  direct 5.755189168301206  representation 5.755189168301199  digits(direct vs rep, same grid) 15.0  (0.1 s)
+H=2 T=1 (2, 2, 3)   K(lam;0) = -0.558505360638
+    m=(24,24,4) points   147456  direct -0.661325791539765  representation -0.661325791539766  digits(direct vs rep, same grid) 15.2  (1.4 s)
+    m=(30,30,5) points   562500  direct -0.661325791539753  representation -0.661325791539753  digits(direct vs rep, same grid) 17.0  (4.4 s)
+    m=(30,30,6) points  1166400  direct -0.661325791539754  representation -0.661325791539754  digits(direct vs rep, same grid) 17.0  (10.5 s)
+    m=(36,36,7) points  3111696  direct -0.661325791539754  representation -0.661325791539754  digits(direct vs rep, same grid) 15.0  (26.2 s)
+H=3 T=0 (2, 2, 3)   K(lam;0) = 11.062216006516
+    m=(24,24,4) points   147456  direct 10.840166564981038  representation 10.840166564981025  digits(direct vs rep, same grid) 15.0  (0.5 s)
+    m=(30,30,5) points   562500  direct 10.840197450890665  representation 10.840197450890658  digits(direct vs rep, same grid) 15.2  (2.1 s)
+    m=(30,30,6) points  1166400  direct 10.840197556632047  representation 10.840197556632038  digits(direct vs rep, same grid) 15.0  (4.2 s)
+    m=(36,36,7) points  3111696  direct 10.840197556885590  representation 10.840197556885572  digits(direct vs rep, same grid) 14.8  (10.4 s)
+H=3 T=0 (1, 3, 3)   K(lam;0) = 10.783811299726
+    m=(24,24,4) points   147456  direct 8.531222236997852  representation 8.531222236997856  digits(direct vs rep, same grid) 15.3  (0.5 s)
+    m=(30,30,5) points   562500  direct 8.531232054202034  representation 8.531232054202022  digits(direct vs rep, same grid) 14.8  (2.0 s)
+    m=(30,30,6) points  1166400  direct 8.531232077636945  representation 8.531232077636936  digits(direct vs rep, same grid) 15.0  (4.3 s)
+    m=(36,36,7) points  3111696  direct 8.531232077676814  representation 8.531232077676783  digits(direct vs rep, same grid) 14.4  (10.9 s)
+time 78.2 s

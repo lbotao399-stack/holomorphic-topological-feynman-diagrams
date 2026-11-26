@@ -1,0 +1,199 @@
+== sl2(Kac A1)  dim 3  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1 ; Killing = 4 * form (checked on all entries: True) ; s = 2 ; theta = basis 1
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 6 of 27
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 12 ; rank[beta] = 1, rank[beta,F133] = 1, rank[beta,F223] = 1, rank[beta,F133,F223] = 1
+   F133               exact: F133 = c beta, c = 56 (form used) ; c_Killing = c / r^2 = 7/2
+   F223               exact: F223 = c beta, c = -48 (form used) ; c_Killing = c / r^2 = -3
+   F133+F223          exact: F133+F223 = c beta, c = 8 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  exact: omega133+omega223 = c beta, c = -264 (form used) ; c_Killing = c / r^2 = -33/2
+   omega133-omega223  exact: omega133-omega223 = c beta, c = -72 (form used) ; c_Killing = c / r^2 = -9/2
+   time 0.0s (cochains 0.0s)
+== sl2(run-1 basis)  dim 3  form: tr_2(XY), run-1 lie.sl(2) ; Killing = 4 * form (checked on all entries: True) ; s = 2 ; theta = basis 0
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 6 of 27
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 12 ; rank[beta] = 1, rank[beta,F133] = 1, rank[beta,F223] = 1, rank[beta,F133,F223] = 1
+   F133               exact: F133 = c beta, c = 56 (form used) ; c_Killing = c / r^2 = 7/2
+   F223               exact: F223 = c beta, c = -48 (form used) ; c_Killing = c / r^2 = -3
+   F133+F223          exact: F133+F223 = c beta, c = 8 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  exact: omega133+omega223 = c beta, c = -264 (form used) ; c_Killing = c / r^2 = -33/2
+   omega133-omega223  exact: omega133-omega223 = c beta, c = -72 (form used) ; c_Killing = c / r^2 = -9/2
+   time 0.0s (cochains 0.0s)
+== sl3(Kac A2)  dim 8  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1 ; Killing = 6 * form (checked on all entries: True) ; s = 3 ; theta = basis 3
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 39 of 512
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 102 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 18 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== sl3(run-1 basis)  dim 8  form: tr_3(XY), run-1 lie.sl(3) ; Killing = 6 * form (checked on all entries: True) ; s = 3 ; theta = basis 0
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 39 of 512
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 102 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 18 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== sl4(Kac A3)  dim 15  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1 ; Killing = 8 * form (checked on all entries: True) ; s = 4 ; theta = basis 5
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 108 of 3375
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 246 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 32 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== sl4(run-1 basis)  dim 15  form: tr_4(XY), run-1 lie.sl(4) ; Killing = 8 * form (checked on all entries: True) ; s = 4 ; theta = basis 0
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 108 of 3375
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 246 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 32 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== sl5(Kac A4)  dim 24  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1 ; Killing = 10 * form (checked on all entries: True) ; s = 5 ; theta = basis 7
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 213 of 13824
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 426 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 50 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.2s (cochains 0.2s)
+== so5  dim 10  form: tr_5(XY), defining (vector) representation of so(5) ; Killing = 3 * form (checked on all entries: True) ; s = 2 ; theta = basis 3
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 51 of 1000
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 114 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 9/2 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== sp4  dim 10  form: tr_4(XY), defining representation of sp(4) ; Killing = 6 * form (checked on all entries: True) ; s = 2 ; theta = basis 3
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 51 of 1000
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 108 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 18 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== sp4(fold A3)  dim 10  form: restriction of the sl4(Kac A3) Kac form to the fixed subalgebra ; Killing = 6 * form (checked on all entries: True) ; s = 2 ; theta = basis 5
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 51 of 1000
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 114 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 18 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== so6  dim 15  form: tr_6(XY), defining (vector) representation of so(6) ; Killing = 4 * form (checked on all entries: True) ; s = 2 ; theta = basis 4
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 108 of 3375
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 216 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 8 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.0s (cochains 0.0s)
+== so7  dim 21  form: tr_7(XY), defining (vector) representation of so(7) ; Killing = 5 * form (checked on all entries: True) ; s = 2 ; theta = basis 5
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 174 of 9261
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 348 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 25/2 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.1s (cochains 0.1s)
+== so7(fold D4)  dim 21  form: restriction of the so8(Kac D4) Kac form to the fixed subalgebra ; Killing = 10 * form (checked on all entries: True) ; s = 4 ; theta = basis 5
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 174 of 9261
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 384 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 50 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.1s (cochains 0.1s)
+== sp6  dim 21  form: tr_6(XY), defining representation of sp(6) ; Killing = 8 * form (checked on all entries: True) ; s = 2 ; theta = basis 5
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 150 of 9261
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 276 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 32 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.1s (cochains 0.1s)
+== sp6(fold A5)  dim 21  form: restriction of the sl6(Kac A5) Kac form to the fixed subalgebra ; Killing = 8 * form (checked on all entries: True) ; s = 2 ; theta = basis 11
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 150 of 9261
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 306 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 32 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.2s (cochains 0.2s)
+== so8  dim 28  form: tr_8(XY), defining (vector) representation of so(8) ; Killing = 6 * form (checked on all entries: True) ; s = 2 ; theta = basis 6
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 285 of 21952
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 510 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 18 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.4s (cochains 0.4s)
+== so8(Kac D4)  dim 28  form: Kac form (h|h') = Cartan matrix, (E_a|E_-a) = -1 ; Killing = 12 * form (checked on all entries: True) ; s = 2 ; theta = basis 7
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 285 of 21952
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 612 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 72 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.4s (cochains 0.3s)
+== G2(oct)  dim 14  form: tr_7(XY), 7-dim representation of G2 inside so(7) ; Killing = 4 * form (checked on all entries: True) ; s = 6 ; theta = basis 0
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 870 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 8 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.3s (cochains 0.3s)
+== G2(fold D4)  dim 14  form: restriction of the so8(Kac D4) Kac form to the fixed subalgebra ; Killing = 8 * form (checked on all entries: True) ; s = 3 ; theta = basis 6
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 87 of 2744
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 210 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 32 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 0.1s (cochains 0.0s)
+== F4(fold E6)  dim 52  form: restriction of the E6(Kac) Kac form to the fixed subalgebra ; Killing = 18 * form (checked on all entries: True) ; s = 2 ; theta = basis 21
+   h-weight selection rule (entries with wt(b)+wt(c)+wt(d) != -wt(theta) vanish): True ; compatible triples 663 of 140608
+   nonzero: beta True, F133 True, F223 True
+   rows used (nonzero) 1386 ; rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = c beta, c = 162 (form used) ; c_Killing = c / r^2 = 1/2
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   time 13.0s (cochains 12.9s)

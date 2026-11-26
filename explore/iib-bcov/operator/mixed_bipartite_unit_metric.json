@@ -1,0 +1,272 @@
+{
+  "000113": {
+    "density": "0",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 15
+  },
+  "000115": {
+    "density": "0",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 15
+  },
+  "000117": {
+    "density": "0",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 15
+  },
+  "000123": {
+    "density": "0",
+    "ordered_color_orbits": 30,
+    "unordered_assignments": 15
+  },
+  "000125": {
+    "density": "0",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 24
+  },
+  "000135": {
+    "density": "-40656307/2802407075732722500",
+    "ordered_color_orbits": 28,
+    "unordered_assignments": 15
+  },
+  "000136": {
+    "density": "-97146037/2802407075732722500",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 24
+  },
+  "000138": {
+    "density": "-1882991/93413569191090750",
+    "ordered_color_orbits": 28,
+    "unordered_assignments": 15
+  },
+  "000155": {
+    "density": "-27870547/20177330945275602000",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 15
+  },
+  "000156": {
+    "density": "-1430088277/100886654726378010000",
+    "ordered_color_orbits": 30,
+    "unordered_assignments": 15
+  },
+  "000157": {
+    "density": "-7380875813/50443327363189005000",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 24
+  },
+  "000158": {
+    "density": "-5394418811/39233699060258115000",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 24
+  },
+  "000177": {
+    "density": "-3902387/2882475849325086000",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 15
+  },
+  "000178": {
+    "density": "-122448517/14412379246625430000",
+    "ordered_color_orbits": 30,
+    "unordered_assignments": 15
+  },
+  "000555": {
+    "density": "-2179/112096283029308900",
+    "ordered_color_orbits": 17,
+    "unordered_assignments": 4
+  },
+  "000556": {
+    "density": "-5967323/2802407075732722500",
+    "ordered_color_orbits": 54,
+    "unordered_assignments": 15
+  },
+  "000558": {
+    "density": "-7130789987/1883217554892389520000",
+    "ordered_color_orbits": 28,
+    "unordered_assignments": 15
+  },
+  "000567": {
+    "density": "-244399191991/1883217554892389520000",
+    "ordered_color_orbits": 28,
+    "unordered_assignments": 15
+  },
+  "001123": {
+    "density": "0",
+    "ordered_color_orbits": 78,
+    "unordered_assignments": 33
+  },
+  "001127": {
+    "density": "0",
+    "ordered_color_orbits": 42,
+    "unordered_assignments": 18
+  },
+  "001133": {
+    "density": "0",
+    "ordered_color_orbits": 38,
+    "unordered_assignments": 12
+  },
+  "001134": {
+    "density": "0",
+    "ordered_color_orbits": 46,
+    "unordered_assignments": 21
+  },
+  "001135": {
+    "density": "-252461911/3736542767643630000",
+    "ordered_color_orbits": 42,
+    "unordered_assignments": 18
+  },
+  "001136": {
+    "density": "-727068761/20177330945275602000",
+    "ordered_color_orbits": 42,
+    "unordered_assignments": 18
+  },
+  "001137": {
+    "density": "-989587927/11209628302930890000",
+    "ordered_color_orbits": 78,
+    "unordered_assignments": 33
+  },
+  "001138": {
+    "density": "-17040576377/78467398120516230000",
+    "ordered_color_orbits": 78,
+    "unordered_assignments": 33
+  },
+  "001177": {
+    "density": "-90353951/50443327363189005000",
+    "ordered_color_orbits": 38,
+    "unordered_assignments": 12
+  },
+  "001178": {
+    "density": "-30107453/1868271383821815000",
+    "ordered_color_orbits": 26,
+    "unordered_assignments": 12
+  },
+  "001234": {
+    "density": "0",
+    "ordered_color_orbits": 16,
+    "unordered_assignments": 12
+  },
+  "001235": {
+    "density": "-19781394727/8407221227198167500",
+    "ordered_color_orbits": 84,
+    "unordered_assignments": 54
+  },
+  "001236": {
+    "density": "-35247872402/14712637147596793125",
+    "ordered_color_orbits": 84,
+    "unordered_assignments": 54
+  },
+  "001255": {
+    "density": "102682451/20177330945275602000",
+    "ordered_color_orbits": 78,
+    "unordered_assignments": 33
+  },
+  "001256": {
+    "density": "-1473465407/20177330945275602000",
+    "ordered_color_orbits": 50,
+    "unordered_assignments": 33
+  },
+  "001257": {
+    "density": "-5698286033/6305415920398625625",
+    "ordered_color_orbits": 44,
+    "unordered_assignments": 30
+  },
+  "001258": {
+    "density": "-14361710648/8827582288558075875",
+    "ordered_color_orbits": 44,
+    "unordered_assignments": 30
+  },
+  "001355": {
+    "density": "86089269961/807093237811024080000",
+    "ordered_color_orbits": 23,
+    "unordered_assignments": 12
+  },
+  "001356": {
+    "density": "522092483953/403546618905512040000",
+    "ordered_color_orbits": 84,
+    "unordered_assignments": 54
+  },
+  "001358": {
+    "density": "-119079410137/201773309452756020000",
+    "ordered_color_orbits": 44,
+    "unordered_assignments": 33
+  },
+  "001366": {
+    "density": "133461445343/403546618905512040000",
+    "ordered_color_orbits": 78,
+    "unordered_assignments": 33
+  },
+  "001367": {
+    "density": "939471586051/941608777446194760000",
+    "ordered_color_orbits": 44,
+    "unordered_assignments": 30
+  },
+  "001368": {
+    "density": "-9213286765279/2824826332338584280000",
+    "ordered_color_orbits": 84,
+    "unordered_assignments": 54
+  },
+  "001388": {
+    "density": "488028371/4359299895584235000",
+    "ordered_color_orbits": 40,
+    "unordered_assignments": 21
+  },
+  "001558": {
+    "density": "459310918531/2824826332338584280000",
+    "ordered_color_orbits": 42,
+    "unordered_assignments": 18
+  },
+  "001567": {
+    "density": "2665136853343/1129930532935433712000",
+    "ordered_color_orbits": 84,
+    "unordered_assignments": 54
+  },
+  "001577": {
+    "density": "4067559043/33628884908792670000",
+    "ordered_color_orbits": 42,
+    "unordered_assignments": 18
+  },
+  "001578": {
+    "density": "-10197350542909/2824826332338584280000",
+    "ordered_color_orbits": 84,
+    "unordered_assignments": 54
+  },
+  "001588": {
+    "density": "162888065323/470804388723097380000",
+    "ordered_color_orbits": 78,
+    "unordered_assignments": 33
+  },
+  "001778": {
+    "density": "-345644833/50443327363189005000",
+    "ordered_color_orbits": 42,
+    "unordered_assignments": 18
+  },
+  "005588": {
+    "density": "-133651127/125547836992825968000",
+    "ordered_color_orbits": 8,
+    "unordered_assignments": 5
+  },
+  "005678": {
+    "density": "-1696262085083/1883217554892389520000",
+    "ordered_color_orbits": 13,
+    "unordered_assignments": 12
+  },
+  "012345": {
+    "density": "3347949254693/1412413166169292140000",
+    "ordered_color_orbits": 48,
+    "unordered_assignments": 48
+  },
+  "012357": {
+    "density": "36246380921/28824758493250860000",
+    "ordered_color_orbits": 11,
+    "unordered_assignments": 11
+  },
+  "012358": {
+    "density": "169759820641/12554783699282596800",
+    "ordered_color_orbits": 48,
+    "unordered_assignments": 48
+  },
+  "013678": {
+    "density": "12347230870901/2824826332338584280000",
+    "ordered_color_orbits": 11,
+    "unordered_assignments": 11
+  }
+}

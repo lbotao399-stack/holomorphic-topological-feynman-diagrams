@@ -1,0 +1,11 @@
+q=7 classes 32187 X rows 1998046 DS rows 43170 missing-term rows 0
+q=7 p=2147483647: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (126.5s)
+q=7 p=2147483629: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (131.8s)
+q=7 p=2147483587: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (137.2s)
+q=7 p=2147483579: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (142.6s)
+q=7 p=2147483563: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (148.1s)
+q=7 p=2147483549: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (153.5s)
+q=7 p=2147483543: rank 32185 rows 542682 skipped 0 inconsistent 0, determined 32185 of 32187 (158.8s)
+q=7: reconstruction failures 0; undetermined 2 [(-5, 1, 6, 6, 6, 1, 6, 6, 6, 4, 4, 4, -1, -1, -1), (-2, -2, 6, 6, 6, -2, 6, 6, 6, 6, 6, 6, -2, -2, -2)] (160.8s)
+q=7: exact check on 2041216 rows: 10 fail (207.4s)
+q=7 kinds {'T1a': 20527, 'Ga': 2298, 'Gd': 735, 'T2a': 4456, 'T2d': 2038, 'T1d': 2133}; labels ['1', 'z3', 'z5', 'u7_0', 'u7_1']

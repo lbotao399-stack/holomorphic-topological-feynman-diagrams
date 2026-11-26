@@ -1,0 +1,14 @@
+kernels: s_A = +1, s_B = -1, D_A = -(l0_0*l1_1 - l0_1*l1_0)*(l3_0*l4_1 - l3_1*l4_0), D_B = -(l0_0*l1_1 - l0_1*l1_0)*(l3_0*l4_1 - l3_1*l4_0)  (0.2s)
+weights at z = 0 (K/pi):  A: {((1, 0, 0), (0, 1, 0), (1, 0, 0), (0, 1, 0)): Fraction(-1, 20), ((1, 0, 0), (0, 1, 0), (0, 1, 0), (1, 0, 0)): Fraction(1, 20), ((0, 1, 0), (1, 0, 0), (1, 0, 0), (0, 1, 0)): Fraction(1, 20), ((0, 1, 0), (1, 0, 0), (0, 1, 0), (1, 0, 0)): Fraction(-1, 20)}   B: {((1, 0, 0), (0, 1, 0), (1, 0, 0), (0, 1, 0)): Fraction(1, 30), ((1, 0, 0), (0, 1, 0), (0, 1, 0), (1, 0, 0)): Fraction(-1, 30), ((0, 1, 0), (1, 0, 0), (1, 0, 0), (0, 1, 0)): Fraction(-1, 30), ((0, 1, 0), (1, 0, 0), (0, 1, 0), (1, 0, 0)): Fraction(1, 30)}
+Q0^2 = 0 on 6 operators: True (0.0s)
+g1_0 g2_1 b_2: |QA O| = 3, |QB O| = 3, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.1s)
+b_0 b_1 b_2: |QA O| = 48, |QB O| = 48, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.1s)
+g1_0 b_1 b_2: |QA O| = 12, |QB O| = 12, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.0s)
+g1_0 g2_0 b_1: |QA O| = 0, |QB O| = 0, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.0s)
+c_0 b_1 b_2: |QA O| = 3, |QB O| = 3, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.0s)
+g1_0 g2_1: |QA O| = 0, |QB O| = 0, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.0s)
+b_0 b_1: |QA O| = 0, |QB O| = 0, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.0s)
+g1_0 g1_1 g2_2: |QA O| = 0, |QB O| = 0, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.0s)
+dg1_0 g2_1 b_2: |QA O| = 12, |QB O| = 12, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.8s)
+g1_0 g2_1 db_2: |QA O| = 12, |QB O| = 12, |{Q0,QA} O| = 0, |{Q0,QB} O| = 0, equations 0, rank 0, null space all  (0.9s)
+total 2.3s

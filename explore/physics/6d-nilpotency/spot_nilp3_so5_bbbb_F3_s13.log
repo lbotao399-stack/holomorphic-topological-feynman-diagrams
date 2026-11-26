@@ -1,0 +1,18 @@
+order 3, so5, O = bbbb, jets {}, functionals ccccg1g2, F = 3, seed 13, P = 2147483647, mode symbolic, nmom 0
+  <hatQ[Q0] hatQ[G3.1] O>: [763632034, 1211742661, 351865701]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.2] O>: [480251308, 1185173028, 1842404149]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.3] O>: [1646720924, 1846479232, 1598751969]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.4] O>: [1988144776, 2038349375, 1852325558]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.5] O>: [791041121, 1881434948, 1142199157]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G2.1] O>: [293125140, 1431068361, 1514489230]   (histories 192, keys 8, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G2.2] O>: [1986872076, 207815947, 1318410365]   (histories 192, keys 8, colour 0s, total 0s)
+  <hatQ[G2.1] hatQ[G1.1] O>: [1795649942, 1656323113, 1771942384]   (histories 216, keys 9, colour 0s, total 1s)
+  <hatQ[G2.2] hatQ[G1.1] O>: [99162610, 1247882363, 1042712784]   (histories 216, keys 9, colour 0s, total 0s)
+  <hatQ[G3.1] hatQ[Q0] O>: [601170888, 1787746225, 1072426686]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.2] hatQ[Q0] O>: [1520855649, 1223570118, 1160969900]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.3] hatQ[Q0] O>: [191989770, 1321389034, 1166940080]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.4] hatQ[Q0] O>: [1255996444, 752747752, 42449943]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.5] hatQ[Q0] O>: [2118748163, 1655128668, 2019899812]   (histories 192, keys 1, colour 0s, total 0s)
+sum kappa kappa E (must vanish mod P): [0, 0, 0]
+kappa_3 system: 3 equations, rank 3, augmented rank 3 (unknowns 5)
+total time 4s

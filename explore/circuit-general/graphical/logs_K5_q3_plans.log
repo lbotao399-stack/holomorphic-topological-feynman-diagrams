@@ -1,0 +1,7 @@
+  decomplete 2   hubs (3, 4)   path ['oo', 1, 0]     appends 3: 5/3*z3 + -5/3*z5 (10.6s)
+  decomplete 3   hubs (2, 4)   path ['oo', 1, 0]     appends 3: 5/3*z3 + -5/3*z5 (0.1s)
+  decomplete 3   hubs (4, 2)   path ['oo', 1, 0]     appends 3: 5/3*z3 + -5/3*z5 (0.1s)
+  decomplete 1   hubs (2, 4)   path ['oo', 3, 0]     appends 3: 5/3*z3 + -5/3*z5 (0.2s)
+  decomplete 1   hubs (4, 2)   path ['oo', 3, 0]     appends 3: 5/3*z3 + -5/3*z5 (0.3s)
+  decomplete 4   hubs (1, 2)   path ['oo', 3, 0]     appends 3: 5/3*z3 + -5/3*z5 (0.1s)
+6 plans, all equal: True

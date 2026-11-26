@@ -1,0 +1,2 @@
+J_1 alternating ([q_s0 q_s1] = sgn(s)[q0 q1] for all s in S_3): True
+F4(fold E6)    (S^3 g*)^g exact nullspace: unknowns 252, distinct equations 5622, dim 0 ; control (random symmetric non-invariant T): d J = 0: False  (3.3s)

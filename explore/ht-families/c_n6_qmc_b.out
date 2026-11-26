@@ -1,0 +1,16 @@
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: divide by zero encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: overflow encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: invalid value encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:61: RuntimeWarning: divide by zero encountered in matmul
+  G = (self.E[None, :, :] / B[:, None, :]) @ self.dbdxi       # (npts, N0, ncoords)
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:61: RuntimeWarning: overflow encountered in matmul
+  G = (self.E[None, :, :] / B[:, None, :]) @ self.dbdxi       # (npts, N0, ncoords)
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:61: RuntimeWarning: invalid value encountered in matmul
+  G = (self.E[None, :, :] / B[:, None, :]) @ self.dbdxi       # (npts, N0, ncoords)
+graph 13 E=1 p=5 degrees [2, 2, 2, 2, 3, 4, 5, 6] lambda [3, -3, -1, 3, 1, 3, -1]: K/pi^3 = +0.007689 +- 0.124098 ; K = +0.23842 +- 3.8 ; int|g| = 249.1 ; |K|/int|g| = 9.57e-04  (358s)
+graph  0 E=0 p=3 degrees [2, 2, 2, 2, 2, 3, 6, 7] lambda [3, -1, -3, -1, 1, -1, -3]: K/pi^3 = +5.244227 +- 0.049086 ; K = +162.604 +- 1.5 ; int|g| = 162.6 ; |K|/int|g| = 1.00e+00  (343s)
+graph  1 E=0 p=3 degrees [2, 2, 2, 2, 2, 2, 7, 7] lambda [3, 1, -3, 1, 2, -3, 1]: K/pi^3 = -5.117949 +- 0.028344 ; K = -158.689 +- 0.88 ; int|g| = 158.7 ; |K|/int|g| = 1.00e+00  (243s)
+graph  2 E=0 p=3 degrees [2, 2, 2, 2, 3, 3, 5, 7] lambda [-2, 2, -3, 2, -2, -2, 3]: K/pi^3 = -1.147846 +- 0.033697 ; K = -35.5904 +- 1 ; int|g| = 46.44 ; |K|/int|g| = 7.66e-01  (166s)

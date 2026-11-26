@@ -1,0 +1,16 @@
+m=1: (dd)^m Q^(m-1)logQ / (rho^(2m) Q^(-m-1)) = 1
+m=2: (dd)^m Q^(m-1)logQ / (rho^(2m) Q^(-m-1)) = 2
+m=3: (dd)^m Q^(m-1)logQ / (rho^(2m) Q^(-m-1)) = 12
+m=4: (dd)^m Q^(m-1)logQ / (rho^(2m) Q^(-m-1)) = 144
+lam 1 ratio 1
+lam 1 ratio 1
+lam 1 ratio 1
+lam 2 ratio 1
+lam 2 ratio 1
+lam 2 ratio 1
+lam 3 ratio None
+lam 3 ratio 1
+lam 3 ratio 1
+lam 4 ratio None
+lam 4 ratio 1
+lam 4 ratio 1

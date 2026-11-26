@@ -1,0 +1,11 @@
+level  2: SU(2) (B,F) = (0, 0)  census (B,F) = (0,0)  U(2) total = 3  Chang-Lin d_u = 3  d_su = 0
+level  3: SU(2) (B,F) = (0, 0)  census (B,F) = (0,0)  U(2) total = 2  Chang-Lin d_u = 2  d_su = 0
+level  4: SU(2) (B,F) = (6, 0)  census (B,F) = (6,0)  U(2) total = 15  Chang-Lin d_u = 15  d_su = 6
+level  5: SU(2) (B,F) = (0, 6)  census (B,F) = (0,6)  U(2) total = 18  Chang-Lin d_u = 18  d_su = 6
+level  6: SU(2) (B,F) = (1, 8)  census (B,F) = (1,8)  U(2) total = 51  Chang-Lin d_u = 51  d_su = 9
+level  7: SU(2) (B,F) = (18, 0)  census (B,F) = (18,0)  U(2) total = 90  Chang-Lin d_u = 90  d_su = 18
+level  8: SU(2) (B,F) = (18, 12)  census (B,F) = (18,12)  U(2) total = 195  Chang-Lin d_u = 195  d_su = 30
+level  9: SU(2) (B,F) = (2, 38)  census (B,F) = (2,38)  U(2) total = 362  Chang-Lin d_u = 362  d_su = 40
+level 10: SU(2) (B,F) = (36, 30)  census (B,F) = (36,30)  U(2) total = 699  Chang-Lin d_u = 699  d_su = 66
+level 11: SU(2) (B,F) = (102, 18)  census (B,F) = (102,18)  U(2) total = 1308  Chang-Lin d_u = 1308  d_su = 120
+sectors where H^{U(N)} != H^{SU(N)} * Fock(U(1)): 0

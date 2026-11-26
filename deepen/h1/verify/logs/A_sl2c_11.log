@@ -1,0 +1,45 @@
+sl2 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=-2 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=-1 dimM=51 dimV=12 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=0 dimM=430 dimV=144 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=1 dimM=1765 dimV=707 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=2 dimM=4291 dimV=1918 H(p1,p2)=[1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+sl2 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=3 dimM=6665 dimV=3258 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 1, 1, 1, 1) done in 207.7s
+sl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=-1 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=0 dimM=26 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=1 dimM=143 dimV=48 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=2 dimM=395 dimV=166 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=3 dimM=646 dimV=318 H(p1,p2)=[1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+# (1, 1, 0, 1, 1) done in 0.5s
+sl2 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=-1 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=0 dimM=26 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=1 dimM=143 dimV=48 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=2 dimM=395 dimV=166 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=3 dimM=646 dimV=318 H(p1,p2)=[1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+# (1, 0, 1, 1, 1) done in 0.5s
+sl2 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=0 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=1 dimM=13 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=2 dimM=43 dimV=16 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=3 dimM=72 dimV=35 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 0, 0, 1, 1) done in 0.0s
+sl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=-1 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=0 dimM=26 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=1 dimM=143 dimV=48 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=2 dimM=395 dimV=166 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=3 dimM=646 dimV=318 H(p1,p2)=[1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+# (0, 1, 1, 1, 1) done in 0.5s
+sl2 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=0 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=1 dimM=13 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=2 dimM=43 dimV=16 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=3 dimM=72 dimV=35 H(p1,p2)=[0, 0] pred=0 OK
+# (0, 1, 0, 1, 1) done in 0.0s
+sl2 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=0 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=1 dimM=13 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=2 dimM=43 dimV=16 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=3 dimM=72 dimV=35 H(p1,p2)=[0, 0] pred=0 OK
+# (0, 0, 1, 1, 1) done in 0.0s
+sl2 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) (a,b)=(1, 1) g=1 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) (a,b)=(1, 1) g=2 dimM=6 dimV=1 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) (a,b)=(1, 1) g=3 dimM=10 dimV=5 H(p1,p2)=[0, 0] pred=0 OK
+# (0, 0, 0, 1, 1) done in 0.0s
+TOTAL sl2 charge0=True exact=False: compared 36 mismatches 0

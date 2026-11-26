@@ -1,0 +1,8 @@
+Q0*box   jet (1, 0, 0): S2 code -3818, slot evaluation -3818, equal True  [S2 code 0s]
+Q0*box   jet (0, 1, 1): S2 code -9438/5, slot evaluation -9438/5, equal True  [S2 code 1s]
+box*Q0   jet (1, 0, 0): S2 code 3818, slot evaluation 3818, equal True  [S2 code 4s]
+box*Q0   jet (0, 1, 1): S2 code 9438/5, slot evaluation 9438/5, equal True  [S2 code 16s]
+box*box  jet (1, 0, 0): S2 code 10528207/120, slot evaluation 10528207/120, equal True  [S2 code 116s]
+box*box  jet (0, 1, 1): S2 code -77686943/450, slot evaluation -77686943/450, equal True  [S2 code 446s]
+
+[exited with code 0]

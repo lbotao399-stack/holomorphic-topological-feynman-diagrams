@@ -1,0 +1,22 @@
+gl k=2 deg=(1, 0): d^2 w = 0: True;  {s0,w} = -dw: True
+gl k=3 deg=(1, 1): d^2 w = 0: True;  {s0,w} = -dw: True
+gl k=3 deg=(2, 2): d^2 w = 0: True;  {s0,w} = -dw: True
+gl k=4 deg=(1, 1): d^2 w = 0: True;  {s0,w} = -dw: True
+gl {s0,s0} = 0: True
+gl {a,b} = {b,a} (arity 3,3): True
+gl d{a,c} = {da,c} - {a,dc} (a arity 3, c arity 4): True
+sl k=2 deg=(1, 0): d^2 w = 0: True;  {s0,w} = -dw: True
+sl k=3 deg=(1, 1): d^2 w = 0: True;  {s0,w} = -dw: True
+sl k=3 deg=(2, 2): d^2 w = 0: True;  {s0,w} = -dw: True
+sl k=4 deg=(1, 1): d^2 w = 0: True;  {s0,w} = -dw: True
+sl {s0,s0} = 0: True
+sl {a,b} = {b,a} (arity 3,3): True
+sl d{a,c} = {da,c} - {a,dc} (a arity 3, c arity 4): True
+Moyal: d j_M = 0: True
+Moyal: (1/2){j_M,j_M} = d i_M: True;  {j_M,j_M} != 0: True
+Moyal order e^3: {s0,k_M} + {j_M,i_M} = 0: True
+gl formal bracket == explicit dual-basis bracket at N=3 (4 random points): True
+gl formal d == explicit CE formula at N=3: True
+sl formal bracket == explicit dual-basis bracket at N=3 (4 random points): True
+sl formal d == explicit CE formula at N=3: True
+time 26.1s

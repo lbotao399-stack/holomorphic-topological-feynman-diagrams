@@ -1,0 +1,22 @@
+n=2: t_e(r) = [u2*(u1 - 1)/(v1 - 1), -u1*u2/(v1 - 1), -u2 - v2 + 1, u2/v1, v2]
+   symbolic: r_of_t(t_of_r(r)) = r: True;  t_of_r(r_of_t(t)) = c(t) t with one common factor c(t): True
+   point 0: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 1: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 2: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   n=2 done (0.1 s)
+n=4: t_e(r) = [u2*u3*u4*(u1 - 1)/((v1 - 1)*(v2 - 1)*(v3 - 1)), -u1*u2*u3*u4/((v1 - 1)*(v2 - 1)*(v3 - 1)), -u3*u4*(u2 - 1)/((v2 - 1)*(v3 - 1)), u2*u3*u4/(v1*(v2 - 1)*(v3 - 1)), u4*(u3 - 1)/(v3 - 1), -u3*u4/(v2*(v3 - 1)), -u4 - v4 + 1, u4/v3, v4]
+   symbolic: r_of_t(t_of_r(r)) = r: True;  t_of_r(r_of_t(t)) = c(t) t with one common factor c(t): True
+   point 0: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 1: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 2: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   n=4 done (0.4 s)
+n=6: t_e(r) = [u2*u3*u4*u5*u6*(u1 - 1)/((v1 - 1)*(v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)), -u1*u2*u3*u4*u5*u6/((v1 - 1)*(v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)), -u3*u4*u5*u6*(u2 - 1)/((v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)), u2*u3*u4*u5*u6/(v1*(v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)), u4*u5*u6*(u3 - 1)/((v3 - 1)*(v4 - 1)*(v5 - 1)), -u3*u4*u5*u6/(v2*(v3 - 1)*(v4 - 1)*(v5 - 1)), -u5*u6*(u4 - 1)/((v4 - 1)*(v5 - 1)), u4*u5*u6/(v3*(v4 - 1)*(v5 - 1)), u6*(u5 - 1)/(v5 - 1), -u5*u6/(v4*(v5 - 1)), -u6 - v6 + 1, u6/v5, v6]
+   point 0: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 1: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 2: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   n=6 done (0.3 s)
+n=8: t_e(r) = [u2*u3*u4*u5*u6*u7*u8*(u1 - 1)/((v1 - 1)*(v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), -u1*u2*u3*u4*u5*u6*u7*u8/((v1 - 1)*(v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), -u3*u4*u5*u6*u7*u8*(u2 - 1)/((v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), u2*u3*u4*u5*u6*u7*u8/(v1*(v2 - 1)*(v3 - 1)*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), u4*u5*u6*u7*u8*(u3 - 1)/((v3 - 1)*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), -u3*u4*u5*u6*u7*u8/(v2*(v3 - 1)*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), -u5*u6*u7*u8*(u4 - 1)/((v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), u4*u5*u6*u7*u8/(v3*(v4 - 1)*(v5 - 1)*(v6 - 1)*(v7 - 1)), u6*u7*u8*(u5 - 1)/((v5 - 1)*(v6 - 1)*(v7 - 1)), -u5*u6*u7*u8/(v4*(v5 - 1)*(v6 - 1)*(v7 - 1)), -u7*u8*(u6 - 1)/((v6 - 1)*(v7 - 1)), u6*u7*u8/(v5*(v6 - 1)*(v7 - 1)), u8*(u7 - 1)/(v7 - 1), -u7*u8/(v6*(v7 - 1)), -u8 - v8 + 1, u8/v7, v8]
+   point 0: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 1: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   point 2: t>0, r_of_t(t_of_r(r)) = r, det[t;dt/dr] = (-1)^{n-1} prod_k u_{k+1}^{2k} v_k^-2 (1-v_k)^-(2k+1) (sign -1), U = det M (path-tree basis) = claim, G = Lambda^-1 semiseparable g_min h_max, Wronskian = -a_i
+   n=8 done (0.7 s)

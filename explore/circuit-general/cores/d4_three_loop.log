@@ -1,0 +1,22 @@
+D=4 n=3 graphs with K4 series core: 20
+  grid 57720 points (cube 531441)
+  prime 1: 4592 monomials, 57 core configurations  0.6s
+  prime 2: 4592 monomials, 57 core configurations  0.5s
+  prime 3: 4592 monomials, 57 core configurations  0.5s
+  prime 4: 4592 monomials, 57 core configurations  0.5s
+  stable after 4 primes, total 2.1s
+census[4,3][22] nv=11 K = {'1': '2530335703/2687385600', 'z3': '-221/270'} (2.1s)
+  grid 57720 points (cube 531441)
+  prime 1: 5469 monomials, 57 core configurations  0.5s
+  prime 2: 5469 monomials, 57 core configurations  0.5s
+  prime 3: 5469 monomials, 57 core configurations  0.5s
+  prime 4: 5469 monomials, 57 core configurations  0.5s
+  stable after 4 primes, total 2.0s
+census[4,3][23] nv=11 K = {'1': '-10519455119/2821754880', 'z3': '3183949/1088640'} (2.0s)
+  grid 57720 points (cube 531441)
+  prime 1: 8272 monomials, 66 core configurations  0.5s
+  prime 2: 8272 monomials, 66 core configurations  0.5s
+  prime 3: 8272 monomials, 66 core configurations  0.5s
+  prime 4: 8272 monomials, 66 core configurations  0.5s
+  stable after 4 primes, total 1.9s
+census[4,3][24] nv=11 K = {'1': '165233511973/2351462400', 'z3': '-3077567/56700'} (1.9s)

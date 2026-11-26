@@ -1,0 +1,32 @@
+====================================================================================================
+theta(1,3,3) with B_2 -> theta(1, 3, 3): |V| = 10, |I| = 13, n = 4, tight + subgraph bound (D=3): True
+  plan: [(0, 9, [[0], [3, 4, 5]]), (1, 2, [[1, 13, 2], [6], [7, 8, 9], [10, 11, 12]])]  p = 2
+  lambda = [[6, 1], [6, -5], [-2, 9], [-12, -4], [7, 9], [10, -7], [10, -2], [5, 6], [6, -9]]
+    E1  K = 139072*pi^2   (engine, 17.0s; exponents {'w1_1': Fraction(3, 2), 'w1_2': Fraction(-1, 2), 'w2_2': Fraction(3, 2), 'w2_3': Fraction(-1, 2), 'w2_4': Fraction(-1, 2), 'x2_1_2': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: divide by zero encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: overflow encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: invalid value encountered in matmul
+  logt = np.log(B) @ self.E.T
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: 1372550.693 +- 64 ; exact 1372585.62327 ; rel diff 2.5e-05  (91.3s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       1381342.036 +- 1.3e+04 ; rel diff 0.0064  (98.5s)
+  lambda = [[-9, 7], [4, -4], [1, 8], [11, 10], [-5, -3], [1, -4], [4, -3], [5, -2], [-12, 1]]
+    E1  K = -58327/200*pi^2   (engine, 18.5s; exponents {'w1_1': Fraction(3, 2), 'w1_2': Fraction(-1, 2), 'w2_2': Fraction(3, 2), 'w2_3': Fraction(-1, 2), 'w2_4': Fraction(-1, 2), 'x2_1_2': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: -2877.320874 +- 0.4 ; exact -2878.32207951 ; rel diff 0.00035  (98.0s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       -2898.158022 +- 28 ; rel diff 0.0069  (89.3s)
+====================================================================================================
+theta(1,3,3) with B_2 -> theta(2, 2, 3): |V| = 10, |I| = 13, n = 4, tight + subgraph bound (D=3): True
+  plan: [(0, 9, [[0], [3, 4, 5]]), (1, 2, [[1, 13, 2], [6, 7], [8, 9], [10, 11, 12]])]  p = 2
+  lambda = [[-1, -4], [12, -7], [-9, -4], [-6, -12], [8, -4], [-4, -6], [-7, -3], [-3, 8], [11, -1]]
+    E1  K = -353210/3*pi^2   (engine, 15.8s; exponents {'w1_1': Fraction(3, 2), 'w1_2': Fraction(-1, 2), 'w2_2': Fraction(1, 2), 'w2_3': Fraction(1, 2), 'w2_4': Fraction(-1, 2), 'x2_1_2': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: -1162020.082 +- 22 ; exact -1162014.3235 ; rel diff 5e-06  (84.8s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       -1164413.876 +- 8e+03 ; rel diff 0.0021  (83.0s)
+  lambda = [[-10, 1], [-6, 8], [8, 2], [-4, -7], [-1, 1], [11, 6], [-2, 8], [5, -6], [-2, -9]]
+    E1  K = -587279/300*pi^2   (engine, 16.8s; exponents {'w1_1': Fraction(3, 2), 'w1_2': Fraction(-1, 2), 'w2_2': Fraction(1, 2), 'w2_3': Fraction(1, 2), 'w2_4': Fraction(-1, 2), 'x2_1_2': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: -19321.75476 +- 1.7 ; exact -19320.7046769 ; rel diff 5.4e-05  (87.1s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       -19251.46723 +- 3e+02 ; rel diff 0.0036  (88.8s)

@@ -1,0 +1,6 @@
+joint g-degree 6  Dg 7  b 0
+homogenization check (0 expected): 0
+g-monomials 27
+min exponent of rho after g-integration: 0
+RESULT c = InputForm[-1/77760]  N = -0.0000128600823045267489711934156378600823045267489711934157`30.
+total time 1.22254`6.538808071103558

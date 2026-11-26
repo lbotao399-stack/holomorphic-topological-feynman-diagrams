@@ -1,0 +1,49 @@
+transfer (alternation), mu = uv block: kk rows (probe pi) x cols (W.kk pi'): [[8, -4, -4], [-8, 4, 4], [0, 0, 0]]  ff: [[0, -4, -4], [0, 4, 4], [0, 8, 8]]
+sl2(Kac A1)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sl3(Kac A2)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sl4(Kac A3)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sl5(Kac A4)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sl6(Kac A5)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sl7(Kac A6)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so5(fold D3)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sp4(fold A3)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so7(fold D4)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sp6(fold A5)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so8(Kac D4)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+G2(fold D4)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+F4(fold E6)      checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so9(fold D5)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sp8(fold A7)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so10(Kac D5)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so11(fold D6)    checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+sp10(fold A9)    checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+so12(Kac D6)     checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+E6(Kac)          checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+E7(Kac)          checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+E8(Kac)          checks: e_k True, m1-3,n1-3 True, m4-n4=d/8 True, W133 True, W223 True, gram kk.kk True, transfer F, Gkk True, probe values True, mu(F223) = 2d(8n4-3d) True
+
+sl2(Kac A1)      d   3  n4 9/8            8n4-3d 0            mu(F223) 0              rank[v(beta),v(Gkk)] 1 rank[+v(F223)] 1
+sl3(Kac A2)      d   8  n4 4/3            8n4-3d -40/3        mu(F223) -640/3         rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -2/3, a = -1/12, a = (8n4-3d)/(4d(d-3)): True
+sl4(Kac A3)      d  15  n4 45/32          8n4-3d -135/4       mu(F223) -2025/2        rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -3/8, a = -3/64, a = (8n4-3d)/(4d(d-3)): True
+sl5(Kac A4)      d  24  n4 36/25          8n4-3d -1512/25     mu(F223) -72576/25      rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -6/25, a = -3/100, a = (8n4-3d)/(4d(d-3)): True
+sl6(Kac A5)      d  35  n4 35/24          8n4-3d -280/3       mu(F223) -19600/3       rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -1/6, a = -1/48, a = (8n4-3d)/(4d(d-3)): True
+sl7(Kac A6)      d  48  n4 72/49          8n4-3d -6480/49     mu(F223) -622080/49     rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -6/49, a = -3/196, a = (8n4-3d)/(4d(d-3)): True
+so5(fold D3)     d  10  n4 65/36          8n4-3d -140/9       mu(F223) -2800/9        rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -1, a = -1/18, a = (8n4-3d)/(4d(d-3)): True
+sp4(fold A3)     d  10  n4 65/36          8n4-3d -140/9       mu(F223) -2800/9        rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -1, a = -1/18, a = (8n4-3d)/(4d(d-3)): True
+so7(fold D4)     d  21  n4 1071/1000      8n4-3d -6804/125    mu(F223) -285768/125    rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -3/25, a = -9/250, a = (8n4-3d)/(4d(d-3)): True
+sp6(fold A5)     d  21  n4 1197/512       8n4-3d -2835/64     mu(F223) -59535/32      rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -21/32, a = -15/512, a = (8n4-3d)/(4d(d-3)): True
+so8(Kac D4)      d  28  n4 7/9            8n4-3d -700/9       mu(F223) -39200/9       rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 0, a = -1/36, a = (8n4-3d)/(4d(d-3)): True
+G2(fold D4)      d  14  n4 119/96         8n4-3d -385/12      mu(F223) -2695/3        rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -7/24, a = -5/96, a = (8n4-3d)/(4d(d-3)): True
+F4(fold E6)      d  52  n4 -13/81         8n4-3d -12740/81    mu(F223) -1324960/81    rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 4/27, a = -5/324, a = (8n4-3d)/(4d(d-3)): True
+so9(fold D5)     d  36  n4 351/686        8n4-3d -35640/343   mu(F223) -2566080/343   rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 3/49, a = -15/686, a = (8n4-3d)/(4d(d-3)): True
+sp8(fold A7)     d  36  n4 351/125        8n4-3d -10692/125   mu(F223) -769824/125    rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -12/25, a = -9/500, a = (8n4-3d)/(4d(d-3)): True
+so10(Kac D5)     d  45  n4 135/512        8n4-3d -8505/64     mu(F223) -382725/32     rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 3/32, a = -9/512, a = (8n4-3d)/(4d(d-3)): True
+so11(fold D6)    d  55  n4 55/1944        8n4-3d -40040/243   mu(F223) -4404400/243   rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 1/9, a = -7/486, a = (8n4-3d)/(4d(d-3)): True
+sp10(fold A9)    d  55  n4 935/288        8n4-3d -5005/36     mu(F223) -275275/18     rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = -3/8, a = -7/576, a = (8n4-3d)/(4d(d-3)): True
+so12(Kac D6)     d  66  n4 -99/500        8n4-3d -24948/125   mu(F223) -3293136/125   rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 3/25, a = -3/250, a = (8n4-3d)/(4d(d-3)): True
+E6(Kac)          d  78  n4 -39/32         8n4-3d -975/4       mu(F223) -38025         rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 5/24, a = -1/96, a = (8n4-3d)/(4d(d-3)): True
+E7(Kac)          d 133  n4 -2261/648      8n4-3d -34580/81    mu(F223) -9198280/81    rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 7/27, a = -1/162, a = (8n4-3d)/(4d(d-3)): True
+E8(Kac)          d 248  n4 -124/15        8n4-3d -12152/15    mu(F223) -6027392/15    rank[v(beta),v(Gkk)] 2 rank[+v(F223)] 2  x = 22/75, a = -1/300, a = (8n4-3d)/(4d(d-3)): True
+
+all identities hold on all 22 algebras: True
+Gram (Killing), e.g. E8(Kac): kk0.kk0=61504 kk0.ff0=0 ff0.ff0=248 kk0.kk1=248 kk0.ff1=-248 ff0.ff1=124 kk0.kk2=248 kk0.ff2=-248 ff0.ff2=-124 kk1.kk0=248 kk1.ff0=-248 ff1.ff0=124 kk1.kk1=61504 kk1.ff1=0 ff1.ff1=248 kk1.kk2=248 kk1.ff2=248 ff1.ff2=124 kk2.kk0=248 kk2.ff0=248 ff2.ff0=-124 kk2.kk1=248 kk2.ff1=248 ff2.ff1=124 kk2.kk2=61504 kk2.ff2=0 ff2.ff2=248

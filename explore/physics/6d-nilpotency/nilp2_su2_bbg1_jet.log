@@ -1,0 +1,11 @@
+order 2, su2, O = bbg1, jets {('O', 0): (0,)}, functionals ccccg1, F = 3, seed 1, P = 2147483647, mode symbolic, nmom 0
+  <hatQ[Q0] hatQ[G2.1] O>: [396619404, 1394432100, 756002338]   (histories 24, keys 12, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.2] O>: [650311402, 917574058, 1379627944]   (histories 24, keys 12, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [1753504735, 285624819, 1718675872]   (histories 36, keys 18, colour 0s, total 0s)
+  <hatQ[G2.1] hatQ[Q0] O>: [340960349, 132671756, 1085440112]   (histories 24, keys 15, colour 0s, total 0s)
+  <hatQ[G2.2] hatQ[Q0] O>: [284257807, 1540459212, 1749960217]   (histories 24, keys 15, colour 0s, total 0s)
+sum kappa kappa E (must vanish mod P): [0, 0, 0]
+kappa_2 system: 3 equations, rank 2, augmented rank 2 (unknowns 2)
+solution: {'G2.1': '-1/2', 'G2.2': '1/2'}
+wick/Aut: {'G2.1': '-1/2', 'G2.2': '1/2'}
+total time 0s

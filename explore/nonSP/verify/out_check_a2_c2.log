@@ -1,0 +1,13 @@
+Feynman formula beta=(3, 2, 2): lhs/rhs - 1 = -1.15e-41
+Feynman formula beta=(7, 0, 0): lhs/rhs - 1 = 0.0
+Feynman formula beta=(1, 4, 2): lhs/rhs - 1 = 0.0
+Feynman parametrization b=1: rel dev -4.59e-41
+Feynman parametrization b=2: rel dev -4.59e-41
+Feynman parametrization b=3: rel dev -4.59e-41
+Feynman parametrization b=4: rel dev -4.59e-41
+int xi^-1 log^1(1-xi) = -1.6449340668482264365   relation [v,1,z2,z3,z4]: [1, 0, 1, 0, 0]
+int xi^-1 log^2(1-xi) = 2.4041138063191885708   relation [v,1,z2,z3,z4]: [1, 0, 0, -2, 0]
+int xi^-2 log^2(1-xi) = 3.2898681336964528729   relation [v,1,z2,z3,z4]: [1, 0, -2, 0, 0]
+int xi^-1 log^3(1-xi) = -6.4939394022668291491   relation [v,1,z2,z3,z4]: [-1, 0, 0, 0, -6]
+int xi^-2 log^3(1-xi) = -7.2123414189575657124   relation [v,1,z2,z3,z4]: [-1, 0, 0, -6, 0]
+int xi^-3 log^3(1-xi) = -8.5409729100234621656   relation [v,1,z2,z3,z4]: [1, 0, 3, 3, 0]

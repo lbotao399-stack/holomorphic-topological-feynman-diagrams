@@ -1,0 +1,6 @@
+so5          kappa -> 2 kappa: W_133, W_223 (via F) scale by 1/2: [True, True] ; beta scales by 2: True
+so5          kappa -> 3 kappa: W_133, W_223 (via F) scale by 1/3: [True, True] ; beta scales by 3: True
+G2(fold D4)  kappa -> 2 kappa: W_133, W_223 (via F) scale by 1/2: [True, True] ; beta scales by 2: True
+G2(fold D4)  kappa -> 3 kappa: W_133, W_223 (via F) scale by 1/3: [True, True] ; beta scales by 3: True
+F4(fold E6)  kappa -> 2 kappa: W_133, W_223 (via F) scale by 1/2: [True, True] ; beta scales by 2: True
+F4(fold E6)  kappa -> 3 kappa: W_133, W_223 (via F) scale by 1/3: [True, True] ; beta scales by 3: True

@@ -1,0 +1,8 @@
+R-charges ['1/2'] weights scaled by 4
+theory U(1) charges [1] W no
+Jw=4 charges=(0,): dim C = {0: 1, 4: 3, 8: 2} ; dim H(Q0) = {4: 1, 8: 1}
+Jw=8 charges=(0,): dim C = {0: 2, 4: 7, 8: 6, 12: 1} ; dim H(Q0) = {4: 2, 8: 2}
+Jw=12 charges=(0,): dim C = {0: 3, 4: 14, 8: 17, 12: 6} ; dim H(Q0) = {4: 2, 8: 2}
+Jw=16 charges=(0,): dim C = {0: 5, 4: 26, 8: 37, 12: 18, 16: 2} ; dim H(Q0) = {4: 2, 8: 2}
+Jw=20 charges=(0,): dim C = {0: 7, 4: 45, 8: 77, 12: 47, 16: 8} ; dim H(Q0) = {4: 2, 8: 4, 12: 2}
+time 0s

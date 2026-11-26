@@ -1,0 +1,24 @@
+ys = {rB*(-gA*(1 - rA)*(1 - s0x1)*(-gA - gB + 1) + (1 - rC)*(-gA - gB + 1)*(gA*(1 - s0x1) + s0x1 - s2x1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rB*(-gA*(1 - rA)*(1 - s1x1) + (1 - rC)*(s1x1 - s2x1)*(-gA - gB + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) - s1x1, rB*(-gA*(1 - rA)*(1 - s5x1) - s2x1*(1 - rC)*(-gA - gB + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rC*(-gA*(1 - rA)*(gB*(1 - s0x1) + s2x1 - 1) + gB*(1 - rB)*(gA*(1 - s0x1) + s0x1 - s2x1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) + s2x1, rC*(-gA*(1 - rA)*(s2x1 - 1) + gB*(1 - rB)*(s1x1 - s2x1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) + s2x1, rC*(-gA*(1 - rA)*(s2x1 + s5x1 - 1) - gB*s2x1*(1 - rB))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) + s2x1, rA*(-gB*(1 - rB)*(1 - s0x1)*(-gA - gB + 1) + (1 - rC)*(-gA - gB + 1)*(gB*(1 - s0x1) + s2x1 - 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rA*(-gB*(1 - rB)*(1 - s1x1) + (1 - rC)*(s2x1 - 1)*(-gA - gB + 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)), rA*(-gB*(1 - rB)*(1 - s5x1) + (1 - rC)*(-gA - gB + 1)*(s2x1 + s5x1 - 1))/(gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1)) - s5x1};
+Qp = gA*(1 - rA) + gB*(1 - rB) + (1 - rC)*(-gA - gB + 1);
+vars = {s0x1, s1x1, s2x1, s5x1, gA, gB, rA, rB, rC};
+t0 = AbsoluteTime[];
+Ns = Together[ys*Qp];
+If[Union[Denominator /@ Ns] =!= {1}, Print["NOT POLYNOMIAL"]; Exit[1]];
+Ns = Expand[Ns];
+bord = Prepend[Table[Prepend[D[Ns[[j]], #] & /@ vars, Ns[[j]]], {j, 9}], Prepend[D[Qp, #] & /@ vars, Qp]];
+detB = Expand[Det[bord]];
+Print["detB terms ", Length[detB], " time ", AbsoluteTime[] - t0];
+Print["gsym0 ", InputForm[(detB/Qp^10) /. {s0x1 -> 42/97, s1x1 -> 20/97, s2x1 -> 51/97, s5x1 -> 84/97, gA -> 7/97, gB -> 10/97, rA -> 69/97, rB -> 13/97, rC -> 47/97}]];
+Print["gsym1 ", InputForm[(detB/Qp^10) /. {s0x1 -> 75/97, s1x1 -> 8/97, s2x1 -> 65/97, s5x1 -> 28/97, gA -> 5/97, gB -> 12/97, rA -> 56/97, rB -> 54/97, rC -> 9/97}]];
+Print["gsym2 ", InputForm[(detB/Qp^10) /. {s0x1 -> 31/97, s1x1 -> 12/97, s2x1 -> 71/97, s5x1 -> 55/97, gA -> 8/97, gB -> 73/97, rA -> 16/97, rB -> 29/97, rC -> 81/97}]];
+sigInt[poly_, dom_List] := Module[{p = poly, d = dom, v},
+  Do[p = Integrate[p, {d[[k]], 0, If[k == 1, 1, d[[k - 1]]]}], {k, Length[d], 1, -1}]; p];
+P = detB;
+P = Expand[sigInt[P, {s0x1}]];
+P = Expand[sigInt[P, {s1x1}]];
+P = Expand[sigInt[P, {s2x1}]];
+P = Expand[sigInt[P, {s5x1}]];
+Print["P terms ", Length[P], " time ", AbsoluteTime[] - t0];
+Print["degrees gA gB rA rB rC: ", Exponent[P, #] & /@ {gA, gB, rA, rB, rC}];
+Put[P, "out/case4_D1_P.m"];
+Put[Qp, "out/case4_D1_Q.m"];

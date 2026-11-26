@@ -1,0 +1,72 @@
+T5 (t5_central.py) n=2 w=1 G=-3..3
+# G=-5 H(C) done
+# G=-4 H(C) done
+H(C_quot) G=-3 t=(1, 1) N=3: dim 1 (slot dim 1)
+   z = +1 X1*X2*b   [1 terms]
+   beta_0-coefficient c = +1 X1*X2   [1 terms] ; Qc=0: True ; c exact in w=0: False
+H(C_quot) G=-3 t=(1, 1) N=6: dim 1 (slot dim 1)
+   z = +1 X1*X2*X2_10*X1_01*X2_01*b   [1 terms]
+   beta_0-coefficient c = -1 X1*X2*X2_10*X1_01*X2_01   [1 terms] ; Qc=0: True ; c exact in w=0: False
+# G=-3 H(C) done
+# G=-2 H(C) done
+H(C_quot) G=-1 t=(0, 0) N=5: dim 1 (slot dim 30)
+   z = -1 X1*X2*X2_10*X1_01*X2_01*g1_01 +1 X1*X2*X2_10*X1_01*X2_01*g2_10   [2 terms]
+   beta_0-coefficient c = 0
+H(C_quot) G=-1 t=(0, 0) N=8: dim 1 (slot dim 2)
+   z = +1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*b   [1 terms]
+   beta_0-coefficient c = -1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02   [1 terms] ; Qc=0: True ; c exact in w=0: False
+# G=-1 H(C) done
+# G=0 H(C) done
+H(C_quot) G=1 t=(-1, -1) N=4: dim 1 (slot dim 191)
+   z = +1 X1*X2*X1_01*X2_21*g1_01 -1 X1*X2*X1_01*X2_21*g2_10 +1 X1*X2*X2_10*X2_03*g1_01 -1 X1*X2*X2_10*X2_03*g2_10 -1 X1*X2*X2_20*X1_02*g1_01 +1 X1*X2*X2_20*X1_02*g2_10   [6 terms]
+   beta_0-coefficient c = 0
+H(C_quot) G=1 t=(-1, -1) N=7: dim 1 (slot dim 125)
+   z = -1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*g1_01 +1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*g2_10   [2 terms]
+   beta_0-coefficient c = 0
+# G=1 H(C) done
+# G=2 H(C) done
+# G=3 H(C) done
+H(V) classes via the explicit lemma map z = eta_K c:
+H(V) G=-3 t=(1, 1) N=3: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=() from H(C)(1, 1) N=3 :  z = +1 X1*X2*b   [1 terms]
+H(V) G=-3 t=(1, 1) N=6: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=() from H(C)(1, 1) N=6 :  z = +1 X1*X2*X2_10*X1_01*X2_01*b   [1 terms]
+# G=-3 H(V) done
+H(V) G=-2 t=(1, 0) N=2: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(2,) from H(C)(1, 1) N=3 :  z = -1 X1*b -1 X1*X2*g2   [2 terms]
+H(V) G=-2 t=(1, 0) N=5: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(2,) from H(C)(1, 1) N=6 :  z = -1 X1*X2*X1_01*X2_11*b +1 X1*X2*X2_10*X1_02*b +1 X1*X2*X2_10*X1_01*X2_01*g2   [3 terms]
+# G=-2 H(V) done
+H(V) G=-1 t=(0, 0) N=1: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(1, 2) from H(C)(1, 1) N=3 :  z = -1 b -1 X1*g1 -1 X2*g2   [3 terms]
+H(V) G=-1 t=(0, 0) N=4: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(1, 2) from H(C)(1, 1) N=6 :  z = +1 X1*X1_01*X2_20*b +1 X1*X2_10*X2_02*b +1 X1*X2*X1_01*X2_11*g1 +1 X1*X2*X1_01*X2_20*g2 -1 X1*X2*X2_10*X1_01*g2_10 -1 X1*X2*X2_10*X1_02*g1 +1 X1*X2*X2_10*X2_02*g2   [7 terms]
+H(V) G=-1 t=(0, 0) N=5: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=() from H(C)(0, 0) N=5 :  z = -1 X1*X2*X2_10*X1_01*X2_01*g1_01 +1 X1*X2*X2_10*X1_01*X2_01*g2_10   [2 terms]
+H(V) G=-1 t=(0, 0) N=8: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=() from H(C)(0, 0) N=8 :  z = +1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*b   [1 terms]
+# G=-1 H(V) done
+H(V) G=0 t=(0, -1) N=4: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(2,) from H(C)(0, 0) N=5 :  z = +1 X1*X2*X1_01*X2_11*g1_01 -1 X1*X2*X1_01*X2_11*g2_10 -1 X1*X2*X2_10*X1_01*g1_02 +1 X1*X2*X2_10*X1_01*g2_11 -1 X1*X2*X2_10*X1_02*g1_01 +1 X1*X2*X2_10*X1_02*g2_10   [6 terms]
+H(V) G=0 t=(0, -1) N=7: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(2,) from H(C)(0, 0) N=8 :  z = -3 X1*X2*X2_10*X1_01*X1_02*X2_21*b +1 X1*X2*X2_10*X1_01*X2_01*X2_13*b -1 X1*X2*X2_10*X1_01*X2_11*X2_03*b +2 X1*X2*X2_10*X1_01*X2_20*X1_03*b +3 X1*X2*X2_10*X1_01*X2_01*X2_11*X1_02*g1 -3 X1*X2*X2_10*X1_01*X2_01*X2_11*X2_02*g2 +3 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*g2   [7 terms]
+# G=0 H(V) done
+H(V) G=1 t=(-1, -1) N=3: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(1, 2) from H(C)(0, 0) N=5 :  z = -3 X1*X1_01*X2_20*g1_01 +3 X1*X1_01*X2_20*g2_10 +1 X1*X2*X1_01*g1_21 -1 X1*X2*X1_01*g2_30 -1 X1*X2*X2_01*g1_12 +1 X1*X2*X2_01*g2_21 +2 X1*X2*X2_10*g1_03 -2 X1*X2*X2_10*g2_12 -3 X1*X2_10*X2_02*g1_01 +3 X1*X2_10*X2_02*g2_10   [10 terms]
+H(V) G=1 t=(-1, -1) N=4: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=() from H(C)(-1, -1) N=4 :  z = -1 X1*X2*X1_01*X2_01*g1_21 +1 X1*X2*X1_01*X2_01*g2_30 -1 X1*X2*X2_10*X1_01*g1_12 +1 X1*X2*X2_10*X1_01*g2_21 -1 X1*X2*X2_10*X2_01*g1_03 +1 X1*X2*X2_10*X2_01*g2_12   [6 terms]
+H(V) G=1 t=(-1, -1) N=6: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(1, 2) from H(C)(0, 0) N=8 :  z = +24 X1*X2*X1_01*X2_01*X2_32*b +48 X1*X2*X1_01*X2_11*X2_22*b -16 X1*X2*X1_01*X2_20*X2_13*b +12 X1*X2*X2_10*X1_01*X2_23*b +6 X1*X2*X2_10*X1_02*X2_22*b -16 X1*X2*X2_10*X2_01*X2_14*b -34 X1*X2*X2_10*X2_02*X2_13*b -5 X1*X2*X2_10*X2_11*X2_04*b -5 X1*X2*X2_10*X2_20*X1_04*b -12 X1*X2*X2_10*X2_21*X1_03*b +8 X1*X2*X2_20*X2_11*X1_03*b -120 X1*X2*X2_10*X1_01*X1_02*X2_21*g1 +24 X1*X2*X2_10*X1_01*X2_01*X1_02*g1_20 -168 X1*X2*X2_10*X1_01*X2_01*X2_02*g2_20 -144 X1*X2*X2_10*X1_01*X2_01*X2_03*g1_10 +48 X1*X2*X2_10*X1_01*X2_01*X2_11*g2_11 ... (41 terms)   [41 terms]
+H(V) G=1 t=(-1, -1) N=7: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=() from H(C)(-1, -1) N=7 :  z = -1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*g1_01 +1 X1*X2*X2_10*X1_01*X2_01*X2_20*X1_02*g2_10   [2 terms]
+# G=1 H(V) done
+H(V) G=2 t=(-1, -2) N=3: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(2,) from H(C)(-1, -1) N=4 :  z = +1 X1*X2*X1_02*g1_21 -1 X1*X2*X1_02*g2_30 +2 X1*X2*X2_02*g1_12 -2 X1*X2*X2_02*g2_21 -1 X1*X2*X2_11*g1_03 +1 X1*X2*X2_11*g2_12   [6 terms]
+H(V) G=2 t=(-1, -2) N=6: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(2,) from H(C)(-1, -1) N=7 :  z = +3 X1*X2*X2_10*X1_01*X1_02*X2_21*g1_01 -3 X1*X2*X2_10*X1_01*X1_02*X2_21*g2_10 +3 X1*X2*X2_10*X1_01*X2_01*X1_02*g1_21 -3 X1*X2*X2_10*X1_01*X2_01*X1_02*g2_30 -9 X1*X2*X2_10*X1_01*X2_01*X2_02*g1_12 +9 X1*X2*X2_10*X1_01*X2_01*X2_02*g2_21 -6 X1*X2*X2_10*X1_01*X2_01*X2_11*g1_03 +6 X1*X2*X2_10*X1_01*X2_01*X2_11*g2_12 -1 X1*X2*X2_10*X1_01*X2_01*X2_13*g1_01 +1 X1*X2*X2_10*X1_01*X2_01*X2_13*g2_10 +1 X1*X2*X2_10*X1_01*X2_11*X2_03*g1_01 -1 X1*X2*X2_10*X1_01*X2_11*X2_03*g2_10 -2 X1*X2*X2_10*X1_01*X2_20*X1_03*g1_01 +2 X1*X2*X2_10*X1_01*X2_20*X1_03*g2_10   [14 terms]
+# G=2 H(V) done
+H(V) G=3 t=(-2, -2) N=2: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(1, 2) from H(C)(-1, -1) N=4 :  z = -1 X1*X1_01*g1_31 +1 X1*X1_01*g2_40 -3 X1*X2_01*g1_22 +3 X1*X2_01*g2_31 -2 X1*X2_20*g1_03 +2 X1*X2_20*g2_12   [6 terms]
+H(V) G=3 t=(-2, -2) N=5: dim 1 ; lemma images 1, V-cocycles: True, independent rank 1 -> basis: True
+   K=(1, 2) from H(C)(-1, -1) N=7 :  z = +60 X1*X2*X1_01*X2_01*X2_02*g1_31 -60 X1*X2*X1_01*X2_01*X2_02*g2_40 -24 X1*X2*X1_01*X2_01*X2_32*g1_01 +24 X1*X2*X1_01*X2_01*X2_32*g2_10 -48 X1*X2*X1_01*X2_11*X2_22*g1_01 +48 X1*X2*X1_01*X2_11*X2_22*g2_10 +16 X1*X2*X1_01*X2_20*X2_13*g1_01 -16 X1*X2*X1_01*X2_20*X2_13*g2_10 +356 X1*X2*X2_10*X1_01*X1_02*g1_31 -356 X1*X2*X2_10*X1_01*X1_02*g2_40 -60 X1*X2*X2_10*X1_01*X2_01*g1_23 +60 X1*X2*X2_10*X1_01*X2_01*g2_32 -1944 X1*X2*X2_10*X1_01*X2_02*g1_22 +1944 X1*X2*X2_10*X1_01*X2_02*g2_31 -664 X1*X2*X2_10*X1_01*X2_03*g1_21 +664 X1*X2*X2_10*X1_01*X2_03*g2_30 ... (62 terms)   [62 terms]
+# G=3 H(V) done

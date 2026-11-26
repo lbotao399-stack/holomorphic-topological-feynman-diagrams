@@ -1,0 +1,77 @@
+(1) abelian C_g^0 dims: subset-count+Koszul vs Molien
+  ab1 (a,b)=(0, 0): n=1:1/1
+  ab1 (a,b)=(1, 0): n=2:1/1
+  ab1 (a,b)=(0, 1): n=2:1/1
+  ab1 (a,b)=(1, 1): n=3:1/1
+  ab1 (a,b)=(2, 1): n=2:1/1 n=3:1/1
+  ab1 (a,b)=(2, 2): n=3:1/1 n=4:1/1
+  ab1 (a,b)=(3, 1): n=3:1/1 n=4:1/1
+  ab2 (a,b)=(0, 0): n=1:2/2 n=2:1/1
+  ab2 (a,b)=(1, 0): n=2:3/3 n=3:2/2
+  ab2 (a,b)=(0, 1): n=2:3/3 n=3:2/2
+  ab2 (a,b)=(1, 1): n=2:1/1 n=3:6/6 n=4:4/4
+  ab2 (a,b)=(2, 1): n=2:3/3 n=3:8/8 n=4:7/7 n=5:2/2
+  ab2 (a,b)=(2, 2): n=2:1/1 n=3:10/10 n=4:18/18 n=5:10/10 n=6:1/None
+  ab2 (a,b)=(3, 1): n=2:1/1 n=3:10/10 n=4:17/17 n=5:8/8
+(2) operator identities on Omega*(R) (x) Omega^{0,*}(C^2), generic coefficients
+  [D*,iota_0]=0: True
+  [D,iota_0]=d_0: True
+  [D*,iota_1]=0: True
+  [D,iota_1]=d_1: True
+  [D*,iota_2]=0: True
+  [D,iota_2]=d_2: True
+  [D,D*]=-(d_tau^2+4 sum d_z d_zb): True
+  [[D,D*],iota_0]=0: True
+  [[D,D*],iota_1]=0: True
+  [[D,D*],iota_2]=0: True
+(2b) X x X: (iota^x_v + iota^y_v) annihilates K = k(x-y) (dx-dy)^3 and D*_x K
+  (iota^x_0 + iota^y_0) K = 0: True
+  control (iota^x_0 - iota^y_0) K = 0: False
+  (iota^x_1 + iota^y_1) K = 0: True
+  control (iota^x_1 - iota^y_1) K = 0: False
+  (iota^x_2 + iota^y_2) K = 0: True
+  control (iota^x_2 - iota^y_2) K = 0: False
+  (iota^x_0 + iota^y_0) D*_x K = 0: True
+  control (iota^x_0 - iota^y_0) D*_x K = 0: False
+  (iota^x_1 + iota^y_1) D*_x K = 0: True
+  control (iota^x_1 - iota^y_1) D*_x K = 0: False
+  (iota^x_2 + iota^y_2) D*_x K = 0: True
+  control (iota^x_2 - iota^y_2) D*_x K = 0: False
+(3) characters of psi_S(phi), phi in C_g^0_(a,b), w = -1_{U-S}; I_k: U(1)^2 (l1 l2)^{k-1}, dilation lam^{2k-2}
+  k=0 S=110 (bits tau,1b,2b = 1,2,4) (a,b)=(0,0) passes U(1)^2; passes dilation: False
+  k=1 S=000 (bits tau,1b,2b = 1,2,4) (a,b)=(0,0) passes U(1)^2; passes dilation: False
+  k=1 S=001 (bits tau,1b,2b = 1,2,4) (a,b)=(0,0) passes U(1)^2; passes dilation: False
+  k=1 S=010 (bits tau,1b,2b = 1,2,4) (a,b)=(1,0) passes U(1)^2; passes dilation: False
+  k=1 S=011 (bits tau,1b,2b = 1,2,4) (a,b)=(1,0) passes U(1)^2; passes dilation: False
+  k=1 S=100 (bits tau,1b,2b = 1,2,4) (a,b)=(0,1) passes U(1)^2; passes dilation: False
+  k=1 S=101 (bits tau,1b,2b = 1,2,4) (a,b)=(0,1) passes U(1)^2; passes dilation: False
+  k=1 S=110 (bits tau,1b,2b = 1,2,4) (a,b)=(1,1) passes U(1)^2; passes dilation: False
+  k=2 S=000 (bits tau,1b,2b = 1,2,4) (a,b)=(1,1) passes U(1)^2; passes dilation: False
+  k=2 S=001 (bits tau,1b,2b = 1,2,4) (a,b)=(1,1) passes U(1)^2; passes dilation: False
+  k=2 S=010 (bits tau,1b,2b = 1,2,4) (a,b)=(2,1) passes U(1)^2; passes dilation: False
+  k=2 S=011 (bits tau,1b,2b = 1,2,4) (a,b)=(2,1) passes U(1)^2; passes dilation: False
+  k=2 S=100 (bits tau,1b,2b = 1,2,4) (a,b)=(1,2) passes U(1)^2; passes dilation: False
+  k=2 S=101 (bits tau,1b,2b = 1,2,4) (a,b)=(1,2) passes U(1)^2; passes dilation: False
+  k=2 S=110 (bits tau,1b,2b = 1,2,4) (a,b)=(2,2) passes U(1)^2; passes dilation: False
+  k=3 S=000 (bits tau,1b,2b = 1,2,4) (a,b)=(2,2) passes U(1)^2; passes dilation: False
+  k=3 S=001 (bits tau,1b,2b = 1,2,4) (a,b)=(2,2) passes U(1)^2; passes dilation: False
+  k=3 S=010 (bits tau,1b,2b = 1,2,4) (a,b)=(3,2) passes U(1)^2; passes dilation: False
+  k=3 S=011 (bits tau,1b,2b = 1,2,4) (a,b)=(3,2) passes U(1)^2; passes dilation: False
+  k=3 S=100 (bits tau,1b,2b = 1,2,4) (a,b)=(2,3) passes U(1)^2; passes dilation: False
+  k=3 S=101 (bits tau,1b,2b = 1,2,4) (a,b)=(2,3) passes U(1)^2; passes dilation: False
+  k=3 S=110 (bits tau,1b,2b = 1,2,4) (a,b)=(3,3) passes U(1)^2; passes dilation: False
+  k=4 S=000 (bits tau,1b,2b = 1,2,4) (a,b)=(3,3) passes U(1)^2; passes dilation: False
+  k=4 S=001 (bits tau,1b,2b = 1,2,4) (a,b)=(3,3) passes U(1)^2; passes dilation: False
+  k=4 S=010 (bits tau,1b,2b = 1,2,4) (a,b)=(4,3) passes U(1)^2; passes dilation: False
+  k=4 S=011 (bits tau,1b,2b = 1,2,4) (a,b)=(4,3) passes U(1)^2; passes dilation: False
+  k=4 S=100 (bits tau,1b,2b = 1,2,4) (a,b)=(3,4) passes U(1)^2; passes dilation: False
+  k=4 S=101 (bits tau,1b,2b = 1,2,4) (a,b)=(3,4) passes U(1)^2; passes dilation: False
+  k=4 S=110 (bits tau,1b,2b = 1,2,4) (a,b)=(4,4) passes U(1)^2; passes dilation: False
+  k=5 S=000 (bits tau,1b,2b = 1,2,4) (a,b)=(4,4) passes U(1)^2; passes dilation: False
+  k=5 S=001 (bits tau,1b,2b = 1,2,4) (a,b)=(4,4) passes U(1)^2; passes dilation: False
+  k=5 S=010 (bits tau,1b,2b = 1,2,4) (a,b)=(5,4) passes U(1)^2; passes dilation: False
+  k=5 S=011 (bits tau,1b,2b = 1,2,4) (a,b)=(5,4) passes U(1)^2; passes dilation: False
+  k=5 S=100 (bits tau,1b,2b = 1,2,4) (a,b)=(4,5) passes U(1)^2; passes dilation: False
+  k=5 S=101 (bits tau,1b,2b = 1,2,4) (a,b)=(4,5) passes U(1)^2; passes dilation: False
+  k=5 S=110 (bits tau,1b,2b = 1,2,4) (a,b)=(5,5) passes U(1)^2; passes dilation: False
+  all U(1)^2+dilation solutions: [(0, 7, 0, 0), (1, 7, 1, 1), (2, 7, 2, 2), (3, 7, 3, 3), (4, 7, 4, 4), (5, 7, 5, 5)]

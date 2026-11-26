@@ -1,0 +1,9 @@
+D=2: candidate two-loop cores x subdivisions with |I| = 5: 8; satisfying the counting: [('theta', (1, 2, 2))]; with a pendant vertex: 0
+   theta(1, 2, 2): degrees [2, 2, 3, 3]; admissible O (vertex, deg O, p, |Aut fixing O|, outputs): [(0, 3, 1, 2, 2), (1, 3, 1, 2, 2)]
+D=3: candidate two-loop cores x subdivisions with |I| = 7: 16; satisfying the counting: [('theta', (1, 3, 3)), ('theta', (2, 2, 3))]; with a pendant vertex: 0
+   theta(1, 3, 3): degrees [2, 2, 2, 2, 3, 3]; admissible O (vertex, deg O, p, |Aut fixing O|, outputs): [(0, 3, 1, 2, 4), (1, 3, 1, 2, 4)]
+   theta(2, 2, 3): degrees [2, 2, 2, 2, 3, 3]; admissible O (vertex, deg O, p, |Aut fixing O|, outputs): [(0, 3, 1, 2, 4), (1, 3, 1, 2, 4)]
+D=4: candidate two-loop cores x subdivisions with |I| = 9: 27; satisfying the counting: [('theta', (1, 4, 4)), ('theta', (2, 3, 4)), ('theta', (3, 3, 3))]; with a pendant vertex: 0
+   theta(1, 4, 4): degrees [2, 2, 2, 2, 2, 2, 3, 3]; admissible O (vertex, deg O, p, |Aut fixing O|, outputs): [(0, 3, 1, 2, 6), (1, 3, 1, 2, 6)]
+   theta(2, 3, 4): degrees [2, 2, 2, 2, 2, 2, 3, 3]; admissible O (vertex, deg O, p, |Aut fixing O|, outputs): [(0, 3, 1, 1, 6), (1, 3, 1, 1, 6)]
+   theta(3, 3, 3): degrees [2, 2, 2, 2, 2, 2, 3, 3]; admissible O (vertex, deg O, p, |Aut fixing O|, outputs): [(0, 3, 1, 6, 6), (1, 3, 1, 6, 6)]

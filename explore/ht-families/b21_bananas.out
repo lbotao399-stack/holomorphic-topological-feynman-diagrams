@@ -1,0 +1,36 @@
+====================================================================================================
+banana(1,3,3,3,3): |V| = 10, |I| = 13, n = 4, tight + subgraph bound (D=3): True
+  plan: [(0, 9, [[0], [1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])]  p = 2
+  lambda = [[7, 12], [12, -12], [10, 2], [-4, 11], [-5, 6], [-9, -2], [-12, -12], [-12, 8], [5, -12]]
+    E1  K = 1044576/5*pi^2   (engine, 1.6s; exponents {'w1_1': Fraction(3, 2), 'w1_2': Fraction(-1, 2), 'w1_3': Fraction(-1, 2), 'w1_4': Fraction(-1, 2), 'w1_5': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: divide by zero encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: overflow encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: invalid value encountered in matmul
+  logt = np.log(B) @ self.E.T
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: 2061910.377 +- 3.4e-09 ; exact 2061910.37737 ; rel diff 1e-15  (93.9s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       2071112.856 +- 1.4e+04 ; rel diff 0.0045  (100.4s)
+    E4  (3/4) D_Gamma prod Gamma(H+3/2-a)/(a-1)! / Gamma(sum) = 1044576*pi**2/5 ;  K / that = 1
+  lambda = [[-2, 2], [7, -12], [-5, 8], [-7, 5], [6, -7], [-10, 5], [-4, -11], [9, -10], [-10, -12]]
+    E1  K = 77064/7*pi^2   (engine, 1.3s; exponents {'w1_1': Fraction(3, 2), 'w1_2': Fraction(-1, 2), 'w1_3': Fraction(-1, 2), 'w1_4': Fraction(-1, 2), 'w1_5': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: 108655.8848 +- 4.9e-10 ; exact 108655.884795 ; rel diff 3.3e-15  (103.6s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       109430.6892 +- 7.2e+02 ; rel diff 0.0071  (89.0s)
+    E4  (3/4) D_Gamma prod Gamma(H+3/2-a)/(a-1)! / Gamma(sum) = 77064*pi**2/7 ;  K / that = 1
+====================================================================================================
+banana(2,2,3,3,3): |V| = 10, |I| = 13, n = 4, tight + subgraph bound (D=3): True
+  plan: [(0, 9, [[0, 1], [2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])]  p = 2
+  lambda = [[-11, -10], [-10, -1], [-7, 11], [9, -3], [-4, 7], [-6, 7], [-11, 6], [9, -7], [1, 8]]
+    E1  K = 19327113/280*pi^2   (engine, 1.9s; exponents {'w1_1': Fraction(1, 2), 'w1_2': Fraction(1, 2), 'w1_3': Fraction(-1, 2), 'w1_4': Fraction(-1, 2), 'w1_5': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: 681253.4167 +- 0.0098 ; exact 681253.426876 ; rel diff 1.5e-08  (86.5s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       675819.8893 +- 4.4e+03 ; rel diff 0.008  (81.9s)
+    E4  (3/4) D_Gamma prod Gamma(H+3/2-a)/(a-1)! / Gamma(sum) = 19327113*pi**2/280 ;  K / that = 1
+  lambda = [[9, 2], [2, -1], [6, 11], [5, 11], [2, 3], [9, -5], [-2, 10], [-7, 7], [-4, 12]]
+    E1  K = -3136*pi^2   (engine, 0.9s; exponents {'w1_1': Fraction(1, 2), 'w1_2': Fraction(1, 2), 'w1_3': Fraction(-1, 2), 'w1_4': Fraction(-1, 2), 'w1_5': Fraction(-1, 2)})
+    E2  pointwise g == D_brute |J| at 3 rational points: True
+    E3  QMC Dirichlet(alpha+1), 2^13 x 16: -30951.0794 +- 1.5e-06 ; exact -30951.0794018 ; rel diff 5e-11  (88.4s)
+    E3' QMC Dirichlet(1/2), 2^13 x 16:       -30890.83805 +- 2e+02 ; rel diff 0.0019  (91.6s)
+    E4  (3/4) D_Gamma prod Gamma(H+3/2-a)/(a-1)! / Gamma(sum) = -3136*pi**2 ;  K / that = 1

@@ -1,0 +1,36 @@
+sl2  Str4           n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+sl2  Str4           n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl2  Str4           n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl2  (tr xx)^2 sym  n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+sl2  (tr xx)^2 sym  n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl2  (tr xx)^2 sym  n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl3  Str4           n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+sl3  Str4           n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl3  Str4           n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl3  (tr xx)^2 sym  n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+sl3  (tr xx)^2 sym  n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+sl3  (tr xx)^2 sym  n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl2  Str4           n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl2  Str4           n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl2  Str4           n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl2  (tr xx)^2 sym  n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl2  (tr xx)^2 sym  n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl2  (tr xx)^2 sym  n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl2  lambda^4       n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl2  lambda^4       n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl2  lambda^4       n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl2  alt lambda.H3  n=0: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl2  alt lambda.H3  n=2: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl2  alt lambda.H3  n=4: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl3  Str4           n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl3  Str4           n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl3  Str4           n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl3  (tr xx)^2 sym  n=1: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl3  (tr xx)^2 sym  n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl3  (tr xx)^2 sym  n=5: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl3  lambda^4       n=1: cochain(S4-antisym) True; omega nonzero False; d omega == 0 on 3 samples: True
+gl3  lambda^4       n=3: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl3  lambda^4       n=5: cochain(S4-antisym) True; omega nonzero False; d omega == 0 on 3 samples: True
+gl3  alt lambda.H3  n=0: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: True
+gl3  alt lambda.H3  n=2: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False
+gl3  alt lambda.H3  n=4: cochain(S4-antisym) True; omega nonzero True; d omega == 0 on 3 samples: False

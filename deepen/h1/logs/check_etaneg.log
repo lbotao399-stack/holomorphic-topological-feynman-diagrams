@@ -1,0 +1,97 @@
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(0, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(0, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(0, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(0, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 0) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, 0, 0)   (a,b)=(1, 1) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.1s]
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, -1, 0)   (a,b)=(1, 1) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.1s]
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(0, 0, -1)   (a,b)=(1, 1) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.1s]
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g=-3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g=-2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g=-1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g= 0  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g= 1  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g= 2  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+  abelian1 V^eta w=(-1, -1, -1) (a,b)=(1, 1) g= 3  dim V^eta=    0  H(V^eta)=0  pred=0  OK
+    [0.0s]
+case etaneg: all checks passed: True   total 0.3s

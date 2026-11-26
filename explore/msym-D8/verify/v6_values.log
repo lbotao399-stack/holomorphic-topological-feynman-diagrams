@@ -1,0 +1,7 @@
+pentagon: <0123>/24 = 9/2 (explorer exact 9/2)
+theta(1, 4, 4): own bracket coefficients K = -287899/1440, claimed closed form = -287899/1440, explorer exact = -287899/1440, all equal: True
+theta(2, 3, 4): own bracket coefficients K = -16549/80, claimed closed form = -16549/80, explorer exact = -16549/80, all equal: True
+theta(3, 3, 3): own bracket coefficients K = -2243657/8640, claimed closed form = -2243657/8640, explorer exact = -2243657/8640, all equal: True
+theta(1, 4, 4): claimed closed form expanded in monomials (4968) == own K(lam;0) monomials (4968): True
+theta(2, 3, 4): claimed closed form expanded in monomials (4968) == own K(lam;0) monomials (4968): True
+theta(3, 3, 3): claimed closed form expanded in monomials (6624) == own K(lam;0) monomials (6624): True

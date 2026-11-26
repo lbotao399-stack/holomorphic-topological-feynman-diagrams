@@ -1,0 +1,46 @@
+U(3), k = 1: per-level totals (sum over sectors with orbit multiplicity)
+level | sectors(reps) | all agree | dim H^BG | dim H^U(N) | Chang-Lin d_u | index BG | Chang-Lin i_u
+  2 | 1 | True | 3 | 3 | 3 | 3 | 3
+  3 | 1 | True | 2 | 2 | 2 | -2 | -2
+  4 | 2 | True | 15 | 15 | 15 | 9 | 9
+  5 | 1 | True | 18 | 18 | 18 | -6 | -6
+  6 | 5 | True | 61 | 61 | 61 | 21 | 21
+  7 | 2 | True | 102 | 102 | 102 | -18 | -18
+  8 | 6 | True | 249 | 249 | 249 | 33 | 33
+  9 | 5 | True | 470 | 470 | 470 | -22 | -22
+ 10 | 9 | True | 996 | 996 | 996 | 36 | 36
+
+per-sector Euler characteristic of the k=1 complex vs [Z_inf (1 + G_N^(1))]_lam:
+  2 (1, 0, 0, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  3 (0, 0, 0, 1, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  4 (2, 0, 0, 0, 0): chi(H^BG) = 2, [Z_inf(1+G1)] = 2
+  4 (1, 1, 0, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  5 (1, 0, 0, 1, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  6 (3, 0, 0, 0, 0): chi(H^BG) = 3, [Z_inf(1+G1)] = 3
+  6 (2, 1, 0, 0, 0): chi(H^BG) = 2, [Z_inf(1+G1)] = 2
+  6 (1, 1, 1, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  6 (0, 0, 0, 2, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  6 (0, 0, 0, 1, 1): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  7 (2, 0, 0, 1, 0): chi(H^BG) = -2, [Z_inf(1+G1)] = -2
+  7 (1, 1, 0, 1, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  8 (4, 0, 0, 0, 0): chi(H^BG) = 4, [Z_inf(1+G1)] = 4
+  8 (3, 1, 0, 0, 0): chi(H^BG) = 2, [Z_inf(1+G1)] = 2
+  8 (2, 2, 0, 0, 0): chi(H^BG) = 3, [Z_inf(1+G1)] = 3
+  8 (2, 1, 1, 0, 0): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  8 (1, 0, 0, 2, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  8 (1, 0, 0, 1, 1): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+  9 (3, 0, 0, 1, 0): chi(H^BG) = -2, [Z_inf(1+G1)] = -2
+  9 (2, 1, 0, 1, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+  9 (1, 1, 1, 1, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  9 (0, 0, 0, 3, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+  9 (0, 0, 0, 2, 1): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+ 10 (5, 0, 0, 0, 0): chi(H^BG) = 5, [Z_inf(1+G1)] = 5
+ 10 (4, 1, 0, 0, 0): chi(H^BG) = 3, [Z_inf(1+G1)] = 3
+ 10 (3, 2, 0, 0, 0): chi(H^BG) = 3, [Z_inf(1+G1)] = 3
+ 10 (3, 1, 1, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+ 10 (2, 2, 1, 0, 0): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+ 10 (2, 0, 0, 2, 0): chi(H^BG) = -2, [Z_inf(1+G1)] = -2
+ 10 (1, 1, 0, 2, 0): chi(H^BG) = -1, [Z_inf(1+G1)] = -1
+ 10 (2, 0, 0, 1, 1): chi(H^BG) = 1, [Z_inf(1+G1)] = 1
+ 10 (1, 1, 0, 1, 1): chi(H^BG) = 0, [Z_inf(1+G1)] = 0
+mismatches: 0

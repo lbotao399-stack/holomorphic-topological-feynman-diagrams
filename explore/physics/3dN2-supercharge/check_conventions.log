@@ -1,0 +1,24 @@
+bitriangle [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] -> alternative order/orientation [(3, 2), (0, 2), (3, 1), (3, 0), (1, 2)]
+bitriangle [(0, 1), (0, 3), (1, 2), (1, 3), (2, 3)] -> alternative order/orientation [(3, 1), (2, 1), (3, 0), (2, 3), (1, 0)]
+bitriangle [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3)] -> alternative order/orientation [(3, 1), (3, 2), (1, 2), (1, 0), (2, 0)]
+bitriangle [(0, 1), (0, 2), (0, 3), (1, 3), (2, 3)] -> alternative order/orientation [(1, 3), (0, 2), (3, 0), (0, 1), (3, 2)]
+bitriangle [(0, 1), (0, 2), (0, 3), (1, 2), (2, 3)] -> alternative order/orientation [(0, 2), (2, 1), (0, 3), (2, 3), (1, 0)]
+bitriangle [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3)] -> alternative order/orientation [(1, 3), (0, 1), (2, 0), (0, 3), (1, 2)]
+(a) edge order/orientation independence
+   SU(2)+1 adj: 1102 monomials, Q2 != 0 on 372, mismatches 0
+   U(1) charges [1, 2, -3]: 343 monomials, Q2 != 0 on 66, mismatches 0
+(b) CS vertex contributes nothing to Q_2
+   U(1) charges [1, 2, -3] kappa=5/3 vs 0: 220 monomials, differences 0
+   SU(2)+1 adj kappa=2/7 vs 0: 1140 monomials, differences 0
+(c) U(1) tadpole weight
+   charges [1], sum q^3 = 1: Q2(B B)|tad = 2/3*[ddc0] ; Q2(B dB)|tad = 1/3*[dddc0] ; Q2(dB dB)|tad = 13/105*[d^4c0] ; Q2(B ddB)|tad = 22/105*[d^4c0]
+   charges [2], sum q^3 = 8: Q2(B B)|tad = 16/3*[ddc0] ; Q2(B dB)|tad = 8/3*[dddc0] ; Q2(dB dB)|tad = 104/105*[d^4c0] ; Q2(B ddB)|tad = 176/105*[d^4c0]
+   charges [1, 1], sum q^3 = 2: Q2(B B)|tad = 4/3*[ddc0] ; Q2(B dB)|tad = 2/3*[dddc0] ; Q2(dB dB)|tad = 26/105*[d^4c0] ; Q2(B ddB)|tad = 44/105*[d^4c0]
+   charges [1, 2, -3], sum q^3 = -18: Q2(B B)|tad = -12*[ddc0] ; Q2(B dB)|tad = -6*[dddc0] ; Q2(dB dB)|tad = -78/35*[d^4c0] ; Q2(B ddB)|tad = -132/35*[d^4c0]
+   charges [1, -1], sum q^3 = 0: Q2(B B)|tad = 0 ; Q2(B dB)|tad = 0 ; Q2(dB dB)|tad = 0 ; Q2(B ddB)|tad = 0
+   charges [3, -1, -1, -1], sum q^3 = 24: Q2(B B)|tad = 16*[ddc0] ; Q2(B dB)|tad = 8*[dddc0] ; Q2(dB dB)|tad = 104/35*[d^4c0] ; Q2(B ddB)|tad = 176/35*[d^4c0]
+(d) GL(2): tadpole weight vs symmetrized trace, and {Q0,Q2} = 0 on cubic/quadratic monomials
+   GL(2) 1F+0AF: tadpole formula mismatches 0/10 ; {Q0,Q2}: 364 monomials, Q2 != 0 on 109, failures 0
+   GL(2) 1F+1AF: tadpole formula mismatches 0/10 ; {Q0,Q2}: 816 monomials, Q2 != 0 on 136, failures 0
+   GL(2) 2F+0AF: tadpole formula mismatches 0/10 ; {Q0,Q2}: 816 monomials, Q2 != 0 on 159, failures 0
+python3 check_conventions.py  61.76s user 0.31s system 99% cpu 1:02.32 total

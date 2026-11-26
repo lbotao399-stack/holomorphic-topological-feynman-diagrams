@@ -1,0 +1,165 @@
+REFEREE REPORT   notes/flagship/flagship.tex (.pdf), version 2026-11-21                                   2026-11-21
+
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Output folder P/notes/flagship/referee/ :
+  kern_check.py, kern_check.log    own computation of K_133, K_223 at (H,T)=(2,1) from eq-K (no project imports)
+  ce_check.py,   ce_check.log      own CE complex, index-form W's, F_G, beta, bracket, d; sl2, sl3, so5, so7, sp6
+  REFEREE.txt                      this file
+Read: flagship.tex (all 733 lines), notes/flagship/REPORT.txt, arith_check.log, deepen/run1_digest.json
+(engine, anomaly-structure, twoloop-universal verdicts), deepen/normalization/verify/VERIFY.txt (gaps, Part D),
+digests of deepen/{deform,simple-g,normalization,lit}; S5 Higher.tex (grep: anomaly, non-renormalization);
+web: arXiv abs 2407.08667, html 2407.08667v3, abs 1610.04144, pdf 1610.04144v1 (pdftotext, Sec. 5, 9, App. B),
+abs 2509.20643; INSPIRE citers of 2407.08667 (recid 2806832, 14 records); WebSearch (2 queries).
+Not done: no rerun of any project script; no end-to-end (2,1) position integral; no gl_N computation of my own;
+so8, G2, F4 not constructed; Costello-Gwilliam, Costello's book not read.
+
+
+====================================================================================================
+1. Own spot checks (exact unless stated)
+====================================================================================================
+
+1a. Kernels (Thm 3.2).  kern_check.py: Kirchhoff y from [B^T; C t] y = (lambda; 0) (exact Fractions),
+    M = C t C^T, rho_2 = U^{-1/2} A_12, A = -1/2 dM M^{-1} dM (definition eq-rho), psi^i_r = sum_e C_re y^i_e dt_e,
+    form U^{-2} rho_2 ^ psi^1_1 psi^1_2 psi^2_1 psi^2_2, D = omega_{hat j}/((-1)^j t_j).
+    Engine labelling and C of flagship Sec. 3.2; 4 random rational t, 4 random rational source sets (lambda_0..lambda_4,
+    lambda_5 = -sum) per graph.
+      det[B^T;C] = 15 (theta133), 16 (theta223)                         positive basis, = # spanning trees
+      all 7 hat-j components equal                                       True (8/8)
+      U == R_A R_B + R_B R_C + R_C R_A                                   True (8/8)
+      D U^{7/2} / ([p1p2][p3p4]) = -1/2 (theta133), +1/2 (theta223)      constant over t and over lambda_0
+    Integral int_{Delta^6} U^{-7/2} by path reduction int_{Delta^2} prod R_P^{n_P-1}/(n_P-1)! U^{-7/2},
+    mpmath tanh-sinh, dps 30 (independent of the Gamma-function formula):
+      theta133: 0.3141592653589793171483 ; (-1/2) x = -0.1570796326794896585742 ; -pi/20 = -0.1570796326794896619231
+      theta223: 0.2094395102393195475213 ; (+1/2) x = +0.1047197551196597737606 ; +pi/30 = +0.1047197551196597746154
+      relative differences 2.1e-17, 8.2e-18.
+    =>  K_133(lambda;0) = -(pi/20)[p1p2][p3p4],  K_223(lambda;0) = +(pi/30)[p1p2][p3p4],  independent of lambda_N.  CONFIRMED.
+
+1b. Non-exactness certificate, sl3, kappa = tr (Thm 3.7, 3.9).  ce_check.py.
+    W_133, W_223 built from the index forms of Prop 3.3 (kappa^{-1} contractions, exact), F_G = sum_s sgn(s)[p_s1p_s2][p_s3p_s4]
+    W_G(X_s1..X_s4), d as in flagship Sec. 3.4.  Complex: G-invariant alternating 3-cochains of bidegree (2,2) on sum q = 0,
+    spanned by alt(m(q0,q1) T), m in the 9 monomials, T in (g^{*(x)3})^g.
+      (g^{*(x)3})^g: nullity mod 1000003 = 2 (sl3), 1 (sl2); f, d_abc independent invariants  =>  dim = 2, 1 exactly.
+      sl3: rank d on the 18 generators (50 sample points, exact over Q)   = 3
+           rank[d | F_223] = 4 ; rank[d | F_133] = 4 ; rank[d | -3F_133+2F_223] = 4 ; rank[d | F_133+F_223] = 3 ; rank[d | beta] = 3
+           d(alt([q0q1]^2 f)) = 6 beta at all samples ; F_133+F_223 = 18 beta_tr at all samples
+      Rank increase 3 -> 4 is a certificate: if F_223 = sum c_k d eta_k then every row satisfies it.  By G-Reynolds on the
+      finite-dimensional C^3_(2,2) (d commutes with G), F_223 is not exact in the full complex.  CONFIRMED.
+      Killing(sl3) = 6 tr: F_133+F_223 = (18/36) beta_K = beta_K/2.  CONFIRMED (Thm 3.9, r^2/2 = 18 in tr_3).
+      sl2 control: rank d = 2, no increase for F_223, F_133, beta; F_133 = 56 beta_tr, F_223 = -48 beta_tr at all samples;
+      Killing = 4 tr: F_133 = 7/2 beta_K, F_223 = -3 beta_K.  Agrees with Thm 3.9 (sl2).  (Exactness side: sample evidence only.)
+    Same run, Thm 3.5 (sl3, 10 random points): index-form W_133, W_223 and -3W_133+2W_223 equal the printed sl_N trace
+    formulas at N = 3: True, True, True.  sl2: W_tot = -104k12k34 + 16k13k24 + 40k14k23: True.
+    Same run, Prop 3.6 (sl3): dF_223 = 0, dF_133 = 0 at 6 five-point samples: True, True (sample evidence).
+
+1c. Deformation, decisive step (Thm 4.6, 4.7(i)), sl3, own shuffle bracket with tr-dual basis of sl3:
+      D = [p1p2] tr(1{23}) alternating                                    True
+      dD = 0 (50 samples)                                                 True
+      {s0, w} = -dw (w = eta_4 + 3 eta_13, 15 samples, nonzero)            True
+      {s0, s0} = 0                                                        True
+      rank[d | (1/2){D,D}] = 4  (class nonzero)
+      (1/2){D,D} = lambda F_223 + sum c_k d eta_k solved exactly: consistent, lambda = 1/108 = 1/(12 N^2) at N = 3
+      explicit identity (1/2){D,D} = F_223/108 + d[(13/18)[p1p2]^2 tr(1[23])] at all 50 samples: True (with -d: False)
+      [alt([p1p2][p3p4] tr12 tr34)] = -(1/18)[F_223] = -[F_223]/(6N): True
+    With [O_2] = c_O[F_223] (from 1b: [F_133] = -[F_223]) and eq-cochain, a^2/108 = -eps c_O has a solution a in C.
+    CONFIRMED for sl3 (conditional on H1, as stated in the paper).
+
+1d. Extension of Cor 4.9 (not in the paper).  Cartan homotopy L_X = d i_X + i_X d (X in g, momentum 0) gives H(C) = H(C^G),
+    and q[J] = [(1/2){J,J}] is well defined on H^3; so G-invariance of J_1 is no restriction.  The bracket is additive in
+    bidegree, so the (2,2) part of q[J] collects {J_w, J_w'} with w + w' = (2,2).
+      so5: (g^{*(x)3})^g nullity mod p = 1 (= C f).
+           weight (1,0): alt(m f) = 0 identically (rank 0) ; weight (2,0): span 1, rank d 1 ; weight (1,1): span 1
+           (sympy: S3-symmetrizations of the 4 weight-(1,1) monomials have rank 1), rank d 1.
+           (0,1), (0,2) by z1 <-> z2.  (0,0): C s_0, {s_0, J} = -dJ exact.
+      =>  for so5 = sp4 every closed translation-invariant J_1 (any U(1)^2 weights) has q[J_1]_(2,2) = 0; [O_2] != 0 is not
+          cancelled.  Holds under H1 alone (no H2, no SL2 invariance).
+      so7, sp6: d(alt(q0^1 q0^2 f)) at 4 points = [-15232, -3600, 30016, 29760], [-1872, -195040, 58064, -98840], nonzero;
+          with dim (T^3)^g = 1 (flagship Prop 3.10, verified table) the unique G-invariant weight-(1,1) 3-cochain is not closed,
+          so the conclusion holds under H1 and U(1)^2 equivariance; by SL2-equivariance of d on the triplet
+          {sum_i q_i^a q_i^b f} also at weights (2,0), (0,2).
+      so8, G2, F4: not checked.
+
+
+====================================================================================================
+2. Theorems against cited files and verifier reports
+====================================================================================================
+
+Checked against run1_digest.json verdicts and the R2 digests:
+  Prop 1.1  engine pass True, anomaly-structure a1 confirmed.                                        matches
+  Table/Prop 1.2/1.3/1.4  normalization a1, b1-b4, c2 confirmed; WW (22) factor 4 is the verifier's correction.  matches
+  Thm 2.1-2.3, Prop 2.4  twoloop-universal C1-C11 confirmed (C1: intermediate signs asserted, final densities checked).  matches
+  Table c1, c0: s = (-1)^{ceil(H/2)+(H+1)(q+1)} reproduces every T=1 sign; c1(1,2,2) = 1/3, c0(1,3,3) = 1/48 recomputed by hand.
+  Thm 3.2  anomaly-structure c1 confirmed; own check 1a.                                             matches
+  Prop 3.3  normalization b5, c1 confirmed; VERIFY.txt gap 2: Wick-rule derivation and O_2|_theta = 3 int Omega_N ^ [Q_2 O_N]
+            are arguments, nilpotency inputs from run 1 not re-run.  The paper's [verified] tag omits this caveat.
+  Thm 3.4  normalization d1 confirmed; U open.  Arithmetic: 64*240 = 15360, 64*48 = 3072, (N/4)(pi/60) = pi N/240.   matches
+  Thm 3.5  anomaly-structure c4 confirmed; own check 1b.                                             matches
+  Prop 3.6  c5 (sl2, gl2, sl3, gl3, sl4, gl4, gl5, sl5), simple-g s5 (12 constructions).             matches
+  Thm 3.7  c6, c7 confirmed, deform d6 confirmed (exact).                                            matches
+  Lemma 3.8, Thm 3.9, Prop 3.10  simple-g s1-s4, s6-s9 confirmed; F4 value 162 flagged explorer-only.  matches
+  Prop 4.1-4.3, Thm 4.4-4.7  deform d1-d9 confirmed with the stated gaps; d10 unverified -> Statement 4.8.  matches
+  Algebra rechecked by hand: lambda, mu of Thm 4.6 from the bracket table (F_0 = F_223 - N F_1);
+  alpha-beta-gamma form; the three gl_N examples; j_M: lambda = mu = 0; a^2 = eps U N^2/(256 pi^4), b^2 = -eps U/(64 pi^4).  all agree.
+
+
+====================================================================================================
+3. Signs and conventions
+====================================================================================================
+
+  [P]_Omega: int_0^inf t^{-1} e^{-r^2/4t}/(4(4 pi t)^{5/2}) dt = Gamma(5/2)(4/r^2)^{5/2}/(128 pi^{5/2}) = 3/(16 pi^2 r^5).   agrees
+  Theta_e: d tau d^2 zb = 2 sqrt t (4t)^2 d eta d^2y = 32 t^{5/2} d eta d^2 y ; 32/(4 * 32 pi^{5/2}) = 1/(4 pi^{5/2}).       agrees
+  rho_2 in C3: -(M11 dM12 dM22 - M12 dM11 dM22 + M22 dM11 dM12) = +Omega_R  =>  rho_2 = Omega_R/(2U^{3/2}).                agrees
+  a ^ b = Omega_R/(R_A R_B R_C).                                                                                         agrees
+  Engine vs C3 basis: theta133 rows (B-A, C-A) = [[-1,0],[-1,-1]] C3, det +1; theta223 rows (A-B, C-A) = [[1,0],[-1,-1]] C3,
+  det -1; (det)^3 gives K_eng = K[C3], -K[C3]; equals (-1)^{(q+1)D}.                                                     agrees
+  {s0,.} = -d with the paper's d and bracket: own check 1c.  The coboundary sign in Thm 4.6 is + d eta_N: own check 1c.
+  Relative Wick sign: does not affect [O_2] != 0, since -3F_133 - 2F_223 = F_223 - (3/2)beta_K also non-exact.
+  U, eps: undetermined; enter only sign(a^2); irrelevant over C.
+  Table row "heat-edge sum: no signs (P even)" vs the (-1)^{j-1} in the derivation chain of Prop 1.4: the latter are boundary
+  orientation signs of the fibre integration, not heat-edge signs; consistent, not explained in the text.
+
+
+====================================================================================================
+4. Literature and novelty
+====================================================================================================
+
+  WW 2407.08667: v3 dated 13 Apr 2026; html v3 Sec. 1 after Thm 1.2: d'=1 quantizes over C[[hbar]]/hbar^2, and TH CS on R x C^2
+    is expected to have a two-loop anomaly; no computation, no citation.  Prop 3.21 (non-Laman vanish), Prop 3.23
+    (h_1 odd vanish), Thm 3.27 (d' > 1).  Remark 1.3: GKW's anomaly-freeness relies on topological = holomorphic gauge
+    fixing.  GKW Higher.tex sec:projective: the non-renormalization claim is for T >= 2; no conflict with T = 1 here.
+  Costello 1610.04144 v1 (pdftotext):
+    Thm 9.0.2, 9.0.3 as described in flagship Sec. 5.2; 9.0.3 also assumes C^x compatibility (omitted in the paper).
+    Regime e^{-r} delta^n, r <= n, i.e. |delta| << |e|: excludes e ~ hbar, so no conflict with [O_2] != 0 at e = 0 and with
+    q[s j_M] = 0.
+    Sec. 5: f *_e g = fg + e (1/2) eps^{ij} d_i f d_j g + ..., coefficient of e^n = (2^n n!)^{-1} eps..eps;
+    Sec. 9.1: [z1,z2] = e.  Identical to flagship Prop 4.5 convention.
+    Sec. 9.1: local operators = C^*(gl_N[[z1,z2]]); GL(N)-invariant subcomplex has the same cohomology; descent with
+    d/dz_i acting trivially.  App. B: at e = 0 the k-loop obstruction-deformation complex on R x X is
+    omega_{RxX} (x)_D O(pi^* J Omega^{-*}_hol[t^{-1}][1])[N][-6(k-1)] (jets pulled back along pi: R x X -> X);
+    proof of Lemma B.0.2: every holomorphically translation-invariant Lagrangian is equivalent to
+    int dz1 dz2 Phi(alpha ^ D_1 alpha ^ ... ^ D_n alpha), D_i in C[d_z1, d_z2], with no t, zb, dt, dzb dependence.
+  Search: INSPIRE citers of 2407.08667: 14, none computes the obstruction; 2509.20643 abstract: no anomaly statement;
+    WebSearch: nothing further.
+  Novelty: no earlier computation of the order-hbar^2 obstruction found; consistent with deepen/lit.  Closed T=1 two-loop
+    theta values for H >= 1 not found in published sources; the (5,1) values exist in the local note S3, the T=0 H=2,3
+    values in S1 (arXiv 2611.24160) and S2.
+
+
+====================================================================================================
+5. Physics claim
+====================================================================================================
+
+  Proved (exact, CE model): [o_2] = (pi nu/48)[F_223] != 0 for sl_N, gl_N (N >= 3; kappa = tr), sl3..sl5, so5..so8, sp6, G2, F4
+  (Killing); = 0 for sl2, gl1, gl2; [O_2] in q(H^3) for sl_N, gl_N, N >= 3; no G x SL2-invariant weight-(1,1) J_1 for
+  so5, so7, so8, sp6, G2, F4.
+  Physical reading "quantizations through order hbar^2 exist iff ..." needs:
+    H1: argued in run 1, now partially sourced by 1610.04144 Sec. 9.1, App. B, Lemma B.0.2 (gl_N uniformly in N, sketch);
+        not proved for finite N or other g; the paper's Sec. 5.4 says no T >= 1 source exists and describes App. B as
+        needing e != 0 (only the collapse to C[dz1,dz2][5] uses e != 0).
+    H2: the heat-kernel data D^* = -i_{d tau} d_tau - 4 sum i_{d zb_i} d_{z_i} and K_t are U(2)-invariant (the paper and the
+        deform verifier say U(1)^2 only).  U(1)^2 characters already fix bidegree (1,1) for J_1; SU(2) gives SL2-invariance on
+        polynomial cochains.  H2 + SL2 invariance = U(2)-equivariance of the quantization, which the scheme preserves.
+    Cor 4.9: G invariance automatic (Cartan); for so5 no weight hypothesis needed, for so7, sp6 only U(1)^2 (check 1d).
+  Not covered: order hbar^3 and higher (so "quantization" only through hbar^2); other invariant forms on gl_N; semisimple
+  non-simple g; E6-E8, so_{N>=9}, sp_{2n>=8}.  sl_N, gl_N for N >= 6 are covered by the formal result (R1 c6: non-exact for every N >= 4).
+  Minor: "J_1 of arity 3" (Thm 4.7) and "arity >= 4 not analysed" (Sec. 4) are vacuous under H1 (ghost g <-> CE degree g+3).
+  Minor: self-loop graphs are not mentioned; they vanish by f_abc kappa^{bc} = 0.

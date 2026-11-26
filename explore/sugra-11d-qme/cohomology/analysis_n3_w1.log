@@ -1,0 +1,29 @@
+n=3 w=1: 459 HC entries on 54 weights, 444 HV entries on 53 weights
+H(C_quot) nonzero off t=(k,..,k): none
+dim V == Koszul alternating sum on all HV slots: True
+translation lemma: H(V)_{t,N} =?= sum_K H(C)_{t+e_K, N+|K|}
+  slots compared: 444 with all H(C) inputs computed, 0 using H(C)=0 off-diagonal (Cartan), 0 not comparable
+  mismatches: none
+nonzero H(C_quot) (G, t, N: dim H, dim C):
+  G= -4 t=(1, 1, 1) N= 4 (even): H=1  (dim C=1)
+  G= -4 t=(1, 1, 1) N= 7 (odd): H=1  (dim C=8)
+  G= -4 t=(1, 1, 1) N= 9 (odd): H=1  (dim C=8)
+  G= -4 t=(1, 1, 1) N=12 (even): H=1  (dim C=1)
+nonzero H(V) (G, t up to S_n, N: dim H, dim V):
+  G= -4 t=(1, 1, 1) N= 4 (even): H=1  (dim V=1, dim C=1)
+  G= -4 t=(1, 1, 1) N= 7 (odd): H=1  (dim V=8, dim C=8)
+  G= -4 t=(1, 1, 1) N= 9 (odd): H=1  (dim V=8, dim C=8)
+  G= -4 t=(1, 1, 1) N=12 (even): H=1  (dim V=1, dim C=1)
+  G= -3 t=(1, 1, 0) N= 3 (odd): H=1  (dim V=2, dim C=2)
+  G= -3 t=(1, 1, 0) N= 6 (even): H=1  (dim V=48, dim C=58)
+  G= -3 t=(1, 1, 0) N= 8 (even): H=1  (dim V=100, dim C=122)
+  G= -3 t=(1, 1, 0) N=11 (odd): H=1  (dim V=37, dim C=41)
+  G= -2 t=(1, 0, 0) N= 2 (even): H=1  (dim V=3, dim C=3)
+  G= -2 t=(1, 0, 0) N= 5 (odd): H=1  (dim V=132, dim C=197)
+  G= -2 t=(1, 0, 0) N= 7 (odd): H=1  (dim V=520, dim C=762)
+  G= -2 t=(1, 0, 0) N=10 (even): H=1  (dim V=689, dim C=902)
+SL_n-invariant part of H(V) (weight (k,..,k) highest-weight multiplicity, Weyl formula):
+  G=-4 t=(1, 1, 1) N=4: 1   [H(V) at t: 1]
+  G=-4 t=(1, 1, 1) N=7: 1   [H(V) at t: 1]
+  G=-4 t=(1, 1, 1) N=9: 1   [H(V) at t: 1]
+  G=-4 t=(1, 1, 1) N=12: 1   [H(V) at t: 1]

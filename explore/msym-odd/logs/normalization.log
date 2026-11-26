@@ -1,0 +1,26 @@
+(a) heat kernel, edge form, propagator (Wirtinger variables x^a, xbar^a independent):
+   H=1: int Omega^K = 1; DK = 0: True; (d_t + [D,D*])K = 0: True; D*K = iota_E K / t: True; Theta = c exp(..) d^Hy^deta, c = 1/(4 pi^(H+1/2)): True; = (-1)^H c exp(..) deta^d^Hy: True; (d_t + D) Theta = 0: True; P coefficient 1/(8*pi) (predicted 1/(8*pi), equal True); D P = 0: True
+   H=2: int Omega^K = 1; DK = 0: True; (d_t + [D,D*])K = 0: True; D*K = iota_E K / t: True; Theta = c exp(..) d^Hy^deta, c = 1/(4 pi^(H+1/2)): True; = (-1)^H c exp(..) deta^d^Hy: True; (d_t + D) Theta = 0: True; P coefficient 3/(16*pi**2) (predicted 3/(16*pi**2), equal True); D P = 0: True
+   H=3: int Omega^K = 1; DK = 0: True; (d_t + [D,D*])K = 0: True; D*K = iota_E K / t: True; Theta = c exp(..) d^Hy^deta, c = 1/(4 pi^(H+1/2)): True; = (-1)^H c exp(..) deta^d^Hy: True; (d_t + D) Theta = 0: True; P coefficient 15/(32*pi**3) (predicted 15/(32*pi**3), equal True); D P = 0: True
+(b) tau-Gaussian e^{-sum_e tau_e^2/(2 t_e)}: <w_e w_f> = (1/4)[delta/t - C^T M^{-1} C],  w_e = tau_e/(2 t_e);
+(c) holomorphic Gaussian: xbar = 2 Lambda^{-1} lambda gives y = xbar_e/(2 t_e) = Kirchhoff currents:
+   A: quadratic form True, <w w> True, currents True
+   B: quadratic form True, <w w> True, currents True
+   theta(2,3,4): quadratic form True, <w w> True, currents True
+(d) extraction sign (S3 eq-extraction, CONVENTIONS Section 4), edge factor theta^1..theta^H theta^tau, theta^a = dxbar^a_e - 2 y^a_e dt_e, theta^tau = dtau_e - w_e dt_e:
+   A (H=2, D=3, |I|=7, |V|=6): exact -1, formula -1
+   B (H=2, D=3, |I|=7, |V|=6): exact -1, formula -1
+   theta(1, 4, 4) (H=3, D=4, |I|=9, |V|=8): exact +1, formula +1
+   theta(2, 3, 4) (H=3, D=4, |I|=9, |V|=8): exact +1, formula +1
+   theta(3, 3, 3) (H=3, D=4, |I|=9, |V|=8): exact +1, formula +1
+   theta(1,2,2) (H=1, D=2, |I|=5, |V|=4): exact +1, formula +1
+(e) constant and sign of G = sign * const * K:
+   (H,T)=(3,0), c_Omega=8: n=1: 1/(8*pi**3) * -1; n=2: 1/(64*pi**6) * -1; n=3: 1/(512*pi**9) * +1; n=4: 1/(4096*pi**12) * +1
+   (H,T)=(0,1), c_Omega=1: n=1: 1/(2*sqrt(pi)) * +1; n=2: 1/(4*pi) * +1; n=3: 1/(8*pi**(3/2)) * +1; n=4: 1/(16*pi**2) * +1
+   (H,T)=(1,1), c_Omega=4: n=1: 1/(8*pi**(3/2)) * +1; n=2: 1/(64*pi**3) * -1; n=3: 1/(512*pi**(9/2)) * -1; n=4: 1/(4096*pi**6) * +1
+   (H,T)=(2,1), c_Omega=4: n=1: 1/(8*pi**(5/2)) * +1; n=2: 1/(64*pi**5) * -1; n=3: 1/(512*pi**(15/2)) * -1; n=4: 1/(4096*pi**10) * +1
+   (H,T)=(3,1), c_Omega=4: n=1: 1/(8*pi**(7/2)) * -1; n=2: 1/(64*pi**7) * +1; n=3: 1/(512*pi**(21/2)) * -1; n=4: 1/(4096*pi**14) * +1
+   S2 check (H,T)=(3,0): sign should be (-1)^n (-1)^{n(n+1)/2}: [1, -1, -1, 1]
+   S3 check (H,T)=(5,1): (s_uv * s_pos, (-1)^n (-1)^{(5n+1)5n/2}) = [(1, 1), (-1, -1), (-1, -1)]
+(f) H=0: K(banana_3) = 1*pi ; G = (2 sqrt(pi))^{-2} K = 1/4 (S3: 3 int P^2 dP = 1/4)
+total time 19.2s

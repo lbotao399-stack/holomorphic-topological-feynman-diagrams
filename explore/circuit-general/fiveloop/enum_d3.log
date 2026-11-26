@@ -1,0 +1,37 @@
+cubic loopless 2-connected multigraph skeletons, 8 vertices: 16
+/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributeschanged in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+bulk3(3,5): 410 graphs  76.1s
+bulk3(3,5) core x class:
+   K33      R2  10
+   K33      R3  2
+   K4       B   2
+   K4       R1  9
+   SP       SP  3
+   V8_0     B   1
+   V8_0     R1  3
+   V8_0     R2  7
+   V8_1     R2  7
+   V8_1     R3  109
+   V8_1     R4  20
+   V8_2     R3  28
+   V8_2     R4  42
+   V8_2     R5  4
+   V8_3     R3  21
+   V8_3     R4  15
+   V8_3     R5  2
+   V8_4     I   93
+   prism    R1  6
+   prism    R2  26
+twistor tree: 2 skeletons, 49 graphs, 49 rooted  87.3s
+   SP       SP  49
+twistor unicyclic: 7 skeletons, 506 graphs, 506 rooted  93.7s
+   K4       B   29
+   K4       R1  130
+   SP       SP  36
+   W4       R1  74
+   W4       R2  117
+   W5       R1  3
+   W5       R2  55
+   W5       R3  62
+93.7s

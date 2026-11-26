@@ -1,0 +1,2 @@
+so7 {'d_omega133_zero': True, 'd_omega223_zero': True, 'n_eta_spanning': 63, 'rank d(C3)': 2, 'rank [d(C3) | omega]': 3, 'exact': False, 'exact_133': False, 'exact_223': False} (35.7s)
+sp6 {'d_omega133_zero': True, 'd_omega223_zero': True, 'n_eta_spanning': 63, 'rank d(C3)': 2, 'rank [d(C3) | omega]': 3, 'exact': False, 'exact_133': False, 'exact_223': False} (36.3s)

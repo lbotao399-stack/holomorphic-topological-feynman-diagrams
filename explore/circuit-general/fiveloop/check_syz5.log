@@ -1,0 +1,23 @@
+K4     k=1 (9 syzygies) q=4: 54 relations checked, 0 bad, 486 skipped
+K4     k=1 (9 syzygies) q=5: 67 relations checked, 0 bad, 473 skipped
+K4     k=2 (51 syzygies) q=4: 261 relations checked, 0 bad, 2799 skipped
+K4     k=2 (51 syzygies) q=5: 471 relations checked, 0 bad, 2589 skipped
+W4     k=1 (4 syzygies) q=4: 8 relations checked, 0 bad, 232 skipped
+W4     k=1 (4 syzygies) q=5: 25 relations checked, 0 bad, 215 skipped
+W4     k=2 (56 syzygies) q=4: 48 relations checked, 0 bad, 3312 skipped
+W4     k=2 (56 syzygies) q=5: 86 relations checked, 0 bad, 3274 skipped
+prism  k=1 (10 syzygies) q=4: 19 relations checked, 0 bad, 581 skipped
+prism  k=1 (10 syzygies) q=5: 111 relations checked, 0 bad, 489 skipped
+prism  k=2 (99 syzygies) q=4: 242 relations checked, 0 bad, 5698 skipped
+prism  k=2 (99 syzygies) q=5: 485 relations checked, 0 bad, 5455 skipped
+K33    k=1 (7 syzygies) q=4: 114 relations checked, 0 bad, 306 skipped
+K33    k=1 (7 syzygies) q=5: 115 relations checked, 0 bad, 305 skipped
+K33    k=2 (93 syzygies) q=4: 747 relations checked, 0 bad, 4833 skipped
+K33    k=2 (93 syzygies) q=5: 916 relations checked, 0 bad, 4664 skipped
+W5     k=1 (5 syzygies) q=3: 2 relations checked, 0 bad, 298 skipped
+W5     k=1 (5 syzygies) q=4: 6 relations checked, 0 bad, 294 skipped
+W5     k=2 (55 syzygies) q=3: 5 relations checked, 0 bad, 3295 skipped
+W5     k=2 (55 syzygies) q=4: 33 relations checked, 0 bad, 3267 skipped
+K5-e   k=1 (1 syzygies) q=4: 4 relations checked, 0 bad, 56 skipped
+K5-e   k=2 (21 syzygies) q=4: 31 relations checked, 0 bad, 1229 skipped
+4.1s

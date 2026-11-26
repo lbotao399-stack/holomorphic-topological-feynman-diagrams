@@ -1,0 +1,13 @@
+one-loop polygons at (H,T)=(2,1): K with holomorphic current insertions prod (y^i_e)^p
+  polygon(3) powers=None: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 2')
+  polygon(3) powers={(0, 0): 1}: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 2')
+  polygon(3) powers={(0, 0): 1, (1, 1): 1}: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 2')
+  polygon(3) powers={(0, 1): 2, (2, 0): 1}: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 2')
+  polygon(4) powers=None: K = 0
+  polygon(4) powers={(0, 0): 1}: K = 0
+  polygon(4) powers={(0, 0): 1, (1, 1): 1}: K = 0
+  polygon(4) powers={(0, 1): 2, (2, 0): 1}: K = 0
+  polygon(5) powers=None: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 4')
+  polygon(5) powers={(0, 0): 1}: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 4')
+  polygon(5) powers={(0, 0): 1, (1, 1): 1}: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 4')
+  polygon(5) powers={(0, 1): 2, (2, 0): 1}: ValueError('degree mismatch: n (H + T) = 3, |I| - 1 = 4')

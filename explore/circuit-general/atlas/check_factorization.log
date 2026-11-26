@@ -1,0 +1,62 @@
+== T = 0: tight partial reductions, H = D ==
+T=0 D=2 n=4 #4 mixed   plan [('Y', 2), ('Y', 3), ('Y', 1)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=4 #5 mixed   plan [('Y', 2), ('Y', 3), ('Y', 1)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=4 #6 mixed   plan [('Y', 3), ('S', 2), ('S', 4)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=4 #8 mixed   plan [('Y', 3), ('Y', 4), ('Y', 1)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=4 #9 mixed   plan [('Y', 2), ('Y', 3), ('Y', 4)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=4 #10 mixed   plan [('Y', 2), ('Y', 3), ('Y', 4)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=5 #7 mixed   plan [('Y', 5), ('Y', 0), ('S', 1), ('S', 3)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=5 #8 mixed   plan [('Y', 2), ('Y', 4), ('S', 0), ('S', 1)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=5 #9 mixed   plan [('Y', 4), ('S', 0), ('S', 1), ('S', 2)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=5 #10 chain   plan [('S', 3), ('S', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #12 mixed   plan [('Y', 5), ('Y', 4), ('S', 0), ('S', 3)] core |V|=3 |E|=3 n_c=1 : exact
+T=0 D=2 n=5 #14 chain   plan [('S', 5), ('S', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #15 chain   plan [('S', 0), ('S', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #16 chain   plan [('S', 1), ('S', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #17 chain   plan [('S', 0)] core |V|=6 |E|=9 n_c=4 : exact
+T=0 D=2 n=5 #19 mixed   plan [('Y', 5), ('S', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #20 chain   plan [('S', 5), ('S', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #21 mixed   plan [('Y', 5), ('S', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=3 n=4 #38 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #39 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #40 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #41 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #42 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #43 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #44 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #45 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #46 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=3 n=4 #47 chain   plan [('S', 4), ('S', 5)] core |V|=8 |E|=10 n_c=3 : exact
+T=0 D=2 n=4 #1 single  plan [('Y', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #3 single  plan [('Y', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #3 single  plan [('Y', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #3 single  plan [('Y', 3)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #5 single  plan [('Y', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #6 single  plan [('Y', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #6 single  plan [('Y', 3)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #7 single  plan [('Y', 1)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=4 #4 paired  plan [('Y', 2), ('Y', 3)] core |V|=4 |E|=5 n_c=2 : exact
+T=0 D=2 n=4 #10 paired  plan [('Y', 2), ('Y', 3)] core |V|=4 |E|=5 n_c=2 : exact
+T=0 D=2 n=5 #8 paired  plan [('Y', 2), ('Y', 4)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #26 paired  plan [('Y', 1), ('Y', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #28 paired  plan [('Y', 1), ('Y', 4)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #29 paired  plan [('Y', 1), ('Y', 3)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #42 paired  plan [('Y', 2), ('Y', 3)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 D=2 n=5 #47 paired  plan [('Y', 0), ('Y', 2)] core |V|=5 |E|=7 n_c=3 : exact
+T=0 summary: 132/132 points exact (132 with nonzero density) over 44 reductions
+LLC b-01159 single-star factor: J_poly / (r1 r2 det(y_ux,y_wx)) values [Fraction(1, 1)]
+LLC b-01173 paired factor: J_poly / ((r1-r2)(1-r3-r4)<y_uA,y_AB><y_uB,y_AB> g_m) values [Fraction(1, 1)]
+== T = 1: insertion-free Wick density = htk.brute.density(T=1) ==
+wick (no insertion) = brute T=1 density on 15 graphs: exact
+== T = 1: k = 2 tight chain moves, merged edges in the core, H = D - 1 ==
+T=1 D=2 (H=1) n=4 #4 plan [('S', 4)] core n_c=3 insert 1 edge(s): squares exact, relative sign [1]
+T=1 D=2 (H=1) n=4 #5 plan [('S', 4)] core n_c=3 insert 1 edge(s): squares exact, relative sign [-1]
+T=1 D=2 (H=1) n=4 #8 plan [('S', 5)] core n_c=3 insert 1 edge(s): squares exact, relative sign [1]
+T=1 D=3 (H=2) n=4 #38 plan [('S', 4), ('S', 5)] core n_c=3 insert 1 edge(s): squares exact, relative sign [1]
+T=1 D=3 (H=2) n=4 #39 plan [('S', 4), ('S', 5)] core n_c=3 insert 1 edge(s): squares exact, relative sign [1]
+T=1 D=3 (H=2) n=4 #40 plan [('S', 4), ('S', 5)] core n_c=3 insert 1 edge(s): squares exact, relative sign [1]
+T=1 D=3 (H=2) n=4 #41 plan [('S', 4), ('S', 5)] core n_c=3 insert 1 edge(s): squares exact, relative sign [1]
+T=1 D=2 (H=1) n=6 #0 plan [('S', 2)] core n_c=5 insert 1 edge(s): squares exact, relative sign [-1]
+T=1 D=2 (H=1) n=6 #5 plan [('S', 5)] core n_c=5 insert 1 edge(s): squares exact, relative sign [1]
+T=1 summary: 27/27 points exact (sign and square) over 9 reductions; per-reduction sign constant: [(True, -1), (True, 1)]
+time 6.1s

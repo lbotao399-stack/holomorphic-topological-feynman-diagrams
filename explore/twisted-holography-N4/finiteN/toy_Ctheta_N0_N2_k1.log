@@ -1,0 +1,27 @@
+# A=C[theta], N=0, k=1
+absolute d^2 tests 300 bad 0
+dDr+Drd tests 520 bad 0
+x^0 H_g: {0: 1} chi 1 0.00s
+x^1 H_g: {} chi 0 0.00s
+x^2 H_g: {} chi 0 0.00s
+x^3 H_g: {} chi 0 0.00s
+x^4 H_g: {-3: 1} chi -1 0.00s
+x^5 H_g: {-3: 2} chi -2 0.01s
+x^6 H_g: {-3: 5} chi -5 0.04s
+x^7 H_g: {-3: 8} chi -8 0.10s
+x^8 H_g: {-3: 14} chi -14 0.27s
+# A=C[theta], N=2, k=1
+absolute d^2 tests 300 bad 0
+dDr+Drd tests 592 bad 0
+x^0 H_g: {0: 1} chi 1 0.00s
+x^1 H_g: {0: 1} chi 1 0.00s
+x^2 H_g: {0: 2} chi 2 0.00s
+x^3 H_g: {0: 2} chi 2 0.00s
+x^4 H_g: {0: 3} chi 3 0.01s
+x^5 H_g: {0: 3} chi 3 0.03s
+x^6 H_g: {0: 4} chi 4 0.07s
+x^7 H_g: {0: 4} chi 4 0.20s
+x^8 H_g: {-3: 1, 0: 5} chi 4 0.54s
+x^9 H_g: {-3: 2, 0: 5} chi 3 1.53s
+x^10 H_g: {-3: 5, 0: 6} chi 1 4.71s
+x^11 H_g: {-3: 9, 0: 6} chi -3 16.21s

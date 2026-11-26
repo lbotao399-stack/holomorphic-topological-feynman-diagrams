@@ -1,0 +1,2 @@
+R1: Pf(-1/2 dM M^-1 dM) = 2^{-n/2} sum_pi wedge_r C_r as forms in dt (exact), G semiseparable, g_i h_{i+1} - g_{i+1} h_i = -a_i; n = 2, 4, 6
+R2: the r-coordinate expression of Pf(-1/2 dM M^-1 dM) equals the pullback of the brute-force form, n = 2, 4; U = prod_k u_{k+1}^k (1-v_k)^{-k} v_k^{-1}

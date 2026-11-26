@@ -1,0 +1,58 @@
+================ formal gl_N ================
+  dim C^2_(2,0) = 0
+  dim C^2_(1,1) = 0
+  dim C^2_(0,2) = 0
+  (1,1): dim C^3 = 5, rank d3 = 2, dim Z^3 = dim H^3 = 3
+  (2,0): dim C^3 = 2, rank d3 = 2, dim Z^3 = dim H^3 = 0
+  (0,2): dim C^3 = 2, rank d3 = 2, dim Z^3 = dim H^3 = 0
+  D: alternating True, closed True, in Z^3 True
+  S1: alternating True, closed True, in Z^3 True
+  S0: alternating True, closed True, in Z^3 True
+  rank span(J's) = 3  (= dim Z^3_(1,1) = 3)
+  alt([p1p2] tau) = [p1p2] sum_pi pi.tau for all taus: True
+  E_f alternating True; rank span(D,S1,S0,E_f,E_mix) = 5; rank(dE_f, dE_mix) = 2
+  (2,2): dim C^3 = 8, dim C^4 = 36, rank d3 = 6, rank d4 = 26, dim Z^4 = 10, dim B^4 = 6, dim H^4 = 4
+  Z^4 vectors closed exactly: True;  C^5 coordinates touched: 6636
+  B^4 subset Z^4: True
+  F_133 N-powers [0, 1, 2], F_223 N-powers [0, 1]; dF_133 = 0 True, dF_223 = 0 True
+  H^4 representatives: ['F223[N^1]', 'F223[N^0]', 'z8', 'z9']  (count 4)
+  [F_223] = {'F223[N^0]': {0: Fraction(1, 1)}, 'F223[N^1]': {1: Fraction(1, 1)}}
+  [F_133] = {'F223[N^1]': {1: Fraction(-1, 1)}, 'F223[N^0]': {0: Fraction(-1, 1)}}
+  [F_133 + F_223] = {}
+  [-3F_133 + 2F_223] = {'F223[N^1]': {1: Fraction(5, 1)}, 'F223[N^0]': {0: Fraction(5, 1)}}   [3F_133 + 2F_223] = {'F223[N^1]': {1: Fraction(-1, 1)}, 'F223[N^0]': {0: Fraction(-1, 1)}}   [-3F_133 - 2F_223] = {'F223[N^1]': {1: Fraction(1, 1)}, 'F223[N^0]': {0: Fraction(1, 1)}}
+  {D,D}: closed True, bidegrees [(2, 2)], class {}
+  {D,S1}: closed True, bidegrees [(2, 2)], class {'F223[N^1]': {0: Fraction(-1, 12)}}
+  {D,S0}: closed True, bidegrees [(2, 2)], class {'F223[N^0]': {0: Fraction(1, 24)}}
+  {S1,S1}: closed True, bidegrees [(2, 2)], class {'F223[N^0]': {0: Fraction(1, 24)}, 'F223[N^1]': {1: Fraction(-1, 24)}}
+  {S1,S0}: closed True, bidegrees [(2, 2)], class {'F223[N^0]': {1: Fraction(1, 48)}}
+  {S0,S0}: closed True, bidegrees [], class {}
+  Moyal: i_M alternating True; d j_M = 0 True; (1/2){j_M,j_M} == d i_M True; {j_M,j_M} != 0 True
+  s_e order e^1: alt(tr(012) e^((e/2)[p0p1]))/3 coefficient == j_M: True
+  s_e order e^2: alt(tr(012) e^((e/2)[p0p1]))/3 coefficient == i_M: True
+  s_e order e^0 == s_0: True
+  (basis change checked in vfixed.py at fixed N)
+  time 1.4s
+================ formal sl_N ================
+  dim C^2_(2,0) = 0
+  dim C^2_(1,1) = 0
+  dim C^2_(0,2) = 0
+  (1,1): dim C^3 = 2, rank d3 = 1, dim Z^3 = dim H^3 = 1
+  (2,0): dim C^3 = 1, rank d3 = 1, dim Z^3 = dim H^3 = 0
+  (0,2): dim C^3 = 1, rank d3 = 1, dim Z^3 = dim H^3 = 0
+  D: alternating True, closed True, in Z^3 True
+  rank span(J's) = 1  (= dim Z^3_(1,1) = 1)
+  alt([p1p2] tau) = [p1p2] sum_pi pi.tau for all taus: True
+  rank span(D,E_f) = 2; d E_f != 0: True
+  (2,2): dim C^3 = 3, dim C^4 = 15, rank d3 = 3, rank d4 = 11, dim Z^4 = 4, dim B^4 = 3, dim H^4 = 1
+  Z^4 vectors closed exactly: True;  C^5 coordinates touched: 3240
+  B^4 subset Z^4: True
+  F_133 N-powers [0, 1, 2], F_223 N-powers [0, 1]; dF_133 = 0 True, dF_223 = 0 True
+  H^4 representatives: ['F223[N^1]']  (count 1)
+  [F_223] = {'F223[N^1]': {1: Fraction(1, 1)}}
+  [F_133] = {'F223[N^1]': {1: Fraction(-1, 1)}}
+  [F_133 + F_223] = {}
+  [-3F_133 + 2F_223] = {'F223[N^1]': {1: Fraction(5, 1)}}   [3F_133 + 2F_223] = {'F223[N^1]': {1: Fraction(-1, 1)}}   [-3F_133 - 2F_223] = {'F223[N^1]': {1: Fraction(1, 1)}}
+  {D,D}: closed True, bidegrees [(2, 2)], class {'F223[N^1]': {-1: Fraction(1, 6)}}
+  (1/2){D,D}_sl == F_223/(12N^2) + d eta_N, eta_N = ((N^2+4)/(2N^2))[p1p2]^2 tr(1[23]): True
+  G = alt([p1p2][p3p4] tr(12)tr(34)): dG = 0 True, [G] = {'F223[N^1]': {0: Fraction(-1, 6)}}
+  time 2.0s

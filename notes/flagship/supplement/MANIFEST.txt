@@ -1,0 +1,42 @@
+Supplement manifest for flagship.tex (Appendix A, "Computational certificates").
+Each line: supplement path  <-  project path (P = holomorphic-twist-program/).
+The supplement folder is not assembled; this file lists the scripts cited in Appendix A and the folders they are taken from.
+The scripts insert absolute project paths into sys.path (P/code, P/explore/anomaly-structure/{code,verify},
+P/explore/twoloop-universal/verify, P/deepen/normalization/verify, P/deepen/deform/code, P/deepen/simple-all/code,
+P/deepen/simple-g/code); these have to be rewritten to the supplement layout.  Helper modules in the same folders
+(e.g. vcore.py, vlib.py, vla.py, vexp.py, vfix.py, vgraph.py, vce.py, vnum.py, vw.py, valg.py, vcoch.py, lie.py, t4.py,
+sla.py, jets.py, cohom.py, common.py, ce_eval.py, lie_eval.py, sp_coords.py, v_lie_ce_defs.py, vk.py) and data
+folders (deepen/o3/code/data, deepen/o3/verify/data) belong with them.
+
+engine/htk/                      <-  P/code/htk/
+engine/verify_independent.py     <-  P/code/tests/verify_independent.py
+theta/                           <-  P/explore/twoloop-universal/verify/   (vcore.py, v1_pointwise.py, v1b_unsorted.py, v2_values.py,
+                                                                             v3_sources.py, v4_numerics.py, v6_expansion.py, v7_oracle_rerun.py)
+anomaly/                         <-  P/explore/anomaly-structure/verify/   (v_kernels.py, v_lie_ce.py, v_ce_large.py, v_formalN.py,
+                                                                             v_orientation.py, v_b1.py; helpers)
+anomaly/code/                    <-  P/explore/anomaly-structure/code/     (imported by deform and o3 scripts)
+normalization/                   <-  P/deepen/normalization/verify/        (v1_edge_forms.py, v2_pointwise.py, v2b_rootN.py, v3_wick.py,
+                                                                             v4_calibration.py, v5_assembly_count.py, vext.py)
+deform/                          <-  P/deepen/deform/verify/               (t_engine.py, t_weights.py, t_explicit.py, t_coeff.py, vformal.py,
+                                                                             vfixed.py; helpers vce.py, vla.py, vnum.py, vw.py)
+deform/code/                     <-  P/deepen/deform/code/                 (imported by o3 scripts)
+simpleg/                         <-  P/deepen/simple-g/verify/             (t_classes.py, t_classes_big.py, t_nonreduced.py, t_closed.py,
+                                                                             t_inv_weyl.py, t_inv_lin.py, t_j1.py, t_sl2inv.py, t_c4inv.py,
+                                                                             t_c4span.py; helpers)
+simpleg/code/                    <-  P/deepen/simple-g/code/
+simpleall/  (first computation)  <-  P/deepen/simple-all/code/             (run_a.py, inv3.py, decomp_check.py, dGkk.py, part_b.py,
+                                                                             analysis_b.py, networks.py, family.py, interp.py, vogel_check.py,
+                                                                             part_c.py; lie.py, t4.py, check_W.py)
+simpleall/  (recomputation)      <-  P/deepen/simple-all/verify/           (va_points.py, vb_full.py, vb_dense.py, vbk.py, vbk_family.py,
+                                                                             vc.py, v_misc.py, t_dF_control.py, vlie.py, vpoint.py, t_engine.py)
+h1/                              <-  P/deepen/h1/code/                     (check_h1.py, qtable.py; jets.py, sla.py, cohom.py)
+h1/verify/                       <-  P/deepen/h1/verify/code/              (vjet.py, vcohom.py, run_checks.py, cetable.py, extra.py, misc.py,
+                                                                             eta_psi.py, test_identities.py, tally.py)
+o3/                              <-  P/deepen/o3/code/                     (o0_vanishing.py ... o21_brackets_F.py, common.py, data/)
+o3/verify/                       <-  P/deepen/o3/verify/                   (v1_libtests.py ... v9_extra.py, vlib.py, vla.py, vexp.py, vfix.py,
+                                                                             vgraph.py, data/)
+referee/                         <-  P/notes/flagship/referee/             (kern_check.py, ce_check.py)
+arith/arith_check.py             <-  P/notes/flagship/arith_check.py
+lit/rho2_dipole.py               <-  P/deepen/lit/code/rho2_dipole.py
+
+Logs with the printed outputs quoted in Appendix A are in the same project folders (logs/ subfolders and *.log next to the scripts).

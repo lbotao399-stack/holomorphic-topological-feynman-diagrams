@@ -1,0 +1,4 @@
+sl2 theta(1,3,3): alt(K W) on 2 samples equal for 4 random relabellings/reversals/edge orders: [True, True, True, True]; reference nonzero: True
+sl2 theta(2,2,3): alt(K W) on 2 samples equal for 4 random relabellings/reversals/edge orders: [True, True, True, True]; reference nonzero: True
+gl2 theta(1,3,3): alt(K W) on 2 samples equal for 4 random relabellings/reversals/edge orders: [True, True, True, True]; reference nonzero: True
+gl2 theta(2,2,3): alt(K W) on 2 samples equal for 4 random relabellings/reversals/edge orders: [True, True, True, True]; reference nonzero: True

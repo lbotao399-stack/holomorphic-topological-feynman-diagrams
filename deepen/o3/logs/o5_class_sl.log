@@ -1,0 +1,19 @@
+formal sl_N weight (3, 3): dim C^2 = 0, dim C^3 = 6, dim C^4 = 39; ambient coordinates 32, 900, 17600
+rank d3 = 6 (minor det 324, mod-p ranks [6, 6])
+rank d4 = 32 (minor det 63700992, mod-p ranks [32, 32], 7 exact kernel vectors)
+dim Z^4 = 7 (closed exactly: True), dim B^4 = 6, dim H^4 = 1
+candidate {D, G}, G = alt([p1p2][p3p4] tr(12)tr(34)): N-power parts (closed, exact): {}
+candidate {D, F_1}, F_1 = N^1-part of F_223: N-power parts (closed, exact): {}
+candidate {D, [p1p2]^2 f}: N-power parts (closed, exact): {0: (True, True)}
+basis class h = z6 (kernel vector of d4 in the basis C^4)
+  h = -4/3 p1bp2a^2p2b^2p3a tr(12) tr(34) + 4/3 p1bp2a^3p2bp3b tr(12) tr(34) + -8/3 p1b^2p2a^2p2bp3a tr(12) tr(34) + 4/3 p1b^2p2a^3p3b tr(12) tr(34) + -4/3 p1b^3p2a^2p3a tr(12) tr(34) + 4/3 p1ap2ap2b^3p3a tr(12) tr(34) + -4/3 p1ap2a^2p2b^2p3b tr(12) tr(34) + 4/3 p1ap1bp2ap2b^2p3a tr(12) tr(34) + 4/3 p1ap1bp2a^2p2bp3b tr(12) tr(34) + -4/3 p1ap1b^2p2ap2bp3a tr(12) tr(34) + 8/3 p1ap1b^2p2a^2p3b tr(12) tr(34) + -4/3 p1ap1b^3p2ap3a tr(12) tr(34) + ... (60 terms)
+Phi(B^4) = 0: True ; Phi(h) = 1: True
+Phi on Z^4 basis: ['0', '0', '0', '0', '0', '0', '1']
+[{D, G}, G = alt([p1p2][p3p4] tr(12)tr(34))] = {} [h]   (N-power: coefficient)
+[{D, F_1}, F_1 = N^1-part of F_223] = {} [h]   (N-power: coefficient)
+[{D, [p1p2]^2 f}] = {} [h]   (N-power: coefficient)
+[theta'] = {} [h]   (N-power: coefficient)
+[{D, iota}] = {} [h]   (N-power: coefficient)
+[{D, iota} + theta'] = {} [h]   (N-power: coefficient)
+[control -{D, iota} + theta'] = {} [h]   (N-power: coefficient)
+time 25.8s

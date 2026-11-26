@@ -1,0 +1,1 @@
+case 1 h=0.8 tol=1e-06: K(shift 0) = -1.2859573533e-05  K(shift h/2) = -1.2859558399e-05  points 757065 750873  sub-threshold mass 1.47e-09  time 888s

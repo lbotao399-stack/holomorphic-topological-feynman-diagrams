@@ -1,0 +1,13 @@
+T1: currents (eq-1-38 at endpoint sources) and exponent decomposition hold, n = 2, 4, 6
+n=2 order 0: formula = direct integral = engine; 1 monomials in z
+n=2 order 1: formula = direct integral = engine; 5 monomials in z
+n=2 order 2: formula = direct integral = engine; 15 monomials in z
+n=2 order 3: formula = direct integral = engine; 35 monomials in z
+  n=2, order 1 term: -pi*l1*lN*(4*l1*za1 + l1*za2 + 6*l1*zb1 + 3*l1*zb2 + l1*zb3 - lN*za1 - 4*lN*za2 + lN*zb1 + 3*lN*zb2 + 6*lN*zb3)/30
+n=4 order 0: formula = direct integral = engine; 1 monomials in z
+n=4 order 1: formula = direct integral = engine; 9 monomials in z
+n=4 order 2: formula = direct integral = engine; 45 monomials in z
+n=4 order 3: formula = direct integral; 165 monomials in z
+  n=4, order 1 term: -pi**2*l1**2*lN**2*(20*l1*za1 + 10*l1*za2 + 4*l1*za3 + l1*za4 + 15*l1*zb1 + 10*l1*zb2 + 6*l1*zb3 + 3*l1*zb4 + l1*zb5 - lN*za1 - 4*lN*za2 - 10*lN*za3 - 20*lN*za4 + lN*zb1 + 3*lN*zb2 + 6*lN*zb3 + 10*lN*zb4 + 15*lN*zb5)/6300
+T4: S1 eq-sum-N4-coeff reproduced by direct integration of eq-1-41, n = 2, 3, orders 0..2
+all Taylor checks passed

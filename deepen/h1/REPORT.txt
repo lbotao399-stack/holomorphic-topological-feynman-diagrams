@@ -1,0 +1,393 @@
+h1: Hypothesis H1 (cochain model) for commutative CS on R x C^2
+=================================================================
+
+Folder P/deepen/h1/ (P = /Users/libotao/Desktop/holomorphic-twist-program).
+Code: code/jets.py (jet model: generators, Q, D_u, eta_v, weights, enumeration), code/sla.py (sparse exact
+linear algebra), code/cohom.py (cohomology of weight slices), code/check_h1.py (comparison with the CE
+prediction, representatives, eta-invariants), code/test_jets.py, code/extra_checks.py, code/summary.py.
+Logs: logs/test_jets.log, logs/check_{abelian1,abelian2,abelian2b,abelian2c,sl2a,sl2nc,sl2b,sl2c,sl2d,gl2,gl2b,eta,
+eta12,etaneg}.log, logs/extra_checks.log, logs/qtable.log, logs/summary.log.  Code also: code/qtable.py, code/results_block.py.
+Sources (PDF text layers, arXiv PDFs fetched in this run): Williams 1809.02661v2 Sec. 2 (Def. 2.5, Prop. 2.8,
+Def. 2.26, eq. (12), Def. 2.28, Lemma 2.29, Cor. 2.30); Gwilliam-Williams 1810.06534v2 Def. 1.14, App. A
+(Def. A.1, Lemma A.2, Lemma A.7, Lemma A.8, Prop. A.6); Costello 1610.04144v1 App. B (theorem, proof,
+Lemma B.0.2 and proof).  Project: notes/flagship/flagship.tex Sec. 2 "Heat-kernel gauge" (D, D^*, K_t, P),
+Hypothesis H-CE; deepen/deform/REPORT.txt Sec. 0-2; deepen/lit/REPORT.txt (d1)-(d4).
+Arithmetic: every rank is computed modulo P1 = 2147483629, modulo P2 = 2147483587 and exactly over Q
+(fraction-free sparse elimination with gcd normalisation, code/sla.py); all three are printed; kernels
+(cocycle bases) exact over Q.  No floating point.
+
+
+0. Setting and notation
+-----------------------
+
+X = R x C^2 ∋ (tau, z1, z2);  U = {tau, 1b, 2b},  x_tau = tau, x_1b = zb1, x_2b = zb2;
+Lambda = Lambda[dx_v : v in U],  dx_T (T ⊆ U) ordered tau < 1b < 2b;  Omega = dz1 dz2.
+L = Omega*(R) ⊗ Omega^{0,*}(C^2) ⊗ g,   d_L = sum_{v in U} dx_v d_v,   [alpha X, beta Y] = (alpha ^ beta)[X,Y],
+E = L[1],  omega(a,b) = int_X Omega kappa(a,b),  S_cl = int_X Omega ( 1/2 kappa(A, d_L A) + 1/6 kappa(A,[A,A]) ).
+
+Jets at 0:  L_0 = C[[tau,z,zb]] ⊗ Lambda ⊗ g.  Jet coordinates c^a_{T,al}, al in N^5 (orders in tau,z1,z2,zb1,zb2),
+ghost(c^a_{T,al}) = 1 - |T|,  superfield A^a = sum_T c^a_{T,0} dx_T  (odd).
+M = C*_red(L_0) = reduced supercommutative polynomial algebra in the c^a_{T,al}.
+
+  Q c^a_{T,al} = d^al [ ( d_L A^a + 1/2 f^a_{bc} A^b A^c )_T ]         (odd derivation; CE differential of L_0)   (0.1)
+  D_u c^a_{T,al} = c^a_{T,al+e_u}   (u = tau,z1,z2,zb1,zb2),     eta_v c^a_{T,al} = ( iota_{d/dx_v} A^a )_{T,al}   (v in U)  (0.2)
+  Q^2 = 0,  [Q, D_u] = 0,  Q eta_v + eta_v Q = - D_v,  eta_v eta_w + eta_w eta_v = 0                          (0.3)
+     logs/test_jets.log:  abelian2 (276 test polynomials), sl2 (384): all four identities True.
+
+  V := M / sum_u D_u M                                          (translation-invariant local functionals int dvol m)   (0.4)
+  C_g := C*_red(g[[z1,z2]])  (polynomials in c^a_{0,(0,al1,al2,0,0)}),   Q_hol := Q|_{C_g},
+  C_g^0 := C_g / (D_z1 C_g + D_z2 C_g)
+        = { alternating k-cochains of g[[z1,z2]], polynomial in p_1..p_k, restricted to sum_j p_j = 0 }       (0.5)
+  psi_S(phi) := int d^2z ^ dx_{U-S} ^ Phi(A),   Phi(A) := phi |_{c^a_al -> d^al A^a},   density [Phi(A)]_{dx_S}   (0.6)
+  V_ht := psi_U(C_g^0) = { int Omega ^ P(d_z^(1),..,d_z^(k)) W(A,..,A) }    (holomorphic derivatives only)
+  V^eta := { F in V : eta_v F = 0 in V,  v in U },   eta_U := eta_tau eta_1b eta_2b.
+  ghost(psi_S(phi)) = deg(phi) - |S|.
+
+Gamma = R_{>0} x (C^x)^2 ∋ gamma = (lam, l1, l2):  (tau, z1, z2) -> (lam tau, l1 z1, l2 z2),  lb_i := conj(l_i).
+  c^a_{T,al}(gamma^*A)(x) = lam^{al_tau + [tau in T]} l^{(al_z1, al_z2)} lb^{(al_zb1 + [1b in T], al_zb2 + [2b in T])} c^a_{T,al}(A)(gamma x),
+  |Jac gamma| = lam |l1|^2 |l2|^2  ==>  for a monomial F in V:
+  F(gamma^*A) = lam^{w_tau} l1^{a-1} l2^{b-1} lb1^{w_1b} lb2^{w_2b} F(A),
+  w_v = sum_j ( al_{j,v} + [v in T_j] ) - 1  (v in U),   (a,b) = ( sum_j al_{j,z1}, sum_j al_{j,z2} ).             (0.7)
+  w_v >= -1;   psi_S(phi), phi of bidegree (a,b):  w = -1_{U-S}.
+  V_{w,(a,b)}: span of monomials of weight w and bidegree (a,b).
+
+
+1. Results
+----------
+
+Theorem A (all translation-invariant local functionals).  g a finite-dimensional Lie algebra.
+ (A1)  H^g(V) = ⊕_{S ⊆ U} psi_S H^{g+|S|}(C_g^0),   each psi_S injective on cohomology.
+ (A2)  H(V_{w,(a,b)}) = psi_S H(C_g^0)_{(a,b)}  for w = -1_{U-S};    H(V_{w,(a,b)}) = 0  for w not in {0,-1}^3.
+ (A3)  every class of H(V) has a representative psi_S(phi): holomorphic derivatives only.
+
+Theorem B (odd translations eta_v = iota_{d/dx_v}, v in U; t = C^{5|3} = span{D_u} ⊕ span{eta_v}, [Q,eta_v] = -D_v).
+ (B1)  V^eta = eta_U V,   V^eta ⊂ ⊕_{w >= 0} V_w,   V^eta ∩ V_{w=0} = V_ht.
+ (B2)  psi_U : C_g^0 -> V_ht is bijective, lowers degree by 3, and is a chain map;  V_ht ⊂ V^eta is a quasi-isomorphism:
+         H^g(V^eta) = H^{g+3}(C_g^0) = H^{g+3}( C d^2z ⊗^L_{C[d_z1, d_z2]} C*_red(g[[z1,z2]]) ).
+ (B3)  H(V^eta) -> H(V) is injective, with image psi_U H(C_g^0) = H(V_{w=0}).
+ (B4)  eta_1b, eta_2b only:  H^g(V^{eta_1b,eta_2b}) = H^{g+3}(C_g^0) ⊕ H^{g+2}(C_g^0)
+         = H^{g+2}( C dtau d^2z ⊗^L_{C[d_tau, d_z1, d_z2]} C*_red(g[[z1,z2]]) ),   d_tau acting by 0.
+
+Theorem C (invariants, bidegree).  g reductive, G connected reductive, Lie G = g, acting by Ad.
+  C_g^0 = ⊕_{(a,b)} C_g^0_{(a,b)},  dim C_g^0_{(a,b)}^n < infinity,   H(C_g^0) = H((C_g^0)^G),  H(V) = H(V)^G.
+
+Corollary (H1).  Ghost number g <-> CE degree g + 3 (shift 3 = H + T) holds exactly for V^eta (B2), for the
+Gamma-weight-0 part V_{w=0} of V (A2), and at the cochain level for V_ht ≅ C_g^0[3] (B2).  For V without eta the
+summands S ≠ U of (A1) are present: H^g(V) = H^{g+3} ⊕ 3 H^{g+2} ⊕ 3 H^{g+1} ⊕ H^g (of C_g^0); Hypothesis H-CE of
+flagship.tex (translation invariance only) is false as stated.
+Shift and the tau-direction (step ii):
+   V^eta ≃ ( C d^2z ⊗^L_{C[d_z1,d_z2]} C*_red(g[[z]]) )[3] = ( C dtau d^2z ⊗^L_{U(t)} C*_red(L_0) )[3],   U(t) ≃ C[d_z1,d_z2]:
+   the pair (d_tau, eta_tau) contributes the shift [1] and no Tor term.
+   The task's formula ( C dtau d^2z ⊗^L_{C[d_tau,d_z]} C*_red(g[[z]]) )[3] with d_tau acting by 0 has, in ghost g,
+   H^{g+3}(C_g^0) ⊕ H^{g+4}(C_g^0) (Tor_0 ⊕ Tor_1 of C over C[d_tau]); this is the cohomology of none of V, V^eta,
+   V^{eta_1b,eta_2b}.  With the shift [2] it is V^{eta_1b,eta_2b} (B4).
+
+
+2. Proof
+--------
+
+P1 [cited]  Local functionals and BV differential.
+  Williams 1809.02661 Def. 2.5: C*_loc(L) = Dens_X ⊗_{D_X} C*_Lie,red(JL);  Prop. 2.8 (= [CG] Prop. 5.4.0.2): a BV theory
+  (E, omega, S) is the same as a local L_infty algebra L = E[1] with (-3)-shifted pairing;  text before Cor. 2.30:
+  Def E = (O_loc(E), Q + {I,-}).  Hence (O_loc(E), {S_cl,-}) = C*_loc(L) with the CE differential of JL, which at the
+  jet level is (0.1) (one global sign between {S_cl,-} and Q, not fixed here).
+  Williams eq. (12): a translation-invariant local functional is a sum of int F(D_1 phi,..,D_k phi) d^dz with constant-
+  coefficient D's; modulo constant-coefficient total derivatives this is V (0.4).
+  De Rham model (Gwilliam-Williams 1810.06534 Def. 1.14): translation-invariant part = C[dtau,dz,dzb] ⊗ C*_red(L_0)
+  (GW Lemma A.7; its proof, translation-invariant sections of a trivial bundle are fixed by their value at 0, applies
+  verbatim with the factor R), differential Q + sum_u dx_u D_u: the Koszul complex K(D;M) of (D_u) on M (dx_T <-> eps_{T^c}),
+  whose top-form quotient is V.
+
+P2 [proved]  Freeness; derived = underived.
+  M^(k) = ( C[p_1..p_k] ⊗ W^{⊗k} )^{S_k, ±},  p_j in C^5,  W = span{c^a_T},  D_u = multiplication by P_u = sum_j p_{j,u}.
+  U_0 := { sum_j c_j p_j : sum_j c_j = 0 }  is S_k-stable,  C[p_1..p_k] = C[P] ⊗ Sym(U_0),  S_k trivial on C[P]
+  ==>  M^(k) = C[P_1..P_5] ⊗ ( Sym(U_0) ⊗ W^{⊗k} )^{S_k,±}   free over C[P]
+  ==>  K(D;M) -> V quasi-isomorphism,   K(D_z;C_g) -> C_g^0 quasi-isomorphism,
+       M^(k)/(P) = polynomial cochains on sum p = 0  (0.5).
+
+P3 [proved]  Finiteness.
+  cost(c^a_{T,al}) = ( al_tau + [tau in T], al_zb1 + [1b in T], al_zb2 + [2b in T], al_z1, al_z2 ) in N^5;
+  monomials of V_{w,(a,b)} have total cost (w + 1, a, b);  cost-0 generators: c^a_{0,0} (odd, at most dim g)
+  ==>  arity <= dim g + |w+1| + a + b,   dim M_{w,(a,b)} < infinity (all ghost numbers together).
+  Q: (w,(a,b),g) -> (w,(a,b),g+1);  D_u raises (w,a,b) by e_u;  eta_v: (w,g) -> (w + e_v, g - 1).
+  (The slice V_{w,(a,b)} is the complete complex, not a truncation: the jet orders are bounded by w_v + 1, a, b.)
+
+P4 [proved]  Formal Poincare and Dolbeault lemma, dg Lie compatibility.
+  i : g[[z]] -> L_0  (tau-, zb-independent 0-forms),   pi : L_0 -> g[[z]]  (x_U = 0, dx_U = 0):
+  dg Lie maps,  pi i = id,  D_z i = i D_z,  D_v i = 0,  iota_v i = 0  (v in U).
+  L_0 = C[[z]] ⊗ ( ⊗_{v in U} B_v ) ⊗ g,  B_v = C[[x_v]] ⊕ C[[x_v]] dx_v,  d = dx_v d_v;
+  weight-n part of B_v: C x_v^n ⊕ C x_v^{n-1} dx_v,  d x_v^n = n x_v^{n-1} dx_v:  H = C (n = 0), 0 (n >= 1);
+  Kunneth on finite-dimensional weight parts:  H(L_0) = C[[z]] ⊗ g = i(g[[z]]).
+  i^* : M -> C_g is a quasi-isomorphism: in each slice (P3) filter by arity (Q = Q_1 + Q_2, Q_2 raises arity, finite
+  filtration); gr i^* = Sym^k((i^vee)[-1]), a quasi-isomorphism (char 0).  i^* D_z = D_z i^*,  i^* D_v = 0,  i^* eta_v = 0.
+
+P5 [proved]  Koszul comparison.
+  K(D;M) -> K(D;C_g) (by i^*) quasi-isomorphism (iterated mapping cones, five lemma).  On C_g: D_v = 0 (v in U), so
+  K(D;C_g) = Lambda[eps_tau, eps_1b, eps_2b] ⊗ K(D_z;C_g) ≃ Lambda[eps_U] ⊗ C_g^0,  deg eps = -1.  With P1, P2:
+     H^g(V) = H^g(K(D;M)) = ⊕_{S ⊆ U} eps_S ⊗ H^{g+|S|}(C_g^0).                                               (2.1)
+
+P6 [proved]  Explicit representatives.
+  D_0 := Q + sum_i D_zi d/d eps_zi,   D := D_0 + sum_{v in U} D_v d/d eps_v,   Theta := - sum_{v in U} eta_v d/d eps_v (even).
+  [Q, eta_v d/d eps_v] = [Q, eta_v] d/d eps_v = - D_v d/d eps_v,   [D_zi d/d eps_zi, eta_v d/d eps_v] = 0,
+  [[D_0, Theta], Theta] = sum_{v,w} [D_v d/d eps_v, eta_w d/d eps_w] = 0      ==>   e^{-Theta} D_0 e^{Theta} = D.        (2.2)
+  phi in Z^n(C_g^0), Phi a Koszul cycle of K(D_z;C_g) with eps_z^0-component phi;  y := eps_S ⊗ pi^*Phi  (D_0 y = 0);
+  kappa_S := e^{-Theta} y = sum_{T ⊆ S} (+-) eps_{S-T} ⊗ eta_T pi^*Phi,   D kappa_S = 0;
+     i^* kappa_S = eps_S ⊗ Phi            (i^* eta_v = 0, i^* pi^* = id),
+     aug(kappa_S) = +- eta_S pi^* phi = +- psi_S(phi).
+  Last equality: eta_v A = iota_v A on superfields, eta_v and iota_v odd derivations ==> eta_v Phi(A) = iota_v Phi(A);
+  [Phi(A)]_{dx_0} = pi^*phi.  (logs/extra_checks.log check1: eta_S pi^*phi = sign(k,S) psi_S(phi) exactly, k = 1..4,
+  all S, abelian2 and sl2, sign depending only on (k mod 2, S).)
+  ==> psi_S realises eps_S ⊗ H(C_g^0) in (2.1): (A1).
+  Chain map, directly:  Q Phi(A) = d_L Phi(A) + (Q_hol phi)(A),  [d_L Phi(A)]_{dx_S} = sum_{v in S} +- D_v [Phi(A)]_{dx_{S-v}},
+  Q_hol phi in D_z C_g for phi closed in C_g^0, and psi_S D_z = D_z psi_S  ==>  Q psi_S(phi) in D M.
+
+P7 [proved]  Gamma-weights.
+  gamma in Gamma is orientation preserving;  S_cl(gamma^*A) = (l1 l2)^{-1} S_cl(A),  omega(gamma^*a, gamma^*b) = (l1 l2)^{-1} omega(a,b)
+  ==> Q preserves the characters (0.7), the BV bracket multiplies them and the factor l1 l2.  Characters
+  lam^{w_tau} l^{(a-1,b-1)} lb^{(w_1b,w_2b)} of Gamma are pairwise distinct ==> V = ⊕_{w,(a,b)} V_{w,(a,b)} as complexes.
+  psi_S H(C_g^0)_{(a,b)} ⊂ H(V_{-1_{U-S},(a,b)});  with (A1) and P3: (A2).  (A3): P6.
+
+P8 [proved]  eta-invariants.
+ (a) Freeness over Lambda[eta] = Lambda[eta_tau, eta_1b, eta_2b].  For fixed (a, al): span{c^a_{T,al}}_T = Lambda[eta] c^a_{0,al}
+     (eta_S c_0 = +- c_S), free of rank 1.  Tensor powers with the derivation action: shearing isomorphism of the
+     Hopf algebra H = Lambda[eta] (eta primitive), H ⊗ N_triv -> H ⊗ N_diag, h ⊗ n -> sum h_(1) ⊗ h_(2) n  ==> free;
+     S_k-(sign-)invariants: direct summand, projective over the local algebra Lambda[eta], free;  ⊗ C[p]/(P): free.
+     ==>  V^eta = ∩_v ker eta_v = eta_U V,   ker(eta_U|V) = sum_v eta_v V,
+          eta_U : V_eta := V / sum_v eta_v V -> V^eta bijective,  degree -3,  eta_U Q = - Q eta_U on V.
+     w >= -1 on V ==> V^eta ⊂ ⊕_{w >= 0} V_w;  V^eta ∩ V_0 = eta_U V_{-1_U};  V_{-1_U} = (polynomials in c^a_{0,(0,al_z,0)})/D_z
+     = C_g^0  (D_v-images would need w_v = -2);  eta_U = +- psi_U on it (P6)  ==>  V^eta ∩ V_0 = V_ht.        (B1)
+ (b) V_eta = C ⊗_{U(t)} M,  U(t) = C[D_tau, D_z, D_zb] ⊗ Lambda[eta_U],  d eta_v = -D_v.
+     M^(k) with Q_1 is K-projective over U(t):  L_0^vee[-1] = U(t) ⊗ span{c^a_{0,0}} with Q_1 c^a_{0,0} = 0 (semi-free on closed
+     generators);  tensor powers: shearing;  S_k: direct summand.
+     p : U(t) -> C[D_z] (D_v, eta_v -> 0) is a quasi-isomorphism of dg algebras (C[D_v] ⊕ C[D_v] eta_v, d(f eta_v) = -f D_v:  H = C).
+     gr_k:  C ⊗_{U(t)} M^(k) = C ⊗^L_{U(t)} M^(k) --i^*--> C ⊗^L_{U(t)} C_g^(k) = C ⊗^L_{C[D_z]} C_g^(k) = C_g^0(k)   quasi-isomorphisms;
+     arity filtration finite in each slice  ==>  rho : V_eta -> C_g^0 (induced by i^*) quasi-isomorphism.
+ (c) H^g(V^eta) = H^{g+3}(V_eta) (eta_U of degree -3) = H^{g+3}(C_g^0) (b).
+     rho ∘ eta_U^{-1} ∘ psi_U = +- id  (psi_U(phi) = +- eta_U pi^*phi, i^* pi^* = id)  ==>  psi_U : C_g^0 -> V^eta quasi-isomorphism;
+     psi_U injective with image V_ht  ==>  V_ht ⊂ V^eta quasi-isomorphism.                                       (B2)
+ (d) H(V^eta) = psi_U H(C_g^0) -> H(V) injective by (A1).                                                       (B3)
+ (e) t' = span{D_u} ⊕ span{eta_1b, eta_2b}:  V^{eta_1b,eta_2b} = eta_1b eta_2b V ≅ V_{eta'} := C ⊗_{U(t')} M (degree -2, as in (a));
+     U(t') ≃ C[D_tau, D_z];  i^* is C[D_tau,D_z]-linear with D_tau -> 0;  C ⊗^L_{C[D_tau]} C = C ⊕ C[1]:
+     H^m(V_{eta'}) = H^m(C_g^0) ⊕ H^{m+1}(C_g^0),   H^g(V^{eta_1b,eta_2b}) = H^{g+2}(V_{eta'})  ==>  (B4).
+
+P9 [proved]  Invariants (Theorem C).
+  X in g ⊂ g[[z]] (momentum 0):  iota_X := X^a d/d c^a_{0,0};  iota_X D_u = D_u iota_X (D_u never produces c_{0,0});
+  L_X := Q iota_X + iota_X Q = coadjoint action of X (Cartan formula).  C_g^0_{(a,b)}^n finite-dimensional G-module, Q_hol
+  G-equivariant, G reductive: C_g^0 = (C_g^0)^G ⊕ C',  H(C') is a sum of nontrivial isotypic parts, and g acts on H by
+  L_X = [Q, iota_X], i.e. by 0  ==>  H(C') = 0.  The same on V and on V^eta.  Bidegree: the (C^x)^2 ⊂ Gamma characters.
+
+P10 [proved / cited]  Comparison with the sources (steps iii, iv).
+  Williams 1809.02661 (T = 0, C^d, E_V = Omega^{0,*}(C^d,V), V a finite-rank holomorphic bundle):
+    Def. 2.28 (translation invariant and eta^i I = 0)          <->  V^eta with U replaced by {1b,..,db}.
+    Lemma 2.29 (O^{hol,trans}_loc ⊂ O_loc^{C^{2d|d}} quasi-iso; proof: one-sentence spectral-sequence argument)  <->  (B2).
+    Cor. 2.30 ((Def E_V)^{C^{2d|d}} ≃ C d^dz ⊗^L_{C[d_z]} O_red(V_0[[z]])[d]; proof: flatness of O_red(J_0 E_V) over
+      U(C^{2d|d}) asserted; E_1-quasi-isomorphism O_red(V_0[[z,zb]][dzb]) ≃ O_red(V_0[[z]]); U(C^{2d|d}) ≃ U(C^d))
+      <->  P8(b) (flatness proved: P8(a),(b)), P4, p quasi-iso.  Shift [d] <-> [H + T] = [3].
+    R x C^2 is not of the form Omega^{0,*}(C^d, V); the proof above adds the factor B_tau and eta_tau.
+    Text after Def. 2.28 (eta-invariance <-> no explicit dzb_j): in the model V, V^eta = eta_U V also contains terms of positive
+      Gamma-weight built with iota_v A (Williams eq. (12) allows D in C[d_z, d_zb, eta]); at the cochain level they are
+      nonzero (logs/check_eta.log: abelian1, w = (1,0,0), (a,b) = (0,0): dim V^eta = 1 at g = -2, -1) and acyclic (B2).
+  Gwilliam-Williams 1810.06534:
+    Lemma A.7 <-> P1 (de Rham model of the translation invariants).
+    Lemma A.8 (graded C^d_hol-invariants = C[dz][2d] ⊗ C^#_red(g[[z]]); GW's de Rham model, T = 0) <-> V^eta ∩ V_{w=0} = V_ht
+      (B1).  In the model V used here, V^eta has in addition the positive-weight part above, with zero cohomology (B2).
+      Prop. A.6: T = 0, H^1 only; not used.
+  Costello 1610.04144 App. B:
+    e = 0 complex  omega_{RxX} ⊗_D O(pi^* J Omega^{-*}_hol[t^{-1}][1])[N][-6(k-1)]  (cyclic, uniformly in N); for holomorphically
+    translation-invariant quantizations on R x C^2: C[eta3, eta5, ..]/C ⊗ C[N] ⊗ C((e)) ⊗ C[dz1, dz2][5].
+    The factor C[dz1,dz2][5] (no dtau, dzb) <-> (B2); without eta the de Rham model has Lambda[dtau,dzb1,dzb2] ⊗ C[dz1,dz2][5]
+    <-> (A1).  Degree: dz1 dz2 in degree 2 - 5 = -3  <->  ghost g = CE degree - 3.
+    Proof of Lemma B.0.2, first sentence (every holomorphically translation-invariant Lagrangian is equivalent to one with
+    d_z1, d_z2 only, no d_t, d_zb, dt, dzb): stated without proof there; = (B2), proved here for any finite-dimensional g
+    (finite N) at e = 0.  P2-P8 use only d_L = sum dx_v d_v on jets and a bracket on g[[z]] with D_z derivations; the Moyal
+    bracket satisfies this (no computation done for e ≠ 0).
+
+
+3. Consequences for the obstruction-deformation problem (flagship, deform)
+--------------------------------------------------------------------------
+
+3.1 [proved]  The heat-kernel scheme is eta-equivariant.
+  eta_v I = 1/6 int Omega ^ iota_v kappa(A,[A,A]) = 0:  [iota_v beta]_{3-form} = iota_v [beta]_{4-form} = 0 (Lambda has no 4-forms).
+  omega(iota_v a, b) + (-1)^{|a|} omega(a, iota_v b) = int Omega ^ iota_v kappa(a,b) = 0:  iota_v is omega-skew.
+  flagship Sec. 2:  D = dtau d_tau + dzb_i d_zbi,  D^* = - iota_{d_tau} d_tau - 4 sum_i iota_{d_zbi} d_zi,  [D,D^*] = -Delta_{R^5}:
+     [D^*, iota_v] = 0,  [D, iota_v] = d_v,  [[D,D^*], iota_v] = 0  ==>  e^{-t[D,D^*]}, P_eps^L = int dt D^* K_t commute with iota_v;
+     with omega-skewness their kernels are annihilated by iota_v ⊗ 1 + 1 ⊗ iota_v (Koszul sign);
+     directly: [K_t]_Omega = e^{-(tau^2+|z|^2)/4t} dtau d^2zb / (4 (4 pi t)^{5/2}) and [P]_Omega (flagship Sec. 2) evaluated at x - y
+     are forms in d(x_u - y_u) with coefficients functions of x - y; the derivation iota_v^x + iota_v^y of Omega*(X x X)
+     annihilates d(x_u - y_u) and functions of x - y;
+  graph weights w_Gamma(P, I) and w_Gamma(K_eps on e_j; P elsewhere) are eta-equivariant  ==>  I[L], O[L], O = lim O[L] eta-invariant.
+
+3.2 [proved]  The obstruction O_2.
+  O_2 in V^1 closed, eta-invariant (3.1)  ==>  O_2 = sum_{w >= 0} O_2^(w),  O_2^(0) = psi_U(o) in V_ht,  O_2^(w) exact in V^eta (w ≠ 0)
+  (B1, B2).  Evaluation j^* on fields with tau- and zb-independent components (X e^{p.z} ⊗ dx_T) kills every term with
+  d_tau or d_zb and keeps w (for such terms w_v = #{components containing dx_v} - 1); j^* is defined on V (every term of
+  D_v m, v in U, contains a d_v-derivative) with values in (derivative-free polynomials)/D_z; its w = 0 part is
+  j^* psi_U(o) = psi_U(o) mod D_z, and o -> psi_U(o) mod D_z is injective (psi_U(o) in D_z(...) would give psi_U(o) = 0 in V);
+  hence it fixes o.  ==>  [O_2] = psi_U [o],  o read off from holomorphic plane waves (the input of flagship Thm. "assembly").
+  Terms of O_2 with d_tau, d_zb on external fields have w ≠ 0 and are exact.
+  [O_2] = 0 in H^1(V)  <==>  [O_2] = 0 in H^1(V^eta)  <==>  [o] = 0 in H^4(C_g^0)  <==>  [o] = 0 in H^4((C_g^0)^G).
+  With joint-dilation equivariance in addition (3.4): O_2^(w) = 0 for w ≠ 0.
+
+3.2' [proved]  Step (vi): d_tau, d_zb on external fields.
+  (A2): a closed F in V_{w,(a,b)} with w not in {0,-1}^3 is exact; e.g. a closed F all of whose terms have, for one fixed
+  v in U, w_v = (number of d_v) + (number of components containing dx_v) - 1 >= 1 (two d_v; or one d_v and one
+  dx_v-component; or two dx_v-components).  (A3): every class has a representative without d_tau, d_zb.  (B1), (B2): in
+  V^eta, every closed F is cohomologous in V^eta to psi_U(phi), and the w = 0 part of V^eta contains no d_tau, d_zb at all.
+  Example (logs/extra_checks.log, sl2, kappa(e,f) = 1, kappa(h,h) = 2): S_free = int Omega 1/2 kappa(A, d_L A) (w = 0, contains
+  d_tau, d_zb) and I = int Omega 1/6 kappa(A,[A,A]) (in V_ht) are closed in V, not exact, and 2 S_free + 3 I in B^0(V)
+  (kernel of (6 S_free, 6 I) modulo B^0(V) spanned by (2,3)); eta_v I in D M, eta_v S_free not in D M (v = tau, 1b, 2b).
+
+3.3 [proved]  Deformations in eta-equivariant quantizations.
+  J in V^{eta,0} closed  ==>  J = psi_U(j) + Q K,  j in Z^3(C_g^0),  K in V^{eta,-1}  (B2);
+  U(1)^2-character (0,0) of psi_U(j)  <==>  j of bidegree (1,1)  (0.7).
+  The CE form of the order-hbar^2 equation (deform (2.1), (2.2)) was derived for J_1 in V_ht (deform Sec. 2: Q_(1) J_1 = 0 for
+  holomorphic derivatives only).
+
+3.4 [proved]  Without eta: the summands S ≠ U at ghost 0 (Theorem A).
+  phi_i := kappa(d_zi c, c),  [phi_i] in H^2(C_g^0)_{e_i},  [phi_i] ≠ 0 for every g with kappa ≠ 0:
+     d phi_i (x0,x1,x2) = f(X0,X1,X2) (p0 + p1 + p2)^i = 0;  1-cochains on sum p = 0 have p = 0, bidegree (0,0).
+  G_c := int d^2z ^ sum_{i,j} c_ij dzb_i ^ kappa(d_zj A, A),   G_c(phi_g^* A) = G_{c'}(A),
+     c' = det(g)^{-1} (gb^{-1})^T c g^T = det(g)^{-1} g c g^T   (g in U(2));    c = eps:  g eps g^T = det(g) eps  ==>  G_eps U(2)-invariant;
+  G_eps = +- psi_{tau,2b}(phi_2) +- psi_{tau,1b}(phi_1) (signs from (0.6)):  ghost 0, closed, not exact (two nonzero classes in
+     different Gamma-weights w = (0,-1,0), (0,0,-1)), not in V^eta (w not >= 0).
+  T_lam := int dtau d^2z d^2zb lam(A_tau),  lam in (g/[g,g])^* (gl_N: tr):  T_lam = psi_tau(lam(c)), ghost 0, closed, not exact,
+     U(2)-invariant (d^2z d^2zb), w = (0,-1,-1).
+  Characters for an I_k-type term (I_k(phi_l^*A) = (l1 l2)^{k-1} I_k(A); joint dilation (tau,z) -> (lam tau, lam z): lam^{2k-2})
+  on psi_S(phi), phi in C_g^0_{(a,b)}, from (0.7):
+     U(1)^2:  a - 1 - w_1b = k - 1,  b - 1 - w_2b = k - 1;     dilation:  w_tau + a + b - 2 + w_1b + w_2b = 2k - 2
+     ==>  w_tau + 2 w_1b + 2 w_2b = 0  ==>  w = 0  (w in {0,-1}^3).
+  G_eps: dilation character lam^{-2};  T_lam: lam^{-4}.  U(1)^2 (or U(2)) alone admits G_eps and T_lam at k = 1.
+  Computed (exact): gl2, w = (0,-1,-1), (a,b) = (0,0), g = 0: dim H = 1 (T_tr);  gl2, w = (0,0,-1), (1,0), g = 0: dim H = 2
+  (kappa = tr XY, tr X tr Y);  sl2, w = (0,0,-1), (1,0), g = 0: dim H = 1;  each with psi_S representative test passed.
+  gl2, w = 0, (1,1), g = 0: dim H = 2 = dim H^3(C_g^0)_{(1,1)} (deform Sec. 3: D, S1 at N = 2), psi_U representatives.
+  The same computation on V^eta ⊂ V_{w>=0} gives w = 0 (used in 3.2).
+
+3.5  Status of H1 as used in flagship/deform.
+  eta-equivariant quantization (3.1):  the cochain model with ghost g <-> CE degree g + 3 is exact (B2, C); [O_2] ≠ 0 statements
+  hold in H^1(V) (B3, 3.2); J_1 ranges over H^3(C_g^0)_{(1,1)} = {[p1p2] T : T in (S^3 g^*)^g} (deform Sec. 3, input).
+  U(1)^2 x joint dilation equivariance: same conclusion on classes (3.4).  U(1)^2 alone: G_eps, T_lam are additional ghost-0 classes.
+  "J_1 of arity 3": vacuous in V^eta (ghost 0 <-> CE degree 3); in V, arities 1 (T_lam) and 2 (G_eps) occur.
+
+
+4. Computational check
+----------------------
+
+What is computed (code/check_h1.py, exact): for a Lie algebra g, weight w, bidegree (a,b):
+  H^g(V_{w,(a,b)})  of the full differential (0.1) (linear + quadratic part) on the complete slice (P3),
+     dim H^g = dim M^g - rk D^g - rk Qbar^g - rk Qbar^{g-1},   rk Qbar^g = rk[Q M^g | D M^{g+1}] - rk D M^{g+1};
+  predicted: dim H^{g+|S|}(C_g^0)_{(a,b)} if w = -1_{U-S}, 0 otherwise; C_g^0 computed by the same code on the holomorphic
+     ghost jets c^a_{0,(0,al1,al2,0,0)} with D_z1, D_z2 only;
+  representatives: exact basis of Z^n(C_g^0) (kernel over Q), psi_S of it closed in V and of rank dim H^g(V) modulo B^g(V);
+  V^eta (all three eta_v; and eta_1b, eta_2b only): dim of the slice, H^g, comparison with (B1), (B2), (B4).
+Algebras: abelian dim 1, abelian dim 2 (linear differential = full), sl2 (basis e, f, h; [e,f] = h, [h,e] = 2e,
+  [h,f] = -2f; full differential), gl2 = sl2 ⊕ C u (u central; full differential).  sl2, gl2 runs restricted to
+  ad(h)-charge 0 (P9: H(V) = H(V)^G), except check_sl2nc.log.
+Outputs: one line per (algebra, w, (a,b), g); counts and nonzero entries in logs/summary.log (code/summary.py).
+
+Results (code/summary.py, code/results_block.py; columns: log, algebra, complex, w, (a,b), g, dim M^g of the slice,
+computed dim H, CE degree n, predicted dim H^n(C_g^0), status, representative test):
+  check_abelian1.log       compared entries  444   mismatches 0
+  check_abelian2.log       compared entries  180   mismatches 0
+  check_abelian2b.log      compared entries    5   mismatches 0
+  check_abelian2c.log      compared entries   41   mismatches 0
+  check_eta.log            compared entries   52   mismatches 0
+  check_eta12.log          compared entries   70   mismatches 0
+  check_etaneg.log         compared entries   84   mismatches 0
+  check_gl2.log            compared entries   57   mismatches 0
+  check_gl2b.log           compared entries    4   mismatches 0
+  check_sl2a.log           compared entries  112   mismatches 0
+  check_sl2b.log           compared entries    2   mismatches 0
+  check_sl2c.log           compared entries    1   mismatches 0
+  check_sl2d.log           compared entries    5   mismatches 0
+  check_sl2nc.log          compared entries   30   mismatches 0
+  total compared entries 1087, mismatches 0
+  selected nonzero entries (full list: logs/summary.log):
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 2) g=0 dim=1726 H=10 n=3 pred=10 OK psi_S S=7: closed True, rank incr 10, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 2) g=1 dim=8310 H=18 n=4 pred=18 OK psi_S S=7: closed True, rank incr 18, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 1) g=-1 dim=102 H=3 n=2 pred=3 OK psi_S S=7: closed True, rank incr 3, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 1) g=0 dim=938 H=8 n=3 pred=8 OK psi_S S=7: closed True, rank incr 8, True
+  check_abelian2b.log  abelian2 V      w=(0, 0, 0) (a,b)=(2, 1) g=1 dim=3802 H=7 n=4 pred=7 OK psi_S S=7: closed True, rank incr 7, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=0 dim=76 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=1 dim=570 H=10 n=3 pred=10 OK psi_S S=3: closed True, rank incr 10, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=2 dim=1860 H=18 n=4 pred=18 OK psi_S S=3: closed True, rank incr 18, True
+  check_abelian2c.log  abelian2 V      w=(0, 0, -1) (a,b)=(2, 2) g=3 dim=3272 H=10 n=5 pred=10 OK psi_S S=3: closed True, rank incr 10, True
+  check_eta.log        sl2      Veta   w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=1 H=1 n=- pred=1 OK dim Q^3=1 (cochains; V^eta_0 = psi(Q): True)
+  check_eta.log        sl2      Veta   w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=2 H=1 n=- pred=1 OK dim Q^2=2 (cochains; V^eta_0 = psi(Q): True)
+  check_eta12.log      sl2      Veta12 w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=5 H=1 n=- pred=1 OK
+  check_eta12.log      sl2      Veta12 w=(-1, 0, 0) (a,b)=(0, 0) g=1 dim=1 H=1 n=- pred=1 OK
+  check_eta12.log      sl2      Veta12 w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=3 H=1 n=- pred=1 OK
+  check_eta12.log      sl2      Veta12 w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=2 H=1 n=- pred=1 OK
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=-2 dim=2 H=1 n=1 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=166 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=1 dim=498 H=1 n=4 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, -1, -1) (a,b)=(0, 0) g=1 dim=2 H=1 n=1 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, -1, -1) (a,b)=(0, 0) g=0 dim=2 H=1 n=1 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, 0, -1) (a,b)=(0, 0) g=0 dim=2 H=1 n=1 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, -1, 0) (a,b)=(0, 0) g=0 dim=2 H=1 n=1 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=-1 dim=2 H=1 n=1 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=1 dim=54 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, -1, 0) (a,b)=(0, 0) g=-1 dim=2 H=1 n=1 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, -1, 0) (a,b)=(0, 0) g=1 dim=54 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, 0, 0) (a,b)=(0, 0) g=-1 dim=2 H=1 n=1 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(-1, 0, 0) (a,b)=(0, 0) g=1 dim=54 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=54 H=2 n=2 pred=2 OK psi_S S=7: closed True, rank incr 2, True
+  check_gl2.log        gl2      V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=28 H=2 n=2 pred=2 OK psi_S S=3: closed True, rank incr 2, True
+  check_gl2.log        gl2      V      w=(0, 0, 0) (a,b)=(1, 1) g=0 dim=1102 H=2 n=3 pred=2 OK psi_S S=7: closed True, rank incr 2, True
+  check_gl2b.log       gl2      V      w=(0, 0, -1) (a,b)=(1, 1) g=1 dim=366 H=2 n=3 pred=2 OK psi_S S=3: closed True, rank incr 2, True
+  check_gl2b.log       gl2      V      w=(-1, 0, 0) (a,b)=(1, 1) g=1 dim=366 H=2 n=3 pred=2 OK psi_S S=6: closed True, rank incr 2, True
+  check_sl2a.log       sl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=70 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=1 dim=23 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, -1, 0) (a,b)=(0, 0) g=1 dim=23 H=1 n=3 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, 0, 0) (a,b)=(0, 0) g=1 dim=23 H=1 n=3 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=27 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, -1, -1) (a,b)=(1, 0) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=1: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, 0, -1) (a,b)=(1, 0) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=2: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, -1, 0) (a,b)=(1, 0) g=1 dim=7 H=1 n=2 pred=1 OK psi_S S=4: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(0, -1, 0) (a,b)=(1, 0) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=5: closed True, rank incr 1, True
+  check_sl2a.log       sl2      V      w=(-1, 0, 0) (a,b)=(1, 0) g=0 dim=14 H=1 n=2 pred=1 OK psi_S S=6: closed True, rank incr 1, True
+  check_sl2d.log       sl2      V      w=(0, 0, -1) (a,b)=(1, 1) g=3 dim=646 H=1 n=5 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2d.log       sl2      V      w=(-1, -1, -1) (a,b)=(1, 1) g=5 dim=3 H=1 n=5 pred=1 OK psi_S S=0: closed True, rank incr 1, True
+  check_sl2d.log       sl2      V      w=(0, 0, 0) (a,b)=(1, 1) g=2 dim=4291 H=1 n=5 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, 0) (a,b)=(0, 0) g=0 dim=234 H=1 n=3 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, 0) (a,b)=(1, 0) g=-1 dim=81 H=1 n=2 pred=1 OK psi_S S=7: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, -1) (a,b)=(0, 0) g=1 dim=75 H=1 n=3 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+  check_sl2nc.log      sl2      V      w=(0, 0, -1) (a,b)=(1, 0) g=0 dim=42 H=1 n=2 pred=1 OK psi_S S=3: closed True, rank incr 1, True
+
+Covered:  abelian1: all 8 w in {0,-1}^3, (a,b) in {(0,0),(1,0),(0,1),(1,1),(2,1),(2,2)}, g = -3..3; 6 weights outside
+  {0,-1}^3 at (0,0),(1,0),(1,1).  abelian2: w in {0,-1}^3 at (0,0),(1,0),(1,1), g = -3..2; w = 0 at (2,1) (g = -1..1),
+  (2,2) (g = 0,1); 3 positive weights.  sl2: w in {0,-1}^3 at (0,0),(1,0), g = -3..1; w = 0,(-1,-1,-1),(0,0,-1),(-1,0,0)
+  at (1,1), g = -2..1; the class H^5(C_g^0)_{(1,1)} = 1 at w = 0 (g = 2), (0,0,-1) (g = 3), (-1,-1,-1) (g = 5); w = 0 at
+  (2,1) (g = 0,1: check_sl2b.log) and (2,2) (g = 0); positive weights (1,0,0), (0,1,-1); without charge restriction
+  (check_sl2nc.log) w = 0, (0,0,-1), (-1,-1,-1) at (0,0), (1,0).  V^eta: abelian1 at w = 0, (1,0,0), (0,1,1) and the four
+  negative weights (check_etaneg.log: dim V^eta = 0 in all 84 entries), sl2 at w = 0, (1,0,0); V^{eta_1b,eta_2b}:
+  abelian1, sl2 at w = 0, (-1,0,0) (and (1,0,0) for abelian1).  abelian2 at (2,2): all 8 w in {0,-1}^3
+  (check_abelian2b.log, check_abelian2c.log).  gl2 (check_gl2.log): all 8 w at (0,0), g = -3..1; w = 0, (0,0,-1),
+  (-1,-1,-1) at (1,0); w = 0 at (1,1), g = -1, 0; w = (0,0,-1), (-1,0,0) at (1,1), g = 0, 1 (check_gl2b.log).
+  Wall-clock: sl2 (2,1) w = 0: 1512 s; sl2 (2,2) w = 0, g = 0: 530 s; sl2 (1,1) w = 0, g = 2: 513 s; all others < 2 min.
+Extra exact checks (logs/extra_checks.log): eta_S pi^*phi = +- psi_S(phi) (P6, P8), abelian2 and sl2, arity 1..4, all S;
+  sl2: S_free, I closed, 2 S_free + 3 I in B^0(V), I not exact, eta_v I in D M, eta_v S_free not in D M (3.2').
+C_g^0 side against an independent code (deform/REPORT.txt Sec. 3, 4.1, G-invariant trace-basis cochains): sl2
+  H^3_{(1,1)} = 0, H^3_{(2,0)} = 0, H^3_{(2,2)} = 0, H^4_{(2,2)} = 0 (logs/qtable.log, charge 0): agree.
+logs/qtable.log, sl2 (charge 0), nonzero dim H^n(C_g^0)_{(a,b)},
+  (a,b) in {(0,0),(1,0),(2,0),(1,1),(3,0),(2,1),(2,2),(3,1),(4,0)}, n = 1..5:
+  (0,0): H^3 = 1;  (1,0): H^2 = 1;  (1,1): H^5 = 1;  all others 0.
+Not covered: sl2 at (2,2), g = 1 (slice M^2 has 28784 monomials at charge 0); gl2 at (1,1), g = 1 (M^2: 16722);
+  nonabelian algebras with H^4(C_g^0)_{(2,2)} ≠ 0 under the full differential (sl3, gl3: too large for this code);
+  the BV bracket.
+
+
+5. Not done / not determined
+----------------------------
+- The global sign between {S_cl,-} and Q (0.1), and the dictionary sign eps between the BV bracket on V_ht and the shuffle
+  bracket of deform Sec. 0, are not derived; compatibility of psi_U with the brackets is not re-derived here.
+- One-loop term Q_(1) J for J not in V_ht: not analysed.  Independence of the order-hbar^2 obstruction class of the
+  representative of [J_1] (J_1 -> J_1 + Q K): not re-derived.
+- Joint-dilation equivariance of the heat-kernel quantization (used only in 3.4 and in the last line of 3.2): not proved.
+- 3.1: the identification of the eta-action on E ⊗ E (Koszul signs) with iota_v^x + iota_v^y on Omega*(X x X) is used
+  without a separate computation; no Feynman-graph computation of eta_v O[L] was run.
+- V (constant-coefficient densities modulo constant-coefficient total derivatives, Williams eq. (12), GW Lemma A.7) is
+  taken as the definition of the translation-invariant local functionals; classes of Dens ⊗_D C*_red(JL) that are
+  translation invariant without a constant-coefficient representative were not examined.
+- e ≠ 0 (Moyal) version: no computation.
+- Costello-Gwilliam Vols. 1-2, Costello's book, Williams' thesis: not read.

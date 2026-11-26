@@ -1,0 +1,4 @@
+K33 h=1.40 tol=3e-05 m=10 p=2 points 65571 346s
+  b4 src{0,1,2,3}: shift0 6.32889617e-05  shift h/2 6.31721031e-05  boundary-layer mass 3.0e-07
+  b3 src{0,1,3,5}: shift0 4.33730733e-08  shift h/2 1.21330422e-07  boundary-layer mass 3.0e-07
+  b3 src{0,1,2}: shift0 -5.08507082e-10  shift h/2 -3.98007390e-10  boundary-layer mass 3.0e-07

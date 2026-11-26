@@ -1,0 +1,52 @@
+graph 0 (large plan): moves [(4, 5, [[0, 1], [2, 3], [4, 5], [6, 7], [8]])]
+  graph0: recursion == Pf(C_rec): True, U equal: True, #components 48 (rec 0.14s, Pf 0.00s)
+  graph0: recursion == Pf(C_rec): True, U equal: True, #components 48 (rec 0.18s, Pf 0.00s)
+  det[B^T; C_rec] = 48
+graph 0 (small plan): moves [(4, 5, [[0, 1], [8]]), (4, 5, [[2, 3], [9]]), (4, 5, [[4, 5], [10]]), (3, 4, [[6], [7, 11]])]
+  graph0: recursion == Pf(C_rec): True, U equal: True, #components 48 (rec 0.04s, Pf 0.00s)
+  graph0: recursion == Pf(C_rec): True, U equal: True, #components 48 (rec 0.04s, Pf 0.00s)
+  det[B^T; C_rec] = -48
+graph 1 (large plan): moves [(0, 2, [[0, 5], [1], [4, 7]]), (0, 3, [[2], [3, 8], [9, 6]])]
+  graph1: recursion == Pf(C_rec): True, U equal: True, #components 52 (rec 0.10s, Pf 0.00s)
+  graph1: recursion == Pf(C_rec): True, U equal: True, #components 52 (rec 0.10s, Pf 0.00s)
+  det[B^T; C_rec] = -52
+graph 1 (small plan): moves [(0, 2, [[0, 5], [1]]), (0, 2, [[4, 7], [9]]), (0, 3, [[2], [3, 8]]), (0, 2, [[10], [11, 6]])]
+  graph1: recursion == Pf(C_rec): True, U equal: True, #components 52 (rec 0.03s, Pf 0.00s)
+  graph1: recursion == Pf(C_rec): True, U equal: True, #components 52 (rec 0.04s, Pf 0.00s)
+  det[B^T; C_rec] = -52
+graph 2 (large plan): moves [(0, 1, [[0], [1, 4]]), (0, 4, [[2], [3, 8]]), (1, 4, [[5, 7], [6], [9, 10]])]
+  graph2: recursion == Pf(C_rec): True, U equal: True, #components 54 (rec 0.10s, Pf 0.00s)
+  graph2: recursion == Pf(C_rec): True, U equal: True, #components 54 (rec 0.12s, Pf 0.00s)
+  det[B^T; C_rec] = -54
+graph 2 (small plan): moves [(0, 1, [[0], [1, 4]]), (0, 4, [[2], [3, 8]]), (1, 4, [[5, 7], [6]]), (0, 1, [[9], [10, 11]])]
+  graph2: recursion == Pf(C_rec): True, U equal: True, #components 54 (rec 0.02s, Pf 0.00s)
+  graph2: recursion == Pf(C_rec): True, U equal: True, #components 54 (rec 0.03s, Pf 0.00s)
+  det[B^T; C_rec] = 54
+graph 3 (large plan): moves [(0, 1, [[0], [1, 3]]), (1, 4, [[4, 7], [5]]), (1, 5, [[6], [9, 2], [10, 8]])]
+  graph3: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.07s, Pf 0.00s)
+  graph3: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.08s, Pf 0.00s)
+  det[B^T; C_rec] = -55
+graph 3 (small plan): moves [(0, 1, [[0], [1, 3]]), (1, 4, [[4, 7], [5]]), (1, 5, [[6], [9, 2]]), (1, 4, [[10], [11, 8]])]
+  graph3: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.04s, Pf 0.00s)
+  graph3: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.05s, Pf 0.00s)
+  det[B^T; C_rec] = -55
+graph 4 (large plan): moves [(0, 4, [[2], [3, 8]]), (0, 3, [[1], [9, 7]]), (2, 3, [[0, 10], [4, 5], [6]])]
+  graph4: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.06s, Pf 0.00s)
+  graph4: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.06s, Pf 0.00s)
+  det[B^T; C_rec] = -55
+graph 4 (small plan): moves [(0, 4, [[2], [3, 8]]), (0, 3, [[1], [9, 7]]), (2, 3, [[0, 10], [6]]), (1, 2, [[4], [5, 11]])]
+  graph4: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.06s, Pf 0.00s)
+  graph4: recursion == Pf(C_rec): True, U equal: True, #components 55 (rec 0.06s, Pf 0.00s)
+  det[B^T; C_rec] = -55
+theta (1, 2, 2)
+  theta: recursion == Pf(C_rec): True, U equal: True, #components 8 (rec 0.00s, Pf 0.00s)
+  theta: recursion == Pf(C_rec): True, U equal: True, #components 8 (rec 0.01s, Pf 0.00s)
+  det[B^T; C_rec] = -8
+theta (2, 2, 3)
+  theta: recursion == Pf(C_rec): True, U equal: True, #components 16 (rec 0.01s, Pf 0.00s)
+  theta: recursion == Pf(C_rec): True, U equal: True, #components 16 (rec 0.01s, Pf 0.00s)
+  det[B^T; C_rec] = -16
+theta (1, 3, 3)
+  theta: recursion == Pf(C_rec): True, U equal: True, #components 15 (rec 0.00s, Pf 0.00s)
+  theta: recursion == Pf(C_rec): True, U equal: True, #components 15 (rec 0.00s, Pf 0.00s)
+  det[B^T; C_rec] = 15

@@ -1,0 +1,40 @@
+A1  recursion versus Pfaffian (C_rec), exact, 2 random rational points each
+   d2n4 graph0 large            n=4  equal: [True, True]
+   d2n4 graph0 small            n=4  equal: [True, True]
+   d2n4 graph1 large            n=4  equal: [True, True]
+   d2n4 graph1 small            n=4  equal: [True, True]
+   d2n4 graph2 large            n=4  equal: [True, True]
+   d2n4 graph2 small            n=4  equal: [True, True]
+   d2n4 graph3 large            n=4  equal: [True, True]
+   d2n4 graph3 small            n=4  equal: [True, True]
+   d2n4 graph4 large            n=4  equal: [True, True]
+   d2n4 graph4 small            n=4  equal: [True, True]
+   theta(1, 2, 2)               n=2  equal: [True, True]
+   theta(1, 3, 3)               n=2  equal: [True, True]
+   theta(2, 2, 3)               n=2  equal: [True, True]
+   banana(1, 3, 3, 3, 3)        n=4  equal: [True, True]
+   banana(2, 2, 3, 3, 3)        n=4  equal: [True, True]
+A2(i)  rho_n ^ rho_n on P_n (exact, random rational positive M)
+   n=2 (Sym_2): #components of rho^rho = 0;  #components of tr(B^2)^j, j=1..2: [0, 0]  (0.0s)
+   n=4 (Sym_4): #components of rho^rho = 0;  #components of tr(B^2)^j, j=1..3: [0, 0, 0]  (1.1s)
+   n=6 (random 12-plane): #components of rho^rho = 0;  #components of tr(B^2)^j, j=1..3: [0, 0, 0]  (53.8s)
+   n=8 (random 16-plane): #components of rho^rho = 0;  #components of tr(B^2)^j, j=1..2: [0, 0]  (728.3s)
+A2(ii)  rho_n ^ rho_n pulled back to Schwinger space (gauge slice t_{N-1} = 1), exact
+   d2n4 graph0 large            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph0 small            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph1 large            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph1 small            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph2 large            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph2 small            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph3 large            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph3 small            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph4 large            n=4, N-1=8: #components of Pf ^ Pf = 0
+   d2n4 graph4 small            n=4, N-1=8: #components of Pf ^ Pf = 0
+   theta(1, 2, 2)               n=2, N-1=4: #components of Pf ^ Pf = 0
+   theta(1, 3, 3)               n=2, N-1=6: #components of Pf ^ Pf = 0
+   theta(2, 2, 3)               n=2, N-1=6: #components of Pf ^ Pf = 0
+   banana(1, 3, 3, 3, 3)        n=4, N-1=12: #components of Pf ^ Pf = 0
+   banana(2, 2, 3, 3, 3)        n=4, N-1=12: #components of Pf ^ Pf = 0
+A3  graph 2, small plan: rho_4 = s U^{-1/2} prod_m [t_m dw_m1 / (w_m1 w_m2)] ^ (1/(4T)) dlog(t_9 t_10 t_11 / T^3)
+   plan [(0, 1, [[0], [1, 4]], [[1], [1, -1]]), (0, 4, [[2], [3, 8]], [[1], [1, -1]]), (1, 4, [[5, 7], [6]], [[1, 1], [1]]), (0, 1, [[9], [10, 11]], [[1], [1, -1]])]
+   ratio rec / formula over all components and 4 points: {Fraction(-1, 1)}

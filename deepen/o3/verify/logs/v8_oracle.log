@@ -1,0 +1,2 @@
+theta(1, 3, 3) v=1: exact -101*pi/180 = -1.7627825445;  oracle -1.7625165090 +- 2.0e-03;  agreeing digits 3.8  (248s)
+theta(2, 2, 3) v=5: exact pi/15 = 0.2094395102;  oracle 0.2094172406 +- 5.7e-04;  agreeing digits 4.0  (454s)

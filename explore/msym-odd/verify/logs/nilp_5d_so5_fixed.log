@@ -1,0 +1,14 @@
+5d, so5 (dim 10), H=2, k=2, graphs ['A', 'B'], signs s = [1, -1], mutate=None
+   A: K(lam;0)/pi weights for undifferentiated letters: {((1, 0), (0, 1), (0, 1), (1, 0)): '1/20', ((1, 0), (0, 1), (1, 0), (0, 1)): '-1/20', ((0, 1), (1, 0), (0, 1), (1, 0)): '-1/20', ((0, 1), (1, 0), (1, 0), (0, 1)): '1/20'}
+   B: K(lam;0)/pi weights for undifferentiated letters: {((1, 0), (0, 1), (0, 1), (1, 0)): '-1/30', ((1, 0), (0, 1), (1, 0), (0, 1)): '1/30', ((0, 1), (1, 0), (0, 1), (1, 0)): '1/30', ((0, 1), (1, 0), (1, 0), (0, 1)): '-1/30'}
+Q0hat^2 = 0 on 7 random operators: True (0.0s)
+0_0^01 1_1 01_2                    |Q_G O| [522, 448], |{Q0,Q_G}O| [248, 248], eqs 248, rank 1, null [['1', '1']]; cumulative 248 eqs, rank 1, null [['1', '1']] (2.4s)
+0_0 1_1^10 01_2                    |Q_G O| [522, 448], |{Q0,Q_G}O| [248, 248], eqs 248, rank 1, null [['1', '1']]; cumulative 496 eqs, rank 1, null [['1', '1']] (2.5s)
+01_0^10 01_1 0_2                   |Q_G O| [2088, 1792], |{Q0,Q_G}O| [1240, 1240], eqs 1240, rank 1, null [['1', '1']]; cumulative 1736 eqs, rank 1, null [['1', '1']] (16.9s)
+01_0 01_1^01 e_2                   |Q_G O| [522, 448], |{Q0,Q_G}O| [248, 248], eqs 248, rank 1, null [['1', '1']]; cumulative 1984 eqs, rank 1, null [['1', '1']] (1.9s)
+0_0 1_1 01_2^11                    |Q_G O| [1882, 1670], |{Q0,Q_G}O| [2344, 2344], eqs 2344, rank 1, null [['1', '1']]; cumulative 4328 eqs, rank 1, null [['1', '1']] (16.5s)
+01_0 0_1^10 01_2^01                |Q_G O| [7592, 6736], |{Q0,Q_G}O| [11680, 11680], eqs 11680, rank 1, null [['1', '1']]; cumulative 16008 eqs, rank 1, null [['1', '1']] (225.5s)
+0_0^10 1_1^01 01_2                 |Q_G O| [1898, 1684], |{Q0,Q_G}O| [2336, 2336], eqs 2336, rank 1, null [['1', '1']]; cumulative 18344 eqs, rank 1, null [['1', '1']] (18.9s)
+TOTAL: 7 operators, 7 with some Q_G O != 0, 7 with nonzero anticommutators; 18344 equations, rank 1, null space [['1', '1']]
+total 284.7s
+python3 nilp_verify.py 5d so5 0 0 --ops   177.19s user 36.95s system 68% cpu 5:10.75 total

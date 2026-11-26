@@ -1,0 +1,36 @@
+T=0 H=1 (1, 1, 1) c0 = claim: True  J0 numeric digits: 19.0  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=2 (1, 2, 2) c0 = claim: True  J0 numeric digits: 18.9  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=3 (1, 3, 3) c0 = claim: True  J0 numeric digits: 17.6  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=3 (2, 2, 3) c0 = claim: True  J0 numeric digits: 17.3  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=4 (1, 4, 4) c0 = claim: True  J0 numeric digits: 17.2  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=4 (2, 3, 4) c0 = claim: True  J0 numeric digits: 17.2  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=4 (3, 3, 3) c0 = claim: True  J0 numeric digits: 25.4  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=5 (1, 5, 5) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=5 (2, 4, 5) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=5 (3, 3, 5) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=5 (3, 4, 4) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=6 (1, 6, 6) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=6 (2, 5, 6) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=6 (3, 4, 6) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=6 (3, 5, 5) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=0 H=6 (4, 4, 5) c0 = claim: True  sign_htk = claim: True  E[Q(L)] = Q(E[L]): True  Lbar = sum mu_v lam_v (claimed mu): True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=0 (1, 1, 1) c1 = claim: True  J1 numeric digits: 13.4  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=1 (1, 2, 2) c1 = claim: True  J1 numeric digits: 13.3  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=2 (1, 3, 3) c1 = claim: True  J1 numeric digits: 12.0  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=2 (2, 2, 3) c1 = claim: True  J1 numeric digits: 11.4  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=3 (1, 4, 4) c1 = claim: True  J1 numeric digits: 11.6  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=3 (2, 3, 4) c1 = claim: True  J1 numeric digits: 11.4  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=3 (3, 3, 3) c1 = claim: True  J1 numeric digits: 22.2  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=4 (1, 5, 5) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=4 (2, 4, 5) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=4 (3, 3, 5) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=4 (3, 4, 4) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=5 (1, 6, 6) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=5 (2, 5, 6) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=5 (3, 4, 6) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=5 (3, 5, 5) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+T=1 H=5 (4, 4, 5) c1 = claim: True  sign_htk = claim: True  K_htk = (-1)^((q+1)D) K[C3] (htk.kernel_exact): True
+sigma moments vs sympy iterated integrals (n=2,3,4): True
+C5/C6 examples (htk convention) equal own closed values: True
+C8 interior roots (38 cases): K_htk[relabelled] = (-1)^D K_htk, Lbar = sum (mu_v - mu_rho) lam_v: True
+ALL VALUE CHECKS PASS: True  time 752.8 s

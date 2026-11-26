@@ -1,0 +1,236 @@
+REPORT -- exact cohomology of the strict model (explore/sugra-11d-qme/cohomology), 2026-11-21
+
+Conventions
+  Letters X^i_a (odd), nu_a (even), gamma_{i,a} (even), beta_a (odd); D_k: phi_a -> phi_{a+e_k}.
+  Q (odd, left):  Q(ab) = Q(a) b + (-1)^{|a|} a Q(b),  Q(phi_a) = D^a(Q phi),
+    Q X^i     = - X^j d_j X^i                                  (sign fixed, see T1)
+    Q nu      = (1-nu) d_i X^i - X^i d_i nu
+    Q gamma_i = d_i beta + X^k (d_i gamma_k - d_k gamma_i)
+    Q beta    = X^i X^j d_i gamma_j
+  N := #X + #beta.  Q has N-degree +1; parity = N mod 2.  Slot = (w, t, N);  G = -w - sum_k t_k.
+  C_quot = C[X, gamma, beta] / (D^a div X), basis letters: all except X^1_a with a_1 >= 1,
+    X^1_a := - sum_{i>=2} X^i_{a-e_1+e_i}.
+  S_n-orbit representatives t (t non-increasing) are computed; dims are S_n-invariant [derived: Q is S_n-covariant].
+  Exact arithmetic: integer fraction-free sparse elimination with content removal (jets.Echelon); no floating point,
+  no modular step.  Weyl/character counts: exact integers (fractions.Fraction, integrality asserted).
+  Code: jets.py (algebra, Q, D, quotient, Echelon), cohom.py (slots, H(C_quot), H(V)), reps.py (representatives).
+  [checked] = exact computation (script -> log); [derived] = argument only.
+
+---------------------------------------------------------------------------------------------------------------
+T1. Nilpotency, substitution, gradings                    script t1_checks.py, log t1.log
+---------------------------------------------------------------------------------------------------------------
+Sign fix [derived]:
+  mu^i = (1-nu) X^i,
+  Q mu^i = -d_j((1-nu) X^j X^i) = d_j nu X^j X^i - (1-nu) d_j X^j X^i - (1-nu) X^j d_j X^i,
+  Q mu^i = -(Q nu) X^i + (1-nu) Q X^i,   Q nu = (1-nu) d_j X^j - X^j d_j nu
+  => (1-nu) Q X^i = -(1-nu) X^j d_j X^i  =>  Q X^i = - X^j d_j X^i.
+  (cohomology_11d.md sec. 1 and the task statement have +X^j d_j X^i.)
+Q^2 = 0 on all generators [checked]:
+  n=1 |a|<=3 (16 generators), n=2 |a|<=3 (60), n=3 |a|<=3 (160), n=5 |a|<=1 (72):  Q^2 = 0 with Q X = -X dX.
+  With the stated sign Q X = +X dX: Q^2 != 0 on 4/16, 40/60, 100/160, 42/72 generators, e.g. (n=1)
+    Q^2 nu = 2 X X_2 - 2 X X_1 nu_1 - 2 X X_2 nu,   (n=2) Q^2 beta = -2 X1 X1_10 X2 g1_01 + ... ; Q^2 X = 0 for both signs.
+Substitution [checked]:
+  Q_strict(D^a((1-nu)X^i)) = -D^a D_j((1-nu) X^j X^i):  n=2 (12 checks), n=3 (30), |a|<=2: true for Q X=-X dX,
+  false for Q X=+X dX.
+  psi: X^i_a -> D^a(f mu^i), f = sum_{k<=4} nu^k, psi = id on nu, gamma, beta; Q_source = R-Q0 at g = 0:
+  Q_source psi(phi_a) = psi(Q_strict phi_a) mod (nu-degree > 2), all generators |a|<=2: n=2 (36), n=3 (80): true.
+Gradings [checked] (n=1,2,3 |a|<=3; n=5 |a|<=1): every term of Q(letter) has the same (w, G, t) as the letter,
+  N raised by 1, arity >= 1; arity-1 terms occur only in Q nu (-> X) and Q gamma (-> beta).
+  G = -w - sum t [derived]: sum t = #X - #gamma - sum|a|.
+  Further Z-grading N = #X + #beta (refines parity) [checked with the above].
+dg ideal [checked]: Q(D^a div X) in (D^b div X):  n=1,2,3 |a|<=3, n=5 |a|<=1  (tr((dX)^2) = 0 for odd X [derived]).
+pi: C_full -> C_quot (nu_a -> 0, X -> [X]) commutes with Q on generators, n=2,3 |a|<=3 [checked] (t3_nu.py, t3.log).
+Finite slots of C_quot [derived]: letters with G = -1 (X^i_0, beta_0) and G = 0 (X^i_{e_j}) are odd, all other
+  letters have G >= 1 or are gamma (bounded by w); hence dim C_quot(w, G) < infinity.  In C_full only nu_0 (G=0, t=0,
+  even) is unbounded.
+
+---------------------------------------------------------------------------------------------------------------
+T2. Single-letter cohomology of the linear part           script t2_linear.py, log t2.log
+---------------------------------------------------------------------------------------------------------------
+  Q_lin nu_a = sum_i X^i_{a+e_i},  Q_lin gamma_{i,a} = beta_{a+e_i},  Q_lin X = Q_lin beta = 0   [checked]
+  H(Q_lin | letters) = X/(p.X)  +  ker(gamma -> beta)  +  C beta_0                                 [checked]
+    nu -> X injective; ker(gamma -> beta) = span{gamma_{j,a+e_i} - gamma_{i,a+e_j}} (p ^ gamma); coker(gamma->beta) = C beta_0.
+  Checked on all slots (G,t): G <= 4 (n=2, 48 slots), G <= 3 (n=3, 100 slots).
+  dim X/(p.X) at |a|=m: n C(m+n-1,n-1) - C(m+n-2,n-1):   n=2: 2,3,4,5,6,7 (m=0..5);  n=3: 3,8,15,24,35 (m=0..4)
+  dim ker(gamma->beta) at |a|=m: n C(m+n-1,n-1) - C(m+n,n-1):  n=2: 0,1,2,3,4 (m=0..4);  n=3: 0,3,8,15 (m=0..3)
+  Per (|a|, t) [checked]:
+   n=2, X/(p.X) (t = e_i - a):  every t with t_1+t_2 = 1-m, t_i <= 1, multiplicity 1:
+     m=0: (0,1),(1,0); m=1: (-1,1),(0,0),(1,-1); m=2: (-2,1),(-1,0),(0,-1),(1,-2); ... m=5: (-5,1),...,(1,-5)
+   n=2, ker(gamma->beta) (t = -e_i - a): every t with t_1+t_2 = -1-m, t_i <= -1, multiplicity 1:
+     m=1: (-1,-1); m=2: (-2,-1),(-1,-2); m=3: (-3,-1),(-2,-2),(-1,-3); m=4: (-4,-1),...,(-1,-4)
+   general n [checked n=2,3]: mult_{X/pX}(m,t) = #{i: e_i - t in N^n} - [ -t in N^n ]  (sum t = 1-m)
+                                 = n-1 if all t_i <= 0,  1 if exactly one t_i = 1;
+                              mult_{ker}(m,t) = #{i: t_i <= -1} - 1  (t <= 0, sum t = -1-m).
+   n=3, X/(p.X): m=1: (0,0,0):2, the six e_i-e_j:1;  m=2: (-1,0,0)-type:2 (x3), (1,-2,0)-type:1 (x6), (1,-1,-1)-type:1 (x3)
+   n=3, ker(gamma->beta): m=1: (-1,-1,0)-type:1 (x3); m=2: (-1,-1,-1):2, (-2,-1,0)-type:1 (x6); m=3: total 15
+     (full lists in t2.log)
+  beta part: only C beta_0 at (G,t) = (-1, 0).
+
+---------------------------------------------------------------------------------------------------------------
+T3. nu-elimination, n = 2                                  script t3_nu.py, logs t3.log (w=0), t3_w1.log (w=1)
+---------------------------------------------------------------------------------------------------------------
+[derived] Arity filtration F^a (arity >= a) on C_full^{<=A} = C_full/(arity > A) and on C_quot^{<=A}:
+  E_1 = Sym(H(Q_lin | letters)) for both (char 0), pi induces E_1-isomorphism (T2), finite filtration =>
+  H(C_full^{<=A}) = H(C_quot^{<=A}) for every A;  C_quot^{<=A} = C_quot on a slot iff A >= a_max(slot).
+[checked] dim H per N, every A = 1..a_max+2 (or until dim C_full^{<=A} > 1.2e5):
+  w=1 G=-3 t=(1,1),   a_max=6 : A=3:{3:1} A=4:{3:1,4:1} A=5:{3:1} A>=6:{3:1,6:1} = H(C_quot)        (A<=8)
+  w=1 G=-1 t=(0,0),   a_max=8 : A=1:{1:1} A=2:{1:1,2:1} A=3:{3:2} A=4:{3:1,4:6} A=5:{5:5} A=6:{5:1,6:4}
+                                A=7:{5:1,7:1} A>=8:{5:1,8:1} = H(C_quot)                               (A<=10)
+  w=1 G=0  t=(0,-1),  a_max=9 : A=2:{1:1,2:1} ... A=8:{8:1} A>=9:{} = H(C_quot)                       (A<=11)
+  w=1 G=1  t=(-1,-1), a_max=10: A=1:{0:1} ... A=8:{4:1,7:1,8:6} A=9:{4:1,7:1,9:1} A>=10:{4:1,7:1} = H(C_quot) (A<=12)
+  w=0 G=-2 t=(1,1),   a_max=5 : A>=5:{2:1,5:1}            w=0 G=0 t=(0,0), a_max=7: A>=7:{0:1,7:1}
+  w=0 G=1  t=(0,-1),  a_max=8 : A>=8:{}                    w=0 G=2 t=(-1,-1), a_max=9: A>=9:{}
+  w=0 G=4  t=(-2,-2), a_max=10: A>=10:{} (A=10 computed, dim C_full^{<=10} = 139608)
+  In every case and every A: H(C_full^{<=A}) = H(C_quot^{<=A}) exactly; stabilization exactly at A = a_max(C_quot slot);
+  for A < a_max the truncation produces boundary classes in N close to A (listed in the logs), identical on both sides.
+  dim C_full^{<=A} grows linearly in A for A > a_max (nu_0^k factors), e.g. w=1 G=1 t=(-1,-1): 42408, 52384, 62360.
+
+---------------------------------------------------------------------------------------------------------------
+T4. Translation lemma                  scripts t4_homotopy.py (log t4_homotopy.log), run_tables.py, analyze.py,
+                                       t5_central.py (explicit map); logs tables_n*_w*.log, analysis_n*_w*.log
+---------------------------------------------------------------------------------------------------------------
+Operator identities [checked] on all generators |a|<=3 and 150 random monomials (arity <= 5), n=2,3, C_full and C_quot:
+  [Q, D_k] = 0;   D_k(ideal) in ideal;
+  iota_k X^i_a = delta^i_k delta_{a,0},   h_k beta_a = - gamma_{k,a}:
+      [Q, iota_k + h_k] = Q(iota_k+h_k) + (iota_k+h_k)Q = - D_k
+  i.e. D_k = [Q, -(iota_k + h_k)]; the choices h_k beta = +gamma_k (either overall sign) and +D_k fail.
+  Components [derived, consistent with the check]:
+      [Q,iota_k] X^i_a = -X^i_{a+e_k},  [Q,iota_k] nu_a = -nu_{a+e_k},
+      [Q,iota_k] gamma_{i,a} = gamma_{k,a+e_i} - gamma_{i,a+e_k},  [Q,h_k] gamma_{i,a} = -gamma_{k,a+e_i},
+      [Q,iota_k+h_k] beta_a = d^a(X^j g_{j,e_k} - X^i g_{k,e_i}) - Q gamma_{k,a} = -beta_{a+e_k}.
+  [eta_k, eta_l] = 0, [eta_k, D_l] = 0 (eta_k = iota_k + h_k), eta_k(ideal) in ideal.
+gl_n Cartan identities [checked] (C_quot, n=2,3, same test set):
+  (multi-index al)  xi = z^b d_a (a != b):  iota_xi X^i_al = delta^i_a delta_{al,e_b},  h_xi beta_al = -al_b gamma_{a,al-e_b}:
+      [Q, iota_xi + h_xi] = E_ba,   E_ba X^i_al = delta^i_a X^b_al - al_b X^i_{al-e_b+e_a},
+      E_ba gamma_{i,al} = -delta_{ib} gamma_{a,al} - al_b gamma_{i,al-e_b+e_a},  E_ba beta_al = -al_b beta_{al-e_b+e_a};
+      E_ba shifts t by e_b - e_a;  [Q, E_ab] = 0.
+  c in Z^n, sum c = 0:  iota_c X^i_{e_i} = c_i,  h_c beta_al = -sum_k c_k al_k gamma_{k,al-e_k}:  [Q, iota_c + h_c] = (c.t) Id.
+  (iota for c = (1,..,1) does not preserve the ideal: iota(div_0) = n.)
+  => [derived] H(C_quot) is a trivial sl_n-module, supported on t = (k,...,k), G = -w - nk.
+     [checked] no nonzero H(C_quot) off t = (k,..,k) in any computed slot (n=2 w=0,1; n=3 w=1).
+Freeness [derived]: C_quot^{w=1} = (+)_a Sym^a(L_X/div) (x) L_{gamma,beta}, L_{gamma,beta} free over C[D_1..D_n];
+  M (x) free is free (untwisting); S_a-coinvariants are summands => free.  Hence
+      dim V_t = sum_{K subset [n]} (-1)^|K| dim C_quot,{t+e_K}      (per N and per letter content)
+  [checked] on every computed H(V) slot (n=2 w=1: 494 slots; n=3 w=1: G<=-1).
+  For w=0 freeness fails [checked]: n=2 t=(0,0) N=1: dim V = 0, alternating sum = -1; t=(0,-1) N=0: 0 vs -1
+  (H_1 of the Koszul complex on L_X/div: sum_k theta_k X^k_0; and the constant 1).
+Lemma [derived from the identities and freeness]:
+  H(V)_{w=1, t, N} = (+)_{K subset [n]} H(C_quot)_{w=1, t+e_K, N+|K|}   (G shifted by -|K|, parity by |K|),
+  explicit map [c] (x) theta_K -> [eta_K c],  eta_K = eta_{k_1} ... eta_{k_j}.
+Dimension comparison [checked]:
+  n=2 w=1, all t-orbits, G = -3..6 (H(C) also G = 7 all t): 494 H(V) slots, 0 mismatches   (analysis_n2_w1.log)
+  n=3 w=1, all t-orbits, G = -4..-1: PENDING_N3_LEMMA
+  n=3 w=1, G=0, t=(0,0,-1): PENDING_N3_G0
+Explicit map [checked] (t5_central.py): the classes eta_K c (c over H(C_quot) representatives at (t+e_K, N+|K|)) are
+  V-cocycles and a basis of H(V)_{t,N} on every nonzero slot: n=2 G=-3..3 (all t); n=3 G=-4..PENDING_N3_T5 (t+e_K=(k,..,k)).
+w=0 test (n=2, all t, G=-2..6) [checked] (analysis_n2_w0.log): the lemma holds on all 369 slots except
+  (G,t,N) = (0,(0,0),0): dim H(V) = 1 (the constant 1), lemma value 2 (1 from H^0(C)=C.1 and 1 from
+  X^1_0 X^2_0 (x) theta_1 theta_2, X^1_0X^2_0 in H^2(C^{w=0})_{(1,1)}); the lemma terms 1 (x) theta_K (N = -|K| < 0) do not exist.
+  H(C^{w=0}), n=2: G=-2 t=(1,1) N=2,5; G=0 t=(0,0) N=0,7; G=8 t=(-4,-4) N=7,10; zero for all other slots G<=6 (all t),
+    zero at G=10 t=(-5,-5) (tables_n2_w0_a.log, tables_n2_w0_diag.log).
+  H(V^{w=0}), n=2: G=-2 (1,1) N=2,5; G=-1 (1,0) N=1,4; G=0 (0,0) N=0,3,7; G=1 (0,-1) N=6; G=2 (-1,-1) N=5; else 0 (G<=6).
+
+---------------------------------------------------------------------------------------------------------------
+T5. Central / constant sector                              script t5_central.py, logs t5_n2.log, t5_n3.log
+---------------------------------------------------------------------------------------------------------------
+  Q beta_0 = X^i_0 X^j_0 gamma_{j,e_i} =: kappa;  n=2: kappa = X^1_0 X^2_0 (gamma_{2,10} - gamma_{1,01}) = X^1_0X^2_0 F_0,
+  F_0 := gamma_{2,e_1} - gamma_{1,e_2}.  No class of C_quot at (w,G,t,N) = (1,-1,0,1); kappa is exact (= Q beta_0).
+  Splitting test [checked]: for each class z, c(z) := beta_0-coefficient; Qz = 0 => Qc = 0 in C^{w=0}_{t,N-1}
+  [derived: no other term of Qz contains beta_0]; c(z) exact or zero <=> class from the F-subcomplex.
+  Notation: om = X^1_0 X^2_0;  s3 = X^2_10 X^1_01 X^2_01 (sl_2 volume, X^1_10 = -X^2_01);  c5 = om s3;
+            c7 = om s3 X^2_20 X^1_02  (generators of H(C^{w=0}) at (1,1) N=2,5 and (0,0) N=7, n=2).
+ n=2, H(C_quot)^{w=1}, G = -3..2, all t [checked]; representatives (reduced modulo Q C^{N-1}):
+  G=-3 t=(1,1)  N=3: beta_0 om                                    c(z) = om, not exact
+  G=-3 t=(1,1)  N=6: beta_0 c5                                    c(z) = -c5, not exact
+  G=-1 t=(0,0)  N=5: c5 (gamma_{2,10} - gamma_{1,01}) = c5 F_0      c(z) = 0
+  G=-1 t=(0,0)  N=8: beta_0 c7                                    c(z) = -c7, not exact
+  G= 1 t=(-1,-1) N=4: om (X^1_01 X^2_21 + X^2_10 X^2_03 - X^2_20 X^1_02)(gamma_{1,01} - gamma_{2,10})   c(z) = 0
+  G= 1 t=(-1,-1) N=7: c7 F_0                                      c(z) = 0
+  all other slots with G in [-3,2]: 0 (G=-2,0,2 by the Cartan support; checked).
+ n=2, H(V)^{w=1}, G = -3..3 [checked], representative eta_K c (reduced mod Q C^{N-1} + sum D C):
+  G=-3 (1,1)   N=3: beta_0 om;  N=6: beta_0 c5                                         (K = {})
+  G=-2 (1,0)   N=2: -X^1_0 beta_0 - X^1_0 X^2_0 gamma_2;  N=5: 3 terms                  (K = {2}, from G=-3)
+  G=-1 (0,0)   N=1: -(beta_0 + X^1_0 gamma_{1,0} + X^2_0 gamma_{2,0}) = -beta'_0, beta' := beta + X^k gamma_k   (K={1,2}, from om beta_0)
+               N=4: 7 terms (K={1,2}, from beta_0 c5);  N=5: c5 F_0;  N=8: beta_0 c7     (K = {})
+  G= 0 (0,-1)  N=4, N=7  (K={2}, from G=-1 N=5, 8)
+  G= 1 (-1,-1) N=3, N=6  (K={1,2}, from G=-1 N=5, 8);  N=4, N=7 (K={}, as in H(C))
+  G= 2 (-1,-2) N=3, N=6  (K={2}, from G=1);   G= 3 (-2,-2) N=2, N=5 (K={1,2}, from G=1)
+  (full polynomials in t5_n2.log)
+ n=3, H(C_quot)^{w=1} [checked] (G=-4..-1, t=(k,k,k); other t zero by Cartan, checked in tables_n3_w1_a.log):
+  G=-4 t=(1,1,1): N=4, 7, 9, 12 (dim 1 each) = beta_0 X^1_0X^2_0X^3_0 (1, x3, x5, x3 x5),  x3, x5 the sl_3 cocycles
+                  (representatives with 1, 5, 2, 1 terms); c(z) not exact in each case.
+  G=-1 t=(0,0,0): N=5:1 (c=0), N=7:1 (c exact), N=8:1, N=10:2 (one c not exact, one c=0), N=12:1, N=13:1, N=15:1
+                  (c not exact for N=8,10,12,13,15).
+  G=-3,-2: 0.  G=0,1: 0 [derived: Cartan support, no diagonal t].  G=2, t=(-1,-1,-1): not computed
+  (dim C = 5,726,312 over N=0..18, max 1,047,183 at N=10; SL_3-invariant part <= 2767 per N; sizes_n3.log).
+  H(C^{w=0}), n=3 [checked] (tables_n3_w0_diag.log): t=(1,1,1) G=-3: N=3,6,8,11;  t=0 G=0: N=0,7,9,11,12,14.
+  So beta-type classes at G=-1: N-1 in {7,9,11,12,14} = H^{>0}(C^{w=0})_{t=0}; beta_0.1 removed by kappa.
+ n=3, H(V)^{w=1} [checked]: PENDING_N3_HV
+
+---------------------------------------------------------------------------------------------------------------
+T6. Tables, w = 1
+---------------------------------------------------------------------------------------------------------------
+n=2 (tables_n2_w1_{a,b,c}.log, analysis_n2_w1.log). All t-orbits computed for G = -3..6 (H(C), H(V)) and G = 7 (H(C)).
+  dim H(C_quot)^{w=1}  (only t=(k,k) can be nonzero; all entries are 1):
+     G   t        N (parity)
+    -3  (1,1)     3 (odd), 6 (even)
+    -1  (0,0)     5 (odd), 8 (even)
+     1  (-1,-1)   4 (even), 7 (odd)
+     3  (-2,-2)   none
+     5  (-3,-3)   none
+     7  (-4,-4)   8 (even), 11 (odd)     [reps_slot.log: N=8 representative = beta_0 c, c (402 terms) not exact in C^{w=0};
+                                          c in H^7(C^{w=0})_{G=8,(-4,-4)}]
+     G=-2,0,2,4,6 (no diagonal weight): none;  G=8: none (no diagonal weight) [derived].
+  dim H(V)^{w=1} (t up to S_2; all entries 1):
+    G=-3 (1,1): N=3,6 | G=-2 (1,0): N=2,5 | G=-1 (0,0): N=1,4,5,8 | G=0 (0,-1): N=4,7 | G=1 (-1,-1): N=3,4,6,7 |
+    G=2 (-1,-2): N=3,6 | G=3 (-2,-2): N=2,5 | G=4,5,6: none | G=7 (-4,-4): N=8,11 [derived: lemma] |
+    G=8 (-4,-5): N=7,10 [derived: lemma] | G=9 (-5,-5): N=6,9 from G=7 (K={1,2}) plus H(C_quot)_{G=9} (not computed).
+  SL_2-invariant part of H(V) (Weyl formula on the computed weight multiplicities) [checked, G<=3]:
+    the t=(k,k) entries: G=-3 N=3,6; G=-1 N=1,4,5,8; G=1 N=3,4,6,7; G=3 N=2,5 (each 1);  t != (k,k) entries are
+    components of SL_2 doublets (H(C) (x) Lambda^1).
+  H(C_quot) is entirely SL_n-invariant [derived from the Cartan identity; checked: support].
+n=3: PENDING_N3_TABLE
+Concentration: H(C_quot)^{w=1} lives only on t = (k,..,k) [derived+checked]; for n=2 within G<=7 only at
+  k = 1, 0, -1, -4 (G = -3, -1, 1, 7), two classes per weight.  H(V) lives on t = (k,..,k) - e_K.
+  For n=5 at t=(-3)^5: H(V)_{(-3)^5, N} = H(C_quot)_{(-3)^5, N} (+) H(C_quot)_{(-2)^5, N+5} [derived: lemma + support].
+
+---------------------------------------------------------------------------------------------------------------
+T7. n = 5 sizes                                            script t7_sizes.py, log t7.log
+---------------------------------------------------------------------------------------------------------------
+Method [checked]: characters, no enumeration.
+  chi_X = (sum_i z_i - 1) prod_j (1 - z_j^{-1})^{-1},  chi_gamma = sum_i z_i^{-1} prod_j(...)^{-1},  chi_beta = prod_j(...)^{-1}
+  Lambda^a chi_X = sum_{lambda |- a} (-1)^{a-l(lambda)} z_lambda^{-1} prod_r psi_{lambda_r} chi_X,
+  psi_k chi_X = (sum_i z_i^k - 1) prod_j (1 - z_j^{-k})^{-1}
+  [z^t] Lambda^a chi_X . chi_w = sum_lambda (-1)^{a-l}/z_lambda sum_{bins} (+-) multinomial . prod_j p_{lambda(+1)}(c_j - s_j - t_j),
+  p_mu(b) = #{beta in N^l: sum mu_r beta_r = b}.
+  Validation: formula = explicit enumeration on 8161 slots (n=2: w=1 G<=5, w=0 G<=5; n=3: w=1 G<=-1, w=0 G<=1).
+  V: dim V_t = sum_K (-1)^|K| dim C_{t+e_K} (freeness, T4).
+  SL_5-invariant part: sum_{s in S_5} sgn(s) dim C_{t+rho-s rho}; formula = direct ker(E_{i,i+1}) on 54 slots
+  (n=2,3; check_weyl.py, check_weyl.log).
+Target slot w=1, G=14, t=(-3)^5 (odd: N=9):
+  dim C_quot^N, content (#X,#gamma,#beta):
+    N= 8: (8,1,0) 3225947276075415    (7,0,1) 139992485746745     total 3365939761822160
+    N= 9: (9,1,0) 31549025755575340   (8,0,1) 1779009422289263    total 33328035177864603
+    N=10: (10,1,0) 258365080042752115 (9,0,1) 18357138075627183   total 276722218118379298
+    (N=6,7,11,12 in t7.log)
+  dim V^N (Koszul), content:
+    N= 8: (8,1,0) 360956426385120     (7,0,1) 12015350211848      total 372971776596968
+    N= 9: (9,1,0) 4064643567197080    (8,0,1) 182555541829956     total 4247199109027036
+    N=10: (10,1,0) 37526212758553675  (9,0,1) 2183107583722595    total 39709320342276270
+  SL_5-invariant (det^{-3}) parts:
+    N= 8: C_quot 20799946,  V 1313542
+    N= 9: C_quot 182332617, V 14656912
+    N=10: C_quot 1290504415, V 125272048
+  Neighbouring C slots t + e_K (G = 14 - |K|), N = 8, 9, 10: t7.log (|K| = 0..5), e.g. N=9:
+    |K|=1: 11146815453101695; |K|=2: 3692367089652286; |K|=3: 1210945181536302; |K|=4: 393044814793218;
+    |K|=5 (t=(-2)^5, G=9): 126201958455022.
+  Slot t=(-2)^5 (G=9), entering H(V)_{(-3)^5,N} through K = {1..5} at N+5 (N=9 -> 14):
+    N=13: (13,1,0) 82063087604333945   (12,0,1) 15523680005488801   total 97586767609822746    SL_5-inv 1769114334
+    N=14: (14,1,0) 309009424703371925  (13,0,1) 68780037272272269   total 377789461975644194   SL_5-inv 5324836187
+    N=15: (15,1,0) 1037824066531732005 (14,0,1) 270289615148335766  total 1308113681680067771  SL_5-inv 14554034518
+  Feasibility [derived from these numbers]: direct rank computation at the target is out of reach (10^16-10^17);
+  the SL_5-invariant subcomplex (H(C_quot) = H(C_quot^{SL_5}), T4) has dims 2.1e7 / 1.8e8 / 1.3e9 at N = 8/9/10;
+  in V the invariant part has dims 1.3e6 / 1.5e7 / 1.3e8.  Best available bound [derived]:
+    dim H(V)^9_{(-3)^5} <= dim (V^9)^{SL_5} = 14656912, and
+    dim H(V)^9_{(-3)^5} = dim H(C_quot)^9_{(-3)^5} + dim H(C_quot)^{14}_{(-2)^5}
+      <= 182332617 + 5324836187 (invariant C-dimensions).

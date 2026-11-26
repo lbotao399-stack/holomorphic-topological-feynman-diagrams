@@ -1,0 +1,48 @@
+d^2 = 0, k=2 deg=(1, 0) sl=False (|w| = 2 terms)                               True
+d^2 = 0, k=2 deg=(1, 0) sl=True (|w| = 1 terms)                                True
+d^2 = 0, k=3 deg=(1, 1) sl=False (|w| = 10 terms)                              True
+d^2 = 0, k=3 deg=(1, 1) sl=True (|w| = 8 terms)                                True
+d^2 = 0, k=3 deg=(2, 1) sl=False (|w| = 22 terms)                              True
+d^2 = 0, k=3 deg=(2, 1) sl=True (|w| = 12 terms)                               True
+d^2 = 0, k=3 deg=(2, 2) sl=False (|w| = 24 terms)                              True
+d^2 = 0, k=3 deg=(2, 2) sl=True (|w| = 18 terms)                               True
+d^2 = 0, k=4 deg=(1, 1) sl=False (|w| = 102 terms)                             True
+d^2 = 0, k=4 deg=(1, 1) sl=True (|w| = 54 terms)                               True
+d_ce == formal_gl.d_formal, k=3 deg=(1, 1)                                     True
+d_ce == formal_gl.d_formal, k=3 deg=(2, 2)                                     True
+d_ce == formal_gl.d_formal, k=4 deg=(2, 2)                                     True
+alt_raw output alternating, k=3 deg=(1, 1)                                     True
+alt_raw output alternating, k=4 deg=(2, 2)                                     True
+{s3, s3} = 0 (gl)                                                              True
+{s3, s3} = 0 (sl)                                                              True
+{s3, w} = -d w, k=2 deg=(1, 0) sl=False                                        True
+  {w, s3} = 1 {s3, w}                                                          True
+{s3, w} = -d w, k=2 deg=(1, 0) sl=True                                         True
+  {w, s3} = 1 {s3, w}                                                          True
+{s3, w} = -d w, k=3 deg=(1, 1) sl=False                                        True
+  {w, s3} = 1 {s3, w}                                                          True
+{s3, w} = -d w, k=3 deg=(1, 1) sl=True                                         True
+  {w, s3} = 1 {s3, w}                                                          True
+{s3, w} = -d w, k=3 deg=(2, 2) sl=False                                        True
+  {w, s3} = 1 {s3, w}                                                          True
+{s3, w} = -d w, k=3 deg=(2, 2) sl=True                                         True
+  {w, s3} = 1 {s3, w}                                                          True
+{s3, w} = -d w, k=4 deg=(2, 2) sl=False                                        True
+  {w, s3} = -1 {s3, w}                                                         True
+{s3, w} = -d w, k=4 deg=(2, 2) sl=True                                         True
+  {w, s3} = -1 {s3, w}                                                         True
+{a,b} = {b,a} for arity 3,3 (sl=False)                                         True
+d{a,b} = s1 {da,b} + s2 {a,db}: (s1,s2) = [(1, -1)] (sl=False)                 True
+{a,b} = {b,a} for arity 3,3 (sl=True)                                          True
+d{a,b} = s1 {da,b} + s2 {a,db}: (s1,s2) = [(1, -1)] (sl=True)                  True
+formal bracket == explicit contraction, (m,n)=(3,3), N=3, sl=False             True
+formal bracket == explicit contraction, (m,n)=(3,3), N=2, sl=False             True
+formal bracket == explicit contraction, (m,n)=(3,4), N=2, sl=False             True
+formal bracket == explicit contraction, (m,n)=(3,3), N=3, sl=True              True
+formal bracket == explicit contraction, (m,n)=(3,4), N=3, sl=True              True
+d_ce == direct CE formula on explicit gl2 matrices                             True
+d_ce == direct CE formula on explicit sl3 matrices                             True
+j_M, i_M alternating                                                           True
+Moyal: d j_M = 0                                                               True
+Moyal: (1/2){j_M, j_M} = d i_M   ({j_M,j_M} != 0: True)                        True
+all: True  (16.1s)

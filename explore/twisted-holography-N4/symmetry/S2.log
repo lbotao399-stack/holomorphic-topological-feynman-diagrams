@@ -1,0 +1,80 @@
+label beta = W_r + 1^5 (regular, C^{2|3} weight gamma = (beta_z - 1, 1 - beta_theta)); Laurent Wn = (beta_z - 1, -beta_theta - 1)
+P_D(alpha, zeta) = P_A(alpha, zeta_{p>=2}) (beta_z != 0), K(alpha, zeta_{p>=2}) (beta_z = 0): the flat Koszul pairing with B^1 projected out
+[chk] beta in [0,4]^5 mod S2xS3: 525 weights
+      dim Z(A0)(beta-1^5) != dim Z(A2)(Wn): 0
+      dim g != dim Z(A0) - B^1(gamma(beta))  or  dim coker != dim Z(A2) - B^1(beta): 0
+      dim g - dim coker != B^1(beta) - B^1(gamma(beta)) = [M1] + [1^5]: 0
+      P_D radicals: left != B^1(beta) or right != [beta in R']: 0
+      by type: n, sum dim(left radical), sum dim(right radical): {'-': [466, 0, 0], 'M1': [19, 19, 0], "R'": [39, 39, 39], '1^5': [1, 1, 0]}
+[chk] annihilator of B^{>=2}(beta) in Z(A0)(beta-1^5) (P_A; K at beta_z = 0) = C u_beta, u_beta = theta^{1-beta_theta} H_{z^beta_z}
+      (H_1 := d/dz1 ^ d/dz2), and u_beta in g: 199 B^1-weights with beta_z in [0,4]^2, 0 failures
+orphans (right radical of P_D in coker) and the broken shift f_beta = z^{beta_z-1} theta^{1-beta_theta}:
+   beta=(1, 1, 0, 0, 0) R': dim g=1 coker=1; orphan(s): ['-dz1*dz2'] ; P_A(f_beta, orphan)=[Fraction(1, 1)] ; f_beta=+t1*t2*t3
+   beta=(1, 1, 1, 0, 0) R': dim g=3 coker=3; orphan(s): ['-dz1*dz2*t1 -1/2*z2*dz1*dt1 +1/2*z1*dz2*dt1'] ; P_A(f_beta, orphan)=[Fraction(1, 1)] ; f_beta=+t2*t3
+   beta=(2, 1, 1, 1, 1) R': dim g=15 coker=15; orphan(s): ['-z1*dz1*dz2*t1*t2*t3 -1/3*z1*z2*dz1*t1*t2*dt3 +1/3*z1*z2*dz1*t1*t3*dt2 -1/3*z1*z2*dz1*t2*t3*dt1 +1/3*z1^2*dz2*t1*t2*dt3 -1/3*z1^2*dz2*t1*t3*dt2 +1/3*z1^2*dz2*t2*t3*dt1'] ; P_A(f_beta, orphan)=[Fraction(1, 1)] ; f_beta=+z1
+   beta=(1, 2, 0, 1, 1) R': dim g=7 coker=7; orphan(s): ['-z2*dz1*dz2*t2*t3 +1/3*z2^2*dz1*t2*dt3 -1/3*z2^2*dz1*t3*dt2 -1/3*z1*z2*dz2*t2*dt3 +1/3*z1*z2*dz2*t3*dt2'] ; P_A(f_beta, orphan)=[Fraction(1, 1)] ; f_beta=+z2*t1
+   beta=(2, 2, 1, 1, 0) R': dim g=7 coker=7; orphan(s): ['-z1*z2*dz1*dz2*t1*t2 +1/4*z1*z2^2*dz1*t1*dt2 -1/4*z1*z2^2*dz1*t2*dt1 -1/4*z1^2*z2*dz2*t1*dt2 +1/4*z1^2*z2*dz2*t2*dt1'] ; P_A(f_beta, orphan)=[Fraction(1, 1)] ; f_beta=+z1*z2*t3
+   beta=(1, 1, 1, 1, 1) 1^5: dim g'=15 coker=15; orphan(s): ['-dz1*dz2*t1*t2*t3 -1/2*z2*dz1*t1*t2*dt3 +1/2*z2*dz1*t1*t3*dt2 -1/2*z2*dz1*t2*t3*dt1 +1/2*z1*dz2*t1*t2*dt3 -1/2*z1*dz2*t1*t3*dt2 +1/2*z1*dz2*t2*t3*dt1'] ; P_A(f_beta, orphan)=[Fraction(1, 1)] ; f_beta=+1
+
+weight-by-weight table (beta up to S2xS3, |beta| <= 4, plus the psl(3|3) labels):
+   beta             type  U(N)tr  g  coker  B1  B1(gam) exc  psl(3|3) at label        u_beta (U(1)-letter source)         f_beta (Higgsed shift)
+   (0, 0, 0, 0, 0)  -         1   1     1   0     0    0                                                               
+   (0, 0, 1, 0, 0)  M1        1   1     0   1     0    1                           +t2*t3*dz1*dz2                      
+   (1, 0, 0, 0, 0)  M1        1   1     0   1     0    1                           -t1*t2*t3*dz2                       
+   (0, 0, 1, 1, 0)  M1        2   2     1   1     0    1                           +t3*dz1*dz2                         
+   (0, 0, 2, 0, 0)  -         1   1     1   0     0    0                                                               
+   (1, 0, 1, 0, 0)  M1        2   2     1   1     0    1                           -t2*t3*dz2                          
+   (1, 1, 0, 0, 0)  R'        2   1     1   1     1    0                           -z2*t1*t2*t3*dz2 +z1*t1*t2*t3*dz1   +t1*t2*t3
+   (2, 0, 0, 0, 0)  M1        1   1     0   1     0    1                           -2*z1*t1*t2*t3*dz2                  
+   (0, 0, 1, 1, 1)  M1        4   4     3   1     0    1                           +dz1*dz2                            
+   (0, 0, 2, 1, 0)  -         2   2     2   0     0    0                                                               
+   (0, 0, 3, 0, 0)  -         1   1     1   0     0    0                                                               
+   (0, 1, 0, 1, 1)  M1        4   4     3   1     0    1  E31                      +t1*dz1                             
+   (0, 1, 1, 0, 1)  M1        4   4     3   1     0    1  E41                      +t2*dz1                             
+   (0, 1, 1, 1, 0)  M1        4   4     3   1     0    1  E51                      +t3*dz1                             
+   (1, 0, 0, 1, 1)  M1        4   4     3   1     0    1  E32                      -t1*dz2                             
+   (1, 0, 1, 0, 1)  M1        4   4     3   1     0    1  E42                      -t2*dz2                             
+   (1, 0, 1, 1, 0)  M1        4   4     3   1     0    1  E52                      -t3*dz2                             
+   (1, 0, 2, 0, 0)  -         2   2     2   0     0    0                                                               
+   (1, 1, 1, 0, 0)  R'        4   3     3   1     1    0                           -z2*t2*t3*dz2 +z1*t2*t3*dz1         +t2*t3
+   (2, 0, 1, 0, 0)  M1        2   2     1   1     0    1                           -2*z1*t2*t3*dz2                     
+   (2, 1, 0, 0, 0)  R'        2   1     1   1     1    0                           -2*z1*z2*t1*t2*t3*dz2 +z1^2*t1*t2*t3*dz1 +z1*t1*t2*t3
+   (3, 0, 0, 0, 0)  M1        1   1     0   1     0    1                           -3*z1^2*t1*t2*t3*dz2                
+   (0, 0, 2, 1, 1)  -         4   4     4   0     0    0                                                               
+   (0, 0, 2, 2, 0)  -         2   2     2   0     0    0                                                               
+   (0, 0, 3, 1, 0)  -         2   2     2   0     0    0                                                               
+   (0, 1, 1, 1, 1)  M1        8   8     7   1     0    1  E01                      +dz1                                
+   (1, 0, 1, 1, 1)  M1        8   8     7   1     0    1  E02                      -dz2                                
+   (1, 0, 2, 1, 0)  -         4   4     4   0     0    0                                                               
+   (1, 0, 3, 0, 0)  -         2   2     2   0     0    0                                                               
+   (1, 1, 0, 1, 1)  R'        8   7     7   1     1    0  E30                      -z2*t1*dz2 +z1*t1*dz1               +t1
+   (1, 1, 1, 0, 1)  R'        8   7     7   1     1    0  E40                      -z2*t2*dz2 +z1*t2*dz1               +t2
+   (1, 1, 1, 1, 0)  R'        8   7     7   1     1    0  E50                      -z2*t3*dz2 +z1*t3*dz1               +t3
+   (1, 1, 2, 0, 0)  -         4   4     4   0     0    0                                                               
+   (2, 0, 1, 1, 0)  M1        4   4     3   1     0    1                           -2*z1*t3*dz2                        
+   (2, 0, 2, 0, 0)  -         2   2     2   0     0    0                                                               
+   (2, 1, 1, 0, 0)  R'        4   3     3   1     1    0                           -2*z1*z2*t2*t3*dz2 +z1^2*t2*t3*dz1  +z1*t2*t3
+   (2, 2, 0, 0, 0)  R'        2   1     1   1     1    0                           -2*z1*z2^2*t1*t2*t3*dz2 +2*z1^2*z2*t1*t2*t3*dz1 +z1*z2*t1*t2*t3
+   (3, 0, 1, 0, 0)  M1        2   2     1   1     0    1                           -3*z1^2*t2*t3*dz2                   
+   (3, 1, 0, 0, 0)  R'        2   1     1   1     1    0                           -3*z1^2*z2*t1*t2*t3*dz2 +z1^3*t1*t2*t3*dz1 +z1^2*t1*t2*t3
+   (0, 2, 1, 1, 1)  M1        8   8     7   1     0    1  E21                      +2*z2*dz1                           
+   (1, 1, 0, 1, 2)  -         8   8     8   0     0    0  E35                                                          
+   (1, 1, 0, 2, 1)  -         8   8     8   0     0    0  E34                                                          
+   (1, 1, 1, 0, 2)  -         8   8     8   0     0    0  E45                                                          
+   (1, 1, 1, 1, 1)  1^5      16  16    15   1     0    1  H01,H12,H23,H34          -z2*dz2 +z1*dz1                     1 (unbroken)
+   (1, 1, 1, 2, 0)  -         8   8     8   0     0    0  E54                                                          
+   (1, 1, 2, 0, 1)  -         8   8     8   0     0    0  E43                                                          
+   (1, 1, 2, 1, 0)  -         8   8     8   0     0    0  E53                                                          
+   (2, 0, 1, 1, 1)  M1        8   8     7   1     0    1  E12                      -2*z1*dz2                           
+   (1, 1, 1, 1, 2)  -        16  16    16   0     0    0  E05                                                          
+   (1, 1, 1, 2, 1)  -        16  16    16   0     0    0  E04                                                          
+   (1, 1, 2, 1, 1)  -        16  16    16   0     0    0  E03                                                          
+   (1, 2, 1, 1, 1)  R'       16  15    15   1     1    0  E20                      -z2^2*dz2 +2*z1*z2*dz1              +z2
+   (2, 1, 1, 1, 1)  R'       16  15    15   1     1    0  E10                      -2*z1*z2*dz2 +z1^2*dz1              +z1
+   (1, 2, 1, 1, 2)  -        16  16    16   0     0    0  E25                                                          
+   (1, 2, 1, 2, 1)  -        16  16    16   0     0    0  E24                                                          
+   (1, 2, 2, 1, 1)  -        16  16    16   0     0    0  E23                                                          
+   (2, 1, 1, 1, 2)  -        16  16    16   0     0    0  E15                                                          
+   (2, 1, 1, 2, 1)  -        16  16    16   0     0    0  E14                                                          
+   (2, 1, 2, 1, 1)  -        16  16    16   0     0    0  E13                                                          
+time 2.4s

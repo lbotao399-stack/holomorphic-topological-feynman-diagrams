@@ -1,0 +1,14 @@
+# k=2 N=1 x^6 p=2147483647 (2.9s)  H_g = {0: 1}
+  g=-12: dimV_T=260 dimR=0 rankd=0 H=0
+  g=-11: dimV_T=1232 dimR=0 rankd=0 H=0
+  g=-10: dimV_T=3456 dimR=0 rankd=0 H=0
+  g=-9: dimV_T=7560 dimR=1 rankd=1 H=0
+  g=-8: dimV_T=13794 dimR=4 rankd=3 H=0
+  g=-7: dimV_T=21040 dimR=7 rankd=4 H=0
+  g=-6: dimV_T=26512 dimR=16 rankd=12 H=0
+  g=-5: dimV_T=26868 dimR=39 rankd=27 H=0
+  g=-4: dimV_T=21002 dimR=75 rankd=48 H=0
+  g=-3: dimV_T=11976 dimR=114 rankd=66 H=0
+  g=-2: dimV_T=4680 dimR=123 rankd=57 H=0
+  g=-1: dimV_T=1152 dimR=103 rankd=46 H=0
+  g=0: dimV_T=150 dimR=47 rankd=0 H=1

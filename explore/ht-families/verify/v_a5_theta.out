@@ -1,0 +1,13 @@
+banana(1, 2, 2) H=1 n=2 (same graph as htk.theta: True): [pointwise ok, K / closed form] = [(True, -1), (True, -1)]
+banana(1, 3, 3) H=2 n=2 (same graph as htk.theta: True): [pointwise ok, K / closed form] = [(True, 1), (True, 1)]
+banana(2, 2, 3) H=2 n=2 (same graph as htk.theta: True): [pointwise ok, K / closed form] = [(True, 1), (True, 1)]
+banana(1, 4, 4) H=3 n=2 (same graph as htk.theta: True): [pointwise ok, K / closed form] = [(True, -1), (True, -1)]
+banana(2, 3, 4) H=3 n=2 (same graph as htk.theta: True): [pointwise ok, K / closed form] = [(True, 1), (True, 1)]
+banana(3, 3, 3) H=3 n=2 (same graph as htk.theta: True): [pointwise ok, K / closed form] = [(True, 1), (True, 1)]
+banana(2, 2, 2, 2, 1) H=1 n=4 (same graph as htk.theta: False): [pointwise ok, K / closed form] = [(True, 1), (True, 1)]
+theta(1, 2, 2) H=1: K / CONVENTIONS formula = 1 ; K / a5 closed form = -1 ; s = -1
+theta(1, 3, 3) H=2: K / CONVENTIONS formula = 1 ; K / a5 closed form = 1 ; s = -1
+theta(2, 2, 3) H=2: K / CONVENTIONS formula = 1 ; K / a5 closed form = 1 ; s = 1
+theta(1, 4, 4) H=3: K / CONVENTIONS formula = 1 ; K / a5 closed form = -1 ; s = 1
+theta(2, 3, 4) H=3: K / CONVENTIONS formula = 1 ; K / a5 closed form = 1 ; s = 1
+theta(3, 3, 3) H=3: K / CONVENTIONS formula = 1 ; K / a5 closed form = 1 ; s = 1

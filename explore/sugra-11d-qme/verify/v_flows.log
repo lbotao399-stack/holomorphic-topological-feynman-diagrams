@@ -1,0 +1,16 @@
+(1, 6, 6) admissible flows 2048 ; by (m, ext mu, ext ga): {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40} ; equals 4*binom(10,2m-1): True
+    m=1: roles {"c@N'": 10, 'c@interior': 20, 'c@N': 10} ; letter maps per flow {12288: 40} ; a4 structure at m=1: True
+(2, 5, 6) admissible flows 2048 ; by (m, ext mu, ext ga): {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40} ; equals 4*binom(10,2m-1): True
+    m=1: roles {"c@N'": 10, 'c@interior': 20, 'c@N': 10} ; letter maps per flow {12288: 40} ; a4 structure at m=1: True
+(3, 4, 6) admissible flows 2048 ; by (m, ext mu, ext ga): {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40} ; equals 4*binom(10,2m-1): True
+    m=1: roles {"c@N'": 10, 'c@interior': 20, 'c@N': 10} ; letter maps per flow {12288: 40} ; a4 structure at m=1: True
+(3, 5, 5) admissible flows 2048 ; by (m, ext mu, ext ga): {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40} ; equals 4*binom(10,2m-1): True
+    m=1: roles {"c@N'": 10, 'c@interior': 20, 'c@N': 10} ; letter maps per flow {12288: 40} ; a4 structure at m=1: True
+(4, 4, 5) admissible flows 2048 ; by (m, ext mu, ext ga): {(1, 9, 1): 40, (2, 7, 3): 480, (3, 5, 5): 1008, (4, 3, 7): 480, (5, 1, 9): 40} ; equals 4*binom(10,2m-1): True
+    m=1: roles {"c@N'": 10, 'c@interior': 20, 'c@N': 10} ; letter maps per flow {12288: 40} ; a4 structure at m=1: True
+(1, 6, 6) |Aut| = 4
+(2, 5, 6) |Aut| = 2
+(3, 4, 6) |Aut| = 2
+(3, 5, 5) |Aut| = 4
+(4, 4, 5) |Aut| = 4
+number of labelled copies 12!/|Aut| : {(1, 6, 6): 119750400, (2, 5, 6): 239500800, (3, 4, 6): 239500800, (3, 5, 5): 119750400, (4, 4, 5): 119750400}

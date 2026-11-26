@@ -1,0 +1,23 @@
+=== S1 fan n=2 ===
+eq-1-40 (n=2) integrated: (2*b12 + b13)*(b13 + 2*b23)/24
+  equals claim -(1/24)[l1, l3+2 l2][l3, l1+2 l2]: True
+  at l2 = 0 equals eq-1-42 det(l1,l3)^2/24: True
+  equals minus RHS of eq-spider-two-arm-value with (v11,v21,A)=(1,3,2): True
+fan(2) as theta: (1, 2, 2) paths {'A': [(3, 1)], 'B': [(0, -1), (1, 1)], 'C': [(2, 1), (4, 1)]} order_sign -1
+S1 integrand: tree-independent (8 trees): True ; D_S1 / D_closed[C3] = {Fraction(-1, 1)}
+S1: I^S1 (eq-operatope pointwise x own closed value) = eq-1-40 value, and I^S1 = -K_htk: True
+=== S2 ===
+(A) from eq-chain + box with lambda_3 != 0:  (3*b123 + 2*b124 + b125)*(b145 + 2*b245 + 3*b345)/432  equals claim: True
+    at lambda_3 = 0 equals eq-IA: True
+(B) from eq-bubble + box with lambda_q != 0: -(2*bqab + buab + bwab)*(2*buwa + buwb + 3*buwq)/288  equals claim: True
+    at lambda_q = 0 equals eq-IB: True
+S2 (A): theta(1, 3, 3), eq-kernel-def integrand tree-independent (15 trees): True ; ratio to D_closed[C3]: 1 ; I^S2 = general-source formula and = -K_htk: True
+S2 (B): theta(2, 2, 3), eq-kernel-def integrand tree-independent (16 trees): True ; ratio to D_closed[C3]: 1 ; I^S2 = general-source formula and = -K_htk: True
+=== S4 ladder(2) ===
+edges [(2, 0), (0, 1), (1, 3), (2, 3), (3, 5), (5, 4), (4, 2)] cotree [0, 4] theta (1, 3, 3) interior {'A': [], 'B': [0, 1], 'C': [4, 5]}
+D_S4 / D_closed[C3] over 3 points: {Fraction(1, 1)}
+I^S4 / Delta^2 at 3 corner-source sets: ['-1/432', '-1/432', '-1/432']  (claim -1/432)
+=== S3 ===
+S3 explicit D_166, D_256, D_346, D_355, D_445 equal D_theta: True
+S3 R-c values = Gamma formula, and varsigma_theta = -1 gives K^S3 = +c pi D_theta = -K[C3]: True
+time 1.0 s

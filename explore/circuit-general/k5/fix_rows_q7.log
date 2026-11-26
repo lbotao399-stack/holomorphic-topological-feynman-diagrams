@@ -1,0 +1,7 @@
+level 7 free labels: ['u7_0', 'u7_1']
+rows with nonzero residual: 10
+determined labels: {'u7_0': {'1': Fraction(79, 31104000000)}}
+still free: ['u7_1']
+after substitution: rows with nonzero residual 0
+  u7_0 = class [(-5, 1, 6, 6, 6, 1, 6, 6, 6, 4, 4, 4, -1, -1, -1)]
+written

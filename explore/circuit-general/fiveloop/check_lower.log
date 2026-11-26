@@ -1,0 +1,11 @@
+W5  q=2 ones: 70*z7
+K4+K4 q=2 ones: 36*z3*z3
+2-sum rule vs SP rules: 16 vectors, 0 mismatches
+dimension relation K4+K4 q=2->3: 1 vectors, 0 mismatches
+dimension relation K5-e q=3->4: 45 vectors, 0 mismatches
+dimension relation K5-e q=4->5: 200 vectors, 0 mismatches
+dimension relation W5 q=2->3: 1 vectors, 0 mismatches
+dimension relation W5 q=3->4: 100 vectors, 0 mismatches
+dimension relation V7_1 q=3->4: 64 vectors, 0 mismatches
+dimension relation V8_0 q=3->4: 0 vectors, 0 mismatches
+6.4s

@@ -1,0 +1,4 @@
+G3 plan small coordinates ['w1_2', 'x1_2_2', 'w2_2', 'x2_1_2', 'w3_2', 'x3_2_2', 'w4_2', 'x4_2_2']: #nonzero components of rho_4 at 3 rational points: [4, 4, 4]
+G3 plan large coordinates ['w1_2', 'x1_2_2', 'w2_2', 'x2_1_2', 'w3_2', 'w3_3', 'x3_2_2', 'x3_3_2']: #nonzero components of rho_4 at 3 rational points: [6, 6, 6]
+G4 plan small coordinates ['w1_2', 'x1_2_2', 'w2_2', 'x2_2_2', 'w3_2', 'x3_1_2', 'w4_2', 'x4_2_2']: #nonzero components of rho_4 at 3 rational points: [10, 10, 10]
+G4 plan large coordinates ['w1_2', 'x1_2_2', 'w2_2', 'x2_2_2', 'w3_2', 'w3_3', 'x3_1_2', 'x3_2_2']: #nonzero components of rho_4 at 3 rational points: [6, 6, 6]

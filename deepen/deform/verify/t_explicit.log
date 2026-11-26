@@ -1,0 +1,7 @@
+gl2: (1/2){j_M,j_M} == d i_M at 3 random points (explicit): True; value nonzero at last point: True
+gl3: (1/2){j_M,j_M} == d i_M at 3 random points (explicit): True; value nonzero at last point: True
+sl3: (1/2){D,D} == F_223/(12N^2) + d eta_3 at 3 random traceless points (explicit bracket and d): True
+gl3: pi^*D_sl = D - (2/N)S1 + (4/N^2)S0: True;  M1 = S1 - (3/N)S0: True;  j_M = (1/2)pi^*D_sl + M1/N + U/N^2: True
+gl4: pi^*D_sl = D - (2/N)S1 + (4/N^2)S0: True;  M1 = S1 - (3/N)S0: True;  j_M = (1/2)pi^*D_sl + M1/N + U/N^2: True
+gl5: pi^*D_sl = D - (2/N)S1 + (4/N^2)S0: True;  M1 = S1 - (3/N)S0: True;  j_M = (1/2)pi^*D_sl + M1/N + U/N^2: True
+gl2 symbolic: tr(X{Y,Z}) == trX tr(YZ) + trY tr(XZ) + trZ tr(XY) - trX trY trZ: True

@@ -1,0 +1,10 @@
+# k=2 N=2 sector (8, 0, 0, 0, 0) level 16 p=2147483647 (893.9s)
+  g=-8 Y=0: dimV_T=516080 rankS=515942 dimR=138 rankd=95 H=0
+  g=-7 Y=1: dimV_T=617508 rankS=617240 dimR=268 rankd=173 H=0
+  g=-6 Y=2: dimV_T=633904 rankS=633422 dimR=482 rankd=309 H=0
+  g=-5 Y=3: dimV_T=542068 rankS=541254 dimR=814 rankd=505 H=0
+  g=-4 Y=4: dimV_T=371386 rankS=370213 dimR=1173 rankd=668 H=0
+  g=-3 Y=5: dimV_T=193760 rankS=192407 dimR=1353 rankd=685 H=0
+  g=-2 Y=6: dimV_T=71932 rankS=70768 dimR=1164 rankd=479 H=0
+  g=-1 Y=7: dimV_T=17072 rankS=16344 dimR=728 rankd=249 H=0
+  g=0 Y=8: dimV_T=2024 rankS=1770 dimR=254 rankd=0 H=5

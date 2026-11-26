@@ -1,0 +1,4 @@
+K5 q=3: 2 orbits; T1 (beta_v,oo=0) 1; T2 (triangle sum beta=q) 2; T1 or T2 2; sequential plan 1 (= T1 for every orbit)
+K5 q=4: 30 orbits; T1 (beta_v,oo=0) 15; T2 (triangle sum beta=q) 26; T1 or T2 28; sequential plan 15 (= T1 for every orbit)
+K5 q=5: 312 orbits; T1 (beta_v,oo=0) 133; T2 (triangle sum beta=q) 277; T1 or T2 289; sequential plan 133 (= T1 for every orbit)
+K5 q=6: 2107 orbits; T1 (beta_v,oo=0) 792; T2 (triangle sum beta=q) 1749; T1 or T2 1876; sequential plan 792 (= T1 for every orbit)

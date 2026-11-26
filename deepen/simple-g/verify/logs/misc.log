@@ -1,0 +1,20 @@
+(1) Killing = r_V tr_V:
+   so5  K = 3 tr_5 on all entries: True ; lambda_tr = r^2/2 = 9/2
+   so6  K = 4 tr_6 on all entries: True ; lambda_tr = r^2/2 = 8
+   so7  K = 5 tr_7 on all entries: True ; lambda_tr = r^2/2 = 25/2
+   so8  K = 6 tr_8 on all entries: True ; lambda_tr = r^2/2 = 18
+   sp4  K = 6 tr_4 on all entries: True ; lambda_tr = r^2/2 = 18
+   sp6  K = 8 tr_6 on all entries: True ; lambda_tr = r^2/2 = 32
+   G2   K = 4 tr_7 on all entries: True ; lambda_tr = r^2/2 = 8 (tr on O = R + Im O, D(1) = 0, so tr_8 = tr_7)
+   sl3  K = 6 tr_3 on all entries: True ; lambda_tr = r^2/2 = 18
+   sl4  K = 8 tr_4 on all entries: True ; lambda_tr = r^2/2 = 32
+   sl5  K = 10 tr_5 on all entries: True ; lambda_tr = r^2/2 = 50
+(2) rescaling:
+   so5  c = 2: W_133, W_223 -> W/c: True, beta -> c beta: True ; c = 3: W_133, W_223 -> W/c: True, beta -> c beta: True
+   G2   c = 2: W_133, W_223 -> W/c: True, beta -> c beta: True ; c = 3: W_133, W_223 -> W/c: True, beta -> c beta: True
+   sl3  c = 2: W_133, W_223 -> W/c: True, beta -> c beta: True ; c = 3: W_133, W_223 -> W/c: True, beta -> c beta: True
+(3) sl2: rank of the 63 cochains alt(mu kappa_pi) = 1 ; with beta: 1 ; beta nonzero: True ; dim (g^(x)4)^g = 3 (Weyl), kappa_pi independent: rank 3
+(4) c3 sign        O_2 = Nnorm*pi/48 * F223 + (-Nnorm*pi/160) * beta_K
+(4) K_223 flipped  O_2 = Nnorm*pi/240 * F223 + (-Nnorm*pi/160) * beta_K
+(4) K_133 flipped  O_2 = -Nnorm*pi/240 * F223 + (Nnorm*pi/160) * beta_K
+    check (Nnorm/4)(-(pi/20) w-coeff) : sum_G |Aut|^-1 K_G W_G = (1/4)(-pi/20 W133 + pi/30 W223) [12][34] = (pi/240)(-3 W133 + 2 W223) [12][34]: True

@@ -1,0 +1,8 @@
+(1) admissible (graph, O) pairs with only W vertices, tight D=2 graphs:
+   n=1: 1 tight graphs, admissible pairs = 0
+   n=2: 1 tight graphs, admissible pairs = 0
+   n=3: 3 tight graphs, admissible pairs = 0
+   n=4: 13 tight graphs, admissible pairs = 0
+(2) W = Phi^3/3: 92 monomials of weight <= 6, Q_0 nonzero on 63, Q_0^2 != 0 on 0
+(2) W = XYZ: 344 monomials of weight <= 4, Q_0 nonzero on 259, Q_0^2 != 0 on 0
+    example Q_0(dphi psi d^2psi) = {(('phi', 0), ('phi', 0), ('phi', 1), ('psi', 2)): 1, (('phi', 1), ('phi', 1), ('phi', 1), ('psi', 0)): -2, (('phi', 0), ('phi', 1), ('phi', 2), ('psi', 0)): -2}

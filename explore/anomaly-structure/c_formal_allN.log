@@ -1,0 +1,5 @@
+rank d(C^3) = 6
+pivot columns [9, 10, 11, 27, 28, 29] pivot rows [16, 26, 27, 52, 60, 61] det A[I,J] = 32
+omega: 72 nonzero bordered minors; gcd over all bordered minors = 7680
+F_223 = omega_223/2: 72 nonzero bordered minors; gcd over all bordered minors = 1536
+omega_133 - (3/2) omega_223: 0 nonzero bordered minors; gcd over all bordered minors = 0

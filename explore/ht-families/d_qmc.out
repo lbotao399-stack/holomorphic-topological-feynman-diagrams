@@ -1,0 +1,10 @@
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: divide by zero encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: overflow encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: invalid value encountered in matmul
+  logt = np.log(B) @ self.E.T
+plan small lambda [5, -5, -4, -5, 5]: K = +0.64039 +- 2 ; int|g| = 370.89 ; |K|/int|g| = 1.7e-03
+plan small lambda [1, -2, 4, 4, 4]: K = -0.078743 +- 1.8 ; int|g| = 369.19 ; |K|/int|g| = 2.1e-04
+plan large lambda [5, -5, -4, -5, 5]: K = -0.52025 +- 1.2 ; int|g| = 371.57 ; |K|/int|g| = 1.4e-03
+plan large lambda [1, -2, 4, 4, 4]: K = -0.084923 +- 1.6 ; int|g| = 368.3 ; |K|/int|g| = 2.3e-04

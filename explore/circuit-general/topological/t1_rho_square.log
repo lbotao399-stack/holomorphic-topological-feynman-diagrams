@@ -1,0 +1,51 @@
+t1_rho_square.py -- rho_n ^ rho_n = 0, exact.
+
+(G)  every admissible graph, D = H+T <= 4, n <= 3 (2 random rational t each) and D <= 3, n = 4
+     (1 point each): Pf ^ Pf = 0 as a form; odd n: Pf = 0 and the spanning-tree fiber integral
+     (independent of the Pfaffian) = 0.
+(P)  universality on the cone P_n (coordinates m_ij, i <= j): Pf ^ Pf = 0 for n = 2, 4 at random rational M;
+     tr (X^X)^j = 0 for X = M^{-1} dM, n = 2, 4, 6, j = 1..3.
+(C)  non-graphic subspaces: random integer C (n x N, rank n), M = C t C^T, n = 2, 4: Pf ^ Pf = 0.
+(H)  hafnian-involution identity (Balduf-Gaiotto, circuit form): for symmetric K of size 2L, L even,
+     Q_E = sum_{E = S1 u S2} sgn(S1,S2) det K_{S1 S2} Haf K_{S1} Haf K_{S2} = 0:
+     symbolic (sympy) L = 2, 4; random rational K, L = 6.
+
+(G) graphs
+   D=1 n=1:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=1 n=2:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 3
+   D=1 n=3:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=1 n=4:   1 graphs,   1/  1 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 5
+   D=2 n=1:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=2 n=2:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 8
+   D=2 n=3:   3 graphs,   6/  6 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=2 n=4:  13 graphs,  13/ 13 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 81
+   D=3 n=1:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=3 n=2:   2 graphs,   4/  4 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 16
+   D=3 n=3:  16 graphs,  32/ 32 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=3 n=4: 230 graphs, 230/230 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 328
+   D=4 n=1:   1 graphs,   2/  2 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+   D=4 n=2:   3 graphs,   6/  6 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 27
+   D=4 n=3:  42 graphs,  84/ 84 points with rho^rho = 0 (odd n: rho = 0 and fiber integral = 0); max #components of Pf: 0
+(P) cone of positive matrices
+   n=2 (dim P_n = 3): #components Pf = 3, Pf ^ Pf = 0: True
+   n=4 (dim P_n = 10): #components Pf = 141, Pf ^ Pf = 0: True
+   n=2: tr (X^X)^j = 0, j=1,2,3: [True, True, True]
+   n=4: tr (X^X)^j = 0, j=1,2,3: [True, True, True]
+   n=6: tr (X^X)^j = 0, j=1,2,3: [True, True, True]
+(C) non-graphic cycle matrices (random integer C, entries in [-3,3])
+   n=2 N=6 trial 0: #components Pf = 14, Pf ^ Pf = 0: True
+   n=2 N=6 trial 1: #components Pf = 14, Pf ^ Pf = 0: True
+   n=2 N=9 trial 0: #components Pf = 34, Pf ^ Pf = 0: True
+   n=2 N=9 trial 1: #components Pf = 30, Pf ^ Pf = 0: True
+   n=4 N=9 trial 0: #components Pf = 126, Pf ^ Pf = 0: True
+   n=4 N=9 trial 1: #components Pf = 69, Pf ^ Pf = 0: True
+   n=4 N=11 trial 0: #components Pf = 329, Pf ^ Pf = 0: True
+   n=4 N=11 trial 1: #components Pf = 319, Pf ^ Pf = 0: True
+(H) hafnian-involution identity
+   L=2 (2L=4), symbolic symmetric K: Q_E = 0
+   L=4 (2L=8), symbolic symmetric K: Q_E = 0
+   L=6, random rational symmetric K, trial 0: Q_E = 0
+   L=6, random rational symmetric K, trial 1: Q_E = 0
+   control (sign dropped), L=2: -1296 (nonzero expected)
+
+summary: graphs True, P_n True, non-graphic True, hafnian identity True; time 195.9s

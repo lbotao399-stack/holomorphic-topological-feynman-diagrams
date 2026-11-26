@@ -1,0 +1,30 @@
+n=1 su2 O=g1g2 -> ccc: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=g1g2 (d_1 on letter 0) -> ccc: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=g1b -> ccg1: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=g1b (d_1 on letter 0) -> ccg1: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=g2b -> ccg2: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=g2b (d_1 on letter 0) -> ccg2: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=bb -> ccb: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=bb -> cg1g2: nonzero <Phi, hatQ_Gamma O> 1 of 2
+n=1 su2 O=bb (d_1 on letter 0) -> ccb: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=1 su2 O=bb (d_1 on letter 0) -> cg1g2: nonzero <Phi, hatQ_Gamma O> 2 of 2
+n=2 su2 O=g1g2b -> cccc: nonzero <Phi, hatQ_Gamma O> 0 of 4
+n=2 su2 O=g1g2b (d_1 on letter 0) -> cccc: nonzero <Phi, hatQ_Gamma O> 4 of 4
+n=2 su2 O=g1bb -> cccg1: nonzero <Phi, hatQ_Gamma O> 0 of 4
+n=2 su2 O=g1bb (d_1 on letter 0) -> cccg1: nonzero <Phi, hatQ_Gamma O> 4 of 4
+n=2 su2 O=g2bb -> cccg2: nonzero <Phi, hatQ_Gamma O> 0 of 4
+n=2 su2 O=g2bb (d_1 on letter 0) -> cccg2: nonzero <Phi, hatQ_Gamma O> 4 of 4
+n=2 su2 O=bbb -> cccb: nonzero <Phi, hatQ_Gamma O> 4 of 4
+n=2 su2 O=bbb -> ccg1g2: nonzero <Phi, hatQ_Gamma O> 2 of 4
+n=2 su2 O=bbb (d_1 on letter 0) -> cccb: nonzero <Phi, hatQ_Gamma O> 4 of 4
+n=2 su2 O=bbb (d_1 on letter 0) -> ccg1g2: nonzero <Phi, hatQ_Gamma O> 0 of 4
+n=3 su2 O=g1g2bb -> ccccc: nonzero <Phi, hatQ_Gamma O> 0 of 10
+n=3 su2 O=g1g2bb (d_1 on letter 0) -> ccccc: nonzero <Phi, hatQ_Gamma O> 10 of 10
+n=3 su2 O=g1bbb -> ccccg1: nonzero <Phi, hatQ_Gamma O> 0 of 10
+n=3 su2 O=g1bbb (d_1 on letter 0) -> ccccg1: nonzero <Phi, hatQ_Gamma O> 10 of 10
+n=3 su2 O=g2bbb -> ccccg2: nonzero <Phi, hatQ_Gamma O> 0 of 10
+n=3 su2 O=g2bbb (d_1 on letter 0) -> ccccg2: nonzero <Phi, hatQ_Gamma O> 10 of 10
+n=3 su2 O=bbbb -> ccccb: nonzero <Phi, hatQ_Gamma O> 0 of 10
+n=3 su2 O=bbbb -> cccg1g2: nonzero <Phi, hatQ_Gamma O> 0 of 10
+n=3 su2 O=bbbb (d_1 on letter 0) -> ccccb: nonzero <Phi, hatQ_Gamma O> 0 of 10
+n=3 su2 O=bbbb (d_1 on letter 0) -> cccg1g2: nonzero <Phi, hatQ_Gamma O> 10 of 10

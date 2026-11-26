@@ -1,0 +1,9 @@
+gl_N: {J_d, F_133} == 0: True
+gl_N: {J_d, F_223} == 0: True
+gl_N: {J_s1, F_133} == 0: True
+gl_N: {J_s1, F_223} == 0: True
+gl_N: {J_s0, F_133} == 0: True
+gl_N: {J_s0, F_223} == 0: True
+sl_N: {J_d, F_133} == 0: True
+sl_N: {J_d, F_223} == 0: True
+control: {D, r} (r random in C^4_(2,2), gl_N) number of nonzero coordinates: 6984

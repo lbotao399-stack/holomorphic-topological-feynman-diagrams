@@ -1,0 +1,35 @@
+====================================================================================================
+graph (3, 3, 3)  nv = 8  edges = [(7, 1), (1, 2), (2, 0), (7, 3), (3, 4), (4, 0), (7, 5), (5, 6), (6, 0)]  loops = 2  root(O) = 7
+spokes (edge: (input j, sign of z_j)): {0: (1, 1), 3: (2, 1), 6: (3, 1)}  outputs: [1, 2, 3, 4, 5, 6]
+theta_O(3,3,3), D = 4, 1 moves, coordinates ['w1_2', 'w1_3', 'x1_1_2', 'x1_1_3', 'x1_2_2', 'x1_2_3', 'x1_3_2', 'x1_3_3']
+  move 1: 7 -> 0, chains [[0, 1, 2], [3, 4, 5], [6, 7, 8]] (signs [[1, 1, 1], [1, 1, 1], [1, 1, 1]], interior [[1, 2], [3, 4], [5, 6]]) -> edge 9
+  final edge 9 = (7 -> 0), t = 1; orientation +1
+blocks (independent coordinates; first barycentric ratio of each block eliminated): [['w1_1', 'w1_2', 'w1_3'], ['x1_1_1', 'x1_1_2', 'x1_1_3'], ['x1_2_1', 'x1_2_2', 'x1_2_3'], ['x1_3_1', 'x1_3_2', 'x1_3_3']]
+t_e = prod ratio^exp: {0: {'w1_1': -1, 'x1_1_1': 1}, 1: {'w1_1': -1, 'x1_1_2': 1}, 2: {'w1_1': -1, 'x1_1_3': 1}, 3: {'w1_2': -1, 'x1_2_1': 1}, 4: {'w1_2': -1, 'x1_2_2': 1}, 5: {'w1_2': -1, 'x1_2_3': 1}, 6: {'w1_3': -1, 'x1_3_1': 1}, 7: {'w1_3': -1, 'x1_3_2': 1}, 8: {'w1_3': -1, 'x1_3_3': 1}}
+engine density: evaluated with numeric sources at each point below (symbolic 8x8 local determinant not expanded)
+density g(xi; lam) = (engine local density not expanded here)
+displacement maps X_v = sum_j c_{v,j} z_j:
+   X_1 = (w1_2*x1_1_2 + w1_2*x1_1_3 - w1_2 + w1_3*x1_1_2 + w1_3*x1_1_3 - w1_3 + 1) z_1 + (-w1_2*(x1_1_2 + x1_1_3 - 1)) z_2 + (-w1_3*(x1_1_2 + x1_1_3 - 1)) z_3
+   X_2 = (w1_2*x1_1_3 - w1_2 + w1_3*x1_1_3 - w1_3 + 1) z_1 + (-w1_2*(x1_1_3 - 1)) z_2 + (-w1_3*(x1_1_3 - 1)) z_3
+   X_3 = ((w1_2 + w1_3 - 1)*(x1_2_2 + x1_2_3 - 1)) z_1 + (-w1_2*x1_2_2 - w1_2*x1_2_3 + w1_2 + x1_2_2 + x1_2_3) z_2 + (-w1_3*(x1_2_2 + x1_2_3 - 1)) z_3
+   X_4 = ((x1_2_3 - 1)*(w1_2 + w1_3 - 1)) z_1 + (-w1_2*x1_2_3 + w1_2 + x1_2_3) z_2 + (-w1_3*(x1_2_3 - 1)) z_3
+   X_5 = ((w1_2 + w1_3 - 1)*(x1_3_2 + x1_3_3 - 1)) z_1 + (-w1_2*(x1_3_2 + x1_3_3 - 1)) z_2 + (-w1_3*x1_3_2 - w1_3*x1_3_3 + w1_3 + x1_3_2 + x1_3_3) z_3
+   X_6 = ((x1_3_3 - 1)*(w1_2 + w1_3 - 1)) z_1 + (-w1_2*(x1_3_3 - 1)) z_2 + (-w1_3*x1_3_3 + w1_3 + x1_3_3) z_3
+   sum_j c_{v,j} = 1 for every v: True
+own cotree (Kruskal, edge order): [5, 8]
+  point 0: own section == engine tmap; own Kirchhoff density D(t)|det[t;dt/dxi]| = 514954632825/1195061 == engine g; sign det[t;dt/dxi] = +1; -sum y.z == sum lam.X: True
+  point 1: own section == engine tmap; own Kirchhoff density D(t)|det[t;dt/dxi]| = 689426757725/353736 == engine g; sign det[t;dt/dxi] = +1; -sum y.z == sum lam.X: True
+  point 2: own section == engine tmap; own Kirchhoff density D(t)|det[t;dt/dxi]| = 418156279275/160694404 == engine g; sign det[t;dt/dxi] = +1; -sum y.z == sum lam.X: True
+  point 3: own section == engine tmap; own Kirchhoff density D(t)|det[t;dt/dxi]| = -21565097904/1015625 == engine g; sign det[t;dt/dxi] = +1; -sum y.z == sum lam.X: True
+theta(3, 3, 3): cotree [5, 8], 72 nonzero Cauchy-Binet minors of 225, orientation +1 (2.0s)
+K(lam;0) by Cauchy-Binet minors (own): 6624 monomials in lam; first-order z-weights: [33312, 33312, 33312, 33312, 33312, 33312, 33312, 33312, 33312, 33312, 33312, 33312] monomials (14.1s)
+  lam = {1: [-5, -1, 4, -1], 2: [3, -3, 0, 6], 3: [-4, 5, 0, 5], 4: [1, -5, 1, 1], 5: [-4, 5, -7, -7], 6: [-2, 7, 2, -1]}: engine K(lam;0) (numeric sources) = Cauchy-Binet value = 45253/360
+  lam = {1: [-6, -5, 5, 5], 2: [-4, 7, -4, 4], 3: [-7, -1, 4, 5], 4: [7, -1, 2, 0], 5: [-7, -2, 1, 0], 6: [4, -6, 3, -2]}: engine K(lam;0) (numeric sources) = Cauchy-Binet value = -102613/720
+  lam = {1: [-7, -5, 4, 6], 2: [-6, -6, 5, 7], 3: [-7, 0, -5, 1], 4: [4, -2, -1, 0], 5: [-5, -5, 3, -7], 6: [0, 6, 6, -4]}: engine K(lam;0) (numeric sources) = Cauchy-Binet value = -9567887/4320
+  first order in z at lam = {1: [-6, 5, -4, -4], 2: [3, 5, 7, 3], 3: [5, 5, 7, 2], 4: [4, -6, -6, 1], 5: [0, 1, 6, -1], 6: [-4, -2, 7, -5]}, z = {1: [3, 1, -1, 0], 2: [2, 3, 1, 0], 3: [2, 1, -1, -5]}: engine taylor K_1 = Cauchy-Binet first-order weights = 49018759/7776
+K(lam;0) in brackets <ijkl> = det(lam_i,lam_j,lam_k,lam_l) (vertex labels):
+    {((1, 2, 3, 4), (1, 3, 5, 6)): Fraction(-1, 8640), ((1, 2, 3, 4), (1, 4, 5, 6)): Fraction(-1, 4320), ((1, 2, 3, 4), (2, 3, 5, 6)): Fraction(-1, 4320), ((1, 2, 3, 4), (2, 4, 5, 6)): Fraction(-1, 2160), ((1, 2, 3, 5), (1, 4, 5, 6)): Fraction(-1, 8640), ((1, 2, 3, 5), (2, 4, 5, 6)): Fraction(-1, 4320), ((1, 2, 3, 5), (3, 4, 5, 6)): Fraction(-1, 8640), ((1, 2, 3, 6), (1, 4, 5, 6)): Fraction(-1, 4320), ((1, 2, 3, 6), (2, 4, 5, 6)): Fraction(-1, 2160), ((1, 2, 3, 6), (3, 4, 5, 6)): Fraction(-1, 4320), ((1, 2, 4, 5), (1, 3, 5, 6)): Fraction(1, 8640), ((1, 2, 4, 5), (2, 3, 5, 6)): Fraction(1, 4320), ((1, 2, 4, 5), (3, 4, 5, 6)): Fraction(-1, 4320), ((1, 2, 4, 6), (1, 3, 5, 6)): Fraction(1, 4320), ((1, 2, 4, 6), (2, 3, 5, 6)): Fraction(1, 2160), ((1, 2, 4, 6), (3, 4, 5, 6)): Fraction(-1, 2160)}
+QMC (Sobol, 131072 points, brute-force float Kirchhoff density in own section), lam = {1: [2, 3, 2, 2], 2: [3, 4, -2, -3], 3: [3, 2, 5, 4], 4: [-3, -4, 2, -1], 5: [-3, -4, 3, 5], 6: [-5, 4, 1, 2]}:
+   QMC = -259.680930517, exact = -2243657/8640 = -259.682523148, relative difference 6.13e-06 (5 agreeing digits)
+time 282.1s
+saved /Users/libotao/Desktop/holomorphic-twist-program/explore/msym-D8/code/kernels_c4_333.pkl (3, 3, 3)

@@ -1,0 +1,59 @@
+g0 g0 c1: |hatQ1 p| = 100, |hatQ1^2 p| = 320 (3.5s)
+   theta(1, 4, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (3.1s)
+   theta(2, 3, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (3.2s)
+   theta(3, 3, 3): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (4.3s)
+g2 g1 c1: |hatQ1 p| = 120, |hatQ1^2 p| = 320 (0.4s)
+   theta(1, 4, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (2.1s)
+   theta(2, 3, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (2.1s)
+   theta(3, 3, 3): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (2.7s)
+   operator g0 g0 c1: 320 equations, rank 2, consistent True, solution None
+   operator g2 g1 c1: 320 equations, rank 2, consistent True, solution None
+ALL operators ['g0 g0 c1', 'g2 g1 c1']: 640 equations, rank 2, consistent True, solution (k144, k234, k333) = None
+   claimed k = (2, -4, -2/3) satisfies all equations: True
+d2c0 g1 g2: |hatQ1 p| = 222, |hatQ1^2 p| = 2654 (4.9s)
+   theta(1, 4, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (44.1s)
+   theta(2, 3, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (43.2s)
+   theta(3, 3, 3): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (57.3s)
+d3g2 g2 c0: |hatQ1 p| = 420, |hatQ1^2 p| = 2696 (24.4s)
+   theta(1, 4, 4): |hatQ_G p| = 6828, |{hatQ0, hatQ_G} p| = 2762 (48.1s)
+   theta(2, 3, 4): |hatQ_G p| = 6828, |{hatQ0, hatQ_G} p| = 2762 (50.0s)
+   theta(3, 3, 3): |hatQ_G p| = 6828, |{hatQ0, hatQ_G} p| = 2762 (66.8s)
+g1 d4g0 c2: |hatQ1 p| = 420, |hatQ1^2 p| = 2654 (20.9s)
+   theta(1, 4, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (44.0s)
+   theta(2, 3, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (42.7s)
+   theta(3, 3, 3): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (56.1s)
+   operator g0 g0 c1: 320 equations, rank 2, consistent True, solution None
+   operator g2 g1 c1: 320 equations, rank 2, consistent True, solution None
+   operator d2c0 g1 g2: 2720 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator d3g2 g2 c0: 2762 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator g1 d4g0 c2: 2720 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+ALL operators ['d2c0 g1 g2', 'd3g2 g2 c0', 'g0 g0 c1', 'g1 d4g0 c2', 'g2 g1 c1']: 8842 equations, rank 3, consistent True, solution (k144, k234, k333) = ['2', '-4', '-2/3']
+   |k| * |Aut| / 4 = ['1', '1', '1']
+   residual zero on all equations: True
+   claimed k = (2, -4, -2/3) satisfies all equations: True
+g0 g1 c2 [explorer op]: |hatQ1 p| = 120, |hatQ1^2 p| = 288 (3.7s)
+   theta(1, 4, 4): |hatQ_G p| = 828, |{hatQ0, hatQ_G} p| = 288 (4.6s)
+   theta(2, 3, 4): |hatQ_G p| = 828, |{hatQ0, hatQ_G} p| = 288 (4.7s)
+   theta(3, 3, 3): |hatQ_G p| = 828, |{hatQ0, hatQ_G} p| = 288 (6.4s)
+g0 g1 g2 [explorer op]: |hatQ1 p| = 240, |hatQ1^2 p| = 2016 (1.0s)
+   theta(1, 4, 4): |hatQ_G p| = 4968, |{hatQ0, hatQ_G} p| = 2016 (23.3s)
+   theta(2, 3, 4): |hatQ_G p| = 4968, |{hatQ0, hatQ_G} p| = 2016 (24.0s)
+   theta(3, 3, 3): |hatQ_G p| = 4968, |{hatQ0, hatQ_G} p| = 2016 (32.2s)
+g0 g1 g1: |hatQ1 p| = 160, |hatQ1^2 p| = 2240 (0.6s)
+   theta(1, 4, 4): |hatQ_G p| = 5796, |{hatQ0, hatQ_G} p| = 2240 (2.0s)
+   theta(2, 3, 4): |hatQ_G p| = 5796, |{hatQ0, hatQ_G} p| = 2240 (2.0s)
+   theta(3, 3, 3): |hatQ_G p| = 5796, |{hatQ0, hatQ_G} p| = 2240 (1.9s)
+   operator g0 g0 c1: 320 equations, rank 2, consistent True, solution None
+   operator g2 g1 c1: 320 equations, rank 2, consistent True, solution None
+   operator d2c0 g1 g2: 2720 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator d3g2 g2 c0: 2762 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator g1 d4g0 c2: 2720 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator g0 g1 c2 [explorer op]: 288 equations, rank 1, consistent True, solution None
+      rank 1: {hatQ0,hatQ_G} = a_G X, hatQ1^2 = b X with a = ['1', '-23/3', '18'], b = -62/3 (exact on all monomials: True); a.(2,-4,-2/3) + b = 0
+   operator g0 g1 g2 [explorer op]: 2016 equations, rank 1, consistent True, solution None
+      rank 1: {hatQ0,hatQ_G} = a_G X, hatQ1^2 = b X with a = ['1', '-23/3', '18'], b = -62/3 (exact on all monomials: True); a.(2,-4,-2/3) + b = 0
+   operator g0 g1 g1: 2240 equations, rank 2, consistent True, solution None
+ALL operators ['d2c0 g1 g2', 'd3g2 g2 c0', 'g0 g0 c1', 'g0 g1 c2 [explorer op]', 'g0 g1 g1', 'g0 g1 g2 [explorer op]', 'g1 d4g0 c2', 'g2 g1 c1']: 13386 equations, rank 3, consistent True, solution (k144, k234, k333) = ['2', '-4', '-2/3']
+   |k| * |Aut| / 4 = ['1', '1', '1']
+   residual zero on all equations: True
+   claimed k = (2, -4, -2/3) satisfies all equations: True

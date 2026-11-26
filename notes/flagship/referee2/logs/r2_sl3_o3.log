@@ -1,0 +1,22 @@
+max |3^7 W| entries: 236196 87480
+== colour factors at 6 random X-tuples
+W_133^(v,d) = +-N^2(tr(1342)-tr(1243)) (+ for v=0,1,2): True ; W_223^(v,d) = 0 all v: True ; Thm 4.6 sl_N trace formulas for W_133, W_223 at N=3: True
+D, u2f, D3 alternating (one transposition): True True True
+== cochain identities at 6 random 4-point configurations (sum p = 0), exact
+F133+F223 = 2N^2 beta: True   (lhs values: ['2252016', '12993696', '3852036'] ...)
+o' = F223/48 - (N^2/40) beta: True   (lhs values: ['10650', '-9434394', '-3460485/4'] ...)
+(1/2){D,D} = F223/(12N^2) + d(((N^2+4)/(2N^2)) u2f): True   (lhs values: ['-15539/3', '2725580/3', '203678/3'] ...)
+o' - (N^2/8){D,D} = d iota, iota = -((3N^2+10)/20) u2f: True   (lhs values: ['-913049/10', '-8499307/5', '4774073/5'] ...)
+theta'(d) = -(N^2/60) dD3: True   (lhs values: ['250263/10', '2458512/5', '7426404/5'] ...)
+{D,u2f} = (1/3) dD3: True   (lhs values: ['721610', '-240192', '5277660'] ...)
+{D,iota} + theta' = d xi, xi = -((2N^2+5)/30) D3: True   (lhs values: ['-5529384/5', '-828552/5', '-5151080'] ...)
+{D,iota} - theta' = d(-((N^2+5)/30) D3): True   (lhs values: ['120400', '-6977712/5', '294294'] ...)
+== controls (must fail)
+theta'(d) = +(N^2/60) dD3 : False ; {D,iota} - theta' = d xi : False ; {D,iota} - theta' = d(((N^2+5)/30) D3): False
+== closedness: d o_3 = 0 (5-point configurations), d o' = 0; control d(random 4-cochain) != 0
+ d(o_3/(a pi nu)) = 0 ; d o' = 0 ; d theta' = 0 ; control d(F223 * [p0p1]-weighted) = -893218464
+ d(o_3/(a pi nu)) = 0 ; d o' = 0 ; d theta' = 0 ; control d(F223 * [p0p1]-weighted) = -6718303872
+ d(o_3/(a pi nu)) = 0 ; d o' = 0 ; d theta' = 0 ; control d(F223 * [p0p1]-weighted) = 13467695616
+== order-hbar^3 coefficients (N = 3)
+ i_2 = eps pi nu iota = eps U ((3N^2+10)/1280) pi^-4 u2f : 37/1280   (pi nu = -U/(64 pi^4); -(-(3N^2+10)/20)/64 = 37/1280 )
+ i_3 = a eps pi nu xi = a eps U ((2N^2+5)/1920) pi^-4 D3 : 23/1920   (= -(-(2N^2+5)/30)/64 = 23/1920 )

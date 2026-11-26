@@ -1,0 +1,5 @@
+graph 3.1 plan tight kappa 1/2: I(probe) = 1/11520; XP==spred [True, True, True]; moment XP==spred [True, True]; symbolic==XP None [0.3s]
+graph 3.2 plan tight kappa -1/8: I(probe) = -1/10368; XP==spred [True, True, True]; moment XP==spred [True, True]; symbolic==XP None [0.1s]
+graph 3.3 plan tight kappa 1: I(probe) = 0; XP==spred [True, True, True]; moment XP==spred [True, True]; symbolic==XP None [0.2s]
+graph 3.4 plan tight kappa -1/2: I(probe) = -11/155520; XP==spred [True, True, True]; moment XP==spred [True, True]; symbolic==XP None [0.1s]
+graph 3.5 plan tight kappa -1/2: I(probe) = 0; XP==spred [True, True, True]; moment XP==spred [True, True]; symbolic==XP None [0.2s]

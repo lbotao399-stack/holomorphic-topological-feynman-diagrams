@@ -1,0 +1,20 @@
+graph, D = 2, 4 moves, coordinates ['w1_2', 'x1_2_2', 'w2_2', 'x2_2_2', 'w3_2', 'x3_1_2', 'w4_2', 'x4_2_2']
+  move 1: 0 -> 1, chains [[0], [1, 4]] (signs [[1], [1, -1]], interior [[], [2]]) -> edge 9
+  move 2: 0 -> 4, chains [[2], [3, 8]] (signs [[1], [1, -1]], interior [[], [5]]) -> edge 10
+  move 3: 1 -> 4, chains [[5, 7], [6]] (signs [[1, 1], [1]], interior [[3], []]) -> edge 11
+  move 4: 0 -> 1, chains [[9], [10, 11]] (signs [[1], [1, -1]], interior [[], [4]]) -> edge 12
+  final edge 12 = (0 -> 1), t = 1; orientation -1
+D1  exps: {'w1_1': Fraction(1, 2), 'w1_2': Fraction(-1, 2), 'w2_1': Fraction(1, 2), 'w2_2': Fraction(-1, 2), 'w3_1': Fraction(-1, 2), 'w3_2': Fraction(1, 2), 'w4_1': Fraction(1, 1), 'w4_2': Fraction(-1, 2), 'x4_2_1': Fraction(-1, 2), 'x4_2_2': Fraction(-1, 2)}
+    #terms of the polynomial part: 140  (27.6s)
+    central blocks: [['w4_1', 'w4_2'], ['x4_2_1', 'x4_2_2']]  ear blocks: [['w1_1', 'w1_2'], ['x1_2_1', 'x1_2_2'], ['w2_1', 'w2_2'], ['x2_2_1', 'x2_2_2'], ['w3_1', 'w3_2'], ['x3_1_1', 'x3_1_2']]
+D2  int over central blocks of g  = (sqrt(w1_1)*sqrt(w2_1)*sqrt(w3_2)/(sqrt(w1_2)*sqrt(w2_2)*sqrt(w3_1))) * [0]   -> identically zero: True  (0.1s)
+    int over ear blocks of g      = (w4_1/(sqrt(w4_2)*sqrt(x4_2_1)*sqrt(x4_2_2))) * [polynomial with 56 terms]  -> identically zero: False
+D3  central move: Move(3: 0->1, chains [[9], [10, 11]] -> edge 12)  w-block ['w4_1', 'w4_2']  x-block ['x4_2_1', 'x4_2_2']
+    ear point 0: (sign, c^2) at three central points: [(1, Fraction(196, 1)), (1, Fraction(196, 1)), (1, Fraction(196, 1))]  -> equal: True
+    ear point 1: (sign, c^2) at three central points: [(1, Fraction(18375, 116)), (1, Fraction(18375, 116)), (1, Fraction(18375, 116))]  -> equal: True
+    ear point 2: (sign, c^2) at three central points: [(1, Fraction(1029, 4)), (1, Fraction(1029, 4)), (1, Fraction(1029, 4))]  -> equal: True
+D4  lambda = [-3, -2, -5, 7, 2]  z = ['-1', '2/3', '1/3', '4', '1', '-4/3', '-1/2', '-1', '1']
+    K_0 = 0,  K_1 = 0  (0.0s)
+D5  K_2 (second order in z) = 0 ;  moment <(y_0)^2 y_3> = 0  (0.3s)
+D6  #edges with d(y_e, l)/d(x4_2_2, w4_2) != 0 (symbolic): 0 of 9
+    (nontriviality: dl/dw4_2 != 0: True, dl/dx4_2_2 != 0: True, #edges with dy_e/dw4_2 != 0: 9)

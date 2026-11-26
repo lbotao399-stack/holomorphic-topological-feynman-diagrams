@@ -1,0 +1,190 @@
+"""Taylor coefficients of the two-loop Moyal theta graphs in units of pi nu."""
+import argparse
+from collections import defaultdict
+from fractions import Fraction as F
+from functools import lru_cache
+from itertools import combinations_with_replacement, permutations
+from math import factorial, prod
+from pathlib import Path
+import json
+import sys
+
+import sympy as sp
+from sympy.polys.rings import ring
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/"deepen/o3/code"))
+import ribbon
+from check_laurent import ce, theta_reference
+
+
+def rising(x, degree):
+    return prod(x+j for j in range(degree))
+
+
+class Theta:
+    def __init__(self, shape):
+        self.shape = shape
+        if shape not in ((1,3,3), (2,2,3)):
+            raise ValueError(f"unsupported theta shape {shape}")
+        self.ext = ext = (1, 2, 3, 4)
+        start = 0
+        self.edges = []
+        for length in shape:
+            path = (0, *ext[start:start+length-1], 5)
+            self.edges.extend(zip(path, path[1:]))
+            start += length-1
+        self.ring,*gens = ring("u v w A B x1 x2 x3 x4",sp.ZZ)
+        self.brackets = gens[:3]
+        weights = [gens[3],gens[4],1-gens[3]-gens[4]]
+        self.momenta = [(1,0,0),(0,1,0),(0,0,1),(-1,-1,-1)]
+        momentum = {vertex:self.momenta[j] for j,vertex in enumerate(ext)}
+        offsets,inside = [],[]
+        pos = 0
+        for length in shape:
+            cumul = [(0,0,0)]
+            for vertex in ext[pos:pos+length-1]:
+                cumul.append(tuple(a+b for a,b in zip(cumul[-1],momentum[vertex])))
+            inside.append(cumul)
+            ratios = gens[5+pos:5+pos+length-1]
+            offsets.append(tuple(sum((ratio*vec[j] for ratio,vec in zip(ratios,cumul[1:])),
+                                     self.ring.zero) for j in range(3)))
+            pos += length-1
+        total = tuple(sum(v[j] for v in offsets) for j in range(3))
+        currents = []
+        for share,offset,path in zip(weights,offsets,inside):
+            for cumulative in path:
+                currents.append(tuple(share*total[i] - offset[i]+cumulative[i] for i in range(3)))
+        local = ribbon.local_orders(6,self.edges,ext)
+        def incoming(half):
+            if half[0] == 'x':
+                return momentum[half[1]]
+            sign = 1 if half[2] else -1
+            return tuple(sign*q for q in currents[half[1]])
+        self.vertices = []
+        for slots in local:
+            p,q,k = [incoming(h) for h in slots]
+            assert all(p[i]+q[i]+k[i] == 0 for i in range(3))
+            pairs = ((0,1),(0,2),(1,2))
+            self.vertices.append(sum((p[i]*q[j]-p[j]*q[i])*letter
+                                     for (i,j),letter in zip(pairs,self.brackets)))
+        # The normalized simplex measure leaves the graph-specific K(0)/pi here.
+        self.prefactor = F(-1,20) if shape == (1,3,3) else F(1,30)
+
+    @lru_cache(maxsize=32768)
+    def moment(self, powers):
+        # w_A,w_B independent; every path's independent ratios are x_2,...,x_n.
+        w = [F(7,2)-length for length in self.shape]
+        value = F(rising(w[0],powers[0])*rising(w[1],powers[1]),
+                  rising(sum(w),powers[0]+powers[1]))
+        pos = 2
+        for length in self.shape:
+            block = powers[pos:pos+length-1]
+            value *= F(prod(factorial(e) for e in block),rising(length,sum(block)))
+            pos += length-1
+        assert pos == len(powers)
+        return value
+
+    @lru_cache(maxsize=64)
+    def colour(self,odd_vertices):
+        return ribbon.colour_weight(6,self.edges,self.ext,
+                                    {v:"d" for v in odd_vertices})
+
+    def order(self,degree):
+        output = defaultdict(F)
+        for entries in combinations_with_replacement(range(6),degree):
+            counts = tuple(entries.count(v) for v in range(6))
+            scalar = self.prefactor/F(4*2**degree*prod(factorial(a) for a in counts))
+            colour = self.colour(tuple(v for v,a in enumerate(counts) if a%2))
+            if not colour:
+                continue
+            poly = self.brackets[0]*(self.brackets[1]+self.brackets[2])
+            for v,power in enumerate(counts):
+                if power:
+                    poly *= self.vertices[v]**power
+            integrated = defaultdict(F)
+            for exps,integer in poly.items():
+                integrated[exps[:3]] += int(integer)*self.moment(exps[3:])
+            for trace,by_rank in colour.items():
+                for rank,c in by_rank.items():
+                    for monomial,q in integrated.items():
+                        output[trace,rank,monomial] += scalar*c*q
+        return {key:c for key,c in output.items() if c}
+
+
+@lru_cache(maxsize=4096)
+def permuted_monomial(monomial,order):
+    # After momentum conservation the bracket algebra of four external legs
+    # is freely generated by [12], [13], [23].
+    algebra,u,v,w = ring("u v w",sp.ZZ)
+    brackets = {(0,1):u,(0,2):v,(1,2):w,(0,3):-u-v,(1,3):u-w,(2,3):v+w}
+    def bracket(i,j):
+        return brackets[i,j] if i<j else -brackets[j,i]
+    terms = algebra.one
+    for (i,j),power in zip(((0,1),(0,2),(1,2)),monomial):
+        terms *= bracket(order[i],order[j])**power
+    return terms.to_dict()
+
+
+def alternating(raw):
+    result = defaultdict(F)
+    for order in permutations(range(4)):
+        sign = ribbon.perm_sign(order)
+        for (trace,rank,monomial),coefficient in raw.items():
+            new_trace = ribbon.canon_tau([tuple(order[i] for i in word) for word in trace])
+            for new_monomial,integer in permuted_monomial(monomial,order).items():
+                result[new_trace,rank,new_monomial] += sign*int(integer)*coefficient
+    return {key:c for key,c in result.items() if c}
+
+
+def serialize(cochain):
+    return [[trace,rank,mon,c.numerator,c.denominator] for (trace,rank,mon),c in sorted(cochain.items())]
+
+
+def to_ce(entries):
+    result = {}
+    brackets = [ce.bracket_poly(i,j,3) for i,j in ((0,1),(0,2),(1,2))]
+    @lru_cache(maxsize=None)
+    def expand(monomial):
+        poly = {(0,)*6:1}
+        for letter,degree in zip(brackets,monomial):
+            for _ in range(degree):
+                poly = ce.poly_mul(poly,letter)
+        return poly
+    for trace,rank,mon,num,den in entries:
+        trace = tuple(tuple(word) for word in trace)
+        for powers,c in expand(tuple(mon)).items():
+            ce.add_term(result,(trace,powers),{rank:F(num,den)*c})
+    return ce.clean(result)
+
+
+def calculate(degree):
+    result = defaultdict(F)
+    for shape in ((1,3,3),(2,2,3)):
+        for key,c in alternating(Theta(shape).order(degree)).items():
+            result[key] += c
+    return {key:c for key,c in result.items() if c}
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("degree",type=int)
+    parser.add_argument("--output",type=Path)
+    args = parser.parse_args()
+    if args.degree < 0:
+        parser.error("degree must be nonnegative")
+    result = calculate(args.degree)
+    entries = serialize(result)
+    if args.degree <= 1:
+        reference = theta_reference()
+        reference = reference["op"] if args.degree == 0 else ce.lin((F(1,2),reference["th"]["d"]))
+        assert not ce.clean(ce.lin((1,to_ce(entries)),(-1,reference)))
+    if args.output:
+        args.output.write_text(json.dumps({"degree":args.degree,"coefficients":entries},
+                              separators=(",",":"))+"\n")
+    print(f"e^{args.degree}: {len(entries)} bracket/trace/rank monomials, "
+          f"{len(to_ce(entries))} canonical CE coordinates")
+
+
+if __name__ == "__main__":
+    main()

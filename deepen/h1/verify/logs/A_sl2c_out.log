@@ -1,0 +1,62 @@
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=-2 dimM=7 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=-1 dimM=71 dimV=50 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=0 dimM=309 dimV=201 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=1 dimM=766 dimV=482 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=2 dimM=1197 dimV=751 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=3 dimM=1222 dimV=787 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=4 dimM=811 dimV=551 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=5 dimM=334 dimV=246 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=6 dimM=76 dimV=63 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=7 dimM=7 dimV=7 H(p1,p2)=[0, 0] pred=0 OK
+# (2, 1, 1, 0, 0) done in 2.1s
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=0 dimM=4 dimV=1 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=1 dimM=24 dimV=10 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=2 dimM=59 dimV=31 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=3 dimM=76 dimV=46 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=4 dimM=54 dimV=37 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=5 dimM=20 dimV=16 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=6 dimM=3 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+# (2, 0, 0, 1, 0) done in 0.0s
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=-1 dimM=4 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=0 dimM=28 dimV=18 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=1 dimM=83 dimV=53 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=2 dimM=135 dimV=89 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=3 dimM=130 dimV=89 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=4 dimM=74 dimV=54 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=5 dimM=23 dimV=19 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 2, 0, 0, 0) w=(0, 1, -1) (a,b)=(0, 0) g=6 dimM=3 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 2, 0, 0, 0) done in 0.0s
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=-1 dimM=7 dimV=3 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=0 dimM=64 dimV=29 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=1 dimM=245 dimV=119 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=2 dimM=521 dimV=274 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=3 dimM=676 dimV=388 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=4 dimM=546 dimV=345 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=5 dimM=265 dimV=187 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=6 dimM=69 dimV=56 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 2, 1, 1, 0) w=(-1, 1, 0) (a,b)=(1, 0) g=7 dimM=7 dimV=7 H(p1,p2)=[0, 0] pred=0 OK
+# (0, 2, 1, 1, 0) done in 0.8s
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=-2 dimM=7 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=-1 dimM=71 dimV=50 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=0 dimM=309 dimV=201 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=1 dimM=766 dimV=482 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=2 dimM=1197 dimV=751 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=3 dimM=1222 dimV=787 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=4 dimM=811 dimV=551 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=5 dimM=334 dimV=246 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=6 dimM=76 dimV=63 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=7 dimM=7 dimV=7 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 1, 2, 0, 0) done in 2.4s
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=-2 dimM=13 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=-1 dimM=170 dimV=81 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=0 dimM=924 dimV=457 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=1 dimM=2825 dimV=1444 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=2 dimM=5447 dimV=2886 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=3 dimM=6957 dimV=3864 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=4 dimM=5965 dimV=3534 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=5 dimM=3379 dimV=2182 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=6 dimM=1200 dimV=866 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=7 dimM=237 dimV=197 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=8 dimM=19 dimV=19 H(p1,p2)=[0, 0] pred=0 OK
+# (2, 1, 1, 1, 0) done in 520.6s
+TOTAL sl2 charge0=True exact=False: compared 55 mismatches 0

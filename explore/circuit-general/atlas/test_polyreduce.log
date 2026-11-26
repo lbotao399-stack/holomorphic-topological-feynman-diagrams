@@ -1,0 +1,25 @@
+(1) series-parallel
+fan3 D=2 plan [('S', 3), ('S', 2), ('S', 0)] | pointwise ok (6 pts) | K = -343/864
+   spred: -343/864 equal: True
+theta133 D=3 plan [('S', 1), ('S', 2), ('S', 0), ('S', 3)] | pointwise ok (6 pts) | K = -7/6
+   spred: -7/6 equal: True
+(2) C^2 K4 subdivision: edges (01,02,03,14,42,13,23), root 4
+K4sub lam3=0 plan [('S', 4), ('Y', 3), ('S', 0)] | pointwise ok (6 pts) | K = 125/288
+   nonSP/README formula: 125/288 equal: True
+K4sub lam3=0 plan [('S', 4), ('Y', 3), ('S', 0)] | pointwise ok (6 pts) | K = 469/144
+   nonSP/README formula: 469/144 equal: True
+K4sub all sourced plan [('S', 4), ('Y', 0), ('S', 1)] | pointwise ok (3 pts) | rational transfer: sourced star-triangle at 0
+(3) C^3 K4[1,1,1,2,2,3]a, four marks lambda_0,3,6 = e1,e2,e3, root 7
+K4[1,1,1,2,2,3]a plan [('S', 7), ('S', 3), ('S', 0), ('S', 6), ('Y', 1), ('S', 2)] | pointwise ok (6 pts) | K = -1/77760
+   nonSP/VERIFY 3.2: -1/77760; equal: True
+(4) the other five C^3 K4 subdivisions, four marks: polynomial reducibility
+   K4[1,1,1,1,3,3] marks [0, 3, 6, 7] polynomial: False
+   K4[1,1,1,1,3,3] (with Y1) plan [('S', 7), ('S', 6), ('Y', 4), ('Y', 0), ('S', 1), ('S', 2)] | pointwise ok (3 pts) | rational transfer: sourced star-triangle at 0
+   K4[1,1,1,2,2,3]b marks [0, 3, 5, 7] polynomial: False
+   K4[1,1,1,2,2,3]b (with Y1) plan [('S', 7), ('Y', 4), ('S', 5), ('Y', 2), ('Y', 0), ('S', 1)] | pointwise ok (3 pts) | rational transfer: sourced star-triangle at 0
+   K4[1,1,1,2,2,3]c marks [0, 1, 6, 7] polynomial: False
+   K4[1,1,1,2,2,3]c (with Y1) plan [('S', 7), ('Y', 5), ('Y', 2), ('Y', 1), ('S', 0), ('S', 3)] | pointwise ok (3 pts) | rational transfer: sourced star-triangle at 1
+   K4[1,1,2,2,2,2]a marks [1, 4, 6, 7] polynomial: False
+   K4[1,1,2,2,2,2]a (with Y1) plan [('S', 7), ('S', 4), ('S', 6), ('Y', 3), ('S', 1), ('S', 0)] | pointwise ok (3 pts) | rational transfer: sourced star-triangle at 3
+   K4[1,1,2,2,2,2]b marks [2, 5, 6, 7] polynomial: False
+   K4[1,1,2,2,2,2]b (with Y1) plan [('S', 7), ('S', 6), ('S', 2), ('S', 5), ('Y', 0), ('S', 1)] | pointwise ok (3 pts) | rational transfer: sourced star-triangle at 0

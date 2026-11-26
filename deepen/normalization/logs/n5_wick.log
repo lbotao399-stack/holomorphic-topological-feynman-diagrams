@@ -1,0 +1,27 @@
+Part A: obstruction thetas, engine labelling (N = 0, N' = root), local order L' of anomaly-structure
+  theta(1, 3, 3): sigma (Wick) = -1 ; sgn(L -> L') = -1 ; equal: True
+  theta(2, 2, 3): sigma (Wick) = -1 ; sgn(L -> L') = -1 ; equal: True
+Part B: labelling invariance of sigma*K*C, obstruction thetas, (H,T) = (2,1), so(3), modulo sum p = 0
+  theta(1, 3, 3): 6 random relabellings: invariant [True, True, True, True, True, True] ; controls with sigma -> +1 where sigma = -1: [None, None, False, False, False, False]
+  theta(2, 2, 3): 6 random relabellings: invariant [True, True, True, True, True, True] ; controls with sigma -> +1 where sigma = -1: [None, False, None, None, None, False]
+Part C: Q_n graphs with their decorations
+  S2 box: sigma = +1   (indices: A1 D1 R12|R12 D2 R23|R23 D3 A2)
+  S2 A  : sigma = +1   (indices: A1 D1 R12|R12 D2 R23|R23 A2 R34|R34 D4 R45|R45 D5 A3)
+  S2 B  : sigma = +1   (indices: A1 Du Ruq|A2 Dw Rwq|Ruq Rwq Rqa|Rqa Da Rab|Rab Db A3)
+  six-d-Q3 G1: sigma = -1 ; leg pattern equals claim C6 T-string: True
+  six-d-Q3 G2: sigma = +1 ; leg pattern equals claim C6 T-string: True
+  six-d-Q3 G3: sigma = -1 ; leg pattern equals claim C6 T-string: True
+  six-d-Q3 G4: sigma = +1 ; leg pattern equals claim C6 T-string: True
+  six-d-Q3 G5: sigma = -1 ; leg pattern equals claim C6 T-string: True
+  six-d-Q3 signs (G1..G5): [-1, 1, -1, 1, -1]
+  msym-odd theta_rootN(1, 3, 3): sigma = -1 ; S2 pattern = arm tensor of vops.py: True ; spokes O->v: 3
+  msym-odd theta_rootN(2, 2, 3): sigma = -1 ; S2 pattern = arm tensor of vops.py: True ; spokes O->v: 3
+Part D: labelling invariance of sigma*K*T for S2 A, B (O = root fixed)
+  A (H,T)=(2,1): reference sigma = +1
+    4 random relabellings (tree vertices, edge reversals incl. spokes, edge order, local orders): invariant [True, True, True, True]
+  A (H,T)=(3,0): reference sigma = +1
+    4 random relabellings (tree vertices, edge reversals incl. spokes, edge order, local orders): invariant [True, True, True, True]
+  B (H,T)=(2,1): reference sigma = +1
+    4 random relabellings (tree vertices, edge reversals incl. spokes, edge order, local orders): invariant [True, True, True, True]
+  B (H,T)=(3,0): reference sigma = +1
+    4 random relabellings (tree vertices, edge reversals incl. spokes, edge order, local orders): invariant [True, True, True, True]

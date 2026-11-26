@@ -1,0 +1,43 @@
+algebra su2, dim 3
+   hatQ0^2 = 0 on the first 6 test operators: True
+   C10 closed forms, A=0 B=1: hatQ1(g g) True (80 terms), hatQ1(g c) True (20 terms), hatQ1(c c) = 0 True
+   C10 closed forms, A=1 B=1: hatQ1(g g) True (80 terms), hatQ1(g c) True (20 terms), hatQ1(c c) = 0 True
+   C10 closed forms, A=2 B=0: hatQ1(g g) True (80 terms), hatQ1(g c) True (20 terms), hatQ1(c c) = 0 True
+   closed forms: True
+   {hatQ0,hatQ1}(g0                    ) = ZERO | |hatQ1 p| = 0, |hatQ0 hatQ1 p| = 0, |hatQ1 hatQ0 p| = 0 | 0.0s
+   {hatQ0,hatQ1}(d3g1                  ) = ZERO | |hatQ1 p| = 0, |hatQ0 hatQ1 p| = 0, |hatQ1 hatQ0 p| = 0 | 0.0s
+   {hatQ0,hatQ1}(d2d4g2                ) = ZERO | |hatQ1 p| = 0, |hatQ0 hatQ1 p| = 0, |hatQ1 hatQ0 p| = 0 | 0.2s
+   {hatQ0,hatQ1}(g1 g2                 ) = ZERO | |hatQ1 p| = 80, |hatQ0 hatQ1 p| = 270, |hatQ1 hatQ0 p| = 270 | 0.0s
+   {hatQ0,hatQ1}(g2 g2                 ) = ZERO | |hatQ1 p| = 80, |hatQ0 hatQ1 p| = 200, |hatQ1 hatQ0 p| = 200 | 0.0s
+   {hatQ0,hatQ1}(c1 g2                 ) = ZERO | |hatQ1 p| = 20, |hatQ0 hatQ1 p| = 54, |hatQ1 hatQ0 p| = 54 | 0.0s
+   {hatQ0,hatQ1}(d3g0 d3g1             ) = ZERO | |hatQ1 p| = 800, |hatQ0 hatQ1 p| = 3450, |hatQ1 hatQ0 p| = 3450 | 0.2s
+   {hatQ0,hatQ1}(d4g2 c0               ) = ZERO | |hatQ1 p| = 80, |hatQ0 hatQ1 p| = 236, |hatQ1 hatQ0 p| = 236 | 0.1s
+   {hatQ0,hatQ1}(g1 d2d3c2             ) = ZERO | |hatQ1 p| = 300, |hatQ0 hatQ1 p| = 1028, |hatQ1 hatQ0 p| = 1028 | 0.3s
+   {hatQ0,hatQ1}(d1d4g0 g2             ) = ZERO | |hatQ1 p| = 1200, |hatQ0 hatQ1 p| = 5140, |hatQ1 hatQ0 p| = 5140 | 0.5s
+   {hatQ0,hatQ1}(d2g1 d4c1             ) = ZERO | |hatQ1 p| = 300, |hatQ0 hatQ1 p| = 778, |hatQ1 hatQ0 p| = 778 | 0.2s
+   {hatQ0,hatQ1}(d3d3g2 g0             ) = ZERO | |hatQ1 p| = 800, |hatQ0 hatQ1 p| = 3415, |hatQ1 hatQ0 p| = 3415 | 0.3s
+   {hatQ0,hatQ1}(g1 g2 d4c0            ) = ZERO | |hatQ1 p| = 222, |hatQ0 hatQ1 p| = 866, |hatQ1 hatQ0 p| = 866 | 0.0s
+   {hatQ0,hatQ1}(g0 g0 g2              ) = ZERO | |hatQ1 p| = 160, |hatQ0 hatQ1 p| = 658, |hatQ1 hatQ0 p| = 658 | 0.0s
+   {hatQ0,hatQ1}(d2g0 g1 c1            ) = ZERO | |hatQ1 p| = 420, |hatQ0 hatQ1 p| = 1570, |hatQ1 hatQ0 p| = 1570 | 0.1s
+   all zero: True
+algebra su2, dim 3 [CONTROL: reversed-order moments]
+   {hatQ0,hatQ1}(d3g0 d3g1             ) = NONZERO (380 terms) | |hatQ1 p| = 800, |hatQ0 hatQ1 p| = 3450, |hatQ1 hatQ0 p| = 3450 | 0.3s
+   {hatQ0,hatQ1}(d1d4g0 g2             ) = NONZERO (870 terms) | |hatQ1 p| = 1200, |hatQ0 hatQ1 p| = 5140, |hatQ1 hatQ0 p| = 5140 | 0.6s
+   {hatQ0,hatQ1}(d2g1 d4c1             ) = NONZERO (142 terms) | |hatQ1 p| = 300, |hatQ0 hatQ1 p| = 778, |hatQ1 hatQ0 p| = 778 | 0.3s
+   all zero: False
+algebra so4, dim 6
+   hatQ0^2 = 0 on the first 6 test operators: True
+   C10 closed forms, A=0 B=5: hatQ1(g g) True (640 terms), hatQ1(g c) True (160 terms), hatQ1(c c) = 0 True
+   C10 closed forms, A=2 B=2: hatQ1(g g) True (640 terms), hatQ1(g c) True (160 terms), hatQ1(c c) = 0 True
+   C10 closed forms, A=1 B=3: hatQ1(g g) True (640 terms), hatQ1(g c) True (160 terms), hatQ1(c c) = 0 True
+   closed forms: True
+   {hatQ0,hatQ1}(g0                    ) = ZERO | |hatQ1 p| = 0, |hatQ0 hatQ1 p| = 0, |hatQ1 hatQ0 p| = 0 | 0.0s
+   {hatQ0,hatQ1}(d2g3                  ) = ZERO | |hatQ1 p| = 0, |hatQ0 hatQ1 p| = 0, |hatQ1 hatQ0 p| = 0 | 0.4s
+   {hatQ0,hatQ1}(g0 g5                 ) = ZERO | |hatQ1 p| = 640, |hatQ0 hatQ1 p| = 3200, |hatQ1 hatQ0 p| = 3200 | 0.3s
+   {hatQ0,hatQ1}(g1 g1                 ) = ZERO | |hatQ1 p| = 640, |hatQ0 hatQ1 p| = 3200, |hatQ1 hatQ0 p| = 3200 | 0.1s
+   {hatQ0,hatQ1}(g2 c3                 ) = ZERO | |hatQ1 p| = 160, |hatQ0 hatQ1 p| = 640, |hatQ1 hatQ0 p| = 640 | 0.0s
+   {hatQ0,hatQ1}(d3g0 g4               ) = ZERO | |hatQ1 p| = 2560, |hatQ0 hatQ1 p| = 18880, |hatQ1 hatQ0 p| = 18880 | 1.7s
+   {hatQ0,hatQ1}(d2g1 d4c4             ) = ZERO | |hatQ1 p| = 2400, |hatQ0 hatQ1 p| = 12448, |hatQ1 hatQ0 p| = 12448 | 5.3s
+   {hatQ0,hatQ1}(g0 g3 g5              ) = ZERO | |hatQ1 p| = 1920, |hatQ0 hatQ1 p| = 16864, |hatQ1 hatQ0 p| = 16864 | 0.3s
+   all zero: True
+SUMMARY: su2 all zero True; so4 all zero True

@@ -1,0 +1,4 @@
+control (cube moments): {Q0,Q1} on g0 g1      -> ZERO
+control (cube moments): {Q0,Q1} on d1g0 g1    -> NONZERO (70 terms)
+control (cube moments): {Q0,Q1} on d1g0 d2g1  -> NONZERO (880 terms)
+control (cube moments): {Q0,Q1} on d1d2g0 g1  -> NONZERO (900 terms)

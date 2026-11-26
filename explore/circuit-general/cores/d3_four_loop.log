@@ -1,0 +1,14 @@
+  grid 4384432 points (cube 16777216)
+  prime 1: 367487 monomials, 9871 core configurations  39.8s
+  prime 2: 367487 monomials, 9871 core configurations  38.8s
+  prime 3: 367487 monomials, 9871 core configurations  38.8s
+  prime 4: 367487 monomials, 9871 core configurations  37.9s
+  stable after 4 primes, total 156.4s
+census[3,4][191] [(0, 1), (0, 2), (0, 3), (1, 4), (1, 6), (2, 5), (2, 6), (3, 4), (3, 7), (4, 8), (5, 7), (5, 9), (8, 9)]  K = {'1': '539994681409/634894848000', 'z3': '1638600697/734832000', 'z5': '-2779639/816480'}  (156s)
+  grid 4384432 points (cube 16777216)
+  prime 1: 448590 monomials, 14334 core configurations  39.6s
+  prime 2: 448590 monomials, 14334 core configurations  37.8s
+  prime 3: 448590 monomials, 14334 core configurations  37.7s
+  prime 4: 448590 monomials, 14334 core configurations  37.7s
+  stable after 4 primes, total 153.5s
+census[3,4][219] [(0, 1), (0, 2), (0, 3), (1, 4), (1, 5), (2, 4), (2, 6), (3, 7), (3, 8), (4, 7), (5, 6), (5, 9), (8, 9)]  K = {'1': '14383751986301/317447424000', 'z3': '89673345011/734832000', 'z5': '-302364397/1632960'}  (154s)

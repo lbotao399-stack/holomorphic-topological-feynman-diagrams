@@ -1,0 +1,52 @@
+K5-e                      q=7  convergent/sampled 250/600  reached 250/250 = 1.000  [0.985, 1.000]  0.6s
+       routes {'FT': 153, 'direct': 97}
+       example I_7(4, 6, 3, 2, 4, 4, 6, 4, 2) = -269/1108800 + -2539/2806650*z3 + 8/6237*z5
+         chain FT(0) T:c=0:prism
+W5                        q=7  convergent/sampled 250/882  reached 250/250 = 1.000  [0.985, 1.000]  0.6s
+       routes {'direct': 250}
+K33+e                     q=7  convergent/sampled 250/557  reached 85/250 = 0.340  [0.284, 0.401]  1.2s
+       routes {'FT': 28, 'M2': 25, 'direct': 15, 'FT+M1': 10, 'M2+M1': 4, 'PR': 2, 'TW': 1}
+       example I_7(4, 3, 3, 6, 5, 1, 4, 5, 1, 3) = -394376581/161663040000 + -60979/9355500*z3 + 103/10395*z5
+         chain FT(1) M1(7) FT(0) FT(1) T:c=0:prism
+Z5                        q=7  convergent/sampled 250/683  reached 103/250 = 0.412  [0.353, 0.474]  6.2s
+       routes {'FT': 56, 'direct': 24, 'FT+M1': 11, 'M1': 3, 'FT+TW+M2+M1': 2, 'FT+TW': 2, 'FT+M2+M1': 2, 'FT+TW+M1': 1, 'FT+TW+M2': 1, 'TW': 1}
+       example I_7(6, 6, 2, 3, 6, 1, 4, 1, 5, 1) = 577499/143700480 + 10459/935550*z3 + -5/297*z5
+         chain FT(0) M2(0,2,5) FT(1) TW(0, 1, 3, 7) FT(0) TW(0, 1, 2, 5) FT(0) FT(0) T:c=0:prism
+K4+K4                     q=7  convergent/sampled 250/762  reached 250/250 = 1.000  [0.985, 1.000]  0.2s
+       routes {'PR': 210, 'direct': 40}
+V7_0                      q=7  convergent/sampled 250/856  reached 94/250 = 0.376  [0.318, 0.437]  8.8s
+       routes {'direct': 24, 'FT': 22, 'M1': 17, 'FT+M1': 17, 'PR+FT': 4, 'FT+TW+M1': 3, 'PR': 2, 'TW': 1, 'PR+FT+TW+M2+M1': 1, 'TW+M1': 1, 'FT+M2+M1': 1, 'FT+TW+M2+M1': 1}
+       example I_7(1, 6, 5, 5, 1, 3, 2, 2, 6, 2, 2) = 465089699/1551965184000 + 2578951/3233260800*z3 + -545/449064*z5
+         chain FT(0) FT(0) TW(0, 1, 2, 5) FT(0) TW(0, 2, 3, 7) FT(0) M1(6) FT(0) T:c=0:prism
+V7_1                      q=7  convergent/sampled 250/1558  reached 250/250 = 1.000  [0.985, 1.000]  0.6s
+       routes {'PR': 206, 'direct': 44}
+V7_2                      q=7  convergent/sampled 250/648  reached 50/250 = 0.200  [0.155, 0.254]  9.7s
+       routes {'FT+M1': 21, 'FT': 12, 'FT+TW': 7, 'FT+TW+M1': 4, 'M1': 2, 'direct': 2, 'FT+M2+M1': 1, 'TW': 1}
+       example I_7(4, 1, 5, 5, 5, 2, 2, 3, 2, 5, 1) = 1522459/215550720000 + 154519/6735960000*z3 + -5/149688*z5
+         chain FT(0) M2(0,1,5) FT(1) FT(1) M1(7) FT(6) M1(6) FT(0) T:c=0:prism
+V7_3                      q=7  convergent/sampled 250/531  reached 36/250 = 0.144  [0.106, 0.193]  4.2s
+       routes {'M2+M1': 9, 'FT+M1': 7, 'FT': 4, 'TW+M2+M1': 4, 'direct': 3, 'M2': 3, 'FT+TW': 2, 'FT+TW+M2+M1': 1, 'FT+TW+M1': 1, 'PR+FT': 1, 'PR+M2+M1': 1}
+       example I_7(5, 5, 3, 4, 4, 1, 1, 2, 3, 2, 5) = -2522141/2874009600 + -140131/59875200*z3 + 37/10395*z5
+         chain M2(0,2,4) M1(6) M1(7) M2(4,5,6) M1(6) FT(0) M1(7) TW(0, 1, 2, 3) FT(1) FT(3) T:c=0:prism
+V8_0                      q=7  convergent/sampled 250/5022  reached 250/250 = 1.000  [0.985, 1.000]  2.1s
+       routes {'PR': 221, 'direct': 29}
+V8_1                      q=7  convergent/sampled 250/999  reached 23/250 = 0.092  [0.062, 0.134]  13.3s
+       routes {'FT+M1': 9, 'FT': 8, 'direct': 2, 'FT+TW+M1': 1, 'PR': 1, 'PR+TW': 1, 'PR+FT': 1}
+       example I_7(4, 5, 4, 2, 2, 1, 4, 1, 2, 2, 5, 3) = -411427/55427328000 + -25841/1347192000*z3 + 1/34020*z5
+         chain FT(0) FT(1) M1(7) TW(0, 2, 3, 4) FT(0) FT(1) T:c=0:prism
+V8_2                      q=7  convergent/sampled 250/607  reached 7/250 = 0.028  [0.014, 0.057]  7.7s
+       routes {'PR+FT+M1': 2, 'PR+M2+M1': 1, 'FT+M2+M1': 1, 'FT+M1': 1, 'FT+TW+M2+M1': 1, 'TW+M2+M1': 1}
+       example I_7(2, 3, 2, 6, 2, 2, 4, 5, 1, 5, 2, 1) = -152827/1847577600 + -3919/17962560*z3 + 83/249480*z5
+         chain M1(7) M1(7) M2(0,3,4) FT(0) TW(0, 1, 2, 3) FT(0) TW(0, 3, 4, 6) M1(7) M2(0,3,4) FT(1) M1(6) FT(3) T:c=0:prism
+V8_3   cube               q=7  convergent/sampled 250/479  reached 12/250 = 0.048  [0.028, 0.082]  11.6s
+       routes {'FT+M1': 6, 'TW+M1': 2, 'FT+TW': 2, 'FT+M2+M1': 1, 'FT+M2': 1}
+       example I_7(2, 1, 5, 6, 2, 3, 1, 5, 1, 1, 3, 5) = 134969/89812800 + 827/207900*z3 + -1/165*z5
+         chain FT(0) FT(0) M1(7) FT(0) FT(1) FT(2) T:c=0:prism
+V8_4   Moebius-Wagner V8  q=7  convergent/sampled 250/447  reached 6/250 = 0.024  [0.011, 0.051]  6.1s
+       routes {'FT+TW+M1': 2, 'FT+TW+M2+M1': 1, 'PR': 1, 'TW+M2+M1': 1, 'TW+M1': 1}
+       example I_7(1, 2, 3, 3, 5, 4, 4, 3, 2, 5, 2, 1) = -110137/16166304000 + -2081/112266000*z3 + 1/35640*z5
+         chain M1(8) TW(0, 1, 4, 7) TW(1, 4, 5, 6) M1(7) M2(2,4,5) TW(0, 1, 2, 7) TW(3, 4, 5, 6) M1(7) M2(0,2,6) M1(6) TW(0, 1, 5, 6) FT(0) T:c=0:prism
+K5                        q=7  convergent/sampled 250/410  reached 76/250 = 0.304  [0.250, 0.364]  0.3s
+       routes {'FT': 69, 'direct': 7}
+       example I_7(4, 2, 5, 5, 5, 6, 5, 2, 5, 3) = 3251321/64665216000 + 52643/449064000*z3 + -23/124740*z5
+         chain FT(0) T:c=0:prism

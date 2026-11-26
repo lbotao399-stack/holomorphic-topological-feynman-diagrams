@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ruff_cache/
+.DS_Store
+*.aux
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.sqlite
+*.bin

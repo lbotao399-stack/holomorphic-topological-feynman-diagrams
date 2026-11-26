@@ -1,0 +1,3 @@
+cut 0 NotReducible: t1star kite with divergent integer limit: [[0, 2, Fraction(1, 1), 0], [0, 3, Fraction(3, 1), 0], [1, 2, Fraction(9, 1), 0], [1, 3, Fraction(1, 1), 0], [2, 3, Fr
+cut 1 NotReducible: t1star kite with divergent integer limit: [[0, 2, Fraction(1, 1), 0], [0, 3, Fraction(2, 1), 0], [1, 2, Fraction(4, 1), 0], [1, 3, Fraction(4, 1), 0], [2, 3, Fr
+star kites met: {'count': 2, 'unknown': 2}

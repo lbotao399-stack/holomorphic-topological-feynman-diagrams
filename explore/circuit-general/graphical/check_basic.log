@@ -1,0 +1,6 @@
+W3=K4  q=2: 6*z3   expected 6*z3   True (10.4s)
+W4     q=2: 20*z5   expected 20*z5   True (0.0s)
+W5     q=2: 70*z7   expected 70*z7   True (0.0s)
+W6     q=2: 252*z9   expected 252*z9   True (0.1s)
+Z5     q=2: 441/8*z7   expected 441/8*z7   True (0.0s)
+d=6 star (2,2,2) == 1/(z zb (z-1)(zb-1)): True

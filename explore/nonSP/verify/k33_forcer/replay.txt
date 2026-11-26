@@ -1,0 +1,2 @@
+minimum cut: poles cancel, scalar = -707*z3/7200 + 3*z5/20 - 539/14400
+maximum cut: poles cancel, scalar = -707*z3/7200 + 3*z5/20 - 539/14400

@@ -1,0 +1,6 @@
+q=3 unknowns 74 rows 85 {'T': 54, 'D': 0, 'I': 10, 'B': 0, 'S': 21}  0.4s
+rank 44 of 74 unknowns, determined 21  0.0s
+Z5 q=3: unknowns 74, rows 85, rank 44, determined 21  0.4s  maxrss 0.03 GB
+q=3 unknowns 18 rows 22 {'T': 0, 'D': 8, 'I': 10, 'B': 0, 'S': 4}  0.5s
+rank 9 of 18 unknowns, determined 4  0.0s
+K33+e q=3: unknowns 18, rows 22, rank 9, determined 4  0.5s  maxrss 0.03 GB

@@ -1,0 +1,20 @@
+q=7 checked classes per kind: {'T1a': 8, 'T2a': 8, 'T1d': 8, 'T2d': 8, 'Ga': 8, 'Gd': 8}
+  kind Ga  method E: agree 0, differ 0, not evaluable 8
+  kind Ga  method P: agree 0, differ 0, not evaluable 8
+  kind Ga  method S: agree 0, differ 0, not evaluable 8
+  kind Gd  method E: agree 0, differ 0, not evaluable 8
+  kind Gd  method P: agree 0, differ 0, not evaluable 8
+  kind Gd  method S: agree 0, differ 0, not evaluable 8
+  kind T1a method E: agree 8, differ 0, not evaluable 0
+  kind T1a method P: agree 0, differ 0, not evaluable 8
+  kind T1a method S: agree 8, differ 0, not evaluable 0
+  kind T1d method E: agree 8, differ 0, not evaluable 0
+  kind T1d method P: agree 1, differ 0, not evaluable 7
+  kind T1d method S: agree 8, differ 0, not evaluable 0
+  kind T2a method E: agree 4, differ 0, not evaluable 4
+  kind T2a method P: agree 0, differ 0, not evaluable 8
+  kind T2a method S: agree 0, differ 0, not evaluable 8
+  kind T2d method E: agree 0, differ 0, not evaluable 8
+  kind T2d method P: agree 2, differ 0, not evaluable 6
+  kind T2d method S: agree 0, differ 0, not evaluable 8
+time 204s

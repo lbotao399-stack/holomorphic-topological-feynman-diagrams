@@ -1,0 +1,4 @@
+   selftest n=2: float density 1.653613930387982e-02 vs exact 1.653613930387983e-02 (rel 6.3e-16)
+   selftest n=2: float density 3.821921538905163e-03 vs exact 3.821921538905169e-03 (rel 1.5e-15)
+   selftest n=4: float density -2.415552886594278e-06 vs exact -2.415552886594273e-06 (rel 1.8e-15)
+   selftest n=4: float density 1.808994485650235e-05 vs exact 1.808994485650235e-05 (rel 3.7e-16)

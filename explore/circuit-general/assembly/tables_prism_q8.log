@@ -1,0 +1,3 @@
+q=8 unknowns 77322 rows 998879 {'T': 725024, 'D': 0, 'I': 205101, 'B': 29528, 'S': 39226}  313.1s
+rank 77322 of 77322 unknowns, determined 77322  206.6s
+prism q=8: 77322 orbits, 521.7s, maxrss 2.60 GB

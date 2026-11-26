@@ -1,0 +1,3 @@
+sl3: d symmetric True, invariant True, nonzero True ; d J_1 = 0 (4 configs, all entries): True ; control random symmetric T: d J = 0: False
+sl4: d symmetric True, invariant True, nonzero True ; d J_1 = 0 (4 configs, all entries): True ; control random symmetric T: d J = 0: False
+sl5: d symmetric True, invariant True, nonzero True ; d J_1 = 0 (4 configs, all entries): True ; control random symmetric T: d J = 0: False

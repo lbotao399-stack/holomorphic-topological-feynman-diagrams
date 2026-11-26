@@ -1,0 +1,3 @@
+q=7 unknowns 5988 rows 64967 {'T': 0, 'D': 49306, 'I': 13284, 'B': 2377, 'S': 0}  158.1s
+rank 5988 of 5988 unknowns, determined 5988  43.1s
+K33 q=7: 5988 orbits, 201.2s

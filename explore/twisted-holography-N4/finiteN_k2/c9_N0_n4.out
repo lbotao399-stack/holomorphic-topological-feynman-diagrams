@@ -1,0 +1,10 @@
+# k=2 N=0 x^4 p=2147483647 (0.0s)  H_g = {}
+  g=-8: dimV_T=57 dimR=0 rankd=0 H=0
+  g=-7: dimV_T=200 dimR=0 rankd=0 H=0
+  g=-6: dimV_T=396 dimR=0 rankd=0 H=0
+  g=-5: dimV_T=552 dimR=0 rankd=0 H=0
+  g=-4: dimV_T=534 dimR=1 rankd=1 H=0
+  g=-3: dimV_T=324 dimR=3 rankd=2 H=0
+  g=-2: dimV_T=120 dimR=4 rankd=2 H=0
+  g=-1: dimV_T=28 dimR=7 rankd=5 H=0
+  g=0: dimV_T=5 dimR=5 rankd=0 H=0

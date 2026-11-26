@@ -1,0 +1,13 @@
+32 class-I graphs
+10 distinct skeletons
+skeleton V=6 E=11 degs=[4, 4, 4, 4, 3, 3] multi=False seq(G)=False graphs=[146, 153, 306, 347, 357, 383, 434, 444, 463, 467]
+skeleton V=5 E=10 degs=[4, 4, 4, 4, 4] multi=False seq(G)=False graphs=[309, 350, 382]
+    q=4: 30 orbits, {'none': 15, 'completion': 15} (1s)
+skeleton V=7 E=12 degs=[4, 4, 4, 3, 3, 3, 3] multi=False seq(G)=False graphs=[338, 345, 431, 453, 497, 558, 566]
+skeleton V=7 E=12 degs=[4, 4, 4, 3, 3, 3, 3] multi=False seq(G)=False graphs=[358, 384, 441, 515, 539, 560]
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[583]
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[588]
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[591]
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[594]
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[601]
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[603]

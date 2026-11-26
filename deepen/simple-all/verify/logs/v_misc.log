@@ -1,0 +1,30 @@
+(1) so5(mat)   Killing / tr_V on all entries: [Fraction(3, 1)] (expected 3)
+(1) so7(mat)   Killing / tr_V on all entries: [Fraction(5, 1)] (expected 5)
+(1) so8(mat)   Killing / tr_V on all entries: [Fraction(6, 1)] (expected 6)
+(1) so9(mat)   Killing / tr_V on all entries: [Fraction(7, 1)] (expected 7)
+(1) so10(mat)  Killing / tr_V on all entries: [Fraction(8, 1)] (expected 8)
+(1) so11(mat)  Killing / tr_V on all entries: [Fraction(9, 1)] (expected 9)
+(1) so12(mat)  Killing / tr_V on all entries: [Fraction(10, 1)] (expected 10)
+(1) sp4(mat)   Killing / tr_V on all entries: [Fraction(6, 1)] (expected 6)
+(1) sp6(mat)   Killing / tr_V on all entries: [Fraction(8, 1)] (expected 8)
+(1) sp8(mat)   Killing / tr_V on all entries: [Fraction(10, 1)] (expected 10)
+(1) sp10(mat)  Killing / tr_V on all entries: [Fraction(12, 1)] (expected 12)
+(1) sl3(mat)   Killing / tr_V on all entries: [Fraction(6, 1)] (expected 6)
+(1) sl4(mat)   Killing / tr_V on all entries: [Fraction(8, 1)] (expected 8)
+(1) sl5(mat)   Killing / tr_V on all entries: [Fraction(10, 1)] (expected 10)
+(1) sl6(mat)   Killing / tr_V on all entries: [Fraction(12, 1)] (expected 12)
+(1) sl7(mat)   Killing / tr_V on all entries: [Fraction(14, 1)] (expected 14)
+(1) so6(mat)   Killing / tr_V on all entries: [Fraction(4, 1)] (expected 4)
+(1) G2(phi in so7) Killing / tr_V on all entries: [Fraction(4, 1)] (expected None)
+(1) G2(phi) Killing / tr_7: [Fraction(4, 1)]
+(2) sl3: tr(X{Y,Z}) at a random traceless triple = -143 (nonzero True)
+(2) sl4: tr(X{Y,Z}) at a random traceless triple = -8 (nonzero True)
+(2) sl5: tr(X{Y,Z}) at a random traceless triple = -77 (nonzero True)
+(2) sl6: tr(X{Y,Z}) at a random traceless triple = 80 (nonzero True)
+(2) sl7: tr(X{Y,Z}) at a random traceless triple = 103 (nonzero True)
+(3) d G_kk: 10 coefficient polynomials P_lm (k_lm f_abc), all identically 0 after sum p = 0: True
+(4) sl3, W = tr(X0X1X2X3): d alt([p0p1][p2p3] W) = 0 ; control (QB coefficients uu<->uv permuted) = 204604
+(4) sl3, W = tr(X0X1X2X3): d alt([p0p1][p2p3] W) = 0 ; control (QB coefficients uu<->uv permuted) = 318610
+(4) sl3, W = tr(X0X1X2X3): d alt([p0p1][p2p3] W) = 0 ; control (QB coefficients uu<->uv permuted) = 929121
+(5) 8 n4 - 3d + 3d(t+a)(t+b)(t+c)/(2t^3) = 0 ; 8 n4 - 3d - 3d(d-3)abc/(4t^3) = 0
+(5) Vogel formula d, n4 = d(C_4 - 1/8) with (alpha,beta,gamma): sl_N (-2,2,N), so_N (-2,4,N-4), sp_N (-2,1,N/2+2), G2 (-2,10/3,8/3), F4 (-2,5,6), E6 (-2,6,8), E7 (-2,8,12), E8 (-2,12,20): equal to root-data d, n4 for 64 algebras: True []

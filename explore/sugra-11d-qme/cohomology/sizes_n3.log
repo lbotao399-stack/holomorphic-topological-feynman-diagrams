@@ -1,0 +1,57 @@
+n=3 w=1 G=0 t=(0, 0, -1):
+  N= 0 dim C=       1 dim V=       1 
+  N= 1 dim C=      10 dim V=       4 
+  N= 2 dim C=      66 dim V=      26 
+  N= 3 dim C=     337 dim V=     140 
+  N= 4 dim C=    1338 dim V=     575 
+  N= 5 dim C=    4174 dim V=    1874 
+  N= 6 dim C=   10351 dim V=    4896 
+  N= 7 dim C=   20562 dim V=   10280 
+  N= 8 dim C=   32845 dim V=   17384 
+  N= 9 dim C=   42175 dim V=   23686 
+  N=10 dim C=   43292 dim V=   25876 
+  N=11 dim C=   35107 dim V=   22408 
+  N=12 dim C=   22049 dim V=   15095 
+  N=13 dim C=   10381 dim V=    7672 
+  N=14 dim C=    3461 dim V=    2786 
+  N=15 dim C=     730 dim V=     648 
+  N=16 dim C=      73 dim V=      73 
+n=3 w=1 G=1 t=(0, -1, -1):
+  N= 0 dim C=       2 dim V=       0 
+  N= 1 dim C=      23 dim V=       5 
+  N= 2 dim C=     178 dim V=      50 
+  N= 3 dim C=    1005 dim V=     319 
+  N= 4 dim C=    4307 dim V=    1500 
+  N= 5 dim C=   14424 dim V=    5442 
+  N= 6 dim C=   38402 dim V=   15584 
+  N= 7 dim C=   82101 dim V=   35707 
+  N= 8 dim C=  141747 dim V=   65988 
+  N= 9 dim C=  197974 dim V=   98633 
+  N=10 dim C=  223154 dim V=  119028 
+  N=11 dim C=  201571 dim V=  115264 
+  N=12 dim C=  143997 dim V=   88526 
+  N=13 dim C=   79578 dim V=   52831 
+  N=14 dim C=   32810 dim V=   23666 
+  N=15 dim C=    9493 dim V=    7504 
+  N=16 dim C=    1719 dim V=    1510 
+  N=17 dim C=     147 dim V=     147 
+n=3 w=1 G=2 t=(-1, -1, -1):
+  N= 0 dim C=       3 dim V=       0 SL3-inv C=0
+  N= 1 dim C=      49 dim V=       6 SL3-inv C=1
+  N= 2 dim C=     448 dim V=      89 SL3-inv C=7
+  N= 3 dim C=    2801 dim V=     694 SL3-inv C=29
+  N= 4 dim C=   13015 dim V=    3724 SL3-inv C=94
+  N= 5 dim C=   46818 dim V=   14944 SL3-inv C=253
+  N= 6 dim C=  133447 dim V=   46710 SL3-inv C=586
+  N= 7 dim C=  305625 dim V=  116276 SL3-inv C=1144
+  N= 8 dim C=  566866 dim V=  233216 SL3-inv C=1847
+  N= 9 dim C=  854582 dim V=  379060 SL3-inv C=2475
+  N=10 dim C= 1047183 dim V=  500109 SL3-inv C=2767
+  N=11 dim C= 1038917 dim V=  534188 SL3-inv C=2599
+  N=12 dim C=  827053 dim V=  458353 SL3-inv C=2032
+  N=13 dim C=  520166 dim V=  311488 SL3-inv C=1263
+  N=14 dim C=  252224 dim V=  163912 SL3-inv C=610
+  N=15 dim C=   90725 dim V=   64404 SL3-inv C=242
+  N=16 dim C=   22679 dim V=   17741 SL3-inv C=74
+  N=17 dim C=    3473 dim V=    3032 SL3-inv C=12
+  N=18 dim C=     238 dim V=     238 SL3-inv C=1

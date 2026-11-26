@@ -1,0 +1,23 @@
+V4  end-to-end calibration integrals
+/Users/libotao/Desktop/holomorphic-twist-program/deepen/normalization/verify/v4_calibration.py:27: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  val, err = integrate.quad(f, -np.inf, np.inf, epsabs=1e-15, epsrel=1e-14)
+  (0,1) banana(3) eps=0.30: end-to-end 0.250000000000000 ; exact 2^-k(1-(-1)^k) = 0.250000000000000 ; c_V2 * K_htk = 0.250000000000000 (K_htk = 1*pi) ; agreeing digits 17.0
+  (0,1) banana(3) eps=0.01: end-to-end 0.250000000000000 ; exact 2^-k(1-(-1)^k) = 0.250000000000000 ; c_V2 * K_htk = 0.250000000000000 (K_htk = 1*pi) ; agreeing digits 17.0
+  (0,1) banana(5) eps=0.30: end-to-end 0.062500000000000 ; exact 2^-k(1-(-1)^k) = 0.062500000000000 ; c_V2 * K_htk = 0.062500000000000 (K_htk = 1*pi^2) ; agreeing digits 17.0
+  (0,1) banana(5) eps=0.01: end-to-end 0.062500000000000 ; exact 2^-k(1-(-1)^k) = 0.062500000000000 ; c_V2 * K_htk = 0.062500000000000 (K_htk = 1*pi^2) ; agreeing digits 15.6
+/Users/libotao/Desktop/holomorphic-twist-program/deepen/normalization/verify/v4_calibration.py:39: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  rad, err = integrate.quad(radial, 0, np.inf, epsabs=1e-15, epsrel=1e-14)
+     (1,0) banana(2) 2d quadrature without the angular shortcut: (-0.0477464829275686+0.1273239544735163j) vs (-0.047746482927568605+0.1273239544735163j)
+  (1,0) banana(2) lam=(0.8+0.3j) eps=0.20: end-to-end (-0.047746482927568605+0.1273239544735163j) ; exact (-0.0477464829275686+0.12732395447351627j) ; c_V2 * K_htk = (-0.047746482927568605+0.12732395447351627j) (K_htk = l) ; digits 15.7
+  (1,0) banana(2) lam=(0.8+0.3j) eps=0.05: end-to-end (-0.04774648292756859+0.12732395447351624j) ; exact (-0.0477464829275686+0.12732395447351627j) ; c_V2 * K_htk = (-0.047746482927568605+0.12732395447351627j) (K_htk = l) ; digits 15.6
+  (1,0) banana(2) lam=(-0.5+1.1j) eps=0.20: end-to-end (-0.1750704374010849-0.07957747154594769j) ; exact (-0.17507043740108488-0.07957747154594767j) ; c_V2 * K_htk = (-0.17507043740108488-0.07957747154594767j) (K_htk = l) ; digits 15.8
+  (1,0) banana(2) lam=(-0.5+1.1j) eps=0.05: end-to-end (-0.17507043740108486-0.07957747154594766j) ; exact (-0.17507043740108488-0.07957747154594767j) ; c_V2 * K_htk = (-0.17507043740108488-0.07957747154594767j) (K_htk = l) ; digits 15.8
+     (1,0) banana(3) 2d quadrature without the angular shortcut: (-0.006965831375410725-0.006079271018540267j) vs (-0.006965831375410723-0.006079271018540266j)
+  (1,0) banana(3) lam=(0.8+0.3j) eps=0.20: end-to-end (-0.006965831375410723-0.006079271018540266j) ; exact (-0.006965831375410723-0.006079271018540266j) ; c_V2 * K_htk = (-0.006965831375410723-0.006079271018540266j) (K_htk = l**2/2) ; digits 17.0
+  (1,0) banana(3) lam=(0.8+0.3j) eps=0.05: end-to-end (-0.006965831375410724-0.006079271018540268j) ; exact (-0.006965831375410723-0.006079271018540266j) ; c_V2 * K_htk = (-0.006965831375410723-0.006079271018540266j) (K_htk = l**2/2) ; digits 15.7
+  (1,0) banana(3) lam=(-0.5+1.1j) eps=0.20: end-to-end (0.012158542037080538+0.013931662750821446j) ; exact (0.012158542037080536+0.013931662750821446j) ; c_V2 * K_htk = (0.012158542037080536+0.013931662750821446j) (K_htk = l**2/2) ; digits 16.0
+  (1,0) banana(3) lam=(-0.5+1.1j) eps=0.05: end-to-end (0.01215854203708054+0.013931662750821448j) ; exact (0.012158542037080536+0.013931662750821446j) ; c_V2 * K_htk = (0.012158542037080536+0.013931662750821446j) (K_htk = l**2/2) ; digits 15.7

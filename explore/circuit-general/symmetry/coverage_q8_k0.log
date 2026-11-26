@@ -1,0 +1,52 @@
+K5-e                      q=8  convergent/sampled 250/559  reached 150/250 = 0.600  [0.538, 0.659]  1.6s
+       routes {'direct': 71, 'FT': 69, 'FT+M1': 10}
+       example I_8(6, 6, 5, 3, 6, 3, 2, 7, 2) = 408437/1810626048000 + -13/69854400*z3
+         chain FT(0) M1(6) T:c=0:W4
+W5                        q=8  convergent/sampled 250/884  reached 250/250 = 1.000  [0.985, 1.000]  0.8s
+       routes {'direct': 250}
+K33+e                     q=8  convergent/sampled 250/544  reached 32/250 = 0.128  [0.092, 0.175]  2.2s
+       routes {'direct': 13, 'FT+M1': 8, 'FT': 6, 'PR': 2, 'FT+M2+M1': 1, 'TW': 1, 'FT+TW+M1': 1}
+       example I_8(7, 1, 3, 5, 2, 6, 2, 7, 4, 3) = -9860999/5604318720000 + -3551/1816214400*z3 + 1/252252*z5
+         chain FT(2) M1(7) FT(0) FT(2) T:c=4:W4
+Z5                        q=8  convergent/sampled 250/671  reached 77/250 = 0.308  [0.254, 0.368]  5.5s
+       routes {'FT': 33, 'direct': 33, 'FT+M1': 5, 'M1': 4, 'PR+FT': 1, 'FT+TW': 1}
+       example I_8(7, 5, 4, 2, 6, 3, 7, 2, 3, 1) = 28893269/39230231040000 + -37/60540480*z3
+         chain FT(0) FT(1) M1(7) T:c=0:W5
+K4+K4                     q=8  convergent/sampled 250/745  reached 250/250 = 1.000  [0.985, 1.000]  0.2s
+       routes {'PR': 218, 'direct': 32}
+V7_0                      q=8  convergent/sampled 250/982  reached 49/250 = 0.196  [0.152, 0.250]  7.9s
+       routes {'direct': 21, 'FT': 14, 'M1': 6, 'FT+M1': 4, 'PR': 2, 'FT+TW+M1': 1, 'FT+M2+M1': 1}
+       example I_8(7, 3, 1, 2, 4, 3, 1, 1, 7, 5, 6) = -11937533/326918592000000 + 1/31531500*z3
+         chain M1(7) FT(0) M2(0,5,6) M1(5) M1(6) FT(0) M1(6) T:c=0:W4
+V7_1                      q=8  convergent/sampled 250/1800  reached 250/250 = 1.000  [0.985, 1.000]  0.6s
+       routes {'PR': 211, 'direct': 39}
+V7_2                      q=8  convergent/sampled 250/644  reached 37/250 = 0.148  [0.109, 0.197]  8.2s
+       routes {'FT+M1': 11, 'direct': 9, 'FT': 7, 'M1': 3, 'PR': 2, 'FT+TW': 2, 'PR+FT': 1, 'TW+M1': 1, 'FT+TW+M1': 1}
+       example I_8(3, 2, 1, 7, 6, 4, 4, 5, 4, 2, 2) = 75149/26357760 + 9233209/1210809600*z3 + -1949/168168*z5
+         chain M1(7) FT(1) FT(2) T:c=1:W4
+V7_3                      q=8  convergent/sampled 250/540  reached 10/250 = 0.040  [0.022, 0.072]  3.7s
+       routes {'FT': 4, 'direct': 2, 'FT+M1': 2, 'PR+FT': 1, 'FT+M2+M1': 1}
+       example I_8(3, 7, 4, 5, 3, 2, 3, 7, 1, 4, 1) = 274844629/784604620800 + 1700449/1816214400*z3 + -359/252252*z5
+         chain M1(7) M2(2,3,5) M1(6) FT(1) T:c=2:W4
+V8_0                      q=8  convergent/sampled 250/3778  reached 250/250 = 1.000  [0.985, 1.000]  1.4s
+       routes {'PR': 230, 'direct': 20}
+V8_1                      q=8  convergent/sampled 250/1026  reached 14/250 = 0.056  [0.034, 0.092]  12.5s
+       routes {'FT+M1': 5, 'FT': 3, 'direct': 3, 'PR+FT': 1, 'PR+FT+M2+M1': 1, 'M1': 1}
+       example I_8(1, 6, 1, 4, 7, 2, 5, 3, 1, 2, 3, 5) = 130879319/23538138624000 + 31721/2122848000*z3 + -103/4540536*z5
+         chain M1(8) FT(0) FT(0) M1(7) FT(0) T:c=0:W4
+V8_2                      q=8  convergent/sampled 250/657  reached 2/250 = 0.008  [0.002, 0.029]  6.1s
+       routes {'FT+M1': 1, 'PR': 1}
+       example I_8(4, 6, 1, 3, 1, 4, 6, 2, 2, 3, 5, 3) = 102827132197/225966130790400 + 2357909/1937295360*z3 + -12443/6726720*z5
+         chain M1(7) FT(1) T:c=0:W4
+V8_3   cube               q=8  convergent/sampled 250/451  reached 7/250 = 0.028  [0.014, 0.057]  11.4s
+       routes {'FT': 3, 'FT+M1': 2, 'FT+TW+M1': 1, 'FT+M2+M1': 1}
+       example I_8(2, 2, 4, 2, 7, 5, 2, 3, 1, 3, 2, 7) = -485660711/282457663488000 + -221561/46702656000*z3 + 5/698544*z5
+         chain FT(0) M2(2,3,6) M1(6) FT(0) M1(7) FT(0) T:c=1:W4
+V8_4   Moebius-Wagner V8  q=8  convergent/sampled 250/422  reached 4/250 = 0.016  [0.006, 0.040]  5.2s
+       routes {'FT+TW+M1': 2, 'PR': 1, 'FT+M1': 1}
+       example I_8(6, 2, 3, 1, 1, 3, 4, 6, 5, 4, 1, 4) = -638509/261534873600000 + 41/20180160000*z3
+         chain M1(5) TW(0, 2, 5, 7) M1(7) FT(0) FT(1) T:c=2:W4
+K5                        q=8  convergent/sampled 250/409  reached 37/250 = 0.148  [0.109, 0.197]  1.1s
+       routes {'FT': 24, 'direct': 9, 'FT+M1': 4}
+       example I_8(5, 2, 6, 3, 4, 7, 5, 2, 7, 7) = 3901087/13076743680000 + -1/4036032*z3
+         chain FT(0) M1(6) T:c=0:W4

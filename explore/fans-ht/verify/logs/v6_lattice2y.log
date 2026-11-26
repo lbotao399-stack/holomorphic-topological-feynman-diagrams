@@ -1,0 +1,6 @@
+lattice n=2 lam=(1,0,1) h=0.10 X=3.6 alpha=2.0: K = 1.047198594342 (exact pi/3 = 1.047197551197)  (46 s)
+   coefficient of z_a1: -int D y_e = -0.3141596920, claim -(pi/30)*3 = -0.3141592654, rel.diff 1.36e-06
+   coefficient of z_b1: -int D y_e = -0.7330389024, claim -(pi/30)*7 = -0.7330382858, rel.diff 8.41e-07
+   coefficient of z_a2: -int D y_e = 0.3141593963, claim -(pi/30)*-3 = 0.3141592654, rel.diff 4.17e-07
+   coefficient of z_b2: -int D y_e = -0.6283190883, claim -(pi/30)*6 = -0.6283185307, rel.diff 8.87e-07
+   coefficient of z_b3: -int D y_e = -0.7330391981, claim -(pi/30)*7 = -0.7330382858, rel.diff 1.24e-06

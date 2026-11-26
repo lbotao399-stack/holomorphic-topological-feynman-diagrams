@@ -1,0 +1,18 @@
+sl_N C-parity +1: dim C^3_inv = 0, dim C^4_inv = 2, rank d3 = 0, rank d4 = 2, dim Z^4_inv = 0, dim H^4_inv = 0
+sl_N C-parity -1: dim C^3_inv = 1, dim C^4_inv = 1, rank d3 = 1, rank d4 = 0, dim Z^4_inv = 1, dim H^4_inv = 0
+sl_N: single pieces alt(K^(v) W^(v)) nonzero: 6, closed: 6
+sl_N: rank d{[p1p2]^3 T, T in ['d']} = 1
+  theta'(d) = d( sum_T x_T [p1p2]^3 T ), x over ['d'] by N-power: {2: ['-1/60']} (solvable: True)
+  {J_d, [p1p2]^2 f} = d( sum_T x_T [p1p2]^3 T ), x over ['d'] by N-power: {0: ['1/3']} (solvable: True)
+sl_N: {D,{D,D}} == 0: True
+sl_N: d{D, iota} == 0: True
+gl_N C-parity +1: dim C^3_inv = 0, dim C^4_inv = 9, rank d3 = 0, rank d4 = 8, dim Z^4_inv = 1, dim H^4_inv = 1
+gl_N C-parity -1: dim C^3_inv = 3, dim C^4_inv = 2, rank d3 = 2, rank d4 = 0, dim Z^4_inv = 2, dim H^4_inv = 0
+gl_N: single pieces alt(K^(v) W^(v)) nonzero: 8, closed: 8
+gl_N: rank d{[p1p2]^3 T, T in ['d', 's1', 's0']} = 2
+  theta'(d) = d( sum_T x_T [p1p2]^3 T ), x over ['d', 's1', 's0'] by N-power: {1: ['0', '1/30', '0'], 2: ['-1/60', '0', '0']} (solvable: True)
+  {J_d, [p1p2]^2 f} = d( sum_T x_T [p1p2]^3 T ), x over ['d', 's1', 's0'] by N-power: {0: ['1/3', '0', '0']} (solvable: True)
+  {J_s1, [p1p2]^2 f} = d( sum_T x_T [p1p2]^3 T ), x over ['d', 's1', 's0'] by N-power: {0: ['0', '1/3', '0']} (solvable: True)
+  {J_s0, [p1p2]^2 f} = d( sum_T x_T [p1p2]^3 T ), x over ['d', 's1', 's0'] by N-power: {} (solvable: True)
+gl_N: j = 2D + 3S1 + 5S0: {j,{j,j}} == 0: True ; {j,j} != 0: True
+time 20s

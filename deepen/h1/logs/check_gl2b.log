@@ -1,0 +1,9 @@
+  gl2      w=(0, 0, -1)   (a,b)=(1, 1) g= 0  dim M=    52 rkD=40 rkQbar=12  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  gl2      w=(0, 0, -1)   (a,b)=(1, 1) g= 1  dim M=   366 rkD=234 rkQbar=118  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=3: dim Z^3(Q)=18, psi(Z) closed in V: True, rank increase over B^1(V) = 2 (= H): True
+    [0.9s]
+  gl2      w=(-1, 0, 0)   (a,b)=(1, 1) g= 0  dim M=    52 rkD=40 rkQbar=12  H(V)=0 [modp 0 0]  pred H^2(Q)=0  OK
+  gl2      w=(-1, 0, 0)   (a,b)=(1, 1) g= 1  dim M=   366 rkD=234 rkQbar=118  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=6: dim Z^3(Q)=18, psi(Z) closed in V: True, rank increase over B^1(V) = 2 (= H): True
+    [1.0s]
+case gl2b: all checks passed: True   total 2.0s

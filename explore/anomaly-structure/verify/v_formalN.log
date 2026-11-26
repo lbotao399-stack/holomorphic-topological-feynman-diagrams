@@ -1,0 +1,17 @@
+=== formal-in-N analysis at N0 = 5 (sl and gl), cross-check at N0 = 6 (sl) ===
+ sl5: 4-argument trace monomials: 9, rank as functions 9; 3-argument: 2, rank 2
+   rank d(C^3) = 3 (18 spanning cochains, 110 samples)
+   omega = sum_k N^k omega_k: rank [D | omega_0..] = 4; relation space R (coefficient vectors a with sum a_k omega_k exact): [['1', '0', '0'], ['0', '0', '1']]
+   F_223 = sum_k N^k F_223_k: rank [D | F_223_0..] = 4; relation space R (coefficient vectors a with sum a_k F_223_k exact): [['1', '0']]
+   F_133+F_223 = sum_k N^k F_133+F_223_k: rank [D | F_133+F_223_0..] = 3; relation space R (coefficient vectors a with sum a_k F_133+F_223_k exact): [['1', '0', '0'], ['0', '1', '0'], ['0', '0', '1']]
+   (1s)
+ gl5: 4-argument trace monomials: 24, rank as functions 24; 3-argument: 6, rank 6
+   rank d(C^3) = 6 (54 spanning cochains, 110 samples)
+   omega = sum_k N^k omega_k: rank [D | omega_0..] = 8; relation space R (coefficient vectors a with sum a_k omega_k exact): [['0', '0', '1']]
+   (2s)
+ sl6: 4-argument trace monomials: 9, rank as functions 9; 3-argument: 2, rank 2
+   rank d(C^3) = 3 (18 spanning cochains, 80 samples)
+   omega = sum_k N^k omega_k: rank [D | omega_0..] = 4; relation space R (coefficient vectors a with sum a_k omega_k exact): [['1', '0', '0'], ['0', '0', '1']]
+   F_223 = sum_k N^k F_223_k: rank [D | F_223_0..] = 4; relation space R (coefficient vectors a with sum a_k F_223_k exact): [['1', '0']]
+   F_133+F_223 = sum_k N^k F_133+F_223_k: rank [D | F_133+F_223_0..] = 3; relation space R (coefficient vectors a with sum a_k F_133+F_223_k exact): [['1', '0', '0'], ['0', '1', '0'], ['0', '0', '1']]
+   (1s)

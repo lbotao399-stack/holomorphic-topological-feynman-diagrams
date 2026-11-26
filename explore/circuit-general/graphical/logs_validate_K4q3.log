@@ -1,0 +1,4 @@
+K4 q=3: 2 convergent orbits
+  (1, 1, 1, 2, 2, 2)  OK   1/2  (11.8s, direct)
+  (1, 1, 2, 2, 1, 2)  OK   -1/6 + 1/2*z3  (0.0s, direct)
+K4 q=3: 2 agree, 0 disagree

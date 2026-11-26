@@ -1,0 +1,11 @@
+Universal table (T = f only; ranks exact over Q):
+   (0,0)  dim C^2 0  dim C^3 1  rank d2 0  rank d3 0  dim Z^3 1  dim H^3 1   C^3 basis: [6]
+   (0,1)  dim C^2 1  dim C^3 0  rank d2 0  rank d3 0  dim Z^3 0  dim H^3 0   C^3 basis: []
+   (0,2)  dim C^2 0  dim C^3 1  rank d2 0  rank d3 1  dim Z^3 0  dim H^3 0   C^3 basis: [4*(p0_2**2 + p0_2*p1_2 + p1_2**2)]
+   (1,0)  dim C^2 1  dim C^3 0  rank d2 0  rank d3 0  dim Z^3 0  dim H^3 0   C^3 basis: []
+   (1,1)  dim C^2 0  dim C^3 1  rank d2 0  rank d3 1  dim Z^3 0  dim H^3 0   C^3 basis: [2*(2*p0_1*p0_2 + p0_1*p1_2 + p0_2*p1_1 + 2*p1_1*p1_2)]
+   (1,2)  dim C^2 1  dim C^3 1  rank d2 1  rank d3 0  dim Z^3 1  dim H^3 0   C^3 basis: [-2*(2*p0_1*p0_2*p1_2 + p0_1*p1_2**2 + p0_2**2*p1_1 + 2*p0_2*p1_1*p1_2)]
+   (2,0)  dim C^2 0  dim C^3 1  rank d2 0  rank d3 1  dim Z^3 0  dim H^3 0   C^3 basis: [4*(p0_1**2 + p0_1*p1_1 + p1_1**2)]
+   (2,1)  dim C^2 1  dim C^3 1  rank d2 1  rank d3 0  dim Z^3 1  dim H^3 0   C^3 basis: [-2*(p0_1**2*p1_2 + 2*p0_1*p0_2*p1_1 + 2*p0_1*p1_1*p1_2 + p0_2*p1_1**2)]
+   (2,2)  dim C^2 0  dim C^3 2  rank d2 0  rank d3 2  dim Z^3 0  dim H^3 0   C^3 basis: [2*(2*p0_1**2*p0_2**2 + 2*p0_1**2*p0_2*p1_2 + p0_1**2*p1_2**2 + 2*p0_1*p0_2**2*p1_1 + 4*p0_1*p0_2*p1_1*p1_2 + 2*p0_1*p1_1*p1_2**2 + p0_2**2*p1_1**2 + 2*p0_2*p1_1**2*p1_2 + 2*p1_1**2*p1_2**2), 2*p0_1**2*p0_2**2 + 2*p0_1**2*p0_2*p1_2 + 3*p0_1**2*p1_2**2 + 2*p0_1*p0_2**2*p1_1 + 2*p0_1*p1_1*p1_2**2 + 3*p0_2**2*p1_1**2 + 2*p0_2*p1_1**2*p1_2 + 2*p1_1**2*p1_2**2]
+d E_f: alt(q0^1 q0^2 f) = 2 sum q_i^1 q_i^2 f: True ; d E_f = 2[B(p0-p3,p2-p1) T1 + B(p0-p1,p2-p3) T3]: True ; sum formula: True ; c1 = -4*(p0_1*p1_2 - p0_1*p2_2 + p0_2*p1_1 - p0_2*p2_1 + p1_1*p1_2 - p2_1*p2_2) ; c3 = 4*(p0_1*p0_2 + p0_1*p2_2 + p0_2*p2_1 - p1_1*p1_2 - p1_1*p2_2 - p1_2*p2_1)

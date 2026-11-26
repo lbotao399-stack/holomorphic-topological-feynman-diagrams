@@ -1,0 +1,5 @@
+H=3 (2, 2, 3): {'A': 'all zero', 'B': 'all zero', 'C': 'all zero'}
+H=4 (2, 3, 4): {'A': 'all zero', 'B': 'all zero', 'C': 'all zero'}
+H=4 (3, 3, 3): {'A': 'all zero', 'B': 'antisymmetric, max |B| = 49726565/1728', 'C': 'all zero'}
+H=5 (3, 4, 4): {'A': 'all zero', 'B': 'antisymmetric, max |B| = 9756869675/110592', 'C': 'all zero'}
+H=6 (4, 4, 5): {'A': 'all zero', 'B': 'antisymmetric, max |B| = 18728383933152055/40310784', 'C': 'all zero'}

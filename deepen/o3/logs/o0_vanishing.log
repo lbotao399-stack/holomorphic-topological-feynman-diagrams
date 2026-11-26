@@ -1,0 +1,25 @@
+polygon(4) edges [(0, 1), (1, 2), (2, 3), (3, 0)]: T=1 density polynomial factors [0] ; num == 0: True
+  brute density at t = ['8/9', '1', '9/4', '1/3']: coeff 0
+  brute density at t = ['2/9', '1/7', '8/3', '1/9']: coeff 0
+  brute density at t = ['4/3', '2', '9/4', '5/8']: coeff 0
+  polygon(4) insertion [y0 y1]: K = 0
+  polygon(4) insertion [y0 y1][y2 y3]: K = 0
+  polygon(4) insertion [y0 y1]^2: K = 0
+  polygon(4) insertion [y0 y3][y1 y2]: K = 0
+three-loop tight graphs at D = 3: 16
+  degrees [2, 2, 2, 2, 2, 2, 4, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 2, 3, 3, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 2, 3, 3, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 2, 3, 3, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 2, 3, 3, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 2, 2, 4, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = not series-parallel
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = not series-parallel
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = not series-parallel
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = not series-parallel
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 2, 3, 3, 4]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = not series-parallel
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = 0
+  degrees [2, 2, 2, 2, 3, 3, 3, 3]: brute top form zero at 2 random points: True ; spred K = not series-parallel

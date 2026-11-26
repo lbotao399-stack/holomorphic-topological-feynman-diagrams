@@ -1,0 +1,177 @@
+VERIFY deform (independent verifier)
+Folder P/deepen/deform/verify/, P = /Users/libotao/Desktop/holomorphic-twist-program.
+Own code, no explorer or run-1 import: vce.py (cochains, act, alt, d, bracket; trace basis, Laurent in N),
+vw.py (W_133, W_223 from the c3 index forms by own Casimir contraction), vla.py (exact elimination over Q,
+Fractions), vnum.py (explicit matrices: CE sum with commutators, bracket by dual-basis shuffle sum),
+t_weights.py, t_engine.py, vformal.py, vfixed.py, t_explicit.py, t_coeff.py.
+Logs: t_weights.log, t_engine.log, vformal.log, vfixed_small.log, vfixed_N45.log, t_explicit.log, t_coeff.log.
+Arithmetic: all ranks, kernels, class coordinates exact over Q (Fractions).  No modular ranks, no floating point.
+Fixed-N faithfulness: tau_sigma evaluated at random integer points; rank of that evaluation matrix (exact)
+equals the exact dimension of span{tau_sigma} as functions:
+  gl_N: rank G,  G[s,r] = #{a in [N]^k : a o s = a o r} = sum over elementary tuples tau_s tau_r;
+  sl_N: s_k(N) = sum_j (-1)^{k-j} C(k,j) g_j(N)   (gl_N = sl_N + C).
+  printed: gl2 (2,5,14,42), gl3 (2,6,23,103), gl4 (2,6,24,119), gl5 (2,6,24,120),
+           sl2 (1,1,3,6), sl3 (1,2,8,32), sl4 (1,2,9,43), sl5 (1,2,9,44)   for k = 2,3,4,5.
+
+
+0. Inputs re-derived
+--------------------
+W_133 = - f_xyz f_{a1y'u} f_{a2u'w} f_{a3z's} f_{a4s'r} f_{x'w'r'},  W_223 = - f_xyz f_{a1x'u} f_{a2y'w} f_{a3z's} f_{a4s'r} f_{u'w'r'},
+f(U,V,W) = tr(UVW) - tr(VUW), Casimir gl: tr(PX_e)tr(X^eQ) = tr(PQ), tr(X_eAX^eB) = trA trB; sl: -(1/N)trP trQ, -(1/N)tr(AB).
+t_weights.log:
+  gl own W_tot == c4 W_tot: True ;  sl own W_tot == c4 W_tot: True ;  sl own W_133 == c4: True ;  sl own W_223 == c4: True
+F_G = alt([p1p2][p3p4] W_G).
+
+
+1. Engine (t_engine.log)
+------------------------
+d^2 = 0 (k = 2,3,4; gl, sl): True.   {s0,w} = -dw (k = 2,3,4; (1,0),(1,1),(2,2)): True.
+{w,s0} = {s0,w} for arity 2,3;  {w,s0} = -{s0,w} for arity 4   (graded symmetry with ghost number = arity - 3).
+{s0,s0} = 0: True.  {a,b} = {b,a} (3,3): True.  d{a,b} = {da,b} - {a,db} (arity 3): True.
+formal d == explicit CE sum, formal bracket == explicit dual-basis shuffle sum:  gl2 True, gl3 True, sl2 True, sl3 True.
+
+Dictionary factor (derivation).  F_a = (1/m!) a(c..c), F_b = (1/n!) b(c..c), c odd:
+  dF_a/dc^e = (1/(m-1)!) a(c..c,X_e),   {F_a,F_b} = (1/((m-1)!(n-1)!)) gamma_0(c..c),
+  alt(g)(c..c) = r! g(c..c)  =>  (1/r!) {a,b}(c..c) = gamma_0(c..c)/((m-1)!(n-1)!) = {F_a,F_b},   r = m+n-2.
+  Hence F_{a,b} = eps {F_a,F_b} with one overall sign eps; relative factor 1.
+
+
+2. d1 (scaling)
+---------------
+phi_l^*(dz1dz2) = l1 l2 dz1dz2,  d_{z_i}(phi^*f) = l_i phi^*(d_{z_i} f):
+  F_P(phi^*A) = l1^{a-1} l2^{b-1} F_P(A)  (P of bidegree (a,b));   S_0(phi^*A) = (l1l2)^{-1} S_0(A).
+  S/hbar = sum_k hbar^{k-1} I_k invariant under (A,hbar) -> (phi^*A, (l1l2)^{-1}hbar)  <=>  I_k(phi^*A) = (l1l2)^{k-1} I_k(A)
+  <=>  bidegree(I_k) = (k,k):  J_1 (1,1),  I_2 and O_2 (2,2).
+GL(2): F_P(phi_g^*A) = det(g)^{-1} F_{P o g^T}(A); invariance <=> P(g^T p) = det(g) P(p); degree-2 relative SL(2)-invariants
+of (p1,p2) (p3 = -p1-p2): C[p1p2].  Reproduced.  Gap: the heat-kernel regulator is invariant only under U(1)^2;
+the weight assignment is a symmetry assumption, consistent with O_2 being of bidegree (2,2).
+
+
+3. d2 (QME at orders hbar, hbar^2)
+----------------------------------
+S1 eq. ch9-action-proof (Sec. 9.3), read in source:
+  0 = Q_BV(dI) + hbar Delta_L(dI) + (I[L],dI)_L + (1/2)(dI,dI)_L = Q_L(dI) + (1/2)(dI,dI)_L.
+dI = hbar J_1 + hbar^2 I_2:   hbar^1: {S_0,J_1} + O_1 = 0;   hbar^2: {S_0,I_2} + Q_(1)J_1 + (1/2){J_1,J_1} + O_2/hbar^2 = 0.
+Odd loops: S3 Cor. cor-odd and remark after it (read in source): sigma^*[P] = -[P] (eq-reflection),
+  K_Gamma = (-1)^{|I|+|V|-1} K_Gamma = (-1)^{b_1} K_Gamma for tau-independent external legs.
+  The count uses only: vertices integrated over R x C^2 without tau-derivatives, propagators/heat edges odd under sigma.
+  A J_1 vertex int dz1dz2 P(d_z)T(A,A,A) satisfies both, so every b_1 = 1 graph with J_1 vertices vanishes.
+  Equivalently S3 Prop. prop-rho: tau-factor U^{-1/2}<psi^tau_1> = sum_e C_e <w_e> dt_e = 0 (rho_n = 0, n odd);
+  d_z on a contracted letter inserts -+y_e (S3 Sec. "Kernels"), not w_e.
+Not run: no graph integral (the explorer's oneloop_insertions.log uses the htk engine; not reproduced).
+Gap: the 1/2 in front of {J_1,J_1} relative to O_2 holds iff run-1's O_2 is the hbar^2 coefficient of QME_L(I) as L -> 0;
+that normalization is run-1 c2 (unverified).  Note S1 also writes the QME as sum_n hbar^n/(n+2) Q_n I (eq-2-40, Lemma b-00452),
+a different bookkeeping; run-1 O_2 was not matched to either form here.
+
+
+4. d3 (cochain form)
+--------------------
+{s_0,.} = -d (Section 1).  eps(-d i_2 + (1/2){j,j}) + o_2 = 0  =>  [(1/2){j,j}] = -eps[o_2] in H^4_(2,2),  i_2 in C^3_(2,2).
+o_2 = (pi nu/240) alt([p1p2][p3p4] W_tot) = (pi nu/240)(-3F_133 + 2F_223)  (dictionary F = int P W(A^4) <-> alt(PW)).
+Membership of [o_2] in the image of q is invariant under q -> -q and under the 1/2 (q homogeneous quadratic over C).
+
+
+5. d4 (H^3, total weight 2), vformal.log, vfixed_*.log
+------------------------------------------------------
+formal gl_N:  dim C^2_(2,0) = C^2_(1,1) = C^2_(0,2) = 0  (B^3 = 0, H^3 = Z^3).
+  (1,1): dim C^3 = 5, rank d3 = 2, dim H^3 = 3;   (2,0),(0,2): dim C^3 = 2, rank d3 = 2, dim H^3 = 0.
+  D, S1, S0: alternating True, closed True; rank span(D,S1,S0) = 3 = dim Z^3_(1,1).
+  alt([p1p2] tau) = [p1p2] sum_pi pi.tau for all six taus: True   (=> alt([p1p2]T) = 6[p1p2]Sym T).
+  rank span(D,S1,S0,E_f,E_mix) = 5;  rank(dE_f, dE_mix) = 2.
+formal sl_N: (1,1): dim C^3 = 2, rank d3 = 1, H^3 = 1 = span{D};  (2,0),(0,2): 1, 1, 0;  rank(D,E_f) = 2, dE_f != 0.
+fixed N (faithful):
+  alg   C^3_(1,1)  H^3_(1,1)  H^3_(2,0)=H^3_(0,2)  basis
+  gl1       1          1            0              D
+  gl2       4          2            0              D, S1
+  gl3       5          3            0              D, S1, S0
+  gl4       5          3            0              D, S1, S0
+  gl5       5          3            0              D, S1, S0
+  sl2       1          0            0              -
+  sl3       2          1            0              D
+  sl4       2          1            0              D
+  sl5       2          1            0              D
+  (each: "independent J's at N ... span dim == dim Z^3: True").
+gl2 relation (t_explicit.log, sympy symbolic): tr(X{Y,Z}) = trX tr(YZ) + trY tr(XZ) + trZ tr(XY) - trX trY trZ: True (proof, not sampling).
+
+
+6. d5 (Moyal), vformal.log, t_explicit.log
+------------------------------------------
+e_p * e_q = e^{(e/2)[pq]} e_{p+q};  on sum p = 0: [p2p3] = [p3p1] = [p1p2];
+  s_e = (1/3) alt(tr(123) e^{(e/2)[p1p2]}) = tr(123)e^{(e/2)[p1p2]} - tr(132)e^{-(e/2)[p1p2]}.
+  order e^0 == s_0: True;  order e^1 == j_M = (1/2)[p1p2]tr(1{23}) = D/2: True;  order e^2 == i_M = (1/8)[p1p2]^2 tr(1[23]): True.
+  d j_M = 0: True;  (1/2){j_M,j_M} == d i_M: True;  {j_M,j_M} != 0: True   (formal, all N).
+  explicit (dual-basis bracket, CE sum):  gl2 True, gl3 True (3 random points each, value nonzero).
+  basis change at N = 3,4,5 (explicit pi X = X - trX/N):  pi^*D_sl = D - (2/N)S1 + (4/N^2)S0: True;  M1 = S1 - (3/N)S0: True;
+  j_M = (1/2)pi^*D_sl + M1/N + U/N^2: True.
+Not done: comparison with the noncommutativity parameter of 1610.04144 (no source TeX).
+
+
+7. d6 (H^4_(2,2)), exact over Q
+-------------------------------
+formal gl_N: dim C^3 = 8, dim C^4 = 36, rank d3 = 6, rank d4 = 26, Z^4 = 10, B^4 = 6, H^4 = 4;  B^4 subset Z^4: True.
+  representatives {F223[N^1] = F_1, F223[N^0] = F_0, z8, z9}:  [F_223] = N[F_1] + [F_0],  [F_133] = -N[F_1] - [F_0],  [F_133+F_223] = 0.
+formal sl_N: dim C^3 = 3, dim C^4 = 15, rank d3 = 3, rank d4 = 11, Z^4 = 4, B^4 = 3, H^4 = 1 = C[F_1];  [F_223] = N[F_1].
+fixed N:   alg  C^4   Z^4  B^4  H^4  [F_223]!=0   [F_133+F_223]
+           gl1    1    1    0    1    False        0
+           gl2   22    8    5    3    False        0
+           gl3   35   10    6    4    True         0
+           gl4   36   10    6    4    True         0
+           gl5   36   10    6    4    True         0
+           sl2    5    2    2    0    False        0
+           sl3   14    4    3    1    True         0
+           sl4   15    4    3    1    True         0
+           sl5   15    4    3    1    True         0
+[o_2] = (pi nu/240)(-3[F_133] + 2[F_223]):  [-3F_133+2F_223] = 5[F_223],  [3F_133+2F_223] = -[F_223],  [-3F_133-2F_223] = [F_223].
+Formal = faithful for N >= 5 (arity <= 5); N = 1..5 explicit; together all N.
+
+
+8. d7, d8 (quadratic map), vformal.log, vfixed_*.log
+----------------------------------------------------
+formal gl_N, classes on {F_1, F_0, z8, z9}:
+  {D,D} = 0;  {D,S1} = -(1/12)F_1;  {D,S0} = (1/24)F_0;  {S1,S1} = -(N/24)F_1 + (1/24)F_0;  {S1,S0} = (N/48)F_0;  {S0,S0} = 0 (cochain).
+  all closed, bidegree (2,2), no z8, z9 component.
+  J = aD + bS1 + cS0:  [(1/2){J,J}] = -b(4a+Nb)/48 [F_1] + (2ac + b^2 + Nbc)/48 [F_0]
+                                    = (2ac+b^2+Nbc)/48 [F_223] - (2a+Nb)(2b+Nc)/48 [F_1].
+formal sl_N: {D,D} = (1/(6N))[F_1]  =>  [(1/2){aD,aD}] = a^2/(12N^2) [F_223].
+  (1/2){D,D}_sl == F_223/(12N^2) + d[((N^2+4)/(2N^2))[p1p2]^2 tr(1[23])]: True (Laurent identity in N; explicit sl3 check True).
+  G = alt([p1p2][p3p4] tr12 tr34): dG = 0, [G] = -(1/6)[F_1] = -[F_223]/(6N).
+fixed N, basis {F_223, F_1, ...} (vfixed logs):
+  gl3: (2x0x2 + x1^2 + 3x1x2)/48 [F_223] - (2x0+3x1)(2x1+3x2)/48 [F_1]
+  gl4: (2x0x2 + x1^2 + 4x1x2)/48 [F_223] - (x0+2x1)(x1+2x2)/12 [F_1]
+  gl5: (2x0x2 + x1^2 + 5x1x2)/48 [F_223] - (2x0+5x1)(2x1+5x2)/48 [F_1]
+       (claimed lam, mu: True at N = 3,4,5; other components zero: True; (alpha,beta,gamma) forms: True)
+  sl3: x0^2/108,  sl4: x0^2/192,  sl5: x0^2/300  [F_223].
+  gl2: -x1(x0+x1)/12 [F_1] (J = x0 D + x1 S1), [F_223] = 0;   gl1: 0, [F_223] = 0;   sl2: H^3 = 0.
+  Remark: the F_223-coordinate depends on the complement; with complement z4 instead of F_1 at gl3 it reads -x1(4x0+3x1)/144,
+  [z4] = (1/16)[F_1] - (1/48)[F_223].  Membership in C^*[F_223] is basis independent.
+
+
+9. d9 (Q1), witnesses (exact)
+-----------------------------
+sl_N (N = 3,4,5 explicit, N >= 5 formal): q(aD) = a^2/(12N^2)[F_223] != 0, H^4 = C[F_223]  =>  [o_2] = c_O[F_223] in image.
+gl_N (N = 3,4,5 explicit):
+  J = pi^*D_sl:       (F_1: 0, F_223: 1/108, 1/192, 1/300)
+  J = S1 - (2/N)S0:   (F_1: 0, F_223: -1/48)
+  J = j_M = D/2:      (F_1: 0, F_223: 0)
+N <= 2: [F_223] = [F_133] = 0 => [o_2] = 0.
+Explicit witnesses replace the explorer's Groebner test.  Conditional on c5 and on [O_2] = c_O[F_223] (run-1 c4, c7; [F_133+F_223] = 0 re-verified).
+
+
+10. d10 (coefficients), t_coeff.log
+-----------------------------------
+a^2/(12N^2) = -eps c_O:   c3 sign c_O = pi nu/48 -> a^2 = -eps N^2 pi nu/4;   K_133 flipped c_O = -pi nu/240 -> a^2 = eps N^2 pi nu/20;
+K_223 flipped c_O = pi nu/240 -> a^2 = -eps N^2 pi nu/20;   nu = +-1/(64pi^5): a^2 = -+eps N^2/(256 pi^4).
+b(S1-(2/N)S0): mu = 0, lam = -b^2/48 -> b^2 = 48 eps c_O.   s j_M + t pi^*D_sl: mu = 0, 12N^2 lam = t(s+t).
+All True.  Not verified: c_O itself (run-1 c2, c3), eps, the QME_L normalization of O_2.
+
+
+11. Logical gaps
+----------------
+L1  Local BRST cohomology = CE cohomology of invariant cochains of g[[z1,z2]] modulo sum p (run-1 c5): inherited, not sourced.
+L2  Normalization of run-1 O_2 as the hbar^2 coefficient of QME_L(I) (c2), relative Wick sign (c3), dictionary sign eps:
+    unverified; they fix only c_O and the sign of a^2, not membership.
+L3  Odd-loop vanishing with J_1 vertices: S3 reflection argument (tau-independent external legs) transferred, no integral computed.
+L4  Membership is over C; over R it depends on sign(eps Nnorm) and the relative sign.
+L5  Weights (1,1) / total weight 2 are imposed (the regulator is only U(1)^2-invariant); J_1 components of arity >= 4 set to zero;
+    order hbar^3 not analysed.
+L6  Moyal parameter normalization against 1610.04144 not compared.

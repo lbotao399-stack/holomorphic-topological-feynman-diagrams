@@ -1,0 +1,16 @@
+S1 G2: D(e0=N-1) == D(e0=0) == D(e0=3): True   (coef -46348400388097167360000/7408276630832275903154609, U 501251137/12230400)
+S2 G2: pullback to own ratio coordinates == D det[t; dt/dxi] at 3 points: True
+S3 G2: float -0.000977260182664213 exact -0.000977260182664088 rel 1.3e-13
+S4 G2: int |J| (sum t)^-N = 2.49195e-05 +- 4e-07 ; 1/(N-1)! = 2.48016e-05  (0.3s)
+S1 G4: D(e0=N-1) == D(e0=0) == D(e0=3): True   (coef -129248108465013964800/9078149123251214556311, U 20860871/2185920)
+S2 G4: pullback to own ratio coordinates == D det[t; dt/dxi] at 3 points: True
+S3 G4: float -0.00460869318315071 exact -0.00460869318315072 rel 7.5e-16
+S4 G4: int |J| (sum t)^-N = 2.48984e-05 +- 1e-07 ; 1/(N-1)! = 2.48016e-05  (0.3s)
+S6 G2: own density == htk.brute.density (sign and square): True
+S6 G2: own density == htk.brute.density (sign and square): True
+S6 G4: own density == htk.brute.density (sign and square): True
+S6 G4: own density == htk.brute.density (sign and square): True
+S7 G2: own ratio map bijective (5 random decompositions, exact): True
+S7 G4: own ratio map bijective (5 random decompositions, exact): True
+S4' G2: int |J| (sum t)^-N = 2.482874e-05 +- 1e-07 ; 1/(N-1)! = 2.480159e-05 ; rel 1.1e-03
+S4' G4: int |J| (sum t)^-N = 2.488094e-05 +- 1e-07 ; 1/(N-1)! = 2.480159e-05 ; rel 3.2e-03

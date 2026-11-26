@@ -1,0 +1,14 @@
+q=3 unknowns 54 rows 297 {'T': 272, 'D': 0, 'I': 18, 'B': 7, 'S': 0}  4.7s
+rank 54 of 54 unknowns, determined 54  0.0s
+q=4 unknowns 615 rows 4622 {'T': 4028, 'D': 0, 'I': 486, 'B': 108, 'S': 0}  131.1s
+rank 615 of 615 unknowns, determined 615  0.2s
+R1 between q=7/2 and q=9/2 holds on all 54 orbits
+  T=1 numerator: q = 9/2, 24310 samples
+  numerator 2129 terms (70.5s), periods 2129 (0.9s)
+prism (H,T)=(1,1), sources [1, 2, -1, 3, -2, -3] : {'sqrtpi^4': '-808/63', 'sqrtpi^8': '2041/1680'} 73.0s
+  T=1 numerator: q = 5/2, 9 samples
+  numerator 0 terms (0.0s), periods 0 (0.0s)
+prism (H,T)=(1,1), sources [1, 0, -1, 0, 0, 0] : {} 0.0s
+  T=1 numerator: q = 9/2, 24310 samples
+  numerator 753 terms (69.7s), periods 753 (0.0s)
+prism (H,T)=(1,1), sources [1, 1, 0, -1, 0, -1] : {'sqrtpi^4': '-33/70', 'sqrtpi^8': '17/360'} 69.8s

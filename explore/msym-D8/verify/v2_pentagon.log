@@ -1,0 +1,13 @@
+pentagon edges [(4, 0), (0, 1), (1, 2), (2, 3), (3, 4)]  BFS tree [0, 1, 3, 4]  cotree [2]
+(a) point 0: D(t) T^5 = 1812, <0123> = 1812: True; y_e0 = -sum r_j lam_j: True; -sum y.z = sum lam.x: True
+(a) point 1: D(t) T^5 = -857, <0123> = -857: True; y_e0 = -sum r_j lam_j: True; -sum y.z = sum lam.x: True
+(a) point 2: D(t) T^5 = 96, <0123> = 96: True; y_e0 = -sum r_j lam_j: True; -sum y.z = sum lam.x: True
+(a) point 3: D(t) T^5 = -3606, <0123> = -3606: True; y_e0 = -sum r_j lam_j: True; -sum y.z = sum lam.x: True
+(a) point 4: D(t) T^5 = 648, <0123> = 648: True; y_e0 = -sum r_j lam_j: True; -sum y.z = sum lam.x: True
+(a) point 5: D(t) T^5 = 310, <0123> = 310: True; y_e0 = -sum r_j lam_j: True; -sum y.z = sum lam.x: True
+(a) all: True
+(d) moment formula == iterated sympy integral for 210 exponent tuples (a+b+c+d <= 6): True
+(b) all orders 0..3: True
+(c) trial 0: quadrature (14^4 Gauss nodes, fresh float solver) = -0.154059498367233, <0123> e^b exp[0,s1..s4] = -0.1540594983672329, rel diff 6.5e-16 (15 digits)
+(c) trial 1: quadrature (14^4 Gauss nodes, fresh float solver) = -2.37148942701332, <0123> e^b exp[0,s1..s4] = -2.37148942701332, rel diff 1.9e-16 (15 digits)
+(c) trial 2: quadrature (14^4 Gauss nodes, fresh float solver) = -0.616358333290734, <0123> e^b exp[0,s1..s4] = -0.6163583332907343, rel diff 3.2e-16 (15 digits)

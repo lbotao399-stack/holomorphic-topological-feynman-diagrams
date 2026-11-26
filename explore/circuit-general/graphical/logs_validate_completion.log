@@ -1,0 +1,72 @@
+K33 q=3: 3 convergent orbits
+  (1, 1, 1, 1, 1, 2, 1, 2, 2)  OK   -7/6*z3 + 5/3*z5  (1.7s, decomplete 1)
+  (1, 1, 1, 1, 1, 2, 2, 2, 1)  no completion route
+  (1, 1, 2, 1, 2, 1, 2, 1, 1)  no completion route
+K33 q=3: 1 agree, 0 disagree
+K33 q=4: 35 convergent orbits
+  (1, 1, 1, 1, 2, 3, 1, 3, 3)  no completion route
+  (1, 1, 1, 1, 2, 3, 2, 2, 3)  no completion route
+  (1, 1, 1, 1, 2, 3, 2, 3, 2)  no completion route
+  (1, 1, 1, 1, 2, 3, 3, 1, 3)  no completion route
+  (1, 1, 1, 1, 2, 3, 3, 2, 2)  no completion route
+  (1, 1, 1, 1, 2, 3, 3, 3, 1)  no completion route
+  (1, 1, 1, 1, 3, 3, 2, 2, 2)  no completion route
+  (1, 1, 1, 2, 2, 2, 2, 2, 3)  no completion route
+  (1, 1, 2, 1, 2, 2, 2, 2, 3)  OK   19/1440 + -1/120*z3  (3.3s, decomplete 1)
+  (1, 1, 2, 1, 2, 2, 2, 3, 2)  OK   11/240 + 7/45*z3 + -2/9*z5  (1.9s, decomplete 1)
+  (1, 1, 2, 1, 2, 2, 3, 1, 3)  OK   19/480 + 5/72*z3 + -1/9*z5  (0.9s, decomplete 1)
+  (1, 1, 2, 1, 2, 2, 3, 2, 2)  no completion route
+  (1, 1, 2, 1, 2, 2, 3, 3, 1)  no completion route
+  (1, 1, 2, 1, 2, 3, 2, 3, 1)  OK   11/120 + 14/45*z3 + -4/9*z5  (1.0s, decomplete 2)
+  (1, 1, 2, 1, 2, 3, 3, 1, 2)  OK   19/720 + -1/60*z3  (0.9s, decomplete 1)
+  (1, 1, 2, 1, 2, 3, 3, 2, 1)  no completion route
+  (1, 1, 2, 1, 3, 1, 3, 1, 3)  no completion route
+  (1, 1, 2, 1, 3, 1, 3, 2, 2)  no completion route
+  (1, 1, 2, 1, 3, 1, 3, 3, 1)  OK   11/1440 + -31/360*z3 + 1/9*z5  (1.8s, decomplete 1)
+  (1, 1, 2, 1, 3, 2, 2, 2, 2)  OK   3/20 + 16/45*z3 + -5/9*z5  (1.2s, decomplete 2)
+  (1, 1, 2, 1, 3, 2, 2, 3, 1)  OK   11/120 + 14/45*z3 + -4/9*z5  (1.0s, decomplete 1)
+  (1, 1, 2, 1, 3, 2, 3, 1, 2)  no completion route
+  (1, 1, 2, 1, 3, 2, 3, 2, 1)  no completion route
+  (1, 1, 2, 2, 2, 1, 2, 2, 3)  no completion route
+  (1, 1, 2, 2, 2, 1, 2, 3, 2)  no completion route
+  (1, 1, 2, 2, 2, 1, 3, 3, 1)  OK   -7/180 + -7/45*z3 + 2/9*z5  (1.6s, decomplete 1)
+  (1, 1, 2, 2, 2, 2, 2, 2, 2)  no completion route
+  (1, 1, 2, 2, 2, 2, 2, 3, 1)  no completion route
+  (1, 1, 2, 2, 3, 1, 3, 2, 1)  OK   -17/90*z3 + 2/9*z5  (1.6s, decomplete 2)
+  (1, 1, 3, 1, 2, 2, 3, 2, 1)  no completion route
+  (1, 1, 3, 1, 3, 1, 3, 1, 2)  no completion route
+  (1, 1, 3, 2, 2, 1, 2, 2, 2)  no completion route
+  (1, 1, 3, 2, 2, 1, 2, 3, 1)  no completion route
+  (1, 2, 2, 2, 1, 2, 2, 2, 2)  no completion route
+  (1, 2, 2, 2, 1, 2, 2, 3, 1)  no completion route
+K33 q=4: 10 agree, 0 disagree
+K4 q=4: 9 convergent orbits
+  (1, 1, 1, 3, 3, 3)  OK   1/8  (1.4s, decomplete 0)
+  (1, 1, 2, 3, 2, 3)  OK   1/24  (0.1s, decomplete 0)
+  (1, 1, 3, 3, 1, 3)  OK   7/360 + 1/15*z3  (0.1s, decomplete 0)
+  (1, 1, 3, 3, 2, 2)  OK   -23/180 + 2/15*z3  (0.1s, decomplete 0)
+  (1, 2, 2, 2, 2, 3)  OK   19/360 + -1/30*z3  (0.1s, decomplete 0)
+  (1, 2, 2, 2, 3, 2)  OK   -23/360 + 1/15*z3  (0.1s, decomplete 0)
+  (1, 2, 2, 3, 1, 3)  OK   -23/180 + 2/15*z3  (0.1s, decomplete 0)
+  (1, 2, 3, 3, 1, 2)  OK   19/180 + -1/15*z3  (0.1s, decomplete 2)
+  (2, 2, 2, 2, 2, 2)  OK   -7/60 + 1/10*z3  (0.2s, decomplete 1)
+K4 q=4: 9 agree, 0 disagree
+W4 q=3: 9 convergent orbits
+  (1, 1, 1, 1, 2, 2, 2, 2)  OK   10/3 + 28/3*z3 + -40/3*z5  (1.7s, decomplete 0)
+  (1, 1, 1, 2, 2, 2, 1, 2)  OK   -1 + -3*z3 + 5*z5  (0.1s, decomplete 2)
+  (1, 1, 2, 2, 2, 1, 1, 2)  OK   1/6 + 5/3*z3 + -5/3*z5  (0.1s, decomplete 2)
+  (1, 1, 2, 2, 2, 1, 2, 1)  OK   1/2  (0.1s, decomplete 2)
+  (1, 2, 1, 2, 1, 2, 1, 2)  OK   1/6 + 5/3*z3 + -5/3*z5  (0.1s, decomplete 2)
+  (1, 2, 1, 2, 1, 2, 2, 1)  OK   1/2  (0.1s, decomplete 0)
+  (1, 2, 2, 2, 1, 1, 1, 2)  OK   -7/6*z3 + 5/3*z5  (0.1s, decomplete 0)
+  (1, 2, 2, 2, 1, 1, 2, 1)  OK   -1/6 + 1/2*z3  (0.1s, decomplete 0)
+  (2, 2, 2, 2, 1, 1, 1, 1)  OK   5/3*z3 + -5/3*z5  (0.1s, decomplete 0)
+W4 q=3: 9 agree, 0 disagree
+prism q=3: 6 convergent orbits
+  (1, 1, 2, 1, 1, 2, 1, 1, 2)  OK   1/6 + 5/3*z3 + -5/3*z5  (1.6s, decomplete 1)
+  (1, 1, 2, 1, 1, 2, 2, 1, 1)  OK   5/3*z3 + -5/3*z5  (1.1s, decomplete 2)
+  (1, 1, 2, 1, 2, 1, 1, 1, 2)  OK   -1/6 + 1/2*z3  (0.1s, decomplete 2)
+  (1, 1, 2, 1, 2, 1, 1, 2, 1)  OK   -7/6*z3 + 5/3*z5  (0.1s, decomplete 1)
+  (1, 1, 2, 1, 2, 2, 1, 1, 1)  OK   -7/6*z3 + 5/3*z5  (0.1s, decomplete 1)
+  (1, 1, 2, 2, 2, 1, 1, 1, 1)  OK   5/3*z3 + -5/3*z5  (0.1s, decomplete 2)
+prism q=3: 6 agree, 0 disagree

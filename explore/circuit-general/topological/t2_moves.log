@@ -1,0 +1,72 @@
+t2_moves.py -- pointwise exact checks of the moves on the topological factor with sources kappa.
+
+chain moves (series k=1, parallel a_i=1, general chains): every pair (p,q) of every admissible graph
+  D <= 4, n <= 3 with a chain bundle (root not interior), all chains and single chains; bananas and
+  multigraphs; random rational t and kappa at all non-root vertices.
+star-triangle (+ two parallel merges, LLC App. E): bitriangle and four larger graphs, random t, kappa.
+
+chain moves: (graph class (D,n), number of chains k, sources) -> passed/total
+   (('x', 0), 'k=1', 'kappa')               4/4
+   (('x', 0), 'k=1', 'kappa=0')             4/4
+   (('x', 0), 'k=2', 'kappa')               2/2
+   (('x', 0), 'k=2', 'kappa=0')             2/2
+   (('x', 0), 'k=5', 'kappa')               1/1
+   (('x', 0), 'k=5', 'kappa=0')             1/1
+   ((1, 1), 'k=2', 'kappa')                 1/1
+   ((1, 1), 'k=2', 'kappa=0')               1/1
+   ((1, 2), 'k=3', 'kappa')                 1/1
+   ((1, 2), 'k=3', 'kappa=0')               1/1
+   ((1, 3), 'k=4', 'kappa')                 1/1
+   ((1, 3), 'k=4', 'kappa=0')               1/1
+   ((2, 1), 'k=1', 'kappa')                 2/2
+   ((2, 1), 'k=1', 'kappa=0')               2/2
+   ((2, 1), 'k=2', 'kappa')                 2/2
+   ((2, 1), 'k=2', 'kappa=0')               2/2
+   ((2, 3), 'k=1', 'kappa')                 1/1
+   ((2, 3), 'k=1', 'kappa=0')               1/1
+   ((2, 3), 'k=2', 'kappa')                 1/1
+   ((2, 3), 'k=2', 'kappa=0')               1/1
+   ((3, 1), 'k=1', 'kappa')                 4/4
+   ((3, 1), 'k=1', 'kappa=0')               4/4
+   ((3, 1), 'k=2', 'kappa')                 3/3
+   ((3, 1), 'k=2', 'kappa=0')               3/3
+   ((3, 2), 'k=1', 'kappa')                 4/4
+   ((3, 2), 'k=1', 'kappa=0')               4/4
+   ((3, 3), 'k=1', 'kappa')                 59/59
+   ((3, 3), 'k=1', 'kappa=0')               59/59
+   ((3, 3), 'k=2', 'kappa')                 11/11
+   ((3, 3), 'k=2', 'kappa=0')               11/11
+   ((4, 1), 'k=1', 'kappa')                 6/6
+   ((4, 1), 'k=1', 'kappa=0')               6/6
+   ((4, 1), 'k=2', 'kappa')                 4/4
+   ((4, 1), 'k=2', 'kappa=0')               4/4
+   ((4, 2), 'k=1', 'kappa')                 18/18
+   ((4, 2), 'k=1', 'kappa=0')               18/18
+   ((4, 3), 'k=1', 'kappa')                 388/388
+   ((4, 3), 'k=1', 'kappa=0')               388/388
+   ((4, 3), 'k=2', 'kappa')                 26/26
+   ((4, 3), 'k=2', 'kappa=0')               26/26
+
+star-triangle (+ parallel merges), edges a=vu, b=vw, c=vx, d=ux, f=wx:
+   bitriangle  n=2 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 8)
+   bitriangle  n=2 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 8)
+   bitriangle  n=2 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 8)
+   bitriangle  n=2 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 8)
+   K5minus     n=4 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 45)
+   K5minus     n=4 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 45)
+   K5minus     n=4 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 45)
+   K5minus     n=4 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 45)
+   ST_n3       n=3 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 24)
+   ST_n3       n=3 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 24)
+   ST_n3       n=3 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 0)
+   ST_n3       n=3 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 0)
+   ST_n4       n=4 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 66)
+   ST_n4       n=4 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 66)
+   ST_n4       n=4 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 66)
+   ST_n4       n=4 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 66)
+   ST_n5       n=5 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 114)
+   ST_n5       n=5 kappa!=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 114)
+   ST_n5       n=5 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 0)
+   ST_n5       n=5 kappa=0: wbar reconstruction: True, P = P' + kappa_v^2/Lam_vv: True, U = t_c/(r1 r2) U': True, <prod psi> = star-triangle formula: True  (#components 0)
+
+summary: chain-move failures 0; star-triangle all True; time 11.6s

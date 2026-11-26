@@ -1,0 +1,4 @@
+lattice n=2 lam=[1.0, 0.0, 1.0] h=0.40 X=2.80 alpha=2.0 (15^4 nodes, 2354 with max/min t > e^32 skipped): K = 1.058653863261, exact 1.047197551197, rel.diff 1.09e-02 (0 s)
+lattice n=2 lam=[1.0, 0.0, 1.0] h=0.30 X=2.80 alpha=2.0 (19^4 nodes, 0 with max/min t > e^32 skipped): K = 1.049555455573, exact 1.047197551197, rel.diff 2.25e-03 (0 s)
+lattice n=2 lam=[3.0, -2.0, 5.0] h=0.40 X=2.80 alpha=2.0 (15^4 nodes, 2354 with max/min t > e^32 skipped): K = 15.879807948921, exact 15.707963267949, rel.diff 1.09e-02 (0 s)
+lattice n=2 lam=[3.0, -2.0, 5.0] h=0.30 X=2.80 alpha=2.0 (19^4 nodes, 0 with max/min t > e^32 skipped): K = 15.743331833593, exact 15.707963267949, rel.diff 2.25e-03 (0 s)

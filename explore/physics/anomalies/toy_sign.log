@@ -1,0 +1,6 @@
+n=1 (m=4): 1 graphs x 6 random labellings: toy == (-1)^{3m(m-1)/2} rule: True
+/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributeschanged in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+n=2 (m=6): 2 graphs x 6 random labellings: toy == (-1)^{3m(m-1)/2} rule: True
+n=3 (m=8): 9 graphs x 6 random labellings: toy == (-1)^{3m(m-1)/2} rule: True
+n=4 (m=10): 50 graphs x 6 random labellings: toy == (-1)^{3m(m-1)/2} rule: True

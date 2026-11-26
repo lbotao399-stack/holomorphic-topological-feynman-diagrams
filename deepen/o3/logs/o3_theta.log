@@ -1,0 +1,12 @@
+theta(1, 3, 3) assembled  t=0.4
+theta(2, 2, 3) assembled  t=0.5
+o' == (1/240)(-3 F_133 + 2 F_223) (formal gl_N): True
+o' alternating: True ; d o' = 0: True
+theta'(d): 288 coordinates, N-powers [1, 2], alternating True, weights {(3, 3)}
+theta'(s1): 0 coordinates, N-powers [], alternating True, weights set()
+theta'(s0): 0 coordinates, N-powers [], alternating True, weights set()
+gl_N, J = d: d theta' == {J, o'}: True ; control d theta' == -{J, o'}: True ; {J,o'} = 0: True ; d theta' = 0: True
+gl_N, J = s1: d theta' == {J, o'}: True ; control d theta' == -{J, o'}: True ; {J,o'} = 0: True ; d theta' = 0: True
+gl_N, J = s0: d theta' == {J, o'}: True ; control d theta' == -{J, o'}: True ; {J,o'} = 0: True ; d theta' = 0: True
+sl_N, J = d: d theta' == {J, o'}: True ; control d theta' == -{J, o'}: True ; {J,o'} = 0: True ; d theta' = 0: True
+time 2.4s

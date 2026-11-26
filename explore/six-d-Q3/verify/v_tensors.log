@@ -1,0 +1,24 @@
+G1: regenerated C_{A1 D1 R12} C_{R12 D2 R23} C_{R23 A2 R34} C_{R34 D4 R45} C_{R45 A3 R56} C_{R56 D6 R67} C_{R67 D7 A4} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D4}(x+X_4) C^{D6}(x+X_6) C^{D7}(x+X_7)
+     equal to explorer string: True
+G2: regenerated C_{A1 D1 R12} C_{R12 D2 R23} C_{R23 A2 R34} C_{R34 D4 R45} C_{R45 R56 R57} C_{R56 D6 A3} C_{R57 D7 A4} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D4}(x+X_4) C^{D6}(x+X_6) C^{D7}(x+X_7)
+     equal to explorer string: True
+G3: regenerated C_{A1 D1 R12} C_{R12 D2 R23} C_{R23 A2 R34} C_{R34 R45 R46} C_{R45 D5 A3} C_{R46 D6 R67} C_{R67 D7 A4} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D5}(x+X_5) C^{D6}(x+X_6) C^{D7}(x+X_7)
+     equal to explorer string: True
+G4: regenerated C_{A1 D1 R13} C_{A2 D2 R23} C_{R13 R23 R34} C_{R34 D4 R45} C_{R45 R56 R57} C_{R56 D6 A3} C_{R57 D7 A4} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D4}(x+X_4) C^{D6}(x+X_6) C^{D7}(x+X_7)
+     equal to explorer string: True
+G5: regenerated C_{A1 D1 R13} C_{A2 D2 R23} C_{R13 R23 R34} C_{R34 R45 R46} C_{R45 D5 A3} C_{R46 D6 R67} C_{R67 D7 A4} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D5}(x+X_5) C^{D6}(x+X_6) C^{D7}(x+X_7)
+     equal to explorer string: True
+box: C_{A1 D1 R12} C_{R12 D2 R23} C_{R23 D3 A2} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D3}(x+X_3)
+A: C_{A1 D1 R12} C_{R12 D2 R23} C_{R23 A2 R34} C_{R34 D4 R45} C_{R45 D5 A3} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D4}(x+X_4) C^{D5}(x+X_5)
+B: C_{A1 D1 R13} C_{A2 D2 R23} C_{R13 R23 R34} C_{R34 D4 R45} C_{R45 D5 A3} * C^{D1}(x+X_1) C^{D2}(x+X_2) C^{D4}(x+X_4) C^{D5}(x+X_5)
+G1: |kappa| = 1/2, 1/|Aut| = 1/2; coefficient of int_D J T in units i/(1024 pi^9): -1 (stated -1) True
+G2: |kappa| = 1/2, 1/|Aut| = 1/2; coefficient of int_D J T in units i/(1024 pi^9): 1 (stated 1) True
+G3: |kappa| = 1, 1/|Aut| = 1; coefficient of int_D J T in units i/(1024 pi^9): -2 (stated -2) True
+G4: |kappa| = 1/8, 1/|Aut| = 1/8; coefficient of int_D J T in units i/(1024 pi^9): -1/4 (stated -1/4) True
+G5: |kappa| = 1/2, 1/|Aut| = 1/2; coefficient of int_D J T in units i/(1024 pi^9): 1 (stated 1) True
+(i/(8 pi^3))^3 = i/(512 pi^9): 8^3 = 512
+G1: inputs 4, outputs 5, brackets per term 3 -> derivatives (3,3,3)
+G2: inputs 4, outputs 5, brackets per term 3 -> derivatives (3,3,3)
+G3: inputs 4, outputs 5, brackets per term 3 -> derivatives (3,3,3)
+G4: inputs 4, outputs 5, brackets per term 3 -> derivatives (3,3,3)
+G5: inputs 4, outputs 5, brackets per term 3 -> derivatives (3,3,3)

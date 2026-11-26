@@ -1,0 +1,330 @@
+verify_independent.log  (2026-11-20 20:40)
+code: code/tests/verify_independent.py; one process per section: python3 verify_independent.py <section>; rng seed 20261120
+htk: code/htk (unmodified)
+
+##### section self
+== self-tests of Part I/II (no htk)
+PASS Pf^2 = det, n=2  Pf = 1
+PASS Pf^2 = det, n=4  Pf = 15/8
+PASS Pf^2 = det, n=6  Pf = -1137/100
+PASS Pf(J) = +1 (a12 a34 term +)
+PASS dt0^dt1 = -dt1^dt0
+PASS simplex rule m=1  0.0833333333333334 vs 0.0833333333333333
+PASS simplex rule m=2  0.0166666666666667 vs 0.0166666666666667
+PASS simplex rule m=3  0.00277777777777778 vs 0.00277777777777778
+PASS simplex rule m=5  4.96031746031746e-05 vs 4.96031746031746e-05
+PASS log-lattice Dirichlet test  0.0166666666666636 vs 0.0166666666666667 (4200 pts)
+   [section self: 0.2s]
+discrepancies: 0
+total 0.2s
+exit status 0
+
+##### section pointwise
+== pointwise densities: own exact D(t) vs htk.brute.density (random rational t, random positive bases)
+PASS pointwise triangle (4 points)  e.g. D = 11/35152 [0.0s]
+PASS pointwise fan2 (4 points)  e.g. D = -7897264998480/401422654626136081 [0.0s]
+PASS pointwise box (4 points)  e.g. D = -14869693125/33095076020224 [0.0s]
+PASS pointwise theta(1, 3, 3) H3T0 (4 points)  e.g. D = 13439725632139713306624/63057379415445342274376781875 [0.0s]
+PASS pointwise theta(2, 2, 3) H3T0 (4 points)  e.g. D = -23015762792207232334848/3497583900595658043986156125 [0.0s]
+PASS pointwise theta(1, 2, 2) H1T1 (4 points)  e.g. D = -9800/1608739947 * U^-1/2 [0.0s]
+PASS pointwise theta(1, 3, 3) H2T1 (4 points)  e.g. D = 64512/786074915989 * U^-1/2 [0.0s]
+PASS pointwise theta(2, 2, 3) H2T1 (4 points)  e.g. D = -2151296/3989625051300627 * U^-1/2 [0.0s]
+PASS pointwise theta(1, 6, 6) H5T1 (4 points)  e.g. D = -13384501274171597963906557440/263533622130829333850103248560047720889374889 * U^-1/2 [0.8s]
+PASS pointwise prism H2T0 (4 points)  e.g. D = 144160531693701362266180414785256053227520/3264047063149856293808295962979939555545241523201 [0.0s]
+PASS pointwise prism H1T1 (4 points)  e.g. D = 10506988542389454113205806064/351138707256160726897137586364547605 * U^-1/2 [0.3s]
+PASS pointwise graph_A H3T0 (4 points)  e.g. D = 419806309994265187314/3660355277402479429813375 [0.0s]
+PASS pointwise graph_B H3T0 (4 points)  e.g. D = 1313774953805079445504/1160687468848259364200578125 [0.0s]
+PASS pointwise ladder(2) H3T0 (4 points)  e.g. D = 3361969204174121425632/29653336968352772437380175 [0.0s]
+PASS pointwise banana(3) H0T1 (4 points)  e.g. D = 28/5409 * U^-1/2 [0.0s]
+PASS pointwise banana(5) H0T1 (4 points)  e.g. D = 93555/1339755848 * U^-1/2 [0.1s]
+   [section pointwise: 1.3s]
+discrepancies: 0
+total 1.3s
+exit status 0
+
+##### section reduced
+== reduced densities: htk g(xi) vs own D(t(xi)) |det[t; dt/dxi]| (own Jacobian), both plans; K for both plans and three source formats
+PASS plans/source formats triangle  K(small) = 11/32, K(large) = 11/32, K(all-vertex list) = 11/32, K(dict) = 11/32
+PASS reduced density triangle (small plan, 3 points)  exps {} [0.0s]
+PASS reduced density triangle (large plan, 3 points)  exps {} [0.0s]
+PASS plans/source formats fan2  K(small) = -301/320, K(large) = -301/320, K(all-vertex list) = -301/320, K(dict) = -301/320
+PASS reduced density fan2 (small plan, 3 points)  exps {} [0.0s]
+PASS reduced density fan2 (large plan, 3 points)  exps {} [0.0s]
+PASS plans/source formats box  K(small) = 2891/1200, K(large) = 2891/1200, K(all-vertex list) = 2891/1200, K(dict) = 2891/1200
+PASS reduced density box (small plan, 3 points)  exps {} [0.0s]
+PASS reduced density box (large plan, 3 points)  exps {} [0.0s]
+PASS plans/source formats theta(1, 3, 3) H3T0  K(small) = 21936364177/13996800000, K(large) = 21936364177/13996800000, K(all-vertex list) = 21936364177/13996800000, K(dict) = 21936364177/13996800000
+PASS reduced density theta(1, 3, 3) H3T0 (small plan, 3 points)  exps {} [0.0s]
+PASS reduced density theta(1, 3, 3) H3T0 (large plan, 3 points)  exps {} [0.0s]
+PASS plans/source formats theta(2, 2, 3) H3T0  K(small) = 951248413/92160000, K(large) = 951248413/92160000, K(all-vertex list) = 951248413/92160000, K(dict) = 951248413/92160000
+PASS reduced density theta(2, 2, 3) H3T0 (small plan, 3 points)  exps {} [0.1s]
+PASS reduced density theta(2, 2, 3) H3T0 (large plan, 3 points)  exps {} [0.0s]
+PASS plans/source formats theta(1, 2, 2) H1T1  K(small) = -4/3*pi, K(large) = -4/3*pi, K(all-vertex list) = -4/3*pi, K(dict) = -4/3*pi
+PASS reduced density theta(1, 2, 2) H1T1 (small plan, 3 points)  exps {'w1_1': '1/2', 'w1_2': '-1/2', 'w2_1': '1/2', 'x2_2_1': '-1/2'} [0.0s]
+PASS reduced density theta(1, 2, 2) H1T1 (large plan, 3 points)  exps {'w1_1': '1/2', 'w1_2': '-1/2', 'w1_3': '-1/2'} [0.0s]
+PASS plans/source formats theta(1, 3, 3) H2T1  K(small) = -4303/64000*pi, K(large) = -4303/64000*pi, K(all-vertex list) = -4303/64000*pi, K(dict) = -4303/64000*pi
+PASS reduced density theta(1, 3, 3) H2T1 (small plan, 3 points)  exps {'w1_1': '3/2', 'w1_2': '-1/2', 'w2_1': '3/2', 'x2_2_1': '-1/2'} [0.1s]
+PASS reduced density theta(1, 3, 3) H2T1 (large plan, 3 points)  exps {'w1_1': '3/2', 'w1_2': '-1/2', 'w1_3': '-1/2'} [0.0s]
+PASS plans/source formats theta(2, 2, 3) H2T1  K(small) = 31/16*pi, K(large) = 31/16*pi, K(all-vertex list) = 31/16*pi, K(dict) = 31/16*pi
+PASS reduced density theta(2, 2, 3) H2T1 (small plan, 3 points)  exps {'w1_1': '1/2', 'w1_2': '1/2', 'w2_1': '3/2', 'x2_2_1': '-1/2'} [0.1s]
+PASS reduced density theta(2, 2, 3) H2T1 (large plan, 3 points)  exps {'w1_1': '1/2', 'w1_2': '1/2', 'w1_3': '-1/2'} [0.0s]
+   [section reduced: 0.6s]
+discrepancies: 0
+total 0.6s
+exit status 0
+
+##### section theta166
+== theta(1,6,6), H = 5, T = 1: htk reduced density (prefer='large') vs own D(t(xi)) |J|
+== reduced densities: htk g(xi) vs own D(t(xi)) |det[t; dt/dxi]| (own Jacobian), both plans; K for both plans and three source formats
+PASS reduced density theta(1, 6, 6) H5T1 (large plan, 3 points)  exps {'w1_1': '9/2', 'w1_2': '-1/2', 'w1_3': '-1/2'} [0.4s]
+   [section theta166: 0.4s]
+discrepancies: 0
+total 0.4s
+exit status 0
+
+##### section exact1
+== one-loop cases: exact integral of own polynomial density on the simplex vs htk.kernel_exact
+PASS exact K triangle trial 0  own 11/32, htk 11/32
+PASS exact K triangle trial 1  own -11/15, htk -11/15
+PASS exact moment triangle powers {(0, 0): 1}  own 14/9, htk 14/9
+PASS exact moment triangle powers {(1, 1): 2}  own -553/128, htk -553/128
+PASS exact moment triangle powers {(0, 0): 1, (2, 1): 1}  own -707/288, htk -707/288
+PASS polygon formula triangle  -7/4 vs -7/4
+PASS exact K box trial 0  own 83/480, htk 83/480
+PASS exact K box trial 1  own -1931/216, htk -1931/216
+PASS exact moment box powers {(0, 0): 1}  own -1526899/3600, htk -1526899/3600
+PASS exact moment box powers {(1, 2): 2}  own -365951/1440, htk -365951/1440
+PASS exact moment box powers {(0, 0): 1, (3, 1): 1}  own 162570577/108000, htk 162570577/108000
+PASS polygon formula box  -12619/180 vs -12619/180
+PASS exact K square H3 trial 0  own 14731/4320, htk 14731/4320
+PASS exact K square H3 trial 1  own 3913/675, htk 3913/675
+PASS exact moment square H3 powers {(0, 0): 1}  own 93/16000, htk 93/16000
+PASS exact moment square H3 powers {(1, 2): 2}  own -27621/50000, htk -27621/50000
+PASS exact moment square H3 powers {(0, 0): 1, (3, 1): 1}  own 7347/80000, htk 7347/80000
+PASS polygon formula square H3  -93/200 vs -93/200
+PASS exact K pentagon H4 trial 0  own 16957/6400, htk 16957/6400
+PASS exact K pentagon H4 trial 1  own -22531/57600, htk -22531/57600
+PASS exact moment pentagon H4 powers {(0, 0): 1}  own 6464497/972000, htk 6464497/972000
+PASS exact moment pentagon H4 powers {(1, 3): 2}  own -1540042093/388800000, htk -1540042093/388800000
+PASS exact moment pentagon H4 powers {(0, 0): 1, (4, 1): 1}  own 1158139501/116640000, htk 1158139501/116640000
+PASS polygon formula pentagon H4  -497269/129600 vs -497269/129600
+   [section exact1: 150.2s]
+discrepancies: 0
+total 150.2s
+exit status 0
+
+##### section integrals
+== numerical K(lam; 0): own log-lattice on the simplex (dims 2..4) vs htk.kernel_exact
+   triangle: htk 11/32 = 0.34375; lattice h=0.50: 0.34375 (shifted by h/2: 0.34375), h=0.35: 0.34375 (15827 pts, 0s); 0 non-finite set to 0
+PASS integral triangle trial 0  13.3 digits agree
+   triangle: htk -8/3 = -2.66666666667; lattice h=0.50: -2.66666666667 (shifted by h/2: -2.66666666667), h=0.35: -2.66666666667 (15827 pts, 0s); 0 non-finite set to 0
+PASS integral triangle trial 1  13.3 digits agree
+   fan2: htk -14063/2400 = -5.85958333333; lattice h=0.50: -5.8595833324 (shifted by h/2: -5.85958333241), h=0.40: -5.85958333224 (16903861 pts, 31s); 0 non-finite set to 0
+PASS integral fan2 trial 0  9.7 digits agree
+   fan2: htk -812/405 = -2.0049382716; lattice h=0.50: -2.0049382713 (shifted by h/2: -2.0049382713), h=0.40: -2.00493827125 (17585126 pts, 32s); 0 non-finite set to 0
+PASS integral fan2 trial 1  9.7 digits agree
+   box: htk -713/360 = -1.98055555556; lattice h=0.50: -1.98055555555 (shifted by h/2: -1.98055555555), h=0.40: -1.98055555555 (477647 pts, 0s); 0 non-finite set to 0
+PASS integral box trial 0  11.5 digits agree
+   box: htk 251/36 = 6.97222222222; lattice h=0.50: 6.9722222222 (shifted by h/2: 6.97222222221), h=0.40: 6.9722222222 (477647 pts, 0s); 0 non-finite set to 0
+PASS integral box trial 1  11.5 digits agree
+   theta(1, 2, 2) H1T1: htk 4/75*pi = 0.167551608191; lattice h=0.50: 0.167551608151 (shifted by h/2: 0.167551608152), h=0.40: 0.167551608145 (50359974 pts, 213s); 0 non-finite set to 0
+PASS integral theta(1, 2, 2) H1T1 trial 0  9.6 digits agree
+   theta(1, 2, 2) H1T1: htk 4*pi = 12.5663706144; lattice h=0.50: 12.5663706113 (shifted by h/2: 12.5663706114), h=0.40: 12.5663706109 (50359974 pts, 213s); 0 non-finite set to 0
+PASS integral theta(1, 2, 2) H1T1 trial 1  9.6 digits agree
+   banana(3) H0T1: htk 1*pi = 3.14159265359; lattice h=0.50: 3.14159263663 (shifted by h/2: 3.14159264126), h=0.40: 3.14159264304 (35732 pts, 0s); 167 non-finite set to 0
+PASS integral banana(3) H0T1 trial 0  8.5 digits agree
+   banana(3) H0T1: htk 1*pi = 3.14159265359; lattice h=0.50: 3.14159263663 (shifted by h/2: 3.14159264126), h=0.40: 3.14159264304 (35732 pts, 0s); 167 non-finite set to 0
+PASS integral banana(3) H0T1 trial 1  8.5 digits agree
+   [section integrals: 856.0s]
+discrepancies: 0
+total 856.0s
+exit status 0
+
+##### section integrals6
+== numerical K(lam; 0) of theta graphs: own path-resistance rule (log lattice in R_A, R_B, R_C = 1; Gauss-Jacobi on path simplices) vs htk.kernel_exact
+   theta(1, 2, 2) H=1 T=1: htk 35/48*pi = 2.29074464324 [0.0s]; rule (h,k)=(0.30,4): 2.29074464324, (0.25,5): 2.29074464324 (56452 outer pts, 4s, 0 non-finite set to 0)
+PASS integral theta(1, 2, 2) H1T1 trial 0  12.1 digits agree
+   theta(1, 2, 2) H=1 T=1: htk 25/18*pi = 4.36332312999 [0.0s]; rule (h,k)=(0.30,4): 4.36332312998, (0.25,5): 4.36332312998 (56452 outer pts, 4s, 0 non-finite set to 0)
+PASS integral theta(1, 2, 2) H1T1 trial 1  12.1 digits agree
+   theta(1, 3, 3) H=3 T=0: htk 67266749/7776000 = 8.65055928498 [0.0s]; rule (h,k)=(0.30,4): 8.65055928498, (0.25,5): 8.65055928498 (16259 outer pts, 11s, 0 non-finite set to 0)
+PASS integral theta(1, 3, 3) H3T0 trial 0  12.4 digits agree
+   theta(1, 3, 3) H=3 T=0: htk 1325177591/18662400 = 71.0078870349 [0.0s]; rule (h,k)=(0.30,4): 71.0078870349, (0.25,5): 71.0078870349 (16259 outer pts, 12s, 0 non-finite set to 0)
+PASS integral theta(1, 3, 3) H3T0 trial 1  12.4 digits agree
+   theta(2, 2, 3) H=3 T=0: htk 1145581/101250 = 11.3143802469 [0.0s]; rule (h,k)=(0.30,4): 11.3143802469, (0.25,5): 11.3143802469 (12571 outer pts, 9s, 0 non-finite set to 0)
+PASS integral theta(2, 2, 3) H3T0 trial 0  12.5 digits agree
+   theta(2, 2, 3) H=3 T=0: htk -46471519/3110400 = -14.9406889789 [0.0s]; rule (h,k)=(0.30,4): -14.9406889789, (0.25,5): -14.9406889789 (12571 outer pts, 8s, 0 non-finite set to 0)
+PASS integral theta(2, 2, 3) H3T0 trial 1  12.5 digits agree
+   theta(1, 3, 3) H=2 T=1: htk 1053/1000*pi = 3.30809706423 [0.0s]; rule (h,k)=(0.30,4): 3.30809706423, (0.25,5): 3.30809706423 (48531 outer pts, 206s, 0 non-finite set to 0)
+PASS integral theta(1, 3, 3) H2T1 trial 0  12.2 digits agree
+   theta(1, 3, 3) H=2 T=1: htk -357/800*pi = -1.40193572166 [0.0s]; rule (h,k)=(0.30,4): -1.40193572166, (0.25,5): -1.40193572166 (48531 outer pts, 209s, 0 non-finite set to 0)
+PASS integral theta(1, 3, 3) H2T1 trial 1  12.2 digits agree
+   theta(2, 2, 3) H=2 T=1: htk 1507/3200*pi = 1.4794937903 [0.0s]; rule (h,k)=(0.30,4): 1.4794937903, (0.25,5): 1.4794937903 (28306 outer pts, 125s, 0 non-finite set to 0)
+PASS integral theta(2, 2, 3) H2T1 trial 0  12.3 digits agree
+   theta(2, 2, 3) H=2 T=1: htk 731/300*pi = 7.65501409925 [0.0s]; rule (h,k)=(0.30,4): 7.65501409924, (0.25,5): 7.65501409924 (28306 outer pts, 126s, 0 non-finite set to 0)
+PASS integral theta(2, 2, 3) H2T1 trial 1  12.3 digits agree
+   [section integrals6: 916.6s]
+discrepancies: 0
+total 916.6s
+exit status 0
+
+##### section semianalytic1
+== theta graphs, T = (1,): own density with exact Dirichlet integration over the path simplices and mpmath (tanh-sinh, 30 digits, maxdegree 8, log variables) over the two free path resistances, vs htk.kernel_exact
+   theta(1, 2, 2) H=1 T=1: htk 35/48*pi = 2.290744643242557569712; own 2.290744643242557578343 (G: 12 terms, int G dx: 12 terms) [33s]
+PASS semianalytic theta(1, 2, 2) H1T1 trial 0  17.4 digits agree
+   theta(1, 2, 2) H=1 T=1: htk -20/9*pi = -6.981317007977318307695; own -6.981317007977318334017 (G: 12 terms, int G dx: 12 terms) [34s]
+PASS semianalytic theta(1, 2, 2) H1T1 trial 1  17.4 digits agree
+   theta(1, 3, 3) H=2 T=1: htk -8857/21600*pi = -1.288198432076148088568; own -1.288198432076147897317 (G: 25 terms, int G dx: 25 terms) [47s]
+PASS semianalytic theta(1, 3, 3) H2T1 trial 0  15.8 digits agree
+   theta(1, 3, 3) H=2 T=1: htk -1207/1600*pi = -2.369938958051800274265; own -2.369938958051799922416 (G: 25 terms, int G dx: 25 terms) [48s]
+PASS semianalytic theta(1, 3, 3) H2T1 trial 1  15.8 digits agree
+   theta(2, 2, 3) H=2 T=1: htk 47/2400*pi = 0.06152285613280011758656; own 0.06152285613279999007189 (G: 25 terms, int G dx: 25 terms) [141s]
+PASS semianalytic theta(2, 2, 3) H2T1 trial 0  14.7 digits agree
+   theta(2, 2, 3) H=2 T=1: htk -2653/300*pi = -27.78215103324573820547; own -27.78215103324573414101 (G: 25 terms, int G dx: 25 terms) [163s]
+PASS semianalytic theta(2, 2, 3) H2T1 trial 1  15.8 digits agree
+   [section semianalytic1: 467.1s]
+discrepancies: 0
+total 467.1s
+exit status 0
+
+##### section semianalytic0
+== theta graphs, T = (0,): own density with exact Dirichlet integration over the path simplices and mpmath (tanh-sinh, 30 digits, maxdegree 8, log variables) over the two free path resistances, vs htk.kernel_exact
+   theta(1, 3, 3) H=3 T=0: htk -3437/460800 = -0.007458767361111111111111; own -0.007458767361111111111111 (G: 225 terms, int G dx: 25 terms) [48s]
+PASS semianalytic theta(1, 3, 3) H3T0 trial 0  22.6 digits agree
+   theta(1, 3, 3) H=3 T=0: htk -69976753/11197440 = -6.249352798496799268404; own -6.249352798496799268404 (G: 225 terms, int G dx: 25 terms) [64s]
+PASS semianalytic theta(1, 3, 3) H3T0 trial 1  22.6 digits agree
+   theta(2, 2, 3) H=3 T=0: htk 13716512251/93312000 = 146.9962303990912208505; own 146.9962303990912208505 (G: 225 terms, int G dx: 25 terms) [65s]
+PASS semianalytic theta(2, 2, 3) H3T0 trial 0  22.5 digits agree
+   theta(2, 2, 3) H=3 T=0: htk 98817037/18662400 = 5.294980120456104252401; own 5.294980120456104252401 (G: 225 terms, int G dx: 25 terms) [64s]
+PASS semianalytic theta(2, 2, 3) H3T0 trial 1  22.5 digits agree
+   [section semianalytic0: 241.2s]
+discrepancies: 0
+total 241.2s
+exit status 0
+
+##### section lattice6
+== structure-free 6-dim log-lattice on the simplex (all N - 1 = 6 log Schwinger times, no path coordinates) for |I| = 7 thetas (low accuracy check)
+   theta(2, 2, 3) H=3 T=0: htk 3437/155520 = 0.02210005144; h=1.20: 0.02210104956 (4308379 pts, 15s); h=1.00: 0.02210006375 (11621293 pts, 47s); h=0.90: 0.02210001908 (20764090 pts, 104s)
+PASS 6-dim lattice theta(2, 2, 3) H3T0  5.8 digits agree at h=0.90
+   theta(2, 2, 3) H=2 T=1: htk -2509/9000*pi = -0.8758062187; h=1.20: -0.8758286591 (8880366 pts, 94s); h=1.00: -0.8758039781 (24259191 pts, 311s); h=0.90: -0.8758026262 (43912047 pts, 564s)
+PASS 6-dim lattice theta(2, 2, 3) H2T1  5.4 digits agree at h=0.90
+   [section lattice6: 1134.4s]
+discrepancies: 0
+total 1134.4s
+exit status 0
+
+##### section transform
+== transformation rules (D = H + T): reversal (-1)^{Dk} (z_e -> -z_e), edge order sgn^{D+1}, vertex relabelling sgn^D
+PASS pointwise transformation rules triangle (4 trials)
+PASS pointwise transformation rules fan2 (4 trials)
+PASS pointwise transformation rules box (4 trials)
+PASS pointwise transformation rules theta(1,3,3) H3T0 (4 trials)
+PASS pointwise transformation rules theta(2,2,3) H3T0 (4 trials)
+PASS pointwise transformation rules graph_A (4 trials)
+PASS pointwise transformation rules theta(1,2,2) H1T1 (4 trials)
+PASS pointwise transformation rules theta(2,2,3) H2T1 (4 trials)
+PASS pointwise transformation rules theta(1,3,3) H2T1 (4 trials)
+PASS pointwise transformation rules prism H2T0 (4 trials)
+PASS pointwise transformation rules prism H1T1 (4 trials)
+PASS kernel_exact transformation rules triangle  K = -35/18, -3/10 [0.0s]
+PASS kernel_exact transformation rules fan2  K = -7387/1728, 18029/4800 [0.0s]
+PASS kernel_exact transformation rules box  K = -247/360, -3499/600 [0.0s]
+PASS kernel_exact transformation rules theta(1,3,3) H3T0  K = -9731/432, 52667153/8640000 [0.4s]
+PASS kernel_exact transformation rules theta(2,2,3) H3T0  K = 13612207/86400, 114035273/33177600 [0.2s]
+PASS kernel_exact transformation rules graph_A  K = -1870757/28125, 812383/1440000 [0.1s]
+PASS kernel_exact transformation rules theta(1,2,2) H1T1  K = -28/3*pi, 6/5*pi [0.0s]
+PASS kernel_exact transformation rules theta(2,2,3) H2T1  K = -93/500*pi, 49/360*pi [0.0s]
+PASS kernel_exact transformation rules theta(1,3,3) H2T1  K = -31/96*pi, -72/125*pi [0.0s]
+   [section transform: 1.8s]
+discrepancies: 0
+total 1.8s
+exit status 0
+
+##### section n4
+== four-loop series-parallel graphs at (D, n) = (2, 4) (H, T) = (1, 1), (2, 0) and ladder(4) (H, T) = (2, 1): htk reduced density vs own D(t(xi)) |J| (pointwise; own Pfaffian with n = 4)
+PASS reduced density D2_n4_0 [2, 2, 2, 2, 5, 5] H1T1  own g(xi) nonzero at 4/4 points; htk K = 21/32*pi^2 [0.5s]
+PASS reduced density D2_n4_0 [2, 2, 2, 2, 5, 5] H2T0  own g(xi) nonzero at 4/4 points; htk K = -581148428971/49766400000 [0.1s]
+PASS reduced density D2_n4_1 [2, 2, 2, 3, 4, 5] H1T1  own g(xi) nonzero at 4/4 points; htk K = 2788/10125*pi^2 [0.3s]
+PASS reduced density D2_n4_1 [2, 2, 2, 3, 4, 5] H2T0  own g(xi) nonzero at 4/4 points; htk K = 35043862813/22932357120 [0.1s]
+PASS reduced density D2_n4_2 [2, 2, 2, 4, 4, 4] H1T1  own g(xi) nonzero at 4/4 points; htk K = 0 [0.3s]
+PASS reduced density D2_n4_2 [2, 2, 2, 4, 4, 4] H2T0  own g(xi) nonzero at 4/4 points; htk K = -1760919275739523/2687385600000000 [0.1s]
+PASS reduced density D2_n4_3 [2, 2, 3, 3, 3, 5] H1T1  own g(xi) nonzero at 4/4 points; htk K = -9293/180*pi^2 [0.2s]
+PASS reduced density D2_n4_3 [2, 2, 3, 3, 3, 5] H2T0  own g(xi) nonzero at 4/4 points; htk K = -14227397496377/318504960000 [0.2s]
+PASS reduced density D2_n4_5 [2, 2, 3, 3, 4, 4] H1T1  own g(xi) nonzero at 4/4 points; htk K = 7303/12960*pi^2 [1.8s]
+PASS reduced density D2_n4_5 [2, 2, 3, 3, 4, 4] H2T0  own g(xi) nonzero at 4/4 points; htk K = -881761314825367/22394880000000 [0.4s]
+PASS reduced density ladder(4) [2, 2, 2, 2, 3, 3, 3, 3, 3, 3] H2T1  own g(xi) nonzero at 4/4 points; htk K = 156235428391/93312000000*pi^2 [26.3s]
+   [section n4: 30.3s]
+discrepancies: 0
+total 30.3s
+exit status 0
+
+##### python3 code/tests/test_known.py (run in this session, unmodified)
+test_S1_fans
+  fan n=1: I^{S1} = (-1)^{n(n+1)/2} K = (a1*b2 - a2*b1)/2 ; general sources K = -3
+  fan n=2: I^{S1} = (-1)^{n(n+1)/2} K = (a1*b2 - a2*b1)**2/24 ; general sources K = -125
+  fan n=3: I^{S1} = (-1)^{n(n+1)/2} K = (a1*b2 - a2*b1)**3/864 ; general sources K = -155/54
+  PASS (0.1s)
+test_S1_fan_general_sources
+  n = 1..4: density (eq-1-40) and currents (eq-1-38), (eq-1-39) reproduced
+  PASS (0.4s)
+test_S1_triangle_displacements
+  triangle: Taylor orders 0..3 in z: ['-10', '560/3', '-13075/6', '55265/3']
+  PASS (0.0s)
+test_S4_polygons
+  d=2: K = -13/2, int d^d y_{e_0} = -13/2 = (-1)^d det(lam_1..lam_d)/d!; oracle(gauss) -6.5
+  d=3: K = 40/3, int d^d y_{e_0} = -40/3 = (-1)^d det(lam_1..lam_d)/d!; oracle(gauss) 13.3333333333
+  d=4: K = -365/12, int d^d y_{e_0} = -365/12 = (-1)^d det(lam_1..lam_d)/d!; oracle(gauss) -30.4166666667
+  d=5: K = 583/40, int d^d y_{e_0} = -583/40 = (-1)^d det(lam_1..lam_d)/d!; oracle(gauss) 14.575
+  PASS (0.3s)
+test_S4_chain_move
+  d=2: int d^d y ^ d^d y = 65/2 (S4 chain-move density integrated: 65/2)
+  d=3: int d^d y ^ d^d y = 475/54 (S4 chain-move density integrated: 475/54)
+  d=4: int d^d y ^ d^d y = 10115/192 (S4 chain-move density integrated: 10115/192)
+  d=5: int d^d y ^ d^d y = 73073/1350 (S4 chain-move density integrated: 73073/1350)
+  PASS (1.0s)
+test_S4_ladder
+  I/Delta^n, n = 1..4: 1/6, -1/432, 1/155520, -1/186624000
+  PASS (0.0s)
+test_S2_box
+  box: I^{S2} = -K = (l1_1*l2_2*l3_3 - l1_1*l2_3*l3_2 - l1_2*l2_1*l3_3 + l1_2*l2_3*l3_1 + l1_3*l2_1*l3_2 - l1_3*l2_2*l3_1)/6 ; displacement map and first-order term agree
+  PASS (0.1s)
+test_S2_graph_A
+  (A): I^{S2} = -K = (2*l0_1*l1_2*l3_3 + l0_1*l1_2*l4_3 - 2*l0_1*l1_3*l3_2 - l0_1*l1_3*l4_2 - 2*l0_2*l1_1*l3_3 - l0_2*l1_1*l4_3 + 2*l0_2*l1_3*l3_1 + l0_2*l1_3*l4_1 + 2*l0_3*l1_1*l3_2 + l0_3*l1_1*l4_2 - 2*l0_3*l1_2*l3_1 - l0_3*l1_2*l4_1)*(l0_1*l3_2*l4_3 - l0_1*l3_3*l4_2 - l0_2*l3_1*l4_3 + l0_2*l3_3*l4_1 + l0_3*l3_1*l4_2 - l0_3*l3_2*l4_1 + 2*l1_1*l3_2*l4_3 - 2*l1_1*l3_3*l4_2 - 2*l1_2*l3_1*l4_3 + 2*l1_2*l3_3*l4_1 + 2*l1_3*l3_1*l4_2 - 2*l1_3*l3_2*l4_1)/432
+  PASS (0.8s)
+test_S2_graph_B
+  (B): I^{S2} = -K = -(2*l0_1*l1_2*l3_3 + l0_1*l1_2*l4_3 - 2*l0_1*l1_3*l3_2 - l0_1*l1_3*l4_2 - 2*l0_2*l1_1*l3_3 - l0_2*l1_1*l4_3 + 2*l0_2*l1_3*l3_1 + l0_2*l1_3*l4_1 + 2*l0_3*l1_1*l3_2 + l0_3*l1_1*l4_2 - 2*l0_3*l1_2*l3_1 - l0_3*l1_2*l4_1)*(l0_1*l3_2*l4_3 - l0_1*l3_3*l4_2 - l0_2*l3_1*l4_3 + l0_2*l3_3*l4_1 + l0_3*l3_1*l4_2 - l0_3*l3_2*l4_1 + l1_1*l3_2*l4_3 - l1_1*l3_3*l4_2 - l1_2*l3_1*l4_3 + l1_2*l3_3*l4_1 + l1_3*l3_1*l4_2 - l1_3*l3_2*l4_1)/288
+  PASS (0.7s)
+test_S3_extraction_signs
+  varsigma^ext: C7: -1, theta(1, 6, 6): +1, theta(2, 5, 6): +1, theta(3, 4, 6): +1, theta(3, 5, 5): +1, theta(4, 4, 5): +1
+  PASS (0.4s)
+test_S3_heptagon
+  heptagon: det[q_1..q_6] = 11758, K_7 = varsigma * det[q]/6! = -5879/360
+  PASS (0.0s)
+test_S3_thetas
+  theta(1, 6, 6): D_theta = 34348500, K^{S3} = -K = 38165/176*pi  (c = 1/158400)
+  theta(2, 5, 6): D_theta = 1781556, K^{S3} = -K = 148463/23760*pi  (c = 1/285120)
+  theta(3, 4, 6): D_theta = 78678598, K^{S3} = -K = 39339299/166320*pi  (c = 1/332640)
+  theta(3, 5, 5): D_theta = 52914040, K^{S3} = -K = 6614255/99792*pi  (c = 1/798336)
+  theta(4, 4, 5): D_theta = -66242432, K^{S3} = -K = -2070076/31185*pi  (c = 1/997920)
+  PASS (0.7s)
+test_S3_theta_currents_and_insertions
+  theta(2, 5, 6): polynomial currents agree; <y^1_{A_1}> insertion = 4784261/1158300*pi
+  PASS (0.1s)
+test_rho_odd
+  rho_n = 0 on 4 graphs with n = 1, 1, 3, 3
+  PASS (0.1s)
+test_S3_H0_remark
+  banana, H = 0: K = 1*pi, (1/4pi) K = 1/4; oracle 3.1415926397 +- 1.6e-07
+  PASS (0.2s)
+test_oracle
+  fan1         T=0 |I|=3: exact -15                    oracle -15  rel.err 3.0e-11  (est. 1.7e-10, 0s)
+  fan2         T=0 |I|=5: exact -63/8                  oracle -7.874998906  rel.err 1.4e-07  (est. 3.7e-06, 3s)
+  box          T=0 |I|=4: exact -17/6                  oracle -2.833333299  rel.err 1.2e-08  (est. 8.8e-08, 0s)
+  theta(1,2,2) T=1 |I|=5: exact 2/3*pi                 oracle 2.094393564  rel.err 7.3e-07  (est. 3.3e-06, 16s)
+  fan3         T=0 |I|=7: exact -8927/432              oracle -20.66254217  rel.err 8.8e-05  (est. 1.1e-03, 34s)
+  A            T=0 |I|=7: exact 48941/144              oracle 339.8337531  rel.err 1.0e-04  (est. 9.2e-04, 25s)
+  B            T=0 |I|=7: exact -18785/72              oracle -260.8726558  rel.err 1.2e-04  (est. 9.2e-04, 29s)
+  box: coefficient of z_{e_1}^1: exact -187/3, oracle -62.33333261
+  PASS (107.6s)
+passed 16, failed 0
+python3 code/tests/test_known.py  108.95s user 3.09s system 99% cpu 1:52.98 total
+exit code: 0

@@ -1,0 +1,8 @@
+q=6 classes 7195 X rows 390618 DS rows 7554 missing-term rows 0
+q=6 p=2147483647: rank 7195 rows 398172 skipped 0 inconsistent 0, determined 7195 of 7195 (22.6s)
+q=6 p=2147483629: rank 7195 rows 398172 skipped 0 inconsistent 0, determined 7195 of 7195 (43.7s)
+q=6 p=2147483587: rank 7195 rows 398172 skipped 0 inconsistent 0, determined 7195 of 7195 (65.1s)
+q=6 p=2147483579: rank 7195 rows 398172 skipped 0 inconsistent 0, determined 7195 of 7195 (86.4s)
+q=6: reconstruction failures 0; undetermined 0 [] (86.6s)
+q=6: exact check on 390950 rows: 0 fail (94.5s)
+q=6 kinds {'T1a': 4951, 'Ga': 350, 'Gd': 123, 'T2a': 848, 'T2d': 427, 'T1d': 496}; labels ['1', 'z3', 'z5']

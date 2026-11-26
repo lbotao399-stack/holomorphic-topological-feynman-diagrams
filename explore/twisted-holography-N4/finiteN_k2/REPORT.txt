@@ -1,0 +1,247 @@
+BUDZIK-GAIOTTO MESON COMPLEX AT k = 2 FOR U(2): k-CONVERGENCE AT LEVELS 16-20 AND THE O_0 SECTOR
+2026-11-22
+
+Tags: [source: location]  [derived]  [checked] = exact count, or rank over F_p, p = 2^31-1;  [p,p'] = also at
+p' = 2147483629  [conjectural].
+B-G = arXiv:2611.18539.  Conventions of P/explore/twisted-holography-N4/finiteN/REPORT.txt (B2.2): chains V (T_w, M_w,
+P_w, MM_w, R_w, flavours 1..k), d = Q + Delta_BV, R_N = V_T / S, S = b_{k|k}-images, T = (N..N;N..N), g = ghost
+number, Y = g + Theta, A = #P + #MM + 2#R, level = 2 Theta + 3(n+ + n-).
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Code (new): P/code/holography/bg_fast.py, bg_sizes.py, native/bgk.cpp.  Drivers, logs: P/explore/twisted-holography-N4/finiteN_k2/.
+
+
+======================================================================================================
+D1. TARGET
+======================================================================================================
+
+  O_0:  SU(2), (4,4,4;0,0)_7, level 24, (19/2;3/2,3/2,3/2;5/2,0)                  [source: LLC_main.tex tab-census-overview;
+        census data/N4_SU2_nongraviton_blocks.csv: the only non-graviton hw block at level 24]
+  E_1^{U(2)} = E_1^{SU(2)} (x) Sym(V_1), Sym(V_1)_0 = C                             [derived: previous report B3.1]
+  =>  O_0 (x) 1 in the U(2) sector (4,4,4;0,0), Y = 7, g = -5.
+  Letters with n+ = n- = 0: gamma^I (gh 0, even), beta_I (gh -1, odd), b (gh -2, even);  Q beta_I = [gamma^J,gamma^K],
+  Q b = sum [gamma^I, beta_I] (signs of bg_words);  H(cobar) = C[x_1,x_2,x_3].                         [derived]
+  E_1^{U(2)}, E_1^{SU(2)} at (4,4,4;0,0): not computed (uN_q0 run stopped unfinished); cochain dimensions in D2.2.
+
+
+======================================================================================================
+D2. SIZES (task 1)
+======================================================================================================
+
+D2.1 Method.  dim V_{charge,g} from the generating function of graded-symmetric polynomials in the generators:
+  word classes by (weight, length); graded-cyclic classes -sum_d phi(d)/d log(1 - f_B(x^d) + (-1)^d f_F(x^d));
+  k = 1, 2: dense series in (weight, gh, #M-#R, Lc_1-Lc_2, Rc_1-Rc_2), M_0 completion by contingency tables
+  (bg_sizes.chain_dims); any k: sparse DP (bg_sizes.chain_dims_general).
+  = enumeration (bg_complex_k.chains, kernel) for k = 1, 2, 3 in every tested sector; cyclic counts = enumeration.
+                                                                                            [checked]
+  det^N-isotypic part:  dim V_T^G = dim V_T - dim V_{T+a_L} - dim V_{T+a_R} + dim V_{T+a_L+a_R},  dim R_N <= dim V_T^G.
+
+D2.2 O_0 sector and neighbours, U(2), dim V_{T,g} at Y = 6, 7, 8 (g = Y - Theta).                   [checked]
+  sector       level | k=1                     | k=2                          | k=2, det^N-isotypic
+  (4,4,4;0,0)   24   | 1.04e9  9.39e8  6.51e8  | 2.22e12  1.06e12  3.86e11    | 5.82e10  3.42e10  1.56e10
+  (5,4,3;0,0)   24   | 8.05e8  7.32e8  5.12e8  | 1.75e12  8.36e11  3.07e11    |
+  (6,3,3;0,0)   24   | 5.02e8  4.64e8  3.31e8  | 1.14e12  5.46e11  2.03e11    |
+  (4,4,3;0,0)   22   | 1.63e8  1.25e8  7.01e7  | 1.64e11  6.64e10  1.98e10    |
+  (4,4,2;0,0)   20   | 1.84e7  1.16e7  4.92e6  | 8.76e9   2.91e9   6.67e8     |
+  O_0 sector, k=2, exact: g=-6: 2224146114846, g=-5: 1055399098872, g=-4: 386462723130 (a2_sizes_444_k2.log).
+  k = 3:  dim V^{k=3}_{T,-5} / dim V^{k=2}_{T,-5} = 97.8 (1,1,1), 136.4 (2,1,1), 175.8 (2,2,1), 215.2 (2,2,2)
+          [checked, a7_k3_sizes.log];  increasing  =>  dim V^{k=3}_{T,-5}(4,4,4) > 2.3e14       [conjectural]
+  Gauge theory, twisted cochains Sym(g (x) letters)^G (Molien-Weyl; = rank of the 2x2 trace evaluation of uN_q0):
+    (4,4,4;0,0)  U(2):  Y=6: 486,  Y=7: 1821,  Y=8: 3621;    SU(2):  Y=6: 53,  Y=7: 153,  Y=8: 232      [checked]
+  dim V^{k=2}_{T,-5} / dim C^{U(2)}_{Y=7} = 5.8e8.
+  Skeleton blocks at g = -5 (D3.1), configurations of types and flavours over a fixed multiset of words:
+    nine distinct words, no M_0:  1.54e8;  words (2,2,2,1,1,1)x: 2.07e7;  (3,3,3): 8.8e5  (a8_block_size.py).
+                                                                                            [checked]
+  HA^! model (D6, E_1 page):  (4,4,4;0,0), k=2: 1.15e11, 5.14e10, 1.77e10;  k=1: 1.64e7, 1.66e7, 1.33e7. [checked]
+
+
+======================================================================================================
+D3. TOOLS (task 2)
+======================================================================================================
+
+D3.1 Kernel native/bgk.cpp, driver bg_fast.py.  Generators, ordering (Python tuple order (t, w, a, b)), Koszul signs,
+  Q, Delta_BV contractions and b-operators transcribed from bg_complex_k.BGk.
+  b-images at charge T reduced to {P0_12, MM0_12, R0_12}:                                       [derived]
+    gl_2 + gl_2 integrable, E V_{-alpha} = F V_{+alpha} at the central weight  =>  raising operators suffice;
+    r = <R0_xy> bifundamental, (r (x) V)_{gl_2+gl_2} spanned by [r_hw (x) v], r_hw = R0_12
+    ({P0_12, R0_12} = {MM0_12, R0_12} = 0);  general k: {P0_{x,x+1}, MM0_{x,x+1}, R0_{1,k}}.
+  S-operators act on types and flavours only  =>  S block diagonal in (T-monomial, multiset of words) ("skeleton");
+    elimination per block (kernel aborts if an S-row leaves its block: never triggered).          [derived]
+  d-rows: d of the non-pivot monomials of S_{g-1} (basis of R_{g-1}); normal form modulo S_g blockwise; rank of
+    dbar over the non-pivot columns of S_g.  H_g = dim V_{T,g} - rank S_g - rank dbar_g - rank dbar_{g-1}.
+  Sparse left-looking elimination mod p.
+
+D3.2 Validation.                                                                           [checked, p,p']
+  every sector of the previous report, 151/151 (b1_validate_prev.log):
+    k=1: U(1) levels 2-9 (23), U(2) 2-12 (54), U(3) 2-10 (32), U(4) 2-10 (32);  k=2: U(2) 2-6 (10);
+  k=2: all eight b-operators (mode 0) = reduced set (mode 1); dim V, rank S, rank d equal to bg_complex_k entry by
+    entry (t_fast_validate.py, 16 sector/N pairs);
+  k=3: = bg_complex_k for N = 0, 1 at (1,0,0;0,0), (0,0,0;1,0), (2,0,0;0,0), (1,1,0;0,0) (t_k3_validate.log);
+  C[theta] of B-G App. C = sector (n,0,0;0,0): k=2 results for N = 0 (x^4..x^9) and N = 1 (x^6..x^8) in D4.4.
+  Package tests test_cyclic.py, test_charges.py pass.
+
+D3.3 Performance.  C[theta] = (n,0,0;0,0), N=1, k=2, x^6, all g: 2.9 s (Python bg_complex_k: 1734.6 s, previous
+  toy_Ctheta_N1_k2.log);  (6,0,0;0,0), N=2, k=2, all g: 10 s.
+  elimination operations = (0.56-0.85) sum_blocks b^2 (b = block size; (8,0,0;0,0) columns g = -4, -5).  [checked]
+  largest runs:  (7,0,0;1,0) k=2 column g=-3: dim V_T = 3388670, 7845427 S-rows, 809 blocks (largest 135496),
+    7.6e10 operations, 403 s;  (9,0,0;0,0) column g=-5: dim V_T = 1468936, largest block 147488, 8.7e10, 363 s;
+  wall times on a shared machine (load average > 100).
+  No exact Q certification at these sizes ([p,p'] only).
+
+
+======================================================================================================
+D4. k-CONVERGENCE AT LEVELS 16-20 (task 3)
+======================================================================================================
+
+D4.1 Index residual of k = 1:  res(lam) = [Z_U(2)]_lam - [Z_inf (1 + G_2^(1))]_lam  (a1_residual.log)       [checked]
+  level 16: nonzero exactly for Theta = 8, n = 0:
+    (8,0,0) 1, (7,1,0) 1, (6,2,0) 2, (6,1,1) 2, (5,3,0) 2, (5,2,1) 3, (4,4,0) 3, (4,3,1) 4, (4,2,2) 6, (3,3,2) 6;
+    sum over S_3-orbits = 126 = [G_2^(2)]_{x^16}.
+  levels 17-20: nonzero in 95 of the 130 representatives (8/19, 25/39, 20/26, 42/46).
+
+D4.2 k = 1 versus E_1^{U(2)} (U(2): uN_q0).                                             [checked, k=1 at p,p']
+  H^BG_{k=1} = E_1^{U(2)} in all 19 representatives of level 14, 14 of the 16 of level 15 (not run: (3,2,1;1,0),
+    (2,2,2;1,0)) and 7 of the 16 of level 16 with n != 0 (c8_compare_k1_UN.log, c8b_compare.log).
+  level 16, Theta = 8:  H^BG_{k=1} = E_1^{U(2)} + res(lam) classes at Y = 5 (g = -3):
+    (8,0,0): k=1 {5:1, 8:5}              U(2) {8:5}
+    (7,1,0): k=1 {5:1, 7:7, 8:8}         U(2) {7:7, 8:8}
+    (6,2,0): k=1 {5:2, 6:2, 7:12, 8:11}  U(2) {6:2, 7:12, 8:11}
+    (6,1,1): k=1 {5:2, 6:15, 7:30, 8:14} U(2) {6:15, 7:30, 8:14}
+    (5,3,0): k=1 = U(2) {6:4, 7:15, 8:12} + {5:2}
+    k=1 not run:  (5,2,1) U(2) {5:9, 6:37, 7:46, 8:18};  (4,4,0) {6:4, 7:16, 8:13};  (4,3,1) {4:1, 5:16, 6:49, 7:54, 8:20};
+                  (4,2,2) {4:8, 5:41, 6:76, 7:67, 8:23};  (3,3,2) {3:1, 4:13, 5:55, 6:92, 7:74, 8:24}  (c2_UN_L16_*.log).
+  levels 17-20:
+    (7,0,0;1,0)  17: k=1 {5:1, 7:7, 8:8}           U(2) {7:7, 8:8}           extra Y=5 (g=-2)
+    (9,0,0;0,0)  18: k=1 {6:2, 9:5}                U(2) {9:5}                extra Y=6 (g=-3)
+    (8,1,0;0,0)  18: k=1 {5:1, 6:4, 8:8, 9:9}      U(2) {8:8, 9:9}           extra Y=5 (g=-4), Y=6 (g=-3)
+    (6,0,0;1,1)  18: k=1 {5:2, 6:15, 7:30, 8:14}   U(2) {6:15, 7:30, 8:14}   extra Y=5 (g=-1)
+    (8,0,0;1,0)  19: k=1 {5:1, 6:4, 8:8, 9:9}      U(2) {8:8, 9:9}           extra Y=5 (g=-3), Y=6 (g=-2)
+    (5,0,0;3,0)  19: k=1 {5:17, 6:33, 7:15}        U(2) {5:16, 6:33, 7:15}   extra Y=5 (g=0)
+    (10,0,0;0,0) 20: k=1 {7:5, 10:6}               U(2) {10:6}               extra Y=7 (g=-3)
+  chi(k=1 excess) = -res(lam) in every case.
+
+D4.3 k = 2, N = 2 (logs c5_k2_<sector>_g<gmin>_<gmax>_p<p>.out, kernel output .raw).        [checked]
+  (8,0,0;0,0), level 16, all g [p]; g = -4, -3, -2 also [p']:
+    g    dim V_T   dim R   rank dbar_g   H_g
+    -8   516080     138        95         0
+    -7   617508     268       173         0
+    -6   633904     482       309         0
+    -5   542068     814       505         0
+    -4   371386    1173       668         0
+    -3   193760    1353       685         0
+    -2    71932    1164       479         0
+    -1    17072     728       249         0
+     0     2024     254         0         5
+    => H^BG_{k=2} = {Y=8: 5} = E_1^{U(2)} = C[Tr X, Tr X^2]_8;  the k=1 class (g = -3) is absent.
+  (9,0,0;0,0), level 18 [p,p']:
+    -5  1468936    2686      1553
+    -4   903710    3304      1751         0
+    -3   424460    3289      1538         0
+    -2   142648    2473       935         0
+    -1    30864    1339
+  (7,1,0;0,0), level 16 [p,p']:
+    -4  3388670   12583      7149
+    -3  1644568   14023      6874         0
+    -2   555228   11113
+  (7,0,0;1,0), level 17 [p,p']:
+    -3  3388670   12583      7149
+    -2  1644568   14023      6874         0
+    -1   555228   11113
+    (same numbers as (7,1,0;0,0) with g shifted by one)
+  (10,0,0;0,0), level 20 [p,p']:
+    -4  2044110    8482      4201
+    -3   875396    7391      3190         0
+    -2   269372    4903
+  Not run at k = 2: the other level 16-20 sectors with k=1 excess (sizes D2, a4_size_table.log); (8,1,0;0,0)
+    g=-3 (dim V_{T,-4} = 9.1e6) started, not finished.
+
+D4.4 One-matrix sectors (n,0,0;0,0) = A = C[theta] of B-G App. C, k = 2, all g (c9_N<N>_n<n>.out).  [checked, p]
+  N = 0:  H = 0 for x^4 .. x^8 (k=1: H_{-3} = 1, 2, 5, 8, 14 there);  x^9: H_{-8} = 1, all other H_g = 0;
+          H_{-8}(x^9) = 1 also at p'.
+  N = 1:  x^6, x^7, x^8: H = H_0 = 1 (= C[Tr X]_n).
+  First k=2 class beyond H_{A;N}: x^9 = x^{3(N+3)} at N = 0, the onset of G_0^(3);  k = 1: x^{2(N+2)} for N = 0, 1, 2
+  (x^4, x^6, x^8; B-G Tables 1-2, previous report B2.6).
+  B-G App. C, A = C[z]: N = 0, k = 2, first spurious class at x^9 in H^{-1}; N = 1, k = 2, none through x^10.  [source]
+
+
+======================================================================================================
+D5. THE O_0 SECTOR (tasks 4, 5)
+======================================================================================================
+
+  H^BG_{k=2} and H^BG_{k=3} in (4,4,4;0,0) not computed; O_0 (x) 1 not decided; the antifield-tail criterion
+  (previous report B3.4) not tested.
+  Reached at k = 2:  level 16 ((8,0,0;0,0) all g; (7,1,0;0,0) g=-3), 17 ((7,0,0;1,0) g=-2), 18 ((9,0,0;0,0)
+  g=-4..-2), 20 ((10,0,0;0,0) g=-3);  largest column 3.39e6 monomials (7,1,0;0,0)/(7,0,0;1,0).
+  k = 1: 33 of the 35 representatives of levels 14-15, 12 of the 26 of level 16, seven of levels 17-20.
+  Projected cost at (4,4,4;0,0), k=2, g = -6..-4 (D2.2, D3.3):
+    storage of V_{T,-5}: 1.06e12 monomials, >= 6e13 bytes (machine: 2.4e10);
+    one skeleton block with nine distinct words: b = 1.54e8, elimination ~ (0.56-0.85) b^2 = 1.3e16-2.0e16 operations
+    (observed rate 1e8-3e8 per s);
+    reduced quotient R_{-5}: dim <= 3.42e10 (det^N-isotypic part);
+    k=1: 9.39e8 monomials; k=3: > 2.3e14 [conjectural].
+  Scaling of the k=2 chain space with level along the BMN diagonal (max_g dim V_T): (2,2,2) 7.6e6, (3,3,3) 7.6e9,
+    (4,4,2) 8.8e9, (4,4,3) 1.6e11, (4,4,4) 2.2e12.
+  Index: Z_inf (1 + G_2^(1) + G_2^(2)) = Z_U(2) through level 29 (unrefined)    [checked, previous report B4];
+  with B-G (1.10) at k = 2 [conjectural]: chi(H^BG_{k=2}) = chi(E_1^{U(2)}) at level 24; no statement on single
+  classes.  (Computed k=2 sectors with all g: chi(H^BG_{k=2}) = [Z_U(2)]_lam: (8,0,0;0,0) 5;  N = 0, 1 one-matrix.)
+  Onset rule: first class of H^BG_k outside H_{A;N} at the onset of G_N^(k+1), x^{(k+1)(N+k+1)} in the one-matrix
+  sector = level 2(k+1)(N+k+1):  checked for (k,N) = (1,0), (1,1), (1,2), (2,0) (D4.4);  for (2,1) no excess
+  through x^8 (onset x^12);  for (2,2) none through x^8 at all g, at x^9, x^10 at the computed g (onset x^15).
+  For U(2), k = 2 the rule gives level 30 > 24.
+  Status of "H^BG_{k=2} contains O_0 (x) 1":  [conjectural], supported by D4.3-D4.4 and the onset rule; the
+  computed k=2 sectors contain no fortuitous class and none of the
+  b-letter dynamics of the O_0 sector (their letters: gamma^1, gamma^2, beta_3, X_(e_1,{}), X_(e_1,{1})).
+
+
+======================================================================================================
+D6. HA^! MODEL (meson-number spectral sequence)
+======================================================================================================
+
+  Filtration by meson number m = #M + #P + #MM + #R:  Q preserves m, Delta_BV lowers m by 1.
+  V = C[T] (x) Sym(F (x) Omega_+) (x) Sym(F_0),  F = {M,P,MM,R}^{ab} (4k^2), F_0 = {M_0^{ab}};
+  b acts on F only, Q on Omega_+ (cobar words) and on the cyclic words only;  b-equivariant Q-contraction
+  (Euler homotopy on Sym of the acyclic part)  =>
+    E_1 = [ Sym(HC(C[x])) (x) Sym(F (x) C[x]_+) (x) Sym(F_0) ]_b at charge T,
+    reduced HC_n(C[x])_a = binom(s(a)-1, n) at gh -n, s(a) = #{I : a_I > 0}                     [derived]
+    (= Q-cohomology of the graded-cyclic cobar words, every weight <= (3,3,2))                   [checked, t_hc_check.py]
+  d_1 = Delta_BV of the commutative algebra C[x] (product = weight sum), HC_{>=1} traces spectators;
+  E_2 = H(E_1, d_1) >= H^BG dimension-wise, chi equal.                                         [derived]
+  E_2 versus H^BG, U(2), {Y: dim}:                                                              [checked]
+    (1,1,0;0,0), (2,1,0;0,0), (1,1,1;0,0), k = 1, 2:  equal
+    (2,1,1;0,0) k = 1, 2:  E_2 {2:5, 3:12, 4:6}               H {2:3, 3:10, 4:6}
+    (2,2,1;0,0) k = 1:     E_2 {2:2, 3:21, 4:29, 5:9}         H {2:1, 3:10, 4:19, 5:9}
+    (2,2,2;0,0) k = 1:     E_2 {2:1, 3:22, 4:77, 5:70, 6:14}  H {2:1, 3:9, 4:29, 5:35, 6:14}
+  =>  d_{r>=2} != 0 from level 8: the strict model (commutative product, no higher operations) is not
+      quasi-isomorphic to the cobar complex; B-G (125) requires transferred higher operations.
+
+
+======================================================================================================
+CHECKED / CONJECTURAL / FAILURES
+======================================================================================================
+  checked:  bg_fast/bgk = bg_complex(_k) on the 151 sectors of the previous report (p, p'), entry by entry for k = 2, 3;
+            k = 1 = E_1^{U(2)} in the 40 computed representatives of levels 14-16 with zero index residual; k = 1 =
+              E_1^{U(2)} + res(lam) classes at Y = 5 in the five computed Theta=8 representatives of level 16;
+            k = 1 excess at seven sectors of levels 17-20 (D4.2);
+            k = 2 = E_1^{U(2)} where computed: (8,0,0;0,0) all g [p; g=-4..-2 p']; (9,0,0;0,0) g=-4..-2 [p,p'];
+              (7,0,0;1,0) g=-2 [p,p']; (7,1,0;0,0) g=-3 [p,p']; (10,0,0;0,0) g=-3 [p,p'];
+              k = 1 has 1, 2, 1, 1, 5 excess classes at these ghost numbers;
+            one-matrix k = 2: N = 0 exact through x^8, H_{-8} = 1 at x^9 [p,p'];  N = 1 exact through x^8;
+            sizes D2; E_2 of the strict HA^! model != H^BG from level 8 (D6).
+  derived:  reduced b-operator set; block diagonality of S in (T-monomial, multiset of words); E_1 of the
+            meson-number filtration; U(2) sector and ghost number of O_0 (x) 1.
+  conjectural:  O_0 (x) 1 in H^BG_{k=2} (onset rule: no k=2 excess below level 30 for U(2));
+            dim V^{k=3} > 2.3e14 in the O_0 sector.
+  failures: O_0 sector (level 24) not reached at k = 2, 3, nor at k = 1 (dim V_{T,-5} = 1.06e12, 9.39e8);
+            the antifield-tail criterion not tested;
+            of the 105 representatives of levels 16-20 with nonzero k=1 index residual, five computed at k = 2, at the
+            ghost numbers of the k=1 excess (all g only for (8,0,0;0,0)); (6,2,0;0,0) (largest block 246492 at g=-4)
+            and larger sectors not run (memory pressure on the shared machine); (8,1,0;0,0), (8,0,0;1,0) not finished;
+            no exact Q certification;  E_1^{SU(2)}, E_1^{U(2)} at (4,4,4;0,0) not computed (D1).
+
+======================================================================================================
+ADDENDUM (Claude check, 2026-11-22; e1_lowg_check.py, e1_lowg_check.log)
+======================================================================================================
+  (8,0,0;0,0), k=2, N=2: V_{T,g} != 0 for g = -16..0 (bg_sizes); the c5 run covered g = -8..0.
+  g = -16..-9 [p]: H_g = 0  (dim R = 0,0,0,1,5,10,25,62;  rank dbar = 0,0,0,1,4,6,19,43;  g=-8 recomputed: 138, 95, H=0).
+  => H^BG_{k=2}(8,0,0;0,0) = {Y=8: 5} over all g [p].
+  One-matrix (n,0,0;0,0), k=2, N=2, all g = -2n..0 [p]:  n=5: {Y=5: 3},  n=6: {Y=6: 4},  n=7: {Y=7: 4}  = C[Tr X, Tr X^2]_n;
+  mode 0 (all eight b-operators) = mode 1 at n=6.

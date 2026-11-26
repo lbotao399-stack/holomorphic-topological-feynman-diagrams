@@ -1,0 +1,51 @@
+d=2 n=1 |V|=3 |I|=3: total=1 SP=1 nonSP=0 CH=1 cubic=1 cubic_nonSP=0 YD=1 [Laman count check: True]
+d=2 n=2 |V|=4 |I|=5: total=1 SP=1 nonSP=0 CH=1 cubic=1 cubic_nonSP=0 YD=1 [Laman count check: True]
+d=2 n=3 |V|=5 |I|=7: total=3 SP=2 nonSP=1 CH=2 cubic=1 cubic_nonSP=1 YD=3 [Laman count check: True]
+d=2 n=4 |V|=6 |I|=9: total=13 SP=5 nonSP=8 CH=5 cubic=2 cubic_nonSP=2 YD=11 [Laman count check: True]
+    not reduced: prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1], degrees [3, 3, 3, 3, 3, 3] | edges [(0, 1), (0, 2), (0, 3), (1, 4), (1, 5), (2, 3), (2, 5), (3, 4), (4, 5)]
+    not reduced: K33, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1], degrees [3, 3, 3, 3, 3, 3] | edges [(0, 1), (0, 3), (0, 5), (1, 2), (1, 4), (2, 3), (2, 5), (3, 4), (4, 5)]
+d=2 n=5 |V|=7 |I|=11: total=70 SP=12 nonSP=58 CH=12 cubic=0 cubic_nonSP=0 YD=57 [Laman count check: True]
+    not reduced: skeleton |V|=5 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 1, 2, 2], degrees [4, 4, 4, 3, 3, 2, 2] | edges [(0, 3), (0, 6), (1, 2), (1, 5), (2, 4), (2, 6), (3, 4), (3, 5), (4, 5), (4, 6), (5, 6)]
+    not reduced: skeleton |V|=5 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 1, 2, 2], degrees [4, 4, 4, 3, 3, 2, 2] | edges [(0, 5), (0, 6), (1, 4), (1, 6), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (4, 5)]
+    not reduced: skeleton |V|=5 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 1, 2, 2], degrees [4, 4, 4, 3, 3, 2, 2] | edges [(0, 1), (0, 2), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 6), (3, 5), (4, 5), (4, 6)]
+    not reduced: skeleton |V|=6 |E|=10, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1, 2], degrees [4, 4, 3, 3, 3, 3, 2] | edges [(0, 1), (0, 4), (0, 5), (1, 2), (1, 4), (2, 3), (2, 5), (3, 4), (3, 5), (4, 6), (5, 6)]
+    not reduced: skeleton |V|=6 |E|=10, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1, 2], degrees [4, 4, 3, 3, 3, 3, 2] | edges [(0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 5), (2, 6), (3, 4), (3, 6), (4, 5), (5, 6)]
+    not reduced: skeleton |V|=6 |E|=10, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1, 2], degrees [4, 4, 3, 3, 3, 3, 2] | edges [(0, 1), (0, 3), (0, 4), (0, 6), (1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5), (5, 6)]
+    ... 7 more
+d=2 n=6 |V|=8 |I|=13: total=608 SP=39 nonSP=569 CH=39 cubic=0 cubic_nonSP=0 YD=412 [Laman count check: True]
+    not reduced: skeleton |V|=5 |E|=10, chain lengths [1, 1, 1, 1, 1, 1, 1, 2, 2, 2], degrees [5, 5, 4, 3, 3, 2, 2, 2] | edges [(0, 1), (0, 4), (0, 5), (1, 2), (2, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 7), (4, 5), (4, 6), (5, 7)]
+    not reduced: skeleton |V|=6 |E|=11, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2], degrees [5, 5, 3, 3, 3, 3, 2, 2] | edges [(0, 5), (0, 6), (0, 7), (1, 5), (1, 6), (1, 7), (2, 3), (2, 5), (2, 6), (3, 4), (4, 5), (4, 6), (5, 6)]
+    not reduced: skeleton |V|=5 |E|=10, chain lengths [1, 1, 1, 1, 1, 1, 1, 2, 2, 2], degrees [5, 5, 4, 3, 3, 2, 2, 2] | edges [(0, 5), (0, 6), (0, 7), (1, 5), (1, 6), (2, 3), (2, 5), (2, 6), (2, 7), (3, 4), (4, 5), (4, 6), (5, 6)]
+    not reduced: skeleton |V|=6 |E|=11, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2], degrees [5, 5, 3, 3, 3, 3, 2, 2] | edges [(0, 5), (0, 6), (0, 7), (1, 5), (1, 6), (2, 3), (2, 5), (2, 6), (3, 4), (3, 7), (4, 5), (4, 6), (5, 6)]
+    not reduced: skeleton |V|=5 |E|=10, chain lengths [1, 1, 1, 1, 1, 1, 1, 2, 2, 2], degrees [5, 5, 4, 3, 3, 2, 2, 2] | edges [(0, 1), (0, 2), (0, 4), (0, 6), (0, 7), (1, 2), (2, 3), (2, 4), (2, 5), (3, 4), (3, 7), (4, 5), (5, 6)]
+    not reduced: skeleton |V|=6 |E|=11, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2], degrees [5, 4, 4, 3, 3, 3, 2, 2] | edges [(0, 1), (0, 2), (0, 4), (0, 6), (1, 2), (1, 7), (2, 3), (2, 4), (2, 5), (3, 4), (3, 7), (4, 5), (5, 6)]
+    ... 190 more
+d=3 n=1 |V|=4 |I|=4: total=1 SP=1 nonSP=0 CH=1 cubic=1 cubic_nonSP=0
+d=3 n=2 |V|=6 |I|=7: total=2 SP=2 nonSP=0 CH=2 cubic=2 cubic_nonSP=0
+d=3 n=3 |V|=8 |I|=10: total=16 SP=10 nonSP=6 CH=10 cubic=9 cubic_nonSP=6
+    not reduced: K4, chain lengths [1, 1, 1, 1, 3, 3], degrees [3, 3, 3, 3, 2, 2, 2, 2] | edges [(0, 4), (0, 7), (1, 2), (1, 5), (1, 7), (2, 3), (2, 4), (3, 6), (4, 5), (5, 6)]
+    not reduced: K4, chain lengths [1, 1, 1, 2, 2, 3], degrees [3, 3, 3, 3, 2, 2, 2, 2] | edges [(0, 4), (0, 7), (1, 2), (1, 4), (1, 5), (2, 3), (2, 6), (3, 4), (5, 6), (5, 7)]
+    not reduced: K4, chain lengths [1, 1, 1, 2, 2, 3], degrees [3, 3, 3, 3, 2, 2, 2, 2] | edges [(0, 4), (0, 7), (1, 2), (1, 4), (1, 5), (2, 3), (2, 6), (3, 4), (5, 6), (6, 7)]
+    not reduced: K4, chain lengths [1, 1, 1, 2, 2, 3], degrees [3, 3, 3, 3, 2, 2, 2, 2] | edges [(0, 4), (0, 7), (1, 2), (1, 5), (2, 3), (2, 4), (3, 6), (3, 7), (4, 5), (5, 6)]
+    not reduced: K4, chain lengths [1, 1, 2, 2, 2, 2], degrees [3, 3, 3, 3, 2, 2, 2, 2] | edges [(0, 1), (0, 4), (0, 7), (1, 2), (2, 3), (2, 5), (3, 6), (3, 7), (4, 5), (5, 6)]
+    not reduced: K4, chain lengths [1, 1, 2, 2, 2, 2], degrees [3, 3, 3, 3, 2, 2, 2, 2] | edges [(0, 1), (0, 5), (0, 6), (1, 2), (1, 7), (2, 3), (3, 4), (3, 6), (4, 5), (4, 7)]
+d=4 n=1 |V|=5 |I|=5: total=1 SP=1 nonSP=0 CH=1 cubic=1 cubic_nonSP=0
+d=4 n=2 |V|=8 |I|=9: total=3 SP=3 nonSP=0 CH=3 cubic=3 cubic_nonSP=0
+d=5 n=1 |V|=6 |I|=6: total=1 SP=1 nonSP=0 CH=1 cubic=1 cubic_nonSP=0
+d=6 n=1 |V|=7 |I|=7: total=1 SP=1 nonSP=0 CH=1 cubic=1 cubic_nonSP=0
+d=2 n=2 theta graphs (a,b,c): [(1, 2, 2)]
+d=3 n=2 theta graphs (a,b,c): [(1, 3, 3), (2, 2, 3)]
+d=4 n=2 theta graphs (a,b,c): [(1, 4, 4), (2, 3, 4), (3, 3, 3)]
+d=5 n=2 theta graphs (a,b,c): [(1, 5, 5), (2, 4, 5), (3, 3, 5), (3, 4, 4)]
+d=6 n=2 theta graphs (a,b,c): [(1, 6, 6), (2, 5, 6), (3, 4, 6), (3, 5, 5), (4, 4, 5)]
+d=3 n=1: graphs of Q_n in hCS on C^(3|2) (cone over a forest, deg O = n+p): 1 of 1; all SP: True; all CH: True
+     cycle C4 | (deg O, p, tree sizes): [(2, 1, (3,))]
+d=3 n=2: graphs of Q_n in hCS on C^(3|2) (cone over a forest, deg O = n+p): 2 of 2; all SP: True; all CH: True
+     skeleton |V|=2 |E|=3, chain lengths [1, 3, 3], degrees [3, 3, 2, 2, 2, 2] | (deg O, p, tree sizes): [(3, 1, (5,))]
+     skeleton |V|=2 |E|=3, chain lengths [2, 2, 3], degrees [3, 3, 2, 2, 2, 2] | (deg O, p, tree sizes): [(3, 1, (5,))]
+d=3 n=3: graphs of Q_n in hCS on C^(3|2) (cone over a forest, deg O = n+p): 5 of 16; all SP: True; all CH: True
+     skeleton |V|=3 |E|=5, chain lengths [1, 1, 2, 3, 3], degrees [4, 3, 3, 2, 2, 2, 2, 2] | (deg O, p, tree sizes): [(4, 1, (7,))]
+     skeleton |V|=3 |E|=5, chain lengths [1, 1, 2, 3, 3], degrees [4, 3, 3, 2, 2, 2, 2, 2] | (deg O, p, tree sizes): [(4, 1, (7,))]
+     skeleton |V|=3 |E|=5, chain lengths [1, 2, 2, 2, 3], degrees [4, 3, 3, 2, 2, 2, 2, 2] | (deg O, p, tree sizes): [(4, 1, (7,))]
+     skeleton |V|=3 |E|=5, chain lengths [1, 2, 2, 2, 3], degrees [4, 3, 3, 2, 2, 2, 2, 2] | (deg O, p, tree sizes): [(4, 1, (7,))]
+     skeleton |V|=3 |E|=5, chain lengths [2, 2, 2, 2, 2], degrees [4, 3, 3, 2, 2, 2, 2, 2] | (deg O, p, tree sizes): [(4, 1, (7,))]

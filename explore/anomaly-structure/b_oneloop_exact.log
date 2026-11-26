@@ -1,0 +1,5 @@
+6 K_box = -p0_0*p1_1*p2_2 + p0_0*p1_2*p2_1 + p0_1*p1_0*p2_2 - p0_1*p1_2*p2_0 - p0_2*p1_0*p2_1 + p0_2*p1_1*p2_0
+sl2: omega_box zero False, closed True; rank d(C3) = 0, rank [d(C3) | omega_box] = 1 -> exact: False (1.6s)
+gl2: omega_box zero False, closed True; rank d(C3) = 2, rank [d(C3) | omega_box] = 3 -> exact: False (2.9s)
+sl3: omega_box zero False, closed True; rank d(C3) = 1, rank [d(C3) | omega_box] = 2 -> exact: False (2.1s)
+gl3: omega_box zero False, closed True; rank d(C3) = 3, rank [d(C3) | omega_box] = 4 -> exact: False (4.1s)

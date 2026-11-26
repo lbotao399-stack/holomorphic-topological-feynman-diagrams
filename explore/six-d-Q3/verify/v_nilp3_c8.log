@@ -1,0 +1,6 @@
+O = bbb, functionals ccccc #0: ('G1', 'G.Q0'): 0, ('G1', 'Q0.G'): 0, ('G2', 'G.Q0'): 0, ('G2', 'Q0.G'): 0, ('G3', 'G.Q0'): 0, ('G3', 'Q0.G'): 0, ('G4', 'G.Q0'): 0, ('G4', 'Q0.G'): 0, ('G5', 'G.Q0'): 0, ('G5', 'Q0.G'): 0, box.A: 0, A.box: 0, box.B: 0, B.box: 0
+O = bbb, functionals ccccc #1: ('G1', 'G.Q0'): 0, ('G1', 'Q0.G'): 0, ('G2', 'G.Q0'): 0, ('G2', 'Q0.G'): 0, ('G3', 'G.Q0'): 0, ('G3', 'Q0.G'): 0, ('G4', 'G.Q0'): 0, ('G4', 'Q0.G'): 0, ('G5', 'G.Q0'): 0, ('G5', 'Q0.G'): 0, box.A: 0, A.box: 0, box.B: 0, B.box: 0
+O = bbb, functionals ccccc #2: ('G1', 'G.Q0'): 0, ('G1', 'Q0.G'): 0, ('G2', 'G.Q0'): 0, ('G2', 'Q0.G'): 0, ('G3', 'G.Q0'): 0, ('G3', 'Q0.G'): 0, ('G4', 'G.Q0'): 0, ('G4', 'Q0.G'): 0, ('G5', 'G.Q0'): 0, ('G5', 'Q0.G'): 0, box.A: 0, A.box: 0, box.B: 0, B.box: 0
+O = bbb, functionals ccccb (type mismatch control): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+O = bbb, functionals cccg1g2 (type mismatch control): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total 2s

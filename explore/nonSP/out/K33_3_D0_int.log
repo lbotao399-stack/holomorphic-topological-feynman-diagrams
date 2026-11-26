@@ -1,0 +1,8 @@
+joint g-degree -Infinity  Dg 6  b 0
+homogenization check (0 expected): 0
+g-monomials 0
+
+Flatten::normal: Nonatomic expression expected at position 1 in Flatten[0].
+min exponent of rho after g-integration: Flatten[0]
+RESULT c = InputForm[0]  N = 0
+total time 0.022439`4.802548492062317

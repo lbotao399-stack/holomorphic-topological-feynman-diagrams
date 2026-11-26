@@ -1,0 +1,20 @@
+K33+e  q=3 orbits     18  labels {'1': 9, 'z3': 18, 'z5': 12, 'z3*z3': 8}  seconds 587.7  joint=['Z5', 'K33+e']
+K33+e  q=4 orbits    429  labels {'1': 409, 'z3': 425, 'z5': 286, 'z3*z3': 215}  seconds 587.7  joint=['Z5', 'K33+e']
+K33+e  q=5 orbits   4662  labels {'1': 4662, 'z3': 4643, 'z5': 3524, 'z3*z3': 2217}  seconds 273.0  joint=['K33+e']
+V7_0   q=3 orbits     64  labels {'1': 18, 'z3': 61, 'z5': 61, 'z7': 48, 'z3*z3': 31}  seconds 494.2  joint=3:Z5,V7_0,V7_2,V7_3,V8_1,V8_2,V8_3,V8_4;4:Z5
+V7_0   q=4 orbits   3147  labels {'1': 3072, 'z3': 3105, 'z5': 2895, 'z7': 2031, 'z3*z3': 1335}  seconds 951.0  joint=['V7_0', 'V7_2', 'V8_1', 'V8_3']
+V7_2   q=3 orbits     52  labels {'1': 7, 'z3': 48, 'z5': 45, 'z7': 32, 'z3*z3': 25}  seconds 494.2  joint=3:Z5,V7_0,V7_2,V7_3,V8_1,V8_2,V8_3,V8_4;4:Z5
+V7_2   q=4 orbits   2301  labels {'1': 2229, 'z3': 2275, 'z5': 2071, 'z7': 1379, 'z3*z3': 1075}  seconds 951.1  joint=['V7_0', 'V7_2', 'V8_1', 'V8_3']
+V7_3   q=3 orbits     65  labels {'1': 12, 'z3': 59, 'z5': 58, 'z7': 36, 'z3*z3': 46}  seconds 764.7  joint=3:V7_3,V8_2,V8_4;4:V7_3,V8_2,V8_4
+V7_3   q=4 orbits   2862  labels {'1': 2773, 'z3': 2856, 'z5': 2582, 'z7': 1477, 'z3*z3': 1862}  seconds 764.7  joint=3:V7_3,V8_2,V8_4;4:V7_3,V8_2,V8_4
+V8_1   q=3 orbits     22  labels {'1': 2, 'z3': 17, 'z5': 19, 'z7': 16, 'z3*z3': 11}  seconds 494.2  joint=3:Z5,V7_0,V7_2,V7_3,V8_1,V8_2,V8_3,V8_4;4:Z5
+V8_1   q=4 orbits   2161  labels {'1': 2085, 'z3': 2147, 'z5': 2017, 'z7': 1520, 'z3*z3': 1211}  seconds 951.1  joint=['V7_0', 'V7_2', 'V8_1', 'V8_3']
+V8_2   q=3 orbits     13  labels {'z3': 9, 'z5': 10, 'z7': 7, 'z3*z3': 9}  seconds 764.7  joint=3:V7_3,V8_2,V8_4;4:V7_3,V8_2,V8_4
+V8_2   q=4 orbits   1157  labels {'1': 1111, 'z3': 1153, 'z5': 1085, 'z7': 772, 'z3*z3': 848}  seconds 764.7  joint=3:V7_3,V8_2,V8_4;4:V7_3,V8_2,V8_4
+V8_3   q=3 orbits      8  labels {'z3': 3, 'z5': 7, 'z7': 8, 'z3*z3': 5}  seconds 494.2  joint=3:Z5,V7_0,V7_2,V7_3,V8_1,V8_2,V8_3,V8_4;4:Z5
+V8_3   q=4 orbits    465  labels {'1': 448, 'z3': 461, 'z5': 457, 'z7': 406, 'z3*z3': 349}  seconds 951.1  joint=['V7_0', 'V7_2', 'V8_1', 'V8_3']
+V8_4   q=3 orbits     19  labels {'z3': 8, 'z5': 16, 'z7': 16, 'z3*z3': 15}  seconds 764.7  joint=3:V7_3,V8_2,V8_4;4:V7_3,V8_2,V8_4
+V8_4   q=4 orbits   1398  labels {'1': 1302, 'z3': 1396, 'z5': 1344, 'z7': 1091, 'z3*z3': 1115}  seconds 764.7  joint=3:V7_3,V8_2,V8_4;4:V7_3,V8_2,V8_4
+Z5     q=3 orbits     74  labels {'1': 39, 'z3': 69, 'z5': 63, 'z7': 44, 'z3*z3': 16}  seconds 494.2  joint=3:Z5,V7_0,V7_2,V7_3,V8_1,V8_2,V8_3,V8_4;4:Z5
+Z5     q=4 orbits   1956  labels {'1': 1900, 'z3': 1880, 'z5': 1644, 'z7': 970, 'z3*z3': 440}  seconds 494.2  joint=3:Z5,V7_0,V7_2,V7_3,V8_1,V8_2,V8_3,V8_4;4:Z5
+Z5     q=5 orbits  22668  labels {'1': 22668, 'z3': 21937, 'z5': 19281, 'z7': 10438, 'z3*z3': 5320}  seconds 307.3  joint=['Z5']

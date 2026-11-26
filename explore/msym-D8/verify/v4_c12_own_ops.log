@@ -1,0 +1,33 @@
+g0 g0 c1: |hatQ1 p| = 100, |hatQ1^2 p| = 320 (3.5s)
+   theta(1, 4, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (3.1s)
+   theta(2, 3, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (3.2s)
+   theta(3, 3, 3): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (4.3s)
+g2 g1 c1: |hatQ1 p| = 120, |hatQ1^2 p| = 320 (0.4s)
+   theta(1, 4, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (2.1s)
+   theta(2, 3, 4): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (2.1s)
+   theta(3, 3, 3): |hatQ_G p| = 966, |{hatQ0, hatQ_G} p| = 320 (2.7s)
+   operator g0 g0 c1: 320 equations, rank 2, consistent True, solution None
+   operator g2 g1 c1: 320 equations, rank 2, consistent True, solution None
+ALL operators ['g0 g0 c1', 'g2 g1 c1']: 640 equations, rank 2, consistent True, solution (k144, k234, k333) = None
+   claimed k = (2, -4, -2/3) satisfies all equations: True
+d2c0 g1 g2: |hatQ1 p| = 222, |hatQ1^2 p| = 2654 (4.9s)
+   theta(1, 4, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (44.1s)
+   theta(2, 3, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (43.2s)
+   theta(3, 3, 3): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (57.3s)
+d3g2 g2 c0: |hatQ1 p| = 420, |hatQ1^2 p| = 2696 (24.4s)
+   theta(1, 4, 4): |hatQ_G p| = 6828, |{hatQ0, hatQ_G} p| = 2762 (48.1s)
+   theta(2, 3, 4): |hatQ_G p| = 6828, |{hatQ0, hatQ_G} p| = 2762 (50.0s)
+   theta(3, 3, 3): |hatQ_G p| = 6828, |{hatQ0, hatQ_G} p| = 2762 (66.8s)
+g1 d4g0 c2: |hatQ1 p| = 420, |hatQ1^2 p| = 2654 (20.9s)
+   theta(1, 4, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (44.0s)
+   theta(2, 3, 4): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (42.7s)
+   theta(3, 3, 3): |hatQ_G p| = 6708, |{hatQ0, hatQ_G} p| = 2720 (56.1s)
+   operator g0 g0 c1: 320 equations, rank 2, consistent True, solution None
+   operator g2 g1 c1: 320 equations, rank 2, consistent True, solution None
+   operator d2c0 g1 g2: 2720 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator d3g2 g2 c0: 2762 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+   operator g1 d4g0 c2: 2720 equations, rank 3, consistent True, solution ['2', '-4', '-2/3']
+ALL operators ['d2c0 g1 g2', 'd3g2 g2 c0', 'g0 g0 c1', 'g1 d4g0 c2', 'g2 g1 c1']: 8842 equations, rank 3, consistent True, solution (k144, k234, k333) = ['2', '-4', '-2/3']
+   |k| * |Aut| / 4 = ['1', '1', '1']
+   residual zero on all equations: True
+   claimed k = (2, -4, -2/3) satisfies all equations: True

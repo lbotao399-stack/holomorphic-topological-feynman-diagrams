@@ -1,0 +1,25 @@
+{'name': 'D4_n1_0', 'H': 4, 'n': 1, 'N': 5, 'nv': 5, 'pointwise': True, 'pointwise_via': 'minors', 't_engine': 0.08, 'nonzero': True, 'component_degrees': [[1], [1], [1], [1]], 'homog': True, 'GL_cov': True, 'span_minors': True, 'n_products': 1, 't': 1.0}
+{'name': 'D4_n2_0', 'H': 4, 'n': 2, 'N': 9, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'minors', 'GL_cov': True, 'homog': True, 'K_samples': ['-365057/120', '2023/96'], 't': 1.5}
+{'name': 'D4_n2_1', 'H': 4, 'n': 2, 'N': 9, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'minors', 'GL_cov': True, 'homog': True, 'K_samples': ['77879/720', '-66983/192'], 't': 1.2}
+{'name': 'D4_n2_2', 'H': 4, 'n': 2, 'N': 9, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'minors', 'GL_cov': True, 'homog': True, 'K_samples': ['482729/960', '-9193/480'], 't': 1.5}
+{'name': 'D3_n3_0', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['4092563/1728', '-2898421/1080'], 't': 0.2}
+{'name': 'D3_n3_1', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['5600251/864', '-2442061/8640'], 't': 1.4}
+{'name': 'D3_n3_2', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['1010637119/38880', '-62541017/3888'], 't': 0.7}
+{'name': 'D3_n3_3', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['1251839/324', '15191971/9720'], 't': 0.6}
+{'name': 'D3_n3_4', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['128334829/25920', '-6924379/1296'], 't': 1.5}
+{'name': 'D3_n3_5', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['899281/360', '-608903/72'], 't': 0.8}
+{'name': 'D3_n3_6', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['-7841933/12960', '-1671/16'], 't': 1.1}
+{'name': 'D3_n3_7(nonSP)', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'pointwise': True, 'pointwise_via': 'dy', 't': 0.1}
+{'name': 'D3_n3_8(nonSP)', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'pointwise': True, 'pointwise_via': 'dy', 't': 0.1}
+{'name': 'D3_n3_9(nonSP)', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'pointwise': True, 'pointwise_via': 'dy', 't': 0.1}
+{'name': 'D3_n3_10(nonSP)', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'pointwise': True, 'pointwise_via': 'dy', 't': 0.1}
+{'name': 'D3_n3_11', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['-1176395/5184', '127801/25920'], 't': 1.1}
+{'name': 'D3_n3_12', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['220987/128', '123245/2304'], 't': 0.8}
+{'name': 'D3_n3_13(nonSP)', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'pointwise': True, 'pointwise_via': 'dy', 't': 0.0}
+{'name': 'D3_n3_14', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'mode': 'numeric sources', 'pointwise': True, 'pointwise_via': 'dy', 'GL_cov': True, 'homog': True, 'K_samples': ['-1103521/25920', '-2115473/2160'], 't': 1.2}
+{'name': 'D3_n3_15(nonSP)', 'H': 3, 'n': 3, 'N': 10, 'nv': 8, 'pointwise': True, 'pointwise_via': 'dy', 't': 0.1}
+oracle checks (direct lattice integration of the brute-force density):
+  D2_n2_0 H=2: exact 20/3 = 6.6666666667, oracle 6.6666656574 +- 7.7e-05, rel.dev 1.5e-07
+  D3_n1_0 H=3: exact 24 = 24.0000000000, oracle 23.9999997099 +- 2.1e-06, rel.dev 1.2e-08
+  D2_n3_0 H=2: exact 7/72 = 0.0972222222, oracle 0.0972095612 +- 4.3e-03, rel.dev 1.3e-04
+  D3_n2_0 H=3: exact 17825/432 = 41.2615740741, oracle 41.2602572683 +- 5.4e-02, rel.dev 3.2e-05

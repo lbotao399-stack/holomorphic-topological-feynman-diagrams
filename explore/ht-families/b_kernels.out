@@ -1,0 +1,76 @@
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: divide by zero encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: overflow encountered in matmul
+  logt = np.log(B) @ self.E.T
+/Users/libotao/Desktop/holomorphic-twist-program/explore/ht-families/hf_numeric.py:58: RuntimeWarning: invalid value encountered in matmul
+  logt = np.log(B) @ self.E.T
+====================================================================================================
+graph 0: degrees [2, 2, 2, 2, 5, 5], edges [(0, 4), (0, 5), (1, 4), (1, 5), (2, 4), (2, 5), (3, 4), (3, 5), (4, 5)], root 5
+  plan (p, q, chains): [(4, 5, [[0, 1], [2, 3], [4, 5], [6, 7], [8]])]
+  B1  K_sym = pi**2*l0*l1*l2*l3/5
+  lambda = [1, -3, 2, -5, -4]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 6*pi^2 ; K_sym(lambda) = 6*pi**2 ; equal: True  (0.4s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): 59.217626 +- 3.2e-14 ; exact 59.21762641 ; |diff| = 8.5e-14 ; rel = 1.4e-15  (26.2s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): 59.245081 +- 0.047 ; |diff| = 0.027 ; rel = 0.00046  (27.7s)
+  lambda = [1, -4, 4, -4, 5]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 64/5*pi^2 ; K_sym(lambda) = 64*pi**2/5 ; equal: True  (0.4s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): 126.33094 +- 2.4e-14 ; exact 126.3309363 ; |diff| = 1.3e-13 ; rel = 1e-15  (28.1s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): 126.30303 +- 0.096 ; |diff| = 0.028 ; rel = 0.00022  (29.5s)
+====================================================================================================
+graph 1: degrees [2, 2, 2, 3, 4, 5], edges [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 2), (2, 3), (2, 5), (3, 4)], root 5
+  plan (p, q, chains): [(0, 2, [[0, 5], [1], [4, 7]]), (0, 3, [[2], [3, 8], [9, 6]])]
+  B1  K_sym = -pi**2*l1*l4*(3*l0 - 3*l2 + 7*l3 + 5*l4)*(l0 + l1 + l2 + l3 + l4)/90
+  lambda = [1, 1, 1, 5, 3]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = -55/3*pi^2 ; K_sym(lambda) = -55*pi**2/3 ; equal: True  (0.1s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): -180.94063 +- 0.007 ; exact -180.9427474 ; |diff| = 0.0021 ; rel = 1.2e-05  (32.9s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): -181.25428 +- 0.22 ; |diff| = 0.31 ; rel = 0.0017  (38.0s)
+  lambda = [4, -1, 2, 1, 2]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 184/45*pi^2 ; K_sym(lambda) = 184*pi**2/45 ; equal: True  (0.2s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): 40.35367 +- 0.0024 ; exact 40.35571577 ; |diff| = 0.002 ; rel = 5.1e-05  (32.0s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): 40.364161 +- 0.059 ; |diff| = 0.0084 ; rel = 0.00021  (33.5s)
+====================================================================================================
+graph 2: degrees [2, 2, 2, 4, 4, 4], edges [(0, 1), (0, 2), (0, 4), (0, 5), (1, 2), (1, 3), (1, 4), (3, 4), (4, 5)], root 5
+  plan (p, q, chains): [(0, 1, [[0], [1, 4]]), (0, 4, [[2], [3, 8]]), (1, 4, [[5, 7], [6], [9, 10]])]
+  B1  K_sym = 0
+  lambda = [5, -5, -4, -5, 5]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 0 ; K_sym(lambda) = 0 ; equal: True  (0.1s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): -0.068616456 +- 0.13 ; exact 0 ; |diff| = 0.069 ; rel = nan  (48.5s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): -0.49696851 +- 1.1 ; |diff| = 0.5 ; rel = nan  (56.5s)
+  lambda = [1, -2, 4, 4, 4]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 0 ; K_sym(lambda) = 0 ; equal: True  (0.2s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): -0.25365071 +- 0.29 ; exact 0 ; |diff| = 0.25 ; rel = nan  (53.9s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): -0.14320489 +- 0.8 ; |diff| = 0.14 ; rel = nan  (60.6s)
+====================================================================================================
+graph 3: degrees [2, 2, 3, 3, 3, 5], edges [(0, 1), (0, 2), (0, 5), (1, 2), (1, 3), (1, 4), (1, 5), (3, 4), (4, 5)], root 5
+  plan (p, q, chains): [(0, 1, [[0], [1, 3]]), (1, 4, [[4, 7], [5]]), (1, 5, [[6], [9, 2], [10, 8]])]
+  B1  K_sym = -pi**2*l2*l3*(8*l0**2 + 20*l0*l1 + 18*l0*l2 + 20*l0*l3 + 20*l0*l4 + 12*l1**2 + 22*l1*l2 + 22*l1*l3 + 20*l1*l4 + 10*l2**2 + 21*l2*l3 + 20*l2*l4 + 10*l3**2 + 18*l3*l4 + 8*l4**2)/180
+  lambda = [-4, 2, -2, 3, -3]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 59/15*pi^2 ; K_sym(lambda) = 59*pi**2/15 ; equal: True  (0.1s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): 38.820338 +- 0.0024 ; exact 38.82044398 ; |diff| = 0.00011 ; rel = 2.7e-06  (62.3s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): 38.829696 +- 0.11 ; |diff| = 0.0093 ; rel = 0.00024  (57.8s)
+  lambda = [-1, 4, 2, -3, -5]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 1*pi^2 ; K_sym(lambda) = pi**2 ; equal: True  (0.2s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): 9.8735863 +- 0.0046 ; exact 9.869604401 ; |diff| = 0.004 ; rel = 0.0004  (56.8s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): 9.8422088 +- 0.075 ; |diff| = 0.027 ; rel = 0.0028  (73.4s)
+====================================================================================================
+graph 4: degrees [2, 2, 3, 3, 4, 4], edges [(0, 2), (0, 3), (0, 4), (0, 5), (1, 2), (1, 3), (2, 3), (3, 4), (4, 5)], root 5
+  plan (p, q, chains): [(0, 4, [[2], [3, 8]]), (0, 3, [[1], [9, 7]]), (2, 3, [[0, 10], [4, 5], [6]])]
+  B1  K_sym = -pi**2*l1*(l0 + l1 + l2 + l3 + l4)*(l0*l1 + 2*l0*l3 - 9*l1**2 - 17*l1*l2 - 19*l1*l3 - l1*l4 - 8*l2**2 - 18*l2*l3 - 10*l3**2 - 2*l3*l4)/180
+  lambda = [-4, 3, 1, 5, 4]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = 2607/20*pi^2 ; K_sym(lambda) = 2607*pi**2/20 ; equal: True  (4.2s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): 1286.4998 +- 0.027 ; exact 1286.502934 ; |diff| = 0.0031 ; rel = 2.4e-06  (65.3s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): 1286.0051 +- 1.9 ; |diff| = 0.5 ; rel = 0.00039  (76.2s)
+  lambda = [-2, -3, 2, 4, 2]
+    B2  pointwise g == D_brute |J| at 4 rational points: True
+    B3  K (engine, numeric sources) = -107/20*pi^2 ; K_sym(lambda) = -107*pi**2/20 ; equal: True  (4.2s)
+    B4  QMC (2^15 x 16 scrambled Sobol, Dirichlet(alpha_b+1) blocks): -52.800554 +- 0.0016 ; exact -52.80238355 ; |diff| = 0.0018 ; rel = 3.5e-05  (76.6s)
+    B4' QMC (2^14 x 32 scrambled Sobol, Dirichlet(1/2) blocks, no engine input): -52.849504 +- 0.086 ; |diff| = 0.047 ; rel = 0.00089  (74.1s)

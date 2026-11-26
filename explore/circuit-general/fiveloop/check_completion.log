@@ -1,0 +1,22 @@
+K4     q=3: 64 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 12, 3: 52}
+K4     q=4: 388 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 72, 3: 316}
+K4     q=5: 1472 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 252, 3: 1220}
+K4     q=6: 1432 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 243, 3: 1189}
+W4     q=3: 185 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {3: 24, 4: 117, 5: 44}
+W4     q=4: 1485 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 1, 3: 178, 4: 814, 5: 492}
+W4     q=5: 1355 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 5, 3: 161, 4: 650, 5: 539}
+W4     q=6: 1210 relations checked, 0 bad, 0 skipped (divergent/unknown); target loop numbers {2: 3, 3: 112, 4: 545, 5: 550}
+prism  q=4: 1004 relations checked, 0 bad, 856 skipped (divergent/unknown); target loop numbers {3: 12, 4: 328, 5: 664}
+prism  q=5: 765 relations checked, 0 bad, 813 skipped (divergent/unknown); target loop numbers {3: 9, 4: 253, 5: 503}
+prism  q=6: 557 relations checked, 0 bad, 757 skipped (divergent/unknown); target loop numbers {3: 3, 4: 159, 5: 395}
+K33    q=4: 1140 relations checked, 0 bad, 630 skipped (divergent/unknown); target loop numbers {4: 484, 5: 656}
+K33    q=5: 732 relations checked, 0 bad, 684 skipped (divergent/unknown); target loop numbers {4: 240, 5: 492}
+K33    q=6: 606 relations checked, 0 bad, 648 skipped (divergent/unknown); target loop numbers {4: 200, 5: 406}
+W5     q=3: 56 relations checked, 0 bad, 100 skipped (divergent/unknown); target loop numbers {4: 15, 5: 41}
+W5     q=4: 240 relations checked, 0 bad, 414 skipped (divergent/unknown); target loop numbers {3: 5, 4: 63, 5: 152, 6: 20}
+W5     q=5: 189 relations checked, 0 bad, 327 skipped (divergent/unknown); target loop numbers {3: 7, 4: 51, 5: 87, 6: 44}
+K5-e   q=4: 1220 relations checked, 0 bad, 140 skipped (divergent/unknown); target loop numbers {3: 38, 4: 484, 5: 698}
+K5-e   q=5: 996 relations checked, 0 bad, 189 skipped (divergent/unknown); target loop numbers {3: 29, 4: 341, 5: 626}
+K4+K4  q=4: 297 relations checked, 0 bad, 477 skipped (divergent/unknown); target loop numbers {3: 1, 4: 44, 5: 198, 6: 54}
+K4+K4  q=5: 245 relations checked, 0 bad, 367 skipped (divergent/unknown); target loop numbers {3: 4, 4: 51, 5: 133, 6: 57}
+25.3s

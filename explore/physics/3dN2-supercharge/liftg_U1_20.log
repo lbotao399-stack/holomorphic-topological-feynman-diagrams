@@ -1,0 +1,28 @@
+R-charges ['1/2'] weights scaled by 4
+theory U(1) charges [1] W no
+Jw=4 charges=(0,): dim C = {0: 1, 4: 3, 8: 2} ; dim H(Q0) = {4: 1, 8: 1}
+Jw=8 charges=(0,): dim C = {0: 2, 4: 7, 8: 6, 12: 1} ; dim H(Q0) = {4: 2, 8: 2}
+    lifted: O = -1/2*[B0][B0][dc0] + 1*[B0][dp00][s00] 
+       Q2 O = 1/2*[dc0][ddc0]
+    lifted: O = -1/2*[B0][B0][c0][dc0] + 1*[B0][c0][dp00][s00] 
+       Q2 O = -1/2*[c0][dc0][ddc0]
+Jw=12 charges=(0,): dim C = {0: 3, 4: 14, 8: 17, 12: 6} ; dim H(Q0) = {4: 3, 8: 4, 12: 1} ; rank d2 (R -> R+4) = {4: 1, 8: 1}
+    lifted: O = -1/3*[B0][B0][B0][dc0] + 1*[B0][B0][dp00][s00] 
+       Q2 O = 1*[B0][dc0][ddc0] + -4/3*[dc0][dp00][ds00] + 1/15*[dc0][ddp00][s00] + 16/15*[ddc0][dp00][s00]
+    lifted: O = 1/2*[B0][B0][ddc0] + 1*[B0][dB0][dc0] + -1*[B0][dp00][ds00] + -1*[B0][ddp00][s00] + 1*[dB0][p00][ds00] 
+       Q2 O = -1/2*[dc0][dddc0]
+    lifted: O = -1/3*[B0][B0][B0][c0][dc0] + 1*[B0][B0][c0][dp00][s00] 
+       Q2 O = -1*[B0][c0][dc0][ddc0] + 4/3*[c0][dc0][dp00][ds00] + -1/15*[c0][dc0][ddp00][s00] + -16/15*[c0][ddc0][dp00][s00]
+    lifted: O = 1/2*[B0][B0][c0][ddc0] + 1*[B0][dB0][c0][dc0] + -1*[B0][c0][dp00][ds00] + -1*[B0][c0][ddp00][s00] + 1*[dB0][c0][p00][ds00] 
+       Q2 O = 1/2*[c0][dc0][dddc0]
+Jw=16 charges=(0,): dim C = {0: 5, 4: 26, 8: 37, 12: 18, 16: 2} ; dim H(Q0) = {4: 4, 8: 6, 12: 2} ; rank d2 (R -> R+4) = {4: 2, 8: 2}
+    lifted: O = -1/4*[B0][B0][B0][B0][dc0] + 1*[B0][B0][B0][dp00][s00] 
+       Q2 O = 3/2*[B0][B0][dc0][ddc0] + -4*[B0][dc0][dp00][ds00] + 1/5*[B0][dc0][ddp00][s00] + 16/5*[B0][ddc0][dp00][s00] + 2*[dp00][dp00][s00][ds00]
+    lifted: O = -1/6*[B0][B0][B0][ddc0] + -1/2*[B0][B0][dB0][dc0] + 1/2*[B0][B0][dp00][ds00] + 1/2*[B0][B0][ddp00][s00] + 1*[B0][dB0][dp00][s00] 
+       Q2 O = 1/2*[B0][dc0][dddc0] + 1/2*[dB0][dc0][ddc0] + -2/3*[dc0][dp00][dds00] + -19/30*[dc0][ddp00][ds00] + 1/30*[dc0][dddp00][s00] + -2/15*[ddc0][dp00][ds00] + ... (8 terms)
+    lifted: O = -1/4*[B0][B0][B0][B0][c0][dc0] + 1*[B0][B0][B0][c0][dp00][s00] 
+       Q2 O = -3/2*[B0][B0][c0][dc0][ddc0] + 4*[B0][c0][dc0][dp00][ds00] + -1/5*[B0][c0][dc0][ddp00][s00] + -16/5*[B0][c0][ddc0][dp00][s00] + -2*[c0][dp00][dp00][s00][ds00]
+    lifted: O = -1/6*[B0][B0][B0][c0][ddc0] + -1/2*[B0][B0][dB0][c0][dc0] + 1/2*[B0][B0][c0][dp00][ds00] + 1/2*[B0][B0][c0][ddp00][s00] + 1*[B0][dB0][c0][dp00][s00] 
+       Q2 O = -1/2*[B0][c0][dc0][dddc0] + -1/2*[dB0][c0][dc0][ddc0] + 2/3*[c0][dc0][dp00][dds00] + 19/30*[c0][dc0][ddp00][ds00] + -1/30*[c0][dc0][dddp00][s00] + 2/15*[c0][ddc0][dp00][ds00] + ... (8 terms)
+Jw=20 charges=(0,): dim C = {0: 7, 4: 45, 8: 77, 12: 47, 16: 8} ; dim H(Q0) = {4: 5, 8: 10, 12: 5} ; rank d2 (R -> R+4) = {4: 3, 8: 3}
+time 0s

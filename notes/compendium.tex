@@ -1,0 +1,1040 @@
+% compile in the folder holomorphic-twist-program/notes:  pdflatex compendium.tex  (twice);
+% reads ../results/graph_counts.txt
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\numberwithin{equation}{section}
+\allowdisplaybreaks
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\emergencystretch=2em
+\lstset{basicstyle=\ttfamily\tiny,breaklines=true,columns=fullflexible,keepspaces=true}
+
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\dbar}{\bar\partial}
+\newcommand{\bz}{\bar z}
+\newcommand{\Pf}{\operatorname{Pf}}
+\newcommand{\br}[1]{\langle #1\rangle}
+\newcommand{\RPp}[1]{\mathbb{RP}^{#1}_{>0}}
+\newcommand{\dd}[2]{\frac{\delta}{\delta C^{#1}(#2)}}
+% source pointers
+\newcommand{\LL}[2]{\textsf{L}(#1){\scriptsize\,\texttt{#2}}}
+\newcommand{\LT}[3]{\textsf{L}\,#1\,#2{\scriptsize\,\texttt{#3}}}
+\newcommand{\LS}[2]{\textsf{L}\,\S#1{\scriptsize\,\texttt{#2}}}
+\newcommand{\Sd}[1]{\textsf{6d}(#1)}
+\newcommand{\Ed}[1]{\textsf{11d}(#1)}
+\newcommand{\PL}[1]{\textsf{PLAN}\,\S#1}
+\newcommand{\rid}[1]{\par\medskip\noindent\textbf{#1}\ }
+\newcommand{\ptr}[2]{\par\nopagebreak{\footnotesize\raggedleft[\,#1\ $\mid$\ #2\,]\par}}
+\newcommand{\st}[1]{\textsf{#1}}
+
+\title{Compendium of results: holomorphic and holomorphic--topological graph kernels by network reduction}
+\author{}
+\date{2026-11-20}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section*{Sources, versions, pointers}
+\addcontentsline{toc}{section}{Sources, versions, pointers}
+
+{\small
+\begin{longtable}{@{}p{0.9cm}p{15.3cm}@{}}
+\toprule
+tag & source\\
+\midrule
+\textsf{L} & S1: Li--Liu--Chang, ``Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring'', \path{sources/LLC_main.tex}, manuscript version \texttt{20261120-231110} (\path{sources/LLC_VERSION.json}: beijing\_time 2026-11-20 23:11:10, 107 pages, source\_sha256 \texttt{97c470530a19\dots af05032bb}, equal to the sha256 of the file). The file is the copy in the local clone \path{/Users/libotao/claude_work/allloop_repo} of \path{github.com/lbotao399-stack/All-loop-holomorphic-kernels}, commit \texttt{8dd029b} $=$ \texttt{origin/main} of that clone; no network fetch was made. Pointers: equation number, label; numbers from \path{notes/_aux/llc/main.aux} of this version.\\
+\textsf{6d} & S2: \path{Desktop/6d-holomorphic-twist-note/} (\path{main.tex}, \path{sec1}--\path{sec8}, \path{code/}), dated 18 November 2026. Equation numbers from \path{notes/_aux/6d/main.aux}.\\
+\textsf{11d} & S3: \path{Twisted_11d_sugra_loops_2026-11-18/} (\path{main.tex}, \path{code/}), dated 18 November 2026. Equation numbers from \path{notes/_aux/11d/main.aux}; numbers of unlabelled equations from the instrumented copy \path{notes/_aux/11d_instr/} (\path{notes/_aux/eqnums_11d.json}). The unnumbered section ``Final Result List'' carries the numbers (0.1)--(0.11).\\
+\textsf{cd} & S4: \path{Desktop/check_cd/check_cd.py} (byte-identical to \path{6d-holomorphic-twist-note/code/kirchhoff.py}), \path{check_ladder.py}.\\
+\textsf{Op}, \textsf{GKW}, \textsf{BK}, \textsf{SC} & S5: \path{HT_Papers_LaTeX/}: \path{4dDiffPaper.tex} (arXiv:2207.14321), \path{Higher.tex} (arXiv:2403.13049), \path{3_Loop_Corrected_Supercharges/main.tex} (arXiv:2512.07771), \path{Cohomology.tex} (arXiv:2306.01039). Used only where a note cites them; cited by line of the TeX file.\\
+\textsf{PLAN}, \textsf{RS}, \textsf{gc} & S6: \path{PLAN.md} (2026-11-18; it cites \textsf{L} in version \texttt{20261118-140936}), \path{RESEARCH_STATE.md}, \path{refs/references.md}, \path{code/enumerate_graphs.py}, \path{results/graph_counts.txt}.\\
+\bottomrule
+\end{longtable}}
+
+Status tags. \st{P}: derivation or proof in the source. \st{C}: check reported by the source. \st{R}: the script of the source was re-run on 2026-11-20 in a scratch copy (\path{notes/_aux/runs/}) with the output recorded in Section~\ref{sec-checks}. \st{E}: the number was re-evaluated here in exact arithmetic from the formula of the source (\path{notes/_aux/check_constants.py}). \st{D}: derived in this compendium (Section~\ref{sec-conv} only) and checked by \path{notes/_aux/check_conversion.py}. \st{X}: pointwise identity against the direct Kirchhoff solution checked here in exact arithmetic (\path{notes/_aux/check_llc_fan.py}). \st{N}: floating-point check only. \st{O}: stated in a source as an observation, no check in the sources. \st{lit}: quoted by \textsf{PLAN} from the literature through a web extraction. \st{open}: not established.
+
+Notation common to all sections: graph $\Gamma=(V,I)$, $n=|I|-|V|+1$, root vertex with $\lambda_{\rm root}=-\sum_{v\ne{\rm root}}\lambda_v$, Schwinger times $t_e$, currents $y_e\in\mathbb C^H$, displacements $z_e$, $D=H+T$.
+
+\section{Final result list}\label{sec-results}
+
+Each entry: formula, then [\,source pointer $\mid$ status\,]. In \textsf{L}, $\br{u,v}=u_{+\dot a}v_+{}^{\dot a}=\epsilon^{\dot a\dot b}u_{+\dot a}v_{+\dot b}$, $\epsilon^{\dot+\dot-}=1$.
+
+\subsection{Four dimensions: $\mathbb C^2$, $(H,T)=(2,0)$ \textsf{[L]}}
+
+\rid{L1} Twisted action, interaction density, quantum differential, tree level:
+\begin{gather*}
+S_{\rm tw}=\int_{\mathbb C^2}\Omega\wedge\Big[b_A\big(\dbar c^A-\tfrac g2C^A{}_{BC}c^Bc^C\big)+\big(\dbar\gamma_i-igc^A(t_A)^j{}_i\gamma_j\big)\beta^i+\bar W(\gamma,w)\Big]_{(0,2)},\\
+w^A_{\dot a}=\tfrac12\partial_{+\dot a}c^A,\qquad\cI=-\tfrac g2C^A{}_{BC}b_Ac^Bc^C-igc^A(t_A)^j{}_i\gamma_j\beta^i+\bar W(\gamma,w),\\
+\mathbf Q=\sum_{n\ge0}\hbar^nQ_n,\qquad Q_n\cO=\frac1{(n+1)!}\{\underbrace{\cI,\dots,\cI}_{n+1},\cO\},\\
+Q_0c^A=-\tfrac g2C^A{}_{BC}c^Bc^C,\qquad Q_0\gamma_i=-igc^A(t_A)^j{}_i\gamma_j,\\
+Q_0\beta^i=igc^A(t_A)^i{}_j\beta^j-\frac{\partial\bar W(\gamma,0)}{\partial\gamma_i},\qquad
+Q_0b_A=-gC^B{}_{AC}c^Cb_B-ig(t_A)^j{}_i\gamma_j\beta^i .
+\end{gather*}
+\ptr{\LL{2.2}{local-ch9-common-action}$=$\LL{3.13}{eq-B-8}; \LL{2.3}{eq-sum-interaction-density}$=$\LL{3.15}{eq-B-10}; \LL{2.4}{eq-sum-Q-expansion}$=$\LL{3.64}{eq-1-1}; \LL{2.5}{eq-sum-Q0-explicit}$=$\LL{3.32}{eq-B-15}}{\st{P} (\LT{Prop.}{3.2}{b-00164})}
+
+\rid{L2} $\mathcal N=4$ superfield, action, functional derivative, contraction ($\int d^3\theta\,\theta_1\theta_2\theta_3=1$):
+\begin{gather*}
+C^A(\theta)=ig\,c^A+\theta_I\delta^{AB}(\gamma^I)_B-\tfrac12\varepsilon^{IJK}\theta_I\theta_J(\beta_K)^A+\frac{\theta_1\theta_2\theta_3}{ig}\delta^{AB}b_B,\\
+S_{\rm tw}=\int_{\mathbb C^2}\Omega\wedge\Big[\int d^3\theta\Big(\tfrac12\delta_{AB}C^A\dbar C^B+\tfrac i{3!}C_{ABC}C^AC^BC^C\Big)\Big]_{(0,2)},\qquad Q_0C^A=\tfrac i2C^A{}_{BC}C^BC^C,\\
+\frac{\delta C^B(y,\theta')}{\delta C^A(y',\theta)}=\delta_A{}^B\delta^{(4)}(y-y')\prod_{I=1}^3(\theta_I-\theta'_I),\qquad
+\Delta_{vw}=-\delta^{DE}\int d^3\theta\,\frac{\delta}{\delta C^D_v(\theta)}\frac{\delta}{\delta C^E_w(\theta)},\\
+\dd A\theta=\frac{\theta_1\theta_2\theta_3}{ig}\frac{\partial_L}{\partial c^A}-\tfrac12\varepsilon^{IJK}\theta_J\theta_K\frac{\partial}{\partial(\gamma^I)_A}-\theta_I\frac{\partial_L}{\partial(\beta_I)^A}-ig\frac{\partial}{\partial b_A}.
+\end{gather*}
+\ptr{\LL{A.2}{eq-A-13}; \LL{2.6}{local-ch9-su-action}$=$\LL{A.3}{eq-A-15}; \LL{2.7}{eq-sum-deltaC-norm}$=$\LL{8.2}{eq-2-10}; \LL{A.4}{eq-A-16}; \LL{A.5}{eq-A-17}}{definitions}
+
+\rid{L3} General $Q_n$ in terms of kernels, and spider term:
+\begin{equation*}
+Q_n\cO=\frac{(-1)^n}{(n+1)!\,(8\pi^2)^n}\sum_{\Gamma\ \text{labelled, rooted, Laman}}\Big[\cI_\Gamma(\lambda;z)\,W_\Gamma[\cI_1,\dots,\cI_{n+1},\cO]\Big],\qquad
+\lambda_{v,+\dot a}\mapsto\frac{\partial}{\partial x_v^{+\dot a}}=-\tfrac12\partial_{v,+\dot a}.
+\end{equation*}
+\ptr{\LL{8.1}{eq-2-3}; \LL{3.65}{eq-D-lambda}; spider term \LL{7.14}{eq-spider-supercharge}}{\st{P}}
+
+\rid{L4} All-loop supercharge of $\mathcal N=4$ Yang--Mills theory, $n\ge1$:
+\begin{equation*}
+\begin{aligned}
+Q_n={}&\frac{(-1)^ni^{n+1}}{2(32\pi^2)^n}\int dr_1\cdots dr_{2n}\Big[\prod_{j=1}^{n-1}r_{2j-1}^{n-j}r_{2j}(1-r_{2j})^{j-1}\Big]r_{2n}^{n-1}\int d^3\theta\int\prod_{j=1}^{n+1}d^4z_j\\
+&\times C_{A_1DR_1}\Big(\prod_{j=2}^nC_{A_jR_{j-1}R_j}\Big)C_{A_{n+1}R_nE}\,(\partial_{+\dot a_1}\cdots\partial_{+\dot a_n}C^D)(x+x_1(r,z),\theta)\\
+&\times(\partial_+{}^{\dot a_1}\cdots\partial_+{}^{\dot a_n}C^E)(x+x_{n+1}(r,z),\theta)\prod_{j=1}^{n+1}\dd{A_j}{x+z_j,\theta},
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+0<r_j<1\ (1\le j\le2n-2),\qquad r_{2n-1},r_{2n}>0,\qquad r_{2n-1}+r_{2n}<1,
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+x_1(r,z)&=\sum_{j=1}^n(1-r_{2j-1})\Big(\prod_{k=1}^{j-1}r_{2k-1}\Big)\Big[\Big(\prod_{k=1}^{j-1}(1-r_{2k})\Big)z_1+\sum_{i=2}^jr_{2i-2}\Big(\prod_{k=i}^{j-1}(1-r_{2k})\Big)z_i\Big]+\Big(\prod_{k=1}^nr_{2k-1}\Big)z_{n+1},\\
+x_{n+1}(r,z)&=r_{2n}\Big[\Big(\prod_{k=1}^{n-1}(1-r_{2k})\Big)z_1+\sum_{i=2}^nr_{2i-2}\Big(\prod_{k=i}^{n-1}(1-r_{2k})\Big)z_i\Big]+(1-r_{2n})z_{n+1}.
+\end{aligned}
+\end{equation*}
+Prefactor: $\tfrac12$ (path reversal) $\cdot\,i^{n+1}$ (vertices) $\cdot\,(-8\pi^2)^{-n}\cdot4^{-n}$ (output derivatives).
+\ptr{\LT{Thm}{2.1}{b-00088} \LL{2.8}{eq-sum-N4}, \LL{2.9}{eq-sum-integration-domain}, \LL{2.10}{eq-sum-N4-points} $=$ \LT{Thm}{8.1}{b-00431} \LL{8.3}{eq-2-8}, \LL{5.1}{eq-1-37}, \LL{5.26}{eq-fan-output-points}}{\st{P}; \st{C}: \textsf{L}~\S2.3 states cross-checks of the one- and two-loop operators against BK, KKLP, GWW~\S4.5, FortuityAI; prefactor identity \st{E}}
+
+\rid{L5} Taylor expansion of L4 (derivatives $\partial_{1},\partial_{n+1}$ on the two outputs), coefficient, letters, zero input derivatives:
+\begin{equation*}
+\begin{aligned}
+Q_n={}&\frac{(-1)^ni^{n+1}}{2(32\pi^2)^n}\sum_{m\ge0}\ \sum_{r_0+s_0+\sum_is_i+\sum_{i\le k}r_{ik}=m}c^{(n)}_{r_0,s_0,\{r_{ik}\},\{s_i\}}\int d^3\theta\int\prod_jd^4z_j\\
+&\times C_{A_1DR_1}\Big(\prod_{j=2}^nC_{A_jR_{j-1}R_j}\Big)C_{A_{n+1}R_nE}\;
+\frac{(\tfrac12z_1{}^+{}_{\dot b}\partial_{1,+}{}^{\dot b})^{r_0}(\tfrac12z_{n+1}{}^+{}_{\dot c}\partial_{n+1,+}{}^{\dot c})^{s_0}}{r_0!\,s_0!}\\
+&\times\prod_{1\le i\le k\le n}\frac{[\tfrac12(z_{i+1}-z_i)^+{}_{\dot d}\partial_{1,+}{}^{\dot d}]^{r_{ik}}}{r_{ik}!}
+\prod_{i=1}^n\frac{[\tfrac12(z_i-z_{i+1})^+{}_{\dot e}\partial_{n+1,+}{}^{\dot e}]^{s_i}}{s_i!}\\
+&\times(\partial_{+\dot a_1}\cdots\partial_{+\dot a_n}C^D)(x,\theta)(\partial_+{}^{\dot a_1}\cdots\partial_+{}^{\dot a_n}C^E)(x,\theta)\prod_j\dd{A_j}{x+z_j,\theta},
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+c^{(n)}_{r_0,s_0,\{r_{ik}\},\{s_i\}}={}&\frac{(\sum_ir_{in})!\,(n-1+\sum_is_i)!}{(n+1+\sum_ir_{in}+\sum_is_i)!}\prod_{j=1}^{n-1}\frac1{n-j+1+\sum_{k=j}^n\sum_{i=1}^kr_{ik}}\\
+&\times\prod_{j=1}^{n-1}\frac{(1+\sum_{i=1}^jr_{ij})!\,(j-1+\sum_{i=1}^j[s_i+\sum_{k=j+1}^nr_{ik}])!}{(j+1+\sum_{i=1}^j[s_i+\sum_{k=j}^nr_{ik}])!},
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\int d^4z_j\frac{(-\tfrac12z_j^{+\dot+})^{p_j}(-\tfrac12z_j^{+\dot-})^{q_j}}{p_j!\,q_j!}\dd{A_j}{x+z_j,\theta}=\frac{\delta}{\delta(\partial_{+\dot+}^{p_j}\partial_{+\dot-}^{q_j}C^{A_j})(x,\theta)},\qquad c^{(n)}_{0,0,\{0\},\{0\}}=\frac1{(n!)^3(n+1)},
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+Q_n\big|_{\text{no input derivatives}}={}&\frac{(-1)^ni^{n+1}}{2(32\pi^2)^n(n!)^3(n+1)}\int d^3\theta\;C_{A_1DR_1}\Big(\prod_{j=2}^nC_{A_jR_{j-1}R_j}\Big)C_{A_{n+1}R_nE}\\
+&\times(\partial_{+\dot a_1}\cdots\partial_{+\dot a_n}C^D)(\partial_+{}^{\dot a_1}\cdots\partial_+{}^{\dot a_n}C^E)\prod_{j=1}^{n+1}\dd{A_j}\theta .
+\end{aligned}
+\end{equation*}
+\ptr{\LL{2.11}{eq-sum-N4-taylor}, \LL{2.12}{eq-sum-N4-coeff}, \LL{2.13}{eq-sum-N4-letters}, \LL{2.14}{eq-sum-Qnzero}$=$\LL{8.4}{eq-Qnzero}; kernel form \LL{5.28}{eq-fan-full-taylor}}{\st{P}; $c^{(n)}_0$ \st{E} $n\le6$}
+
+\rid{L6} One and two loops:
+\begin{gather*}
+Q_1=-\frac1{64\pi^2}\int_0^1dr_2\int_0^{1-r_2}dr_1\int d^3\theta\int d^4z_1d^4z_2\;C_{ARD}C_{BRE}(\partial_{+\dot a}C^D)(x+(1-r_1)z_1+r_1z_2,\theta)\\
+\times(\partial_+{}^{\dot a}C^E)(x+r_2z_1+(1-r_2)z_2,\theta)\,\dd A{x+z_1,\theta}\dd B{x+z_2,\theta},\\
+Q_2=-\frac i{2(32\pi^2)^2}\int_0^1dr_1\int_0^1dr_2\int_0^1dr_4\int_0^{1-r_4}dr_3\;r_1r_2r_4\int d^3\theta\int\prod_{j=1}^3d^4z_j\;C_{A_1DR}C_{A_2RS}C_{A_3SE}\\
+\times(\partial_{+\dot a}\partial_{+\dot b}C^D)(x+x_1,\theta)(\partial_+{}^{\dot a}\partial_+{}^{\dot b}C^E)(x+x_3,\theta)\prod_{j=1}^3\dd{A_j}{x+z_j,\theta},\\
+x_1=(1-r_1)z_1+r_1(1-r_3)[(1-r_2)z_1+r_2z_2]+r_1r_3z_3,\qquad x_3=r_4[(1-r_2)z_1+r_2z_2]+(1-r_4)z_3,\\
+Q_1\big(\delta^{AA'}(\gamma^1)_{A'}(\beta_1)^B\big)=\frac{g^2}{64\pi^2}C_{ARD}C_{BRE}(\partial_{+\dot a}c^D)(\partial_+{}^{\dot a}c^E),\\
+Q_1\big((\beta_1)^A(\beta_2)^B\big)=\frac{ig}{64\pi^2}(C_{ARD}C_{BRE}+C_{BRD}C_{ARE})(\partial_{+\dot a}c^D)\,\delta^{EF}\partial_+{}^{\dot a}(\gamma^3)_F,\\
+Q_2\big((\beta_1)^{A_1}(\beta_2)^{A_2}(\beta_3)^{A_3}\big)=-\frac{ig^2}{48(32\pi^2)^2}\sum_{\sigma\in S_3}C_{A_{\sigma(1)}DR}C_{A_{\sigma(2)}RS}C_{A_{\sigma(3)}SE}(\partial_{+\dot a}\partial_{+\dot b}c^D)(\partial_+{}^{\dot a}\partial_+{}^{\dot b}c^E).
+\end{gather*}
+\ptr{\LL{6.1}{eq-2-16}; \LL{8.5}{eq-2-17}; \LL{8.6}{eq-2-26}; \LL{8.7}{eq-2-27}; \LL{8.8}{eq-2-28}}{\st{P}; (8.6), (8.7) agree with BK (3.66), (3.67) up to field normalization (stated in \textsf{L}~\S8.2)}
+
+\rid{L7} Finite loop order and antifield count ($\bar W$ of any degree):
+\begin{equation*}
+\#(b,\beta\ \text{in output})=\#(b,\beta\ \text{in }\cO)-n-\#(\bar W\ \text{vertices}),\qquad Q_n\cO=0\ \ \text{for }n>\#(b,\beta\ \text{in }\cO),
+\end{equation*}
+\begin{equation*}
+[\hbar^n](A\star B)=0\ \ \text{for }n>\#(b,\beta\ \text{in }A)+\#(b,\beta\ \text{in }B).
+\end{equation*}
+\ptr{\LL{4.6}{eq-antifield-loss}, \LT{Cor.}{4.12}{b-00235}, \LL{2.15}{eq-sum-finite}; \LL{7.16}{eq-product-antifield-loss}, \LL{6.30}{local-ch8-finite-product-bound}, \LL{9.43}{ch9-general-graph-bound}}{\st{P}}
+
+\rid{L8} Quantum master equation and anomaly:
+\begin{gather*}
+\sum_{k\ge2}\frac{\hbar^{k-2}}{k!}\{\underbrace{\cI,\dots,\cI}_k\}=\sum_{n\ge0}\frac{\hbar^n}{n+2}Q_n\cI=0\ \Longrightarrow\ \mathbf Q^2=0;\qquad
+Q_0\cI=0,\quad Q_{n\ge2}\cI=0,\\
+Q_1\cI=\frac{ig^3}{128\pi^2}\operatorname{Tr}_R\big(t_A\{t_B,t_C\}\big)c^A(\partial_{+\dot a}c^B)(\partial_+{}^{\dot a}c^C).
+\end{gather*}
+\ptr{\LT{Lemma}{6.1}{b-00452} \LL{6.4}{eq-2-40}, \LL{6.5}{eq-nilpotence}; \LT{Thm}{6.2}{b-00465} \LL{6.10}{b-00478}$=$\LL{2.16}{eq-sum-QI}}{\st{P}}
+
+\rid{L9} Quantum product, Leibniz rule, ring ($\mathcal I$ satisfying L8):
+\begin{gather*}
+A\star B=\sum_{n\ge0}\frac{\hbar^n}{n!}\{\underbrace{\cI,\dots,\cI}_n,A,B\}^{\gamma,0}=\Big.\sum_{n\ge0}\frac{\hbar^n}{n!}\{\underbrace{\cI,\dots,\cI}_n,Aa,b_{\rm aux}B\}\Big|_{a=b_{\rm aux}=0},\qquad\{A,B\}^{\gamma,0}=AB,\\
+\mathbf Q(A\star B)=(\mathbf QA)\star B+(-1)^{|A|}A\star(\mathbf QB),\qquad A\star1=1\star A=A,\\
+[(A\star B)\star D]_{\mathbf Q}=[A\star(B\star D)]_{\mathbf Q},\qquad[A\star B]_{\mathbf Q}=(-1)^{|A||B|}[B\star A]_{\mathbf Q},\\
+A\star(D\star B)-(-1)^{|A||D|}D\star(A\star B)=(-1)^{|D|}\mathbf Q\sum_{n\ge0}\frac{\hbar^{n+1}}{n!}\{\underbrace{\cI,\dots,\cI}_n,A,D,B\}^{\gamma,\gamma'},\\
+(A\star'B)[L]=\int_{S^3_R}\Omega\wedge[P_{0,\infty}(x)]_\Omega\,(A(x)B(0))[L]=(A\star B)[L]-\mathbf Q_L\int_{B_R}\Omega\wedge[P_{0,\infty}(x)]_\Omega\wedge(A(x)B(0))^{(1)}[L].
+\end{gather*}
+\ptr{\LL{6.11}{b-00504}$=$\LL{2.17}{eq-sum-star}; \LT{Thm}{6.3}{local-7173c1bc-\dots} \LL{6.13}{eq-chain}; \LT{Thm}{6.4}{b-00513} \LL{6.20}{eq-ring-associativity}--\LL{6.22}{eq-ring-unit}, \LL{6.26}{eq-ring-common-root-homotopy}; \LT{Thm}{6.6}{b-00598} \LL{6.34}{eq-contour-product-definition}, \LL{6.41}{eq-normal-ordering-theorem}; summary \LT{Thm}{2.4}{b-00106}}{\st{P}; Leibniz rule: verifications through four loops archived in the companion repository (\textsf{L}~\S7.4)}
+
+\rid{L10} Graph formula of the product ($T\ni(n+1,n+2)$):
+\begin{equation*}
+\begin{aligned}
+\frac1{n!}\{\cI^{\,n},A,B\}^{\gamma,0}={}&\frac{(-1)^n}{n!(8\pi^2)^n}\sum_{\substack{\Gamma\ \text{labelled, Laman}\\|V|=n+2,\ |I|=2n+1,\ (n+1,n+2)\in I}}\Big[\int e^{-\sum_ey_ez_e}\bigwedge_{e\in I\setminus T}(-d^2y_e)\\
+&\times\prod^{\rm edge\ order}_{(v,w)\in I\setminus\{(n+1,n+2)\}}\Delta_{vw}(\cI_1\cdots\cI_nA_{n+1}B_{n+2})\Big]_{\text{jets},\,x_v=x,\,z=0}.
+\end{aligned}
+\end{equation*}
+\ptr{\LL{6.28}{eq-2-31}; \LL{6.29}{eq-product-current-insertion}}{\st{P}}
+
+\rid{L11} One- and two-loop products in $\mathcal N=4$ Yang--Mills theory; contact defect; associator:
+\begin{gather*}
+\{\cI,A,B\}^{\{(2,3)\},0}(x)=\frac i{32\pi^2}\int_0^1dr_1\int_0^{1-r_1}dr_2\int d^3\theta\,C_X{}^{YZ}\int d^4z_1d^4z_2\\
+\times(\partial_{+\dot a}C^X)(x+r_1z_1+(1-r_1)z_2,\theta)\Big.\partial_{2,+}{}^{\dot a}\Big(\frac{\delta A(x_2)}{\delta C^Y(x_2+z_1,\theta)}\Big)\Big|_{x_2=x+r_2(z_2-z_1)}\frac{\delta B(x)}{\delta C^Z(x+z_2,\theta)},\\
+(A\star B)_{\text{1-loop}}\big|_{\text{no input derivatives}}=\frac{i\hbar}{64\pi^2}\int d^3\theta\,C_X{}^{YZ}(\partial_{+\dot a}C^X)\,\partial_+{}^{\dot a}\Big(\frac{\delta A}{\delta C^Y(\theta)}\Big)\frac{\delta B}{\delta C^Z(\theta)},\\
+Q_1(AB)-(Q_1A)B-(-1)^{|A|}A(Q_1B)=-\frac1{64\pi^2}\int d^3\theta\,C_{XRD}C_{YRE}(\partial_{+\dot a}C^D)(\partial_+{}^{\dot a}C^E)\frac{\delta A}{\delta C^X(\theta)}\frac{\delta B}{\delta C^Y(\theta)},\\
+(A\star B)\star D-A\star(B\star D)=\mathbf Q\Big\{\frac\hbar{64\pi^2}\Big[(\partial_{+\dot a}B)\partial_+{}^{\dot a}\frac{\partial A}{\partial(\gamma^2)_X}+(\partial_{+\dot a}A)\partial_+{}^{\dot a}\frac{\partial B}{\partial(\gamma^2)_X}\Big](\gamma^3)_X\Big\}\quad(D=(\gamma^3)_X(\beta_2)^X).
+\end{gather*}
+Two loops, $(A\star B)_{\text{2-loop}}=\frac{\hbar^2}2\{\cI,\cI,A,B\}^{\gamma,0}$, three graphs with edge lists $\Gamma_{\rm fan}:(13,14,23,24,34)$, $\Gamma_A:(12,13,23,24,34)$, $\Gamma_B:(12,14,23,24,34)$; prefactor, measure and domain of each term ($\Delta^2$: $r_a,r_b>0$, $r_a+r_b<1$):
+\begin{equation*}
+\begin{array}{llll}
+\Gamma_{\rm fan}:&\dfrac{\hbar^2}{2(32\pi^2)^2}C_X{}^{YZ}C_U{}^{VW},&(1-r_2-r_4),&r_1,r_3\in(0,1),\ (r_2,r_4)\in\Delta^2,\\[4pt]
+\Gamma_A:&\dfrac{\hbar^2}{(32\pi^2)^2}C_X{}^{YR}C_R{}^{ZW},&r_2(1-r_1)(1-r_3-r_4),&r_1,r_2\in(0,1),\ (r_3,r_4)\in\Delta^2,\\[4pt]
+\Gamma_B:&-\dfrac{\hbar^2}{(32\pi^2)^2}C_X{}^{ZR}C_R{}^{YW},&r_1r_2r_4,&r_1,r_2\in(0,1),\ (r_3,r_4)\in\Delta^2,
+\end{array}
+\end{equation*}
+with the translation exponents and derivative factors
+\begin{align*}
+\Gamma_{\rm fan}:\ &\exp\{-\tfrac12[r_1z_{13}+(1-r_1)z_{14}]\partial_1-\tfrac12[r_3z_{23}+(1-r_3)z_{24}]\partial_2\\
+&\qquad-\tfrac12[r_2(z_{14}-z_{13})+r_4(z_{24}-z_{23})](r_1\partial_1+r_3\partial_2+\partial_3)\},\qquad
+\partial_{1,+\dot a}(\partial_3+r_3\partial_2)_+{}^{\dot a}\,\partial_{2,+\dot b}(\partial_3+r_1\partial_1)_+{}^{\dot b};\\
+\Gamma_A:\ &\exp\{-\tfrac12[(r_1r_2+(1-r_2)(r_1r_3+r_4))z_{13}-r_2(r_1(1-r_3)-r_4)z_{23}+(1-r_1r_3-r_4)z_{24}]\partial_1\\
+&\qquad-\tfrac12(1-r_3-r_4)[z_{24}-(1-r_2)z_{13}-r_2z_{23}]\partial_3\},\qquad\partial_{1,+\dot a}\partial_{1,+\dot b}\partial_{3,+}{}^{\dot a}\partial_{3,+}{}^{\dot b};\\
+\Gamma_B:\ &\exp\{-\tfrac12[(1-r_1r_2-r_1(1-r_2)r_3)z_{14}+r_1r_3z_{23}+r_1r_2(1-r_3)z_{24}]\partial_1\\
+&\qquad-\tfrac12r_4[(1-r_2)z_{14}-z_{23}+r_2z_{24}]\partial_3\},\qquad\partial_{1,+\dot a}\partial_{1,+\dot b}\partial_{3,+}{}^{\dot a}\partial_{3,+}{}^{\dot b},
+\end{align*}
+acting on $C^X(x_1,\theta^{(1)})C^U(x_2,\theta^{(2)})\,\delta^2A/\delta C^Y\delta C^V\,\delta^2B/\delta C^Z\delta C^W$ (fan), $C^X(x_1,\theta)\,\delta^2A/\delta C^Y\delta C^Z\,\delta B/\delta C^W$ ($\Gamma_A$), $C^X(x_1,\theta)\,\delta A/\delta C^Y\,\delta^2B/\delta C^Z\delta C^W$ ($\Gamma_B$), contracted spinor indices as in the source.
+\ptr{\LL{6.31}{eq-2-34}$=$\LL{2.19}{eq-sum-product1}; \LL{6.2}{eq-2-29}; \LL{6.46}{eq-ring-scalar-associator}; \LL{6.32}{eq-productedges}, \LL{6.33}{eq-product2A}}{\st{P}}
+
+\rid{L12} Kernel (operatope, independent currents), homogeneity:
+\begin{gather*}
+\cI_\Gamma(\lambda;z)=\int_{\substack{y\in\Delta_\Gamma\\\sum_{e(0)=v}y_e-\sum_{e(1)=v}y_e=\lambda_v}}e^{-\sum_ey_{e,+\dot a}z_e^{+\dot a}}\bigwedge_{e\notin T}(-dy_{e,+\dot+}\wedge dy_{e,+\dot-}),\qquad\sum_{e\in C}\pm t_ey_e=0,\\
+\cI_\Gamma(\lambda\mapsto c\lambda;z\mapsto c^{-1}z)\big|_{\text{fixed }\dot a}=c^n\,\cI_\Gamma(\lambda;z),\qquad
+-\frac{\partial}{\partial z_e^{+\dot a}}\ \text{inserts}\ y_{e,+\dot a}.
+\end{gather*}
+\ptr{\LT{Prop.}{3.5}{b-00169} \LL{3.66}{eq-C-current-delta-integral}, \LL{3.77}{eq-operatope}$=$\LL{2.38}{eq-sum-operatope-def}, \LL{2.39}{eq-sum-kirchhoff-laws}; \LL{A.11}{eq-derivative-homogeneity}; Table 2.16 \texttt{tab-sum-dictionary}}{\st{P} (from \textsf{Op}, Wang)}
+
+\rid{L13} Counting and classification on $\mathbb C^2$:
+\begin{gather*}
+|I|=2|V|-3,\qquad|V|=n+2,\quad|I|=2n+1,\qquad|I_S|\le2|V_S|-3\ (S\subseteq\Gamma,\ |V_S|\ge2),\\
+\text{no self-loops, no parallel edges};\qquad\#(\text{sources})\le\deg_\Gamma\cO-n+1\le2\ \ (\text{vertices of degree}\le3).
+\end{gather*}
+$\deg\cI\le3$: every nonzero connected graph of $Q_n$, $n\ge1$, is a fan (path $1\to\cdots\to n+1$, spokes to $n+2$, outputs at $1$ and $n+1$). $\bar W$ of any degree: at most one $\bar W$ vertex; fan or spider with arms $\ell_1+\cdots+\ell_a=n$, $\deg\bar W\ge a+1$. Product $A\star B$ at order $\hbar^n$: $\Gamma\setminus\{A,B\}=\coprod_jT_j$, trees, $|I_j|=|T_j|-1$, $|E_j|=|T_j|+1$, at most one $\bar W$ vertex per tree; a cubic tree has one uncontracted field, at its unique vertex of degree two.
+\ptr{\LT{Lemma}{4.1}{b-00180} \LL{4.1}{eq-1-12}; \LT{Lemma}{4.2}{b-00194}; \LT{Cor.}{4.3}{b-00188}; \LT{Lemma}{4.4}{b-00207} \LL{4.3}{eq-1-11}; \LL{4.4}{eq-cubiccount}; \LT{Prop.}{4.5}{b-00210}, \LT{Cor.}{4.8}{b-00222}, \LT{Prop.}{4.9}{b-00225}, \LT{Prop.}{4.13}{b-00240} \LL{4.8}{eq-1-16}, \LT{Cor.}{4.15}{b-00247}; \LT{Thm}{7.3}{b-00249} \LL{7.15}{eq-1-19}, \LL{7.17}{eq-1-23}}{\st{P}}
+
+\rid{L14} Triangle ($(t_{12},t_{13},t_{23})=(1-r_1-r_2,r_1,r_2)$, tree $\{13,23\}$):
+\begin{gather*}
+y_{12}=t_{13}\lambda_1-t_{23}\lambda_2,\quad y_{13}=\lambda_1-y_{12},\quad y_{23}=\lambda_2+y_{12},\quad-dy_{12,+\dot+}\wedge dy_{12,+\dot-}=\br{\lambda_1,\lambda_2}\,dr_1\wedge dr_2,\\
+\cI_\triangle(\lambda;z)=\br{\lambda_1,\lambda_2}\int_0^1dr_1\int_0^{1-r_1}dr_2\,e^{-\sum_ey_ez_e}
+=\br{\lambda_1,\lambda_2}\,e^{-\lambda_1z_{13}-\lambda_2z_{23}}\sum_{i,j\ge0}\frac{[-\lambda_1\zeta]^i[\lambda_2\zeta]^j}{(i+j+2)!},\\
+\zeta=z_{12}+z_{23}-z_{13}.
+\end{gather*}
+\ptr{\LL{5.7}{eq-triangle-current}, \LL{5.8}{b-00267}, \LL{5.9}{eq-1-25}, \LL{5.10}{eq-1-46}}{\st{P}; equals BK (2.47), (2.48) (stated in \textsf{L})}
+
+\rid{L15} Fan kernel, $n\ge1$, edge order $(12,1\,n{+}2,23,2\,n{+}2,\dots,n{+}1\,n{+}2)$, arbitrary sources and displacements, domain of L4:
+\begin{gather*}
+\cI_\Gamma(\lambda;z)=\int d^{2n}r\prod_{i=1}^{n-1}r_{2i}\,\br{\lambda_i^{\rm red},\,\lambda_{i+1}-y_{i+1,i+2}(r)}\;\br{\lambda_n^{\rm red},\lambda_{n+1}}\;e^{-\sum_ey_e(r)z_e},\qquad
+\lambda_i^{\rm red}=\sum_{j=1}^i\Big(\prod_{k=j}^{i-1}r_{2k-1}\Big)\lambda_j,\\
+y_{n,n+1}=r_{2n-1}\lambda_n^{\rm red}-r_{2n}\lambda_{n+1},\qquad
+y_{i,i+1}=r_{2i-1}r_{2i}\lambda_i^{\rm red}-(1-r_{2i})\lambda_{i+1}+(1-r_{2i})y_{i+1,i+2}\quad(1\le i<n),\\
+y_{1,n+2}=\lambda_1-y_{12},\qquad y_{i,n+2}=\lambda_i+y_{i-1,i}-y_{i,i+1}\ (2\le i\le n),\qquad y_{n+1,n+2}=\lambda_{n+1}+y_{n,n+1},\\
+\cI_\Gamma\big|_{\lambda_2=\dots=\lambda_n=0,\ z_{i,i+1}=0,\ z_{i,n+2}=-z_i}=\br{\lambda_1,\lambda_{n+1}}^n\int d^{2n}r\Big[\prod_{j=1}^{n-1}r_{2j-1}^{n-j}r_{2j}(1-r_{2j})^{j-1}\Big]r_{2n}^{n-1}\,e^{\lambda_1x_1(r,z)+\lambda_{n+1}x_{n+1}(r,z)},\\
+\cI_\Gamma(\lambda;0)\big|_{\lambda_2=\dots=\lambda_n=0}=\frac{\br{\lambda_1,\lambda_{n+1}}^n}{(n!)^3(n+1)},\qquad
+\int\prod_{j=1}^{2n}r_j^{m_j}d^{2n}r=\frac{m_{2n-1}!\,m_{2n}!}{(m_{2n-1}+m_{2n}+2)!}\prod_{j=1}^{2n-2}\frac1{m_j+1}.
+\end{gather*}
+\ptr{\LT{Thm}{5.1}{thm-fan-kernel} \LL{5.2}{eq-1-40}, \LL{5.3}{eq-1-38}, \LL{5.4}{eq-1-39}, \LL{5.5}{eq-1-41}, \LL{5.6}{eq-1-42}; \LL{5.21}{eq-B-fan-first-cycle}, \LL{5.22}{eq-B-fan-general-fractions}, \LL{5.27}{eq-1-44}; summary \LT{Thm}{2.5}{thm-sum-all-kernels} \LL{2.42}{eq-sum-fan-kernel-explicit}}{\st{P}; \st{C}: $n=1,2,3$ agree with \textsf{Op} (4.20), (4.44), (4.67) and GWW \S\S4.4--4.6 (footnote to (5.6)); value \st{E} $n\le6$: $\tfrac12,\tfrac1{24},\tfrac1{864},\tfrac1{69120},\dots$; \st{X}: density (5.2) and currents (5.3), general sources, $n\le4$}
+
+\rid{L16} Spider with arms $\ell_1,\dots,\ell_a$ at $A$, spokes to $B$; domain $0<r_{i,j}<1$ ($j<2\ell_i$), $r_{i,2\ell_i}>0$, $\sum_ir_{i,2\ell_i}<1$:
+\begin{gather*}
+\lambda^{\rm red}_{v_{i,j}}=\sum_{h=1}^j\Big(\prod_{k=h}^{j-1}r_{i,2k-1}\Big)\lambda_{v_{i,h}},\qquad y^{\rm red}_{AB}=\lambda_A+\sum_{i=1}^ar_{i,2\ell_i-1}\lambda^{\rm red}_{v_{i,\ell_i}},\\
+y^{\rm red}_{v_{i,j}B}=(1-r_{i,2j-1})\lambda^{\rm red}_{v_{i,j}}+r_{i,2j}\,y^{\rm red}_{v_{i,j+1}B},\qquad y_{v_{i,j}v_{i,j+1}}=\lambda^{\rm red}_{v_{i,j}}-y^{\rm red}_{v_{i,j}B},\\
+y_{v_{i,1}B}=y^{\rm red}_{v_{i,1}B},\qquad y_{v_{i,j}B}=(1-r_{i,2j-2})\,y^{\rm red}_{v_{i,j}B}\ (j\ge2),\qquad y_{AB}=\Big(1-\sum_ir_{i,2\ell_i}\Big)y^{\rm red}_{AB},\\
+\cI_\Gamma(\lambda;z)=\int\prod_{i,j}dr_{i,j}\Big(1-\sum_ir_{i,2\ell_i}\Big)\prod_{i=1}^a\Big[\br{\lambda^{\rm red}_{v_{i,\ell_i}},y^{\rm red}_{AB}}\prod_{j=1}^{\ell_i-1}(1-r_{i,2j})\br{\lambda^{\rm red}_{v_{i,j}},y^{\rm red}_{v_{i,j+1}B}}\Big]e^{-\sum_ey_e(r)z_e},\\
+\cI_\Gamma\big|_{\lambda_{v_{i,j}}=0\,(j>1)}=\int\prod_{i,j}dr_{i,j}\Big(1-\sum_ir_{i,2\ell_i}\Big)\prod_{i=1}^a\Big[r_{i,2\ell_i}^{\ell_i-1}\prod_{j=1}^{\ell_i-1}r_{i,2j-1}^{\ell_i-j}r_{i,2j}^{j-1}(1-r_{i,2j})\,\br{\lambda_{v_{i,1}},y^{\rm red}_{AB}}^{\ell_i}\Big]e^{-\sum_ey_e(r)z_e},\\
+\cI_\Gamma(\lambda;0)\big|_{\lambda_{v_{i,j}}=0\,(j>1)}=\frac1{(n+1)!\prod_i\ell_i!}\int_{(0,1)^n}\prod_{i=1}^a\Big[\Big(\prod_{j=1}^{\ell_i}dr_{i,2j-1}\,r_{i,2j-1}^{\ell_i-j}\Big)\br{\lambda_{v_{i,1}},y^{\rm red}_{AB}}^{\ell_i}\Big],\\
+\cI_\Gamma(\lambda;0)\big|_{a=2,\ \ell_1=\ell_2=1}=\tfrac1{24}\br{\lambda_{v_{1,1}},\lambda_{v_{2,1}}+2\lambda_A}\br{\lambda_{v_{2,1}},\lambda_{v_{1,1}}+2\lambda_A}\ \xrightarrow{\lambda_A=0}\ -\tfrac1{24}\br{\lambda_{v_{1,1}},\lambda_{v_{2,1}}}^2 .
+\end{gather*}
+\ptr{\LT{Def.}{7.1}{b-00380} \LL{7.1}{eq-1-47}; \LT{Thm}{7.2}{thm-spider-kernel} \LL{7.2}{eq-spiderdomain}, \LL{7.3}{eq-spider-reduced}, \LL{7.4}{eq-1-51}, \LL{7.5}{eq-1-54-general}; \LL{7.10}{eq-spider-qn-sources}, \LL{7.11}{eq-1-54}$=$\LL{2.43}{eq-sum-spider-kernel-explicit}, \LL{7.12}{eq-spider-zero-displacement}, \LL{7.13}{eq-spider-two-arm-value}}{\st{P}; (7.13) from (7.12) \st{E}; (7.13) equals $f_{\text{bitriangle}}[\lambda_1,\lambda_2,\lambda_3;0,0]$ of \textsf{Op} (\path{4dDiffPaper.tex} l.~2337)}
+
+\rid{L17} Cubic product forests: every cubic product forest reduces to the marked edge by the moves M3, M4, M5 of Section~\ref{sec-moves}; currents and density polynomial in $2n$ interval and simplex coordinates;
+\begin{equation*}
+\int_{r_j>0,\ \sum_jr_j<1}\prod_{j=1}^{\dim\Delta}r_j^{k_j}dr_j=\frac{\prod_jk_j!}{(\dim\Delta+\sum_jk_j)!}.
+\end{equation*}
+Number of product forests at $n=1,\dots,7$: $1,3,8,23,65,194,576$. Three loops, eight topologies ($F$, trees, $|{\rm Aut}\,F|$, $\cI_\Gamma(\lambda;0)$):
+\begin{equation*}
+\begin{array}{llcl}
+3.1&(A,B),(A,B),(A,B)&6&\text{three-root polynomial in }\lambda_1,\lambda_2,\lambda_3,\lambda_A\\
+3.2&(A,B),(A,(A,B))&1&\text{two-root polynomial in }\lambda_1,\lambda_2,\lambda_A\\
+3.3&(A,B),(B,(A,B))&1&\text{two-root polynomial in }\lambda_1,\lambda_2,\lambda_A\\
+3.4&(A,(A,(A,B)))&1&+\tfrac1{864}\br{\lambda_1,\lambda_A}^3\\
+3.5&(A,(B,(A,B)))&1&-\tfrac1{576}\br{\lambda_1,\lambda_A}^3\\
+3.6&(B,(A,(A,B)))&1&-\tfrac1{576}\br{\lambda_1,\lambda_A}^3\\
+3.7&(B,(B,(A,B)))&1&+\tfrac1{864}\br{\lambda_1,\lambda_A}^3\\
+3.8&((A,B),(A,B))&2&0
+\end{array}
+\end{equation*}
+\begin{gather*}
+\cI_{(A,(B,(A,B)))}(\lambda;z)=-\br{\lambda_1,\lambda_A}^3\int_{(0,1)^4}d^4r\int_{\Delta^2}dr_5dr_6\;r_1r_2r_3r_4^2\,r_5(1-r_5-r_6)\,e^{-\sum_ey_e(r)z_e},\\
+\cI_{((A,B),(A,B))}(\lambda;z)=\br{\lambda_1,\lambda_A}^3\int_{(0,1)^2}dr_1dr_2\int_{\Delta^2}dr_3dr_4\int_{\Delta^2}dr_5dr_6\\
+\times(r_1-r_2)(1-r_3-r_4)\,r_5(1-r_5-r_6)\,e^{-\sum_ey_e(r)z_e},\\
+-\frac{\partial}{\partial z_{2A}^{+\dot c}}\cI_{((A,B),(A,B))}\Big|_{z=0}=\tfrac1{8640}\br{\lambda_1,\lambda_A}^3\,(2\lambda_{1,+\dot c}-\lambda_{A,+\dot c}).
+\end{gather*}
+\ptr{\LT{Thm}{7.6}{b-00405} \LL{7.32}{eq-Dirichlet}; Table 7.1 \texttt{tab-ch7-three-loop-forests}; \LL{7.33}{eq-ch7-alt-chain-kernel}, \LL{7.34}{eq-product-four-loop-evaluated}, \LL{7.35}{eq-ch7-fork-kernel}, \LL{7.36}{eq-ch7-fork-first-jet}; summary \LT{Thm}{2.5}{thm-sum-all-kernels}(iii)}{\st{P}; $\tfrac1{576}$, $0$ and (7.36) \st{E}; tables through seven loops in the repository cited by \textsf{L}, not read here}
+
+\rid{L18} Multi-gravitons, homotopy transfer, obstruction differentials:
+\begin{gather*}
+Q_nG=0\ (n\ge0)\ \text{for }G\subset\operatorname{Tr}(dC)^p;\qquad\cO=G_1\star\cdots\star G_m,\quad\mathbf Q\cO=0,\quad\cO|_{\hbar=0}=G_1\cdots G_m;\\
+\deg_\theta(Q_nX)=\deg_\theta X-3n,\qquad\deg_\theta\cO_n=\deg_\theta\cO_0-3n,\\
+\sum_{r=1}^R\operatorname{rank}d_r^k\le\dim\mathrm{BPS}^k_{\hbar^0}-\dim M^k=\dim F^k,\\
+d_1=\pi_0Q_1i_0,\qquad d_2=\pi_1\pi_0(Q_2-Q_1h_0Q_1)i_0i_1,\\
+d_3=\pi_2\pi_1\pi_0\big[Q_3-Q_2h_0Q_1-Q_1h_0Q_2+Q_1h_0Q_1h_0Q_1-(Q_2-Q_1h_0Q_1)i_0h_1\pi_0(Q_2-Q_1h_0Q_1)\big]i_0i_1i_2,\\
+\hbar\mathbf Q^{(r+1)}=\pi_r(\mathbf Q^{(r)}-d_r)\,[1+h_r(\mathbf Q^{(r)}-d_r)]^{-1}i_r,\qquad d_{r+1}=\pi_r([\hbar]\mathbf Q^{(r)})i_r,\\
+Q_n:C^Y(\lambda)\to C^{Y+1-n}(\lambda-n\mathbf d),\qquad\mathbf d=(1,1,1;-1,-1);\\
+d_r\ne0\Rightarrow r\le\min_I\theta_I;\qquad d_r\text{-exact}\Rightarrow r\le\min(n_+,n_-).
+\end{gather*}
+Example: $A=\delta^{XY}(\gamma^1)_X(\gamma^1)_Y$, $B=(\gamma^2)_X(\beta_1)^X$:
+\begin{gather*}
+Q_1(AB)=\frac{g^2}{32\pi^2}C^X{}_{RD}C^{YR}{}_E(\gamma^1)_X(\gamma^2)_Y(\partial_{+\dot a}c^D)(\partial_+{}^{\dot a}c^E),\\
+A\star B=AB+\hbar\,\frac g{32\pi^2}C_D{}^{XY}(\partial_{+\dot a}c^D)(\partial_+{}^{\dot a}(\gamma^1)_X)(\gamma^2)_Y .
+\end{gather*}
+\ptr{\LT{Thm}{9.1}{b-00630} \LL{9.2}{eq-multigraviton-closure}, \LL{9.5}{eq-2-60}; \LL{A.8}{eq-2-63}, \LL{A.9}{eq-graviton-differential-degree}; \LT{Cor.}{9.4}{cor-ch9-fortuitous-bound} \LL{9.42}{eq-ch9-fortuitous-rank-bound}$=$\LL{2.21}{eq-sum-rank}; \LL{9.33}{b-00699}; \LT{Prop.}{9.2}{prop-ch8-transfer-validity} \LL{9.22}{eq-page-transfer}; \LL{A.12}{eq-E-grading}, \LT{Cor.}{A.2}{b-00758}; \LL{9.10}{eq-scalarfermionQ1}, \LL{9.11}{eq-2-65}, \LL{9.15}{eq-finiteexample}}{\st{P}}
+
+\rid{L19} Twist data used by the other notes:
+\begin{gather*}
+\Omega\wedge dx^{-\dot+}\wedge dx^{-\dot-}=-8\,d^4x_E,\qquad\beta^{(0)i}=\bar{\mathcal F}^{\ddagger i}_{\rm old}-\tfrac i{\sqrt2}\psi_+^i,\qquad b_A^{(0)}=-\tfrac i2\lambda^{\ddagger-}_{A,{\rm old}}+\tfrac14\delta_{AB}f^B_{++},\\
+w^A_{\dot a}=\tfrac12\partial_{+\dot a}c^A=-\frac{\partial c^A}{\partial x^{+\dot a}},\qquad-\tfrac14\delta_{AB}w^A_{\dot a}w^{B\dot a}=-\tfrac1{16}\delta_{AB}\partial_{+\dot a}(c^A\partial_+{}^{\dot a}c^B),\\
+H((S_{\rm tw},\cdot))\cong H((S_{\rm BV},\cdot))\cong H\big(Q_-;\ \text{gauge-invariant local operators}/\text{equations of motion}\big).
+\end{gather*}
+\ptr{\LL{3.12}{b-00919}; \LL{3.18}{eq-B-13}; \LL{3.20}{footnote-16--eq3.4}, \LL{3.21}{b-00931}; \LL{3.10}{eq-twist-cohomology}, \LT{Prop.}{B.1}{prop-twist-cohomology}; component dictionary \LL{3.19}{eq-field-form-dictionary}, letters \LL{3.26}{eq-B-14}; Table 3.1 \texttt{b-00904}}{\st{P}}
+
+\rid{L20} Spanning-tree solution of the circuit:
+\begin{equation*}
+y_e(t)=\frac{\sum_T\big(\prod_{h\in I\setminus T}t_h\big)y^T_e}{\sum_T\prod_{h\in I\setminus T}t_h},\qquad y^T_e=\sum_{v\ \text{connected to }e(0)\text{ in }T\setminus\{e\}}\lambda_v\ \ (e\in T),\quad y^T_e=0\ \ (e\notin T).
+\end{equation*}
+\ptr{\LL{C.1}{eq-1-24} (from Wang, Thm 4 and Cor.\ 2)}{quoted}
+
+\rid{L21} Census of lifts (statements; data in the repository cited by \textsf{L}):
+(I) in all scanned sectors of $\mathcal N=4$ Yang--Mills theory and of the $\mathcal N=2$ superconformal theories tested, every computed $d_r$, $r\ge2$, vanishes; $d_2\ne0$ in $12$ sector pairs of the $SU(3)$ Leigh--Strassler theory through level $22$ and in one sector pair of the $SU(3)$ $\beta$-deformation through level $21$, with $Q_2\cO_0=0$ and $d_2[\cO_0]_\hbar=[Q_1\cO_1]_\hbar\ne0$ on the lowest lifted classes.
+(II) $d_1\ne0$ in $16$ sectors of $SO(7)$ and one of $SO(9)$ through $2(E+J_L)=22$, $d_1=0$ in $Sp(3)$, $Sp(4)$; after these lifts $\mathrm{BPS}_\hbar(SO(2N+1))$ and $\mathrm{BPS}_\hbar(Sp(N))$ agree charge by charge through level $22$, $N=3,4$.
+(III) fortuitous thresholds: $SU(3)$ at level $24$ ($X_7$, $(2,2,2;2,2)_7$), $SU(4)$ at level $28$ ($(4,2,2;2,2)_9$); none for $SU(5)$--$SU(15)$ in the scan ranges.
+(IV) fortuitous classes with nonzero Cartan restriction ($\mathrm{X40}$ of $SU(2)$, $X_7$ of $SU(3)$); the $G_2$ Gram determinant $[\det_{I,J}\operatorname{tr}_7(\gamma^I\gamma^J)]\ne0$ is monotone with zero Cartan restriction.
+Massive SQED, $\cO_0=ig[\beta^+\beta^-b^2+\tfrac ym(\gamma_-\beta^--\gamma_+\beta^+)\beta^0b^2+\tfrac{y^2}{3m\,ig}\gamma_+\gamma_-b^3]\partial_{+\dot a}c$:
+\begin{equation*}
+d_2[\cO_0]_\hbar=-\frac{2(ig)^2y^4}{m^2(64\pi^2)^2}\Big[\partial_{+\dot a}(\gamma_+\gamma_-)\,\partial_{+\dot b}\partial_{+\dot c}(\gamma_+\gamma_-)\,\partial_+{}^{\dot b}\partial_+{}^{\dot c}(\gamma_+\gamma_-)\Big]_\hbar\ne0 .
+\end{equation*}
+Lifts at $r=2,3,4$ in abelian and nonconformal $\mathcal N=2$ theories: Table 2.15.
+\ptr{\textsf{L}~\S2.3: Tables 2.1--2.15; \LL{2.24}{local-ch9-g2-gram-class}, \LL{2.26}{local-ch9-ls-first-pages}, \LL{2.28}{local-ch9-beta-first-lift}, \LL{2.35}{local-ch9-sqed-source}, \LL{2.37}{local-ch9-sqed-lift}}{\st{C} in \textsf{L}: ranks over $\mathbb Q$, modulo $p=2^{31}-1$, or two primes, as tagged in the tables of \textsf{L}; not re-run here}
+
+\rid{L22} Gradings, low-order relations, order-by-order completions:
+\begin{gather*}
+E=\tfrac12(\Theta+Y)+n_++n_-,\qquad R_I=\theta_I-\tfrac12(\Theta-Y),\qquad J_L=\tfrac12(\Theta-Y+n_++n_-),\\
+J_R=\tfrac12(n_+-n_-),\qquad2(E+J_L)=2\Theta+3(n_++n_-),\\
+\theta(\gamma^I)=e_I,\quad\theta(\beta_I)=(1,1,1)-e_I,\quad\theta(b)=(1,1,1),\quad\theta(c)=0;\qquad\deg_\theta(c,\gamma,\beta,b)=(0,1,2,3),\\
+Q_0^2=0,\quad Q_0Q_1+Q_1Q_0=0,\quad Q_0Q_2+Q_1^2+Q_2Q_0=0,\quad Q_0Q_3+Q_1Q_2+Q_2Q_1+Q_3Q_0=0,\\
+\cO_1=A_1B_0+A_0B_1+\{\cI,A_0,B_0\}^{\gamma,0},\\
+\cO_2=A_2B_0+A_1B_1+A_0B_2+\{\cI,A_1,B_0\}^{\gamma,0}+\{\cI,A_0,B_1\}^{\gamma,0}+\tfrac12\{\cI,\cI,A_0,B_0\}^{\gamma,0},\\
+\cO_0=i_0i_1i_2a,\qquad\cO_1=-h_0Q_1\cO_0-i_0h_1\pi_0(Q_2-Q_1h_0Q_1)\cO_0,\qquad\cO_2=-h_0(Q_2\cO_0+Q_1\cO_1).
+\end{gather*}
+\ptr{\LL{A.6}{eq-E-sector}, \LL{A.7}{eq-2-62}, \LL{A.10}{eq-E-charges}; \LL{6.5}{eq-nilpotence}; \LL{6.19}{eq-2-33}; \LL{9.35}{eq-two-loop-representative-transfer}}{\st{P}}
+
+\subsection{Six dimensions: $\mathbb C^{3|2}$, $(H,T)=(3,0)$ \textsf{[6d]}}
+
+Here $\br{ijk}=\det(\lambda_i,\lambda_j,\lambda_k)$, as an operator $\varepsilon^{abc}\partial_a^{(i)}\partial_b^{(j)}\partial_c^{(k)}$.
+
+\rid{S1} Twisted action, letters, $\hbar$:
+\begin{gather*}
+S_{\rm tw}=\int_{\mathbb C^3}\Omega\wedge\Big[\int d^2\theta\Big(\tfrac12\delta_{AB}C^A\dbar C^B+\tfrac i{3!}C_{ABC}C^AC^BC^C\Big)\Big]_{(0,3)},\qquad\hbar=\frac{g^2}4,\qquad\text{weight }e^{S_{\rm tw}/\hbar},\\
+C^A\big|_{d\bar x=0}=i\,\mathsf c^A+\theta_i\gamma^{iA}+\theta_1\theta_2\mathsf b^A,\qquad\mathsf c^A=c^A,\quad\gamma^{iA}=-i\phi_i^A,\quad\mathsf b^A=-\tfrac i4\chi^A_{45},\quad\partial_a\mathsf c^A\leftrightarrow\xi^{aA},\\
+C^A=i\,c^A-i\,d\bar x^aA^A_{\bar a}-i\,\theta_i\phi_i^A-\tfrac i8d\bar x^a\wedge d\bar x^b\chi^A_{ab}-\tfrac i4d\bar x^a\theta_i\chi^A_{a,3+i}-\tfrac i4\theta_1\theta_2\chi^A_{45}+\cdots,\qquad\theta_i=d\bar x^{3+i}.
+\end{gather*}
+\ptr{\Sd{1.1}, \Sd{1.2}, \Sd{3.18}, \Sd{3.22}}{\st{P}; \st{C}, \st{R}: \path{twist10d.py}, \path{twist10d_check.py}}
+
+\rid{S2} Twist: $\varepsilon=|0\rangle$, $b_i|0\rangle=0$, $b_i=\tfrac12(\Gamma^{2i-1}+i\Gamma^{2i})$:
+\begin{gather*}
+QA_{\bar i}=0,\quad QA_i=-\xi^i,\quad Q\xi^i=0,\quad Q\chi_{ij}=4f_{\bar i\bar j},\quad Q\eta=D,\quad QD=0;\qquad V=\chi_{ij}f_{ij}+\eta\big(\tfrac12D-2\Phi\big),\\
+\tfrac14f_{MN}f_{MN}+\tfrac12\Psi^T\mathcal C\Gamma^MD_M\Psi=QV+\mathcal L_{\rm hol}+2\mathcal T,\qquad\mathcal L_{\rm hol}=-\tfrac14\varepsilon^{ijklm}\chi^A_{jk}D_{\bar i}\chi^A_{lm},\\
+(S^{\rm phys}_{\rm tw},C^A)=\dbar C^A+\tfrac i2C^A{}_{BC}C^BC^C,\qquad S^{\rm phys}_{\rm tw}=\tfrac1\hbar S_{\rm tw},\qquad\xi^a\mapsto\partial_ac,\quad D_a\mapsto\partial_a .
+\end{gather*}
+\ptr{\Sd{3.6}, \Sd{3.7}, \Sd{3.8}, \Sd{3.10}, \Sd{3.17}, \Sd{3.19}, \Sd{3.22}}{\st{P}; \st{C}, \st{R}}
+
+\rid{S3} Tree level and functional derivative:
+\begin{gather*}
+Q_0C^A=\tfrac i2C^A{}_{BC}C^BC^C,\qquad[Q_0,\partial_a]=0,\qquad Q_0\theta_i=-\theta_iQ_0,\\
+Q_0\mathsf c^A=-\tfrac12C^A{}_{BC}\mathsf c^B\mathsf c^C,\quad Q_0\gamma^{iA}=-C^A{}_{BC}\mathsf c^B\gamma^{iC},\quad Q_0\mathsf b^A=-C^A{}_{BC}\mathsf c^B\mathsf b^C+i\,C^A{}_{BC}\gamma^{1B}\gamma^{2C},\\
+Q_0=\tfrac i2\int d^2\theta\int d^6z\;C_{ABD}C^B(x+z,\theta)C^D(x+z,\theta)\dd A{x+z,\theta},\\
+\frac{\delta C^B(y',\theta')}{\delta C^A(y,\theta)}=\delta_A{}^B\delta^{(6)}(y-y')(\theta_1-\theta_1')(\theta_2-\theta_2'),\qquad
+\dd A\theta=\frac{\theta_1\theta_2}i\frac{\partial_L}{\partial\mathsf c^A}+\theta_2\frac{\partial}{\partial\gamma^{1A}}-\theta_1\frac{\partial}{\partial\gamma^{2A}}+\frac{\partial_L}{\partial\mathsf b^A}.
+\end{gather*}
+\ptr{\Sd{1.3}$=$\Sd{4.1}, \Sd{4.2}, \Sd{4.3}, \Sd{4.4}}{\st{P}; $Q_0^2=0$ \st{C}, \st{R}}
+
+\rid{S4} Counting, selection rule, graphs of $Q_n$, assembly:
+\begin{gather*}
+|I|=3n+1,\quad|V|=2n+2,\qquad2|I_S|\le3|V_S|-4\ (I_S\ne\emptyset),\qquad\text{cycle length}\ge4,\qquad\sum_v(\deg v-2)=2n-2,\\
+\deg_\Gamma\cO=n+p,\quad\Gamma\setminus\cO\ \text{a forest of }p\text{ trees};\qquad\#(\text{uncontracted fields})=\deg_\Gamma\cO+1,\\
+Q_n=i^{2n+1}\Big(\frac{-1}{8\pi^3}\Big)^n\sum_\Gamma\frac{\cI_\Gamma(\partial;z)W_\Gamma}{|{\rm Aut}\,\Gamma|}=\frac i{(8\pi^3)^n}\sum_\Gamma\frac{\cI_\Gamma(\partial;z)W_\Gamma}{|{\rm Aut}\,\Gamma|},\\
+\deg_\Gamma\cO=n+1,\qquad\Gamma\setminus\cO\ \text{a tree of }2n+1\text{ cubic vertices}.
+\end{gather*}
+$n=1$: box. $n=2$: $(A)$ double box, path $1$--$2$--$3$--$4$--$5$, spokes at $1,3,5$ $[\theta(1,3,3)]$; $(B)$ spider, centre $q$, arms $u$, $w$, $a$--$b$, spokes at $u,w,b$ $[\theta(2,2,3)]$; both $|{\rm Aut}|=2$, four outputs.
+\ptr{\Sd{5.11}, \Sd{5.12}, \Sd{5.13}, \Sd{5.14}, \Sd{5.15}$=$\Sd{1.10}}{\st{P}; graph lists \st{R} (\textsf{gc})}
+
+\rid{S5} Box, edges $(\cO\to1),(1\to2),(2\to3),(3\to\cO)$, $r_j=\frac1T\sum_{k>j}t_k$:
+\begin{gather*}
+y_k=y_1+\sum_{j<k}\lambda_j,\qquad y_1=-\sum_{j=1}^3r_j\lambda_j,\qquad d^3y_1=-\det(\lambda_1,\lambda_2,\lambda_3)\,dr_1\wedge dr_2\wedge dr_3,\qquad\varepsilon_T\det B_T=-1,\\
+\cI_{\rm box}(\lambda;z)=\det(\lambda_1,\lambda_2,\lambda_3)\int_{1>r_1>r_2>r_3>0}d^3r\;e^{\sum_j\lambda_j\cdot x_j},\quad x_j=r_jz_1+(1-r_j)z_2,\\
+\cI_{\rm box}(\lambda;0)=\tfrac16\det(\lambda_1,\lambda_2,\lambda_3),\\
+\int_{1>r_1>r_2>r_3>0}d^3r\;r_1^\alpha r_2^\beta r_3^\gamma=\frac1{(\gamma+1)(\beta+\gamma+2)(\alpha+\beta+\gamma+3)}.
+\end{gather*}
+\ptr{\Sd{6.1}--\Sd{6.5}, \Sd{6.9}}{\st{P}; \st{C}, \st{R}: \path{check_twoloop_kernels.py}, \path{check_z_dependence.py}; moments \st{E}}
+
+\rid{S6} One loop:
+\begin{gather*}
+Q_1=\frac i{16\pi^3}\int_{1>r_1>r_2>r_3>0}d^3r\int d^2\theta\int d^6z_1d^6z_2\;\varepsilon^{abc}C_{A_1D_1R_1}C_{R_1D_2R_2}C_{R_2D_3A_2}\\
+\times\partial_aC^{D_1}(x+x_1,\theta)\,\partial_bC^{D_2}(x+x_2,\theta)\,\partial_cC^{D_3}(x+x_3,\theta)\,\dd{A_1}{x+z_1,\theta}\dd{A_2}{x+z_2,\theta},\\
+Q_1\big|_{\text{no input derivatives}}=\frac i{96\pi^3}\int d^2\theta\;\varepsilon^{abc}C_{A_1D_1R_1}C_{R_1D_2R_2}C_{R_2D_3A_2}\,\partial_aC^{D_1}\partial_bC^{D_2}\partial_cC^{D_3}\,\dd{A_1}\theta\dd{A_2}\theta,\\
+Q_1(\gamma^{1A}\gamma^{2B})=\frac1{48\pi^3}\varepsilon^{abc}C_{AD_1R_1}C_{R_1D_2R_2}C_{R_2D_3B}\,\partial_a\mathsf c^{D_1}\partial_b\mathsf c^{D_2}\partial_c\mathsf c^{D_3},\\
+\hbar\,Q_1(\phi_1^A\phi_2^B)=-\frac{g^2}{192\pi^3}\varepsilon^{abc}C_{AD_1R_1}C_{R_1D_2R_2}C_{R_2D_3B}\,\xi_a^{D_1}\xi_b^{D_2}\xi_c^{D_3},\\
+Q_1(\partial_d\gamma^{1A}\gamma^{2B})=\frac1{8\pi^3}\varepsilon^{abc}C_{AD_1R_1}C_{R_1D_2R_2}C_{R_2D_3B}\Big(\tfrac18\partial_d^{(1)}+\tfrac1{12}\partial_d^{(2)}+\tfrac1{24}\partial_d^{(3)}\Big)\partial_a\mathsf c^{D_1}\partial_b\mathsf c^{D_2}\partial_c\mathsf c^{D_3},\\
+Q_1(\gamma^{1A}(z_1)\gamma^{2B}(z_2))=-\frac1{8\pi^3}\cI_{\rm box}(\partial;z)(\mathfrak c\,\mathfrak c\,\mathfrak c)^{AB},\qquad\mathfrak c^{AC}=i\,C_{ABC}\tilde{\mathsf c}^B .
+\end{gather*}
+\ptr{\Sd{1.4}$=$\Sd{6.8}, \Sd{6.10}, \Sd{6.11}, \Sd{6.12}, \Sd{6.13}, \Sd{6.7}}{\st{P}; $\{Q_0,Q_1\}=0$ \st{C}, \st{R} ($\mathfrak{su}(2)$, eleven operators)}
+
+\rid{S7} Two-loop kernels ($\lambda$ at the trivalent vertex zero), $W=(1-r_1)z_1+r_1z_2-z_3$:
+\begin{gather*}
+\cJ_A=r_1^2\big[r_5\br{124}+r_6\br{125}\big]\big[(1-r_2)\br{145}+(1-r_3)\br{245}\big],\\
+D_A:\ 0<r_1<1,\quad1>r_2>r_3>0,\quad1>r_4>r_5>r_6>0,\\
+\cJ_B=r_1(1-r_1)\big[r_5\br{uwa}+r_6\br{uwb}\big]\big[(1-r_2)\br{uab}+(1-r_3)\br{wab}\big],\\
+D_B:\ 0<r_1,r_2,r_3<1,\quad1>r_4>r_5>r_6>0,\\
+\cI_A(\lambda;z)=\int_{D_A}d^6r\,\cJ_A\,e^{\sum_v\lambda_v\cdot X_v}\quad(\varepsilon_T\det B_T=+1),\\
+\cI_B(\lambda;z)=-\int_{D_B}d^6r\,\cJ_B\,e^{\sum_v\lambda_v\cdot X_v}\quad(\varepsilon_T\det B_T=-1),\\
+(A):\ X_1=r_2z_1+(1-r_2)(z_3+r_4W),\quad X_2=r_3z_1+(1-r_3)(z_3+r_4W),\quad X_4=z_3+r_5W,\quad X_5=z_3+r_6W,\\
+(B):\ X_u=r_2z_1+(1-r_2)(z_3+r_4W),\quad X_w=r_3z_2+(1-r_3)(z_3+r_4W),\quad X_a=z_3+r_5W,\quad X_b=z_3+r_6W,\\
+\int_{D_A}\cJ_A=\frac{(2\br{124}+\br{125})(\br{145}+2\br{245})}{432},\qquad\int_{D_B}\cJ_B=\frac{(2\br{uwa}+\br{uwb})(\br{uab}+\br{wab})}{288}.
+\end{gather*}
+\ptr{\Sd{1.6}--\Sd{1.9}, \Sd{7.7}--\Sd{7.14}}{\st{P}; \st{C}, \st{R}: densities pointwise incl.\ sign, $\varepsilon_T\det B_T=-1,+1,-1$ for box, $(A)$, $(B)$; $z$-dependence at 20 rational points; integrals \st{E}}
+
+\rid{S8} Two loops:
+\begin{gather*}
+Q_2=\frac i{128\pi^6}\int d^2\theta\int\prod_{j=1}^3d^6z_j\Big[\int_{D_A}d^6r\,\cJ_AT_A-\int_{D_B}d^6r\,\cJ_BT_B\Big]\prod_{j=1}^3\dd{A_j}{x+z_j,\theta},\\
+T_A=C_{A_1D_1R_1}C_{R_1D_2R_2}C_{R_2A_2R_3}C_{R_3D_4R_4}C_{R_4D_5A_3}\,C^{D_1}(x+X_1)C^{D_2}(x+X_2)C^{D_4}(x+X_4)C^{D_5}(x+X_5),\\
+T_B=C_{A_1D_uR_u}C_{A_2D_wR_w}C_{R_uR_wR_q}C_{R_qD_aR'}C_{R'D_bA_3}\,C^{D_u}(x+X_u)C^{D_w}(x+X_w)C^{D_a}(x+X_a)C^{D_b}(x+X_b),\\
+Q_2\big|_{\text{no input derivatives}}=\frac i{128\pi^6}\int d^2\theta\Big[\frac{(2\br{124}+\br{125})(\br{145}+2\br{245})}{432}T_A\\
+\qquad\qquad-\frac{(2\br{uwa}+\br{uwb})(\br{uab}+\br{wab})}{288}T_B\Big]_{X=0}\prod_{j=1}^3\dd{A_j}\theta,\\
+Q_0=i\hat Q_0,\quad Q_1=\frac i{16\pi^3}\hat Q_1,\quad Q_2=\frac i{256\pi^6}(k_A\hat Q_A+k_B\hat Q_B),\qquad k_A=2,\quad k_B=-2 .
+\end{gather*}
+\ptr{\Sd{1.5}$=$\Sd{7.15}, \Sd{1.6}, \Sd{1.7}, \Sd{7.18}, \Sd{7.16}, \Sd{7.17}}{magnitude and relative sign \st{P} from (5.15), (7.10), (7.14); overall sign relative to $Q_1^2$ fixed by (7.16), \st{C}; \st{R}: $\mathfrak{so}(5)$ on $\gamma^1\gamma^2\mathsf b$ (8316 equations) and $\mathfrak{su}(2)$ with one input derivative (620 equations), rank 2, consistent (Section~\ref{sec-checks})}
+
+\rid{S9} Relations:
+$Q_0^2=0$, $\{Q_0,Q_1\}=0$, $Q_1^2+\{Q_0,Q_2\}=0$; $Q_n$ adds $n$ derivatives $\partial_1$, $n$ of $\partial_2$, $n$ of $\partial_3$ and replaces $n+1$ letters by $n+2$ letters.
+\ptr{\Sd{1.11}, \Sd{1.10}}{\st{C}: exact linear algebra on test operators ($\mathfrak{so}(3)$, $\mathfrak{so}(5)$), \textsf{6d}~\S8.1; \st{R} except the $\mathfrak{so}(5)$ runs with $\{Q_0,Q_1\}$ and with one input derivative}
+
+\subsection{Eleven dimensions: $\mathbb R\times\mathbb C^5$, $(H,T)=(5,1)$ \textsf{[11d]}}
+
+\rid{E1} Twisted theory ($\mu^i$ odd, $\nu$ even, $\gamma_i$ even, $\beta$ odd; $D=d_\tau+\dbar$, $\Omega=d^5z$, $f(\nu)=(1-\nu)^{-1}$):
+\begin{gather*}
+S=\int\Omega\wedge\big[\gamma_iD\mu^i+\beta D\nu+W\big],\qquad W=\beta\,\partial_i\mu^i+f(\nu)\mu^i\mu^j\partial_i\gamma_j+\frac g6\varepsilon^{ijklm}\gamma_i\partial_j\gamma_k\partial_l\gamma_m,\\
+(\hbar,g)\sim(\hbar/c,\,c^2g),\qquad Q_0\nu=\partial_i\mu^i,\qquad Q_0\mu^i=-\partial_j(f\mu^j\mu^i)+\frac g2\varepsilon^{ijklm}\partial_j\gamma_k\partial_l\gamma_m,\\
+Q_0\beta=f^2\mu^i\mu^j\partial_i\gamma_j,\qquad Q_0\gamma_i=\partial_i\beta+f\mu^k(\partial_i\gamma_k-\partial_k\gamma_i),\\
+Q_0\Phi^A=\frac{\delta_LW}{\delta\Phi^{A*}},\qquad Q_0^2=0 .
+\end{gather*}
+\ptr{\Ed{0.1}, \Ed{2.7}, \Ed{2.8}; \Ed{0.2}, \Ed{3.2}, \Ed{3.3}}{action: from RSW, not derived in \textsf{11d}; $Q_0^2=0$: \st{P} on $\nu,\beta$, \st{C} through degree six (\path{q0_check.py}); \st{R} (degree $\le6$, $g=1,3$)}
+
+\rid{E2} Twisting supercharge $Q=|0\rangle$, $a_iQ=0$, $a_i=\tfrac12(\Gamma_{2i-1}-i\Gamma_{2i})$:
+$\Gamma^M(Q,Q)=0$, $Q^{\mathsf T}C\Gamma^{MN}Q=0$; $\{\Gamma^M(Q,\chi)\partial_M\}={\rm span}\{\partial_{\bz^1},\dots,\partial_{\bz^5},\partial_\tau\}$; $\dim\{X\in\mathfrak{so}(11,\mathbb C):XQ\in\mathbb CQ\}=40$, $\dim\mathfrak{so}(11,\mathbb C)\cdot Q=16$.
+\ptr{\textsf{11d} Prop.~2.1, \Ed{2.1}--\Ed{2.4}}{\st{C} (floating point, $32\times32$ matrices), \st{R}}
+
+\rid{E3} Counts and graphs:
+\begin{equation*}
+|V|=5n+2,\qquad|I|=6n+1,\qquad5|I_S|\le6|V_S|-7,\qquad\text{girth}\ge7,\qquad\deg v\ge2;
+\end{equation*}
+$n=1$: heptagon $C_7$; $n=2$: $\theta_{pqr}$, $p+q+r=13$, $p+q\ge7$: $(1,6,6),(2,5,6),(3,4,6),(3,5,5),(4,4,5)$.
+\ptr{\Ed{0.4}; Lemmas 5.1, 5.2, Cor.~5.3, \Ed{5.3}}{\st{P}; list equals the $d=6$ row of \textsf{gc}, \st{R}}
+
+\rid{E4} Master formula ($J^a=(w;y^1,\dots,y^5)$, $M=CtC^{\mathsf T}$, $U=\det M$, $\psi^a_r=\sum_eC_{re}J^a_e\,dt_e$):
+\begin{gather*}
+\cK_\Gamma(\lambda;z)=\varsigma_\Gamma\int_{\RPp{6n}}e^{-\sum_ey_e\cdot z_e}\,U^{-11/2}\Big\langle\prod_{r=1}^n\psi^\tau_r\Big\rangle\wedge\prod_{i=1}^5\prod_{r=1}^n\psi^i_r,\qquad\varsigma_\Gamma=(-1)^n(-1)^{\frac{(5n+1)5n}2}\varsigma^{\rm ext}_\Gamma,\\
+\text{raw graph integral}=\Big(\frac{-i}{64\pi^{11/2}}\Big)^n\cK_\Gamma,\qquad
+\langle w_ew_{e'}\rangle=\tfrac12\Big[\frac{\delta_{ee'}}{t_e}-(C^{\mathsf T}M^{-1}C)_{ee'}\Big],\quad\langle w_e\rangle=0,\\
+\prod_{a,r}\psi^a_r=\mathcal D\,\iota_{\mathcal E}\prod_edt_e,\qquad\mathcal D=\frac{(-1)^{e_0-1}}{t_{e_0}}\det\big[C_{re}J^a_e\big]_{(a,r);\,e\ne e_0},\\
+\langle\psi^\tau_r\psi^\tau_{r'}\rangle=-\tfrac12\sum_{a,b}(M^{-1})_{ab}\,dM_{ra}\wedge dM_{r'b},\qquad
+U^{-1/2}\Big\langle\prod_{r=1}^n\psi^\tau_r\Big\rangle=\rho_n(M):=(\det M)^{-1/2}\Pf\big(-\tfrac12\,dM\,M^{-1}dM\big),\\
+\rho_{2k+1}=0,\qquad\rho_2=-\frac{M_{11}\,dM_{12}\,dM_{22}-M_{12}\,dM_{11}\,dM_{22}+M_{22}\,dM_{11}\,dM_{12}}{2(\det M)^{3/2}},\\
+\cK_\Gamma(\lambda;z)=\varsigma_\Gamma\int_{\RPp{6n}}e^{-\sum_ey_e\cdot z_e}\,U^{-5}\prod_{i=1}^5\prod_{r=1}^n\psi^i_r\wedge\rho_n(M).
+\end{gather*}
+\ptr{Thm 5.4 \Ed{5.12}$=$\Ed{0.5}; \Ed{5.10}; \Ed{5.6}, \Ed{5.7}; Prop.~5.5 \Ed{5.13}$=$\Ed{0.6}, \Ed{5.14}; \Ed{9.1}}{\st{P}; \st{C} (\st{N}), \st{R}: \path{forms_check.py} ($\varsigma^{\rm ext}=-1$ for $C_7$, $+1$ for the five $\theta_{pqr}$)}
+
+\rid{E5} Odd loops: $\cK_\Gamma=0$ for odd $n$; $Q_{2k+1}\cO=0$ for $\cO\in H(D)$; $\sigma^*[P]_\Omega=-[P]_\Omega$, $\sigma:(\tau,z)\mapsto(-\tau,z)$.
+\ptr{Cor.~5.6, \Ed{0.7}, \Ed{4.7}}{\st{P}}
+
+\rid{E6} $H=0$ (topological mechanics), $n=2$, three parallel edges:
+raw integral $=\frac1{4\pi}\int\frac{\Omega_R}{2U^{3/2}}=\frac1{4\pi}\frac{\Gamma(\frac12)^3}{2\Gamma(\frac32)}=\frac14=3\int P^2dP$, $P=\tfrac12\operatorname{sgn}\tau$.
+\ptr{Remark after Cor.~5.6}{\st{P}; \st{E}}
+
+\rid{E7} Heptagon $1\to2\to\dots\to7\to1$, $\cO$ at $7$, $q_v=(\kappa_v;\lambda_v)$, $\Lambda_j=\sum_{v\le j}q_v$:
+\begin{gather*}
+J_{e_j}=\Lambda_j-\bar\Lambda\ (j\le6),\qquad J_{e_7}=-\bar\Lambda,\qquad\bar\Lambda=\frac{\sum_{k=1}^6t_k\Lambda_k}{\sum_{k=1}^7t_k},\qquad\mathcal D=\frac{\det[q_1,\dots,q_6]}U,\qquad\varsigma_{C_7}=-1,\\
+\cK_7(\lambda,\kappa;z)=-\det[q_1,\dots,q_6]\int_{\Delta^6}d^6t\;e^{\sum_et_ew_e^2-\sum_ey_e\cdot z_e},\qquad\cK_7(\lambda,\kappa;0)=-\frac{\det[q_1,\dots,q_6]}{6!}\big(1+O(\kappa^2)\big),\\
+Q_1\cO\Big|_{\rm unprojected}=\frac{-i}{64\pi^{11/2}}\frac1{6!}\sum_{C_7}\Big[-\varepsilon^{a_1\cdots a_6}\partial_{1,a_1}\cdots\partial_{6,a_6}\int_{\Delta^6}d^6t\;e^{\sum_et_ew_e^2-\sum_ey_e\cdot z_e}\Big]\circ W_{C_7}[\cI^{\otimes6},\cO],\\
+Q_1\cO=0\ \text{on }H(D).
+\end{gather*}
+\ptr{\Ed{6.1}; Thm 6.1 \Ed{6.2}, \Ed{6.3}$=$\Ed{0.8}; Cor.~6.2 \Ed{6.4}, \Ed{6.5}}{\st{P}; \st{C} (\st{N}), \st{R}: $\mathcal DU=\det[q]$}
+
+\rid{E8} Theta graphs $\theta_{pqr}$, paths $P\in\{A,B,C\}$ of $n_P=p,q,r$ edges from $N$ to $N'$, edge order $(A_1,..,A_p,$ $B_1,..,B_q,$ $C_1,..,C_r)$, cycles $A-B$, $B-C$; $\Lambda_P=(\lambda^P_1,\dots,\lambda^P_{n_P-1})$:
+\begin{gather*}
+R_P=\sum_jt^P_j,\quad x^P_j=\frac{t^P_j}{R_P},\quad Q^P_j=\sum_{k<j}\lambda^P_k,\quad\hat m_P=\sum_jx^P_jQ^P_j,\quad w_P=\frac{1/R_P}{\sum_{P'}1/R_{P'}},\\
+U=R_AR_B+R_BR_C+R_CR_A,\\
+y^P_j=\ell_P+Q^P_j,\qquad\ell_P=w_P\Big(\lambda_N+\sum_{P'}\hat m_{P'}\Big)-\hat m_P,\\
+\cK_{\theta_{pqr}}(\lambda;z)=\frac{D_\theta(\lambda)}2\int_{\Delta^2}d^2w\;w_A^{\frac{11}2-p}w_B^{\frac{11}2-q}w_C^{\frac{11}2-r}\int_{\Delta^{p-1}\times\Delta^{q-1}\times\Delta^{r-1}}dx\;e^{-\sum_ey_e(x,w)\cdot z_e},\\
+D_\theta=\det\begin{pmatrix}\Lambda_A&\Lambda_B&0\\0&\Lambda_B&\Lambda_C\end{pmatrix},\\
+\cK_{\theta_{pqr}}(\lambda;0)=\frac{\Gamma(\frac{13}2-p)\Gamma(\frac{13}2-q)\Gamma(\frac{13}2-r)}{2\,\Gamma(\frac{13}2)\,(p-1)!\,(q-1)!\,(r-1)!}\,D_\theta(\lambda)=c_{pqr}\,\pi\,D_\theta(\lambda),\\
+c_{166}=\tfrac1{158400},\quad c_{256}=\tfrac1{285120},\quad c_{346}=\tfrac1{332640},\quad c_{355}=\tfrac1{798336},\quad c_{445}=\tfrac1{997920},\\
+\langle\psi^\tau_1\psi^\tau_2\rangle=\frac{\Omega_R}{2U},\qquad\Omega_R=R_A\,dR_B\,dR_C-R_B\,dR_A\,dR_C+R_C\,dR_A\,dR_B,\\
+\prod_{i=1}^5\psi^i_1\psi^i_2\Big|_{\rm fibre}=\pm R_A^{p-1}R_B^{q-1}R_C^{r-1}D_\theta\,dx,\\
+\int_{\RPp2}\frac{\Omega_R\,R_A^{p-1}R_B^{q-1}R_C^{r-1}}{2U^{13/2}}=\frac12\int_{\Delta^2}d^2w\prod_Pw_P^{\frac{11}2-n_P}=\frac{\prod_P\Gamma(\frac{13}2-n_P)}{2\Gamma(\frac{13}2)},\\
+\cK_\theta[F]=\frac{D_\theta}2\int_{\Delta^2}d^2w\prod_Pw_P^{\frac{11}2-n_P}\int dx\,F(y(x,w)),\\
+\int_{\Delta^2}d^2w\prod_Pw_P^{\frac{11}2-n_P+k_P}=\frac{\prod_P\Gamma(\frac{13}2-n_P+k_P)}{\Gamma(\frac{13}2+\sum_Pk_P)},\\
+D_{166}=[B_1..B_5][C_1..C_5],\quad D_{256}=[A_1B_1..B_4][C_1..C_5],\quad D_{346}=[A_1A_2B_1B_2B_3][C_1..C_5],\\
+D_{355}=\sum_{d=1}^4(-1)^d[A_1A_2B_1..\widehat{B_d}..B_4][B_dC_1..C_4],\qquad D_{445}=\sum_{d=1}^3(-1)^{d+1}[A_1A_2A_3B_1..\widehat{B_d}..B_3][B_dC_1..C_4].
+\end{gather*}
+\ptr{\Ed{7.1}, \Ed{7.2}; Thm 7.1 \Ed{7.3}$=$\Ed{0.9}, \Ed{7.4}, \Ed{7.5}, \Ed{0.10}; \Ed{7.6}--\Ed{7.12}}{\st{P}; \st{C} (\st{N}), \st{R}: \path{forms_check.py}, \path{pointwise.py} (integrand $=-\tfrac12D_\theta\prod_Pw_P^{11/2-n_P}|dx\,d^2w|$ w.r.t.\ $\iota_{\mathcal E}\prod dt_e$; with $\varsigma_\theta=-1$), \path{consts.py}, \path{extra_checks.py}; $c_{pqr}$ \st{E}}
+
+\rid{E9} Two loops:
+\begin{gather*}
+Q_2\cO=\frac1{11!}\{\cI^{\otimes11},\cO\}_0=-\frac1{4096\,\pi^{11}}\frac1{11!}\sum_{\Gamma\in\{\theta_{pqr}\}}\cK_\Gamma(\partial;z)\circ W_\Gamma[\cI^{\otimes11},\cO],\\
+Q_n=\sum_{m\ge0}g^mQ_n^{(m)},\qquad Q_n^{(m)}:N_{\gamma\beta}\mapsto N_{\gamma\beta}+2m-n,\qquad Q_n^{(m)}\cO=0\ \text{unless}\ {\rm in}(\cO)\ge n-2m,\\
+\frac{\partial_L}{\partial\mu^i}\frac{\partial_L}{\partial\gamma_j}(\mu^a\mu^b\partial_a\gamma_b)=\delta^j_b\,\partial^{(e)}_i\mu^b-\mu^a\partial^{(e)}_a\delta^j_i,\qquad\partial^{(e)}_a\mapsto\mp y_{e,a}\ \ (v=e(0),\,e(1)).
+\end{gather*}
+\ptr{\Ed{8.1}$=$\Ed{0.11}; Lemma 8.1 \Ed{8.2}; \Ed{8.3}}{\st{P}; not expanded into components (\textsf{11d} Status)}
+
+\subsection{$\mathbb C^d$ and $\mathbb R^T\times\mathbb C^H$: \textsf{[cd]}, \textsf{[PLAN]}, \textsf{[RS]}}
+
+\rid{C1} Counting, $D=H+T$ ($T=0$: $D=d$):
+\begin{gather*}
+(D-1)|I|=D|V|-D-1\iff|I|=Dn+1,\ |V|=(D-1)n+2;\qquad(D-1)|I_S|\le D|V_S|-D-1,\\
+\text{cycle length}\ge D+1,\qquad\sum_v(\deg v-2)=2n-2,\\
+3|V|-2|I|=(d-3)n+4\quad(\text{legs, all vertices cubic, no insertion}).
+\end{gather*}
+\ptr{\PL{3.1}, \PL{3.3}~E8, \PL{4}; \textsf{GKW} l.~636--643 ($n|\Gamma_0|=(n-1)|\Gamma_1|+n+1$, $n=H+T$); \Sd{5.11}, \Sd{5.12}; \Ed{0.4}}{\st{P} in \textsf{L}, \textsf{6d}, \textsf{11d} for $D=2,3,6$; general $D$: \textsf{GKW}; legs count: tagged [drv] in \textsf{PLAN}}
+
+\rid{C2} One-loop $(d+1)$-gon, $1>\sigma_1>\dots>\sigma_d>0$:
+\begin{equation*}
+y_1=-\sum_{j=1}^d\sigma_j\lambda_j,\qquad\text{density}=(-1)^d\det(\lambda_1,\dots,\lambda_d),\qquad|\cI(\lambda;0)|=\frac{|\det(\lambda_1,\dots,\lambda_d)|}{d!}.
+\end{equation*}
+\ptr{\PL{3.1}; \path{check_cd.py}}{\st{C}, \st{R}: $d=2,3,4,5$ exact}
+
+\rid{C3} Chain move on $\mathbb C^d$ ($u\to v_1\to\dots\to v_{d-1}\to w$ parallel to $u\to w$):
+\begin{gather*}
+\sigma_j=\frac1T\sum_{k>j}t_k,\quad\rho=\frac T{T+t_0},\quad y_0=\rho\,y^{\rm red},\quad y_1=(1-\rho)y^{\rm red}-\sum_j\sigma_j\lambda_j,\\
+\text{local density}=\rho^{d-1}\det(y^{\rm red},\lambda_1,\dots,\lambda_{d-1}),\qquad\lambda_u^{\rm red}=\lambda_u+\sum_j\sigma_j\lambda_j,\quad\lambda_w^{\rm red}=\lambda_w+\sum_j(1-\sigma_j)\lambda_j .
+\end{gather*}
+\ptr{\PL{3.1}; \path{check_cd.py}}{\st{C}, \st{R}: pointwise with sign, $d=2,\dots,5$}
+
+\rid{C4} $n$-box ladder on $\mathbb C^3$, sources at the four corners, $\Delta=\det(A,B,C)$:
+\begin{equation*}
+\frac{\cI}{\Delta^n}=\frac{(-1)^{n-1}2^{n+1}}{(n+2)!\,n!^2\,(n+1)!^2}:\quad\tfrac16,\ -\tfrac1{432},\ \tfrac1{155520},\ -\tfrac1{186624000},\ \tfrac1{587865600000},\ -\tfrac1{4147979673600000}\ \ (n=1..6),
+\end{equation*}
+reduced density $\Delta^n(-(q_2-q_3))^{n-1}\prod_{i=0}^{n-2}\rho_i^2(1-\rho_i)^i(s_{1,i}-s_{2,i})^{n-1-i}$ (variables of \path{check_ladder.py}).
+\ptr{\PL{3.1}; \path{check_cd.py}, \path{check_ladder.py}}{\st{C}, \st{R}: direct Kirchhoff density $n\le4$ (3 points each), recursion $n\le6$; values \st{E}}
+
+\rid{C5} Series--parallel move, $k$ chains of lengths $a_1,\dots,a_k$ between two vertices replaced by one edge:
+\begin{equation*}
+\sum_i(a_i-1)+(k-1)=d(k-1)\iff\sum_ia_i=d(k-1)+1 .
+\end{equation*}
+\ptr{\PL{3.3}~E1}{counting only; local density for general $(a_1,\dots,a_k)$: deliverable of E1, not in the sources}
+
+\rid{C6} Two-loop theta graphs, any $d$: path lengths $a\le b\le c\le d$, $a+b+c=2d+1$:
+$d=2$: $(1,2,2)$; $d=3$: $(1,3,3),(2,2,3)$; $d=4$: $(1,4,4),(2,3,4),(3,3,3)$; $d=5$: $(1,5,5),(2,4,5),(3,3,5),(3,4,4)$; $d=6$: $(1,6,6),(2,5,6),(3,4,6),(3,5,5),(4,4,5)$.
+\ptr{\PL{3.2}; \textsf{gc}}{\st{C}, \st{R}}
+
+\rid{C7} Observations of \textsf{RS} (``to be verified by agents''):
+(i) $T=1$ two-loop theta kernels at $z=0$: $\frac{D_\theta}2\prod_P\frac{\Gamma(H+\frac32-n_P)}{(n_P-1)!}\big/\Gamma(H+\tfrac32)$; $c_{166}=\frac1{158400}$ at $H=5$; $\frac\pi3$ for the $(H,T)=(1,1)$ bitriangle; $\frac\pi{20},\frac\pi{30}$ for $(2,1)$.
+(ii) hCS on $\mathbb C^3$ without odd directions: the $n$-loop obstruction with all vertices cubic has four legs and kernel $c_n\Delta^n$ by $SL(3)$ covariance; for even $n$ it pairs with an invariant in $\Lambda^4(\mathfrak g)=H^4(\mathfrak g)=0$.
+(iii) Maximal SYM twists as one family: hCS on $\mathbb C^{H|k}\times\mathbb R^T$, $H+T+k=5$, $T\in\{0,1\}$: $D=10,\dots,3$; odd $D$: $Q_{\rm odd}=0$; $Q_2$ graphs are theta graphs with $\cO$ at a trivalent vertex.
+\ptr{\textsf{RS}}{\st{O}. (i): the numbers $\frac\pi3,\frac\pi{20},\frac\pi{30}$ follow from the displayed formula (\st{E}); for $(H,T)=(5,1)$ it is \Ed{7.5}; for $(1,1)$: \path{pointwise.py}, \path{forms_check.py} of \textsf{11d} (\st{N}, Section~\ref{sec-checks}). (ii), (iii): no check in the sources}
+
+\section{Conventions dictionary}\label{sec-conv}
+
+\subsection{Table}
+
+{\footnotesize
+\renewcommand{\arraystretch}{1.35}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{4.9cm}@{}}
+\toprule
+ & \textsf{L} ($\mathbb C^2$) & \textsf{6d} ($\mathbb C^{3|2}$) & \textsf{11d} ($\mathbb R\times\mathbb C^5$)\\
+\midrule\endhead
+$(H,T)$, $D$ & $(2,0)$, $2$ & $(3,0)$, $3$ & $(5,1)$, $6$\\
+coordinates & $x^{a\dot a}=x_E^\mu\bar\sigma_\mu^{\dot aa}$; $x^{+\dot a}$ holomorphic, $x^{-\dot a}$ antiholomorphic; $\partial/\partial x^{a\dot a}=-\frac12\partial_{a\dot a}$; $\epsilon^{\dot+\dot-}=1=-\epsilon_{\dot+\dot-}$ \LL{2.1}{eq-sum-spinor-conventions} & $x^a=x_E^{2a-1}+ix_E^{2a}$, $\partial_a=\partial/\partial x^a$ \Sd{3.1} & $(\tau;z^i,\bz^i)$, $z^i=x^i+iy^i$ (\S4.1); in \S2.1 the $Q$-exact directions are named $\bz^i=x^{2i-1}+ix^{2i}$, $\tau=x^{11}$\\
+$\Omega$ & $2\,dx^{+\dot+}\wedge dx^{+\dot-}$; $\Omega\wedge dx^{-\dot+}\wedge dx^{-\dot-}=-8\,d^4x_E$ \LL{3.12}{b-00919} & $i\,dx^1\wedge dx^2\wedge dx^3$; $\Omega\wedge d\bar x^1\wedge d\bar x^2\wedge d\bar x^3=8\,d^6x_E$ \Sd{3.20} & $d^5z$; $\Omega\wedge d\tau\wedge d^5\bz=32i\,d\tau\,d^{10}x$ \Ed{4.1}\\
+weight, $\hbar$ & $e^{S/\hbar}$ (\S3.5); $\hbar$ counts loops & $e^{S_{\rm tw}/\hbar}$, $\hbar=g^2/4$ \Sd{3.22} & $\mathbf Q=\sum\hbar^nQ_n$; $(\hbar,g)\sim(\hbar/c,c^2g)$ \Ed{2.8}\\
+free differential & $\dbar=dx^{-\dot a}\partial/\partial x^{-\dot a}$ & $\dbar=d\bar x^a\partial/\partial\bar x^a$ & $D=d_\tau+\dbar$\\
+gauge fixing & $\dbar^*=-2\epsilon^{\dot a\dot b}\iota_{-\dot a}\partial/\partial x^{+\dot b}$ \LL{3.37}{eq-dbar-star} & $\dbar^*=-2\sum_a\iota_{\partial/\partial\bar x^a}\partial_a$ (\S5.1) & $D^*=-\iota_{\partial_\tau}\partial_\tau-4\sum_i\iota_{\partial_{\bz^i}}\partial_{z^i}$ \Ed{4.2}\\
+$H$ & $\{\dbar,\dbar^*\}=-\frac12\delta^{\mu\nu}\partial_\mu\partial_\nu$ & $-2\sum_a\partial_a\dbar_a=-\frac12\delta^{\mu\nu}\partial_\mu\partial_\nu$ & $[D,D^*]=-\partial_\tau^2-4\sum_i\partial_{z^i}\partial_{\bz^i}$\\
+heat kernel, $\int\Omega\wedge[K_t]_\Omega=1$ & $[K_t]_\Omega=-\dfrac{e^{-|x|_E^2/(2t)}}{32\pi^2t^2}\,dx^{-\dot+}\wedge dx^{-\dot-}$ \LL{3.39}{eq-C-heat-spatial} & $[K_t]_\Omega=\dfrac{e^{-x^a\bar x^a/(2t)}}{8(2\pi t)^3}\,d\bar x^1\wedge d\bar x^2\wedge d\bar x^3$ \Sd{5.1} & $[K_t]_\Omega=\dfrac1{32i}\dfrac{e^{-(\tau^2+z\cdot\bz)/4t}}{(4\pi t)^{11/2}}\,d\tau\wedge d^5\bz$ \Ed{4.3}\\
+propagator & $P_{\varepsilon,L}=\int_\varepsilon^L(\dbar^*\otimes1)K_t\,dt$; $(\dbar\otimes1+1\otimes\dbar)P_{\varepsilon,L}=K_\varepsilon-K_L$ \LL{3.40}{eq-C-heat-homotopy}; $[P_{0,\infty}]_\Omega=-\dfrac{x^-_{\dot a}dx^{-\dot a}}{8\pi^2|x|_E^4}$ \LL{6.39}{eq-ring-propagator-residue} & $[P_{\varepsilon,L}]_\Omega=\int_\varepsilon^Ldt\,\dbar^*[K_t]_\Omega$; $\dbar[P_{\varepsilon,L}]_\Omega=[K_\varepsilon]_\Omega-[K_L]_\Omega$ \Sd{5.2} & $[P]_\Omega=\int_0^\infty dt\,[D^*K_t]_\Omega=\dfrac{945}{1024\,i\,\pi^5}\dfrac{\frac\tau2d^5\bz-d\tau\wedge\vartheta}{r^{11}}$, $\vartheta=\iota_{\bz\partial_{\bz}}d^5\bz$ \Ed{0.3}, \Ed{4.5}; $D[P_{\varepsilon,L}]_\Omega=[K_\varepsilon]_\Omega-[K_L]_\Omega$ \Ed{4.6}\\
+form degrees & $P$: one-form (odd); $K$: two-form; heat-edge sum with $(-1)^{j-1}$ \LL{3.60}{eq-C-heat-edge-cut} & $P$: two-form (even); $K$: three-form; heat-edge sum without signs \Sd{5.5} & $P$: five-form (odd); $K$: six-form; heat-edge sum with $(-1)^{j-1}$ \Ed{4.12}\\
+contraction & $\langle c^A(x_1)b_B(x_2)\rangle=\hbar\delta_B{}^A[P]_\Omega$, $\langle\gamma_i(x_1)\beta^j(x_2)\rangle=-\hbar\delta_i{}^j[P]_\Omega$ \LL{3.41}{eq-C-free-two-point}; $\Delta_{vw}$ \LL{3.36}{eq-A-20}; $\mathcal N=4$: \LL{A.5}{eq-A-17} & $\langle C^D(x,\theta)C^E(y,\theta')\rangle=$ $\hbar\delta^{DE}(\theta_1-\theta_1')(\theta_2-\theta_2')$ $[P]_\Omega(x-y)$ \Sd{5.3} & $\Delta_{vw}=\frac{\partial_L}{\partial\gamma_{i,v}}\frac{\partial_L}{\partial\mu^i_w}+\frac{\partial_L}{\partial\mu^i_v}\frac{\partial_L}{\partial\gamma_{i,w}}+\frac{\partial_L}{\partial\beta_v}\frac{\partial_L}{\partial\nu_w}+\frac{\partial_L}{\partial\nu_v}\frac{\partial_L}{\partial\beta_w}$ \Ed{4.11}\\
+currents & $y_{e,+\dot a}=\dfrac{(x_{e(0)}-x_{e(1)})^-_{\dot a}}{2t_e}$, $d^2y_e=dy_{e,+\dot+}\wedge dy_{e,+\dot-}$ \LL{3.72}{eq-1-8} & $y_{e,a}=\dfrac{(\bar x_{e(0)}-\bar x_{e(1)})^a}{2t_e}$, $d^3y_e=dy_{e,1}\wedge dy_{e,2}\wedge dy_{e,3}$ \Sd{5.6} & $y_e=\dfrac{\bz_{e(0)}-\bz_{e(1)}}{4t_e}$, $w_e=\dfrac{\tau_{e(0)}-\tau_{e(1)}}{2t_e}$, $\eta_e=\dfrac{\tau_{e(0)}-\tau_{e(1)}}{2\sqrt{t_e}}$ \Ed{4.9}\\
+edge form $[K_t]_\Omega-dt\wedge[\dbar^*K_t]_\Omega$ & $-\dfrac{e^{-y_e\cdot(x_{e(0)}-x_{e(1)}+z_e)}}{8\pi^2}\,d^2y_e$ \LL{3.73}{eq-C-current-Jacobian} & $\dfrac1{8\pi^3}\,e^{-y_e\cdot(x_{e(0)}-x_{e(1)}+z_e)}\,d^3y_e$ \Sd{5.6} & $\Theta_e=-\dfrac i{32\pi^{11/2}}\,e^{-\eta_e^2-y_e\cdot\Delta_e}\,d\eta_e\wedge d^5y_e$, $\Delta_e=z_{e(0)}-z_{e(1)}+z_e$ \Ed{4.10}\\
+vertex integral & $\int_{(i\mathbb R)^2}\Omega_v\,e^{x_v\cdot(\dots)}=2(2\pi i)^2\delta=-8\pi^2\delta$ (\S3.7) & $\int\Omega_v\,e^{x_v\cdot(\dots)}=8\pi^3\delta^3(\dots)$ \Sd{5.7} & $\int\prod_{v<k}d^{10}x_v\,e^{-\frac14z^\dagger\Lambda z+\lambda\cdot z}G(\bz)$ $=(4\pi)^{5(|V|-1)}\big(\prod_et_e/U\big)^5G(4\Lambda^{-1}\lambda)$ \Ed{5.9}; $\int\prod d\tau_v\,e^{-\frac14\tau^{\mathsf T}\Lambda\tau}=(4\pi)^{\frac{|V|-1}2}\big(\prod_et_e/U\big)^{1/2}$ \Ed{5.10}\\
+circuit laws & $\sum_{e(0)=v}y_e-\sum_{e(1)=v}y_e=\lambda_v$, $\sum_{e\in C}\pm t_ey_e=0$ \LL{3.76}{eq-1-9}, \LL{3.67}{eq-C-oriented-cycle}; potential $\frac12x^-_{v,\dot a}$ & same, \Sd{5.8}; potential $\frac12\bar x_v$ & same for $y$, \Ed{5.8}; potentials $\bz_v/4$, $\tau_v/2$; $w$: Gaussian fluctuation \Ed{5.10}\\
+kernel & $\cI_\Gamma$: \eqref{eq-def-L}; \LL{3.69}{eq-1-7}, \LL{3.66}{eq-C-current-delta-integral}, \LL{3.77}{eq-operatope} & $\cI_\Gamma$: \eqref{eq-def-6}; \Sd{5.9}, \Sd{5.10} & $\cK_\Gamma$: \eqref{eq-def-11}; \Ed{4.14}, \Ed{5.12}\\
+raw integral $/$ kernel & $(-8\pi^2)^{-n}$ & $(-8\pi^3)^{-n}$ & $(-i/(64\pi^{11/2}))^n$\\
+orientation of $\RPp{|I|-1}$ & UV boundary: facet $t_{e_j}=\varepsilon$ with $(-1)^{j-1}\bigwedge_{i\ne j}dt_{e_i}$ \LL{3.70}{eq-UV-boundary} & $\omega_m=\sum_j(-1)^{j-1}t_j\,dt_1\wedge\cdots\widehat{dt_j}\cdots\wedge dt_m$ \Sd{5.10} & $\iota_{\mathcal E}\prod_edt_e$, $\mathcal E=\sum_et_e\partial_{t_e}$ \Ed{5.1}\\
+sign factor & none & $\varepsilon_T\det B_T$: $\varepsilon_T$ $=$ sign of the permutation moving the tree edges in front; $B_T$ grounded incidence matrix of $T$ & $\varsigma_\Gamma=(-1)^n(-1)^{(5n+1)5n/2}\varsigma^{\rm ext}_\Gamma$, $\varsigma^{\rm ext}_\Gamma$ from \Ed{5.5}\\
+dependence on choices & edge order (through the orientation); two edges between the same vertices give zero & ``does not depend on $T$; changes sign when an edge is reversed or two integrated vertices are exchanged'' (\S5.2) & ``independent of the order of the vertices and of the orientations of the edges, and changes sign under an odd permutation of the edge order'' (\S4.3)\\
+$\lambda_v\mapsto$ & $\partial/\partial x_v^{+\dot a}=-\frac12\partial_{v,+\dot a}$ \LL{3.65}{eq-D-lambda} & $\partial/\partial x^a$ on the output at $v$ & $\partial/\partial z_v$ on the output letters at $v$\\
+input derivatives & $-\partial/\partial z_e^{+\dot a}$ inserts $y_{e,+\dot a}$ & moment rule \Sd{4.5}; $z_j$ on the spoke of the $j$-th letter & $\partial_i$ at $e(0)$ inserts $-y^i_e$, at $e(1)$ inserts $+y^i_e$ (\S4.3)\\
+$Q_n$ & $\frac1{(n+1)!}\{\cI^{n+1},\cO\}=\frac{(-1)^n}{(n+1)!(8\pi^2)^n}\sum_{\Gamma\ \rm labelled}\cI_\Gamma W_\Gamma$ \LL{8.1}{eq-2-3} & $\frac i{(8\pi^3)^n}\sum_\Gamma\frac{\cI_\Gamma(\partial;z)W_\Gamma}{|{\rm Aut}\,\Gamma|}$ \Sd{5.15} & $\frac1{(5n+1)!}\{\cI^{\otimes(5n+1)},\cO\}_0$ \Ed{4.13} $=\big(\frac{-i}{64\pi^{11/2}}\big)^n\frac1{(5n+1)!}\sum_\Gamma\cK_\Gamma\circ W_\Gamma$ ($n=2$: \Ed{8.1})\\
+cubic vertex & $iC_{ABC}$ after the $3!$ leg assignments (\S8.1) & $iC_{ABC}$ after the $3!$ leg assignments (\S5.5) & vertices (a), (b$_k$), (c) of $W$ (\S8)\\
+\bottomrule
+\end{longtable}}
+
+Kernel definitions (row ``kernel''), $\mathcal G=\lim_{\varepsilon\downarrow0}\int(\bigwedge_{v}\Omega_v)\,e^{\sum_v\lambda_v\cdot x_v}\,[\text{heat-edge sum of the source}]$:
+\begin{align}
+\textsf{L}:\quad&\cI_\Gamma=(-8\pi^2)^n\,\mathcal G=(-1)^n\int_{\Delta_\Gamma}e^{-\sum_ez_ey_e}\bigwedge_{e\in I}d^2y_e\prod_{v<k}\delta^2\Big(\lambda_v-\sum_{e(0)=v}y_e+\sum_{e(1)=v}y_e\Big)\notag\\
+&\phantom{\cI_\Gamma}=\int e^{-\sum_ey_ez_e}\bigwedge_{e\notin T}(-d^2y_e),\label{eq-def-L}\\
+\textsf{6d}:\quad&\cI_\Gamma=(-8\pi^3)^n\,\mathcal G=\varepsilon_T\det(B_T)\int_{\RPp{m-1}}e^{-\sum_ey_e\cdot z_e}\bigwedge_{e\notin T}d^3y_e,\label{eq-def-6}\\
+\textsf{11d}:\quad&\cK_\Gamma=(64\pi^{11/2}i)^n\,\mathcal G=\varsigma_\Gamma\int_{\RPp{6n}}e^{-\sum_ey_e\cdot z_e}\,U^{-11/2}\Big\langle\prod_r\psi^\tau_r\Big\rangle\wedge\prod_{i=1}^5\prod_r\psi^i_r .\label{eq-def-11}
+\end{align}
+
+\subsection{Common variables}
+
+\begin{gather}
+t^{\textsf{11d}}=\tfrac12\,t^{\textsf{L}}=\tfrac12\,t^{\textsf{6d}}\qquad\big(e^{-r^2/4t^{\textsf{11d}}}=e^{-|x|^2/2t^{\textsf{L}}}\big),\qquad
+y=\frac{\bar x_{e(0)}-\bar x_{e(1)}}{2t^{\textsf{L}}}=\frac{\bz_{e(0)}-\bz_{e(1)}}{4t^{\textsf{11d}}},\\
+\textsf{GKW}\ (\text{\path{Higher.tex} l.~789--797}):\quad\mathcal P(x;t)=\pi^{-T/2}e^{-s^2-x^{\mathbb C}\cdot y}\prod_ady^a\prod_bds^b,\quad y=\frac{\bar x^{\mathbb C}}t,\quad s=\frac{x^{\mathbb R}}{t^{1/2}},\\
+t^{\textsf{GKW}}=2t^{\textsf{L}}=4t^{\textsf{11d}},\qquad s=\eta .
+\end{gather}
+The kernels are integrals of forms invariant under $t_e\to\rho\,t_e$; the rescalings of $t$ do not change them.
+
+\subsection{Reduced kernel and conversion factors}
+
+Reduced kernel (definition of the task statement), with a cycle matrix $C$ ($n\times|I|$), $M=CtC^{\mathsf T}$, $U=\det M$, $\psi^i_r=\sum_eC_{re}y^i_e\,dt_e$, orientation $\iota_{\mathcal E}\prod_edt_e$ in the edge order, product ordered with $i$ outside and $r$ inside:
+\begin{equation}\label{eq-K-red}
+K_\Gamma(\lambda;z)=\int_{\RPp{|I|-1}}e^{-\sum_ey_e\cdot z_e}\;U^{-H}\,\rho_n(M)^T\wedge\prod_{i=1}^H\prod_{r=1}^n\psi^i_r,\qquad\rho_n(M)=(\det M)^{-1/2}\Pf\big(-\tfrac12\,dM\,M^{-1}dM\big).
+\end{equation}
+Under $C\to AC$, $A\in GL(n,\mathbb Z)$: $M\to AMA^{\mathsf T}$, $\prod_r\psi^i_r\to\det A\prod_r\psi^i_r$, $\rho_n\to\det A\,\rho_n$, hence
+\begin{equation}
+K_\Gamma\to(\det A)^{H+T}K_\Gamma ;
+\end{equation}
+$K_\Gamma$ is odd under an odd permutation of the edge order and, at $z=0$ and for a fixed cycle matrix, invariant under the reversal of an edge ($C_{re}y_e$ is invariant). Components: $i=1,\dots,H$ in the order of $d^Hy_e=dy_{e,1}\wedge\dots\wedge dy_{e,H}$; for \textsf{L}, $(1,2)=(+\dot+,+\dot-)$.
+
+\paragraph{$T=0$.} With a spanning tree $T$, chords $c_1<\dots<c_n$ in the edge order, $C$ the fundamental cycles ($C_{r c_r}=+1$), $y_e=y^{(0)}_e+\sum_rC_{re}\ell_r$, $\ell_r=y_{c_r}$:
+\begin{gather}
+\sum_eC_{re}t_ey_e=0\ \Longrightarrow\ \sum_{r'}M_{rr'}\,d\ell^i_{r'}=-\psi^i_r\qquad(\textsf{11d},\ \text{remark after Thm 5.4}),\notag\\
+\bigwedge_{r=1}^nd\ell^i_r=(-1)^nU^{-1}\prod_{r=1}^n\psi^i_r,\notag\\
+\bigwedge_{r=1}^n\big(d\ell^1_r\wedge\dots\wedge d\ell^H_r\big)=(-1)^{\binom n2\binom H2}\prod_{i=1}^H\bigwedge_{r=1}^nd\ell^i_r,\notag\\
+\bigwedge_{e\notin T}d^Hy_e=(-1)^{nH+\binom n2\binom H2}\;U^{-H}\prod_{i=1}^H\prod_{r=1}^n\psi^i_r .\label{eq-conv-T0}
+\end{gather}
+\ptr{\textsf{11d} (remark after Thm 5.4) gives ``$U^{-5}\prod_{i,r}\psi^i_r=\pm\bigwedge_{e\notin T}d^5y_e$''; sign: this compendium}{\st{D}; \path{check_conversion.py}: pointwise, exact, $H=1,\dots,6$, 15 graphs}
+
+Consequences, with $K^T_\Gamma$ the reduced kernel for the fundamental cycles of $T$:
+\begin{align}
+\textsf{L}\ (H=2):&\quad\cI^{\textsf{L}}_\Gamma=\int\bigwedge_{e\notin T}(-d^2y_e)\,e^{-\sum yz}=(-1)^{\frac{n(n+1)}2}\,K_\Gamma\quad(\text{independent of }T\text{ and of the cycle basis}),\\
+\textsf{6d}\ (H=3):&\quad\cI^{\textsf{6d}}_\Gamma=\varepsilon_T\det(B_T)\,(-1)^{\frac{n(n+1)}2}\,K^T_\Gamma,\\
+\textsf{11d}\ (5,1):&\quad\cK^{\textsf{11d}}_\Gamma=\varsigma_\Gamma\,K_\Gamma,\qquad\varsigma_{C_7}=-1,\quad\varsigma_{\theta_{pqr}}=-1\quad(\varsigma^{\rm ext}=-1,\ +1).
+\end{align}
+For \textsf{11d}: integrand (5.12) of \textsf{11d}, cycles $A-B$, $B-C$ for $\theta_{pqr}$; $D=6$, no dependence on the cycle basis.
+General $T=0$: $(\varepsilon_T\det B_T)^H\int\bigwedge_{e\notin T}d^Hy_e$ is independent of $T$ in the cases tested ($H$ odd: \textsf{6d} \S5.2; $H$ even: the factor is $1$).
+One-loop polygon, edges $\cO\to1\to\dots\to H\to\cO$ in this order, $C=(1,\dots,1)$:
+\begin{equation}
+U^{-H}\prod_{i=1}^H\psi^i=\det(\lambda_1,\dots,\lambda_H)\,U^{-(H+1)}\,\iota_{\mathcal E}\prod_edt_e,\qquad K_{(H+1)\text{-gon}}(\lambda;0)=\frac{\det(\lambda_1,\dots,\lambda_H)}{H!}.
+\end{equation}
+\ptr{\path{check_conversion.py}}{\st{D}; pointwise exact for $H=2,\dots,6$; consistent with \Sd{6.5} ($\varepsilon_T\det B_T=-1$), \LL{5.9}{eq-1-25} (edge order $(12,13,23)$) and \Ed{6.3}}
+
+Edge order of the fan in \textsf{L}: the density \LL{5.2}{eq-1-40} is the density of $\int\bigwedge_{e\notin T}(-d^2y_e)$ with respect to $\iota_{\mathcal E}\prod dt_e$ for the edge order $(12,\,1\cO,\,23,\,2\cO,\dots,(n{+}1)\cO)$ (order of \LT{Thm}{5.2}{b-01142} and \LT{Def.}{7.1}{b-00380}); as forms, $\bigwedge(-d^2y)=(-1)^{n-1}\,\text{density}\cdot dr_1\wedge\dots\wedge dr_{2n}$, and $dr_1\wedge\dots\wedge dr_{2n}$ has orientation $(-1)^{n-1}$.
+\ptr{\path{check_llc_fan.py}}{pointwise exact, general sources, $n=1,2,3,4$}
+
+\subsection{Disagreements and differences between the sources}\label{sec-disagree}
+
+\begin{enumerate}\itemsep1pt
+\item Version of \textsf{L}. \path{VERSION.json} and the \texttt{pdfsubject} of \path{main.tex}: \texttt{20261120-231110}; \path{README.md} of the same commit: \texttt{20261120-165503}. \textsf{PLAN}, \path{refs/references.md}: \texttt{20261118-140936}.
+\item Section numbers of \textsf{L}. In version \texttt{20261118-140936}, Section 3 has eight subsections (3.1 ``Coordinates and fields'', \dots, 3.8 ``Positive Schwinger times and the operatope''); in version \texttt{20261120-231110} it has seven, old \S3.$k$ $=$ new \S3.$(k-1)$ for $k\ge2$. Citations written against the old numbering: \textsf{6d} (``[LLC, Section 3.2]'', ``Section 3.5'', ``Sections 3.6--3.8'', ``Section 3.8''; now \S3.1, \S3.4, \S\S3.5--3.7, \S3.7), \textsf{11d} (``[LLC, Section 3.6]''; ``[LLC, Table 1]'', now Table 2.16), \textsf{PLAN} and \path{references.md} (``\S3.8''), the task statement (``S1 Section 3.8'', now \S3.7). \S\S4.1--4.3, 5.2, 9, App.~E keep their numbers.
+\item Inside \textsf{L} (version \texttt{20261120-231110}): the opening of \S7 and the text before (7.10) cite ``Corollary~4.9'' and ``Corollary~4.13''; these numbers belong to Proposition 4.9 (\texttt{b-00225}) and Proposition 4.13 (\texttt{b-00240}). Appendix D cites ``Section 3.6'', ``Table 3.1'', ``Section 4'' as literal numbers.
+\item Edge order in \textsf{L}. Theorem 5.1 does not state the edge order of the fan; its density is positive for the order $(12,1\cO,23,2\cO,\dots)$ of Theorem 5.2 and Definition 7.1. The caption of Fig.~3.1 lists the heat-edge signs for the orders $(12,1\cO,2\cO)$ and $(12,23,1\cO,2\cO,3\cO)$; for the second order the two-loop kernel has the opposite sign (\path{check_llc_fan.py}).
+\item Sign conventions of the heat-edge sum: $(-1)^{j-1}$ in \textsf{L} and \textsf{11d}, none in \textsf{6d} (propagator of even degree).
+\item Kernel sign factors: none in \textsf{L}; $\varepsilon_T\det B_T$ in \textsf{6d}; $\varsigma_\Gamma$ in \textsf{11d}, determined only for $C_7$ and $\theta_{pqr}$. Relation of \textsf{11d}'s $\pm$ between $U^{-5}\prod\psi$ and $\bigwedge d^5y$: \eqref{eq-conv-T0}.
+\item Assembly: \textsf{L} and \textsf{11d} sum over labelled graphs with $1/(\#\text{vertices})!$; \textsf{6d} sums over graphs with $1/|{\rm Aut}\,\Gamma|$.
+\item \textsf{6d}, text against code. \path{ops.py} (docstring): ``$Q_1=-(\hbar/(16\pi^3))\,\hat Q_1$''; \textsf{6d}~\S7.4: $Q_1=\frac i{16\pi^3}\hat Q_1$. \path{salg.py}: $C^A=c^A+\theta_1\gamma^{1A}+\theta_2\gamma^{2A}+\theta_1\theta_2b^A$; \Sd{1.2}: $C^A|=i\mathsf c^A+\dots$ (the code letter $c$ is $i\mathsf c$). \path{test_q2.py} solves $\hat Q_1^2=k_A\{\hat Q_0,\hat Q_A\}+k_B\{\hat Q_0,\hat Q_B\}$ and prints $(-2,2)$; \Sd{7.17}: $(k_A,k_B)=(2,-2)$ (stated in \textsf{6d}~\S8.1).
+\item \textsf{6d}~\S8.1 item 3 reports $\{Q_0,Q_1\}=0$ for $\mathfrak{so}(5)$ on six operators; \path{test_q0q1.py} as shipped is fixed to \texttt{su2} and its eleven operators.
+\item \textsf{11d}, text against code: \path{twist_check.py} names $x^{2i-1}+ix^{2i}=z^i$ and prints rank $5$ for the $\partial_z$ components and $0$ for $\partial_{\bz}$; \textsf{11d}~\S2.1 names the same combination $\bz^i$.
+\item \textsf{11d}: \Ed{5.12} orders the integrand as $\langle\prod\psi^\tau\rangle\wedge\prod\psi^i$, \Ed{9.1} as $\prod\psi^i\wedge\rho_n$; the two differ by $(-1)^{5n^2}=(-1)^n$, equal for even $n$, both zero for odd $n$.
+\item \textsf{PLAN} against \textsf{11d}. \textsf{PLAN}~\S3.3 E8 and \S4 T6b list the closed values of the two-loop theta graphs at $T=1$ (among them the five graphs for $H=5$) as [open] and state that no two-loop graph with $T\ge1$, $H\ge1$ integrated to a closed value was found; \Ed{7.5} gives the five values for $H=5$. \textsf{PLAN} uses the normalization $y_e=\bar x^{\mathbb C}_e/t_e$, $s_e=x^{\mathbb R}_e/t_e^{1/2}$ of \textsf{GKW}; \textsf{11d} uses $y=\bz/4t$, $\eta=\tau/2\sqrt t$.
+\item \textsf{PLAN}~\S3.3 E6 attributes $\frac1{24}(\lambda_1\wedge(\lambda_2+2\lambda_3))(\lambda_2\wedge(\lambda_1+2\lambda_3))$ to the ``square-triangle''; in \path{4dDiffPaper.tex} (l.~2337) it is $f_{\text{bitriangle}}[\lambda_1,\lambda_2,\lambda_3;0,0]$, equal to \LL{7.13}{eq-spider-two-arm-value}.
+\item \textsf{PLAN}~\S3.1 gives the polygon value as $|\cI(\lambda;0)|=|\det|/d!$ with density $(-1)^d\det$; \textsf{6d} gives $\cI_{\rm box}=+\frac16\det(\lambda_1,\lambda_2,\lambda_3)$ with $\varepsilon_T\det B_T=-1$. Symbols of the chain move: $(\rho,\sigma_j)$ in \textsf{PLAN}, \path{check_cd.py}; $(r_1,r_2,r_3)$ in \Sd{7.1}.
+\item \textsf{11d} \path{forms_check.py}, Monte Carlo of the $(H,T)=(1,1)$ theta graph $(1,2,2)$: printed (mean, error, closed) $=(-0.2540,\,0.0041,\,+0.2843)$. Sign opposite to the printed closed value (orientation; \path{pointwise.py} prints the ratio $-1$) and magnitude lower by $7$ printed standard errors. Six seeds (re-run): mean$/$closed $=-0.893,-0.935,-0.976,-0.970,-0.954,-0.919$. This Monte Carlo is not cited in the text of \textsf{11d}.
+\item \textsf{11d} \path{consts.py}: the first printed column gives $\pi/158400$ for $(1,6,6)$ and, for the other four graphs, expressions produced by \texttt{nsimplify} that are not of the form $\pi/N$; the second printed column $-c/(4096\pi^{11})=-1/(N'\pi^{10})$ gives $N'/4096=285120,\ 332640,\ 798336,\ 997920$, in agreement with \Ed{0.10}.
+\item Docstring of \path{enumerate_graphs.py}: Laman numbers ``1, 1, 1, 3, 13, 70, 608'' ($|V|=2,\dots,8$); \textsf{PLAN}~\S3.2: ``$1,1,3,13,70,608$'' ($n=1,\dots,6$). Same sequence.
+\end{enumerate}
+
+\section{Counting and graph lists}\label{sec-count}
+
+\subsection{Counting rule}
+\begin{equation}
+D=H+T:\qquad|I|=Dn+1,\qquad|V|=(D-1)n+2,\qquad(D-1)|I_S|\le D|V_S|-D-1,\qquad\text{cycle length}\ge D+1 .
+\end{equation}
+\ptr{C1; \LT{Lemma}{4.4}{b-00207} ($D=2$); \Sd{5.11} ($D=3$); \textsf{11d} Lemmas 5.1, 5.2 ($D=6$); \textsf{GKW} ($n$-Laman, $n=H+T$)}{\st{P}}
+$T=1$: $\rho_n=0$, $\cK_\Gamma=0$ for odd $n$ (\textsf{11d} Cor.~5.6). $T\ge2$ [\st{lit}, \PL{3.3} E8]: $\alpha_\Gamma\wedge\alpha_\Gamma=0$ for every graph with a loop (Balduf--Gaiotto 2408.03192 Thm 2; Wang--Williams 2407.08667 Props.\ 3.23, 3.26); for $T\ge1$ loop corrections exist only at $T=1$ and even loop number.
+
+\subsection{Lists per $(H,T)$}
+
+{\small
+\begin{longtable}{@{}p{1.2cm}p{0.5cm}p{0.6cm}p{9.0cm}p{3.8cm}@{}}
+\toprule
+$(H,T)$ & $D$ & $n$ & graphs & source\\
+\midrule\endhead
+$(2,0)$ & 2 & 1 & triangle & \textsf{L}~\S5.1\\
+ & & 2 & one graph (two-loop fan $=$ bitriangle $\theta(1,2,2)$) & \textsf{gc}; \textsf{L}\\
+ & & $3..6$ & $3,13,70,608$ Laman graphs; SP: $2,5,12,39$; reducible by \textsf{L}-moves (a), (b) inside Laman graphs: $3,11,57,412$; $n=4$ not reduced: prism, $K_{3,3}$ & \textsf{gc}, \PL{3.2}\\
+ & & $n$ & $Q_n$, $\deg\cI\le3$: the fan. $Q_n$, any $\bar W$: fans and spiders ($a$ arms, $\sum\ell_i=n$). $A\star B$: product forests, $1,3,8,23,65,194,576$ for $n=1..7$ & \textsf{L} Cor.~4.15, Thm 7.3, \S7.4\\
+$(3,0)$ & 3 & 1 & box $C_4$ & \Sd{5.11}; \textsf{gc}\\
+ & & 2 & $\theta(1,3,3)$ $=(A)$ double box, $\theta(2,2,3)$ $=(B)$ spider & \Sd{5.14}; \textsf{gc}\\
+ & & 3 & $16$ graphs: $10$ SP, $6$ subdivisions of $K_4$ (chain lengths $[1,1,1,1,3,3]$, $[1,1,1,2,2,3]\times3$, $[1,1,2,2,2,2]\times2$); hCS on $\mathbb C^{3|2}$ ($\deg\cO=n+p$, cone over a forest): $5$ of $16$, all SP, $\deg\cO=4$, $p=1$, skeleton chain lengths $[1,1,2,3,3]\times2$, $[1,2,2,2,3]\times2$, $[2,2,2,2,2]$ & \textsf{gc}, \PL{3.2}\\
+$(4,0)$ & 4 & 1, 2 & pentagon; $\theta(1,4,4),\theta(2,3,4),\theta(3,3,3)$ & \textsf{gc}\\
+$(5,0)$ & 5 & 1, 2 & hexagon; $\theta(1,5,5),\theta(2,4,5),\theta(3,3,5),\theta(3,4,4)$ & \textsf{gc}, \PL{4} T5\\
+$(5,1)$ & 6 & 1 & heptagon $C_7$ (kernel vanishes on $\tau$-independent outputs) & \textsf{11d} Cor.~5.3\\
+ & & 2 & $\theta(1,6,6),\theta(2,5,6),\theta(3,4,6),\theta(3,5,5),\theta(4,4,5)$; $|V|=12$, $|I|=13$ & \textsf{11d} Cor.~5.3; \textsf{gc} ($d=6$)\\
+$(0,1)$ & 1 & $n$ & two vertices, $n+1$ parallel edges & \textsf{11d} remark after Cor.~5.6; \textsf{GKW} l.~1223\\
+$(1,1)$ & 2 & 2 & bitriangle $\theta(1,2,2)$ & \PL{3.3} E8; \textsf{GKW} l.~1496\\
+$(2,1)$ & 3 & 2 & $\theta(1,3,3),\theta(2,2,3)$ & \PL{3.3} E8\\
+\bottomrule
+\end{longtable}}
+
+Every SP graph of \textsf{gc} reduces to one edge by the parallel-chain moves of C5 alone (column CH $=$ SP in all rows). If $\Gamma\setminus\cO$ is a forest, $\Gamma$ has treewidth $\le2$ and is SP (\PL{3.2}).
+
+\subsection{\texttt{results/graph\_counts.txt}}
+Output of \path{code/enumerate_graphs.py}; re-run on 2026-11-20, identical (51 lines, \texttt{diff} empty).
+\lstinputlisting{../results/graph_counts.txt}
+
+\section{Reduction moves and local Jacobians}\label{sec-moves}
+
+In \textsf{L}: $\br{u,v}=u_{+\dot a}v_+{}^{\dot a}$, kernel $\int\bigwedge_{e\notin T}(-d^2y_e)$. ``Factor'' is the factor multiplying $\prod dr$ in the oriented integral over the stated domain, the reduced kernel integrand standing to its right.
+
+\rid{M1} Series elimination (degree-two vertex $v$ between $u,w$), no loop removed:
+\begin{gather*}
+r=\frac{t_{vw}}{t_{vu}+t_{vw}},\quad t^{\rm red}_{uw}=t_{vu}+t_{vw},\quad\lambda_u^{\rm red}=\lambda_u+r\lambda_v,\quad\lambda_w^{\rm red}=\lambda_w+(1-r)\lambda_v,\\
+y_{vu}=r\lambda_v-y^{\rm red}_{uw},\qquad y_{vw}=(1-r)\lambda_v+y^{\rm red}_{uw}.
+\end{gather*}
+\ptr{\LL{5.12}{eq-1-64}}{\st{P}}
+
+\rid{M2} Parallel merge of $q$ edges $u\to w$:
+\begin{equation*}
+\frac1{t^{\rm red}_{uw}}=\sum_{j=1}^q\frac1{t^{(j)}_{uw}},\qquad r_j=\frac{t^{\rm red}_{uw}}{t^{(j)}_{uw}},\quad\sum_jr_j=1,\qquad y^{(j)}_{uw}=r_jy^{\rm red}_{uw}.
+\end{equation*}
+\ptr{\LL{5.14}{eq-1-63}}{\st{P}}
+
+\rid{M3} Series--parallel move on $\mathbb C^2$ ($v$ of degree two, base edge $uw$; edge order $(vu,vw)$ first), removes one loop:
+\begin{gather*}
+r_1=\frac{t_{vw}}{t_{vu}+t_{vw}},\qquad r_2=\frac{t_{vu}+t_{vw}}{t_{vu}+t_{vw}+t_{uw}},\qquad z^{\rm red}_{uw}=r_2z_{uw}+(1-r_2)(z_{vw}-z_{vu}),\\
+y_{uw}=r_2y^{\rm red}_{uw},\qquad y_{vu}=r_1\lambda_v-(1-r_2)y^{\rm red}_{uw},\qquad y_{vw}=\lambda_v-y_{vu},\\
+\cI_\Gamma(\lambda;z)=\int_0^1dr_1\int_0^1dr_2\;e^{-\lambda_v(r_1z_{vu}+(1-r_1)z_{vw})}\;r_2\,\lambda_{v,+\dot a}\Big(-\epsilon^{\dot a\dot b}\frac{\partial}{\partial z^{{\rm red},+\dot b}_{uw}}\Big)\cI_{\Gamma^{\rm red}}(\lambda^{\rm red};z^{\rm red}),\\
+\text{factor: }r_2\,\br{\lambda_v,y^{\rm red}_{uw}}\ \text{on }(0,1)^2;\\
+-d^2y_{vu}\equiv-r_2\br{\lambda_v,y^{\rm red}_{uw}}\,dr_1\wedge dr_2,\qquad d\Big(\frac{t_{vu}}{t_{uw}}\Big)\wedge d\Big(\frac{t_{vw}}{t_{uw}}\Big)=-\frac{r_2}{(1-r_2)^3}\,dr_1\wedge dr_2 .
+\end{gather*}
+\ptr{\LT{Thm}{5.2}{b-01142} \LL{5.15}{eq-kernel-series-parallel}, \LL{5.16}{b-01151}; box (a) \LL{2.40}{eq-sum-moves}}{\st{P}; iterated in the fan: pointwise exact $n\le4$ (\path{check_llc_fan.py})}
+
+\rid{M4} Star--triangle without source on $\mathbb C^2$ ($v$ of degree three, neighbours $u,w,x$; $ux,wx$ present, $uw$ absent; edge order $(vu,vw,vx,ux,wx)\to(uw,ux,wx)$), removes one loop:
+\begin{gather*}
+t^{\rm red}_{uw}=t_{vu}+t_{vw}+\frac{t_{vu}t_{vw}}{t_{vx}},\qquad\frac1{t^{\rm red}_{ux}}=\frac1{t_{ux}}+\frac{t_{vw}}\Sigma,\qquad\frac1{t^{\rm red}_{wx}}=\frac1{t_{wx}}+\frac{t_{vu}}\Sigma,\\
+\Sigma=t_{vu}t_{vw}+t_{vw}t_{vx}+t_{vx}t_{vu},\qquad r_1=\frac{t^{\rm red}_{ux}}{t_{ux}},\qquad r_2=\frac{t^{\rm red}_{wx}}{t_{wx}},\\
+y_{vu}=-y^{\rm red}_{uw}-(1-r_1)y^{\rm red}_{ux},\qquad y_{vw}=y^{\rm red}_{uw}-(1-r_2)y^{\rm red}_{wx},\qquad y_{vx}=(1-r_1)y^{\rm red}_{ux}+(1-r_2)y^{\rm red}_{wx},\\
+y_{ux}=r_1y^{\rm red}_{ux},\qquad y_{wx}=r_2y^{\rm red}_{wx},\\
+\text{factor: }r_1r_2\,\br{y^{\rm red}_{ux},y^{\rm red}_{wx}}\ \text{on }(0,1)^2\qquad(T^{\rm red}\ni ux,wx).
+\end{gather*}
+\ptr{\LT{Thm}{7.4}{b-01159} \LL{7.22}{b-01166}, \LL{7.23}{eq-kernel-star-triangle}, \LL{7.26}{eq-star-current-wedge}; box (b) \LL{2.41}{eq-sum-star-triangle}}{\st{P}}
+
+\rid{M5} Paired star--triangle ($v_1,v_2$ source-free of degree three, each joined to $u,A,B$; $AB$ present, $uA,uB$ absent), removes two loops; $0<r_1,r_2<1$, $r_3,r_4>0$, $r_3+r_4<1$:
+\begin{gather*}
+y_{v_1u}=-r_1y^{\rm red}_{uA}-r_2y^{\rm red}_{uB},\qquad y_{v_2u}=-(1-r_1)y^{\rm red}_{uA}-(1-r_2)y^{\rm red}_{uB},\\
+y_{v_1A}=r_1y^{\rm red}_{uA}-r_3y^{\rm red}_{AB},\qquad y_{v_2A}=(1-r_1)y^{\rm red}_{uA}-r_4y^{\rm red}_{AB},\\
+y_{v_1B}=r_2y^{\rm red}_{uB}+r_3y^{\rm red}_{AB},\qquad y_{v_2B}=(1-r_2)y^{\rm red}_{uB}+r_4y^{\rm red}_{AB},\qquad y_{AB}=(1-r_3-r_4)y^{\rm red}_{AB},\\
+\text{factor: }(r_1-r_2)(1-r_3-r_4)\,\br{y^{\rm red}_{uA},y^{\rm red}_{AB}}\br{y^{\rm red}_{uB},y^{\rm red}_{AB}}\ \text{on }(0,1)^2\times\Delta^2 .
+\end{gather*}
+\ptr{\LT{Thm}{7.5}{b-01173} \LL{7.27}{b-01180}, \LL{7.28}{eq-kernel-two-leaves}}{\st{P}}
+
+\rid{M6} Star--triangle with a source $\lambda_v$ on $\mathbb C^2$ (same configuration as M4):
+\begin{gather*}
+\Sigma=t^{\rm red}_{uw}+\frac{t^{\rm red}_{ux}}{1-r_1}+\frac{t^{\rm red}_{wx}}{1-r_2},\\
+\lambda_u^{\rm red}=\lambda_u+\frac{t^{\rm red}_{wx}}{(1-r_2)\Sigma}\lambda_v,\qquad\lambda_w^{\rm red}=\lambda_w+\frac{t^{\rm red}_{ux}}{(1-r_1)\Sigma}\lambda_v,\qquad\lambda_x^{\rm red}=\lambda_x+\frac{t^{\rm red}_{uw}}\Sigma\lambda_v,\\
+y_{vu}=\frac{t^{\rm red}_{wx}}{(1-r_2)\Sigma}\lambda_v-y^{\rm red}_{uw}-(1-r_1)y^{\rm red}_{ux},\qquad y_{vw}=\frac{t^{\rm red}_{ux}}{(1-r_1)\Sigma}\lambda_v+y^{\rm red}_{uw}-(1-r_2)y^{\rm red}_{wx},\\
+y_{vx}=\frac{t^{\rm red}_{uw}}\Sigma\lambda_v+(1-r_1)y^{\rm red}_{ux}+(1-r_2)y^{\rm red}_{wx},\qquad y_{ux}=r_1y^{\rm red}_{ux},\quad y_{wx}=r_2y^{\rm red}_{wx},\\
+\cI_\Gamma(\lambda;z)=-\int_{(0,1)^2\times\RPp{2n-2}}e^{-\sum_ey_ez_e}\,[-d(r_1y^{\rm red}_{ux,+\dot+})\wedge d(r_1y^{\rm red}_{ux,+\dot-})]\\
+\wedge[-d(r_2y^{\rm red}_{wx,+\dot+})\wedge d(r_2y^{\rm red}_{wx,+\dot-})]\wedge\bigwedge_{\substack{e\in I^{\rm red}\setminus T^{\rm red}\\e\ne uw}}(-d^2y^{\rm red}_e).
+\end{gather*}
+In the original resistances: $\lambda_u^{\rm red}=\lambda_u+\frac{t_{vw}t_{vx}}{\Sigma'}\lambda_v$ and cyclically, $\Sigma'=t_{vu}t_{vw}+t_{vw}t_{vx}+t_{vx}t_{vu}$. Currents and density rational in the remaining resistances.
+\ptr{\LT{Thm}{E.1}{thm-sourced-star} \LL{E.1}{eq-sourced-Sigma}, \LL{E.2}{local-B-sourced-current-map}, \LL{E.3}{local-B-sourced-operator}; text after \LL{2.41}{eq-sum-star-triangle}}{\st{P}}
+
+\rid{M7} Terminal parallel merge of a spider ($a$ arm edges $(v_{i,\ell_i},A)$ in parallel with $(A,B)$):
+\begin{gather*}
+\bigwedge_{i=1}^a(-d^2y_{v_{i,\ell_i}A})=\Big(1-\sum_ir_{i,2\ell_i}\Big)\prod_{i=1}^a\br{\lambda^{\rm red}_{v_{i,\ell_i}},y^{\rm red}_{AB}}\bigwedge_{i=1}^a(dr_{i,2\ell_i-1}\wedge dr_{i,2\ell_i}),\\
+-d^2y_{v_{i,j}v_{i,j+1}}\equiv(1-r_{i,2j})\br{\lambda^{\rm red}_{v_{i,j}},y^{\rm red}_{v_{i,j+1}B}}\,dr_{i,2j-1}\wedge dr_{i,2j}.
+\end{gather*}
+\ptr{\LL{7.8}{eq-ch7-rewrite-08}, \LL{7.6}{eq-ch7-rewrite-06}}{\st{P}}
+
+\rid{M8} One-loop polygon on $\mathbb C^d$ (base of every reduction): $\sigma_j=\frac1T\sum_{k>j}t_k$, $y_1=-\sum_j\sigma_j\lambda_j$,
+\begin{equation*}
+d^dy_1=(-1)^d\det(\lambda_1,\dots,\lambda_d)\,d\sigma_1\wedge\dots\wedge d\sigma_d\quad(1>\sigma_1>\dots>\sigma_d>0);\qquad d=3:\ \omega_4=T^4\,dr_1\wedge dr_2\wedge dr_3 .
+\end{equation*}
+\ptr{C2; \Sd{6.1}--\Sd{6.3}}{\st{P} ($d=3$); \st{C}, \st{R} $d=2..5$}
+
+\rid{M9} Chain move on $\mathbb C^3$ ($p\to v\to v'\to q$ with $t_1,t_2,t_3$, parallel to $p\to q$ with $t_0$), removes one loop, two vertices, three edges:
+\begin{gather*}
+T=t_1+t_2+t_3,\quad r_1=\frac T{T+t_0},\quad r_2=\frac{t_2+t_3}T,\quad r_3=\frac{t_3}T,\quad\frac1{t^{\rm red}}=\frac1T+\frac1{t_0},\quad0<r_1<1,\ 1>r_2>r_3>0,\\
+y_0=r_1y^{\rm red},\quad y_1=(1-r_1)y^{\rm red}-r_2\lambda_v-r_3\lambda_{v'},\quad y_2=y_1+\lambda_v,\quad y_3=y_2+\lambda_{v'},\\
+\lambda_p^{\rm red}=\lambda_p+r_2\lambda_v+r_3\lambda_{v'},\qquad\lambda_q^{\rm red}=\lambda_q+(1-r_2)\lambda_v+(1-r_3)\lambda_{v'},\\
+d^3y_1\equiv-r_1^2\det(y^{\rm red},\lambda_v,\lambda_{v'})\,dr_1\wedge dr_2\wedge dr_3,\qquad\omega_m=-T^2t^{\rm red}r_1^{-2}(1-r_1)^{-2}\,dr_1\wedge dr_2\wedge dr_3\wedge\omega_{m-3},\\
+\text{factor: }r_1^2\det(y^{\rm red},\lambda_v,\lambda_{v'})\ \text{on }(0,1)\times\{1>r_2>r_3>0\}\qquad(\text{edge order (chain, }t_0\text{, rest), cotree }(y_1,\text{rest})).
+\end{gather*}
+On $\mathbb C^d$: C3, factor $\rho^{d-1}\det(y^{\rm red},\lambda_1,\dots,\lambda_{d-1})$.
+\ptr{\Sd{7.1}, \Sd{7.2}, \Sd{7.3}; C3}{\st{P} ($d=3$); \st{C}, \st{R} pointwise with sign $d=2..5$}
+
+\rid{M10} Bubble move on $\mathbb C^3$ ($p\to v\to q$ and $p\to v'\to q$), removes one loop:
+\begin{gather*}
+T_1=t_{pv}+t_{vq},\quad T_2=t_{pv'}+t_{v'q},\quad\frac1{t^{\rm red}}=\frac1{T_1}+\frac1{T_2},\\
+r_1=\frac{T_1}{T_1+T_2},\quad r_2=\frac{t_{vq}}{T_1},\quad r_3=\frac{t_{v'q}}{T_2},\quad0<r_1,r_2,r_3<1,\\
+y_{pv}=(1-r_1)y^{\rm red}-r_2\lambda_v,\quad y_{vq}=y_{pv}+\lambda_v,\quad y_{pv'}=r_1y^{\rm red}-r_3\lambda_{v'},\quad y_{v'q}=y_{pv'}+\lambda_{v'},\\
+\lambda_p^{\rm red}=\lambda_p+r_2\lambda_v+r_3\lambda_{v'},\qquad\lambda_q^{\rm red}=\lambda_q+(1-r_2)\lambda_v+(1-r_3)\lambda_{v'},\\
+d^3y_{pv}\equiv r_1(1-r_1)\det(y^{\rm red},\lambda_v,\lambda_{v'})\,dr_1\wedge dr_2\wedge dr_3,\qquad
+\text{factor: }r_1(1-r_1)\det(y^{\rm red},\lambda_v,\lambda_{v'})\ \text{on }(0,1)^3 .
+\end{gather*}
+\ptr{\Sd{7.4}, \Sd{7.5}, \Sd{7.6}}{\st{P}; \st{C}, \st{R}}
+
+\rid{M11} Theta reduction at $T=1$, $H=5$ (series reduction of the three paths, then the three parallel resistors $R_P$): variables and currents of E8;
+\begin{equation*}
+\varsigma_\theta\,U^{-5}\rho_2\wedge\prod_{i=1}^5\psi^i_1\psi^i_2=\frac{D_\theta}2\prod_Pw_P^{\frac{11}2-n_P}\,d^2w\prod_Pd^{n_P-1}x^P\quad\text{on }\Delta^2\times\prod_P\Delta^{n_P-1},
+\end{equation*}
+$\rho_n$ depends on the Schwinger times only through the resistances of the series-reduced graph.
+\ptr{\textsf{11d} Thm 7.1 \Ed{7.3}, \Ed{7.6}--\Ed{7.9}; \S9}{\st{P}; \st{C} (\st{N}), \st{R}}
+
+\rid{M12} General $k$-chain series--parallel move on $\mathbb C^d$: counting C5 only.
+\ptr{\PL{3.3} E1}{\st{open}}
+
+\section{Kernels table}\label{sec-kernels}
+
+{\small
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.9cm}>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{6.0cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.1cm}@{}}
+\toprule
+$(H,T)$ & graph & closed form (kernel of the source) & where proved & how checked\\
+\midrule\endhead
+$(2,0)$ & triangle & $\br{\lambda_1,\lambda_2}\int_{\Delta^2}e^{-\sum yz}$; $z=0$: $\frac12\br{\lambda_1,\lambda_2}$ [L14] & \textsf{L}~\S5.1 & equals BK (2.47)--(2.48) (\textsf{L}); \path{check_llc_fan.py} $n=1$\\
+ & $n$-loop fan & L15; $z=0$, endpoint sources: $\br{\lambda_1,\lambda_{n+1}}^n/((n!)^3(n+1))$ & \textsf{L} Thm 5.1 & \textsf{Op} $n\le3$, GWW (\textsf{L}); pointwise exact $n\le4$, value exact $n\le6$ (here)\\
+ & spider $(\ell_1,\dots,\ell_a)$ & L16; $(1,1)$: $\frac1{24}\br{\lambda_1,\lambda_2+2\lambda_A}\br{\lambda_2,\lambda_1+2\lambda_A}$ & \textsf{L} Thm 7.2 & $(1,1)$: equals \textsf{Op} bitriangle; (7.12)$\to$(7.13) exact (here)\\
+ & three-loop product forests & L17: $\pm\frac1{864},-\frac1{576}\br{\lambda_1,\lambda_A}^3$, $0$; first jet $\frac1{8640}$ & \textsf{L}~\S7.4 & integrals exact (here)\\
+ & cubic product forests, $n\le7$ & polynomial densities; tables in the repository of \textsf{L} & \textsf{L} Thm 7.6 & Leibniz rule through four loops (\textsf{L})\\
+ & trees with several sources (higher $\bar W$) & rational densities, M6 & \textsf{L} App.~E & --\\
+ & prism, $K_{3,3}$ ($n=4$) & -- & -- & \st{open} (\PL{3.3} E6)\\
+$(3,0)$ & box & $\det(\lambda_1,\lambda_2,\lambda_3)\int_{1>r_1>r_2>r_3>0}e^{\sum\lambda_j\cdot x_j}$; $z=0$: $\frac16\det$ [S5] & \textsf{6d}~\S6.1 & \path{check_twoloop_kernels.py}, \path{check_z_dependence.py}\\
+ & $(A)$ $=\theta(1,3,3)$ & $\int_{D_A}\cJ_A\,e^{\sum\lambda_v\cdot X_v}$; $z=0$: $\frac{(2\br{124}+\br{125})(\br{145}+2\br{245})}{432}$ [S7] & \textsf{6d}~\S7.3 & same scripts; integral exact (here)\\
+ & $(B)$ $=\theta(2,2,3)$ & $-\int_{D_B}\cJ_B\,e^{\sum\lambda_v\cdot X_v}$; $z=0$: $-\frac{(2\br{uwa}+\br{uwb})(\br{uab}+\br{wab})}{288}$ [S7] & \textsf{6d}~\S7.3 & same\\
+ & $n$-box ladder, corner sources & $\Delta^n\frac{(-1)^{n-1}2^{n+1}}{(n+2)!\,n!^2(n+1)!^2}$ [C4] & \path{check_cd.py} (recursion) & direct $n\le4$, recursion $n\le6$\\
+ & $Q_3$ graphs (5), $K_4$ subdivisions (6) & -- & -- & \st{open} (\PL{4} T2, \PL{3.3} E6)\\
+$(d,0)$ & $(d+1)$-gon & $|\cI(\lambda;0)|=|\det(\lambda_1..\lambda_d)|/d!$ [C2]; reduced kernel $+\det/H!$ (Section~\ref{sec-conv}) & \PL{3.1} & \path{check_cd.py} $d=2..5$; \path{check_conversion.py} $H=2..6$\\
+ & $(d+1)$-gon glued by a chain move & density C3 & \PL{3.1} & pointwise $d=2..5$\\
+$(5,0)$ & two-loop thetas & -- & -- & \st{open} (\PL{4} T5)\\
+$(5,1)$ & heptagon, sources $(\kappa;\lambda)$ & $-\det[q_1..q_6]\int_{\Delta^6}e^{\sum t_ew_e^2-\sum y_e\cdot z_e}$; $z=0$: $-\frac1{6!}\det[q](1+O(\kappa^2))$; zero on $H(D)$ [E7] & \textsf{11d} Thm 6.1 & \path{forms_check.py}\\
+ & $\theta_{pqr}$ & $\frac{D_\theta}2\int_{\Delta^2}\prod_Pw_P^{\frac{11}2-n_P}\int e^{-\sum y\cdot z}$; $z=0$: $c_{pqr}\pi D_\theta$ [E8] & \textsf{11d} Thm 7.1 & \path{forms_check.py}, \path{pointwise.py}, \path{consts.py}; constants exact (here)\\
+ & odd $n$ & $0$ [E5] & \textsf{11d} Cor.~5.6 & --\\
+$(0,1)$ & three parallel edges ($n=2$) & raw integral $\frac14$ [E6] & \textsf{11d} remark & exact (here); MC $3.115\pm0.092$ vs $\pi$ for $4\pi\times$raw\\
+$(1,1)$ & bitriangle $\theta(1,2,2)$ & \textsf{RS} observation: $\frac\pi3D_\theta$ [C7]; integrand in \textsf{GKW} (l.~1524--1530), not integrated there & -- & \path{pointwise.py}: ratio $-1.0$ at 3 points; base integral $\pi/3$ by quadrature (12 digits); MC: Section~\ref{sec-disagree} item 15\\
+$(2,1)$ & $\theta(1,3,3)$, $\theta(2,2,3)$ & \textsf{RS} observation: $\frac\pi{20}D_\theta$, $\frac\pi{30}D_\theta$ [C7] & -- & none in the sources\\
+\bottomrule
+\end{longtable}}
+
+\section{Operators}\label{sec-ops}
+
+\subsection{Normalizations}
+
+{\small
+\renewcommand{\arraystretch}{1.4}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+ & \textsf{L}, $\mathcal N=4$ on $\mathbb C^{2|3}$ & \textsf{6d}, hCS on $\mathbb C^{3|2}$ & \textsf{11d}, $\mathbb R\times\mathbb C^5$\\
+\midrule\endhead
+superfield & $C=ig\,c+\theta_I\gamma^I-\frac12\varepsilon^{IJK}\theta_I\theta_J\beta_K+\frac{\theta_1\theta_2\theta_3}{ig}b$ & $C|=i\mathsf c+\theta_i\gamma^i+\theta_1\theta_2\mathsf b$ & $\Phi^A=(\mu^i,\nu,\gamma_i,\beta)$, $(\mu^i)^*=\gamma_i$, $\nu^*=\beta$\\
+interaction & $\frac i{3!}C_{ABC}C^AC^BC^C$ & $\frac i{3!}C_{ABC}C^AC^BC^C$ & $W=\beta\partial_i\mu^i+f\mu^i\mu^j\partial_i\gamma_j+\frac g6\varepsilon\gamma\partial\gamma\partial\gamma$\\
+$Q_0$ & $Q_0C^A=\frac i2C^A{}_{BC}C^BC^C$ & $Q_0C^A=\frac i2C^A{}_{BC}C^BC^C$ & $Q_0\Phi^A=\delta_LW/\delta\Phi^{A*}$\\
+vertices of $Q_n$ & $n+1$ & $2n+1$ & $5n+1$\\
+letters $\to$ letters & $n+1\to2$ & $n+1\to n+2$ & \\
+derivatives added & $n$ of $\partial_{+\dot+}$, $n$ of $\partial_{+\dot-}$ & $n$ of each $\partial_1,\partial_2,\partial_3$ & \\
+per-loop factor of the raw integral & $-1/(8\pi^2)$ & $-1/(8\pi^3)$ & $-i/(64\pi^{11/2})$\\
+prefactor of $Q_n$ & $\dfrac{(-1)^ni^{n+1}}{2(32\pi^2)^n}$ (fan; $\frac12$ path reversal, $4^{-n}$ from $\lambda\mapsto-\frac12\partial$) & $\dfrac i{(8\pi^3)^n|{\rm Aut}\,\Gamma|}$: $\frac i{16\pi^3}$, $\frac i{128\pi^6}$ & $\Big(\dfrac{-i}{64\pi^{11/2}}\Big)^n\dfrac1{(5n+1)!}$: $n=2$: $-\dfrac1{4096\pi^{11}}\dfrac1{11!}$\\
+zero input derivatives & $\dfrac{(-1)^ni^{n+1}}{2(32\pi^2)^n(n!)^3(n+1)}$ & $Q_1$: $\frac i{96\pi^3}$; $Q_2$: $\frac i{128\pi^6}\big(\frac{\cdot}{432}T_A-\frac{\cdot}{288}T_B\big)$ & $Q_2$: $c_{pqr}\pi D_\theta$ per theta graph\\
+\bottomrule
+\end{longtable}}
+
+\subsection{\textsf{L}: $\mathcal N=1$ gauge theories and $\mathcal N=4$ Yang--Mills theory on $\mathbb C^2$}
+$Q_0$: L1, L2. $Q_n$, all $n$: L3 (general), L4 (operator with translated outputs), L5 (Taylor coefficients, zero input derivatives), L6 ($Q_1$, $Q_2$, components). Vanishing: L7. Master equation: L8. Quantum product: L9 (definition, Leibniz rule, ring, contour comparison), L10 (graph formula), L11 (one and two loops, contact defect, associator). Multi-graviton completions and transfer: L18.
+\begin{equation}
+\mathbf Q=\sum_{n\ge0}\hbar^nQ_n,\qquad A\star B=AB+\hbar\{\cI,A,B\}^{\{(2,3)\},0}+\frac{\hbar^2}2\{\cI,\cI,A,B\}^{\{(3,4)\},0}+O(\hbar^3).
+\end{equation}
+\ptr{\LL{2.4}{eq-sum-Q-expansion}, \LL{2.18}{eq-sum-product-expansion}}{definitions}
+
+\subsection{\textsf{6d}: holomorphic Chern--Simons theory on $\mathbb C^{3|2}$}
+$Q_0$: S3. $Q_1$: S6. $Q_2$: S8, kernels S7. General form S4. Relations S9. Under $\theta_1\to-\theta_1$: $Q_n\to(-1)^nQ_n$ (\textsf{6d}~\S8.2 item 4).
+
+\subsection{\textsf{11d}: minimally twisted eleven-dimensional supergravity}
+$Q_0$: E1. $Q_n=\frac1{(5n+1)!}\{\cI^{\otimes(5n+1)},\cO\}_0$ \Ed{4.13}. $Q_1$: E7, zero on $H(D)$. $Q_{2k+1}=0$ on $H(D)$: E5. $Q_2$: E9 with the kernels E8; $g$-grading and vertex factors E9; not expanded into components.
+
+\section{Checks performed and assumptions}\label{sec-checks}
+
+\subsection{Scripts of the sources, re-run on 2026-11-20}
+Copies in \path{notes/_aux/runs/code_6d}, \path{code_11d}, \path{code_cd}; outputs in \path{notes/_aux/runs/out/}. Python 3.13, sympy 1.14.0, numpy 2.2.6, scipy 1.16.1, networkx 3.5.
+
+{\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{9.4cm}>{\raggedright\arraybackslash}p{3.3cm}@{}}
+\toprule
+script & printed & arithmetic\\
+\midrule\endhead
+\path{check_cd.py} ($=$ \path{kirchhoff.py}) & $d=2,3,4,5$: ``$(d+1)$-gon density == $(-1)^d\det(\lambda_1..\lambda_d)$: True''; ``chain move, generic sources, pointwise identity incl.\ sign: True'' with integrals $5/24$, $1405/72$, $1771/60$, $309821/7200$ (for the random sources of the run); ``$\mathbb C^3$ two-box ladder, corner sources: identity True; $I=-529/108$; $-\Delta^2/432=-529/108$; $\Delta=46$''; recursion $=$ closed form for $n=1..6$: $1/6$, $-1/432$, $1/155520$, $-1/186624000$, $1/587865600000$, $-1/4147979673600000$ & exact\\
+\path{check_ladder.py} & $n=1..4$: ``direct Kirchhoff density == reduced polynomial (exact, 3 points): True'', $I/\Delta^n=$ closed form & exact\\
+\path{check_twoloop_kernels.py} & ``box: $|$density$|$ matches: True; sign(direct/predicted) $=\{1\}$; eps\_T det(B\_T) $=-1$''; ``(A) double box: \dots True; $\{1\}$; $1$''; ``(B) spider: \dots True; $\{1\}$; $-1$'' & exact\\
+\path{check_z_dependence.py} & ``$-\sum_ey_e.z_e=\sum_v\lambda_v.X_v$ at 20 random rational points: \{box: True, A: True, B: True\}'' & exact\\
+\path{test_q0q1.py} (\texttt{su2}) & ``Q0\textasciicircum2 = 0: True''; eleven operators: ``\{Q0,Q1\} \dots ZERO''; ``\{Q0hat, Q1hat\} = 0 on all tests: True'' & exact\\
+\texttt{test\_q2.py su2} & seven operators without input derivatives: $|Q_1^2|=|\{Q_0,Q_A\}|=|\{Q_0,Q_B\}|=0$; \texttt{dg1\_0 g2\_1 b\_2} and \texttt{g1\_0 g2\_1 db\_2}: $290,310,310$ terms; ``equations: 620 rank of [A$|$B]: 2 rank augmented: 2; solution (kA, kB): $\{(-2,2)\}$'' (89 s) & exact\\
+\texttt{test\_q2.py so5 'g1\_0 g2\_1 b\_2'} & ``$|Q_1^2|=8316$, $|\{Q_0,Q_A\}|=8208$, $|\{Q_0,Q_B\}|=7722$ (648 s); equations: 8316 rank of [A$|$B]: 2 rank augmented: 2; solution (kA, kB): $\{(-2,2)\}$'' & exact\\
+\path{twist10d.py}, \path{twist10d_check.py} & ``C = prod odd: $C\Gamma^MC^{-1}=s(\Gamma^M)^T$ with $s$ in [1]''; $QA_i=-\xi^i$, $QA_{\bar i}=0$; ``Q eta = 2 Phi: True''; ``Q chi\_ij = 4 F\_\{ibar jbar\}: True''; ``Q xi\textasciicircum i = 0: True''; ``(1/4)F\textasciicircum2 = 4 S02 - 2 Phi\textasciicircum2 + 2 T: True''; ``T vanishes on F = p\textasciicircum A: True'' & exact (sympy)\\
+\path{enumerate_graphs.py} & identical to \path{results/graph_counts.txt} & integer\\
+\path{twist_check.py} & ``dim of solutions $CG_M=-G_M^TC$: 1''; ``$C^T=-C$: True''; ``$C\Gamma^M$ symmetric for all $M$: True''; ``$\Gamma^M(Q,Q)=0$: True''; ``rank of $\chi\to\Gamma^M(Q,\chi)$: 6''; ``rank of d\_z components: 5, rank of d\_zbar components: 0, d\_tau component nonzero: True''; ``dim so(11).Q = 16''; ``dim $\{X:XQ\in\mathbb CQ\}$ = 40'' & floating point\\
+\path{extra_checks.py} & Fock levels of $\chi$ with $\Gamma^M(Q,\chi)\ne0$: $[4,5]$; levels paired with level 0 by $C$: $[5]$; $\max|Q^TC\Gamma^{MN}Q|=7.6\times10^{-17}$; $D_\theta/$expansion $=1$ to 14--15 digits for the five graphs & floating point\\
+\path{consts.py} & $c_{166}=\pi/158400$; $-c/(4096\pi^{11})=-1/(N'\pi^{10})$ with $N'=648806400$, $1167851520$, $1362493440$, $3269984256$, $4087480320$; ``polynomial currents (2,5,6) True'', ``(4,4,5) True''; $\Gamma(11/2)/\pi^{11/2}=945/(32\pi^5)$ & sympy $+$ floating point\\
+\path{pointwise.py} & ratio (integrand$\,\times|$jac$|$)$/$($\frac12D_\theta\prod w_P^{H+1/2-n_P}$) at three points: $(1,1,1),H=0$: $1.0$; $(1,2,2),H=1$: $-1.0$; the five graphs at $H=5$: $-1.0$ (8 digits); ``3d base integral $1.0471975511969$, $\pi/3=1.0471975511966$'' (12 digits) & floating point\\
+\path{forms_check.py} & extraction identity $F/({\rm pref}\cdot D)$: $+1$ (TQM banana, 3d $\theta(1,2,2)$, the five 11d thetas), $-1$ (heptagon), 13--15 digits; heptagon $\mathcal DU/\det[q]=1$; thetas: ratio\_tau $=1$, ratio\_hol $=\pm1$, total $=1$ (14 digits); Monte Carlo: TQM banana $(3.115,0.092,3.1416)$; 3d $\theta(1,2,2)$ $(-0.2540,0.0041,0.2843)$ & floating point; Monte Carlo\\
+\path{q0_check.py}, \texttt{q0\_check.py 7} & ``(1,1,1,1) Q\textasciicircum2=0''; the other seven sign choices ``fails''; same output for the default cut (terms of degree $\le4$) and for the cut $7$ (degree $\le6$), $g=1,3$ & exact\\
+\bottomrule
+\end{longtable}}
+
+\subsection{Checks made for this compendium}
+{\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{12.9cm}@{}}
+\toprule
+script (\path{notes/_aux/}) & printed\\
+\midrule\endhead
+\path{check_conversion.py} & identity \eqref{eq-conv-T0} ``True'' for: banana ($H=1$), \textsf{L} triangle, fans $n=2,3$ ($H=2$), box, $(A)$, $(B)$ ($H=3$), pentagon, $\theta(1,4,4),\theta(2,3,4),\theta(3,3,3)$ ($H=4$), hexagon, $\theta(1,5,5),\theta(3,4,4)$ ($H=5$), heptagon ($H=6$); ``all identities: True''; $\varepsilon_T\det(B_T)$: box $-1$, $(A)$ $1$, $(B)$ $-1$; $(k)$-gon, $k=3..7$: $U^{-H}\prod\psi=\det(\lambda_1..\lambda_H)U^{-H-1}\iota_{\mathcal E}{\rm vol}$: True. Exact (fractions), random rational $t$, integer $\lambda$, up to three spanning trees per graph.\\
+\path{check_llc_fan.py} & fan $n=1,2,3,4$: currents \LL{5.3}{eq-1-38}, form sign $(-1)^{n-1}$, orientation sign $+1$ for the edge order $(12,1\cO,23,2\cO,\dots)$: True; $n=2$ with the order $(12,23,1\cO,2\cO,3\cO)$: sign $-1$: True. Exact.\\
+\path{check_constants.py} & $c_{pqr}=\pi/158400,\pi/285120,\pi/332640,\pi/798336,\pi/997920$; $\pi/3,\pi/20,\pi/30$ for C7(i); $945/(1024\pi^5)$; powers in \Ed{5.11}; $-1/(4096\pi^{11})$; $\int_{D_A}\cJ_A$, $\int_{D_B}\cJ_B$ of \Sd{1.9}; box moments $1/6,1/8,1/12,1/24$; fan values $n\le6$; \LL{2.12}{eq-sum-N4-coeff} at zero; \LL{7.13}{eq-spider-two-arm-value}; $1/576$; $(2\lambda_1-\lambda_A)/8640$; ladder values; prefactor identities of \LL{8.3}{eq-2-8} and \Sd{5.15}. Exact (sympy).\\
+\path{runs/mc_seeds.py} & \path{forms_check.mc_theta} with seeds $1..6$, $2\times10^5$ samples: $\theta(1,2,2)$, $H=1$: mean$/$closed $=-0.8933,-0.9348,-0.9760,-0.9704,-0.9536,-0.9189$ (printed relative errors $0.015$--$0.045$); $\theta(1,1,1)$, $H=0$, seeds $1..3$: $0.9917,0.9644,1.0052$. Floating point.\\
+\bottomrule
+\end{longtable}}
+Not re-run: \texttt{test\_q2.py so5 'dg1\_0 g2\_1 b\_2'} (\path{run_so5_deriv.log} of \textsf{6d}: 45830 equations, rank 2, $(-2,2)$, 3691 s); the $\mathfrak{so}(5)$ part of the $\{Q_0,Q_1\}$ check; the census and the product tables of \textsf{L}.
+
+\subsection{Checks reported by the sources}
+\textsf{L}: $n\le3$ fan values against \textsf{Op} (4.20), (4.44), (4.67) and GWW \S\S4.4--4.6; $n=1$ against BK (2.48); $Q_1$ components against BK (3.66), (3.67); one- and two-loop operators against BK, KKLP, GWW \S4.5, FortuityAI; Leibniz rule \LL{6.13}{eq-chain} through four loops (repository); census ranks over $\mathbb Q$, modulo $p=2^{31}-1$, or at two primes.
+\textsf{6d}~\S8.1: items 1--4 (twist; kernels; $Q_0$, $Q_1$; $Q_2$).
+\textsf{11d} App.~A: items 1--7.
+\textsf{PLAN}~\S3.1, \path{LOG.md}: re-run of \path{check_cd.py}, \path{check_ladder.py} on 2026-11-18.
+
+\subsection{Assumptions stated by the sources}
+\textsf{L}:
+\begin{enumerate}\itemsep1pt
+\item Twisting commutes with quantization for the composite operators: ``We assume this identification when interpreting the results as physical quantum BPS cohomology'' (App.~B, last paragraph; abstract).
+\item Ultraviolet finiteness of the holomorphic graph integrals and locality of the collision boundaries (Wang, Thm 5, Cor.~4, Thm 6); quadratic $L_\infty$ identities (\textsf{Op} \S3.2, Wang Thm 7, \textsf{GKW} (4.19)).
+\item Cancellation of the one-loop gauge anomaly, $\operatorname{Tr}_R(t_A\{t_B,t_C\})=0$, for $\mathbf Q^2=0$ and for the ring structure.
+\item $\bar W$ a polynomial or a formal power series read coefficientwise; superpotentials with covariant derivatives reduced by App.~D (external input: Brandt's chiral cohomology theorem).
+\item Infrared prescription in which the $K_{L'}$ boundary vanishes after vacuum normalization (\S3.5).
+\item Exact spectrum may receive nonperturbative (instanton) corrections (footnote in \S1).
+\end{enumerate}
+\textsf{6d} (\S8.2), quoted:
+\begin{enumerate}\itemsep1pt
+\item ``The ultraviolet finiteness of the holomorphic graph integrals and the locality of their collision boundaries [Wang], and the Ward identity (5.4) with the heat-kernel regularization of [CostelloBV], are used as in [LLC].''
+\item ``$\mathbf Q$ is the differential of the quantized twisted theory. Its identification with the supercharge of the quantized physical theory assumes that twisting commutes with quantization [LLC, BK]; the physical six-dimensional theory is not renormalizable, and no statement about its ultraviolet completion is made. Instanton corrections are not included.''
+\item ``Only the quadratic part of the supersymmetry variation of (2.2) is shown in Section 2; the cubic part is the standard ten-dimensional Fierz identity. The twist itself uses only (3.7)--(3.10), in which the nonabelian terms enter through covariant derivatives.''
+\item ``Under $\theta_1\to-\theta_1$, that is $\gamma^1\to-\gamma^1$, $\mathsf b\to-\mathsf b$, the action (1.1) changes sign: $Q_n\to(-1)^nQ_n$. The signs of $Q_1$ in (1.4) and of the dictionary (1.2) are correlated in this way and refer to (3.20), (5.3) and (4.4).''
+\item ``The Koszul sign of $W_\Gamma$ relative to $\cI_\Gamma$ is derived for the box in (6.7). For $(A)$ and $(B)$ it is fixed by (7.16), not derived independently.''
+\end{enumerate}
+\textsf{11d} (Status), quoted:
+\begin{enumerate}\itemsep1pt
+\item ``(0.1) is the action of [RSW]; its identification with the twist of the interacting theory is Conjecture 0.1 of [RSW]; the free limit is the theorem of [SW]. It is not derived here.''
+\item ``The quantization is that of the twisted theory in the gauge $D^*$ of the flat metric, as in [LLC]; the ultraviolet limit of the graph integrals computed here exists (the integrals in (0.8), (0.9) converge).''
+\end{enumerate}
+\textsf{PLAN}: tags [lit] (literature read through a web extraction, formulas not compared with TeX source), [drv] (derived by counting, no independent check).
+
+\section{Open items as stated by the sources}\label{sec-open}
+
+Quotations; equation numbers inside quotations are those of the quoted source.
+
+\subsection{\textsf{L}}
+\begin{enumerate}\itemsep1pt
+\item \S10: ``All our results are obtained in the holomorphically twisted theory. It remains to understand the same structures directly in the physical theory: the supersymmetry transformation of composite operators and, more generally, the full BV transformation that includes every symmetry together with its ghosts and auxiliary fields.''
+\item \S10: ``The most immediate question is whether $\mathcal N=4$ Yang--Mills theory has a two-loop lift at all.''
+\item \S10: ``The other ranks are computed modulo a large prime and remain to be certified in the same way.''
+\item \S10: ``Nonperturbative lifts of perturbative cohomology classes by instantons [\dots], and their interplay with the higher brackets and the quantum product, are also worth studying.''
+\item \S10: ``The circuit reduction is not tied to four dimensions: the graph integrals and their current equations exist on $\mathbb C^d$ and in holomorphic--topological theories [\dots], and the iterated network reductions should evaluate the corresponding Feynman graphs. It would also be interesting to identify the counterparts of the loop corrections, of the quantum product and of lifting in the gravity dual.''
+\item App.~B: ``Identifying its complex with $(V[[\hbar]],\mathbf D)$ requires a quantum comparison compatible with local operator renormalization. Independence of gauge fixing and regularization within a fixed BV quantization [\dots] does not by itself construct this comparison.''
+\item Table 2.4, $Sp(3)$, sector $(5,0,0;3,3)_9$: ``testing $d_2$-exactness from its source sector remains open''.
+\item Table 2.1, $\mathcal N=2$ quiver: ``full sector census (stable split pending)''; $SO(11)$: scan ``$24$ (partial at $25,26$)''. Table 2.3, $B_1$ ($n=3$): ``classical benchmark (lifting not evaluated at level $34$)''; entries tagged \texttt{[cond]}: ``vanishing proved under the assumption that $R_r$ has zero Cartan restriction''.
+\item \S7.3, App.~E: for superpotentials of higher degree with several sources in one tree the sourced star--triangle move ``reconstructs the currents rationally in the remaining resistances''.
+\end{enumerate}
+
+\subsection{\textsf{6d}}
+\begin{enumerate}\itemsep1pt
+\item \S8.2: ``The Koszul sign of $W_\Gamma$ relative to $\cI_\Gamma$ is derived for the box in (6.7). For $(A)$ and $(B)$ it is fixed by (7.16), not derived independently.''
+\item \S8.2: ``the physical six-dimensional theory is not renormalizable, and no statement about its ultraviolet completion is made. Instanton corrections are not included.''
+\end{enumerate}
+
+\subsection{\textsf{11d}}
+\begin{enumerate}\itemsep1pt
+\item ``(0.1) is the action of [RSW]; its identification with the twist of the interacting theory is Conjecture 0.1 of [RSW]; the free limit is the theorem of [SW]. It is not derived here.''
+\item ``The two-loop quantum master equation, $\{\cI^{\otimes12}\}_0=0$, is not analysed.''
+\item ``(0.11) is not expanded into components: the sum over the field labels of the theta graphs is given by the rules of Section 8.''
+\item ``The sign $\varsigma_\Gamma$ is determined for $C_7$ and the five $\theta_{pqr}$ (Appendix A); no closed formula for general $\Gamma$ is given.''
+\end{enumerate}
+
+\subsection{\textsf{PLAN} (2026-11-18)}
+Engine problems (\S3.3):
+\begin{enumerate}\itemsep1pt
+\item E1: ``Deliverable: the local density for general $(a_1,\dots,a_k)$ with sources on all interior vertices; \texttt{sp\_reduce(G, d)} returning ratio coordinates and polynomial density.'' ``First cases with no pair $a_i+a_j=d+1$: $(3,3,3)$ at $d=4$, $(3,4,4)$ at $d=5$.''
+\item E2: ``$-\sum_ey_e\cdot z_e=\sum_v\lambda_v\cdot X_v(r;z)$ with $X_v$ polynomial in the ratios, for every SP graph.''
+\item E3: ``Kernels with insertions $\prod_ey_e^{m_e}$ are polynomial integrals after E1. Needed by: Poisson brackets (two $\partial$ per vertex), $\alpha\mu_i\partial_i\gamma$, kinetic operators $\bar\partial\partial^{-1}$.''
+\item E4: ``\texttt{salg.py}, \texttt{ops.py}, \texttt{ops2.py} generalized to arbitrary $d$, letters, and cubic vertices with derivatives; relations $\sum_{k+l=n}Q_kQ_l=0$ as linear systems over $\mathbb Q$.''
+\item E5: ``For each theory, the rule that cuts the list of \S3.2 [\dots]. Output: graph list per $(\text{theory},n)$.''
+\item E6: ``Graphs that are not series--parallel. $d=2$: prism, $K_{3,3}$. $d=3$: the six $K_4$ subdivisions. 1.\ Is $\mathcal I_\Gamma(\lambda;0)\in\mathbb Q[\lambda]$? [open] 2.\ Coordinates in which the density is polynomial, or the denominators that remain. [open]''
+\item E7: ``Line defects. Vertices restricted to a curve $C\subset\mathbb C^3$ (bulk--defect diagrams of Koszul duality) [lit]. Deliverable: current representation with defect vertices. [open]''
+\item E8: ``Deliverable: $\alpha_\Gamma$ in the ratio coordinates of the E1 moves; closed values for the two-loop theta graphs at $T=1$: $(1,2,2)$ for $H=1$; $(1,3,3),(2,2,3)$ for $H=2$; the five graphs of the $d=6$ row of \S3.2 for $H=5$. [open]'' (For $H=5$: Section~\ref{sec-disagree}, item 12.)
+\end{enumerate}
+Targets (\S4), problems as listed:
+\begin{enumerate}\itemsep1pt
+\item T1 (Poisson BF on $\mathbb C^2$ with matter): ``1.\ the triangle with three Poisson vertices: explicit kernel with current insertions, vanishing of the anomaly; 2.\ $Q_n$ with Poisson vertices: graph list (E5), kernels as fan and spider kernels with insertions (E3); 3.\ corrections of order $\hbar^n$ to $\{\mathbf S\,\mathbf S\,\mathbf S\}$ in the gauge theories of [LLC]; in $\mathcal N=4$, $a=c$ is fixed.''
+\item T2 (hCS on $\mathbb C^{3|2}$ beyond two loops): ``1.\ $Q_3$: the five graphs of \S3.2; kernels by E1, E2; check $\{Q_0,Q_3\}+\{Q_1,Q_2\}=0$. 2.\ All $n$: trees $\Gamma\setminus\mathcal O$ with $2n+1$ cubic vertices; closed forms for families (ladder type, \S3.1). 3.\ $E_{r+1}=H(E_r,d_r)$ and lifting, as in [LLC \S9].''
+\item T3 (twistor space): ``1.\ reproduce the three coefficients from $\mathcal I_{\rm box}$ of \S3.1 with insertions (E3); 2.\ $Q_n$ on local operators of the BF theories (graph list by E5); 3.\ bulk--defect diagrams (E7): one-loop benchmarks above; coefficients $f^{(m)}$, $m\ge2$, against the associativity recursion of Fern\'andez--Paquette 2412.17168 (74), (80), seed $f^{(1)}_{(0,1)(1,0)}(0,0)=\frac1{32\pi^2}$; 4.\ constants left undetermined in the literature [lit]: $C$ in 2201.02595 (7.3.5); the constant of 2604.21015 \S5.2.2; the two-loop divergence for $G\ne SO(8)$ in 2111.08879 \S4.3.''
+\item T4 (Kodaira--Spencer on $\mathbb C^3$): ``1.\ propagator of $\mu$ in the current representation (E3); 2.\ one loop: the box with the two vertices; benchmark: the loop computations of 2404.14318 App.~A (not read); 3.\ two loops: $(1,3,3)$ and $(2,2,3)$ with these vertices; 4.\ three loops: which of the 16 graphs survive; the $K_4$ subdivisions need E6; 5.\ same steps for hCS with type I Kodaira--Spencer on twistor space [\dots]; the cancellation of higher-loop anomalies is known only for $\mathfrak{so}(8)$ (2111.08879 \S2.2).''
+\item T5 ($\mathbb C^5$): ``1.\ hexagon: $|\mathcal I(\lambda;0)|=|\det(\lambda_1,\dots,\lambda_5)|/5!$ [chk]; anomaly coefficient against 1905.09269; 2.\ two loops: $(1,5,5),(2,4,5),(3,3,5),(3,4,4)$, $|V|=10$, $|I|=11$, eight legs for cubic vertices [drv].''
+\item T6a (5d Chern--Simons on $\mathbb R\times\mathbb C^2$): ``1.\ the diagram of 2002.07343 \S5.3 (four internal propagators, three internal vertices), bounded but not evaluated there (eq.\ (137)); 2.\ the two-loop graphs $(1,3,3)$, $(2,2,3)$ without defects; a two-loop anomaly is expected for the commutative theory by 2407.08667 (introduction), while 1610.04144 \S9 states no anomaly for non-commutative $\mathfrak{gl}_N$; 3.\ $f_2(\kappa)$ in $\hbar_{\rm QFT}\mapsto2^5\pi^2\hbar_{\rm comb}+f_2(\kappa)\hbar_{\rm comb}^2+\dots$ (1705.02500 Thm 12.0.1), left undetermined there.''
+\item T6b (twisted 11d supergravity): ``1.\ propagators of the $(\beta,\nu)$, $(\gamma,\mu)$ system with the mixing $\beta\,\partial_\Omega\mu$ in the representation of E8; 2.\ two loops: the five theta graphs $(1,6,6),(2,5,6),(3,4,6),(3,5,5),(4,4,5)$, $|V|=12$, $|I|=13$, with the vertices of $S$.''
+\item T6c (Poisson BF on $\mathbb R\times\mathbb C^2$): ``$Q_n$ on local operators as in T1.''
+\end{enumerate}
+Background to be supplied (\S6), items 1--6: the dictionary of T1 and the sign in 2311.04304 (1.14) against (3.14); the propagator and $\bar\partial^\dagger$ in 2208.12701 (4.18)--(4.28), the prefactor $\frac1{4\pi}$ or $\frac1{4\pi i}$ of $S_\eta$; the printed form of 2001.02177 (3.3.10) and 2404.14318 (2.3.16), the constraint $\partial\mu=0$; the BCOV action, propagator and anomaly coefficients of Costello--Li; the closed formula for $\alpha_\Gamma$ (2408.03192 Thm 1), the gauge and normalization of the 5d propagator, the propagators of the 11d system; the bulk--defect couplings.
+
+\subsection{\texttt{LOG.md} (2026-11-18), unresolved}
+\begin{enumerate}\itemsep1pt
+\item ``Literature formulas are not source-verified. Every action, anomaly coefficient and OPE coefficient tagged [lit] in \texttt{PLAN.md} was read through a web extraction, not from TeX.''
+\item ``BCOV on $\mathbb C^5$ / type I (Costello--Li) not read.''
+\item ``Graphs that are not series--parallel (prism, $K_{3,3}$ at $d=2$, $n=4$; six $K_4$ subdivisions at $d=3$, $n=3$): no reduction to polynomial integrals.''
+\item ``Notion central log not synced: no Notion connector in this session.''
+\end{enumerate}
+
+\subsection{\texttt{RESEARCH\_STATE.md} (2026-11-20)}
+``Observations made before the run (to be verified by agents)'': the three items of C7.
+
+\end{document}

@@ -1,0 +1,19 @@
+ab1 t=(3, 0, 0, 2, 1) w=(2, -1, -1) (a,b)=(2, 1) g=0 dimM=11 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 2, 1) w=(2, -1, -1) (a,b)=(2, 1) g=1 dimM=58 dimV=11 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 2, 1) w=(2, -1, -1) (a,b)=(2, 1) g=2 dimM=114 dimV=27 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 2, 1) w=(2, -1, -1) (a,b)=(2, 1) g=3 dimM=104 dimV=33 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 2, 1) w=(2, -1, -1) (a,b)=(2, 1) g=4 dimM=43 dimV=19 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 2, 1) w=(2, -1, -1) (a,b)=(2, 1) g=5 dimM=6 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 0, 0, 2, 1) done in 0.0s
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=-2 dimM=53 dimV=11 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=-1 dimM=546 dimV=124 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=0 dimM=2296 dimV=552 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=1 dimM=5265 dimV=1341 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=2 dimM=7300 dimV=2004 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=3 dimM=6338 dimV=1927 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=4 dimM=3416 dimV=1193 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=5 dimM=1081 dimV=456 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=6 dimM=175 dimV=96 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 2, 1) w=(2, 0, 0) (a,b)=(2, 1) g=7 dimM=10 dimV=8 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 1, 1, 2, 1) done in 59.5s
+TOTAL ab1 charge0=False exact=True: compared 16 mismatches 0

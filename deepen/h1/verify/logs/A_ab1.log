@@ -1,0 +1,676 @@
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=-2 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=-1 dimM=7 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=0 dimM=19 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=1 dimM=26 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=2 dimM=19 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=3 dimM=7 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 0) w=(0, 0, 0) (a,b)=(0, 0) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 0, 0) done in 0.0s
+ab1 t=(1, 1, 0, 0, 0) w=(0, 0, -1) (a,b)=(0, 0) g=-1 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 0, 0, 0) w=(0, 0, -1) (a,b)=(0, 0) g=0 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 0) w=(0, 0, -1) (a,b)=(0, 0) g=1 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 0) w=(0, 0, -1) (a,b)=(0, 0) g=2 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 0) w=(0, 0, -1) (a,b)=(0, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 0, 0) done in 0.0s
+ab1 t=(1, 0, 1, 0, 0) w=(0, -1, 0) (a,b)=(0, 0) g=-1 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 1, 0, 0) w=(0, -1, 0) (a,b)=(0, 0) g=0 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 0) w=(0, -1, 0) (a,b)=(0, 0) g=1 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 0) w=(0, -1, 0) (a,b)=(0, 0) g=2 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 0) w=(0, -1, 0) (a,b)=(0, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 0, 0) done in 0.0s
+ab1 t=(1, 0, 0, 0, 0) w=(0, -1, -1) (a,b)=(0, 0) g=0 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 0, 0, 0) w=(0, -1, -1) (a,b)=(0, 0) g=1 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 0, 0) w=(0, -1, -1) (a,b)=(0, 0) g=2 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 0, 0) done in 0.0s
+ab1 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) (a,b)=(0, 0) g=-1 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) (a,b)=(0, 0) g=0 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) (a,b)=(0, 0) g=1 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) (a,b)=(0, 0) g=2 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 0) w=(-1, 0, 0) (a,b)=(0, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 0, 0) done in 0.0s
+ab1 t=(0, 1, 0, 0, 0) w=(-1, 0, -1) (a,b)=(0, 0) g=0 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 0, 0, 0) w=(-1, 0, -1) (a,b)=(0, 0) g=1 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 0, 0) w=(-1, 0, -1) (a,b)=(0, 0) g=2 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 0, 0) done in 0.0s
+ab1 t=(0, 0, 1, 0, 0) w=(-1, -1, 0) (a,b)=(0, 0) g=0 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 0, 1, 0, 0) w=(-1, -1, 0) (a,b)=(0, 0) g=1 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 0, 0) w=(-1, -1, 0) (a,b)=(0, 0) g=2 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 0, 0) done in 0.0s
+ab1 t=(0, 0, 0, 0, 0) w=(-1, -1, -1) (a,b)=(0, 0) g=1 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+# (0, 0, 0, 0, 0) done in 0.0s
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=-2 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=-1 dimM=11 dimV=4 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=0 dimM=40 dimV=15 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=1 dimM=71 dimV=27 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=2 dimM=69 dimV=28 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=3 dimM=37 dimV=18 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=4 dimM=10 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 0) w=(0, 0, 0) (a,b)=(1, 0) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 1, 0) done in 0.0s
+ab1 t=(1, 1, 0, 1, 0) w=(0, 0, -1) (a,b)=(1, 0) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 0) w=(0, 0, -1) (a,b)=(1, 0) g=0 dimM=6 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 0, 1, 0) w=(0, 0, -1) (a,b)=(1, 0) g=1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 0) w=(0, 0, -1) (a,b)=(1, 0) g=2 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 0) w=(0, 0, -1) (a,b)=(1, 0) g=3 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 0) w=(0, 0, -1) (a,b)=(1, 0) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 1, 0) done in 0.0s
+ab1 t=(1, 0, 1, 1, 0) w=(0, -1, 0) (a,b)=(1, 0) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 0) w=(0, -1, 0) (a,b)=(1, 0) g=0 dimM=6 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 1, 1, 0) w=(0, -1, 0) (a,b)=(1, 0) g=1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 0) w=(0, -1, 0) (a,b)=(1, 0) g=2 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 0) w=(0, -1, 0) (a,b)=(1, 0) g=3 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 0) w=(0, -1, 0) (a,b)=(1, 0) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 1, 0) done in 0.0s
+ab1 t=(1, 0, 0, 1, 0) w=(0, -1, -1) (a,b)=(1, 0) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 1, 0) w=(0, -1, -1) (a,b)=(1, 0) g=1 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 0, 1, 0) w=(0, -1, -1) (a,b)=(1, 0) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 1, 0) w=(0, -1, -1) (a,b)=(1, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 1, 0) done in 0.0s
+ab1 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) (a,b)=(1, 0) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) (a,b)=(1, 0) g=0 dimM=6 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) (a,b)=(1, 0) g=1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) (a,b)=(1, 0) g=2 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) (a,b)=(1, 0) g=3 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 0) w=(-1, 0, 0) (a,b)=(1, 0) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 1, 0) done in 0.0s
+ab1 t=(0, 1, 0, 1, 0) w=(-1, 0, -1) (a,b)=(1, 0) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 1, 0) w=(-1, 0, -1) (a,b)=(1, 0) g=1 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 0, 1, 0) w=(-1, 0, -1) (a,b)=(1, 0) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 1, 0) w=(-1, 0, -1) (a,b)=(1, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 1, 0) done in 0.0s
+ab1 t=(0, 0, 1, 1, 0) w=(-1, -1, 0) (a,b)=(1, 0) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 1, 0) w=(-1, -1, 0) (a,b)=(1, 0) g=1 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 0, 1, 1, 0) w=(-1, -1, 0) (a,b)=(1, 0) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 1, 0) w=(-1, -1, 0) (a,b)=(1, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 1, 0) done in 0.0s
+ab1 t=(0, 0, 0, 1, 0) w=(-1, -1, -1) (a,b)=(1, 0) g=1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 1, 0) w=(-1, -1, -1) (a,b)=(1, 0) g=2 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+# (0, 0, 0, 1, 0) done in 0.0s
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=-2 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=-1 dimM=11 dimV=4 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=0 dimM=40 dimV=15 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=1 dimM=71 dimV=27 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=2 dimM=69 dimV=28 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=3 dimM=37 dimV=18 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=4 dimM=10 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 0, 1) w=(0, 0, 0) (a,b)=(0, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 0, 1) done in 0.0s
+ab1 t=(1, 1, 0, 0, 1) w=(0, 0, -1) (a,b)=(0, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 1) w=(0, 0, -1) (a,b)=(0, 1) g=0 dimM=6 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 0, 0, 1) w=(0, 0, -1) (a,b)=(0, 1) g=1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 1) w=(0, 0, -1) (a,b)=(0, 1) g=2 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 1) w=(0, 0, -1) (a,b)=(0, 1) g=3 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 0, 1) w=(0, 0, -1) (a,b)=(0, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 0, 1) done in 0.0s
+ab1 t=(1, 0, 1, 0, 1) w=(0, -1, 0) (a,b)=(0, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 1) w=(0, -1, 0) (a,b)=(0, 1) g=0 dimM=6 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 1, 0, 1) w=(0, -1, 0) (a,b)=(0, 1) g=1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 1) w=(0, -1, 0) (a,b)=(0, 1) g=2 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 1) w=(0, -1, 0) (a,b)=(0, 1) g=3 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 0, 1) w=(0, -1, 0) (a,b)=(0, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 0, 1) done in 0.0s
+ab1 t=(1, 0, 0, 0, 1) w=(0, -1, -1) (a,b)=(0, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 0, 1) w=(0, -1, -1) (a,b)=(0, 1) g=1 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 0, 0, 1) w=(0, -1, -1) (a,b)=(0, 1) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 0, 1) w=(0, -1, -1) (a,b)=(0, 1) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 0, 1) done in 0.0s
+ab1 t=(0, 1, 1, 0, 1) w=(-1, 0, 0) (a,b)=(0, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 1) w=(-1, 0, 0) (a,b)=(0, 1) g=0 dimM=6 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 1, 0, 1) w=(-1, 0, 0) (a,b)=(0, 1) g=1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 1) w=(-1, 0, 0) (a,b)=(0, 1) g=2 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 1) w=(-1, 0, 0) (a,b)=(0, 1) g=3 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 0, 1) w=(-1, 0, 0) (a,b)=(0, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 0, 1) done in 0.0s
+ab1 t=(0, 1, 0, 0, 1) w=(-1, 0, -1) (a,b)=(0, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 0, 1) w=(-1, 0, -1) (a,b)=(0, 1) g=1 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 0, 0, 1) w=(-1, 0, -1) (a,b)=(0, 1) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 0, 1) w=(-1, 0, -1) (a,b)=(0, 1) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 0, 1) done in 0.0s
+ab1 t=(0, 0, 1, 0, 1) w=(-1, -1, 0) (a,b)=(0, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 0, 1) w=(-1, -1, 0) (a,b)=(0, 1) g=1 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 0, 1, 0, 1) w=(-1, -1, 0) (a,b)=(0, 1) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 0, 1) w=(-1, -1, 0) (a,b)=(0, 1) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 0, 1) done in 0.0s
+ab1 t=(0, 0, 0, 0, 1) w=(-1, -1, -1) (a,b)=(0, 1) g=1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 0, 1) w=(-1, -1, -1) (a,b)=(0, 1) g=2 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+# (0, 0, 0, 0, 1) done in 0.0s
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=-2 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=-1 dimM=19 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=0 dimM=91 dimV=24 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=1 dimM=204 dimV=61 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=2 dimM=252 dimV=85 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=3 dimM=179 dimV=69 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=4 dimM=71 dimV=34 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=5 dimM=14 dimV=9 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 1, 1) w=(0, 0, 0) (a,b)=(1, 1) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 1, 1) done in 0.1s
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=0 dimM=10 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=1 dimM=30 dimV=8 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=2 dimM=41 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=3 dimM=28 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=4 dimM=9 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 1, 1) done in 0.0s
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=0 dimM=10 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=1 dimM=30 dimV=8 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=2 dimM=41 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=3 dimM=28 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=4 dimM=9 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 1, 1) w=(0, -1, 0) (a,b)=(1, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 1, 1) done in 0.0s
+ab1 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=1 dimM=5 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=2 dimM=8 dimV=3 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=3 dimM=5 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 1, 1) done in 0.0s
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=0 dimM=10 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=1 dimM=30 dimV=8 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=2 dimM=41 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=3 dimM=28 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=4 dimM=9 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 1, 1) done in 0.0s
+ab1 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=1 dimM=5 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=2 dimM=8 dimV=3 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=3 dimM=5 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 1, 1) w=(-1, 0, -1) (a,b)=(1, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 1, 1) done in 0.0s
+ab1 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=1 dimM=5 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=2 dimM=8 dimV=3 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=3 dimM=5 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 1, 1) w=(-1, -1, 0) (a,b)=(1, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 1, 1) done in 0.0s
+ab1 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) (a,b)=(1, 1) g=1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) (a,b)=(1, 1) g=2 dimM=2 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 1, 1) w=(-1, -1, -1) (a,b)=(1, 1) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+# (0, 0, 0, 1, 1) done in 0.0s
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=-2 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=-1 dimM=27 dimV=4 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=0 dimM=155 dimV=33 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=1 dimM=404 dimV=101 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=2 dimM=576 dimV=163 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=3 dimM=475 dimV=156 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=4 dimM=223 dimV=89 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=5 dimM=54 dimV=28 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=6 dimM=5 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 2, 1) done in 0.6s
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=0 dimM=14 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=1 dimM=51 dimV=11 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=2 dimM=83 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=3 dimM=68 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=4 dimM=27 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 1) w=(0, 0, -1) (a,b)=(2, 1) g=5 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 2, 1) done in 0.0s
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=0 dimM=14 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=1 dimM=51 dimV=11 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=2 dimM=83 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=3 dimM=68 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=4 dimM=27 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 1) w=(0, -1, 0) (a,b)=(2, 1) g=5 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 2, 1) done in 0.0s
+ab1 t=(1, 0, 0, 2, 1) w=(0, -1, -1) (a,b)=(2, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 2, 1) w=(0, -1, -1) (a,b)=(2, 1) g=1 dimM=7 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(1, 0, 0, 2, 1) w=(0, -1, -1) (a,b)=(2, 1) g=2 dimM=14 dimV=3 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(1, 0, 0, 2, 1) w=(0, -1, -1) (a,b)=(2, 1) g=3 dimM=11 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 2, 1) w=(0, -1, -1) (a,b)=(2, 1) g=4 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 2, 1) done in 0.0s
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=0 dimM=14 dimV=2 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=1 dimM=51 dimV=11 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=2 dimM=83 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=3 dimM=68 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=4 dimM=27 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=5 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 2, 1) done in 0.0s
+ab1 t=(0, 1, 0, 2, 1) w=(-1, 0, -1) (a,b)=(2, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 2, 1) w=(-1, 0, -1) (a,b)=(2, 1) g=1 dimM=7 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(0, 1, 0, 2, 1) w=(-1, 0, -1) (a,b)=(2, 1) g=2 dimM=14 dimV=3 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(0, 1, 0, 2, 1) w=(-1, 0, -1) (a,b)=(2, 1) g=3 dimM=11 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 2, 1) w=(-1, 0, -1) (a,b)=(2, 1) g=4 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 2, 1) done in 0.0s
+ab1 t=(0, 0, 1, 2, 1) w=(-1, -1, 0) (a,b)=(2, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 2, 1) w=(-1, -1, 0) (a,b)=(2, 1) g=1 dimM=7 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(0, 0, 1, 2, 1) w=(-1, -1, 0) (a,b)=(2, 1) g=2 dimM=14 dimV=3 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+ab1 t=(0, 0, 1, 2, 1) w=(-1, -1, 0) (a,b)=(2, 1) g=3 dimM=11 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 2, 1) w=(-1, -1, 0) (a,b)=(2, 1) g=4 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 2, 1) done in 0.0s
+ab1 t=(0, 0, 0, 2, 1) w=(-1, -1, -1) (a,b)=(2, 1) g=1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 2, 1) w=(-1, -1, -1) (a,b)=(2, 1) g=2 dimM=3 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=3) REP-OK
+ab1 t=(0, 0, 0, 2, 1) w=(-1, -1, -1) (a,b)=(2, 1) g=3 dimM=2 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=2) REP-OK
+# (0, 0, 0, 2, 1) done in 0.0s
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=-2 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=-1 dimM=39 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=0 dimM=271 dimV=46 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=1 dimM=824 dimV=172 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=2 dimM=1358 dimV=329 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=3 dimM=1304 dimV=367 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=4 dimM=731 dimV=247 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=5 dimM=224 dimV=97 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=6 dimM=31 dimV=19 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 2, 2) w=(0, 0, 0) (a,b)=(2, 2) g=7 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 2, 2) done in 4.3s
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=0 dimM=20 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=1 dimM=89 dimV=15 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=2 dimM=173 dimV=38 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=3 dimM=171 dimV=48 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=4 dimM=86 dimV=32 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=5 dimM=19 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 2, 2) w=(0, 0, -1) (a,b)=(2, 2) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 2, 2) done in 0.1s
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=0 dimM=20 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=1 dimM=89 dimV=15 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=2 dimM=173 dimV=38 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=3 dimM=171 dimV=48 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=4 dimM=86 dimV=32 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=5 dimM=19 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 2, 2) w=(0, -1, 0) (a,b)=(2, 2) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 2, 2) done in 0.1s
+ab1 t=(1, 0, 0, 2, 2) w=(0, -1, -1) (a,b)=(2, 2) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 2, 2) w=(0, -1, -1) (a,b)=(2, 2) g=1 dimM=10 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 2, 2) w=(0, -1, -1) (a,b)=(2, 2) g=2 dimM=25 dimV=5 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 0, 0, 2, 2) w=(0, -1, -1) (a,b)=(2, 2) g=3 dimM=25 dimV=7 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 0, 2, 2) w=(0, -1, -1) (a,b)=(2, 2) g=4 dimM=10 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 2, 2) w=(0, -1, -1) (a,b)=(2, 2) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 2, 2) done in 0.0s
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=0 dimM=20 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=1 dimM=89 dimV=15 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=2 dimM=173 dimV=38 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=3 dimM=171 dimV=48 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=4 dimM=86 dimV=32 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=5 dimM=19 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 2, 2) done in 0.1s
+ab1 t=(0, 1, 0, 2, 2) w=(-1, 0, -1) (a,b)=(2, 2) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 2, 2) w=(-1, 0, -1) (a,b)=(2, 2) g=1 dimM=10 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 2, 2) w=(-1, 0, -1) (a,b)=(2, 2) g=2 dimM=25 dimV=5 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 1, 0, 2, 2) w=(-1, 0, -1) (a,b)=(2, 2) g=3 dimM=25 dimV=7 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 0, 2, 2) w=(-1, 0, -1) (a,b)=(2, 2) g=4 dimM=10 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 2, 2) w=(-1, 0, -1) (a,b)=(2, 2) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 2, 2) done in 0.0s
+ab1 t=(0, 0, 1, 2, 2) w=(-1, -1, 0) (a,b)=(2, 2) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 2, 2) w=(-1, -1, 0) (a,b)=(2, 2) g=1 dimM=10 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 2, 2) w=(-1, -1, 0) (a,b)=(2, 2) g=2 dimM=25 dimV=5 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 0, 1, 2, 2) w=(-1, -1, 0) (a,b)=(2, 2) g=3 dimM=25 dimV=7 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 0, 1, 2, 2) w=(-1, -1, 0) (a,b)=(2, 2) g=4 dimM=10 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 2, 2) w=(-1, -1, 0) (a,b)=(2, 2) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 2, 2) done in 0.0s
+ab1 t=(0, 0, 0, 2, 2) w=(-1, -1, -1) (a,b)=(2, 2) g=1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 2, 2) w=(-1, -1, -1) (a,b)=(2, 2) g=2 dimM=4 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 2, 2) w=(-1, -1, -1) (a,b)=(2, 2) g=3 dimM=4 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 0, 0, 2, 2) w=(-1, -1, -1) (a,b)=(2, 2) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+# (0, 0, 0, 2, 2) done in 0.0s
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=-2 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=-1 dimM=35 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=0 dimM=233 dimV=42 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=1 dimM=689 dimV=151 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=2 dimM=1112 dimV=282 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=3 dimM=1050 dimV=309 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=4 dimM=581 dimV=205 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=5 dimM=177 dimV=80 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=6 dimM=25 dimV=16 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 1, 3, 1) w=(0, 0, 0) (a,b)=(3, 1) g=7 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 1, 3, 1) done in 3.1s
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=0 dimM=18 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=1 dimM=77 dimV=14 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=2 dimM=146 dimV=34 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=3 dimM=142 dimV=42 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=4 dimM=71 dimV=28 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=5 dimM=16 dimV=9 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 0, 3, 1) w=(0, 0, -1) (a,b)=(3, 1) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 0, 3, 1) done in 0.1s
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=0 dimM=18 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=1 dimM=77 dimV=14 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=2 dimM=146 dimV=34 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=3 dimM=142 dimV=42 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=4 dimM=71 dimV=28 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=5 dimM=16 dimV=9 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 1, 3, 1) w=(0, -1, 0) (a,b)=(3, 1) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 1, 3, 1) done in 0.1s
+ab1 t=(1, 0, 0, 3, 1) w=(0, -1, -1) (a,b)=(3, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 3, 1) w=(0, -1, -1) (a,b)=(3, 1) g=1 dimM=9 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 3, 1) w=(0, -1, -1) (a,b)=(3, 1) g=2 dimM=22 dimV=5 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(1, 0, 0, 3, 1) w=(0, -1, -1) (a,b)=(3, 1) g=3 dimM=22 dimV=7 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(1, 0, 0, 3, 1) w=(0, -1, -1) (a,b)=(3, 1) g=4 dimM=9 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 0, 0, 3, 1) w=(0, -1, -1) (a,b)=(3, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 0, 0, 3, 1) done in 0.0s
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=-1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=0 dimM=18 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=1 dimM=77 dimV=14 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=2 dimM=146 dimV=34 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=3 dimM=142 dimV=42 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=4 dimM=71 dimV=28 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=5 dimM=16 dimV=9 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 1, 3, 1) w=(-1, 0, 0) (a,b)=(3, 1) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 1, 3, 1) done in 0.1s
+ab1 t=(0, 1, 0, 3, 1) w=(-1, 0, -1) (a,b)=(3, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 3, 1) w=(-1, 0, -1) (a,b)=(3, 1) g=1 dimM=9 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 3, 1) w=(-1, 0, -1) (a,b)=(3, 1) g=2 dimM=22 dimV=5 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 1, 0, 3, 1) w=(-1, 0, -1) (a,b)=(3, 1) g=3 dimM=22 dimV=7 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 1, 0, 3, 1) w=(-1, 0, -1) (a,b)=(3, 1) g=4 dimM=9 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 1, 0, 3, 1) w=(-1, 0, -1) (a,b)=(3, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 1, 0, 3, 1) done in 0.0s
+ab1 t=(0, 0, 1, 3, 1) w=(-1, -1, 0) (a,b)=(3, 1) g=0 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 3, 1) w=(-1, -1, 0) (a,b)=(3, 1) g=1 dimM=9 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 3, 1) w=(-1, -1, 0) (a,b)=(3, 1) g=2 dimM=22 dimV=5 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 0, 1, 3, 1) w=(-1, -1, 0) (a,b)=(3, 1) g=3 dimM=22 dimV=7 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+ab1 t=(0, 0, 1, 3, 1) w=(-1, -1, 0) (a,b)=(3, 1) g=4 dimM=9 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 1, 3, 1) w=(-1, -1, 0) (a,b)=(3, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 1, 3, 1) done in 0.0s
+ab1 t=(0, 0, 0, 3, 1) w=(-1, -1, -1) (a,b)=(3, 1) g=1 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 3, 1) w=(-1, -1, -1) (a,b)=(3, 1) g=2 dimM=4 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 0, 3, 1) w=(-1, -1, -1) (a,b)=(3, 1) g=3 dimM=4 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=4) REP-OK
+ab1 t=(0, 0, 0, 3, 1) w=(-1, -1, -1) (a,b)=(3, 1) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[1, 1, 1] pred=1 OK | psi_S rep: closed=True rank mod B=1 (dim Z^n=1) REP-OK
+# (0, 0, 0, 3, 1) done in 0.0s
+ab1 t=(2, 0, 0, 0, 0) w=(1, -1, -1) (a,b)=(0, 0) g=0 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 0, 0) w=(1, -1, -1) (a,b)=(0, 0) g=1 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 0, 0) w=(1, -1, -1) (a,b)=(0, 0) g=2 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 0, 0, 0, 0) done in 0.0s
+ab1 t=(0, 2, 0, 0, 0) w=(-1, 1, -1) (a,b)=(0, 0) g=0 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 0, 0) w=(-1, 1, -1) (a,b)=(0, 0) g=1 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 0, 0) w=(-1, 1, -1) (a,b)=(0, 0) g=2 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 2, 0, 0, 0) done in 0.0s
+ab1 t=(0, 0, 2, 0, 0) w=(-1, -1, 1) (a,b)=(0, 0) g=0 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 0, 0) w=(-1, -1, 1) (a,b)=(0, 0) g=1 dimM=4 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 0, 0) w=(-1, -1, 1) (a,b)=(0, 0) g=2 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 2, 0, 0) done in 0.0s
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=-2 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=-1 dimM=20 dimV=11 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=0 dimM=54 dimV=26 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=1 dimM=76 dimV=34 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=2 dimM=59 dimV=27 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=3 dimM=24 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=4 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 1, 1, 0, 0) done in 0.0s
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=-2 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=-1 dimM=20 dimV=11 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=0 dimM=54 dimV=26 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=1 dimM=76 dimV=34 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=2 dimM=59 dimV=27 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=3 dimM=24 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 0, 0) w=(0, 1, 0) (a,b)=(0, 0) g=4 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 2, 1, 0, 0) done in 0.0s
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=-2 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=-1 dimM=20 dimV=11 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=0 dimM=54 dimV=26 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=1 dimM=76 dimV=34 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=2 dimM=59 dimV=27 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=3 dimM=24 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 0, 0) w=(0, 0, 1) (a,b)=(0, 0) g=4 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 2, 0, 0) done in 0.0s
+ab1 t=(2, 2, 0, 0, 0) w=(1, 1, -1) (a,b)=(0, 0) g=-1 dimM=6 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 0, 0) w=(1, 1, -1) (a,b)=(0, 0) g=0 dimM=26 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 0, 0) w=(1, 1, -1) (a,b)=(0, 0) g=1 dimM=43 dimV=19 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 0, 0) w=(1, 1, -1) (a,b)=(0, 0) g=2 dimM=33 dimV=15 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 0, 0) w=(1, 1, -1) (a,b)=(0, 0) g=3 dimM=11 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 0, 0) w=(1, 1, -1) (a,b)=(0, 0) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 0, 0, 0) done in 0.0s
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=-4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=-3 dimM=11 dimV=8 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=-2 dimM=75 dimV=41 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=-1 dimM=297 dimV=137 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=0 dimM=680 dimV=286 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=1 dimM=931 dimV=377 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=2 dimM=771 dimV=317 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=3 dimM=375 dimV=167 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=4 dimM=97 dimV=51 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 0, 0) w=(1, 1, 1) (a,b)=(0, 0) g=5 dimM=10 dimV=7 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 2, 0, 0) done in 0.6s
+ab1 t=(3, 0, 0, 0, 0) w=(2, -1, -1) (a,b)=(0, 0) g=0 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 0, 0) w=(2, -1, -1) (a,b)=(0, 0) g=1 dimM=7 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 0, 0) w=(2, -1, -1) (a,b)=(0, 0) g=2 dimM=5 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 0, 0) w=(2, -1, -1) (a,b)=(0, 0) g=3 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 0, 0, 0, 0) done in 0.0s
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=-2 dimM=7 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=-1 dimM=46 dimV=22 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=0 dimM=125 dimV=54 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=1 dimM=181 dimV=76 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=2 dimM=149 dimV=65 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=3 dimM=68 dimV=33 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=4 dimM=15 dimV=9 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 0, 0) w=(2, 0, 0) (a,b)=(0, 0) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 1, 1, 0, 0) done in 0.0s
+ab1 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=0 dimM=2 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=1 dimM=7 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=2 dimM=8 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 0) w=(1, -1, -1) (a,b)=(1, 0) g=3 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 0, 0, 1, 0) done in 0.0s
+ab1 t=(0, 2, 0, 1, 0) w=(-1, 1, -1) (a,b)=(1, 0) g=0 dimM=2 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 0) w=(-1, 1, -1) (a,b)=(1, 0) g=1 dimM=7 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 0) w=(-1, 1, -1) (a,b)=(1, 0) g=2 dimM=8 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 0) w=(-1, 1, -1) (a,b)=(1, 0) g=3 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 2, 0, 1, 0) done in 0.0s
+ab1 t=(0, 0, 2, 1, 0) w=(-1, -1, 1) (a,b)=(1, 0) g=0 dimM=2 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 0) w=(-1, -1, 1) (a,b)=(1, 0) g=1 dimM=7 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 0) w=(-1, -1, 1) (a,b)=(1, 0) g=2 dimM=8 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 0) w=(-1, -1, 1) (a,b)=(1, 0) g=3 dimM=3 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 2, 1, 0) done in 0.0s
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=-2 dimM=5 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=-1 dimM=41 dimV=15 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=0 dimM=135 dimV=48 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=1 dimM=235 dimV=86 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=2 dimM=235 dimV=92 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=3 dimM=135 dimV=59 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=4 dimM=41 dimV=22 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 0) w=(1, 0, 0) (a,b)=(1, 0) g=5 dimM=5 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 1, 1, 1, 0) done in 0.1s
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=-2 dimM=5 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=-1 dimM=41 dimV=15 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=0 dimM=135 dimV=48 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=1 dimM=235 dimV=86 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=2 dimM=235 dimV=92 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=3 dimM=135 dimV=59 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=4 dimM=41 dimV=22 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 0) w=(0, 1, 0) (a,b)=(1, 0) g=5 dimM=5 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 2, 1, 1, 0) done in 0.1s
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=-2 dimM=5 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=-1 dimM=41 dimV=15 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=0 dimM=135 dimV=48 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=1 dimM=235 dimV=86 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=2 dimM=235 dimV=92 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=3 dimM=135 dimV=59 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=4 dimM=41 dimV=22 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 0) w=(0, 0, 1) (a,b)=(1, 0) g=5 dimM=5 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 2, 1, 0) done in 0.1s
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=-2 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=-1 dimM=13 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=0 dimM=58 dimV=18 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=1 dimM=121 dimV=41 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=2 dimM=131 dimV=51 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=3 dimM=73 dimV=33 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=4 dimM=18 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 0) w=(1, 1, -1) (a,b)=(1, 0) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 0, 1, 0) done in 0.0s
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=-4 dimM=1 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=-3 dimM=26 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=-2 dimM=214 dimV=91 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=-1 dimM=910 dimV=339 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=0 dimM=2291 dimV=795 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=1 dimM=3611 dimV=1243 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=2 dimM=3629 dimV=1299 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=3 dimM=2296 dimV=889 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=4 dimM=868 dimV=381 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=5 dimM=173 dimV=93 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 0) w=(1, 1, 1) (a,b)=(1, 0) g=6 dimM=13 dimV=10 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 2, 1, 0) done in 14.1s
+ab1 t=(3, 0, 0, 1, 0) w=(2, -1, -1) (a,b)=(1, 0) g=0 dimM=4 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 0) w=(2, -1, -1) (a,b)=(1, 0) g=1 dimM=14 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 0) w=(2, -1, -1) (a,b)=(1, 0) g=2 dimM=17 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 0) w=(2, -1, -1) (a,b)=(1, 0) g=3 dimM=8 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 0) w=(2, -1, -1) (a,b)=(1, 0) g=4 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 0, 0, 1, 0) done in 0.0s
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=-2 dimM=14 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=-1 dimM=109 dimV=38 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=0 dimM=352 dimV=121 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=1 dimM=616 dimV=214 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=2 dimM=635 dimV=232 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=3 dimM=389 dimV=158 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=4 dimM=134 dimV=65 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=5 dimM=22 dimV=14 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 0) w=(2, 0, 0) (a,b)=(1, 0) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 1, 1, 1, 0) done in 0.4s
+ab1 t=(2, 0, 0, 1, 1) w=(1, -1, -1) (a,b)=(1, 1) g=0 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 1) w=(1, -1, -1) (a,b)=(1, 1) g=1 dimM=14 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 1) w=(1, -1, -1) (a,b)=(1, 1) g=2 dimM=23 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 1) w=(1, -1, -1) (a,b)=(1, 1) g=3 dimM=16 dimV=7 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 1, 1) w=(1, -1, -1) (a,b)=(1, 1) g=4 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 0, 0, 1, 1) done in 0.0s
+ab1 t=(0, 2, 0, 1, 1) w=(-1, 1, -1) (a,b)=(1, 1) g=0 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 1) w=(-1, 1, -1) (a,b)=(1, 1) g=1 dimM=14 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 1) w=(-1, 1, -1) (a,b)=(1, 1) g=2 dimM=23 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 1) w=(-1, 1, -1) (a,b)=(1, 1) g=3 dimM=16 dimV=7 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 1, 1) w=(-1, 1, -1) (a,b)=(1, 1) g=4 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 2, 0, 1, 1) done in 0.0s
+ab1 t=(0, 0, 2, 1, 1) w=(-1, -1, 1) (a,b)=(1, 1) g=0 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 1) w=(-1, -1, 1) (a,b)=(1, 1) g=1 dimM=14 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 1) w=(-1, -1, 1) (a,b)=(1, 1) g=2 dimM=23 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 1) w=(-1, -1, 1) (a,b)=(1, 1) g=3 dimM=16 dimV=7 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 1, 1) w=(-1, -1, 1) (a,b)=(1, 1) g=4 dimM=4 dimV=3 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 2, 1, 1) done in 0.0s
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=-2 dimM=9 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=-1 dimM=92 dimV=24 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=0 dimM=366 dimV=103 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=1 dimM=768 dimV=229 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=2 dimM=943 dimV=305 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=3 dimM=696 dimV=255 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=4 dimM=300 dimV=131 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=5 dimM=68 dimV=38 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 1, 1) w=(1, 0, 0) (a,b)=(1, 1) g=6 dimM=6 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 1, 1, 1, 1) done in 1.0s
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=-2 dimM=9 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=-1 dimM=92 dimV=24 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=0 dimM=366 dimV=103 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=1 dimM=768 dimV=229 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=2 dimM=943 dimV=305 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=3 dimM=696 dimV=255 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=4 dimM=300 dimV=131 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=5 dimM=68 dimV=38 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 1, 1) w=(0, 1, 0) (a,b)=(1, 1) g=6 dimM=6 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 2, 1, 1, 1) done in 1.0s
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=-2 dimM=9 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=-1 dimM=92 dimV=24 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=0 dimM=366 dimV=103 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=1 dimM=768 dimV=229 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=2 dimM=943 dimV=305 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=3 dimM=696 dimV=255 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=4 dimM=300 dimV=131 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=5 dimM=68 dimV=38 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 1, 1) w=(0, 0, 1) (a,b)=(1, 1) g=6 dimM=6 dimV=5 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 2, 1, 1) done in 1.1s
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=-2 dimM=2 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=-1 dimM=30 dimV=8 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=0 dimM=152 dimV=42 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=1 dimM=373 dimV=104 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=2 dimM=502 dimV=154 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=3 dimM=381 dimV=139 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=4 dimM=155 dimV=71 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=5 dimM=28 dimV=17 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 1, 1) w=(1, 1, -1) (a,b)=(1, 1) g=6 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 0, 1, 1) done in 0.3s
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=-4 dimM=2 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=-3 dimM=65 dimV=21 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=-2 dimM=622 dimV=194 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=-1 dimM=2964 dimV=897 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=0 dimM=8325 dimV=2464 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=1 dimM=14844 dimV=4415 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=2 dimM=17339 dimV=5376 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=3 dimM=13304 dimV=4472 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=4 dimM=6537 dimV=2479 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=5 dimM=1927 dimV=862 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=6 dimM=295 dimV=166 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 1, 1) w=(1, 1, 1) (a,b)=(1, 1) g=7 dimM=16 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 2, 1, 1) done in 708.7s
+ab1 t=(3, 0, 0, 1, 1) w=(2, -1, -1) (a,b)=(1, 1) g=0 dimM=7 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 1) w=(2, -1, -1) (a,b)=(1, 1) g=1 dimM=32 dimV=7 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 1) w=(2, -1, -1) (a,b)=(1, 1) g=2 dimM=54 dimV=16 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 1) w=(2, -1, -1) (a,b)=(1, 1) g=3 dimM=41 dimV=16 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 1) w=(2, -1, -1) (a,b)=(1, 1) g=4 dimM=13 dimV=7 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 0, 0, 1, 1) w=(2, -1, -1) (a,b)=(1, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 0, 0, 1, 1) done in 0.0s
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=-2 dimM=31 dimV=8 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=-1 dimM=284 dimV=76 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=0 dimM=1073 dimV=297 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=1 dimM=2213 dimV=643 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=2 dimM=2744 dimV=857 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=3 dimM=2103 dimV=729 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=4 dimM=977 dimV=393 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=5 dimM=255 dimV=127 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=6 dimM=31 dimV=21 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(3, 1, 1, 1, 1) w=(2, 0, 0) (a,b)=(1, 1) g=7 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (3, 1, 1, 1, 1) done in 9.7s
+ab1 t=(2, 0, 0, 2, 1) w=(1, -1, -1) (a,b)=(2, 1) g=0 dimM=4 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 2, 1) w=(1, -1, -1) (a,b)=(2, 1) g=1 dimM=23 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 2, 1) w=(1, -1, -1) (a,b)=(2, 1) g=2 dimM=45 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 2, 1) w=(1, -1, -1) (a,b)=(2, 1) g=3 dimM=38 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 2, 1) w=(1, -1, -1) (a,b)=(2, 1) g=4 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 0, 0, 2, 1) w=(1, -1, -1) (a,b)=(2, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 0, 0, 2, 1) done in 0.0s
+ab1 t=(0, 2, 0, 2, 1) w=(-1, 1, -1) (a,b)=(2, 1) g=0 dimM=4 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 2, 1) w=(-1, 1, -1) (a,b)=(2, 1) g=1 dimM=23 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 2, 1) w=(-1, 1, -1) (a,b)=(2, 1) g=2 dimM=45 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 2, 1) w=(-1, 1, -1) (a,b)=(2, 1) g=3 dimM=38 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 2, 1) w=(-1, 1, -1) (a,b)=(2, 1) g=4 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 2, 0, 2, 1) w=(-1, 1, -1) (a,b)=(2, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 2, 0, 2, 1) done in 0.0s
+ab1 t=(0, 0, 2, 2, 1) w=(-1, -1, 1) (a,b)=(2, 1) g=0 dimM=4 dimV=0 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 2, 1) w=(-1, -1, 1) (a,b)=(2, 1) g=1 dimM=23 dimV=4 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 2, 1) w=(-1, -1, 1) (a,b)=(2, 1) g=2 dimM=45 dimV=12 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 2, 1) w=(-1, -1, 1) (a,b)=(2, 1) g=3 dimM=38 dimV=13 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 2, 1) w=(-1, -1, 1) (a,b)=(2, 1) g=4 dimM=13 dimV=6 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(0, 0, 2, 2, 1) w=(-1, -1, 1) (a,b)=(2, 1) g=5 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (0, 0, 2, 2, 1) done in 0.0s
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=-2 dimM=13 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=-1 dimM=157 dimV=33 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=0 dimM=713 dimV=168 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=1 dimM=1690 dimV=434 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=2 dimM=2347 dimV=661 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=3 dimM=1982 dimV=627 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=4 dimM=1003 dimV=372 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=5 dimM=282 dimV=131 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=6 dimM=36 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 1, 1, 2, 1) w=(1, 0, 0) (a,b)=(2, 1) g=7 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 1, 1, 2, 1) done in 8.4s
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=-2 dimM=13 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=-1 dimM=157 dimV=33 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=0 dimM=713 dimV=168 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=1 dimM=1690 dimV=434 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=2 dimM=2347 dimV=661 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=3 dimM=1982 dimV=627 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=4 dimM=1003 dimV=372 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=5 dimM=282 dimV=131 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=6 dimM=36 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 2, 1, 2, 1) w=(0, 1, 0) (a,b)=(2, 1) g=7 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 2, 1, 2, 1) done in 9.4s
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=-2 dimM=13 dimV=2 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=-1 dimM=157 dimV=33 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=0 dimM=713 dimV=168 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=1 dimM=1690 dimV=434 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=2 dimM=2347 dimV=661 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=3 dimM=1982 dimV=627 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=4 dimM=1003 dimV=372 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=5 dimM=282 dimV=131 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=6 dimM=36 dimV=23 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(1, 1, 2, 2, 1) w=(0, 0, 1) (a,b)=(2, 1) g=7 dimM=1 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (1, 1, 2, 2, 1) done in 9.9s
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=-2 dimM=3 dimV=1 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=-1 dimM=51 dimV=11 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=0 dimM=292 dimV=64 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=1 dimM=805 dimV=195 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=2 dimM=1223 dimV=333 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=3 dimM=1069 dimV=334 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=4 dimM=526 dimV=197 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=5 dimM=131 dimV=64 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+ab1 t=(2, 2, 0, 2, 1) w=(1, 1, -1) (a,b)=(2, 1) g=6 dimM=12 dimV=9 H(p1,p2,Q)=[0, 0, 0] pred=0 OK
+# (2, 2, 0, 2, 1) done in 2.3s

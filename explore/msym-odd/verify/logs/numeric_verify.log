@@ -1,0 +1,48 @@
+case 122: H=1 N=5 lam=[[3], [1], [0]]; vectorized vs exact density at a rational point: -0.000883842169300591 vs -0.000883842169300592
+   K(lam;0)           QMC -3.1415529 +- 6.9e-05 (2^22 points x 8 scrambles, b=5.0)   exact -3.141592654   rel. diff 1.3e-05 (4.9 digits), |diff|/err = 0.6
+   int D y^0_{e=1}    QMC 5.9689229 +- 0.00011 (2^22 points x 8 scrambles, b=5.0)   exact 5.969026042   rel. diff 1.7e-05 (4.8 digits), |diff|/err = 1.0
+   box |s| <= 30, non-finite evaluations set to 0: 0;  time 33s
+case A: H=2 N=7 lam=[[3, 1], [1, 3], [0, 0], [2, -2], [-3, -1]]; vectorized vs exact density at a rational point: 3.57556739861113e-05 vs 3.57556739861112e-05
+   K(lam;0)           QMC -1.3675476e+14 +- 1.4e+14 (2^21 points x 8 scrambles, b=5.0)   exact 10.05309649   rel. diff 1.4e+13 (-13.1 digits), |diff|/err = 1.0
+   int D y^0_{e=0}    QMC -8.8697239e+32 +- 9.7e+32 (2^21 points x 8 scrambles, b=5.0)   exact -26.32953843   rel. diff 3.4e+31 (-31.5 digits), |diff|/err = 0.9
+   box |s| <= 30, non-finite evaluations set to 0: 0;  time 68s
+case B: H=2 N=7 lam=[[3, 1], [1, 3], [0, 0], [2, -2], [-3, -1]]; vectorized vs exact density at a rational point: -3.37430475392365e-05 vs -3.37430475392365e-05
+   K(lam;0)           QMC 8.8439e+15 +- 8.8e+15 (2^21 points x 8 scrambles, b=5.0)   exact -6.702064328   rel. diff 1.3e+15 (-15.1 digits), |diff|/err = 1.0
+   int D y^0_{e=2}    QMC 6.0221513e+34 +- 6e+34 (2^21 points x 8 scrambles, b=5.0)   exact 10.05309649   rel. diff 6.0e+33 (-33.8 digits), |diff|/err = 1.0
+   box |s| <= 30, non-finite evaluations set to 0: 0;  time 87s
+case 144: H=3 N=9 lam=[[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]; vectorized vs exact density at a rational point: 9.23364213639303e-08 vs 9.23364213639306e-08
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/msym-odd/verify/numeric_verify.py", line 127, in <module>
+    Dv, y = density(t)
+            ~~~~~~~^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/msym-odd/verify/numeric_verify.py", line 44, in density
+    phi = np.linalg.solve(L, np.broadcast_to(lam, (P, g, H)))
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 410, in solve
+    r = gufunc(a, b, signature=signature)
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 104, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix
+case 234: H=3 N=9 lam=[[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]; vectorized vs exact density at a rational point: 7.265739182085e-08 vs 7.26573918208478e-08
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/msym-odd/verify/numeric_verify.py", line 127, in <module>
+    Dv, y = density(t)
+            ~~~~~~~^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/msym-odd/verify/numeric_verify.py", line 44, in density
+    phi = np.linalg.solve(L, np.broadcast_to(lam, (P, g, H)))
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 410, in solve
+    r = gufunc(a, b, signature=signature)
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 104, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix
+case 333: H=3 N=9 lam=[[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]; vectorized vs exact density at a rational point: 2.17224868050012e-08 vs 2.17224868050018e-08
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/msym-odd/verify/numeric_verify.py", line 127, in <module>
+    Dv, y = density(t)
+            ~~~~~~~^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/msym-odd/verify/numeric_verify.py", line 44, in density
+    phi = np.linalg.solve(L, np.broadcast_to(lam, (P, g, H)))
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 410, in solve
+    r = gufunc(a, b, signature=signature)
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 104, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix

@@ -1,0 +1,142 @@
+REPORT  notes/flagship   (task: write)                                                   2026-11-21
+
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Output folder P/notes/flagship/:
+  flagship.tex        LaTeX source (article class, amsmath/amsthm/longtable/hyperref)
+  flagship.pdf        16 pages
+  flagship.log/.aux/.toc/.out   pdflatex by-products
+  arith_check.py, arith_check.log   writer's exact re-evaluation of the c_1, c_0 tables and sign rules
+  REPORT.txt          this file
+Nothing was written outside this folder (scratch copies of the check script and page renderings in the
+session scratchpad only).
+
+Inputs read: P/notes/compendium.tex (dictionary, E4, E5, E8, C1, C7), P/code/htk/CONVENTIONS.md,
+P/deepen/run1_digest.json (engine, twoloop-universal, anomaly-structure, novelty-lit), P/deepen/{normalization,
+deform,simple-g,lit}/REPORT.txt, P/deepen/{normalization,deform,simple-g}/verify/VERIFY.txt and verifier logs
+(v2_pointwise, v3_wick, v5_assembly_count, vformal, vfixed_small, t_coeff, t_explicit, classes, classes_F4,
+c4span, c4inv, j1, sl2inv), P/deepen/lit/code/{koszul_check,rho2_dipole}.log, S1 LLC_main.tex lines 4680-4720
+(eq-finite-action-QME (9.54), ch9-action-proof (9.57), Sec. 9.3), S5 Higher.tex lines 123-199, 630-650,
+1440-1540 (authors, title, eq:globalconstraint, sec:projective, bitriangle), S5 4dDiffPaper.tex authors/title,
+P/notes/_aux label tables (S1, S2, S3 equation numbers).
+
+
+=====================================================================================================
+1. Compilation
+=====================================================================================================
+
+  pdflatex -interaction=nonstopmode -halt-on-error flagship.tex     (run 1)  exit 0
+  pdflatex -interaction=nonstopmode -halt-on-error flagship.tex     (run 2)  exit 0
+  final flagship.log:  errors ("^!") 0;  Overfull 0;  "Warning" lines 0;
+                       "Output written on flagship.pdf (16 pages, 724610 bytes)."
+  Earlier passes during editing (from a clean state) needed a third pass for the TOC page numbers;
+  the aux file was stable between the last two passes before the final edit (cmp: identical).
+
+
+=====================================================================================================
+2. Content and status (section of flagship.tex : statement : status)
+=====================================================================================================
+
+Status rule: Theorem/Proposition/Lemma = confirmed by an independent verifier (R1 run 1, R2 run 2);
+"Statement ... [derived, not independently checked]" = no verifier; literature = [sourced].
+Hypotheses stated explicitly: H1 (local BRST cohomology = CE cohomology of g[[z1,z2]] mod sum p; R1 c5,
+not sourced), H2 (weights (1,1) of hbar; imposed).
+
+Sec. 1  Setting, dictionary
+  Prop 1.1  transformation rules of K_Gamma; K_htk = sigma_T^H eps(n,H) int wedge d^H y (T=0)
+            : R1 engine (138 PASS), R1 anomaly-structure a1
+  table     S1/S2/S3/(2,1): Omega, heat kernel, currents, edge form, raw integral, source kernel
+            I^S = (-1)^{n(n+1)/2} K_htk : R1 engine test_known 16/16, R1 twoloop-universal C7 (n=2)
+  Prop 1.2  S2 raw normalization +(8pi^3)^{-n} I^S2, differs from S2 (5.9) at n=1 : R2 normalization c2
+  Prop 1.3  heat-kernel gauge, [P]_Omega = (3/(16 pi^2 r^5))[(tau/2) dzb1 dzb2 - dtau (zb1 dzb2 - zb2 dzb1)],
+            Theta_e = (4 pi^{5/2})^{-1} e^{-eta^2 - y.Delta} deta d^2y; WW (22) factor 4 : R2 normalization a1
+  Prop 1.4  G_Gamma = -K_htk(lam;0)/(64 pi^5) for the (2,1) thetas : R2 normalization b1-b4 (V2 pointwise exact)
+  Stmt 1.5  general n: (-1)^{n(n-1)/2}(8pi^{5/2})^{-n}; general (H,T) constant c_{H,T} : derived
+
+Sec. 2  Theta kernels (labelling theta(p,q,r), edge order A,B,C, paths oriented N -> N', cycle basis
+        C3 = (A-B, B-C), K_htk = (-1)^{(q+1)D} K[C3])
+  Thm 2.1   densities  T=1: (-1)^{H(H+1)/2} D_theta/(2U^{H+3/2});  T=0: (-1)^{H(H+1)/2+1} R_A R_B R_C Q(L)/U^{H+2}
+            : R1 twoloop-universal C1, C2
+  Thm 2.2   integral representations at general z, displacement points X_v : R1 C3, C4
+  Thm 2.3   z=0 closed forms (T=1 Gamma-function formula; T=0 c_0 Q(Lbar)), basis sign, interior root
+            : R1 C5, C6, C7, C8;  tables of c_1, c_0, sign_htk;  Laplace expansions : R1 C9
+  Prop 2.4  S1, S2, S3, S4 values reproduced : R1 C10, C11, C5, C8
+
+Sec. 3  Obstruction of commutative CS on R x C^2
+  3.1       classical theory, I[L], O[L] = QME_L(I[L]) as heat-edge sum : sourced (WW, C16), R2 normalization a2
+  Prop 3.1  counting E = (D-3)n+4, gh = (D-3)(n-1)+1 : R2 normalization e1
+  3.2       engine labelling, edge lists, positive cycle matrices, |Aut| = 4, 4
+  Thm 3.2   K_133 = -(pi/20)[p1p2][p3p4], K_223 = +(pi/30)[p1p2][p3p4] : R1 anomaly-structure c1
+  Prop 3.3  Wick rule sigma = sgn(source -> target), sigma_133 = sigma_223 = -1, sigma C = W^Gamma (index forms),
+            relative sign +1 : R2 normalization b5, c1
+  Thm 3.4   O_2 = Nnorm sum |Aut|^{-1} int Omega K W, Nnorm = -U hbar^2/(64 pi^5);
+            O_2 = (pi Nnorm/240) int Omega [d1d2][d3d4](-3W_133 + 2W_223), pi Nnorm/240 = -U hbar^2/(15360 pi^4)
+            : R2 normalization d1, b4, b5; R1 c4
+  Thm 3.5   gl_N, sl_N, sl2 colour factors : R1 c4; R2 deform t_weights.log
+  Prop 3.6  closedness dF_133 = dF_223 = 0 (8 + formal + 8 algebras) : R1 c5, R2 deform, R2 simple-g s5
+  Thm 3.7   H^4_(2,2) formal gl_N 36/26/10/6/4, sl_N 15/11/4/3/1, fixed-N table; [F_133 + F_223] = 0;
+            [O_2] = (pi Nnorm/48)[F_223] = -U hbar^2/(3072 pi^4)[F_223], nonzero iff N >= 3
+            : R1 c6, c7; R2 deform d6 (exact); R2 normalization d1
+  Lemma 3.8 Reynolds/SL2 reduction, B^4 cap C^4_inv = C beta, injective evaluation : R2 simple-g s1, s2
+  Thm 3.9   simple g (Killing): F_133 + F_223 = beta/2; [O_2] = (pi Nnorm/48)[F_223] != 0 for sl3, sl4 = so6, sl5,
+            so5 = sp4, so7, sp6, so8, G2, F4; sl2: F_133 = 7/2 beta, F_223 = -3 beta, [O_2] = 0 : R2 simple-g s3, s4, s7, s9
+            (F4 value 162 in the E6 Kac form: explorer only, marked derived)
+  Prop 3.10 invariant dimensions table; pattern [O_2] != 0 iff dim (g^{(x)4})^g > 3 on the list : R2 simple-g s6, s8
+  Stmt 3.11 dim C^4_inv, rank d on C^4_inv, H^4_inv for sl2, sl3, so5, G2 (simple-g verifier only) : derived
+
+Sec. 4  Order-hbar deformations
+  Prop 4.1  scaling, J_1 bidegree (1,1), I_2, O_2 bidegree (2,2) : R2 deform d1 (H2 imposed)
+  Prop 4.2  {S_cl,J_1} = 0; {S_cl,I_2} + (1/2){J_1,J_1} + O_2/hbar^2 = 0 : R2 deform d2 (gaps listed in the text)
+  Prop 4.3  {s_0,.} = -d; eps(-d i_2 + (1/2){j,j}) + o_2 = 0 : R2 deform d3 (eps not determined)
+  Thm 4.4   H^3 = {[p1p2]T : T in (Sym^3 g*)^g}; per-algebra dims; simple g: (S^3)^g = 0 for so5, so7, so8, sp6,
+            G2, F4, sl2; 1 for sl3, sl4 = so6, sl5 : R2 deform d4, R2 simple-g s6
+  Prop 4.5  Moyal j_M = D/2, i_M, (1/2){j_M,j_M} = d i_M : R2 deform d5
+  Thm 4.6   brackets of H^3 classes; lambda = (2ac + b^2 + Nbc)/48, mu = -(2a+Nb)(2b+Nc)/48;
+            sl_N: q[aD] = a^2/(12N^2)[F_223]; fixed-N forms : R2 deform d7, d8
+  Thm 4.7   Q1: [O_2] in q(H^3) for sl_N, gl_N (N >= 3); explicit J_1; pure Moyal direction does not cancel;
+            N <= 2: [O_2] = 0 : R2 deform d9 (conditional on H1)
+  I_2 line  i_2 = a^2 eta_N + eps zeta, d zeta = o_2 - c_O F_223 : derived (two-line derivation shown)
+  Stmt 4.8  a^2 = eps U N^2/(256 pi^4), b^2 = -eps U/(64 pi^4), t(t+s) = eps U N^2/(256 pi^4) : derived
+            (R2 deform d10 unverified; relative sign input from Prop 3.3)
+  Cor 4.9   so5 = sp4, so7, so8, sp6, G2, F4: no G x SL2-invariant J_1 != 0, so the order-hbar^2 equation has no
+            invariant solution : derived (combination of Thm 3.9, Thm 4.4, Prop 4.2, 4.3)
+  table     which quantizations exist through order hbar^2, per algebra
+
+Sec. 5  Literature (R2 lit, no verifier; R1 novelty-lit, no verifier): WW 2407.08667 v3 (expectation, Thm 1.1,
+        1.2, Prop 3.21, 3.23, (73), (74), Cor 3.28), Costello 1610.04144 (action with e, Thms 9.0.2, 9.0.3, Sec. 9.1,
+        App. B), Oh-Zhou, IJZ, Ashwinkumar, Gaiotto-Oh, GRW, Costello 1705.02500, search record; 2111.00955 vs
+        1910.05230 (R2 normalization e2, verified); Williams 1809.02661 Cor. 2.30, Gwilliam-Williams 1810.06534 App. A,
+        Costello 1303.2632 Sec. 16.1; H1 at T=0 (Koszul check, derived); rho_n = (-1/2)^{n/2} phi^BHP = pi^{n/2} phi^BH
+        (derived, n=2 checked by two explorers); odd-loop vanishing (S3, WW, GKW, BG, BH, 2207.14321); GKW bitriangle
+        alpha and omega transcribed from local TeX; structural comparison with Thm 2.1 at (1,1) : derived;
+        H = 0 earlier values.
+
+Sec. 6  Checks table: every check with method (who) and outcome, with log paths; list of what was not done.
+
+
+=====================================================================================================
+3. Writer's own check
+=====================================================================================================
+
+arith_check.py (sympy, exact): c_1 = (1/2) prod_P Gamma(H+3/2-n_P)/(Gamma(H+3/2) prod_P (n_P-1)!) / pi,
+s = (-1)^{ceil(H/2)+(H+1)(q+1)}, c_0 = prod_P (H-n_P)!/((H+1)! prod_P (n_P-1)!),
+sign = (-1)^{H(H+1)/2+1+H(q+1)}, for all tight thetas.  Printed (arith_check.log):
+  T=1  H=2: ((1,3,3), 1/20, '-'), ((2,2,3), 1/30, '+');  H=5: 1/158400, 1/285120, 1/332640, 1/798336, 1/997920, all '-'
+  T=0  H=3: ((1,3,3), 1/48, '-'), ((2,2,3), 1/48, '+');  H=6: 1/604800 (x3), 1/967680, 1/1088640, all '+'
+  All rows equal the tables of Sec. 2 (and R1 twoloop-universal C5, C6).
+No other computation was run by the writer.
+
+
+=====================================================================================================
+4. Not done
+=====================================================================================================
+
+- No new physics computation; the article transcribes verified and derived results of run 1 and run 2.
+- The overall sign U (Nnorm) and the dictionary sign eps are not fixed in any input; the article keeps them.
+- H1 (BRST = CE cohomology) is not proved in any input; all cohomological statements are stated as CE
+  statements with H1 named.
+- Literature statements of R2 lit and R1 novelty-lit had no verifier; they are marked [sourced] or derived.
+  Only GKW 2403.13049 and 2207.14321 passages were re-read by the writer in local TeX (S5).
+- The structural comparison of GKW's bitriangle integrand with Thm 2.1 at (H,T) = (1,1) (same U^{-5/2},
+  same source product) was not checked numerically; the t-independent factor was not computed.
+- Author first names in the bibliography are given only where a source read in this run states them
+  (S5 TeX, R2 normalization e2); other entries carry surnames and arXiv ids only.

@@ -1,0 +1,6 @@
+n=1: product forests (ordered A,B) 1, (unordered) 1; reducible by series-parallel + source-free single/paired stars: 1/1 [] | 0.0s
+n=2: product forests (ordered A,B) 3, (unordered) 2; reducible by series-parallel + source-free single/paired stars: 3/3 [] | 0.0s
+n=3: product forests (ordered A,B) 8, (unordered) 5; reducible by series-parallel + source-free single/paired stars: 8/8 [] | 0.0s
+n=4: product forests (ordered A,B) 23, (unordered) 13; reducible by series-parallel + source-free single/paired stars: 23/23 [] | 0.5s
+n=5: product forests (ordered A,B) 65, (unordered) 35; reducible by series-parallel + source-free single/paired stars: 65/65 [] | 1.0s
+n=6: product forests (ordered A,B) 194, (unordered) 101; reducible by series-parallel + source-free single/paired stars: 194/194 [] | 1.7s

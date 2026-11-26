@@ -1,0 +1,12 @@
+[chk] elements of g(W), W in [-1,1]^5 mod S2xS3 (60 weights, all of g there), acting trivially on coker(Wn)
+      for all Laurent Wn with beta(Wn) in [0,2]^5: {(0, 0, 0, 0, 0): ['+1']}
+[drv] 1 is central for the Schouten bracket ({1,-} = 0), so C.1 acts trivially on all of coker.
+[drv] a nonzero vector field X on C^{2|3} acts nontrivially on B^2: L_X(dx_i dx_j) = 0 for all i,j forces dX^{theta_I} = 0
+      (i = j = theta_I, dtheta_I^2 != 0) and then dX^{z_a} = 0 (i = z_a, j = theta_I); constant X are detected by d(z_a^2 dtheta_1),
+      d(theta_1 theta_2 dtheta_3).  B^2 is in coker and L_X B^2 is in B^2, disjoint from B^1.
+
+exact test forms d(monomial), weight in [0,2]^5: 2403
+[chk] Phi [psi(A), Phi^{-1} omega] = L_{V_A} omega  (V_A = projective vector field of A, standard Lie derivative)
+      for all 34 basis elements of psl(3|3) on 150 exact forms each: 5100 pairs, 0 mismatches
+[chk] d L_V = (-1)^{|V|} L_V d on 2400 (generator, form monomial) pairs: 0 failures  (so L_V preserves B^p)
+time 5.7s

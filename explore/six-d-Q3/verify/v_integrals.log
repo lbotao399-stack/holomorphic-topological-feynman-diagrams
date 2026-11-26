@@ -1,0 +1,15 @@
+G1: 36 positional bracket triples (36 nonzero), common denominator 622080; explorer: 36 terms, denominator 622080; equal as polynomials in independent bracket symbols: True
+    at the explorer sources: int J = 52924313/311040, I = +1 * int J = 52924313/311040 (explorer I(lambda;0) = 52924313/311040) equal True
+    factor_list in independent bracket symbols: content 1/622080, 1 non-constant factor(s), degrees [3]  [2.5s]
+G2: 36 positional bracket triples (36 nonzero), common denominator 622080; explorer: 36 terms, denominator 622080; equal as polynomials in independent bracket symbols: True
+    at the explorer sources: int J = -85183/25920, I = +1 * int J = -85183/25920 (explorer I(lambda;0) = -85183/25920) equal True
+    factor_list in independent bracket symbols: content 1/622080, 1 non-constant factor(s), degrees [3]  [2.2s]
+G3: 36 positional bracket triples (36 nonzero), common denominator 622080; explorer: 36 terms, denominator 622080; equal as polynomials in independent bracket symbols: True
+    at the explorer sources: int J = 58733/25920, I = +1 * int J = 58733/25920 (explorer I(lambda;0) = 58733/25920) equal True
+    factor_list in independent bracket symbols: content 1/622080, 1 non-constant factor(s), degrees [3]  [3.0s]
+G4: 36 positional bracket triples (36 nonzero), common denominator 622080; explorer: 36 terms, denominator 622080; equal as polynomials in independent bracket symbols: True
+    at the explorer sources: int J = -7757/1440, I = -1 * int J = 7757/1440 (explorer I(lambda;0) = 7757/1440) equal True
+    factor_list in independent bracket symbols: content 1/622080, 1 non-constant factor(s), degrees [3]  [3.0s]
+G5: 36 positional bracket triples (36 nonzero), common denominator 207360; explorer: 36 terms, denominator 207360; equal as polynomials in independent bracket symbols: True
+    at the explorer sources: int J = 18409/51840, I = -1 * int J = -18409/51840 (explorer I(lambda;0) = -18409/51840) equal True
+    factor_list in independent bracket symbols: content 1/207360, 1 non-constant factor(s), degrees [3]  [4.7s]

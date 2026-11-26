@@ -1,0 +1,149 @@
+VERIFY.txt  2026-11-21  independent recomputation of C1-C4 (code in this directory; nothing imported from ../code)
+exact arithmetic: Fraction / sympy / integer numpy (results equal predicted integers exactly)
+
+======================================================================
+C1  colour polynomials of the n-loop fan            VERDICT: confirmed
+======================================================================
+L(D,E,F) := sum_sigma sum tr(t_A1..t_Am F) C_{A_s1 D R1} C_{A_s2 R1 R2} ... C_{A_sm R_n E},  m = n+1,
+C_XYZ = -i tr([t_X,t_Y] t_Z)/tau.
+claim:  L = (-i)^(n+1) tau^n P_n(N) [tr(DEF) + (-1)^(n+1) tr(DFE)].
+
+(a) c1_explicit.py: literal R-sums over an integral sl(N) basis and its dual basis (no commutator or completeness
+    reduction), random integer traceless D,E,F, two trials per (n,N).  S' := L/((-i)^(n+1) tau^n):
+    n=2  N=2,3,4,5 :  S'/[..] = 10, 15, 22, 31          = N^2+6
+    n=3  N=3,4,5   :  63, 112, 185                     = N^3+12N
+    n=4  N=2,3,4   :  280, 525, 952                    = N^4+36N^2+120
+    n=5  N=3,4     :  3024, 6496                       = N^5+63N^3+360N
+    SU(2), t_i = sigma_i/2, (D,E,F)=(1,2,3), three Levi-Civita tensors:  L = -5/4 = -tau^3 (2^2+6) C_123.
+    n=2:  L = (-i)^3 tau^2 (N^2+6) tr([D,E]F) = i tau^2 (N^2+6)(i tau C_DEF) = -tau^3 (N^2+6) C_DEF.
+    SU(3) Gell-Mann, n=3, D=E=t_1, F=diag(1,1,-2), weight 1/3 on lambda_8' = diag(1,1,-2):  L = 63/8
+          = tau^3 * 63 * [tr(DEF)+tr(DFE)],  tr(DEF)+tr(DFE) = 1.
+
+(b) c1_ribbon.py: union-find on matrix-index variables, sum_c (e^c)_pq (e_c)_rs = delta_ps delta_qr, symbolic N.
+    nested-commutator expansion (m! spoke assignments x 2^m signs) = binomial form
+      sum_k (-1)^k C(m,k) sum_tau [tr(Y_1..Y_m F) | tr(X^(m-k) D X^k E)]      for m <= 7;  binomial form m = 8, 9.
+    coefficient of tr(DEF) (tr(DFE): (-1)^(n+1) times it; every other structure contains a one-matrix trace):
+      n=2  N^2+6
+      n=3  N^3+12N
+      n=4  N^4+36N^2+120
+      n=5  N^5+63N^3+360N
+      n=6  N^6+127N^4+1996N^2+5040
+      n=7  N^7+199N^5+4960N^3+20160N
+      n=8  N^8+331N^6+16732N^4+169632N^2+362880
+      n=9  N^9+480N^7+35759N^5+545760N^3+1814400N                    (face formula, C2(b))
+      n=10 N^10+716N^8+89519N^6+2731444N^4+20859840N^2+39916800       (face formula, C2(b))
+    no spectator, tr(Y1Y2Y3), n=2: colour tensor identically 0.
+    one-handle:  C(n+2,4)+n(n-1)+C(n,3)+2+(-1)^n(n-1) = 6,12,36,63,127,199,331,480,716  (n=2..10), and n <= 300 (C2(c)).
+
+(c) arithmetic of the stated phase:  (-1)^n i^(n+1) [-(-ig)^(n-2)(ig)^2] i^(-(n+1)) tau^n = -(i g tau)^n;
+    n=3:  (-1)^3 i^4 /(2(32pi^2)^3 6^3 4) * (-i g^3) * 63/8 = 63 i g^3/[8*1728(32pi^2)^3];
+          times -8 sqrt2 i 4^(n-2) (factor taken from NOTE, not rederived) = 7 sqrt2 g^3/[48(32pi^2)^3].
+
+======================================================================
+C2  unmarked/marked face counts, sinh limit         VERDICT: confirmed
+======================================================================
+(a) c2_counts.py, all (m-1)! m-cycles beta, alpha(i)=i+1, m = 1..9:
+    sum_beta N^c(beta alpha) = [prod_{j=0}^m (N+j) - prod_{j=0}^m (N-j)]/(m(m+1))   (polynomial identity, all m <= 9)
+    m=7: N^7+70N^5+469N^3+180N;  m=8: N^8+126N^6+1869N^4+3044N^2;  m=9: N^9+210N^7+5985N^5+26060N^3+8064N.
+    B_{m,h} = e_{2h+1}(1..m)/C(m+1,2):  m <= 9 by enumeration;  m <= 150 for h <= 3 from the core counts in (c).
+
+(b) marked face formula, derived from the gluing in C1(b) (corner i after slot i, psi = beta o alpha,
+    E in corner m-1, D in corner m-1-k, F on the step out of corner f, f over all m corners):
+    P_m(N) = sum_beta N^(c(psi)-1) [ l_psi(m-1) + sum_{k=1}^{m-1} (-1)^k C(m,k) dist_psi(m-1 -> m-1-k) ]
+    = union-find result for m <= 9; enumerated for m <= 11.
+
+(c) reduced algorithm (own derivation): cores = fixed-point-free psi_s on s points, c(psi_s) = s-2h,
+    psi_s alpha_s^(-1) an s-cycle, 2h+1 <= s <= 4h;  embeddings x_0<..<x_{s-1} in {0..m-1}:
+    P_{m,h} = sum_cores [ C(m-1,s) + l C(m-1,s-1) + sum_{k=1}^{m-1} (-1)^k C(m,k) sum_j d_j C(m-1-k,j) C(k-1,s-2-j) ]
+    (C(m-1,s)+l C(m-1,s-1) = C(m,s)+(l-1)C(m-1,s-1); alternating sum = finite-difference closed form, checked m < 40)
+    core data (s: #cores, sum l, sum d):
+      h=1: 3:(1,3,3) 4:(1,2,1)
+      h=2: 5:(8,40,80) 6:(36,116,140) 7:(49,119,91) 8:(21,42,21)
+      h=3: 7:(180,1260,3780) 8:(1604,7288,14420) 9:(5144,17240,23240) 10:(7680,20616,19488) 11:(5445,12375,8415) 12:(1485,2970,1485)
+      h=4 (s<=11): 9:(8064,72576,290304) 10:(112608,666432,1849824) 11:(604428,2625348,5198820)
+    reduced = face enumeration for every h at m <= 11 (P_{10,4} = 1814400, P_{11,4} = 20859840).
+
+(d) c2_limits.py: exact degree-4h fits separately on even and odd m, verified on 40 further m:
+      h   leading coeff of P_{m,h}   claim 1/(2^2h (2h+1)!)   [m^4h] (P-B)   [m^(4h-1)] (P-B)   claim 4h/(2^2h (2h+1)!)
+      1   1/24                        1/24                     0              1/6                 1/6
+      2   1/1920                      1/1920                   0              1/240               1/240
+      3   1/322560                    1/322560                 0              1/26880             1/26880
+    (same values on both parities)
+
+(e) numerics, sum over h <= 3, n = round(sqrt(xN)):
+    x=1:  sinh(1/2)/(1/2) = 1.04219061099,   2(cosh(1/2) - sinh(1/2)/(1/2)) = 0.170870708
+      N=1e4  n=100    sum_h P/N^2h = 1.04477183   m sum_h (P-B)/N^2h = 0.17775856
+      N=1e6  n=1000   1.04244454                  0.17155181
+      N=1e8  n=10000  1.04221595 (diff 2.5e-5)    0.17093859 (diff 6.8e-5)
+    x=2:  sinh(1)/1 = 1.17520119364,          2(cosh 1 - sinh 1) = 0.735758882
+      N=1e4  n=141    1.18050371                  0.74602089
+      N=1e6  n=1414   1.17583459                  0.73726568
+      N=1e8  n=14142  1.17526603 (diff 6.5e-5)    0.73588716 (diff 1.3e-4; h=4 truncation ~4.4e-5)
+    differences decrease ~ 1/n.
+
+======================================================================
+C3  homological perturbation; product-compatible version
+======================================================================
+(i) identity                                          VERDICT: confirmed (needs Q_0^2 = 0, the hbar^0 part of Q^2 = 0)
+    Q(1+Ds) - (1+Ds)Q_0 = D + Q D s - D s Q_0
+    Q D = Q(Q - Q_0) = -Q Q_0 = -Q_0^2 - D Q_0 = -D Q_0
+    => = D(1 - Q_0 s - s Q_0) = D iota pi = 0.
+    hbar^2:  Q_2 = [Q_2 s, Q_0] - Q_1^2 s  <=>  Q_2(1 - Q_0 s - s Q_0) = 0   (Q_1^2 = -(Q_0Q_2 + Q_2Q_0)).
+    c3_hpl.py: V = H+A+B, dim 8, dim H = 2, random rational basis; Q_1..Q_3 solved order by order with Q^2 = 0, Q_n iota = 0
+      and random free parameters:  Q(1+Ds) = (1+Ds)Q_0 mod hbar^4: True;  hbar^2 identity: True;  g^-1 Q g = Q_0: True.
+      control Q = g Q_0 g^-1, g iota != iota:  Q^2 = 0 True,  D iota = 0 False,  identity False.
+    D iota = 0 for the LLC planar Q is the source theorem (eq. 2-60, Thm b-00630); not recomputed.
+
+(ii) formulation (M)
+    A = graded-commutative algebra of relative gauge-invariant local operators (finite N, or Sym V at N = infinity).
+    (M): exist xi = sum_{n>=1} hbar^n xi_n, xi_n even charge-neutral derivations of A, and Q_1', with
+         e^(-xi) Q e^(xi) = Q_0 + hbar Q_1',   (Q_0 + hbar Q_1')^2 = 0.
+    e^(xi) is an automorphism of (A, .), i.e. a change of variables compatible with the product.
+    Koszul brackets  Phi^k_D(a_1..a_k) = sum_{S subset [k]} (-1)^(k-|S|) (+-) D(a_S) a_(S^c);  ord D <= r <=> Phi^(r+1)_D = 0.
+      phi automorphism:  Phi^k_{phi^-1 D phi}(a..) = phi^-1 Phi^k_D(phi a..);   xi derivation:  ord [D,xi] <= ord D;
+      ord Q_n = n+1 (n+1 contracted letters).
+    => hbar^n coefficient of e^(-xi) Q e^(xi) = Q_n + (operators of order <= n)
+    => (M) implies Phi^(n+1)_{Q_n} = 0 for n >= 2.  First computable obstruction:  Phi^3_{Q_2} = 0 on A.
+
+(iii) smallest computation (c3_obstruction.py), LLC eq. (2-28) with spectators:
+    a = tr(beta_1 gamma^I), b = tr(beta_2 gamma^J), c = tr(beta_3 gamma^K);
+    Q_2 of a, ab, ac, bc vanishes (fewer than three beta letters; a gamma contraction exceeds theta-degree 3), so
+    Phi^3_{Q_2}(a,b,c) = Q_2(abc)
+      = -i g^2 tau^3/(48(32pi^2)^2) sum_sigma (C_{x_s1} C_{x_s2} C_{x_s3})_{DE} B^DE,
+      (C_x)_DR = x^A C_ADR,  x_1,x_2,x_3 = gamma^I,gamma^J,gamma^K,
+      B^DE = (d_{+a}d_{+b}c^D)(d_+^a d_+^b c^E) = -B^ED,
+      B^12 = u^1_{++}u^2_{--} - 2 u^1_{+-}u^2_{+-} + u^1_{--}u^2_{++}  (u^D_ab = d_{+a}d_{+b}c^D; Grassmann algebra check).
+    SU(2), t = sigma/2, I=J=K, gamma^I = x^A t_A:
+      Phi^3_{Q_2}(a,b,c) = i g^2 (x.x)(x_1 B^23 - x_2 B^13 + x_3 B^12)/(32768 pi^4)  != 0.
+    SU(N): (i/tau) sum_sigma tr(ad_x3 ad_x2 ad_x1 (D) E) on random traceless integer matrices = -96, 974, -2719, -2308
+      for N = 2,3,4,5  != 0;  three different spectators also nonzero.
+    => (M) fails at hbar^2 at finite N.
+    N-counting: three input traces -> one output trace, hbar^2 N^0 against planar single trace hbar^2 N^2:
+      Phi^3_{Q_2} = O(N^-2) at fixed hbar N.  At N = infinity, Sym V free, (M) reduces to (i) through Sym(1+Ds).
+    order 1/N (joining bracket Phi^2_Q): class pi_inf Phi^2_Q(iota x iota) in Hom(Sym^2 H, H) vanishes, since
+      Phi^2_Q(G_a,G_b) = Q(G_a G_b) = -Q(G_a*G_b - G_a G_b) (Thm b-00630)  [argument from the source, not computed].
+    letter-local field redefinitions: charge neutrality forces Delta(theta;n;Y) = delta(1,1,1;-1,-1;1) with Y-shift >= 0
+      for a derivation; the Y-shift -1 part of the hbar^2 equation is then Q_2 itself, and
+      Q_2 tr(beta1 beta2 beta3 gamma^I) is proportional to (N^2+6) C_DEF (gamma^I)^F B^DE != 0.
+    VERDICT: (i) confirmed; linear conjugacy confirmed; product-compatible (M) refuted at hbar^2 (finite N, order N^-2),
+             with obstruction Phi^3_{Q_2} computed above; higher (Massey-type) 1/N obstructions unverified.
+
+======================================================================
+C4  flux hexagon                                     VERDICT: confirmed
+======================================================================
+c4_flux.py (sympy), f = (w1 w2 w3)^-1, coefficient of t0 t1 t2 t3 t4 in det Hess(t0 f + sum_i t_i phi_i):
+  phi = z1^2/2, z2^2/2, w2^2/2, w3^2/2:  2/(w1^3 w2 w3) = d_w1^2 f
+      (N/24)*2/(w1^3w2w3) = N/(12 w1^3 w2 w3);  w^(-a-1) <-> (-1)^|a| (dth)^a/a!  gives (N/24)(dth_1)^2;
+      times w1^2, coefficient of (w1w2w3)^-1:  N/12.
+  phi = z1w2, z1w3, z2w2, z2w3:  -4/(w1^3 w2 w3);  minor rows/cols {z1,z2,w2,w3}: (s1s4 - s2s3)^2, [s1s2s3s4] = -2;
+      (N/24)(-4)/(w1^3w2w3) = -N/(6 w1^3 w2 w3);  residue  -N/6.
+  phi = z1^2/2, z2^2/2, (p.w)^2/2, (q.w)^2/2:  response = v^T Hess(f) v,  v = p x q  (all six probes);
+      coordinates in (dth1^2, dth2^2, dth3^2, dth1dth2, dth1dth3, dth2dth3):
+        v=e1 (1,0,0,0,0,0)  e2 (0,1,0,0,0,0)  e3 (0,0,1,0,0,0)
+        e1+e2 (1,1,0,2,0,0)  e1+e3 (1,0,1,0,2,0)  e2+e3 (0,1,1,0,0,2)
+      det = 8.
+  genus two, P of ../../iib-bcov/README.md (c_i, a_i = 7c_i - sum c, c_7 = 0), momenta
+      a dw1, b dw1, c dw2, d dz2 + s dw3, e dz1 + t dw3, flux q, balancing:
+      P = -a^2 b^2 c^4 d^4 e^4 q3^4/31104  (no s, t, q1, q2);  P invariant under 30 random S_7 slot permutations;
+      (-1/31104) N d_w3^4(w1w2w3)^-1 w3^2 = -N/(1296 w1 w2 w3^3)   along e d_z2; the d d_z1 term has degree d^5.
+      sign conventions (action -P Tr, differential = minus divergence of the Euler derivative) taken from the source.

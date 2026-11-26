@@ -1,0 +1,28 @@
+sl2: 9 eta columns, rank d(eta) on subset = 2 (config monomial rank 36)
+   F133          exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 3240 rows: True
+   F223          exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 3240 rows: True
+   F133+F223     exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 3240 rows: True
+   -3F133+2F223  exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 3240 rows: True
+   -3F133-2F223  exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 3240 rows: True
+   (0.3s)
+sl3: 18 eta columns, rank d(eta) on subset = 3 (config monomial rank 36)
+   F133          NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 4 > 3
+   F223          NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 4 > 3
+   F133+F223     exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 163840 rows: True
+   -3F133+2F223  NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 4 > 3
+   -3F133-2F223  NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 4 > 3
+   (0.9s)
+so5: 9 eta columns, rank d(eta) on subset = 2 (config monomial rank 36)
+   F133          NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   F223          NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   F133+F223     exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 400000 rows: True
+   -3F133+2F223  NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   -3F133-2F223  NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   (0.6s)
+G2: 9 eta columns, rank d(eta) on subset = 2 (config monomial rank 36)
+   F133          NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   F223          NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   F133+F223     exact: X = sum a_mu d eta_mu on subset, unique: False, verified on all 1536640 rows: True
+   -3F133+2F223  NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   -3F133-2F223  NOT exact in the full weight-(2,2) complex: rank [d eta | X] = 3 > 2
+   (1.0s)

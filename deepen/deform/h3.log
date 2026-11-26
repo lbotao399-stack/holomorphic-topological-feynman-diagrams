@@ -1,0 +1,29 @@
+gl_N deg (1, 1): dim C^2 = 0, dim C^3 = 5, rank d3 = 2 (det 1), dim Z^3 = dim H^3 = 3 (closed exactly: True)
+gl_N deg (2, 0): dim C^2 = 0, dim C^3 = 2, rank d3 = 2 (det 1), dim Z^3 = dim H^3 = 0 (closed exactly: True)
+gl_N deg (0, 2): dim C^2 = 0, dim C^3 = 2, rank d3 = 2 (det 1), dim Z^3 = dim H^3 = 0 (closed exactly: True)
+  d=tr(1{23}): J = [p1p2] T alternating: True, alt([p1p2]T) = 6 J: True, d J = 0: True
+  s1=tr1tr23+tr2tr13+tr3tr12: J = [p1p2] T alternating: True, alt([p1p2]T) = 6 J: True, d J = 0: True
+  s0=tr1tr2tr3: J = [p1p2] T alternating: True, alt([p1p2]T) = 6 J: True, d J = 0: True
+    alt([p1p2] tr(123)) = [p1p2] * sum_s s.T : True
+    alt([p1p2] tr(132)) = [p1p2] * sum_s s.T : True
+    alt([p1p2] tr(1) tr(23)) = [p1p2] * sum_s s.T : True
+    alt([p1p2] tr(12) tr(3)) = [p1p2] * sum_s s.T : True
+    alt([p1p2] tr(13) tr(2)) = [p1p2] * sum_s s.T : True
+    alt([p1p2] tr(1) tr(2) tr(3)) = [p1p2] * sum_s s.T : True
+  d=tr(1{23}) in Z^3(1,1): True
+  s1=tr1tr23+tr2tr13+tr3tr12 in Z^3(1,1): True
+  s0=tr1tr2tr3 in Z^3(1,1): True
+  Z^3(1,1) basis:
+   z0 = 3/2 p1bp2a tr(123) + -3/2 p1ap2b tr(123) + 3/2 p1bp2a tr(132) + -3/2 p1ap2b tr(132)
+   z1 = 1 p1bp2a tr(1) tr(23) + -1 p1ap2b tr(1) tr(23) + 1 p1bp2a tr(12) tr(3) + -1 p1ap2b tr(12) tr(3) + 1 p1bp2a tr(13) tr(2) + -1 p1ap2b tr(13) tr(2)
+   z2 = 3 p1bp2a tr(1) tr(2) tr(3) + -3 p1ap2b tr(1) tr(2) tr(3)
+sl_N deg (1, 1): dim C^2 = 0, dim C^3 = 2, rank d3 = 1 (det 1), dim Z^3 = dim H^3 = 1 (closed exactly: True)
+sl_N deg (2, 0): dim C^2 = 0, dim C^3 = 1, rank d3 = 1 (det 1), dim Z^3 = dim H^3 = 0 (closed exactly: True)
+sl_N deg (0, 2): dim C^2 = 0, dim C^3 = 1, rank d3 = 1 (det 1), dim Z^3 = dim H^3 = 0 (closed exactly: True)
+  d=tr(1{23}): J = [p1p2] T alternating: True, alt([p1p2]T) = 6 J: True, d J = 0: True
+    alt([p1p2] tr(123)) = [p1p2] * sum_s s.T : True
+    alt([p1p2] tr(132)) = [p1p2] * sum_s s.T : True
+  d=tr(1{23}) in Z^3(1,1): True
+  Z^3(1,1) basis:
+   z0 = 3/2 p1bp2a tr(123) + -3/2 p1ap2b tr(123) + 3/2 p1bp2a tr(132) + -3/2 p1ap2b tr(132)
+total 0s

@@ -1,0 +1,16 @@
+abelian2 polys tested: 276
+  Q^2 = 0: True
+  [Q, D_u] = 0 (u = tau,z1,z2,zb1,zb2): True
+  Q eta_v + eta_v Q = -D_v (v = tau,zb1,zb2): True
+  eta_v eta_w + eta_w eta_v = 0: True
+sl2 polys tested: 384
+  Q^2 = 0: True
+  [Q, D_u] = 0 (u = tau,z1,z2,zb1,zb2): True
+  Q eta_v + eta_v Q = -D_v (v = tau,zb1,zb2): True
+  eta_v eta_w + eta_w eta_v = 0: True
+gl2 polys tested: 492
+  Q^2 = 0: True
+  [Q, D_u] = 0 (u = tau,z1,z2,zb1,zb2): True
+  Q eta_v + eta_v Q = -D_v (v = tau,zb1,zb2): True
+  eta_v eta_w + eta_w eta_v = 0: True
+all: True

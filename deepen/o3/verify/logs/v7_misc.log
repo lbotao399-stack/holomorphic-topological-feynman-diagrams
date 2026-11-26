@@ -1,0 +1,36 @@
+gl: alt(P W) = D: True
+gl: alt(P W) = u2f: True
+gl: alt(P W) = D3: True
+sl: alt(P W) = D: True
+sl: alt(P W) = u2f: True
+sl: alt(P W) = D3: True
+tree (D,u2f): (1/4) alt(sigma a(L0) b(L1)) == {a,b} for 36 local-order pairs x 2 points: True  (e.g. 1152 vs 1152)
+tree (D,D): (1/4) alt(sigma a(L0) b(L1)) == {a,b} for 36 local-order pairs x 2 points: True  (e.g. 1298 vs 1298)
+tree (s0,u2f): (1/4) alt(sigma a(L0) b(L1)) == {a,b} for 36 local-order pairs x 2 points: True  (e.g. -1298 vs -1298)
+tree (S1,u2f): (1/4) alt(sigma a(L0) b(L1)) == {a,b} for 36 local-order pairs x 2 points: True  (e.g. 3448 vs 3448)
+polygon(4), (H,T)=(2,1), insertion None: K = 0
+polygon(4), (H,T)=(2,1), insertion {(0, 0): 1}: K = 0
+polygon(4), (H,T)=(2,1), insertion {(0, 0): 1, (1, 1): 1}: K = 0
+polygon(4), (H,T)=(2,1), insertion {(0, 0): 2, (2, 1): 2}: K = 0
+polygon(4), (H,T)=(2,1), insertion {(1, 0): 1, (3, 1): 1, (2, 0): 1, (0, 1): 1}: K = 0
+tight three-loop graphs at D = 3: 16
+  graph 0 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 1 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 2 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 3 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 4 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 5 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 6 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 7 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 8 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 9 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 10 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 11 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 12 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 13 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 14 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  graph 15 (nv 8, ne 10): brute T=1 density at a random rational t zero: True
+  nonzero densities: 0
+gl_3: d D3 = sum_{i<j} (-1)^{i+j} [p_k p_l]^3 tr([X_i,X_j]{X_k,X_l}) at 4 points: True
+sl_3: d D3 = sum_{i<j} (-1)^{i+j} [p_k p_l]^3 tr([X_i,X_j]{X_k,X_l}) at 4 points: True
+time 5.0s

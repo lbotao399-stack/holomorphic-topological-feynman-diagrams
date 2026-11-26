@@ -1,0 +1,8 @@
+sl2(Kac A1)  beta: d beta = 0 True ; test cochain K: nonzero True, d K = 0 True
+sl2(Kac A1)  control: d(F_133 with shifted polynomial labels) = 0: False ; d F_133 = 0: True
+sl3(Kac A2)  beta: d beta = 0 True ; test cochain K: nonzero True, d K = 0 True
+sl3(Kac A2)  control: d(F_133 with shifted polynomial labels) = 0: False ; d F_133 = 0: True
+so5          beta: d beta = 0 True ; test cochain K: nonzero True, d K = 0 True
+so5          control: d(F_133 with shifted polynomial labels) = 0: False ; d F_133 = 0: True
+G2(fold D4)  beta: d beta = 0 True ; test cochain K: nonzero True, d K = 0 True
+G2(fold D4)  control: d(F_133 with shifted polynomial labels) = 0: False ; d F_133 = 0: True

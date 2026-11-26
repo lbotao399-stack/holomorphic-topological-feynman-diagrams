@@ -1,0 +1,13 @@
+sl2 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=-1 dimM=75 dimV=12 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=0 dimM=785 dimV=207 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 2, 1) w=(0, 0, 0) (a,b)=(2, 1) g=1 dimM=3862 dimV=1279 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 1, 1, 2, 1) done in 44.7s
+sl2 t=(1, 1, 1, 2, 0) w=(0, 0, 0) (a,b)=(2, 0) g=-1 dimM=39 dimV=12 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 2, 0) w=(0, 0, 0) (a,b)=(2, 0) g=0 dimM=299 dimV=112 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(1, 1, 1, 2, 0) w=(0, 0, 0) (a,b)=(2, 0) g=1 dimM=1140 dimV=482 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 1, 1, 2, 0) done in 1.8s
+sl2 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=-1 dimM=1 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=0 dimM=38 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+sl2 t=(0, 1, 1, 2, 1) w=(-1, 0, 0) (a,b)=(2, 1) g=1 dimM=261 dimV=69 H(p1,p2)=[0, 0] pred=0 OK
+# (0, 1, 1, 2, 1) done in 0.2s
+TOTAL sl2 charge0=True exact=False: compared 9 mismatches 0

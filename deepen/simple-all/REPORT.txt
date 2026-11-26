@@ -1,0 +1,255 @@
+TASK simple-all.  Output folder P/deepen/simple-all/, P = /Users/libotao/Desktop/holomorphic-twist-program.
+Code: code/*.py (driver code/run_all.sh).  Printed outputs: logs/*.log, logs/*.json.
+Arithmetic: every decisive step exact (Python integers, Fractions, sympy rationals).  Sparse integer products: an abs-value
+bound is evaluated first; int64 is used only below 2^61, else CRT over primes < 2^21 (not triggered in any run).
+Invariant dimensions: nullity modulo two primes (upper bound) + explicit invariant (lower bound).  Floating point only in
+the independent network cross-check (logs/networks.log: integer-valued results, |value| < 2^50, rounding checked).
+Read-only reuse: simple-g/code/algebras.py, core.py (imported only in code/check_W.py and lie.build('sg:...')).
+External source used: R. L. Mkrtchyan, A. N. Sergeev, A. P. Veselov, arXiv:1105.0115v3 [MSV]: Table 1, eqs. (1), (8), (9), p. 4.
+
+=====================================================================================================
+0. Objects (conventions of simple-g REPORT section 0)
+=====================================================================================================
+
+x_i = X_i e^{p_i.z}, sum p_i = 0, [p q] = p^1 q^2 - p^2 q^1, u = [p0p1], v = [p0p2], w = [p1p2], QB = (u^2,v^2,w^2,uv,uw,vw).
+(d c)(x_0..x_k) = sum_{i<j} (-1)^{i+j} c([x_i,x_j], x_0..^i..^j..x_k),   (c.s)(x_0..) = c(x_s0, x_s1, ..),  alt c = sum_s sgn(s) c.s
+f(a,b,c) = kappa([a,b],c);  contracted pairs carry kappa^{-1}.
+  W_133(A1..A4) = - f_xyz f_{A1 y'u} f_{A2 u'w} f_{A3 z's} f_{A4 s'r} f_{x'w'r'}
+  W_223(A1..A4) = - f_xyz f_{A1 x'u} f_{A2 y'w} f_{A3 z's} f_{A4 s'r} f_{u'w'r'}
+  F_G = alt([p0p1][p2p3] W_G),   beta = d([q0q1]^2 f) = sum_{i<j} (-1)^{i+j} [p_k p_l]^2 kappa([X_i,X_j],[X_k,X_l]),
+  G_kk := alt([p0p1][p2p3] kappa_01 kappa_23).
+  O_2 = (pi Nnorm/240)(-3F_133 + 2F_223)   (flagship status; Nnorm, relative Wick sign not re-derived).
+Rung tensor and ladders (operators on g (x) g, channel (01) -> (23)):
+  Om(a,b,c,e) = sum_x f(x,a,c) f(x',b,e),   i.e.  Om = sum_x ad(e_x) (x) ad(e^x),
+  (A o B)(a,b,c,e) = A(a,b,x,y) kappa^{xx'} kappa^{yy'} B(x',y',c,e),
+  W_133 = - Om o Om o Om,   W_223 = (Om2 o (2,1,0,3)) o Om,   Om2 = Om o Om          (code/t4.py)
+  m_k = tr(Om^k),  n_k = tr(P Om^k)  (P = exchange of the two factors).
+Killing normalization (C_2(g) = 1) for all quoted rational numbers unless "form used" is stated; d = dim g.
+
+=====================================================================================================
+1. Engine
+=====================================================================================================
+
+lie.py: sparse exact algebras.  Kac construction (Kac, Infinite-dimensional Lie algebras, Sec. 7.8, as in simple-g) for
+A_n, D_n, E6, E7, E8 (Bourbaki diagrams; every edge oriented towards a central node so that diagram automorphisms preserve
+eps); B_n = fixed points of D_{n+1} (end-node swap), C_n = fixed points of A_{2n-1} (flip), F4 = fixed points of E6,
+G2 = fixed points of D4 (triality); so_N, sp_N, sl_N with kappa = tr_V (matrix units, sparse).
+Checked exactly for every algebra: antisymmetry; Jacobi on all entries (T1(a,b,c,.) + cyclic = 0, T1 = sum_e fu fu);
+ad-invariance of kappa; G kappa = s 1 (G = s kappa^{-1} integer, inverted block by weight); Killing = r kappa on all entries.
+t4.py: invariant 4-tensors as sparse integer COO; o and full contraction via sparse matrices.
+logs/check_W.log (against simple-g/code/core.py on the same structure constants):
+   s^7 W_133, s^7 W_223 (slot 0 = b_theta), s^7 F_133, s^7 F_223, beta (all 6 coefficients): equal, entry by entry,
+   for sl2, sl3, so5, sp4, sl4, G2, so7, sp6; full W tensors equal for sl2, sl3, so5, sp4, sl4, G2.
+
+=====================================================================================================
+2. Part (a): classes in the G x SL2-invariant part of H^4_(2,2)  (logs/a_classes.log, logs/a_classes_E8.log)
+=====================================================================================================
+
+Method: full coefficient tensors F_G^mu, beta^mu (all entries, all mu in QB; no fixed slot needed).  For every algebra:
+y.W_G = 0 on all entries for the generators y = E_{+-alpha_i} (generated subalgebra = g, checked).
+  X in C beta  <=>  beta[i0] X[j] - X[i0] beta[j] = 0 for all entries j.
+With simple-g Lemmas 1, 2 (Reynolds; C^3_inv = [q0q1]^2 (x) (Lambda^3 g*)^g) and dim (Lambda^3 g*)^g = 1:
+  B^4 cap C^4_inv = C beta,   [X] = 0 in H^4_(2,2)  <=>  X in C beta.
+
+algebra         d    r  s  Lam3 S3 T3  yW=0   nnz W133  nnz W223  c(form)  c_K   F223 minor (s^7 units)   O2 in C beta
+sl2(Kac)        3    4  2   1   0  1   True        15        18      8      1/2   F223 = -3 beta           yes (-33/2 beta)
+sl3(Kac)        8    6  3   1   1  2   True       346       304     18      1/2   1889568                  no
+sl4(Kac)       15    8  4   1   1  2   True      1629      1674     32      1/2   18874368                 no
+sl5(Kac)       24   10  5   1   1  2   True      4600      5040     50      1/2   112500000                no
+sl6(Kac)       35   12  6   1   1  2   True     10159     11518     72      1/2   483729408                no
+sl7(Kac)       48   14  7   1   1  2   True     19374     22440     98      1/2   1660262688               no
+so5(fold D3)   10    6  2   1   0  1   True       616       590     18      1/2   196608                   no
+sp4(fold A3)   10    6  2   1   0  1   True       616       590     18      1/2   786432                   no
+so7(fold D4)   21   10  4   1   0  1   True      4051      3936     50      1/2   28311552                 no
+sp6(fold A5)   21    8  2   1   0  1   True      4051      3824     32      1/2   2949120                  no
+so8(Kac D4)    28   12  2   1   0  1   True      8388      3240     72      1/2   294912                   no
+so9(fold D5)   36   14  2   1   0  1   True     14392     14124     98      1/2   368640                   no
+sp8(fold A7)   36   10  2   1   0  1   True     14392     13740     50      1/2   3538944                  no
+so10(Kac D5)   45   16  4   1   0  1   True     25225     24708    128      1/2   56623104                 no
+so11(fold D6)  55   18  4   1   0  1   True     37039     36554    162      1/2   66060288                 no
+sp10(fold A9)  55   12  2   1   0  1   True     37039     35690     72      1/2   4128768                  no
+so12(Kac D6)   66   20  2   1   0  1   True     57640     56826    200      1/2   589824                   no
+G2(fold D4)    14    8  3   1   0  1   True      1468      1410     32      1/2   33592320                 no
+F4(fold E6)    52   18  2   1   0  1   True     39688     38348    162      1/2   11796480                 no
+E6(Kac)        78   24  3   1   0  1   True     93364     92358    288      1/2   20155392                 no
+E7(Kac)       133   36  2   1   0  1   True    335659    333812    648      1/2   2359296                  no
+E8(Kac)       248   60  1   1   0  1   True   1606708   1603060   1800      1/2   46080                    no
+(Lam3, S3, T3 = nullity mod p1 = 1000003 and p2 = 999983 of the invariance systems on weight-zero triples, identical
+for both primes; Lam3: f gives the lower bound 1; S3, T3: sl_N: f, d; others: f.  Unknowns/equations, e.g. E8:
+Lambda^3 3256/18032, S^3 3320/18176, T^3 19712/108624.)
+Printed for every algebra: "F133+F223 = c beta on all entries", c_Killing = c / r^2 = 1/2; F133, F223, -3F133+2F223,
+-3F133-2F223 NOT in C beta (nonzero minors printed); sl2: all in C beta.
+Hence for every listed g != sl2 (with simple-g Lemmas 1, 2):
+   F_133 + F_223 = (1/2) beta_K,   [F_223] != 0,   [F_133] = -[F_223],   [O_2] = (pi Nnorm/48)[F_223] != 0,
+   dim (S^3 g*)^g = 0 for E6, E7, E8, so9..so12, sp8, sp10;  = 1 for sl3..sl7.
+
+2.1 Cochain decomposition (logs/decomp_check.log, all entries, all 6 coefficients, exact):
+   F_223 = x beta + a G_kk     (Killing normalization)
+   sl3 (-2/3, -1/12)  sl4 (-3/8, -3/64)  sl5 (-6/25, -3/100)  sl6 (-1/6, -1/48)  so5 = sp4 (-1, -1/18)
+   so7 (-3/25, -9/250)  sp6 (-21/32, -15/512)  so8 (0, -1/36)  G2 (-7/24, -5/96)  F4 (4/27, -5/324)
+   so9 (3/49, -15/686)  sp8 (-12/25, -9/500)  so10 (3/32, -9/512)  E6 (5/24, -1/96)  E7 (7/27, -1/162)  E8 (22/75, -1/300)
+   (pairs (x, a)); "G_kk in C beta: False" for all 17.  F_133 = (1/2 - x) beta - a G_kk.
+   d G_kk = 0 for every Lie algebra (logs/dGkk.log): dG = sum_{l<m} P_lm(p) kappa_lm f_abc, all 10 P_lm = 0 identically.
+   => d F_223 = 0 for E6, E7, E8 (not computed directly), [F_223] = a [G_kk], [O_2] = (pi Nnorm/48) a [G_kk].
+
+=====================================================================================================
+3. Part (b): uniform statement
+=====================================================================================================
+
+3.1 Probe functionals.  For X = sum_mu mu(p) X^mu in C^4_inv:
+   lambda_kk(X) := <X^{uv}, kk_(0123)>,   lambda_ff(X) := <X^{uv}, ff_(0123)>,
+   kk_(0123)(x) = kappa(x0,x1) kappa(x2,x3),  ff_(0123)(x) = kappa([x0,x1],[x2,x3]),  <.,.> full contraction with kappa^{-1}.
+   mu(X) := lambda_kk(X) lambda_ff(beta) - lambda_ff(X) lambda_kk(beta).
+Lemma.  mu(d([q0q1]^2 T)) = 0 for every T in (Lambda^3 g*)^g.
+   T = c f + T', <T',f> = 0 (<f,f> = d != 0).  d([q0q1]^2 T') = sum_{i<j} (-1)^{i+j}[p_k p_l]^2 T'([X_i,X_j],X_k,X_l).
+   kk-contraction: kappa^{ij} f(i,j,.) = 0, or sum T'(e, e^i, e^j) f(i,j,e) = <T',f> = 0;
+   ff-contraction: bubble f f -> C kappa, or triangle f f f -> (C/2) f  [tr(ad_x ad_y ad_z) = (1/2) K(x,[y,z]), ad K-skew];
+   both give multiples of <T',f> = 0.  Hence lambda(d([q0q1]^2 T)) = c lambda(beta) and mu(.) = 0.
+With simple-g Lemmas 1, 2:  F exact  =>  F in d(C^3_inv)  =>  mu(F) = 0.   (No assumption on dim (Lambda^3 g*)^g.)
+
+3.2 Transfer (logs/b_analysis.log; combinatorial, exact): for X = alt([p0p1][p2p3] W), w^kk_pi = <W, kk_pi>,
+   w^ff_pi = <W, ff_pi>, pi in ((0123),(0213),(0312)):
+   lambda_kk(X) = 8 w^kk_0 - 4 w^kk_1 - 4 w^kk_2,    lambda_ff(X) = - 4 w^ff_1 - 4 w^ff_2.
+   lambda_kk(beta) = 2d,  lambda_ff(beta) = d,  lambda_kk(G_kk) = 8d(d-1),  lambda_ff(G_kk) = 8d     (Killing)
+   (checked on all 22 algebras; derivation of the beta values: <kk_(0123), ff_(0213)> = sum_{y,z} K([y,z],[y^,z^]) = -d,
+   <ff,ff> bubble/triangle reductions).
+
+3.3 W_223 vacuum graphs.
+   w^kk_0(W_223) = - n_2:  sum_{A3,A4} Om(z,r,A3,A4) kappa^{A3A4} = - C kappa_zr  (sum_a [e_a,[e^a,.]] = C), then
+      <Om2 o sigma, kk_(0123)> = <Om2, kk_(0312)> = n_2.
+   n_2 = sum_{x,y} tr(ad_x ad_y ad^x ad^y) = (C/2) sum_x tr(ad_x ad^x) = d/2, using
+      sum_y ad_y ad_X ad^y = (C/2) ad_X  [T(X)Z = sum_y [e_y,[[X,e^y],Z]] + C[X,Z]; the first term F1 satisfies
+      F1 = -C[X,Z] - F1 by Jacobi and invariance of sum_y e_y (x) e^y, so F1 = -(C/2)[X,Z]].
+   m_3 = sum tr(ad_x ad_y ad_z) tr(ad^x ad^y ad^z) = (1/4) sum_{y,z} K([y,z],[y^,z^]) = -d/4.
+   Oriented graph isomorphisms (logs/networks.log; all isomorphisms enumerated, sign = prod of slot permutation signs):
+      W223.kk1 = - m_3, W223.kk2 = - m_3      (6 vertices, prism; 12 isomorphisms each, all sign -1)
+      W223.ff1 = + n_4, W223.ff2 = + n_4      (8 vertices, Moebius ladder; 16 isomorphisms each, all sign +1)
+      W133.kk1 = - m_3, W133.ff1 = - m_4, W133.ff2 = - n_4;  W133.kk2 <-> n_3 with isomorphisms of both signs, so n_3 = 0.
+   Every network was also evaluated directly (float64, integer-valued) and equals the engine value for sl2, sl3, so5, G2,
+   sp6, so8, F4, E6.  Values (all 22 algebras, logs/b_analysis.log):
+      W223: kk = (-d/2, d/4, d/4), ff = (0, n_4, n_4);   W133: kk = (d, d/4, 0), ff = (-d/8, -m_4, -n_4);
+      e_k = (-1)^k d, m_1 = 0, m_2 = d, m_3 = -d/4, n_1 = d, n_2 = d/2, n_3 = 0, m_4 - n_4 = d/8.
+3.4 Result:
+   lambda_kk(F_223) = -6d,   lambda_ff(F_223) = -8 n_4,
+   mu(F_223) = (-6d)(d) - (-8 n_4)(2d) = 2d (8 n_4 - 3d),        mu(G_kk) = 8 d^2 (d - 3).
+   (printed "mu(F223) = 2d(8n4-3d): True" for all 22 algebras.)
+   n_4 = tr_{g(x)g}(P Om^4) = sum_{V in S^2 g} dim V w_V^4 - sum_{V in Lambda^2 g} dim V w_V^4,
+   w_V = (C_2(V) - 2 C_2(g))/2  (Om acts on V subset g (x) g by (C_2(V) - 2 C_2(g))/2).
+
+3.5 n_4 for all simple g.
+ Exceptional (exact, logs/b_data.json):  G2 119/96, F4 -13/81, E6 -39/32, E7 -2261/648, E8 -124/15;
+   8 n_4 - 3d:  G2 -385/12, F4 -12740/81, E6 -975/4, E7 -34580/81, E8 -12152/15.
+ Classical families (kappa = tr_V; family.py, interp.py, logs/family_*.log, logs/interp.log).
+   Degree bound: so_N: g = Lambda^2 V, sp_N: g = S^2 V, sl_N: Om_sl = Om_gl on g (x) g, 0 on centre components.
+   Om = sum_{i in {1,2}, j in {3,4}} t_ij with t = sum_a rho(e_a) (x) rho(e^a) on V (x) V; checked for N <= 12:
+      so: t = (1/2)(P - E_J),  sp: t = (1/2)(P + E_J),  sl: t = P - (1/N) 1 (x) 1 (= P on gl_N).
+   n_4 = tr_{V^(x)4}(Pi S Om^4): traces of products of permutations and <= 4 contractions E; each closed index loop
+   contains a cap of some E (<= 4) or is a strand cycle of the trace (<= 4): n_4^tr(N) polynomial of degree <= 8.
+   Interpolation through 9 values, equality at every computed N (so: N = 5..22, sp: N = 4..24 even, sl: N = 2..16):
+      so_N:  n_4^tr = -3N(N-1)(N-2)(N^2-14N+32)/16,   Killing = (N-2) tr_V,   d = N(N-1)/2
+      sp_N:  n_4^tr =  3N(N+1)(N+2)(N^2+14N+32)/16,   Killing = (N+2) tr_V,   d = N(N+1)/2
+      sl_N:  n_4^tr = 24 N^2 (N-1)(N+1),               Killing = 2N tr_V,      d = N^2 - 1
+   n_4 = n_4^tr / r^4:
+      so_N:  8 n_4 - 3d = -3 N (N-1)(N-3)(N-4)(N+2) / (2 (N-2)^3)
+      sp_N:  8 n_4 - 3d = -3 N (N-2)(N+1)(N+3)(N+4) / (2 (N+2)^3)
+      sl_N:  8 n_4 - 3d = -3 (N-2)(N-1)(N+1)(N+2) / N^2
+   zeros at integers: so_N: N in {-2,0,1,3,4} (so3 = sl2, so4 not simple); sp_N: N = 2 (sp2 = sl2); sl_N: N = 2.
+
+Theorem (CE model of H1; translation-invariant cochains of g[[z1,z2]], weight (2,2)).  For simple g:
+   [F_223] = 0 in H^4_(2,2)  <=>  g = sl2.
+   (=>) g != sl2: 8 n_4 - 3d != 0 (3.5), so mu(F_223) = 2d(8n_4 - 3d) != 0 and F_223 is not exact (3.1).
+   (<=) sl2: F_223 = -3 beta (section 2).
+   Equivalently [O_2] = (pi Nnorm/48)[F_223] != 0 for every simple g != sl2 (all three relative-sign choices: pi Nnorm/48,
+   +-pi Nnorm/240 times [F_223]).
+   Inputs not re-derived here: transfer coefficients and the identities of 3.2-3.3 are derived/checked as stated; the
+   beta-probe values are checked on 22 algebras with the bubble/triangle derivations indicated.
+
+3.6 Universal expression (MSV: Table 1 (alpha, beta, gamma), t = alpha+beta+gamma; eq. (1) d = (alpha-2t)(beta-2t)(gamma-2t)
+   /(alpha beta gamma); eq. (9) C_k = sum_{V in ad(x)ad} (dim V/d) w_V^k; eq. (8) C_4 = (3 t t_2 - t_3)/(16 t^3);
+   p. 4: Lambda^2 g = g + X_2, C_2(X_2) = 2, dim X_2 = d(d-3)/2).
+   m_4 = d C_4;  w_g = -1/2, w_{X2} = 0  =>  m_4 - n_4 = 2 tr_{Lambda^2} Om^4 = d/8,  n_4 = d (C_4 - 1/8).
+   8 n_4 - 3d = d (3 t t_2 - t_3 - 8 t^3)/(2 t^3) = -3 d (t+alpha)(t+beta)(t+gamma)/(2 t^3) = 3 d (d-3) alpha beta gamma/(4 t^3)
+      [t_2 = t^2 - 2s, t_3 = t^3 - 3ts + 3p, (t+alpha)(t+beta)(t+gamma) = 2t^3 + ts + p, d p = p - 2ts - 4t^3].
+   mu(F_223) = 3 d dim(X_2) alpha beta gamma / t^3.
+   kk-component:  a = mu(F_223)/mu(G_kk) = (8 n_4 - 3d)/(4 d (d-3)) = 3 alpha beta gamma/(16 t^3),
+                  x = -3 - 4(d-1) a,   F_223 = x beta + a G_kk,   [O_2] = (pi Nnorm/48) (3 alpha beta gamma/(16 t^3)) [G_kk].
+   In Casimir eigenvalues (S^2 g = 1 + Y2(alpha) + Y2(beta) + Y2(gamma), C_2(Y2(z)) = 2 - z/t, MSV p. 4):
+      w_z = (C_2(Y2(z)) - 2)/2 = -z/(2t),   a = -(3/2) w_alpha w_beta w_gamma.
+   logs/vogel_check.log: with the Table 1 parameters, d, m_4 = d C_4, n_4, 8n_4 - 3d (three forms), a, x equal the computed
+   values for all 22 algebras; the family formulas of 3.5 equal the parameter formulas for (-2,4,N-4), (-2,1,N/2+2), (-2,2,N).
+   Families: a(so_N) = -3(N-4)/(2(N-2)^3),  a(sp_N) = -3(N+4)/(2(N+2)^3),  a(sl_N) = -3/(4N^2);
+   exceptional a: G2 -5/96, F4 -5/324, E6 -1/96, E7 -1/162, E8 -1/300.
+   Mechanism: mu(F_223) = 0  <=>  dim X_2 = 0 (i.e. Lambda^2 g = g, i.e. d = 3) or alpha beta gamma = 0; on Table 1 the
+   latter never occurs (gamma = N - 4 = 0 only for so4, not simple).  ff_(0123) = kappa([.,.],[.,.]) is the adjoint-channel
+   operator on Lambda^2 g; span{kk} contains on Lambda^2 g only the projector onto all of Lambda^2 g; so ff in span{kk}
+   <=> X_2 = 0 <=> d = 3  (argument, not separately computed).  sl2: d = 3, probe values give G_kk = 8 beta on C^4_inv(sl2)
+   = C beta (simple-g), F_223 = -3 beta; the formula a = 3 alpha beta gamma/(16 t^3) = -3/16 has no cochain meaning there.
+   Pattern from simple-g ("[O_2] != 0 iff (g^{(x)4})^g != span{kappa kappa}") holds on all computed algebras; the universal
+   detector is mu, i.e. dim X_2 * alpha beta gamma.
+
+=====================================================================================================
+4. Part (c): all-weight no-go under H1 (no equivariance)  (logs/c_H3.log, logs/c_H3_E6.log)
+=====================================================================================================
+
+Setting.  J_1 = sum_{(a,b)} J^(a,b), closed (order hbar: {S_0,J_1} = -dJ_1 = 0; O_1 = 0 and Q_(1)J_1 = 0 taken from
+deform REPORT section 2, arguments (i), (ii), which use only that J_1 has holomorphic derivatives).  O_2 has weight (2,2)
+(U(2)-invariant heat-kernel scheme, referee).  Weight-(2,2) part of the order-hbar^2 equation:
+   eps( -d i_2 + (1/2) sum_{(a,b)+(a',b')=(2,2)} {J^(a,b), J^(a',b')} ) + o_2 = 0.
+G-invariance: Cartan homotopy L_X = d i_X + i_X d gives H(C) = H(C^G) (referee 1d); bracket classes depend only on the
+classes of the entries ({dK, J} = +-d{K, J} for closed J, graded Jacobi of the bracket with {s_0, .} = -d).
+
+C^2_(a,b) = span alt(q0^m kappa) (nonzero iff a+b odd);  C^3_(a,b) = span alt(m(q0,q1) T), T over a basis of (g^{*(x)3})^g.
+Exact ranks (left kernels verified on all columns).  Identical table for so5, sp4, G2, so7, sp6, so8, F4, so9, sp8, E6
+(T = f, dim (g^{*(x)3})^g = 1; E6: logs/c_H3_E6.log):
+   (a,b)   dim C^2  dim C^3  rank d2  rank d3  dim Z^3  dim H^3
+   (0,0)      0        1        0        0        1        1      (s_0)
+   (0,1)      1        0        0        0        0        0
+   (1,0)      1        0        0        0        0        0
+   (0,2)      0        1        0        1        0        0
+   (2,0)      0        1        0        1        0        0
+   (1,1)      0        1        0        1        0        0      (C^3 = C E_f)
+   (1,2)      1        1        1        0        1        0
+   (2,1)      1        1        1        0        1        0
+   (2,2)      0        2        0        2        0        0
+Contrast sl3, sl4 (T = f, d = tr(X{Y,Z})): (1,1): C^3 2, rank d3 1, H^3 1; (1,2),(2,1): C^3 2, rank d2 1, rank d3 1, H^3 0;
+(2,2): C^3 3, rank d3 3, H^3 0; other rows as above.  [(1,1): agrees with deform; (2,2): agrees with o3/pre formal sl_N.]
+
+Algebra independence.  For (g^{*(x)3})^g = C f: C^3_(a,b) = (Sym m) f, d((Sym m) f) = c_1(p) T1 + c_3(p) T3 with
+T1 = ff_(0123), T3 = ff_(0312) (Jacobi: ff_(0213) = T1 + T3) and universal polynomials c_1, c_3; d(alt(q0^m kappa)) =
+(universal polynomial) f.  T1, T3 are linearly independent for simple g: x T1 + y T3 = 0 with the exchange a<->b gives
+y = 2x and T1 = -2 T3; contraction with kappa^{ab} kappa^{ce} gives 0 = -2 <kk_(0123),ff_(0312)> = 2d != 0.  Hence the table
+above holds for every simple g with dim (g^{*(x)3})^g = 1 (computed: section 2 table, all non-A_{n>=2} entries).
+
+d E_f (referee check).  E_f := alt(q0^1 q0^2 f) = 2 (sum_i p_i^1 p_i^2) f (checked), and
+   d E_f = 2 sum_{i<j} (-1)^{i+j} (p_i^1 p_j^2 + p_i^2 p_j^1) kappa([X_i,X_j],[X_k,X_l])     (checked on all entries)
+   [ (p_i+p_j)^1 (p_i+p_j)^2 = s(p_i) + s(p_j) + (p_i^1 p_j^2 + p_i^2 p_j^1); the term (sum_m s(p_m)) (d f) vanishes, d f = 0 ]
+   = 2 [ B(p0-p3, p2-p1) T1 + B(p0-p1, p2-p3) T3 ],  B(p,q) = p^1 q^2 + p^2 q^1,  != 0 for every simple g (T1, T3 independent).
+   (the bracketed reduction and the T1, T3 form are derived by hand; the sum formula is the checked statement)
+   Nonzero entries of d E_f: so8 47088, G2 8784, F4 226944 (also so5 3168, so7 21564, sp6 22572, so9 75600, sp8 79056,
+   E6 502848, sl3 2268, sl4 9936): d E_f != 0: True for all.
+
+No-go.  For every closed G-invariant J_1 and g with dim (g^{*(x)3})^g = 1:
+   J^(1,0) = J^(0,1) = 0 (C^3 = 0);  J^(2,0) = J^(0,2) = J^(1,1) = J^(2,2) = 0 (Z^3 = 0);  J^(0,0) = c s_0.
+   (1/2) sum_{(a,b)+(a',b')=(2,2)} {J^(a,b), J^(a',b')} = {J^(0,0), J^(2,2)} + {J^(1,0), J^(1,2)} + {J^(0,1), J^(2,1)}
+      + {J^(2,0), J^(0,2)} + (1/2){J^(1,1), J^(1,1)} = 0   as a cochain.
+   For non-invariant closed J_1 the sum is exact (G-reduction + graded Jacobi).  The weight-(2,2) equation becomes
+   [o_2] = 0, contradicting [o_2] = (pi Nnorm/48)[F_223] != 0 (sections 2, 3).
+Conclusion (under H1, no equivariance assumption, all bidegrees of J_1, order hbar^2):  no J_1 cancels [O_2] for
+   so5 = sp4, so7, sp6, so8, G2, F4, so9, sp8, E6 (explicit table), and for every simple g with dim (g^{*(x)3})^g = 1 and g != sl2,
+   in particular so9..so12, sp8, sp10, E6, E7, E8 (dim (g^{*(x)3})^g = 1 computed, section 2).
+
+=====================================================================================================
+5. Not done / open
+=====================================================================================================
+
+- H1 (CE model of local BRST cohomology) and the dictionary sign eps: not derived; all statements are in the CE model.
+- O_1 = 0, Q_(1)J_1 = 0 for J_1 of arbitrary bidegree: taken from deform REPORT section 2 (not re-derived).
+- dim (g^{*(x)3})^g = 1 for so_N, sp_N beyond N = 12, 10 not computed; the part (c) conclusion for those N is stated only
+  conditionally on it.  E7, E8 part (c) table not computed explicitly (algebra-independent argument above).
+- Closedness d F_223 = 0 for E6, E7, E8 obtained from F_223 = x beta + a G_kk and d G_kk = 0, not by direct evaluation.
+- The beta-probe Gram values (lambda_kk(beta) = 2d, lambda_ff(beta) = d) and n_1..n_3, m_1..m_3 identities: derivations
+  indicated (3.1-3.3), checked exactly on 22 algebras; no separate network-isomorphism proof for the beta Gram values.
+- dim C^4_inv for E6, E7, E8 not computed; not needed (mu argument; cochain identity 2.1 checked directly).
+- MSV Table 1 / eqs. (1), (8), (9) used only for 3.6 (universal form); the theorem in 3.5 uses only computed n_4 and the
+  interpolated family polynomials.
+- Order hbar^3 and beyond: not considered.

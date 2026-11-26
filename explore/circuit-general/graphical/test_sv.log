@@ -1,0 +1,21 @@
+SV_WMAX = 7; x1prime: 127 words (0.2s)
+  x1p[0011] = -2*z3
+  x1p[0101] = 4*z3
+  x1p[0111] = 2*z3
+  x1p[1010] = -4*z3
+  x1p[1011] = -6*z3
+  x1p[1100] = 2*z3
+  x1p[1101] = 6*z3
+  x1p[1110] = -2*z3
+subcoef (0.0s)
+P01-P10 - 4iD = 9.47e-32
+swap max err (|w|<=6): 5.2e-40
+1-z max err (|w|<=6): 2.48e-35
+1/z max err (|w|<=5): 4.4e-20
+dz err 7.92e-24  dzb err 7.57e-24
+int_z check: True
+int_zb check: True
+value_at_1 samples: {'10': '0', '100': '-2*z3', '110': '2*z3', '1000': '0', '0110': '0', '10100': '-11*z5'}
+SV_WMAX=7 python3 test_sv.py  183.70s user 1.07s system 97% cpu 3:08.65 total
+
+[exited with code 0]

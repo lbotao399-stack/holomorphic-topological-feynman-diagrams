@@ -1,0 +1,18 @@
+(A,(B,(A,B))) (A,B)          chart Y(2;1,4,5)                 K/pi^2 = +0.10195 +- 0.00042  (2000000 pts, 188s)
+(A,(B,(A,(A,B))))            chart Y(3;2,5,4) Y(2;1,3,4)      K/pi^2 = -0.00003 +- 0.00002  (2000000 pts, 177s)
+(B,(A,(B,(A,B))))            chart YY(2,4;1,3,5)              K/pi^2 = -0.01414 +- 0.00081  (2000000 pts, 202s)
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/ht-d2/run_mc_chain.py", line 42, in <module>
+    val, err, ch = mc_chain.estimate(G, lam, Mper, batches, seed=idx, chain=chain)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/ht-d2/mc_chain.py", line 135, in estimate
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/ht-d2/../../../code/htk/oracle.py", line 188, in density_batch
+    return scaled_density_batch(G, t, lam, T, C, powers, z) / np.prod(t, axis=1)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/ht-d2/../../../code/htk/oracle.py", line 132, in scaled_density_batch
+    ell = np.linalg.solve(Mf, rhs)                                # B x n x H
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 410, in solve
+    r = gufunc(a, b, signature=signature)
+  File "/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/numpy/linalg/_linalg.py", line 104, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.LinAlgError: Singular matrix

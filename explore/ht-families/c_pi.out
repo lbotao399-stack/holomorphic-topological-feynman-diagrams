@@ -1,0 +1,12 @@
+D=2 n=2: 1 SP graphs; U = prod b^{L or -1-L} exactly (2 points, both plans): True; p same for both plans: True; distribution of p: {1: 1}
+D=2 n=4: 5 SP graphs; U = prod b^{L or -1-L} exactly (2 points, both plans): True; p same for both plans: True; distribution of p: {2: 4, 4: 1}
+    p != n/2: graph 2 degrees [2, 2, 2, 4, 4, 4] edges [(0, 1), (0, 2), (0, 4), (0, 5), (1, 2), (1, 3), (1, 4), (3, 4), (4, 5)] p(small,large) = (4, 4)
+D=2 n=6: 39 SP graphs; U = prod b^{L or -1-L} exactly (2 points, both plans): True; p same for both plans: True; distribution of p: {3: 33, 5: 5, 7: 1}
+    p != n/2: graph 6 degrees [2, 2, 2, 2, 2, 4, 6, 6] edges [(0, 1), (0, 2), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (2, 3), (2, 5), (2, 6), (2, 7), (3, 4), (3, 7)] p(small,large) = (5, 5)
+    p != n/2: graph 13 degrees [2, 2, 2, 2, 3, 4, 5, 6] edges [(0, 3), (0, 6), (1, 3), (1, 4), (1, 7), (2, 3), (2, 4), (3, 4), (3, 6), (3, 7), (4, 5), (4, 6), (5, 6)] p(small,large) = (5, 5)
+    p != n/2: graph 16 degrees [2, 2, 2, 2, 4, 4, 4, 6] edges [(0, 1), (0, 2), (0, 5), (0, 7), (1, 2), (2, 3), (2, 4), (2, 5), (2, 6), (3, 4), (4, 5), (4, 6), (5, 7)] p(small,large) = (5, 5)
+    p != n/2: graph 25 degrees [2, 2, 2, 2, 4, 4, 5, 5] edges [(0, 1), (0, 2), (0, 4), (0, 6), (0, 7), (1, 2), (2, 3), (2, 4), (3, 4), (4, 5), (4, 6), (5, 6), (6, 7)] p(small,large) = (7, 7)
+    p != n/2: graph 29 degrees [2, 2, 2, 3, 3, 4, 4, 6] edges [(0, 1), (0, 2), (0, 4), (0, 6), (1, 2), (2, 3), (2, 4), (3, 4), (4, 5), (4, 6), (4, 7), (5, 6), (5, 7)] p(small,large) = (5, 5)
+    p != n/2: graph 30 degrees [2, 2, 2, 3, 4, 4, 4, 5] edges [(0, 1), (0, 2), (0, 4), (0, 6), (1, 2), (2, 3), (2, 4), (3, 4), (4, 5), (4, 6), (5, 6), (5, 7), (6, 7)] p(small,large) = (5, 5)
+D=3 n=2: 2 SP graphs; U = prod b^{L or -1-L} exactly (2 points, both plans): True; p same for both plans: True; distribution of p: {1: 2}
+D=4 n=2: 3 SP graphs; U = prod b^{L or -1-L} exactly (2 points, both plans): True; p same for both plans: True; distribution of p: {1: 3}

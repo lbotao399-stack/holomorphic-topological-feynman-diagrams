@@ -1,0 +1,6 @@
+5d (H=2, k=2), so5: graphs ['A', 'B'], |Aut| = [2, 2], s = [1, -1]  (0.5s)
+   A: D = -(l0_0*l1_1 - l0_1*l1_0)*(l3_0*l4_1 - l3_1*l4_0);  K(lam;0)/pi = 1/20 * D
+   B: D = -(l0_0*l1_1 - l0_1*l1_0)*(l3_0*l4_1 - l3_1*l4_0);  K(lam;0)/pi = -1/30 * D
+Q0^2 = 0 on 8 random operators: True (0.3s)
+1_0^10 2_1^01 3_2              |Q_G O|: [1898, 1684], |{Q0,Q_G}O|: [2336, 2336], equations 2336, rank 1; cumulative: 2336 equations, null space [[1, 1]]  (742.5s)
+[run stopped after the first operator (742.5 s at load average 60-110); operators '1_0 2_1 3_2^11', '3_0 1_2^10 3_3^01' not run]

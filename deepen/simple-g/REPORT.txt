@@ -1,0 +1,251 @@
+TASK simple-g (Q2).  Output folder P/deepen/simple-g/, P = /Users/libotao/Desktop/holomorphic-twist-program.
+Code: code/*.py, driver code/run_all.sh.  Printed outputs: logs/*.log.
+Arithmetic: all decisive steps exact over Z/Q (Python integers, sympy rationals; int64 or float64 only below
+proven bounds, see 7.1).  Dimensions of invariant spaces additionally by ranks modulo two primes (7.4).
+
+=====================================================================================================
+0. Objects (conventions of anomaly-structure c1-c7)
+=====================================================================================================
+
+x_i = X_i e^{p_i.z}, X_i in g, p_i in C^2, sum_i p_i = 0, [p q] = p^1 q^2 - p^2 q^1.
+(d w)(x_0..x_k) = sum_{i<j} (-1)^{i+j} w([x_i,x_j], x_0, .., ^i, .., ^j, .., x_k),  [X e^{pz}, Y e^{qz}] = [X,Y] e^{(p+q)z}.
+Local functionals = alternating CE cochains of g[[z1,z2]] modulo sum p (anomaly-structure c5; argued there, not sourced).
+
+f_abc = kappa([X_a,X_b],X_c), primed pairs contracted with kappa^{-1} (anomaly-structure c3):
+  W_133(A1..A4) = - f_xyz f_{A1 y'u} f_{A2 u'w} f_{A3 z's} f_{A4 s'r} f_{x'w'r'}
+  W_223(A1..A4) = - f_xyz f_{A1 x'u} f_{A2 y'w} f_{A3 z's} f_{A4 s'r} f_{u'w'r'}
+F_G := sum_{s in S_4} sgn(s) [p_s0 p_s1][p_s2 p_s3] W_G(X_s0, X_s1, X_s2, X_s3)          (G = 133, 223)
+Engine kernels (htk.kernel_exact, T = 1, logs/compare_run1.log):
+  (60/pi) K_133 = -3 [p0 p1][p2 p3],   (60/pi) K_223 = 2 [p0 p1][p2 p3]
+  => w_G := alt((60/pi) K_G W_G):  w_133 = -3 F_133,  w_223 = 2 F_223
+  O_2 = Nnorm sum_G |Aut G|^{-1} alt(K_G W_G) = (Nnorm/4)(pi/60)(w_133 + w_223) = (pi Nnorm/240)(-3 F_133 + 2 F_223)
+  (Nnorm and the relative sign of the two graphs: anomaly-structure c2, c3, derived only).
+Opposite relative sign: (pi Nnorm/240)(-3 F_133 - 2 F_223) (K_223 flipped), (pi Nnorm/240)(3 F_133 + 2 F_223) (K_133 flipped).
+
+beta := d eta_0,  eta_0(y_0,y_1,y_2) = [q_0 q_1]^2 f(Y_0,Y_1,Y_2).
+  [p_i + p_j, p_k] = [-(p_k + p_l), p_k] = [p_k p_l]   (sum p = 0),   f([X_i,X_j],X_k,X_l) = kappa([X_i,X_j],[X_k,X_l])
+  => beta = sum_{i<j} (-1)^{i+j} [p_k p_l]^2 kappa([X_i,X_j],[X_k,X_l]),   {k<l} = complement of {i,j}.
+  Check: run-1 cochain.d_CE(alt([q0q1]^2 f)) = 6 beta (alt over S_3 gives 6 eta_0): True for sl2, sl3 (logs/compare_run1.log).
+
+Rescaling kappa -> c kappa:
+  f -> c f, kappa^{-1} -> c^{-1} kappa^{-1}, |V| = 6 vertices, |I| = 7 edges:
+  W_G -> c^{6-7} W_G = c^{-1} W_G,  F_G, w_G, O_2 (Nnorm fixed) -> c^{-1} (.),  beta -> c beta,
+  X = lambda beta  =>  lambda -> c^{-2} lambda.  Exactness/non-exactness is independent of c.
+  logs/rescale.log (exact, b_theta evaluations, c = 2, 3):
+    so5, G2(fold D4), F4(fold E6): W_133, W_223 (via F) scale by 1/c: [True, True] ; beta scales by c: True
+
+=====================================================================================================
+1. Reduction of the exactness problem
+=====================================================================================================
+
+C^k: alternating k-cochains with momentum polynomials of bidegree (2,2).  G = adjoint group of g, SL2(C) acting
+on (z1,z2); d is G x SL2-equivariant.  C^k_inv := (G x SL2)-invariant part.
+
+Lemma 1 (Reynolds).  w in C^4_inv, w = d eta with eta in C^3  =>  w = d(R eta), R = Reynolds projector of the
+reductive group G x SL2 on the finite-dimensional rational module of 3-cochains of momentum degree 4.
+So  B^4 cap C^4_inv = d(C^3_inv),  and H^4_inv := Z^4_inv / d(C^3_inv) injects into H^4_{(2,2)}.
+
+Lemma 2.  C^3_inv = C [q_0 q_1]^2 f,  hence  B^4 cap C^4_inv = C beta.
+  (a) SL2-invariant polynomials of (q_0,q_1) (q_2 = -q_0-q_1) of degree 4: dim = 1, spanned by [q_0 q_1]^2.
+      Computed: kernel of E = sum_i q_i^1 d/dq_i^2 on the 9 weight-(2,2) monomials (logs/sl2inv.log):
+        n = 2: weight-(2,2) monomials 9, dim ker E = 1 ; candidates: 1, rank 1, killed by E: True
+  (b) [q_s0 q_s1] = sgn(s) [q_0 q_1] mod conservation for all s in S_3 (logs/j1.log: True), so [q0 q1]^2 is
+      S_3-symmetric and eta = [q0q1]^2 T(Y0,Y1,Y2) is alternating iff T in (Lambda^3 g*)^g.
+  (c) dim (Lambda^3 g*)^g = 1 for every algebra below (Weyl formula and linear algebra, section 6); f != 0.
+  Same computation for 4- and 5-cochains (logs/sl2inv.log):
+        n = 3: weight-(2,2) monomials 36, dim ker E = 6 ; candidates: 6, rank 6, killed by E: True
+        n = 4: weight-(2,2) monomials 100, dim ker E = 20 ; candidates: 20, rank 20, killed by E: True
+      i.e. SL2-invariant 4-cochain polynomials = span{u^2, v^2, w^2, uv, uw, vw}, u = [p0p1], v = [p0p2], w = [p1p2]
+      (p3 = -(p0+p1+p2)); 5-cochain polynomials = span of 20 bracket monomials (Pluecker b01 b23 = b02 b13 - b03 b12).
+
+Consequence.  For X in Z^4_inv:   [X] = 0 in H^4_{(2,2)}  <=>  X in C beta  <=>  rank[beta, X] = 1.
+
+Lemma 3 (injective evaluation).  g simple, T in (g^{*(x)k})^g, b != 0:  T(b, ., .., .) = 0  =>  T = 0.
+  Phi: g -> (g^*)^{(x)(k-1)}, X -> T(X, ...) is g-equivariant; ker Phi is an ideal containing b; g simple => ker Phi = g.
+  Every coefficient tensor of a cochain in C^k_inv (on the polynomial basis) is in (g^{*(x)k})^g.
+  => the evaluation  X -> ( X_mu(b_theta, b_a, b_b, b_c) )_{mu, a, b, c}  is injective on C^4_inv
+     (b_theta = a highest root vector of a weight basis; any nonzero basis vector for G2(oct)).
+  Exact ranks of evaluation columns = ranks of the cochains.
+  h-weight rule (consistency): X_mu(b_theta, b_a, b_b, b_c) = 0 unless wt_a + wt_b + wt_c = -theta (verified, 7.2).
+
+=====================================================================================================
+2. Algebras, forms (logs/build.log, logs/classes.log)
+=====================================================================================================
+
+r := Killing / kappa (checked on all entries);  s := lcm of denominators of kappa^{-1}.
+construction                                    dim  form kappa                           r    Cartan matrix check
+so5      X^T J + J X = 0, J antidiagonal          10   tr_5 (vector rep)                     3    B2
+sp4      X^T J + J X = 0, J symplectic            10   tr_4 (defining rep)                   6    C2
+sp4(fold A3)  fixed points of A3 diagram flip     10   Kac form of sl4, restricted           6    C2
+so6      matrices                                 15   tr_6 (vector rep)                     4    A3
+so7      matrices                                 21   tr_7 (vector rep)                     5    B3
+so7(fold D4)  D4, nodes 3<->4                     21   Kac form of so8, restricted          10    B3
+sp6      matrices                                 21   tr_6 (defining rep)                   8    C3
+sp6(fold A5)  A5 diagram flip                     21   Kac form of sl6, restricted           8    C3
+so8      matrices                                 28   tr_8 (vector rep)                     6    D4
+so8(Kac D4)                                       28   Kac form                             12    D4
+G2(oct)  {X in so7 : X.phi = 0}, phi = e123+e145+e167+e246-e257-e347-e356
+                                                  14   tr_7 (7-dim rep)                      4    (no Cartan basis used)
+G2(fold D4)   D4 triality                         14   Kac form of so8, restricted           8    G2
+F4(fold E6)   E6 diagram involution               52   Kac form of E6, restricted           18    F4
+checks:  sl2, sl3, sl4, sl5 (Kac A1..A4, Kac form, r = 4, 6, 8, 10) and sl2, sl3, sl4 in the run-1 basis (tr_N, r = 2N).
+Kac construction (Kac, Infinite-dimensional Lie algebras, Sec. 7.8): [E_a,E_b] = eps(a,b) E_{a+b},
+[E_a,E_-a] = -a, (E_a|E_-a) = -1, eps(a,b) = (-1)^{a^T M b}; folding: E_a -> E_{sigma a} is an automorphism
+(checked: fu invariant under the basis permutation); fixed basis = orbit sums.
+Every algebra: antisymmetry, Jacobi on all index triples, invariance and nondegeneracy of kappa checked exactly.
+
+=====================================================================================================
+3. Classes in H^4_{(2,2)} (logs/classes.log)
+=====================================================================================================
+
+Columns beta, F_133, F_223 evaluated at (b_theta, all basis triples) x (6 polynomials); exact ranks over Q.
+Printed, identical for every algebra below except sl2:
+   nonzero: beta True, F133 True, F223 True
+   rank[beta] = 1, rank[beta,F133] = 2, rank[beta,F223] = 2, rank[beta,F133,F223] = 2
+   F133               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F223               NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   F133+F223          exact: F133+F223 = lambda beta
+   omega133+omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+   omega133-omega223  NOT exact (rank[beta, X] = 2 > rank[beta] = 1)
+("omega133-omega223" = -3F_133 - 2F_223; the other sign flip 3F_133 + 2F_223 is its negative.)
+
+lambda (form used), lambda_K = lambda / r^2 (Killing form):
+  so5 9/2 | sp4 18 | sp4(fold) 18 | so6 8 | so7 25/2 | so7(fold) 50 | sp6 32 | sp6(fold) 32 | so8 18 |
+  so8(Kac) 72 | G2(oct) 8 | G2(fold) 32 | F4(fold) 162 | sl3 18 | sl4 32 | sl5 50  ;  lambda_K = 1/2 in every case.
+  rows used (nonzero): so5 114, sp4 108, so6 216, so7 348, sp6 276, so8 510, G2(oct) 870, G2(fold) 210, F4 1386.
+sl2 (Kac and run-1 basis), lambda_K:
+   F133 = 7/2 beta,  F223 = -3 beta,  F133+F223 = 1/2 beta,  omega133+omega223 = -33/2 beta,  omega133-omega223 = -9/2 beta.
+
+Hence, with kappa = Killing form, for every computed g (sl2 included):
+   F_133 + F_223 = (1/2) d([q0 q1]^2 f)                                    (exact representative)
+   [F_133] = -[F_223]
+   [w_133] = -3[F_133] = 3[F_223],   [w_223] = 2[F_223]
+   O_2 = (pi Nnorm/240)(-3F_133 + 2F_223) = (pi Nnorm/48) F_223 - (pi Nnorm/160) beta  =>  [O_2] = (pi Nnorm/48)[F_223]
+   K_223 flipped:  (pi Nnorm/240)(-3F_133 - 2F_223) = (pi Nnorm/240) F_223 - (pi Nnorm/160) beta  => +(pi Nnorm/240)[F_223]
+   K_133 flipped:  (pi Nnorm/240)( 3F_133 + 2F_223)                                                => -(pi Nnorm/240)[F_223]
+   (general kappa = Killing/r: beta_kappa = beta_K / r, F_kappa = r F_K, F_133 + F_223 = (r^2/2) beta_kappa.)
+[F_223] != 0 for so5 = sp4, so6, so7, so8, sp6, G2, F4, sl3, sl4, sl5;  [F_223] = 0 for sl2.
+
+Isomorphic constructions agree: so5 / sp4 / sp4(fold); so6 / sl4(Kac) / sl4(run-1); so7 / so7(fold); sp6 / sp6(fold);
+so8 / so8(Kac); G2(oct) / G2(fold): same ranks, same lambda_K = 1/2.
+so6 against run 1 (sl4: rank D 3 -> rank [D|omega] 4, F_133 + F_223 exact, F_223 not exact, anomaly-structure c6, c7): agrees.
+
+sl2 mechanism (logs/kk_span.log): dim (g^{(x)4})^g = 3 = rank{kappa_12 kappa_34, kappa_13 kappa_24, kappa_14 kappa_23},
+so C^4_inv = span{alt([p_a p_b][p_c p_d] kappa_01 kappa_23)}:
+   sl2(Kac A1)  ... rank[beta, alt([p_a p_b][p_c p_d] kappa_01 kappa_23) (36 inputs)] = 1, without beta = 1
+=> C^4_inv(sl2) = C beta = B^4_inv(sl2), H^4_inv(sl2) = 0.
+
+=====================================================================================================
+4. Closedness (logs/closedness.log)
+=====================================================================================================
+
+dF(x_0..x_4) = sum_{i<j} (-1)^{i+j} F([x_i,x_j], x_k, x_l, x_m),  F = sum_mu mu(q) T_mu,  q = (p_i+p_j, p_k, p_l, p_m),
+polynomials reduced to the 20 bracket monomials (identities and rank 20 checked: "(True, True, 20)"),
+evaluated at x_0 = b_theta and all basis 4-tuples (Lemma 3 for 5-tensors); F4: weight-compatible 4-tuples (22924 of 7311616).
+   d F_133 = 0: True,  d F_223 = 0: True   for all 20 constructions (sl2..F4).
+Controls:
+   d beta = 0: True (sl2, sl3, so5, G2) ; d(F_133 with shifted polynomial labels) = 0: False (sl2, sl3, so5, G2)
+   dF_exact = run-1 cochain.d_CE at b_theta on all 72 monomials for a nonzero output: True (sl2, sl3; logs/dF_vs_run1.log)
+Observation (logs/d_on_inv.log): d C = 0 for all 122 nonzero inputs C = alt([p_a p_b][p_c p_d] W),
+W in {W_133, W_223, kappa kappa, tree}, for sl2, sl3, so5; so closedness in C^4_inv does not discriminate between
+these cochains.
+
+=====================================================================================================
+5. Order-hbar deformations J_1 = [q_0 q_1] T(X_0,X_1,X_2), T in (S^3 g*)^g (logs/j1.log, logs/j1_F4.log)
+=====================================================================================================
+
+J_1 alternating (T symmetric, [q_s0 q_s1] = sgn(s)[q0q1]): True.
+d J_1(x_0..x_3) = sum_{i<j} (-1)^{i+j} [p_i+p_j, p_k] T([X_i,X_j], X_k, X_l)   (linear in u, v, w), evaluated at b_theta.
+Exactness of J_1: SL2-invariant 2-cochains of momentum degree 2 are functions of one vector q_0 (q_1 = -q_0), the only
+SL2-invariants of one vector are constants, so B^3_inv (degree 2) = 0 and, by Lemma 1, a nonzero closed J_1 is not exact.
+Results (exact sympy nullspace on h-weight-zero multisets; invariance of T re-checked on all entries):
+   so5, sp4, so7, so8, sp6, G2, F4, sl2 :  dim (S^3 g*)^g = 0
+   so6, sl3, sl4, sl5                   :  dim (S^3 g*)^g = 1 ; T symmetric True, invariant True, nonzero True ; d J_1 = 0: True
+   control (random symmetric non-invariant T): d J = 0: False   (every algebra)
+Space of closed J_1 of this form (modulo exact) = (S^3 g*)^g.
+
+=====================================================================================================
+6. Invariant dimensions (logs/invariants_weyl.log, logs/invariants_lin.log)
+=====================================================================================================
+
+(W) mult_0(V) = sum_{w in W} sgn(w) m_V(rho - w rho), exact weight counting.
+(L) invariance system on h-weight-zero index sets, nullity mod p1 = 10^9+7 and p2 = 998244353
+    (nullity mod p >= nullity over Q; with f in Lambda^3, T in S^3 (section 5): exact values).
+                 |W|   S^2  Lambda^2  S^3  Lambda^3  T^3  S^4  Lambda^4  T^4      (L): S^3, Lambda^3, Lambda^2
+sl2               2     1     0        0     1        1    1     0        3            0, 1, 0
+sl3               6     1     0        1     1        2    1     0        8            1, 1, 0
+sl4 = so6        24     1     0        1     1        2    2     0        9            1, 1, 0
+sl5             120     1     0        1     1        2    2     0        9            1, 1, 0
+so5 = sp4         8     1     0        0     1        1    2     0        6            0, 1, 0
+so7              48     1     0        0     1        1    2     0        6            0, 1, 0
+sp6              48     1     0        0     1        1    2     0        6            0, 1, 0
+so8             192     1     0        0     1        1    3     0        7            0, 1, 0
+G2               12     1     0        0     1        1    1     0        5            0, 1, 0
+F4             1152     1     0        0     1        1    1     0        5            0, 1, 0
+(both constructions of each algebra give the same row.)
+
+=====================================================================================================
+7. Further checks
+=====================================================================================================
+
+7.1 Exact integer contractions (core.ct): bound = einsum(|A|,|B|) bounds every partial sum; bound < 2^52: float64
+    (all partial sums and products are integers < 2^53, exact); bound < 2^62: int64; else abort (no abort occurred).
+7.2 h-weight selection rule for F_133, F_223, beta at b_theta: True for every construction with a weight basis
+    (e.g. F4: compatible triples 663 of 140608).
+7.3 Agreement with the run-1 code (read-only import):
+    run-1 omega_133(b_theta,...) = -3 F_133(b_theta,...), omega_223 = 2 F_223: True for sl2, sl3, all 21 monomials.
+    run-1 exactness machinery (c_obstruction.run: full tensors, all 9 canonical monomials, eta from trace tensors and f,
+    no SL2 reduction) on the present structure constants (logs/run1_method*.log):
+      so5, sp4, G2(oct), so7, sp6, so6: d_omega133_zero True, d_omega223_zero True, rank d(C3) 2,
+      rank [d(C3)|omega] 3, exact False, exact_133 False, exact_223 False.
+      For so5, sp4, G2, so7, sp6 dim (g^{(x)3})^g = 1, so trace tensors and f span the invariant 3-tensors and this
+      is a complete certificate.  For so6 dim (g^{(x)3})^g = 2 and the vector-representation traces give only
+      multiples of f; there the run-1 run is not a complete certificate.
+7.4 Pointwise (logs/pointwise.log): random integer X_i in [-3,3]^dim, momenta in [-9,9]^2, exact integers:
+    F133+F223 = c beta at 4 random points: True (all 20 constructions); 2x2 minors beta(P0)F223(Pk) - F223(P0)beta(Pk):
+    sl2 [0, 0, 0]; all others nonzero, e.g. F4 [-707533785719193600, -671745715273728000, 1631891710552965120],
+    G2(oct) [-70579067274563420160, 1308399912367895347200, -252331108415172771840]
+    (non-exactness certificate independent of Lemma 3).
+
+=====================================================================================================
+8. Result
+=====================================================================================================
+
+Theorem.  Let g be one of so5 = sp4, so6 = sl4, so7, so8, sp6, G2, F4, sl2, sl3, sl5, with nondegenerate invariant form
+kappa = Killing / r.  In the CE cohomology of g[[z1,z2]] modulo translations at weight (2,2):
+  (i)   d w_133 = d w_223 = 0;
+  (ii)  F_133 + F_223 = (r^2/2) beta,  beta = d([q0q1]^2 f);  [F_133 + F_223] = 0;
+  (iii) [F_223] != 0 for g != sl2;  [F_223] = 0 for g = sl2;
+  (iv)  [w_133] = 3[F_223],  [w_223] = 2[F_223];
+  (v)   [O_2] = (pi Nnorm/48)[F_223] with the relative sign of anomaly-structure c3, and +-(pi Nnorm/240)[F_223] with the
+        opposite relative sign; nonzero for g != sl2 in all cases;
+  (vi)  closed order-hbar deformations [q0q1] T(X0,X1,X2), T in (S^3 g*)^g, modulo exact: dimension dim (S^3 g*)^g =
+        0 for so5, so7, so8, sp6, G2, F4, sl2;  1 for so6 = sl4, sl3, sl5 (all closed, none exact).
+  Classification:
+    (A) exact:                                        sl2
+    (B) non-exact, no deformation of this form:       so5 = sp4, so7, so8, sp6, G2, F4
+    (C) non-exact, such deformations available:       so6 = sl4, sl3, sl5
+  Under kappa -> c kappa: W, F_G, w_G, O_2 -> c^{-1}(.), beta -> c beta; the classification is unchanged.
+
+Pattern tests over the computed algebras (sl2, sl3, sl4 = so6, sl5, so5 = sp4, so7, so8, sp6, G2, F4; sl_N data of run 1
+for N = 2..5 agree with the rows above):
+  "[O_2] != 0 iff (S^3 g*)^g != 0":                 false (so5, so7, so8, sp6, G2, F4: (S^3)^g = 0, [O_2] != 0).
+  "[O_2] != 0 iff dim (S^4 g*)^g >= 2":              false (sl3, G2, F4: dim (S^4)^g = 1, [O_2] != 0).
+  "[O_2] != 0 iff dim (g^{*(x)4})^g > 3, i.e. (g^{*(x)4})^g != span{kappa kappa}":  true on every computed algebra
+        (sl2: 3; others 5..9); for sl2, C^4_inv = C beta.
+  "F_133 + F_223 = (1/2) beta (Killing)":            true on every computed algebra.
+No statement is made for algebras not computed (E6, E7, E8, so_N N >= 9, sp_2n n >= 4, sl_N N >= 6).
+
+=====================================================================================================
+9. Not done / assumptions
+=====================================================================================================
+
+- The identification of local BRST cohomology with CE cohomology of g[[z1,z2]] modulo translations, and the tau
+  direction giving only a shift, are taken over from anomaly-structure c5 (argued there, not sourced); not re-derived.
+- Nnorm and the relative Wick sign (anomaly-structure c2, c3) are not re-derived; only the two sign choices are
+  computed.  The coefficient of [O_2] depends on them, non-vanishing does not.
+- Whether (1/2){J_1,J_1} cancels [O_2] for so6, sl3, sl5 (Q1) was not computed.
+- dim H^4_inv and dim H^4_{(2,2)} were not computed for the new algebras; only the classes listed.
+- The run-1 machinery cross-check (7.3) was run for so5, sp4, G2(oct), so7, sp6, so6; not for so8 and F4
+  (full-tensor matrices of 22M and 263M rows), not for the folded constructions (no matrix realization).
+- E6, E7, E8 and larger classical algebras not computed.

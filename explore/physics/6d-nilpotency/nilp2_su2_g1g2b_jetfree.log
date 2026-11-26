@@ -1,0 +1,9 @@
+order 2, su2, O = g1g2b, jets {}, functionals ccccc, F = 3, seed 1, P = 2147483647, mode symbolic, nmom 0
+  <hatQ[Q0] hatQ[G2.1] O>: [0, 0, 0]   (histories 24, keys 4, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.2] O>: [0, 0, 0]   (histories 24, keys 4, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [0, 0, 0]   (histories 36, keys 6, colour 0s, total 0s)
+  <hatQ[G2.1] hatQ[Q0] O>: [0, 0, 0]   (histories 18, keys 0, colour 0s, total 0s)
+  <hatQ[G2.2] hatQ[Q0] O>: [0, 0, 0]   (histories 18, keys 0, colour 0s, total 0s)
+sum kappa kappa E (must vanish mod P): [0, 0, 0]
+kappa_2 system: 3 equations, rank 0, augmented rank 0 (unknowns 2)
+total time 0s

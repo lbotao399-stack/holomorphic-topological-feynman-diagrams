@@ -1,0 +1,16 @@
+SU(2) (D,E,F)=(1,2,3) literal Levi-Civita sum: -5/4   claim -5/4: True
+SU(3) Gell-Mann n=3, D=E=t1, F=diag(1,1,-2): 63/8 + i* 0   claim 63/8: True
+n=2 N=4: S=814, tr(DEF)+(-1)^(n+1)tr(DFE)=37, ratio=22, claim P=22, match=True
+n=2 N=4: S=-814, tr(DEF)+(-1)^(n+1)tr(DFE)=-37, ratio=22, claim P=22, match=True
+n=2 N=5: S=-2077, tr(DEF)+(-1)^(n+1)tr(DFE)=-67, ratio=31, claim P=31, match=True
+n=2 N=5: S=-1891, tr(DEF)+(-1)^(n+1)tr(DFE)=-61, ratio=31, claim P=31, match=True
+n=3 N=4: S=1120, tr(DEF)+(-1)^(n+1)tr(DFE)=10, ratio=112, claim P=112, match=True
+n=3 N=4: S=6496, tr(DEF)+(-1)^(n+1)tr(DFE)=58, ratio=112, claim P=112, match=True
+n=3 N=5: S=32560, tr(DEF)+(-1)^(n+1)tr(DFE)=176, ratio=185, claim P=185, match=True
+n=3 N=5: S=-12580, tr(DEF)+(-1)^(n+1)tr(DFE)=-68, ratio=185, claim P=185, match=True
+n=4 N=4: S=-5712, tr(DEF)+(-1)^(n+1)tr(DFE)=-6, ratio=952, claim P=952, match=True
+n=4 N=4: S=12376, tr(DEF)+(-1)^(n+1)tr(DFE)=13, ratio=952, claim P=952, match=True
+n=5 N=3: S=-69552, tr(DEF)+(-1)^(n+1)tr(DFE)=-23, ratio=3024, claim P=3024, match=True
+n=5 N=3: S=-51408, tr(DEF)+(-1)^(n+1)tr(DFE)=-17, ratio=3024, claim P=3024, match=True
+n=5 N=4: S=233856, tr(DEF)+(-1)^(n+1)tr(DFE)=36, ratio=6496, claim P=6496, match=True
+n=5 N=4: S=-279328, tr(DEF)+(-1)^(n+1)tr(DFE)=-43, ratio=6496, claim P=6496, match=True

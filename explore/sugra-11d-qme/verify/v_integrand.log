@@ -1,0 +1,9 @@
+vertex factor pass-through = u^j J_i - delta^j_i (J.u) : True
+vertex factor trivalent b0: dL/dmu_{i'} dL/dmu_{i''} = -(delta^j_{i''} J_{i'} - delta^j_{i'} J_{i''}) : True
+vertex factor source: = -(lam_{i'} ga_{i''} - lam_{i''} ga_{i'}) : True
+vertex factor c sink: (1/6) eps, J on contracted, lam on external (sum over 6 maps) : True
+(2, 5, 6) c@interior flow 22 | grouped (mine) == explorer flow_integrand: True | nonzero: True | letter maps 12288 | sec mine 0.0, explorer 35.9
+(2, 5, 6) c@N flow 32 | grouped (mine) == explorer flow_integrand: True | nonzero: True | letter maps 12288 | sec mine 0.0, explorer 39.6
+(4, 4, 5) c@N' flow 3 | grouped (mine) == explorer flow_integrand: True | nonzero: True | letter maps 12288 | sec mine 0.0, explorer 38.7
+(4, 4, 5) c@interior flow 29 | grouped (mine) == explorer flow_integrand: True | nonzero: True | letter maps 12288 | sec mine 0.0, explorer 40.7
+(3, 4, 6) c@interior flow 5 | grouped (mine) == explorer flow_integrand: True | nonzero: True | letter maps 12288 | sec mine 0.0, explorer 42.0

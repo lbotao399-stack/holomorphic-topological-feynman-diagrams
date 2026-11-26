@@ -1,0 +1,56 @@
+{'T': 0, 'H': 2, 'pqr': (1, 2, 2), 'powers': {}, 'value': '2107/54', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.0}
+{'T': 0, 'H': 2, 'pqr': (1, 2, 2), 'powers': {'3,0': 1}, 'value': '-21467/162', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 0, 'H': 2, 'pqr': (1, 2, 2), 'powers': {'4,1': 1}, 'value': '-13409/324', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 0, 'H': 2, 'pqr': (1, 2, 2), 'powers': {'1,0': 1, '3,1': 1}, 'value': '-163258/3645', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.0}
+{'T': 0, 'H': 2, 'pqr': (1, 2, 2), 'powers': {'3,0': 1, '1,1': 1}, 'value': '-993301/7290', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 0, 'H': 3, 'pqr': (1, 3, 3), 'powers': {}, 'value': '-7420549/419904', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 0, 'H': 3, 'pqr': (1, 3, 3), 'powers': {'1,2': 1}, 'value': '-188086597/50388480', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.02}
+{'T': 0, 'H': 3, 'pqr': (1, 3, 3), 'powers': {'1,2': 1}, 'value': '-188086597/50388480', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 0, 'H': 3, 'pqr': (1, 3, 3), 'powers': {'6,2': 1, '3,0': 1}, 'value': '18531516731/1209323520', 'equal_htk_exact': True, 't_own_s': 0.04, 't_htk_s': 0.04}
+{'T': 0, 'H': 3, 'pqr': (1, 3, 3), 'powers': {'4,0': 1, '5,0': 1}, 'value': '-3718609967/188956800', 'equal_htk_exact': True, 't_own_s': 0.04, 't_htk_s': 0.03}
+{'T': 0, 'H': 3, 'pqr': (2, 2, 3), 'powers': {}, 'value': '969/4', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 0, 'H': 3, 'pqr': (2, 2, 3), 'powers': {'2,2': 1}, 'value': '32744/45', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 0, 'H': 3, 'pqr': (2, 2, 3), 'powers': {'3,0': 1}, 'value': '-7307/120', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 0, 'H': 3, 'pqr': (2, 2, 3), 'powers': {'1,2': 1, '5,2': 1}, 'value': '-4173443/7290', 'equal_htk_exact': True, 't_own_s': 0.03, 't_htk_s': 0.03}
+{'T': 0, 'H': 3, 'pqr': (2, 2, 3), 'powers': {'6,0': 1, '5,2': 1}, 'value': '-2098291/29160', 'equal_htk_exact': True, 't_own_s': 0.03, 't_htk_s': 0.03}
+{'T': 0, 'H': 4, 'pqr': (2, 3, 4), 'powers': {}, 'value': '3584837/41472', 'equal_htk_exact': True, 't_own_s': 0.03, 't_htk_s': 0.02}
+{'T': 0, 'H': 4, 'pqr': (2, 3, 4), 'powers': {'5,1': 1}, 'value': '-11335201/51840', 'equal_htk_exact': True, 't_own_s': 0.04, 't_htk_s': 0.05}
+{'T': 0, 'H': 4, 'pqr': (2, 3, 4), 'powers': {'3,3': 1}, 'value': '-346518109/3732480', 'equal_htk_exact': True, 't_own_s': 0.04, 't_htk_s': 0.05}
+{'T': 0, 'H': 4, 'pqr': (2, 3, 4), 'powers': {'4,0': 1, '7,3': 1}, 'value': '119391231863/235146240', 'equal_htk_exact': True, 't_own_s': 0.14, 't_htk_s': 0.18}
+{'T': 0, 'H': 4, 'pqr': (2, 3, 4), 'powers': {'6,0': 1, '4,2': 1}, 'value': '159037723603/4702924800', 'equal_htk_exact': True, 't_own_s': 0.11, 't_htk_s': 0.2}
+{'T': 0, 'H': 4, 'pqr': (3, 3, 3), 'powers': {}, 'value': '415919/12597120', 'equal_htk_exact': True, 't_own_s': 0.03, 't_htk_s': 0.04}
+{'T': 0, 'H': 4, 'pqr': (3, 3, 3), 'powers': {'4,1': 1}, 'value': '46761409/362797056', 'equal_htk_exact': True, 't_own_s': 0.04, 't_htk_s': 0.04}
+{'T': 0, 'H': 4, 'pqr': (3, 3, 3), 'powers': {'8,3': 1}, 'value': '-63610639/544195584', 'equal_htk_exact': True, 't_own_s': 0.04, 't_htk_s': 0.04}
+{'T': 0, 'H': 4, 'pqr': (3, 3, 3), 'powers': {'3,3': 1, '4,3': 1}, 'value': '-93195566753/1142810726400', 'equal_htk_exact': True, 't_own_s': 0.1, 't_htk_s': 0.05}
+{'T': 0, 'H': 4, 'pqr': (3, 3, 3), 'powers': {'8,2': 1, '8,1': 1}, 'value': '-4094868359/27209779200', 'equal_htk_exact': True, 't_own_s': 0.11, 't_htk_s': 0.05}
+{'T': 1, 'H': 1, 'pqr': (1, 2, 2), 'powers': {}, 'value': '-25/18*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 1, 'H': 1, 'pqr': (1, 2, 2), 'powers': {'0,0': 1}, 'value': '-175/72*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 1, 'H': 1, 'pqr': (1, 2, 2), 'powers': {'3,0': 1}, 'value': '-425/216*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 1, 'H': 1, 'pqr': (1, 2, 2), 'powers': {'2,0': 1, '4,0': 1}, 'value': '125/1512*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 1, 'H': 1, 'pqr': (1, 2, 2), 'powers': {'0,0': 1, '3,0': 1}, 'value': '-8875/3024*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.0}
+{'T': 1, 'H': 2, 'pqr': (1, 3, 3), 'powers': {}, 'value': '-4/15*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (1, 3, 3), 'powers': {'3,0': 1}, 'value': '104/315*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (1, 3, 3), 'powers': {'6,1': 1}, 'value': '8/315*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (1, 3, 3), 'powers': {'4,1': 1, '5,0': 1}, 'value': '68/405*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (1, 3, 3), 'powers': {'0,0': 1, '4,1': 1}, 'value': '1256/1701*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (2, 2, 3), 'powers': {}, 'value': '8/45*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (2, 2, 3), 'powers': {'2,0': 1}, 'value': '68/315*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (2, 2, 3), 'powers': {'1,0': 1}, 'value': '568/945*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (2, 2, 3), 'powers': {'3,0': 1, '0,1': 1}, 'value': '-316/1215*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 1, 'H': 2, 'pqr': (2, 2, 3), 'powers': {'4,1': 1, '1,0': 1}, 'value': '-106/3645*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (2, 3, 4), 'powers': {}, 'value': '11951/5670*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (2, 3, 4), 'powers': {'3,2': 1}, 'value': '-203167/102060*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (2, 3, 4), 'powers': {'2,1': 1}, 'value': '-2234837/612360*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (2, 3, 4), 'powers': {'0,2': 1, '5,1': 1}, 'value': '-42294589/4041576*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.02}
+{'T': 1, 'H': 3, 'pqr': (2, 3, 4), 'powers': {'3,0': 1, '4,2': 1}, 'value': '-1159247/4490640*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (3, 3, 3), 'powers': {}, 'value': '688/945*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (3, 3, 3), 'powers': {'0,1': 1}, 'value': '-12728/8505*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (3, 3, 3), 'powers': {'2,2': 1}, 'value': '85312/25515*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (3, 3, 3), 'powers': {'5,2': 1, '5,1': 1}, 'value': '-3300508/841995*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 1, 'H': 3, 'pqr': (3, 3, 3), 'powers': {'0,1': 1, '6,2': 1}, 'value': '-2251996/841995*pi', 'equal_htk_exact': True, 't_own_s': 0.01, 't_htk_s': 0.01}
+{'T': 1, 'H': 5, 'pqr': (2, 5, 6), 'powers': {}, 'value': '-50764499/16796160*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.13}
+{'T': 1, 'H': 5, 'pqr': (2, 5, 6), 'powers': {'6,0': 1}, 'value': '9086845321/655050240*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.13}
+{'T': 1, 'H': 5, 'pqr': (2, 5, 6), 'powers': {'5,1': 1}, 'value': '-1472170471/131010048*pi', 'equal_htk_exact': True, 't_own_s': 0.0, 't_htk_s': 0.13}
+{'T': 1, 'H': 5, 'pqr': (2, 5, 6), 'powers': {'0,2': 1, '10,1': 1}, 'value': '-247375403627/49128768000*pi', 'equal_htk_exact': True, 't_own_s': 0.02, 't_htk_s': 0.14}
+{'T': 1, 'H': 5, 'pqr': (2, 5, 6), 'powers': {'4,2': 1, '10,0': 1}, 'value': '395607740707/45349632000*pi', 'equal_htk_exact': True, 't_own_s': 0.03, 't_htk_s': 0.14}
+all moments agree: True

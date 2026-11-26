@@ -1,0 +1,7 @@
+ab1 t=(2, 2, 2, 2, 1) w=(1, 1, 1) (a,b)=(2, 1) g=-4 dimM=3 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 2, 1) w=(1, 1, 1) (a,b)=(2, 1) g=-3 dimM=118 dimV=30 H(p1,p2)=[0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 2, 1) w=(1, 1, 1) (a,b)=(2, 1) g=-2 dimM=1258 dimV=335 H(p1,p2)=[0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 2, 1) w=(1, 1, 1) (a,b)=(2, 1) g=-1 dimM=6570 dimV=1715 H(p1,p2)=[0, 0] pred=0 OK
+ab1 t=(2, 2, 2, 2, 1) w=(1, 1, 1) (a,b)=(2, 1) g=0 dimM=20127 dimV=5227 H(p1,p2)=[0, 0] pred=0 OK
+# (2, 2, 2, 2, 1) done in 63.2s
+TOTAL ab1 charge0=False exact=False: compared 5 mismatches 0

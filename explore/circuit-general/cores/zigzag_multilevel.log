@@ -1,0 +1,5 @@
+q=3 unknowns 74 rows 46 {'T': 28, 'D': 0, 'I': 10, 'B': 0, 'S': 8}  0.1s
+q=4 unknowns 1956 rows 3109 {'T': 2074, 'D': 0, 'I': 740, 'B': 60, 'S': 235}  2.1s
+q=5 unknowns 22668 rows 60021 {'T': 36246, 'D': 0, 'I': 19560, 'B': 1701, 'S': 2514}  36.1s
+joint: 24698 unknowns, 65206 rows (2030 R1 links)  39.0s
+joint modular solve stopped after 11 min CPU (first prime not finished); not completed

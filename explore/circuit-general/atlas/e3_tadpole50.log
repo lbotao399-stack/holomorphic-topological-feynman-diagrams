@@ -1,0 +1,5 @@
+tadpole(5,0) (H,T)=(1,1), source 1 at q=0, -1 at O: K = {(('sqrtpi', 4),): '1/630'} (79s)
+tadpole(5,0) (H,T)=(1,1), source 2 at q=0, -2 at O: K = {(('sqrtpi', 4),): '8/315'} (78s)
+real 158.00
+user 157.04
+sys 0.59

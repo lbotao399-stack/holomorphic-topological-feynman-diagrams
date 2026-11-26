@@ -1,0 +1,11 @@
+  [eval N=3 sl k=4] tensor entries 346, rank 8 (certified), relations 1
+  [eval N=3 sl k=5] tensor entries 2250, rank 32 (certified), relations 12
+sl3
+  C^2 spanning set at (2,2), (3,3): 0, 0 elements (alt of symmetric 2-tensors x even monomials)
+  weight (2, 2): dim C^3 = 3, dim C^4 = 14, rank d3 = 3, rank d4 = 10: H^3 = 0, H^4 = 1   (t=3)
+  weight (3, 3): dim C^3 = 6, dim C^4 = 35, rank d3 = 6, rank d4 = 28: H^3 = 0, H^4 = 1   (t=26)
+  theta' at N=3: nonzero True, closed True, rank[B^4 | c] = 6 = rank B^4 (6): exact True
+  {D, iota} at N=3: nonzero True, closed True, rank[B^4 | c] = 6 = rank B^4 (6): exact True
+  o_3' = {D,iota} + theta' at N=3: nonzero True, closed True, rank[B^4 | c] = 6 = rank B^4 (6): exact True
+  formal primitive xi at N=3: d xi - o_3' vanishes at N: True
+time 27s

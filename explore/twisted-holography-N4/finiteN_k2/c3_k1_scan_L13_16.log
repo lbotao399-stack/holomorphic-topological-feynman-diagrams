@@ -1,0 +1,65 @@
+# k=1 U(2) scan levels 13-16, 61 sectors (max chain dim <= 2e+06)
+# level | sector | H^BG_k=1 {Y: dim} at p | p' agrees | chi(H^BG) | [Z_inf(1+G1)]_lam | Z_U2_lam | time
+ 14 | (7, 0, 0, 0, 0) | {7: 4} | True | 4 | 4 | 4 | 0.2s
+ 14 | (6, 1, 0, 0, 0) | {6: 6, 7: 7} | True | 1 | 1 | 1 | 0.4s
+ 14 | (4, 0, 0, 2, 0) | {4: 8, 5: 12, 6: 2} | True | -2 | -2 | -2 | 0.8s
+ 14 | (4, 0, 0, 1, 1) | {4: 9, 5: 20, 6: 10} | True | -1 | -1 | -1 | 2.3s
+ 14 | (5, 2, 0, 0, 0) | {5: 2, 6: 10, 7: 9} | True | 1 | 1 | 1 | 6.6s
+ 14 | (3, 1, 0, 2, 0) | {3: 10, 4: 34, 5: 28, 6: 4} | True | 0 | 0 | 0 | 22.1s
+ 14 | (5, 1, 1, 0, 0) | {5: 12, 6: 25, 7: 12} | True | -1 | -1 | -1 | 28.9s
+ 14 | (1, 0, 0, 4, 0) | {1: 1, 2: 5, 3: 5, 4: 1} | True | 0 | 0 | 0 | 0.1s
+ 14 | (1, 0, 0, 3, 1) | {1: 1, 2: 9, 3: 18, 4: 9} | True | 1 | 1 | 1 | 0.3s
+ 14 | (1, 0, 0, 2, 2) | {1: 1, 2: 10, 3: 22, 4: 13, 5: 1} | True | 1 | 1 | 1 | 0.5s
+ 15 | (6, 0, 0, 1, 0) | {6: 6, 7: 7} | True | -1 | -1 | -1 | 0.3s
+ 14 | (4, 3, 0, 0, 0) | {5: 3, 6: 12, 7: 10} | True | 1 | 1 | 1 | 36.3s
+ 14 | (2, 2, 0, 2, 0) | {2: 1, 3: 18, 4: 50, 5: 34, 6: 4} | True | 3 | 3 | 3 | 50.1s
+ 15 | (5, 1, 0, 1, 0) | {5: 12, 6: 25, 7: 12} | True | 1 | 1 | 1 | 23.5s
+ 14 | (3, 1, 0, 1, 1) | {3: 13, 4: 53, 5: 56, 6: 16} | True | 0 | 0 | 0 | 73.6s
+ 14 | (2, 2, 0, 1, 1) | {2: 2, 3: 27, 4: 79, 5: 69, 6: 18} | True | 3 | 3 | 3 | 160.2s
+ 14 | (2, 1, 1, 2, 0) | {2: 7, 3: 53, 4: 103, 5: 57, 6: 6} | True | 6 | 6 | 6 | 240.3s
+ 15 | (3, 0, 0, 3, 0) | {3: 7, 4: 17, 5: 9} | True | -1 | -1 | -1 | 1.9s
+ 15 | (2, 1, 0, 3, 0) | {2: 5, 3: 29, 4: 43, 5: 16} | True | -3 | -3 | -3 | 25.0s
+ 14 | (4, 2, 1, 0, 0) | {4: 6, 5: 28, 6: 37, 7: 15} | True | 0 | 0 | 0 | 376.0s
+ 15 | (3, 0, 0, 2, 1) | {3: 10, 4: 34, 5: 28, 6: 4} | True | 0 | 0 | 0 | 20.5s
+ 15 | (1, 1, 1, 3, 0) | {1: 1, 2: 18, 3: 67, 4: 79, 5: 24} | True | -5 | -5 | -5 | 165.5s
+ 15 | (4, 2, 0, 1, 0) | {4: 6, 5: 28, 6: 37, 7: 15} | True | 0 | 0 | 0 | 509.7s
+ 15 | (0, 0, 0, 5, 0) | {1: 1, 2: 2} | True | 1 | 1 | 1 | 0.0s
+ 15 | (0, 0, 0, 4, 1) | {1: 1, 2: 5, 3: 5, 4: 1} | True | 0 | 0 | 0 | 0.1s
+ 15 | (0, 0, 0, 3, 2) | {1: 1, 2: 6, 3: 8, 4: 3} | True | 0 | 0 | 0 | 0.1s
+ 16 | (8, 0, 0, 0, 0) | {5: 1, 8: 5} | True | 4 | 4 | 5 | 0.1s
+ 16 | (7, 1, 0, 0, 0) | {5: 1, 7: 7, 8: 8} | True | 0 | 0 | 1 | 2.3s
+ 16 | (2, 0, 0, 4, 0) | {2: 4, 3: 14, 4: 11, 5: 2} | True | -1 | -1 | -1 | 2.5s
+ 16 | (5, 0, 0, 2, 0) | {5: 10, 6: 15, 7: 3} | True | -2 | -2 | -2 | 8.8s
+ 16 | (1, 1, 0, 4, 0) | {1: 1, 2: 11, 3: 27, 4: 20, 5: 3} | True | 0 | 0 | 0 | 10.8s
+ 16 | (5, 0, 0, 1, 1) | {5: 12, 6: 25, 7: 12} | True | -1 | -1 | -1 | 29.7s
+ 16 | (2, 0, 0, 3, 1) | {2: 5, 3: 29, 4: 43, 5: 16} | True | 3 | 3 | 3 | 34.9s
+ 16 | (6, 2, 0, 0, 0) | {5: 2, 6: 2, 7: 12, 8: 11} | True | -1 | -1 | 1 | 96.8s
+ 15 | (2, 1, 0, 2, 1) | {2: 7, 3: 53, 4: 103, 5: 57, 6: 6} | True | -6 | -6 | -6 | 426.3s
+ 16 | (2, 0, 0, 2, 2) | {2: 6, 3: 35, 4: 53, 5: 23, 6: 2} | True | 3 | 3 | 3 | 93.0s
+ 16 | (1, 1, 0, 3, 1) | {1: 1, 2: 18, 3: 67, 4: 79, 5: 24} | True | 5 | 5 | 5 | 256.2s
+ 16 | (6, 1, 1, 0, 0) | {5: 2, 6: 15, 7: 30, 8: 14} | True | -3 | -3 | -1 | 501.8s
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/twisted-holography-N4/finiteN_k2/c3_k1_scan.py", line 22, in work
+    h = bf.homology(alg, lam, 1, 2, p=p, tables=tb)
+  File "/Users/libotao/Desktop/holomorphic-twist-program/code/holography/bg_fast.py", line 175, in homology
+    r, _ = run_cols(alg, lam, k, N, p, cols, mode, tables, log)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/code/holography/bg_fast.py", line 145, in run_cols
+    raise RuntimeError(f"bgk failed ({res.returncode}): {res.stderr[-2000:]}")
+RuntimeError: bgk failed (-15): 
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/twisted-holography-N4/finiteN_k2/c3_k1_scan.py", line 39, in <module>
+    for lam, L, out, chi, dt in pool.imap_unordered(work, secs):
+                                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+RuntimeError: bgk failed (-15): 

@@ -1,0 +1,8 @@
+sl2(Kac A1)    dim   3 s 2 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; full W133 equal: True ; full W223 equal: True ; nnz W133 15 W223 18 (0.0s)
+sl3(Kac A2)    dim   8 s 3 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; full W133 equal: True ; full W223 equal: True ; nnz W133 346 W223 304 (0.0s)
+so5            dim  10 s 2 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; full W133 equal: True ; full W223 equal: True ; nnz W133 560 W223 558 (0.0s)
+sp4            dim  10 s 2 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; full W133 equal: True ; full W223 equal: True ; nnz W133 560 W223 526 (0.0s)
+sl4(Kac A3)    dim  15 s 4 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; full W133 equal: True ; full W223 equal: True ; nnz W133 1629 W223 1674 (0.1s)
+G2(fold D4)    dim  14 s 3 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; full W133 equal: True ; full W223 equal: True ; nnz W133 1468 W223 1410 (0.1s)
+so7            dim  21 s 2 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; nnz W133 3423 W223 3420 (0.1s)
+sp6            dim  21 s 2 : W133(b_theta,...) equal True, W223 equal True ; F133, F223 equal [True, True] ; beta equal True ; nnz W133 3423 W223 3276 (0.1s)

@@ -1,0 +1,4 @@
+gl2 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=1 dimM=1290 dimV=280 H(p1,p2)=[2, 2] pred=2 OK | psi_S rep: closed=True rank mod B=2 (dim Z^n=88) REP-OK
+gl2 t=(0, 1, 1, 2, 2) w=(-1, 0, 0) (a,b)=(2, 2) g=2 dimM=6696 dimV=1986 H(p1,p2)=[3, 3] pred=3 OK | psi_S rep: closed=True rank mod B=3 (dim Z^n=173) REP-OK
+# (0, 1, 1, 2, 2) done in 22.5s
+TOTAL gl2 charge0=True exact=False: compared 2 mismatches 0

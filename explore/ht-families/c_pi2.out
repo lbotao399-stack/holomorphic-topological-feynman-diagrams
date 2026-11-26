@@ -1,0 +1,6 @@
+D=2 n=2: 1 SP graphs; p == ceil(n/2) + 2E and E plan-independent (small/large) for all: True; distribution of E: {0: 1}
+D=2 n=4: 5 SP graphs; p == ceil(n/2) + 2E and E plan-independent (small/large) for all: True; distribution of E: {0: 4, 1: 1}
+D=2 n=6: 39 SP graphs; p == ceil(n/2) + 2E and E plan-independent (small/large) for all: True; distribution of E: {0: 33, 1: 5, 2: 1}
+D=3 n=2: 2 SP graphs; p == ceil(n/2) + 2E and E plan-independent (small/large) for all: True; distribution of E: {0: 2}
+D=3 n=3: 10 SP graphs; p == ceil(n/2) + 2E and E plan-independent (small/large) for all: False; distribution of E: {0: 10, 1: 2}
+D=4 n=2: 3 SP graphs; p == ceil(n/2) + 2E and E plan-independent (small/large) for all: True; distribution of E: {0: 3}

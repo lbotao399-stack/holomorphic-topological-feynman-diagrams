@@ -1,0 +1,217 @@
+REFEREE REPORT (second referee)   notes/flagship/flagship.tex, revised version (1170 lines, 2026-11-21)          2026-11-21
+
+P = /Users/libotao/Desktop/holomorphic-twist-program
+Output folder P/notes/flagship/referee2/:
+  r2_kernels.py  -> logs/r2_kernels.log     own Kirchhoff, own exterior algebra, rho_2 from the Pfaffian definition, Dirichlet
+                                             reduction; K_133, K_223; three J_1-vertex kernels with current insertions
+  r2_sl3_o3.py   -> logs/r2_sl3_o3.log,     sl3, kappa = tr: own index networks W_G, W_G^(v,d), own CE differential and shuffle
+                    logs/r2_sl3_o3_seed1234.log   bracket; o', iota, theta'(d), {D,iota}, d o_3, primitive of o_3, i_2, i_3
+  r2_so9.py      -> logs/r2_so9.log         so9 (new algebra of run 3): F133+F223, (x,a) decomposition, rank certificate,
+                                             Prop. 5.7 table entries
+  No project module is imported by these scripts.  Arithmetic exact (Fractions / Python integers) except where "float" is stated.
+Read: flagship.tex (all), flagship_v1 status via referee/REFEREE.txt, supplement/MANIFEST.txt, flagship.log;
+  deepen/lit/REPORT.txt; deepen/{normalization,deform,simple-g}/verify/VERIFY.txt (verdict and gap sections);
+  run-3 digest (o3, h1, simple-all explorer claims and verifier verdicts) as relayed in the task; code/htk/CONVENTIONS.md.
+Web: arxiv.org/abs/2407.08667 (v3, 13 Apr 2026, abstract), arxiv.org/abs/2611.24160 (exists, v1 18 Nov 2026).
+Not done: no rerun of project scripts; no end-to-end (2,1) position integral; gl_N at order hbar^3 not recomputed;
+  E6-E8 not constructed; h1 jet-model cohomology not recomputed; Costello-Gwilliam, Costello's book not read;
+  no arXiv search beyond the two abstract pages (only abs/html/pdf pages are permitted).
+
+
+====================================================================================================
+1. Own spot checks
+====================================================================================================
+
+1a. Theta kernels at (H,T) = (2,1), engine labelling and C of Sec. 4.2 (r2_kernels.py, seed 20261121).
+    det[B^T; C] = 15 (theta133), 16 (theta223): positive basis.
+    Kirchhoff: B^T y = lambda (v = 0..4), sum_e C_re t_e y_e = 0; M = C t C^T; rho_2 U^{3/2} computed twice
+    (eq. (1.3) and -(1/2)(dM adj(M) dM)_12): identical.  Omega = U^{-2} rho_2 psi^1_1 psi^1_2 psi^2_1 psi^2_2 = D iota_E vol,
+    all 7 components consistent.  Random rational t, random lambda_0..lambda_4 (lambda_0 = lambda_N arbitrary), 4 trials each:
+        theta133:  D U^{7/2} / ([p1p2][p3p4]) = -1/2   (4/4),   U = R_A R_B + R_B R_C + R_C R_A  (4/4)
+        theta223:  D U^{7/2} / ([p1p2][p3p4]) = +1/2   (4/4)
+    Integral.  Path reduction t_{P_j} = R_P x^P_j (int over x: prod 1/(n_P-1)!), then R_P = 1/w_P:
+        iota_E(dlogR)^3 = iota_E(dlog w)^3,  U(1/w) = 1/(w_A w_B w_C) on sum w = 1,
+        int_{Delta^6} U^{-7/2} dt = prod_P Gamma(7/2 - n_P) / (Gamma(7/2) prod_P (n_P-1)!)
+        (1,3,3): Gamma(5/2)Gamma(1/2)^2/(Gamma(7/2) 4) = pi/10 ;   (2,2,3): Gamma(3/2)^2 Gamma(1/2)/(Gamma(7/2) 2) = pi/15.
+      float check in R-space (mpmath tanh-sinh, dps 25): relative differences 3.8e-15, 3.7e-15.
+    =>  K_133(lambda;0) = -(pi/20)[p1p2][p3p4],  K_223(lambda;0) = +(pi/30)[p1p2][p3p4],  independent of lambda_N.   AGREES (Thm 4.3).
+
+1b. J_1-vertex kernels with current insertions (Prop. 6.4), physical sources lambda_0 = 0, lambda_v = p_v, sum p = 0;
+    insertion [q_h1 q_h2], q = p_v (external), -y_e (tail), +y_e (head) (Prop. 6.2).
+    Method: D U^{7/2} = c[p1p2][p3p4] re-checked at the physical sources; currents verified affine in x at fixed R (exact
+    midpoint and 3-point collinearity tests); x-average by exact rules (edge-midpoint degree-2 rule = 7-point degree-3 rule,
+    exact equality at 2 random w); E_x[insertion] fitted as a degree-2 polynomial in (w_A, w_B) from 6 exact points and
+    verified exactly at 4 further points; Dirichlet integrals with shifted exponents.  Float control: scipy dblquad in
+    w-space (w = s^2 maps), raw quadrature rule, no fit.
+      theta(2,2,3) v=3, [p_3, +y_e4],  p = (-4,1),(0,-4),(2,-2),(2,5):
+          exact -117.286125734018947569272019642 ; table -pi b12(b13+b23)^2/84 = -117.286125734018947569272019642 ; float rel.diff 4.3e-14
+      theta(1,3,3) v=0, [-y_e0, -y_e1] (quadratic in currents),  p = (0,-7),(-7,3),(7,7),(0,-3):
+          exact -987.769090166190824059962790426 ; table b12(b13+b23)(b12-2b13-b23)pi/252 = same 30 digits ; float 4.0e-13
+      theta(1,3,3) v=5, [+y_e0, +y_e3],  p = (-6,2),(6,0),(2,-5),(-2,3):
+          exact -5.98398600683770140659551120625 ; table -b12(b13+b23)(2b12-b13-2b23)pi/252 = same ; float 6.5e-13
+    AGREES (3 of the 12 table entries, local order L', including the two trivalent-vertex entries with two current insertions).
+
+1c. sl3, kappa = tr, order hbar^3 (r2_sl3_o3.py, seeds 7 and 1234; 6 random 4-point configurations per identity).
+    W_G = -(prod_v f(L'_v) prod_e kappa^{-1}) and W_G^(v,d) (f -> d_abc at v) built as integer 4-tensors (3^7 scaling,
+    float64 overflow guard); kernels K^(v) from the Prop. 6.4 table.
+      W_133^(v,d) = +-9(tr(1342) - tr(1243)) (+ for v = 0,1,2), W_223^(v,d) = 0 (all v)          True (Prop. 6.5)
+      W_133, W_223 equal the sl_N trace formulas of Thm 4.6 at N = 3                              True
+      F133 + F223 = 2N^2 beta = 18 beta,   beta = d(u2f)                                           True
+      o' = (1/240)(-3F133 + 2F223) = F223/48 - (N^2/40) beta                                      True
+      (1/2){D,D} = F223/108 + d((13/18) u2f)                                                      True
+      o' - (9/8){D,D} = d iota,   iota = -(37/20) u2f                                              True
+      theta'(d) = -(3/20) d D3                                                                     True
+      {D, u2f} = (1/3) d D3   =>   {D, iota} = -(37/60) d D3                                       True
+      o_3/(a pi nu) = {D,iota} + theta' = d xi,   xi = -(23/30) D3                                 True
+      {D,iota} - theta' = d(-(7/15) D3)  (= -(N^2+5)/30)                                           True
+      controls: theta' = +(3/20) dD3 ; {D,iota} - theta' = d xi ; {D,iota} - theta' = +(7/15) dD3  False, False, False
+      d(o_3/(a pi nu)) = 0, d o' = 0, d theta' = 0 at 3 + 3 five-point configurations;  control nonzero (e.g. -5802595968)
+    Final numbers, N = 3:  i_2 = eps pi nu iota = eps U (37/1280) pi^{-4} u2f ;
+                           i_3 = a eps pi nu xi = a eps U (23/1920) pi^{-4} D3   (= (2N^2+5)/1920 at N = 3).
+    AGREES with Prop. 6.3, Prop. 6.5, Prop. 6.6, Thm 6.7(ii)-(iv) and the N = 3 coefficients after Thm 6.7.
+    Note: closedness d o_3 = 0 does not test the kernels (Prop. 6.6 says so; every piece is closed).  The numerical content
+    tested here is the coefficient -(N^2/60) of theta'(d), which fixes i_3; its inputs are the 12 kernels (3 recomputed in 1b)
+    and the colour factors (recomputed here).
+
+1d. Rank certificate, so9 (r2_so9.py, seed 99), kappa = tr_9 (Killing = 7 tr_9), own construction (Jacobi exact):
+      F133 + F223 = (49/2) beta_tr      4/4 points       (= (1/2) beta_Killing, Thm 4.10)
+      F223 = 3 beta_tr - (15/2) G_kk    4/4 points       (= (x,a) = (3/49, -15/686) in Killing normalization, Thm 4.10 table)
+      det[[F223(P0), beta(P0)], [F223(P1), beta(P1)]] = -55699153920 != 0  => F223 not in C beta
+      det[[G_kk(P0), beta(P0)], [G_kk(P1), beta(P1)]] = 7426553856 != 0    => G_kk not in C beta
+      with Lemma 4.9(c): [F223] != 0, [O_2] != 0 for so9.       AGREES.
+    Prop. 5.7 for so9 (G-invariant C^3_(a,b) = Sym(m) f, exact symmetrization, exact rank of d at random points):
+      (1,1): dim C^3 1, rank d_3 1 ; (2,0): 1, 1 ; (0,2): 1, 1 ; (2,2): 2, 2 ; (1,2): 1, 0.          AGREES with the table.
+
+
+====================================================================================================
+2. Statements against the verifier reports
+====================================================================================================
+
+  Prop 1.1, 1.2, 1.4; Thms 2.1-2.3, Prop 2.4     run-1 engine / twoloop-universal, normalization a1, b1-b4      match
+  DS 1.3 (U(2))                                    not verified by any verifier; re-derived here:
+                                                   sum_i iota_{d zb'_i} d_{z'_i} = iota^T (g^T gbar)^{-1} d = sum_i iota_{d zb_i} d_{z_i},
+                                                   g^T gbar = (g^dagger g)^T = 1; |gz| = |z|.                       correct
+  Thm 3.1-3.3, Prop 3.4, 3.5, Cor 3.8, Prop 3.9    h1 A, B, B4, C, H1-flagship-false, chars, O2, J1 confirmed        match
+  Prop 3.6                                         h1 eta-scheme confirmed at kernel level only (gap G3)              see 3(c)
+  DS 3.7, 3.10, 4.1, 5.5, 6.11                     labelled as derived; matches verifier status (b4, oneloop unverified)
+  Prop 4.2, Thm 4.3, Prop 4.4, Thm 4.5             normalization b5, c1, d1, e1; own check 1a                       match
+  Thm 4.6, Prop 4.7                                run 1 c4, c5; simple-all a1 (E7, E8: random points mod p only)     match
+  Thm 4.8, Lemma 4.9, Thm 4.10, Prop 4.11          deform d6, simple-g s1-s9, simple-all a1-a3; own check 1d          match
+  Thm 4.13                                         simple-all b1-b4 confirmed                                         match
+  Prop 5.2-5.4, Thm 5.6, Prop 5.7, Prop 5.8-5.9     deform d2-d8, o3 b3, simple-all c1, c2                             match
+  Thm 5.10, 5.11                                   deform d9; simple-all c3 (so6 excluded in the paper: yes)          match
+  Prop 6.1-6.9                                     o3 a1, a2, b1, b2, c1, d1-d3, e1, f1, f2, g1, g2 confirmed; own 1b, 1c match
+  Thm 6.10                                         combination; rows follow from the cited statements                 see 5
+  Arithmetic rechecked: 64*240 = 15360; 64*48 = 3072; a^2 = -12N^2 eps c_O = -eps pi nu N^2/4 = eps U N^2/(256 pi^4);
+    a^2 eta_N + eps zeta = eps U ((N^2+4)/512 + N^2/2560) pi^{-4} = eps U (3N^2+10)/(1280 pi^4); i_3: (2N^2+5)/(30*64).
+
+  Status labels.  The status paragraph (Sec. 1) defines Proposition = proved in text or by certificates, each recomputed.
+    (i)  Prop 3.6 concludes that I[L], O[L], O are eta-invariant, while the text after it says the cut-offs and the limit
+         L -> 0 are not written out and no graph computation of eta_v O[L] was made.  The conclusion beyond the kernel
+         identities is a derived statement.
+    (ii) Prop 4.7 (E6, E7, E8) and the recomputation of Thm 4.10 (E7, E8) rest on polynomial-identity tests at random points
+         modulo primes; this is probabilistic and is not stated as such in Appendix A ("mod p" is defined, the random-point
+         character is not).
+
+
+====================================================================================================
+3. The H1 proof (Sec. 3)
+====================================================================================================
+
+  P1  cited (Williams Def. 2.5, Prop. 2.8, eq. (12); GW Def. 1.14, Lemma A.7).  The choice V = constant-coefficient densities
+      modulo constant-coefficient total derivatives is stated as a definition (line 320).  Correctly cited; the extension
+      "applies with the factor R" is an assertion.
+  P2  freeness of M^(k) over C[P]: C[p] = C[P] (x) Sym(U_0), S_k trivial on C[P].  Correct; Koszul complex of a regular
+      sequence on a free module has homology M/(P)M in top degree.
+  P3  finiteness: cost-0 generators c^a_{emptyset,0} are odd, so arity <= dim g + |cost|.  Correct.
+  P4  H(B_v) = C, H(L_0) = g[[z]], i^* quasi-isomorphism by the finite arity filtration on finite-dimensional slices.  Correct.
+  P5  iterated cones; K(D;C_g) = Lambda[eps_U] (x) K(D_z;C_g).  Correct.
+  P6  explicit cycles e^{-Theta} y; [[D_0,Theta],Theta] = 0 asserted without computation in the text (verifier re-derived;
+      computational representative tests 376/376).  Acceptable.
+  P7  characters pairwise distinct.  Correct.
+  P8  (a) eta acts on the T-index only: eta_v c_{T',alpha} = +-c_{T' u v, alpha}; span{c^a_T} = Lambda[eta] c^a_emptyset free;
+      shearing; S_k-invariants direct summands over the local ring Lambda[eta], hence free; V^eta = eta_U V and
+      ker eta_U = sum eta_v V for free Lambda[eta]-modules.  Correct.
+      (b) K-projectivity of M^(k) over U(t): stated in one line ("tensor powers by shearing").  The verifier marks it as
+      reasoned, not written out.  The dg-algebra quasi-isomorphism U(t) -> C[D_z] and the base change are correct.
+      (c)-(e) correct given (b).
+  P9  Cartan homotopy L_X = [Q, iota_X]; nontrivial isotypic parts acyclic for connected reductive G.  Correct.
+  Sources paragraph: Williams Lemma 2.29 / Cor. 2.30 are T = 0; the T = 1 statement is proved here, not cited.  Correct.
+
+  Gaps that affect the use of Sec. 3 in Secs. 5-6:
+  (a) Definition 5.1 requires I_k in V_ht.  Corollary 3.8 and DS 3.7 give O_n = psi_U(o) + sum_{w != 0} O_n^(w) with O_n^(w)
+      exact in V^eta.  The order-hbar^n equation in V then needs I_n to contain primitives of the O_n^(w), which have
+      w != 0 and are not in V_ht, unless O_n^(w) = 0 at the cochain level.  The latter follows from joint-dilation
+      equivariance of the L -> 0 obstruction (Prop. 3.5: under U(1)^2 x dilation only w = 0 has the character of O_n), which
+      the paper states is not proved.  As written, the existence statements of Thms 5.10, 6.7, 6.8, 6.10 "in the setting of
+      Def. 5.1" are proved for the classes, and for I_k in V_ht only under O_n^(w) = 0.
+  (b) If I_2 has a component outside V_ht, the vanishing of the b_1 = 1 graph with one I_2 vertex (Prop. 6.1, reflection
+      argument with tau-independent vertices) and the one-loop term Q_(1) are not covered (DS 3.10 covers only J_1).
+  (c) eta-equivariance of the scheme is shown at the level of operators and kernels (Prop. 3.6); I[L], O[L], O are not
+      treated (cut-offs, L -> 0).
+  (d) The global sign between {S_cl, .} and Q and the dictionary sign eps: eps = U_tree is checked (Prop. 5.4); U_tree = U is
+      DS 5.5.  Neither affects any class statement.
+  Verdict on H1: Theorems 3.1-3.3 are proved (one step, P8(b), compressed); the replacement of H1 by the eta-invariant form
+  is correct, and Prop. 3.4 correctly refutes the v1 hypothesis.  Items (a)-(c) are the remaining inputs between the
+  cochain results and the statements about quantizations.
+
+
+====================================================================================================
+4. Items of the previous report (referee/REFEREE.txt)
+====================================================================================================
+
+  Costello App. B description          handled (Sec. 3 'Sources', Sec. 7.2: e = 0 complex written, C[dz1,dz2][5] is e != 0)
+  Moyal normalization                   handled (after Prop. 5.8; Sec. 5 and 9.1 of 1610.04144)
+  H2 -> U(2)                            handled (Def. 5.1, DS 1.3); DS 1.3 is correct (Sec. 2 above)
+  vacuous 'arity 3'                     handled (removed; Prop. 3.4 shows arity 1, 2 classes outside V^eta)
+  qualify abstract and theorems         handled (N >= 3, kappa = tr, U(2), V_ht, orders, U, eps); abstract item (1) says
+                                        "the heat-kernel scheme satisfies them" although only the kernel-level statement
+                                        is shown (Sec. 3(c))
+  strengthen/scope Cor 4.9              handled (Thm 5.11, Prop. 5.7); own check 1d for so9
+  Prop 3.3 caveat                       handled (Scope paragraph after Prop. 4.4)
+  self-loops                            handled (Sec. 4.1 (ii))
+  C^x hypothesis of Thm 9.0.3           handled (Sec. 7.2)
+  internal status tags                  handled (no [verified]/[derived]/[sourced] left; grep empty)
+  code/data appendix                    partially: Appendix A is complete, but supplement/ contains only MANIFEST.txt;
+                                        the cited scripts use absolute sys.path entries and are not assembled
+  S2/S3 citations                       handled (no S2/S3/S4 in the text; rho_2, odd-b_1 vanishing, derivative rule derived)
+  minor: F4 value 162                   removed
+  minor: heat-edge sign row             explained (line 159)
+  scope: E6-E8, so_{N>=9}, sp_{2n>=8}   handled (Thms 4.10, 4.13, 5.11)
+
+
+====================================================================================================
+5. Physics statement (Thm 6.10) and novelty
+====================================================================================================
+
+  Proved, cochain level, all signs:  [o_2] = (pi nu/48)[F223] != 0 for every simple g != sl2 (Thm 4.13, probe varpi; closedness
+  of o_2 for g outside the computed list from DS 4.1), for sl_N, gl_N (N >= 3, kappa = tr); = 0 for sl2, gl1, gl2.
+  sl_N (N >= 3): q[aD] = a^2/(12N^2)[F223]; o_3 = a pi nu d(-((2N^2+5)/30) D3) exactly (own check 1c at N = 3), so [O_3] = 0
+  independently of U, eps, sign a and the relative sign; i_2, i_3 unique in the G-invariant complex (C^2 = 0, H^3 = 0 at
+  (2,2), (3,3)).  gl_N: [O_3] = 0 for SL2-invariant I_2 (formal N, identities valid at every N).
+  Simple g != sl2 with dim(g^{*(x)3})^g = 1: no closed J_1 in V_ht cancels [O_2] (Prop. 5.7 universal; own so9 rows).
+  The physics reading "U(2)-equivariant quantizations with V_ht vertices exist through hbar^3 for sl_N, gl_N (N >= 3) and
+  do not exist through hbar^2 for the listed simple g" follows from these statements together with: Sec. 3 (a)-(c);
+  the Wick rule of Prop. 4.4 (affects coefficients only, not the non-vanishing); Prop. 6.1 (vanishing graphs) for I_2 in V_ht.
+  Over R the sl_N solution needs eps U = +1 (DS 5.5, unverified); over C it exists for both signs.
+  The condition dim(g^{*(x)3})^g = 1 is verified for so_N, sp_N with N <= 40 and the exceptional algebras; for larger N the
+  no-go is stated as conditional (scope paragraph).  (Lambda^3 g^*)^g = C f holds for every simple g (H^3(g) = C), so the T'
+  case in the proof of Thm 4.13(iii) is vacuous.
+
+  Novelty.  lit/REPORT.txt (c9): no computation of the order-hbar^2 obstruction of 5d CS on R x C^2 found (INSPIRE citers of
+  2407.08667 (14) and 1610.04144 (75), full-text queries).  WW 2407.08667 abstract (v3, 13 Apr 2026): UV finiteness, odd-loop
+  vanishing for d' = 1, all-order vanishing for d' > 1; no two-loop computation.  Closed two-loop theta values at T = 1, H >= 1:
+  none found in published sources (lit, Sec. 7.6 of the paper).  The eta-invariant local cohomology at T = 1 (Thm 3.2) is the
+  T = 1 analogue of Williams Lemma 2.29 / Cor. 2.30 with the flatness step proved.  S1 (arXiv:2611.24160) exists (v1,
+  18 Nov 2026).  New relative to the literature checked: the two-loop obstruction class, its non-vanishing for all simple
+  g != sl2, its cancellation by J_1 = aD for sl_N, and the vanishing of the order-hbar^3 class.
+
+  Required before submission:
+  R1  Either show O_n^(w) = 0 for w != 0 (e.g. joint-dilation equivariance of the L -> 0 obstruction) or state Def. 5.1 with
+      I_k in V^eta, I_k = psi_U(i_k) + (positive-weight terms), and restrict Prop. 6.1 / Thms 5.10, 6.7, 6.8, 6.10 accordingly.
+  R2  Relabel the conclusion of Prop. 3.6 beyond the kernel identities (I[L], O[L], O) as a derived statement, and adjust
+      abstract item (1).
+  R3  Assemble supplement/ (scripts with relative paths) or remove the claim that the scripts are in supplement/.
+  R4  State in Appendix A that random-point identity tests modulo primes (C14 E6-E8, C18 E7, E8, C20) are probabilistic.
+  R5  For the no-go beyond N = 40: either cite a source for dim(g^{*(x)3})^g = 1 for all simple g not of type A_{n>=2}, or keep
+      the conditional statement (as now) also in the abstract.

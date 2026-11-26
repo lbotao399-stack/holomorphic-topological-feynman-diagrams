@@ -1,0 +1,48 @@
+{
+  "half_dimension": 13,
+  "labeled_positive_prism_powers": 67990131,
+  "finite_prism_orbits": 5677268,
+  "angular_classes": 2591953,
+  "native_finite_face_order": [
+    "23",
+    "02",
+    "03",
+    "13",
+    "12",
+    "04",
+    "24",
+    "34",
+    "14"
+  ],
+  "period_columns": [
+    "1",
+    "zeta(3)",
+    "zeta(5)"
+  ],
+  "uncompressed_sha256": "0c68a44332452e6bb15c1627d03182df87a727ae2d3dff5f0e7e640788ef9f0d",
+  "convergent_five_and_seven_term_identities_verified_over_rationals": 41235143,
+  "positive_lower_bound_checks": 2591953,
+  "independent_half_dimension_six_face_identities": 3030,
+  "minimum": {
+    "powers": [
+      4,
+      6,
+      7,
+      6,
+      7,
+      6,
+      5,
+      5,
+      6
+    ],
+    "period": [
+      "1336027223249447/189870396374563946496000000000",
+      "51181631191/2719497864739848192000000",
+      "-705547/24666647299227648000"
+    ],
+    "strict_bounds_times_10_to_60": [
+      34854172321832909061656661637,
+      34854172321832909061656661638
+    ]
+  }
+}

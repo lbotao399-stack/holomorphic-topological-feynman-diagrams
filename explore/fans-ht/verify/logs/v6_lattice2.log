@@ -1,0 +1,8 @@
+lattice n=2 lam=[1.0, 0.0, 1.0] h=0.20 X=3.20 alpha=2.0 (33^4 nodes, 172690 with max/min t > e^32 skipped): K = 1.047489938373, exact 1.047197551197, rel.diff 2.79e-04 (2 s)
+lattice n=2 lam=[1.0, 0.0, 1.0] h=0.15 X=3.20 alpha=2.0 (43^4 nodes, 406750 with max/min t > e^32 skipped): K = 1.047229838658, exact 1.047197551197, rel.diff 3.08e-05 (6 s)
+lattice n=2 lam=[1.0, 0.0, 1.0] h=0.10 X=3.20 alpha=2.0 (65^4 nodes, 2286498 with max/min t > e^32 skipped): K = 1.047192793907, exact 1.047197551197, rel.diff 4.54e-06 (32 s)
+lattice n=2 lam=[1.0, 0.0, 1.0] h=0.10 X=3.60 alpha=2.0 (73^4 nodes, 11205126 with max/min t > e^32 skipped): K = 1.047198594342, exact 1.047197551197, rel.diff 9.96e-07 (39 s)
+lattice n=2 lam=[3.0, -2.0, 5.0] h=0.20 X=3.20 alpha=2.0 (33^4 nodes, 172690 with max/min t > e^32 skipped): K = 15.712349075599, exact 15.707963267949, rel.diff 2.79e-04 (2 s)
+lattice n=2 lam=[3.0, -2.0, 5.0] h=0.15 X=3.20 alpha=2.0 (43^4 nodes, 406750 with max/min t > e^32 skipped): K = 15.708447579876, exact 15.707963267949, rel.diff 3.08e-05 (6 s)
+lattice n=2 lam=[3.0, -2.0, 5.0] h=0.10 X=3.20 alpha=2.0 (65^4 nodes, 2286498 with max/min t > e^32 skipped): K = 15.707891908598, exact 15.707963267949, rel.diff 4.54e-06 (33 s)
+lattice n=2 lam=[3.0, -2.0, 5.0] h=0.10 X=3.60 alpha=2.0 (73^4 nodes, 11205126 with max/min t > e^32 skipped): K = 15.707978915134, exact 15.707963267949, rel.diff 9.96e-07 (42 s)

@@ -1,0 +1,4 @@
+q=9 unknowns 223549 rows 2358333 {'T': 2170308, 'D': 0, 'I': 0, 'B': 86957, 'S': 101068}  548.0s  maxrss 2.78 GB
+rank 223549 of 223549 unknowns, determined 223549  3039.6s
+prism q=9: determined 223549 of 223549 (3587.8s, maxrss 3.17 GB)
+  written /Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/assembly/tables/prism_q9.json

@@ -1,0 +1,9 @@
+q=3 (1, 1, 2, 2, 2, 2, 2, 2, 2, 2) [T1]: tower EQUAL ; reference (graphical 6 (6 plans); fiveloop 5) {'z3': Fraction(5, 3), 'z5': Fraction(-5, 3)}
+q=3 (1, 2, 2, 2, 2, 2, 2, 1, 2, 2) [T2]: tower EQUAL ; reference (fiveloop 5 (Y->K33+e)) {'z3': Fraction(-2, 1), 'z5': Fraction(5, 2)}
+q=7 (4, 2, 5, 5, 5, 6, 5, 2, 5, 3) [T1]: tower EQUAL ; reference (graphical 7 / symmetry 3.3) {'1': Fraction(3251321, 64665216000), 'z3': Fraction(52643, 449064000), 'z5': Fraction(-23, 124740)}
+q=8 (5, 5, 6, 1, 6, 4, 5, 6, 5, 5) [T1]: tower EQUAL ; reference (graphical 7 / symmetry 3.3) {'1': Fraction(105943, 1569209241600), 'z3': Fraction(-17, 302702400)}
+q=8 (4, 4, 6, 7, 6, 1, 5, 5, 5, 5) [T1]: tower EQUAL ; reference (graphical 7 / symmetry 3.3) {'1': Fraction(-62311, 224172748800), 'z3': Fraction(1, 4324320)}
+q=8 (5, 6, 4, 1, 6, 5, 6, 7, 2, 6) [T1]: tower EQUAL ; reference (graphical 7) {'1': Fraction(263371, 7472424960000), 'z3': Fraction(-1, 34594560)}
+q=8 (3, 3, 7, 5, 5, 4, 7, 3, 5, 6) [T1]: tower EQUAL ; reference (graphical 7) {'1': Fraction(-8711086259, 3923023104000), 'z3': Fraction(-26946407, 4540536000), 'z5': Fraction(5689, 630630)}
+q=8 (2, 5, 7, 6, 6, 5, 4, 7, 4, 2) [T1]: tower EQUAL ; reference (graphical 7) {'1': Fraction(378433667, 4707627724800), 'z3': Fraction(21719, 100900800), 'z5': Fraction(-5, 15288)}
+q=8 (5, 5, 7, 1, 7, 2, 7, 6, 4, 4) [T1]: tower EQUAL ; reference (graphical 7) {'1': Fraction(-735555239, 201180672000), 'z3': Fraction(-17797783, 1816214400), 'z5': Fraction(3755, 252252)}

@@ -1,0 +1,3 @@
+q=8 unknowns 19807 rows 235343 {'T': 0, 'D': 173306, 'I': 53892, 'B': 8145, 'S': 0}  522.6s
+rank 19807 of 19807 unknowns, determined 19807  225.2s
+K33 q=8: 19807 orbits, 748.3s, maxrss 0.95 GB

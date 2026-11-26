@@ -1,0 +1,39 @@
+{
+  "half_dimension": 13,
+  "positive_orbits": 1386282,
+  "interior_orbits": 247912,
+  "boundary_orbits": 378937,
+  "prism_cuts": 187418,
+  "wheel_cuts": 191519,
+  "equations": 1511084,
+  "channel_basis": [
+    "1",
+    "zeta(3)",
+    "zeta(5)"
+  ],
+  "table_sha256": {
+    "nodes": "9481428b21b281989dd48cdcfb710bd00f3f421dbb068ff1819b7ef81d4d349e",
+    "wheel": "24aca44a57093db351a14d4d046860de92af8b3d41b3e0d7f144a2968f3a0bad",
+    "boundary": "8102438ecff088ee55bbc9dddc2f64dab3956327c3ba1ec2eff5c32cb719e1d1",
+    "channel0": "852df2c1ecd18724a5ad9ed05ca83f58914c113f8566dc86c3306b9000bedda4",
+    "channel1": "d4080db4746926e2e6d4c49825a5868c4a826389ed6815b9e1e90b2706456eda",
+    "channel2": "8d562d943ec5189de1cc8aca08d95bc19b8550cda5d32996013d2f9343dcad97"
+  },
+  "archive_sha256": "315b857aeaf2cbde63481c17d96597fab081c5ce4395c360c2096b9bd30648e3",
+  "completion": {
+    "extra_positive": 950952,
+    "extra_contracted": 780775,
+    "sha256": "87f99eb76d97b1b4f3af15dd0ed407b0e85876c0c7c37403ae8ed9fc25033483",
+    "positive_orbits": 1386282,
+    "contracted_orbits": 972294,
+    "raw_prism_charts": 29574,
+    "canonical_prism_charts": 23323,
+    "canonical_scalar_wheels": 591652,
+    "supplementary_scalar_classes": 1228,
+    "triangular_steps": 1411213,
+    "exact_identities": 6983701,
+    "positive_only_identities": 3983873,
+    "positive_stars_after_unit_pivots": 5256,
+    "direct_scalar_anchors": 1309
+  }
+}

@@ -1,0 +1,37 @@
+closed one-handle formula vs reduced P_{n+1,1}, n=2..300: True
+h=0: unmarked from cores == e_(2h+1)(1..m)/C(m+1,2) for m=1..150: True
+h=1: unmarked from cores == e_(2h+1)(1..m)/C(m+1,2) for m=1..150: True
+h=2: unmarked from cores == e_(2h+1)(1..m)/C(m+1,2) for m=1..150: True
+h=3: unmarked from cores == e_(2h+1)(1..m)/C(m+1,2) for m=1..150: True
+h=1 parity=0: degree<=4 fit verified on m<84: P True, P-B True; quasi-polynomial valid from m>=3
+   leading coeff of P (m^4) = 1/24, claim 1/(2^2(2h+1)!) = 1/24
+   coeff of P-B: m^4 -> 0, m^3 -> 1/6, claim 4h/(2^{2h}(2h+1)!) = 1/6
+h=1 parity=1: degree<=4 fit verified on m<84: P True, P-B True; quasi-polynomial valid from m>=2
+   leading coeff of P (m^4) = 1/24, claim 1/(2^2(2h+1)!) = 1/24
+   coeff of P-B: m^4 -> 0, m^3 -> 1/6, claim 4h/(2^{2h}(2h+1)!) = 1/6
+h=2 parity=0: degree<=8 fit verified on m<88: P True, P-B True; quasi-polynomial valid from m>=5
+   leading coeff of P (m^8) = 1/1920, claim 1/(2^4(2h+1)!) = 1/1920
+   coeff of P-B: m^8 -> 0, m^7 -> 1/240, claim 4h/(2^{2h}(2h+1)!) = 1/240
+h=2 parity=1: degree<=8 fit verified on m<88: P True, P-B True; quasi-polynomial valid from m>=4
+   leading coeff of P (m^8) = 1/1920, claim 1/(2^4(2h+1)!) = 1/1920
+   coeff of P-B: m^8 -> 0, m^7 -> 1/240, claim 4h/(2^{2h}(2h+1)!) = 1/240
+h=3 parity=0: degree<=12 fit verified on m<92: P True, P-B True; quasi-polynomial valid from m>=7
+   leading coeff of P (m^12) = 1/322560, claim 1/(2^6(2h+1)!) = 1/322560
+   coeff of P-B: m^12 -> 0, m^11 -> 1/26880, claim 4h/(2^{2h}(2h+1)!) = 1/26880
+h=3 parity=1: degree<=12 fit verified on m<92: P True, P-B True; quasi-polynomial valid from m>=6
+   leading coeff of P (m^12) = 1/322560, claim 1/(2^6(2h+1)!) = 1/322560
+   coeff of P-B: m^12 -> 0, m^11 -> 1/26880, claim 4h/(2^{2h}(2h+1)!) = 1/26880
+x=1.0: sinh(x/2)/(x/2) = 1.04219061098749, 2(cosh(x/2)-sinh(x/2)/(x/2)) = 0.170870708437772
+   N=      1000 n=    32 n^2/N=1.024  sum_h P/N^2h = 1.05306025619 (diff 0.0109, (n+1)*diff 0.358698)   m*sum(P-B)/N^2h = 0.2025894557 (diff 0.0317)
+   N=     10000 n=   100 n^2/N=1.0  sum_h P/N^2h = 1.04477183436 (diff 0.00258, (n+1)*diff 0.260704)   m*sum(P-B)/N^2h = 0.1777585621 (diff 0.00689)
+   N=    100000 n=   316 n^2/N=0.99856  sum_h P/N^2h = 1.04287209441 (diff 0.000681, (n+1)*diff 0.21603)   m*sum(P-B)/N^2h = 0.1725218784 (diff 0.00165)
+   N=   1000000 n=  1000 n^2/N=1.0  sum_h P/N^2h = 1.04244454091 (diff 0.000254, (n+1)*diff 0.254184)   m*sum(P-B)/N^2h = 0.1715518148 (diff 0.000681)
+   N=  10000000 n=  3162 n^2/N=0.9998244  sum_h P/N^2h = 1.04225578077 (diff 6.52e-5, (n+1)*diff 0.206132)   m*sum(P-B)/N^2h = 0.1710242456 (diff 0.000154)
+   N= 100000000 n= 10000 n^2/N=1.0  sum_h P/N^2h = 1.04221595266 (diff 2.53e-5, (n+1)*diff 0.253442)   m*sum(P-B)/N^2h = 0.1709385896 (diff 6.79e-5)
+x=2.0: sinh(x/2)/(x/2) = 1.1752011936438, 2(cosh(x/2)-sinh(x/2)/(x/2)) = 0.735758882342885
+   N=      1000 n=    45 n^2/N=2.025  sum_h P/N^2h = 1.20478067312 (diff 0.0296, (n+1)*diff 1.36066)   m*sum(P-B)/N^2h = 0.818679414 (diff 0.0829)
+   N=     10000 n=   141 n^2/N=1.9881  sum_h P/N^2h = 1.18050371059 (diff 0.0053, (n+1)*diff 0.752957)   m*sum(P-B)/N^2h = 0.7460208883 (diff 0.0103)
+   N=    100000 n=   447 n^2/N=1.99809  sum_h P/N^2h = 1.17721420318 (diff 0.00201, (n+1)*diff 0.901828)   m*sum(P-B)/N^2h = 0.7405776758 (diff 0.00482)
+   N=   1000000 n=  1414 n^2/N=1.999396  sum_h P/N^2h = 1.17583459267 (diff 0.000633, (n+1)*diff 0.89626)   m*sum(P-B)/N^2h = 0.7372656763 (diff 0.00151)
+   N=  10000000 n=  4472 n^2/N=1.9998784  sum_h P/N^2h = 1.17541223726 (diff 0.000211, (n+1)*diff 0.943998)   m*sum(P-B)/N^2h = 0.7362607875 (diff 0.000502)
+   N= 100000000 n= 14142 n^2/N=1.9999616  sum_h P/N^2h = 1.17526603153 (diff 6.48e-5, (n+1)*diff 0.917002)   m*sum(P-B)/N^2h = 0.7358871595 (diff 0.000128)

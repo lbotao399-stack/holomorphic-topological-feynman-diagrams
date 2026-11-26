@@ -1,0 +1,32 @@
+V1 su2 seed 0: S2 code 4, slot evaluation 4, equal True
+V1 su2 seed 1: S2 code 30, slot evaluation 30, equal True
+V1 su2 seed 2: S2 code 64/3, slot evaluation 64/3, equal True
+   S2 code compositions (su2): 8.9s; sizes 0 0 0 0 0
+V3 su2 seed 0 box*box     : S2 code 0, slot evaluation 0, equal (times +1): True  [36 histories]
+V3 su2 seed 0 A*Q0        : S2 code 0, slot evaluation 0, equal (times +1): True  [36 histories]
+V3 su2 seed 0 Q0*A        : S2 code 0, slot evaluation 0, equal (times +1): True  [24 histories]
+V3 su2 seed 0 B*Q0        : S2 code 0, slot evaluation 0, equal (times -1): True  [36 histories]
+V3 su2 seed 0 Q0*B        : S2 code 0, slot evaluation 0, equal (times -1): True  [24 histories]
+V3 su2 seed 1 box*box     : S2 code 0, slot evaluation 0, equal (times +1): True  [36 histories]
+V3 su2 seed 1 A*Q0        : S2 code 0, slot evaluation 0, equal (times +1): True  [36 histories]
+V3 su2 seed 1 Q0*A        : S2 code 0, slot evaluation 0, equal (times +1): True  [24 histories]
+V3 su2 seed 1 B*Q0        : S2 code 0, slot evaluation 0, equal (times -1): True  [36 histories]
+V3 su2 seed 1 Q0*B        : S2 code 0, slot evaluation 0, equal (times -1): True  [24 histories]
+V1 so5 seed 0: S2 code -128, slot evaluation -128, equal True
+V1 so5 seed 1: S2 code -124/3, slot evaluation -124/3, equal True
+V1 so5 seed 2: S2 code -56, slot evaluation -56, equal True
+V2 so5 A seed 0: S2 code 104933/27, slot evaluation (kernel I) 104933/27, I/J = +1: True  [S2 code 27.8s]
+V2 so5 A seed 1: S2 code 503/108, slot evaluation (kernel I) 503/108, I/J = +1: True  [S2 code 27.8s]
+V2 so5 B seed 0: S2 code -8852/3, slot evaluation (kernel I) 8852/3, I/J = -1: True  [S2 code 29.5s]
+V2 so5 B seed 1: S2 code -2165/18, slot evaluation (kernel I) 2165/18, I/J = -1: True  [S2 code 29.5s]
+V4 so5, O = gamma^1 gamma^2 b (random colour vectors), 8 test functionals:
+    <{Q0,Q^I_A}O> = -56976575/72, <{Q0,Q^I_B}O> = -905836, <Q_box^2 O> = 122196767/36
+    <{Q0,Q^I_A}O> = -101054755/36, <{Q0,Q^I_B}O> = -33571493/72, <Q_box^2 O> = 235681003/36
+    <{Q0,Q^I_A}O> = 4286075/18, <{Q0,Q^I_B}O> = -36572753/72, <Q_box^2 O> = 2158717/4
+    <{Q0,Q^I_A}O> = 242107570/9, <{Q0,Q^I_B}O> = 563712107/24, <Q_box^2 O> = -3627996881/36
+    <{Q0,Q^I_A}O> = -416946, <{Q0,Q^I_B}O> = -3879208/9, <Q_box^2 O> = 15263444/9
+    <{Q0,Q^I_A}O> = -2003302, <{Q0,Q^I_B}O> = 1040258/3, <Q_box^2 O> = 9939296/3
+    <{Q0,Q^I_A}O> = -3052039/18, <{Q0,Q^I_B}O> = -453519/4, <Q_box^2 O> = 10185749/18
+    <{Q0,Q^I_A}O> = 77184967/12, <{Q0,Q^I_B}O> = 53357647/6, <Q_box^2 O> = -61300087/2
+    rank [A|B] = 2, rank augmented = 2, solution (kappa_A, kappa_B) = {(1/2, 1/2)}  [4s]
+python3 validate_ops.py  61.69s user 2.79s system 86% cpu 1:14.90 total

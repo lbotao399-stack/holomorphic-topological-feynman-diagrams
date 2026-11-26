@@ -1,0 +1,16 @@
+so9: dim 36 ; nonzero f entries 504 ; Jacobi check: True
+== (1), (2) at 4 random points (exact)
+ point 0: F133+F223 == (49/2) beta: True ; F223 == 3 beta - (15/2) G_kk: True ; F223 = 219168, beta = -3264, G_kk = -30528
+ point 1: F133+F223 == (49/2) beta: True ; F223 == 3 beta - (15/2) G_kk: True ; F223 = -7982112, beta = -135264, G_kk = 1010176
+ point 2: F133+F223 == (49/2) beta: True ; F223 == 3 beta - (15/2) G_kk: True ; F223 = 1701864, beta = 60728, G_kk = -202624
+ point 3: F133+F223 == (49/2) beta: True ; F223 == 3 beta - (15/2) G_kk: True ; F223 = -9748416, beta = 352448, G_kk = 1440768
+== (3) rank certificates (exact 2x2 minors over the 4 points)
+ minor det[[F223(P0), beta(P0)], [F223(P1), beta(P1)]] = -55699153920  -> rank[beta|F223] = 2: True
+ minor det[[G_kk(P0), beta(P0)], [G_kk(P1), beta(P1)]] = 7426553856  -> rank[beta|G_kk] = 2: True
+ Killing-normalized a = -15/686 = (3/16) v1v2v3/t^3 with Vogel (v1,v2,v3,t) for so_N = (-2, 4, N-4, N-2): True ; a(so_N) = -3(N-4)/(2(N-2)^3) at N=9: -15/686
+== (4) Prop. 5.7 for so9: C^3_(a,b) = Sym(m) f; rank of d by exact minors at random points
+ (1,1): dim C^3 = 1  alternating: True  rank d_3 >= 1 (exact rank of the value matrix) -> Z^3 = 0: True
+ (2,0): dim C^3 = 1  alternating: True  rank d_3 >= 1 (exact rank of the value matrix) -> Z^3 = 0: True
+ (0,2): dim C^3 = 1  alternating: True  rank d_3 >= 1 (exact rank of the value matrix) -> Z^3 = 0: True
+ (2,2): dim C^3 = 2  alternating: True  rank d_3 >= 2 (exact rank of the value matrix) -> Z^3 = 0: True
+ (1,2): dim C^3 = 1  alternating: True  rank d_3 >= 0 (exact rank of the value matrix) -> Z^3 = 0: False

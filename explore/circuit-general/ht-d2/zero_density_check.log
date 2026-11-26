@@ -1,0 +1,27 @@
+tadpole(c=3,L=2)         lambda_q = 1 D at 4 random rational t: all zero
+tadpole(c=4,L=1)         lambda_q = 1 D at 4 random rational t: all zero
+tadpole(c=5,L=0)         lambda_q = 1 D at 4 random rational t: nonzero
+(A,(A,(A,(A,B))))        l0=2 lA=-2   D at 4 random rational t: all zero
+(A,(A,(A,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(A,(A,(B,(A,B))))        l0=2 lA=-2   D at 4 random rational t: all zero
+(A,(A,(B,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(A,(B,(A,(A,B))))        l0=2 lA=-2   D at 4 random rational t: all zero
+(A,(B,(A,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(A,(B,(B,(A,B))))        l0=2 lA=-2   D at 4 random rational t: all zero
+(A,(B,(B,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(A,((A,B),(A,B)))        l0=2 lA=-2   D at 4 random rational t: all zero
+(A,((A,B),(A,B)))        l0=2 lA=1    D at 4 random rational t: nonzero
+(B,(A,(A,(A,B))))        l0=2 lA=-2   D at 4 random rational t: nonzero
+(B,(A,(A,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(B,(A,(B,(A,B))))        l0=2 lA=-2   D at 4 random rational t: nonzero
+(B,(A,(B,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(B,(B,(A,(A,B))))        l0=2 lA=-2   D at 4 random rational t: nonzero
+(B,(B,(A,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(B,(B,(B,(A,B))))        l0=2 lA=-2   D at 4 random rational t: nonzero
+(B,(B,(B,(A,B))))        l0=2 lA=1    D at 4 random rational t: nonzero
+(B,((A,B),(A,B)))        l0=2 lA=-2   D at 4 random rational t: nonzero
+(B,((A,B),(A,B)))        l0=2 lA=1    D at 4 random rational t: nonzero
+((A,(A,B)),(A,B))        l0=2 lA=-2   D at 4 random rational t: nonzero
+((A,(A,B)),(A,B))        l0=2 lA=1    D at 4 random rational t: nonzero
+((B,(A,B)),(A,B))        l0=2 lA=-2   D at 4 random rational t: nonzero
+((B,(A,B)),(A,B))        l0=2 lA=1    D at 4 random rational t: nonzero

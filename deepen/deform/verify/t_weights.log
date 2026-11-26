@@ -1,0 +1,6 @@
+gl own W_tot == c4 W_tot: True
+  N-powers W_133: [0, 1, 2]  W_223: [0, 1]
+sl own W_tot == c4 W_tot: True
+sl own W_133 == c4: True
+sl own W_223 == c4: True
+  N-powers W_133: [0, 1, 2]  W_223: [0, 1]

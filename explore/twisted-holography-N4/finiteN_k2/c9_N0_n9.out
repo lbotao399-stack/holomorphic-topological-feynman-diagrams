@@ -1,0 +1,20 @@
+# k=2 N=0 x^9 p=2147483647 (501.8s)  H_g = {-8: 1}
+  g=-18: dimV_T=620 dimR=0 rankd=0 H=0
+  g=-17: dimV_T=3300 dimR=0 rankd=0 H=0
+  g=-16: dimV_T=10441 dimR=0 rankd=0 H=0
+  g=-15: dimV_T=26272 dimR=0 rankd=0 H=0
+  g=-14: dimV_T=56972 dimR=3 rankd=3 H=0
+  g=-13: dimV_T=108444 dimR=5 rankd=2 H=0
+  g=-12: dimV_T=182734 dimR=16 rankd=14 H=0
+  g=-11: dimV_T=273360 dimR=34 rankd=20 H=0
+  g=-10: dimV_T=360880 dimR=71 rankd=51 H=0
+  g=-9: dimV_T=413760 dimR=123 rankd=72 H=0
+  g=-8: dimV_T=402278 dimR=186 rankd=113 H=1
+  g=-7: dimV_T=321952 dimR=214 rankd=101 H=0
+  g=-6: dimV_T=205148 dimR=203 rankd=102 H=0
+  g=-5: dimV_T=100588 dimR=177 rankd=75 H=0
+  g=-4: dimV_T=36816 dimR=157 rankd=82 H=0
+  g=-3: dimV_T=9820 dimR=139 rankd=57 H=0
+  g=-2: dimV_T=1896 dimR=94 rankd=37 H=0
+  g=-1: dimV_T=268 dimR=67 rankd=30 H=0
+  g=0: dimV_T=30 dimR=30 rankd=0 H=0

@@ -1,0 +1,210 @@
+== sl2(Kac A1)  dim 3 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 4 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 2, generated dim 3 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 1, eqs 0) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 2, eqs 4) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 7, eqs 12)
+   W_133, W_223: nnz 15, 18 ; max |s^7 W| 8192 ; y.W = 0 for all generators, all entries: True ; Om nnz 12
+   entries (union over mu of nonzero keys) 18 ; nonzero mu components: F133 [0, 0, 0, 12, 12, 12], F223 [0, 0, 0, 12, 12, 12], beta [0, 0, 0, 12, 12, 12]
+   F133                   = c beta on all entries: c = 56 (form used), c_Killing = c / r^2 = 7/2
+   F223                   = c beta on all entries: c = -48 (form used), c_Killing = c / r^2 = -3
+   F133+F223              = c beta on all entries: c = 8 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       = c beta on all entries: c = -264 (form used), c_Killing = c / r^2 = -33/2
+   O2 flip: -3F133-2F223  = c beta on all entries: c = -72 (form used), c_Killing = c / r^2 = -9/2
+   time 0.0s (invariants 0.0s)
+== sl3(Kac A2)  dim 8 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 6 * form (all entries: True) ; s = 3
+   generators E_{+-alpha_i}: 4, generated dim 8 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 8, eqs 20) ; dim (S^3)^g nullity mod p = [1, 1] (unknowns 12, eqs 32) ; dim (T^3)^g nullity mod p = [2, 2] (unknowns 56, eqs 156)
+   W_133, W_223: nnz 346, 304 ; max |s^7 W| 236196 ; y.W = 0 for all generators, all entries: True ; Om nnz 252
+   entries (union over mu of nonzero keys) 336 ; nonzero mu components: F133 [0, 0, 0, 280, 280, 280], F223 [0, 0, 0, 280, 280, 280], beta [0, 0, 0, 252, 252, 252]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*944784 - -813564*0 = -1889568 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-944784 - 734832*0 = 1889568 (s^7 units)
+   F133+F223              = c beta on all entries: c = 18 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-4723920 - 3910356*0 = 9447840 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-944784 - 971028*0 = 1889568 (s^7 units)
+   time 0.0s (invariants 0.0s)
+== sl4(Kac A3)  dim 15 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 8 * form (all entries: True) ; s = 4
+   generators E_{+-alpha_i}: 6, generated dim 15 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 27, eqs 96) ; dim (S^3)^g nullity mod p = [1, 1] (unknowns 36, eqs 120) ; dim (T^3)^g nullity mod p = [2, 2] (unknowns 183, eqs 648)
+   W_133, W_223: nnz 1629, 1674 ; max |s^7 W| 2621440 ; y.W = 0 for all generators, all entries: True ; Om nnz 1104
+   entries (union over mu of nonzero keys) 1770 ; nonzero mu components: F133 [0, 0, 0, 1372, 1372, 1372], F223 [0, 0, 0, 1372, 1372, 1372], beta [0, 0, 0, 1104, 1104, 1104]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*9437184 - -8126464*0 = -18874368 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-9437184 - 7077888*0 = 18874368 (s^7 units)
+   F133+F223              = c beta on all entries: c = 32 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-47185920 - 38535168*0 = 94371840 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-9437184 - 10223616*0 = 18874368 (s^7 units)
+   time 0.0s (invariants 0.0s)
+== sl5(Kac A4)  dim 24 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 10 * form (all entries: True) ; s = 5
+   generators E_{+-alpha_i}: 8, generated dim 24 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 64, eqs 264) ; dim (S^3)^g nullity mod p = [1, 1] (unknowns 80, eqs 304) ; dim (T^3)^g nullity mod p = [2, 2] (unknowns 424, eqs 1704)
+   W_133, W_223: nnz 4600, 5040 ; max |s^7 W| 17187500 ; y.W = 0 for all generators, all entries: True ; Om nnz 3000
+   entries (union over mu of nonzero keys) 5232 ; nonzero mu components: F133 [0, 0, 0, 3920, 3920, 3920], F223 [0, 0, 0, 3920, 3920, 3920], beta [0, 0, 0, 3000, 3000, 3000]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*56250000 - -49062500*0 = -112500000 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-56250000 - 41250000*0 = 112500000 (s^7 units)
+   F133+F223              = c beta on all entries: c = 50 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-281250000 - 229687500*0 = 562500000 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-56250000 - 64687500*0 = 112500000 (s^7 units)
+   time 0.1s (invariants 0.0s)
+== so5(fold D3)  dim 10 ; form: restriction of the so6(Kac D3) Kac form to the fixed subalgebra ; Killing = 6 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 4, generated dim 10 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 12, eqs 30) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 16, eqs 46) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 80, eqs 228)
+   W_133, W_223: nnz 616, 590 ; max |s^7 W| 36864 ; y.W = 0 for all generators, all entries: True ; Om nnz 352
+   entries (union over mu of nonzero keys) 606 ; nonzero mu components: F133 [0, 0, 0, 452, 452, 452], F223 [0, 0, 0, 452, 452, 452], beta [0, 0, 0, 352, 352, 352]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -4*49152 - -76800*0 = -196608 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -4*-49152 - 67584*0 = 196608 (s^7 units)
+   F133+F223              = c beta on all entries: c = 18 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -4*-245760 - 365568*0 = 983040 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -4*-49152 - 95232*0 = 196608 (s^7 units)
+   time 0.0s (invariants 0.0s)
+== sp4(fold A3)  dim 10 ; form: restriction of the sl4(Kac A3) Kac form to the fixed subalgebra ; Killing = 6 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 4, generated dim 10 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 12, eqs 30) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 16, eqs 46) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 80, eqs 228)
+   W_133, W_223: nnz 616, 590 ; max |s^7 W| 36864 ; y.W = 0 for all generators, all entries: True ; Om nnz 352
+   entries (union over mu of nonzero keys) 606 ; nonzero mu components: F133 [0, 0, 0, 452, 452, 452], F223 [0, 0, 0, 452, 452, 452], beta [0, 0, 0, 352, 352, 352]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*49152 - -208896*0 = -786432 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-49152 - 172032*0 = 786432 (s^7 units)
+   F133+F223              = c beta on all entries: c = 18 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-245760 - 970752*0 = 3932160 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-49152 - 282624*0 = 786432 (s^7 units)
+   time 0.0s (invariants 0.0s)
+== so7(fold D4)  dim 21 ; form: restriction of the so8(Kac D4) Kac form to the fixed subalgebra ; Killing = 10 * form (all entries: True) ; s = 4
+   generators E_{+-alpha_i}: 6, generated dim 21 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 48, eqs 170) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 57, eqs 202) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 309, eqs 1116)
+   W_133, W_223: nnz 4051, 3936 ; max |s^7 W| 13107200 ; y.W = 0 for all generators, all entries: True ; Om nnz 2396
+   entries (union over mu of nonzero keys) 4032 ; nonzero mu components: F133 [0, 0, 0, 2976, 2976, 2976], F223 [0, 0, 0, 2976, 2976, 2976], beta [0, 0, 0, 2396, 2396, 2396]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*14155776 - -11468800*0 = -28311552 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-14155776 - 9830400*0 = 28311552 (s^7 units)
+   F133+F223              = c beta on all entries: c = 50 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-70778880 - 54067200*0 = 141557760 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-14155776 - 14745600*0 = 28311552 (s^7 units)
+   time 0.1s (invariants 0.0s)
+== sp6(fold A5)  dim 21 ; form: restriction of the sl6(Kac A5) Kac form to the fixed subalgebra ; Killing = 8 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 6, generated dim 21 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 48, eqs 170) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 57, eqs 202) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 309, eqs 1116)
+   W_133, W_223: nnz 4051, 3824 ; max |s^7 W| 53248 ; y.W = 0 for all generators, all entries: True ; Om nnz 2508
+   entries (union over mu of nonzero keys) 4032 ; nonzero mu components: F133 [0, 0, 0, 3088, 3088, 3088], F223 [0, 0, 0, 3088, 3088, 3088], beta [0, 0, 0, 2508, 2508, 2508]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*184320 - -274432*0 = -2949120 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-184320 - 208896*0 = 2949120 (s^7 units)
+   F133+F223              = c beta on all entries: c = 32 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-921600 - 1241088*0 = 14745600 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-184320 - 405504*0 = 2949120 (s^7 units)
+   time 0.1s (invariants 0.0s)
+== so8(Kac D4)  dim 28 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 12 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 8, generated dim 28 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 84, eqs 360) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 100, eqs 400) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 544, eqs 2280)
+   W_133, W_223: nnz 8388, 3240 ; max |s^7 W| 36864 ; y.W = 0 for all generators, all entries: True ; Om nnz 5232
+   entries (union over mu of nonzero keys) 8616 ; nonzero mu components: F133 [0, 0, 0, 6384, 6384, 6384], F223 [0, 0, 0, 2160, 2160, 2160], beta [0, 0, 0, 5232, 5232, 5232]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*147456 - -116736*0 = -294912 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-147456 - 98304*0 = 294912 (s^7 units)
+   F133+F223              = c beta on all entries: c = 72 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-737280 - 546816*0 = 1474560 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-147456 - 153600*0 = 294912 (s^7 units)
+   time 0.1s (invariants 0.1s)
+== G2(fold D4)  dim 14 ; form: restriction of the so8(Kac D4) Kac form to the fixed subalgebra ; Killing = 8 * form (all entries: True) ; s = 3
+   generators E_{+-alpha_i}: 4, generated dim 14 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 22, eqs 56) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 26, eqs 76) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 140, eqs 396)
+   W_133, W_223: nnz 1468, 1410 ; max |s^7 W| 3149280 ; y.W = 0 for all generators, all entries: True ; Om nnz 976
+   entries (union over mu of nonzero keys) 1458 ; nonzero mu components: F133 [0, 0, 0, 1148, 1148, 1148], F223 [0, 0, 0, 1148, 1148, 1148], beta [0, 0, 0, 976, 976, 976]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -24*1399680 - -11057472*0 = -33592320 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -24*-1399680 - 9377856*0 = 33592320 (s^7 units)
+   F133+F223              = c beta on all entries: c = 32 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -24*-6998400 - 51928128*0 = 167961600 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -24*-1399680 - 14416704*0 = 33592320 (s^7 units)
+   time 0.0s (invariants 0.0s)
+== F4(fold E6)  dim 52 ; form: restriction of the E6(Kac) Kac form to the fixed subalgebra ; Killing = 18 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 8, generated dim 52 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 236, eqs 996) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 252, eqs 1060) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 1456, eqs 6168)
+   W_133, W_223: nnz 39688, 38348 ; max |s^7 W| 276480 ; y.W = 0 for all generators, all entries: True ; Om nnz 25216
+   entries (union over mu of nonzero keys) 39660 ; nonzero mu components: F133 [0, 0, 0, 29096, 29096, 29096], F223 [0, 0, 0, 29096, 29096, 29096], beta [0, 0, 0, 25216, 25216, 25216]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*737280 - -970752*0 = -11796480 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-737280 - 638976*0 = 11796480 (s^7 units)
+   F133+F223              = c beta on all entries: c = 162 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-3686400 - 4190208*0 = 58982400 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-737280 - 1634304*0 = 11796480 (s^7 units)
+   time 0.7s (invariants 0.2s)
+== sl6(Kac A5)  dim 35 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 12 * form (all entries: True) ; s = 6
+   generators E_{+-alpha_i}: 10, generated dim 35 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 125, eqs 560) ; dim (S^3)^g nullity mod p = [1, 1] (unknowns 150, eqs 620) ; dim (T^3)^g nullity mod p = [2, 2] (unknowns 815, eqs 3540)
+   W_133, W_223: nnz 10159, 11518 ; max |s^7 W| 80621568 ; y.W = 0 for all generators, all entries: True ; Om nnz 6468
+   entries (union over mu of nonzero keys) 11838 ; nonzero mu components: F133 [0, 0, 0, 8692, 8692, 8692], F223 [0, 0, 0, 8692, 8692, 8692], beta [0, 0, 0, 6468, 6468, 6468]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*241864704 - -214990848*0 = -483729408 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-241864704 - 174680064*0 = 483729408 (s^7 units)
+   F133+F223              = c beta on all entries: c = 72 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-1209323520 - 994332672*0 = 2418647040 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-241864704 - 295612416*0 = 483729408 (s^7 units)
+   time 0.3s (invariants 0.1s)
+== so9(fold D5)  dim 36 ; form: restriction of the so10(Kac D5) Kac form to the fixed subalgebra ; Killing = 14 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 8, generated dim 36 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 124, eqs 510) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 140, eqs 562) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 784, eqs 3216)
+   W_133, W_223: nnz 14392, 14124 ; max |s^7 W| 200704 ; y.W = 0 for all generators, all entries: True ; Om nnz 8400
+   entries (union over mu of nonzero keys) 14364 ; nonzero mu components: F133 [0, 0, 0, 10392, 10392, 10392], F223 [0, 0, 0, 10392, 10392, 10392], beta [0, 0, 0, 8400, 8400, 8400]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*184320 - -144896*0 = -368640 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-184320 - 119808*0 = 368640 (s^7 units)
+   F133+F223              = c beta on all entries: c = 98 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-921600 - 674304*0 = 1843200 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-184320 - 195072*0 = 368640 (s^7 units)
+   time 0.3s (invariants 0.1s)
+== sp8(fold A7)  dim 36 ; form: restriction of the sl8(Kac A7) Kac form to the fixed subalgebra ; Killing = 10 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 8, generated dim 36 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 124, eqs 510) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 140, eqs 562) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 784, eqs 3216)
+   W_133, W_223: nnz 14392, 13740 ; max |s^7 W| 71680 ; y.W = 0 for all generators, all entries: True ; Om nnz 8784
+   entries (union over mu of nonzero keys) 14364 ; nonzero mu components: F133 [0, 0, 0, 10776, 10776, 10776], F223 [0, 0, 0, 10776, 10776, 10776], beta [0, 0, 0, 8784, 8784, 8784]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*221184 - -348160*0 = -3538944 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-221184 - 245760*0 = 3538944 (s^7 units)
+   F133+F223              = c beta on all entries: c = 50 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-1105920 - 1536000*0 = 17694720 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-221184 - 552960*0 = 3538944 (s^7 units)
+   time 0.3s (invariants 0.1s)
+== so10(Kac D5)  dim 45 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 16 * form (all entries: True) ; s = 4
+   generators E_{+-alpha_i}: 10, generated dim 45 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 190, eqs 890) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 215, eqs 950) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 1205, eqs 5520)
+   W_133, W_223: nnz 25225, 24708 ; max |s^7 W| 7340032 ; y.W = 0 for all generators, all entries: True ; Om nnz 14904
+   entries (union over mu of nonzero keys) 25188 ; nonzero mu components: F133 [0, 0, 0, 18232, 18232, 18232], F223 [0, 0, 0, 18232, 18232, 18232], beta [0, 0, 0, 14904, 14904, 14904]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*28311552 - -22282240*0 = -56623104 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-28311552 - 18087936*0 = 56623104 (s^7 units)
+   F133+F223              = c beta on all entries: c = 128 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-141557760 - 103022592*0 = 283115520 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-28311552 - 30670848*0 = 56623104 (s^7 units)
+   time 0.4s (invariants 0.2s)
+== sl7(Kac A6)  dim 48 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 14 * form (all entries: True) ; s = 7
+   generators E_{+-alpha_i}: 12, generated dim 48 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 216, eqs 1020) ; dim (S^3)^g nullity mod p = [1, 1] (unknowns 252, eqs 1104) ; dim (T^3)^g nullity mod p = [2, 2] (unknowns 1392, eqs 6372)
+   W_133, W_223: nnz 19374, 22440 ; max |s^7 W| 299769652 ; y.W = 0 for all generators, all entries: True ; Om nnz 12132
+   entries (union over mu of nonzero keys) 22920 ; nonzero mu components: F133 [0, 0, 0, 16600, 16600, 16600], F223 [0, 0, 0, 16600, 16600, 16600], beta [0, 0, 0, 12132, 12132, 12132]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*830131344 - -754365388*0 = -1660262688 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-830131344 - 592950960*0 = 1660262688 (s^7 units)
+   F133+F223              = c beta on all entries: c = 98 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-4150656720 - 3448998084*0 = 8301313440 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-830131344 - 1077194244*0 = 1660262688 (s^7 units)
+   time 0.5s (invariants 0.3s)
+== so11(fold D6)  dim 55 ; form: restriction of the so12(Kac D6) Kac form to the fixed subalgebra ; Killing = 18 * form (all entries: True) ; s = 4
+   generators E_{+-alpha_i}: 10, generated dim 55 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 255, eqs 1140) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 280, eqs 1216) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 1595, eqs 7068)
+   W_133, W_223: nnz 37039, 36554 ; max |s^7 W| 42467328 ; y.W = 0 for all generators, all entries: True ; Om nnz 21340
+   entries (union over mu of nonzero keys) 37002 ; nonzero mu components: F133 [0, 0, 0, 26396, 26396, 26396], F223 [0, 0, 0, 26396, 26396, 26396], beta [0, 0, 0, 21340, 21340, 21340]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*33030144 - -26148864*0 = -66060288 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-33030144 - 20840448*0 = 66060288 (s^7 units)
+   F133+F223              = c beta on all entries: c = 162 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-165150720 - 120127488*0 = 330301440 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-33030144 - 36765696*0 = 66060288 (s^7 units)
+   time 0.7s (invariants 0.3s)
+== sp10(fold A9)  dim 55 ; form: restriction of the sl10(Kac A9) Kac form to the fixed subalgebra ; Killing = 12 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 10, generated dim 55 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 255, eqs 1140) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 280, eqs 1216) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 1595, eqs 7068)
+   W_133, W_223: nnz 37039, 35690 ; max |s^7 W| 92160 ; y.W = 0 for all generators, all entries: True ; Om nnz 22204
+   entries (union over mu of nonzero keys) 37002 ; nonzero mu components: F133 [0, 0, 0, 27260, 27260, 27260], F223 [0, 0, 0, 27260, 27260, 27260], beta [0, 0, 0, 22204, 22204, 22204]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*258048 - -430080*0 = -4128768 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-258048 - 282624*0 = 4128768 (s^7 units)
+   F133+F223              = c beta on all entries: c = 72 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-1290240 - 1855488*0 = 20643840 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -16*-258048 - 724992*0 = 4128768 (s^7 units)
+   time 0.7s (invariants 0.3s)
+== so12(Kac D6)  dim 66 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 20 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 12, generated dim 66 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 360, eqs 1776) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 396, eqs 1860) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 2256, eqs 10908)
+   W_133, W_223: nnz 57640, 56826 ; max |s^7 W| 81920 ; y.W = 0 for all generators, all entries: True ; Om nnz 33480
+   entries (union over mu of nonzero keys) 57594 ; nonzero mu components: F133 [0, 0, 0, 41084, 41084, 41084], F223 [0, 0, 0, 41084, 41084, 41084], beta [0, 0, 0, 33480, 33480, 33480]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*294912 - -235520*0 = -589824 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-294912 - 184320*0 = 589824 (s^7 units)
+   F133+F223              = c beta on all entries: c = 200 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-1474560 - 1075200*0 = 2949120 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-294912 - 337920*0 = 589824 (s^7 units)
+   time 1.1s (invariants 0.4s)
+== E6(Kac)  dim 78 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 24 * form (all entries: True) ; s = 3
+   generators E_{+-alpha_i}: 12, generated dim 78 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 476, eqs 2400) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 512, eqs 2484) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 2952, eqs 14652)
+   W_133, W_223: nnz 93364, 92358 ; max |s^7 W| 1889568 ; y.W = 0 for all generators, all entries: True ; Om nnz 55872
+   entries (union over mu of nonzero keys) 93318 ; nonzero mu components: F133 [0, 0, 0, 66052, 66052, 66052], F223 [0, 0, 0, 66052, 66052, 66052], beta [0, 0, 0, 55872, 55872, 55872]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*10077696 - -5773680*0 = -20155392 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-10077696 - 4513968*0 = 20155392 (s^7 units)
+   F133+F223              = c beta on all entries: c = 288 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-50388480 - 26348976*0 = 100776960 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-10077696 - 8293104*0 = 20155392 (s^7 units)
+   time 1.8s (invariants 0.6s)
+== E7(Kac)  dim 133 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 36 * form (all entries: True) ; s = 2
+   generators E_{+-alpha_i}: 14, generated dim 133 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 1148, eqs 6090) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 1197, eqs 6202) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 7021, eqs 36876)
+   W_133, W_223: nnz 335659, 333812 ; max |s^7 W| 221184 ; y.W = 0 for all generators, all entries: True ; Om nnz 203892
+   entries (union over mu of nonzero keys) 335604 ; nonzero mu components: F133 [0, 0, 0, 233592, 233592, 233592], F223 [0, 0, 0, 233592, 233592, 233592], beta [0, 0, 0, 203892, 203892, 203892]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*1179648 - -669696*0 = -2359296 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-1179648 - 503808*0 = 2359296 (s^7 units)
+   F133+F223              = c beta on all entries: c = 648 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-5898240 - 3016704*0 = 11796480 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-1179648 - 1001472*0 = 2359296 (s^7 units)
+   time 6.9s (invariants 1.5s)

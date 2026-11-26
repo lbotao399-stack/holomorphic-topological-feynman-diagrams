@@ -1,0 +1,10 @@
+sl3 k=3 (all, 512 tuples): #taus 2, rank 2
+sl3 k=4 (all, 4096 tuples): #taus 9, rank 8
+sl3 k=5 (all, 32768 tuples): #taus 44, rank 32
+sl4 k=4 (random, 37 tuples): #taus 9, rank 9
+sl4 k=5 (random, 142 tuples): #taus 44, rank 43; antisymmetrizer relation vanishes on all 142 tuples: True; #perms - 1 = 43
+sl5 k=4 (random, 37 tuples): #taus 9, rank 9
+sl5 k=5 (random, 142 tuples): #taus 44, rank 44
+gl3 k=4 (random, 82 tuples): #taus 24, rank 23; antisymmetrizer relation vanishes on all 82 tuples: True; #perms - 1 = 23
+gl5 k=5 (random, 370 tuples): #taus 120, rank 120
+time 102.9s

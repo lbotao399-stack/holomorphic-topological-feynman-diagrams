@@ -1,0 +1,6 @@
+/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributeschanged in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+twistor4 #28: root relabel sign 1
+twistor4 #28 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '904739251/839808000', 'z3': '-287729/324000'} | reference {'1': '904739251/839808000', 'z3': '-287729/324000'} | equal True | kappa=1 | P_beta terms 12, moment monomials 49182, S^ periods 2697 | S data 15.5s, Gamma' 0.2s, moments 2.1s
+bulk3(3,4) #4: root relabel sign -1
+bulk3(3,4) #4 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '30999997/6046617600', 'z3': '-9947/2332800'} | reference {'1': '30999997/6046617600', 'z3': '-9947/2332800'} | equal True | kappa=1 | P_beta terms 12, moment monomials 25482, S^ periods 4503 | S data 15.6s, Gamma' 0.1s, moments 0.9s

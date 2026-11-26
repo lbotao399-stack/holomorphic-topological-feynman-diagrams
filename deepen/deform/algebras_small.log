@@ -1,0 +1,53 @@
+
+================ gl1 ================
+  [eval N=1 gl k=3] tensor entries 1, rank 1 (certified), relations 5
+  [eval N=1 gl k=4] tensor entries 1, rank 1 (certified), relations 23
+  [eval N=1 gl k=5] tensor entries 1, rank 1 (certified), relations 119
+  (a) weight (1, 1): dim C^2 = 0, dim C^3 = 1, rank d3 = 0, dim H^3 = dim Z^3 = 1
+  (a) weight (2, 0): dim C^2 = 0, dim C^3 = 0, rank d3 = 0, dim H^3 = dim Z^3 = 0
+  (a) weight (0, 2): dim C^2 = 0, dim C^3 = 0, rank d3 = 0, dim H^3 = dim Z^3 = 0
+  GL(2) J's ['D', 'S1', 'S0']: rank 1; rank Z^3(1,1) 1; rank of both 1 (J's span Z^3(1,1): True)
+  basis of H^3(1,1): ['D']
+  (c) dim C^4(2,2) = 1, rank d4 = 0, dim Z^4 = 1, dim B^4 = 0, dim H^4(2,2) = 1
+  [F_223] != 0: False;  H^4 basis: ['z0']
+  F_133 + F_223 exact: True
+  {D,D}: closed True, class {'z0': '0'}
+  (b) (1/2){J,J}, J = sum x_i ['D'] : {'z0': 0}
+  [F_223] = 0 at this N: [O_2] = 0, J_1 = 0 solves the order-hbar^2 equation
+  time 1s
+
+================ gl2 ================
+  [eval N=2 gl k=3] tensor entries 20, rank 5 (certified), relations 1
+  [eval N=2 gl k=4] tensor entries 70, rank 14 (certified), relations 10
+  [eval N=2 gl k=5] tensor entries 252, rank 42 (certified), relations 78
+  (a) weight (1, 1): dim C^2 = 0, dim C^3 = 4, rank d3 = 2, dim H^3 = dim Z^3 = 2
+  (a) weight (2, 0): dim C^2 = 0, dim C^3 = 2, rank d3 = 2, dim H^3 = dim Z^3 = 0
+  (a) weight (0, 2): dim C^2 = 0, dim C^3 = 2, rank d3 = 2, dim H^3 = dim Z^3 = 0
+  GL(2) J's ['D', 'S1', 'S0']: rank 2; rank Z^3(1,1) 2; rank of both 2 (J's span Z^3(1,1): True)
+  basis of H^3(1,1): ['D', 'S1']
+  (c) dim C^4(2,2) = 22, rank d4 = 14, dim Z^4 = 8, dim B^4 = 5, dim H^4(2,2) = 3
+  [F_223] != 0: False;  H^4 basis: ['z5', 'z6', 'z7']
+  F_133 + F_223 exact: True
+  {D,D}: closed True, class {'z5': '0', 'z6': '0', 'z7': '0'}
+  {D,S1}: closed True, class {'z5': '0', 'z6': '-4', 'z7': '0'}
+  {S1,S1}: closed True, class {'z5': '0', 'z6': '-8', 'z7': '0'}
+  (b) (1/2){J,J}, J = sum x_i ['D', 'S1'] : {'z5': 0, 'z6': -4*x1*(x0 + x1), 'z7': 0}
+  [F_223] = 0 at this N: [O_2] = 0, J_1 = 0 solves the order-hbar^2 equation
+  time 6s
+
+================ sl2 ================
+  [eval N=2 sl k=3] tensor entries 6, rank 1 (certified), relations 1
+  [eval N=2 sl k=4] tensor entries 19, rank 3 (certified), relations 6
+  [eval N=2 sl k=5] tensor entries 50, rank 6 (certified), relations 38
+  (a) weight (1, 1): dim C^2 = 0, dim C^3 = 1, rank d3 = 1, dim H^3 = dim Z^3 = 0
+  (a) weight (2, 0): dim C^2 = 0, dim C^3 = 1, rank d3 = 1, dim H^3 = dim Z^3 = 0
+  (a) weight (0, 2): dim C^2 = 0, dim C^3 = 1, rank d3 = 1, dim H^3 = dim Z^3 = 0
+  Z^3(1,1) = 0 and the GL(2) J's vanish at this N
+  basis of H^3(1,1): []
+  (c) dim C^4(2,2) = 5, rank d4 = 3, dim Z^4 = 2, dim B^4 = 2, dim H^4(2,2) = 0
+  [F_223] != 0: False;  H^4 basis: []
+  F_133 + F_223 exact: True
+  (b) (1/2){J,J}, J = sum x_i [] : {}
+  [F_223] = 0 at this N: [O_2] = 0, J_1 = 0 solves the order-hbar^2 equation
+  time 1s
+total 7s

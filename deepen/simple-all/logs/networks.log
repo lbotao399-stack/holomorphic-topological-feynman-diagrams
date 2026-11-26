@@ -1,0 +1,20 @@
+W133.kk0   vertices 6, simple graph False, triangle-free True, bipartite True : m3 = tr Om^3: multigraph; n3 = tr P Om^3: multigraph
+W133.kk1   vertices 6, simple graph True, triangle-free False, bipartite False : = - * m3 = tr Om^3 (12 isomorphisms, signs [-1])
+W133.kk2   vertices 6, simple graph True, triangle-free True, bipartite True : = ? * n3 = tr P Om^3 (72 isomorphisms, signs [-1, 1])
+W133.ff0   vertices 8, simple graph True, triangle-free False, bipartite False : no ladder isomorphism
+W133.ff1   vertices 8, simple graph True, triangle-free True, bipartite True : = - * m4 = tr Om^4 (48 isomorphisms, signs [-1])
+W133.ff2   vertices 8, simple graph True, triangle-free True, bipartite False : = - * n4 = tr P Om^4 (16 isomorphisms, signs [-1])
+W223.kk0   vertices 6, simple graph False, triangle-free False, bipartite False : m3 = tr Om^3: multigraph; n3 = tr P Om^3: multigraph
+W223.kk1   vertices 6, simple graph True, triangle-free False, bipartite False : = - * m3 = tr Om^3 (12 isomorphisms, signs [-1])
+W223.kk2   vertices 6, simple graph True, triangle-free False, bipartite False : = - * m3 = tr Om^3 (12 isomorphisms, signs [-1])
+W223.ff0   vertices 8, simple graph True, triangle-free False, bipartite False : no ladder isomorphism
+W223.ff1   vertices 8, simple graph True, triangle-free True, bipartite False : = + * n4 = tr P Om^4 (16 isomorphisms, signs [1])
+W223.ff2   vertices 8, simple graph True, triangle-free True, bipartite False : = + * n4 = tr P Om^4 (16 isomorphisms, signs [1])
+sl2(Kac A1): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+sl3(Kac A2): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+so5(fold D3): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+G2(fold D4): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+sp6(fold A5): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+so8(Kac D4): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+F4(fold E6): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True
+E6(Kac): direct dense float64 evaluation (integer-valued, rounded) of all 12 probe networks and 6 ladder networks = engine values: True

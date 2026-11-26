@@ -1,0 +1,9 @@
+  reference cores.kernel (whole graph) 0.3s
+  D_S numerator: 6 J-monomials, timing 62.3s
+D2 n3 K4[2,1,1,1,1,1] sources [[3, 4], [3, 3], [4, -1], [-2, 4]]: locality K = {'1': '1351/72'} | reference {'1': '1351/72'} | equal True | kappa=1 | 489 moment monomials, 224 K4 periods, 96.4s
+  reference cores.kernel (whole graph) 0.3s
+  D_S numerator: 6 J-monomials, timing 20.7s
+D2 n3 K4[2,1,1,1,1,1] sources [[3, -2], [-3, 3], [0, -2], [-3, 4]]: locality K = {'1': '-45/64'} | reference {'1': '-45/64'} | equal True | kappa=1 | 489 moment monomials, 224 K4 periods, 37.4s
+  reference cores.kernel (whole graph) 0.3s
+  D_S numerator: 6 J-monomials, timing 21.1s
+D2 n3 K4[2,1,1,1,1,1] sources [[-4, 2], [3, -2], [-4, 4], [-3, -4]]: locality K = {'1': '826/9'} | reference {'1': '826/9'} | equal True | kappa=1 | 489 moment monomials, 224 K4 periods, 36.8s

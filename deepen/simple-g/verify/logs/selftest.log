@@ -1,0 +1,9 @@
+transpose convention: True
+sl2   g = 4 (kappa = K/g), s = 2 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.0s)
+sl3   g = 6 (kappa = K/g), s = 3 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.0s)
+so5   g = 6 (kappa = K/g), s = 1 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.1s)
+sp4   g = 6 (kappa = K/g), s = 2 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.1s)
+G2    g = 8 (kappa = K/g), s = 3 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.2s)
+sl4   g = 8 (kappa = K/g), s = 4 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.2s)
+so7   g = 10 (kappa = K/g), s = 1 ; W_full = W_point (3 random 4-tuples, both graphs): True ; alt/beta tensors = pointwise: True ; (0.7s)
+arith stats: {'float': 98, 'int64': 0, 'object': 0, 'maxbound': 2621440.0}

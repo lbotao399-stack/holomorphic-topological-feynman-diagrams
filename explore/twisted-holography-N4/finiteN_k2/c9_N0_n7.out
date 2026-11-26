@@ -1,0 +1,16 @@
+# k=2 N=0 x^7 p=2147483647 (5.4s)  H_g = {}
+  g=-14: dimV_T=280 dimR=0 rankd=0 H=0
+  g=-13: dimV_T=1344 dimR=0 rankd=0 H=0
+  g=-12: dimV_T=3820 dimR=0 rankd=0 H=0
+  g=-11: dimV_T=8508 dimR=0 rankd=0 H=0
+  g=-10: dimV_T=15912 dimR=2 rankd=2 H=0
+  g=-9: dimV_T=25096 dimR=3 rankd=1 H=0
+  g=-8: dimV_T=33111 dimR=9 rankd=8 H=0
+  g=-7: dimV_T=35796 dimR=15 rankd=7 H=0
+  g=-6: dimV_T=30644 dimR=21 rankd=14 H=0
+  g=-5: dimV_T=19896 dimR=27 rankd=13 H=0
+  g=-4: dimV_T=9402 dimR=34 rankd=21 H=0
+  g=-3: dimV_T=3128 dimR=40 rankd=19 H=0
+  g=-2: dimV_T=728 dimR=34 rankd=15 H=0
+  g=-1: dimV_T=120 dimR=30 rankd=15 H=0
+  g=0: dimV_T=15 dimR=15 rankd=0 H=0

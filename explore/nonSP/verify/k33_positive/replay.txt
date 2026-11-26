@@ -1,0 +1,5 @@
+Cubic interpolation over all 4^9 integer time assignments passed.
+The averaged numerator has 10980 monomials in 175 graph-automorphism orbits.
+222 exact divergences give 399 positive orbit coefficients; minimum = 1103.
+Strict lower bound for the scalar = 6252279056460127/8925805535599677505536000
+Strict upper bound for the scalar = 6252279056460127/31603654656000

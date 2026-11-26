@@ -1,0 +1,12 @@
+# k=2 N=0 x^5 p=2147483647 (0.1s)  H_g = {}
+  g=-10: dimV_T=104 dimR=0 rankd=0 H=0
+  g=-9: dimV_T=420 dimR=0 rankd=0 H=0
+  g=-8: dimV_T=985 dimR=0 rankd=0 H=0
+  g=-7: dimV_T=1728 dimR=0 rankd=0 H=0
+  g=-6: dimV_T=2348 dimR=1 rankd=1 H=0
+  g=-5: dimV_T=2356 dimR=2 rankd=1 H=0
+  g=-4: dimV_T=1650 dimR=4 rankd=3 H=0
+  g=-3: dimV_T=768 dimR=8 rankd=5 H=0
+  g=-2: dimV_T=236 dimR=10 rankd=5 H=0
+  g=-1: dimV_T=48 dimR=12 rankd=7 H=0
+  g=0: dimV_T=7 dimR=7 rankd=0 H=0

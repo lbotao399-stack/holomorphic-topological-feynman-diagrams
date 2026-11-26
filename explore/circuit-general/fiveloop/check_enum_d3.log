@@ -1,0 +1,8 @@
+connected loopless cubic multigraphs on 2 vertices: 1  2-connected: 1
+connected loopless cubic multigraphs on 4 vertices: 2  2-connected: 2
+connected loopless cubic multigraphs on 6 vertices: 6  2-connected: 5
+connected loopless cubic multigraphs on 8 vertices: 20  2-connected: 16
+bulk3(3,5): 410 graphs, brute-force admissibility failures: 0
+twistor: 555 rooted graphs, admissibility failures: 0
+bulk3(3,4) by the n=5 code path: 50 (atlas: 50)
+twistor n=4: {'tree': 15, 'unicyclic': 95} (atlas: tree 15, unicyclic 95)

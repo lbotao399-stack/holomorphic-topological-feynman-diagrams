@@ -1,0 +1,4 @@
+D=2 n=3 graphs 3: tight (a)+(b), sources ignored: 3 | catalog.yd_reducible: 3 | graph_counts YD: 3 | with paired (c): 3 | 0.0s
+D=2 n=4 graphs 13: tight (a)+(b), sources ignored: 11 | catalog.yd_reducible: 11 | graph_counts YD: 11 | with paired (c): 11 | 0.4s
+D=2 n=5 graphs 70: tight (a)+(b), sources ignored: 57 | catalog.yd_reducible: 57 | graph_counts YD: 57 | with paired (c): 60 | 0.0s
+D=2 n=6 graphs 608: tight (a)+(b), sources ignored: 412 | catalog.yd_reducible: 412 | graph_counts YD: 412 | with paired (c): 454 | 1.4s

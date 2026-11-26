@@ -1,0 +1,13 @@
+ref(m=32,p=3) vs ref(m=28,p=4): max rel 6.5e-08
+p=2 m=8 max rel err 1.3e-03
+p=2 m=10 max rel err 2.8e-04
+p=2 m=12 max rel err 7.4e-05
+p=2 m=16 max rel err 8.2e-06
+p=3 m=8 max rel err 1.6e-02
+p=3 m=10 max rel err 2.3e-03
+p=3 m=12 max rel err 5.3e-04
+p=3 m=16 max rel err 2.0e-05
+p=4 m=8 max rel err 1.8e-01
+p=4 m=10 max rel err 4.0e-02
+p=4 m=12 max rel err 6.1e-03
+p=4 m=16 max rel err 5.7e-04

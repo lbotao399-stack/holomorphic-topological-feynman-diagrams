@@ -1,0 +1,20 @@
+order 3, so5, O = bbbb, jets {}, functionals ccccg1g2, F = 6, seed 2, P = 2147483647, mode joint, nmom 0
+  <hatQ[Q0] hatQ[G3.1] O>: [579556774, 492925256, 780256133, 1278411189, 899483674, 1577901700]   (histories 120, keys 5, colour 0s, total 1s)
+  <hatQ[Q0] hatQ[G3.2] O>: [1675933490, 441807512, 452286728, 1196740324, 1978707530, 287139664]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.3] O>: [1523912619, 1713381471, 2090929469, 690916785, 306669362, 747926197]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.4] O>: [1512216139, 511421547, 1935815454, 350542972, 229746739, 360366061]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G3.5] O>: [1610263819, 1179332536, 74761314, 1752986616, 502222153, 1396431114]   (histories 120, keys 5, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G2.1] O>: [1192968374, 286441175, 1000631695, 824911537, 1536408107, 520843152]   (histories 192, keys 8, colour 0s, total 1s)
+  <hatQ[G1.1] hatQ[G2.2] O>: [1410916308, 1831617073, 1013422450, 1120872763, 409350709, 779721504]   (histories 192, keys 8, colour 0s, total 1s)
+  <hatQ[G2.1] hatQ[G1.1] O>: [1778013038, 991639682, 159460176, 1485105281, 1974217384, 781746210]   (histories 216, keys 9, colour 0s, total 1s)
+  <hatQ[G2.2] hatQ[G1.1] O>: [1082176594, 110712080, 938568049, 71290046, 136493391, 1000820777]   (histories 216, keys 9, colour 0s, total 1s)
+  <hatQ[G3.1] hatQ[Q0] O>: [1003934004, 2130860983, 1284132155, 1026978513, 1294039519, 1567175841]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.2] hatQ[Q0] O>: [1917080075, 450166720, 1746183320, 2056592254, 296351217, 1607732427]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.3] hatQ[Q0] O>: [666118114, 248161307, 1848376877, 1296598489, 1309851511, 963672753]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.4] hatQ[Q0] O>: [750742868, 1083401015, 721002879, 280472545, 2084475365, 1300032271]   (histories 192, keys 1, colour 0s, total 0s)
+  <hatQ[G3.5] hatQ[Q0] O>: [894149370, 1070115344, 1970887213, 1494528330, 839392132, 114396954]   (histories 192, keys 1, colour 0s, total 0s)
+sum kappa kappa E (must vanish mod P): [0, 0, 0, 0, 0, 0]
+kappa_3 system: 6 equations, rank 5, augmented rank 5 (unknowns 5)
+solution: {'G3.1': '1/2', 'G3.2': '-1/8', 'G3.3': '1', 'G3.4': '-1/2', 'G3.5': '-1/2'}
+wick/Aut: {'G3.1': '1/2', 'G3.2': '-1/8', 'G3.3': '1', 'G3.4': '-1/2', 'G3.5': '-1/2'}
+total time 7s

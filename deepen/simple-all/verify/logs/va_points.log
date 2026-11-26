@@ -1,0 +1,414 @@
+sl2(mat)         p=1048573  d=3  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = -3 beta: True ; G_kk = 8 beta: True
+   F223          in C beta: all minors 0 (None)
+   F133          in C beta: all minors 0 (None)
+   -3F133+2F223  in C beta: all minors 0 (None)
+   -3F133-2F223  in C beta: all minors 0 (None)
+   G_kk          in C beta: all minors 0 (None)
+   time 0.0s
+sl3(mat)         p=1048573  d=8  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-2/3, -1/12): True
+   F223          in C beta: no (minor[3,4] = 634800 mod p)
+   F133          in C beta: no (minor[3,4] = 413773 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 28281 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 634800 mod p)
+   G_kk          in C beta: no (minor[3,4] = 770984 mod p)
+   time 0.0s
+sl4(mat)         p=1048573  d=15  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/8, -3/64): True
+   F223          in C beta: no (minor[3,4] = 252675 mod p)
+   F133          in C beta: no (minor[3,4] = 795898 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 214802 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 252675 mod p)
+   G_kk          in C beta: no (minor[3,4] = 901038 mod p)
+   time 0.0s
+sl5(mat)         p=1048573  d=24  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-6/25, -3/100): True
+   F223          in C beta: no (minor[3,4] = 827840 mod p)
+   F133          in C beta: no (minor[3,4] = 220733 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 993481 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 827840 mod p)
+   G_kk          in C beta: no (minor[3,4] = 367280 mod p)
+   time 0.0s
+sl6(mat)         p=1048573  d=35  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-1/6, -1/48): True
+   F223          in C beta: no (minor[3,4] = 947256 mod p)
+   F133          in C beta: no (minor[3,4] = 101317 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 541988 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 947256 mod p)
+   G_kk          in C beta: no (minor[3,4] = 668924 mod p)
+   time 0.1s
+sl7(mat)         p=1048573  d=48  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-6/49, -3/196): True
+   F223          in C beta: no (minor[3,4] = 449122 mod p)
+   F133          in C beta: no (minor[3,4] = 599451 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 148464 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 449122 mod p)
+   G_kk          in C beta: no (minor[3,4] = 366931 mod p)
+   time 0.2s
+so5(mat)         p=1048573  d=10  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-1, -1/18): True
+   F223          in C beta: no (minor[3,4] = 653051 mod p)
+   F133          in C beta: no (minor[3,4] = 395522 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 119536 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 653051 mod p)
+   G_kk          in C beta: no (minor[3,4] = 827958 mod p)
+   time 0.0s
+sp4(mat)         p=1048573  d=10  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-1, -1/18): True
+   F223          in C beta: no (minor[3,4] = 812898 mod p)
+   F133          in C beta: no (minor[3,4] = 235675 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 918771 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 812898 mod p)
+   G_kk          in C beta: no (minor[3,4] = 47858 mod p)
+   time 0.0s
+so6(mat)         p=1048573  d=15  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/8, -3/64): True
+   F223          in C beta: no (minor[3,4] = 457949 mod p)
+   F133          in C beta: no (minor[3,4] = 590624 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 192599 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 457949 mod p)
+   G_kk          in C beta: no (minor[3,4] = 366627 mod p)
+   time 0.0s
+so7(mat)         p=1048573  d=21  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/25, -9/250): True
+   F223          in C beta: no (minor[3,4] = 812996 mod p)
+   F133          in C beta: no (minor[3,4] = 235577 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 919261 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 812996 mod p)
+   G_kk          in C beta: no (minor[3,4] = 718400 mod p)
+   time 0.0s
+sp6(mat)         p=1048573  d=21  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-21/32, -15/512): True
+   F223          in C beta: no (minor[3,4] = 713207 mod p)
+   F133          in C beta: no (minor[3,4] = 335366 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 420316 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 713207 mod p)
+   G_kk          in C beta: no (minor[3,4] = 681810 mod p)
+   time 0.0s
+so8(mat)         p=1048573  d=28  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (0, -1/36): True
+   F223          in C beta: no (minor[3,4] = 774333 mod p)
+   F133          in C beta: no (minor[3,4] = 274240 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 725946 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 774333 mod p)
+   G_kk          in C beta: no (minor[3,4] = 435483 mod p)
+   time 0.1s
+G2(phi in so7)   p=1048573  d=14  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-7/24, -5/96): True
+   F223          in C beta: no (minor[3,4] = 450372 mod p)
+   F133          in C beta: no (minor[3,4] = 598201 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 154714 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 450372 mod p)
+   G_kk          in C beta: no (minor[3,4] = 580300 mod p)
+   time 0.0s
+so9(mat)         p=1048573  d=36  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (3/49, -15/686): True
+   F223          in C beta: no (minor[3,4] = 652143 mod p)
+   F133          in C beta: no (minor[3,4] = 396430 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 114996 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 652143 mod p)
+   G_kk          in C beta: no (minor[3,4] = 1003373 mod p)
+   time 0.1s
+sp8(mat)         p=1048573  d=36  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-12/25, -9/500): True
+   F223          in C beta: no (minor[3,4] = 261891 mod p)
+   F133          in C beta: no (minor[3,4] = 786682 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 260882 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 261891 mod p)
+   G_kk          in C beta: no (minor[3,4] = 130522 mod p)
+   time 0.1s
+so10(mat)        p=1048573  d=45  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (3/32, -9/512): True
+   F223          in C beta: no (minor[3,4] = 614495 mod p)
+   F133          in C beta: no (minor[3,4] = 434078 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 975329 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 614495 mod p)
+   G_kk          in C beta: no (minor[3,4] = 460528 mod p)
+   time 0.2s
+so11(mat)        p=1048573  d=55  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (1/9, -7/486): True
+   F223          in C beta: no (minor[3,4] = 407131 mod p)
+   F133          in C beta: no (minor[3,4] = 641442 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 987082 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 407131 mod p)
+   G_kk          in C beta: no (minor[3,4] = 793928 mod p)
+   time 0.3s
+sp10(mat)        p=1048573  d=55  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/8, -7/576): True
+   F223          in C beta: no (minor[3,4] = 66019 mod p)
+   F133          in C beta: no (minor[3,4] = 982554 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 330095 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 66019 mod p)
+   G_kk          in C beta: no (minor[3,4] = 409629 mod p)
+   time 0.3s
+so12(mat)        p=1048573  d=66  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (3/25, -3/250): True
+   F223          in C beta: no (minor[3,4] = 145331 mod p)
+   F133          in C beta: no (minor[3,4] = 903242 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 726655 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 145331 mod p)
+   G_kk          in C beta: no (minor[3,4] = 122435 mod p)
+   time 0.5s
+F4(so9+S16)      p=1048573  d=52  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (4/27, -5/324): True
+   F223          in C beta: no (minor[3,4] = 634021 mod p)
+   F133          in C beta: no (minor[3,4] = 414552 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 24386 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 634021 mod p)
+   G_kk          in C beta: no (minor[3,4] = 438930 mod p)
+   time 6.7s
+E6(FK)           p=1048573  d=78  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (5/24, -1/96): True
+   F223          in C beta: no (minor[3,4] = 586560 mod p)
+   F133          in C beta: no (minor[3,4] = 462013 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 835654 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 586560 mod p)
+   G_kk          in C beta: no (minor[3,4] = 313182 mod p)
+   time 0.6s
+E7(FK)           p=1048573  d=133  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (7/27, -1/162): True
+   F223          in C beta: no (minor[3,4] = 459497 mod p)
+   F133          in C beta: no (minor[3,4] = 589076 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 200339 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 459497 mod p)
+   G_kk          in C beta: no (minor[3,4] = 10169 mod p)
+   time 2.8s
+E8(FK)           p=1048573  d=248  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (22/75, -1/300): True
+   F223          in C beta: no (minor[3,4] = 924472 mod p)
+   F133          in C beta: no (minor[3,4] = 124101 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 428068 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 924472 mod p)
+   G_kk          in C beta: no (minor[3,4] = 530245 mod p)
+   time 19.0s
+sl2(mat)         p=1048571  d=3  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = -3 beta: True ; G_kk = 8 beta: True
+   F223          in C beta: all minors 0 (None)
+   F133          in C beta: all minors 0 (None)
+   -3F133+2F223  in C beta: all minors 0 (None)
+   -3F133-2F223  in C beta: all minors 0 (None)
+   G_kk          in C beta: all minors 0 (None)
+   time 0.0s
+sl3(mat)         p=1048571  d=8  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-2/3, -1/12): True
+   F223          in C beta: no (minor[3,4] = 666661 mod p)
+   F133          in C beta: no (minor[3,4] = 381910 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 187592 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 666661 mod p)
+   G_kk          in C beta: no (minor[3,4] = 388636 mod p)
+   time 0.0s
+sl4(mat)         p=1048571  d=15  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/8, -3/64): True
+   F223          in C beta: no (minor[3,4] = 31 mod p)
+   F133          in C beta: no (minor[3,4] = 1048540 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 155 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 31 mod p)
+   G_kk          in C beta: no (minor[3,4] = 698386 mod p)
+   time 0.0s
+sl5(mat)         p=1048571  d=24  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-6/25, -3/100): True
+   F223          in C beta: no (minor[3,4] = 509319 mod p)
+   F133          in C beta: no (minor[3,4] = 539252 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 449453 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 509319 mod p)
+   G_kk          in C beta: no (minor[3,4] = 848407 mod p)
+   time 0.0s
+sl6(mat)         p=1048571  d=35  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-1/6, -1/48): True
+   F223          in C beta: no (minor[3,4] = 34860 mod p)
+   F133          in C beta: no (minor[3,4] = 1013711 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 174300 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 34860 mod p)
+   G_kk          in C beta: no (minor[3,4] = 423862 mod p)
+   time 0.1s
+sl7(mat)         p=1048571  d=48  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-6/49, -3/196): True
+   F223          in C beta: no (minor[3,4] = 165363 mod p)
+   F133          in C beta: no (minor[3,4] = 883208 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 826815 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 165363 mod p)
+   G_kk          in C beta: no (minor[3,4] = 730565 mod p)
+   time 0.2s
+so5(mat)         p=1048571  d=10  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-1, -1/18): True
+   F223          in C beta: no (minor[3,4] = 511373 mod p)
+   F133          in C beta: no (minor[3,4] = 537198 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 459723 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 511373 mod p)
+   G_kk          in C beta: no (minor[3,4] = 232425 mod p)
+   time 0.0s
+sp4(mat)         p=1048571  d=10  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-1, -1/18): True
+   F223          in C beta: no (minor[3,4] = 16840 mod p)
+   F133          in C beta: no (minor[3,4] = 1031731 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 84200 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 16840 mod p)
+   G_kk          in C beta: no (minor[3,4] = 745451 mod p)
+   time 0.0s
+so6(mat)         p=1048571  d=15  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/8, -3/64): True
+   F223          in C beta: no (minor[3,4] = 103951 mod p)
+   F133          in C beta: no (minor[3,4] = 944620 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 519755 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 103951 mod p)
+   G_kk          in C beta: no (minor[3,4] = 578568 mod p)
+   time 0.0s
+so7(mat)         p=1048571  d=21  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/25, -9/250): True
+   F223          in C beta: no (minor[3,4] = 847481 mod p)
+   F133          in C beta: no (minor[3,4] = 201090 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 43121 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 847481 mod p)
+   G_kk          in C beta: no (minor[3,4] = 692502 mod p)
+   time 0.0s
+sp6(mat)         p=1048571  d=21  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-21/32, -15/512): True
+   F223          in C beta: no (minor[3,4] = 460274 mod p)
+   F133          in C beta: no (minor[3,4] = 588297 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 204228 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 460274 mod p)
+   G_kk          in C beta: no (minor[3,4] = 577117 mod p)
+   time 0.0s
+so8(mat)         p=1048571  d=28  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (0, -1/36): True
+   F223          in C beta: no (minor[3,4] = 4720 mod p)
+   F133          in C beta: no (minor[3,4] = 1043851 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 23600 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 4720 mod p)
+   G_kk          in C beta: no (minor[3,4] = 878651 mod p)
+   time 0.1s
+G2(phi in so7)   p=1048571  d=14  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-7/24, -5/96): True
+   F223          in C beta: no (minor[3,4] = 993344 mod p)
+   F133          in C beta: no (minor[3,4] = 55227 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 772436 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 993344 mod p)
+   G_kk          in C beta: no (minor[3,4] = 640930 mod p)
+   time 0.0s
+so9(mat)         p=1048571  d=36  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (3/49, -15/686): True
+   F223          in C beta: no (minor[3,4] = 403050 mod p)
+   F133          in C beta: no (minor[3,4] = 645521 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 966679 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 403050 mod p)
+   G_kk          in C beta: no (minor[3,4] = 441458 mod p)
+   time 0.1s
+sp8(mat)         p=1048571  d=36  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-12/25, -9/500): True
+   F223          in C beta: no (minor[3,4] = 195524 mod p)
+   F133          in C beta: no (minor[3,4] = 853047 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 977620 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 195524 mod p)
+   G_kk          in C beta: no (minor[3,4] = 205805 mod p)
+   time 0.1s
+so10(mat)        p=1048571  d=45  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (3/32, -9/512): True
+   F223          in C beta: no (minor[3,4] = 937088 mod p)
+   F133          in C beta: no (minor[3,4] = 111483 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 491156 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 937088 mod p)
+   G_kk          in C beta: no (minor[3,4] = 50718 mod p)
+   time 0.2s
+so11(mat)        p=1048571  d=55  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (1/9, -7/486): True
+   F223          in C beta: no (minor[3,4] = 582160 mod p)
+   F133          in C beta: no (minor[3,4] = 466411 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 813658 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 582160 mod p)
+   G_kk          in C beta: no (minor[3,4] = 325936 mod p)
+   time 0.3s
+sp10(mat)        p=1048571  d=55  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (-3/8, -7/576): True
+   F223          in C beta: no (minor[3,4] = 141136 mod p)
+   F133          in C beta: no (minor[3,4] = 907435 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 705680 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 141136 mod p)
+   G_kk          in C beta: no (minor[3,4] = 370192 mod p)
+   time 0.3s
+so12(mat)        p=1048571  d=66  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (3/25, -3/250): True
+   F223          in C beta: no (minor[3,4] = 644729 mod p)
+   F133          in C beta: no (minor[3,4] = 403842 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 77932 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 644729 mod p)
+   G_kk          in C beta: no (minor[3,4] = 99228 mod p)
+   time 0.5s
+F4(so9+S16)      p=1048571  d=52  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (4/27, -5/324): True
+   F223          in C beta: no (minor[3,4] = 346083 mod p)
+   F133          in C beta: no (minor[3,4] = 702488 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 681844 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 346083 mod p)
+   G_kk          in C beta: no (minor[3,4] = 13241 mod p)
+   time 6.8s
+E6(FK)           p=1048571  d=78  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (5/24, -1/96): True
+   F223          in C beta: no (minor[3,4] = 795668 mod p)
+   F133          in C beta: no (minor[3,4] = 252903 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 832627 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 795668 mod p)
+   G_kk          in C beta: no (minor[3,4] = 161555 mod p)
+   time 0.6s
+E7(FK)           p=1048571  d=133  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (7/27, -1/162): True
+   F223          in C beta: no (minor[3,4] = 863963 mod p)
+   F133          in C beta: no (minor[3,4] = 184608 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 125531 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 863963 mod p)
+   G_kk          in C beta: no (minor[3,4] = 546508 mod p)
+   time 2.8s
+E8(FK)           p=1048571  d=248  2 points x 6 coefficients
+   F133 + F223 = (1/2) beta (Killing): True
+   F223 = x beta + a G_kk with (x, a) = (22/75, -1/300): True
+   F223          in C beta: no (minor[3,4] = 453916 mod p)
+   F133          in C beta: no (minor[3,4] = 594655 mod p)
+   -3F133+2F223  in C beta: no (minor[3,4] = 172438 mod p)
+   -3F133-2F223  in C beta: no (minor[3,4] = 453916 mod p)
+   G_kk          in C beta: no (minor[3,4] = 139430 mod p)
+   time 19.4s

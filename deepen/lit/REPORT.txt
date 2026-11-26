@@ -1,0 +1,396 @@
+REPORT  deepen/lit   (Q4)                                              2026-11-21
+
+Sources and how they were read
+  WebFetch of arxiv.org/abs/<id>, arxiv.org/html/<id>, arxiv.org/pdf/<id>; the fetched PDFs
+  were converted locally with pdftotext and read as text. No source tarball was downloaded.
+  INSPIRE: https://inspirehep.net/api/literature (curl, JSON). Formulas below are transcribed
+  from PDF text layers (not from TeX). Quotation: one short phrase in the whole report (a4);
+  everything else is paraphrase or formula.
+
+  2407.08667  Wang-Williams      v3 13 Apr 2026 (also v1 11 Jul 2024, v2 27 Jul 2024 searched)
+              [HTML version stops inside Sec. 3.3.3, so the PDF was used]
+  1610.04144  Costello           v1 13 Oct 2016 (only version)
+  1303.2632   Costello           v2 3 Apr 2013
+  2107.06734  Gwilliam-Rabinovich-Williams  v1 14 Jul 2021
+  1809.02661  Williams           v2 24 Feb 2020
+  1810.06534  Gwilliam-Williams  v2 28 Mar 2019
+  1910.04120  Saberi-Williams    v3 4 Nov 2021
+  2111.03049  Raghavendran-Saberi-Williams  v1 4 Nov 2021
+  2002.07343  Oh-Zhou            v2 22 Jan 2021
+  2103.00963  Oh-Zhou            v2 30 Apr 2021
+  2408.15712  Ishtiaque-Jeong-Zhou  v2 18 Nov 2024
+  2408.15732  Ashwinkumar        v2 21 Aug 2026
+  1907.06495  Gaiotto-Oh         v2 25 Oct 2024
+  2512.04152  (Chiral holography) HTML, characters 0-200000 of 204283
+  2604.13439  Keller             abs page
+  2503.09558  Balduf-Hu          v1 12 Mar 2025
+  2406.12734  Brown-Hu-Panzer    v2 9 Jul 2026
+  S3 main.tex (local), Prop. prop-rho, eq-rho2.
+
+Files in this folder
+  REPORT.txt
+  inspire_citers.tsv            INSPIRE citers of 2407.08667 (recid 2806832) and 1610.04144 (recid 1491968)
+  code/koszul_check.py, code/koszul_check.log
+  code/rho2_dipole.py,  code/rho2_dipole.log
+
+
+===========================================================================================
+(a)  Wang-Williams 2407.08667 (v3; Adv. Math. 496 (2026) 110970)
+===========================================================================================
+
+a1  Theory (Sec. 2.2, eqs. (8), (9)).
+      alpha in Omega^*(R^{d'}) (x) Omega^{0,*}(C^d) (x) g[1],   d + d' odd,
+      S(alpha) = int d^d z ( 1/2 <alpha, d alpha> + 1/6 <alpha, [alpha, alpha]> ),
+      g with a nondegenerate, symmetric, invariant form; Z-graded only for d + d' = 3.
+    List item (3): d' = 1, d = 2. For g = gl_k a deformation making C^2 non-commutative exists;
+    it is Costello's theory [Cos16] = 1610.04144.
+
+a2  Gauge (Sec. 2.3).
+      Q = d_dR + dbar,   Q^GF = d*_dR + dbar*                  (text after (17)),
+      P_Phi = (1/2) Q^GF Phi                                     (17),
+      dbar* = -2 sum_i d_{z_i} iota_{d/d zbar_i},  d*_dR = -sum_i d_{x_i} iota_{d/d x_i},
+      Delta = [Q, Q^GF]                                          (21),
+      H(t,z,x) = (2^{d+d'} (pi t)^{d + d'/2})^{-1} exp(-(2 sum|z_i|^2 + sum x_i^2)/(4t)) d^d zbar d^{d'} x   (22),
+      Phi_L = int_0^L K_t dt (25),   P_{0<L} = int_0^L (dbar* (x) 1 + d*_dR (x) 1) K_t dt   (26),
+      heat-kernel RG flow and QME (27), (28).
+    The vanishing results are proved with this heat-kernel propagator.
+
+a3  Thm 1.1: the perturbative renormalization of a topological-holomorphic theory on
+    R^{d'} x C^d is UV finite to all orders.
+
+a4  Thm 1.2: if d' > 1, every classical perturbative topological-holomorphic theory on
+    R^{d'} x C^d is anomaly free and quantizes to all orders in hbar.
+    Text following Thm 1.2 (v3):
+      d' = 1: every such theory on R x C^d quantizes to first order, i.e. over C[[hbar]]/hbar^2;
+      the reader is referred to Prop. 3.23 for anomalies when d' >= 1;
+      topological-holomorphic Chern-Simons theory on R x C^2 with a Lie algebra g is expected
+      to have a two-loop anomaly: "suffers from a two-loop anomaly" (Sec. 1, after Thm 1.2).
+    This is stated as an expectation. No reference is cited and no computation is given.
+    The only condition on g is the Sec. 2.2 hypothesis (nondegenerate invariant form).
+    The theory named is the hybrid CS theory (9) with the ordinary bracket, i.e. the
+    commutative theory. The gl_k non-commutative deformation (item (3)) is not mentioned in
+    that sentence.
+
+a5  Prop. 3.23. (Gamma, n) connected, decorated, Laman, no self-loops, d' >= 1,
+    h_1(Gamma) odd  =>  O_(Gamma,n)(Phi) = 0.
+    Proof chain: r = reflection of R^{d'} in a hyperplane through x_{|Gamma_0|};
+      r^* W~((Gamma,n),Phi) = (-1)^{|Gamma_1|} W~((Gamma,n), r^*Phi),
+      orientation factor (-1)^{1-|Gamma_0|},
+      O(Phi) = (-1)^{|Gamma_1|-|Gamma_0|+1} O(r^*Phi) = (-1)^{h_1} O(r^*Phi) = (-1)^{h_1} O(Phi),
+      where the last step uses Prop. 3.21: O is local and depends only on Phi and its
+      holomorphic derivatives on the diagonal, and these agree for Phi and r^*Phi.
+
+a6  Anomaly integrals.
+      Prop. 3.20, eq. (69): (dbar + d_dR) W_0^L((Gamma,n), -) = (-1)^{|Gamma_1|} (boundary integral);
+      Sec. 3.3.2: O_(Gamma,n)(Phi) = int_{dC_{Gamma_1}} t*_square int W~((Gamma,n), Phi);
+      Prop. 3.21: non-Laman => O = 0; Laman => (70), O = int (D Phi)|_diagonal, where D has
+      constant coefficients, contains only holomorphic derivatives, and has
+      order <= sum n_{i,e} + |Gamma_1| - 1.
+      Laman (Def. A.10): (d+d')|Gamma'_0| >= (d+d'-1)|Gamma'_1| + d+d'+1   (73),
+                         equality for Gamma                                (74).
+      At d + d' = 3, (74) reads 3|V| = 2|I| + 4; theta(1,3,3), theta(2,2,3): |V| = 6, |I| = 7 satisfy it.
+
+a7  Lemma 3.24 (d = 0, d' = 2) and Prop. 3.26 (d' >= 2, |Gamma_0| >= 3) give O = 0.
+    Thm 3.27: d' > 1 => QME holds.
+    Cor. 3.28: hybrid CS with any g, d' > 1, quantizes to all orders. The paper's list is
+    (1),(2),(6),(7),(8),(9); this excludes (3) (d'=1, d=2), (4) (d'=0) and (5) (d'=1, d=4).
+
+a8  The text has no cohomological description of the obstruction (searched for Chevalley,
+    cohomolog, cocycle: only the grading remark of Sec. 2.1). Oloc(E) is defined at (14).
+
+a9  Version history. v1 and v2 have the title "Factorization algebras from topological-holomorphic
+    field theories". Searching the v1 and v2 texts for two-loop, expect and "first-order in"
+    finds neither the d' = 1 first-order sentence nor the two-loop expectation; both are new
+    in v3. Numbering: v1 Thm 3.26 / Cor. 3.27 correspond to v3 Thm 3.27 / Cor. 3.28;
+    Prop. 3.23 has the same number in v1 and v3.
+
+
+===========================================================================================
+(b)  Costello 1610.04144 (v1)
+===========================================================================================
+
+b1  Prop. 1.2.1: M-theory in the twisted Omega-background on TN_k x R^3 x C^2 is equivalent to
+    non-commutative 5d CS on R x C^2 with gauge group GL(k+1, C).
+    Action (Sec. 1.2, unnumbered):
+      S(A) = (1/2delta) int Tr(A dA) dz1dz2 + (1/3delta) int Tr A^3 dz1dz2
+           + int Tr sum_{n>=1} e^n/(3 delta 2^n n!) eps^{i1j1}..eps^{injn}
+                 A d_{z_i1}..d_{z_in} A ^ d_{z_j1}..d_{z_jn} A  dz1dz2,
+      i.e. (1/2delta) int Tr A dA dz1dz2 + (1/3delta) int A *_e A *_e A dz1dz2 with Moyal *_e.
+      The n = 1 term is (e/(6delta)) eps^{ij} int Tr A d_{z_i}A ^ d_{z_j}A dz1dz2.
+    Sec. 5: BV form, fields A_c (x) gl_N[1], S(alpha) = 1/2 int alpha *_e d alpha + 1/3 int alpha *_e alpha *_e alpha.
+
+b2  Sec. 1.3, Theorem (unnumbered): the theory exists at the quantum level perturbatively in
+    the regime |delta| << |e|; counterterms are unique up to redefinitions of e and delta.
+
+b3  Sec. 9, introduction: delta is the loop-counting parameter. Negative powers of e are
+    admitted in order to cancel potential higher-loop anomalies.
+    Base ring: { sum_{i>=0} delta^i f_i(e) : f_i in C((e)), f_0 in C[[e]] }.
+
+b4  Thm 9.0.2. Hypotheses: X a conical complex symplectic surface, R x X, gauge algebra gl_N
+    "uniformly in N" (as in [CL15] = 1505.06703), C^x-compatible, negative powers of e only
+    together with positive powers of delta.
+    Conclusion: no obstructions. At each order dim H^2(X) + 1 deformations:
+      S -> S + delta^k e^{-k} (1/2 int alpha d alpha + 1/3 int alpha *_e alpha *_e alpha),
+      S -> S + delta^k e^{-k} int alpha *_e alpha *_{e,w} alpha,   w in H^2(X).
+
+b5  Thm 9.0.3. Hypotheses: R x C^2, uniformly in N, C^x-compatible, sl(2)-invariant,
+    holomorphically translation invariant, powers e^{-r} delta^n with r <= n.
+    Conclusion: no obstructions; 2 deformations per order,
+      delta^k e^{-k} (1/2 int alpha d alpha + 1/3 int alpha *_e alpha *_e alpha),
+      delta^k e^{-k} e d/de int alpha *_e alpha *_e alpha,
+    both absorbed by e -> e(1 + lambda_1 delta^n e^{-n}), delta -> delta(1 + lambda_2 delta^n e^{-n}).
+
+b6  Sec. 9.1 (argument, not a proof). Local operators = C^*(gl_N[[z1,z2]]) with [z1,z2] = e;
+    the BRST operator is identified with the CE differential; one restricts to GL(N)-invariants.
+    Uniformly in N, Loday-Quillen and Tsygan identify single-trace operators with the dual of
+    the cyclic homology of C[[z1,z2]]. For e = 0 these cyclic homology groups are
+    infinite-dimensional; for e != 0 they collapse, and cohomology is freely generated in
+    ghost numbers 3, 5, 7, ..., represented mod e by Tr psi^{2n+1} d_{z1}psi d_{z2}psi.
+    Descent: for e != 0 the translations d_{z_i} are implemented by gauge symmetries and act
+    trivially on local operators. Classes in H^2(X), H^0(X) give deformations; classes in
+    H^3(X), H^1(X) give potential anomalies.
+
+b7  App. B, proof of Thm 9.0.2 / 9.0.3.
+      e = 0: obstruction-deformation complex at k loops
+             omega_{R x X} (x)_{D} O(pi^* J Omega^{-*}_hol[t^{-1}][1]) [N] [-6(k-1)];
+             its cohomology is not computed.
+      e inverted: cyclic homology of J O_X((e)) ~ C^infty_X[t^{-1}]((e))[3]
+             (differential t d + e L_pi, L_pi-cohomology of J Omega^*_hol trivial);
+             complex ~ Omega^*(R x X) (x) (C[eta_3, eta_5, ...]/C)[N]((e))[5];
+             degree 1 = eta_5 H^1(X) + eta_3 H^3(X).
+      R x C^2: C[eta_3,eta_5,...]/C (x) C[N] (x) C((e)) (x) C[dz1,dz2][5]; no sl_2-invariants
+             in degrees -1 and 1; degree 0 = eta_5 C[N] + eta_3 dz1dz2 C[N].
+      Lemma B.0.2: holomorphically translation-invariant quantizations on C^2 involve only
+             e, delta, e^{-1} delta.
+
+b8  Answers to (b).
+      Commutative theory: no theorem. The e = 0 complex (b7) is written down but its cohomology
+      is not computed. A text search for "two-loop" and "two loop" finds nothing, so no
+      two-loop obstruction of the commutative theory is mentioned or computed.
+      Non-commutative theory: no obstruction (Thms 9.0.2, 9.0.3), for gl_N uniformly in N only
+      (Prop. 1.2.1 uses GL(k+1)). Finite N and other algebras are not treated.
+      The noncommutativity parameter enters anomaly cancellation in three places:
+      (b3) negative powers of e are needed to cancel potential higher-loop anomalies;
+      (b4)-(b5) the k-loop counterterms carry delta^k e^{-k};
+      (b2) the theory exists in the regime |delta| << |e|.
+      The paper has no statement about an order-hbar deformation cancelling an hbar^2 obstruction.
+    Related statements.
+      Gaiotto-Oh 1907.06495 Sec. 2.4, below (2.4): for epsilon_2 != 0, rescaling the holomorphic
+      coordinates sets the noncommutativity to 1 and the coupling to hbar^{-1} = epsilon_2/epsilon_1;
+      systematic renormalizability is attributed to [14] = 1610.04144. Sec. 2.5: the description
+      is perturbative in epsilon_1/epsilon_2.
+      GRW 2107.06734: Thm 5.1 is one loop only; the text after it says nothing is claimed about
+      higher-loop obstructions. Prop. 6.4: 5d CS on R x C^2 has a finite one-loop quantization.
+      Gauge: Def. 3.2, Q^GF = d*_dR (x) id + 2 id (x) dbar* (x) id. Sec. 6.2.2 compares with the
+      non-commutative theory of [Cosa] = 1610.04144.
+
+
+===========================================================================================
+(c)  Order-hbar^2 obstruction of 5d CS on R x C^2: searches and statements
+===========================================================================================
+
+c1  Oh-Zhou 2002.07343 (SciPost). The loop parameter is epsilon_1; each propagator ~ epsilon_1,
+    each vertex ~ epsilon_1^{-1} (Sec. 4.1, below (93)). Anomaly cancellation is done for
+    0-loop and 1-loop diagrams with line/surface defects, giving A_{eps1,eps2}.
+    The Sec. 5.3 diagram is shown bounded, c1 < (136) < c2 (Lemma 8, eq. (137)), but not
+    evaluated. A text search for two-loop or 2-loop finds nothing. No bulk two-loop obstruction.
+
+c2  Oh-Zhou 2103.00963.
+      Propagator (38): P_12 ~ (zbar_12 dwbar_12 dt_12 - wbar_12 dzbar_12 dt_12 + t_12 dzbar_12 dwbar_12)/d_12^5,
+      d_12^2 = t^2 + |z|^2 + |w|^2.
+      Loop parameter sigma_3; a diagram ~ sigma_3^{e-v} (below (41)).
+      Sec. 3.8: higher-loop corrections to the coproduct diagrams vanish, because
+      P_32 ^ P_24 ^ P_43 = 0 (117) and P_34 ^ P_43 = 0 (118).
+      Conjecture (119): P_{i1 i2} ^ P_{i2 i3} ^ ... ^ P_{in i1} = 0 for every cycle.
+    No bulk two-loop obstruction is computed.
+    (119) concerns single cycles of propagators. Every cycle of theta(1,3,3) or theta(2,2,3) has
+    length >= 4, and neither graph is a single cycle.
+
+c3  Ishtiaque-Jeong-Zhou 2408.15712.
+      Gauge (2.11): (d_t iota_{d_t} + 4 d_x iota_{d_xbar} + 4 d_z iota_{d_zbar}) P = 0 (called the
+      analogue of Lorenz gauge); propagator (2.12) ~ eps_1 (t dxbar dzbar, xbar dzbar dt,
+      zbar dxbar dt)/(t^2+|x|^2+|z|^2)^{5/2}.
+      Gauge algebra: non-commutative gl(1).
+      Footnote 14 (Sec. 5): connected 2-loop diagrams for the line-surface defect correlator vanish,
+      since each contains a vanishing subdiagram of App. C.
+      (C.1): two propagators between the same two vertices give 0 (a 4-form in the three
+      1-forms dt_12, dxbar_12, dzbar_12). (C.2), (C.6), (C.7) involve defects.
+    No bulk obstruction is computed. theta(1,3,3) and theta(2,2,3) have no double edge.
+
+c4  Ashwinkumar 2408.15732.
+      (1.1), (1.2): non-commutative CS with Moyal *_{eps_2}.
+      Sec. 3: P_12 ^ P_21 = 0 (3.1), P_12 ^ P_23 ^ P_31 = 0 (3.2), so higher-loop effects do not
+      change the coproduct computations; these are done to leading order in hbar and, for
+      nonabelian gauge group, with the noncommutativity turned off.
+      Sec. 2, after (2.32)-(2.34): corrections of order hbar^2 to the Miura operator are expected
+      to be constrained by Yang-Baxter; they are not computed.
+    No bulk obstruction is computed.
+
+c5  Gaiotto-Oh 1907.06495. Action (2.4). Sec. 2.7: defect couplings must cancel perturbative
+    gauge anomalies order by order in epsilon_1; a perturbative proof is left open there.
+    No bulk loop computation.
+
+c6  2604.13439 (Keller, hep-ph): scheme-invariant collinear factorization in QCD (abstract,
+    abs page). It is listed by INSPIRE as citing 2407.08667 and has no Chern-Simons content.
+
+c7  INSPIRE citers (inspire_citers.tsv).
+      2407.08667: 14 records, 13 dated 2024-2026.
+      1610.04144: 75 records, 25 dated 2024-2026, 6 undated.
+    Abstracts were read for all 2024-2026 and undated records. None mentions an order-hbar^2 or
+    two-loop obstruction of 5d CS.
+    Bodies were read for: 2408.15712, 2408.15732, 2407.08667, and 2512.04152 (6d holomorphic CS
+    on supertwistor space, one-loop anomalies only; first 200000 characters).
+
+c8  INSPIRE full-text queries (totals; relevant hits):
+      fulltext "two-loop anomaly" & "Chern-Simons" & "C^2"          4: 2407.08667, 2111.15493, 1802.01579, 1709.09993
+      fulltext "two-loop" & "five-dimensional Chern-Simons"         15: only 2408.15712 is twisted M-theory (c3)
+      fulltext "two-loop" & "5d Chern-Simons"                        21: only 2408.15712 and 1809.00372 in this area
+      fulltext "topological-holomorphic Chern-Simons" & "two-loop"   3: 2407.08667, 2208.12701, 1903.03601
+      fulltext "non-commutative Chern-Simons" & "two-loop" & "Omega-background"   2: 2408.15712, 2407.08667
+      fulltext "twisted M-theory" & "two-loop"                        5: 2512.04152, 2507.00772, 2408.15712, 2110.10257, hep-ph/0006190
+      fulltext "holomorphic-topological" / "topological-holomorphic" & "two-loop anomaly"   1 each: 2407.08667
+    1709.09993, 1802.01579 and 1903.03601 are 4d CS; their bodies were not read.
+    arXiv search:
+      all: "two-loop" "Chern-Simons" "five-dimensional"               0 results
+      abstract: two-loop Chern-Simons anomaly holomorphic              1 result: 2407.08667
+      abstract: two-loop five-dimensional Chern-Simons                 9 results, none on R x C^2 / Omega background
+
+c9  Result of (c): no computation of the order-hbar^2 obstruction of 5d CS on R x C^2,
+    commutative or non-commutative, was found in the sources listed.
+
+
+===========================================================================================
+(d)  Local cohomology vs CE cohomology of g[[z_1..z_H]]
+===========================================================================================
+
+d1  General definitions.
+      Williams 1809.02661, Def. 2.5:      C*_loc(L) = Dens_X (x)_{D_X} C*_{Lie,red}(JL).
+      Gwilliam-Williams 1810.06534, Def. 1.14:   C*_loc(L) = Omega*_X[2d] (x)_{D_X} C*_{Lie,red}(JL)
+                                                 (smooth de Rham forms).
+      Costello 1303.2632, proof of Thm 16.0.7: obstruction-deformation complex
+            omega_X (x)^L_{D_X} C*_red(J(L)), then invariants under the symmetries.
+      Saberi-Williams 1910.04120, Sec. 5.1: definition via [CG17, Sec. 3.4].
+
+d2  Purely holomorphic case, T = 0 (the only theorem found).
+    Williams 1809.02661 (CMP 374 (2020)):
+      Def. 2.28: holomorphically translation invariant = invariant under C^{2d|d}
+        (translations d_{z_i}, d_{zbar_i} in degree 0, eta^i = iota_{d_zbar_i} in degree -1,
+        d eta^i = d_{zbar_i}); U(C^{2d|d}) ~ C[d_{z_i}].
+      Lemma 2.29: O^{hol,trans}_loc(E_V) -> Oloc(E_V)^{C^{2d|d}} is a quasi-isomorphism.
+      Cor. 2.30. Hypotheses: free holomorphically translation invariant theory
+        (V, (,)_V, Q_hol) on C^d, E_V = Omega^{0,*}(C^d, V), Q_hol = 0,
+        Def E_V = (Oloc(E_V), dbar + Q_hol + {I,-}).
+      Statement:
+        (Def E_V)^{C^{2d|d}}  ~  C d^d z (x)^L_{C[d_{z_1},...,d_{z_d}]} C*_{Lie,red}(V_0[[z_1..z_d]][-1]) [d],
+        with differential coming from I^hol.
+      Proof ingredient: O_red(J_0 E_V) is flat over U(C^{2d|d}).
+    Gwilliam-Williams 1810.06534, App. A (G_d = Omega^{0,*}_c (x) g on C^d):
+      Lemma A.7: translation-invariant part = C[dz, dzbar][2d] (x) C^#_{Lie,red}(g[[z, zbar, dzbar]]);
+      Lemma A.8: C^d_hol-invariant part = C[dz_1..dz_d][2d] (x) C^#_{Lie,red}(g[[z_1..z_d]]),
+        differential = de Rham differential of the D-module C*_{Lie,red}(J O_hol);
+      Prop. A.6 / Prop. 1.25: H^1 of the U(d) x| C^d_hol-invariants = Sym^{d+1}(g^v)^g;
+      eq. (5.1) (cyclic version): C d^d z (x)^L_{C[d_z]} Cyc*_red(C[[z]])[d], citing
+        [Wila, Cor. 2.29] (Williams' thesis, not on arXiv).
+    Costello 1303.2632 Sec. 16.1: holomorphically translation invariant quantizations on C^2
+      are controlled by C (x)^L_{C[d_z, d_w]} C*_red(g[[z,w,e]]). This is stated as a small
+      generalization of [Cos11c], with no proof and no shift written.
+
+d3  T >= 1. No theorem was found in any source read.
+      2407.08667: no cohomological statement (a8).
+      2107.06734: no local-cohomology theorem. Thms 4.1 and 5.1 are analytic one-loop results;
+        Prop. 6.3 / Sec. 6.2.1 exhibit an explicit J with {S,J} = Theta (4d CS viewed as a
+        theory on C^2).
+      1910.04120, Thm 5.5 (citing [Wil, Sec. 4.5]): H*_loc(X(X)) = H*_dR(X) (x) H*_GF(w_2)[4]
+        for holomorphic vector fields on a complex surface. This is T = 0 and a different
+        local Lie algebra.
+      1610.04144, Sec. 9.1 and App. B (b6, b7): R x X, non-commutative gl_N uniformly in N,
+        complex C[dz1,dz2][5] on R x C^2. The trivial action of d_{z_i} needs e != 0.
+      2111.03049, Sec. 4, end of the non-minimal-twist proof: a translation-invariant cocycle is
+        said to come by descent from a cocycle of the dg Lie algebra of infinity-jets at
+        0 in C^2 x R^7, quasi-isomorphic to C[[z1,z2]] with the Poisson bracket. This is an
+        argument, not a theorem.
+      Not accessed: Costello-Gwilliam Vols. 1-2, Costello's book [Cos11], Williams' thesis.
+
+d4  Comparison with the quotient of anomaly-structure c5 (alternating CE cochains of
+    g[[z1,z2]] restricted to sum p = 0, ghost number 1 <-> CE degree 4).
+    (i)   Cor. 2.30 has the form  C d^H z (x)^L_{C[d_z]} C*_red(g[[z_1..z_H]]) [H].
+          The topological direction would add T to the shift, giving [H+T]; this extension is
+          not in any source read. Anomaly in H^1(Def) <-> CE degree 1 + H + T = 4 at (H,T) = (2,1).
+          Costello App. B on R x C^2 uses C[dz1,dz2][5]: the top dz-form part has degree
+          n + 2 - 5 = 1  =>  n = 4, consistent.
+    (ii)  C d^H z (x)_{C[d_z]} M = M/(d_1 M + ... + d_H M). On a k-cochain d_i acts as
+          multiplication by P^i = sum_{j=1..k} p_j^i, so the quotient is M/(P^1,...,P^H)M.
+          Since S_k acts trivially on P and char = 0, this equals the sign-twisted
+          S_k-invariants of C[p_1..p_k]/(P) (x) (g^*)^{(x)k}, i.e. alternating cochains on the
+          hyperplane sum_j p_j = 0. This is the c5 space. The CE differential preserves total
+          momentum, so the quotient is a complex.
+    (iii) Derived = underived. C[p_1..p_k] = C[P^1..P^H] (x) C[q], with q the differences and
+          S_k acting on q only. Hence every S_k-isotypic part of C[p] (x) W^{(x)k} is free over
+          C[P], and the Koszul complex of (P^1..P^H) is exact except in top degree (k >= 1,
+          reduced cochains). This also gives the flatness used in the proof of Cor. 2.30.
+          Exact check (code/koszul_check.py, sympy DomainMatrix over QQ, H = 2, W = C^w):
+k=3 w=2 (a,b)=(1,1): dim M_ab=10, M_(a-1,b)=2, M_(a,b-1)=2, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=4 (exact in middle True); dim coker=6, rank of restriction to sum p=0: 6, equal True
+k=3 w=2 (a,b)=(2,2): dim M_ab=40, M_(a-1,b)=20, M_(a,b-1)=20, M_(a-1,b-1)=10; rank d2=10 (injective True), rank d1=30 (exact in middle True); dim coker=10, rank of restriction to sum p=0: 10, equal True
+k=4 w=1 (a,b)=(2,2): dim M_ab=1, M_(a-1,b)=0, M_(a,b-1)=0, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=0 (exact in middle True); dim coker=1, rank of restriction to sum p=0: 1, equal True
+k=4 w=2 (a,b)=(1,1): dim M_ab=4, M_(a-1,b)=0, M_(a,b-1)=0, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=0 (exact in middle True); dim coker=4, rank of restriction to sum p=0: 4, equal True
+k=4 w=2 (a,b)=(2,1): dim M_ab=12, M_(a-1,b)=4, M_(a,b-1)=1, M_(a-1,b-1)=0; rank d2=0 (injective True), rank d1=5 (exact in middle True); dim coker=7, rank of restriction to sum p=0: 7, equal True
+k=4 w=2 (a,b)=(2,2): dim M_ab=38, M_(a-1,b)=12, M_(a,b-1)=12, M_(a-1,b-1)=4; rank d2=4 (injective True), rank d1=20 (exact in middle True); dim coker=18, rank of restriction to sum p=0: 18, equal True
+all checks: True
+    (iv)  Verdict. For T = 0 the c5 quotient equals the Cor. 2.30 complex C d^H z (x)^L_{C[d_z]} C*_red.
+          For (H,T) = (2,1), three steps are not sourced:
+            the extra shift [T],
+            the homotopy triviality of d_tau (an analogue of Def. 2.28 / Lemma 2.29 with
+              d_tau, iota_{d_tau}),
+            the identification of the hybrid CS deformation complex with C*_loc of
+              L = Omega*(R) (x) Omega^{0,*}(C^2) (x) g.
+          The only source with T = 1 (1610.04144) needs e != 0 and works uniformly in N; c5
+          works at e = 0 and finite N.
+
+
+===========================================================================================
+(e)  Pfaffian form = rho_n
+===========================================================================================
+
+e1  Brown-Hu-Panzer 2406.12734 (v2).
+      Pf(M) = (2^n n!)^{-1} sum_{pi in S_2n} sgn pi M_{pi1 pi2} ... M_{pi(2n-1) pi(2n)}       (2.5)
+      (P1) det M = Pf(M)^2,  (P2) Pf(lambda M) = lambda^n Pf(M),  (P3) Pf(P^T M P) = det P Pf(M).
+      Def. 2.1, eq. (2.6): for X positive definite n x n, phi_X = (det X)^{-1/2} Pf(dX X^{-1} dX),
+        and phi = 0 for n odd. Entries of dX X^{-1} dX are commuting 2-forms.
+      Def. 5.4: phi_G := phi_{Lambda_C}, pulled back along the dual Laplacian; (5.4): changing the
+        cycle basis by P multiplies it by det P = +-1.
+      Lemma 5.5, eq. (5.5): phi_{D_{2i+1}} = (-1)^i ((2i)!/(2^i i!)) (x_1..x_{2i+1})^{i-1}
+        Omega_{2i+1}/Psi^{i+1/2}, with Omega_m from (5.1) and cycle basis e_a - e_{2i+1}.
+e2  Balduf-Hu 2503.09558 (v1).
+      Pf as in (1.4) (same normalization as BHP (2.5)).
+      Def. 2 (Sec. 1.3): phi_G = (-2 pi)^{-l/2} Pf(dLambda_C Lambda_C^{-1} dLambda_C)/sqrt(det Lambda_C);
+        Lambda_C = C^T D C, the cycle Laplacian of Def. 9.
+      Example 4, eq. (1.5): phi_{D3} = (1/2pi)(a1 da2da3 - a2 da1da3 + a3 da1da2)/(a1a2+a2a3+a1a3)^{3/2}.
+      Thm 1: alpha_G = det(C|P) 2^{-l} phi_G, det(C|P) = +-1.
+e3  S3 Prop. prop-rho: rho_n(M) = (det M)^{-1/2} Pf(-1/2 dM M^{-1} dM), rho_{odd} = 0, M = C t C^T;
+    the proof obtains the Pfaffian from Wick pairings (normalization = BHP (2.5)).
+    Derivation, n = l even, M = Lambda_C:
+      rho_n(M) = (det M)^{-1/2} (-1/2)^{n/2} Pf(dM M^{-1} dM)        [BHP (P2)]
+               = (-1/2)^{n/2} phi^{BHP}_M                              [BHP (2.6)]
+               = (-1/2)^{n/2} (-2pi)^{n/2} phi^{BH}_G = pi^{n/2} phi^{BH}_G      [BH Def. 2]
+               = det(C|P) (2 sqrt(pi))^n alpha_G                       [BH Thm 1].
+    The sign is fixed up to the cycle-basis orientation (BHP (5.4)).
+    Exact check at n = 2 (code/rho2_dipole.py, sympy). Inputs: S3 eq-rho2 at
+    M = [[x1+x3, x3],[x3, x2+x3]], BHP (5.5) with i = 1, BH (1.5):
+det M == Psi: True
+rho2 == (-1/2) phi_BHP: True
+rho2 == pi phi_BH: True
+    n >= 4: only the homogeneity (P2) is used; no separate check was run.
+
+
+===========================================================================================
+Not done
+===========================================================================================
+  - Costello-Gwilliam Vols. 1-2, Costello [Cos11], Williams' thesis ([Wil]/[Wila]: Cor. 2.29,
+    Sec. 4.5) and Costello-Li [CL15] Secs. on "uniformly in N" were not read.
+  - Costello 1705.02500 was not re-read in this run.
+  - 1709.09993, 1802.01579, 1903.03601, 2208.12701, 2110.10257, 2507.00772 appeared as full-text
+    hits; their bodies were not read. Of 2512.04152 the last 4283 characters were not read.
+  - Of the 2024-2026 citers only abstracts were read, except those listed in c7.
+  - Formulas were compared with PDF text layers, not with TeX sources.
+  - No theorem covering T >= 1 was found. The [H+T] shift and the d_tau-triviality step of d4
+    remain unsourced.

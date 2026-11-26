@@ -1,0 +1,7 @@
+(H,T)=(2,1) theta133 sl2: alt(K W) invariant under 4 random relabellings/reversals: [True, True, True, True]; reference zero: False
+(H,T)=(2,1) theta133 gl2: alt(K W) invariant under 4 random relabellings/reversals: [True, True, True, True]; reference zero: False
+(H,T)=(2,1) theta223 sl2: alt(K W) invariant under 4 random relabellings/reversals: [True, True, True, True]; reference zero: False
+(H,T)=(2,1) theta223 gl2: alt(K W) invariant under 4 random relabellings/reversals: [True, True, True, True]; reference zero: False
+(H,T)=(3,0) box sl2: alt(K W) invariant under 4 random relabellings/reversals: [True, True, True, True]; reference zero: False
+(H,T)=(3,0) box gl2: alt(K W) invariant under 4 random relabellings/reversals: [True, True, True, True]; reference zero: False
+(2) Wick sign = (-1)^{3m(m-1)/2} x orientation-rule sign (m = 6), 40 random labellings: True

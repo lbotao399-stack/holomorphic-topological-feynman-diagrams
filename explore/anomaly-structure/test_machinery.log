@@ -1,0 +1,14 @@
+sl2 dim 3 centre dim 0 kinv scale 2
+gl2 dim 4 centre dim 1 kinv scale 1
+sl3 dim 8 centre dim 0 kinv scale 3
+gl3 dim 9 centre dim 1 kinv scale 1
+transpose convention True (3, 5, 2, 4)
+d d = 0: sl2 H 1 k 2 True dw nonzero False
+d d = 0: sl2 H 2 k 2 True dw nonzero True
+d d = 0: gl2 H 2 k 2 True dw nonzero True
+d d = 0: sl3 H 1 k 2 True dw nonzero True
+alternate(alternate) = 3! alternate: True
+KM cocycle sl2 closed True
+  canonical degree-1 monomials of 1-cochains: []
+KM cocycle sl3 closed True
+  canonical degree-1 monomials of 1-cochains: []

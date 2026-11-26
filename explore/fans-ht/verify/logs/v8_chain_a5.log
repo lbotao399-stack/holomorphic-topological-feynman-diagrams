@@ -1,0 +1,4 @@
+n=2: alphahat_i = -a_i L_i, betahat_j = a_j M_j, <l_i l_j> = 2 alphahat_i betahat_j (i<j): exact at 3 points
+n=4: alphahat_i = -a_i L_i, betahat_j = a_j M_j, <l_i l_j> = 2 alphahat_i betahat_j (i<j): exact at 3 points
+n=6: alphahat_i = -a_i L_i, betahat_j = a_j M_j, <l_i l_j> = 2 alphahat_i betahat_j (i<j): exact at 3 points
+n=8: alphahat_i = -a_i L_i, betahat_j = a_j M_j, <l_i l_j> = 2 alphahat_i betahat_j (i<j): exact at 3 points

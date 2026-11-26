@@ -1,0 +1,12 @@
+blocks: [('S', ['x2_0', 'x2_1']), ('P', ['w1_0', 'w1_1']), ('S', ['x5_0', 'x5_1']), ('P', ['w4_0', 'w4_1']), ('S', ['x7_0', 'x7_1']), ('P', ['w6_0', 'w6_1']), ('S', ['x3_0', 'x3_1']), ('P', ['w0_0', 'w0_1'])]  central X = x3_1  W = w0_1
+Z1 3 ear points x 3 central points: d(y_e, l)/d(X, W) == 0 as a quadratic form in the sources for all 9 edges, and Pi == X(1-X) W (1-W)^2: True ; dl != 0: True ; edges with dy_e/dW != 0: [0, 1, 2, 3, 4, 5, 6, 7, 8]  (0.1s)
+Z2 ear point 0: int_central g F / int_central |g F| -> z=0, F=1: -1.134e-11 / 7.451e+00 ; z random, F=1: -2.591e-11 / 1.314e+01 ; z random, F=y0^2 y3: -6.518e-11 / 1.717e+01 ; control F = X: 1.516e+00 / 2.623e+00
+Z2 ear point 1: int_central g F / int_central |g F| -> z=0, F=1: -3.590e-13 / 2.024e+00 ; z random, F=1: -1.548e-11 / 4.002e+00 ; z random, F=y0^2 y3: -1.549e-10 / 2.216e+01 ; control F = X: 5.117e-01 / 7.630e-01
+Z2 ear point 2: int_central g F / int_central |g F| -> z=0, F=1: -9.570e-09 / 2.108e+02 ; z random, F=1: -3.044e-08 / 9.067e+02 ; z random, F=y0^2 y3: -1.129e-07 / 2.710e+04 ; control F = X: 4.883e+01 / 7.670e+01
+Z2 ear point 3: int_central g F / int_central |g F| -> z=0, F=1: -1.202e-11 / 6.453e+00 ; z random, F=1: -1.834e-11 / 8.819e+00 ; z random, F=y0^2 y3: -2.191e-11 / 6.426e+00 ; control F = X: 6.369e-01 / 2.712e+00
+   nq =  40: int g = 4.396e-12 ; int g X = 6.369498329843e-01
+   nq =  80: int g = -1.202e-11 ; int g X = 6.369498329794e-01
+   nq = 120: int g = -2.730e-12 ; int g X = 6.369498329731e-01
+Z3 z = 0     own QMC 2^15 x 16: -0.0059814 +- 0.067 ; 1495 points exact  (24.4s)
+Z3 z random  own QMC 2^15 x 16: 0.0251 +- 0.065 ; 1495 points exact  (26.1s)
+Z3 |g|       own QMC 2^15 x 16: 38.89 +- 0.065 ; 1495 points exact  (27.7s)

@@ -1,0 +1,57 @@
+============================== sl_N ==============================
+o' closed: True;  number of terms 72
+o' = (1/240)(-3 F_133 + 2 F_223): True
+F_133 + F_223 = 2N^2 d(u2f): True
+(1/2){D,D} = F_223/(12N^2) + d eta_N, eta_N = ((N^2+4)/(2N^2)) u2f: True
+(I)  o' - (N^2/8){D,D} - d(iota) = 0, iota = -((3N^2+10)/20) u2f: True
+  W^(v,d) theta(1, 3, 3) v=0: ((1)N^2)tr(1243) + ((-1)N^2)tr(1342)
+  W^(v,d) theta(1, 3, 3) v=1: ((1)N^2)tr(1243) + ((-1)N^2)tr(1342)
+  W^(v,d) theta(1, 3, 3) v=2: ((1)N^2)tr(1243) + ((-1)N^2)tr(1342)
+  W^(v,d) theta(1, 3, 3) v=3: ((-1)N^2)tr(1243) + ((1)N^2)tr(1342)
+  W^(v,d) theta(1, 3, 3) v=4: ((-1)N^2)tr(1243) + ((1)N^2)tr(1342)
+  W^(v,d) theta(1, 3, 3) v=5: ((-1)N^2)tr(1243) + ((1)N^2)tr(1342)
+  W^(v,d) theta(2, 2, 3) v=0: 0
+  W^(v,d) theta(2, 2, 3) v=1: 0
+  W^(v,d) theta(2, 2, 3) v=2: 0
+  W^(v,d) theta(2, 2, 3) v=3: 0
+  W^(v,d) theta(2, 2, 3) v=4: 0
+  W^(v,d) theta(2, 2, 3) v=5: 0
+theta'(d) closed: True; nonzero: True
+theta'(d) = -(N^2/60) d(D3): True
+{D,u2f} = (1/3) d(D3): True
+(II) theta'(d) + {D,iota} = d(xi), xi = -((2N^2+5)/30) D3: True
+     opposite relative sign: theta'(d) - {D,iota} = d(((N^2+5)/30) D3): True
+C-parity: C theta' = -theta': True;  C{D,iota} = -{D,iota}: True;  C D = -D: True;  C u2f = u2f: True
+SL2: E theta' = F theta' = 0: True True
+time 1.1s
+============================== gl_N ==============================
+o' closed: True;  number of terms 120
+o' = (1/240)(-3 F_133 + 2 F_223): True
+F_133 + F_223 = 2N^2 d(u2f): True
+gl: (1/2){D,D} = (1/2) d(u2f): True
+F_223 = F_0 + N F_1 (no other powers): True
+  (1/2){D,D} = 0 F_0 + 0 F_1 + 1/2 beta: True
+  {D,S1} = 0 F_0 + -1/12 F_1 + 0 beta: True
+  {D,S0} = 1/24 F_0 + 0 F_1 + 1 beta: True
+  (1/2){S1,S1} = 1/48 F_0 + (-1/48)N^1 F_1 + 1/2 beta: True
+  {S1,S0} = (1/48)N^1 F_0 + 0 F_1 + (1/2)N^1 beta: True
+  {S0,S0} = 0 F_0 + 0 F_1 + 0 beta: True
+o' = (1/48) F_223 - (N^2/40) beta: True
+theta'(d): zero: False; closed: True
+theta'(s1): zero: True; closed: True
+theta'(s0): zero: True; closed: True
+theta'(d) = d(-(N^2/60) D3 + (N/30) S1_3): True
+{D,u2f} = (1/3) d D3: True;  {S1,u2f} = (1/3) d S1_3: True;  {S0,u2f} = 0: True;  d S0_3 = 0: True
+time 2.2s
+local order C: o' identical: True;  theta'(d) identical: True
+   example gl (1, 3, 3) {}: explicit -1398 formal -1398
+   example gl (1, 3, 3) {1: 'd'}: explicit -321 formal -321
+   example gl (2, 2, 3) {}: explicit -356 formal -356
+   example gl (2, 2, 3) {1: 'd'}: explicit 72 formal 72
+gl_3: formal colour == explicit einsum (16 cases): True
+   example sl (1, 3, 3) {}: explicit -660 formal -660
+   example sl (1, 3, 3) {1: 'd'}: explicit -513 formal -513
+   example sl (2, 2, 3) {}: explicit -240 formal -240
+   example sl (2, 2, 3) {1: 'd'}: explicit 0 formal 0
+sl_3: formal colour == explicit einsum (10 cases): True
+time 5.2s

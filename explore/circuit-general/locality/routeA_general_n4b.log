@@ -1,0 +1,33 @@
+/Users/libotao/MinerU/.venv/lib/python3.13/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributeschanged in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+twistor4 #29: root relabel sign 1
+twistor4 #29 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-657709/268800', 'z3': '50593/25200'} | reference {'1': '-657709/268800', 'z3': '50593/25200'} | equal True | kappa=1 | P_beta terms 12, moment monomials 21032, S^ periods 972 | S data 15.7s, Gamma' 0.2s, moments 1.0s
+twistor4 #36: root relabel sign 1
+twistor4 #36 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-11165297/62985600'} | reference {'1': '-11165297/62985600'} | equal True | kappa=-1 | P_beta terms 6, moment monomials 22352, S^ periods 2637 | S data 15.7s, Gamma' 0.1s, moments 1.4s
+twistor4 #37: root relabel sign 1
+twistor4 #37 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-927897833/529079040', 'z3': '187751/102060'} | reference {'1': '-927897833/529079040', 'z3': '187751/102060'} | equal True | kappa=-1 | P_beta terms 6, moment monomials 26976, S^ periods 4670 | S data 15.4s, Gamma' 0.1s, moments 1.9s
+twistor4 #38: root relabel sign 1
+twistor4 #38 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-1353727/23514624000', 'z3': '443/9072000'} | reference {'1': '-1353727/23514624000', 'z3': '443/9072000'} | equal True | kappa=-1 | P_beta terms 6, moment monomials 13359, S^ periods 6500 | S data 15.4s, Gamma' 0.1s, moments 0.7s
+twistor4 #47: root relabel sign 1
+twistor4 #47 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '5730583451/28217548800', 'z3': '-1801729/10886400'} | reference {'1': '5730583451/28217548800', 'z3': '-1801729/10886400'} | equal True | kappa=1 | P_beta terms 12, moment monomials 46191, S^ periods 9197 | S data 15.1s, Gamma' 0.2s, moments 1.7s
+twistor4 #48: root relabel sign 1
+twistor4 #48 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '1354509/716800', 'z3': '-34731/22400'} | reference {'1': '1354509/716800', 'z3': '-34731/22400'} | equal True | kappa=1 | P_beta terms 6, moment monomials 11682, S^ periods 9197 | S data 15.1s, Gamma' 0.1s, moments 0.5s
+twistor4 #55: root relabel sign 1
+twistor4 #55 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '-20626/98415'} | reference {'1': '-20626/98415'} | equal True | kappa=-1 | P_beta terms 6, moment monomials 18093, S^ periods 9197 | S data 15.4s, Gamma' 0.1s, moments 1.2s
+twistor4 #56: root relabel sign 1
+twistor4 #56 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {'1': '25363871/503884800', 'z3': '169333/1555200'} | reference {'1': '25363871/503884800', 'z3': '169333/1555200'} | equal True | kappa=-1 | P_beta terms 6, moment monomials 26976, S^ periods 9197 | S data 15.6s, Gamma' 0.1s, moments 1.9s
+twistor4 #57: root relabel sign 1
+Traceback (most recent call last):
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/locality/routeA_general.py", line 355, in <module>
+    run_logged(st, ix)
+    ~~~~~~~~~~^^^^^^^^
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/locality/routeA_general.py", line 349, in run_logged
+    return run(G, S, lam_full[:-1], key + ' bridge (N_S=7) -> Gamma\' (2 loops, SP)', ref=ref)
+  File "/Users/libotao/Desktop/holomorphic-twist-program/explore/circuit-general/locality/routeA_general.py", line 213, in run
+    kappa = DG.coeff * abs(JPhi) / (DSv.coeff * Dp.coeff)
+            ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py", line 665, in forward
+    return monomorphic_operator(a, b)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py", line 813, in _div
+    raise ZeroDivisionError('Fraction(%s, 0)' % db)
+ZeroDivisionError: Fraction(1, 0)

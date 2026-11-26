@@ -1,0 +1,3 @@
+control theta(1, 3, 3): nonzero at 3 points: [True, True, True]
+control theta(2, 2, 3): nonzero at 3 points: [True, True, True]
+three-loop tight graphs (16): density zero at 2 random points each: 16/16

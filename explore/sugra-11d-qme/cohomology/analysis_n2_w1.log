@@ -1,0 +1,47 @@
+n=2 w=1: 625 HC entries on 70 weights, 494 HV entries on 58 weights
+H(C_quot) nonzero off t=(k,..,k): none
+dim V == Koszul alternating sum on all HV slots: True
+translation lemma: H(V)_{t,N} =?= sum_K H(C)_{t+e_K, N+|K|}
+  slots compared: 494 with all H(C) inputs computed, 0 using H(C)=0 off-diagonal (Cartan), 0 not comparable
+  mismatches: none
+nonzero H(C_quot) (G, t, N: dim H, dim C):
+  G= -3 t=(1, 1) N= 3 (odd): H=1  (dim C=1)
+  G= -3 t=(1, 1) N= 6 (even): H=1  (dim C=1)
+  G= -1 t=(0, 0) N= 5 (odd): H=1  (dim C=30)
+  G= -1 t=(0, 0) N= 8 (even): H=1  (dim C=2)
+  G=  1 t=(-1, -1) N= 4 (even): H=1  (dim C=191)
+  G=  1 t=(-1, -1) N= 7 (odd): H=1  (dim C=125)
+  G=  7 t=(-4, -4) N= 8 (even): H=1  (dim C=17947)
+  G=  7 t=(-4, -4) N=11 (odd): H=1  (dim C=766)
+nonzero H(V) (G, t up to S_n, N: dim H, dim V):
+  G= -3 t=(1, 1) N= 3 (odd): H=1  (dim V=1, dim C=1)
+  G= -3 t=(1, 1) N= 6 (even): H=1  (dim V=1, dim C=1)
+  G= -2 t=(1, 0) N= 2 (even): H=1  (dim V=2, dim C=2)
+  G= -2 t=(1, 0) N= 5 (odd): H=1  (dim V=5, dim C=7)
+  G= -1 t=(0, 0) N= 1 (odd): H=1  (dim V=3, dim C=3)
+  G= -1 t=(0, 0) N= 4 (even): H=1  (dim V=16, dim C=29)
+  G= -1 t=(0, 0) N= 5 (odd): H=1  (dim V=17, dim C=30)
+  G= -1 t=(0, 0) N= 8 (even): H=1  (dim V=2, dim C=2)
+  G=  0 t=(0, -1) N= 4 (even): H=1  (dim V=33, dim C=77)
+  G=  0 t=(0, -1) N= 7 (odd): H=1  (dim V=21, dim C=34)
+  G=  1 t=(-1, -1) N= 3 (odd): H=1  (dim V=33, dim C=109)
+  G=  1 t=(-1, -1) N= 4 (even): H=1  (dim V=66, dim C=191)
+  G=  1 t=(-1, -1) N= 6 (even): H=1  (dim V=95, dim C=209)
+  G=  1 t=(-1, -1) N= 7 (odd): H=1  (dim V=64, dim C=125)
+  G=  2 t=(-1, -2) N= 3 (odd): H=1  (dim V=52, dim C=207)
+  G=  2 t=(-1, -2) N= 6 (even): H=1  (dim V=211, dim C=540)
+  G=  3 t=(-2, -2) N= 2 (even): H=1  (dim V=19, dim C=121)
+  G=  3 t=(-2, -2) N= 5 (odd): H=1  (dim V=369, dim C=1243)
+SL_n-invariant part of H(V) (weight (k,..,k) highest-weight multiplicity, Weyl formula):
+  G=3 t=(-2, -2) N=2: 1   [H(V) at t: 1]
+  G=3 t=(-2, -2) N=5: 1   [H(V) at t: 1]
+  G=1 t=(-1, -1) N=3: 1   [H(V) at t: 1]
+  G=1 t=(-1, -1) N=4: 1   [H(V) at t: 1]
+  G=1 t=(-1, -1) N=6: 1   [H(V) at t: 1]
+  G=1 t=(-1, -1) N=7: 1   [H(V) at t: 1]
+  G=-1 t=(0, 0) N=1: 1   [H(V) at t: 1]
+  G=-1 t=(0, 0) N=4: 1   [H(V) at t: 1]
+  G=-1 t=(0, 0) N=5: 1   [H(V) at t: 1]
+  G=-1 t=(0, 0) N=8: 1   [H(V) at t: 1]
+  G=-3 t=(1, 1) N=3: 1   [H(V) at t: 1]
+  G=-3 t=(1, 1) N=6: 1   [H(V) at t: 1]

@@ -1,0 +1,9 @@
+  651 density samples
+  numerator 133 terms (0.3s), periods 133 (0.0s)
+() {'1': Fraction(-71, 12)} match 1.8 s
+  651 density samples
+  numerator 579 terms (0.3s), periods 579 (0.0s)
+((0, 0),) {'1': Fraction(222317, 25200), 'z3': Fraction(-3021, 700)} match 0.3 s
+  651 density samples
+  numerator 1709 terms (0.3s), periods 1709 (0.1s)
+((0, 0), (0, 0)) {'1': Fraction(-4003781, 302400), 'z3': Fraction(3772, 525)} match 0.4 s

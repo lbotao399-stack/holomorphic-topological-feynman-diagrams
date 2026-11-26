@@ -1,0 +1,3 @@
+det M == Psi: True
+rho2 == (-1/2) phi_BHP: True
+rho2 == pi phi_BH: True

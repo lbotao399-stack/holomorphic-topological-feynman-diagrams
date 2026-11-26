@@ -1,0 +1,22 @@
+32 class-I graphs
+10 distinct skeletons
+skeleton V=6 E=11 degs=[4, 4, 4, 4, 3, 3] multi=False seq(G)=False graphs=[146, 153, 306, 347, 357, 383, 434, 444, 463, 467]
+    q=3: 29 orbits, {'completion': 20, 'none': 9} (0s)
+skeleton V=5 E=10 degs=[4, 4, 4, 4, 4] multi=False seq(G)=False graphs=[309, 350, 382]
+    q=3: 2 orbits, {'completion': 1, 'none': 1} (0s)
+skeleton V=7 E=12 degs=[4, 4, 4, 3, 3, 3, 3] multi=False seq(G)=False graphs=[338, 345, 431, 453, 497, 558, 566]
+    q=3: 257 orbits, {'completion': 92, 'none': 165} (4s)
+skeleton V=7 E=12 degs=[4, 4, 4, 3, 3, 3, 3] multi=False seq(G)=False graphs=[358, 384, 441, 515, 539, 560]
+    q=3: 122 orbits, {'none': 100, 'completion': 22} (2s)
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[583]
+    q=3: 353 orbits, {'none': 326, 'completion': 27} (6s)
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[588]
+    q=3: 356 orbits, {'completion': 36, 'none': 320} (6s)
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[591]
+    q=3: 430 orbits, {'none': 392, 'completion': 38} (7s)
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[594]
+    q=3: 34 orbits, {'none': 34} (1s)
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[601]
+    q=3: 348 orbits, {'none': 326, 'completion': 22} (7s)
+skeleton V=8 E=13 degs=[4, 4, 3, 3, 3, 3, 3, 3] multi=False seq(G)=False graphs=[603]
+    q=3: 95 orbits, {'none': 94, 'completion': 1} (3s)

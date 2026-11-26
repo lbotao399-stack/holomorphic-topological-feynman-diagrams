@@ -1,0 +1,2 @@
+bulk3(3,4) #10: root relabel sign -1
+bulk3(3,4) #10 bridge (N_S=7) -> Gamma' (2 loops, SP): locality K = {} | reference {} | equal True | kappa=1 | P_beta terms 3, moment monomials 63, S^ periods 21 | S data 14.9s, Gamma' 0.2s, moments 0.0s

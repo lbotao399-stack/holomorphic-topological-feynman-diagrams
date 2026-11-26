@@ -1,0 +1,16 @@
+gl(t): T_1 = -2*(4*p1*p3 - 3*p2**2 - p4*t) /48   (= Str_ad x^4 / 48)
+gl(t): T_3 = -p1**4/17280 + p1**2*p2*t/8640 + p1*(-p3*t**2/25920 + p3/4320) + p2**2*(-t**2/34560 - 1/5760) + p4*(t**3/103680 - t/17280)
+gl(t) = gl(N|N) (t = 0): T_3 + T_1/720 = -p1**4/17280
+sl(t): T_1 = p2**2/8 + p4*t/24 ;  T_3 = p2**2*(-t**2/34560 - 1/5760) + p4*(t**3/103680 - t/17280)
+sl(t): single-trace parts: T_1 -> t/24 , T_3 -> t*(t**2 - 6)/103680
+sl2: T_1 = p2**2/6, T_3 = -p2**2/3240, T_3/T_1 = -1/540
+sl3: T_1 = 3*p2**2/16, T_3 = -p2**2/2560, T_3/T_1 = -1/480
+so(N) closed forms reproduce N = 5..9: True
+sp(2n) via N -> -2n, trx4 -> -trx4: sp4 (0, -1/2880)  sp6 (77/207360, -23/46080)  [computed: sp4 (0, -1/2880), sp6 (77/207360, -23/46080)]
+so(N): T_3^irr / T_1^irr = (N - 5)*(N + 4)/17280 ;  so8: T_3/T_1 = -1/1440
+gl(1) (abelian) check: T_1(t=1, p_k = a^k) = 0 ; T_3 = 0
+psl(N|N) (t = 0, p1 = 0): T_1 = p2**2/8 , T_3 = -p2**2/5760
+normalized cochains: omega_1 = 24 N_1 Delta T_1 = (3/pi^3) Delta T_1 ; omega_3 = 24 N_3 Delta^3 T_3 = -(3/(64 pi^9)) Delta^3 T_3
+gl(N|N) quadruple-trace term of omega_3:  1/368640 /pi^9 * Delta^3 prod_i str(x_i)
+so6 = sl4 check, n=1: True
+so6 = sl4 check, n=3: True

@@ -1,0 +1,33 @@
+algebra su2 dim 3
+g0 g1 g2: |hatQ1^2 p| = 2016 (9.7s)
+   theta(1, 4, 4): |hatQ_Gamma p| = 4968, |{hatQ0, hatQ_Gamma} p| = 2016 (31.7s)
+   theta(2, 3, 4): |hatQ_Gamma p| = 4968, |{hatQ0, hatQ_Gamma} p| = 2016 (32.6s)
+   theta(3, 3, 3): |hatQ_Gamma p| = 4968, |{hatQ0, hatQ_Gamma} p| = 2016 (46.9s)
+g0 g1 c2: |hatQ1^2 p| = 288 (3.2s)
+   theta(1, 4, 4): |hatQ_Gamma p| = 828, |{hatQ0, hatQ_Gamma} p| = 288 (0.2s)
+   theta(2, 3, 4): |hatQ_Gamma p| = 828, |{hatQ0, hatQ_Gamma} p| = 288 (0.3s)
+   theta(3, 3, 3): |hatQ_Gamma p| = 828, |{hatQ0, hatQ_Gamma} p| = 288 (0.2s)
+d1g0 g1 g2: |hatQ1^2 p| = 18578 (62.0s)
+   theta(1, 4, 4): |hatQ_Gamma p| = 40248, |{hatQ0, hatQ_Gamma} p| = 19040 (338.8s)
+   theta(2, 3, 4): |hatQ_Gamma p| = 40248, |{hatQ0, hatQ_Gamma} p| = 19040 (347.3s)
+   theta(3, 3, 3): |hatQ_Gamma p| = 40248, |{hatQ0, hatQ_Gamma} p| = 19040 (1864.6s)
+d1g0 g1 c2: |hatQ1^2 p| = 2654 (26.2s)
+   theta(1, 4, 4): |hatQ_Gamma p| = 6708, |{hatQ0, hatQ_Gamma} p| = 2720 (6.2s)
+   theta(2, 3, 4): |hatQ_Gamma p| = 6708, |{hatQ0, hatQ_Gamma} p| = 2720 (2.6s)
+   theta(3, 3, 3): |hatQ_Gamma p| = 6708, |{hatQ0, hatQ_Gamma} p| = 2720 (2.7s)
+   g0 g1 g2: {hatQ0,hatQ_Gamma} = a_Gamma X_ref with a = ['1', '-23/3', '18'] (exact on all monomials: True); hatQ1^2 = b X_ref, b = -62/3 (True)
+      sign pattern (eps_144, eps_234, eps_333) = (1, -1, -1) with |k| = 4/|Aut| solves this operator
+   g0 g1 c2: {hatQ0,hatQ_Gamma} = a_Gamma X_ref with a = ['1', '-23/3', '18'] (exact on all monomials: True); hatQ1^2 = b X_ref, b = -62/3 (True)
+      sign pattern (eps_144, eps_234, eps_333) = (1, -1, -1) with |k| = 4/|Aut| solves this operator
+   d1g0 g1 g2: {hatQ0,hatQ_Gamma} = a_Gamma X_ref with a = ['1', '-2909/273', '2455/91'] (exact on all monomials: False); hatQ1^2 = b X_ref, b = -2424/91 (False)
+      sign pattern (eps_144, eps_234, eps_333) = (1, -1, -1) with |k| = 4/|Aut| solves this operator
+   d1g0 g1 c2: {hatQ0,hatQ_Gamma} = a_Gamma X_ref with a = ['1', '-2909/273', '2455/91'] (exact on all monomials: False); hatQ1^2 = b X_ref, b = -2424/91 (False)
+      sign pattern (eps_144, eps_234, eps_333) = (1, -1, -1) with |k| = 4/|Aut| solves this operator
+equations: 24064  rank [X_144 X_234 X_333]: 3  consistent: True
+solution (k144, k234, k333): [Fraction(2, 1), Fraction(-4, 1), Fraction(-2, 3)]
+prediction |k| = 4/|Aut| : [Fraction(2, 1), Fraction(4, 1), Fraction(2, 3)]
+   column theta(1, 4, 4) nonzero entries: 24064
+   column theta(2, 3, 4) nonzero entries: 24064
+   column theta(3, 3, 3) nonzero entries: 24064
+   nonzero entries of hatQ1^2: 23536
+   residual of all equations at the solution is zero: True

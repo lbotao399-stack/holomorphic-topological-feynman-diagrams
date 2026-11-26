@@ -1,0 +1,3 @@
+banana(2,2,2,2,2,2,1) lambda [2, -1, 3, 1, -2, 1, 2]: own QMC K/pi^3 = -1.71428570 +- 8.3e-09 ; F/pi^3 = D_Gamma/7 = 1.71428571  (22s)
+banana(2,2,2,2,2,2,1) lambda [1, 3, -2, 2, 1, -1, 3]: own QMC K/pi^3 = -5.14285711 +- 2.5e-08 ; F/pi^3 = D_Gamma/7 = 5.14285714  (21s)
+explorer n=6 graph 1, lambda [3, 1, -3, 1, 2, -3, 1]: own QMC K/pi^3 = -5.14285711 +- 2.5e-08 ; |prod interior sources|/7 = 5.14285714  (21s)

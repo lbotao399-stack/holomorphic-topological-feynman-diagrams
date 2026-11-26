@@ -1,0 +1,261 @@
+  abelian2 w=(0, 0, 0)    (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(0, 0) g=-2  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=7: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^-2(V) = 2 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(0, 0) g=-1  dim M=    22 rkD=6 rkQbar=15  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=7: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^-1(V) = 1 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(0, 0) g= 0  dim M=    88 rkD=30 rkQbar=43  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(0, 0) g= 1  dim M=   180 rkD=68 rkQbar=69  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(0, 0) g= 2  dim M=   210 rkD=79 rkQbar=62  H(V)=0 [modp 0 0]  pred H^5(Q)=0  OK
+    [0.0s]
+  abelian2 w=(-1, -1, -1) (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-3(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(0, 0) g= 0  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(0, 0) g= 1  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=0: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 2 (= H): True
+  abelian2 w=(-1, -1, -1) (a,b)=(0, 0) g= 2  dim M=     1 rkD=0 rkQbar=0  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=0: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^2(V) = 1 (= H): True
+    [0.0s]
+  abelian2 w=(0, -1, -1)  (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(0, 0) g= 0  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=1: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 2 (= H): True
+  abelian2 w=(0, -1, -1)  (a,b)=(0, 0) g= 1  dim M=     6 rkD=2 rkQbar=3  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=1: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+  abelian2 w=(0, -1, -1)  (a,b)=(0, 0) g= 2  dim M=     6 rkD=1 rkQbar=2  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.0s]
+  abelian2 w=(-1, 0, -1)  (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(0, 0) g= 0  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=2: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 2 (= H): True
+  abelian2 w=(-1, 0, -1)  (a,b)=(0, 0) g= 1  dim M=     6 rkD=2 rkQbar=3  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=2: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+  abelian2 w=(-1, 0, -1)  (a,b)=(0, 0) g= 2  dim M=     6 rkD=1 rkQbar=2  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.0s]
+  abelian2 w=(-1, -1, 0)  (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(0, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(0, 0) g= 0  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=4: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 2 (= H): True
+  abelian2 w=(-1, -1, 0)  (a,b)=(0, 0) g= 1  dim M=     6 rkD=2 rkQbar=3  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=4: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+  abelian2 w=(-1, -1, 0)  (a,b)=(0, 0) g= 2  dim M=     6 rkD=1 rkQbar=2  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+    [0.0s]
+  abelian2 w=(0, 0, -1)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(0, 0) g=-1  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=3: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^-1(V) = 2 (= H): True
+  abelian2 w=(0, 0, -1)   (a,b)=(0, 0) g= 0  dim M=    12 rkD=4 rkQbar=7  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=3: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  abelian2 w=(0, 0, -1)   (a,b)=(0, 0) g= 1  dim M=    28 rkD=10 rkQbar=11  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(0, 0) g= 2  dim M=    32 rkD=11 rkQbar=10  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.0s]
+  abelian2 w=(0, -1, 0)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(0, 0) g=-1  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=5: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^-1(V) = 2 (= H): True
+  abelian2 w=(0, -1, 0)   (a,b)=(0, 0) g= 0  dim M=    12 rkD=4 rkQbar=7  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=5: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  abelian2 w=(0, -1, 0)   (a,b)=(0, 0) g= 1  dim M=    28 rkD=10 rkQbar=11  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(0, 0) g= 2  dim M=    32 rkD=11 rkQbar=10  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.0s]
+  abelian2 w=(-1, 0, 0)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(0, 0) g=-1  dim M=     2 rkD=0 rkQbar=0  H(V)=2 [modp 2 2]  pred H^1(Q)=2  OK
+      psi_S, S=6: dim Z^1(Q)=2, psi(Z) closed in V: True, rank increase over B^-1(V) = 2 (= H): True
+  abelian2 w=(-1, 0, 0)   (a,b)=(0, 0) g= 0  dim M=    12 rkD=4 rkQbar=7  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=6: dim Z^2(Q)=1, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  abelian2 w=(-1, 0, 0)   (a,b)=(0, 0) g= 1  dim M=    28 rkD=10 rkQbar=11  H(V)=0 [modp 0 0]  pred H^3(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(0, 0) g= 2  dim M=    32 rkD=11 rkQbar=10  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.0s]
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 0) g=-2  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 0) g=-1  dim M=    38 rkD=22 rkQbar=13  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=7: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^-1(V) = 3 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 0) g= 0  dim M=   208 rkD=112 rkQbar=81  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=7: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^0(V) = 2 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 0) g= 1  dim M=   556 rkD=288 rkQbar=187  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 0) g= 2  dim M=   850 rkD=417 rkQbar=246  H(V)=0 [modp 0 0]  pred H^5(Q)=0  OK
+    [0.1s]
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-3(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 0) g= 0  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 0) g= 1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 0) g= 2  dim M=     4 rkD=1 rkQbar=0  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=0: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^2(V) = 3 (= H): True
+    [0.0s]
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 0) g= 0  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 0) g= 1  dim M=    10 rkD=6 rkQbar=1  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=1: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^1(V) = 3 (= H): True
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 0) g= 2  dim M=    18 rkD=9 rkQbar=6  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=1: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^2(V) = 2 (= H): True
+    [0.0s]
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 0) g= 0  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 0) g= 1  dim M=    10 rkD=6 rkQbar=1  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=2: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^1(V) = 3 (= H): True
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 0) g= 2  dim M=    18 rkD=9 rkQbar=6  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=2: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^2(V) = 2 (= H): True
+    [0.0s]
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 0) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 0) g= 0  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 0) g= 1  dim M=    10 rkD=6 rkQbar=1  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=4: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^1(V) = 3 (= H): True
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 0) g= 2  dim M=    18 rkD=9 rkQbar=6  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=4: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^2(V) = 2 (= H): True
+    [0.0s]
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 0) g=-1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 0) g= 0  dim M=    20 rkD=12 rkQbar=5  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=3: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^0(V) = 3 (= H): True
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 0) g= 1  dim M=    68 rkD=36 rkQbar=25  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=3: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 2 (= H): True
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 0) g= 2  dim M=   112 rkD=53 rkQbar=34  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.0s]
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 0) g=-1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 0) g= 0  dim M=    20 rkD=12 rkQbar=5  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=5: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^0(V) = 3 (= H): True
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 0) g= 1  dim M=    68 rkD=36 rkQbar=25  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=5: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 2 (= H): True
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 0) g= 2  dim M=   112 rkD=53 rkQbar=34  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.0s]
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 0) g=-1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 0) g= 0  dim M=    20 rkD=12 rkQbar=5  H(V)=3 [modp 3 3]  pred H^2(Q)=3  OK
+      psi_S, S=6: dim Z^2(Q)=4, psi(Z) closed in V: True, rank increase over B^0(V) = 3 (= H): True
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 0) g= 1  dim M=    68 rkD=36 rkQbar=25  H(V)=2 [modp 2 2]  pred H^3(Q)=2  OK
+      psi_S, S=6: dim Z^3(Q)=2, psi(Z) closed in V: True, rank increase over B^1(V) = 2 (= H): True
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 0) g= 2  dim M=   112 rkD=53 rkQbar=34  H(V)=0 [modp 0 0]  pred H^4(Q)=0  OK
+    [0.0s]
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 1) g=-2  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 1) g=-1  dim M=    70 rkD=54 rkQbar=15  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=7: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^-1(V) = 1 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 1) g= 0  dim M=   520 rkD=352 rkQbar=147  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=7: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^0(V) = 6 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 1) g= 1  dim M=  1780 rkD=1112 rkQbar=517  H(V)=4 [modp 4 4]  pred H^4(Q)=4  OK
+      psi_S, S=7: dim Z^4(Q)=4, psi(Z) closed in V: True, rank increase over B^1(V) = 4 (= H): True
+  abelian2 w=(0, 0, 0)    (a,b)=(1, 1) g= 2  dim M=  3442 rkD=2007 rkQbar=918  H(V)=0 [modp 0 0]  pred H^5(Q)=0  OK
+    [1.4s]
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-3(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 1) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 1) g= 0  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 1) g= 1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, -1, -1) (a,b)=(1, 1) g= 2  dim M=     8 rkD=7 rkQbar=0  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=0: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^2(V) = 1 (= H): True
+    [0.0s]
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 1) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 1) g= 0  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 1) g= 1  dim M=    18 rkD=14 rkQbar=3  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=1: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+  abelian2 w=(0, -1, -1)  (a,b)=(1, 1) g= 2  dim M=    50 rkD=31 rkQbar=10  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=1: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^2(V) = 6 (= H): True
+    [0.0s]
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 1) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 1) g= 0  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 1) g= 1  dim M=    18 rkD=14 rkQbar=3  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=2: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+  abelian2 w=(-1, 0, -1)  (a,b)=(1, 1) g= 2  dim M=    50 rkD=31 rkQbar=10  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=2: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^2(V) = 6 (= H): True
+    [0.0s]
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-2(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 1) g=-1  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 1) g= 0  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 1) g= 1  dim M=    18 rkD=14 rkQbar=3  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=4: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^1(V) = 1 (= H): True
+  abelian2 w=(-1, -1, 0)  (a,b)=(1, 1) g= 2  dim M=    50 rkD=31 rkQbar=10  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=4: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^2(V) = 6 (= H): True
+    [0.0s]
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 1) g=-1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 1) g= 0  dim M=    36 rkD=28 rkQbar=7  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=3: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 1) g= 1  dim M=   172 rkD=116 rkQbar=43  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=3: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^1(V) = 6 (= H): True
+  abelian2 w=(0, 0, -1)   (a,b)=(1, 1) g= 2  dim M=   384 rkD=231 rkQbar=106  H(V)=4 [modp 4 4]  pred H^4(Q)=4  OK
+      psi_S, S=3: dim Z^4(Q)=4, psi(Z) closed in V: True, rank increase over B^2(V) = 4 (= H): True
+    [0.1s]
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 1) g=-1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 1) g= 0  dim M=    36 rkD=28 rkQbar=7  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=5: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 1) g= 1  dim M=   172 rkD=116 rkQbar=43  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=5: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^1(V) = 6 (= H): True
+  abelian2 w=(0, -1, 0)   (a,b)=(1, 1) g= 2  dim M=   384 rkD=231 rkQbar=106  H(V)=4 [modp 4 4]  pred H^4(Q)=4  OK
+      psi_S, S=5: dim Z^4(Q)=4, psi(Z) closed in V: True, rank increase over B^2(V) = 4 (= H): True
+    [0.1s]
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 1) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-1(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 1) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^0(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 1) g=-1  dim M=     2 rkD=2 rkQbar=0  H(V)=0 [modp 0 0]  pred H^1(Q)=0  OK
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 1) g= 0  dim M=    36 rkD=28 rkQbar=7  H(V)=1 [modp 1 1]  pred H^2(Q)=1  OK
+      psi_S, S=6: dim Z^2(Q)=8, psi(Z) closed in V: True, rank increase over B^0(V) = 1 (= H): True
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 1) g= 1  dim M=   172 rkD=116 rkQbar=43  H(V)=6 [modp 6 6]  pred H^3(Q)=6  OK
+      psi_S, S=6: dim Z^3(Q)=10, psi(Z) closed in V: True, rank increase over B^1(V) = 6 (= H): True
+  abelian2 w=(-1, 0, 0)   (a,b)=(1, 1) g= 2  dim M=   384 rkD=231 rkQbar=106  H(V)=4 [modp 4 4]  pred H^4(Q)=4  OK
+      psi_S, S=6: dim Z^4(Q)=4, psi(Z) closed in V: True, rank increase over B^2(V) = 4 (= H): True
+    [0.1s]
+  abelian2 w=(1, 0, 0)    (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(0, 0) g=-2  dim M=    10 rkD=2 rkQbar=8  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(0, 0) g=-1  dim M=    92 rkD=30 rkQbar=54  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(0, 0) g= 0  dim M=   348 rkD=137 rkQbar=157  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(0, 0) g= 1  dim M=   714 rkD=302 rkQbar=255  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(0, 0) g= 2  dim M=   870 rkD=366 rkQbar=249  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.1s]
+  abelian2 w=(0, 1, 0)    (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(0, 0) g=-2  dim M=    10 rkD=2 rkQbar=8  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(0, 0) g=-1  dim M=    92 rkD=30 rkQbar=54  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(0, 0) g= 0  dim M=   348 rkD=137 rkQbar=157  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(0, 0) g= 1  dim M=   714 rkD=302 rkQbar=255  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(0, 0) g= 2  dim M=   870 rkD=366 rkQbar=249  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.1s]
+  abelian2 w=(1, -1, 0)   (a,b)=(0, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(0, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(0, 0) g=-1  dim M=     6 rkD=2 rkQbar=4  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(0, 0) g= 0  dim M=    38 rkD=15 rkQbar=19  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(0, 0) g= 1  dim M=    94 rkD=38 rkQbar=37  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(0, 0) g= 2  dim M=   116 rkD=44 rkQbar=35  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.0s]
+  abelian2 w=(1, 0, 0)    (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(1, 0) g=-2  dim M=    18 rkD=10 rkQbar=8  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(1, 0) g=-1  dim M=   212 rkD=116 rkQbar=88  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(1, 0) g= 0  dim M=   996 rkD=539 rkQbar=369  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(1, 0) g= 1  dim M=  2530 rkD=1342 rkQbar=819  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, 0, 0)    (a,b)=(1, 0) g= 2  dim M=  3878 rkD=1982 rkQbar=1077  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.9s]
+  abelian2 w=(0, 1, 0)    (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(1, 0) g=-2  dim M=    18 rkD=10 rkQbar=8  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(1, 0) g=-1  dim M=   212 rkD=116 rkQbar=88  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(1, 0) g= 0  dim M=   996 rkD=539 rkQbar=369  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(1, 0) g= 1  dim M=  2530 rkD=1342 rkQbar=819  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(0, 1, 0)    (a,b)=(1, 0) g= 2  dim M=  3878 rkD=1982 rkQbar=1077  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.9s]
+  abelian2 w=(1, -1, 0)   (a,b)=(1, 0) g=-3  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(1, 0) g=-2  dim M=     0 rkD=0 rkQbar=0  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(1, 0) g=-1  dim M=    10 rkD=6 rkQbar=4  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(1, 0) g= 0  dim M=    82 rkD=47 rkQbar=31  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(1, 0) g= 1  dim M=   266 rkD=146 rkQbar=89  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+  abelian2 w=(1, -1, 0)   (a,b)=(1, 0) g= 2  dim M=   448 rkD=228 rkQbar=131  H(V)=0 [modp 0 0]  pred H^-(Q)=0  OK
+    [0.0s]
+case abelian2: all checks passed: True   total 4.1s

@@ -1,0 +1,4 @@
+  level q=3: unknowns 74 rows 510 {'T': 54, 'D': 0, 'I': 10, 'B': 0, 'S': 21, 'Y': 21, 'X': 9, 'P': 108, 'C': 176, 'L': 111}  2.5s
+  level q=4: unknowns 1956 rows 22531 {'T': 3208, 'D': 0, 'I': 740, 'B': 84, 'S': 602, 'Y': 602, 'X': 658, 'P': 3644, 'C': 3509, 'L': 9484}  13.9s
+  joint: 2030 unknowns, 23115 rows (74 links)  13.9s
+Z5 q=3..4: rank 2026 of 2030; determined {'Z5 q=3': '30/74', 'Z5 q=4': '986/1956'}  15.6s maxrss 0.15 GB

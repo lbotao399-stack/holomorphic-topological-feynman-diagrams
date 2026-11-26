@@ -1,0 +1,7 @@
+total 0.0s
+5d (A) theta(1,3,3), lam = [[-2, 2], [2, 0], [3, -1], [3, 4], [-2, 4]]: K(lam;0) oracle(lattice) = 12.5643179 +- 0.013, exact = 12.5663706, relative difference 1.6e-04 (3.8 digits)  (160s)
+5d (A) theta(1,3,3), lam = [[-2, 2], [2, 0], [3, -1], [3, 4], [-2, 4]]: K[y^1_e0] oracle(lattice) = -0.598669933 +- 0.0095, exact = -0.598398601, relative difference 4.5e-04 (3.3 digits)  (122s)
+5d (B) theta(2,2,3), lam = [[-2, 2], [2, 0], [3, -1], [3, 4], [-2, 4]]: K(lam;0) oracle(lattice) = -8.37623633 +- 0.0087, exact = -8.37758041, relative difference 1.6e-04 (3.8 digits)  (98s)
+5d (B) theta(2,2,3), lam = [[-2, 2], [2, 0], [3, -1], [3, 4], [-2, 4]]: K[y^1_e2] oracle(lattice) = 23.9323582 +- 0.024, exact = 23.935944, relative difference 1.5e-04 (3.8 digits)  (120s)
+3d theta(1,2,2), lam = [[-2], [2], [2]]: K(lam;0) oracle(lattice) = 4.18878713 +- 1.4e-05, exact = 4.1887902, relative difference 7.3e-07 (6.1 digits)  (21s)
+3d theta(1,2,2), lam = [[-2], [2], [2]]: K[y^1_e1] oracle(lattice) = 2.51327293 +- 1.1e-05, exact = 2.51327412, relative difference 4.8e-07 (6.3 digits)  (23s)

@@ -1,0 +1,23 @@
+series through t^30; monomial (t,y,v,w) = t^(2Theta+3n) y^(n+-n-) v^(th1-th2) w^(th2-th3), sign (-1)^(Y+Theta)
+[chk] sch(B^1) - f (KMMR 4.2): None
+[chk] sum_{p>=1} sch(B^p) - I_sp (KMMR 4.14): None
+[chk] sum_{p>=2} sch(B^p) - (I_sp - f): None
+[chk] sum_{p>=2} sch(B^p) - I_sp: first difference ((2, 0, -1, 1), Fraction(-1, 1), 320)
+number of monomials in sum_(p>=2) sch(B^p) through t^30: 339
+sum_{p>=2} sch(B^p), t-degree <= 6:
+    1 (4, 0, -2, 2)
+    1 (4, 0, -1, 0)
+    1 (4, 0, 0, -2)
+    1 (4, 0, 0, 1)
+    1 (4, 0, 1, -1)
+    1 (4, 0, 2, 0)
+    -1 (5, -1, -1, 1)
+    -1 (5, -1, 0, -1)
+    -1 (5, -1, 1, 0)
+    -1 (5, 1, -1, 1)
+    -1 (5, 1, 0, -1)
+    -1 (5, 1, 1, 0)
+    1 (6, 0, -3, 3)
+    1 (6, 0, 0, -3)
+    1 (6, 0, 3, 0)
+time 2.0s

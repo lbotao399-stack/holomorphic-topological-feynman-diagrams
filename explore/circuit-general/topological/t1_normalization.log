@@ -1,0 +1,38 @@
+t1_normalization.py -- alpha_Gamma (GKW) versus rho_n (htk); four independent evaluations, exact.
+
+(a) Phi_GKW : spanning-tree expansion of the fiber integral of prod_e Theta_e (GKW Higher.tex l.1451-1457,
+              (3.53)-(3.54); x = tau/2, s_e = eta_e); fiber integral = (2 sqrt pi)^{-n} U^{-1/2} Phi_GKW.
+(b) Pf      : Pf(-1/2 dM M^{-1} dM)                   (rho_n = U^{-1/2} Pf).
+(c) Wick    : < prod_r psi_r >, position-space currents (S3 eq-ww).
+(d) Haf     : (-2)^{-n/2} sum_S det(C_S) Haf(K_SS) dt_S,  K = C^T M^{-1} C.
+Claims checked:  (b) = (c) = (d);  (a) = (-1)^n det(G)^{-1} (b),  G = (P; C), P B = 1;
+GKW bitriangle formula (3.56) (Higher.tex l.1500-1508):  alpha = (8 pi)^{-1} U^{-3/2} Br  <=>  2 U Phi_GKW = Br.
+
+bitriangle GKW(3.56): U = GKW bracket: True ; 2 U Phi_GKW = Br: True ; 2 U Phi_GKW = -Br: False
+bitriangle GKW(3.56): U = GKW bracket: True ; 2 U Phi_GKW = Br: True ; 2 U Phi_GKW = -Br: False
+bitriangle GKW(3.56): U = GKW bracket: True ; 2 U Phi_GKW = Br: True ; 2 U Phi_GKW = -Br: False
+bitriangle GKW(3.56): U = GKW bracket: True ; 2 U Phi_GKW = Br: True ; 2 U Phi_GKW = -Br: False
+bitriangle: det G = 1, sgn det[B^T;C] > 0 by construction
+
+(b)=(c) Pf = Wick, (b)=(d) Pf = Haf, (a) Phi_GKW = (-1)^n det(G)^{-1} Pf;  2 random rational t each
+D=1 n=1:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=1 n=2:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=1 n=3:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=2 n=1:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=2 n=2:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=2 n=3:   3 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=3 n=1:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=3 n=2:   2 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=3 n=3:  16 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=4 n=1:   1 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=4 n=2:   3 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=4 n=3:  42 graphs, all three identities: True, det G values [Fraction(1, 1)]
+D=1 n=4:   1 graphs, all three identities: True
+D=2 n=4:  13 graphs, all three identities: True
+D=1 n=6:   1 graphs, all three identities: True
+
+non-fundamental bases C' = A C (random unimodular A), graphs D=3 n=2:
+   D3n2_sk2_133 A=[[0, 1], [1, 0]] det G=-1: Phi_GKW = det(G)^{-1} Pf: True
+   D3n2_sk2_223 A=[[1, 1], [0, 1]] det G=1: Phi_GKW = det(G)^{-1} Pf: True
+
+total graphs 88, failures 0, bitriangle (3.56) True, time 3.4s

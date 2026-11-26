@@ -1,0 +1,17 @@
+n=1: all 10 triangle sums c_ab + c_bc + c_ca vanish: True
+   n=1: c_ij = c_0j - c_0i for all 1<=i<j<=4: True
+n=2: all 10 triangle sums c_ab + c_bc + c_ca vanish: False
+   n=2: triangle (0,1,2) sum nonzero: True
+n=3: all 10 triangle sums c_ab + c_bc + c_ca vanish: False
+   n=3: triangle (0,1,2) sum nonzero: True
+n=4: all 10 triangle sums c_ab + c_bc + c_ca vanish: False
+   n=4: triangle (0,1,2) sum nonzero: True
+n=5: all 10 triangle sums c_ab + c_bc + c_ca vanish: False
+   n=5: triangle (0,1,2) sum nonzero: True
+n=6: all 10 triangle sums c_ab + c_bc + c_ca vanish: False
+   n=6: triangle (0,1,2) sum nonzero: True
+
+even n=0: e_01+e_23-e_02-e_13 == 0: True
+even n=2: e_01+e_23-e_02-e_13 == 0: False
+even n=4: e_01+e_23-e_02-e_13 == 0: False
+even n=6: e_01+e_23-e_02-e_13 == 0: False

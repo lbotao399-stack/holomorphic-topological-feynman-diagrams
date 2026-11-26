@@ -1,0 +1,8 @@
+B^{DE} = -B^{ED}: True ;  B^{DD} = 0: True ;  B^{12} = {((1, 0), (2, 2)): 1, ((1, 1), (2, 1)): -2, ((1, 2), (2, 0)): 1}
+SU(2), I=J=K:  sum_DE T_DE B^DE = -12*(x1**2 + x2**2 + x3**2)*(B12*x3 - B13*x2 + B23*x1)
+   Phi3 = I*g**2*(x1**2 + x2**2 + x3**2)*(B12*x3 - B13*x2 + B23*x1)/(32768*pi**4)
+SU(2), three different spectators: nonzero = True
+SU(2) random traceless x1,x2,x3,D,E: sum_sigma tr(ad ad ad (D) E) = -96
+SU(3) random traceless x1,x2,x3,D,E: sum_sigma tr(ad ad ad (D) E) = 974
+SU(4) random traceless x1,x2,x3,D,E: sum_sigma tr(ad ad ad (D) E) = -2719
+SU(5) random traceless x1,x2,x3,D,E: sum_sigma tr(ad ad ad (D) E) = -2308

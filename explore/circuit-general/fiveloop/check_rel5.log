@@ -1,0 +1,21 @@
+K4     q=3: 16 vectors; (Y) 4 checked 0 bad; (X) 12 checked 0 bad; (P) 384 checked 0 bad
+K4     q=4: 101 vectors; (Y) 24 checked 0 bad; (X) 240 checked 0 bad; (P) 2424 checked 0 bad
+K4     q=5: 150 vectors; (Y) 37 checked 0 bad; (X) 534 checked 0 bad; (P) 3600 checked 0 bad
+K4     q=6: 150 vectors; (Y) 32 checked 0 bad; (X) 738 checked 0 bad; (P) 3600 checked 0 bad
+K4     q=7: 150 vectors; (Y) 17 checked 0 bad; (X) 919 checked 0 bad; (P) 3600 checked 0 bad
+W4     q=3: 46 vectors; (Y) 12 checked 0 bad; (X) 12 checked 0 bad; (P) 368 checked 0 bad
+W4     q=4: 150 vectors; (Y) 43 checked 0 bad; (X) 95 checked 0 bad; (P) 1200 checked 0 bad
+W4     q=5: 150 vectors; (Y) 33 checked 0 bad; (X) 195 checked 0 bad; (P) 1200 checked 0 bad
+W4     q=6: 150 vectors; (Y) 40 checked 0 bad; (X) 225 checked 0 bad; (P) 1200 checked 0 bad
+W4     q=7: 150 vectors; (Y) 18 checked 0 bad; (X) 288 checked 0 bad; (P) 1200 checked 0 bad
+prism  q=4: 150 vectors; (Y) 4 checked 0 bad; (X) 0 checked 0 bad; (P) 0 checked 0 bad
+prism  q=5: 150 vectors; (Y) 6 checked 0 bad; (X) 0 checked 0 bad; (P) 0 checked 0 bad
+W5     q=3: 122 vectors; (Y) 40 checked 0 bad; (X) 40 checked 0 bad; (P) 1220 checked 0 bad
+W5     q=4: 150 vectors; (Y) 52 checked 0 bad; (X) 132 checked 0 bad; (P) 1500 checked 0 bad
+W5     q=5: 150 vectors; (Y) 42 checked 0 bad; (X) 219 checked 0 bad; (P) 1500 checked 0 bad
+W5     q=6: 150 vectors; (Y) 43 checked 0 bad; (X) 259 checked 0 bad; (P) 1500 checked 0 bad
+K5-e   q=4: 150 vectors; (Y) 196 checked 0 bad; (X) 158 checked 0 bad; (P) 0 checked 0 bad
+K5-e   q=5: 150 vectors; (Y) 139 checked 0 bad; (X) 318 checked 0 bad; (P) 0 checked 0 bad
+K4+K4  q=4: 150 vectors; (Y) 28 checked 0 bad; (X) 124 checked 0 bad; (P) 2400 checked 0 bad
+K4+K4  q=5: 150 vectors; (Y) 35 checked 0 bad; (X) 205 checked 0 bad; (P) 2400 checked 0 bad
+47.0s

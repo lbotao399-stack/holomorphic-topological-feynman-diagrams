@@ -1,0 +1,8 @@
+  reference fastker (whole graph, N=10) 0.2s
+D3 n3 K4[3, 2, 1, 1, 2, 1] bridge->box: locality K = {'1': '53287847/5443200', 'z3': '-23329/2800'} | reference {'1': '53287847/5443200', 'z3': '-23329/2800'} | equal True | kappa=1 | P_beta terms 78, moment monomials 124539, S^ periods 2438 | S data 23.4s, Gamma' 0.2s, moments 4.2s
+  reference fastker (whole graph, N=10) 0.1s
+D3 n3 K4[3, 2, 1, 1, 2, 1] bridge->box: locality K = {'1': '-561803/134400', 'z3': '20697/11200'} | reference {'1': '-561803/134400', 'z3': '20697/11200'} | equal True | kappa=1 | P_beta terms 78, moment monomials 100990, S^ periods 2438 | S data 22.7s, Gamma' 0.1s, moments 3.2s
+  reference fastker (whole graph, N=10) 0.1s
+D3 n3 K4[3, 1, 2, 1, 1, 2] bridge->box: locality K = {'1': '-64702601/67200', 'z3': '2236287/2800'} | reference {'1': '-64702601/67200', 'z3': '2236287/2800'} | equal True | kappa=1 | P_beta terms 98, moment monomials 140011, S^ periods 4951 | S data 22.7s, Gamma' 0.2s, moments 4.3s
+  reference fastker (whole graph, N=10) 0.1s
+D3 n3 K4[3, 1, 2, 1, 1, 2] bridge->box: locality K = {'1': '-1211711/75600', 'z3': '1489/175'} | reference {'1': '-1211711/75600', 'z3': '1489/175'} | equal True | kappa=1 | P_beta terms 76, moment monomials 93568, S^ periods 4951 | S data 22.9s, Gamma' 0.1s, moments 2.7s

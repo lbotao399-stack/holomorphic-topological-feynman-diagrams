@@ -1,0 +1,33 @@
+n=1 p=1: forests 3, candidates (deg<=3) 15, passing count + connected 3
+n=1 p=2: forests 3, candidates (deg<=3) 24, passing count + connected 0
+n=1 p=3: forests 1, candidates (deg<=3) 12, passing count + connected 0
+  n=1 class: edges [(0, 2), (0, 3), (1, 2), (1, 3)]  degO 2  labelled 3  |Aut| 2  (2n+1)!/|Aut| 3  chains []
+n=2 p=1: forests 125, candidates (deg<=3) 1860, passing count + connected 120
+n=2 p=2: forests 110, candidates (deg<=3) 3290, passing count + connected 0
+n=2 p=3: forests 45, candidates (deg<=3) 2505, passing count + connected 0
+n=2 p=4: forests 10, candidates (deg<=3) 960, passing count + connected 0
+n=2 p=5: forests 1, candidates (deg<=3) 155, passing count + connected 0
+  n=2 class: edges [(0, 3), (0, 4), (0, 5), (1, 2), (1, 3), (1, 4), (2, 5)]  degO 3  labelled 60  |Aut| 2  (2n+1)!/|Aut| 60  chains [2, 2, 3]
+  n=2 class: edges [(0, 1), (0, 4), (0, 5), (1, 2), (1, 3), (2, 4), (3, 5)]  degO 3  labelled 60  |Aut| 2  (2n+1)!/|Aut| 60  chains [1, 3, 3]
+n=3 p=1: forests 16807, candidates (deg<=3) 679770, passing count + connected 13230
+n=3 p=2: forests 13377, candidates (deg<=3) 1232910, passing count + connected 0
+n=3 p=3: forests 5250, candidates (deg<=3) 1036665, passing count + connected 0
+n=3 p=4: forests 1295, candidates (deg<=3) 509775, passing count + connected 0
+n=3 p=5: forests 210, candidates (deg<=3) 153720, passing count + connected 0
+n=3 p=6: forests 21, candidates (deg<=3) 26901, passing count + connected 0
+n=3 p=7: forests 1, candidates (deg<=3) 2128, passing count + connected 0
+n=3 passing graphs by p: {1: 13230, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0}
+n=3: 5 iso classes (O fixed)
+  class ~ ['G5']: degO 4, G-O tree True, tree degrees [3, 3, 2, 2, 2, 2, 2], outputs 5, labelled 2520, |Aut| 2, 7!/|Aut| 2520, chains [1, 2, 2, 2, 3]
+  class ~ ['G3']: degO 4, G-O tree True, tree degrees [3, 3, 2, 2, 2, 2, 2], outputs 5, labelled 5040, |Aut| 1, 7!/|Aut| 5040, chains [1, 1, 2, 3, 3]
+  class ~ ['G4']: degO 4, G-O tree True, tree degrees [3, 3, 2, 2, 2, 2, 2], outputs 5, labelled 630, |Aut| 8, 7!/|Aut| 630, chains [2, 2, 2, 2, 2]
+  class ~ ['G2']: degO 4, G-O tree True, tree degrees [3, 3, 2, 2, 2, 2, 2], outputs 5, labelled 2520, |Aut| 2, 7!/|Aut| 2520, chains [1, 2, 2, 2, 3]
+  class ~ ['G1']: degO 4, G-O tree True, tree degrees [3, 3, 2, 2, 2, 2, 2], outputs 5, labelled 2520, |Aut| 2, 7!/|Aut| 2520, chains [1, 1, 2, 3, 3]
+sum labelled = 13230
+explorer labelled graphs, direct data:
+  G1: |Aut| brute 2 (stated 2), stated generators are automorphisms True, generate group of order 2, outputs (deg 2) [1, 2, 4, 6, 7] (stated [1, 2, 4, 6, 7]), degO 4
+  G2: |Aut| brute 2 (stated 2), stated generators are automorphisms True, generate group of order 2, outputs (deg 2) [1, 2, 4, 6, 7] (stated [1, 2, 4, 6, 7]), degO 4
+  G3: |Aut| brute 1 (stated 1), stated generators are automorphisms True, generate group of order 1, outputs (deg 2) [1, 2, 5, 6, 7] (stated [1, 2, 5, 6, 7]), degO 4
+  G4: |Aut| brute 8 (stated 8), stated generators are automorphisms True, generate group of order 8, outputs (deg 2) [1, 2, 4, 6, 7] (stated [1, 2, 4, 6, 7]), degO 4
+  G5: |Aut| brute 2 (stated 2), stated generators are automorphisms True, generate group of order 2, outputs (deg 2) [1, 2, 5, 6, 7] (stated [1, 2, 5, 6, 7]), degO 4
+time 23.1s

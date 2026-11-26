@@ -1,0 +1,26 @@
+sl2(Kac A1)      (alpha,beta,gamma) = (-2, 2, 2)             t = 2    d True m4 = d C_4 True n4 True 8n4-3d = 0 ; a = 3abg/(16t^3) = -3/16, x = -3/2 ; all equal to the computed values: True
+sl3(Kac A2)      (alpha,beta,gamma) = (-2, 2, 3)             t = 3    d True m4 = d C_4 True n4 True 8n4-3d = -40/3 ; a = 3abg/(16t^3) = -1/12, x = -2/3 ; all equal to the computed values: True
+sl4(Kac A3)      (alpha,beta,gamma) = (-2, 2, 4)             t = 4    d True m4 = d C_4 True n4 True 8n4-3d = -135/4 ; a = 3abg/(16t^3) = -3/64, x = -3/8 ; all equal to the computed values: True
+sl5(Kac A4)      (alpha,beta,gamma) = (-2, 2, 5)             t = 5    d True m4 = d C_4 True n4 True 8n4-3d = -1512/25 ; a = 3abg/(16t^3) = -3/100, x = -6/25 ; all equal to the computed values: True
+sl6(Kac A5)      (alpha,beta,gamma) = (-2, 2, 6)             t = 6    d True m4 = d C_4 True n4 True 8n4-3d = -280/3 ; a = 3abg/(16t^3) = -1/48, x = -1/6 ; all equal to the computed values: True
+sl7(Kac A6)      (alpha,beta,gamma) = (-2, 2, 7)             t = 7    d True m4 = d C_4 True n4 True 8n4-3d = -6480/49 ; a = 3abg/(16t^3) = -3/196, x = -6/49 ; all equal to the computed values: True
+so5(fold D3)     (alpha,beta,gamma) = (-2, 4, 1)             t = 3    d True m4 = d C_4 True n4 True 8n4-3d = -140/9 ; a = 3abg/(16t^3) = -1/18, x = -1 ; all equal to the computed values: True
+sp4(fold A3)     (alpha,beta,gamma) = (-2, 1, 4)             t = 3    d True m4 = d C_4 True n4 True 8n4-3d = -140/9 ; a = 3abg/(16t^3) = -1/18, x = -1 ; all equal to the computed values: True
+so7(fold D4)     (alpha,beta,gamma) = (-2, 4, 3)             t = 5    d True m4 = d C_4 True n4 True 8n4-3d = -6804/125 ; a = 3abg/(16t^3) = -9/250, x = -3/25 ; all equal to the computed values: True
+sp6(fold A5)     (alpha,beta,gamma) = (-2, 1, 5)             t = 4    d True m4 = d C_4 True n4 True 8n4-3d = -2835/64 ; a = 3abg/(16t^3) = -15/512, x = -21/32 ; all equal to the computed values: True
+so8(Kac D4)      (alpha,beta,gamma) = (-2, 4, 4)             t = 6    d True m4 = d C_4 True n4 True 8n4-3d = -700/9 ; a = 3abg/(16t^3) = -1/36, x = 0 ; all equal to the computed values: True
+G2(fold D4)      (alpha,beta,gamma) = (-2, 10/3, 8/3)        t = 4    d True m4 = d C_4 True n4 True 8n4-3d = -385/12 ; a = 3abg/(16t^3) = -5/96, x = -7/24 ; all equal to the computed values: True
+F4(fold E6)      (alpha,beta,gamma) = (-2, 5, 6)             t = 9    d True m4 = d C_4 True n4 True 8n4-3d = -12740/81 ; a = 3abg/(16t^3) = -5/324, x = 4/27 ; all equal to the computed values: True
+so9(fold D5)     (alpha,beta,gamma) = (-2, 4, 5)             t = 7    d True m4 = d C_4 True n4 True 8n4-3d = -35640/343 ; a = 3abg/(16t^3) = -15/686, x = 3/49 ; all equal to the computed values: True
+sp8(fold A7)     (alpha,beta,gamma) = (-2, 1, 6)             t = 5    d True m4 = d C_4 True n4 True 8n4-3d = -10692/125 ; a = 3abg/(16t^3) = -9/500, x = -12/25 ; all equal to the computed values: True
+so10(Kac D5)     (alpha,beta,gamma) = (-2, 4, 6)             t = 8    d True m4 = d C_4 True n4 True 8n4-3d = -8505/64 ; a = 3abg/(16t^3) = -9/512, x = 3/32 ; all equal to the computed values: True
+so11(fold D6)    (alpha,beta,gamma) = (-2, 4, 7)             t = 9    d True m4 = d C_4 True n4 True 8n4-3d = -40040/243 ; a = 3abg/(16t^3) = -7/486, x = 1/9 ; all equal to the computed values: True
+sp10(fold A9)    (alpha,beta,gamma) = (-2, 1, 7)             t = 6    d True m4 = d C_4 True n4 True 8n4-3d = -5005/36 ; a = 3abg/(16t^3) = -7/576, x = -3/8 ; all equal to the computed values: True
+so12(Kac D6)     (alpha,beta,gamma) = (-2, 4, 8)             t = 10   d True m4 = d C_4 True n4 True 8n4-3d = -24948/125 ; a = 3abg/(16t^3) = -3/250, x = 3/25 ; all equal to the computed values: True
+E6(Kac)          (alpha,beta,gamma) = (-2, 6, 8)             t = 12   d True m4 = d C_4 True n4 True 8n4-3d = -975/4 ; a = 3abg/(16t^3) = -1/96, x = 5/24 ; all equal to the computed values: True
+E7(Kac)          (alpha,beta,gamma) = (-2, 8, 12)            t = 18   d True m4 = d C_4 True n4 True 8n4-3d = -34580/81 ; a = 3abg/(16t^3) = -1/162, x = 7/27 ; all equal to the computed values: True
+E8(Kac)          (alpha,beta,gamma) = (-2, 12, 20)           t = 30   d True m4 = d C_4 True n4 True 8n4-3d = -12152/15 ; a = 3abg/(16t^3) = -1/300, x = 22/75 ; all equal to the computed values: True
+so_N with (alpha,beta,gamma) = (-2, 4, N - 4): 8n4-3d = -3*N*(N - 4)*(N - 3)*(N - 1)*(N + 2)/(2*(N - 2)**3) ; a = -3*(N - 4)/(2*(N - 2)**3)
+sp_N with (alpha,beta,gamma) = (-2, 1, N/2 + 2): 8n4-3d = -3*N*(N - 2)*(N + 1)*(N + 3)*(N + 4)/(2*(N + 2)**3) ; a = -3*(N + 4)/(2*(N + 2)**3)
+sl_N with (alpha,beta,gamma) = (-2, 2, N): 8n4-3d = -3*(N - 2)*(N - 1)*(N + 1)*(N + 2)/N**2 ; a = -3/(4*N**2)
+all algebras agree: True

@@ -1,0 +1,10 @@
+5d, so5 (dim 10), H=2, k=2, graphs ['A', 'B'], signs s = [1, -1], mutate=None
+   A: K(lam;0)/pi weights for undifferentiated letters: {((1, 0), (0, 1), (0, 1), (1, 0)): '1/20', ((1, 0), (0, 1), (1, 0), (0, 1)): '-1/20', ((0, 1), (1, 0), (0, 1), (1, 0)): '-1/20', ((0, 1), (1, 0), (1, 0), (0, 1)): '1/20'}
+   B: K(lam;0)/pi weights for undifferentiated letters: {((1, 0), (0, 1), (0, 1), (1, 0)): '-1/30', ((1, 0), (0, 1), (1, 0), (0, 1)): '1/30', ((0, 1), (1, 0), (0, 1), (1, 0)): '1/30', ((0, 1), (1, 0), (1, 0), (0, 1)): '-1/30'}
+Q0hat^2 = 0 on 8 random operators: True (0.0s)
+0_4^01 1_5^02 01_6^00              |Q_G O| [2774, 2458], |{Q0,Q_G}O| [5458, 5458], eqs 5458, rank 1, null [['1', '1']]; cumulative 5458 eqs, rank 1, null [['1', '1']] (26.3s)
+01_0^10 1_3^01 01_6^01 0_2^00      |Q_G O| [26772, 24350], |{Q0,Q_G}O| [60325, 60325], eqs 60325, rank 1, null [['1', '1']]; cumulative 65783 eqs, rank 1, null [['1', '1']] (663.7s)
+1_6^00 01_9^10 0_2^10 01_3^00      |Q_G O| [8570, 7942], |{Q0,Q_G}O| [10851, 10851], eqs 10851, rank 1, null [['1', '1']]; cumulative 76634 eqs, rank 1, null [['1', '1']] (114.7s)
+01_9^12 0_3^00 1_9^00 1_0^00       |Q_G O| [8628, 6998], |{Q0,Q_G}O| [17155, 17155], eqs 17155, rank 1, null [['1', '1']]; cumulative 93789 eqs, rank 1, null [['1', '1']] (83.4s)
+TOTAL: 12 operators, 4 with some Q_G O != 0, 4 with nonzero anticommutators; 93789 equations, rank 1, null space [['1', '1']]
+total 900.2s

@@ -1,0 +1,5 @@
+su2 O=bbbbb -> cccccb: nonzero graphs []
+su2 O=bbbbb -> ccccg1g2: nonzero graphs []
+su2 O=g1g2bbb -> cccccc: nonzero graphs []
+su2 O=g1bbbb -> cccccg1: nonzero graphs []
+su2 O=bbbbc -> cccccc: nonzero graphs []

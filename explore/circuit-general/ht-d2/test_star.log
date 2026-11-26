@@ -1,0 +1,5 @@
+test_single
+  single moves checked on 138 (graph, centre) pairs
+test_paired
+  paired moves checked on 17 graphs
+all passed

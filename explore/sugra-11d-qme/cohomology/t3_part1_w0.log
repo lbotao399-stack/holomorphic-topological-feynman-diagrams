@@ -1,0 +1,63 @@
+T3 (t3_nu.py)
+pi: C_full -> C_quot (nu_a -> 0, X -> [X]) commutes with Q on generators |a|<=3: [(2, True), (3, True)]
+slot w=0 G=-2 t=(1, 1) : C_quot dims {2: 1, 3: 1, 4: 1, 5: 1}, max arity in C_quot slot a_max=5
+   H(C_quot) = {2: 1, 5: 1}
+   A= 1  dim C_full^{<=A}=     0  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):False
+   A= 2  dim C_full^{<=A}=     1  H(C_full^{<=A})={2: 1}  H(C_quot^{<=A})={2: 1}  equal:True  equals H(C_quot):False
+   A= 3  dim C_full^{<=A}=     4  H(C_full^{<=A})={2: 1, 3: 1}  H(C_quot^{<=A})={2: 1, 3: 1}  equal:True  equals H(C_quot):False
+   A= 4  dim C_full^{<=A}=     9  H(C_full^{<=A})={2: 1}  H(C_quot^{<=A})={2: 1}  equal:True  equals H(C_quot):False
+   A= 5  dim C_full^{<=A}=    16  H(C_full^{<=A})={2: 1, 5: 1}  H(C_quot^{<=A})={2: 1, 5: 1}  equal:True  equals H(C_quot):True
+   A= 6  dim C_full^{<=A}=    24  H(C_full^{<=A})={2: 1, 5: 1}  H(C_quot^{<=A})={2: 1, 5: 1}  equal:True  equals H(C_quot):True
+   A= 7  dim C_full^{<=A}=    32  H(C_full^{<=A})={2: 1, 5: 1}  H(C_quot^{<=A})={2: 1, 5: 1}  equal:True  equals H(C_quot):True
+   (0.0s)
+slot w=0 G=0 t=(0, 0) : C_quot dims {0: 1, 1: 1, 2: 3, 3: 8, 4: 11, 5: 9, 6: 5, 7: 2}, max arity in C_quot slot a_max=7
+   H(C_quot) = {0: 1, 7: 1}
+   A= 1  dim C_full^{<=A}=     4  H(C_full^{<=A})={0: 1, 1: 1}  H(C_quot^{<=A})={0: 1, 1: 1}  equal:True  equals H(C_quot):False
+   A= 2  dim C_full^{<=A}=    15  H(C_full^{<=A})={0: 1, 2: 2}  H(C_quot^{<=A})={0: 1, 2: 2}  equal:True  equals H(C_quot):False
+   A= 3  dim C_full^{<=A}=    51  H(C_full^{<=A})={0: 1, 3: 6}  H(C_quot^{<=A})={0: 1, 3: 6}  equal:True  equals H(C_quot):False
+   A= 4  dim C_full^{<=A}=   138  H(C_full^{<=A})={0: 1, 4: 5}  H(C_quot^{<=A})={0: 1, 4: 5}  equal:True  equals H(C_quot):False
+   A= 5  dim C_full^{<=A}=   297  H(C_full^{<=A})={0: 1, 5: 4}  H(C_quot^{<=A})={0: 1, 5: 4}  equal:True  equals H(C_quot):False
+   A= 6  dim C_full^{<=A}=   522  H(C_full^{<=A})={0: 1, 6: 1}  H(C_quot^{<=A})={0: 1, 6: 1}  equal:True  equals H(C_quot):False
+   A= 7  dim C_full^{<=A}=   784  H(C_full^{<=A})={0: 1, 7: 1}  H(C_quot^{<=A})={0: 1, 7: 1}  equal:True  equals H(C_quot):True
+   A= 8  dim C_full^{<=A}=  1056  H(C_full^{<=A})={0: 1, 7: 1}  H(C_quot^{<=A})={0: 1, 7: 1}  equal:True  equals H(C_quot):True
+   A= 9  dim C_full^{<=A}=  1328  H(C_full^{<=A})={0: 1, 7: 1}  H(C_quot^{<=A})={0: 1, 7: 1}  equal:True  equals H(C_quot):True
+   (0.5s)
+slot w=0 G=1 t=(0, -1) : C_quot dims {1: 1, 2: 5, 3: 13, 4: 22, 5: 25, 6: 18, 7: 7, 8: 1}, max arity in C_quot slot a_max=8
+   H(C_quot) = {}
+   A= 1  dim C_full^{<=A}=     3  H(C_full^{<=A})={1: 1}  H(C_quot^{<=A})={1: 1}  equal:True  equals H(C_quot):False
+   A= 2  dim C_full^{<=A}=    22  H(C_full^{<=A})={2: 4}  H(C_quot^{<=A})={2: 4}  equal:True  equals H(C_quot):False
+   A= 3  dim C_full^{<=A}=    97  H(C_full^{<=A})={3: 9}  H(C_quot^{<=A})={3: 9}  equal:True  equals H(C_quot):False
+   A= 4  dim C_full^{<=A}=   309  H(C_full^{<=A})={4: 13}  H(C_quot^{<=A})={4: 13}  equal:True  equals H(C_quot):False
+   A= 5  dim C_full^{<=A}=   752  H(C_full^{<=A})={5: 12}  H(C_quot^{<=A})={5: 12}  equal:True  equals H(C_quot):False
+   A= 6  dim C_full^{<=A}=  1462  H(C_full^{<=A})={6: 6}  H(C_quot^{<=A})={6: 6}  equal:True  equals H(C_quot):False
+   A= 7  dim C_full^{<=A}=  2375  H(C_full^{<=A})={7: 1}  H(C_quot^{<=A})={7: 1}  equal:True  equals H(C_quot):False
+   A= 8  dim C_full^{<=A}=  3380  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True
+   A= 9  dim C_full^{<=A}=  4404  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True
+   A=10  dim C_full^{<=A}=  5428  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True
+   (1.6s)
+slot w=0 G=2 t=(-1, -1) : C_quot dims {1: 1, 2: 7, 3: 22, 4: 44, 5: 59, 6: 50, 7: 25, 8: 7, 9: 1}, max arity in C_quot slot a_max=9
+   H(C_quot) = {}
+   A= 1  dim C_full^{<=A}=     3  H(C_full^{<=A})={1: 1}  H(C_quot^{<=A})={1: 1}  equal:True  equals H(C_quot):False
+   A= 2  dim C_full^{<=A}=    34  H(C_full^{<=A})={2: 6}  H(C_quot^{<=A})={2: 6}  equal:True  equals H(C_quot):False
+   A= 3  dim C_full^{<=A}=   188  H(C_full^{<=A})={3: 16}  H(C_quot^{<=A})={3: 16}  equal:True  equals H(C_quot):False
+   A= 4  dim C_full^{<=A}=   688  H(C_full^{<=A})={4: 28}  H(C_quot^{<=A})={4: 28}  equal:True  equals H(C_quot):False
+   A= 5  dim C_full^{<=A}=  1865  H(C_full^{<=A})={5: 31}  H(C_quot^{<=A})={5: 31}  equal:True  equals H(C_quot):False
+   A= 6  dim C_full^{<=A}=  3971  H(C_full^{<=A})={6: 19}  H(C_quot^{<=A})={6: 19}  equal:True  equals H(C_quot):False
+   A= 7  dim C_full^{<=A}=  6954  H(C_full^{<=A})={7: 6}  H(C_quot^{<=A})={7: 6}  equal:True  equals H(C_quot):False
+   A= 8  dim C_full^{<=A}= 10481  H(C_full^{<=A})={8: 1}  H(C_quot^{<=A})={8: 1}  equal:True  equals H(C_quot):False
+   A= 9  dim C_full^{<=A}= 14208  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True
+   A=10  dim C_full^{<=A}= 17968  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True
+   A=11  dim C_full^{<=A}= 21728  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True
+   (12.2s)
+slot w=0 G=4 t=(-2, -2) : C_quot dims {1: 1, 2: 11, 3: 52, 4: 135, 5: 222, 6: 246, 7: 180, 8: 79, 9: 17, 10: 1}, max arity in C_quot slot a_max=10
+   H(C_quot) = {}
+   A= 1  dim C_full^{<=A}=     3  H(C_full^{<=A})={1: 1}  H(C_quot^{<=A})={1: 1}  equal:True  equals H(C_quot):False
+   A= 2  dim C_full^{<=A}=    62  H(C_full^{<=A})={2: 10}  H(C_quot^{<=A})={2: 10}  equal:True  equals H(C_quot):False
+   A= 3  dim C_full^{<=A}=   498  H(C_full^{<=A})={3: 42}  H(C_quot^{<=A})={3: 42}  equal:True  equals H(C_quot):False
+   A= 4  dim C_full^{<=A}=  2389  H(C_full^{<=A})={4: 93}  H(C_quot^{<=A})={4: 93}  equal:True  equals H(C_quot):False
+   A= 5  dim C_full^{<=A}=  8007  H(C_full^{<=A})={5: 129}  H(C_quot^{<=A})={5: 129}  equal:True  equals H(C_quot):False
+   A= 6  dim C_full^{<=A}= 20325  H(C_full^{<=A})={6: 117}  H(C_quot^{<=A})={6: 117}  equal:True  equals H(C_quot):False
+   A= 7  dim C_full^{<=A}= 41249  H(C_full^{<=A})={7: 63}  H(C_quot^{<=A})={7: 63}  equal:True  equals H(C_quot):False
+   A= 8  dim C_full^{<=A}= 70032  H(C_full^{<=A})={8: 16}  H(C_quot^{<=A})={8: 16}  equal:True  equals H(C_quot):False
+   A= 9  dim C_full^{<=A}=103787  H(C_full^{<=A})={9: 1}  H(C_quot^{<=A})={9: 1}  equal:True  equals H(C_quot):False
+   A=10  dim C_full^{<=A}=139608  H(C_full^{<=A})={}  H(C_quot^{<=A})={}  equal:True  equals H(C_quot):True

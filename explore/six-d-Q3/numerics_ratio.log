@@ -1,0 +1,6 @@
+G1: exact 170.1527553, brute-force density in ratio coordinates (Sobol 8 x 1048576) 170.1539771 +- 1.5e-03, rel. dev. 7.2e-06 (5.1 digits)  [148s]
+G2: exact -3.286381173, brute-force density in ratio coordinates (Sobol 8 x 1048576) -3.285346817 +- 1.1e-03, rel. dev. 3.1e-04 (3.5 digits)  [107s]
+G3: exact 2.265933642, brute-force density in ratio coordinates (Sobol 8 x 1048576) 2.266097912 +- 6.1e-04, rel. dev. 7.2e-05 (4.1 digits)  [82s]
+G4: exact 5.386805556, brute-force density in ratio coordinates (Sobol 8 x 1048576) 5.386839134 +- 7.2e-05, rel. dev. 6.2e-06 (5.2 digits)  [74s]
+G5: exact -0.3551118827, brute-force density in ratio coordinates (Sobol 8 x 1048576) -0.3549133573 +- 4.5e-04, rel. dev. 5.6e-04 (3.3 digits)  [75s]
+python3 numerics_ratio.py 1048576 8  162.33s user 119.58s system 57% cpu 8:08.41 total

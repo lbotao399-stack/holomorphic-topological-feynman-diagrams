@@ -1,0 +1,54 @@
+(5, 0, 0, 0, 0) k 2 N 2 g=-10..0 p=2147483647 0.7s
+  g=-10 Y=-5: dimV_T=216 dimR=0 rankd=0 H=0
+  g=-9 Y=-4: dimV_T=980 dimR=0 rankd=0 H=0
+  g=-8 Y=-3: dimV_T=2615 dimR=0 rankd=0 H=0
+  g=-7 Y=-2: dimV_T=5376 dimR=1 rankd=1 H=0
+  g=-6 Y=-1: dimV_T=9048 dimR=3 rankd=2 H=0
+  g=-5 Y=0: dimV_T=12340 dimR=8 rankd=6 H=0
+  g=-4 Y=1: dimV_T=13258 dimR=19 rankd=13 H=0
+  g=-3 Y=2: dimV_T=10696 dimR=45 rankd=32 H=0
+  g=-2 Y=3: dimV_T=6024 dimR=73 rankd=41 H=0
+  g=-1 Y=4: dimV_T=2100 dimR=85 rankd=44 H=0
+  g=0 Y=5: dimV_T=352 dimR=47 rankd=0 H=3
+(6, 0, 0, 0, 0) k 2 N 2 g=-12..0 p=2147483647 6.5s
+  g=-12 Y=-6: dimV_T=344 dimR=0 rankd=0 H=0
+  g=-11 Y=-5: dimV_T=1680 dimR=0 rankd=0 H=0
+  g=-10 Y=-4: dimV_T=4856 dimR=0 rankd=0 H=0
+  g=-9 Y=-3: dimV_T=11000 dimR=1 rankd=1 H=0
+  g=-8 Y=-2: dimV_T=20974 dimR=4 rankd=3 H=0
+  g=-7 Y=-1: dimV_T=33872 dimR=8 rankd=5 H=0
+  g=-6 Y=0: dimV_T=46052 dimR=18 rankd=13 H=0
+  g=-5 Y=1: dimV_T=51772 dimR=46 rankd=33 H=0
+  g=-4 Y=2: dimV_T=46496 dimR=96 rankd=63 H=0
+  g=-3 Y=3: dimV_T=31584 dimR=165 rankd=102 H=0
+  g=-2 Y=4: dimV_T=15064 dimR=203 rankd=101 H=0
+  g=-1 Y=5: dimV_T=4508 dimR=185 rankd=84 H=0
+  g=0 Y=6: dimV_T=663 dimR=88 rankd=0 H=4
+(7, 0, 0, 0, 0) k 2 N 2 g=-14..0 p=2147483647 64.0s
+  g=-14 Y=-7: dimV_T=520 dimR=0 rankd=0 H=0
+  g=-13 Y=-6: dimV_T=2688 dimR=0 rankd=0 H=0
+  g=-12 Y=-5: dimV_T=8244 dimR=0 rankd=0 H=0
+  g=-11 Y=-4: dimV_T=19996 dimR=1 rankd=1 H=0
+  g=-10 Y=-3: dimV_T=41468 dimR=4 rankd=3 H=0
+  g=-9 Y=-2: dimV_T=74616 dimR=9 rankd=6 H=0
+  g=-8 Y=-1: dimV_T=116965 dimR=23 rankd=17 H=0
+  g=-7 Y=0: dimV_T=159204 dimR=53 rankd=36 H=0
+  g=-6 Y=1: dimV_T=185428 dimR=109 rankd=73 H=0
+  g=-5 Y=2: dimV_T=179728 dimR=212 rankd=139 H=0
+  g=-4 Y=3: dimV_T=139342 dimR=360 rankd=221 H=0
+  g=-3 Y=4: dimV_T=82020 dimR=503 rankd=282 H=0
+  g=-2 Y=5: dimV_T=34184 dimR=516 rankd=234 H=0
+  g=-1 Y=6: dimV_T=9032 dimR=379 rankd=145 H=0
+  g=0 Y=7: dimV_T=1178 dimR=149 rankd=0 H=4
+(8, 0, 0, 0, 0) k 2 N 2 g=-16..-8 p=2147483647 484.6s
+  g=-16 Y=-8: dimV_T=755 dimR=0 rankd=0 H=0
+  g=-15 Y=-7: dimV_T=4080 dimR=0 rankd=0 H=0
+  g=-14 Y=-6: dimV_T=13096 dimR=0 rankd=0 H=0
+  g=-13 Y=-5: dimV_T=33432 dimR=1 rankd=1 H=0
+  g=-12 Y=-4: dimV_T=73666 dimR=5 rankd=4 H=0
+  g=-11 Y=-3: dimV_T=142844 dimR=10 rankd=6 H=0
+  g=-10 Y=-2: dimV_T=246044 dimR=25 rankd=19 H=0
+  g=-9 Y=-1: dimV_T=378052 dimR=62 rankd=43 H=0
+  g=-8 Y=0: dimV_T=516080 dimR=138 rankd=95 H=0
+
+[exited with code 0]

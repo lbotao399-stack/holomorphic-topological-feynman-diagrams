@@ -1,0 +1,34 @@
+t4_psm.py -- stretch (b): Poisson sigma model on the upper half plane, heat-kernel gauge with images.
+
+Weights I_Gamma = (2 pi)^{-2n} int_{H^n} wedge_e d phi_e  (edge order = Buring-Kiselev encoding order,
+orientation dx_0 dy_0 dx_1 dy_1), computed from the circuit representation (psm.py, psm2.py):
+  parallel direction: ordinary incidence, Dirichlet data x_L = 0, x_R = 1;
+  perpendicular direction: signed incidence (image edge: +1, +1), ground y = 0, plus one T = 1 edge
+  v -> ground per aerial vertex (sgn y_v / 2), integrated analytically;
+  edge times t = lambda u: radial integral analytic (P1 = 0), Hepp sectors + tanh-sinh on the rest.
+Benchmark: Buring-Kiselev arXiv:2209.14438v2 (HTML), App. A.2, star product
+  h^1: "2 1 1  0 1  1";  h^2: "1 3 0 2  -1/6", "1 3 0 1  -1/3", "0 3 0 1  1/3", "0 1 0 1  1/2";
+  coefficient c_Gamma = (# labelled graphs / n!) I_Gamma  (2/1 for n = 1; 8/2 for n = 2 without
+  automorphism; 4/2 for the product graph).
+
+(1) P1 / P0 at 20 random points (parallel covariance terms cancel):
+   h^2 product  '0 1 0 1'     max |P1/P0| = 0.0e+00
+   h^2 Bernoulli '0 3 0 1'    max |P1/P0| = 0.0e+00
+   h^2 Bernoulli '1 3 0 1'    max |P1/P0| = 0.0e+00
+   h^2 two-cycle '1 3 0 2'    max |P1/P0| = 1.1e-16
+
+(2) auxiliary edges: int dtau J(t,tau) (2-d quadrature in log tau) vs closed form with sgn moments:
+   h^2 two-cycle '1 3 0 2'    t=[1.975 0.931 0.568 1.356]: quadrature -0.0000287889, closed form -0.0000287889
+   h^2 two-cycle '1 3 0 2'    t=[0.204 0.97  0.834 0.975]: quadrature -0.0005291863, closed form -0.0005291863
+   h^2 Bernoulli '0 3 0 1'    t=[0.302 1.308 1.448 1.699]: quadrature 0.0000760175, closed form 0.0000760175
+   h^2 Bernoulli '0 3 0 1'    t=[2.115 0.909 1.513 1.084]: quadrature 0.0000330893, closed form 0.0000330893
+
+(3) weights (Hepp sectors, tanh-sinh step h):
+   h^1 wedge        '0 1'     I(h=0.3) = 0.499997300, I(h=0.2) = 0.499996539 ;  c = 2/1! * I = 0.9999931 ; Buring-Kiselev 1.0000000 ; rel. dev 6.9e-06
+   h^2 product  '0 1 0 1'     I(h=0.3) = 0.249998252, I(h=0.2) = 0.249997759 ;  c = 4/2! * I = 0.4999955 ; Buring-Kiselev 0.5000000 ; rel. dev 9.0e-06
+   h^2 Bernoulli '0 3 0 1'    I(h=0.3) = 0.083332810, I(h=0.2) = 0.083332663 ;  c = 8/2! * I = 0.3333307 ; Buring-Kiselev 0.3333333 ; rel. dev 8.0e-06
+   h^2 Bernoulli '1 3 0 1'    I(h=0.3) = -0.083332810, I(h=0.2) = -0.083332663 ;  c = 8/2! * I = -0.3333307 ; Buring-Kiselev -0.3333333 ; rel. dev 8.0e-06
+   h^2 two-cycle '1 3 0 2'    I(h=0.3) = -0.041666497, I(h=0.2) = -0.041666446 ;  c = 8/2! * I = -0.1666658 ; Buring-Kiselev -0.1666667 ; rel. dev 5.3e-06
+
+exact values (wedge analytic; others identified): I = 1/2, 1/4, 1/12, -1/12, -1/24
+time 21.3s

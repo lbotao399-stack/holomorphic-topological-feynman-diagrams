@@ -1,0 +1,88 @@
+sl2: dim 3, kappa = Killing/4, s = 2, det[mu(P_j)] = -37233471312236279808, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       = c beta exactly on all 486 entries: c(kappa) = 56, c(Killing) = 7/2
+   F223                       = c beta exactly on all 486 entries: c(kappa) = -48, c(Killing) = -3
+   F133+F223                  = c beta exactly on all 486 entries: c(kappa) = 8, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   = c beta exactly on all 486 entries: c(kappa) = -264, c(Killing) = -33/2
+   w133-w223 = -3F133-2F223   = c beta exactly on all 486 entries: c(kappa) = -72, c(Killing) = -9/2
+   arithmetic: {'float': 14, 'int64': 0, 'object': 0, 'maxbound': 8192.0} ; time W 0.0s, total 0.0s
+sl3: dim 8, kappa = Killing/6, s = 3, det[mu(P_j)] = 2626196433499215864, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 1451329941600 (i0 = 18, j = 84)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1451329941600 (i0 = 18, j = 84)
+   F133+F223                  = c beta exactly on all 24576 entries: c(kappa) = 18, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -7256649708000 (i0 = 18, j = 84)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1451329941600 (i0 = 18, j = 84)
+   arithmetic: {'float': 28, 'int64': 0, 'object': 0, 'maxbound': 236196.0} ; time W 0.0s, total 0.1s
+sl4: dim 15, kappa = Killing/8, s = 4, det[mu(P_j)] = -7881355763899200000, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1059474898944 (i0 = 48, j = 276)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 1059474898944 (i0 = 48, j = 276)
+   F133+F223                  = c beta exactly on all 303750 entries: c(kappa) = 32, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 5297374494720 (i0 = 48, j = 276)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 1059474898944 (i0 = 48, j = 276)
+   arithmetic: {'float': 42, 'int64': 0, 'object': 0, 'maxbound': 2621440.0} ; time W 0.0s, total 0.1s
+sl5: dim 24, kappa = Killing/10, s = 5, det[mu(P_j)] = 2130729619549224960, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -2455142400000000 (i0 = 100, j = 680)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 2455142400000000 (i0 = 100, j = 680)
+   F133+F223                  = c beta exactly on all 1990656 entries: c(kappa) = 50, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 12275712000000000 (i0 = 100, j = 680)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 2455142400000000 (i0 = 100, j = 680)
+   arithmetic: {'float': 56, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.1s, total 0.3s
+so5: dim 10, kappa = Killing/6, s = 1, det[mu(P_j)] = -12090536492900769792, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 1926955008 (i0 = 10011, j = 10077)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1926955008 (i0 = 10011, j = 10077)
+   F133+F223                  = c beta exactly on all 60000 entries: c(kappa) = 18, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -9634775040 (i0 = 10011, j = 10077)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1926955008 (i0 = 10011, j = 10077)
+   arithmetic: {'float': 70, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.0s, total 0.1s
+sp4: dim 10, kappa = Killing/6, s = 2, det[mu(P_j)] = -1483145976367318302720, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -374949347328 (i0 = 77, j = 178)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 374949347328 (i0 = 77, j = 178)
+   F133+F223                  = c beta exactly on all 60000 entries: c(kappa) = 18, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 1874746736640 (i0 = 77, j = 178)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 374949347328 (i0 = 77, j = 178)
+   arithmetic: {'float': 84, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.0s, total 0.1s
+so6: dim 15, kappa = Killing/8, s = 1, det[mu(P_j)] = 566878593219379200, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 82673664 (i0 = 16, j = 144)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -82673664 (i0 = 16, j = 144)
+   F133+F223                  = c beta exactly on all 303750 entries: c(kappa) = 32, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -413368320 (i0 = 16, j = 144)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -82673664 (i0 = 16, j = 144)
+   arithmetic: {'float': 98, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.0s, total 0.1s
+so7: dim 21, kappa = Killing/10, s = 1, det[mu(P_j)] = -1001132816358260880, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 6588244224 (i0 = 22, j = 242)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -6588244224 (i0 = 22, j = 242)
+   F133+F223                  = c beta exactly on all 1166886 entries: c(kappa) = 50, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -32941221120 (i0 = 22, j = 242)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -6588244224 (i0 = 22, j = 242)
+   arithmetic: {'float': 112, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.1s, total 0.2s
+sp6: dim 21, kappa = Killing/8, s = 2, det[mu(P_j)] = -330678249305531904, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 1804861440 (i0 = 330, j = 772)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1804861440 (i0 = 330, j = 772)
+   F133+F223                  = c beta exactly on all 1166886 entries: c(kappa) = 32, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -9024307200 (i0 = 330, j = 772)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -1804861440 (i0 = 330, j = 772)
+   arithmetic: {'float': 126, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.1s, total 0.2s
+so8: dim 28, kappa = Killing/12, s = 1, det[mu(P_j)] = 12634546575744000, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 15552000000 (i0 = 29, j = 377)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -15552000000 (i0 = 29, j = 377)
+   F133+F223                  = c beta exactly on all 3687936 entries: c(kappa) = 72, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -77760000000 (i0 = 29, j = 377)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -15552000000 (i0 = 29, j = 377)
+   arithmetic: {'float': 140, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.2s, total 0.5s
+G2: dim 14, kappa = Killing/8, s = 3, det[mu(P_j)] = -45494695159524000, interpolation at P_7 (3000 entries): True
+   nonzero: beta True, F133 True, F223 True
+   F133                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = 116095057920 (i0 = 15, j = 45)
+   F223                       NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -116095057920 (i0 = 15, j = 45)
+   F133+F223                  = c beta exactly on all 230496 entries: c(kappa) = 32, c(Killing) = 1/2
+   w133+w223 = -3F133+2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -580475289600 (i0 = 15, j = 45)
+   w133-w223 = -3F133-2F223   NOT in C beta: 2x2 minor beta[i0] X[j] - X[i0] beta[j] = -116095057920 (i0 = 15, j = 45)
+   arithmetic: {'float': 154, 'int64': 0, 'object': 0, 'maxbound': 17187500.0} ; time W 0.1s, total 0.1s

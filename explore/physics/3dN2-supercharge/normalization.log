@@ -1,0 +1,16 @@
+(3.15) super-propagator closed in (tau, zbar, u) mod dz: True
+P_GKW = Pzb dzb + Pu du with
+   Pzb = -u/(4*r**3)    Pu = zb/(2*r**3)    (r^2 = u^2 + |z|^2)
+d'P_GKW = 0 for x != 0: True
+int dVol ^ d'P_GKW over a ball containing 0, (3.2) orientation = 1
+CDG (5.7) printed: d' of (zb dt - t dzb)/|x|^3 =  -(-2*u**2 + z*zb)/(2*(u**2 + z*zb)**(5/2))  dt^dzb  (nonzero: not closed)
+   with |x|^2 = t^2 + 1|z|^2: -(-2*u**2 + z*zb)/(2*(u**2 + z*zb)**(5/2))
+   with |x|^2 = t^2 + 2|z|^2: -(-u**2 + z*zb)/(u**2 + 2*z*zb)**(5/2)
+   with |x|^2 = t^2 + 4|z|^2: -(-u**2 + 2*z*zb)/(u**2 + 4*z*zb)**(5/2)
+closed numerator: d'[(2 zb dt - t dzb)/|x|^3] = 0
+P_GKW ^ dVol in CDG form:  (1/2pi i) * (Pu du + Pzb dzb) ^ dz  -> coefficient of (zb dt - ...): -I/(4*pi) , I/(8*pi)
+GKW (3.59) vs htk, edge order (t12,t23,t24,t31,t43):
+   t=['4/9', '1/2', '4', '1/8', '5/9'] lam=['-2', '-2', '2'] : (R/pi^3)^2 = 4, sign(R) = +1 ; D^2 U^5 / (l1 l4)^2 = 1/4
+   t=['1', '8/7', '3/4', '1/3', '7'] lam=['5', '-4', '-3'] : (R/pi^3)^2 = 4, sign(R) = +1 ; D^2 U^5 / (l1 l4)^2 = 1/4
+   t=['1/5', '1/5', '8/7', '1', '8/3'] lam=['0', '-4', '-5'] : D = 0, l1(l1+l2+l3) = 0
+   t=['3/8', '4/5', '7/5', '7/9', '7/6'] lam=['3', '4', '1'] : (R/pi^3)^2 = 4, sign(R) = +1 ; D^2 U^5 / (l1 l4)^2 = 1/4

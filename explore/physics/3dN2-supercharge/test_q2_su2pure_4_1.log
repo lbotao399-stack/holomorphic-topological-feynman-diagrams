@@ -1,0 +1,2 @@
+theory: SU(2)+0 adj W: {} kappa: 3/7 pool size 12
+monomials 506 (deg<=4, total derivatives<=1): Q2 != 0 on 345, tadpole part != 0 on 0, Q0Q2 and Q2Q0 both != 0 on 342, {Q0,Q2} != 0 on 0   [9s]

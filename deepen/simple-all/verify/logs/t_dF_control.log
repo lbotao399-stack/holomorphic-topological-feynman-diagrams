@@ -1,0 +1,6 @@
+unmodified: so5(mat)         p=1048573  d F_133 = 0, d F_223 = 0 (mod p) at a random point  (0.0s)
+control (coefficients uu<->uv permuted): so5(mat)         p=1048573  d F_133 = 249603, d F_223 = 845966 (mod p) at a random point  (0.0s)
+unmodified: G2(phi in so7)   p=1048573  d F_133 = 0, d F_223 = 0 (mod p) at a random point  (0.1s)
+control (coefficients uu<->uv permuted): G2(phi in so7)   p=1048573  d F_133 = 555736, d F_223 = 654836 (mod p) at a random point  (0.1s)
+unmodified: E6(FK)           p=1048573  d F_133 = 0, d F_223 = 0 (mod p) at a random point  (2.8s)
+control (coefficients uu<->uv permuted): E6(FK)           p=1048573  d F_133 = 949809, d F_223 = 815963 (mod p) at a random point  (2.8s)

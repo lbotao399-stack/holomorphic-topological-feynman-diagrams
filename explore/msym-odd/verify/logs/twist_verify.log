@@ -1,0 +1,19 @@
+(1) reduction of dbar, dbar* along sigma = Im x^{H+1}:
+   H=1: Phi dbar = (dbar+d_tau) Phi: True; Phi dbar* = D* Phi: True; [D,D*] = -Lap/2: True; pull-back: Phi' dbar = (dbar + d_tau/2) Phi': True
+   H=2: Phi dbar = (dbar+d_tau) Phi: True; Phi dbar* = D* Phi: True; [D,D*] = -Lap/2: True; pull-back: Phi' dbar = (dbar + d_tau/2) Phi': True
+   H=3: Phi dbar = (dbar+d_tau) Phi: True; Phi dbar* = D* Phi: True; [D,D*] = -Lap/2: True; pull-back: Phi' dbar = (dbar + d_tau/2) Phi': True
+(2) measures:
+   H=3 T=0 Omega = I dx^1..dx^H : Omega ^ dxbar^1..dxbar^H = 8 d^6x_E
+   H=1 T=1 Omega = 2*I dx^1..dx^H : Omega ^ dxbar^1..dxbar^H ^ dtau = 4 d^3x_E
+   H=2 T=1 Omega = 1 dx^1..dx^H : Omega ^ dxbar^1..dxbar^H ^ dtau = 4 d^5x_E
+   H=3 T=1 Omega = I/2 dx^1..dx^H : Omega ^ dxbar^1..dxbar^H ^ dtau = 4 d^7x_E
+(3) holomorphic term:
+   10d: chi ^ dbar chi = e^1..e^5 L_hol: True
+   (H,T,k)=(3,0,2): int Omega ^ [int d^k theta (1/2) C2 D C2] / int d^Dx L_hol^red = {-1/4} (same support: True)
+   (H,T,k)=(1,1,3): int Omega ^ [int d^k theta (1/2) C2 D C2] / int d^Dx L_hol^red = {-1/4} (same support: True)
+   (H,T,k)=(2,1,2): int Omega ^ [int d^k theta (1/2) C2 D C2] / int d^Dx L_hol^red = {-1/4} (same support: True)
+   (H,T,k)=(3,1,1): int Omega ^ [int d^k theta (1/2) C2 D C2] / int d^Dx L_hol^red = {-1/4} (same support: True)
+(4) T = 1 heat kernel, edge form, propagator:
+   H=1: int Omega^K = 1; (d_t + [D,D*])K = 0: True; D*K = iota_E K/t: True; K - dt^D*K = (4 pi^(H+1/2))^-1 e^(-eta^2-y.x) d^Hy^deta: True; (d_t + D)Theta = 0: True; P coefficient 1/(8*pi) (claim Gamma(H+1/2)/(4 pi^(H+1/2)) = 1/(8*pi): True); D P = 0: True; P degree 1
+   H=2: int Omega^K = 1; (d_t + [D,D*])K = 0: True; D*K = iota_E K/t: True; K - dt^D*K = (4 pi^(H+1/2))^-1 e^(-eta^2-y.x) d^Hy^deta: True; (d_t + D)Theta = 0: True; P coefficient 3/(16*pi**2) (claim Gamma(H+1/2)/(4 pi^(H+1/2)) = 3/(16*pi**2): True); D P = 0: True; P degree 2
+   H=3: int Omega^K = 1; (d_t + [D,D*])K = 0: True; D*K = iota_E K/t: True; K - dt^D*K = (4 pi^(H+1/2))^-1 e^(-eta^2-y.x) d^Hy^deta: True; (d_t + D)Theta = 0: True; P coefficient 15/(32*pi**3) (claim Gamma(H+1/2)/(4 pi^(H+1/2)) = 15/(32*pi**3): True); D P = 0: True; P degree 3

@@ -1,0 +1,17 @@
+V1  heat kernel, edge form, propagator on R x C^2
+(a) [D,D*] f = -f_tautau - 4 sum f_{z zb}: True
+(b) [D,D*] K_t = -d_t K_t: True
+    D* K_t = t^-1 iota_E K_t, E = (tau/2) d_tau + zb^i d_zb^i: True
+    D* K_t components: {(3, 4): tau/(256*pi**(5/2)*t**(7/2)), (0, 4): -zb1/(128*pi**(5/2)*t**(7/2)), (0, 3): zb2/(128*pi**(5/2)*t**(7/2))}
+(c) K_t - dt ^ D*K_t = (4 pi^{5/2})^-1 e^{-eta^2 - y.z} deta ^ dy1 ^ dy2: True
+    (d_t + D) Theta = 0: True
+(d) int_0^oo D*K_t dt = {(3, 4): 3*tau/(32*pi**2), (0, 4): -3*zb1/(16*pi**2), (0, 3): 3*zb2/(16*pi**2)} / r^5
+    = (3/(16 pi^2 r^5)) [ (tau/2) dzb1 dzb2 - dtau ^ (zb1 dzb2 - zb2 dzb1) ]: True
+    D P = 0: True ; D* P = 0: True
+    IJZ (2.12) numerator, (x,z,t)->(z1,z2,tau), eps1 -> 1: True
+(e) Omega ^ dtau ^ dzb1 ^ dzb2 in real coordinates: {(0, 1, 2, 3, 4): 4}
+    int Omega ^ [K_t] = 1
+    Omega ^ [P] = iota_V d^5x ; x.V = 3/(8*pi**2) / r^3 ; div V = 0
+    flux = (x.V/r) r^4 Area(S^4) = 1 ; Area(S^4) = 8*pi**2/3
+(f) WW (22) pulled back by x = sqrt2 tau: H_WW(t) / K_{t/2} = 4 ; int Omega ^ H_WW = 4
+    P_WW (literal (22)) / P per component: {(3, 4): 4, (0, 4): 4, (0, 3): 4}

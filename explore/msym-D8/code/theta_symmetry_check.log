@@ -1,0 +1,5 @@
+theta(1, 4, 4), outputs {1: 4, 2: 5, 3: 6, 4: 1, 5: 2, 6: 3}, inputs {1: 1, 2: 3, 3: 2}: K(lam o pi; z o pi) = +1 K(lam; z) (z = 0 and first order, 3 points): True
+theta(3, 3, 3), outputs {1: 3, 2: 4, 3: 1, 4: 2, 5: 5, 6: 6}, inputs {1: 2, 2: 1, 3: 3}: K(lam o pi; z o pi) = -1 K(lam; z) (z = 0 and first order, 3 points): True
+theta(3, 3, 3), outputs {1: 1, 2: 2, 3: 5, 4: 6, 5: 3, 6: 4}, inputs {1: 1, 2: 3, 3: 2}: K(lam o pi; z o pi) = -1 K(lam; z) (z = 0 and first order, 3 points): True
+K_144(lam;0) = -(1/11520)(<1234>+2<1235>+3<1236>)(<1456>+2<2456>+3<3456>): True
+K_234(lam;0) = -(1/17280)(<1234>+2<1235>+3<1236>)(3<1456>+2<2456>+4<3456>): True

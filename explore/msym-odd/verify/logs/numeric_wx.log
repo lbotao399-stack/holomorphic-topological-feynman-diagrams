@@ -1,0 +1,30 @@
+case 122: H=1 N=5 lam=[[3], [1], [0]]; vectorized vs exact density at a rational point: -0.000883842169300591 vs -0.000883842169300592
+case 122 (chart (w, x), brute-force integrand), lam = [[3], [1], [0]]:
+   K(lam;0)           QMC -3.141592649 +- 6.3e-16 (2^20 x 8)   exact -3.141592654   rel. diff 1.4e-09 (8.9 digits), |diff|/err = 6988049.9
+   int D y^0_{e=1}    QMC 5.969026037 +- 4.4e-10 (2^20 x 8)   exact 5.969026042   rel. diff 7.5e-10 (9.1 digits), |diff|/err = 10.1
+   time 13s
+case A: H=2 N=7 lam=[[3, 1], [1, 3], [0, 0], [2, -2], [-3, -1]]; vectorized vs exact density at a rational point: 3.57556739861113e-05 vs 3.57556739861112e-05
+case A (chart (w, x), brute-force integrand), lam = [[3, 1], [1, 3], [0, 0], [2, -2], [-3, -1]]:
+   K(lam;0)           QMC 10.05309647 +- 4.8e-15 (2^20 x 8)   exact 10.05309649   rel. diff 2.3e-09 (8.6 digits), |diff|/err = 4869808.8
+   int D y^0_{e=0}    QMC -26.32953818 +- 4e-07 (2^20 x 8)   exact -26.32953843   rel. diff 9.6e-09 (8.0 digits), |diff|/err = 0.6
+   time 42s
+case B: H=2 N=7 lam=[[3, 1], [1, 3], [0, 0], [2, -2], [-3, -1]]; vectorized vs exact density at a rational point: -3.37430475392365e-05 vs -3.37430475392365e-05
+case B (chart (w, x), brute-force integrand), lam = [[3, 1], [1, 3], [0, 0], [2, -2], [-3, -1]]:
+   K(lam;0)           QMC -6.702064321 +- 1.8e-11 (2^20 x 8)   exact -6.702064328   rel. diff 9.4e-10 (9.0 digits), |diff|/err = 352.8
+   int D y^0_{e=2}    QMC 10.05309763 +- 1.2e-06 (2^20 x 8)   exact 10.05309649   rel. diff 1.1e-07 (6.9 digits), |diff|/err = 0.9
+   time 44s
+case 144: H=3 N=9 lam=[[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]; vectorized vs exact density at a rational point: 9.23364213639303e-08 vs 9.23364213639306e-08
+case 144 (chart (w, x), brute-force integrand), lam = [[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]:
+   K(lam;0)           QMC 0.8975978981 +- 2.5e-14 (2^20 x 8)   exact 0.897597901   rel. diff 3.3e-09 (8.5 digits), |diff|/err = 114830.6
+   int D y^0_{e=1}    QMC -4.463056224 +- 3.4e-07 (2^20 x 8)   exact -4.46305623   rel. diff 1.3e-09 (8.9 digits), |diff|/err = 0.0
+   time 102s
+case 234: H=3 N=9 lam=[[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]; vectorized vs exact density at a rational point: 7.265739182085e-08 vs 7.26573918208478e-08
+case 234 (chart (w, x), brute-force integrand), lam = [[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]:
+   K(lam;0)           QMC 0.5385587401 +- 2.5e-11 (2^20 x 8)   exact 0.5385587406   rel. diff 9.8e-10 (9.0 digits), |diff|/err = 21.3
+   int D y^0_{e=2}    QMC -2.617994322 +- 2.6e-07 (2^20 x 8)   exact -2.617993878   rel. diff 1.7e-07 (6.8 digits), |diff|/err = 1.7
+   time 93s
+case 333: H=3 N=9 lam=[[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]; vectorized vs exact density at a rational point: 2.17224868050012e-08 vs 2.17224868050018e-08
+case 333 (chart (w, x), brute-force integrand), lam = [[3, 1, 1], [3, 1, 2], [2, -2, -3], [-1, -2, 3], [3, -3, 0], [2, -3, 2], [0, 0, 0]]:
+   K(lam;0)           QMC 0.1009797639 +- 1.3e-11 (2^20 x 8)   exact 0.1009797639   rel. diff 1.0e-10 (10.0 digits), |diff|/err = 0.8
+   int D y^0_{e=3}    QMC -0.2804993379 +- 1.2e-08 (2^20 x 8)   exact -0.2804993441   rel. diff 2.2e-08 (7.7 digits), |diff|/err = 0.5
+   time 93s

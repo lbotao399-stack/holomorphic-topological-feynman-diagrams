@@ -1,0 +1,65 @@
+theta(1, 3, 3): (60/pi) K = -3*(p0_0*p1_1 - p0_1*p1_0)*(p2_0*p3_1 - p2_1*p3_0)
+theta(2, 2, 3): (60/pi) K = 2*(p0_0*p1_1 - p0_1*p1_0)*(p2_0*p3_1 - p2_1*p3_0)
+(60/pi) K_133 = -3 [p1p2][p3p4], (60/pi) K_223 = 2 [p1p2][p3p4]: True True
+
+=== 1. combined colour tensor W_tot = -3 W_133 + 2 W_223 (trace basis, {N power: coeff}) ===
+   tr(1234) {0: -10}
+   tr(1243) {0: -10, 2: -3}
+   tr(1324) {0: 20}
+   tr(1342) {0: -10, 2: -3}
+   tr(1423) {0: 20}
+   tr(1432) {0: -10}
+   tr(1) tr(234) {1: 3}
+   tr(1) tr(243) {1: 3}
+   tr(12) tr(34) {1: -26}
+   tr(123) tr(4) {1: 3}
+   tr(124) tr(3) {1: 3}
+   tr(13) tr(24) {1: 4}
+   tr(132) tr(4) {1: 3}
+   tr(134) tr(2) {1: 3}
+   tr(14) tr(23) {1: 4}
+   tr(142) tr(3) {1: 3}
+   tr(143) tr(2) {1: 3}
+   tr(1) tr(2) tr(34) {0: 20}
+   tr(1) tr(23) tr(4) {0: -10}
+   tr(1) tr(24) tr(3) {0: -10}
+   tr(12) tr(3) tr(4) {0: 20}
+   tr(13) tr(2) tr(4) {0: -10}
+   tr(14) tr(2) tr(3) {0: -10}
+restriction to sl_N (drop terms containing tr(X_i)):
+   tr(1234) {0: -10}
+   tr(1243) {0: -10, 2: -3}
+   tr(1324) {0: 20}
+   tr(1342) {0: -10, 2: -3}
+   tr(1423) {0: 20}
+   tr(1432) {0: -10}
+   tr(12) tr(34) {1: -26}
+   tr(13) tr(24) {1: 4}
+   tr(14) tr(23) {1: 4}
+sl2: W_tot = c12 k12 k34 + c13 k13 k24 + c14 k14 k23, k_ij = tr(X_i X_j): [{x0: -104, x1: 16, x2: 40}]
+
+=== 2. formal closedness ===
+d omega_133 = 0 formally: True ; d omega_223 = 0 formally: True
+N powers in omega: [0, 1, 2]
+
+=== 3. exactness for gl_N (formal trace basis) ===
+spanning set of C^3: 54 vectors; rank d(C^3) = 6
+  N =  2: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7   (formal basis not faithful for N < 4)
+  N =  3: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7   (formal basis not faithful for N < 4)
+  N =  4: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+  N =  5: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+  N =  6: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+  N =  7: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+  N =  8: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+  N =  9: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+  N = 10: rank [d(C3) | omega] = 7  -> exact: False;  rank [d(C3) | omega_133 | omega_223] = 7
+
+=== 4. explicit components: class structure of omega_133, omega_223 ===
+sl3: rank d(C3) = 3, [.|w133] = 4, [.|w223] = 4, [.|w133|w223] = 4, [.|w133+w223] = 4, [.|w133-w223] = 4
+gl3: rank d(C3) = 6, [.|w133] = 7, [.|w223] = 7, [.|w133|w223] = 7, [.|w133+w223] = 7, [.|w133-w223] = 7
+
+=== 5. invariant cohomology at weight (2,2), formal trace basis (N >= 5) ===
+dim C^4 (invariant, weight (2,2)): rank of 864 spanning vectors mod p1, p2 = (36, 36)
+rank d: C^4 -> C^5 mod p1, p2 = (26, 26)  (13s)
+dim Z^4 = 10, dim B^4 = (6, 6), dim H^4_(2,2) = 4  (mod-p ranks; B^4 exact rank 6)
+total 25s

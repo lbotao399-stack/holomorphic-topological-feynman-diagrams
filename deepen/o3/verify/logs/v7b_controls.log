@@ -1,0 +1,3 @@
+control theta(1, 3, 3) (two loops, T=1): brute density coefficient nonzero at 3 random points: [True, False, False]
+control theta(2, 2, 3) (two loops, T=1): brute density coefficient nonzero at 3 random points: [True, False, True]
+control polygon(4) at (H,T) = (3,0): K = 29/36

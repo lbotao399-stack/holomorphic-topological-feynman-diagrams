@@ -1,0 +1,7 @@
+K4[1,1,1,1,3,3]    assembly (bare + 30 first + 465 second) 2.3s; bare fixture equal; 5 first + 3 second vs cores.kernel: 0 mismatches (83s)
+K4[1,1,1,2,2,3]a   assembly (bare + 30 first + 465 second) 0.7s; bare fixture equal; 5 first + 3 second vs cores.kernel: 0 mismatches (94s)
+K4[1,1,1,2,2,3]b   assembly (bare + 30 first + 465 second) 0.7s; bare fixture equal; 5 first + 3 second vs cores.kernel: 0 mismatches (107s)
+K4[1,1,1,2,2,3]c   assembly (bare + 30 first + 465 second) 0.9s; bare fixture equal; 5 first + 3 second vs cores.kernel: 0 mismatches (100s)
+K4[1,1,2,2,2,2]a   assembly (bare + 30 first + 465 second) 1.1s; bare fixture equal; 5 first + 3 second vs cores.kernel: 0 mismatches (105s)
+K4[1,1,2,2,2,2]b   assembly (bare + 30 first + 465 second) 0.8s; bare fixture equal; 5 first + 3 second vs cores.kernel: 0 mismatches (93s)
+total compared 54, mismatches 0

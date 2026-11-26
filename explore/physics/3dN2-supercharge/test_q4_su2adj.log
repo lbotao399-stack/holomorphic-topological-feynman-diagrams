@@ -1,0 +1,6 @@
+theory SU(2)+1 adj : 8976 undifferentiated monomials of degree 2..6
+n=2: general engine vs path/cycle-pattern engine: mismatches 0 (Q2 != 0 on 543)  [5s]
+ħ^4: 150 monomials (degree >= 4) sampled; Qh2^2 != 0 on 26, {Q0,Qh4fan} != 0 on 26, {Q0,T50} != 0 on 0; 158 coefficient equations  [147s]
+solution of Qh2^2 + u {Q0,Qh4fan} + v {Q0,T(5,0)} = 0: [{u: 1}]
+   residual nonzero equations: 0
+python3 test_q4.py su2adj 6 150  153.24s user 0.63s system 99% cpu 2:34.09 total

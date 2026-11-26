@@ -1,0 +1,50 @@
+bulk3 #0 core=banana bare={'1': '1/186624000'} moments=38 spred_match=True 42s
+bulk3 #1 core=banana bare={} moments=39 spred_match=True 41s
+bulk3 #2 core=banana bare={} moments=0 spred_match=True 35s
+bulk3 #3 core=wheel bare={} moments=36  41s
+bulk3 #4 core=wheel bare={'1': '-90379/42326323200', 'z3': '29/16329600'} moments=39  42s
+bulk3 #5 core=wheel bare={'1': '-1/62985600'} moments=38  46s
+bulk3 #6 core=wheel bare={'1': '-69743/105815808000', 'z3': '11/20412000'} moments=39  43s
+bulk3 #7 core=wheel bare={} moments=14  42s
+bulk3 #8 core=wheel bare={} moments=26  48s
+bulk3 #9 core=wheel bare={} moments=24  47s
+bulk3 #10 core=wheel bare={} moments=26  50s
+bulk3 #11 core=prism bare={'1': '-136903/9405849600', 'z3': '-23941/587865600', 'z5': '5/81648'} moments=39  76s
+bulk3 #12 core=prism bare={'1': '516283/169305292800', 'z3': '763/83980800', 'z5': '-11/816480'} moments=39  71s
+bulk3 #13 core=prism bare={} moments=38  75s
+bulk3 #14 core=prism bare={'1': '-90283/67722117120', 'z3': '1/20995200', 'z5': '1/816480'} moments=39  69s
+bulk3 #15 core=prism bare={'1': '1969714721/253957939200', 'z3': '1742063/83980800', 'z5': '-25741/816480'} moments=39  66s
+bulk3 #16 core=prism bare={'1': '-1771133/16124313600', 'z3': '-37957/130636800', 'z5': '241/544320'} moments=39  68s
+bulk3 #17 core=prism bare={'1': '-5474243/5079158784000', 'z3': '1777/1959552000'} moments=39  62s
+bulk3 #18 core=prism bare={'1': '966996061/677221171200', 'z3': '51269/13436928', 'z5': '-18943/3265920'} moments=39  60s
+bulk3 #19 core=prism bare={'1': '-1376521747/677221171200', 'z3': '-304513/55987200', 'z5': '4499/544320'} moments=39  61s
+bulk3 #20 core=prism bare={'1': '-17876711/1693052928000', 'z3': '-8003/326592000', 'z5': '1/25920'} moments=39  57s
+bulk3 #21 core=prism bare={'1': '6626281/1058158080', 'z3': '58609/3499200', 'z5': '-433/17010'} moments=39  60s
+bulk3 #22 core=prism bare={'1': '11629/16930529280', 'z3': '-19/32659200'} moments=39  62s
+bulk3 #23 core=prism bare={'1': '-5387821/1504935936', 'z3': '-750487/78382080', 'z5': '7921/544320'} moments=39  61s
+bulk3 #24 core=prism bare={} moments=34  62s
+bulk3 #25 core=prism bare={'1': '706474481/225740390400', 'z3': '2185063/261273600', 'z5': '-173/13608'} moments=39  69s
+bulk3 #26 core=prism bare={'1': '-765137/314928000', 'z3': '-379/58320', 'z5': '4/405'} moments=38  57s
+bulk3 #27 core=prism bare={'1': '4642972919/1693052928000', 'z3': '14374987/1959552000', 'z5': '-12137/1088640'} moments=39  73s
+bulk3 #28 core=prism bare={'1': '66991/17635968000', 'z3': '-43/13608000'} moments=39  54s
+bulk3 #29 core=prism bare={'1': '230775907/60466176000', 'z3': '738469/72576000', 'z5': '-13/840'} moments=38  77s
+bulk3 #30 core=prism bare={'1': '-193542799/52907904000', 'z3': '-7181059/734832000', 'z5': '1213/81648'} moments=39  67s
+bulk3 #31 core=prism bare={'1': '-237259/12093235200', 'z3': '-3083/48988800', 'z5': '5/54432'} moments=37  68s
+bulk3 #32 core=prism bare={'1': '-197320301/253957939200', 'z3': '-606637/293932800', 'z5': '10261/3265920'} moments=39  69s
+bulk3 #33 core=prism bare={'1': '3717317/56435097600', 'z3': '30901/167961600', 'z5': '-113/408240'} moments=37  70s
+bulk3 #34 core=prism bare={} moments=34  69s
+bulk3 #35 core=prism bare={'1': '4721359/3224862720', 'z3': '1533761/391910400', 'z5': '-1619/272160'} moments=39  77s
+bulk3 #36 core=prism bare={'1': '2076679/587865600', 'z3': '76933/8164800', 'z5': '-65/4536'} moments=35  61s
+bulk3 #37 core=prism bare={'1': '3476941/1045094400', 'z3': '7441/839808', 'z5': '-5503/408240'} moments=38  85s
+bulk3 #38 core=prism bare={'1': '101978921/25395793920', 'z3': '2526137/235146240', 'z5': '-1333/81648'} moments=39  79s
+bulk3 #39 core=K33 bare={'1': '-339933143/94058496000', 'z3': '-4742693/489888000', 'z5': '4003/272160'} moments=39  83s
+bulk3 #40 core=K33 bare={'1': '-12694111093/3386105856000', 'z3': '-57479/5740875', 'z5': '3551/233280'} moments=39  81s
+bulk3 #41 core=K33 bare={'1': '-304937/734832000', 'z3': '-44911/40824000', 'z5': '19/11340'} moments=38  58s
+bulk3 #42 core=K33 bare={} moments=34  66s
+bulk3 #43 core=K33 bare={'1': '17809481/22574039040', 'z3': '1239569/587865600', 'z5': '-2617/816480'} moments=39  72s
+bulk3 #44 core=K33 bare={'1': '4417188833/1693052928000', 'z3': '13743059/1959552000', 'z5': '-1159/108864'} moments=39  76s
+bulk3 #45 core=K33 bare={'1': '-209968763/846526464000', 'z3': '-7554973/11757312000', 'z5': '1607/1632960'} moments=39  79s
+bulk3 #46 core=K33 bare={'1': '-153527/116121600', 'z3': '-460847/130636800', 'z5': '73/13608'} moments=38  79s
+bulk3 #47 core=K33 bare={'1': '37777763/9405849600', 'z3': '311461/29393280', 'z5': '-1649/102060'} moments=34  64s
+bulk3 #48 core=K33 bare={} moments=39  79s
+bulk3 #49 core=K33 bare={} moments=32  76s

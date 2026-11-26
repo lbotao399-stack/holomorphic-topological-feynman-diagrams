@@ -1,0 +1,16 @@
+gl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=-1 dimM=2 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=0 dimM=52 dimV=12 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(0, 1, 1, 1, 1) w=(-1, 0, 0) (a,b)=(1, 1) g=1 dimM=366 dimV=132 H(p1,p2)=[2, 2] pred=2 OK | psi_S rep: closed=True rank mod B=2 (dim Z^n=18) REP-OK
+# (0, 1, 1, 1, 1) done in 0.3s
+gl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=-1 dimM=2 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=0 dimM=52 dimV=12 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(1, 1, 0, 1, 1) w=(0, 0, -1) (a,b)=(1, 1) g=1 dimM=366 dimV=132 H(p1,p2)=[2, 2] pred=2 OK | psi_S rep: closed=True rank mod B=2 (dim Z^n=18) REP-OK
+# (1, 1, 0, 1, 1) done in 0.3s
+gl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=-1 dimM=170 dimV=128 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=0 dimM=882 dimV=620 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(2, 1, 1, 0, 0) w=(1, 0, 0) (a,b)=(0, 0) g=1 dimM=2630 dimV=1790 H(p1,p2)=[0, 0] pred=0 OK
+# (2, 1, 1, 0, 0) done in 1.2s
+gl2 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=0 dimM=2 dimV=0 H(p1,p2)=[0, 0] pred=0 OK
+gl2 t=(1, 0, 0, 1, 1) w=(0, -1, -1) (a,b)=(1, 1) g=1 dimM=26 dimV=6 H(p1,p2)=[0, 0] pred=0 OK
+# (1, 0, 0, 1, 1) done in 0.0s
+TOTAL gl2 charge0=True exact=False: compared 11 mismatches 0

@@ -1,0 +1,136 @@
+== bulk3: cubic bulk graphs (legs at bivalent vertices), pattern = legs ==
+bulk3 D=2 n=1 legs 3: graphs 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+bulk3 D=2 n=2 legs 2: graphs 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+bulk3 D=2 n=3 legs 1: graphs 1 | SP 0 | tight-poly 1 | B nonSP 1 | k_Y1 {'0': 1}
+      1x K4, chain lengths [1, 1, 1, 1, 1, 2] k=0
+bulk3 D=2 n=4 legs 0: graphs 2 | SP 0 | tight-poly 0 | B nonSP 2 | k_Y1 {'0': 2}
+      1x K33, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1] k=0
+      1x prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 1, 1] k=0
+bulk3 D=2 n=5 legs -1: graphs 0 | SP 0 | tight-poly 0 | B nonSP 0 | k_Y1 {}
+bulk3 D=2 n=6 legs -2: graphs 0 | SP 0 | tight-poly 0 | B nonSP 0 | k_Y1 {}
+bulk3 D=3 n=1 legs 4: graphs 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+bulk3 D=3 n=2 legs 4: graphs 2 | SP 2 | tight-poly 2 | B nonSP 0 | k_Y1 {'0': 2}
+bulk3 D=3 n=3 legs 4: graphs 9 | SP 3 | tight-poly 3 | B nonSP 1 | k_Y1 {'0': 4, '1': 5}
+      1x K4, chain lengths [1, 1, 1, 1, 3, 3] k=1
+      1x K4, chain lengths [1, 1, 1, 2, 2, 3] k=0
+      2x K4, chain lengths [1, 1, 1, 2, 2, 3] k=1
+      2x K4, chain lengths [1, 1, 2, 2, 2, 2] k=1
+bulk3 D=3 n=4 legs 4: graphs 50 | SP 3 | tight-poly 3 | B nonSP 2 | k_Y1 {'0': 5, '1': 9, '2': 31, '3': 5}
+      1x K33, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=2
+      4x K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2
+      1x K33, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=3
+      3x K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2
+      2x K33, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=3
+      1x prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=1
+      1x prism, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=2
+      2x prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1
+      12x prism, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=2
+      10x prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=2
+      2x prism, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=3
+      1x skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 1, 3, 3] k=1
+      1x skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=0
+      3x skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 1, 2, 2, 3] k=1
+      1x skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=0
+      2x skeleton |V|=6 |E|=9, chain lengths [1, 1, 1, 1, 1, 2, 2, 2, 2] k=1
+bulk3 D=4 n=1 legs 5: graphs 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+bulk3 D=4 n=2 legs 6: graphs 3 | SP 3 | tight-poly 3 | B nonSP 0 | k_Y1 {'0': 3}
+bulk3 D=4 n=3 legs 7: graphs 27 | SP 7 | tight-poly 7 | B nonSP 1 | k_Y1 {'0': 8, '1': 19}
+      1x K4, chain lengths [1, 1, 1, 2, 4, 4] k=1
+      1x K4, chain lengths [1, 1, 1, 3, 3, 4] k=0
+      2x K4, chain lengths [1, 1, 1, 3, 3, 4] k=1
+      6x K4, chain lengths [1, 1, 2, 2, 3, 4] k=1
+      3x K4, chain lengths [1, 1, 2, 3, 3, 3] k=1
+      2x K4, chain lengths [1, 2, 2, 2, 2, 4] k=1
+      4x K4, chain lengths [1, 2, 2, 2, 3, 3] k=1
+      1x K4, chain lengths [2, 2, 2, 2, 2, 3] k=1
+bulk3 D=5 n=1 legs 6: graphs 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+bulk3 D=5 n=2 legs 8: graphs 4 | SP 4 | tight-poly 4 | B nonSP 0 | k_Y1 {'0': 4}
+bulk3 D=5 n=3 legs 10: graphs 83 | SP 27 | tight-poly 24 | B nonSP 1 | k_Y1 {'0': 28, '1': 55}
+      1x K4, chain lengths [1, 1, 1, 3, 5, 5] k=1
+      1x K4, chain lengths [1, 1, 1, 4, 4, 5] k=0
+      2x K4, chain lengths [1, 1, 1, 4, 4, 5] k=1
+      2x K4, chain lengths [1, 1, 2, 2, 5, 5] k=1
+      9x K4, chain lengths [1, 1, 2, 3, 4, 5] k=1
+      3x K4, chain lengths [1, 1, 2, 4, 4, 4] k=1
+      2x K4, chain lengths [1, 1, 3, 3, 3, 5] k=1
+      4x K4, chain lengths [1, 1, 3, 3, 4, 4] k=1
+      2x K4, chain lengths [1, 2, 2, 2, 4, 5] k=1
+      7x K4, chain lengths [1, 2, 2, 3, 3, 5] k=1
+      7x K4, chain lengths [1, 2, 2, 3, 4, 4] k=1
+      5x K4, chain lengths [1, 2, 3, 3, 3, 4] k=1
+      1x K4, chain lengths [1, 3, 3, 3, 3, 3] k=1
+      2x K4, chain lengths [2, 2, 2, 2, 3, 5] k=1
+      2x K4, chain lengths [2, 2, 2, 2, 4, 4] k=1
+      4x K4, chain lengths [2, 2, 2, 3, 3, 4] k=1
+      2x K4, chain lengths [2, 2, 3, 3, 3, 3] k=1
+bulk3 D=6 n=1 legs 7: graphs 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+bulk3 D=6 n=2 legs 10: graphs 5 | SP 5 | tight-poly 5 | B nonSP 0 | k_Y1 {'0': 5}
+bulk3 D=6 n=3 legs 13: graphs 185 | SP 54 | tight-poly 42 | B nonSP 1 | k_Y1 {'0': 55, '1': 130}
+      1x K4, chain lengths [1, 1, 1, 4, 6, 6] k=1
+      1x K4, chain lengths [1, 1, 1, 5, 5, 6] k=0
+      2x K4, chain lengths [1, 1, 1, 5, 5, 6] k=1
+      2x K4, chain lengths [1, 1, 2, 3, 6, 6] k=1
+      9x K4, chain lengths [1, 1, 2, 4, 5, 6] k=1
+      3x K4, chain lengths [1, 1, 2, 5, 5, 5] k=1
+      6x K4, chain lengths [1, 1, 3, 3, 5, 6] k=1
+      4x K4, chain lengths [1, 1, 3, 4, 4, 6] k=1
+      5x K4, chain lengths [1, 1, 3, 4, 5, 5] k=1
+      2x K4, chain lengths [1, 1, 4, 4, 4, 5] k=1
+      1x K4, chain lengths [1, 2, 2, 2, 6, 6] k=1
+      6x K4, chain lengths [1, 2, 2, 3, 5, 6] k=1
+      7x K4, chain lengths [1, 2, 2, 4, 4, 6] k=1
+      7x K4, chain lengths [1, 2, 2, 4, 5, 5] k=1
+      9x K4, chain lengths [1, 2, 3, 3, 4, 6] k=1
+      6x K4, chain lengths [1, 2, 3, 3, 5, 5] k=1
+      12x K4, chain lengths [1, 2, 3, 4, 4, 5] k=1
+      2x K4, chain lengths [1, 2, 4, 4, 4, 4] k=1
+      2x K4, chain lengths [1, 3, 3, 3, 3, 6] k=1
+      5x K4, chain lengths [1, 3, 3, 3, 4, 5] k=1
+      4x K4, chain lengths [1, 3, 3, 4, 4, 4] k=1
+      1x K4, chain lengths [2, 2, 2, 2, 5, 6] k=1
+      4x K4, chain lengths [2, 2, 2, 3, 4, 6] k=1
+      3x K4, chain lengths [2, 2, 2, 3, 5, 5] k=1
+      3x K4, chain lengths [2, 2, 2, 4, 4, 5] k=1
+      4x K4, chain lengths [2, 2, 3, 3, 3, 6] k=1
+      9x K4, chain lengths [2, 2, 3, 3, 4, 5] k=1
+      4x K4, chain lengths [2, 2, 3, 4, 4, 4] k=1
+      2x K4, chain lengths [2, 3, 3, 3, 3, 5] k=1
+      4x K4, chain lengths [2, 3, 3, 3, 4, 4] k=1
+      1x K4, chain lengths [3, 3, 3, 3, 3, 4] k=1
+== cone: Q_n with Gamma - O a forest, deg O = n + p (pattern bivalent + O) ==
+cone D=3 n=1: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=3 n=2: (Gamma,O) 2 | SP 2 | tight-poly 2 | k_Y1 {'0': 2}
+cone D=3 n=3: (Gamma,O) 5 | SP 5 | tight-poly 5 | k_Y1 {'0': 5}
+cone D=3 n=4: (Gamma,O) 15 | SP 15 | tight-poly 14 | k_Y1 {'0': 15}
+cone D=4 n=1: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=4 n=2: (Gamma,O) 3 | SP 3 | tight-poly 3 | k_Y1 {'0': 3}
+cone D=4 n=3: (Gamma,O) 12 | SP 12 | tight-poly 9 | k_Y1 {'0': 12}
+cone D=5 n=1: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=5 n=2: (Gamma,O) 4 | SP 4 | tight-poly 4 | k_Y1 {'0': 4}
+cone D=5 n=3: (Gamma,O) 28 | SP 28 | tight-poly 21 | k_Y1 {'0': 28}
+cone D=6 n=1: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=6 n=2: (Gamma,O) 5 | SP 5 | tight-poly 5 | k_Y1 {'0': 5}
+cone D=6 n=3: (Gamma,O) 51 | SP 51 | tight-poly 30 | k_Y1 {'0': 51}
+cone D=2 n=1: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=2 n=2: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=2 n=3: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=2 n=4: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=2 n=5: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+cone D=2 n=6: (Gamma,O) 1 | SP 1 | tight-poly 1 | k_Y1 {'0': 1}
+== fan: D=2, Gamma - O a path ==
+fan n=1: 1 | SP 1 | k_Y1 {'0': 1}
+fan n=2: 1 | SP 1 | k_Y1 {'0': 1}
+fan n=3: 1 | SP 1 | k_Y1 {'0': 1}
+fan n=4: 1 | SP 1 | k_Y1 {'0': 1}
+fan n=5: 1 | SP 1 | k_Y1 {'0': 1}
+fan n=6: 1 | SP 1 | k_Y1 {'0': 1}
+== twistor BF Q_n: D=3, Gamma - O connected, cycle rank 0 / 1 ==
+twistor tree n=1: (Gamma,O) 1 | SP 1 | tight-poly 1 | B nonSP 0 | k_Y1 {'0': 1}
+twistor unicyclic n=1: (Gamma,O) 0 | SP 0 | tight-poly 0 | B nonSP 0 | k_Y1 {}
+twistor tree n=2: (Gamma,O) 2 | SP 2 | tight-poly 2 | B nonSP 0 | k_Y1 {'0': 2}
+twistor unicyclic n=2: (Gamma,O) 3 | SP 3 | tight-poly 3 | B nonSP 0 | k_Y1 {'0': 3}
+twistor tree n=3: (Gamma,O) 5 | SP 5 | tight-poly 5 | B nonSP 0 | k_Y1 {'0': 5}
+twistor unicyclic n=3: (Gamma,O) 18 | SP 4 | tight-poly 4 | B nonSP 2 | k_Y1 {'0': 6, '1': 12}
+twistor tree n=4: (Gamma,O) 15 | SP 15 | tight-poly 14 | B nonSP 0 | k_Y1 {'0': 15}
+twistor unicyclic n=4: (Gamma,O) 95 | SP 10 | tight-poly 10 | B nonSP 7 | k_Y1 {'0': 17, '1': 50, '2': 28}
+time 15.8s

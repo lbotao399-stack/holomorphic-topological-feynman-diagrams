@@ -1,0 +1,18 @@
+/Users/libotao/Desktop/holomorphic-twist-program/deepen/simple-all/verify/vpoint.py:59: RuntimeWarning: divide by zero encountered in matmul
+  return np.fmod(A @ B, p)
+/Users/libotao/Desktop/holomorphic-twist-program/deepen/simple-all/verify/vpoint.py:59: RuntimeWarning: overflow encountered in matmul
+  return np.fmod(A @ B, p)
+/Users/libotao/Desktop/holomorphic-twist-program/deepen/simple-all/verify/vpoint.py:59: RuntimeWarning: invalid value encountered in matmul
+  return np.fmod(A @ B, p)
+sl2 trial 0 network W133 = -1232  W223 = 732  engine mod p equal: True True
+sl2 trial 1 network W133 = 450  W223 = -426  engine mod p equal: True True
+sl2 engine == explicit index network: True
+sl3 trial 0 network W133 = 5641/3  W223 = -2119/3  engine mod p equal: True True
+sl3 trial 1 network W133 = -1687/6  W223 = 2786/3  engine mod p equal: True True
+sl3 engine == explicit index network: True
+so5 trial 0 network W133 = 4243/6  W223 = -1466/3  engine mod p equal: True True
+so5 trial 1 network W133 = -717/2  W223 = -70  engine mod p equal: True True
+so5 engine == explicit index network: True
+G2 trial 0 network W133 = -105689/12  W223 = 68321/12  engine mod p equal: True True
+G2 trial 1 network W133 = 23255/12  W223 = -54635/12  engine mod p equal: True True
+G2 engine == explicit index network: True

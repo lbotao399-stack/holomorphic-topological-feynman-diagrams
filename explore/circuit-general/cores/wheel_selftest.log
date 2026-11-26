@@ -1,0 +1,5 @@
+radial masters n=3..10 agree 0.01 s
+five-loop example {0: Fraction(-45001, 43545600), 3: Fraction(-116849, 29937600), 5: Fraction(50837, 2993760), 7: Fraction(-7, 594)} True
+WS_3 = K4 at q=2: {3: Fraction(6, 1)}
+WS_4 at q=2: {5: Fraction(20, 1)}
+W4 radial q=3: {3: Fraction(5, 3), 5: Fraction(-5, 3)}

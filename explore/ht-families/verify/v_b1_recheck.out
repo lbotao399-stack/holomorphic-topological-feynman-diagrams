@@ -1,0 +1,6 @@
+G4 lambda [2, -5, 5, 2, -7] seed 1000: own QMC 2^16 x 16 = 32.071802 +- 0.0037 ; claim 32.0762143 ; diff/err -1.18 ; rel diff 1.4e-04 ; 7722 exact (67.1s)
+G4 lambda [2, -5, 5, 2, -7] seed 2000: own QMC 2^16 x 16 = 32.074545 +- 0.0033 ; claim 32.0762143 ; diff/err -0.50 ; rel diff 5.2e-05 ; 7823 exact (68.0s)
+G4 lambda [2, -5, 5, 2, -7] seed 3000: own QMC 2^16 x 16 = 32.080005 +- 0.0034 ; claim 32.0762143 ; diff/err 1.11 ; rel diff 1.2e-04 ; 7794 exact (73.4s)
+G3 lambda [-6, -6, -7, -5, 2] seed 1000: own QMC 2^16 x 16 = -9493.7481 +- 0.02 ; claim -9493.736967 ; diff/err -0.56 ; rel diff 1.2e-06 ; 7722 exact (1471.7s)
+G3 lambda [-6, -6, -7, -5, 2] seed 2000: own QMC 2^16 x 16 = -9493.7583 +- 0.024 ; claim -9493.736967 ; diff/err -0.90 ; rel diff 2.2e-06 ; 7823 exact (63.4s)
+G3 lambda [-6, -6, -7, -5, 2] seed 3000: own QMC 2^16 x 16 = -9493.7324 +- 0.014 ; claim -9493.736967 ; diff/err 0.32 ; rel diff 4.8e-07 ; 7794 exact (63.0s)

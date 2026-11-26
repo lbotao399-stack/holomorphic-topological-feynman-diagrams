@@ -1,0 +1,44 @@
+t3_banana.py -- H = 0, T = 1 (topological quantum mechanics): banana graphs, N = n+1 parallel edges.
+
+(a) parallel move with source kappa (vertex 0, -kappa at the root), exact at random rational t:
+      <prod psi> = <(-w_*)^n> t_red^n prod_i r_i^{-1} dr_2 ^ ... ^ dr_N,
+      <w_*^n> = E[(kappa + xi/sqrt(t_red))^n],  xi ~ N(0, 1/2),   U = t_red^n / prod r_i,   P = t_red kappa^2,
+    hence  T[kappa] = (-1)^n e^{t_red kappa^2} E[(sqrt(t_red) kappa + xi)^n] prod_i r_i^{-1/2} dr_2...dr_N.
+(b) htk density at kappa = 0:  D(t) = eps_N E[xi^n] t_red^{N/2} prod_e t_e^{-3/2}  (sign eps_N and square, exact).
+(c) K_N = int_{sum t = 1} D = eps_N E[xi^n] Gamma(1/2)^N / Gamma(N/2)  ( = eps_N pi^{n/2}, n even; 0, n odd );
+    GKW: I_N = (-1)^n (4 pi)^{-n/2} K_N ( = 2^{1-N} for N odd, Higher.tex (3.28) ).
+(d) numerical oracle: lattice rule (N = 3) and importance Monte Carlo (N = 5) in log Schwinger coordinates
+    of the brute-force density (Pfaffian, floating point).
+(e) ordered product (Higher.tex (4.24)): I*_N = I_N / 2 + I_{N+1} = 2^{-N}; Moyal coefficients I*_N / N!.
+(f) UV boundary of [eps, oo)^N: t_red <= eps on every face, so the kappa-dependence of (a) drops as eps -> 0.
+
+N=2 (n=1): (a) form with source = parallel-move formula: True; (b) density: True, sign eps_N = None; K_N = 0; I_N = 0
+N=3 (n=2): (a) form with source = parallel-move formula: True; (b) density: True, sign eps_N = 1; K_N = 1 pi^1; I_N = 1/4
+N=4 (n=3): (a) form with source = parallel-move formula: True; (b) density: True, sign eps_N = None; K_N = 0; I_N = 0
+N=5 (n=4): (a) form with source = parallel-move formula: True; (b) density: True, sign eps_N = 1; K_N = 1 pi^2; I_N = 1/16
+N=6 (n=5): (a) form with source = parallel-move formula: True; (b) density: True, sign eps_N = None; K_N = 0; I_N = 0
+N=7 (n=6): (a) form with source = parallel-move formula: True; (b) density: True, sign eps_N = 1; K_N = 1 pi^3; I_N = 1/64
+
+(e) ordered product coefficients I*_N = I_N/2 + I_{N+1}  (I_1 = 1):
+   N=1: I*_N = 1/2, 2^-N = 1/2, equal: True;  Moyal coefficient I*_N/N! = 1/2 = (1/2)^N/N!: True
+   N=2: I*_N = 1/4, 2^-N = 1/4, equal: True;  Moyal coefficient I*_N/N! = 1/8 = (1/2)^N/N!: True
+   N=3: I*_N = 1/8, 2^-N = 1/8, equal: True;  Moyal coefficient I*_N/N! = 1/48 = (1/2)^N/N!: True
+   N=4: I*_N = 1/16, 2^-N = 1/16, equal: True;  Moyal coefficient I*_N/N! = 1/384 = (1/2)^N/N!: True
+   N=5: I*_N = 1/32, 2^-N = 1/32, equal: True;  Moyal coefficient I*_N/N! = 1/3840 = (1/2)^N/N!: True
+   N=6: I*_N = 1/64, 2^-N = 1/64, equal: True;  Moyal coefficient I*_N/N! = 1/46080 = (1/2)^N/N!: True
+   commutator coefficients I_N/N!: N=1: 1, N=2: 0, N=3: 1/24, N=4: 0, N=5: 1/1920, N=6: 0, N=7: 1/322560
+
+(d) oracle K = int S(e^s) d^{N-1}s, S = D prod t (brute-force Pfaffian, floats):
+   N=3 lattice (h=0.25): K = 3.14155327 ; exact pi = 3.14159265
+   N=5 importance MC (40000 points): K = 9.947 +- 0.409 ; exact pi^2 = 9.870
+
+(g) o_N = sgn of dr_2^...^dr_N relative to iota_E(dt_1...dt_N) (htk density convention, e0 = 0);
+    slice t_red = s:  K_N(kappa; s) = o_N (-1)^n pi^{N/2}/Gamma(N/2) e^{s kappa^2} E[(sqrt(s) kappa + xi)^n]
+   N=2: o_N = -1;  E[(sqrt(s) k + xi)^n] = sum_j C(n,2j)(2j-1)!!/2^j (sqrt(s) k)^(n-2j)
+   N=3: o_N = 1;  E[(sqrt(s) k + xi)^n] = sum_j C(n,2j)(2j-1)!!/2^j (sqrt(s) k)^(n-2j)
+   N=4: o_N = -1;  E[(sqrt(s) k + xi)^n] = sum_j C(n,2j)(2j-1)!!/2^j (sqrt(s) k)^(n-2j)
+   N=5: o_N = 1;  E[(sqrt(s) k + xi)^n] = sum_j C(n,2j)(2j-1)!!/2^j (sqrt(s) k)^(n-2j)
+   N=6: o_N = -1;  E[(sqrt(s) k + xi)^n] = sum_j C(n,2j)(2j-1)!!/2^j (sqrt(s) k)^(n-2j)
+   N=7: o_N = 1;  E[(sqrt(s) k + xi)^n] = sum_j C(n,2j)(2j-1)!!/2^j (sqrt(s) k)^(n-2j)
+
+time 28.1s

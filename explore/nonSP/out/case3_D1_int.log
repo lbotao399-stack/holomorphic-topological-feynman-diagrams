@@ -1,0 +1,13 @@
+joint g-degree 12  Dg 12  b 5
+homogenization check (0 expected): 0
+g-monomials 27
+(beta, gamma) terms 1879
+H built, time 49.885699`8.149521055441031
+
+NIntegrate::slwcon: Numerical integration converging too slowly; suspect one of the following: singularity, value of the integration is 0, highly oscillatory integrand or WorkingPrecision too small.
+
+                                                                                                                                                                                                                                                                                                                                                                                -6                                                                                                                       -23
+NIntegrate::ncvb: NIntegrate failed to converge to prescribed accuracy after 30 recursive bisections in xi near {xi} = {0.9999999999987422835124552376855558456088311266278805612405827064270941372227842341243696991218294518049323427}. NIntegrate obtained 3.4049021472577105761606718292601313403012619964659373057462754255880296638059026645785255710754370994023409691 10   and 9.7490787835095876204439239377722638875246464485113635080465753709009665840421919655871564244767264131676585816 10    for the integral and error estimates.
+NUMERIC c = 3.40490214725771057616067182926013134030126199646593730574627542558802967`45.*^-6
+RESULT c = InputForm[(34 - 27*Zeta[3])/453600]  N = 3.4049021487895817773524462945124564579924385070690702`30.*^-6
+total time 112.989803`8.504584244938194

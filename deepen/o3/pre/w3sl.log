@@ -1,0 +1,5 @@
+weight (3, 3) sl dim C2,C3,C4 = 0 6 39 t=13.6
+rank d2 = 0
+rank d3 = 6
+rank d4 = 32 t=22.6
+H3 = 0  H4 = 1

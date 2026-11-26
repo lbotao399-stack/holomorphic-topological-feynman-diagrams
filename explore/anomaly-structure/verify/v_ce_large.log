@@ -1,0 +1,13 @@
+R = 30, Schwartz-Zippel bound per sample <= 9/61 = 0.148, for 6 samples <= 1.0e-05
+ sl2: d omega_box = 0 (H=3): True; d omega_133 = 0: True; d omega_223 = 0: True (0s)
+ gl2: d omega_box = 0 (H=3): True; d omega_133 = 0: True; d omega_223 = 0: True (0s)
+ sl3: d omega_box = 0 (H=3): True; d omega_133 = 0: True; d omega_223 = 0: True (0s)
+ gl3: d omega_box = 0 (H=3): True; d omega_133 = 0: True; d omega_223 = 0: True (0s)
+ sl2: omega = d eta, eta solved on 80 small samples, identity at 6 large samples: True (0s)
+ sl2: F_223 = d eta, eta solved on 80 small samples, identity at 6 large samples: True (0s)
+ gl2: omega = d eta, eta solved on 80 small samples, identity at 6 large samples: True (1s)
+ gl2: F_223 = d eta, eta solved on 80 small samples, identity at 6 large samples: True (1s)
+ sl3: omega_133 - (3/2) omega_223 (x2) = d eta, eta solved on 80 small samples, identity at 6 large samples: True (1s)
+ gl3: omega_133 - (3/2) omega_223 (x2) = d eta, eta solved on 80 small samples, identity at 6 large samples: True (1s)
+ gl4: omega_133 - (3/2) omega_223 (x2) = d eta, eta solved on 80 small samples, identity at 6 large samples: True (2s)
+ gl5 (c8): dim C^4 basis 36, kernel of d on samples: 10 vectors; each is a cocycle at 4 fresh samples (range 12): True; independent as cochains: rank 10 (7s)

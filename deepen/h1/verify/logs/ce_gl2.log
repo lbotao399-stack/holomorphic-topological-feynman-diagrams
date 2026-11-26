@@ -1,0 +1,6 @@
+gl2 charge0=True (a,b)=(0,0) n=1:dimC=2,dimC0=2,H=[1, 1] n=2:dimC=2,dimC0=2,H=[0, 0] n=3:dimC=2,dimC0=2,H=[1, 1] n=4:dimC=1,dimC0=1,H=[1, 1] [0.0s]
+gl2 charge0=True (a,b)=(1,0) n=1:dimC=2,dimC0=0,H=[0, 0] n=2:dimC=6,dimC0=4,H=[2, 2] n=3:dimC=8,dimC0=6,H=[0, 0] n=4:dimC=6,dimC0=5,H=[0, 0] n=5:dimC=2,dimC0=2,H=[1, 1] [0.0s]
+gl2 charge0=True (a,b)=(2,0) n=1:dimC=2,dimC0=0,H=[0, 0] n=2:dimC=8,dimC0=2,H=[0, 0] n=3:dimC=16,dimC0=8,H=[0, 0] n=4:dimC=18,dimC0=12,H=[0, 0] n=5:dimC=10,dimC0=8,H=[0, 0] n=6:dimC=2,dimC0=2,H=[0, 0] [0.0s]
+gl2 charge0=True (a,b)=(1,1) n=1:dimC=2,dimC0=0,H=[0, 0] n=2:dimC=12,dimC0=2,H=[0, 0] n=3:dimC=28,dimC0=14,H=[2, 2] n=4:dimC=34,dimC0=23,H=[0, 0] n=5:dimC=22,dimC0=18,H=[1, 1] n=6:dimC=6,dimC0=6,H=[2, 2] [0.0s]
+gl2 charge0=True (a,b)=(2,1) n=1:dimC=2,dimC0=0,H=[0, 0] n=2:dimC=18,dimC0=4,H=[1, 1] n=3:dimC=56,dimC0=20,H=[2, 2] n=4:dimC=90,dimC0=44,H=[1, 1] n=5:dimC=82,dimC0=52,H=[1, 1] n=6:dimC=40,dimC0=32,H=[2, 2] n=7:dimC=8,dimC0=8,H=[1, 1] [0.0s]
+gl2 charge0=True (a,b)=(2,2) n=1:dimC=2,dimC0=0,H=[0, 0] n=2:dimC=26,dimC0=2,H=[0, 0] n=3:dimC=112,dimC0=28,H=[2, 2] n=4:dimC=240,dimC0=94,H=[3, 3] n=5:dimC=290,dimC0=148,H=[1, 1] n=6:dimC=202,dimC0=128,H=[2, 2] n=7:dimC=76,dimC0=60,H=[3, 3] n=8:dimC=12,dimC0=12,H=[1, 1] [0.1s]

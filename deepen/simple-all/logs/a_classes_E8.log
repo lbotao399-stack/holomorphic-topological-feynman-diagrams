@@ -1,0 +1,10 @@
+== E8(Kac)  dim 248 ; form: Kac form (h_i|h_j) = A_ij, (E_a|E_-a) = -1 ; Killing = 60 * form (all entries: True) ; s = 1
+   generators E_{+-alpha_i}: 16, generated dim 248 ; dim (Lambda^3)^g nullity mod p = [1, 1] (unknowns 3256, eqs 18032) ; dim (S^3)^g nullity mod p = [0, 0] (unknowns 3320, eqs 18176) ; dim (T^3)^g nullity mod p = [1, 1] (unknowns 19712, eqs 108624)
+   W_133, W_223: nnz 1606708, 1603060 ; max |s^7 W| 4320 ; y.W = 0 for all generators, all entries: True ; Om nnz 999360
+   entries (union over mu of nonzero keys) 1606644 ; nonzero mu components: F133 [0, 0, 0, 1101560, 1101560, 1101560], F223 [0, 0, 0, 1101560, 1101560, 1101560], beta [0, 0, 0, 999360, 999360, 999360]
+   F133                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*23040 - -13008*0 = -46080 (s^7 units)
+   F223                   NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-23040 - 9408*0 = 46080 (s^7 units)
+   F133+F223              = c beta on all entries: c = 1800 (form used), c_Killing = c / r^2 = 1/2
+   O2: -3F133+2F223       NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-115200 - 57840*0 = 230400 (s^7 units)
+   O2 flip: -3F133-2F223  NOT in C beta: minor beta[i0] X[j] - X[i0] beta[j] = -2*-23040 - 20208*0 = 46080 (s^7 units)
+   time 46.2s (invariants 7.4s)

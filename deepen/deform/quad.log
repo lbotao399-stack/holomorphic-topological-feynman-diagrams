@@ -1,0 +1,12 @@
+==== gl_N: H^4 basis ['F_223[N^1]', 'F_223[N^0]', 'z8', 'z9'] ====
+{d,d}: closed True, weights [(2, 2)], class = {'F_223[N^1]': 0, 'F_223[N^0]': 0, 'z8': 0, 'z9': 0}
+{d,s1}: closed True, weights [(2, 2)], class = {'F_223[N^1]': -1/12, 'F_223[N^0]': 0, 'z8': 0, 'z9': 0}
+{d,s0}: closed True, weights [(2, 2)], class = {'F_223[N^1]': 0, 'F_223[N^0]': 1/24, 'z8': 0, 'z9': 0}
+{s1,s1}: closed True, weights [(2, 2)], class = {'F_223[N^1]': -N/24, 'F_223[N^0]': 1/24, 'z8': 0, 'z9': 0}
+{s1,s0}: closed True, weights [(2, 2)], class = {'F_223[N^1]': 0, 'F_223[N^0]': N/48, 'z8': 0, 'z9': 0}
+{s0,s0}: closed True, weights [], class = {'F_223[N^1]': 0, 'F_223[N^0]': 0, 'z8': 0, 'z9': 0}
+(1/2){J,J} class: {'F_223[N^1]': -b*(N*b + 4*a)/48, 'F_223[N^0]': (N*b*c + 2*a*c + b**2)/48, 'z8': 0, 'z9': 0}
+==== sl_N: H^4 basis ['F_223[N^1]'] ====
+{d,d}: closed True, weights [(2, 2)], class = {'F_223[N^1]': 1/(6*N)}
+(1/2){J,J} class: {'F_223[N^1]': a**2/(12*N)}
+total 0s

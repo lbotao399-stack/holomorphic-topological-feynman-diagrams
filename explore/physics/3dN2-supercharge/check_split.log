@@ -1,0 +1,4 @@
+U(1) charges [1, 2, -3]: 824 monomials (D <= 1): {Q0,fan} != 0 on 0, {Q0,tad} != 0 on 0 ; perturbed K_1 (x2): {Q0,Q2'} != 0 on 27
+GL(2) 1F+0AF: 364 monomials (D <= 1): {Q0,fan} != 0 on 70, {Q0,tad} != 0 on 70 ; perturbed K_1 (x2): {Q0,Q2'} != 0 on 0
+SU(2)+1 adj: 868 monomials (D <= 1): {Q0,fan} != 0 on 0, {Q0,tad} != 0 on 0 ; perturbed K_1 (x2): {Q0,Q2'} != 0 on 0
+python3 check_split.py  43.80s user 0.20s system 99% cpu 44.115 total

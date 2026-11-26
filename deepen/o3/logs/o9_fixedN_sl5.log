@@ -1,0 +1,9 @@
+sl5
+  C^2 spanning set at (2,2), (3,3): 0, 0 elements (alt of symmetric 2-tensors x even monomials)
+  weight (2, 2): dim C^3 = 3, dim C^4 = 15, rank d3 = 3, rank d4 = 11: H^3 = 0, H^4 = 1   (t=1)
+  weight (3, 3): dim C^3 = 6, dim C^4 = 39, rank d3 = 6, rank d4 = 32: H^3 = 0, H^4 = 1   (t=25)
+  theta' at N=5: nonzero True, closed True, rank[B^4 | c] = 6 = rank B^4 (6): exact True
+  {D, iota} at N=5: nonzero True, closed True, rank[B^4 | c] = 6 = rank B^4 (6): exact True
+  o_3' = {D,iota} + theta' at N=5: nonzero True, closed True, rank[B^4 | c] = 6 = rank B^4 (6): exact True
+  formal primitive xi at N=5: d xi - o_3' vanishes at N: True
+time 25s

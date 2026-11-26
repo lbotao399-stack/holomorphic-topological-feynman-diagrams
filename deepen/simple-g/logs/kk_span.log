@@ -1,0 +1,19 @@
+sl2(Kac A1)    dim (g^(x)4)^g = 3 ; rank of the 3 kappa-kappa products = 3 ; rank[beta, alt([p_a p_b][p_c p_d] kappa_01 kappa_23) (36 inputs)] = 1, without beta = 1
+sl2(run-1 basis) dim (g^(x)4)^g = 3 ; rank of the 3 kappa-kappa products = 3 ; rank[beta, alt([p_a p_b][p_c p_d] kappa_01 kappa_23) (36 inputs)] = 1, without beta = 1
+sl3(Kac A2)    dim (g^(x)4)^g = 8 ; rank of the 3 kappa-kappa products = 3
+sl3(run-1 basis) dim (g^(x)4)^g = 8 ; rank of the 3 kappa-kappa products = 3
+sl4(Kac A3)    dim (g^(x)4)^g = 9 ; rank of the 3 kappa-kappa products = 3
+sl4(run-1 basis) dim (g^(x)4)^g = 9 ; rank of the 3 kappa-kappa products = 3
+sl5(Kac A4)    dim (g^(x)4)^g = 9 ; rank of the 3 kappa-kappa products = 3
+so5            dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+sp4            dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+sp4(fold A3)   dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+so6            dim (g^(x)4)^g = 9 ; rank of the 3 kappa-kappa products = 3
+so7            dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+so7(fold D4)   dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+sp6            dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+sp6(fold A5)   dim (g^(x)4)^g = 6 ; rank of the 3 kappa-kappa products = 3
+so8            dim (g^(x)4)^g = 7 ; rank of the 3 kappa-kappa products = 3
+so8(Kac D4)    dim (g^(x)4)^g = 7 ; rank of the 3 kappa-kappa products = 3
+G2(fold D4)    dim (g^(x)4)^g = 5 ; rank of the 3 kappa-kappa products = 3
+F4(fold E6)    dim (g^(x)4)^g = 5 ; rank of the 3 kappa-kappa products = 3

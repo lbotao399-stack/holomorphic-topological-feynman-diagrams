@@ -1,0 +1,11 @@
+V5 so5 Q0*box   seed 0: S2 code -2285/3, slot evaluation -2285/3, equal True  [S2 code 0s, 426 monomials; slot 0.1s]
+V5 so5 Q0*box   seed 1: S2 code -36727/3, slot evaluation -36727/3, equal True  [S2 code 0s, 426 monomials; slot 0.0s]
+V5 so5 box*Q0   seed 0: S2 code 2285/3, slot evaluation 2285/3, equal True  [S2 code 1s, 426 monomials; slot 0.0s]
+V5 so5 box*Q0   seed 1: S2 code 36727/3, slot evaluation 36727/3, equal True  [S2 code 1s, 426 monomials; slot 0.0s]
+V5 so5 Q0*A     seed 0: S2 code -338365/27, slot evaluation -338365/27, equal True  [S2 code 45s, 33156 monomials; slot 0.6s]
+V5 so5 Q0*A     seed 1: S2 code -74641/8, slot evaluation -74641/8, equal True  [S2 code 45s, 33156 monomials; slot 0.2s]
+V5 so5 box*box  seed 0: S2 code -94583/9, slot evaluation -94583/9, equal True  [S2 code 26s, 8316 monomials; slot 0.2s]
+V5 so5 box*box  seed 1: S2 code -6829/2, slot evaluation -6829/2, equal True  [S2 code 26s, 8316 monomials; slot 0.2s]
+V5 so5 A*Q0     seed 0: S2 code 1389289/108, slot evaluation 1389289/108, equal True  [S2 code 991s, 24948 monomials; slot 0.4s]
+V5 so5 A*Q0     seed 1: S2 code 662507/72, slot evaluation 662507/72, equal True  [S2 code 991s, 24948 monomials; slot 0.2s]
+python3 validate_ops2.py  451.84s user 141.48s system 49% cpu 20:00.59 total

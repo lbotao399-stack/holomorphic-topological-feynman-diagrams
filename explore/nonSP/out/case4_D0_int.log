@@ -1,0 +1,10 @@
+joint g-degree 12  Dg 12  b 5
+homogenization check (0 expected): 0
+g-monomials 36
+(beta, gamma) terms 3972
+H built, time 20.930447`7.7723234969211585
+
+NIntegrate::izero: Integral and error estimates are 0 on all integration subregions. Try increasing the value of the MinRecursion option. If value of integral may be 0, specify a finite value for the AccuracyGoal option.
+NUMERIC c = 0
+RESULT c = InputForm[0]  N = 0
+total time 20.968402`7.773110327679659

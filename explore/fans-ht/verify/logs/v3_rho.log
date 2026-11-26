@@ -1,0 +1,32 @@
+a2: Pf(-1/2 dM M^-1 dM) [triangle basis] vs 2^{-n/2} sum_pi wedge_r C_r
+  n=2: det[B^T; C_triangles] = -8 (unflipped)
+    point 0: Pf - RHS = 0: True;  Pf + RHS = 0: False;  #terms(Pf) = 8;  ratio identities a_r/b_r, a_r/b_{r+1} in r: True
+    point 1: Pf - RHS = 0: True;  Pf + RHS = 0: False;  #terms(Pf) = 8;  ratio identities a_r/b_r, a_r/b_{r+1} in r: True
+    (0.0 s)
+  n=4: det[B^T; C_triangles] = 55 (unflipped)
+    point 0: Pf - RHS = 0: True;  Pf + RHS = 0: False;  #terms(Pf) = 55;  ratio identities a_r/b_r, a_r/b_{r+1} in r: True
+    point 1: Pf - RHS = 0: True;  Pf + RHS = 0: False;  #terms(Pf) = 55;  ratio identities a_r/b_r, a_r/b_{r+1} in r: True
+    (0.0 s)
+  n=6: det[B^T; C_triangles] = -377 (unflipped)
+    point 0: Pf - RHS = 0: True;  Pf + RHS = 0: False;  #terms(Pf) = 377;  ratio identities a_r/b_r, a_r/b_{r+1} in r: True
+    point 1: Pf - RHS = 0: True;  Pf + RHS = 0: False;  #terms(Pf) = 377;  ratio identities a_r/b_r, a_r/b_{r+1} in r: True
+    (0.1 s)
+a3: Pf(-1/2 dM M^-1 dM) = E_kappa[prod_r psi_r[kappa]], kappa ~ N(0, Lambda/2) (Wick, exact)
+  fan2 pathtree            point 0: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (8 terms)
+  fan2 pathtree            point 1: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (8 terms)
+    (0.0 s)
+  fan2 triangles           point 0: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (8 terms)
+  fan2 triangles           point 1: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (8 terms)
+    (0.0 s)
+  fan4 pathtree            point 0: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (55 terms)
+  fan4 pathtree            point 1: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (55 terms)
+    (0.2 s)
+  doubled triangle n=2     point 0: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (5 terms)
+  doubled triangle n=2     point 1: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (5 terms)
+    (0.0 s)
+  wheel W4 n=4             point 0: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (45 terms)
+  wheel W4 n=4             point 1: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (45 terms)
+    (0.1 s)
+  K4 + doubled edge n=4    point 0: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (24 terms)
+  K4 + doubled edge n=4    point 1: Pf == E_kappa[prod psi[kappa]]: True; y[Lambda tau/2] == t^-1 B tau/2: True (24 terms)
+    (0.0 s)

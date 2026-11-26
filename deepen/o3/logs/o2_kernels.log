@@ -1,0 +1,31 @@
+theta(1, 3, 3): edges [(0, 5), (0, 1), (1, 2), (2, 5), (0, 3), (3, 4), (4, 5)], ext [1, 2, 3, 4], sgn(L->L') = -1
+  colour_weight(all f) == formal_gl.colour_weight_formal: True
+  K/pi = -(p0_0*p1_1 - p0_1*p1_0)*(p2_0*p3_1 - p2_1*p3_0)/20 ; / ([p1p2][p3p4]) = -1/20
+  v=0 local order [('e', 0, 0), ('e', 1, 0), ('e', 4, 0)]: K^(v)/pi has 32 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)*(p0_0*p1_1 - 2*p0_0*p2_1 - p0_1*p1_0 + 2*p0_1*p2_0 - p1_0*p2_1 + p1_1*p2_0)/252
+  v=1 local order [('x', 1), ('e', 1, 1), ('e', 2, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(7*p0_0*p1_1 - p0_0*p2_1 - 7*p0_1*p1_0 + p0_1*p2_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/420
+  v=2 local order [('x', 2), ('e', 2, 1), ('e', 3, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(8*p0_0*p1_1 - 8*p0_1*p1_0 - p1_0*p2_1 + p1_1*p2_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/420
+  v=3 local order [('x', 3), ('e', 4, 1), ('e', 5, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)*(8*p0_0*p2_1 - 8*p0_1*p2_0 + 7*p1_0*p2_1 - 7*p1_1*p2_0)/420
+  v=4 local order [('x', 4), ('e', 5, 1), ('e', 6, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = -(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)*(p0_0*p1_1 - 7*p0_0*p2_1 - p0_1*p1_0 + 7*p0_1*p2_0 - 8*p1_0*p2_1 + 8*p1_1*p2_0)/420
+  v=5 local order [('e', 0, 1), ('e', 3, 1), ('e', 6, 1)]: K^(v)/pi has 38 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = -(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)*(2*p0_0*p1_1 - p0_0*p2_1 - 2*p0_1*p1_0 + p0_1*p2_0 - 2*p1_0*p2_1 + 2*p1_1*p2_0)/252
+theta(2, 2, 3): edges [(0, 1), (1, 5), (0, 2), (2, 5), (0, 3), (3, 4), (4, 5)], ext [1, 2, 3, 4], sgn(L->L') = -1
+  colour_weight(all f) == formal_gl.colour_weight_formal: True
+  K/pi = (p0_0*p1_1 - p0_1*p1_0)*(p2_0*p3_1 - p2_1*p3_0)/30 ; / ([p1p2][p3p4]) = 1/30
+  v=0 local order [('e', 0, 0), ('e', 2, 0), ('e', 4, 0)]: K^(v)/pi has 38 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)*(5*p0_0*p1_1 - 2*p0_0*p2_1 - 5*p0_1*p1_0 + 2*p0_1*p2_0 + 2*p1_0*p2_1 - 2*p1_1*p2_0)/840
+  v=1 local order [('x', 1), ('e', 0, 1), ('e', 1, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(p0_0*p1_1 + 2*p0_0*p2_1 - p0_1*p1_0 - 2*p0_1*p2_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/420
+  v=2 local order [('x', 2), ('e', 2, 1), ('e', 3, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = -(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p1_1 - p0_1*p1_0 - 2*p1_0*p2_1 + 2*p1_1*p2_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)/420
+  v=3 local order [('x', 3), ('e', 4, 1), ('e', 5, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = -(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)**2/84
+  v=4 local order [('x', 4), ('e', 5, 1), ('e', 6, 0)]: K^(v)/pi has 22 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = -(p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)**2/84
+  v=5 local order [('e', 1, 1), ('e', 3, 1), ('e', 6, 1)]: K^(v)/pi has 38 terms, degree 6; pair (0,1) = (1,2) = (2,0) mod sum p: True
+      K^(v)/pi (p4 = -p1-p2-p3) = (p0_0*p1_1 - p0_1*p1_0)*(p0_0*p2_1 - p0_1*p2_0 + p1_0*p2_1 - p1_1*p2_0)*(9*p0_0*p1_1 + 2*p0_0*p2_1 - 9*p0_1*p1_0 - 2*p0_1*p2_0 - 2*p1_0*p2_1 + 2*p1_1*p2_0)/840
+time 1.2s
