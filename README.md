@@ -52,6 +52,8 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 ### Feynman-diagram technology and other theories
 
+**Complete six-loop core integration (27 November 2026):** [Reciprocal core reconstruction and three complete K5 kernels](explore/circuit-general/series-fibres/CORE_RESULTS.md). The numerator degree falls from 35 to 15; graphic-flat constraints leave 683,834 core samples per prime, and exact finite-field chain integration uses 27 contracted determinants per sample. Seven primes certify every coefficient against a proved integer height bound. All three admissible $K_5$ subdivision shapes at six loops and $H=2$ now have complete nonzero bare kernels at explicitly recorded conserved source assignments, with independent rational replays and no remaining core integrals. The evaluator accepts other exact source assignments. A new period bridge exposes all 54,391 existing $K_5$ orbits at levels 3 through 8.
+
 **Exact reduction before reconstruction (26 November 2026):** [Series-chain integration and graph-rank numerator bounds](explore/circuit-general/series-fibres/README.md). Constant source columns reduce the full current determinant from $N-1$ to $m-1$ for $m$ maximal chains; exact rational cubature integrates every chain fraction while retaining all sources and original current insertions. The all-loop bound $\deg_S P\le n\operatorname{rank}C_S-1$ now prunes the assembly and five-loop interpolation grids. Complete coefficient replays, a complete five-loop fan control, pointwise checks through twelve loops, and 1,110 independent determinant checks for nonzero five/six-loop fibre integrals accompany the implementation. The remaining core periods and the $T=1$ extension are open.
 
 1. Circuit formalism across all $(H,T)$ (`PLAN.md` §10, `explore/circuit-general/atlas/`): census of admissible graphs; at $T\ge2$ all bulk kernels vanish ($\rho_n\wedge\rho_n=(-\tfrac12)^n\det(X\wedge X)=0$); at $(H,T)=(0,1)$ the bananas give the Moyal product.
@@ -68,6 +70,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 | result | folder | command |
 |---|---|---|
 | exact series fibres, graph-rank support bounds, full-source determinant contraction | `explore/circuit-general/series-fibres` | `python3 explore/circuit-general/series-fibres/run_checks.py --examples --periods` |
+| certified reciprocal reconstruction; complete six-loop K5 family fixtures | `explore/circuit-general/series-fibres` | `python3 explore/circuit-general/series-fibres/run_checks.py --reciprocal --k5-family` |
 | determinant quantum source responses, auxiliary gauge contact, bulk scalar kernel, and spin selection | `explore/twisted-holography-N4/quantum_bulk_effects` | `python3 explore/twisted-holography-N4/quantum_bulk_effects/run_checks.py` |
 | all boundary $Q_n$, bulk particle channels, and composite Ward targets | `explore/twisted-holography-N4/boundary_bulk_all_orders` | `python3 explore/twisted-holography-N4/boundary_bulk_all_orders/run_checks.py` |
 | further twist, delayed genus-four bulk response, and higher-genus Ward tests | `notes/twisted-sugra-bulk-tests` | `python3 notes/twisted-sugra-bulk-tests/run_checks.py` |

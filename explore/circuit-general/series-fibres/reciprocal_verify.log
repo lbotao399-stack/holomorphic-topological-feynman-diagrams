@@ -1,0 +1,135 @@
+Checking test_treeflow.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.116s
+
+OK
+Checking test_series.py
+test_currents_and_original_density (__main__.SeriesTests.test_currents_and_original_density) ... ok
+test_eight_and_twelve_loop_pointwise_controls (__main__.SeriesTests.test_eight_and_twelve_loop_pointwise_controls) ... ok
+test_invalid_inputs (__main__.SeriesTests.test_invalid_inputs) ... ok
+test_original_edge_orientations_and_orders (__main__.SeriesTests.test_original_edge_orientations_and_orders) ... ok
+test_polynomial_degree_and_boundary_values (__main__.SeriesTests.test_polynomial_degree_and_boundary_values) ... ok
+test_rank_after_an_early_dependent_column (__main__.SeriesTests.test_rank_after_an_early_dependent_column) ... ok
+test_zero_columns_and_source_conventions (__main__.SeriesTests.test_zero_columns_and_source_conventions) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.258s
+
+OK
+Checking test_dirichlet.py
+test_empty_and_zero_dimensional_products (__main__.DirichletChecks.test_empty_and_zero_dimensional_products) ... ok
+test_even_degree_guarantee_and_product_order (__main__.DirichletChecks.test_even_degree_guarantee_and_product_order) ... ok
+test_immutable_cached_rules (__main__.DirichletChecks.test_immutable_cached_rules) ... ok
+test_interior_points_weights_and_volume (__main__.DirichletChecks.test_interior_points_weights_and_volume) ... ok
+test_invalid_input_and_budgets (__main__.DirichletChecks.test_invalid_input_and_budgets) ... ok
+test_monomial_integral (__main__.DirichletChecks.test_monomial_integral) ... ok
+test_product_moments (__main__.DirichletChecks.test_product_moments) ... ok
+test_simplex_moments_at_higher_degree (__main__.DirichletChecks.test_simplex_moments_at_higher_degree) ... ok
+test_sparse_ten_intervals (__main__.DirichletChecks.test_sparse_ten_intervals) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.505s
+
+OK
+Checking test_support.py
+support interpolation: {'loops': 3, 'H': 3, 'unrestricted': 8272, 'bounded': 4141, 'nonzero': 1138}
+support interpolation: {'loops': 4, 'H': 2, 'unrestricted': 56598, 'bounded': 48475, 'nonzero': 11039}
+../workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/per5.py:39: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/skel5.json' mode='r' encoding='UTF-8'>
+  _sk = json.load(open(os.path.join(HERE, 'skel5.json')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......
+----------------------------------------------------------------------
+Ran 8 tests in 3.748s
+
+OK
+Checking test_fibres.py
+test_full_theta_numerator_and_insertion (__main__.FibreTests.test_full_theta_numerator_and_insertion) ... ok
+test_gauge_reversal_and_permutation (__main__.FibreTests.test_gauge_reversal_and_permutation) ... ok
+test_generic_three_loop_tetrahedron_full_numerator (__main__.FibreTests.test_generic_three_loop_tetrahedron_full_numerator) ... ok
+test_polygon_is_a_completed_period (__main__.FibreTests.test_polygon_is_a_completed_period) ... ok
+test_zero_and_input_limits (__main__.FibreTests.test_zero_and_input_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 13.505s
+
+OK
+test_tree_independence
+  13 graphs
+  PASS (0.4s)
+test_exterior_algebra_vs_determinant
+  ok
+  PASS (0.0s)
+test_sign_rules
+  13 graphs
+  PASS (0.1s)
+test_extraction_sign_formula
+  ok
+  PASS (0.3s)
+test_catalog_counts
+  d=2 n=1: total 1, SP 1, CH 1
+  d=2 n=2: total 1, SP 1, CH 1
+  d=2 n=3: total 3, SP 2, CH 2
+  d=2 n=4: total 13, SP 5, CH 5
+  d=2 n=5: total 70, SP 12, CH 12
+  d=3 n=1: total 1, SP 1, CH 1
+  d=3 n=2: total 2, SP 2, CH 2
+  d=3 n=3: total 16, SP 10, CH 10
+  d=4 n=1: total 1, SP 1, CH 1
+  d=4 n=2: total 3, SP 3, CH 3
+  d=5 n=1: total 1, SP 1, CH 1
+  d=6 n=1: total 1, SP 1, CH 1
+  PASS (0.1s)
+test_plan_independence
+  (A): K = 1352/3 for four plans; T = 1 thetas: one move = two moves
+  PASS (0.1s)
+passed 6, failed 0
+Checking series-fibres/test_reciprocal.py
+test_all_grid_coefficients_against_original (__main__.ReciprocalChecks.test_all_grid_coefficients_against_original) ... ok
+test_complete_fibre_values_and_jacobian (__main__.ReciprocalChecks.test_complete_fibre_values_and_jacobian) ... ok
+test_exact_support_and_period_powers (__main__.ReciprocalChecks.test_exact_support_and_period_powers) ... ok
+test_grid_nonsingularity_bound (__main__.ReciprocalChecks.test_grid_nonsingularity_bound) ... ok
+test_integrality_height_and_rational_sources (__main__.ReciprocalChecks.test_integrality_height_and_rational_sources) ... ok
+test_k5_counts_and_certificate (__main__.ReciprocalChecks.test_k5_counts_and_certificate) ... ok
+test_validation_and_budgets (__main__.ReciprocalChecks.test_validation_and_budgets) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.673s
+
+OK
+Checking series-fibres/test_core_sample.py
+test_edge_orientation_order_and_empty_fibre (__main__.CoreSamplerTests.test_edge_orientation_order_and_empty_fibre) ... ok
+test_gauss_moment_identities (__main__.CoreSamplerTests.test_gauss_moment_identities) ... ok
+test_one_two_and_three_node_rules (__main__.CoreSamplerTests.test_one_two_and_three_node_rules) ... ok
+test_rational_denominator_and_zero_sources (__main__.CoreSamplerTests.test_rational_denominator_and_zero_sources) ... ok
+test_singular_and_invalid_data (__main__.CoreSamplerTests.test_singular_and_invalid_data) ... ok
+test_six_loop_stored_certificate_and_nonunit_gauge (__main__.CoreSamplerTests.test_six_loop_stored_certificate_and_nonunit_gauge) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.033s
+
+OK
+Checking series-fibres/test_core_numerator.py
+test_checkpoint_replay_and_tampering (__main__.CertifiedCoreTests.test_checkpoint_replay_and_tampering) ... ok
+test_every_coefficient_and_complete_period (__main__.CertifiedCoreTests.test_every_coefficient_and_complete_period) ... /workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/per5.py:39: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/skel5.json' mode='r' encoding='UTF-8'>
+  _sk = json.load(open(os.path.join(HERE, 'skel5.json')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_rational_sources_and_different_gauge (__main__.CertifiedCoreTests.test_rational_sources_and_different_gauge) ... ok
+test_short_prime_supply_does_not_claim_certification (__main__.CertifiedCoreTests.test_short_prime_supply_does_not_claim_certification) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.427s
+
+OK
+Checking period-dispatch/test_k5_bridge.py
+..../workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/per5.py:39: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/skel5.json' mode='r' encoding='UTF-8'>
+  _sk = json.load(open(os.path.join(HERE, 'skel5.json')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.exhaustive K5 convergence checks: {3: (45, 2), 4: (2850, 30)}
+...
+----------------------------------------------------------------------
+Ran 8 tests in 5.331s
+
+OK
+All requested exact checks passed.

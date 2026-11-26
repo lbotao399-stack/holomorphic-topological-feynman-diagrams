@@ -1,0 +1,48 @@
+K5 allocations: 220 checked; 100 admissible; 3 admissible isomorphism classes
+three_edge_path: 60 labeled allocations; admissible=True
+three_edge_star: 20 labeled allocations; admissible=False
+three_insertions_on_one_edge: 10 labeled allocations; admissible=False
+triangle: 10 labeled allocations; admissible=True
+two_edge_path_plus_disjoint_edge: 30 labeled allocations; admissible=True
+two_insertions_plus_adjacent_edge: 60 labeled allocations; admissible=False
+two_insertions_plus_disjoint_edge: 30 labeled allocations; admissible=False
+two_edge_path_plus_disjoint_edge: reconstructing the complete core polynomial
+reciprocal core: 683834 points; degree 15; coefficient bound 195 bits; denominator 216000
+prime 2147483647: 458342 nonzero coefficients; CRT 31 bits; 0.19 s (checkpoint)
+prime 2147483629: 458342 nonzero coefficients; CRT 62 bits; 0.27 s (checkpoint)
+prime 2147483587: 458342 nonzero coefficients; CRT 93 bits; 0.25 s (checkpoint)
+prime 2147483579: 458342 nonzero coefficients; CRT 124 bits; 0.24 s (checkpoint)
+prime 2147483563: 458342 nonzero coefficients; CRT 155 bits; 0.26 s (checkpoint)
+prime 2147483477: 458342 nonzero coefficients; CRT 186 bits; 0.26 s (checkpoint)
+prime 2147483399: 458342 nonzero coefficients; CRT 217 bits; 0.25 s (checkpoint)
+two_edge_path_plus_disjoint_edge: two independent rational fibre replays passed
+two_edge_path_plus_disjoint_edge: {"1": "823413972469/182891520000", "z3": "-10923017647/635040000", "z5": "37445089/2352000"}
+triangle: reconstructing the complete core polynomial
+reciprocal core: 683834 points; degree 15; coefficient bound 196 bits; denominator 216000
+prime 2147483647: 446594 nonzero coefficients; CRT 31 bits; 0.14 s (checkpoint)
+prime 2147483629: 446594 nonzero coefficients; CRT 62 bits; 0.27 s (checkpoint)
+prime 2147483587: 446594 nonzero coefficients; CRT 93 bits; 0.22 s (checkpoint)
+prime 2147483579: 446594 nonzero coefficients; CRT 124 bits; 0.22 s (checkpoint)
+prime 2147483563: 446594 nonzero coefficients; CRT 155 bits; 0.22 s (checkpoint)
+prime 2147483477: 446594 nonzero coefficients; CRT 186 bits; 0.22 s (checkpoint)
+prime 2147483399: 446594 nonzero coefficients; CRT 217 bits; 0.21 s (checkpoint)
+triangle: two independent rational fibre replays passed
+triangle: {"1": "362193894187/18289152000", "z3": "1985715463/42336000", "z5": "-12884579/176400"}
+three_edge_path: reconstructing the complete core polynomial
+reciprocal core: 683834 points; degree 15; coefficient bound 197 bits; denominator 216000
+prime 2147483647: 459743 nonzero coefficients; CRT 31 bits; 0.11 s (checkpoint)
+prime 2147483629: 459743 nonzero coefficients; CRT 62 bits; 0.24 s (checkpoint)
+prime 2147483587: 459743 nonzero coefficients; CRT 93 bits; 0.24 s (checkpoint)
+prime 2147483579: 459743 nonzero coefficients; CRT 124 bits; 0.23 s (checkpoint)
+prime 2147483563: 459743 nonzero coefficients; CRT 155 bits; 0.23 s (checkpoint)
+prime 2147483477: 459743 nonzero coefficients; CRT 186 bits; 0.25 s (checkpoint)
+prime 2147483399: 459743 nonzero coefficients; CRT 217 bits; 0.25 s (checkpoint)
+three_edge_path: two independent rational fibre replays passed
+three_edge_path: {"1": "-482542848959/15240960000", "z3": "-210499252657/3810240000", "z5": "20153461/201600"}
+All three full-source fixtures are complete; remaining projective integrals: 0
+Family certificate: /workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/series-fibres/k5_family.json
+
+Exact scalar nonzero certificates added after the complete reconstruction and fibre replays above:
+two_edge_path_plus_disjoint_edge: exact nonzero interval [83149129/250000000, 13457827/40000000]; no zeta-independence assumption
+triangle: exact nonzero interval [440635169/1000000000, 451155691/1000000000]; no zeta-independence assumption
+three_edge_path: exact nonzero interval [1395803389/250000000, 5595616629/1000000000]; no zeta-independence assumption

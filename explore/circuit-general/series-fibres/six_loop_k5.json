@@ -1,0 +1,448 @@
+{
+  "name": "six_loop_K5_H2",
+  "status": "complete bare T=0 projective kernel",
+  "convention": "code/htk/CONVENTIONS.md: K_Gamma(lambda; z=0)",
+  "loops": 6,
+  "holomorphic_dimension": 2,
+  "vertices": 8,
+  "original_oriented_edges": [
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      7,
+      4
+    ]
+  ],
+  "full_balanced_sources": [
+    [
+      -1,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      -2
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      -3,
+      2
+    ]
+  ],
+  "source_seed": 10602,
+  "all_original_sources_retained": true,
+  "graph_admissibility_exactly_checked": true,
+  "core_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "q": 8,
+  "chain_edge_ids": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "original_determinant_size": 12,
+  "contracted_determinant_size": 9,
+  "finite_field_cubature_nodes": 27,
+  "exact_value": {
+    "1": "823413972469/182891520000",
+    "z3": "-10923017647/635040000",
+    "z5": "37445089/2352000"
+  },
+  "polynomial_certificate": {
+    "scope": "bare T=0 reciprocal core polynomial; complete sources retained",
+    "denominator": 216000,
+    "moment_denominator": 216000,
+    "simplex_denominators": [
+      60,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      60,
+      1,
+      60
+    ],
+    "source_denominator": 1,
+    "source_homogeneous_degree": 12,
+    "scaled_integer_sources": [
+      [
+        -1,
+        3
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        -3
+      ],
+      [
+        -3,
+        2
+      ]
+    ],
+    "tree_candidates": 1716,
+    "spanning_trees": 504,
+    "tree_current_coefficient_l1": [
+      [
+        304,
+        579
+      ],
+      [
+        304,
+        473
+      ],
+      [
+        244,
+        447
+      ],
+      [
+        276,
+        675
+      ],
+      [
+        268,
+        423
+      ],
+      [
+        244,
+        539
+      ],
+      [
+        276,
+        519
+      ],
+      [
+        268,
+        499
+      ],
+      [
+        184,
+        1040
+      ],
+      [
+        184,
+        708
+      ],
+      [
+        256,
+        368
+      ],
+      [
+        584,
+        774
+      ],
+      [
+        968,
+        558
+      ]
+    ],
+    "determinant_size": 12,
+    "determinant_permanent_by_gauge": [
+      3185461923232071622777592101208064,
+      3495334209381510572389718456008704,
+      4023967605962831008145722149175296,
+      6127945701228837303168623563505664,
+      3971692122062293147848128480673792,
+      5476997063735033751538941227433984,
+      7089365347142786645361515972001792,
+      5471592122309432296185911511613440,
+      9279711624461708225140149574434816,
+      12039043681964810634327717895471104,
+      4336998182176766052546788997464064,
+      6667224801049546311118792805056512,
+      5143412689809204317075201385824256
+    ],
+    "height_gauge_edge": 0,
+    "mahler_factor": 36893488147419103232,
+    "coefficient_bound": 25384925169104535878250163645356935162028057805002375168000,
+    "coefficient_bound_bits": 195,
+    "crt_modulus_must_exceed": 50769850338209071756500327290713870324056115610004750336000,
+    "core_spanning_trees": 125,
+    "grid_conductance_max": 6,
+    "grid_laplacian_bound": 162000,
+    "proof": "integer polynomial divisibility; exact Dirichlet denominators; positive moment contraction; multivariate Mahler coefficient bound; permanent of exact tree-current coefficient norms",
+    "method": "integer CRT with a proved coefficient bound",
+    "fingerprint": "f693c9bcd75b9745ef0b0ea15f6b2534b9244fb81056e906e7329f47be585184",
+    "source_scaling_factor": 1,
+    "reciprocal_degree": 15,
+    "interpolation_points": 683834,
+    "nonzero_coefficients": 458342,
+    "homogeneous_support_points": 518124,
+    "chain_lengths": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "largest_integer_coefficient": 26505622732815,
+    "modulus": "210624519094908646946400621887847525705108367800847030011551446451",
+    "strict_uniqueness_inequality": true,
+    "primes": [
+      {
+        "prime": 2147483647,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 31
+      },
+      {
+        "prime": 2147483629,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 62
+      },
+      {
+        "prime": 2147483587,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 93
+      },
+      {
+        "prime": 2147483579,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 124
+      },
+      {
+        "prime": 2147483563,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 155
+      },
+      {
+        "prime": 2147483477,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 186
+      },
+      {
+        "prime": 2147483399,
+        "nonzero_modular_coefficients": 458342,
+        "homogeneous_check": true,
+        "modulus_bits": 217
+      }
+    ],
+    "integer_coefficient_sha256": "7ec656e3b6f1379d947de8d7446f2b8451703016fbad5a3a24a1850f8c5c8ec9",
+    "elapsed_seconds": 2.503
+  },
+  "independent_rational_fibre_replays": [
+    {
+      "conductances": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rational_cubature_nodes": 165,
+      "integrated_fibre_value": "271759/195312500000",
+      "reciprocal_numerator": "2653896484375/32",
+      "exact_equality": true
+    },
+    {
+      "conductances": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "rational_cubature_nodes": 165,
+      "integrated_fibre_value": "-1194839063/4246732800000",
+      "reciprocal_numerator": "-1032340950432000",
+      "exact_equality": true
+    }
+  ],
+  "period_certificate": {
+    "q": 8,
+    "file": "explore/circuit-general/k5/tables/K5_q8.json",
+    "sha256": "7c3028f06348032b4d814f5dc05c9d377ed98254cf0d6bc6aa3a022055620bec",
+    "orbits": 41428,
+    "kinds": {
+      "G": 8075,
+      "T1": 12201,
+      "T2": 21152
+    },
+    "index": "exact weighted vertex signatures",
+    "nonzero_accumulated_orbits": 26119
+  },
+  "remaining_projective_integrals": 0,
+  "elapsed_seconds": 13.078,
+  "nonzero_certificate": {
+    "lower": "83149129/250000000",
+    "upper": "13457827/40000000",
+    "excludes_zero": true,
+    "cutoff": 16,
+    "method": "exact rational zeta partial sums and integral-test tail bounds",
+    "zeta_linear_independence_assumed": false
+  }
+}

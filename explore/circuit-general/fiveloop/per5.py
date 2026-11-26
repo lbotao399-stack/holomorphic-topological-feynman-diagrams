@@ -1,5 +1,5 @@
 """Exact projective periods I_q(G; a) = int prod t^(a-1) / U^q of graphs whose
-series-parallel reduction ends in a core with loop number <= 5.
+series-parallel reduction ends in a supported core, including six-loop K5.
 
 Reduction (msys.MultiSystem.classify, imported unchanged from ../cores): zero powers
 (contraction), series, parallel (G_2q), banana, wheels W_n (wheel.py, any n, any integer q).
@@ -7,6 +7,7 @@ Hook `lower` (this file) for the remaining 2-connected simple graphs:
   2-vertex cut {u,v}, sides A, B:  I(G) = Gamma(q) I(A+e_uv(s_B)) I(B+e_uv(s_A)) / (Gamma(s_A) Gamma(s_B)),
         s_X = sum_X a - q h(X)                                   (2-sum factorization)
   K5-e (triangular bipyramid) = planar dual of the prism:  I_q(K5-e; a) = I_q(prism; q - a o pi)
+  K5: read-only q=3..8 tables via ../period-dispatch/k5_bridge.py (six-loop core)
   prism, K33: tables (fiveloop/tables, assembly/tables, cores/tables; built with msys if absent)
   five-loop cores Z5, K33+e, V7_*, V8_*: tables built here (build5.py) when present.
 Values: dict label -> Fraction, labels '1', 'z3', 'z5', 'z7', products 'z3*z3', ...
@@ -240,9 +241,31 @@ def k5e_dual(edges, pw, q):
     return value(list(PRISM), ppw, q)
 
 
+def _k5_bridge_value(edges, pw, q):
+    bridge_path = os.path.abspath(os.path.join(HERE, '..', 'period-dispatch'))
+    if bridge_path not in sys.path:
+        sys.path.insert(0, bridge_path)
+    from k5_bridge import k5_period, K5NotConvergent, K5Unavailable
+    try:
+        return k5_period(edges, pw, q)
+    except K5NotConvergent:
+        return None
+    except K5Unavailable as error:
+        if STRICT[0]:
+            raise UnknownCore(str(error)) from error
+        return None
+
+
+def _is_k5(edges):
+    return (len(edges) == 10 and len({v for edge in edges for v in edge}) == 5
+            and all(a != b for a, b in edges) and len({frozenset(edge) for edge in edges}) == 10)
+
+
 def lower(edges, pw, q):
     """hook for msys.classify: value of a reduced (2-connected, simple, min degree 3, no wheel) graph"""
     edges = [tuple(e) for e in edges]
+    if q in (3, 4, 5, 6, 7, 8) and _is_k5(edges):
+        return _k5_bridge_value(edges, pw, q)
     cut = two_cut(edges)
     if cut is not None:
         u, v, side = cut
@@ -270,6 +293,8 @@ def lower(edges, pw, q):
     v = family_value(edges, pw, q)
     if v is None and USE_Y[0]:
         v = y_fallback(edges, pw, q)
+    if v is None and _is_k5(edges) and STRICT[0]:
+        raise UnknownCore('K5 at q=%s has no available table or successful reduction' % q)
     return v
 
 
@@ -305,6 +330,11 @@ def reducer(q):
 
 def value(edges, pw, q):
     """exact period, or None if divergent / core not available"""
+    # Complete K5 already has a proof-backed 15-subgraph convergence test and
+    # exact orbit index.  Avoid the generic 1,022-subgraph test for every
+    # monomial.  Zero weights still follow the ordinary contraction rules.
+    if q in (3, 4, 5, 6, 7, 8) and all(a > 0 for a in pw) and _is_k5(edges):
+        return _k5_bridge_value(edges, pw, q)
     S = reducer(q)
     res = S.classify([tuple(e) for e in edges], list(pw), q)
     if res is None:

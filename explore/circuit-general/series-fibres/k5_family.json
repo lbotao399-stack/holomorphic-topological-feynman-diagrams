@@ -1,0 +1,1978 @@
+{
+  "scope": "All three admissible K5-core topologies at six loops and H=2; one complete bare T=0 kernel at the displayed fixed full source assignment for each topology.",
+  "symbolic_arbitrary_sources": false,
+  "all_admissible_topologies_covered": true,
+  "every_original_vertex_source_nonzero": true,
+  "source_seed": 10602,
+  "enumeration": {
+    "core_vertices": 5,
+    "core_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "inserted_vertices": 3,
+    "candidate_allocations": 220,
+    "repeated_edge_allocations": 100,
+    "admissible_labeled_allocations": 100,
+    "inadmissible_labeled_allocations": 120,
+    "all_isomorphism_classes": 7,
+    "admissible_isomorphism_classes": 3,
+    "admissibility": "Every induced vertex subset with an edge obeys E <= 2V - 3; total E=13, V=8.",
+    "admissibility_derivation": [
+      "The five core vertices permit at most seven induced edges, forcing three distinct subdivided edges.",
+      "Every four-core-vertex subset must contain a subdivided edge. Among three-edge patterns this excludes exactly the star.",
+      "Smaller core subsets satisfy the bound. Adding a bivalent vertex contributes at most two edges and one vertex, preserving or weakening the bound; subsets with fewer than two core vertices are forests."
+    ],
+    "isomorphism_test": "networkx.is_isomorphic on the complete subdivided graph",
+    "completeness": "Suppressing the three degree-two vertices recovers K5. Every K5-core graph with V=8 and E=13 is one of these 220 allocations.",
+    "classes": [
+      {
+        "shape": "three_edge_path",
+        "admissible": true,
+        "labeled_allocations": 60,
+        "representative_allocation": [
+          0,
+          1,
+          5
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": null
+      },
+      {
+        "shape": "three_edge_star",
+        "admissible": false,
+        "labeled_allocations": 20,
+        "representative_allocation": [
+          0,
+          1,
+          2
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": {
+          "vertices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "edges": 6,
+          "allowed_edges": 5
+        }
+      },
+      {
+        "shape": "three_insertions_on_one_edge",
+        "admissible": false,
+        "labeled_allocations": 10,
+        "representative_allocation": [
+          0,
+          0,
+          0
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": {
+          "vertices": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "edges": 6,
+          "allowed_edges": 5
+        }
+      },
+      {
+        "shape": "triangle",
+        "admissible": true,
+        "labeled_allocations": 10,
+        "representative_allocation": [
+          0,
+          1,
+          4
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": null
+      },
+      {
+        "shape": "two_edge_path_plus_disjoint_edge",
+        "admissible": true,
+        "labeled_allocations": 30,
+        "representative_allocation": [
+          0,
+          1,
+          9
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": null
+      },
+      {
+        "shape": "two_insertions_plus_adjacent_edge",
+        "admissible": false,
+        "labeled_allocations": 60,
+        "representative_allocation": [
+          0,
+          0,
+          1
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": {
+          "vertices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "edges": 6,
+          "allowed_edges": 5
+        }
+      },
+      {
+        "shape": "two_insertions_plus_disjoint_edge",
+        "admissible": false,
+        "labeled_allocations": 30,
+        "representative_allocation": [
+          0,
+          0,
+          7
+        ],
+        "representative_oriented_edges": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "first_failed_induced_subgraph": {
+          "vertices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "edges": 8,
+          "allowed_edges": 7
+        }
+      }
+    ]
+  },
+  "examples": [
+    {
+      "name": "six_loop_K5_H2",
+      "status": "complete bare T=0 projective kernel",
+      "convention": "code/htk/CONVENTIONS.md: K_Gamma(lambda; z=0)",
+      "loops": 6,
+      "holomorphic_dimension": 2,
+      "vertices": 8,
+      "original_oriented_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          -1,
+          3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "source_seed": 10602,
+      "all_original_sources_retained": true,
+      "graph_admissibility_exactly_checked": true,
+      "core_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "q": 8,
+      "chain_edge_ids": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "original_determinant_size": 12,
+      "contracted_determinant_size": 9,
+      "finite_field_cubature_nodes": 27,
+      "exact_value": {
+        "1": "823413972469/182891520000",
+        "z3": "-10923017647/635040000",
+        "z5": "37445089/2352000"
+      },
+      "polynomial_certificate": {
+        "scope": "bare T=0 reciprocal core polynomial; complete sources retained",
+        "denominator": 216000,
+        "moment_denominator": 216000,
+        "simplex_denominators": [
+          60,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          60,
+          1,
+          60
+        ],
+        "source_denominator": 1,
+        "source_homogeneous_degree": 12,
+        "scaled_integer_sources": [
+          [
+            -1,
+            3
+          ],
+          [
+            -1,
+            -2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            -2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -3
+          ],
+          [
+            -3,
+            2
+          ]
+        ],
+        "tree_candidates": 1716,
+        "spanning_trees": 504,
+        "tree_current_coefficient_l1": [
+          [
+            304,
+            579
+          ],
+          [
+            304,
+            473
+          ],
+          [
+            244,
+            447
+          ],
+          [
+            276,
+            675
+          ],
+          [
+            268,
+            423
+          ],
+          [
+            244,
+            539
+          ],
+          [
+            276,
+            519
+          ],
+          [
+            268,
+            499
+          ],
+          [
+            184,
+            1040
+          ],
+          [
+            184,
+            708
+          ],
+          [
+            256,
+            368
+          ],
+          [
+            584,
+            774
+          ],
+          [
+            968,
+            558
+          ]
+        ],
+        "determinant_size": 12,
+        "determinant_permanent_by_gauge": [
+          3185461923232071622777592101208064,
+          3495334209381510572389718456008704,
+          4023967605962831008145722149175296,
+          6127945701228837303168623563505664,
+          3971692122062293147848128480673792,
+          5476997063735033751538941227433984,
+          7089365347142786645361515972001792,
+          5471592122309432296185911511613440,
+          9279711624461708225140149574434816,
+          12039043681964810634327717895471104,
+          4336998182176766052546788997464064,
+          6667224801049546311118792805056512,
+          5143412689809204317075201385824256
+        ],
+        "height_gauge_edge": 0,
+        "mahler_factor": 36893488147419103232,
+        "coefficient_bound": 25384925169104535878250163645356935162028057805002375168000,
+        "coefficient_bound_bits": 195,
+        "crt_modulus_must_exceed": 50769850338209071756500327290713870324056115610004750336000,
+        "core_spanning_trees": 125,
+        "grid_conductance_max": 6,
+        "grid_laplacian_bound": 162000,
+        "proof": "integer polynomial divisibility; exact Dirichlet denominators; positive moment contraction; multivariate Mahler coefficient bound; permanent of exact tree-current coefficient norms",
+        "method": "integer CRT with a proved coefficient bound",
+        "fingerprint": "f693c9bcd75b9745ef0b0ea15f6b2534b9244fb81056e906e7329f47be585184",
+        "source_scaling_factor": 1,
+        "reciprocal_degree": 15,
+        "interpolation_points": 683834,
+        "nonzero_coefficients": 458342,
+        "homogeneous_support_points": 518124,
+        "chain_lengths": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "largest_integer_coefficient": 26505622732815,
+        "modulus": "210624519094908646946400621887847525705108367800847030011551446451",
+        "strict_uniqueness_inequality": true,
+        "primes": [
+          {
+            "prime": 2147483647,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 31
+          },
+          {
+            "prime": 2147483629,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 62
+          },
+          {
+            "prime": 2147483587,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 93
+          },
+          {
+            "prime": 2147483579,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 124
+          },
+          {
+            "prime": 2147483563,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 155
+          },
+          {
+            "prime": 2147483477,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 186
+          },
+          {
+            "prime": 2147483399,
+            "nonzero_modular_coefficients": 458342,
+            "homogeneous_check": true,
+            "modulus_bits": 217
+          }
+        ],
+        "integer_coefficient_sha256": "7ec656e3b6f1379d947de8d7446f2b8451703016fbad5a3a24a1850f8c5c8ec9",
+        "elapsed_seconds": 2.503
+      },
+      "independent_rational_fibre_replays": [
+        {
+          "conductances": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rational_cubature_nodes": 165,
+          "integrated_fibre_value": "271759/195312500000",
+          "reciprocal_numerator": "2653896484375/32",
+          "exact_equality": true
+        },
+        {
+          "conductances": [
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1
+          ],
+          "rational_cubature_nodes": 165,
+          "integrated_fibre_value": "-1194839063/4246732800000",
+          "reciprocal_numerator": "-1032340950432000",
+          "exact_equality": true
+        }
+      ],
+      "period_certificate": {
+        "q": 8,
+        "file": "explore/circuit-general/k5/tables/K5_q8.json",
+        "sha256": "7c3028f06348032b4d814f5dc05c9d377ed98254cf0d6bc6aa3a022055620bec",
+        "orbits": 41428,
+        "kinds": {
+          "G": 8075,
+          "T1": 12201,
+          "T2": 21152
+        },
+        "index": "exact weighted vertex signatures",
+        "nonzero_accumulated_orbits": 26119
+      },
+      "remaining_projective_integrals": 0,
+      "elapsed_seconds": 13.078,
+      "family_shape": "two_edge_path_plus_disjoint_edge",
+      "subdivided_core_edge_ids": [
+        0,
+        7,
+        9
+      ],
+      "subdivided_core_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "certificate_use": "reconstructed_with_two_rational_replays_and_complete_period_contraction",
+      "fixture_file": "six_loop_k5.json",
+      "fixture_sha256": "ed4b22bd29603101b49a6a78e0a695ed7840301e902f96b8f44c4eb203285318",
+      "nonzero_certificate": {
+        "lower": "83149129/250000000",
+        "upper": "13457827/40000000",
+        "excludes_zero": true,
+        "cutoff": 16,
+        "method": "exact rational zeta partial sums and integral-test tail bounds",
+        "zeta_linear_independence_assumed": false
+      }
+    },
+    {
+      "name": "six_loop_K5_H2_triangle",
+      "status": "complete bare T=0 projective kernel",
+      "convention": "code/htk/CONVENTIONS.md: K_Gamma(lambda; z=0)",
+      "loops": 6,
+      "holomorphic_dimension": 2,
+      "vertices": 8,
+      "original_oriented_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          -1,
+          3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "source_seed": 10602,
+      "all_original_sources_retained": true,
+      "graph_admissibility_exactly_checked": true,
+      "core_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "q": 8,
+      "chain_edge_ids": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ]
+      ],
+      "original_determinant_size": 12,
+      "contracted_determinant_size": 9,
+      "finite_field_cubature_nodes": 27,
+      "exact_value": {
+        "1": "362193894187/18289152000",
+        "z3": "1985715463/42336000",
+        "z5": "-12884579/176400"
+      },
+      "polynomial_certificate": {
+        "scope": "bare T=0 reciprocal core polynomial; complete sources retained",
+        "denominator": 216000,
+        "moment_denominator": 216000,
+        "simplex_denominators": [
+          60,
+          60,
+          1,
+          1,
+          60,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "source_denominator": 1,
+        "source_homogeneous_degree": 12,
+        "scaled_integer_sources": [
+          [
+            -1,
+            3
+          ],
+          [
+            -1,
+            -2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            -2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -3
+          ],
+          [
+            -3,
+            2
+          ]
+        ],
+        "tree_candidates": 1716,
+        "spanning_trees": 490,
+        "tree_current_coefficient_l1": [
+          [
+            364,
+            448
+          ],
+          [
+            378,
+            378
+          ],
+          [
+            182,
+            742
+          ],
+          [
+            182,
+            840
+          ],
+          [
+            210,
+            420
+          ],
+          [
+            336,
+            304
+          ],
+          [
+            714,
+            770
+          ],
+          [
+            840,
+            518
+          ],
+          [
+            326,
+            364
+          ],
+          [
+            532,
+            312
+          ],
+          [
+            290,
+            532
+          ],
+          [
+            448,
+            384
+          ],
+          [
+            318,
+            292
+          ]
+        ],
+        "determinant_size": 12,
+        "determinant_permanent_by_gauge": [
+          7526797160561574201652261504942080,
+          8168877541530325179901976468520960,
+          6958938023349008728210447647375360,
+          6322401856534713909238100435927040,
+          9879603048993376089076501579825152,
+          9884472247144678886557564419440640,
+          18192580254097795818952039858176000,
+          18137477848799843399023678539694080,
+          13368794622259907089834893555793920,
+          10996038948634897363700013481328640,
+          10079285352416559661507754726522880,
+          9886605643552147025525943545364480,
+          10395738053031472622069162579066880
+        ],
+        "height_gauge_edge": 3,
+        "mahler_factor": 36893488147419103232,
+        "coefficient_bound": 50383178918773344249823092489096994361359022458121748480000,
+        "coefficient_bound_bits": 196,
+        "crt_modulus_must_exceed": 100766357837546688499646184978193988722718044916243496960000,
+        "core_spanning_trees": 125,
+        "grid_conductance_max": 6,
+        "grid_laplacian_bound": 162000,
+        "proof": "integer polynomial divisibility; exact Dirichlet denominators; positive moment contraction; multivariate Mahler coefficient bound; permanent of exact tree-current coefficient norms",
+        "method": "integer CRT with a proved coefficient bound",
+        "fingerprint": "6fdfd7ff03f8fbf85401ac79de05a9bf1a53d3ed5d7c09e95aac8775a228ced6",
+        "source_scaling_factor": 1,
+        "reciprocal_degree": 15,
+        "interpolation_points": 683834,
+        "nonzero_coefficients": 446594,
+        "homogeneous_support_points": 518124,
+        "chain_lengths": [
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "largest_integer_coefficient": 19916206387200,
+        "modulus": "210624519094908646946400621887847525705108367800847030011551446451",
+        "strict_uniqueness_inequality": true,
+        "primes": [
+          {
+            "prime": 2147483647,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 31
+          },
+          {
+            "prime": 2147483629,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 62
+          },
+          {
+            "prime": 2147483587,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 93
+          },
+          {
+            "prime": 2147483579,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 124
+          },
+          {
+            "prime": 2147483563,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 155
+          },
+          {
+            "prime": 2147483477,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 186
+          },
+          {
+            "prime": 2147483399,
+            "nonzero_modular_coefficients": 446594,
+            "homogeneous_check": true,
+            "modulus_bits": 217
+          }
+        ],
+        "integer_coefficient_sha256": "51da16dab020ec460bb47a0615b7ad9ea5be18f9936a731dac69ec04ff10bfee",
+        "elapsed_seconds": 2.223
+      },
+      "independent_rational_fibre_replays": [
+        {
+          "conductances": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rational_cubature_nodes": 165,
+          "integrated_fibre_value": "924059/610351562500",
+          "reciprocal_numerator": "360960546875/4",
+          "exact_equality": true
+        },
+        {
+          "conductances": [
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1
+          ],
+          "rational_cubature_nodes": 165,
+          "integrated_fibre_value": "675333724865027/1528823808000000000",
+          "reciprocal_numerator": "16208009396760648/5",
+          "exact_equality": true
+        }
+      ],
+      "period_certificate": {
+        "q": 8,
+        "file": "explore/circuit-general/k5/tables/K5_q8.json",
+        "sha256": "7c3028f06348032b4d814f5dc05c9d377ed98254cf0d6bc6aa3a022055620bec",
+        "orbits": 41428,
+        "kinds": {
+          "G": 8075,
+          "T1": 12201,
+          "T2": 21152
+        },
+        "index": "exact weighted vertex signatures",
+        "nonzero_accumulated_orbits": 17683
+      },
+      "remaining_projective_integrals": 0,
+      "elapsed_seconds": 10.485,
+      "family_shape": "triangle",
+      "subdivided_core_edge_ids": [
+        0,
+        1,
+        4
+      ],
+      "subdivided_core_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "certificate_use": "reconstructed_with_two_rational_replays_and_complete_period_contraction",
+      "fixture_file": "six_loop_k5_triangle.json",
+      "fixture_sha256": "cc13ef61d3107842e6d3e762ee897a3e9d55008c89a8f17e29c9cf4d25d4bd82",
+      "nonzero_certificate": {
+        "lower": "440635169/1000000000",
+        "upper": "451155691/1000000000",
+        "excludes_zero": true,
+        "cutoff": 16,
+        "method": "exact rational zeta partial sums and integral-test tail bounds",
+        "zeta_linear_independence_assumed": false
+      }
+    },
+    {
+      "name": "six_loop_K5_H2_three_edge_path",
+      "status": "complete bare T=0 projective kernel",
+      "convention": "code/htk/CONVENTIONS.md: K_Gamma(lambda; z=0)",
+      "loops": 6,
+      "holomorphic_dimension": 2,
+      "vertices": 8,
+      "original_oriented_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          -1,
+          3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "source_seed": 10602,
+      "all_original_sources_retained": true,
+      "graph_admissibility_exactly_checked": true,
+      "core_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "q": 8,
+      "chain_edge_ids": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ]
+      ],
+      "original_determinant_size": 12,
+      "contracted_determinant_size": 9,
+      "finite_field_cubature_nodes": 27,
+      "exact_value": {
+        "1": "-482542848959/15240960000",
+        "z3": "-210499252657/3810240000",
+        "z5": "20153461/201600"
+      },
+      "polynomial_certificate": {
+        "scope": "bare T=0 reciprocal core polynomial; complete sources retained",
+        "denominator": 216000,
+        "moment_denominator": 216000,
+        "simplex_denominators": [
+          60,
+          1,
+          1,
+          1,
+          60,
+          1,
+          1,
+          60,
+          1,
+          1
+        ],
+        "source_denominator": 1,
+        "source_homogeneous_degree": 12,
+        "scaled_integer_sources": [
+          [
+            -1,
+            3
+          ],
+          [
+            -1,
+            -2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            -2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -3
+          ],
+          [
+            -3,
+            2
+          ]
+        ],
+        "tree_candidates": 1716,
+        "spanning_trees": 496,
+        "tree_current_coefficient_l1": [
+          [
+            315,
+            713
+          ],
+          [
+            329,
+            579
+          ],
+          [
+            318,
+            546
+          ],
+          [
+            288,
+            544
+          ],
+          [
+            359,
+            445
+          ],
+          [
+            190,
+            808
+          ],
+          [
+            190,
+            1240
+          ],
+          [
+            282,
+            594
+          ],
+          [
+            355,
+            609
+          ],
+          [
+            807,
+            577
+          ],
+          [
+            717,
+            789
+          ],
+          [
+            447,
+            489
+          ],
+          [
+            459,
+            355
+          ]
+        ],
+        "determinant_size": 12,
+        "determinant_permanent_by_gauge": [
+          14899750788331601213585774755184640,
+          16224036306348280792650868756316160,
+          17085094026120034134649673393111040,
+          17181976140096084403027917668352000,
+          18230195824060462949846346796892160,
+          63608341677287645594428596179435520,
+          46440039363458753337735883300798464,
+          25642729626034243441989835995217920,
+          23401111396121174269833819445002240,
+          20545148350996164423640815218196480,
+          20050037423480654632636844353781760,
+          15399607110050414193180412540354560,
+          16754939024331983951359053775503360
+        ],
+        "height_gauge_edge": 0,
+        "mahler_factor": 36893488147419103232,
+        "coefficient_bound": 118736016287503039701913854342986096839446137818243399680000,
+        "coefficient_bound_bits": 197,
+        "crt_modulus_must_exceed": 237472032575006079403827708685972193678892275636486799360000,
+        "core_spanning_trees": 125,
+        "grid_conductance_max": 6,
+        "grid_laplacian_bound": 162000,
+        "proof": "integer polynomial divisibility; exact Dirichlet denominators; positive moment contraction; multivariate Mahler coefficient bound; permanent of exact tree-current coefficient norms",
+        "method": "integer CRT with a proved coefficient bound",
+        "fingerprint": "aa84a3d35c94fa27ba8f931ae9b8e24b0a56c2fa4c5634ec61daef22e2360ee5",
+        "source_scaling_factor": 1,
+        "reciprocal_degree": 15,
+        "interpolation_points": 683834,
+        "nonzero_coefficients": 459743,
+        "homogeneous_support_points": 518124,
+        "chain_lengths": [
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "largest_integer_coefficient": 45342417875940,
+        "modulus": "210624519094908646946400621887847525705108367800847030011551446451",
+        "strict_uniqueness_inequality": true,
+        "primes": [
+          {
+            "prime": 2147483647,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 31
+          },
+          {
+            "prime": 2147483629,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 62
+          },
+          {
+            "prime": 2147483587,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 93
+          },
+          {
+            "prime": 2147483579,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 124
+          },
+          {
+            "prime": 2147483563,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 155
+          },
+          {
+            "prime": 2147483477,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 186
+          },
+          {
+            "prime": 2147483399,
+            "nonzero_modular_coefficients": 459743,
+            "homogeneous_check": true,
+            "modulus_bits": 217
+          }
+        ],
+        "integer_coefficient_sha256": "12665d8bd490f03367ef9c7f803244961ba7f1bc39abb2d446ee748a2c27b48b",
+        "elapsed_seconds": 2.25
+      },
+      "independent_rational_fibre_replays": [
+        {
+          "conductances": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rational_cubature_nodes": 165,
+          "integrated_fibre_value": "14866117/14648437500000",
+          "reciprocal_numerator": "5807076953125/96",
+          "exact_equality": true
+        },
+        {
+          "conductances": [
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1,
+            2,
+            3,
+            1
+          ],
+          "rational_cubature_nodes": 165,
+          "integrated_fibre_value": "-368182059537347/1528823808000000000",
+          "reciprocal_numerator": "-8836369428896328/5",
+          "exact_equality": true
+        }
+      ],
+      "period_certificate": {
+        "q": 8,
+        "file": "explore/circuit-general/k5/tables/K5_q8.json",
+        "sha256": "7c3028f06348032b4d814f5dc05c9d377ed98254cf0d6bc6aa3a022055620bec",
+        "orbits": 41428,
+        "kinds": {
+          "G": 8075,
+          "T1": 12201,
+          "T2": 21152
+        },
+        "index": "exact weighted vertex signatures",
+        "nonzero_accumulated_orbits": 30565
+      },
+      "remaining_projective_integrals": 0,
+      "elapsed_seconds": 11.833,
+      "family_shape": "three_edge_path",
+      "subdivided_core_edge_ids": [
+        0,
+        4,
+        7
+      ],
+      "subdivided_core_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "certificate_use": "reconstructed_with_two_rational_replays_and_complete_period_contraction",
+      "fixture_file": "six_loop_k5_three_edge_path.json",
+      "fixture_sha256": "72eb4eeac8335ec6c22d1bdf27303778c163b1d87065e1b6d816f1e690f17780",
+      "nonzero_certificate": {
+        "lower": "1395803389/250000000",
+        "upper": "5595616629/1000000000",
+        "excludes_zero": true,
+        "cutoff": 16,
+        "method": "exact rational zeta partial sums and integral-test tail bounds",
+        "zeta_linear_independence_assumed": false
+      }
+    }
+  ],
+  "remaining_projective_integrals": 0,
+  "all_three_values_proved_nonzero": true
+}

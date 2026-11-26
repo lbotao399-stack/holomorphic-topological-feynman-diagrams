@@ -1,0 +1,448 @@
+{
+  "name": "six_loop_K5_H2_triangle",
+  "status": "complete bare T=0 projective kernel",
+  "convention": "code/htk/CONVENTIONS.md: K_Gamma(lambda; z=0)",
+  "loops": 6,
+  "holomorphic_dimension": 2,
+  "vertices": 8,
+  "original_oriented_edges": [
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "full_balanced_sources": [
+    [
+      -1,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      -2
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      -3,
+      2
+    ]
+  ],
+  "source_seed": 10602,
+  "all_original_sources_retained": true,
+  "graph_admissibility_exactly_checked": true,
+  "core_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "q": 8,
+  "chain_edge_ids": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11
+    ],
+    [
+      12
+    ]
+  ],
+  "original_determinant_size": 12,
+  "contracted_determinant_size": 9,
+  "finite_field_cubature_nodes": 27,
+  "exact_value": {
+    "1": "362193894187/18289152000",
+    "z3": "1985715463/42336000",
+    "z5": "-12884579/176400"
+  },
+  "polynomial_certificate": {
+    "scope": "bare T=0 reciprocal core polynomial; complete sources retained",
+    "denominator": 216000,
+    "moment_denominator": 216000,
+    "simplex_denominators": [
+      60,
+      60,
+      1,
+      1,
+      60,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "source_denominator": 1,
+    "source_homogeneous_degree": 12,
+    "scaled_integer_sources": [
+      [
+        -1,
+        3
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        -3
+      ],
+      [
+        -3,
+        2
+      ]
+    ],
+    "tree_candidates": 1716,
+    "spanning_trees": 490,
+    "tree_current_coefficient_l1": [
+      [
+        364,
+        448
+      ],
+      [
+        378,
+        378
+      ],
+      [
+        182,
+        742
+      ],
+      [
+        182,
+        840
+      ],
+      [
+        210,
+        420
+      ],
+      [
+        336,
+        304
+      ],
+      [
+        714,
+        770
+      ],
+      [
+        840,
+        518
+      ],
+      [
+        326,
+        364
+      ],
+      [
+        532,
+        312
+      ],
+      [
+        290,
+        532
+      ],
+      [
+        448,
+        384
+      ],
+      [
+        318,
+        292
+      ]
+    ],
+    "determinant_size": 12,
+    "determinant_permanent_by_gauge": [
+      7526797160561574201652261504942080,
+      8168877541530325179901976468520960,
+      6958938023349008728210447647375360,
+      6322401856534713909238100435927040,
+      9879603048993376089076501579825152,
+      9884472247144678886557564419440640,
+      18192580254097795818952039858176000,
+      18137477848799843399023678539694080,
+      13368794622259907089834893555793920,
+      10996038948634897363700013481328640,
+      10079285352416559661507754726522880,
+      9886605643552147025525943545364480,
+      10395738053031472622069162579066880
+    ],
+    "height_gauge_edge": 3,
+    "mahler_factor": 36893488147419103232,
+    "coefficient_bound": 50383178918773344249823092489096994361359022458121748480000,
+    "coefficient_bound_bits": 196,
+    "crt_modulus_must_exceed": 100766357837546688499646184978193988722718044916243496960000,
+    "core_spanning_trees": 125,
+    "grid_conductance_max": 6,
+    "grid_laplacian_bound": 162000,
+    "proof": "integer polynomial divisibility; exact Dirichlet denominators; positive moment contraction; multivariate Mahler coefficient bound; permanent of exact tree-current coefficient norms",
+    "method": "integer CRT with a proved coefficient bound",
+    "fingerprint": "6fdfd7ff03f8fbf85401ac79de05a9bf1a53d3ed5d7c09e95aac8775a228ced6",
+    "source_scaling_factor": 1,
+    "reciprocal_degree": 15,
+    "interpolation_points": 683834,
+    "nonzero_coefficients": 446594,
+    "homogeneous_support_points": 518124,
+    "chain_lengths": [
+      2,
+      2,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "largest_integer_coefficient": 19916206387200,
+    "modulus": "210624519094908646946400621887847525705108367800847030011551446451",
+    "strict_uniqueness_inequality": true,
+    "primes": [
+      {
+        "prime": 2147483647,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 31
+      },
+      {
+        "prime": 2147483629,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 62
+      },
+      {
+        "prime": 2147483587,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 93
+      },
+      {
+        "prime": 2147483579,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 124
+      },
+      {
+        "prime": 2147483563,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 155
+      },
+      {
+        "prime": 2147483477,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 186
+      },
+      {
+        "prime": 2147483399,
+        "nonzero_modular_coefficients": 446594,
+        "homogeneous_check": true,
+        "modulus_bits": 217
+      }
+    ],
+    "integer_coefficient_sha256": "51da16dab020ec460bb47a0615b7ad9ea5be18f9936a731dac69ec04ff10bfee",
+    "elapsed_seconds": 2.223
+  },
+  "independent_rational_fibre_replays": [
+    {
+      "conductances": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rational_cubature_nodes": 165,
+      "integrated_fibre_value": "924059/610351562500",
+      "reciprocal_numerator": "360960546875/4",
+      "exact_equality": true
+    },
+    {
+      "conductances": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "rational_cubature_nodes": 165,
+      "integrated_fibre_value": "675333724865027/1528823808000000000",
+      "reciprocal_numerator": "16208009396760648/5",
+      "exact_equality": true
+    }
+  ],
+  "period_certificate": {
+    "q": 8,
+    "file": "explore/circuit-general/k5/tables/K5_q8.json",
+    "sha256": "7c3028f06348032b4d814f5dc05c9d377ed98254cf0d6bc6aa3a022055620bec",
+    "orbits": 41428,
+    "kinds": {
+      "G": 8075,
+      "T1": 12201,
+      "T2": 21152
+    },
+    "index": "exact weighted vertex signatures",
+    "nonzero_accumulated_orbits": 17683
+  },
+  "remaining_projective_integrals": 0,
+  "elapsed_seconds": 10.485,
+  "nonzero_certificate": {
+    "lower": "440635169/1000000000",
+    "upper": "451155691/1000000000",
+    "excludes_zero": true,
+    "cutoff": 16,
+    "method": "exact rational zeta partial sums and integral-test tail bounds",
+    "zeta_linear_independence_assumed": false
+  }
+}

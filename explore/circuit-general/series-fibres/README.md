@@ -1,5 +1,14 @@
 # Exact chain integration and graph-rank numerator bounds
 
+**27 November update:** [Complete six-loop core integration](CORE_RESULTS.md)
+now evaluates the full bare kernel for an explicitly sourced example of
+each of the three admissible $K_5$ subdivision shapes. Reciprocal core
+reconstruction, exact finite-field Gauss integration, a proved coefficient
+bound and the existing period tables complete their remaining projective
+integrals. See the [family certificates](k5_family.json) and
+[reconstruction proof](RECIPROCAL.md). The sections below record the
+preceding chain-integration contribution.
+
 **26 November 2026.** Computational contribution for the full $T=0$ current
 determinant, with arbitrary conserved sources and finite original-current
 monomials. The [derivation](DERIVATION.md) proves the identities. The
@@ -141,7 +150,7 @@ displacement exponential is handled coefficient by coefficient, not by a
 finite-degree rule for the entire exponential.
 
 Core period tables and subsequent core integration still limit complete
-higher-loop answers. Fibre integration is especially useful for a small core
+higher-loop answers outside the newly completed $K_5$ examples. Fibre integration is especially useful for a small core
 with many subdivisions; it is not uniformly faster for graphs with few
 subdivisions. The support bound and the determinant identity hold at every
 loop order; finite replays test their implementation rather than replace
