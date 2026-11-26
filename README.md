@@ -52,6 +52,8 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 ### Feynman-diagram technology and other theories
 
+**Exact reduction before reconstruction (26 November 2026):** [Series-chain integration and graph-rank numerator bounds](explore/circuit-general/series-fibres/README.md). Constant source columns reduce the full current determinant from $N-1$ to $m-1$ for $m$ maximal chains; exact rational cubature integrates every chain fraction while retaining all sources and original current insertions. The all-loop bound $\deg_S P\le n\operatorname{rank}C_S-1$ now prunes the assembly and five-loop interpolation grids. Complete coefficient replays, a complete five-loop fan control, pointwise checks through twelve loops, and 1,110 independent determinant checks for nonzero five/six-loop fibre integrals accompany the implementation. The remaining core periods and the $T=1$ extension are open.
+
 1. Circuit formalism across all $(H,T)$ (`PLAN.md` §10, `explore/circuit-general/atlas/`): census of admissible graphs; at $T\ge2$ all bulk kernels vanish ($\rho_n\wedge\rho_n=(-\tfrac12)^n\det(X\wedge X)=0$); at $(H,T)=(0,1)$ the bananas give the Moyal product.
 2. Ohm locality (`explore/circuit-general/locality/`): for any subgraph $S$, $\Omega_\Gamma=\pm\Omega_S\wedge\pi^*\Omega_{\rm out}$ at $T=0,1$; dressed two-terminal elements.
 3. Symmetry group of weighted periods (`explore/circuit-general/symmetry/`): planar duality $I_q(G^*;\alpha)=I_q(G;q-\alpha\circ\pi)$, conformal completion, uniqueness, dimension shift; graphical functions in $d=2q$ (`explore/circuit-general/graphical/`).
@@ -65,6 +67,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 | result | folder | command |
 |---|---|---|
+| exact series fibres, graph-rank support bounds, full-source determinant contraction | `explore/circuit-general/series-fibres` | `python3 explore/circuit-general/series-fibres/run_checks.py --examples --periods` |
 | determinant quantum source responses, auxiliary gauge contact, bulk scalar kernel, and spin selection | `explore/twisted-holography-N4/quantum_bulk_effects` | `python3 explore/twisted-holography-N4/quantum_bulk_effects/run_checks.py` |
 | all boundary $Q_n$, bulk particle channels, and composite Ward targets | `explore/twisted-holography-N4/boundary_bulk_all_orders` | `python3 explore/twisted-holography-N4/boundary_bulk_all_orders/run_checks.py` |
 | further twist, delayed genus-four bulk response, and higher-genus Ward tests | `notes/twisted-sugra-bulk-tests` | `python3 notes/twisted-sugra-bulk-tests/run_checks.py` |

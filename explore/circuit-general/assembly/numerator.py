@@ -1,7 +1,9 @@
 """Bare Schwinger numerator  P(t) = U^(n+H) D(t)  (T = 0) modulo p.
 
 P is homogeneous of degree n^2 - 1, degree <= n - 1 in every t_e [src cores/fastker.py, cores/numer.py].
-Samples at t = (1, 1 + e), e in the lower set L = {e in [0, n-1]^(N-1): |e| <= n^2 - 1}
+Samples at t = (1, 1 + e), on a downward-closed set with |e| <= n^2 - 1,
+individual degrees <= n-1 and, by default, the certified subset-rank bounds
+sum_{j in S} e_j <= n rank(C_S)-1.  Set rank_bounds=False for the old grid.
 (vectorized: currents by M ell = -C t y0, P = det[C_re Y^i_e]_{(i,r), e != 0} / (t_0 U^(n(H-1)))),
 Newton divided differences and conversion to monomials directly on L (sparse lower-set
 interpolation; L is downward closed, so every shifted index stays in L).
@@ -17,63 +19,70 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.abspath(os.path.join(HERE, '..', '..', '..', 'code')))
 from htk import brute            # noqa: E402
 from htk.graph import Graph      # noqa: E402
+from htk.treeflow import tree_flow as particular_tree_flow  # noqa: E402
+from htk.support import numerator_support  # noqa: E402
 
 from modlin import det_mod, solve_mod, modinv_vec   # noqa: E402
 
 
 def tree_flow(G, lam_full):
     """integer particular flow y0 (N x H) supported on the Kruskal spanning tree: B^T y0 = lambda"""
-    N, nv = G.ne, G.nv
-    H = len(lam_full[0])
-    tree = G.spanning_tree()
-    adj = {v: [] for v in range(nv)}
-    for e in tree:
-        u, w = G.edges[e]
-        adj[u].append((w, e))
-        adj[w].append((u, e))
-    root = nv - 1
-    order, par = [root], {root: (None, None)}
-    for v in order:
-        for w, e in adj[v]:
-            if w not in par:
-                par[w] = (v, e)
-                order.append(w)
-    y0 = [[0] * H for _ in range(N)]
-    sub = {v: list(lam_full[v]) for v in range(nv)}
-    for v in reversed(order[1:]):
-        pv, e = par[v]
-        sgn = 1 if G.edges[e][0] == v else -1
-        for i in range(H):
-            y0[e][i] += sgn * sub[v][i]
-            sub[pv][i] += sub[v][i]
-    return np.array(y0, dtype=np.int64)
+    return np.array(particular_tree_flow(G, lam_full), dtype=np.int64)
 
 
 class LowerSet:
     """points e in [0,deg]^nvar with |e| <= total, ordered by cube index sum_k e_k (deg+1)^k;
-    generated digit by digit (no full cube); index lookup by a dense map (cube <= 3e8) or searchsorted"""
+    optional constraints (variable indices, upper bound) further restrict support.
+    Generated digit by digit, without allocating a full cube.  Every restriction
+    is downward closed, so the Newton transform is unchanged.
+    """
 
-    def __init__(self, nvar, deg, total):
+    def __init__(self, nvar, deg, total, *, constraints=(), max_points=10000000):
+        if any(not isinstance(x, int) or x < 0 for x in (nvar, deg, total)):
+            raise ValueError('nonnegative integer dimensions and degrees are required')
+        if max_points is not None and (not isinstance(max_points, int) or max_points < 1):
+            raise ValueError('max_points must be positive or None')
         self.nvar, self.deg, self.total = nvar, deg, total
         b = deg + 1
         self.K = b ** nvar
+        if self.K > np.iinfo(np.int64).max:
+            raise ValueError('cube indices exceed int64; use series-fibre integration')
+        parsed = []
+        for indices, bound in constraints:
+            indices = tuple(sorted(set(indices)))
+            if (not isinstance(bound, int) or any(not isinstance(j, int) or not 0 <= j < nvar
+                                                 for j in indices)):
+                raise ValueError('invalid lower-set constraint')
+            parsed.append((indices, bound))
+        self.constraints = tuple(parsed)
+        impossible = any(bound < 0 for _, bound in self.constraints)
         # digits from the most significant (variable nvar-1) down, so rows come out sorted by cube index
-        pts = np.zeros((1, 0), dtype=np.int8)
-        sums = np.zeros(1, dtype=np.int16)
+        digit_dtype = np.int8 if deg <= 127 else np.int64
+        pts = np.zeros((0 if impossible else 1, 0), dtype=digit_dtype)
+        sums = np.zeros(len(pts), dtype=np.int64)
         for k in range(nvar):
-            reps = []
-            rs = []
-            for d in range(b):
-                keep = sums + d <= total
-                reps.append(np.concatenate([pts[keep], np.full((int(keep.sum()), 1), d, dtype=np.int8)], axis=1))
-                rs.append(sums[keep] + d)
-            # order: previous rows major, new digit minor  -> interleave by previous row index
-            idx = [np.nonzero(sums + d <= total)[0] for d in range(b)]
-            allidx = np.concatenate(idx)
-            alld = np.concatenate([np.full(len(i), d, dtype=np.int64) for d, i in enumerate(idx)])
-            o = np.lexsort((alld, allidx))
-            pts = np.concatenate(reps, axis=0)[o]
-            sums = np.concatenate(rs)[o]
+            axis = nvar - 1 - k
+            maximum = np.minimum(deg, total - sums)
+            for indices, bound in self.constraints:
+                if axis not in indices:
+                    continue
+                columns = [nvar - 1 - j for j in indices if j > axis]
+                partial = pts[:, columns].sum(axis=1, dtype=np.int64) if columns else 0
+                maximum = np.minimum(maximum, bound - partial)
+            counts = np.maximum(0, maximum + 1)
+            length = int(counts.sum())
+            if max_points is not None and length > max_points:
+                raise MemoryError('lower set exceeds max_points=%d; use series-fibre integration '
+                                  'or explicitly raise the allocation budget' % max_points)
+            parent = np.repeat(np.arange(len(pts), dtype=np.int64), counts)
+            digit = np.arange(length, dtype=np.int64) - np.repeat(np.cumsum(counts) - counts, counts)
+            new = np.empty((length, k + 1), dtype=digit_dtype)
+            new[:, :k] = pts[parent]
+            new[:, k] = digit
+            pts = new
+            sums = sums[parent] + digit
+        if any(not indices and bound < 0 for indices, bound in self.constraints):
+            pts = pts[:0]
         # pts columns are variables nvar-1 ... 0 (most significant first); reverse to e_0 .. e_{nvar-1}
         self.dig = np.ascontiguousarray(pts[:, ::-1])
         self.M = len(self.dig)
@@ -82,7 +91,8 @@ class LowerSet:
             cube = cube * b + self.dig[:, k].astype(np.int64)
         self.cube = cube
         assert self.M < 2 or (np.diff(cube) > 0).all()
-        if self.K <= 300000000:
+        # A dense lookup may otherwise allocate more memory than the sparse grid.
+        if self.K <= 16000000 and self.K <= max(1024, 8 * self.M):
             pos = np.full(self.K, -1, dtype=np.int32)
             pos[cube] = np.arange(self.M, dtype=np.int32)
             self._pos = pos
@@ -158,7 +168,7 @@ class LowerSet:
 class BareNumerator:
     """P = U^(n+H) D of an htk graph with integer sources, modulo primes."""
 
-    def __init__(self, G, lam_full):
+    def __init__(self, G, lam_full, *, rank_bounds=True, max_flats=4096, max_points=10000000):
         self.G = G
         self.n, self.N = G.loops, G.ne
         self.H = len(lam_full[0])
@@ -169,18 +179,27 @@ class BareNumerator:
         self.y0 = tree_flow(G, self.lam_full)
         self.deg = self.n - 1
         self.total = self.n * self.n - 1
+        self.support = numerator_support(G, max_flats=max_flats) if rank_bounds else None
+        self.max_points = max_points
         self._ls = None
 
     @property
     def lowerset(self):
         if self._ls is None:
-            self._ls = LowerSet(self.N - 1, self.deg, self.total)
+            constraints = []
+            if self.support is not None:
+                constraints = [(tuple(e - 1 for e in edges), bound)
+                               for edges, bound in self.support.constraints]
+                if self.support.zero:
+                    constraints.append((tuple(range(self.N - 1)), -1))
+            self._ls = LowerSet(self.N - 1, self.deg, self.total,
+                                constraints=constraints, max_points=self.max_points)
         return self._ls
 
     def exponents(self):
-        """full exponent vectors (M x N, int8): (total - |e|, e)"""
+        """full homogeneous exponent vectors: (total - |e|, e), without int8 overflow."""
         ls = self.lowerset
-        e0 = (self.total - ls.dig.astype(np.int16).sum(axis=1)).astype(np.int8)
+        e0 = self.total - ls.dig.astype(np.int64).sum(axis=1)
         return np.concatenate([e0[:, None], ls.dig], axis=1)
 
     def samples_mod(self, tpts, p, batch=20000):
@@ -194,6 +213,9 @@ class BareNumerator:
             Mm = np.einsum('re,be,se->brs', C, t, C) % p
             rhs = -np.einsum('re,be,ei->bri', C, t, self.y0) % p
             x, U = solve_mod(Mm, rhs, p)
+            if np.any(U == 0) or np.any(t[:, 0] == 0):
+                raise ArithmeticError('singular modular sample: U or the gauge time is zero; '
+                                      'choose another prime or sampling point')
             Uell = x * U[:, None, None] % p
             Y = (U[:, None, None] * self.y0[None, :, :] + np.einsum('re,bri->bei', C, Uell)) % p
             Psi = np.einsum('re,bei->bire', C, Y).reshape(B, H * n, N)[:, :, 1:] % p
@@ -206,6 +228,8 @@ class BareNumerator:
         return out
 
     def samples_fast(self, tpts, p):
+        if np.any(np.asarray(tpts)[:, 0] % p == 0):
+            raise ArithmeticError('singular modular sample: the gauge time is zero')
         try:
             import fastsample
         except ImportError:

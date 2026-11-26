@@ -19,6 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '../../../code'))
 from htk import brute                      # noqa: E402
 from htk.graph import Graph                # noqa: E402
+from htk.treeflow import tree_flow          # noqa: E402
 
 import cores                               # noqa: E402
 import modsolve                            # noqa: E402
@@ -108,17 +109,10 @@ class FastKernel:
                     raise ValueError('integer sources required')
         self.lam_nr = [[int(x) for x in v] for v in lam_nr]
         self.C = np.array(G.cycle_matrix(), dtype=np.int64)          # n x N
-        # particular flow y0 on the Kruskal spanning tree (B^T y0 = lambda)
-        lam_full = self.lam_nr + [[-sum(v[i] for v in self.lam_nr) for i in range(self.H)]]
-        import numer
-        Y = numer.tree_current_polys(G, lam_full)
-        # one tree: pick the cotree monomial that appears; the flow for that tree is y0
-        cots = set()
-        for e in range(self.N):
-            for i in range(self.H):
-                cots |= set(Y[e][i])
-        cot0 = sorted(cots)[0]
-        self.y0 = np.array([[Y[e][i].get(cot0, 0) for i in range(self.H)] for e in range(self.N)], dtype=np.int64)
+        # One particular flow suffices; the loop solve restores Ohm's law.
+        # Enumerating all spanning trees here was exponential and failed at
+        # zero sources, where every tree-current polynomial is identically zero.
+        self.y0 = np.array(tree_flow(G, self.lam_nr), dtype=np.int64)
         # series paths of the core
         self.paths = self.series_paths()
 

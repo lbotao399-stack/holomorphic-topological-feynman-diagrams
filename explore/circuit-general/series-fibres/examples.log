@@ -1,0 +1,3 @@
+five_loop_cube_H3: determinant 15 -> 11; 945 exact cubature nodes; 945 independent full-determinant checks; fibre value -1190741613927780610249/109165759454560087711309761228960; remaining core dimension 11
+six_loop_K5_H2: determinant 12 -> 9; 165 exact cubature nodes; 165 independent full-determinant checks; fibre value 1759441639913/1678343272235712000000; remaining core dimension 9
+All exact checks passed. These are fibre densities, not complete higher-loop periods.

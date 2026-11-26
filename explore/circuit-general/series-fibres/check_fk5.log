@@ -1,0 +1,8 @@
+C2 prism             {'1': '-577/40320', 'z3': '-2/35', 'z5': '5/63'} MATCH 3.6s
+C2 K33               {'1': '-789/640', 'z3': '59/80'} MATCH 3.8s
+  rank-constrained grid 3906400 points, core edges 9  1.0s
+  prime 1: numerator 47.4s, 129506 monomials, 8525 core vectors (8525 periods cached), total 49.7s
+  prime 2: numerator 47.1s, 129506 monomials, 8525 core vectors (8525 periods cached), total 48.9s
+  prime 3: numerator 44.9s, 129506 monomials, 8525 core vectors (8525 periods cached), total 46.8s
+  stable after 3 primes, total 146.3s
+n=5 fan: kernel_exact -5713177/576000 (0.3s), fk5 {'1': Fraction(-5713177, 576000)} (146.3s) MATCH

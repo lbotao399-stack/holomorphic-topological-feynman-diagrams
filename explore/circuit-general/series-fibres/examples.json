@@ -1,0 +1,650 @@
+{
+  "scope": "T=0; exact integration of all series-chain fractions with every original source; remaining projective core integrals not evaluated",
+  "examples": [
+    {
+      "name": "five_loop_cube_H3",
+      "status": "exact rational chain-fibre integral; remaining core period unevaluated",
+      "loops": 5,
+      "holomorphic_dimension": 3,
+      "vertices": 12,
+      "original_oriented_edges": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          -1,
+          2,
+          -2
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          -2,
+          3
+        ],
+        [
+          0,
+          -3,
+          -2
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          -3,
+          -3,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -2,
+          2,
+          0
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -2,
+          -3,
+          -3
+        ],
+        [
+          3,
+          1,
+          -1
+        ],
+        [
+          0,
+          3,
+          1
+        ]
+      ],
+      "source_seed": 10503,
+      "chain_edge_ids": [
+        [
+          0,
+          1
+        ],
+        [
+          5
+        ],
+        [
+          12
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          13
+        ],
+        [
+          4
+        ],
+        [
+          14
+        ],
+        [
+          15
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          11
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10
+        ]
+      ],
+      "chain_vertices": [
+        [
+          0,
+          8,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          9,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          10,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          11,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "chain_orientation_signs": [
+        [
+          1,
+          1
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "retained_core_resistances": [
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        },
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        },
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        },
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        }
+      ],
+      "projective_gauge_chain": 0,
+      "symanzik_U": {
+        "numerator": 10722,
+        "denominator": 1
+      },
+      "original_determinant_size": 15,
+      "contracted_determinant_size": 11,
+      "fixed_source_columns": 4,
+      "fixed_source_rank": 4,
+      "simplex_dimensions": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "polynomial_total_degree_bound": 11,
+      "cubature_nodes": 945,
+      "independent_full_determinant_checks": 945,
+      "integrated_fibre_value": {
+        "numerator": -1190741613927780610249,
+        "denominator": 109165759454560087711309761228960
+      },
+      "remaining_projective_core_dimension": 11,
+      "remaining_integral": "Integrate the fibre-density function of R over positive projective core resistances; the recorded value is only its value at the displayed core point.",
+      "all_original_sources_retained": true,
+      "graph_admissibility_exactly_checked": true,
+      "all_exact_checks_passed": true
+    },
+    {
+      "name": "six_loop_K5_H2",
+      "status": "exact rational chain-fibre integral; remaining core period unevaluated",
+      "loops": 6,
+      "holomorphic_dimension": 2,
+      "vertices": 8,
+      "original_oriented_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          -1,
+          3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "source_seed": 10602,
+      "chain_edge_ids": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "chain_vertices": [
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          6,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7,
+          4
+        ]
+      ],
+      "chain_orientation_signs": [
+        [
+          1,
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "retained_core_resistances": [
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        },
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        },
+        {
+          "numerator": 1,
+          "denominator": 1
+        },
+        {
+          "numerator": 2,
+          "denominator": 1
+        },
+        {
+          "numerator": 3,
+          "denominator": 1
+        },
+        {
+          "numerator": 1,
+          "denominator": 1
+        }
+      ],
+      "projective_gauge_chain": 0,
+      "symanzik_U": {
+        "numerator": 4140,
+        "denominator": 1
+      },
+      "original_determinant_size": 12,
+      "contracted_determinant_size": 9,
+      "fixed_source_columns": 3,
+      "fixed_source_rank": 3,
+      "simplex_dimensions": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "polynomial_total_degree_bound": 9,
+      "cubature_nodes": 165,
+      "independent_full_determinant_checks": 165,
+      "integrated_fibre_value": {
+        "numerator": 1759441639913,
+        "denominator": 1678343272235712000000
+      },
+      "remaining_projective_core_dimension": 9,
+      "remaining_integral": "Integrate the fibre-density function of R over positive projective core resistances; the recorded value is only its value at the displayed core point.",
+      "all_original_sources_retained": true,
+      "graph_admissibility_exactly_checked": true,
+      "all_exact_checks_passed": true
+    }
+  ]
+}

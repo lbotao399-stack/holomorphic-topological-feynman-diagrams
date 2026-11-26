@@ -6,6 +6,10 @@ Layers (see CONVENTIONS.md):
     oracle     independent numerical integration over the Schwinger simplex
     spred      series-parallel reduction: ratio coordinates, polynomial currents, densities
     simplex    exact Dirichlet integrals over products of simplices
+    series     constant-source-column contraction on arbitrary series cores
+    dirichlet  exact rational sparse cubature on products of simplices
+    fibres     series-fibre integration before core reconstruction
+    support    graph-rank bounds on numerator monomials
     catalog    graph utilities (enumeration, series-parallel test, parallel-chain reducibility)
     conventions  conversion to the normalizations of the source notes
 """

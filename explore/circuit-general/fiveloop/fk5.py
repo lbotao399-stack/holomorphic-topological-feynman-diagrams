@@ -1,4 +1,4 @@
-"""Bare T=0 kernels via whole-graph modular Newton interpolation (copy of cores/fastker.py) with the
+"""Bare T=0 kernels via rank-constrained sparse modular Newton interpolation with the
 five-loop period function per5.period (2-sums, K5-e = dual prism, W_n, prism/K33/five-loop tables).
   K = int P / U^q,  P = U^(n+H) D  (degree n^2-1, <= n-1 per time),  q = n + H.
 Monomials pushed forward along series paths to the series skeleton (p unchanged), contracted with
@@ -19,40 +19,31 @@ sys.path.insert(0, os.path.abspath(os.path.join(HERE, '..', '..', '..', 'code'))
 import per5                                     # noqa: E402
 import fastker                                  # noqa: E402  (FastKernel, grid_points, interpolate_mod, PRIMES)
 import modsolve                                 # noqa: E402
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, '..', 'assembly')))
+from numerator import BareNumerator             # noqa: E402
 
 
 def kernel(nv, edges, lam, primes=fastker.PRIMES, verbose=True, min_primes=2, batch=20000):
     fk = fastker.FastKernel(nv, edges, lam)
     n, N, H = fk.n, fk.N, fk.H
     q = n + H
-    deg, total = n - 1, n * n - 1
     t0 = time.time()
-    grid, flat = fastker.grid_points(N - 1, deg, total)
+    numerator = BareNumerator(fk.G, fk.lam_nr)
     groups, core_edges = fk.paths
-    cube_valid = grid.astype(np.int16)
-    ksum = cube_valid.sum(axis=1).astype(np.int16)
-    alpha = np.concatenate([(total - ksum)[:, None], cube_valid], axis=1).astype(np.int16) + 1
+    alpha = numerator.exponents() + 1
+    if not len(alpha):
+        return {}
     core_alpha = np.stack([alpha[:, g].sum(axis=1) for g in groups], axis=1).astype(np.int16)
-    base = int(alpha.max()) * N + 2
-    key = np.zeros(len(alpha), dtype=np.int64)
-    for j in range(core_alpha.shape[1]):
-        key = key * base + core_alpha[:, j].astype(np.int64)
-    valid = np.zeros((deg + 1) ** (N - 1), dtype=bool)
-    valid[flat] = True
     if verbose:
-        print('  grid %d points (cube %d), core edges %d  %.1fs' % (len(grid), (deg + 1) ** (N - 1),
-                                                                   len(core_edges), time.time() - t0), flush=True)
+        print('  rank-constrained grid %d points, core edges %d  %.1fs' % (
+            numerator.lowerset.M, len(core_edges), time.time() - t0), flush=True)
     results = []
     rec = None
     pcache = {}
     for ip, p in enumerate(primes):
         tp = time.time()
-        vals = np.zeros((deg + 1) ** (N - 1), dtype=np.int64)
-        vals[flat] = fk.samples_mod(grid, p, batch=batch)
+        coef = numerator.coefficients_mod(p, chunk=batch)
         ts = time.time()
-        coef = fastker.interpolate_mod(vals, N - 1, deg, p, valid)[flat]
-        del vals
-        ti = time.time()
         fact = [1]
         for i in range(1, int(alpha.max()) * N + 2):
             fact.append(fact[-1] * i % p)
@@ -66,17 +57,17 @@ def kernel(nv, edges, lam, primes=fastker.PRIMES, verbose=True, min_primes=2, ba
                 sf = sf * fastker.modinv_vec(factn[ap - 1], p) % p
         w = coef * sf % p
         nzm = w != 0
-        uk, inv = np.unique(key[nzm], return_inverse=True)
+        # Exact row keys avoid overflow of the old base**number_of_paths
+        # encoding, which can silently identify different higher-loop weights.
+        uk, inv = np.unique(core_alpha[nzm], axis=0, return_inverse=True)
         sums = np.zeros(len(uk), dtype=np.int64)
         np.add.at(sums, inv, w[nzm])
         sums %= p
-        first = np.zeros(len(uk), dtype=np.int64)
-        first[inv] = np.nonzero(nzm)[0]
         tot = {}
         for j in range(len(uk)):
             if not sums[j]:
                 continue
-            ca = tuple(int(x) for x in core_alpha[first[j]])
+            ca = tuple(int(x) for x in uk[j])
             val = pcache.get(ca)
             if val is None:
                 val = per5.period(core_edges, list(ca), q)
@@ -85,8 +76,8 @@ def kernel(nv, edges, lam, primes=fastker.PRIMES, verbose=True, min_primes=2, ba
                 tot[lab] = (tot.get(lab, 0) + int(sums[j]) * (x.numerator % p) * pow(x.denominator % p, p - 2, p)) % p
         results.append((p, tot))
         if verbose:
-            print('  prime %d: samples %.1fs, interpolation %.1fs, %d monomials, %d core vectors (%d periods cached), total %.1fs'
-                  % (ip + 1, ts - tp, ti - ts, int(nzm.sum()), len(uk), len(pcache), time.time() - tp), flush=True)
+            print('  prime %d: numerator %.1fs, %d monomials, %d core vectors (%d periods cached), total %.1fs'
+                  % (ip + 1, ts - tp, int(nzm.sum()), len(uk), len(pcache), time.time() - tp), flush=True)
         labels = sorted({l for _, t in results for l in t})
         M = 1
         accv = {l: 0 for l in labels}
@@ -119,27 +110,18 @@ def core_numerator(nv, edges, lam, primes=fastker.PRIMES, verbose=True, min_prim
     fk = fastker.FastKernel(nv, edges, lam)
     n, N, H = fk.n, fk.N, fk.H
     q = n + H
-    deg, total = n - 1, n * n - 1
     t0 = time.time()
-    grid, flat = fastker.grid_points(N - 1, deg, total)
+    numerator = BareNumerator(fk.G, fk.lam_nr)
     groups, core_edges = fk.paths
-    cube_valid = grid.astype(np.int16)
-    ksum = cube_valid.sum(axis=1).astype(np.int16)
-    alpha = np.concatenate([(total - ksum)[:, None], cube_valid], axis=1).astype(np.int16) + 1
+    alpha = numerator.exponents() + 1
+    if not len(alpha):
+        return core_edges, q, {}
     core_alpha = np.stack([alpha[:, g].sum(axis=1) for g in groups], axis=1).astype(np.int16)
-    base = int(alpha.max()) * N + 2
-    key = np.zeros(len(alpha), dtype=np.int64)
-    for j in range(core_alpha.shape[1]):
-        key = key * base + core_alpha[:, j].astype(np.int64)
-    valid = np.zeros((deg + 1) ** (N - 1), dtype=bool)
-    valid[flat] = True
+    uk, inv = np.unique(core_alpha, axis=0, return_inverse=True)
     acc, M, prev = None, 1, None
     for ip, p in enumerate(primes):
         tp = time.time()
-        vals = np.zeros((deg + 1) ** (N - 1), dtype=np.int64)
-        vals[flat] = fk.samples_mod(grid, p, batch=batch)
-        coef = fastker.interpolate_mod(vals, N - 1, deg, p, valid)[flat]
-        del vals
+        coef = numerator.coefficients_mod(p, chunk=batch)
         fact = [1]
         for i in range(1, int(alpha.max()) * N + 2):
             fact.append(fact[-1] * i % p)
@@ -152,14 +134,11 @@ def core_numerator(nv, edges, lam, primes=fastker.PRIMES, verbose=True, min_prim
                 ap = alpha[:, g].sum(axis=1).astype(np.int64)
                 sf = sf * fastker.modinv_vec(factn[ap - 1], p) % p
         w = coef * sf % p
-        uk, inv = np.unique(key, return_inverse=True)
         sums = np.zeros(len(uk), dtype=np.int64)
         np.add.at(sums, inv, w)
         sums %= p
         if acc is None:
-            first = np.zeros(len(uk), dtype=np.int64)
-            first[inv] = np.arange(len(key))
-            vecs = [tuple(int(x) for x in core_alpha[first[j]]) for j in range(len(uk))]
+            vecs = [tuple(int(x) for x in row) for row in uk]
             acc = [int(x) for x in sums]
             M = p
         else:

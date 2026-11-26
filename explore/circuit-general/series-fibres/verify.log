@@ -1,0 +1,87 @@
+Checking test_treeflow.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.121s
+
+OK
+Checking test_series.py
+test_currents_and_original_density (__main__.SeriesTests.test_currents_and_original_density) ... ok
+test_eight_and_twelve_loop_pointwise_controls (__main__.SeriesTests.test_eight_and_twelve_loop_pointwise_controls) ... ok
+test_invalid_inputs (__main__.SeriesTests.test_invalid_inputs) ... ok
+test_original_edge_orientations_and_orders (__main__.SeriesTests.test_original_edge_orientations_and_orders) ... ok
+test_polynomial_degree_and_boundary_values (__main__.SeriesTests.test_polynomial_degree_and_boundary_values) ... ok
+test_rank_after_an_early_dependent_column (__main__.SeriesTests.test_rank_after_an_early_dependent_column) ... ok
+test_zero_columns_and_source_conventions (__main__.SeriesTests.test_zero_columns_and_source_conventions) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.260s
+
+OK
+Checking test_dirichlet.py
+test_empty_and_zero_dimensional_products (__main__.DirichletChecks.test_empty_and_zero_dimensional_products) ... ok
+test_even_degree_guarantee_and_product_order (__main__.DirichletChecks.test_even_degree_guarantee_and_product_order) ... ok
+test_immutable_cached_rules (__main__.DirichletChecks.test_immutable_cached_rules) ... ok
+test_interior_points_weights_and_volume (__main__.DirichletChecks.test_interior_points_weights_and_volume) ... ok
+test_invalid_input_and_budgets (__main__.DirichletChecks.test_invalid_input_and_budgets) ... ok
+test_monomial_integral (__main__.DirichletChecks.test_monomial_integral) ... ok
+test_product_moments (__main__.DirichletChecks.test_product_moments) ... ok
+test_simplex_moments_at_higher_degree (__main__.DirichletChecks.test_simplex_moments_at_higher_degree) ... ok
+test_sparse_ten_intervals (__main__.DirichletChecks.test_sparse_ten_intervals) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.539s
+
+OK
+Checking test_support.py
+support interpolation: {'loops': 3, 'H': 3, 'unrestricted': 8272, 'bounded': 4141, 'nonzero': 1138}
+support interpolation: {'loops': 4, 'H': 2, 'unrestricted': 56598, 'bounded': 48475, 'nonzero': 11039}
+../workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/per5.py:38: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/scratch/34cc5003fa61/loop-reduction/explore/circuit-general/fiveloop/skel5.json' mode='r' encoding='UTF-8'>
+  _sk = json.load(open(os.path.join(HERE, 'skel5.json')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......
+----------------------------------------------------------------------
+Ran 8 tests in 3.599s
+
+OK
+Checking test_fibres.py
+test_full_theta_numerator_and_insertion (__main__.FibreTests.test_full_theta_numerator_and_insertion) ... ok
+test_gauge_reversal_and_permutation (__main__.FibreTests.test_gauge_reversal_and_permutation) ... ok
+test_generic_three_loop_tetrahedron_full_numerator (__main__.FibreTests.test_generic_three_loop_tetrahedron_full_numerator) ... ok
+test_polygon_is_a_completed_period (__main__.FibreTests.test_polygon_is_a_completed_period) ... ok
+test_zero_and_input_limits (__main__.FibreTests.test_zero_and_input_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 13.287s
+
+OK
+test_tree_independence
+  13 graphs
+  PASS (0.4s)
+test_exterior_algebra_vs_determinant
+  ok
+  PASS (0.0s)
+test_sign_rules
+  13 graphs
+  PASS (0.1s)
+test_extraction_sign_formula
+  ok
+  PASS (0.3s)
+test_catalog_counts
+  d=2 n=1: total 1, SP 1, CH 1
+  d=2 n=2: total 1, SP 1, CH 1
+  d=2 n=3: total 3, SP 2, CH 2
+  d=2 n=4: total 13, SP 5, CH 5
+  d=2 n=5: total 70, SP 12, CH 12
+  d=3 n=1: total 1, SP 1, CH 1
+  d=3 n=2: total 2, SP 2, CH 2
+  d=3 n=3: total 16, SP 10, CH 10
+  d=4 n=1: total 1, SP 1, CH 1
+  d=4 n=2: total 3, SP 3, CH 3
+  d=5 n=1: total 1, SP 1, CH 1
+  d=6 n=1: total 1, SP 1, CH 1
+  PASS (0.2s)
+test_plan_independence
+  (A): K = 1352/3 for four plans; T = 1 thetas: one move = two moves
+  PASS (0.1s)
+passed 6, failed 0
+All requested exact checks passed.
