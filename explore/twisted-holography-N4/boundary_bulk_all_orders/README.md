@@ -2,6 +2,14 @@
 
 Research development, 26 November 2026.
 
+**Scope clarification:** the target is an independent bulk derivation of the
+$Q_n$ in the four-dimensional $\mathcal N=4$ paper. This note supplies
+boundary targets and restricted bulk calculations; it does not establish
+that derivation. See [Reconstructing the quantum supercharge from the
+bulk](../independent_bulk_reconstruction/README.md) for the precise matching
+equations, current-paper lifting targets, and a nonzero classical source
+residue. The local primary-tree zero below is not a physical amplitude zero.
+
 ## Result
 
 Every positive boundary correction $Q_n$ now has an explicit nonzero
