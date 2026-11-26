@@ -1,0 +1,360 @@
+{
+  "admissible_symmetric_total_levels": [
+    0,
+    2,
+    3,
+    4,
+    6
+  ],
+  "arithmetic": "exact integers and rational numbers; standard library only",
+  "classical_multinomial_sum": "0",
+  "classification": [
+    {
+      "donor_cancellation_rank": 0,
+      "kernel_dimension": 1,
+      "symmetric_space_dimension": 1,
+      "total_level": 0
+    },
+    {
+      "donor_cancellation_rank": 1,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 1,
+      "total_level": 1
+    },
+    {
+      "donor_cancellation_rank": 1,
+      "kernel_dimension": 1,
+      "symmetric_space_dimension": 2,
+      "total_level": 2
+    },
+    {
+      "donor_cancellation_rank": 2,
+      "kernel_dimension": 1,
+      "symmetric_space_dimension": 3,
+      "total_level": 3
+    },
+    {
+      "donor_cancellation_rank": 3,
+      "kernel_dimension": 1,
+      "symmetric_space_dimension": 4,
+      "total_level": 4
+    },
+    {
+      "donor_cancellation_rank": 4,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 4,
+      "total_level": 5
+    },
+    {
+      "donor_cancellation_rank": 4,
+      "kernel_dimension": 1,
+      "symmetric_space_dimension": 5,
+      "total_level": 6
+    },
+    {
+      "donor_cancellation_rank": 4,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 4,
+      "total_level": 7
+    },
+    {
+      "donor_cancellation_rank": 4,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 4,
+      "total_level": 8
+    },
+    {
+      "donor_cancellation_rank": 3,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 3,
+      "total_level": 9
+    },
+    {
+      "donor_cancellation_rank": 2,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 2,
+      "total_level": 10
+    },
+    {
+      "donor_cancellation_rank": 1,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 1,
+      "total_level": 11
+    },
+    {
+      "donor_cancellation_rank": 1,
+      "kernel_dimension": 0,
+      "symmetric_space_dimension": 1,
+      "total_level": 12
+    }
+  ],
+  "degree_four_weights_per_distinct_permutation": {
+    "2,1,1": 0,
+    "2,2,0": 1,
+    "3,1,0": -1,
+    "4,0,0": 2
+  },
+  "degree_six_status": "all lower genera vanish; first possible genus-six coefficient not evaluated",
+  "fixed_fourier_heat_stripped_response": "31/64012032000",
+  "four_loop_fourier": {
+    "all_primary_count_triples_checked": 66,
+    "independent_twelve_vector_gram_check": 2671280640,
+    "root_weighted_factorial_sum": "16",
+    "surviving": [
+      {
+        "fiber_degree": 13824,
+        "primary_scalar_counts": [
+          3,
+          3,
+          4
+        ],
+        "root": [
+          1,
+          0,
+          0
+        ],
+        "root_vector_pairing": 1
+      },
+      {
+        "fiber_degree": 13824,
+        "primary_scalar_counts": [
+          4,
+          2,
+          4
+        ],
+        "root": [
+          0,
+          1,
+          0
+        ],
+        "root_vector_pairing": 0
+      },
+      {
+        "fiber_degree": 13824,
+        "primary_scalar_counts": [
+          4,
+          3,
+          3
+        ],
+        "root": [
+          0,
+          0,
+          1
+        ],
+        "root_vector_pairing": 0
+      }
+    ]
+  },
+  "heat_normalization": "(2*pi*i)^20 Q4 phi; elementary sign -(-1)^4; root pairing +1",
+  "inherited_complete_planar_periods": {
+    "2,1,1": "433/37623398400",
+    "2,2,0": "157/29262643200",
+    "3,1,0": "1493/438939648000",
+    "4,0,0": "731/1024192512000"
+  },
+  "inherited_input_sha256": {
+    "explore/twisted-holography-N4/code/planar_four_loop.py": "a17bd30096fa14d7c61e5a0e9a57c0675e42ae37f45f360f5f15ae784719481e"
+  },
+  "labeled_donor_checks": {
+    "2": {
+      "individual_labeled_assignments": 18,
+      "nonempty_donor_counts": [
+        1,
+        2
+      ],
+      "residual_level_tests": 4
+    },
+    "3": {
+      "individual_labeled_assignments": 72,
+      "nonempty_donor_counts": [
+        1,
+        2,
+        3
+      ],
+      "residual_level_tests": 10
+    },
+    "4": {
+      "individual_labeled_assignments": 246,
+      "nonempty_donor_counts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "residual_level_tests": 20
+    },
+    "6": {
+      "individual_labeled_assignments": 2412,
+      "nonempty_donor_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "residual_level_tests": 56
+    }
+  },
+  "labeled_elementary_response": "31/74088000",
+  "labeled_scalar_vertex": "-31/74088000",
+  "lower_genus_vertical_rank": [
+    {
+      "complex_rank_bound": 3,
+      "forgotten_marks": 6,
+      "genus": 1,
+      "strict_deficit": 3
+    },
+    {
+      "complex_rank_bound": 6,
+      "forgotten_marks": 8,
+      "genus": 2,
+      "strict_deficit": 2
+    },
+    {
+      "complex_rank_bound": 9,
+      "forgotten_marks": 10,
+      "genus": 3,
+      "strict_deficit": 1
+    }
+  ],
+  "minimal_scalar_levels": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "new_planar_polarization": "-31/1024192512000",
+  "not_recomputed": "the full genus-four master-period integrations",
+  "one_loop_direct_control": {
+    "all_distinct_weighted_tuples_checked": 12,
+    "entries": [
+      {
+        "levels": [
+          0,
+          0,
+          4
+        ],
+        "nonzero_stable_partitions": 12,
+        "ordinary_positive_vertex": "7/3",
+        "weight": 2
+      },
+      {
+        "levels": [
+          0,
+          4,
+          0
+        ],
+        "nonzero_stable_partitions": 12,
+        "ordinary_positive_vertex": "7/3",
+        "weight": 2
+      },
+      {
+        "levels": [
+          4,
+          0,
+          0
+        ],
+        "nonzero_stable_partitions": 12,
+        "ordinary_positive_vertex": "7/3",
+        "weight": 2
+      },
+      {
+        "levels": [
+          0,
+          1,
+          3
+        ],
+        "nonzero_stable_partitions": 48,
+        "ordinary_positive_vertex": "28/3",
+        "weight": -1
+      },
+      {
+        "levels": [
+          0,
+          3,
+          1
+        ],
+        "nonzero_stable_partitions": 48,
+        "ordinary_positive_vertex": "28/3",
+        "weight": -1
+      },
+      {
+        "levels": [
+          1,
+          0,
+          3
+        ],
+        "nonzero_stable_partitions": 48,
+        "ordinary_positive_vertex": "28/3",
+        "weight": -1
+      },
+      {
+        "levels": [
+          1,
+          3,
+          0
+        ],
+        "nonzero_stable_partitions": 48,
+        "ordinary_positive_vertex": "28/3",
+        "weight": -1
+      },
+      {
+        "levels": [
+          3,
+          0,
+          1
+        ],
+        "nonzero_stable_partitions": 48,
+        "ordinary_positive_vertex": "28/3",
+        "weight": -1
+      },
+      {
+        "levels": [
+          3,
+          1,
+          0
+        ],
+        "nonzero_stable_partitions": 48,
+        "ordinary_positive_vertex": "28/3",
+        "weight": -1
+      },
+      {
+        "levels": [
+          0,
+          2,
+          2
+        ],
+        "nonzero_stable_partitions": 72,
+        "ordinary_positive_vertex": "14",
+        "weight": 1
+      },
+      {
+        "levels": [
+          2,
+          0,
+          2
+        ],
+        "nonzero_stable_partitions": 72,
+        "ordinary_positive_vertex": "14",
+        "weight": 1
+      },
+      {
+        "levels": [
+          2,
+          2,
+          0
+        ],
+        "nonzero_stable_partitions": 72,
+        "ordinary_positive_vertex": "14",
+        "weight": 1
+      }
+    ],
+    "method": "all twelve tuples evaluated independently by stable partitions and integer determinants",
+    "sum": "0"
+  },
+  "scope": "selected polarized local elementary-field response in fixed flat BCOV coordinates",
+  "source_revision": "aa0d2f1725dff135494eef132f5e92a8c0401a42",
+  "status": "PASS"
+}

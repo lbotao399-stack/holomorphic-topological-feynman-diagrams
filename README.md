@@ -31,6 +31,8 @@ positive and transcendental for every $N\ge3$.
 
 ### Twisted supergravity and string field theories
 
+**New research development (26 November 2026):** [Exact Bulk Tests in Twisted Supergravity](notes/twisted-sugra-bulk-tests/README.md). The complete further-twist momentum complex reveals normal-momentum singularities and formal coupling torsion. An admissible scalar-descendant polarization has zero response through genus three and $(2\pi i)^{20}Q_4\phi(0)=31/64012032000$. Two complete momentum tests eliminate unknown genus-four, genus-five and genus-six binary periods from Ward identities. The note also proves a sharp compact-momentum routing criterion. Five independent exact certificates accompany the proofs; the type-IIB results retain the announced vertex prescription and the stated flat local scope.
+
 1. **Twisted 11d supergravity** (minimal model of Raghavendran–Saberi–Williams on $\mathbb R\times\mathbb C^5$; `explore/sugra-11d-qme/`): the two-loop order-$g$ local defect is nonzero. The five theta shapes sum to $1008\pi$ on a balanced three-planar, six-transverse cycle:
 $$\text{unrooted defect}=-\tfrac{63g}{256\pi^{10}},\qquad Q_2\mathcal I=-\tfrac{189g}{64\pi^{10}}.$$
 It is not a local two-loop coboundary (also with smooth periodic coefficients on a flat compact quotient). The order-$g$ self-bracket of one-loop counterterms vanishes on the detector (exact ranks $83\to3,80,83$). It is a failure of nilpotence on the holomorphic diffeomorphism ghost with coefficient $J^a$. It vanishes on all zero modes of a flat torus reduction, is invariant under the further-twist background, and has nonzero image in $H^{15}_{\rm GF}(E(5|10))/\kappa H^{12}_{\rm GF}$. Open: one-loop counterterms beyond this detector; comparison with Hahner–Paquette–Raghavendran (2506.02246, §4.3.2), whose grading convention does not match ours; the $C\wedge X_8$ reading.
@@ -57,6 +59,7 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 
 | result | folder | command |
 |---|---|---|
+| further twist, delayed genus-four bulk response, and higher-genus Ward tests | `notes/twisted-sugra-bulk-tests` | `python3 notes/twisted-sugra-bulk-tests/run_checks.py` |
 | generic $K_5$ | `explore/circuit-general/k5` | `python3 test_q3.py`; `python3 check_ref.py` |
 | 6d $(Q^2)_{\hbar^3}$, $(Q^2)_{\hbar^4}$ | `explore/physics/6d-nilpotency` | `python3 run_nilp.py 3 so5 b,b,b,b c,c,c,c,g1,g2 3 13`; `python3 run_nilp.py 4 so5 b,b,b,b,b c,c,c,c,c,g1,g2 2 23 --prime 2147483629` (~8 min) |
 | hCS on $\mathbb C^3$ | `explore/physics/anomalies` | `python3 zeta3_identity.py`; `python3 check_sl23.py`; `python3 assemble_n3.py` |

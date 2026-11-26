@@ -1,0 +1,131 @@
+{
+  "arithmetic": "exact symbolic polynomials and rational numbers",
+  "certificate_sha256": "ecee5229b702595bdfa793f273fcb3662075506a975745de796bdeea6e715779",
+  "polynomial_homotopy": {
+    "exceptional_classes": [
+      {
+        "exterior_degree": 3,
+        "polynomial_degree": 0
+      }
+    ],
+    "homotopy_is_not_linear_over_the_momentum_polynomial_ring": true,
+    "identity": "d h + h d = polynomial_degree + 3 - exterior_degree",
+    "monomial_exterior_basis_vectors": 672,
+    "polynomial_degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "primary_sources": [
+    "https://arxiv.org/html/2111.03049v1#S4.SS2",
+    "https://arxiv.org/html/2506.02246v3#S4.SS3"
+  ],
+  "scope": "Strict further-twist field-strength differential; not the full kinetic operator or a loop calculation.",
+  "source_revision": "aa0d2f1725dff135494eef132f5e92a8c0401a42",
+  "status": "PASS",
+  "symbolic_chart": {
+    "both_square_zero_identities": true,
+    "coupling_retained_cohomology": {
+      "even": "ker(q dot : R^3 -> R) / g ker(q dot : R^3 -> R)",
+      "odd": "R/(q3,q4,q5)",
+      "ring": "R=C[g,q3,q4,q5]"
+    },
+    "coupling_retained_line_cohomology": {
+      "even": "(C[g,t]/(g*t))^2",
+      "odd": "(C[g,t]/t)^2"
+    },
+    "coupling_retained_middle_map": "g times the odd_to_even matrix",
+    "even_to_odd": [
+      [
+        "0",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      [
+        "-q3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-q4",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-q5",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "localized_line_contraction": true,
+    "localized_line_contraction_requires_g_inverse": true,
+    "normal_line_cohomology": {
+      "even": "(C[t]/t)^2",
+      "odd": "(C[t]/t)^2"
+    },
+    "normal_ring_cohomology": {
+      "even": "0",
+      "odd": "C[q3,q4,q5]/(q3,q4,q5)"
+    },
+    "odd_to_even": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-q5",
+        "q4"
+      ],
+      [
+        "0",
+        "q5",
+        "0",
+        "-q3"
+      ],
+      [
+        "0",
+        "-q4",
+        "q3",
+        "0"
+      ]
+    ]
+  },
+  "wave_checks": {
+    "all_constraints_and_square_zero_identities": true,
+    "coupling_zero_fiber_dimensions": {
+      "nonzero_planar_zero_transverse_momentum": [
+        4,
+        4
+      ],
+      "nonzero_transverse_momentum": [
+        2,
+        2
+      ],
+      "zero_momentum": [
+        5,
+        10
+      ]
+    },
+    "even_cycle_primitives": 472,
+    "odd_cycle_primitives": 472,
+    "strata": {
+      "nonzero_planar_zero_transverse_momentum": 8,
+      "nonzero_transverse_momentum": 236,
+      "zero_momentum": 1
+    },
+    "tested_momenta": 245
+  }
+}

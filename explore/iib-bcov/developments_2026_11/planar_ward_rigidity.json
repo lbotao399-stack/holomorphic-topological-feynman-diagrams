@@ -1,0 +1,217 @@
+{
+  "complete_jacobiators_and_unknown_coefficient_cancellation": {
+    "4": {
+      "complete_r_1_2": "-780*q2**2 + 17640*q4",
+      "complete_r_2_3": "-26280*q2**2 + 408240*q4",
+      "difference": "-57600*q2**2",
+      "weight_r_1_2_subtracted": 162,
+      "weight_r_2_3": 7
+    },
+    "5": {
+      "complete_r_1_2": "-5760*q2*q3 + 168960*q5",
+      "complete_r_2_3": "-407520*q2*q3 + 7333920*q5",
+      "difference": "-5040000*q2*q3",
+      "weight_r_1_2_subtracted": 1389,
+      "weight_r_2_3": 32
+    },
+    "6": {
+      "complete_r_1_2": "-12840*q2*q4 - 14196*q3**2 + 1561560*q6",
+      "complete_r_2_3": "-653040*q2*q4 - 2685816*q3**2 + 124684560*q6",
+      "difference": "4838400*q2*q4 - 20180160*q3**2",
+      "weight_r_1_2_subtracted": 1038,
+      "weight_r_2_3": 13
+    }
+  },
+  "first_nonzero_integer_coefficients": {
+    "0": {
+      "r=(1,2)": "0",
+      "r=(2,3)": "0"
+    },
+    "1": {
+      "r=(1,2)": "0",
+      "r=(2,3)": "0"
+    },
+    "10": {
+      "r=(1,2)": "10451964600",
+      "r=(2,3)": "8733339291600"
+    },
+    "11": {
+      "r=(1,2)": "94109624400",
+      "r=(2,3)": "140172662836800"
+    },
+    "12": {
+      "r=(1,2)": "847154391720",
+      "r=(2,3)": "2246716216246320"
+    },
+    "2": {
+      "r=(1,2)": "120",
+      "r=(2,3)": "720"
+    },
+    "3": {
+      "r=(1,2)": "1680",
+      "r=(2,3)": "20160"
+    },
+    "4": {
+      "r=(1,2)": "17640",
+      "r=(2,3)": "408240"
+    },
+    "5": {
+      "r=(1,2)": "168960",
+      "r=(2,3)": "7333920"
+    },
+    "6": {
+      "r=(1,2)": "1561560",
+      "r=(2,3)": "124684560"
+    },
+    "7": {
+      "r=(1,2)": "14217840",
+      "r=(2,3)": "2061521280"
+    },
+    "8": {
+      "r=(1,2)": "128615880",
+      "r=(2,3)": "33585421680"
+    },
+    "9": {
+      "r=(1,2)": "1160164320",
+      "r=(2,3)": "542784342240"
+    }
+  },
+  "inherited_graph_arithmetic_controls_not_reintegrated": {
+    "genus2_theta_entries": [
+      "41/90720",
+      "11/11340",
+      "1/2016",
+      "1/2520"
+    ],
+    "genus2_theta_sum": "1/432",
+    "genus3_double_square": "-3361/27433728000",
+    "genus3_hexagon_with_genus2_insertion": "-1/580608",
+    "genus3_sum": "1163706689/15243746918400 - 74897*zeta(3)/1176215040",
+    "genus3_tetrahedron": "13904672281/177843714048000 - 74897*zeta(3)/1176215040"
+  },
+  "momentum_fixtures": [
+    [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        -2,
+        3
+      ],
+      [
+        3,
+        -1
+      ]
+    ],
+    [
+      [
+        2,
+        -1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        -1,
+        5
+      ]
+    ],
+    [
+      [
+        1,
+        -3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        -2,
+        4
+      ]
+    ]
+  ],
+  "new_exact_BCOV_values": {
+    "genus_2_new_fixture": "s/72",
+    "genus_3_new_fixture": "-74897*t*zeta(3)/98017920 + 1163706689*t/1270312243200",
+    "genus_4_difference": "-s**2/46656",
+    "genus_5_difference": "-1163706689*s*t/263411946749952 + 374485*s*t*zeta(3)/101624979456",
+    "genus_6_difference_on_s_zero": "-5609560609*t**2*zeta(3)**2/193493960884224000 - 1354213258023342721*t**2/32499555260451677798400000 + 87158139886033*t**2*zeta(3)/1253840866529771520000"
+  },
+  "provenance": {
+    "inherited_analytic_input": {
+      "q2": "s/51840",
+      "q3_rational_times_t": "1163706689/25609494822912000",
+      "q3_zeta3_coefficient_times_t": "-74897/1976041267200"
+    },
+    "pinned_commit": "aa0d2f1725dff135494eef132f5e92a8c0401a42",
+    "reduced_coefficient_convention": "q_g = (-1)^g (2*pi*i)^(5*g) Q_g|_B; q_0=1; q_1=0",
+    "repository": "lbotao399-stack/holomorphic-topological-feynman-diagrams",
+    "scope": "Exact cochain-level cyclic compositions of isolated local binary operations; no new period integration; no claim of descent to D3 charges.",
+    "source_git_blob_sha1": {
+      "explore/iib-bcov/README.md": "20565aba20bcb73bc80ad71442bc4c649ca5a182",
+      "explore/iib-bcov/operator/README.md": "a9f0affbe0656474aabf70144cfbad9adaaed462",
+      "explore/iib-bcov/planar_cubic_primary.py": "88b317a8ce0e2520f356773fc3aa5e957c0c0a4e"
+    }
+  },
+  "schema": "planar-bulk-ward-certificate-v1",
+  "status": "PASS",
+  "strict_exact_fermat_sign_bound": {
+    "fermat_coefficient_strict_upper_bound": "-327281302787/3513622689703526400000",
+    "lower_bound_minus_threshold": "327281302787/133175254464000",
+    "rational_zero_threshold": "1163706689/970665120",
+    "zeta3_strict_lower_bound": "2136104771/1778112000"
+  },
+  "verification": {
+    "arithmetic": "integer and rational symbolic arithmetic only",
+    "deliberate_q2_perturbation_jacobiator_at_new_fixture": "720",
+    "first_nonzero_fixture_formula_genus_range_inclusive": [
+      0,
+      12
+    ],
+    "independent_derivative_fixture_count": 5,
+    "independent_derivative_genus_range_inclusive": [
+      0,
+      6
+    ],
+    "independent_ordered_genus_split_checks": 140,
+    "moyal_complete_polynomial_genus_range_inclusive": [
+      0,
+      8
+    ],
+    "universal_first_order_factorizations": [
+      "10*a*b*c*(a - b)*(a - c)*(b - c)",
+      "7*a*b*c*(a - b)*(a - c)*(b - c)*(3*a**2 - 2*a*b - 2*a*c + 3*b**2 - 2*b*c + 3*c**2)"
+    ]
+  }
+}

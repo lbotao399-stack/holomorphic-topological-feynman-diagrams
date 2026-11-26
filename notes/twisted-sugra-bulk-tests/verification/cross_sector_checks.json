@@ -1,0 +1,83 @@
+{
+  "arithmetic": "exact integers and fractions",
+  "genus_four": {
+    "fixed_profile_factorial_divisor": 864,
+    "independent_single_donor_equations": 10,
+    "lower_genus_rank_inequalities": [
+      {
+        "available_vertical_complex_rank": 0,
+        "genus": 0,
+        "required_vertical_marks": 4
+      },
+      {
+        "available_vertical_complex_rank": 3,
+        "genus": 1,
+        "required_vertical_marks": 6
+      },
+      {
+        "available_vertical_complex_rank": 6,
+        "genus": 2,
+        "required_vertical_marks": 8
+      },
+      {
+        "available_vertical_complex_rank": 9,
+        "genus": 3,
+        "required_vertical_marks": 10
+      }
+    ],
+    "normalization": "(2*pi*i)^20 times the selected elementary scalar response",
+    "normalized_genus_four_elementary_response": "31/64012032000",
+    "ordered_descendant_coefficients": 15,
+    "planar_period_combination": "-31/1024192512000",
+    "scope": "Selected polarized flat bulk response using inherited complete periods.",
+    "vertical_abel_fiber_degree": 13824
+  },
+  "jacobi": {
+    "4": {
+      "first_weight": 162,
+      "probes": {
+        "first": {
+          "known_product_coefficient": -780,
+          "unknown_genus_coefficient": 17640
+        },
+        "second": {
+          "known_product_coefficient": -26280,
+          "unknown_genus_coefficient": 408240
+        }
+      },
+      "remaining_product_coefficient": -57600,
+      "second_weight": 7
+    },
+    "5": {
+      "first_weight": 1389,
+      "probes": {
+        "first": {
+          "known_product_coefficient": -5760,
+          "unknown_genus_coefficient": 168960
+        },
+        "second": {
+          "known_product_coefficient": -407520,
+          "unknown_genus_coefficient": 7333920
+        }
+      },
+      "remaining_product_coefficient": -5040000,
+      "second_weight": 32
+    },
+    "6": {
+      "first_weight": 1038,
+      "probes": {
+        "first": {
+          "known_product_coefficient": -14196,
+          "unknown_genus_coefficient": 1561560
+        },
+        "second": {
+          "known_product_coefficient": -2685816,
+          "unknown_genus_coefficient": 124684560
+        }
+      },
+      "remaining_product_coefficient": -20180160,
+      "second_weight": 13
+    }
+  },
+  "status": "PASS"
+}

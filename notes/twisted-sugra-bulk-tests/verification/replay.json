@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "certificate": "explore/sugra-11d-qme/developments_2026_11/further_twist_symbols.json",
+      "certificate_sha256": "c37a320f9ad19e4a423818e14c4f84eee816fd6ad48689238a989c181e93cf96",
+      "saved_output_reproduced": true,
+      "script": "explore/sugra-11d-qme/developments_2026_11/further_twist_symbols.py",
+      "script_sha256": "ecee5229b702595bdfa793f273fcb3662075506a975745de796bdeea6e715779",
+      "status": "PASS"
+    },
+    {
+      "certificate": "explore/twisted-holography-N4/developments_2026_11/delayed_bulk_response.json",
+      "certificate_sha256": "5367829bcb65bfec235ad5fa4af3a407ad94cc2a41211ab57427cc3b0bd628a8",
+      "saved_output_reproduced": true,
+      "script": "explore/twisted-holography-N4/developments_2026_11/delayed_bulk_response.py",
+      "script_sha256": "5b177a66bfc5881a7f6b8823e3668051a42a9e081ad14c52b5309ed0a98ceadc",
+      "status": "PASS"
+    },
+    {
+      "certificate": "explore/iib-bcov/developments_2026_11/planar_ward_rigidity.json",
+      "certificate_sha256": "23c444951daf26dd00f06e625000c03f3c93e7c6c488e24e8ac4a1523ffb85ea",
+      "saved_output_reproduced": true,
+      "script": "explore/iib-bcov/developments_2026_11/planar_ward_rigidity.py",
+      "script_sha256": "88f3f0ac9fd22d92a34ade71679b7b88d16d1ced9dae1eaeb1b1a7f5a2904502",
+      "status": "PASS"
+    },
+    {
+      "certificate": "notes/twisted-sugra-bulk-tests/verification/compact_momentum_rank.json",
+      "certificate_sha256": "5b1eb4315e0ef0a3c5524bac022dc05a2278f2468566e42abead8db8d4c3d416",
+      "saved_output_reproduced": true,
+      "script": "notes/twisted-sugra-bulk-tests/checks/compact_momentum_rank.py",
+      "script_sha256": "61488e68e33c6d8a5996caa0c8a97a7b1bf8a3689c302140539e36891e4062e6",
+      "status": "PASS"
+    },
+    {
+      "certificate": "notes/twisted-sugra-bulk-tests/verification/cross_sector_checks.json",
+      "certificate_sha256": "02432fa4ded75f7d3d08d45c16052216b714309ee7dd0a6a22329d11bc1686aa",
+      "saved_output_reproduced": true,
+      "script": "notes/twisted-sugra-bulk-tests/checks/cross_sector_checks.py",
+      "script_sha256": "2a3813ec5d8be9339059025b2a51537da793d3d022e1387380f93a506bfa62bb",
+      "status": "PASS"
+    }
+  ],
+  "independent_certificates": 5,
+  "python": "3.12.14",
+  "scope": "Exact algebraic and combinatorial replay; inherited periods are inputs.",
+  "status": "PASS",
+  "sympy": "1.14.0"
+}
