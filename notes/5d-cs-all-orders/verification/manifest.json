@@ -1,0 +1,343 @@
+{
+  "artifacts": {
+    ".gitignore": {
+      "bytes": 100,
+      "sha256": "2aab86704f54ec98b7e5641f2fe7ea0f2fddee9dc5073973edea39089992fc65"
+    },
+    "Makefile": {
+      "bytes": 1434,
+      "sha256": "aa5905a136905dc2d1818b7e182b46364e0e4c7d96ebe4c9ee269dec6a71dc02"
+    },
+    "README.md": {
+      "bytes": 6233,
+      "sha256": "12aedd6d514421c679357034865d92bf6499aa1e3844d03b135a4bb6d14e6230"
+    },
+    "checks/central_extension_exact.py": {
+      "bytes": 9930,
+      "sha256": "da338ac8901310de3b66d9608df2b8c8bc39d9ef50024a6af2a6ea7fc440f066"
+    },
+    "checks/cyclic_polynomial_referee.py": {
+      "bytes": 4229,
+      "sha256": "c687e1c2148ba4bb8547bbbc169b2fa26fa4e45bdb6931c7234b7266eb53259b"
+    },
+    "checks/four_loop_census.py": {
+      "bytes": 7621,
+      "sha256": "50dc2c2963a360dbec8d020a4dd7da0e7965def3079ca923e030f3bf9575abfa"
+    },
+    "checks/paper_coefficients.py": {
+      "bytes": 17140,
+      "sha256": "52fa1198f783fe4e150e250f48b8960b0a5f9c090b037ab3567106d6e113ec67"
+    },
+    "lie_classification_checks.json": {
+      "bytes": 12646,
+      "sha256": "82883077e16c45dc5bd30a3c417b3cbf111e9ab5a177de606db476ff9c17a562"
+    },
+    "paper.pdf": {
+      "bytes": 486832,
+      "sha256": "0f9064dc4abe1e35a5ad5413852404aaa11b0c3a471cc2ce017777d6567a27b2"
+    },
+    "paper.tex": {
+      "bytes": 8966,
+      "sha256": "c0ceb05f559aa0b96e8045d501253155321f76dd203de42cd5a3d1f72af7ebfb"
+    },
+    "sections/all_orders.tex": {
+      "bytes": 16268,
+      "sha256": "dd673b4e3c7fd85e38edc3d9e68421e592409ed333d53135de26054808acf5f4"
+    },
+    "sections/central_extension.tex": {
+      "bytes": 9445,
+      "sha256": "80df5953eb1dc8a53ddf61d44b62420d6f4dacb2796366e40cae268223fd13ef"
+    },
+    "sections/first_counterterms.tex": {
+      "bytes": 4263,
+      "sha256": "fd7cf83413bab29db953ebc5c628e9728e0a37c1a5919b705a8551582b85149a"
+    },
+    "sections/fourth_order.tex": {
+      "bytes": 6776,
+      "sha256": "ef08568b68fdff3f621f247686e416299ff8036f4ae5bbb0376a7b8b7645d866"
+    },
+    "sections/lie_classification.tex": {
+      "bytes": 10565,
+      "sha256": "8b2a0b187493e10fc7cfb8919cab149dddd195f0dde08835a2137714eabf3403"
+    },
+    "sections/setting.tex": {
+      "bytes": 6214,
+      "sha256": "dd327efe22e84c93183c44b316593a07a64daaf6704ff1e756fcee37cc3d4143"
+    },
+    "sections/two_loop.tex": {
+      "bytes": 8206,
+      "sha256": "22cd323981a18bdb24b4104630eb54028b1913661f32fb4040b595c12c9f919f"
+    },
+    "sections/verification.tex": {
+      "bytes": 5532,
+      "sha256": "67aeb7e4368d7c562b7f6b6517086b5a69591e217c525af7f99c6b45d5f2143d"
+    },
+    "verification/build_environment.txt": {
+      "bytes": 4387,
+      "sha256": "03862a611fd4a95c42f998f469ead3f3e24fc1b24b5a8dfe66a23b41a2b72ffc"
+    },
+    "verification/central_extension_exact.json": {
+      "bytes": 737,
+      "sha256": "d7d4c987ad642168c10e6ba4d1ecc555eeb348161081dbace17f98b41ecfc258"
+    },
+    "verification/coefficient_detector.txt": {
+      "bytes": 49,
+      "sha256": "6091a51a4f5b483984629d089bc6c865cc09587ecd3aac6936c482946c914d2c"
+    },
+    "verification/cyclic_polynomial_referee.txt": {
+      "bytes": 1080,
+      "sha256": "d9a2ebf2fa9813d634dec745fbfe13af5b74c0e6415a6a1fc7ff4a5cae1b8101"
+    },
+    "verification/four_loop_census.json": {
+      "bytes": 3766,
+      "sha256": "8ded8febd0fa80fb3d5a9da7116a5c09fcde8f97115a488ce39821fd034f8cc5"
+    },
+    "verification/four_loop_full_cochain.txt": {
+      "bytes": 61,
+      "sha256": "7f2fbee9633c425eaf15f66ceb217200caf8b27a7e7cf49e0e7bc5208d2426de"
+    },
+    "verification/kernel_covariance.txt": {
+      "bytes": 171,
+      "sha256": "98b2a9d458ec2c35b100c52d56df67f8c59b06a680c0d08ea14f73efb40d4759"
+    },
+    "verification/latex-build.log": {
+      "bytes": 29171,
+      "sha256": "f801ecf20443412db2214e100313c51206a2790d16d0db39477eba1e12a20241"
+    },
+    "verification/paper_coefficients.json": {
+      "bytes": 3338,
+      "sha256": "40bdf0dff09f2c9e8a63ed07ce1782e0262d001755a21bfba8b9161419defef5"
+    },
+    "verification/sl3_through_three_loops.txt": {
+      "bytes": 1951,
+      "sha256": "7c81682ebcd9cfcd0b0ff4754cddf7d58a5ddb9eb3b1c063ead01de4a227820c"
+    },
+    "verification/theta_constants.txt": {
+      "bytes": 976,
+      "sha256": "49ba1fa0b9672e4d33280d03f54b6d4338df625be43cf1123657c815f1a46680"
+    },
+    "verify_lie_classification.py": {
+      "bytes": 10033,
+      "sha256": "0d4976be7b82233f7fbce51845e5af6444ad5618118fe8665909a537983f1bc9"
+    }
+  },
+  "evidence_scope": {
+    "all_orders": "analytic contact theorem, cohomology calculation, and master-equation induction",
+    "central_extensions": "proved through hbar squared",
+    "cyclic_finite_checks": "exact finite-field calculations at momentum degrees 2 through 5, auxiliary to the all-degree analytic proof",
+    "four_loop_periods": "inherited exact integrated kernel tables; full cochain assembly replayed; external master integrations not rerun"
+  },
+  "inherited_inputs": {
+    "deepen/deform/REPORT.txt": {
+      "bytes": 20602,
+      "git_blob_sha": "5092e13ff58e04f32433ded928c78539023266a4",
+      "sha256": "d5dc344cf0b10700d3b13999008d4e1943944d1c9dbb786221c3a6572beeda3f"
+    },
+    "deepen/deform/code/ce.py": {
+      "bytes": 13522,
+      "git_blob_sha": "3ad8627d519788b5a080e8eab3f0f3abc7f7d59b",
+      "sha256": "cd712843d1431ec4a5038070b5463b3025365f49b0fa24dc965344c79e5aeade"
+    },
+    "deepen/h1/REPORT.txt": {
+      "bytes": 35572,
+      "git_blob_sha": "d1159d4c212e579a27b7659d2b55bc7a70266dcc",
+      "sha256": "df0458ed5ba04080b4789f32dc171df544a0970206b7a424d4cd11a9edabbacb"
+    },
+    "deepen/h1/verify/code/kernel_covariance.py": {
+      "bytes": 2861,
+      "git_blob_sha": "3281fe851b218cdfb7da49195fa687449cac8d9b",
+      "sha256": "3b149e1c933858ada6d581210c7e3837f02f86634241a7a8a8427667810b8174"
+    },
+    "deepen/h1/verify/regulated_contacts.md": {
+      "bytes": 5743,
+      "git_blob_sha": "645a65140facc50d715710058f31b9e00654ea0d",
+      "sha256": "a0cae693f38153122eb3078566a24042724779c226cd3aba19e001c2d51e55de"
+    },
+    "deepen/moyal/check_laurent.py": {
+      "bytes": 2275,
+      "git_blob_sha": "be3d913fa133e68b0089e99b4cae9552d231c073",
+      "sha256": "b37b7c3d1d8ba7984269104feb1faf6a0b9e8d4f650d01cbf6e9a6569f503304"
+    },
+    "deepen/moyal/theta_moyal.py": {
+      "bytes": 7598,
+      "git_blob_sha": "73b35af7bd6571d0cb0ba9fea86f76a7077c87d3",
+      "sha256": "787811517bf189705edeece8a25b030a45d670b1da35c44edfbfe7ac9984fc0d"
+    },
+    "deepen/o3/code/ribbon.py": {
+      "bytes": 3601,
+      "git_blob_sha": "f73be827b33c1149d9e66f1f9afac50f08acf5a4",
+      "sha256": "3964f2dd2b30cd3cd41be369565ae43b8c77715868b428b88310fdd43cbc46d7"
+    },
+    "deepen/o3/higher_orders/README.md": {
+      "bytes": 12527,
+      "git_blob_sha": "e376b2fbf03bb215f5c273b8912491135c703a5f",
+      "sha256": "cf007fc6e6a4557a92ffd0bd167e3b17e2fe9120c1a3a93053f44d6848ed9f2a"
+    },
+    "deepen/o3/higher_orders/center_classes.md": {
+      "bytes": 9890,
+      "git_blob_sha": "91b01f333ac3da9293127bb4833b0ff3229eddb9",
+      "sha256": "3f81fc8df4d44006a5e4dd08a7d8cea48377c825551f72cce9b2c595b62a0eff"
+    },
+    "deepen/o3/higher_orders/consistency.md": {
+      "bytes": 4379,
+      "git_blob_sha": "e11f73bfbcc1e46460a00d9a3a81c057ed40cded",
+      "sha256": "47d2bd0c1120804789f9ae8a480162056aceac194e20240a6636ba05d531d313"
+    },
+    "deepen/o3/higher_orders/four-loop-graphs.json": {
+      "bytes": 4153,
+      "git_blob_sha": "228ef8392c3a13700faa27111456064b457d0f68",
+      "sha256": "5aff1df8cf85ac7dc85a8c1be2e9a4ddbd4926ddd5e257d335448f1aea796f54"
+    },
+    "deepen/o3/higher_orders/four_loop_graphs.py": {
+      "bytes": 3509,
+      "git_blob_sha": "5da089438cae61112dffb317ff574d95ddc3e229",
+      "sha256": "6799f7a18fa4bb075b202970fee92bd10fe56e45c87f8cad6b3a6d2d4627c245"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/README.md": {
+      "bytes": 14227,
+      "git_blob_sha": "6d3b1944bd4a935ed60da51498534e036f7c084c",
+      "sha256": "e640d5f01ed326b0275cf8077984b2ff234f202ddb0851240ed74fa3ecb3fbc4"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/assemble.py": {
+      "bytes": 1429,
+      "git_blob_sha": "c197b2ce41269dc33201e80bb13baeaedfad8a83",
+      "sha256": "2639d6895cb48a5a31b946a9c50c05f27762bd5ff10afac45da3dc98ee3a87f4"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/four_point.py": {
+      "bytes": 1349,
+      "git_blob_sha": "d5b5cacb9681ae58368c1a09271095f568746a5b",
+      "sha256": "e3170913d6e6e28ad3e066a37696cf62894d9964451b2ca5c998e8679f7d7fbc"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/kernels/core00.json": {
+      "bytes": 631,
+      "git_blob_sha": "d29b9fc7fcadfae870b57f197f7e4f4fcb2818ef",
+      "sha256": "79279a38f7f83147a51009c4ab1fc7700174227cbe59119689f6fd22a4ae0555"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/kernels/core03.json": {
+      "bytes": 2007,
+      "git_blob_sha": "16e191e076b5876f4b5cbfb97a138476028bd0f2",
+      "sha256": "7e810ea708794b8d3a05782f393a799553ecc357c2067feb9e3be124c17f44de"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/kernels/core11.json": {
+      "bytes": 11660,
+      "git_blob_sha": "3ab8580d1d81062668d6c03a32ea8df588803d90",
+      "sha256": "8a5f3774b4408d0fc7c9d51da9ea0e2dfb0e2153f2adab6805588fbdb32106a3"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/kernels/core39.json": {
+      "bytes": 4549,
+      "git_blob_sha": "d9e1d712626d8e724386876192584872fec641ad",
+      "sha256": "145baca8f0bd0d4903d596da3dfe0398f8d40db3aa728d21cff78bb4902fe36d"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/raw_four.py": {
+      "bytes": 2996,
+      "git_blob_sha": "df22e2246b87c062e3e92b1967cee11aea37298d",
+      "sha256": "0b401f06079b4f1092eaf7cb908738e9c467730a697d304ee6924c761a21c310"
+    },
+    "deepen/o3/higher_orders/four_loop_reduction/verify_four_point.py": {
+      "bytes": 2545,
+      "git_blob_sha": "d6f933dacb5fee1adab3cbcfb6941067fcd0e12a",
+      "sha256": "ba43b3b8384ce449b9ccc98e3c24fc4e1b4fae172086ce396f5fa76902832a63"
+    },
+    "deepen/o3/higher_orders/four_loop_sp/README.md": {
+      "bytes": 4543,
+      "git_blob_sha": "5bdc5ad438dbc191f1313b8e18c5b3e95d5aa1bc",
+      "sha256": "0eb5d42724a595aaf0b7d7947c1d07e81c09223b62f01c2e55e88c86534015c5"
+    },
+    "deepen/o3/higher_orders/invariant_ranks.py": {
+      "bytes": 5505,
+      "git_blob_sha": "f61bd53558a1d9175b6096e0403cd2f1efced6c0",
+      "sha256": "d5a4b56dc8a8711fbce4d3d6223fa30a53810372b963ad7484e3c089f3cab2d6"
+    },
+    "deepen/o3/higher_orders/order_four.py": {
+      "bytes": 3763,
+      "git_blob_sha": "dd4730a938415aa6789ea7e72f5c3afa4b1221f3",
+      "sha256": "8528de12f96928d69921a7560d9cf2e3032c755bedd687f237db86648e4280b9"
+    },
+    "deepen/o3/higher_orders/probe.py": {
+      "bytes": 838,
+      "git_blob_sha": "1e3548e0ba512f921a35c9edf784e104cc914e28",
+      "sha256": "8adad27bcd1610710f2762bf53371dec22271292ea010123914f568ed59522f3"
+    },
+    "deepen/o3/higher_orders/ranks.txt": {
+      "bytes": 286,
+      "git_blob_sha": "f2d616185aacab77dea101df764338cc48ffc12a",
+      "sha256": "45dac70520ee4cc99917a6c475d76c3896e523961fd2373acb34a79dddf97eb6"
+    },
+    "deepen/simple-all/REPORT.txt": {
+      "bytes": 22408,
+      "git_blob_sha": "2d1448fa76a46bfadf3069c205fba2e00e8a8f67",
+      "sha256": "a99688a9e5c86fe9417282fe8495506f3c6a6aef090b16b13fb7815f7edb8f58"
+    },
+    "deepen/simple-g/REPORT.txt": {
+      "bytes": 20055,
+      "git_blob_sha": "b9be50b4addf31b93657fe6304d1f19d41a5d864",
+      "sha256": "6038c5f5ceab9f3b237dcf3b9c4611971ee27bde4de9e6ebb245a178cd5e7757"
+    },
+    "notes/flagship/REPORT.txt": {
+      "bytes": 10718,
+      "git_blob_sha": "df39b93ebb005e1fa9b2795962fe41d900ca4448",
+      "sha256": "2f247e72e2eacd1633b68a1d0f0c0e4de4ee172bec75771c22e66d6e647ce229"
+    },
+    "notes/flagship/arith_check.py": {
+      "bytes": 1063,
+      "git_blob_sha": "797598f37e3f107d4de9b5369247178ca0b33ce1",
+      "sha256": "894cafe5f571ea6e85ce847b8f2c9f9a47547b30e021db7c70c37ca62985221d"
+    },
+    "notes/flagship/flagship.tex": {
+      "bytes": 125703,
+      "git_blob_sha": "597872dd1bbaf425c713e6774ff53ef78d5ab957",
+      "sha256": "8e5878a303e6f1c58edca4d46616e5c14b8dac992a1fbb356c8e063f99100c65"
+    },
+    "notes/flagship/referee/REFEREE.txt": {
+      "bytes": 14509,
+      "git_blob_sha": "7dc7aacee3022c2778c6d311130afe08c64eef58",
+      "sha256": "2eaf6109b4f5b1d103dd58663b5fdd866122a0ed02b6996ab635f98b98dc0856"
+    },
+    "notes/flagship/referee2/REFEREE.txt": {
+      "bytes": 19895,
+      "git_blob_sha": "f3b6898a807f6da2eb1ede3c2511e1da23d5680e",
+      "sha256": "41b686bd1cadda93db9a2ee257264c2e126c6d540f50800a5c5f3fefcd16c32b"
+    },
+    "notes/flagship/referee2/r2_kernels.py": {
+      "bytes": 15523,
+      "git_blob_sha": "a712bf3b36725a2bdbe45f412f5133794da83efb",
+      "sha256": "594bfb59521f2a7109a174315dbbbeec207b045db25203211e0ee55ce696e2ba"
+    },
+    "notes/flagship/referee2/r2_sl3_o3.py": {
+      "bytes": 11970,
+      "git_blob_sha": "2b5d873ad60c370d3621786da789a9ff81c36888",
+      "sha256": "210f3cf969d585c8cf432b52da54d3a523d9ee2d2eccc3c47e584330ecef25b2"
+    },
+    "notes/flagship/supplement/MANIFEST.txt": {
+      "bytes": 4562,
+      "git_blob_sha": "aa3b9ae488eebc17696866152a084de50b7879e9",
+      "sha256": "076dc642b6f9a08064b47cbe95448cd6c4073f3f6eb07f5483f53df0cef27d59"
+    }
+  },
+  "inherited_source_revision": "b12b46ef484a1b002ddf92a8d776d44bab0a4f5c",
+  "manuscript_date": "2026-11-25",
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "source_repository": "lbotao399-stack/holomorphic-topological-feynman-diagrams",
+  "title": "Anomalies and All-Order Quantization of Five-Dimensional Chern\u2013Simons Theory",
+  "verification": {
+    "all_recorded_commands_exit_zero": true,
+    "central_bracket_entries": 351384,
+    "central_master_equation_entries": 87846,
+    "exhaustive_four_loop_graphs": 50,
+    "full_fourth_order_cochain": {
+      "pi_squared_coordinates": 300,
+      "rational_coordinates": 300,
+      "remainder": "zero"
+    },
+    "new_original_so5_graph_certificate_entries_per_identity": 60000,
+    "overfull_boxes": 0,
+    "pdf_pages": 24,
+    "pdf_render_review": "all pages; detailed formula and table inspection",
+    "undefined_references": 0,
+    "underfull_boxes": 0
+  }
+}

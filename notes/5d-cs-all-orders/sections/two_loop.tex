@@ -1,0 +1,229 @@
+\section{The exact two-loop anomaly}\label{sec:two-loop}
+
+\subsection{The two geometric integrals}
+
+A connected cubic graph with geometric loop number $n$ contributes a
+local contact only if
+\[
+ 2|E|=3|V|-4,\qquad |E|=3n+1,\qquad |V|=2n+2 .
+\]
+It then has four external fields. At two loops the two surviving
+graphs are theta graphs whose three paths have lengths $(1,3,3)$
+and $(2,2,3)$. The four external fields occupy their bivalent
+vertices. Each graph has automorphism order four.
+
+For a theta graph with path lengths $n_1,n_2,n_3$, the integration
+over its path Schwinger parameters gives, in the present dimension,
+the following expression in the Euler gamma function $\Gamma$:
+\[
+ \frac12
+ \frac{\Gamma(\frac72-n_1)\Gamma(\frac72-n_2)
+       \Gamma(\frac72-n_3)}
+      {\Gamma(\frac72)(n_1-1)!(n_2-1)!(n_3-1)!}.
+\]
+The oriented momentum determinant supplies the graph-dependent sign.
+In the orientation
+of the original graph tensors the complete results are
+\begin{align}
+ K_{133}
+ &=-\frac12\frac{\Gamma(\frac52)\Gamma(\frac12)^2}
+                    {4\Gamma(\frac72)}
+       [p_0p_1][p_2p_3]
+   =-\frac{\pi}{20}[p_0p_1][p_2p_3],\notag\\
+ K_{223}
+ &=\frac12\frac{\Gamma(\frac32)^2\Gamma(\frac12)}
+                    {2\Gamma(\frac72)}
+       [p_0p_1][p_2p_3]
+   =\frac{\pi}{30}[p_0p_1][p_2p_3].
+ \label{eq:theta-kernels}
+\end{align}
+These are projective Schwinger integrals at zero external
+displacement, with arbitrary conserved holomorphic momenta.
+Their derivation by successive path integration and their original
+orientation certificates are given in \cite{RepoOriginal}.
+
+Let $W_{133}$ and $W_{223}$ denote the color contractions of the
+six classical cubic tensors at the vertices, with $\kappa^{-1}$
+on the seven edges, including the external-field ordering sign.
+The subscript records the three path lengths. Define their full
+alternating Taylor cochains by
+\begin{equation}
+ F_{133}=\alt\bigl([p_0p_1][p_2p_3]W_{133}\bigr),\qquad
+ F_{223}=\alt\bigl([p_0p_1][p_2p_3]W_{223}\bigr).
+ \label{eq:theta-cochains}
+\end{equation}
+With $\nu=-U/(64\pi^5)$, the automorphism factors and
+\eqref{eq:theta-kernels} give
+\begin{equation}
+ \boxed{\quad
+ o_2=\frac{\pi\nu}{240}(-3F_{133}+2F_{223})
+     =-\frac{U}{15360\pi^4}(-3F_{133}+2F_{223}).
+ \quad}
+ \label{eq:o2}
+\end{equation}
+In particular the relative coefficients are $-3$ and $2$;
+the scalar $U$ is common to the two graphs.
+
+\subsection{Full color tensors for traceless matrices}
+
+For $\g=\fsl_N$ with $\kappa=\tr$, the original contractions have
+the following complete expressions:
+\begin{align}
+ W_{133}
+ &=2\tr(X_0X_1X_2X_3)
+   +(2+N^2)\tr(X_0X_1X_3X_2)\notag\\
+ &\quad-4\tr(X_0X_2X_1X_3)
+   +(2+N^2)\tr(X_0X_2X_3X_1)\notag\\
+ &\quad-4\tr(X_0X_3X_1X_2)
+   +2\tr(X_0X_3X_2X_1)
+   +6N\tr(X_0X_1)\tr(X_2X_3),\notag\\
+ W_{223}
+ &=-2\tr(X_0X_1X_2X_3)-2\tr(X_0X_1X_3X_2)\notag\\
+ &\quad+4\tr(X_0X_2X_1X_3)-2\tr(X_0X_2X_3X_1)\notag\\
+ &\quad+4\tr(X_0X_3X_1X_2)-2\tr(X_0X_3X_2X_1)
+       -4N\tr(X_0X_1)\tr(X_2X_3)\notag\\
+ &\quad+2N\tr(X_0X_2)\tr(X_1X_3)
+       +2N\tr(X_0X_3)\tr(X_1X_2).
+ \label{eq:complete-theta-colors}
+\end{align}
+No choice of external matrices or momenta is imposed here.
+Write
+\[
+ f(X_0,X_1,X_2)=\kappa(X_0,[X_1,X_2]),\qquad
+ \beta=d\bigl([p_0p_1]^2f\bigr).
+\]
+In the trace normalization, full alternation of
+\eqref{eq:complete-theta-colors} gives the cochain identity
+\begin{equation}
+ F_{133}+F_{223}=2N^2\beta,\qquad
+ o_2=\pi\nu\left(\frac{F_{223}}{48}
+                         -\frac{N^2\beta}{40}\right).
+ \label{eq:sl-theta-boundary}
+\end{equation}
+Thus the bare obstruction class is
+\[
+ [o_2]=-\frac{U}{3072\pi^4}[F_{223}].
+\]
+Classical closedness follows either directly from these graph
+cochains or from the first unsolved coefficient of the
+regularized master equation, since the one-loop contact vanishes.
+
+\subsection{A detector valid for every simple Lie algebra}
+
+Use the Killing form in this subsection. For an invariant
+four-cochain of momentum degree four, take the coefficient of
+$[p_0p_1][p_0p_2]$. Denote its full color contraction with
+$\kappa(X_0,X_1)\kappa(X_2,X_3)$ by $\ell_{kk}$, and its
+contraction with $\kappa([X_0,X_1],[X_2,X_3])$ by $\ell_{ff}$.
+Every contraction uses the inverse Killing form. The three
+determinants $[p_0p_1],[p_0p_2],[p_1p_2]$ are algebraically
+independent, so this coefficient is unambiguous.
+
+The boundary $\beta$ has
+\[
+ \ell_{kk}(\beta)=2\dim\g,\qquad
+ \ell_{ff}(\beta)=\dim\g.
+\]
+Consequently the linear functional
+\[
+ \varpi=(\dim\g)\ell_{kk}-2(\dim\g)\ell_{ff}
+ \qquad\text{satisfies}\qquad \varpi(\beta)=0 .
+\]
+It annihilates every boundary in the invariant sector in question.
+Indeed exactness of invariants for the finite-dimensional
+representations of the adjoint group and $SL_2$ at fixed momentum degree supplies
+an invariant primitive whenever an invariant cochain is exact.
+A cubic primitive of degree four has momentum polynomial
+$[p_0p_1]^2$ and an invariant alternating color tensor.
+That tensor is a multiple of $f$ for every simple algebra.
+Thus the entire invariant boundary space is $\mathbb C\beta$.
+
+To evaluate the detector, let $e_b,e^b$ be Killing-dual bases,
+let $P$ exchange the two factors of $\g\otimes\g$, and put
+\[
+ \Omega_{\mathrm{ad}}
+   =\sum_b\operatorname{ad}(e_b)\otimes\operatorname{ad}(e^b),
+ \qquad n_4=\Tr_{\g\otimes\g}(P\Omega_{\mathrm{ad}}^4).
+\]
+Contraction of the original theta networks gives
+\begin{align}
+ \ell_{kk}(F_{223})&=-6\dim\g,&
+ \ell_{ff}(F_{223})&=-8n_4,\notag\\
+ \varpi(F_{223})&=2\dim\g(8n_4-3\dim\g),&
+ \varpi(F_{133})&=-\varpi(F_{223}).
+ \label{eq:universal-detector}
+\end{align}
+For clarity, these contractions can be reduced to the three
+pairings $(01)(23),(02)(13),(03)(12)$ before alternation.
+For $W_{223}$ their metric contractions are
+$(-\dim\g/2,\dim\g/4,\dim\g/4)$ and their two-bracket contractions
+are $(0,n_4,n_4)$. Full alternation applies the linear combinations
+$(8,-4,-4)$ and $(0,-4,-4)$, respectively, giving
+\eqref{eq:universal-detector}.
+
+Here is the exact family-independent evaluation of the remaining
+Casimir trace. In Vogel's normalization let
+$(v_1,v_2,v_3)$ be the three parameters and set
+$t_V=v_1+v_2+v_3$. The fourth adjoint Casimir formula
+\cite{MSV} gives
+\begin{align}
+ n_4&=\dim\g\left[
+  \frac{3t_V(v_1^2+v_2^2+v_3^2)
+              -(v_1^3+v_2^3+v_3^3)}
+       {16t_V^3}-\frac18\right],\notag\\
+ 8n_4-3\dim\g
+ &=-\frac{3\dim\g\,(t_V+v_1)(t_V+v_2)(t_V+v_3)}
+             {2t_V^3}.
+ \label{eq:vogel-detector}
+\end{align}
+The substitutions and results are displayed together:
+\begin{center}
+\renewcommand{\arraystretch}{1.55}
+\begin{tabular}{@{}lll@{}}
+\toprule
+$\g$ & $(v_1,v_2,v_3)$ & $8n_4-3\dim\g$\\
+\midrule
+$\fsl_N$ & $(-2,2,N)$
+  & $-\dfrac{3(N^2-1)(N^2-4)}{N^2}$\\
+\addlinespace[3pt]
+$\fso_N$ & $(-2,4,N-4)$
+  & $-\dfrac{3N(N-1)(N-3)(N-4)(N+2)}{2(N-2)^3}$\\
+\addlinespace[3pt]
+$\fsp_N$ & $(-2,1,\frac{N+4}{2})$
+  & $-\dfrac{3N(N-2)(N+1)(N+3)(N+4)}{2(N+2)^3}$\\
+\addlinespace[3pt]
+$G_2$ & $(-2,\frac{10}{3},\frac83)$ & $-\dfrac{385}{12}$\\
+\addlinespace[3pt]
+$F_4$ & $(-2,5,6)$ & $-\dfrac{12740}{81}$\\
+\addlinespace[3pt]
+$E_6$ & $(-2,6,8)$ & $-\dfrac{975}{4}$\\
+\addlinespace[3pt]
+$E_7$ & $(-2,8,12)$ & $-\dfrac{34580}{81}$\\
+\addlinespace[3pt]
+$E_8$ & $(-2,12,20)$ & $-\dfrac{12152}{15}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For $\fsp_N$ the defining representation has even dimension $N$.
+The zeros in the simple families occur precisely at
+$\fsl_2=\fso_3=\fsp_2$; $\fso_4$ is not simple.
+
+\begin{theorem}[Nontriviality of the bare anomaly]
+\label{thm:bare-anomaly}
+The bare two-loop anomaly is a nonzero cohomology class for every
+complex simple gauge algebra other than $\fsl_2$.
+\end{theorem}
+\begin{proof}
+Equations \eqref{eq:o2} and \eqref{eq:universal-detector} give
+\[
+ \varpi(o_2)=\frac{\pi\nu}{24}
+                 \dim\g(8n_4-3\dim\g).
+\]
+The table makes this nonzero in the stated cases, whereas
+$\varpi$ vanishes on every possible invariant boundary.
+In Killing normalization for $\fsl_2$, direct contraction gives
+$F_{133}=\frac72\beta$ and $F_{223}=-3\beta$; hence its
+obstruction is exact. Rescaling the invariant form by $c\ne0$
+multiplies each six-vertex, seven-edge theta graph by
+$c^{6-7}=c^{-1}$ and cannot change nontriviality.
+\end{proof}

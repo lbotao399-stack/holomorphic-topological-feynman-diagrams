@@ -1,0 +1,116 @@
+\section{The first three quantum counterterms}
+\label{sec:first-counterterms}
+
+Throughout this section $\g=\fsl_N$ and $\kappa=\tr$.
+To retain the original cochain notation, write
+\[
+ D(X_0e^{p_0z},X_1e^{p_1z},X_2e^{p_2z})
+   =[p_0p_1]\tr(X_0\{X_1,X_2\}),\qquad
+ p_0+p_1+p_2=0.
+\]
+Here $D$ denotes a cubic cochain, whereas the $D$ acting on
+superfields in \eqref{eq:classical} is the free differential.
+The matrix anticommutator is
+$\{X_1,X_2\}=X_1X_2+X_2X_1$.
+The color tensor is symmetric and the momentum determinant is
+alternating, so the complete cochain is alternating.
+
+\subsection{The forced order-one interaction}
+
+At first order the only invariant equivariant cubic is $j=aD$.
+Its classical differential vanishes. Contraction of the full
+shuffle bracket, using the traceless completeness relation, gives
+\begin{equation}
+ \frac12\{D,D\}
+  =\frac{F_{223}}{12N^2}
+     +\frac{N^2+4}{2N^2}\,\beta .
+ \label{eq:DD}
+\end{equation}
+Substitution in \eqref{eq:first-two-equations} yields
+\begin{align}
+ d i_2
+ &=\left(\frac{a^2}{12N^2}
+                       +\frac{\epsilon\pi\nu}{48}\right)F_{223}
+   +\left(\frac{a^2(N^2+4)}{2N^2}
+                       -\frac{\epsilon\pi\nu N^2}{40}\right)\beta .
+ \label{eq:order-two-assembly}
+\end{align}
+For $N\ge3$, Theorem~\ref{thm:bare-anomaly} forces the first
+coefficient to vanish. Therefore
+\begin{align}
+ a^2&=-\frac{\epsilon\pi\nu N^2}{4}
+       =\frac{\epsilon U N^2}{256\pi^4},\notag\\
+ i_2&=\frac{\epsilon U(3N^2+10)}{1280\pi^4}
+         [p_0p_1]^2\tr(X_0[X_1,X_2]).
+ \label{eq:first-two-counterterms}
+\end{align}
+These are equalities of full cochains, not only cohomology classes.
+In the convention $\epsilon U=1$, the two roots are
+$a=N/(16\pi^2)$ and $a=-N/(16\pi^2)$.
+
+\subsection{The marked two-loop contribution at order three}
+
+There are three sources at order $\hbar^3$: the classical
+differential of $i_3$, the tree bracket of $j$ and $i_2$, and the
+two-loop theta graphs with one $j$ vertex. Bare three-loop graphs
+and one-loop graphs with any of these vertices vanish.
+The complete differentiated theta calculation gives
+\begin{align}
+ \{D,[p_0p_1]^2f\}
+  &=\frac13d\bigl([p_0p_1]^3\tr(X_0\{X_1,X_2\})\bigr),\notag\\
+ \Theta(D)
+  &=-\frac{N^2}{60}
+       d\bigl([p_0p_1]^3\tr(X_0\{X_1,X_2\})\bigr).
+ \label{eq:marked-theta}
+\end{align}
+Here $\Theta(D)$ is the sum over both theta graphs and all
+single marked vertices, with the common scalar $\pi\nu$
+removed. Its graph automorphism factors are included.
+The local equation is consequently
+\[
+ d i_3=\{j,i_2\}+\epsilon\pi\nu\,a\,\Theta(D).
+\]
+Using \eqref{eq:first-two-counterterms} and \eqref{eq:marked-theta},
+\begin{align}
+ i_3
+ &=\frac{a\epsilon U}{\pi^4}
+       \left(\frac{3N^2+10}{3840}+\frac{N^2}{3840}\right)
+          [p_0p_1]^3\tr(X_0\{X_1,X_2\})\notag\\
+ &=\frac{a\epsilon U(2N^2+5)}{1920\pi^4}
+          [p_0p_1]^3\tr(X_0\{X_1,X_2\}).
+ \label{eq:i3}
+\end{align}
+The tensor identities in this section were independently replayed
+from the original graphs using exact rational matrices; their
+finite evaluations are certificates accompanying the formal
+trace identities, rather than substitutes for them.
+
+\subsection{Rank two and the two branches}
+
+For traceless $2\times2$ matrices,
+\[
+ X_1X_2+X_2X_1=\tr(X_1X_2)\mathbf1_2,\qquad
+ \tr(X_0\{X_1,X_2\})=0 .
+\]
+Evaluation of the full identities at $N=2$ therefore gives
+\begin{equation}
+ j=0,\qquad
+ i_2=\frac{11\epsilon U}{640\pi^4}
+             [p_0p_1]^2\tr(X_0[X_1,X_2]),\qquad
+ i_3=0.
+ \label{eq:rank-two}
+\end{equation}
+It is not necessary to cancel a nonzero class at rank two:
+the bare anomaly there is already exact.
+
+The Lie automorphism $X\mapsto-X^{\mathsf T}$ preserves the trace
+pairing and fixes $f$, while reversing the symmetric cubic.
+It commutes with the cochain differential and every graph
+contraction. Once the all-order uniqueness in the formal sector
+is proved, it follows that the two choices of $a$ are exchanged
+by this automorphism: every even-order counterterm is fixed and
+every odd-order counterterm changes sign. Thus for $N\ge3$
+there are two leading couplings in the fixed color convention,
+related by a symmetry of the underlying classical theory.
+At $N=2$ every odd-order cubic vanishes, so the two formal
+branches specialize to the same quantization.

@@ -1,0 +1,119 @@
+\section{Further consequences and remaining questions}
+
+The obstruction is sensitive to the available color tensors.
+For a non-type-$A$ simple algebra, the
+entire positive-derivative first-order cohomology vanishes,
+so changing derivative order or dropping rotational
+equivariance cannot repair the two-loop anomaly.
+For traceless matrices the symmetric cubic supplies the
+necessary first-order square, and the higher invariant
+obstruction groups vanish. A central field changes the first
+statement by creating an additional invariant cubic; its
+mixed external equations fix the relation
+$\gamma=\ell\chi$.
+
+Three mathematical questions remain beyond the results
+proved here. First, the higher local cohomology and the
+marked-graph identities for the interacting central
+extensions must be determined before an all-order theorem
+can be stated for them. Second, the intrinsic cohomology
+at small matrix ranks can contain extra trace relations;
+specializing a full identity establishes existence without
+classifying those additional relations. Third, the sequence
+of higher graph periods remains to be computed even though
+the invariant cohomology already proves existence and
+uniqueness of each formal counterterm. None of these
+questions requires changing the exact two-loop classification.
+
+\appendix
+\section{Verification, provenance, and reproduction}
+\label{sec:verification}
+
+\subsection{Analytic arguments and exact certificates}
+
+The all-order assertion is proved by the contact theorem,
+the cyclic and two-trace cohomology calculations, and the
+master-equation induction. It is not inferred from checking
+a finite number of perturbative orders. Likewise the
+rank-independent no-go result uses the highest-root argument
+and the polynomial primitive in
+Lemma~\ref{lem:f-channel-all-degrees}.
+
+The reproducible calculations accompanying this version
+check the following independent ingredients:
+\begin{enumerate}
+\item The regulated kernel characters and the two theta
+normalizations, with exact rational and gamma-function
+arithmetic.
+\item The original two-loop graphs, the classical differential,
+the contracted brackets, and the marked two-loop terms
+through order three on exact traceless $3\times3$ matrices.
+The supplied replay also includes deliberately incorrect
+relative signs that fail the identities.
+\item The complete fourth-order formal trace identity,
+using all fifty stored integrated geometric kernels.
+Both rational and $\pi^2$ coefficient dictionaries have
+zero remainder in all $300$ nonzero coordinates.
+\item The Weyl-character cubic multiplicities for $32$
+independently generated root systems, including $14$
+complete Weyl-group sums. The largest complete sum has
+$51840$ elements in type $E_6$.
+The polynomial first-order calculation is checked in all
+$25$ bidegrees with each entry between zero and four;
+the explicit primitive signs are checked on all $27$
+ordered color triples of $\fsl_2$.
+\item The complete central-extension identities, including
+the original $\fso_5$ graph contractions and all central
+external sectors, with the coefficient counts stated
+after Corollary~\ref{cor:so5-central}.
+\item An exhaustive independent enumeration of all loopless
+six-vertex cubic multigraphs, all four-subdivision distributions,
+and every induced-subset bound, giving the same fifty graphs
+and automorphism orders. The exact four-loop core sums,
+tree and marked-graph assembly, and the rational
+positivity bounds in Theorem~\ref{thm:i4} are also checked.
+\item An independent polygon-coordinate construction of the
+cyclic rotation and deletion matrices at momentum degrees
+$2,3,4,5$. Exact ranks over each of the fields with
+$1000003$ and $1000033$ elements give cyclic cohomology
+dimensions $(1,0)$ in cochain degrees $(2,3)$ at momentum
+degree two and $(0,0)$ at degrees three through five.
+These bounded checks support the all-degree analytic argument.
+\end{enumerate}
+The accompanying \texttt{README.md} gives the commands,
+dependencies, and outputs. The \texttt{Makefile} builds
+the paper and runs the certificates. The manifest records
+the source revision and hashes of the inherited kernel
+inputs. The JSON and text outputs are included with the
+source and compiled document.
+
+\subsection{Normalization and evidence boundaries}
+
+The numerical coefficients use the explicit orientation,
+Taylor-cochain factorials, full alternation, and heat
+normalization of Sections~\ref{sec:setting} and
+\ref{sec:two-loop}. The original companion distinguishes
+its relative graph-sign certificates from a complete
+end-to-end audit of every Batalin--Vilkovisky action
+convention. We preserve that distinction by recording
+$\epsilon$ and $U$ and by fixing $\epsilon U=1$ when
+stating the evaluated fourth-order coefficient.
+The relative cochain identities have been replayed;
+the classification over $\mathbb C$ does not depend on
+the choice of these overall signs.
+
+The fourth-order kernel tables are inherited from
+the exact integrations in \cite{RepoHigher}. This
+version checks their graph census, exact assembly,
+and full color--momentum identity. It does not claim
+to have rerun the external integration-by-parts
+master-integral reduction software.
+
+The manuscript concerns the commutative classical
+theory in the stated space of full exterior products
+of holomorphic jets. It proves formal local
+perturbative quantization with its specified
+symmetries. It makes no assertion about convergence
+of the formal series, nonperturbative path
+integrals, or global gauge transformations on
+compact five-manifolds.

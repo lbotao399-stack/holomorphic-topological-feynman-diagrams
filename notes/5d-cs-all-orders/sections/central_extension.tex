@@ -1,0 +1,243 @@
+\section{Cancellation by one additional central field}
+\label{sec:central-extension}
+
+The hypothesis that the gauge algebra is semisimple is essential to the
+no-go statement.  A central field supplies a symmetric invariant cubic
+even when the simple algebra has none.  The resulting cancellation must
+also satisfy the equations with central external fields.  We compute all
+of these equations below.
+
+Extend the simple algebra $\g$ by a central generator $\mathbf 1$ and
+extend its invariant form by
+\begin{equation}
+ \kappa(X,\mathbf1)=0,\qquad
+ \kappa(\mathbf1,\mathbf1)=\ell\ne0,\qquad X\in\g.
+ \label{eq:central-pairing}
+\end{equation}
+The symmetric invariant cubic $T$ is specified by
+\begin{equation}
+\begin{split}
+ T(X,Y,\mathbf1)&=\chi\kappa(X,Y),\qquad
+ T(\mathbf1,\mathbf1,\mathbf1)=\gamma,\\
+ T(X,Y,Z)&=0,\qquad T(X,\mathbf1,\mathbf1)=0,
+ \qquad X,Y,Z\in\g.
+\end{split}
+\label{eq:central-cubic}
+\end{equation}
+All evaluations not displayed are fixed by symmetry and multilinearity.
+Its Taylor cochain is
+\begin{equation}
+ j(X_0e^{p_0z},X_1e^{p_1z},X_2e^{p_2z})
+   =[p_0p_1]T(X_0,X_1,X_2),\qquad p_0+p_1+p_2=0.
+ \label{eq:central-j}
+\end{equation}
+
+\begin{proposition}[The complete central-field square]
+\label{prop:central-square}
+The cochain \eqref{eq:central-j} is classically closed.
+For four external momenta with sum zero, define the already occurring
+metric four-cochain by
+\begin{equation}
+ G_{kk}=\alt\bigl([p_0p_1][p_2p_3]
+                 \kappa(X_0,X_1)\kappa(X_2,X_3)\bigr),
+ \qquad X_i\in\g.
+\end{equation}
+The values of $\tfrac12\{j,j\}$ on every central-input sector are
+\begin{equation}
+\begin{array}{c|l}
+ \text{number of central inputs}&\tfrac12\{j,j\}\\ \hline
+ 0&\displaystyle \frac{\chi^2}{8\ell}\,G_{kk}\\[2mm]
+ 1&0\\[1mm]
+ 2&\displaystyle
+ \chi\left(\frac\gamma\ell-\chi\right)
+ [p_0p_1][p_2p_3]\kappa(X_0,X_1),
+ \quad (X_2,X_3)=(\mathbf1,\mathbf1)\\[2mm]
+ 3&0\\[1mm]
+ 4&0.
+\end{array}
+\label{eq:central-square-sectors}
+\end{equation}
+The two-central value in any other order follows by alternation.
+For $\chi\ne0$, eliminating the two-central obstruction requires
+\begin{equation}
+ \gamma=\ell\chi.
+ \label{eq:central-necessary}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The only potentially nonzero classical differential of the mixed cubic
+has three simple inputs and one central input.  Its value is
+\begin{equation}
+ -\chi\kappa([X_0,X_1],X_2)
+ \bigl([p_0p_3]+[p_1p_3]+[p_2p_3]\bigr)=0.
+\end{equation}
+The pure central cubic has zero classical differential.  Thus $dj=0$.
+
+The six $(2,2)$ shuffles in the bracket occur in equal pairs.  After the
+factor $1/2$, their sum is the three pair partitions, with signs
+$+,-,+$:
+\begin{align}
+ \tfrac12\{j,j\}
+ &= [p_0p_1][p_2p_3]
+       \kappa^{-1}\bigl(T(X_0,X_1,\cdot),T(\cdot,X_2,X_3)\bigr)\notag\\
+ &\quad-[p_0p_2][p_1p_3]
+       \kappa^{-1}\bigl(T(X_0,X_2,\cdot),T(\cdot,X_1,X_3)\bigr)\notag\\
+ &\quad+[p_0p_3][p_1p_2]
+       \kappa^{-1}\bigl(T(X_0,X_3,\cdot),T(\cdot,X_1,X_2)\bigr).
+ \label{eq:central-three-pairings}
+\end{align}
+For four simple inputs the contracted field is central, so its inverse
+pairing is $\ell^{-1}$.  The full alternation defining $G_{kk}$ is eight
+times the three pairings in \eqref{eq:central-three-pairings}.  This gives
+the first row of \eqref{eq:central-square-sectors}.
+
+For $(X_0,X_1,\mathbf1,\mathbf1)$, the first pairing contributes
+$\chi\gamma\kappa(X_0,X_1)/\ell$.  The other pairings each contribute
+$\chi^2\kappa(X_0,X_1)$.  The exact determinant identity
+\begin{equation}
+ [p_0p_1][p_2p_3]-[p_0p_2][p_1p_3]
+       +[p_0p_3][p_1p_2]=0
+ \label{eq:central-plucker}
+\end{equation}
+then gives the two-central row.  The same identity kills the
+four-central row, whose common color coefficient is $\gamma^2/\ell$.
+The one- and three-central rows vanish from
+\eqref{eq:central-cubic} before the momentum sum.
+
+To prove necessity of \eqref{eq:central-necessary}, take
+$X_0=X_1=X$ with $\kappa(X,X)\ne0$.  These two inputs and the two
+central inputs commute.  Every classical boundary vanishes on them,
+whereas $[p_0p_1][p_2p_3]$ is not the zero polynomial on conserved
+momenta.  Bare diagrams also vanish when any external field is central.
+Consequently a nonzero two-central row cannot be removed by an
+order-$\hbar^2$ counterterm.
+\end{proof}
+
+\begin{theorem}[A full two-loop central cancellation]
+\label{thm:central-cancellation}
+Use the Killing form on $\g$.  Suppose the original graph tensors obey
+the cochain identities
+\begin{equation}
+ F_{133}+F_{223}=\tfrac12\beta,\qquad
+ F_{223}=x\beta+aG_{kk},\qquad
+ \beta=d\bigl([p_0p_1]^2\kappa(X_0,[X_1,X_2])\bigr).
+ \label{eq:central-graph-assumption}
+\end{equation}
+Then the theory for $\g\oplus\mathbb C\mathbf1$ has a solution of the
+complete local quantum master equation through order $\hbar^2$ with
+\begin{equation}
+ \boxed{\quad
+ \gamma=\ell\chi,\qquad
+ \chi^2=\frac{\epsilon U\ell a}{384\pi^4},\qquad
+ i_2=\frac{\epsilon U}{\pi^4}
+       \left(\frac1{10240}-\frac{x}{3072}\right)
+       [p_0p_1]^2\kappa(X_0,[X_1,X_2]).\quad}
+ \label{eq:central-solution}
+\end{equation}
+Here $i_2$ vanishes if one of its arguments is central, and the
+coefficients are taken over $\mathbb C$.  The signs $\epsilon$ and $U$
+are the tree and loop signs of the main normalization.
+\end{theorem}
+
+\begin{proof}
+A central external field kills every bare cubic graph because its
+adjoint action is zero.  The bare two-loop cochain is therefore the
+simple-algebra cochain, extended by zero, and
+\begin{equation}
+ o_2=-\frac{U}{64\pi^4}
+       \left[\left(\frac{x}{48}-\frac1{160}\right)\beta
+                  +\frac{a}{48}G_{kk}\right].
+ \label{eq:central-bare-anomaly}
+\end{equation}
+The chosen central cubic cancels the two-central row in
+\eqref{eq:central-square-sectors}.  The coefficient of $G_{kk}$ in
+$\tfrac12\{j,j\}+\epsilon o_2$ is exactly
+\begin{equation}
+ \frac{\chi^2}{8\ell}-\frac{\epsilon U a}{3072\pi^4}=0.
+\end{equation}
+The remaining coefficient is the classical differential of the
+displayed $i_2$.  Thus
+$-di_2+\tfrac12\{j,j\}+\epsilon o_2=0$ on every input, which is the
+full order-$\hbar^2$ equation in the stated descent convention.
+The order-$\hbar$ equation was proved above.  The local one-loop
+contacts containing $j$ vanish by the odd-loop theorem.
+\end{proof}
+
+The hypothesis \eqref{eq:central-graph-assumption} is an identity of
+entire cochains.  A numerical contraction detecting one nonzero class
+does not by itself establish this hypothesis.  The previously computed
+identities in \cite{RepoOriginal} supply examples; the following one is
+also recomputed directly in the present paper's certificate.
+
+\begin{corollary}[An explicit $\mathfrak{so}(5)\oplus\mathbb C$ solution]
+\label{cor:so5-central}
+For $\g=\mathfrak{so}(5)$ with its Killing form,
+\begin{equation}
+ F_{223}=-\beta-\frac1{18}G_{kk}.
+\end{equation}
+Consequently
+\begin{equation}
+ \chi^2=-\frac{\epsilon U\ell}{6912\pi^4},\qquad
+ \gamma=\ell\chi,\qquad
+ i_2=\frac{13\epsilon U}{30720\pi^4}
+          [p_0p_1]^2\kappa(X_0,[X_1,X_2])
+ \label{eq:so5-central-solution}
+\end{equation}
+solves the complete local equation through order $\hbar^2$.
+At $\ell=1$ and $\epsilon U=1$, the two first-order choices are
+\begin{equation}
+ \chi=\gamma=\frac{i}{48\sqrt3\,\pi^2}
+ \qquad\text{or}\qquad
+ \chi=\gamma=-\frac{i}{48\sqrt3\,\pi^2}.
+\end{equation}
+\end{corollary}
+
+For completeness, the full graph identities already certified
+in \cite{RepoOriginal} for the five exceptional simple algebras
+give the following additional instances of
+Theorem~\ref{thm:central-cancellation}:
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+$\g$ & $\chi^2\pi^4/(\epsilon U\ell)$
+ & Coefficient of $[p_0p_1]^2f$ in $\pi^4 i_2/(\epsilon U)$\\
+\midrule
+$G_2$ & $-\dfrac5{36864}$ & $\dfrac{71}{368640}$\\
+\addlinespace[3pt]
+$F_4$ & $-\dfrac5{124416}$ & $\dfrac{41}{829440}$\\
+\addlinespace[3pt]
+$E_6$ & $-\dfrac1{36864}$ & $\dfrac{11}{368640}$\\
+\addlinespace[3pt]
+$E_7$ & $-\dfrac1{62208}$ & $\dfrac{11}{829440}$\\
+\addlinespace[3pt]
+$E_8$ & $-\dfrac1{115200}$ & $\dfrac1{460800}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+In each row $\gamma=\ell\chi$. These are algebraic consequences
+of the cited complete cochain identities. The new independent
+original-graph replay described next is for $\mathfrak{so}(5)$.
+
+\paragraph{Exact certificate.}
+The script \texttt{checks/central\_extension\_exact.py} constructs the
+ten matrices $E_{ij}-E_{ji}$ in $\mathfrak{so}(5)$ and checks their
+complete commutator table, Jacobi identity, and Killing form
+$\kappa=-6\delta$.  It contracts the six original structure tensors of
+each theta graph, with no graph-engine imports, then performs all
+$24$ alternations and checks all six coefficients of
+$[p_0p_1]^2,[p_0p_2]^2,[p_1p_2]^2,
+[p_0p_1][p_0p_2],[p_0p_1][p_1p_2],[p_0p_2][p_1p_2]$.
+Each graph identity is checked on $60000$ color--momentum entries.
+The central extension has respectively $10000,4000,600,40,1$
+ordered color assignments with $0,1,2,3,4$ central inputs.
+The full bracket certificate checks $351384$ coefficient entries;
+the assembled quantum master equation checks $87846$ entries.
+The arithmetic is integral after explicit denominator clearing.
+
+This establishes a two-loop cancellation for a reductive algebra
+whose simple factor is obstructed on its own.  It does not establish
+an all-order quantization for that reductive algebra: higher
+obstructions require the corresponding local cohomology and graph
+consistency analysis.

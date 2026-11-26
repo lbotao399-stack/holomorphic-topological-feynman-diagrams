@@ -1,0 +1,189 @@
+\section{The complete fourth-order coefficient}
+\label{sec:fourth-order}
+
+We now fix the Wick convention $\epsilon U=1$. The factor
+$(\epsilon\pi\nu)^2=1/(4096\pi^8)$ will be left explicit.
+At order $\hbar^4$ there are tree graphs, marked two-loop
+theta graphs, and bare four-loop graphs. Odd geometric loop
+numbers vanish, irrespective of the counterterm orders at
+the vertices.
+
+\subsection{Trees and marked theta graphs}
+
+Use the four matrix units and momenta of
+\eqref{eq:all-order-extraction-denominator}. The differential
+of the unscaled fourth-order cubic evaluates to $16$.
+On these inputs the two tree contractions are
+\[
+ \{D,[p_0p_1]^3\tr(X_0\{X_1,X_2\})\}=10,\qquad
+ \frac12\{[p_0p_1]^2f,[p_0p_1]^2f\}=-4.
+\]
+For the marked theta graphs the following entries include
+the sum over allowed marked vertices and the graph
+automorphism factors, with the displayed vertex coupling
+and the common factor $\pi\nu$ removed:
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Theta graph & One $[p_0p_1]^2f$ vertex & Two $D$ vertices\\
+\midrule
+$(1,3,3)$ & $-\dfrac{499N^2}{2835}-\dfrac{256}{105}$
+  & $\dfrac{431N^2}{11340}+\dfrac{718}{2835}$\\
+$(2,2,3)$ & $-\dfrac{34}{27}$ & $\dfrac5{63}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every contraction uses the complete traceless inverse pairing,
+including its $-1/N$ term. Substituting
+\eqref{eq:first-two-counterterms} and \eqref{eq:i3}, adding the
+trees, and dividing by $16$ gives the following contribution
+to the primitive coefficient:
+\begin{equation}
+ (\epsilon\pi\nu)^2
+       \frac{21221N^4+85304N^2+192480}{3628800}.
+ \label{eq:four-tree-marked}
+\end{equation}
+
+\subsection{The fifty bare graphs}
+
+A tight cubic four-loop graph has ten vertices, thirteen
+internal edges, and four external fields. The internal degree
+of every external vertex is two: an internal degree-one vertex
+would violate the tight bound on the remaining induced
+subgraph. A cut vertex is also excluded by applying the tight
+bound to the two subgraphs that meet there. Suppressing the
+four bivalent vertices therefore leaves a biconnected cubic
+multigraph on six vertices.
+
+A loop at a core vertex is incompatible with this
+biconnectedness. Three parallel edges would isolate two
+vertices. The remaining cores are enumerated by their simple
+graphs and the matchings that specify doubled edges.
+Distributing the four subdivisions, dividing by the core
+automorphisms, and checking the tight inequality on every
+induced subset leaves exactly fifty isomorphism classes.
+The four surviving core types contain $3,8,28,11$ classes.
+The oriented edges, subdivision paths, and full automorphism
+orders are recorded individually in the accompanying
+\texttt{four-loop-graphs.json} data of \cite{RepoHigher}.
+
+The integrated kernels are homogeneous quartics in the three
+momentum determinants. On the fixed cyclic matrix-unit input,
+the four core sums, divided by $\pi^2$ before the common heat
+normalization, have the following coefficients:
+\begin{center}
+\small
+\renewcommand{\arraystretch}{2.1}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Graph indices & Coefficient of $1$ & Coefficient of $N^2$
+  & Coefficient of $N^4$\\
+\midrule
+$0$--$2$ & $0$ & $0$ & $\frac1{10500}$\\
+$3$--$10$
+ & $\frac{101}{945}-\frac{1241\pi^2}{45360}$
+ & $\frac{73903}{1020600}-\frac{37\pi^2}{3402}$
+ & $\frac{34259}{20412000}-\frac{11\pi^2}{829440}$\\
+$11$--$38$
+ & $\frac{9796575\pi^2-96791482}{12247200}$
+ & $\frac{88921725\pi^2-884922356}{734832000}$
+ & $\frac{144949856-14698125\pi^2}{653184000}$\\
+$39$--$49$
+ & $\frac{93253402-9461505\pi^2}{12247200}$
+ & $\frac{734213669-74453325\pi^2}{183708000}$
+ & $0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Their exact sum is
+\begin{equation}
+ -\frac{172}{945}
+ +N^2\left(\frac{139229}{48600}-\frac{35701\pi^2}{120960}\right)
+ +N^4\left(\frac{760981}{3402000}
+                       -\frac{130727\pi^2}{5806080}\right).
+ \label{eq:four-bare-sum}
+\end{equation}
+In this convention the common four-loop heat factor in the
+cochain equation is
+\[
+ \frac1{(8\pi^{5/2})^4}
+       =\frac{(\epsilon\pi\nu)^2}{\pi^2}.
+\]
+The contribution of \eqref{eq:four-bare-sum} to the primitive
+is therefore $(\epsilon\pi\nu)^2/16$ times that expression.
+
+\begin{theorem}[Fourth-order counterterm]
+\label{thm:i4}
+In the stated heat-kernel scheme and Wick convention, the
+fourth-order Taylor cochain is
+\begin{equation}
+\boxed{\begin{aligned}
+ i_4={}&\frac{1}{4096\pi^8}
+ \left[
+   \frac1{24}
+   +N^2\left(\frac{1102559}{5443200}
+                       -\frac{35701\pi^2}{1935360}\right)\right.\\[-1mm]
+ &\left.\hspace{23mm}
+   +N^4\left(\frac{4216}{212625}
+                       -\frac{130727\pi^2}{92897280}\right)
+ \right][p_0p_1]^4\tr(X_0[X_1,X_2]).
+\end{aligned}}
+\label{eq:i4}
+\end{equation}
+The entire local order-four equation holds for arbitrary
+traceless colors and conserved momenta, and specializes to
+every $N\ge2$. The same $i_4$ applies to both choices of $a$.
+\end{theorem}
+
+\begin{proof}
+Add \eqref{eq:four-tree-marked} to one sixteenth of
+\eqref{eq:four-bare-sum}. The constant part is
+\[
+ \frac{192480}{3628800}-\frac{172}{16\cdot945}
+       =\frac1{24};
+\]
+the $N^2$ and $N^4$ parts give exactly the two displayed
+parentheses. Theorem~\ref{thm:all-orders-traceless} proves
+closedness and uniqueness before this evaluation is used.
+Thus the single evaluation determines the coefficient.
+There is also a separate full-cochain check: after reconstructing
+the color contractions and all differentiated tree and theta
+terms, the rational part and the $\pi^2$ part each agree with
+$di_4$ in all $300$ nonzero trace and momentum coordinates,
+including their entire Laurent polynomials in $N$.
+\end{proof}
+
+\begin{corollary}
+The coefficient of
+$(\epsilon\pi\nu)^2[p_0p_1]^4f$ in $i_4$ is positive and
+transcendental for every integer $N\ge2$.
+\end{corollary}
+\begin{proof}
+The strict inequality $\pi^2<10$ gives
+\begin{align*}
+ \frac{1102559}{5443200}
+          -\frac{35701\pi^2}{1935360}
+    &>\frac{787747}{43545600}>0,\\
+ \frac{4216}{212625}
+          -\frac{130727\pi^2}{92897280}
+    &>\frac{2864617}{497664000}>0.
+\end{align*}
+At each positive integer $N$, the coefficient is a rational
+number minus
+\[
+ \left(\frac{35701N^2}{1935360}
+              +\frac{130727N^4}{92897280}\right)\pi^2 ,
+\]
+whose rational multiplier of $\pi^2$ is nonzero.
+Transcendence of $\pi$ then proves the assertion.
+\end{proof}
+
+The coefficient is attached to this renormalization scheme
+and this choice of local representative. Its transcendence
+does not identify a scheme-independent observable.
+The full integrated kernels are inherited exact input;
+the present verification independently reconstructs their
+complete cochain assembly, rather than repeating every
+four-loop master integration.

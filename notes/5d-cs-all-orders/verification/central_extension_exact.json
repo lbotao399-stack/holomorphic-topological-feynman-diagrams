@@ -1,0 +1,25 @@
+{
+  "arithmetic": "exact signed integers and fractions",
+  "central_extension": {
+    "all_sectors_verified": true,
+    "central_condition": "gamma = ell*chi",
+    "central_sector_color_counts": {
+      "0": 10000,
+      "1": 4000,
+      "2": 600,
+      "3": 40,
+      "4": 1
+    },
+    "full_bracket_color_momentum_entries": 351384,
+    "full_qme_entries_verified": 87846
+  },
+  "chi_squared_pi4_at_ell_epsilon_U_one": "-1/6912",
+  "i2_coefficient_pi4_at_epsilon_U_one": "13/30720",
+  "so5": {
+    "full_graph_identity": "F223 = -beta - Gkk/18 (Killing)",
+    "graph_color_momentum_entries": 60000,
+    "independence_minor_in_delta_units": -16,
+    "integer_bound": 480000000,
+    "sum_identity": "F133 + F223 = beta/2 (Killing)"
+  }
+}

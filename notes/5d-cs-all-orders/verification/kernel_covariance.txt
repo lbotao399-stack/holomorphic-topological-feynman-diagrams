@@ -1,0 +1,2 @@
+Heat, gauge-fixed integrand, full Schwinger form, six derivatives and diagonal contractions pass
+All eight classical cohomology summands have the expected joint character

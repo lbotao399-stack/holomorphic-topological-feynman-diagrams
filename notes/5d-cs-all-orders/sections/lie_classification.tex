@@ -1,0 +1,248 @@
+\section{The gauge-algebra restriction at every rank}
+\label{sec:lie-classification}
+
+The restriction on the simple gauge algebra is uniform in its rank.  The
+representation-theoretic input below is classical; equation~(18) of
+\cite{UrichukWalton} records its more general highest-weight version.  We
+give the argument needed here and then determine the entire first-order
+cohomology in the absence of a symmetric cubic invariant.
+
+\begin{proposition}[Invariant cubic tensors]
+\label{prop:uniform-cubic}
+For a complex simple Lie algebra,
+\begin{equation}
+\dim(\g^{*\otimes3})^{\g}=
+\begin{cases}
+2,&\g=\mathfrak{sl}_N,\quad N\ge3,\\
+1,&\text{every other simple }\g.
+\end{cases}
+\label{eq:uniform-cubic}
+\end{equation}
+In every case the alternating part is spanned by
+$f(X,Y,Z)=\kappa(X,[Y,Z])$.  For $\mathfrak{sl}_N$, $N\ge3$, the additional
+tensor is the symmetric tensor $\tr(X\{Y,Z\})$.
+\end{proposition}
+
+\begin{proof}
+Let $\theta$ be the highest root, $\rho$ the half-sum of positive roots,
+and $W$ the Weyl group.  Write $m_{\g}$ for the weight multiplicity in
+the adjoint representation.  The invariant form identifies the adjoint
+representation with its dual.  The Weyl character formula therefore gives
+\begin{align}
+\dim(\g^{*\otimes3})^{\g}
+&=\dim\operatorname{Hom}_{\g}(\g,\g\otimes\g)\notag\\
+&=\sum_{w\in W}\det(w)\,
+m_{\g}\bigl(\theta+\rho-w(\theta+\rho)\bigr).
+\label{eq:adjoint-weyl-sum}
+\end{align}
+Here $m_{\g}(0)=\operatorname{rank}\g$, every root has multiplicity one,
+and all other weights have multiplicity zero.  Since $\theta+\rho$ lies
+strictly inside the dominant chamber, only $w=1$ gives the zero weight.
+
+Suppose that $\alpha=\theta+\rho-w(\theta+\rho)$ is a root.
+Dominance implies that $\alpha$ is positive.  Preservation of the inner
+product by $W$ implies
+\begin{equation}
+2(\theta+\rho,\alpha)=(\alpha,\alpha),\qquad
+\langle\theta+\rho,\alpha^\vee\rangle=1.
+\end{equation}
+The positive coroot $\alpha^\vee$ has positive integral coefficients in
+the basis of simple coroots.  Each such coefficient contributes at least
+one to its pairing with $\rho$, and its pairing with the dominant
+weight $\theta$ is nonnegative.  Consequently $\alpha$ is a simple root
+with $\langle\theta,\alpha^\vee\rangle=0$.  Conversely each such simple
+root contributes, with $w=s_\alpha$ and sign $-1$.  Regularity of
+$\theta+\rho$ ensures that no second Weyl element gives the same image.
+Thus
+\begin{equation}
+\dim(\g^{*\otimes3})^{\g}
+=\operatorname{rank}\g-
+\#\{i:\langle\theta,\alpha_i^\vee\rangle=0\}
+=\#\{i:\langle\theta,\alpha_i^\vee\rangle\ne0\}.
+\label{eq:highest-root-support}
+\end{equation}
+In type $A_r$ with $r\ge2$ the highest root is the sum of the first and
+last fundamental weights.  In type $A_1$ and type $C_r$ it is twice one
+fundamental weight.  In types $B_r$ with $r\ge3$, $D_r$ with $r\ge4$,
+and all exceptional types it is one fundamental weight; $B_2=C_2$ is
+already covered.  This proves~\eqref{eq:uniform-cubic}.
+The tensor $f$ is nonzero and alternating.  In type $A_r$, $r\ge2$,
+$\tr(X\{Y,Z\})$ is nonzero and symmetric, so these two tensors exhaust
+the invariant space.  Outside this family $f$ exhausts it.
+\end{proof}
+
+\begin{lemma}[Polynomial cocycles in the alternating color channel]
+\label{lem:f-channel-all-degrees}
+Suppose $\g$ is simple and $(\g^{*\otimes3})^{\g}=\mathbb C f$.
+In the conserved-momentum complex $\Cg$,
+\begin{equation}
+H^3(\Cg)_{(0,0)}=\mathbb C[s_0],\qquad
+H^3(\Cg)_{(a,b)}=0\quad\text{for }a+b>0.
+\label{eq:f-channel-H3}
+\end{equation}
+The second statement holds at every polynomial derivative order, without
+rotation or dilation equivariance.
+\end{lemma}
+
+\begin{proof}
+At fixed momentum degree the cochain spaces are finite-dimensional
+representations of the adjoint group.  The action of a constant
+$X\in\g$ is $d\iota_X+\iota_Xd$ and hence is zero on cohomology.
+Complete reducibility and exactness of the invariants functor imply that
+every class has an invariant representative and every invariant boundary
+has an invariant primitive.  It therefore suffices to work with invariant
+cochains.
+
+Write an invariant three-cochain as
+\begin{equation}
+P(p,q)\,\kappa(X,[Y,Z]),\qquad p+q+r=0.
+\end{equation}
+Alternation of the complete cochain is equivalent to
+\begin{equation}
+P(p,q)=P(q,p)=P(p,-p-q).
+\label{eq:P-permutations}
+\end{equation}
+The three four-color contractions
+\[
+\begin{gathered}
+\kappa([X_1,X_2],[X_3,X_4]),\qquad
+\kappa([X_1,X_3],[X_2,X_4]),\\
+\kappa([X_1,X_4],[X_2,X_3])
+\end{gathered}
+\]
+have only the Jacobi relation.
+For example, in any embedded $\mathfrak{sl}_2$ choose two elements with
+$\kappa([X,Y],[X,Y])\ne0$.  The assignments $(X,X,Y,Y)$ and
+$(X,Y,Y,X)$ make the first and third contractions independent.
+The Chevalley--Eilenberg differential consequently vanishes exactly when
+\begin{equation}
+P(p,q)+P(p+q,r)=P(q,r)+P(p,q+r).
+\label{eq:P-cocycle}
+\end{equation}
+The momenta $p,q,r$ in this identity are independent; the fourth momentum
+is $-p-q-r$.
+
+Set $q=0$ in~\eqref{eq:P-cocycle}.  Then $P(p,0)=P(0,0)$.
+For a tangent vector $u$, let
+$D_2P(v,0)[u]$ denote the directional derivative in the second argument.
+Differentiating~\eqref{eq:P-cocycle} in $r$ at zero gives
+\begin{equation}
+D_2P(p,q)[u]=D_2P(p+q,0)[u]-D_2P(q,0)[u].
+\end{equation}
+Symmetry in $p,q$ shows that the polynomial one-form
+$D_2P(v,0)$ is closed.  Its polynomial primitive, vanishing at zero, is
+\begin{equation}
+H(v)=\int_0^1D_2P(tv,0)[v]\,dt.
+\end{equation}
+The preceding derivative identity and evaluation at $q=0$ imply
+\begin{equation}
+P(p,q)=P(0,0)+H(p+q)-H(p)-H(q).
+\label{eq:P-primitive}
+\end{equation}
+The second symmetry in~\eqref{eq:P-permutations} now gives
+$H(v)+H(-v)=H(0)+H(0)=0$.  Hence the two-cochain
+\begin{equation}
+-H(p)\,\kappa(X,Y),\qquad p+q=0,
+\end{equation}
+is alternating.  With the differential convention used throughout,
+its differential is
+\begin{equation}
+\bigl[H(p+q)-H(p)-H(q)\bigr]\kappa(X,[Y,Z]).
+\end{equation}
+It removes every positive-degree term of $P$.  The remaining constant
+multiple of $s_0$ is not exact: a momentum-zero invariant two-tensor is
+symmetric, and therefore there is no alternating invariant two-cochain
+of that degree.  All constructions preserve the momentum bidegree.
+\end{proof}
+
+\begin{theorem}[Uniform two-loop obstruction]
+\label{thm:uniform-no-go}
+Let $\g$ be a complex simple Lie algebra outside the family
+$\mathfrak{sl}_N$, $N\ge2$, with any nondegenerate invariant bilinear
+form.  In $\Vht$ there is no solution of the quantum master equation
+through order $\hbar^2$, for any choice of closed first-order local
+counterterm.  Neither adjoint invariance of that counterterm nor
+$U(2)$-equivariance is required.
+\end{theorem}
+
+\begin{proof}
+By Proposition~\ref{prop:uniform-cubic} and
+Lemma~\ref{lem:f-channel-all-degrees}, every closed first-order Taylor
+cochain $j$ is cohomologous to a constant multiple of $s_0$.
+The bracket induces a bracket on cohomology, and
+$\{s_0,s_0\}=0$.  Therefore
+\begin{equation}
+\left[\frac12\{j,j\}\right]=0.
+\end{equation}
+The order-two master equation requires this class to cancel $[o_2]$.
+The two-loop detector is nonzero for every simple algebra other than
+$\mathfrak{sl}_2$: with Killing normalization its value on $F_{223}$ is
+$2\dim\g\,(8n_4-3\dim\g)$, with the nonzero expressions displayed in
+the two-loop computation.  Rescaling the invariant form multiplies the
+obstruction by a nonzero scalar.  Hence $[o_2]\ne0$, a contradiction.
+This uses the exact two-loop calculation, not a finite-rank extrapolation
+of the first-order cohomology.
+\end{proof}
+
+\subsection{Semisimple direct sums}
+
+Let $\g=\bigoplus_i\g_i$ be semisimple, with each $\g_i$ simple.
+Invariance and $[\g_i,\g_i]=\g_i$ give
+\begin{equation}
+\kappa(\g_i,\g_j)=0\quad(i\ne j),\qquad
+(\g^{*\otimes3})^{\g}
+=\bigoplus_i(\g_i^{*\otimes3})^{\g_i}.
+\label{eq:semisimple-splitting}
+\end{equation}
+For the second identity, every distribution of three tensor factors
+over more than one ideal contains an ideal occurring exactly once.
+Its contribution vanishes because $(\g_i^*)^{\g_i}=0$.
+
+\begin{corollary}[Semisimple classification in the specified sector]
+\label{cor:semisimple-classification}
+Under the local heat-kernel hypotheses of
+Theorem~\ref{thm:all-orders-traceless}, a semisimple theory admits an
+all-order $U(2)$-equivariant quantization with counterterms in $\Vht$
+if and only if
+\begin{equation}
+\g=\bigoplus_i\mathfrak{sl}_{N_i},\qquad N_i\ge2.
+\end{equation}
+If a non-type-$A$ simple ideal occurs, the obstruction already appears
+at order $\hbar^2$, even without equivariance of the counterterms.
+\end{corollary}
+
+\begin{proof}
+Choose an invariant representative of the first-order cohomology class.
+Its Taylor cochain splits over the ideals by
+\eqref{eq:semisimple-splitting}.  The inverse invariant form is block
+diagonal, so contractions between cubic cochains supported on distinct
+ideals vanish.  The bare connected two-loop graphs likewise have all
+their color labels in one ideal.  Evaluating the order-two equation on
+four arguments from any non-type-$A$ ideal therefore gives precisely
+the impossible simple-algebra equation of
+Theorem~\ref{thm:uniform-no-go}.  Evaluating a Chevalley--Eilenberg
+coboundary on that ideal remains a coboundary.  This argument uses
+splitting of invariant cubic tensors; it does not assume that arbitrary
+restrictions commute with the Batalin--Vilkovisky bracket.
+
+Conversely, take the quantization of each $\mathfrak{sl}_{N_i}$ supplied
+by Theorem~\ref{thm:all-orders-traceless} and sum the actions.  Cross
+brackets and cross propagator contractions vanish, so the full master
+equation is the sum of the individual master equations.  If the invariant
+form on a factor is $c\tr$ with $c\ne0$, replace its trace-normalized
+quantum action $S(\hbar)$ by $cS(\hbar/c)$.  A connected graph contributes
+$c$ from each vertex and $c^{-1}$ from each internal contraction.
+Together with the counterterm orders, its coefficient of $\hbar^n$
+is multiplied by $c^{1-n}$, so this replacement preserves every
+coefficient of the master equation.  It handles every nondegenerate
+invariant form on the semisimple algebra.
+\end{proof}
+
+\begin{remark}
+The exclusion of an abelian center is essential to the necessity proof.
+For a reductive algebra with center, a mixed tensor consisting of the
+invariant bilinear form on a simple ideal and a linear functional on the
+center is allowed.  Two such cubic vertices can contract through the
+center and contribute to the four-simple-argument equation.  Thus
+\eqref{eq:semisimple-splitting} does not extend to reductive algebras.
+\end{remark}

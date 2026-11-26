@@ -1,0 +1,171 @@
+\section{The theory and its local cochain complex}\label{sec:setting}
+
+Write $(\tau,z_1,z_2)$ for the coordinates of
+$\mathbb R\times\mathbb C^2$ and
+$\Omega=dz_1\wedge dz_2$. The superfield and its free differential are
+\[
+ A\in\Omega^\bullet(\mathbb R)\otimes
+          \Omega^{0,\bullet}(\mathbb C^2)\otimes\g[1],
+ \qquad
+ DA=d\tau\,\partial_\tau A+\bar\partial A .
+\]
+The shift $[1]$ makes the total superfield odd. If $\kappa$ is the
+invariant form, the action and the odd pairing are
+\begin{equation}\label{eq:classical}
+ \begin{split}
+ S_{\mathrm{cl}}(A)
+ &=\int\Omega\wedge
+   \left(\frac12\kappa(A,DA)+\frac16\kappa(A,[A,A])\right),\\
+ \omega(A,B)&=\int\Omega\wedge\kappa(A,B).
+ \end{split}
+\end{equation}
+The bracket in the cubic combines the Lie bracket and exterior
+multiplication. The pairing has degree $-1$.
+
+\subsection{Locality and the sector being quantized}
+
+Let $\Vht$ consist of constant-coefficient local functionals obtained
+by applying finitely many holomorphic derivatives to each
+superfield, taking the ordinary exterior product, and integrating
+its degree-three component against $\Omega$. Functionals are taken
+modulo constant-coefficient total derivatives. In particular no
+real or antiholomorphic field derivatives, nor contractions of
+external form indices, enter this space.
+
+\begin{definition}\label{def:quantization}
+A local formal quantization is an interaction
+\[
+ I+\sum_{k\ge1}\hbar^k I_k,\qquad
+ I=\frac16\int\Omega\wedge\kappa(A,[A,A]),\qquad
+ I_k\in\Vht,\quad \operatorname{gh}(I_k)=0,
+\]
+whose heat-kernel effective interactions solve the quantum master
+equation at every positive scale, as formal power series.
+Only positive field arity is at issue.
+Equivariance means that $S/\hbar$ is invariant under
+\[
+ A\longmapsto\phi_g^*A,\qquad
+ \hbar\longmapsto(\det g)^{-1}\hbar,\qquad g\in U(2),
+\]
+where $\phi_g$ acts on the two holomorphic coordinates.
+\end{definition}
+
+All superfield factors have degree one and the integral lowers
+degree by three. Consequently a ghost-number-zero element of
+$\Vht$ is cubic, and a ghost-number-one local obstruction is
+quartic. Holomorphic derivatives do not change these degrees.
+The equivariance condition on the order-$k$ cubic is
+\[
+ I_k(\phi_g^*A)=(\det g)^{k-1}I_k(A).
+\]
+For polynomial symbols this is equivalent to holomorphic
+bidegree $(k,k)$ and invariance under $SL_2(\mathbb C)$.
+
+\subsection{Momentum-conserving Taylor cochains}
+
+The existing notation $C^0_{\g}$ denotes finite-jet
+Chevalley--Eilenberg cochains of $\g[[z_1,z_2]]$, modulo the two
+holomorphic total derivatives. An $r$-cochain is an alternating
+multilinear function of $X_i e^{p_i\cdot z}$, polynomial in the
+two-component holomorphic momenta, with
+\[
+ \sum_{i=0}^{r-1}p_i=0.
+\]
+This equation is the exact Fourier description of integration
+by parts, not a restriction on a larger physical state space.
+We use
+\[
+ [pq]=p_1q_2-p_2q_1,\qquad
+ [Xe^{p\cdot z},Ye^{q\cdot z}]=[X,Y]e^{(p+q)\cdot z}.
+\]
+Here subscripts on a single momentum are coordinate indices.
+The cochain differential, denoted by $d$, is
+\begin{equation}\label{eq:CE}
+ (d w)(x_0,\ldots,x_r)=
+ \sum_{i<j}(-1)^{i+j}
+ w([x_i,x_j],x_0,\ldots,\widehat{x_i},\ldots,
+                      \widehat{x_j},\ldots,x_r).
+\end{equation}
+The hats omit those two arguments and $d^2=0$.
+Full alternation means
+$\alt w=\sum_{\sigma}\sgn(\sigma)\,w(x_{\sigma(0)},\ldots)$,
+without division by a factorial.
+
+An alternating cochain $w$ of arity $r$ gives the functional
+$F_w=\frac1{r!}\int\Omega\wedge w(A,\ldots,A)$, with the
+derivatives prescribed by its momentum symbol. Thus
+\[
+ C^{0,r}_{\g}\longrightarrow\Vht^{\,r-3}
+\]
+is an isomorphism of the indicated local complexes, with the
+overall sign fixed below. This follows directly by polarization:
+odd superfields enforce alternation, and total derivatives
+enforce the sum of momenta. This dictionary concerns precisely
+$\Vht$; it does not identify all translation-invariant local
+functionals with this one summand.
+
+The cochain bracket contracts one input of each cochain with
+$\kappa^{-1}$ and sums the signed shuffles of the remaining
+inputs. The contracted momenta are opposite, fixed by
+conservation. If the two arities are $m$ and $n$, then
+\begin{equation}\label{eq:cochain-bracket}
+ \{a,b\}
+ =\frac1{(m-1)!(n-1)!}
+  \alt\left(
+    a(x_1,\ldots,x_{m-1},X_e)
+    \kappa^{ee'}
+    b(X_{e'},x_m,\ldots,x_{m+n-2})
+  \right).
+\end{equation}
+Here $X_e$ runs over any basis and $\kappa^{ee'}$ is the inverse
+matrix of $\kappa$; the resulting contraction is basis independent.
+For the classical cubic $s_0(X,Y,Z)=\kappa(X,[Y,Z])$,
+\[
+ \{s_0,w\}=-dw.
+\]
+The sign $\epsilon\in\{1,-1\}$ records the correspondence
+$\{F_a,F_b\}=\epsilon F_{\{a,b\}}$. The sign $U\in\{1,-1\}$
+records the common Wick sign multiplying the two-loop heat
+integrals. We retain both in the existence argument.
+
+For $J_1=F_j$ and $I_2=F_{i_2}$, the first two local equations are
+\begin{equation}\label{eq:first-two-equations}
+ dj=0,\qquad
+ \epsilon\left(-d i_2+\frac12\{j,j\}\right)+o_2=0.
+\end{equation}
+Here $o_2$ is the two-loop cochain with its factor $\hbar^2$
+removed. The one-loop local term vanishes, including one-loop
+graphs containing holomorphically differentiated vertices.
+
+\subsection{Heat normalization}
+
+For the flat metric, use
+\[
+ D^*=-\iota_{\partial_\tau}\partial_\tau
+      -4\sum_{i=1}^2\iota_{\partial_{\bar z_i}}\partial_{z_i}.
+\]
+The heat kernel normalized relative to $\Omega$ is
+\begin{equation}\label{eq:heat}
+ [K_t]_\Omega=
+ \frac{\exp(-(\tau^2+|z_1|^2+|z_2|^2)/(4t))}
+      {4(4\pi t)^{5/2}}\,
+ d\tau\wedge d\bar z_1\wedge d\bar z_2,
+ \qquad \int\Omega\wedge[K_t]_\Omega=1.
+\end{equation}
+The regularized propagator is
+$P_\varepsilon^L=\int_\varepsilon^L D^*K_t\,dt$.
+The common normalized scalar factor of a two-loop contact is
+$-1/(64\pi^5)$.
+
+Under the simultaneous dilation of coordinates by $r>0$ and
+heat times by $r^2$,
+\[
+ r^*[K_{r^2t}]_\Omega=r^{-2}[K_t]_\Omega,\qquad
+ r^*P_{r^2\varepsilon}^{r^2L}
+ =r^{-2}P_\varepsilon^L.
+\]
+These are finite-cutoff identities. Their use for a limiting
+local contact is justified by continuity of the decorated
+graph distributions, not by replacing the regulated kernel
+with a homogeneous expression prematurely.
+

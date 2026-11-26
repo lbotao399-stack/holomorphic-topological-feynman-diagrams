@@ -1,0 +1,366 @@
+\section{All-order quantization in the holomorphic local sector}
+\label{sec:all-orders}
+
+The order of a counterterm is its exponent of $\hbar$; it need not equal
+the geometric loop number of a graph containing that counterterm.
+Throughout this section the coefficients are complex, and the two sign
+conventions $\epsilon,U\in\{1,-1\}$ are retained.  No choice of either
+sign is needed for the existence theorem.
+
+\subsection{The local contact stays in the required space}
+
+The space $\Vht$ consists of integrated exterior products of holomorphic
+jets of the superfield, with constant coefficients.  Integration uses the
+full degree-three real and antiholomorphic exterior component.  In
+particular, a ghost-number-zero element is cubic and a
+ghost-number-one element is quartic.  Membership in $\Vht$ is a condition
+on a local cochain, stronger than belonging to its image in cohomology.
+
+\begin{lemma}[Closure of holomorphic local vertices under contacts]
+\label{lem:full-wedge-contacts}
+For the flat heat kernel on $\mathbb R\times\mathbb C^2$, every
+total-collapse contact constructed from vertices in $\Vht$ belongs to
+$\Vht$.  This includes vertices with arbitrary finite holomorphic
+derivatives.  A contact of odd geometric loop number vanishes.
+\end{lemma}
+
+\begin{proof}
+An integration by parts expresses every derivative at a vertex as a
+finite sum of holomorphic derivatives on incident kernels and external
+test fields.  These are the decorated graphs of
+Wang--Williams~\cite[Propositions 3.18, 3.21--3.23]{WW}.  Their
+compactified graph distributions are continuous on compactly supported
+smooth test forms.  A nonzero total-collapse contact is supported on
+the diagonal and differentiates its test form only holomorphically.
+
+It remains to check its exterior structure.  Write $|V|$ and $|E|$ for
+the numbers of vertices and internal edges of a connected collapsing
+graph, and $n=|E|-|V|+1$ for its geometric loop number.  The tight
+condition in three real and antiholomorphic exterior directions is
+\begin{equation}
+  2|E|=3|V|-4,
+  \qquad |E|=3n+1,
+  \qquad |V|=2n+2.
+  \label{eq:contact-tight-degree}
+\end{equation}
+The extended kernel has exterior degree three on each edge.
+After extracting the $|E|-1$ Schwinger differentials, its spatial
+exterior degree is
+\begin{equation}
+  3|E|-(|E|-1)=2|E|+1=3(|V|-1).
+  \label{eq:relative-form-saturation}
+\end{equation}
+All these differentials are differences between vertex coordinates.
+They therefore saturate the relative real and antiholomorphic
+directions.  Only the diagonal pullback of the external exterior
+product remains.  No contraction of an external form index and no
+additional background form is required.  The resulting local vertex
+is precisely a full exterior product of holomorphic jets.  For cubic
+inputs its external arity is
+\begin{equation}
+  3|V|-2|E|=4.
+\end{equation}
+Self-loops give zero: their differential factors are coordinate
+differences, whose diagonal pullback remains zero after holomorphic
+differentiation.  Finally, reflection of the real relative coordinates
+changes the contact by $(-1)^n$.  Its local holomorphic test data are
+unchanged.  This proves the odd-loop assertion.
+\end{proof}
+
+The regulated characters also record covariance and the limiting
+step.  Let $r>0$ and
+$|u_1|=|u_2|=1$, and pull back by
+$(\tau,z_1,z_2)\mapsto(r\tau,ru_1z_1,ru_2z_2)$.  Direct substitution
+in the normalized kernel gives
+\begin{align}
+  \phi_{r,u}^*[K_{r^2t}]_\Omega
+    &=r^{-2}(u_1u_2)^{-1}[K_t]_\Omega,\notag\\
+  \phi_{r,u}^*[D^*K_{r^2t}]_\Omega
+    &=r^{-4}(u_1u_2)^{-1}[D^*K_t]_\Omega,\notag\\
+  \phi_{r,u}^*P_{r^2\varepsilon}^{r^2L}
+    &=r^{-2}(u_1u_2)^{-1}P_\varepsilon^L.
+  \label{eq:regulated-covariance-all-orders}
+\end{align}
+These identities hold at positive cutoffs.  Continuity of pullback
+on test forms passes them through the distributional boundary
+restriction supplied by the compactified graph theorem.  Thus the
+local obstruction has the prescribed rotation and dilation
+characters.  Together with the exterior-form argument, this gives
+the required statement at cochain level; exactness
+in a larger space of local functionals alone would not prove it.
+
+\subsection{The degree-four cohomology at every momentum degree}
+
+We first work in the formal invariant trace algebra for traceless
+matrices: distinct products of cyclic trace words are independent,
+and a one-letter trace is zero.  For cohomology in degree four this
+algebra agrees with the actual invariant tensors of $\fsl_N$ for
+$N\ge5$, since only arities three, four, and five occur.  The
+differential inserts a commutator and preserves the number of traces.
+
+\begin{proposition}[The complete obstruction module]
+\label{prop:all-order-h4}
+For $w\ge2$, the formal trace complex satisfies
+\begin{equation}
+  H^3(C^0_{\fsl_N})_{\deg=2w}=0,
+  \qquad
+  H^4(C^0_{\fsl_N})_{\deg=2w}
+       \cong\operatorname{Sym}^{2w-4}(\mathbb C^2).
+  \label{eq:all-order-cohomology}
+\end{equation}
+The second space is represented entirely by two-trace cochains.
+For the trace word $\tr(X_0X_1)\tr(X_2X_3)$, put
+$P=p_0+p_1=-p_2-p_3$.  Its coefficient is
+\begin{equation}
+  [p_0P][p_2P]h(P),
+  \qquad h\text{ homogeneous of degree }2w-4.
+  \label{eq:all-order-double-trace}
+\end{equation}
+The other pairings are fixed by alternation.  Consequently
+\begin{equation}
+ \dim H^4(C^0_{\fsl_N})_{\deg=2w}=2w-3,
+ \qquad
+ \dim\bigl(H^4(C^0_{\fsl_N})_{\deg=2w}\bigr)^{SL_2}
+ =\begin{cases}1,&w=2,\\0,&w\ge3.\end{cases}
+ \label{eq:all-order-invariant-vanishing}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+\emph{One trace.}
+A trace word of arity $k$ is a closed polygon with $k$ vertices:
+write its momenta as $p_i=x_{i+1}-x_i$, with $x_k=x_0$.
+The word coefficient is a polynomial in $x_0,\ldots,x_{k-1}$,
+invariant under their simultaneous translation and cyclic with sign
+$(-1)^{k-1}$.  Splitting one input into a commutator in the
+Chevalley--Eilenberg differential adds two adjacent sides.  Equivalently,
+the differential deletes the intervening polygon vertex.  Up to a
+uniform degree sign this is the alternating deletion differential.
+
+Here is the grading and acyclicity argument explicitly.  Let $j=k-1$.
+Before imposing cyclicity, translation-invariant polynomials on
+$j+1$ vertices have the ordinary additive bar differential on their
+$j$ successive independent increments.  Its end faces omit the first
+or last increment, and its interior faces add two consecutive
+increments.  At fixed polynomial degree $m$, normalization removes
+degenerate cochains.  The resulting complex is the graded dual of the
+reduced bar complex of a polynomial algebra on two generators:
+the coproduct $f(p+q)$ becomes multiplication after dualizing in the
+factorial basis.  Write $HH$ for the cohomology of this full deletion
+complex and $HC$ for the cohomology of its signed cyclic subcomplex.
+The length-two Koszul resolution consequently gives
+\begin{equation}
+ HH^j_m=
+ \begin{cases}
+  \Lambda^j(\mathbb C^2),&m=j,\quad 0\le j\le2,\\
+  0,&\text{otherwise}.
+ \end{cases}
+ \label{eq:ordinary-bar-bidegrees}
+\end{equation}
+This is a statement about translation-invariant polygon polynomials,
+with no remaining total momentum variable.
+
+The cyclic bicomplex is available degree by degree.  Rotation, each
+face, and insertion of a zero side preserve $m$.  The complex with
+its last face omitted is contracted by appending a duplicate final
+vertex, with the alternating degree sign.  The finite cyclic norm
+identifies cyclic invariants and coinvariants over characteristic
+zero.  Thus its long exact sequence contains
+\begin{equation}
+  HC^{j-2}_m\longrightarrow HC^j_m\longrightarrow HH^j_m.
+  \label{eq:polygon-cyclic-sequence}
+\end{equation}
+For $m>2$, the last space vanishes at every $j$ by
+\eqref{eq:ordinary-bar-bidegrees}.  Starting with zero in negative
+cochain degrees and inducting in $j$ proves $HC^j_m=0$ for every
+$j$ and $m>2$.  The single-trace summand in Chevalley--Eilenberg
+arity $k$ is $HC^{k-1}_m$, not $HC^k_m$.
+Deleting the one-letter trace in the traceless complex cannot change
+cohomology in arities three and four: their incoming and outgoing
+maps involve only arities two through five.  Hence the one-trace
+summands of both groups in \eqref{eq:all-order-cohomology} vanish.
+
+\emph{Two traces.}
+At arity four the only remaining word type is $(01)(23)$.
+Write its coefficient as $F(r,q,P)$ on the momenta
+$(r,P-r,q,-P-q)$.  Alternation gives
+\begin{align}
+ F(P-r,q,P)&=-F(r,q,P),\notag\\
+ F(r,-P-q,P)&=-F(r,q,P),\notag\\
+ F(q,r,-P)&=F(r,q,P).
+ \label{eq:pair-exchanges}
+\end{align}
+The coefficient of an oriented three-letter trace times the other
+two-letter trace in $dF$ says
+\begin{equation}
+ F(r,q,P)+F(s,q,P)+F(P-r-s,q,P)=0.
+\end{equation}
+Using \eqref{eq:pair-exchanges}, this is precisely
+\begin{equation}
+ F(r+s,q,P)=F(r,q,P)+F(s,q,P).
+ \label{eq:pair-additivity}
+\end{equation}
+Polynomial additivity implies linearity in $r$.  The first exchange
+then forces that linear functional to annihilate $P$.  The two
+coordinates of $P$ are relatively prime in their polynomial ring;
+therefore a polynomial linear functional annihilating $P$ is a
+polynomial multiple of $[rP]$.  Applying the same argument to $q$
+gives
+\begin{equation}
+ F(r,q,P)=[rP][qP]h(P),\qquad h(-P)=h(P).
+\end{equation}
+Conversely this expression satisfies every coefficient of $dF=0$.
+At total momentum degree $2w$, the polynomial $h$ has degree
+$2w-4$, so its evenness is automatic.  There is no arity-three
+two-trace word on traceless matrices.  These cocycles are therefore
+not boundaries.  Their $SL_2$ representation and dimension are those
+of binary forms of degree $2w-4$.  This proves all assertions.
+\end{proof}
+
+\subsection{Induction and finite-rank specialization}
+
+\begin{theorem}[All-order traceless quantization]
+\label{thm:all-orders-traceless}
+Take the defining trace form on $\fsl_N$ and the flat heat-kernel
+scheme.  For each of the two complex solutions of
+\begin{equation}
+ a^2=\epsilon U\frac{N^2}{256\pi^4},
+ \label{eq:all-order-leading-root}
+\end{equation}
+the first-order cubic $J_1=aF_D$ has a formal local quantization
+\begin{equation}
+ S_{\mathrm{cl}}+\hbar J_1+\sum_{w\ge2}\hbar^w I_w,
+ \qquad I_w\in\Vht,
+ \label{eq:all-order-action}
+\end{equation}
+with the prescribed $U(2)$ characters.  In the formal trace algebra
+each $I_w$ is the unique invariant cubic solving the order-$w$
+equation.  The complete identities specialize to every integer
+$N\ge2$.  At $N=2$, $J_1$ is identically zero; the conclusion there
+is existence and does not infer intrinsic uniqueness from the formal
+trace calculation.
+\end{theorem}
+
+\begin{proof}
+The two-loop calculation supplies $J_1$ and $I_2$ satisfying the local
+equation through order two.  Suppose the local equations below order
+$w\ge3$ have been solved.  The leading remaining obstruction is
+classically closed.  One way to see this is to use the finite-scale
+quantum Batalin--Vilkovisky identity.  With $Q$ the free differential,
+$\Delta_L$ the heat-regularized contraction, and $S[L]$ the effective
+interaction, its curvature satisfies
+\begin{gather}
+ O[L]=QS[L]+\hbar\Delta_LS[L]
+                  +\tfrac12\{S[L],S[L]\}_L,\notag\\
+ \bigl(Q+\hbar\Delta_L+\{S[L],-\}_L\bigr)O[L]=0.
+ \label{eq:finite-scale-bianchi}
+\end{gather}
+At the first unsolved order the lower curvatures vanish.  Passing to
+the local contact, or equivalently applying the local obstruction
+construction of~\cite{CostelloBV}, gives classical closedness.
+The compactified boundary factorization of~\cite[Proposition
+3.22]{WW} identifies this local equation with the effective master
+equation at positive scale.
+
+Lemma~\ref{lem:full-wedge-contacts} puts the actual local obstruction
+in $\Vht$, so its Taylor cochain is an element of
+$C^{0,4}_{\fsl_N}$.  The determinant character gives total momentum
+degree $2w$.  Its $SU(2)$ invariance is $SL_2$ invariance because the
+momentum coefficients are holomorphic polynomials.  By
+\eqref{eq:all-order-invariant-vanishing}, its invariant cohomology
+class is zero.  Complete reducibility in each finite degree gives
+an invariant primitive.  The chain identification with $\Vht$
+turns this primitive into the required local counterterm $I_w$.
+
+To verify uniqueness within the stated formal sector, three
+conserved momenta leave two independent momentum vectors.
+Their invariant polynomial ring is generated by their determinant.
+The cubic Taylor cochain at order $w$ is therefore a scalar multiple
+of
+\begin{equation}
+ [p_0p_1]^w
+ \begin{cases}
+  \tr\bigl(X_0[X_1,X_2]\bigr),&w\text{ even},\\
+  \tr\bigl(X_0\{X_1,X_2\}\bigr),&w\text{ odd}.
+ \end{cases}
+ \label{eq:all-order-cubic-shape}
+\end{equation}
+Here $\{X_1,X_2\}=X_1X_2+X_2X_1$ is the matrix anticommutator.
+The parity choices make the entire cochain alternating.  There is
+no invariant two-cochain of positive momentum degree, since two
+conserved momenta are $p,-p$ and a single vector has no
+nonconstant $SL_2$-invariant polynomial.  Together with
+$H^3_{\deg=2w}=0$, this proves that the differential is injective
+on the invariant cubic space for $w\ge2$.
+
+For specialization, choose $a/N$ to be either fixed square root in
+\eqref{eq:all-order-leading-root}.  The inverse trace pairing on
+traceless matrices has the exact completeness identity
+\begin{equation}
+ \sum_b\tr(XT_b)\tr(T^bY)
+   =\tr(XY)-\frac1N\tr(X)\tr(Y),
+ \label{eq:all-order-completeness}
+\end{equation}
+where $T_b,T^b$ are trace-dual bases of $\fsl_N$.
+Each graph consequently has coefficients in
+$\mathbb C[N,N^{-1}]$, its graph periods being scalar constants.
+The formal trace differential has rational coefficients independent
+of $N$.  At each fixed momentum degree, solving on its image
+therefore introduces only nonzero rational denominators, not new
+polynomials in $N$ in denominators.  Induction constructs the
+entire local identity over $\mathbb C[N,N^{-1}]$.
+Evaluation on traceless matrices at a positive integer $N$ commutes
+with the classical differential, tensor contractions, and graph
+composition.  Hence every specialized identity holds, whether or
+not additional trace relations exist at that rank.
+
+For $N=2$, the identity
+$X_1X_2+X_2X_1=\tr(X_1X_2)\mathbf1_2$ on traceless matrices
+annihilates every odd-order cubic in
+\eqref{eq:all-order-cubic-shape}.  In particular $J_1=0$.
+The even-order specialized counterterms still satisfy the full
+local equations.  No inference about the intrinsic cohomology
+of the small-rank complex is used.
+\end{proof}
+
+\begin{remark}[What is and is not classified]
+The uniqueness statement fixes the heat-kernel scheme, the leading
+root, and the full-wedge equivariant cubic representatives.  It is
+not a statement that arbitrary local field redefinitions or arbitrary
+renormalization schemes are identical.  The formal series need not
+converge analytically in $\hbar$.  Its coefficients are local and of
+finite derivative order at each order, which is the perturbative
+meaning of quantization used here.
+\end{remark}
+
+\subsection{A finite evaluation determining every higher cubic}
+
+The all-order theorem also gives an exact extraction formula for the
+counterterm coefficient.  This is useful independently of any
+choice of basis for four-cochains.  For $N\ge4$, evaluate an
+order-$w$ equation on the color matrices
+\begin{equation}
+  (X_0,X_1,X_2,X_3)=(E_{12},E_{23},E_{34},E_{41})
+\end{equation}
+and on the conserved momenta
+\begin{equation}
+  (p_0,p_1,p_2,p_3)=((1,0),(0,1),(1,1),(-2,-2)).
+\end{equation}
+Here $E_{ab}$ is the matrix with its only nonzero entry equal to one
+in row $a$ and column $b$.  The differential of the unscaled cubic
+in \eqref{eq:all-order-cubic-shape} evaluates to
+\begin{align}
+ -[p_2p_3]^w+[p_1p_2]^w+[p_3p_0]^w-[p_0p_1]^w
+   &=2^w+(-1)^w-1\notag\\
+   &=\begin{cases}2^w,&w\text{ even},\\
+                    2^w-2,&w\text{ odd}.
+      \end{cases}
+ \label{eq:all-order-extraction-denominator}
+\end{align}
+It is nonzero for every $w\ge2$.  Dividing the evaluated right-hand
+side of the cochain equation $d i_w=\text{known lower-order terms}$
+by this integer determines its unique invariant cubic primitive.
+This extraction does not prove closedness; the master-equation
+identity and the cohomology calculation supply that logically prior
+step.  Explicit four-loop periods and the existing independent
+matrix calculations are recorded in~\cite{RepoHigher}.

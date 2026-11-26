@@ -12,6 +12,8 @@ Status tags in all reports: [chk] exact check (script and log in the folder), [d
 
 ### 5d Chern–Simons theory on $\mathbb R\times\mathbb C^2$ (`notes/flagship/flagship.tex`, `deepen/`, `notes/interpretation/`)
 
+**New paper:** [Anomalies and All-Order Quantization of Five-Dimensional Chern–Simons Theory](notes/5d-cs-all-orders/README.md) — [PDF](notes/5d-cs-all-orders/paper.pdf) · [LaTeX](notes/5d-cs-all-orders/paper.tex). Includes the all-rank semisimple classification, specialization to $N=2$, the complete fourth-order coefficient, and a full two-loop central-field cancellation for $\mathfrak{so}(5)\oplus\mathbb C$, with exact certificates.
+
 Commutative (holomorphic–topological) CS theory, gauge algebra $\mathfrak g$ with invariant form $\kappa$, heat-kernel gauge.
 
 1. Local cohomology: translation-invariant local functionals (annihilated by $\iota_{\partial_\tau},\iota_{\partial_{\bar z_1}},\iota_{\partial_{\bar z_2}}$) $\cong$ Chevalley–Eilenberg cochains of $\mathfrak g[[z_1,z_2]]$ on $\sum p=0$, ghost number $g\leftrightarrow$ degree $g+3$.
@@ -79,3 +81,4 @@ Not included: intermediate data above 0.5 MB (pickles, SQLite, binary caches, th
 | `explore/twisted-holography-N4/` | twisted holography of $\mathcal N=4$ |
 | `explore/physics/` | 6d nilpotency, 3d $\mathcal N=2$ supercharge, hCS anomalies |
 | other `explore/*` | fans, line defects, Poisson BF, MSYM, twistor bulk, two-loop universality |
+

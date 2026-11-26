@@ -1,0 +1,244 @@
+{
+  "all_automorphism_orders_equal_supplied_table": true,
+  "all_isomorphism_classes_equal_supplied_table": true,
+  "arithmetic": "exact integer arithmetic",
+  "automorphism_order_histogram": {
+    "1": 17,
+    "2": 18,
+    "4": 11,
+    "8": 3,
+    "16": 1
+  },
+  "core_classes": [
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "labelled_representatives": 180,
+      "subdivision_orbits_examined": 85,
+      "tight_subdivision_orbits": 3,
+      "vertex_automorphisms": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "labelled_representatives": 120,
+      "subdivision_orbits_examined": 43,
+      "tight_subdivision_orbits": 0,
+      "vertex_automorphisms": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "labelled_representatives": 180,
+      "subdivision_orbits_examined": 123,
+      "tight_subdivision_orbits": 8,
+      "vertex_automorphisms": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "labelled_representatives": 60,
+      "subdivision_orbits_examined": 58,
+      "tight_subdivision_orbits": 28,
+      "vertex_automorphisms": 12
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "labelled_representatives": 10,
+      "subdivision_orbits_examined": 16,
+      "tight_subdivision_orbits": 11,
+      "vertex_automorphisms": 72
+    }
+  ],
+  "eligible_labelled_cores": 550,
+  "eligible_unlabelled_cores": 5,
+  "enumeration": "degree constraints; all vertex permutations; all subdivision distributions",
+  "induced_subset_inequalities_examined": 66554,
+  "original_enumeration_or_graph_atlas_imported": false,
+  "retained_graphs": 50,
+  "source_sha256": {
+    "deepen/o3/higher_orders/four-loop-graphs.json": "5aff1df8cf85ac7dc85a8c1be2e9a4ddbd4926ddd5e257d335448f1aea796f54"
+  },
+  "surviving_core_classes": 4
+}
