@@ -1,0 +1,55 @@
+Running explore/circuit-general/nonrenormalizable-product/test_quartic_wick.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.505s
+
+OK
+Running explore/circuit-general/nonrenormalizable-product/test_nonabelian_wick.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.763s
+
+OK
+Running explore/circuit-general/nonrenormalizable-product/quartic_wick.py
+complete source grid 1 / 15
+complete source grid 2 / 15
+complete source grid 3 / 15
+complete source grid 4 / 15
+complete source grid 5 / 15
+complete source grid 6 / 15
+complete source grid 7 / 15
+complete source grid 8 / 15
+complete source grid 9 / 15
+complete source grid 10 / 15
+complete source grid 11 / 15
+complete source grid 12 / 15
+complete source grid 13 / 15
+complete source grid 14 / 15
+complete source grid 15 / 15
+complete symbolic-charge/source zeta3 cancellation: True
+charges [1, 1, -1, -1] complete raw spinor [{'1': '105631/2160'}, {'1': '82931/1080'}]
+charges [1, 2, -1, -2] complete raw spinor [{'1': '-582071/4320'}, {'1': '57967/864'}]
+charges [1, -1, 3, -3] complete raw spinor [{'1': '-123823/720'}, {'1': '34643/80'}]
+charges [1, -1, 0, 0] complete raw spinor [{'1': '18959/864'}, {'1': '51121/1440'}]
+charges [1, -1, 0, 0] complete raw spinor [{}, {}]
+Verified the complete stored certificate.
+Running explore/circuit-general/nonrenormalizable-product/nonabelian_wick.py
+complete nonabelian source grid 1 / 15
+complete nonabelian source grid 2 / 15
+complete nonabelian source grid 3 / 15
+complete nonabelian source grid 4 / 15
+complete nonabelian source grid 5 / 15
+complete nonabelian source grid 6 / 15
+complete nonabelian source grid 7 / 15
+complete nonabelian source grid 8 / 15
+complete nonabelian source grid 9 / 15
+complete nonabelian source grid 10 / 15
+complete nonabelian source grid 11 / 15
+complete nonabelian source grid 12 / 15
+complete nonabelian source grid 13 / 15
+complete nonabelian source grid 14 / 15
+complete nonabelian source grid 15 / 15
+complete source-polynomial zeta3 cancellation: True
+generic full spinors: {'MM': [{'1': '705491/2520', 'z3': '-1419/35'}, {'1': '-2182613/15120', 'z3': '-93/7'}], 'MG': [{'1': '-338587/15120', 'z3': '1419/35'}, {'1': '-12317/945', 'z3': '93/7'}], 'complete': [{'1': '556337/2160'}, {'1': '-67991/432'}]}
+Verified the complete stored nonabelian certificate.
+All complete higher-superpotential product checks passed (25.302 seconds).

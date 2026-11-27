@@ -1,0 +1,3695 @@
+{
+  "max_source_samples": 10000,
+  "max_terms": 1000000,
+  "records": [
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "-591590731/483840",
+            "z3": "661159/840"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 585,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 585,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "-591590731/483840",
+              "z3": "661159/840"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 3583,
+              "core_edges": 7,
+              "core_period_orbits": 199,
+              "current_U_cancellations": {
+                "0": 0
+              },
+              "denominator_powers": [
+                6
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 3583,
+              "period_records": [
+                {
+                  "q": 6,
+                  "read_only_tables": true,
+                  "weighted_periods": 199
+                }
+              ],
+              "used_automorphisms": 8
+            }
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "3039453731/43545600",
+            "z3": "81007/350"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 158,
+            "aggregated_schwinger_terms": 2353,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6,
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 2353,
+            "largest_polynomial_terms": 4,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 114
+              },
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              6
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 6
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "3039453731/43545600",
+              "z3": "81007/350"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 3583,
+              "core_edges": 7,
+              "core_period_orbits": 727,
+              "current_U_cancellations": {
+                "1": 0
+              },
+              "denominator_powers": [
+                7
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 20805,
+              "period_records": [
+                {
+                  "q": 7,
+                  "read_only_tables": true,
+                  "weighted_periods": 727
+                }
+              ],
+              "used_automorphisms": 8
+            }
+          },
+          "powers": [
+            [
+              8,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "17437067783/7257600",
+            "z3": "-76067261/50400"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 158,
+            "aggregated_schwinger_terms": 2353,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6,
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 2353,
+            "largest_polynomial_terms": 4,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 114
+              },
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              6
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 6
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "17437067783/7257600",
+              "z3": "-76067261/50400"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 3583,
+              "core_edges": 7,
+              "core_period_orbits": 727,
+              "current_U_cancellations": {
+                "1": 0
+              },
+              "denominator_powers": [
+                7
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 20783,
+              "period_records": [
+                {
+                  "q": 7,
+                  "read_only_tables": true,
+                  "weighted_periods": 727
+                }
+              ],
+              "used_automorphisms": 8
+            }
+          },
+          "powers": [
+            [
+              8,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 1,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "before_loops": 4,
+          "exact_point_checks": 1,
+          "kernel_sign": 1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": null,
+        "higher_superpotential_degree": null,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 4,
+        "higher_vertex_surviving_fields": null,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": false,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "1810895279/1741824",
+          "lambda_vertex_1": "-3519410687/10886400"
+        },
+        "z3": {
+          "lambda_vertex_0": "-412451/672",
+          "lambda_vertex_1": "14199611/50400"
+        }
+      },
+      "loops": 4,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": false,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "-1"
+        ],
+        [
+          "-2",
+          "4"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-9",
+          "-5"
+        ],
+        [
+          "2",
+          "-3"
+        ]
+      ]
+    },
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "-38335280693/6048000",
+            "z3": "355647577/84000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 114,
+            "aggregated_schwinger_terms": 1768,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1768,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 114
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "-38335280693/6048000",
+              "z3": "355647577/84000"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 99901,
+              "core_edges": 8,
+              "core_period_orbits": 496,
+              "current_U_cancellations": {
+                "0": 0
+              },
+              "denominator_powers": [
+                7
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 99901,
+              "period_records": [
+                {
+                  "q": 7,
+                  "read_only_tables": true,
+                  "weighted_periods": 496
+                }
+              ],
+              "used_automorphisms": 24
+            }
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "-9955104335129/762048000",
+            "z3": "38340206959/3528000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 364,
+            "aggregated_schwinger_terms": 6075,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7,
+              8
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 6075,
+            "largest_polynomial_terms": 4,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 250
+              },
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 114
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              6
+            ],
+            "source_samples_by_stage": [
+              28
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 28
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "-9955104335129/762048000",
+              "z3": "38340206959/3528000"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 99901,
+              "core_edges": 8,
+              "core_period_orbits": 1690,
+              "current_U_cancellations": {
+                "1": 0
+              },
+              "denominator_powers": [
+                8
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 655229,
+              "period_records": [
+                {
+                  "q": 8,
+                  "read_only_tables": true,
+                  "weighted_periods": 1690
+                }
+              ],
+              "used_automorphisms": 24
+            }
+          },
+          "powers": [
+            [
+              10,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "536476661293/152409600",
+            "z3": "-542387483/294000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 250,
+            "aggregated_schwinger_terms": 4307,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              8
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 4307,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 250
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              6
+            ],
+            "source_samples_by_stage": [
+              28
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 28
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "536476661293/152409600",
+              "z3": "-542387483/294000"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 99901,
+              "core_edges": 8,
+              "core_period_orbits": 945,
+              "current_U_cancellations": {
+                "1": 0
+              },
+              "denominator_powers": [
+                8
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 293177,
+              "period_records": [
+                {
+                  "q": 8,
+                  "read_only_tables": true,
+                  "weighted_periods": 945
+                }
+              ],
+              "used_automorphisms": 24
+            }
+          },
+          "powers": [
+            [
+              10,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 2,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "before_loops": 5,
+          "exact_point_checks": 1,
+          "kernel_sign": -1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5,
+            6
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": null,
+        "higher_superpotential_degree": null,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 5,
+        "higher_vertex_surviving_fields": null,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": false,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "-953977207867/2667168000",
+          "lambda_vertex_1": "-7530863992241/1778112000"
+        },
+        "z3": {
+          "lambda_vertex_0": "18814257571/24696000",
+          "lambda_vertex_1": "41594531857/12348000"
+        }
+      },
+      "loops": 5,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": false,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "-1"
+        ],
+        [
+          "-2",
+          "4"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-12",
+          "-5"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ]
+    },
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "-966893/8400",
+            "z3": "5148/175"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 331,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 335,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "-966893/8400",
+              "z3": "5148/175"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 1877,
+              "core_edges": 7,
+              "core_period_orbits": 130,
+              "current_U_cancellations": {
+                "0": 0
+              },
+              "denominator_powers": [
+                6
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 1877,
+              "period_records": [
+                {
+                  "q": 6,
+                  "read_only_tables": true,
+                  "weighted_periods": 130
+                }
+              ],
+              "used_automorphisms": 8
+            }
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "65597447/302400",
+            "z3": "-279092/1575"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 148,
+            "aggregated_schwinger_terms": 1451,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6,
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1451,
+            "largest_polynomial_terms": 4,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              },
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              6
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 6
+          },
+          "powers": [
+            [
+              8,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "280523/20160",
+            "z3": "49456/525"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 148,
+            "aggregated_schwinger_terms": 1451,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6,
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1451,
+            "largest_polynomial_terms": 4,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              },
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              6
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 6
+          },
+          "powers": [
+            [
+              8,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 1,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "before_loops": 4,
+          "exact_point_checks": 1,
+          "kernel_sign": 1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": {
+          "0": [
+            2,
+            1
+          ],
+          "2": [
+            3,
+            0
+          ],
+          "5": [
+            2,
+            1
+          ]
+        },
+        "higher_superpotential_degree": 5,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 4,
+        "higher_vertex_surviving_fields": 1,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": true,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "18141007/345600",
+          "lambda_vertex_1": "135402739/1209600"
+        },
+        "z3": {
+          "lambda_vertex_0": "-12617/225",
+          "lambda_vertex_1": "-102454/1575"
+        }
+      },
+      "loops": 4,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": true,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-10",
+          "2"
+        ],
+        [
+          "2",
+          "-3"
+        ]
+      ]
+    },
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "-833635741/2016000",
+            "z3": "262369/1750"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 104,
+            "aggregated_schwinger_terms": 1116,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1116,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "independent_original_graph": {
+            "coefficients": {
+              "1": "-833635741/2016000",
+              "z3": "262369/1750"
+            },
+            "stats": {
+              "backend": "finite_periods",
+              "bare_numerator_terms": 55720,
+              "core_edges": 8,
+              "core_period_orbits": 324,
+              "current_U_cancellations": {
+                "0": 0
+              },
+              "denominator_powers": [
+                7
+              ],
+              "independent_checks": 1,
+              "input_current_terms": 1,
+              "inserted_numerator_terms": 55720,
+              "period_records": [
+                {
+                  "q": 7,
+                  "read_only_tables": true,
+                  "weighted_periods": 324
+                }
+              ],
+              "used_automorphisms": 24
+            }
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "-6840182549/42336000",
+            "z3": "-3735241/294000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 312,
+            "aggregated_schwinger_terms": 4022,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7,
+              8
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 4022,
+            "largest_polynomial_terms": 4,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 208
+              },
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              6
+            ],
+            "source_samples_by_stage": [
+              28
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 28
+          },
+          "powers": [
+            [
+              10,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "1947086717/8467200",
+            "z3": "-4422937/49000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 208,
+            "aggregated_schwinger_terms": 2906,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              8
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 2906,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 208
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              6
+            ],
+            "source_samples_by_stage": [
+              28
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 28
+          },
+          "powers": [
+            [
+              10,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 2,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "before_loops": 5,
+          "exact_point_checks": 1,
+          "kernel_sign": -1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5,
+            6
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": {
+          "0": [
+            2,
+            1
+          ],
+          "2": [
+            3,
+            0
+          ],
+          "5": [
+            2,
+            1
+          ],
+          "6": [
+            2,
+            1
+          ]
+        },
+        "higher_superpotential_degree": 6,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 5,
+        "higher_vertex_surviving_fields": 1,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": true,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "-23415798683/338688000",
+          "lambda_vertex_1": "-1314977171/56448000"
+        },
+        "z3": {
+          "lambda_vertex_0": "953357/117600",
+          "lambda_vertex_1": "-4251013/147000"
+        }
+      },
+      "loops": 5,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": true,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-13",
+          "2"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ]
+    },
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "-820396532323/145152000",
+            "z3": "24239381/8000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 208,
+            "aggregated_schwinger_terms": 2906,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              8
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 2906,
+            "largest_polynomial_terms": 3,
+            "original_current_terms": 1,
+            "original_loops": 6,
+            "period_records": [
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 208
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 3,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              6
+            ],
+            "source_samples_by_stage": [
+              27
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 27
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "-1187150502226127/64012032000",
+            "z3": "22850344891/1975680"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 596,
+            "aggregated_schwinger_terms": 9350,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              8,
+              9
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 9350,
+            "largest_polynomial_terms": 6,
+            "original_current_terms": 1,
+            "original_loops": 6,
+            "period_records": [
+              {
+                "q": 9,
+                "read_only_tables": true,
+                "weighted_periods": 388
+              },
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 208
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 3,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              7
+            ],
+            "source_samples_by_stage": [
+              36
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 36
+          },
+          "powers": [
+            [
+              12,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "-33586842823189/4267468800",
+            "z3": "6329266781/1372000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 596,
+            "aggregated_schwinger_terms": 9350,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              8,
+              9
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 9350,
+            "largest_polynomial_terms": 6,
+            "original_current_terms": 1,
+            "original_loops": 6,
+            "period_records": [
+              {
+                "q": 9,
+                "read_only_tables": true,
+                "weighted_periods": 388
+              },
+              {
+                "q": 8,
+                "read_only_tables": true,
+                "weighted_periods": 208
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 3,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              7
+            ],
+            "source_samples_by_stage": [
+              36
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 36
+          },
+          "powers": [
+            [
+              12,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 3,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "before_loops": 6,
+          "exact_point_checks": 1,
+          "kernel_sign": -1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5,
+            6,
+            7
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": {
+          "0": [
+            2,
+            1
+          ],
+          "2": [
+            3,
+            0
+          ],
+          "5": [
+            2,
+            1
+          ],
+          "6": [
+            2,
+            1
+          ],
+          "7": [
+            2,
+            1
+          ]
+        },
+        "higher_superpotential_degree": 7,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 6,
+        "higher_vertex_surviving_fields": 1,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": true,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "-1870498362104419/512096256000",
+          "lambda_vertex_1": "-2878103646800089/256048128000"
+        },
+        "z3": {
+          "lambda_vertex_0": "457331820217/197568000",
+          "lambda_vertex_1": "685185424333/98784000"
+        }
+      },
+      "loops": 6,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": true,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-17",
+          "-1"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ],
+        [
+          "4",
+          "3"
+        ]
+      ]
+    },
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "15259912067411311/889056000",
+            "z3": "-193021790501/10290"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 670,
+            "aggregated_schwinger_terms": 12765,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              10
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 12765,
+            "largest_polynomial_terms": 5,
+            "original_current_terms": 1,
+            "original_loops": 8,
+            "period_records": [
+              {
+                "q": 10,
+                "read_only_tables": true,
+                "weighted_periods": 670
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 5,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              8
+            ],
+            "source_samples_by_stage": [
+              45
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 45
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "92325923299022143/10314438750",
+            "z3": "-118465114129889/5197500"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 1761,
+            "aggregated_schwinger_terms": 36005,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              10,
+              11
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 36005,
+            "largest_polynomial_terms": 10,
+            "original_current_terms": 1,
+            "original_loops": 8,
+            "period_records": [
+              {
+                "q": 11,
+                "read_only_tables": true,
+                "weighted_periods": 1091
+              },
+              {
+                "q": 10,
+                "read_only_tables": true,
+                "weighted_periods": 670
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 5,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              9
+            ],
+            "source_samples_by_stage": [
+              55
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 55
+          },
+          "powers": [
+            [
+              16,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "241003951328971061821/3520661760000",
+            "z3": "-26226244513726559/339570000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 1761,
+            "aggregated_schwinger_terms": 36005,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              10,
+              11
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 36005,
+            "largest_polynomial_terms": 10,
+            "original_current_terms": 1,
+            "original_loops": 8,
+            "period_records": [
+              {
+                "q": 11,
+                "read_only_tables": true,
+                "weighted_periods": 1091
+              },
+              {
+                "q": 10,
+                "read_only_tables": true,
+                "weighted_periods": 670
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 5,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              9
+            ],
+            "source_samples_by_stage": [
+              55
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 55
+          },
+          "powers": [
+            [
+              16,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 5,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              9,
+              3
+            ]
+          ],
+          "before_loops": 8,
+          "exact_point_checks": 1,
+          "kernel_sign": 1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": {
+          "0": [
+            2,
+            1
+          ],
+          "2": [
+            3,
+            0
+          ],
+          "5": [
+            2,
+            1
+          ],
+          "6": [
+            2,
+            1
+          ],
+          "7": [
+            2,
+            1
+          ],
+          "8": [
+            2,
+            1
+          ],
+          "9": [
+            2,
+            1
+          ]
+        },
+        "higher_superpotential_degree": 9,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 8,
+        "higher_vertex_surviving_fields": 1,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": true,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "-48538942097319621509/7681443840000",
+          "lambda_vertex_1": "912095344903310534327/42247941120000"
+        },
+        "z3": {
+          "lambda_vertex_0": "2930946254751199/740880000",
+          "lambda_vertex_1": "-25023411656019233/814968000"
+        }
+      },
+      "loops": 8,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": true,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-28",
+          "-16"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ],
+        [
+          "4",
+          "3"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "6",
+          "9"
+        ]
+      ]
+    },
+    {
+      "checks": [
+        {
+          "coefficients": {
+            "1": "-478851806802137300846107313237/48331644641280000",
+            "z3": "2422391296201519477646891/332972640000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 2487,
+            "aggregated_schwinger_terms": 64136,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              13
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 64136,
+            "largest_polynomial_terms": 8,
+            "original_current_terms": 1,
+            "original_loops": 11,
+            "period_records": [
+              {
+                "q": 13,
+                "read_only_tables": true,
+                "weighted_periods": 2487
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 8,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              11
+            ],
+            "source_samples_by_stage": [
+              78
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 78
+          },
+          "powers": []
+        },
+        {
+          "coefficients": {
+            "1": "-317682638696568066799526124932641/10471856338944000000",
+            "z3": "99103583709979007272827943/5050085040000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 6031,
+            "aggregated_schwinger_terms": 163571,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              13,
+              14
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 163571,
+            "largest_polynomial_terms": 16,
+            "original_current_terms": 1,
+            "original_loops": 11,
+            "period_records": [
+              {
+                "q": 14,
+                "read_only_tables": true,
+                "weighted_periods": 3544
+              },
+              {
+                "q": 13,
+                "read_only_tables": true,
+                "weighted_periods": 2487
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 8,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              12
+            ],
+            "source_samples_by_stage": [
+              91
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 91
+          },
+          "powers": [
+            [
+              22,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "-1539159201865443000960439845334061/20943712677888000000",
+            "z3": "140391715587324910081730659/2693378688000"
+          },
+          "ear_stats": {
+            "aggregated_period_terms": 6031,
+            "aggregated_schwinger_terms": 163571,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              13,
+              14
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 163571,
+            "largest_polynomial_terms": 16,
+            "original_current_terms": 1,
+            "original_loops": 11,
+            "period_records": [
+              {
+                "q": 14,
+                "read_only_tables": true,
+                "weighted_periods": 3544
+              },
+              {
+                "q": 13,
+                "read_only_tables": true,
+                "weighted_periods": 2487
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 8,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              12
+            ],
+            "source_samples_by_stage": [
+              91
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 91
+          },
+          "powers": [
+            [
+              22,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "ear_count": 8,
+      "ear_steps": [
+        {
+          "after_edges": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "after_loops": 3,
+          "before_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          "before_loops": 11,
+          "exact_point_checks": 1,
+          "kernel_sign": 1,
+          "original_endpoints": [
+            1,
+            3
+          ],
+          "original_vertices": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          12,
+          3
+        ]
+      ],
+      "field_count_interpretation": {
+        "cubic_vertex_contracted_and_surviving_fields": {
+          "0": [
+            2,
+            1
+          ],
+          "10": [
+            2,
+            1
+          ],
+          "11": [
+            2,
+            1
+          ],
+          "12": [
+            2,
+            1
+          ],
+          "2": [
+            3,
+            0
+          ],
+          "5": [
+            2,
+            1
+          ],
+          "6": [
+            2,
+            1
+          ],
+          "7": [
+            2,
+            1
+          ],
+          "8": [
+            2,
+            1
+          ],
+          "9": [
+            2,
+            1
+          ]
+        },
+        "higher_superpotential_degree": 12,
+        "higher_vertex": 1,
+        "higher_vertex_contracted_degree": 11,
+        "higher_vertex_surviving_fields": 1,
+        "interaction_edges_form_a_tree": true,
+        "physical_source_pattern": true,
+        "scope": "An individual graph kernel; no Wick/color/operator sum is asserted."
+      },
+      "full_first_current_spinor_in_original_source_basis": {
+        "1": {
+          "lambda_vertex_0": "38346949582738676251762192229071/23935671631872000000",
+          "lambda_vertex_1": "-681185395551930974099041053349/20309054717952000"
+        },
+        "z3": {
+          "lambda_vertex_0": "-520218394450209534860712797/323205442560000",
+          "lambda_vertex_1": "3691533073169537767591206973/161602721280000"
+        }
+      },
+      "loops": 11,
+      "marked": [
+        3,
+        4
+      ],
+      "physical_source_pattern": true,
+      "previous_zero_source_contraction_steps": 0,
+      "sources": [
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-52",
+          "-61"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ],
+        [
+          "4",
+          "3"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "6",
+          "9"
+        ],
+        [
+          "7",
+          "12"
+        ],
+        [
+          "8",
+          "15"
+        ],
+        [
+          "9",
+          "18"
+        ]
+      ]
+    }
+  ],
+  "scope": "Complete individual forest kernels and first-current spinors; an assembled Wick/color product is not asserted.",
+  "source_hashes": {
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/forest_ears.py": "75ed000666612e0f1a766dfb15f9429800c1928d33fb4063947562e4484fc5d2",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "explore/circuit-general/forest-general-reduction/certify.py": "24ef37df17d95c5cfdd99930ebb0f08da729d0a457784c93acfdb543ec258ccd",
+    "explore/circuit-general/forest-general-reduction/fixtures.py": "38e116690529be1282f99cd3cb3f25e2aea5000d1d6724ab10212bdce1b7fcab"
+  }
+}

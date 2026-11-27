@@ -1,0 +1,59 @@
+SOURCE-COMPLETE TARGET REDUCTION: OBSERVED CHECKS
+
+Completed focused controls:
+  python3 explore/circuit-general/forest-target-reduction/check_target.py
+  Ran 7 tests in 2.912s: OK.
+  All 23 q=3 local rows match the complete tracked q=3 table.
+  All 871 q=4 local rows match the complete tracked q=4 table.
+  All 18 q=3 -> q=5 double-dimension rows match the tracked tables.
+  Exact whole-target retention under pivot bounds, contradictory equations,
+  canonical constant labels, exact/storage guards, repeated-input cancellation,
+  local-closure idempotence, and parallel-input rejection pass.
+
+Completed certificate GENERATION (fresh full source reconstruction):
+  python3 explore/circuit-general/forest-target-reduction/certify_target.py --write
+  Reconstructed all 10577 original and 7368 scalar coefficients (3.349 s).
+  Finite input seeds: 2277 (45.574 s).
+  Exact local system: 47092 variables and 163907 rows (152.416 s).
+  Whole target reduced to 19 residual periods (202.856 s).
+  Wrote target_certificate.json.
+  Finite contribution:
+    1  = -6539964086153/23279477760000
+    z3 = -20240048519/26943840000
+    z5 = 6836243/5987520
+  Every residual remains explicit in target_certificate.json.
+  Complete finite result: False; incomplete finite value access rejected.
+  Elapsed 203.221 seconds.
+  Both immutable full-numerator SHA256 references matched.
+  No elimination budget was reached; every active equation was exhausted.
+
+Stored-certificate REPLAY status:
+  A duplicate run_checks.py --examples run was intentionally stopped after
+  its focused tests passed (7 tests, 2.413 s) and source reconstruction began.
+  It was not a completed stored-certificate replay and is not counted as one.
+  The completed generation above and independent exact controls are the
+  verification record. Default certify_target.py supports full future replay.
+
+Completed optional dimension certificate GENERATION:
+  python3 explore/circuit-general/forest-target-reduction/certify_target.py --dimension-shift --write
+  Reconstructed all 10577 original and 7368 scalar coefficients (2.747 s).
+  Finite input seeds: 2277 (42.568 s).
+  Exact local system: 61130 variables and 215623 rows (207.202 s).
+  Whole target reduced to 17 residual periods (428.409 s).
+  Wrote dimension_certificate.json.
+  Finite contribution:
+    1  = -3706491467747/27935373312000
+    z3 = -1906264441/5388768000
+    z5 = 57527/106920
+  All 17 residuals are explicit in dimension_certificate.json and README.md.
+  Complete finite result: False; incomplete finite value access rejected.
+  Elapsed 429.316 seconds.
+  All 687 lower-q5 dimension constraints are included.
+  Both immutable full-numerator SHA256 references matched.
+  60844 pivots; 77499977 nonconstant rational coefficient products.
+  Peak active coefficients 3272615; final active coefficients 0.
+  No elimination budget was reached; every active equation was exhausted.
+  This improves the retained expression from 19 to 17 scalar periods,
+  but does not close the entire kernel to finite zeta coefficients.
+
+No further long computation was launched after these exact generations.

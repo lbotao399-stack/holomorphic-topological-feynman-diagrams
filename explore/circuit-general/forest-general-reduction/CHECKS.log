@@ -1,0 +1,36 @@
+Running code/tests/test_forest_ears.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 6.309s
+
+OK
+Running explore/circuit-general/forest-general-reduction/sourced_ward.py
+generic, 4 sourced loops: 458651/2160
+generic, 5 sourced loops: 27821977/259200
+physical_base, 4 sourced loops: -398239/2160
+physical_base, 5 sourced loops: -70717559/259200
+Every sourced-ear Ward certificate field replays.
+Running explore/circuit-general/forest-general-reduction/certify.py
+generic 4 loops (): {'1': Fraction(-591590731, 483840), 'z3': Fraction(661159, 840)}
+generic 4 loops ((8, 0, 1),): {'1': Fraction(3039453731, 43545600), 'z3': Fraction(81007, 350)}
+generic 4 loops ((8, 1, 1),): {'1': Fraction(17437067783, 7257600), 'z3': Fraction(-76067261, 50400)}
+generic 5 loops (): {'1': Fraction(-38335280693, 6048000), 'z3': Fraction(355647577, 84000)}
+generic 5 loops ((10, 0, 1),): {'1': Fraction(-9955104335129, 762048000), 'z3': Fraction(38340206959, 3528000)}
+generic 5 loops ((10, 1, 1),): {'1': Fraction(536476661293, 152409600), 'z3': Fraction(-542387483, 294000)}
+physical 4 loops (): {'1': Fraction(-966893, 8400), 'z3': Fraction(5148, 175)}
+physical 4 loops ((8, 0, 1),): {'1': Fraction(65597447, 302400), 'z3': Fraction(-279092, 1575)}
+physical 4 loops ((8, 1, 1),): {'1': Fraction(280523, 20160), 'z3': Fraction(49456, 525)}
+physical 5 loops (): {'1': Fraction(-833635741, 2016000), 'z3': Fraction(262369, 1750)}
+physical 5 loops ((10, 0, 1),): {'1': Fraction(-6840182549, 42336000), 'z3': Fraction(-3735241, 294000)}
+physical 5 loops ((10, 1, 1),): {'1': Fraction(1947086717, 8467200), 'z3': Fraction(-4422937, 49000)}
+physical 6 loops (): {'1': Fraction(-820396532323, 145152000), 'z3': Fraction(24239381, 8000)}
+physical 6 loops ((12, 0, 1),): {'1': Fraction(-1187150502226127, 64012032000), 'z3': Fraction(22850344891, 1975680)}
+physical 6 loops ((12, 1, 1),): {'1': Fraction(-33586842823189, 4267468800), 'z3': Fraction(6329266781, 1372000)}
+physical 8 loops (): {'1': Fraction(15259912067411311, 889056000), 'z3': Fraction(-193021790501, 10290)}
+physical 8 loops ((16, 0, 1),): {'1': Fraction(92325923299022143, 10314438750), 'z3': Fraction(-118465114129889, 5197500)}
+physical 8 loops ((16, 1, 1),): {'1': Fraction(241003951328971061821, 3520661760000), 'z3': Fraction(-26226244513726559, 339570000)}
+physical 11 loops (): {'1': Fraction(-478851806802137300846107313237, 48331644641280000), 'z3': Fraction(2422391296201519477646891, 332972640000)}
+physical 11 loops ((22, 0, 1),): {'1': Fraction(-317682638696568066799526124932641, 10471856338944000000), 'z3': Fraction(99103583709979007272827943, 5050085040000)}
+physical 11 loops ((22, 1, 1),): {'1': Fraction(-1539159201865443000960439845334061, 20943712677888000000), 'z3': Fraction(140391715587324910081730659, 2693378688000)}
+Every complete sourced-ear certificate field replays.
+All exact sourced-ear checks passed (270.783 seconds).

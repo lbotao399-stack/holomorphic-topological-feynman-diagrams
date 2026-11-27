@@ -1,0 +1,9277 @@
+{
+  "max_terms": 1000000,
+  "records": [
+    {
+      "added_nonzero_sources": [
+        [
+          "2",
+          "-3"
+        ]
+      ],
+      "base_sources_name": "generic",
+      "boundary_method": "independent tensor Lagrange integration of the exact base all-word spider boundary",
+      "boundary_source_degree_bound": 7,
+      "complete_signed_sum": {
+        "1": "458651/2160"
+      },
+      "ear_count": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "face_census": {
+        "proper_faces": [
+          {
+            "cut": [
+              1,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6
+            ],
+            "outer_zero_witness": null,
+            "sign": -1
+          }
+        ],
+        "tree_faces": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "position": 0,
+            "quotient_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "position": 1,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              1,
+              3
+            ],
+            "position": 2,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              4
+            ],
+            "position": 3,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "position": 4,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              4
+            ],
+            "position": 5,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "position": 6,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              3,
+              4
+            ],
+            "position": 7,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              6
+            ],
+            "position": 8,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              6,
+              3
+            ],
+            "position": 9,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            }
+          }
+        ]
+      },
+      "independent_rational_boundary": "458651/2160",
+      "loops": 4,
+      "marked": [
+        3,
+        4
+      ],
+      "original_current_word": [],
+      "sources": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "-1"
+        ],
+        [
+          "-2",
+          "4"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-11",
+          "-1"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "2",
+          "-3"
+        ]
+      ],
+      "terms": [
+        {
+          "coefficients": {
+            "1": "589814359/302400",
+            "z3": "-622543/350"
+          },
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  2
+                ]
+              ],
+              "before_loops": 4,
+              "exact_point_checks": 1,
+              "kernel_sign": -1,
+              "original_endpoints": [
+                0,
+                2
+              ],
+              "original_vertices": [
+                5
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              2
+            ]
+          ],
+          "marked": [
+            2,
+            3
+          ],
+          "position": 0,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "589814359/302400",
+            "z3": "-622543/350"
+          },
+          "sources": [
+            [
+              "4",
+              "1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-11",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "2",
+              "-3"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 334,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 334,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "vertex_map": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "1265344631/806400",
+            "z3": "-2300493/1400"
+          },
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ]
+              ],
+              "before_loops": 4,
+              "exact_point_checks": 1,
+              "kernel_sign": -1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 1,
+          "sign": -1,
+          "signed_coefficients": {
+            "1": "-1265344631/806400",
+            "z3": "2300493/1400"
+          },
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-11",
+              "-1"
+            ],
+            [
+              "2",
+              "-3"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 584,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 585,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            0,
+            5
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "-19466279/115200",
+            "z3": "27097/200"
+          },
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ]
+              ],
+              "before_loops": 4,
+              "exact_point_checks": 1,
+              "kernel_sign": 1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 6,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "-19466279/115200",
+            "z3": "27097/200"
+          },
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-11",
+              "-1"
+            ],
+            [
+              "2",
+              "-3"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 334,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 334,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            2,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "added_nonzero_sources": [
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ],
+      "base_sources_name": "generic",
+      "boundary_method": "independent tensor Lagrange integration of the exact base all-word spider boundary",
+      "boundary_source_degree_bound": 8,
+      "complete_signed_sum": {
+        "1": "27821977/259200"
+      },
+      "ear_count": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "face_census": {
+        "proper_faces": [
+          {
+            "cut": [
+              1,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                5
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                5
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              6,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              8,
+              9,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                4
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6
+            ],
+            "outer_zero_witness": null,
+            "sign": 1
+          }
+        ],
+        "tree_faces": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "position": 0,
+            "quotient_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "position": 1,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              1,
+              3
+            ],
+            "position": 2,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              4
+            ],
+            "position": 3,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "position": 4,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              4
+            ],
+            "position": 5,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "position": 6,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              3,
+              4
+            ],
+            "position": 7,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              6
+            ],
+            "position": 8,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              6,
+              3
+            ],
+            "position": 9,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                5
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              7
+            ],
+            "position": 10,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                10
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              7,
+              3
+            ],
+            "position": 11,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                10
+              ],
+              "vertices": [
+                1,
+                6
+              ]
+            }
+          }
+        ]
+      },
+      "independent_rational_boundary": "27821977/259200",
+      "loops": 5,
+      "marked": [
+        3,
+        4
+      ],
+      "original_current_word": [],
+      "sources": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "-1"
+        ],
+        [
+          "-2",
+          "4"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-14",
+          "-1"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ],
+      "terms": [
+        {
+          "coefficients": {
+            "1": "139920319019/12096000",
+            "z3": "-155247243/14000"
+          },
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  2
+                ],
+                [
+                  0,
+                  6
+                ],
+                [
+                  6,
+                  2
+                ]
+              ],
+              "before_loops": 5,
+              "exact_point_checks": 1,
+              "kernel_sign": 1,
+              "original_endpoints": [
+                0,
+                2
+              ],
+              "original_vertices": [
+                5,
+                6
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "marked": [
+            2,
+            3
+          ],
+          "position": 0,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "139920319019/12096000",
+            "z3": "-155247243/14000"
+          },
+          "sources": [
+            [
+              "4",
+              "1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-14",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 104,
+            "aggregated_schwinger_terms": 1116,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1116,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "vertex_map": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "23546242747/2268000",
+            "z3": "-17793901/1750"
+          },
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ],
+                [
+                  1,
+                  6
+                ],
+                [
+                  6,
+                  3
+                ]
+              ],
+              "before_loops": 5,
+              "exact_point_checks": 1,
+              "kernel_sign": 1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5,
+                6
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 1,
+          "sign": -1,
+          "signed_coefficients": {
+            "1": "-23546242747/2268000",
+            "z3": "17793901/1750"
+          },
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-14",
+              "-1"
+            ],
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 114,
+            "aggregated_schwinger_terms": 1768,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1768,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 114
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            0,
+            5,
+            6
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "-57964439/53760",
+            "z3": "2579207/2800"
+          },
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ],
+                [
+                  1,
+                  6
+                ],
+                [
+                  6,
+                  3
+                ]
+              ],
+              "before_loops": 5,
+              "exact_point_checks": 1,
+              "kernel_sign": -1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5,
+                6
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 6,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "-57964439/53760",
+            "z3": "2579207/2800"
+          },
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-14",
+              "-1"
+            ],
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 104,
+            "aggregated_schwinger_terms": 1116,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1116,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            2,
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "added_nonzero_sources": [
+        [
+          "2",
+          "-3"
+        ]
+      ],
+      "base_sources_name": "physical_base",
+      "boundary_method": "independent tensor Lagrange integration of the exact base all-word spider boundary",
+      "boundary_source_degree_bound": 7,
+      "complete_signed_sum": {
+        "1": "-398239/2160"
+      },
+      "ear_count": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "face_census": {
+        "proper_faces": [
+          {
+            "cut": [
+              1,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6
+            ],
+            "outer_zero_witness": null,
+            "sign": -1
+          }
+        ],
+        "tree_faces": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "position": 0,
+            "quotient_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "position": 1,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              1,
+              3
+            ],
+            "position": 2,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              4
+            ],
+            "position": 3,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "position": 4,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              4
+            ],
+            "position": 5,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "position": 6,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              3,
+              4
+            ],
+            "position": 7,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              6
+            ],
+            "position": 8,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              6,
+              3
+            ],
+            "position": 9,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            }
+          }
+        ]
+      },
+      "independent_rational_boundary": "-398239/2160",
+      "loops": 4,
+      "marked": [
+        3,
+        4
+      ],
+      "original_current_word": [],
+      "sources": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-10",
+          "2"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "2",
+          "-3"
+        ]
+      ],
+      "terms": [
+        {
+          "coefficients": {
+            "1": "-966893/8400",
+            "z3": "5148/175"
+          },
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  2
+                ]
+              ],
+              "before_loops": 4,
+              "exact_point_checks": 1,
+              "kernel_sign": -1,
+              "original_endpoints": [
+                0,
+                2
+              ],
+              "original_vertices": [
+                5
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              2
+            ]
+          ],
+          "marked": [
+            2,
+            3
+          ],
+          "position": 0,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "-966893/8400",
+            "z3": "5148/175"
+          },
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-10",
+              "2"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "2",
+              "-3"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 331,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 335,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "vertex_map": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "45421121/483840",
+            "z3": "-394/7"
+          },
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ]
+              ],
+              "before_loops": 4,
+              "exact_point_checks": 1,
+              "kernel_sign": -1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 1,
+          "sign": -1,
+          "signed_coefficients": {
+            "1": "-45421121/483840",
+            "z3": "394/7"
+          },
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-10",
+              "2"
+            ],
+            [
+              "2",
+              "-3"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 303,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 303,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            0,
+            5
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "6615901/268800",
+            "z3": "-14998/175"
+          },
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ]
+              ],
+              "before_loops": 4,
+              "exact_point_checks": 1,
+              "kernel_sign": 1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 6,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "6615901/268800",
+            "z3": "-14998/175"
+          },
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-10",
+              "2"
+            ],
+            [
+              "2",
+              "-3"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 44,
+            "aggregated_schwinger_terms": 535,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              6
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 544,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 4,
+            "period_records": [
+              {
+                "q": 6,
+                "read_only_tables": true,
+                "weighted_periods": 44
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 1,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              4
+            ],
+            "source_samples_by_stage": [
+              5
+            ],
+            "source_variables_by_stage": [
+              1
+            ],
+            "terminal_source_evaluations": 5
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            2,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "added_nonzero_sources": [
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ],
+      "base_sources_name": "physical_base",
+      "boundary_method": "independent tensor Lagrange integration of the exact base all-word spider boundary",
+      "boundary_source_degree_bound": 8,
+      "complete_signed_sum": {
+        "1": "-70717559/259200"
+      },
+      "ear_count": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "face_census": {
+        "proper_faces": [
+          {
+            "cut": [
+              1,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                5
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                5
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                5
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                4
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              6,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              8,
+              9,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                2,
+                4
+              ]
+            },
+            "sign": -1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              10,
+              11
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6,
+              8,
+              9
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                3,
+                4
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              4,
+              5,
+              6
+            ],
+            "outer_zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            },
+            "sign": 1
+          },
+          {
+            "cut": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            "inner_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "inner_original_edges": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "inner_zero_witness": null,
+            "outer_edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "outer_original_edges": [
+              0,
+              1,
+              6
+            ],
+            "outer_zero_witness": null,
+            "sign": 1
+          }
+        ],
+        "tree_faces": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "position": 0,
+            "quotient_edges": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "position": 1,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              1,
+              3
+            ],
+            "position": 2,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              4
+            ],
+            "position": 3,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                6
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "position": 4,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              4
+            ],
+            "position": 5,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                4,
+                6
+              ],
+              "vertices": [
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "position": 6,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": null
+          },
+          {
+            "edge": [
+              3,
+              4
+            ],
+            "position": 7,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                3
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              6
+            ],
+            "position": 8,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              6,
+              3
+            ],
+            "position": 9,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                5
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                8
+              ],
+              "vertices": [
+                1,
+                5
+              ]
+            }
+          },
+          {
+            "edge": [
+              1,
+              7
+            ],
+            "position": 10,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "sign": 1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                10
+              ],
+              "vertices": [
+                1,
+                3
+              ]
+            }
+          },
+          {
+            "edge": [
+              7,
+              3
+            ],
+            "position": 11,
+            "quotient_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "sign": -1,
+            "zero_witness": {
+              "allowed_count": 1,
+              "edge_count": 2,
+              "edge_indices": [
+                2,
+                10
+              ],
+              "vertices": [
+                1,
+                6
+              ]
+            }
+          }
+        ]
+      },
+      "independent_rational_boundary": "-70717559/259200",
+      "loops": 5,
+      "marked": [
+        3,
+        4
+      ],
+      "original_current_word": [],
+      "sources": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5",
+          "3"
+        ],
+        [
+          "-13",
+          "2"
+        ],
+        [
+          "2",
+          "-4"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "3",
+          "0"
+        ]
+      ],
+      "terms": [
+        {
+          "coefficients": {
+            "1": "-833635741/2016000",
+            "z3": "262369/1750"
+          },
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  2
+                ],
+                [
+                  0,
+                  6
+                ],
+                [
+                  6,
+                  2
+                ]
+              ],
+              "before_loops": 5,
+              "exact_point_checks": 1,
+              "kernel_sign": 1,
+              "original_endpoints": [
+                0,
+                2
+              ],
+              "original_vertices": [
+                5,
+                6
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "marked": [
+            2,
+            3
+          ],
+          "position": 0,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "-833635741/2016000",
+            "z3": "262369/1750"
+          },
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-13",
+              "2"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 104,
+            "aggregated_schwinger_terms": 1116,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1116,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "vertex_map": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "-90661753/216000",
+            "z3": "295809/1000"
+          },
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ],
+                [
+                  1,
+                  6
+                ],
+                [
+                  6,
+                  3
+                ]
+              ],
+              "before_loops": 5,
+              "exact_point_checks": 1,
+              "kernel_sign": 1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5,
+                6
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 1,
+          "sign": -1,
+          "signed_coefficients": {
+            "1": "90661753/216000",
+            "z3": "-295809/1000"
+          },
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-13",
+              "2"
+            ],
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 104,
+            "aggregated_schwinger_terms": 1116,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1116,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 104
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            0,
+            5,
+            6
+          ]
+        },
+        {
+          "coefficients": {
+            "1": "-5063094713/18144000",
+            "z3": "1021187/7000"
+          },
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "ear_steps": [
+            {
+              "after_edges": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "after_loops": 3,
+              "before_edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  3
+                ],
+                [
+                  1,
+                  6
+                ],
+                [
+                  6,
+                  3
+                ]
+              ],
+              "before_loops": 5,
+              "exact_point_checks": 1,
+              "kernel_sign": -1,
+              "original_endpoints": [
+                1,
+                3
+              ],
+              "original_vertices": [
+                5,
+                6
+              ],
+              "vertex_map": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                null,
+                null
+              ]
+            }
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "marked": [
+            3,
+            4
+          ],
+          "position": 6,
+          "sign": 1,
+          "signed_coefficients": {
+            "1": "-5063094713/18144000",
+            "z3": "1021187/7000"
+          },
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-13",
+              "2"
+            ],
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          "stats": {
+            "aggregated_period_terms": 114,
+            "aggregated_schwinger_terms": 1768,
+            "all_original_sources_retained": true,
+            "backend": "finite_periods",
+            "denominator_powers": [
+              7
+            ],
+            "ear_bundles": 1,
+            "exact_point_checks": 1,
+            "fixed_reduced_graph": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "global_ratio_polynomial_variables": 0,
+            "largest_core_numerator_terms": 1768,
+            "largest_polynomial_terms": 2,
+            "original_current_terms": 1,
+            "original_loops": 5,
+            "period_records": [
+              {
+                "q": 7,
+                "read_only_tables": true,
+                "weighted_periods": 114
+              }
+            ],
+            "reduced_loops": 3,
+            "removed_vertices": 2,
+            "source_aggregation": "before_series_beta_and_graph_symmetry",
+            "source_degree_bounds": [
+              5
+            ],
+            "source_samples_by_stage": [
+              21
+            ],
+            "source_variables_by_stage": [
+              2
+            ],
+            "terminal_source_evaluations": 21
+          },
+          "vertex_map": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            2,
+            5,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Complete graph-level sourced-ear Ward identities; no full Wick/color/operator assembly is asserted.",
+  "source_hashes": {
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/forest_ears.py": "75ed000666612e0f1a766dfb15f9429800c1928d33fb4063947562e4484fc5d2",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "explore/circuit-general/forest-general-reduction/sourced_ward.py": "968e689bcce45aadb8b6a1ed5822d6fe3786dedf9c7e84a5b5ed42a1c6b2730c",
+    "explore/circuit-general/forest-leibniz/ward_three.py": "1ddd2b9849e70626a75a4e00f1e22d9841f915aa154534b6b3593064cfcc1f41"
+  }
+}
