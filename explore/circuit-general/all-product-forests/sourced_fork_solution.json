@@ -1,0 +1,111 @@
+{
+  "all_requests_complete": true,
+  "convention": "htk H=2,T=0 geometric kernels with original edge order, before physical normalization and displacement factorials",
+  "full_balanced_sources": [
+    [
+      "1",
+      "2"
+    ],
+    [
+      "2",
+      "-3"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "9",
+      "6"
+    ],
+    [
+      "-12",
+      "-5"
+    ]
+  ],
+  "graph": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "marked": [
+      3,
+      4
+    ],
+    "vertices": 5
+  },
+  "results": [
+    {
+      "name": "complete bare kernel",
+      "result": {
+        "type": "rational",
+        "value": "8995/576"
+      }
+    },
+    {
+      "name": "complete first-current spinor",
+      "result": {
+        "entries": [
+          {
+            "storage_indices": [
+              0
+            ],
+            "value": {
+              "coefficients": {
+                "1": "-107739/160",
+                "z3": "2253/4"
+              },
+              "type": "finite_period"
+            }
+          },
+          {
+            "storage_indices": [
+              1
+            ],
+            "value": {
+              "coefficients": {
+                "1": "-113935781/302400",
+                "z3": "107287/350"
+              },
+              "type": "finite_period"
+            }
+          }
+        ],
+        "free_lower_spinor_indices": [
+          "+dot_a"
+        ],
+        "original_edges": [
+          0
+        ],
+        "type": "complete_spinor_tensor"
+      }
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,110 @@
+{
+  "all_requests_complete": true,
+  "convention": "htk H=2,T=0 geometric kernels with original edge order, before physical normalization and displacement factorials",
+  "full_balanced_sources": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "-1",
+      "-1"
+    ]
+  ],
+  "graph": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "marked": [
+      5,
+      6
+    ],
+    "vertices": 7
+  },
+  "results": [
+    {
+      "name": "complete bare kernel",
+      "result": {
+        "coefficients": {
+          "1": "1187/435456000",
+          "z3": "-17/9072000"
+        },
+        "type": "finite_period"
+      }
+    },
+    {
+      "name": "complete current-conservation insertion at vertex 1",
+      "result": {
+        "coefficients": {
+          "1": "1187/435456000",
+          "z3": "-17/9072000"
+        },
+        "type": "finite_period"
+      }
+    }
+  ],
+  "schema_version": 1
+}

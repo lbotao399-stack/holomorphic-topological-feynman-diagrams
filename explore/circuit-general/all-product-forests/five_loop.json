@@ -1,0 +1,17 @@
+{
+  "name": "five-loop-complete-source-family",
+  "vertices": 7,
+  "edges": [[0,1],[1,2],[0,3],[0,4],[2,5],[2,6],[3,5],[3,6],[4,5],[4,6],[5,6]],
+  "marked": [5,6],
+  "sources": [[0,0],[1,0],[0,0],[0,1],[0,0],[0,0],[-1,-1]],
+  "requests": [
+    {"name": "complete bare kernel", "powers": []},
+    {
+      "name": "complete current-conservation insertion at vertex 1",
+      "polynomial": [
+        {"coefficient": "-1", "powers": [[0,0,1]]},
+        {"coefficient": "1", "powers": [[1,0,1]]}
+      ]
+    }
+  ]
+}

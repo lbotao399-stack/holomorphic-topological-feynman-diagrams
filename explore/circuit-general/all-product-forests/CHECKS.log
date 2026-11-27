@@ -1,0 +1,121 @@
+Python 3.12.14; python-flint 0.9.0; networkx 3.7; sympy 1.14.0.
+
+Running code/tests/test_forest_kron.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.087s
+
+OK
+
+Running code/tests/test_forest_reduction.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 6.144s
+
+OK
+
+Running code/tests/test_forest_cubes.py
+test_complete_three_loop_atlas_and_original_orientations (__main__.ForestCubeChecks.test_complete_three_loop_atlas_and_original_orientations) ... ok
+test_exact_polynomial_series_and_achieved_interval (__main__.ForestCubeChecks.test_exact_polynomial_series_and_achieved_interval) ... ok
+test_five_loop_complete_source_and_current_maps (__main__.ForestCubeChecks.test_five_loop_complete_source_and_current_maps) ... ok
+test_full_budget_preflights_and_zero_loop (__main__.ForestCubeChecks.test_full_budget_preflights_and_zero_loop) ... ok
+test_original_edge_permutations_and_reversals (__main__.ForestCubeChecks.test_original_edge_permutations_and_reversals) ... ok
+test_singular_centre_interval_converges_without_pivots (__main__.ForestCubeChecks.test_singular_centre_interval_converges_without_pivots) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.672s
+
+OK
+
+Running explore/circuit-general/all-product-forests/certify_kron.py
+All 1 topologies at 1 loops passed full source-response and density checks (0.003 s).
+All 3 topologies at 2 loops passed full source-response and density checks (0.012 s).
+All 11 topologies at 3 loops passed full source-response and density checks (0.062 s).
+All 46 topologies at 4 loops passed full source-response and density checks (0.485 s).
+All 200 topologies at 5 loops passed full source-response and density checks (3.317 s).
+All 874 topologies at 6 loops passed full source-response and density checks (24.102 s).
+Verified 190326 full source-response coefficients on 1135 forests.
+
+Running explore/circuit-general/all-product-forests/certify_integrals.py
+reduction: loop 1 forest 0, all 6 first-current entries in 0.030 s (1/61).
+reduction: loop 2 forest 0, all 10 first-current entries in 0.077 s (2/61).
+reduction: loop 2 forest 1, all 10 first-current entries in 0.077 s (3/61).
+reduction: loop 2 forest 2, all 10 first-current entries in 0.011 s (4/61).
+reduction: loop 3 forest 0, all 14 first-current entries in 0.245 s (5/61).
+reduction: loop 3 forest 1, all 14 first-current entries in 0.211 s (6/61).
+reduction: loop 3 forest 2, all 14 first-current entries in 0.107 s (7/61).
+reduction: loop 3 forest 3, all 14 first-current entries in 0.078 s (8/61).
+reduction: loop 3 forest 4, all 14 first-current entries in 0.168 s (9/61).
+reduction: loop 3 forest 5, all 14 first-current entries in 0.079 s (10/61).
+reduction: loop 3 forest 6, all 14 first-current entries in 0.156 s (11/61).
+reduction: loop 3 forest 7, all 14 first-current entries in 0.110 s (12/61).
+reduction: loop 3 forest 8, all 14 first-current entries in 0.184 s (13/61).
+reduction: loop 3 forest 9, all 14 first-current entries in 0.096 s (14/61).
+reduction: loop 3 forest 10, all 14 first-current entries in 0.032 s (15/61).
+reduction: loop 4 forest 0, all 18 first-current entries in 0.065 s (16/61).
+reduction: loop 4 forest 1, all 18 first-current entries in 0.923 s (17/61).
+reduction: loop 4 forest 2, all 18 first-current entries in 0.059 s (18/61).
+reduction: loop 4 forest 3, all 18 first-current entries in 0.950 s (19/61).
+reduction: loop 4 forest 4, all 18 first-current entries in 1.491 s (20/61).
+reduction: loop 4 forest 5, all 18 first-current entries in 2.504 s (21/61).
+reduction: loop 4 forest 6, all 18 first-current entries in 2.316 s (22/61).
+reduction: loop 4 forest 7, all 18 first-current entries in 0.278 s (23/61).
+reduction: loop 4 forest 8, all 18 first-current entries in 0.322 s (24/61).
+reduction: loop 4 forest 9, all 18 first-current entries in 0.157 s (25/61).
+reduction: loop 4 forest 10, all 18 first-current entries in 0.085 s (26/61).
+reduction: loop 4 forest 11, all 18 first-current entries in 0.253 s (27/61).
+reduction: loop 4 forest 12, all 18 first-current entries in 0.211 s (28/61).
+reduction: loop 4 forest 13, all 18 first-current entries in 0.200 s (29/61).
+reduction: loop 4 forest 14, all 18 first-current entries in 0.626 s (30/61).
+reduction: loop 4 forest 15, all 18 first-current entries in 0.137 s (31/61).
+reduction: loop 4 forest 16, all 18 first-current entries in 0.111 s (32/61).
+reduction: loop 4 forest 17, all 18 first-current entries in 0.162 s (33/61).
+reduction: loop 4 forest 18, all 18 first-current entries in 1.462 s (34/61).
+reduction: loop 4 forest 19, all 18 first-current entries in 1.340 s (35/61).
+reduction: loop 4 forest 20, all 18 first-current entries in 0.659 s (36/61).
+reduction: loop 4 forest 21, all 18 first-current entries in 0.100 s (37/61).
+reduction: loop 4 forest 22, all 18 first-current entries in 0.068 s (38/61).
+reduction: loop 4 forest 23, all 18 first-current entries in 0.196 s (39/61).
+reduction: loop 4 forest 24, all 18 first-current entries in 0.067 s (40/61).
+reduction: loop 4 forest 25, all 18 first-current entries in 0.213 s (41/61).
+reduction: loop 4 forest 26, all 18 first-current entries in 1.309 s (42/61).
+reduction: loop 4 forest 27, all 18 first-current entries in 1.363 s (43/61).
+reduction: loop 4 forest 28, all 18 first-current entries in 0.310 s (44/61).
+reduction: loop 4 forest 29, all 18 first-current entries in 0.299 s (45/61).
+reduction: loop 4 forest 30, all 18 first-current entries in 0.205 s (46/61).
+reduction: loop 4 forest 31, all 18 first-current entries in 0.213 s (47/61).
+reduction: loop 4 forest 32, all 18 first-current entries in 0.119 s (48/61).
+reduction: loop 4 forest 33, all 18 first-current entries in 0.218 s (49/61).
+reduction: loop 4 forest 34, all 18 first-current entries in 0.218 s (50/61).
+reduction: loop 4 forest 35, all 18 first-current entries in 0.198 s (51/61).
+reduction: loop 4 forest 36, all 18 first-current entries in 0.428 s (52/61).
+reduction: loop 4 forest 37, all 18 first-current entries in 0.300 s (53/61).
+reduction: loop 4 forest 38, all 18 first-current entries in 0.343 s (54/61).
+reduction: loop 4 forest 39, all 18 first-current entries in 0.364 s (55/61).
+reduction: loop 4 forest 40, all 18 first-current entries in 0.201 s (56/61).
+reduction: loop 4 forest 41, all 18 first-current entries in 0.293 s (57/61).
+reduction: loop 4 forest 42, all 18 first-current entries in 0.255 s (58/61).
+reduction: loop 4 forest 43, all 18 first-current entries in 0.324 s (59/61).
+reduction: loop 4 forest 44, all 18 first-current entries in 0.130 s (60/61).
+reduction: loop 4 forest 45, all 18 first-current entries in 0.062 s (61/61).
+Complete reduction integration finished in 8.089 s.
+All 61 bare kernels and 1018 complete first-current entries verified.
+
+Running explore/circuit-general/all-product-forests/certify_cubes.py
+Checked every original current/Jacobian/density and inverse in all144 three-loop cubes.
+Checked complete original five-loop maps in three representative cubes; full atlas has23400 cubes.
+Every complete cube map, interval, series term, and reference agrees.
+Elapsed 8.478 seconds.
+
+Running explore/circuit-general/all-product-forests/composed_five_loop.py
+All five complete physical five-loop integrals agree; unresolved remainder is empty.
+Bare: {'1': '-877164533/3456000', 'z3': '1409387/7200'}
+Full current spinor in original source basis: {'lambda_0,+dot_a': {'1': '4175805823/12441600', 'z3': '-6328007/24000'}, 'lambda_3,+dot_a': {'1': '-3104462473/20736000', 'z3': '8478617/72000'}}
+Full mixed spinor in original source basis: {'lambda_0,+dot_a': {'1': '-5438599621/15552000', 'z3': '4879469/18000'}, 'lambda_3,+dot_a': {'1': '443494639/10368000', 'z3': '-1211231/36000'}}
+Complete replay finished in 1.957 s.
+Verified the complete five_loop command-line result.
+Verified the complete sourced_fork command-line result.
+Every printed bare kernel and full first-current spinor replays.
+Complete universal-forest replay passed in 58.925 seconds.
+
+Publication formatting: removed the final empty line from FULL_RESULTS.md; updated its renderer and replay comparison. Regenerated every full-source-basis spinor, verified every stored entry again, and checked exact rendered-file equality. No mathematical coefficient changed.
