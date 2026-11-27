@@ -1,0 +1,14 @@
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 1.671s
+
+OK
+{
+  "complete_certificates": 8,
+  "independent_rational_identities": 8,
+  "independent_primitive_faces": 82,
+  "full_graph_sectors": 6,
+  "intended_target_bindings": 8,
+  "three_edge_banana_value": "1/2",
+  "certificate_sha256": "b3a918471dfc5c4c78527900e134cb831c9f117cde822de1fc5bc9f3aa06755a"
+}

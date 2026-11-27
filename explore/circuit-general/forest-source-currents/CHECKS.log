@@ -1,0 +1,26 @@
+Complete supported-source current polynomial certificate replay
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 explore/circuit-general/forest-source-currents/run_checks.py
+Both independent original-graph controls match every source-dependent spinor.
+Independent finite differences: all 644 frame coefficients; 14 polynomial source identities; all 11 complete spinors, fresh and degenerate controls, and nonunit source covariance pass.
+Every bare and original free-spinor coefficient is printed exactly.
+Exit status: 0
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 explore/circuit-general/forest-source-currents/certify.py --jobs 2
+Completed full source sample (0, 0): 1/16, 0.00 seconds.
+Completed full source sample (0, 1): 2/16, 0.00 seconds.
+Completed full source sample (0, 2): 3/16, 0.00 seconds.
+Completed full source sample (1, 1): 4/16, 0.00 seconds.
+Completed full source sample (0, 3): 5/16, 0.00 seconds.
+Completed full source sample (1, 2): 6/16, 0.00 seconds.
+Completed full source sample (0, 4): 7/16, 0.00 seconds.
+Completed full source sample (1, 3): 8/16, 0.00 seconds.
+Completed full source sample (2, 2): 9/16, 0.00 seconds.
+Completed full source sample (0, 5): 10/16, 0.00 seconds.
+Completed full source sample (1, 4): 11/16, 0.00 seconds.
+Completed full source sample (2, 3): 12/16, 0.00 seconds.
+Completed full source sample (0, 6): 13/16, 0.00 seconds.
+Completed full source sample (2, 4): 14/16, 0.00 seconds.
+Completed full source sample (1, 5): 15/16, 0.00 seconds.
+Completed full source sample (3, 3): 16/16, 0.00 seconds.
+All 28 nodes, 11 complete source-dependent spinors, and all source identities agree.
+Exit status: 0

@@ -1,0 +1,999 @@
+{
+  "cotree_reconstruction_used": false,
+  "dependency_sha256": {
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/forest_chain_periods.py": "104b9042e7d0f3fe1dfcb519f0867d0151fe15846e01942d4425cefdddaa825b",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/tables/prism_q7.json": "e0dd6d85279e3f4fefd051f5960f4372526a0b94006ac19097eba26710a69d3d",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/forest-source-currents/source_currents.py": "3bf46934188bb42d03327be1b595cee69b994acc8bfd7479074c0533d089c1f2",
+    "explore/circuit-general/symmetry/tree_minor.py": "136cd5c261430da4fe7f3758fdbb620f8dcd3c7cf1f743f1e01ff26059881db0",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "independent_source_basis_comparison": {
+    "all_original_coefficients_compared": 28977,
+    "comparison_source_minor_plan": {
+      "attempted_plans": 1,
+      "budget_failed_trees": [],
+      "cached": false,
+      "chosen_tree": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "constant_rank_zero": false,
+      "distinct_valid_trees": 1,
+      "exhaustive_tree_scan": false,
+      "independent_density_checks": 1,
+      "linear_matrix_nonzero_entries": 171,
+      "linear_matrix_terms": 318,
+      "max_matrix_entries": 1000000,
+      "max_plans": 1,
+      "max_terms_per_attempt": 4000000,
+      "numerator_terms": 28977,
+      "scanned_subsets": 1,
+      "source_component_scales": [
+        1,
+        1
+      ]
+    },
+    "full_numerator": {
+      "degrees": [
+        24
+      ],
+      "sha256": "7f08f2f7f234bd19b85cdc671ff4f7e717a8b974811f1c325e02bb31592581de",
+      "terms": 28977
+    },
+    "whole_coefficient_dictionary_equality": true
+  },
+  "interpolation_used": false,
+  "name": "degenerate_frame",
+  "result": {
+    "all_original_density_and_current_point_checks": true,
+    "all_original_first_current_spinors": [
+      [
+        {
+          "1": "-4153711/261273600",
+          "z3": "-274241/6350400",
+          "z5": "577/8820"
+        },
+        {}
+      ],
+      [
+        {
+          "1": "-7422463/261273600",
+          "z3": "-443123/6350400",
+          "z5": "191/1764"
+        },
+        {}
+      ],
+      [
+        {
+          "1": "-1236859/203212800",
+          "z3": "-135619/6350400",
+          "z5": "541/17640"
+        },
+        {}
+      ],
+      [
+        {
+          "1": "-18964753/609638400",
+          "z3": "-473383/6350400",
+          "z5": "2053/17640"
+        },
+        {}
+      ],
+      [
+        {
+          "1": "5037709/228614400",
+          "z3": "31051/529200",
+          "z5": "-5/56"
+        },
+        {
+          "1": "1122101/152409600",
+          "z3": "27947/1587600",
+          "z5": "-97/3528"
+        }
+      ],
+      [
+        {
+          "1": "-23491/457228800",
+          "z3": "194/33075",
+          "z5": "-1/147"
+        },
+        {
+          "1": "-1122101/152409600",
+          "z3": "-27947/1587600",
+          "z5": "97/3528"
+        }
+      ],
+      [
+        {
+          "1": "-2509651/203212800",
+          "z3": "-153523/4762800",
+          "z5": "326/6615"
+        },
+        {
+          "1": "6783523/5486745600",
+          "z3": "413/233280",
+          "z5": "-257/79380"
+        }
+      ],
+      [
+        {
+          "1": "-14685191/914457600",
+          "z3": "-715277/19051200",
+          "z5": "223/3780"
+        },
+        {
+          "1": "-6783523/5486745600",
+          "z3": "-413/233280",
+          "z5": "257/79380"
+        }
+      ],
+      [
+        {
+          "1": "-27521069/1828915200",
+          "z3": "-360439/9525600",
+          "z5": "3089/52920"
+        },
+        {
+          "1": "1852121/5486745600",
+          "z3": "-21607/57153600",
+          "z5": "19/158760"
+        }
+      ],
+      [
+        {
+          "1": "-419617/26127360",
+          "z3": "-699271/19051200",
+          "z5": "307/5292"
+        },
+        {
+          "1": "-1852121/5486745600",
+          "z3": "21607/57153600",
+          "z5": "-19/158760"
+        }
+      ],
+      [
+        {
+          "1": "-68099/12700800",
+          "z3": "-4021/352800",
+          "z5": "9/490"
+        },
+        {
+          "1": "-68099/19051200",
+          "z3": "-4021/529200",
+          "z5": "3/245"
+        }
+      ]
+    ],
+    "all_values_finite": true,
+    "bare": {
+      "1": "-68099/5443200",
+      "z3": "-4021/151200",
+      "z5": "3/70"
+    },
+    "coefficientwise_original_source_identities": 14,
+    "full_balanced_sources": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-3",
+        "-1"
+      ]
+    ],
+    "independently_integrated_original_edges": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "integrated_original_source_identities": 14,
+    "original_current_numerators": [
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "f8353f7a80ad97291e30f89e235005b2d48609a3808c92521b0b0e49327d32be",
+        "terms": 106
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "08e72de10a4f6fde3e8f66f330afc5176051c2be321cd57610305fcc50f96f9a",
+        "terms": 12
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "d3494b21176ba0c960993df8e6f6629156bd3863968538074a55900f43dec35c",
+        "terms": 86
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "08e72de10a4f6fde3e8f66f330afc5176051c2be321cd57610305fcc50f96f9a",
+        "terms": 12
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "aabe7cf958a918b3f57409e35276741f4bad88b31c1024bca8830da2742d6bd4",
+        "terms": 106
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "05f4221ae1d2f3a7a617783691c465f8e7626178bd44897ccf3663c2039ccbd2",
+        "terms": 12
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "1eafffeb802eeeb7a3ae234826ea5611de7780dd69c5a0511668a6a1059aea81",
+        "terms": 86
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "05f4221ae1d2f3a7a617783691c465f8e7626178bd44897ccf3663c2039ccbd2",
+        "terms": 12
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "7356eb1bf4bdd43552514eb976132683c164d5ccb4ec53452c3df96cf071fbd1",
+        "terms": 48
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "05722527ce043b9b734d89ecf9a5f5b5003cb8eb240811afa1bfde01c6423127",
+        "terms": 35
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "c0425fada3e24d59472479ea9ae5c0c0ce8e3ed5841ad06cbbda508651f1d247",
+        "terms": 71
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "d518a76d0dafe0a93a91dcafc35c4968ebacff6a1993853941e6f9ff9a039144",
+        "terms": 35
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "82e9053bb82835224f6085cbcdc3c92bcabd809b4ed4d9f86a4d849dfff376d4",
+        "terms": 46
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "8e946661d6b95fa061e23980ab42c5441e54ff0c185b837df97a41fc39866c73",
+        "terms": 35
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "4c166cdb600fa53da40abf7ea7c6d6883a7700670f00d55c4dd8abe3d9794fa5",
+        "terms": 61
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "5357b7f17be2ff58c25db6f576cdeb699ba94210092c16bffa8ca90efb45949a",
+        "terms": 35
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "409fc6899be7db352e6eab79732b985759104df6c884c95211286c04bfa34ca8",
+        "terms": 46
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "386fbdb5c6187ecbedbe759333e29a956d7aed7f0d3a9dc38976ed3e5ea5719e",
+        "terms": 35
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "c027ec9b16fd06a8d3958ac05933941ea39374077a87d4eacf3a5f7ba22ea749",
+        "terms": 61
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "d48bbf1c372736f5fafd23c0f347380458af6ff4b99fa1bc3fdc5ebbda3bda46",
+        "terms": 35
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "9fa19d97f44a5db393bc0ba05af73f3ce93aebc2100a84ebf8f8728d73d577ca",
+        "terms": 45
+      },
+      {
+        "degrees": [
+          5
+        ],
+        "sha256": "7a90672e26dc8abc08fc72003bcf1887932b2136b34ff8459e8735a7f806d63e",
+        "terms": 70
+      }
+    ],
+    "original_numerator": {
+      "degrees": [
+        24
+      ],
+      "sha256": "7f08f2f7f234bd19b85cdc671ff4f7e717a8b974811f1c325e02bb31592581de",
+      "terms": 28977
+    },
+    "residual_periods": [],
+    "source_minor_plan": {
+      "attempted_plans": 1,
+      "budget_failed_trees": [],
+      "cached": false,
+      "chosen_tree": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "constant_rank_zero": false,
+      "distinct_valid_trees": 1,
+      "exhaustive_tree_scan": false,
+      "independent_density_checks": 1,
+      "linear_matrix_nonzero_entries": 150,
+      "linear_matrix_terms": 237,
+      "max_matrix_entries": 1000000,
+      "max_plans": 1,
+      "max_terms_per_attempt": 4000000,
+      "numerator_terms": 28977,
+      "scanned_subsets": 1,
+      "source_component_scales": [
+        1,
+        1
+      ]
+    },
+    "statistics": [
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "7": 4106
+        },
+        "core_edges": 9,
+        "core_period_orbits": 903,
+        "current_U_cancellations": {
+          "0": 0
+        },
+        "denominator_powers": [
+          7
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 28977,
+        "period_records": [
+          {
+            "q": 7,
+            "read_only_tables": true,
+            "weighted_periods": 903
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 39537
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7250,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 390820,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7250
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "exact_zero",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 10034
+        },
+        "core_edges": 9,
+        "core_period_orbits": 0,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 82894,
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 37095
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7247,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 333600,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7247
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "exact_zero",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 10034
+        },
+        "core_edges": 9,
+        "core_period_orbits": 0,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 82894,
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 39534
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7261,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 391139,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7261
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "exact_zero",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 10036
+        },
+        "core_edges": 9,
+        "core_period_orbits": 0,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 82956,
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 37096
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7247,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 333657,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7247
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "exact_zero",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 10036
+        },
+        "core_edges": 9,
+        "core_period_orbits": 0,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 82956,
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 24990
+        },
+        "core_edges": 9,
+        "core_period_orbits": 6692,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 268915,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 6692
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 12563
+        },
+        "core_edges": 9,
+        "core_period_orbits": 3555,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 127843,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 3555
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 27001
+        },
+        "core_edges": 9,
+        "core_period_orbits": 6816,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 296051,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 6816
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 12563
+        },
+        "core_edges": 9,
+        "core_period_orbits": 3555,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 127843,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 3555
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 27931
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7193,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 264949,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7193
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 12737
+        },
+        "core_edges": 9,
+        "core_period_orbits": 4791,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 129174,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 4791
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 30049
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7248,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 285882,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7248
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 12737
+        },
+        "core_edges": 9,
+        "core_period_orbits": 4791,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 129174,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 4791
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 27929
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7196,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 264986,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7196
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 12735
+        },
+        "core_edges": 9,
+        "core_period_orbits": 4792,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 129229,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 4792
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 30051
+        },
+        "core_edges": 9,
+        "core_period_orbits": 7247,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 285902,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 7247
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 12735
+        },
+        "core_edges": 9,
+        "core_period_orbits": 4792,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 129229,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 4792
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 13801
+        },
+        "core_edges": 9,
+        "core_period_orbits": 3274,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 137876,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 3274
+          }
+        ],
+        "used_automorphisms": 12
+      },
+      {
+        "backend": "finite_periods",
+        "bare_numerator_terms": 28977,
+        "chain_power_terms_before_symmetry": {
+          "8": 15106
+        },
+        "core_edges": 9,
+        "core_period_orbits": 3274,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 1,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 152543,
+        "period_records": [
+          {
+            "q": 8,
+            "read_only_tables": true,
+            "weighted_periods": 3274
+          }
+        ],
+        "used_automorphisms": 12
+      }
+    ],
+    "used_chain_first_aggregation": true,
+    "used_cotree_reconstruction": false
+  },
+  "schema_version": 1
+}

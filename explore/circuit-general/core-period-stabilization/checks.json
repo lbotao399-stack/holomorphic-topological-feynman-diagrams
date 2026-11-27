@@ -1,0 +1,3641 @@
+{
+  "arithmetic": "Python integers and fractions.Fraction; no floating-point evaluation.",
+  "claim": "Finite exact controls of the written all-order theorem; no general core master basis computed.",
+  "cycle_controls": {
+    "all_integrals_sha256": "5ce928df1d04ee42ebe18bb4757ba1deeda3a7b9dd086189ff8f47902fd98076",
+    "cycles": [
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 2
+          },
+          {
+            "checked_weight_count": 2,
+            "pole": 3
+          },
+          {
+            "checked_weight_count": 3,
+            "pole": 4
+          },
+          {
+            "checked_weight_count": 4,
+            "pole": 5
+          }
+        ],
+        "edge_count": 2,
+        "first_nonzero_level": 2,
+        "first_period": "1",
+        "zero_levels": [
+          1
+        ]
+      },
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 3
+          },
+          {
+            "checked_weight_count": 3,
+            "pole": 4
+          },
+          {
+            "checked_weight_count": 6,
+            "pole": 5
+          },
+          {
+            "checked_weight_count": 10,
+            "pole": 6
+          }
+        ],
+        "edge_count": 3,
+        "first_nonzero_level": 3,
+        "first_period": "1/2",
+        "zero_levels": [
+          1,
+          2
+        ]
+      },
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 4
+          },
+          {
+            "checked_weight_count": 4,
+            "pole": 5
+          },
+          {
+            "checked_weight_count": 10,
+            "pole": 6
+          },
+          {
+            "checked_weight_count": 20,
+            "pole": 7
+          }
+        ],
+        "edge_count": 4,
+        "first_nonzero_level": 4,
+        "first_period": "1/6",
+        "zero_levels": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 5
+          },
+          {
+            "checked_weight_count": 5,
+            "pole": 6
+          },
+          {
+            "checked_weight_count": 15,
+            "pole": 7
+          },
+          {
+            "checked_weight_count": 35,
+            "pole": 8
+          }
+        ],
+        "edge_count": 5,
+        "first_nonzero_level": 5,
+        "first_period": "1/24",
+        "zero_levels": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 6
+          },
+          {
+            "checked_weight_count": 6,
+            "pole": 7
+          },
+          {
+            "checked_weight_count": 21,
+            "pole": 8
+          },
+          {
+            "checked_weight_count": 56,
+            "pole": 9
+          }
+        ],
+        "edge_count": 6,
+        "first_nonzero_level": 6,
+        "first_period": "1/120",
+        "zero_levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 7
+          },
+          {
+            "checked_weight_count": 7,
+            "pole": 8
+          },
+          {
+            "checked_weight_count": 28,
+            "pole": 9
+          },
+          {
+            "checked_weight_count": 84,
+            "pole": 10
+          }
+        ],
+        "edge_count": 7,
+        "first_nonzero_level": 7,
+        "first_period": "1/720",
+        "zero_levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "checked_levels": [
+          {
+            "checked_weight_count": 1,
+            "pole": 8
+          },
+          {
+            "checked_weight_count": 8,
+            "pole": 9
+          },
+          {
+            "checked_weight_count": 36,
+            "pole": 10
+          },
+          {
+            "checked_weight_count": 120,
+            "pole": 11
+          }
+        ],
+        "edge_count": 8,
+        "first_nonzero_level": 8,
+        "first_period": "1/5040",
+        "zero_levels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "integrated_shift_term_count": 3164,
+    "integrated_weight_count": 490
+  },
+  "graph_controls": [
+    {
+      "all_sector_records_sha256": "018b6ff4bdb7161195ede8a00e499c983eff5c6b971ce7208a8549bdf920c315",
+      "convergence_preserving_shift_terms": 20,
+      "convergent_sector_coordinate_checks": 20,
+      "cotree_factorization_checks": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 5,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1
+            ]
+          ],
+          "pole": 2,
+          "tested_weights": 1
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "pole": 3,
+          "tested_weights": 2
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "pole": 4,
+          "tested_weights": 3
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "pole": 5,
+          "tested_weights": 4
+        }
+      ],
+      "loop_number": 1,
+      "name": "two_edge_cycle",
+      "rejected_weight_witness_count": 0,
+      "sector_count": 2,
+      "spanning_trees": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "tested_weight_count": 10,
+      "vertices": 2
+    },
+    {
+      "all_sector_records_sha256": "8295d0a6fb708f27d03ab353aea42b66319e8a0d3a3d934a885eccfa27e30e91",
+      "convergence_preserving_shift_terms": 30,
+      "convergent_sector_coordinate_checks": 120,
+      "cotree_factorization_checks": 18,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0,
+          1
+        ],
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          0
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 5,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 2,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 3,
+          "tested_weights": 1
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "pole": 4,
+          "tested_weights": 3
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "pole": 5,
+          "tested_weights": 6
+        }
+      ],
+      "loop_number": 1,
+      "name": "triangle",
+      "rejected_weight_witness_count": 0,
+      "sector_count": 6,
+      "spanning_trees": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tested_weight_count": 10,
+      "vertices": 3
+    },
+    {
+      "all_sector_records_sha256": "591d317d1ac2252415143363bd0d358162a519063930aadffbdb07c71fabdbd6",
+      "convergence_preserving_shift_terms": 60,
+      "convergent_sector_coordinate_checks": 1080,
+      "cotree_factorization_checks": 96,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0,
+          1,
+          2
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          0,
+          0
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 6,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 2,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 3,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 4,
+          "tested_weights": 1
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 5,
+          "tested_weights": 4
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 6,
+          "tested_weights": 10
+        }
+      ],
+      "loop_number": 1,
+      "name": "square",
+      "rejected_weight_witness_count": 0,
+      "sector_count": 24,
+      "spanning_trees": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "tested_weight_count": 15,
+      "vertices": 4
+    },
+    {
+      "all_sector_records_sha256": "f72686c7ed4a727b4e827374584a058608313b65e1e26ffc89289fc22ae85466",
+      "convergence_preserving_shift_terms": 72,
+      "convergent_sector_coordinate_checks": 4320,
+      "cotree_factorization_checks": 960,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0,
+          1,
+          2
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              2,
+              2,
+              1
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 4,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 2,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [
+            [
+              2,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 3,
+          "tested_weights": 5
+        },
+        {
+          "convergent_weights": [
+            [
+              2,
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              3,
+              1,
+              1,
+              2,
+              1
+            ],
+            [
+              3,
+              1,
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              2,
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 4,
+          "tested_weights": 35
+        }
+      ],
+      "loop_number": 2,
+      "name": "diamond",
+      "rejected_weight_witness_count": 31,
+      "sector_count": 120,
+      "spanning_trees": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "tested_weight_count": 40,
+      "vertices": 4
+    },
+    {
+      "all_sector_records_sha256": "773877b2112e3644be13814602b596a81e5d1439efffaa016689db4797d5b7e8",
+      "convergence_preserving_shift_terms": 1888,
+      "convergent_sector_coordinate_checks": 424800,
+      "cotree_factorization_checks": 11520,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0,
+          1,
+          2
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              2,
+              2,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              2,
+              2,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              2,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              2,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              2,
+              2,
+              2,
+              1
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 4,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "pole": 2,
+          "tested_weights": 1
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1,
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              2,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              1,
+              1,
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              1,
+              2,
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              1,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              1,
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1,
+              2,
+              1,
+              1
+            ]
+          ],
+          "pole": 3,
+          "tested_weights": 56
+        },
+        {
+          "convergent_weights": [
+            [
+              1,
+              1,
+              1,
+              3,
+              3,
+              3
+            ],
+            [
+              1,
+              1,
+              2,
+              3,
+              2,
+              3
+            ],
+            [
+              1,
+              1,
+              2,
+              3,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              3,
+              3,
+              1,
+              3
+            ],
+            [
+              1,
+              1,
+              3,
+              3,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              1,
+              2,
+              1,
+              2,
+              3,
+              3
+            ],
+            [
+              1,
+              2,
+              1,
+              3,
+              3,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              2,
+              2,
+              3,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              3,
+              2,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              3,
+              3,
+              1
+            ],
+            [
+              1,
+              2,
+              3,
+              2,
+              1,
+              3
+            ],
+            [
+              1,
+              2,
+              3,
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              2,
+              3,
+              2,
+              3,
+              1
+            ],
+            [
+              1,
+              2,
+              3,
+              3,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              3,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1,
+              1,
+              3,
+              3
+            ],
+            [
+              1,
+              3,
+              1,
+              2,
+              3,
+              2
+            ],
+            [
+              1,
+              3,
+              1,
+              3,
+              3,
+              1
+            ],
+            [
+              1,
+              3,
+              2,
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              3,
+              2,
+              1,
+              3,
+              2
+            ],
+            [
+              1,
+              3,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              1,
+              3,
+              2,
+              2,
+              3,
+              1
+            ],
+            [
+              1,
+              3,
+              2,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              3,
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              3,
+              3,
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              3,
+              3,
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              3,
+              3,
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              3,
+              3,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1,
+              2,
+              3,
+              3
+            ],
+            [
+              2,
+              1,
+              1,
+              3,
+              2,
+              3
+            ],
+            [
+              2,
+              1,
+              2,
+              2,
+              2,
+              3
+            ],
+            [
+              2,
+              1,
+              2,
+              2,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              2,
+              3,
+              1,
+              3
+            ],
+            [
+              2,
+              1,
+              2,
+              3,
+              2,
+              2
+            ],
+            [
+              2,
+              1,
+              3,
+              2,
+              1,
+              3
+            ],
+            [
+              2,
+              1,
+              3,
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              1,
+              3,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              1,
+              3,
+              3,
+              1,
+              2
+            ],
+            [
+              2,
+              1,
+              3,
+              3,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1,
+              1,
+              3,
+              3
+            ],
+            [
+              2,
+              2,
+              1,
+              2,
+              2,
+              3
+            ],
+            [
+              2,
+              2,
+              1,
+              2,
+              3,
+              2
+            ],
+            [
+              2,
+              2,
+              1,
+              3,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              2,
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              2,
+              2,
+              1,
+              3,
+              2
+            ],
+            [
+              2,
+              2,
+              2,
+              2,
+              1,
+              3
+            ],
+            [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              2,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              2,
+              2,
+              3,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              2,
+              3,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              3,
+              1,
+              1,
+              3
+            ],
+            [
+              2,
+              2,
+              3,
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              3,
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              2,
+              3,
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              3,
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              3,
+              1,
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              1,
+              1,
+              3,
+              2
+            ],
+            [
+              2,
+              3,
+              1,
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              1,
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              3,
+              1,
+              3,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              2,
+              1,
+              1,
+              3
+            ],
+            [
+              2,
+              3,
+              2,
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              2,
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              3,
+              2,
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              3,
+              2,
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              2,
+              3,
+              1,
+              1
+            ],
+            [
+              3,
+              1,
+              1,
+              1,
+              3,
+              3
+            ],
+            [
+              3,
+              1,
+              1,
+              2,
+              2,
+              3
+            ],
+            [
+              3,
+              1,
+              1,
+              3,
+              1,
+              3
+            ],
+            [
+              3,
+              1,
+              2,
+              1,
+              2,
+              3
+            ],
+            [
+              3,
+              1,
+              2,
+              1,
+              3,
+              2
+            ],
+            [
+              3,
+              1,
+              2,
+              2,
+              1,
+              3
+            ],
+            [
+              3,
+              1,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              1,
+              2,
+              3,
+              1,
+              2
+            ],
+            [
+              3,
+              1,
+              3,
+              1,
+              1,
+              3
+            ],
+            [
+              3,
+              1,
+              3,
+              1,
+              2,
+              2
+            ],
+            [
+              3,
+              1,
+              3,
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              1,
+              3,
+              2,
+              1,
+              2
+            ],
+            [
+              3,
+              1,
+              3,
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              1,
+              3,
+              3,
+              1,
+              1
+            ],
+            [
+              3,
+              2,
+              1,
+              1,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              1,
+              1,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              1,
+              2,
+              1,
+              3
+            ],
+            [
+              3,
+              2,
+              1,
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              2,
+              1,
+              3,
+              1,
+              2
+            ],
+            [
+              3,
+              2,
+              2,
+              1,
+              1,
+              3
+            ],
+            [
+              3,
+              2,
+              2,
+              1,
+              2,
+              2
+            ],
+            [
+              3,
+              2,
+              2,
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              2,
+              2,
+              2,
+              1,
+              2
+            ],
+            [
+              3,
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              2,
+              3,
+              1,
+              1
+            ],
+            [
+              3,
+              3,
+              1,
+              1,
+              1,
+              3
+            ],
+            [
+              3,
+              3,
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              3,
+              3,
+              1,
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              3,
+              1,
+              2,
+              1,
+              2
+            ],
+            [
+              3,
+              3,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1,
+              3,
+              1,
+              1
+            ]
+          ],
+          "pole": 4,
+          "tested_weights": 462
+        }
+      ],
+      "loop_number": 3,
+      "name": "complete_four",
+      "rejected_weight_witness_count": 401,
+      "sector_count": 720,
+      "spanning_trees": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "tested_weight_count": 519,
+      "vertices": 4
+    },
+    {
+      "all_sector_records_sha256": "d42a7f082c0d806b7f1c49ce3542754b2e1daff17e43ca60c2bea9bec92efe44",
+      "convergence_preserving_shift_terms": 12,
+      "convergent_sector_coordinate_checks": 48,
+      "cotree_factorization_checks": 18,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0
+        ],
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          1
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 4,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 2,
+          "tested_weights": 3
+        },
+        {
+          "convergent_weights": [
+            [
+              2,
+              2,
+              2
+            ]
+          ],
+          "pole": 3,
+          "tested_weights": 10
+        },
+        {
+          "convergent_weights": [
+            [
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              2,
+              3
+            ],
+            [
+              3,
+              3,
+              2
+            ]
+          ],
+          "pole": 4,
+          "tested_weights": 21
+        }
+      ],
+      "loop_number": 2,
+      "name": "triple_parallel",
+      "rejected_weight_witness_count": 30,
+      "sector_count": 6,
+      "spanning_trees": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "tested_weight_count": 34,
+      "vertices": 2
+    },
+    {
+      "all_sector_records_sha256": "6f81697fdf52087f747c9122b1b509f94f3219f55a23b843581dd4acf686c0d5",
+      "convergence_preserving_shift_terms": 0,
+      "convergent_sector_coordinate_checks": 0,
+      "cotree_factorization_checks": 72,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0,
+          1,
+          3
+        ],
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          0,
+          1
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "last_checked_pole": 5,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 2,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 3,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 4,
+          "tested_weights": 1
+        },
+        {
+          "convergent_weights": [],
+          "pole": 5,
+          "tested_weights": 4
+        }
+      ],
+      "loop_number": 1,
+      "name": "triangle_with_bridge",
+      "rejected_weight_witness_count": 5,
+      "sector_count": 24,
+      "spanning_trees": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "tested_weight_count": 5,
+      "vertices": 4
+    },
+    {
+      "all_sector_records_sha256": "593e5fc26f853187d83434594070ecdb7db37c52d5ad075d7585de9e1fa5927d",
+      "convergence_preserving_shift_terms": 0,
+      "convergent_sector_coordinate_checks": 0,
+      "cotree_factorization_checks": 12,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "first_sector": {
+        "greedy_tree": [
+          0
+        ],
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "polynomial": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              0
+            ]
+          }
+        ],
+        "prefix_loops": [
+          0,
+          1
+        ]
+      },
+      "kirchhoff_polynomial": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "last_checked_pole": 4,
+      "levels": [
+        {
+          "convergent_weights": [],
+          "pole": 1,
+          "tested_weights": 0
+        },
+        {
+          "convergent_weights": [],
+          "pole": 2,
+          "tested_weights": 3
+        },
+        {
+          "convergent_weights": [],
+          "pole": 3,
+          "tested_weights": 10
+        },
+        {
+          "convergent_weights": [],
+          "pole": 4,
+          "tested_weights": 21
+        }
+      ],
+      "loop_number": 2,
+      "name": "parallel_with_self_loop",
+      "rejected_weight_witness_count": 34,
+      "sector_count": 6,
+      "spanning_trees": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "tested_weight_count": 34,
+      "vertices": 2
+    }
+  ],
+  "jacobian_controls": [
+    {
+      "jacobian": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0
+          ]
+        }
+      ],
+      "variables": 1
+    },
+    {
+      "jacobian": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1
+          ]
+        }
+      ],
+      "variables": 2
+    },
+    {
+      "jacobian": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "variables": 3
+    },
+    {
+      "jacobian": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "variables": 4
+    },
+    {
+      "jacobian": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "variables": 5
+    }
+  ],
+  "one_variable_relative_controls": {
+    "all_identities_sha256": "b0f158999eac6e3dc2929f92ab30f307e43e9d234d5acf92a3b9563fb1247c30",
+    "basis_periods": [
+      "1",
+      "log(2)"
+    ],
+    "basis_scope": "Only the one-variable relative example; not an original-core master basis.",
+    "complete_identity_count": 169,
+    "numerator_powers": [
+      0,
+      12
+    ],
+    "pole_orders": [
+      0,
+      12
+    ],
+    "proved_relative_basis": [
+      "1",
+      "1/(1+x)"
+    ],
+    "selected_complete_identities": [
+      {
+        "denominator_1_plus_x_power": 0,
+        "log_2_coefficient": "0",
+        "numerator_x_power": 0,
+        "primitive_divided_by_x_times_1_minus_x": [],
+        "primitive_in_u_equals_1_plus_x": [],
+        "rational_value": "1"
+      },
+      {
+        "denominator_1_plus_x_power": 1,
+        "log_2_coefficient": "1",
+        "numerator_x_power": 0,
+        "primitive_divided_by_x_times_1_minus_x": [],
+        "primitive_in_u_equals_1_plus_x": [],
+        "rational_value": "0"
+      },
+      {
+        "denominator_1_plus_x_power": 2,
+        "log_2_coefficient": "0",
+        "numerator_x_power": 0,
+        "primitive_divided_by_x_times_1_minus_x": [
+          {
+            "coefficient": "1/2",
+            "powers": [
+              -1
+            ]
+          }
+        ],
+        "primitive_in_u_equals_1_plus_x": [
+          {
+            "coefficient": "-1",
+            "powers": [
+              -1
+            ]
+          },
+          {
+            "coefficient": "3/2",
+            "powers": [
+              0
+            ]
+          },
+          {
+            "coefficient": "-1/2",
+            "powers": [
+              1
+            ]
+          }
+        ],
+        "rational_value": "1/2"
+      },
+      {
+        "denominator_1_plus_x_power": 1,
+        "log_2_coefficient": "-1",
+        "numerator_x_power": 1,
+        "primitive_divided_by_x_times_1_minus_x": [],
+        "primitive_in_u_equals_1_plus_x": [],
+        "rational_value": "1"
+      },
+      {
+        "denominator_1_plus_x_power": 5,
+        "log_2_coefficient": "-35",
+        "numerator_x_power": 7,
+        "primitive_divided_by_x_times_1_minus_x": [
+          {
+            "coefficient": "-1/8",
+            "powers": [
+              -4
+            ]
+          },
+          {
+            "coefficient": "47/48",
+            "powers": [
+              -3
+            ]
+          },
+          {
+            "coefficient": "-119/32",
+            "powers": [
+              -2
+            ]
+          },
+          {
+            "coefficient": "2195/192",
+            "powers": [
+              -1
+            ]
+          },
+          {
+            "coefficient": "5/2",
+            "powers": [
+              0
+            ]
+          },
+          {
+            "coefficient": "-1/3",
+            "powers": [
+              1
+            ]
+          }
+        ],
+        "primitive_in_u_equals_1_plus_x": [
+          {
+            "coefficient": "1/4",
+            "powers": [
+              -4
+            ]
+          },
+          {
+            "coefficient": "-7/3",
+            "powers": [
+              -3
+            ]
+          },
+          {
+            "coefficient": "21/2",
+            "powers": [
+              -2
+            ]
+          },
+          {
+            "coefficient": "-35",
+            "powers": [
+              -1
+            ]
+          },
+          {
+            "coefficient": "2113/64",
+            "powers": [
+              0
+            ]
+          },
+          {
+            "coefficient": "-209/64",
+            "powers": [
+              1
+            ]
+          },
+          {
+            "coefficient": "-7/2",
+            "powers": [
+              2
+            ]
+          },
+          {
+            "coefficient": "1/3",
+            "powers": [
+              3
+            ]
+          }
+        ],
+        "rational_value": "1553/64"
+      },
+      {
+        "denominator_1_plus_x_power": 12,
+        "log_2_coefficient": "-12",
+        "numerator_x_power": 12,
+        "primitive_divided_by_x_times_1_minus_x": [
+          {
+            "coefficient": "1/22",
+            "powers": [
+              -11
+            ]
+          },
+          {
+            "coefficient": "-117/220",
+            "powers": [
+              -10
+            ]
+          },
+          {
+            "coefficient": "3757/1320",
+            "powers": [
+              -9
+            ]
+          },
+          {
+            "coefficient": "-8109/880",
+            "powers": [
+              -8
+            ]
+          },
+          {
+            "coefficient": "148667/7392",
+            "powers": [
+              -7
+            ]
+          },
+          {
+            "coefficient": "-769379/24640",
+            "powers": [
+              -6
+            ]
+          },
+          {
+            "coefficient": "149981/4224",
+            "powers": [
+              -5
+            ]
+          },
+          {
+            "coefficient": "-2969347/98560",
+            "powers": [
+              -4
+            ]
+          },
+          {
+            "coefficient": "11564407/591360",
+            "powers": [
+              -3
+            ]
+          },
+          {
+            "coefficient": "-54287/5120",
+            "powers": [
+              -2
+            ]
+          },
+          {
+            "coefficient": "3461963/473088",
+            "powers": [
+              -1
+            ]
+          }
+        ],
+        "primitive_in_u_equals_1_plus_x": [
+          {
+            "coefficient": "-1/11",
+            "powers": [
+              -11
+            ]
+          },
+          {
+            "coefficient": "6/5",
+            "powers": [
+              -10
+            ]
+          },
+          {
+            "coefficient": "-22/3",
+            "powers": [
+              -9
+            ]
+          },
+          {
+            "coefficient": "55/2",
+            "powers": [
+              -8
+            ]
+          },
+          {
+            "coefficient": "-495/7",
+            "powers": [
+              -7
+            ]
+          },
+          {
+            "coefficient": "132",
+            "powers": [
+              -6
+            ]
+          },
+          {
+            "coefficient": "-924/5",
+            "powers": [
+              -5
+            ]
+          },
+          {
+            "coefficient": "198",
+            "powers": [
+              -4
+            ]
+          },
+          {
+            "coefficient": "-165",
+            "powers": [
+              -3
+            ]
+          },
+          {
+            "coefficient": "110",
+            "powers": [
+              -2
+            ]
+          },
+          {
+            "coefficient": "-66",
+            "powers": [
+              -1
+            ]
+          },
+          {
+            "coefficient": "25670013/788480",
+            "powers": [
+              0
+            ]
+          },
+          {
+            "coefficient": "-3461963/473088",
+            "powers": [
+              1
+            ]
+          }
+        ],
+        "rational_value": "3935051/473088"
+      }
+    ]
+  },
+  "polynomial_cube_controls": {
+    "all_identities_sha256": "eb47ff2221f88bd533488f0502e1e70e58b0b43ca82a6ac8e7562eca413c045b",
+    "complete_identity_count": 150,
+    "dimensions": [
+      2,
+      3
+    ],
+    "each_coordinate_power": [
+      0,
+      4
+    ],
+    "last_complete_identity": {
+      "integral": "1/125",
+      "powers": [
+        4,
+        4,
+        4
+      ],
+      "primitives": [
+        [
+          {
+            "coefficient": "-1/5",
+            "powers": [
+              1,
+              4,
+              4
+            ]
+          },
+          {
+            "coefficient": "1/5",
+            "powers": [
+              5,
+              4,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "coefficient": "-1/25",
+            "powers": [
+              0,
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": "1/25",
+            "powers": [
+              0,
+              5,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "coefficient": "-1/125",
+            "powers": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "coefficient": "1/125",
+            "powers": [
+              0,
+              0,
+              5
+            ]
+          }
+        ]
+      ]
+    }
+  },
+  "production_module_imports": [],
+  "schema": "fixed-core-period-stabilization-v1",
+  "signed_numerator_controls": {
+    "all_pullbacks_sha256": "777d685399b386a1e75fac768e85bde9a01816cef3b33b6aa42c9edc3003f8aa",
+    "checked_sector_count": 720,
+    "convergent_signed_numerator": [
+      {
+        "coefficient": "1",
+        "powers": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": "-2",
+        "powers": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "coefficient": "1/3",
+        "powers": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      }
+    ],
+    "divergent_pullback": [
+      {
+        "coefficient": "1",
+        "powers": [
+          0,
+          1,
+          2,
+          0,
+          -2
+        ]
+      },
+      {
+        "coefficient": "-1",
+        "powers": [
+          3,
+          4,
+          5,
+          3,
+          1
+        ]
+      }
+    ],
+    "divergent_signed_numerator": [
+      {
+        "coefficient": "-1",
+        "powers": [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient": "1",
+        "powers": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "divergent_witness_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      0
+    ],
+    "first_pullback": {
+      "numerator": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-2",
+          "powers": [
+            0,
+            1,
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "1/3",
+          "powers": [
+            0,
+            1,
+            3,
+            2,
+            1
+          ]
+        }
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "graph": "complete_four",
+    "leading_boundary_coefficient": [
+      {
+        "coefficient": "1",
+        "powers": [
+          0,
+          1,
+          2,
+          0
+        ]
+      }
+    ],
+    "least_last_coordinate_exponent": -2,
+    "pole": 3
+  },
+  "source_sha256": {
+    "DERIVATION.md": "c189c23016327e378cfd409e1883f3797b0e392386307c518a0eeca66514be72",
+    "README.md": "6005f1b76f329cd8f6b447267ec65a633d7fa849e4666cf12c21a6275ccffa9b",
+    "run_checks.py": "416d079ffb6ffc0f3738e63958900072474c4bb243fae2c170b65823dadb255a",
+    "verify.py": "d098de76b890d1974862ecd919b00387fcd68520e52ef0674c249b95a256fec8"
+  },
+  "summary": {
+    "complete_hepp_sectors": 908,
+    "convergence_preserving_cotree_shift_terms": 2082,
+    "convergent_sector_coordinate_checks": 430388,
+    "cotree_factorization_checks": 12700,
+    "graphs": 8,
+    "rejected_scalar_weight_witnesses": 501,
+    "tested_scalar_weights": 667
+  }
+}
