@@ -1,0 +1,25 @@
+# cartan_detector  2026-11-27 01:17:12
+A1 sl2(Kac A1) dim 3 rank 1: o'|_C mod p (3 samples): [0, 0, 0]  nonzero: False
+A2 sl3(Kac A2) dim 8 rank 2: o'|_C mod p (3 samples): [2040564329, 1869236703, 1457083692]  nonzero: True  o'|_C / det(h (x) p) = [Fraction(81, 1), Fraction(81, 1), Fraction(81, 1)] (kappa of the construction)
+A3 sl4(Kac A3) dim 15 rank 3: o'|_C mod p (3 samples): [1358413071, 629096895, 865117331]  nonzero: True
+A4 sl5(Kac A4) dim 24 rank 4: o'|_C mod p (3 samples): [804876554, 1697546069, 237830740]  nonzero: True
+A5 sl6(Kac A5) dim 35 rank 5: o'|_C mod p (3 samples): [75043293, 668300211, 1788034676]  nonzero: True
+A6 sl7(Kac A6) dim 48 rank 6: o'|_C mod p (3 samples): [1927695935, 68091279, 576638754]  nonzero: True
+A7 sl8(Kac A7) dim 63 rank 7: o'|_C mod p (3 samples): [1669386453, 436565839, 1977281080]  nonzero: True
+A8 sl9(Kac A8) dim 80 rank 8: o'|_C mod p (3 samples): [54831313, 338406315, 692711006]  nonzero: True
+B2 so5(fold D3) dim 10 rank 2: o'|_C mod p (3 samples): [1893146757, 1454291759, 1052856586]  nonzero: True  o'|_C / det(h (x) p) = [Fraction(32, 1), Fraction(32, 1), Fraction(32, 1)] (kappa of the construction)
+B3 so7(fold D4) dim 21 rank 3: o'|_C mod p (3 samples): [293889968, 252334679, 2134622530]  nonzero: True
+B4 so9(fold D5) dim 36 rank 4: o'|_C mod p (3 samples): [345210844, 347993414, 1692335627]  nonzero: True
+B5 so11(fold D6) dim 55 rank 5: o'|_C mod p (3 samples): [565870340, 1651840695, 1640290]  nonzero: True
+C3 sp6(fold A5) dim 21 rank 3: o'|_C mod p (3 samples): [1906276869, 1765176532, 98241818]  nonzero: True
+C4 sp8(fold A7) dim 36 rank 4: o'|_C mod p (3 samples): [976213425, 1612491673, 195929313]  nonzero: True
+C5 sp10(fold A9) dim 55 rank 5: o'|_C mod p (3 samples): [115360532, 1360366282, 752192765]  nonzero: True
+D4 so8(Kac D4) dim 28 rank 4: o'|_C mod p (3 samples): [2138740797, 1102487444, 753324487]  nonzero: True
+D5 so10(Kac D5) dim 45 rank 5: o'|_C mod p (3 samples): [1259011386, 1972308144, 342078915]  nonzero: True
+D6 so12(Kac D6) dim 66 rank 6: o'|_C mod p (3 samples): [1878582142, 1640034236, 1991647121]  nonzero: True
+G2 G2(fold D4) dim 14 rank 2: o'|_C mod p (3 samples): [753424094, 1014799852, 1375961810]  nonzero: True  o'|_C / det(h (x) p) = [Fraction(256, 3), Fraction(256, 3), Fraction(256, 3)] (kappa of the construction)
+F4 F4(fold E6) dim 52 rank 4: o'|_C mod p (3 samples): [428018134, 865037120, 539327716]  nonzero: True
+E6 E6(Kac) dim 78 rank 6: o'|_C mod p (3 samples): [374476219, 267527762, 1111739987]  nonzero: True
+E7 E7(Kac) dim 133 rank 7: o'|_C mod p (3 samples): [1396924877, 296176910, 1177390275]  nonzero: True
+E8 E8(Kac) dim 248 rank 8: o'|_C mod p (3 samples): [2049148342, 617127779, 1696147927]  nonzero: True
+# done in 6.0 s

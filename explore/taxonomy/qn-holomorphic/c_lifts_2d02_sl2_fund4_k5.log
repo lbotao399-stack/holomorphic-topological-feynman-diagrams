@@ -1,0 +1,5 @@
+theory 2d02 gauge sl2 matter fund*4 H=1 N=22; blocks {'g': 3, 'r': 8, 'g^v': 3, 'r^v': 8}
+charges (per block): [{'g': 0, 'g^v': 1, 'r': 1, 'r^v': 0}, {'g': 0, 'g^v': 1, 'r': 0, 'r^v': 1}]
+Q1 charge shift dq = (-1, -1)  letter shift -1
+nonzero d_1: []
+total time 52s

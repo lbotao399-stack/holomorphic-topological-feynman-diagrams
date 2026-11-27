@@ -50,6 +50,14 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 5. **hCS on $\mathbb C^3$ (open B-model / type I gauge sector)** (`explore/physics/anomalies/`): $\omega_3=-\tfrac{3}{64\pi^9}\Delta^3T_3$ with $\zeta_3$ cancelling; for $\mathfrak{so}(N)$, $T_3\supset\tfrac{(N-8)(N-5)(N+4)}{829440}\mathrm{tr}x^4$, Green–Schwarz-factorized at three loops exactly when at one loop ($\mathfrak{so}(8)$); $\omega_4\equiv0$ (50 graphs); no $SL_3$ counterterms.
 6. **Twisted holography of $\mathcal N=4$** (`explore/twisted-holography-N4/`): bulk–boundary single-trace dictionary (differs by $B^1$); the stable single-trace differential is linearly conjugate to its classical part; one-handle boundary term $6/N^2$ of planar $Q_2$, full colour factor $\to\sinh(x/2)/(x/2)$ for $n^2/N\to x$; Budzik–Gaiotto finite-$N$ complex $=E_1^{U(N)}$ ($N\le4$), and $k=2$ removes the $k=1$ excess at levels 16–20.
 
+### All twists of SYM, 10d to 2d (Elliott–Safronov–Williams taxonomy; `explore/taxonomy/`)
+
+1. Every ESW twist mapped to $\mathbb C^H\times\mathbb R^T$ and its class (`TAXONOMY.md`). BF and hypermultiplet twists: bulk graphs have $\le1$ loop. $T\ge2$: every loop kernel vanishes for all $H,n$. $T=1$: odd-loop kernels vanish for all $H$ (`one-loop/`).
+2. One-loop anomaly of every holomorphic twist: the $(H+1)$-gon has $c_H=(-1)^H/H!$, and the twisted obstruction equals minus the physical gauge anomaly polynomial in all 14 cases (2d (2,2), (0,2), (4,0), (4,4), (8,8), $(\mathcal N_+,0)$; 4d N=1, 2, 4; 6d (1,0), (1,1); 8d; 10d), including the adjoint/matter ratios (`one-loop/`).
+3. 9d twist $\mathrm{Map}(\mathbb C^4\times\mathbb R,B\mathfrak g)$: the two-loop obstruction $[O_2]=U'\hbar^2[F_{155}]/(7077888\pi^8)$ is nonzero for every simple $\mathfrak g\ne\mathfrak{sl}_2$; a $U(4)$-equivariant order-$\hbar$ counterterm cancels it only for $\mathfrak{sl}_3$ (in 5d it works for every $\mathfrak{sl}_{N\ge3}$). 10d hCS: $[O_1]\ne0$ for all $\mathfrak g$; Green–Schwarz factorization only for $\mathfrak{sl}_2,\mathfrak{so}_5,\mathfrak{so}_{32},E_8$ (`cs-class/`).
+4. Holomorphic engine (any $H$, any quadratic Lie superalgebra; `qn-holomorphic/`): reproduces Li–Liu–Chang in 4d; 4d N=2 lowest one-loop lifts $\propto b_0=2T(\mathrm{adj})-T(U)$, the one-loop $\beta$-function coefficient, absent at $SU(2)$, $N_f=4$; one-loop nilpotency holds exactly when the theory is anomaly-free (2d (0,2): $T(R)=T(\mathrm{adj})$; 4d N=1; 6d (1,0): $2\mathrm{tr}_{\rm adj}X^4=\mathrm{tr}_UX^4$); 8d $(Q^2)_{\hbar^2}=0$; 10d has no nilpotent $Q_1$.
+5. Holomorphic–topological engine (any $H$ at $T=1$; `qn-ht/`): $\{Q_0,Q_2\}=0$ for 3d N=4, N=8, 5d N=1 (both ESW forms agree), 5d N=2, 7d; $(Q^2)_{\hbar^4}=0$ in 3d N=4, N=8; no two-loop lifts in the scanned sectors.
+
 ### Feynman-diagram technology and other theories
 
 **Explicit integration of general product forests:** [Geometric rational series with an explicit remainder](explore/circuit-general/forest-cube-expansion/README.md). The sourced current rule now gives algebraic series coefficients by exact polynomial integration on every compact spanning-tree cube. A fraction-free augmented determinant retains the complete current-area form; exact division cancels every divisible Kirchhoff factor before integration. Every term is a finite rational calculation, and the centered binomial expansion supplies a finite rational tail formula and a sufficient order for any requested positive rational width. The exact result is the entire convergent series, with no unevaluated resistance integral or unspecified scalar period. [Direct JSON solver](code/solve_product_forest_cubes.py) accepts original current words, mixed-degree polynomials, and complete free-index tensors. Finite expressions in zeta values and full Wick/color sums retain their separate stated scopes.
@@ -125,6 +133,10 @@ $V_{1;0}=0$, and the elementary-field correction is nonzero at every genus $g\ge
 | 11d two-loop defect | `explore/sugra-11d-qme/collaboration/current_complex` | `cd mixed_integration && python3 six_conserving_nodes.py --verify-exact`; `python3 one_loop_lift.py` |
 | Ohm locality | `explore/circuit-general/locality` | `python3 check_locality.py`; `python3 check_locality_T1.py` |
 | 5d CS, order $\hbar^4$ (trees + marked theta graphs) | `deepen/o3/higher_orders` | `python3 order_four.py` |
+| one-loop anomalies of all holomorphic twists; vanishing theorems | `explore/taxonomy/one-loop` | `python3 supertrace.py`; `python3 -W ignore c4_s3.py`; `python3 -W ignore c4_s4.py` |
+| 9d $[O_2]$, $\mathfrak{sl}_2$ exact, $\mathfrak{sl}_3$ counterterm | `explore/taxonomy/cs-class` | `python3 small_N.py 2 3`; `python3 o2_9d_slN.py 9` |
+| holomorphic engine: LLC check, 4d N=2 lifts | `explore/taxonomy/qn-holomorphic` | `python3 n4_llc_check.py`; `python3 a_run_lifts.py 4dN2 sl2 fund 2 0 --flavour 1` |
+| holomorphic–topological engine | `explore/taxonomy/qn-ht` | `python3 check_h1_vs_3dN2.py`; `python3 test_nilp.py 3d_su2N8 3 1` |
 
 Python ≥ 3.10 with `numpy`, `sympy`, `networkx`; `python-flint>=0.9.0` for exact forest messages and sourced core periods; a C compiler for the `*.c` / `*.cpp` solvers. Scripts find the repository root through `.htp-root` or `HTP_ROOT`.
 
@@ -141,5 +153,6 @@ Not included: intermediate data above 0.5 MB (pickles, SQLite, binary caches, th
 | `explore/sugra-11d-qme/`, `explore/iib-bcov/`, `explore/kodaira-spencer/`, `explore/type-i/`, `explore/twistor-type-i/` | twisted supergravity and string field theories |
 | `explore/twisted-holography-N4/` | twisted holography of $\mathcal N=4$ |
 | `explore/physics/` | 6d nilpotency, 3d $\mathcal N=2$ supercharge, hCS anomalies |
+| `explore/taxonomy/` | all SYM twists (ESW): one-loop anomalies, vanishing theorems, 9d/10d CS classes, holomorphic and holomorphic–topological $Q_n$ engines |
 | other `explore/*` | fans, line defects, Poisson BF, MSYM, twistor bulk, two-loop universality |
 

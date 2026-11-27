@@ -1,0 +1,11 @@
+theory 4dN2 gauge sl2 matter fund*3 H=2 N=36 nmax=3 ops=3 seed=52 jetmax=1 P=2147483647
+  order 1 graphs: [('G1.1', 2, [(0, 1), (0, 2), (1, 2)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (0, 3), (1, 3), (2, 3)])]
+  order 3 graphs: [('G3.1', 2, [(0, 1), (1, 2), (2, 3), (0, 4), (1, 4), (2, 4), (3, 4)])]
+order 1: {Q0, hatQ_G} O = 0 on 6 test operators: True  (nonzero rows 0); hatQ_1 O != 0 on 6
+order 2: 1181 equations, rank 1, augmented rank 1, unknowns 1
+  kappa[G2.1] = 1/2   |Aut| = 2   kappa*|Aut| = 1
+  time 2.2s
+order 3: 1840 equations, rank 1, augmented rank 1, unknowns 1
+  kappa[G3.1] = 1/2   |Aut| = 2   kappa*|Aut| = 1
+  time 34.8s

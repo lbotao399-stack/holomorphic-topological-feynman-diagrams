@@ -1,0 +1,8 @@
+# h8_basis  2026-11-27 01:38:10
+N = 9: rank of {kkkk,t44,x,Q55,Q523,Q2323} mod B = 4
+   H^8 basis (greedy, trace products first): ['kkkk', 't44', 'Q2323', 'Q523']  coefficients mod B: {'F155': ['-24', '54', '-48', '-216/5'], 'Q55': ['0', '-25/18', '0', '0'], 'x': ['3/8', '0', '0', '0']}
+N = 12: rank of {kkkk,t44,x,Q55,Q523,Q2323} mod B = 4
+   H^8 basis (greedy, trace products first): ['kkkk', 't44', 'Q2323', 'Q523']  coefficients mod B: {'F155': ['-18', '72', '-48', '-288/5'], 'Q55': ['0', '-25/24', '0', '0'], 'x': ['3/8', '0', '0', '0']}
+N = 15: rank of {kkkk,t44,x,Q55,Q523,Q2323} mod B = 4
+   H^8 basis (greedy, trace products first): ['kkkk', 't44', 'Q2323', 'Q523']  coefficients mod B: {'F155': ['-72/5', '90', '-48', '-72'], 'Q55': ['0', '-5/6', '0', '0'], 'x': ['3/8', '0', '0', '0']}
+# done in 5.2 s

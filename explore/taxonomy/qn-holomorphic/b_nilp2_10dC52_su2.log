@@ -1,0 +1,17 @@
+theory x gauge su2 matter None H=5 N=12: order 2, O = gt1t2,gt1t2,gt1t2, jets {}, functionals g,g,g,g,g,g,g,gt1,gt2, F = 4, seed 206, P = 2147483647
+blocks: {'g': 3, 'gt1': 3, 'gt2': 3, 'gt1t2': 3}
+  [G2.4: block-triangular numeric density]
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (4, 5)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (0, 9), (4, 9), (8, 9)]), ('G2.2', 1, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (4, 6), (5, 7), (7, 8), (0, 9), (6, 9), (8, 9)]), ('G2.3', 2, [(0, 1), (1, 2), (2, 3), (2, 4), (3, 5), (4, 6), (5, 7), (7, 8), (0, 9), (6, 9), (8, 9)]), ('G2.4', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (3, 5), (4, 6), (5, 7), (6, 8), (0, 9), (7, 9), (8, 9)])]
+  <hatQ[Q0] hatQ[G2.1] O>: [0, 0, 0, 0]   (histories 3456, keys 0, colour 60s, total 60s)
+  <hatQ[Q0] hatQ[G2.2] O>: [0, 0, 0, 0]   (histories 3456, keys 0, colour 64s, total 64s)
+  <hatQ[Q0] hatQ[G2.3] O>: [0, 0, 0, 0]   (histories 3456, keys 0, colour 63s, total 63s)
+  <hatQ[Q0] hatQ[G2.4] O>: [0, 0, 0, 0]   (histories 3456, keys 0, colour 66s, total 66s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [0, 0, 0, 0]   (histories 4320, keys 0, colour 79s, total 79s)
+  <hatQ[G2.1] hatQ[Q0] O>: [0, 0, 0, 0]   (histories 2592, keys 0, colour 42s, total 42s)
+  <hatQ[G2.2] hatQ[Q0] O>: [0, 0, 0, 0]   (histories 2592, keys 0, colour 39s, total 39s)
+  <hatQ[G2.3] hatQ[Q0] O>: [0, 0, 0, 0]   (histories 2592, keys 0, colour 47s, total 47s)
+  <hatQ[G2.4] hatQ[Q0] O>: [0, 0, 0, 0]   (histories 2592, keys 0, colour 47s, total 47s)
+kappa_2 system: 4 equations, rank 0, augmented rank 0 (unknowns 4)
+consistent but underdetermined (rank 0 < 4)
+total time 506s

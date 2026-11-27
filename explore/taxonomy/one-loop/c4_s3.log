@@ -1,0 +1,24 @@
+A. generic symmetric M, independent dM_ab, random 2n-plane, mod p
+  n=2 p=2305843009213693951: Pf != 0: True;  Pf^Pf = 0: True;  tr(X^X)^j = 0 for j=1..2: True   (0.0s)
+  n=2 p=1000000007: Pf != 0: True;  Pf^Pf = 0: True;  tr(X^X)^j = 0 for j=1..2: True   (0.0s)
+  n=4 p=2305843009213693951: Pf != 0: True;  Pf^Pf = 0: True;  tr(X^X)^j = 0 for j=1..4: True   (0.1s)
+  n=4 p=1000000007: Pf != 0: True;  Pf^Pf = 0: True;  tr(X^X)^j = 0 for j=1..4: True   (0.1s)
+  n=6 p=2305843009213693951: Pf != 0: True;  Pf^Pf = 0: True;  tr(X^X)^j = 0 for j=1..6: True   (11.3s)
+  n=6 p=1000000007: Pf != 0: True;  Pf^Pf = 0: True;  tr(X^X)^j = 0 for j=1..6: True   (8.9s)
+  n=8 p=2305843009213693951: Pf != 0: True;  Pf^Pf = 0: True;  traces not computed   (12.4s)
+B. graphs
+  skeletons n=2: 1 multigraphs (0 with m >= 2n+1);  rho_n != 0 on 1;  rho^rho = 0 on all: True   (0.0s)
+  skeletons n=3: 4 multigraphs (0 with m >= 2n+1);  rho_n != 0 on 0;  rho^rho = 0 on all: True   (0.0s)
+  skeletons n=4: 17 multigraphs (5 with m >= 2n+1);  rho_n != 0 on 17;  rho^rho = 0 on all: True   (0.7s)
+  random cubic skeletons n=6 (m=15) x6, mod p: rho != 0: True; rho^rho = 0: True   (0.8s)
+  random cubic skeletons n=8 (m=21) x1, mod p, 16-plane: rho != 0: True; rho^rho = 0: True   (14.2s)
+  chain-sum pullback (C_ae C_be constant along every chain), admissible graphs:
+    D=5 n=2: 4 graphs, chain counts [3]; C_ae C_be constant on chains: True   (0.0s)
+    D=6 n=2: 5 graphs, chain counts [3]; C_ae C_be constant on chains: True   (0.0s)
+    D=5 n=3: 116 graphs, chain counts [4, 5, 6]; C_ae C_be constant on chains: True   (0.9s)
+    D=6 n=3: 242 graphs, chain counts [4, 5, 6]; C_ae C_be constant on chains: True   (3.5s)
+  admissible D=5 n=2: 4 graphs (thetas), exact: rho_2 != 0: True, rho_2^rho_2 = 0: True
+  admissible D=6 n=2: 5 graphs (thetas), exact: rho_2 != 0: True, rho_2^rho_2 = 0: True
+  admissible D=4 n=4 (|I|=17): 8 random subdivisions of 6-vertex skeletons, mod p, 8-plane: rho_4 != 0: True, rho_4^rho_4 = 0: True   (0.7s)
+  admissible D=5 n=4 (|I|=21): 8 random subdivisions of 6-vertex skeletons, mod p, 8-plane: rho_4 != 0: True, rho_4^rho_4 = 0: True   (0.7s)
+  admissible D=6 n=4 (|I|=25): 8 random subdivisions of 6-vertex skeletons, mod p, 8-plane: rho_4 != 0: True, rho_4^rho_4 = 0: True   (0.8s)

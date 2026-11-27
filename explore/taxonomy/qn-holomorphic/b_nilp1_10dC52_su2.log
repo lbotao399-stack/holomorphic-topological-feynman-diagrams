@@ -1,0 +1,9 @@
+theory x gauge su2 matter None H=5 N=12: order 1, O = gt1t2,gt1t2, jets {}, functionals g,g,g,g,g,gt1t2, F = 3, seed 202, P = 2147483647
+blocks: {'g': 3, 'gt1': 3, 'gt2': 3, 'gt1t2': 3}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (4, 5)])]
+  <hatQ[Q0] hatQ[G1.1] O>: [858997478, 429904419, 286333778]   (histories 60, keys 5, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[Q0] O>: [1288486169, 1717579228, 1861149869]   (histories 64, keys 1, colour 0s, total 0s)
+kappa_1 system: 3 equations, rank 0, augmented rank 0 (unknowns 1)
+order 1 residuals {Q0,hatQ_G}: {'G1.1': [0, 0, 0]}
+consistent but underdetermined (rank 0 < 1)
+total time 1s

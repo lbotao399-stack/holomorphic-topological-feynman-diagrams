@@ -1,0 +1,5 @@
+theory: 5d N=1 SU(2) + half-hyper (U//g) ; weights in units of 1/2; first 1 sectors with a representative z, Q2^hat z != 0
+w=(Fraction(2, 1), Fraction(2, 1)) charges=(0, 0) grade 0: z = -2*B_0 c_0 c_1 c_2 u0_0 u0_0 + 1*B_2 c_0 c_1 c_2 u0_0 u0_1
+    Q2^hat z = 27/10*c_0 d2c_0 d1c_0 c_1 d2c_1 d1c_1 c_2 + 27/5*c_0 d2c_0 c_1 d1c_1 c_2 d2c_2 d1c_2 + -27/5*c_0 d1c_0 c_1 d2c_1 c_2 d2c_2 d1c_2
+    y = -27/20*c_0 d2c_0 c_1 d2c_1 c_2 d1d1c_2 + 27/10*c_0 d2c_0 c_1 d1d2c_1 c_2 d1c_2 + -27/20*c_0 d1c_0 c_1 d2d2c_1 c_2 d1c_2 ;  Q0 y - Q2^hat z = 0
+[2s]

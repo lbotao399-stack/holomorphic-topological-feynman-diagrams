@@ -1,0 +1,8 @@
+theory: 3d U(1) charges [1] ; weights in units of 1/4; first 2 sectors with a representative z, Q2^hat z != 0
+w=(Fraction(3, 1),) charges=(0, 0) grade 4: z = -1/2*B_0 B_0 d1c_0 + 1*B_0 d1p0_0 s0_0
+    Q2^hat z = 1/2*d1c_0 d1d1c_0
+    NOT Q0-exact (lift)
+w=(Fraction(3, 1),) charges=(0, 0) grade 8: z = -1/2*B_0 B_0 c_0 d1c_0 + 1*B_0 c_0 d1p0_0 s0_0
+    Q2^hat z = -1/2*c_0 d1c_0 d1d1c_0
+    NOT Q0-exact (lift)
+[2s]

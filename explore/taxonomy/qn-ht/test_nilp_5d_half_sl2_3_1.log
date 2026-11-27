@@ -1,0 +1,5 @@
+theory: 5d N=1 SU(2) + half-hyper fund (U//g) (H,T) = (2,1), D = 3; interaction terms 6; shapes: theta(1, 3, 3)@N |Aut|=2, theta(1, 3, 3)@(1, 1) |Aut|=1, theta(2, 2, 3)@N |Aut|=2, theta(2, 2, 3)@(0, 1) |Aut|=2, theta(2, 2, 3)@(2, 1) |Aut|=2 [setup 2.0s]
+710 monomials (deg 2..3, total derivatives <= 1): Q2^hat != 0 on 220 (tadpole-type part != 0 on 175); Q0 Q2 and Q2 Q0 both != 0 on 217; {Q0,Q2} != 0 on 0
+   fan-type part alone: {Q0,.} != 0 on 126; tadpole-type part alone: 126
+   control (weight of one shape doubled): failures {'theta(1, 3, 3)@N': 182, 'theta(1, 3, 3)@(1, 1)': 126, 'theta(2, 2, 3)@N': 182, 'theta(2, 2, 3)@(0, 1)': 126, 'theta(2, 2, 3)@(2, 1)': 126}
+   [13s]

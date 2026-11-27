@@ -1,0 +1,4 @@
+10d su2: O = sum_A d1 c^A d2 c^A: |hatQ1 O| = 0 monomials, |{Q0, hatQ1} O| = 0 monomials; derivative multiset []
+10d su2: O = eps_ABC d1 c^A d2 c^B d3 c^C: |hatQ1 O| = 4206 monomials, |{Q0, hatQ1} O| = 927 monomials; derivative multiset [((1, 1, 1, 1, 1, 1, 2), 927)]
+C^{5|2} su2 (x) Lambda2 (control): O = sum_A b^A d1 b^A: |hatQ1 O| = 0 monomials, |{Q0, hatQ1} O| = 0 monomials; derivative multiset []
+C^{5|2} su2 (x) Lambda2 (control): O = sum_A d1 c^A d2 b^A: |hatQ1 O| = 0 monomials, |{Q0, hatQ1} O| = 0 monomials; derivative multiset []

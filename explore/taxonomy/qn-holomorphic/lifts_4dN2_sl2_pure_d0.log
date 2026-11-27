@@ -1,0 +1,21 @@
+theory 4dN2 gauge sl2 matter None H=2 N=12; blocks {'g': 3, 'g^v': 3, 'g*': 3, 'g^v*': 3}
+charges (per block): [{'g': 0, 'g*': 1, 'g^v': 1, 'g^v*': 0}, {'g': 0, 'g*': 1, 'g^v': 0, 'g^v*': 1}]
+Q1 charge shift dq = (-1, -1)  letter shift 0
+sector q=(3, 0) d=(0, 0) k=3: monomials 1, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1), d=(1, 1), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2), d=(2, 2), k=2): rank 0
+sector q=(3, 1) d=(0, 0) k=3: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 0), d=(1, 1), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -1), d=(2, 2), k=2): rank 0
+sector q=(0, 4) d=(0, 0) k=4: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 3), d=(1, 1), k=4): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 2), d=(2, 2), k=3): rank 0
+sector q=(1, 3) d=(0, 0) k=4: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, 2), d=(1, 1), k=4): rank 1
+sector q=(1, 4) d=(0, 0) k=4: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, 3), d=(1, 1), k=4): rank 1
+sector q=(2, 3) d=(0, 0) k=4: monomials 12, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 2), d=(1, 1), k=4): rank 1
+sector q=(2, 4) d=(0, 0) k=4: monomials 8, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 3), d=(1, 1), k=4): rank 1
+sector q=(4, 2) d=(0, 0) k=5: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(3, 1), d=(1, 1), k=5): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, 0), d=(2, 2), k=4): rank 1
+sector q=(4, 3) d=(0, 0) k=5: monomials 12, invariants 2, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(3, 2), d=(1, 1), k=5): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, 1), d=(2, 2), k=4): rank 1
+sector q=(5, 2) d=(0, 0) k=5: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(4, 1), d=(1, 1), k=5): rank 1
+sector q=(5, 3) d=(0, 0) k=5: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(4, 2), d=(1, 1), k=5): rank 1
+nonzero d_1: [((1, 3), (0, 0), 4, 1, 1), ((1, 4), (0, 0), 4, 1, 1), ((2, 3), (0, 0), 4, 1, 1), ((2, 4), (0, 0), 4, 1, 1), ('d2', (4, 2), (0, 0), 5, 1), ('d2', (4, 3), (0, 0), 5, 1), ((5, 2), (0, 0), 5, 1, 1), ((5, 3), (0, 0), 5, 1, 1)]
+total time 1s

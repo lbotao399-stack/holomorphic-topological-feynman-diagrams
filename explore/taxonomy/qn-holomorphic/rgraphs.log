@@ -1,0 +1,21 @@
+H=3 rooted_trees.counts: [1, 2, 5, 15, 49]
+H=2 n=1 trees 1  sum 1/Aut = 1/2  outputs [2]
+H=2 n=2 trees 1  sum 1/Aut = 1/2  outputs [2]
+H=2 n=3 trees 1  sum 1/Aut = 1/2  outputs [2]
+H=2 n=4 trees 1  sum 1/Aut = 1/2  outputs [2]
+H=3 n=1 trees 1  sum 1/Aut = 1/2  outputs [3]
+H=3 n=2 trees 2  sum 1/Aut = 1  outputs [4]
+H=3 n=3 trees 5  sum 1/Aut = 21/8  outputs [5]
+H=3 n=4 trees 15  sum 1/Aut = 8  outputs [6]
+H=4 n=1 trees 1  sum 1/Aut = 1/2  outputs [4]
+H=4 n=2 trees 3  sum 1/Aut = 5/3  outputs [6]
+H=4 n=3 trees 12  sum 1/Aut = 65/8  outputs [8]
+H=5 n=1 trees 1  sum 1/Aut = 1/2  outputs [5]
+H=5 n=2 trees 4  sum 1/Aut = 5/2  outputs [8]
+H=3 n=1 unicyclic 0
+H=3 n=2 unicyclic 3
+H=3 n=3 unicyclic 18
+H=4 n=1 unicyclic 0
+H=4 n=2 unicyclic 7
+H=5 n=1 unicyclic 0
+H=5 n=2 unicyclic 13

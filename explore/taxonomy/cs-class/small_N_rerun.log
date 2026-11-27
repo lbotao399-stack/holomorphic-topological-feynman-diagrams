@@ -1,0 +1,10 @@
+# small_N_rerun  2026-11-27 01:44:18
+prime p = 1048573  S7 = 40  S8 = 80
+sl_2: dim C^7_inv >= 1 (rank of 428 formal generators at 40 samples)
+sl_2: rank B = 1, rank[B;o'] = 1, rank[B;Q] = 1, rank[B;Q;o'] = 1  (S8 = 80), o' nonzero: True
+sl_2: o' = sum x_Q Q + B y solvable; x_Q = {'Q2323': Fraction(0, 1)}  residual at 30 fresh samples zero: True
+sl_2: o' in B; residual at fresh samples zero: True
+sl_3: dim C^7_inv >= 14 (rank of 428 formal generators at 40 samples)
+sl_3: rank B = 13, rank[B;o'] = 14, rank[B;Q] = 14, rank[B;Q;o'] = 14  (S8 = 80), o' nonzero: True
+sl_3: o' = sum x_Q Q + B y solvable; x_Q = {'Q2323': Fraction(-1, 256)}  residual at 30 fresh samples zero: True
+# done in 38.4 s

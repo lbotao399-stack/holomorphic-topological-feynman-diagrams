@@ -1,0 +1,4 @@
+graph [(0, 1), (1, 2), (2, 3), (2, 4), (3, 5), (4, 6), (0, 7), (5, 7), (6, 7)] aut 6 generic plan moves [[3, 3, 3]]
+  trial 0: blocktri I = 881363079 (mod P), htk.kernel_exact I = -539/480 -> equal True  [0.1s, 0.0s]
+  trial 1: blocktri I = 432479353 (mod P), htk.kernel_exact I = 1069/144 -> equal True  [0.0s, 0.0s]
+  trial 2: blocktri I = 758330136 (mod P), htk.kernel_exact I = -8591/320 -> equal True  [0.0s, 0.0s]

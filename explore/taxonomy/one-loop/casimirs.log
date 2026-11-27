@@ -1,0 +1,44 @@
+(a) explicit-matrix check of the generating-function traces, k = 2..6
+  sl(2): adj = V x V* - 1, Sym^2, Lambda^2: True
+  sl(3): adj = V x V* - 1, Sym^2, Lambda^2: True
+  sl(4): adj = V x V* - 1, Sym^2, Lambda^2: True
+  sl(5): adj = V x V* - 1, Sym^2, Lambda^2: True
+  so(3): adj = Lambda^2 V: True
+  so(4): adj = Lambda^2 V: True
+  so(5): adj = Lambda^2 V: True
+  so(6): adj = Lambda^2 V: True
+  so(7): adj = Lambda^2 V: True
+  so(8): adj = Lambda^2 V: True
+  sp(2): adj = Sym^2 V: True
+  sp(4): adj = Sym^2 V: True
+  sp(6): adj = Sym^2 V: True
+(b) Tr_adj x^k in p_j = tr_fund x^j (sl: p1 = 0; so, sp: p_odd = 0)
+  sl(N)  Tr_adj x^2            2*N*p2
+  sl(N)  Tr_adj x^3            0
+  sl(N)  Tr_adj x^4            2*(N*p4 + 3*p2**2)
+  sl(N)  Tr_adj x^5            0
+  sl(N)  Tr_adj x^6            2*(N*p6 + 15*p2*p4 - 10*p3**2)
+  so(N)  Tr_adj x^2            p2*(N - 2)
+  so(N)  Tr_adj x^4            N*p4 + 3*p2**2 - 8*p4
+  so(N)  Tr_adj x^6            N*p6 + 15*p2*p4 - 32*p6
+  sp(N)  Tr_adj x^2            p2*(N + 2)
+  sp(N)  Tr_adj x^4            N*p4 + 3*p2**2 + 8*p4
+  sp(N)  Tr_adj x^6            N*p6 + 15*p2*p4 + 32*p6
+  sl(N)  Tr_Lambda2 x^2        p2*(N - 2)
+  sl(N)  Tr_Sym2 x^2           p2*(N + 2)
+  sl(N)  Tr_Lambda2 x^3        p3*(N - 4)
+  sl(N)  Tr_Sym2 x^3           p3*(N + 4)
+  sl(N)  Tr_Lambda2 x^4        N*p4 + 3*p2**2 - 8*p4
+  sl(N)  Tr_Sym2 x^4           N*p4 + 3*p2**2 + 8*p4
+(c) S_H for classical gauge algebras
+  2d (0,2), sl(N), chirals n_f(N+Nb), Fermis n_F N:  S_1 = -p2*(2*N + n_F - 2*n_f)
+  2d (N+,0) pure: S_1 = -(N+/2) Tr_adj x^2 = -(N+/2) h^vee... (sl(N): -(N+) N p2)
+  4d N=1, sl(N): anomaly coefficients A(fund)=1, A(fund*)=-1, A(Lambda2) = N - 4 , A(Sym2) = N + 4 , A(adj) = 0
+  6d (1,0), sl(N), hypers n_f fund + n_A Lambda2 + n_S Sym2 (p3 terms dropped: absent from
+      Tr_adj, Lambda2, Sym2 at k=4 up to p1 p3 = 0):  S_3 = p2**2*(3*n_A + 3*n_S - 6) + p4*(N*n_A + N*n_S - 2*N - 8*n_A + 8*n_S + n_f)
+      irreducible p4 coefficient = 0  <=> Eq(N*n_A + N*n_S - 2*N - 8*n_A + 8*n_S + n_f, 0)
+  6d (1,0), so(N), n_v vector hypers:  S_3 = -3*p2**2 + p4*(-N + n_v + 8)
+  6d (1,0), sp(N), n_f fund hypers:    S_3 = -3*p2**2 + p4*(-N + n_f - 8)
+  10d hCS, so(N): S_5 = -Tr_adj x^6 / 2 = -15*p2*p4/2 + p6*(16 - N/2)  -> N = 32: S_5 = -15*p2*p4/2
+  10d hCS, sl(N): S_5 = -N*p6 - 15*p2*p4 + 10*p3**2
+(d) all explicit checks: True

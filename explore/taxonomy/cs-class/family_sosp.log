@@ -1,0 +1,22 @@
+# family_sosp  2026-11-27 01:36:14
+so(2n)    p = 2147483629: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n)    p = 2147483587: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n)    p = 2147483579: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n)    p = 2147483563: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n)    linear polynomial in n: root (CRT over 4 primes, rational reconstruction) = 267538073/149558016
+so(2n+1)  p = 2147483629: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n+1)  p = 2147483587: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n+1)  p = 2147483579: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n+1)  p = 2147483563: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+so(2n+1)  linear polynomial in n: root (CRT over 4 primes, rational reconstruction) = 192759065/149558016
+sp(2n)    p = 2147483629: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sp(2n)    p = 2147483587: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sp(2n)    p = 2147483579: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sp(2n)    p = 2147483563: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sp(2n)    linear polynomial in n: root (CRT over 4 primes, rational reconstruction) = -2125390183/149558016
+sl(n+1)   p = 2147483629: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sl(n+1)   p = 2147483587: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sl(n+1)   p = 2147483579: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sl(n+1)   p = 2147483563: values at n = [4, 5, 6, 7, 8, 9, 10, 11, 12] nonzero: True; polynomial degree 1 (verified on all 9 n); roots in F_p: 1
+sl(n+1)   linear polynomial in n: root (CRT over 4 primes, rational reconstruction) = -4094010517/212663223
+# done in 20.1 s

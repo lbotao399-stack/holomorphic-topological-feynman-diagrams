@@ -1,0 +1,5 @@
+theory: 7d N=1 SU(2) (BF Bg) (H,T) = (3,1), D = 4; interaction terms 3; shapes: theta(1, 4, 4)@N |Aut|=2, theta(1, 4, 4)@(1, 1) |Aut|=1, theta(1, 4, 4)@(1, 2) |Aut|=2, theta(2, 3, 4)@N |Aut|=1, theta(2, 3, 4)@(0, 1) |Aut|=2, theta(2, 3, 4)@(1, 1) |Aut|=1, theta(2, 3, 4)@(2, 1) |Aut|=1, theta(2, 3, 4)@(2, 2) |Aut|=2, theta(3, 3, 3)@N |Aut|=6, theta(3, 3, 3)@(0, 1) |Aut|=2 [setup 19.3s]
+488 monomials (deg 2..3, total derivatives <= 1): Q2^hat != 0 on 217 (tadpole-type part != 0 on 0); Q0 Q2 and Q2 Q0 both != 0 on 217; {Q0,Q2} != 0 on 0
+   fan-type part alone: {Q0,.} != 0 on 0; tadpole-type part alone: 0
+   control (weight of one shape doubled): failures {'theta(1, 4, 4)@N': 162, 'theta(2, 3, 4)@N': 162, 'theta(3, 3, 3)@N': 162}
+   [492s]

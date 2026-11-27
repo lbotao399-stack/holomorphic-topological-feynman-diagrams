@@ -1,0 +1,22 @@
+# cartan_j1  2026-11-27 01:34:31
+sl_3: Kac Cartan form = trace form of C^N: True
+A2 (sl3(Kac A2)): samples 6; rank{Q|_C} = 1, rank{Q|_C, o'|_C} = 1  -> o'|_C in span: True; Q keys [('T23', 'T23')]
+sl_4: Kac Cartan form = trace form of C^N: True
+A3 (sl4(Kac A3)): samples 6; rank{Q|_C} = 1, rank{Q|_C, o'|_C} = 2  -> o'|_C in span: False; Q keys [('T23', 'T23')]
+sl_5: Kac Cartan form = trace form of C^N: True
+A4 (sl5(Kac A4)): samples 6; rank{Q|_C} = 3, rank{Q|_C, o'|_C} = 3  -> o'|_C in span: True; Q keys [('T23', 'T23'), ('T5', 'T23'), ('T5', 'T5')]
+sl_6: Kac Cartan form = trace form of C^N: True
+A5 (sl6(Kac A5)): samples 6; rank{Q|_C} = 3, rank{Q|_C, o'|_C} = 4  -> o'|_C in span: False; Q keys [('T23', 'T23'), ('T5', 'T23'), ('T5', 'T5')]
+sl_7: Kac Cartan form = trace form of C^N: True
+A6 (sl7(Kac A6)): samples 6; rank{Q|_C} = 3, rank{Q|_C, o'|_C} = 4  -> o'|_C in span: False; Q keys [('T23', 'T23'), ('T5', 'T23'), ('T5', 'T5')]
+sl_8: Kac Cartan form = trace form of C^N: True
+A7 (sl8(Kac A7)): samples 6; rank{Q|_C} = 3, rank{Q|_C, o'|_C} = 4  -> o'|_C in span: False; Q keys [('T23', 'T23'), ('T5', 'T23'), ('T5', 'T5')]
+sl_9: Kac Cartan form = trace form of C^N: True
+A8 (sl9(Kac A8)): samples 6; rank{Q|_C} = 3, rank{Q|_C, o'|_C} = 4  -> o'|_C in span: False; Q keys [('T23', 'T23'), ('T5', 'T23'), ('T5', 'T5')]
+E6: 27 = W-orbit of fundamental weight 0  size 27
+E6: tr_27 X^5 on h nonzero: True
+E6 (E6(Kac)): samples 6; rank{Q|_C} = 1, rank{Q|_C, o'|_C} = 2  -> o'|_C in span: False; Q keys [('T5', 'T5')]
+so10: vector rep = W-orbit of fundamental weight 0  size 10
+so10: Pf|_h nonzero: True
+D5 (so10(Kac D5)): samples 6; rank{Q|_C} = 1, rank{Q|_C, o'|_C} = 2  -> o'|_C in span: False; Q keys [('Pf', 'Pf')]
+# done in 4.4 s

@@ -1,0 +1,9 @@
+# small_N_p1_N45  2026-11-27 01:27:19
+prime p = 1048573  S7 = 80  S8 = 220
+sl_4: dim C^7_inv >= 35 (rank of 428 formal generators at 80 samples)
+sl_4: rank B = 32, rank[B;o'] = 33, rank[B;Q] = 33, rank[B;Q;o'] = 34  (S8 = 220), o' nonzero: True
+sl_4: o' not in span(Q, B) at these coordinates
+sl_5: dim C^7_inv >= 37 (rank of 428 formal generators at 80 samples)
+sl_5: rank B = 34, rank[B;o'] = 35, rank[B;Q] = 37, rank[B;Q;o'] = 37  (S8 = 220), o' nonzero: True
+sl_5: o' = sum x_Q Q + B y solvable; x_Q = {'Q2323': Fraction(-5, 72), 'Q55': Fraction(-5, 64), 'Qmix': Fraction(5, 144)}  residual at 30 fresh samples zero: True
+# done in 90.3 s

@@ -1,0 +1,331 @@
+theory 2d22 gauge sl2 matter fund H=1 N=20; blocks {'g': 3, 'r': 2, 'ge1': 3, 're1': 2, 'g^v': 3, 'r^v': 2, 'ge1^v': 3, 're1^v': 2}
+charges (per block): [{'g': 0, 'g^v': 0, 'ge1': 1, 'ge1^v': -1, 'r': -1, 'r^v': 1, 're1': 0, 're1^v': 0}, {'g': 0, 'g^v': 1, 'ge1': 0, 'ge1^v': 1, 'r': 1, 'r^v': 0, 're1': 1, 're1^v': 0}, {'g': 0, 'g^v': 1, 'ge1': -1, 'ge1^v': 2, 'r': 1, 'r^v': 0, 're1': 0, 're1^v': 1}]
+Q1 charge shift dq = (0, -1, -1)  letter shift -1
+sector q=(-1, 1, 2) d=(0,) k=2: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 0, 1), d=(1,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-1, -1, 0), d=(2,), k=-1): rank 0
+sector q=(0, 0, 2) d=(0,) k=2: monomials 1, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, -1, 1), d=(1,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 0), d=(2,), k=-1): rank 0
+sector q=(0, 1, 1) d=(0,) k=2: monomials 7, invariants 3, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(0, 0, 0), d=(1,), k=1): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(0, -1, -1), d=(2,), k=-1): rank 0
+sector q=(1, 0, 1) d=(0,) k=2: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, 0), d=(1,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -1), d=(2,), k=-1): rank 0
+sector q=(1, 1, 0) d=(0,) k=2: monomials 5, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 0, -1), d=(1,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -1, -2), d=(2,), k=-1): rank 0
+sector q=(2, 0, -2) d=(0,) k=2: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1, -3), d=(1,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, -2, -4), d=(2,), k=-1): rank 0
+sector q=(-1, 1, 2) d=(1,) k=2: monomials 7, invariants 3, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(-1, 0, 1), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(-1, -1, 0), d=(3,), k=-1): rank 0
+sector q=(0, 0, 2) d=(1,) k=2: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, -1, 1), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 0), d=(3,), k=-1): rank 0
+sector q=(0, 1, 1) d=(1,) k=2: monomials 17, invariants 7, dim Z 3, rank B 0, dim H 3; d_1 -> (q=(0, 0, 0), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(0, -1, -1), d=(3,), k=-1): rank 0
+sector q=(1, 0, -1) d=(1,) k=2: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, -2), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -3), d=(3,), k=-1): rank 0
+sector q=(1, 0, 1) d=(1,) k=2: monomials 4, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, 0), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -1), d=(3,), k=-1): rank 0
+sector q=(1, 1, 0) d=(1,) k=2: monomials 10, invariants 4, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 0, -1), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -1, -2), d=(3,), k=-1): rank 0
+sector q=(2, 0, -2) d=(1,) k=2: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1, -3), d=(2,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, -2, -4), d=(3,), k=-1): rank 0
+sector q=(-1, 1, 2) d=(2,) k=2: monomials 12, invariants 5, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(-1, 0, 1), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(-1, -1, 0), d=(4,), k=-1): rank 0
+sector q=(0, 0, 2) d=(2,) k=2: monomials 3, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, -1, 1), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 0), d=(4,), k=-1): rank 0
+sector q=(0, 1, 1) d=(2,) k=2: monomials 27, invariants 11, dim Z 3, rank B 0, dim H 3; d_1 -> (q=(0, 0, 0), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(0, -1, -1), d=(4,), k=-1): rank 0
+sector q=(1, 0, -1) d=(2,) k=2: monomials 6, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, -2), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -3), d=(4,), k=-1): rank 0
+sector q=(1, 0, 1) d=(2,) k=2: monomials 6, invariants 3, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, 0), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -1), d=(4,), k=-1): rank 0
+sector q=(1, 1, 0) d=(2,) k=2: monomials 15, invariants 6, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 0, -1), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -1, -2), d=(4,), k=-1): rank 0
+sector q=(2, 0, -2) d=(2,) k=2: monomials 5, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1, -3), d=(3,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, -2, -4), d=(4,), k=-1): rank 0
+sector q=(-1, 1, 2) d=(3,) k=2: monomials 17, invariants 7, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(-1, 0, 1), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(-1, -1, 0), d=(5,), k=-1): rank 0
+sector q=(0, 0, 2) d=(3,) k=2: monomials 4, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, -1, 1), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 0), d=(5,), k=-1): rank 0
+sector q=(0, 1, 1) d=(3,) k=2: monomials 37, invariants 15, dim Z 3, rank B 0, dim H 3; d_1 -> (q=(0, 0, 0), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(0, -1, -1), d=(5,), k=-1): rank 0
+sector q=(1, 0, -1) d=(3,) k=2: monomials 9, invariants 3, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, -2), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -3), d=(5,), k=-1): rank 0
+sector q=(1, 0, 1) d=(3,) k=2: monomials 8, invariants 4, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, 0), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, -1), d=(5,), k=-1): rank 0
+sector q=(1, 1, 0) d=(3,) k=2: monomials 20, invariants 8, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 0, -1), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -1, -2), d=(5,), k=-1): rank 0
+sector q=(2, 0, -2) d=(3,) k=2: monomials 6, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1, -3), d=(4,), k=1): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, -2, -4), d=(5,), k=-1): rank 0
+sector q=(-3, 3, 4) d=(0,) k=3: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-3, 2, 3), d=(1,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-3, 1, 2), d=(2,), k=0): rank 0
+sector q=(-2, 3, 3) d=(0,) k=3: monomials 7, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 2, 2), d=(1,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 1, 1), d=(2,), k=0): rank 0
+sector q=(-3, 3, 4) d=(1,) k=3: monomials 7, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-3, 2, 3), d=(2,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-3, 1, 2), d=(3,), k=0): rank 0
+sector q=(-2, 3, 3) d=(1,) k=3: monomials 19, invariants 5, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 2, 2), d=(2,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 1, 1), d=(3,), k=0): rank 0
+sector q=(-3, 3, 4) d=(2,) k=3: monomials 14, invariants 4, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-3, 2, 3), d=(3,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-3, 1, 2), d=(4,), k=0): rank 0
+sector q=(-2, 3, 3) d=(2,) k=3: monomials 38, invariants 10, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 2, 2), d=(3,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 1, 1), d=(4,), k=0): rank 0
+sector q=(-3, 3, 4) d=(3,) k=3: monomials 22, invariants 6, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-3, 2, 3), d=(4,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-3, 1, 2), d=(5,), k=0): rank 0
+sector q=(-2, 3, 3) d=(3,) k=3: monomials 62, invariants 16, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 2, 2), d=(4,), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 1, 1), d=(5,), k=0): rank 0
+sector q=(-2, 2, 6) d=(0,) k=4: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 1, 5), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 0, 4), d=(2,), k=1): rank 0
+sector q=(-1, 2, 3) d=(0,) k=4: monomials 16, invariants 4, dim Z 3, rank B 2, dim H 1; d_1 -> (q=(-1, 1, 2), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (5 chains) -> (q=(-1, 0, 1), d=(2,), k=1): rank 0
+sector q=(-1, 2, 5) d=(0,) k=4: monomials 9, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 1, 4), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-1, 0, 3), d=(2,), k=1): rank 0
+sector q=(0, 1, 3) d=(0,) k=4: monomials 5, invariants 2, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(0, 0, 2), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(0, -1, 1), d=(2,), k=1): rank 0
+sector q=(0, 2, 2) d=(0,) k=4: monomials 48, invariants 12, dim Z 7, rank B 4, dim H 3; d_1 -> (q=(0, 1, 1), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (10 chains) -> (q=(0, 0, 0), d=(2,), k=1): rank 0
+sector q=(1, 1, 2) d=(0,) k=4: monomials 19, invariants 5, dim Z 4, rank B 2, dim H 2; d_1 -> (q=(1, 0, 1), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (5 chains) -> (q=(1, -1, 0), d=(2,), k=1): rank 0
+sector q=(1, 2, 1) d=(0,) k=4: monomials 48, invariants 10, dim Z 4, rank B 2, dim H 2; d_1 -> (q=(1, 1, 0), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (5 chains) -> (q=(1, 0, -1), d=(2,), k=1): rank 0
+sector q=(2, 1, -1) d=(0,) k=4: monomials 18, invariants 3, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(2, 0, -2), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, -1, -3), d=(2,), k=1): rank 0
+sector q=(2, 1, 1) d=(0,) k=4: monomials 23, invariants 4, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(2, 0, 0), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, -1, -1), d=(2,), k=1): rank 0
+sector q=(3, 1, -2) d=(0,) k=4: monomials 12, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(3, 0, -3), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(3, -1, -4), d=(2,), k=1): rank 0
+sector q=(4, 0, -4) d=(0,) k=4: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(4, -1, -5), d=(1,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(4, -2, -6), d=(2,), k=1): rank 0
+sector q=(-2, 2, 4) d=(1,) k=4: monomials 16, invariants 4, dim Z 3, rank B 2, dim H 1; d_1 -> (q=(-2, 1, 3), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(-2, 0, 2), d=(3,), k=1): rank 0
+sector q=(-2, 2, 6) d=(1,) k=4: monomials 9, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 1, 5), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 0, 4), d=(3,), k=1): rank 0
+sector q=(-1, 1, 4) d=(1,) k=4: monomials 5, invariants 2, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(-1, 0, 3), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(-1, -1, 2), d=(3,), k=1): rank 0
+sector q=(-1, 2, 3) d=(1,) k=4: monomials 106, invariants 24, dim Z 14, rank B 9, dim H 5; d_1 -> (q=(-1, 1, 2), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (16 chains) -> (q=(-1, 0, 1), d=(3,), k=1): rank 0
+sector q=(-1, 2, 5) d=(1,) k=4: monomials 38, invariants 8, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 1, 4), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-1, 0, 3), d=(3,), k=1): rank 0
+sector q=(0, 1, 3) d=(1,) k=4: monomials 41, invariants 12, dim Z 9, rank B 4, dim H 5; d_1 -> (q=(0, 0, 2), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (10 chains) -> (q=(0, -1, 1), d=(3,), k=1): rank 0
+sector q=(0, 2, 2) d=(1,) k=4: monomials 229, invariants 49, dim Z 20, rank B 12, dim H 8; d_1 -> (q=(0, 1, 1), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (23 chains) -> (q=(0, 0, 0), d=(3,), k=1): rank 0
+sector q=(1, 0, 3) d=(1,) k=4: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, 2), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(1, -2, 1), d=(3,), k=1): rank 0
+sector q=(1, 1, 0) d=(1,) k=4: monomials 54, invariants 10, dim Z 8, rank B 6, dim H 2; d_1 -> (q=(1, 0, -1), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(1, -1, -2), d=(3,), k=1): rank 0
+sector q=(1, 1, 2) d=(1,) k=4: monomials 97, invariants 23, dim Z 11, rank B 5, dim H 6; d_1 -> (q=(1, 0, 1), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (12 chains) -> (q=(1, -1, 0), d=(3,), k=1): rank 0
+sector q=(1, 2, 1) d=(1,) k=4: monomials 204, invariants 42, dim Z 10, rank B 5, dim H 5; d_1 -> (q=(1, 1, 0), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (11 chains) -> (q=(1, 0, -1), d=(3,), k=1): rank 0
+sector q=(2, 0, 0) d=(1,) k=4: monomials 19, invariants 4, dim Z 4, rank B 3, dim H 1; d_1 -> (q=(2, -1, -1), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(2, -2, -2), d=(3,), k=1): rank 0
+sector q=(2, 0, 2) d=(1,) k=4: monomials 6, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1, 1), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, -2, 0), d=(3,), k=1): rank 0
+sector q=(2, 1, -1) d=(1,) k=4: monomials 84, invariants 15, dim Z 8, rank B 4, dim H 4; d_1 -> (q=(2, 0, -2), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(2, -1, -3), d=(3,), k=1): rank 0
+sector q=(2, 1, 1) d=(1,) k=4: monomials 91, invariants 18, dim Z 4, rank B 2, dim H 2; d_1 -> (q=(2, 0, 0), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(2, -1, -1), d=(3,), k=1): rank 0
+sector q=(2, 2, 0) d=(1,) k=4: monomials 65, invariants 13, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 1, -1), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, 0, -2), d=(3,), k=1): rank 0
+sector q=(3, 0, -3) d=(1,) k=4: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(3, -1, -4), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(3, -2, -5), d=(3,), k=1): rank 0
+sector q=(3, 0, -1) d=(1,) k=4: monomials 29, invariants 5, dim Z 3, rank B 2, dim H 1; d_1 -> (q=(3, -1, -2), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(3, -2, -3), d=(3,), k=1): rank 0
+sector q=(3, 1, -2) d=(1,) k=4: monomials 40, invariants 7, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(3, 0, -3), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(3, -1, -4), d=(3,), k=1): rank 0
+sector q=(4, 0, -4) d=(1,) k=4: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(4, -1, -5), d=(2,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(4, -2, -6), d=(3,), k=1): rank 0
+sector q=(-2, 2, 4) d=(2,) k=4: monomials 58, invariants 12, dim Z 7, rank B 5, dim H 2; d_1 -> (q=(-2, 1, 3), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (7 chains) -> (q=(-2, 0, 2), d=(4,), k=1): rank 0
+sector q=(-2, 2, 6) d=(2,) k=4: monomials 23, invariants 6, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 1, 5), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 0, 4), d=(4,), k=1): rank 0
+sector q=(-1, 1, 4) d=(2,) k=4: monomials 22, invariants 7, dim Z 5, rank B 2, dim H 3; d_1 -> (q=(-1, 0, 3), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (5 chains) -> (q=(-1, -1, 2), d=(4,), k=1): rank 0
+sector q=(-1, 2, 3) d=(2,) k=4: monomials 330, invariants 72, dim Z 31, rank B 20, dim H 11; d_1 -> (q=(-1, 1, 2), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (33 chains) -> (q=(-1, 0, 1), d=(4,), k=1): rank 0
+sector q=(-1, 2, 5) d=(2,) k=4: monomials 96, invariants 20, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 1, 4), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-1, 0, 3), d=(4,), k=1): rank 0
+sector q=(0, 0, 4) d=(2,) k=4: monomials 1, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, -1, 3), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 2), d=(4,), k=1): rank 0
+sector q=(0, 1, 1) d=(2,) k=4: monomials 55, invariants 11, dim Z 9, rank B 8, dim H 1; d_1 -> (q=(0, 0, 0), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(0, -1, -1), d=(4,), k=1): rank 0
+sector q=(0, 1, 3) d=(2,) k=4: monomials 130, invariants 35, dim Z 18, rank B 8, dim H 10; d_1 -> (q=(0, 0, 2), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (19 chains) -> (q=(0, -1, 1), d=(4,), k=1): rank 0
+sector q=(0, 2, 2) d=(2,) k=4: monomials 650, invariants 140, dim Z 41, rank B 25, dim H 16; d_1 -> (q=(0, 1, 1), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (44 chains) -> (q=(0, 0, 0), d=(4,), k=1): rank 0
+sector q=(1, 0, 1) d=(2,) k=4: monomials 20, invariants 5, dim Z 4, rank B 3, dim H 1; d_1 -> (q=(1, -1, 0), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(1, -2, -1), d=(4,), k=1): rank 0
+sector q=(1, 0, 3) d=(2,) k=4: monomials 6, invariants 3, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(1, -1, 2), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(1, -2, 1), d=(4,), k=1): rank 0
+sector q=(1, 1, 0) d=(2,) k=4: monomials 188, invariants 35, dim Z 21, rank B 15, dim H 6; d_1 -> (q=(1, 0, -1), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (22 chains) -> (q=(1, -1, -2), d=(4,), k=1): rank 0
+sector q=(1, 1, 2) d=(2,) k=4: monomials 266, invariants 62, dim Z 20, rank B 10, dim H 10; d_1 -> (q=(1, 0, 1), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (21 chains) -> (q=(1, -1, 0), d=(4,), k=1): rank 0
+sector q=(1, 2, 1) d=(2,) k=4: monomials 538, invariants 110, dim Z 18, rank B 10, dim H 8; d_1 -> (q=(1, 1, 0), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (19 chains) -> (q=(1, 0, -1), d=(4,), k=1): rank 0
+sector q=(2, 0, 0) d=(2,) k=4: monomials 66, invariants 15, dim Z 10, rank B 7, dim H 3; d_1 -> (q=(2, -1, -1), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (10 chains) -> (q=(2, -2, -2), d=(4,), k=1): rank 0
+sector q=(2, 0, 2) d=(2,) k=4: monomials 14, invariants 4, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, -1, 1), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, -2, 0), d=(4,), k=1): rank 0
+sector q=(2, 1, -1) d=(2,) k=4: monomials 233, invariants 42, dim Z 16, rank B 8, dim H 8; d_1 -> (q=(2, 0, -2), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (17 chains) -> (q=(2, -1, -3), d=(4,), k=1): rank 0
+sector q=(2, 1, 1) d=(2,) k=4: monomials 230, invariants 47, dim Z 7, rank B 4, dim H 3; d_1 -> (q=(2, 0, 0), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (7 chains) -> (q=(2, -1, -1), d=(4,), k=1): rank 0
+sector q=(2, 2, 0) d=(2,) k=4: monomials 160, invariants 30, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 1, -1), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(2, 0, -2), d=(4,), k=1): rank 0
+sector q=(3, 0, -3) d=(2,) k=4: monomials 18, invariants 3, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(3, -1, -4), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(3, -2, -5), d=(4,), k=1): rank 0
+sector q=(3, 0, -1) d=(2,) k=4: monomials 78, invariants 14, dim Z 6, rank B 4, dim H 2; d_1 -> (q=(3, -1, -2), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (6 chains) -> (q=(3, -2, -3), d=(4,), k=1): rank 0
+sector q=(3, 1, -2) d=(2,) k=4: monomials 96, invariants 17, dim Z 3, rank B 0, dim H 3; d_1 -> (q=(3, 0, -3), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(3, -1, -4), d=(4,), k=1): rank 0
+sector q=(4, 0, -4) d=(2,) k=4: monomials 14, invariants 3, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(4, -1, -5), d=(3,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(4, -2, -6), d=(4,), k=1): rank 0
+sector q=(-2, 2, 4) d=(3,) k=4: monomials 149, invariants 33, dim Z 15, rank B 10, dim H 5; d_1 -> (q=(-2, 1, 3), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (15 chains) -> (q=(-2, 0, 2), d=(5,), k=1): rank 0
+sector q=(-2, 2, 6) d=(3,) k=4: monomials 47, invariants 10, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-2, 1, 5), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-2, 0, 4), d=(5,), k=1): rank 0
+sector q=(-1, 1, 4) d=(3,) k=4: monomials 56, invariants 16, dim Z 9, rank B 4, dim H 5; d_1 -> (q=(-1, 0, 3), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(-1, -1, 2), d=(5,), k=1): rank 0
+sector q=(-1, 2, 3) d=(3,) k=4: monomials 758, invariants 162, dim Z 53, rank B 36, dim H 17; d_1 -> (q=(-1, 1, 2), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (55 chains) -> (q=(-1, 0, 1), d=(5,), k=1): rank 0
+sector q=(-1, 2, 5) d=(3,) k=4: monomials 194, invariants 40, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 1, 4), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-1, 0, 3), d=(5,), k=1): rank 0
+sector q=(0, 0, 4) d=(3,) k=4: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, -1, 3), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 2), d=(5,), k=1): rank 0
+sector q=(0, 1, 1) d=(3,) k=4: monomials 170, invariants 33, dim Z 21, rank B 18, dim H 3; d_1 -> (q=(0, 0, 0), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (21 chains) -> (q=(0, -1, -1), d=(5,), k=1): rank 0
+sector q=(0, 1, 3) d=(3,) k=4: monomials 298, invariants 76, dim Z 29, rank B 14, dim H 15; d_1 -> (q=(0, 0, 2), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (30 chains) -> (q=(0, -1, 1), d=(5,), k=1): rank 0
+sector q=(0, 2, 2) d=(3,) k=4: monomials 1394, invariants 290, dim Z 63, rank B 42, dim H 21; d_1 -> (q=(0, 1, 1), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (66 chains) -> (q=(0, 0, 0), d=(5,), k=1): rank 0
+sector q=(1, 0, 1) d=(3,) k=4: monomials 60, invariants 14, dim Z 9, rank B 7, dim H 2; d_1 -> (q=(1, -1, 0), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(1, -2, -1), d=(5,), k=1): rank 0
+sector q=(1, 0, 3) d=(3,) k=4: monomials 14, invariants 6, dim Z 3, rank B 0, dim H 3; d_1 -> (q=(1, -1, 2), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(1, -2, 1), d=(5,), k=1): rank 0
+sector q=(1, 1, 0) d=(3,) k=4: monomials 462, invariants 86, dim Z 40, rank B 29, dim H 11; d_1 -> (q=(1, 0, -1), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (41 chains) -> (q=(1, -1, -2), d=(5,), k=1): rank 0
+sector q=(1, 1, 2) d=(3,) k=4: monomials 566, invariants 130, dim Z 30, rank B 16, dim H 14; d_1 -> (q=(1, 0, 1), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (31 chains) -> (q=(1, -1, 0), d=(5,), k=1): rank 0
+sector q=(1, 2, 1) d=(3,) k=4: monomials 1110, invariants 226, dim Z 27, rank B 16, dim H 11; d_1 -> (q=(1, 1, 0), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (28 chains) -> (q=(1, 0, -1), d=(5,), k=1): rank 0
+sector q=(2, 0, -2) d=(3,) k=4: monomials 19, invariants 3, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(2, -1, -3), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, -2, -4), d=(5,), k=1): rank 0
+sector q=(2, 0, 0) d=(3,) k=4: monomials 158, invariants 32, dim Z 17, rank B 12, dim H 5; d_1 -> (q=(2, -1, -1), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (17 chains) -> (q=(2, -2, -2), d=(5,), k=1): rank 0
+sector q=(2, 0, 2) d=(3,) k=4: monomials 30, invariants 10, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(2, -1, 1), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, -2, 0), d=(5,), k=1): rank 0
+sector q=(2, 1, -1) d=(3,) k=4: monomials 496, invariants 90, dim Z 26, rank B 14, dim H 12; d_1 -> (q=(2, 0, -2), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (27 chains) -> (q=(2, -1, -3), d=(5,), k=1): rank 0
+sector q=(2, 1, 1) d=(3,) k=4: monomials 462, invariants 96, dim Z 10, rank B 6, dim H 4; d_1 -> (q=(2, 0, 0), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (10 chains) -> (q=(2, -1, -1), d=(5,), k=1): rank 0
+sector q=(2, 2, 0) d=(3,) k=4: monomials 325, invariants 65, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(2, 1, -1), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, 0, -2), d=(5,), k=1): rank 0
+sector q=(3, 0, -3) d=(3,) k=4: monomials 42, invariants 7, dim Z 4, rank B 1, dim H 3; d_1 -> (q=(3, -1, -4), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(3, -2, -5), d=(5,), k=1): rank 0
+sector q=(3, 0, -1) d=(3,) k=4: monomials 164, invariants 30, dim Z 9, rank B 6, dim H 3; d_1 -> (q=(3, -1, -2), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(3, -2, -3), d=(5,), k=1): rank 0
+sector q=(3, 1, -2) d=(3,) k=4: monomials 185, invariants 33, dim Z 4, rank B 0, dim H 4; d_1 -> (q=(3, 0, -3), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(3, -1, -4), d=(5,), k=1): rank 0
+sector q=(4, 0, -4) d=(3,) k=4: monomials 24, invariants 4, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(4, -1, -5), d=(4,), k=3): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(4, -2, -6), d=(5,), k=1): rank 0
+sector q=(-4, 4, 6) d=(0,) k=5: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-4, 3, 5), d=(1,), k=4): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-4, 2, 4), d=(2,), k=2): rank 0
+sector q=(-3, 4, 5) d=(0,) k=5: monomials 34, invariants 6, dim Z 4, rank B 2, dim H 2; d_1 -> (q=(-3, 3, 4), d=(1,), k=4): rank 0
+    d_2 on ker d_1 (5 chains) -> (q=(-3, 2, 3), d=(2,), k=2): rank 0
+sector q=(-2, 4, 4) d=(0,) k=5: monomials 65, invariants 11, dim Z 5, rank B 4, dim H 1; d_1 -> (q=(-2, 3, 3), d=(1,), k=4): rank 0
+    d_2 on ker d_1 (6 chains) -> (q=(-2, 2, 2), d=(2,), k=2): rank 0
+sector q=(1, 1, 4) d=(0,) k=5: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, 0, 3), d=(1,), k=4): rank 1
+sector q=(2, 1, 1) d=(0,) k=5: monomials 34, invariants 5, dim Z 3, rank B 2, dim H 1; d_1 -> (q=(2, 0, 0), d=(1,), k=4): rank 1
+sector q=(2, 1, 3) d=(0,) k=5: monomials 9, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 0, 2), d=(1,), k=4): rank 1
+sector q=(3, 0, 1) d=(0,) k=5: monomials 3, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(3, -1, 0), d=(1,), k=4): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(3, -2, -1), d=(2,), k=2): rank 0
+sector q=(3, 1, 0) d=(0,) k=5: monomials 44, invariants 7, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(3, 0, -1), d=(1,), k=4): rank 1
+sector q=(4, 0, 0) d=(0,) k=5: monomials 6, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(4, -1, -1), d=(1,), k=4): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(4, -2, -2), d=(2,), k=2): rank 0
+sector q=(-4, 4, 6) d=(1,) k=5: monomials 34, invariants 6, dim Z 4, rank B 2, dim H 2; d_1 -> (q=(-4, 3, 5), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(-4, 2, 4), d=(3,), k=2): rank 0
+sector q=(-3, 4, 5) d=(1,) k=5: monomials 170, invariants 29, dim Z 13, rank B 8, dim H 5; d_1 -> (q=(-3, 3, 4), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (14 chains) -> (q=(-3, 2, 3), d=(3,), k=2): rank 0
+sector q=(-2, 3, 5) d=(1,) k=5: monomials 235, invariants 38, dim Z 21, rank B 20, dim H 1; d_1 -> (q=(-2, 2, 4), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (23 chains) -> (q=(-2, 1, 3), d=(3,), k=2): rank 0
+sector q=(-2, 4, 4) d=(1,) k=5: monomials 330, invariants 56, dim Z 16, rank B 12, dim H 4; d_1 -> (q=(-2, 3, 3), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (17 chains) -> (q=(-2, 2, 2), d=(3,), k=2): rank 0
+sector q=(-1, 3, 4) d=(1,) k=5: monomials 600, invariants 94, dim Z 31, rank B 30, dim H 1; d_1 -> (q=(-1, 2, 3), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (34 chains) -> (q=(-1, 1, 2), d=(3,), k=2): rank 0
+sector q=(-1, 4, 3) d=(1,) k=5: monomials 310, invariants 54, dim Z 9, rank B 8, dim H 1; d_1 -> (q=(-1, 3, 2), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(-1, 2, 1), d=(3,), k=2): rank 0
+sector q=(0, 1, 5) d=(1,) k=5: monomials 4, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, 0, 4), d=(2,), k=4): rank 1
+sector q=(1, 1, 2) d=(1,) k=5: monomials 104, invariants 18, dim Z 13, rank B 12, dim H 1; d_1 -> (q=(1, 0, 1), d=(2,), k=4): rank 1
+sector q=(1, 1, 4) d=(1,) k=5: monomials 21, invariants 5, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(1, 0, 3), d=(2,), k=4): rank 2
+sector q=(2, 0, 2) d=(1,) k=5: monomials 7, invariants 2, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(2, -1, 1), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(2, -2, 0), d=(3,), k=2): rank 0
+sector q=(2, 1, 1) d=(1,) k=5: monomials 232, invariants 38, dim Z 16, rank B 14, dim H 2; d_1 -> (q=(2, 0, 0), d=(2,), k=4): rank 2
+sector q=(2, 1, 3) d=(1,) k=5: monomials 39, invariants 8, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 0, 2), d=(2,), k=4): rank 1
+sector q=(3, 0, 1) d=(1,) k=5: monomials 23, invariants 5, dim Z 3, rank B 1, dim H 2; d_1 -> (q=(3, -1, 0), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (3 chains) -> (q=(3, -2, -1), d=(3,), k=2): rank 0
+sector q=(3, 1, 0) d=(1,) k=5: monomials 212, invariants 34, dim Z 6, rank B 5, dim H 1; d_1 -> (q=(3, 0, -1), d=(2,), k=4): rank 1
+sector q=(4, 0, 0) d=(1,) k=5: monomials 25, invariants 4, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(4, -1, -1), d=(2,), k=4): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(4, -2, -2), d=(3,), k=2): rank 0
+sector q=(-4, 4, 6) d=(2,) k=5: monomials 105, invariants 18, dim Z 8, rank B 4, dim H 4; d_1 -> (q=(-4, 3, 5), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (8 chains) -> (q=(-4, 2, 4), d=(4,), k=2): rank 0
+sector q=(-3, 3, 6) d=(2,) k=5: monomials 131, invariants 23, dim Z 14, rank B 13, dim H 1; d_1 -> (q=(-3, 2, 5), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (14 chains) -> (q=(-3, 1, 4), d=(4,), k=2): rank 0
+sector q=(-3, 4, 5) d=(2,) k=5: monomials 531, invariants 91, dim Z 30, rank B 20, dim H 10; d_1 -> (q=(-3, 3, 4), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (31 chains) -> (q=(-3, 2, 3), d=(4,), k=2): rank 0
+sector q=(-2, 3, 5) d=(2,) k=5: monomials 831, invariants 134, dim Z 55, rank B 52, dim H 3; d_1 -> (q=(-2, 2, 4), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (57 chains) -> (q=(-2, 1, 3), d=(4,), k=2): rank 0
+sector q=(-2, 4, 4) d=(2,) k=5: monomials 1040, invariants 178, dim Z 40, rank B 32, dim H 8; d_1 -> (q=(-2, 3, 3), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (41 chains) -> (q=(-2, 2, 2), d=(4,), k=2): rank 0
+sector q=(-1, 3, 2) d=(2,) k=5: monomials 612, invariants 108, dim Z 55, rank B 54, dim H 1; d_1 -> (q=(-1, 2, 1), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (59 chains) -> (q=(-1, 1, 0), d=(4,), k=2): rank 0
+sector q=(-1, 3, 4) d=(2,) k=5: monomials 1992, invariants 313, dim Z 80, rank B 78, dim H 2; d_1 -> (q=(-1, 2, 3), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (84 chains) -> (q=(-1, 1, 2), d=(4,), k=2): rank 0
+sector q=(-1, 4, 3) d=(2,) k=5: monomials 992, invariants 172, dim Z 22, rank B 20, dim H 2; d_1 -> (q=(-1, 3, 2), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (22 chains) -> (q=(-1, 2, 1), d=(4,), k=2): rank 0
+sector q=(0, 1, 5) d=(2,) k=5: monomials 17, invariants 4, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, 0, 4), d=(3,), k=4): rank 1
+sector q=(0, 3, 1) d=(2,) k=5: monomials 768, invariants 130, dim Z 46, rank B 45, dim H 1; d_1 -> (q=(0, 2, 0), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (48 chains) -> (q=(0, 1, -1), d=(4,), k=2): rank 0
+sector q=(1, 1, 2) d=(2,) k=5: monomials 448, invariants 78, dim Z 43, rank B 42, dim H 1; d_1 -> (q=(1, 0, 1), d=(3,), k=4): rank 1
+sector q=(1, 1, 4) d=(2,) k=5: monomials 67, invariants 16, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(1, 0, 3), d=(3,), k=4): rank 2
+sector q=(2, 0, 2) d=(2,) k=5: monomials 33, invariants 8, dim Z 4, rank B 3, dim H 1; d_1 -> (q=(2, -1, 1), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (4 chains) -> (q=(2, -2, 0), d=(4,), k=2): rank 0
+sector q=(2, 1, 1) d=(2,) k=5: monomials 796, invariants 132, dim Z 42, rank B 40, dim H 2; d_1 -> (q=(2, 0, 0), d=(3,), k=4): rank 2
+sector q=(2, 1, 3) d=(2,) k=5: monomials 109, invariants 23, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 0, 2), d=(3,), k=4): rank 1
+sector q=(3, 0, 1) d=(2,) k=5: monomials 73, invariants 16, dim Z 5, rank B 3, dim H 2; d_1 -> (q=(3, -1, 0), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (5 chains) -> (q=(3, -2, -1), d=(4,), k=2): rank 0
+sector q=(3, 1, 0) d=(2,) k=5: monomials 637, invariants 104, dim Z 14, rank B 13, dim H 1; d_1 -> (q=(3, 0, -1), d=(3,), k=4): rank 1
+sector q=(4, 0, 0) d=(2,) k=5: monomials 67, invariants 12, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(4, -1, -1), d=(3,), k=4): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(4, -2, -2), d=(4,), k=2): rank 0
+sector q=(-4, 4, 6) d=(3,) k=5: monomials 256, invariants 44, dim Z 16, rank B 10, dim H 6; d_1 -> (q=(-4, 3, 5), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (16 chains) -> (q=(-4, 2, 4), d=(5,), k=2): rank 0
+sector q=(-3, 3, 6) d=(3,) k=5: monomials 365, invariants 60, dim Z 28, rank B 26, dim H 2; d_1 -> (q=(-3, 2, 5), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (28 chains) -> (q=(-3, 1, 4), d=(5,), k=2): rank 0
+sector q=(-3, 4, 5) d=(3,) k=5: monomials 1274, invariants 217, dim Z 55, rank B 40, dim H 15; d_1 -> (q=(-3, 3, 4), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (56 chains) -> (q=(-3, 2, 3), d=(5,), k=2): rank 0
+sector q=(-2, 3, 3) d=(3,) k=5: monomials 637, invariants 114, dim Z 62, rank B 61, dim H 1; d_1 -> (q=(-2, 2, 2), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (64 chains) -> (q=(-2, 1, 1), d=(5,), k=2): rank 0
+sector q=(-2, 3, 5) d=(3,) k=5: monomials 2166, invariants 345, dim Z 111, rank B 106, dim H 5; d_1 -> (q=(-2, 2, 4), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (114 chains) -> (q=(-2, 1, 3), d=(5,), k=2): rank 0
+sector q=(-2, 4, 4) d=(3,) k=5: monomials 2504, invariants 428, dim Z 72, rank B 60, dim H 12; d_1 -> (q=(-2, 3, 3), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (73 chains) -> (q=(-2, 2, 2), d=(5,), k=2): rank 0
+sector q=(-1, 3, 2) d=(3,) k=5: monomials 1610, invariants 282, dim Z 119, rank B 116, dim H 3; d_1 -> (q=(-1, 2, 1), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (124 chains) -> (q=(-1, 1, 0), d=(5,), k=2): rank 0
+sector q=(-1, 3, 4) d=(3,) k=5: monomials 4979, invariants 789, dim Z 163, rank B 160, dim H 3; d_1 -> (q=(-1, 2, 3), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (168 chains) -> (q=(-1, 1, 2), d=(5,), k=2): rank 0
+sector q=(-1, 4, 3) d=(3,) k=5: monomials 2428, invariants 422, dim Z 43, rank B 40, dim H 3; d_1 -> (q=(-1, 3, 2), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (43 chains) -> (q=(-1, 2, 1), d=(5,), k=2): rank 0
+sector q=(0, 1, 5) d=(3,) k=5: monomials 51, invariants 12, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(0, 0, 4), d=(4,), k=4): rank 1
+sector q=(0, 3, 1) d=(3,) k=5: monomials 1936, invariants 328, dim Z 94, rank B 92, dim H 2; d_1 -> (q=(0, 2, 0), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (97 chains) -> (q=(0, 1, -1), d=(5,), k=2): rank 0
+sector q=(1, 1, 2) d=(3,) k=5: monomials 1302, invariants 228, dim Z 101, rank B 100, dim H 1; d_1 -> (q=(1, 0, 1), d=(4,), k=4): rank 1
+sector q=(1, 1, 4) d=(3,) k=5: monomials 167, invariants 38, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(1, 0, 3), d=(4,), k=4): rank 2
+sector q=(2, 0, 2) d=(3,) k=5: monomials 97, invariants 23, dim Z 9, rank B 8, dim H 1; d_1 -> (q=(2, -1, 1), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (9 chains) -> (q=(2, -2, 0), d=(5,), k=2): rank 0
+sector q=(2, 1, 1) d=(3,) k=5: monomials 2036, invariants 342, dim Z 88, rank B 86, dim H 2; d_1 -> (q=(2, 0, 0), d=(4,), k=4): rank 2
+sector q=(2, 1, 3) d=(3,) k=5: monomials 245, invariants 51, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(2, 0, 2), d=(4,), k=4): rank 1
+sector q=(3, 0, 1) d=(3,) k=5: monomials 179, invariants 38, dim Z 8, rank B 6, dim H 2; d_1 -> (q=(3, -1, 0), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (8 chains) -> (q=(3, -2, -1), d=(5,), k=2): rank 0
+sector q=(3, 1, 0) d=(3,) k=5: monomials 1486, invariants 244, dim Z 27, rank B 26, dim H 1; d_1 -> (q=(3, 0, -1), d=(4,), k=4): rank 1
+sector q=(4, 0, 0) d=(3,) k=5: monomials 146, invariants 27, dim Z 2, rank B 1, dim H 1; d_1 -> (q=(4, -1, -1), d=(4,), k=4): rank 0
+    d_2 on ker d_1 (2 chains) -> (q=(4, -2, -2), d=(5,), k=2): rank 0
+nonzero d_1: [((1, 1, 4), (0,), 5, 1, 1), ((2, 1, 1), (0,), 5, 1, 1), ((2, 1, 3), (0,), 5, 1, 1), ((3, 1, 0), (0,), 5, 1, 1), ((0, 1, 5), (1,), 5, 1, 1), ((1, 1, 2), (1,), 5, 1, 1), ((1, 1, 4), (1,), 5, 2, 2), ((2, 1, 1), (1,), 5, 2, 2), ((2, 1, 3), (1,), 5, 1, 1), ((3, 1, 0), (1,), 5, 1, 1), ((0, 1, 5), (2,), 5, 1, 1), ((1, 1, 2), (2,), 5, 1, 1), ((1, 1, 4), (2,), 5, 2, 2), ((2, 1, 1), (2,), 5, 2, 2), ((2, 1, 3), (2,), 5, 1, 1), ((3, 1, 0), (2,), 5, 1, 1), ((0, 1, 5), (3,), 5, 1, 1), ((1, 1, 2), (3,), 5, 1, 1), ((1, 1, 4), (3,), 5, 2, 2), ((2, 1, 1), (3,), 5, 2, 2), ((2, 1, 3), (3,), 5, 1, 1), ((3, 1, 0), (3,), 5, 1, 1)]
+total time 1966s

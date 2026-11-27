@@ -1,0 +1,4 @@
+2d02 sl2 fund*4: hatQ1(letter) = 0: True; second-order rule on 60/60 random triples (hatQ1 != 0 on 26)
+2d22 sl2 fund: hatQ1(letter) = 0: True; second-order rule on 60/60 random triples (hatQ1 != 0 on 34)
+2d44 sl2 fund: hatQ1(letter) = 0: True; second-order rule on 60/60 random triples (hatQ1 != 0 on 29)
+2d88 sl2 None: hatQ1(letter) = 0: True; second-order rule on 60/60 random triples (hatQ1 != 0 on 29)

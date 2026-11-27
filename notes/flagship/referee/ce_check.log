@@ -1,0 +1,45 @@
+inv 3-tensor nullity mod p, sl2: 1
+======================================================================
+algebra sl2 dim 3 kappa = tr
+G-inv C^3_(2,2) generators: 9 | rank of d on them at 30 sample points: 2
+rank[d | F_223]          = 2 (rank increase => F_223 not exact)
+rank[d | F_133]          = 2
+rank[d | -3F133+2F223]   = 2
+rank[d | F_133+F_223]    = 2
+rank[d | beta]           = 2
+d(alt([q0q1]^2 f)) == 6 beta at all samples: True
+F_133+F_223 == c*beta at all samples: True  c = 8 (kappa = tr; Killing = r tr gives c_Killing = c/r^2)
+inv 3-tensor nullity mod p, sl3: 2
+======================================================================
+algebra sl3 dim 8 kappa = tr
+G-inv C^3_(2,2) generators: 18 | rank of d on them at 50 sample points: 3
+rank[d | F_223]          = 4 (rank increase => F_223 not exact)
+rank[d | F_133]          = 4
+rank[d | -3F133+2F223]   = 4
+rank[d | F_133+F_223]    = 3
+rank[d | beta]           = 3
+d(alt([q0q1]^2 f)) == 6 beta at all samples: True
+F_133+F_223 == c*beta at all samples: True  c = 18 (kappa = tr; Killing = r tr gives c_Killing = c/r^2)
+index-form W_133 == Thm 3.5 sl_N formula (N=3, 10 random points): True
+index-form W_223 == Thm 3.5 sl_N formula (N=3, 10 random points): True
+index-form -3W133+2W223 == Thm 3.5 W_tot first nine terms (N=3): True
+sl2 W_tot == -104 k12k34 + 16 k13k24 + 40 k14k23 (10 points): True
+sl2 (tr): F_133 = 56 beta_tr, F_223 = -48 beta_tr, exact at all samples: True
+sl2 converted to Killing (kappa=4tr => F->F/4, beta->4beta): F_133 = 7/2 beta_K, F_223 = -3 beta_K
+D alternating (20 pts, all 6 perms): True
+dD == 0 at all 50 samples: True
+{s0,w} == -dw (w = eta_4 + 3 eta_13), 15 samples: True | nonzero: True
+{s0,s0} == 0, 10 samples: True
+rank[d | (1/2){D,D}] = 4 (rank of d alone = 3 )
+(1/2){D,D} in span(d C^3_inv) + Q F_223 at samples (consistent): True | coefficient of F_223 = 1/108 | flagship a^2/(12N^2) at N=3: 1/108 -> True
+explicit identity (1/2){D,D} = F_223/108 + d eta_N at all samples: True | with -d eta_N: False
+alt([p1p2][p3p4]tr12tr34) class = -1/18 [F_223] (consistent True); flagship -1/(6N) = -1/18
+dF_223 == 0, dF_133 == 0 at 6 five-point samples (sl3): True True
+rank of S3-symmetrizations of the 4 weight-(1,1) monomials (exact, sympy): 1 => alt(m f) spans a space of dim <= this for any g with (T^3)^g = C f
+sl3: nullity mod p of invariance on T^3 = 2; generators 8; dim span C^3_inv,(1,1) >= 2; rank d >= 1
+so5: nullity mod p of invariance on T^3 = 1; generators 4; dim span C^3_inv,(1,1) >= 1; rank d >= 1
+   => if dim span == rank d, no nonzero closed G-inv weight-(1,1) 3-cochain: True
+so5 weight (1,0): G-inv generators alt(m f): 2; sample rank of cochains 0; sample rank of d 0
+so5 weight (2,0): G-inv generators alt(m f): 3; sample rank of cochains 1; sample rank of d 1
+so7: d(alt(q0^1 q0^2 f)) at 4 sample points: [-15232, -3600, 30016, 29760]  (nonzero => the unique G-inv weight-(1,1) 3-cochain is not closed, given dim (T^3)^g = 1 from flagship Prop 3.10)
+sp6: d(alt(q0^1 q0^2 f)) at 4 sample points: [-1872, -195040, 58064, -98840]  (nonzero => the unique G-inv weight-(1,1) 3-cochain is not closed, given dim (T^3)^g = 1 from flagship Prop 3.10)

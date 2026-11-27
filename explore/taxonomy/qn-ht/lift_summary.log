@@ -1,0 +1,24 @@
+lift_3d_sqed1_24.log: theory: 3d N=4 SQED Nf=1 q=1 (H,T)=(1,1)
+   finished: True; sectors listed: 55 (sum w <= 6); dim H(Q0) total 2126; cocycle basis vectors with Q2^hat z != 0: 2487; total rank d2: 0
+lift_3d_sqed2_16.log: theory: 3d N=4 SQED Nf=2 q=1 (H,T)=(1,1)
+   finished: True; sectors listed: 230 (sum w <= 4); dim H(Q0) total 2108; cocycle basis vectors with Q2^hat z != 0: 962; total rank d2: 0
+lift_3d_su2N4_1_14.log: theory: 3d N=4 SU(2) Nf=1 (H,T)=(1,1)
+   finished: False; sectors listed: 38 (sum w <= 7/2, last weight partial); dim H(Q0) total 190; cocycle basis vectors with Q2^hat z != 0: 4005; total rank d2: 0
+lift_3d_su2N4_pure_14.log: theory: 3d N=4 SU(2) pure (sl2) (H,T)=(1,1)
+   finished: False; sectors listed: 40 (sum w <= 5, last weight partial); dim H(Q0) total 388; cocycle basis vectors with Q2^hat z != 0: 22470; total rank d2: 0
+lift_3d_su2N8_10.log: theory: 3d N=8 SU(2) (sl2) (H,T)=(1,1)
+   finished: False; sectors listed: 126 (sum w <= 5/2, last weight partial); dim H(Q0) total 690; cocycle basis vectors with Q2^hat z != 0: 2929; total rank d2: 0
+lift_3d_u1chiral_16.log: theory: 3d U(1) charges [1] (H,T)=(1,1)
+   finished: True; sectors listed: 4 (sum w <= 4); dim H(Q0) total 26; cocycle basis vectors with Q2^hat z != 0: 18; total rank d2: 6
+lift_5d_N2_14.log: theory: 5d N=2 SU(2) (BF g/g) (H,T)=(2,1)
+   finished: False; sectors listed: 72 (sum w <= 7, last weight partial); dim H(Q0) total 766; cocycle basis vectors with Q2^hat z != 0: 1703; total rank d2: 0
+lift_5d_fund1_14.log: theory: 5d N=1 SU(2) + 1 hyper (BF R/g) (H,T)=(2,1)
+   finished: False; sectors listed: 18 (sum w <= 7, last weight partial); dim H(Q0) total 118; cocycle basis vectors with Q2^hat z != 0: 287; total rank d2: 0
+lift_5d_half_14.log: theory: 5d N=1 SU(2) + half-hyper (U//g) (H,T)=(2,1)
+   finished: True; sectors listed: 12 (sum w <= 7); dim H(Q0) total 102; cocycle basis vectors with Q2^hat z != 0: 3247; total rank d2: 0
+lift_5d_pure_8.log: theory: 5d N=1 SU(2) pure (BF Bg) (H,T)=(2,1)
+   finished: False; sectors listed: 14 (sum w <= 8, last weight partial); dim H(Q0) total 168; cocycle basis vectors with Q2^hat z != 0: 2152; total rank d2: 0
+lift_5d_u1q1_16.log: theory: 5d N=1 U(1) + 1 hyper q=1 (BF R/g) (H,T)=(2,1)
+   finished: True; sectors listed: 24 (sum w <= 8); dim H(Q0) total 958; cocycle basis vectors with Q2^hat z != 0: 10; total rank d2: 0
+lift_7d_pure_7.log: theory: 7d N=1 SU(2) (BF Bg) (H,T)=(3,1)
+   finished: False; sectors listed: 16 (sum w <= 6, last weight partial); dim H(Q0) total 102; cocycle basis vectors with Q2^hat z != 0: 5; total rank d2: 0

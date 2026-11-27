@@ -1,0 +1,3 @@
+theory 4dN1 gauge sl3 matter fund H=2 N=22 nmax=1 ops=4 seed=21 jetmax=1 P=2147483647
+  order 1 graphs: [('G1.1', 2, [(0, 1), (0, 2), (1, 2)])]
+order 1: {Q0, hatQ_G} O = 0 on 8 test operators: False  (nonzero rows 92); hatQ_1 O != 0 on 8

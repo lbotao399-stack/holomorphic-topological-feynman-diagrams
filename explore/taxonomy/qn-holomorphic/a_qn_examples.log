@@ -1,0 +1,125 @@
+4d N=2, gauge sl2, matter fund: blocks {'g': 3, 'u': 4, 'gv': 3, 'g*': 3, 'u*': 4, 'gv*': 3}
+charges per block: [{'g': 0, 'g*': 1, 'gv': 2, 'gv*': -1, 'u': 1, 'u*': 0}, {'g': 0, 'g*': 1, 'gv': 0, 'gv*': 1, 'u': 0, 'u*': 1}]
+Q_1  q=(-2, 2)  O ~ [('gv*', 'gv*')]  [Q0 O = 0]
+    O     = 1 Xv0* Xv1* + 1 Xv2* Xv2*
+    Q_1 O = 0
+Q_1  q=(0, 2)  O ~ [('g*', 'gv*')]  [Q0 O != 0]
+    O     = 1 X0* Xv0* + 1 X1* Xv1* + 1 X2* Xv2*
+    Q_1 O = 4 d2.X0 d1.Xv1* + -4 d1.X0 d2.Xv1* + 4 d2.X1 d1.Xv0* + -4 d1.X1 d2.Xv0* + 8 d2.X2 d1.Xv2* + -8 d1.X2 d2.Xv2*
+Q_1  q=(0, 2)  O ~ [('u*', 'u*')]  [Q0 O != 0]
+    O     = 1 u0* u1*
+    Q_1 O = 0
+Q_1  q=(0, 2)  O ~ [('u*', 'u*')]  [Q0 O != 0]
+    O     = 1 u0* u2* + 1 u1* u3*
+    Q_1 O = 1 d2.X0 d1.Xv1* + -1 d1.X0 d2.Xv1* + 1 d2.X1 d1.Xv0* + -1 d1.X1 d2.Xv0* + 2 d2.X2 d1.Xv2* + -2 d1.X2 d2.Xv2*
+Q_1  q=(0, 2)  O ~ [('u*', 'u*')]  [Q0 O != 0]
+    O     = 1 u2* u3*
+    Q_1 O = 0
+Q_1  q=(1, 1)  O ~ [('u', 'u*')]  [Q0 O != 0]
+    O     = 1 u0 u0* + 1 u1 u1*
+    Q_1 O = 1 d2.X0 d1.X1 + -1 d1.X0 d2.X1 + 2 d2.X2 d1.X2
+Q_1  q=(1, 1)  O ~ [('u', 'u*')]  [Q0 O != 0]
+    O     = -1 u0 u3* + 1 u1 u2*
+    Q_1 O = 0
+Q_1  q=(1, 1)  O ~ [('u', 'u*')]  [Q0 O != 0]
+    O     = -1 u2 u1* + 1 u3 u0*
+    Q_1 O = 0
+Q_1  q=(1, 1)  O ~ [('u', 'u*')]  [Q0 O != 0]
+    O     = 1 u2 u2* + 1 u3 u3*
+    Q_1 O = 1 d2.X0 d1.X1 + -1 d1.X0 d2.X1 + 2 d2.X2 d1.X2
+Q_1  q=(1, 1)  O ~ [('gv', 'gv*')]  [Q0 O != 0]
+    O     = 1 Xv0 Xv0* + 1 Xv1 Xv1* + 1 Xv2 Xv2*
+    Q_1 O = 4 d2.X0 d1.X1 + -4 d1.X0 d2.X1 + 8 d2.X2 d1.X2
+Q_1  q=(2, 0)  O ~ [('u', 'u')]  [Q0 O = 0]
+    O     = 1 u0 u2 + 1 u1 u3
+    Q_1 O = 0
+Q_1  q=(2, 2)  O ~ [('g*', 'g*')]  [Q0 O != 0]
+    O     = 4 X0* X1* + 1 X2* X2*
+    Q_1 O = 8 d2.X0 d1.X0* + -8 d1.X0 d2.X0* + 8 d2.X1 d1.X1* + -8 d1.X1 d2.X1* + 8 d2.X2 d1.X2* + -8 d1.X2 d2.X2* + -3 d2.u0 d1.u0* + 3 d1.u0 d2.u0* + -3 d2.u1 d1.u1* + 3 d1.u1 d2.u1* + -3 d2.u2 d1.u2* + 3 d1.u2 d2.u2* + -3 d2.u3 d1.u3* + 3 d1.u3 d2.u3* + ... (20 terms)
+Q_1  q=(3, 1)  O ~ [('g*', 'gv')]  [Q0 O != 0]
+    O     = 2 Xv0 X1* + 2 Xv1 X0* + 1 Xv2 X2*
+    Q_1 O = 8 d2.X0 d1.Xv0 + -8 d1.X0 d2.Xv0 + 8 d2.X1 d1.Xv1 + -8 d1.X1 d2.Xv1 + 8 d2.X2 d1.Xv2 + -8 d1.X2 d2.Xv2 + 3 d2.u0 d1.u2 + -3 d1.u0 d2.u2 + 3 d2.u1 d1.u3 + -3 d1.u1 d2.u3
+Q_2  q=(-1, 3)  O ~ [('gv*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -1 u0* u2* Xv2* + -1 u0* u3* Xv0* + -1 u1* u2* Xv1* + 1 u1* u3* Xv2*
+    Q_2 O = 0
+Q_2  q=(0, 2)  O ~ [('gv*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -1 u0 u0* Xv2* + -1 u0 u1* Xv1* + -1 u1 u0* Xv0* + 1 u1 u1* Xv2*
+    Q_2 O = 0
+Q_2  q=(0, 2)  O ~ [('gv*', 'u', 'u*')]  [Q0 O = 0]
+    O     = -1 u0 u2* Xv1* + 1 u0 u3* Xv2* + 1 u1 u2* Xv2* + 1 u1 u3* Xv0*
+    Q_2 O = 0
+Q_2  q=(0, 2)  O ~ [('gv*', 'u', 'u*')]  [Q0 O = 0]
+    O     = -1 u2 u0* Xv0* + 1 u2 u1* Xv2* + 1 u3 u0* Xv2* + 1 u3 u1* Xv1*
+    Q_2 O = 0
+Q_2  q=(0, 2)  O ~ [('gv*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -1 u2 u2* Xv2* + -1 u2 u3* Xv0* + -1 u3 u2* Xv1* + 1 u3 u3* Xv2*
+    Q_2 O = 0
+Q_2  q=(1, 1)  O ~ [('gv*', 'u', 'u')]  [Q0 O = 0]
+    O     = -1 u0 u0 Xv1* + 2 u0 u1 Xv2* + 1 u1 u1 Xv0*
+    Q_2 O = 0
+Q_2  q=(1, 1)  O ~ [('gv*', 'u', 'u')]  [Q0 O = 0]
+    O     = -1 u0 u2 Xv2* + -1 u0 u3 Xv1* + -1 u1 u2 Xv0* + 1 u1 u3 Xv2*
+    Q_2 O = 0
+Q_2  q=(1, 1)  O ~ [('gv*', 'u', 'u')]  [Q0 O = 0]
+    O     = -1 u2 u2 Xv0* + 2 u2 u3 Xv2* + 1 u3 u3 Xv1*
+    Q_2 O = 0
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 X0* u1* u2* + -2 X1* u0* u3* + -1 X2* u0* u2* + 1 X2* u1* u3*
+    Q_2 O = 0
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 X0* u1* + -1 u0 X2* u0* + -2 u1 X1* u0* + 1 u1 X2* u1*
+    Q_2 O = 0
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 X0* u2* + 1 u0 X2* u3* + 2 u1 X1* u3* + 1 u1 X2* u2*
+    Q_2 O = 0
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 X1* u0* + 1 u2 X2* u1* + 2 u3 X0* u1* + 1 u3 X2* u0*
+    Q_2 O = 0
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 X1* u3* + -1 u2 X2* u2* + -2 u3 X0* u2* + 1 u3 X2* u3*
+    Q_2 O = 0
+Q_2  q=(2, 2)  O ~ [('g*', 'gv', 'gv*')]  [Q0 O != 0]
+    O     = -2 Xv0 X1* Xv2* + 1 Xv0 X2* Xv0* + 2 Xv1 X0* Xv2* + -1 Xv1 X2* Xv1* + -1 Xv2 X0* Xv0* + 1 Xv2 X1* Xv1*
+    Q_2 O = 0
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 Xv0 u1* u2* + -2 Xv1 u0* u3* + -1 Xv2 u0* u2* + 1 Xv2 u1* u3*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('g*', 'u', 'u')]  [Q0 O != 0]
+    O     = -1 u0 u0 X0* + 1 u0 u1 X2* + 1 u1 u1 X1*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('g*', 'u', 'u')]  [Q0 O != 0]
+    O     = -1 u0 u2 X2* + -2 u0 u3 X0* + -2 u1 u2 X1* + 1 u1 u3 X2*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('gv', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 Xv0 u1* + -1 u0 Xv2 u0* + -2 u1 Xv1 u0* + 1 u1 Xv2 u1*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('gv', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 Xv0 u2* + 1 u0 Xv2 u3* + 2 u1 Xv1 u3* + 1 u1 Xv2 u2*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('g*', 'u', 'u')]  [Q0 O != 0]
+    O     = -1 u2 u2 X1* + 1 u2 u3 X2* + 1 u3 u3 X0*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('gv', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 Xv1 u0* + 1 u2 Xv2 u1* + 2 u3 Xv0 u1* + 1 u3 Xv2 u0*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('gv', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 Xv1 u3* + -1 u2 Xv2 u2* + -2 u3 Xv0 u2* + 1 u3 Xv2 u3*
+    Q_2 O = 0
+Q_2  q=(3, 1)  O ~ [('gv', 'gv', 'gv*')]  [Q0 O != 0]
+    O     = 2 Xv0 Xv1 Xv2* + -1 Xv0 Xv2 Xv0* + 1 Xv1 Xv2 Xv1*
+    Q_2 O = 0
+Q_2  q=(4, 0)  O ~ [('gv', 'u', 'u')]  [Q0 O = 0]
+    O     = -1 u0 u0 Xv0 + 1 u0 u1 Xv2 + 1 u1 u1 Xv1
+    Q_2 O = 0
+Q_2  q=(4, 0)  O ~ [('gv', 'u', 'u')]  [Q0 O != 0]
+    O     = -1 u0 u2 Xv2 + -2 u0 u3 Xv0 + -2 u1 u2 Xv1 + 1 u1 u3 Xv2
+    Q_2 O = 0
+Q_2  q=(4, 0)  O ~ [('gv', 'u', 'u')]  [Q0 O = 0]
+    O     = -1 u2 u2 Xv1 + 1 u2 u3 Xv2 + 1 u3 u3 Xv0
+    Q_2 O = 0
+Q_2  q=(5, 1)  O ~ [('g*', 'gv', 'gv')]  [Q0 O != 0]
+    O     = 1 Xv0 Xv1 X2* + -1 Xv0 Xv2 X1* + 1 Xv1 Xv2 X0*
+    Q_2 O = 0
+Q_2  q=(6, 0)  O ~ [('gv', 'gv', 'gv')]  [Q0 O != 0]
+    O     = 1 Xv0 Xv1 Xv2
+    Q_2 O = 0

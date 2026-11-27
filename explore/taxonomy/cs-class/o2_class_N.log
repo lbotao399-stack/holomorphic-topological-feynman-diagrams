@@ -1,0 +1,25 @@
+# o2_class_N  2026-11-27 01:23:03
+N = 9  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 10  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 11  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 12  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 13  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 14  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 15  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 16  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+N = 17  rank B = 34  r_G = [F_G]/[F_155]: {'155': '1', '245': '-1', '335': '1', '344': '-3/2'}  c(N) = [o']/[F_155] = 1/6912
+     simple representatives (closed, non-exact, [F_155]/[rep]): {'kkkk': (True, True, 'None'), 'tr(0123)tr(4567)': (True, True, 'None'), 'tr(01234567)': (True, False, 'None'), 'tr(04)tr(15)tr(26)tr(37)': (True, True, 'None')}
+fit 155 : 1
+fit 245 : -1
+fit 335 : 1
+fit 344 : -3/2
+fit c : 1/6912
+# done in 13.1 s

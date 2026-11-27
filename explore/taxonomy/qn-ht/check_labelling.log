@@ -1,0 +1,8 @@
+5d SU(2) + 1 fund hyper (BF R/g), relabelling seed 101 (4 of 5 rooted shapes with different labelled edge lists): 1389 monomials, Q2^hat != 0 on 305, mismatches 0  [30s]
+5d SU(2) + 1 fund hyper (BF R/g), relabelling seed 202 (5 of 5 rooted shapes with different labelled edge lists): 1389 monomials, Q2^hat != 0 on 305, mismatches 0  [16s]
+5d SU(2) + half-hyper (U//g), relabelling seed 101 (4 of 5 rooted shapes with different labelled edge lists): 710 monomials, Q2^hat != 0 on 220, mismatches 0  [15s]
+5d SU(2) + half-hyper (U//g), relabelling seed 202 (5 of 5 rooted shapes with different labelled edge lists): 710 monomials, Q2^hat != 0 on 220, mismatches 0  [9s]
+7d SU(2) (BF Bg), relabelling seed 101 (10 of 10 rooted shapes with different labelled edge lists): 56 monomials, Q2^hat != 0 on 28, mismatches 0  [33s]
+7d SU(2) (BF Bg), relabelling seed 202 (10 of 10 rooted shapes with different labelled edge lists): 56 monomials, Q2^hat != 0 on 28, mismatches 0  [25s]
+3d SU(2) N=4 Nf=1, relabelling seed 101 (1 of 2 rooted shapes with different labelled edge lists): 5940 monomials, Q2^hat != 0 on 691, mismatches 0  [18s]
+3d SU(2) N=4 Nf=1, relabelling seed 202 (2 of 2 rooted shapes with different labelled edge lists): 5940 monomials, Q2^hat != 0 on 691, mismatches 0  [4s]

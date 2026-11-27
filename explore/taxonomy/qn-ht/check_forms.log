@@ -1,0 +1,4 @@
+SU(2) fund, sigma = +1: 1419 monomials (deg <= 3, derivatives <= 1): Q0 mismatches 0; Q2^hat != 0 on 305, mismatches 0  [33s]
+SU(2) fund, sigma = -1: 1419 monomials (deg <= 3, derivatives <= 1): Q0 mismatches 862; Q2^hat != 0 on 305, mismatches 95  [0s]
+U(1) q=2, sigma = +1: 128 monomials (deg <= 3, derivatives <= 1): Q0 mismatches 0; Q2^hat != 0 on 4, mismatches 0  [0s]
+U(1) q=2, sigma = -1: 128 monomials (deg <= 3, derivatives <= 1): Q0 mismatches 59; Q2^hat != 0 on 4, mismatches 0  [0s]

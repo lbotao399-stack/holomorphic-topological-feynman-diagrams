@@ -1,0 +1,58 @@
+=== algebra: sl(3), R = 3+3+6, F = 3b+3b+3, U = T*R
+  Killing form ad-invariant and symmetric: True ; omega_U invariant and antisymmetric: True
+  2d N=(2,2), chirals R                            H=1  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  2d N=(0,2) [ESW (2,0)], chirals R, Fermis F      H=1  S_H = -1846/5        I_phys = 1846/5         S_H = -I_phys: True   sides: True  forms: True
+  2d N=(4,0), hypers U                             H=1  S_H = 1846/5         I_phys = -1846/5        S_H = -I_phys: True   sides: True  forms: True
+  2d N=(4,4), hypers U                             H=1  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  2d N=(8,8)                                       H=1  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=2]                    H=1  S_H = -5538/5        I_phys = 5538/5         S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=3]                    H=1  S_H = -8307/5        I_phys = 8307/5         S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=4]                    H=1  S_H = -11076/5       I_phys = 11076/5        S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=5]                    H=1  S_H = -2769          I_phys = 2769           S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=6]                    H=1  S_H = -16614/5       I_phys = 16614/5        S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=7]                    H=1  S_H = -19383/5       I_phys = 19383/5        S_H = -I_phys: True   sides: True  forms: True
+  4d N=1, chirals R                                H=2  S_H = -33939/5       I_phys = 33939/5        S_H = -I_phys: True   sides: True  forms: True
+  4d N=2, hypers U                                 H=2  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  4d N=4                                           H=2  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  6d N=(1,0), hypers U, form U//g                  H=3  S_H = 851929/50      I_phys = -851929/50     S_H = -I_phys: True   sides: True  forms: True
+  6d N=(1,0), U = T*R, form BF R/g                 H=3  S_H = 851929/50      I_phys = -851929/50     S_H = -I_phys: True   sides: True  forms: True
+  6d N=(1,1)                                       H=3  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  8d N=1                                           H=4  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  10d N=(1,0)                                      H=5  S_H = -23389226031/500 I_phys = 23389226031/500 S_H = -I_phys: True   sides: True  forms: True
+=== algebra: sl(2), U = 2+2+2 (pseudo-real), R = 2+2, F = 2
+  Killing form ad-invariant and symmetric: True ; omega_U invariant and antisymmetric: True
+  2d N=(2,2), chirals R                            H=1  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  2d N=(0,2) [ESW (2,0)], chirals R, Fermis F      H=1  S_H = -627/5         I_phys = 627/5          S_H = -I_phys: True   sides: True  forms: True
+  2d N=(4,0), hypers U                             H=1  S_H = -209           I_phys = 209            S_H = -I_phys: True   sides: True  forms: True
+  2d N=(4,4), hypers U                             H=1  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  2d N=(8,8)                                       H=1  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=2]                    H=1  S_H = -836/5         I_phys = 836/5          S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=3]                    H=1  S_H = -1254/5        I_phys = 1254/5         S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=4]                    H=1  S_H = -1672/5        I_phys = 1672/5         S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=5]                    H=1  S_H = -418           I_phys = 418            S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=6]                    H=1  S_H = -2508/5        I_phys = 2508/5         S_H = -I_phys: True   sides: True  forms: True
+  2d N=(N+,0), N+ = 2..7 [N+=7]                    H=1  S_H = -2926/5        I_phys = 2926/5         S_H = -I_phys: True   sides: True  forms: True
+  4d N=1, chirals R                                H=2  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  4d N=2, hypers U                                 H=2  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  4d N=4                                           H=2  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  6d N=(1,0), hypers U, form U//g                  H=3  S_H = -1266749/100   I_phys = 1266749/100    S_H = -I_phys: True   sides: True  forms: True
+  6d N=(1,0), U = T*R, form BF R/g                 H=3  S_H = -305767/25     I_phys = 305767/25      S_H = -I_phys: True   sides: True  forms: True
+  6d N=(1,1)                                       H=3  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  8d N=1                                           H=4  S_H = 0              I_phys = 0              S_H = -I_phys: True   sides: True  forms: True
+  10d N=(1,0)                                      H=5  S_H = -73034632/125  I_phys = 73034632/125   S_H = -I_phys: True   sides: True  forms: True
+=== formal S_H (k = H+1; Tr_X := Tr_X x^k; Tr_{R*} = (-1)^k Tr_R; Tr_coadj = (-1)^k Tr_adj)
+  2d N=(2,2), chirals R                            S_1 = 0
+  2d N=(0,2) [ESW (2,0)], chirals R, Fermis F      S_1 = -1 Tr_adj + 1 Tr_R + -1 Tr_F
+  2d N=(4,0), hypers U                             S_1 = -2 Tr_adj + 1 Tr_U
+  2d N=(4,4), hypers U                             S_1 = 0
+  2d N=(8,8)                                       S_1 = 0
+  2d N=(N+,0), N+ = 2..7                           S_1 = -1 Tr_adj + -1/2 Tr_adj*(N+-2)
+  4d N=1, chirals R                                S_2 = -1 Tr_adj + 1 Tr_R
+  4d N=2, hypers U                                 S_2 = 1 Tr_U
+  4d N=4                                           S_2 = 0
+  6d N=(1,0), hypers U, form U//g                  S_3 = -1 Tr_adj + 1/2 Tr_U
+  6d N=(1,0), U = T*R, form BF R/g                 S_3 = -1 Tr_adj + 1 Tr_R
+  6d N=(1,1)                                       S_3 = 0
+  8d N=1                                           S_4 = -1 Tr_adj
+  10d N=(1,0)                                      S_5 = -1/2 Tr_adj
+  remark: for k odd (H even) Tr_adj x^k = 0 for every g with invariant form; Tr_U x^k = 0 for symplectic U

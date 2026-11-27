@@ -1,0 +1,3 @@
+theory 3d N=4 SQED Nf=2 q=1: 12 undifferentiated monomials of degree 4..5 (sample of 12); Q2^2 != 0 on 10, {Q0,Q4fan} != 0 on 10, {Q0,T50} != 0 on 0; 32 coefficient equations  [2s]
+solution: u = 1, v = undetermined; inconsistent equations: 0 (unknowns determined: [0])
+[2s]

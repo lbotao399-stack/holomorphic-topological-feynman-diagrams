@@ -1,0 +1,26 @@
+odd loops (S4) and even controls; (H,1), D = H+1
+  n=1 polygon C_3                    H=1 T=1:   1 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1]  (0.0s)
+  n=1 polygon C_4                    H=2 T=1:   1 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1]  (0.0s)
+  n=1 polygon C_5                    H=3 T=1:   1 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1]  (0.0s)
+  n=1 polygon C_6                    H=4 T=1:   1 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1]  (0.0s)
+  n=1 polygon C_7                    H=5 T=1:   1 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1]  (0.0s)
+  n=1 polygon C_8                    H=6 T=1:   1 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1]  (0.0s)
+  n=3 all admissible (D=2)           H=1 T=1:   3 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1, 3]  (0.1s)
+  n=3 all admissible (D=3)           H=2 T=1:  16 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1, 3]  (0.4s)
+  n=3 all admissible (D=4)           H=3 T=1:  42 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1, 3]  (2.1s)
+  n=3 all admissible (D=5)           H=4 T=1: 116 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1, 3]  (11.3s)
+  n=3 all admissible (D=6)           H=5 T=1: 242 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1, 3]  (35.6s)
+  n=5 all admissible (D=2, htk catalog) H=1 T=1:  70 graphs  k0_zero=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [1, 3, 5]  (9.2s)
+  n=2 thetas (D=2)                   H=1 T=1:   1 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2]  (0.0s)
+  n=2 thetas (D=3)                   H=2 T=1:   2 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2]  (0.0s)
+  n=2 thetas (D=4)                   H=3 T=1:   3 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2]  (0.0s)
+  n=2 thetas (D=5)                   H=4 T=1:   4 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2]  (0.1s)
+  n=2 thetas (D=6)                   H=5 T=1:   5 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2]  (0.1s)
+  n=2 thetas (D=7)                   H=6 T=1:   7 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2]  (0.2s)
+  n=4 all admissible (D=2, htk catalog) H=1 T=1:  13 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2, 4]  (0.4s)
+  n=4 all admissible (D=3)           H=2 T=1: 230 graphs  pf_route=True  k_nonzero=True  P_scaling=True  G_scaling=True  degree_weights=True  kappa-degrees [0, 2, 4]  (24.9s)
+  admissible counts n=3, D=2..6: [3, 16, 42, 116, 242] ; n=4 D=3: 230 ; n=5 D=2: 70
+  D=5 n=3 admissible with max degree 3: 83 (atlas REPORT bulk3(5,3): 83)
+T = 2 (S3 with sources): two directions, independent kappa^1, kappa^2
+  n=2 graphs at D = 2..5 (9): bidegree (0,0) = Pf^Pf = 0 and full product != 0: True
+all checks: True

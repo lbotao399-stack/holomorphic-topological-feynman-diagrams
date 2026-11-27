@@ -1,0 +1,121 @@
+theory 2d02 gauge sl2 matter fund H=1 N=10 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 10/30 operators (max terms of residual 3)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 12 of them
+time 0.1s
+
+theory 2d02 gauge sl2 matter fund*2 H=1 N=14 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 11/30 operators (max terms of residual 2)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 7 of them
+time 0.1s
+
+theory 2d02 gauge sl2 matter fund*3 H=1 N=18 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 10/30 operators (max terms of residual 1)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 3 of them
+time 0.2s
+
+theory 2d02 gauge sl2 matter fund*4 H=1 N=22 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 4 of them
+time 0.2s
+
+theory 2d02 gauge sl2 matter fund*5 H=1 N=26 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 10/30 operators (max terms of residual 3)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 3 of them
+time 0.3s
+
+theory 2d02 gauge sl2 matter adj H=1 N=12 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 11 of them
+time 0.2s
+
+theory 2d02 gauge sl3 matter fund*5 H=1 N=46 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 7/30 operators (max terms of residual 5)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 3 of them
+time 0.8s
+
+theory 2d02 gauge sl3 matter fund*6 H=1 N=52 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 8 of them
+time 1.1s
+
+theory 2d02 gauge sl3 matter fund*7 H=1 N=58 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 8/30 operators (max terms of residual 3)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 6 of them
+time 1.6s
+
+theory 2d02 gauge sl3 matter adj H=1 N=32 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 8 of them
+time 0.7s
+
+theory 2d02 gauge sl3 matter fund*3+afund*3 H=1 N=52 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 7 of them
+time 1.2s
+
+theory 2d22 gauge sl2 matter fund H=1 N=20 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 7 of them
+time 0.3s
+
+theory 2d22 gauge sl2 matter fund*2 H=1 N=28 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 6 of them
+time 0.3s
+
+theory 2d22 gauge sl3 matter fund H=1 N=44 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 5 of them
+time 1.0s
+
+theory 2d22 gauge sl3 matter fund+afund H=1 N=56 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 10 of them
+time 2.1s
+
+theory 2d44 gauge sl2 matter fund H=1 N=40 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 3 of them
+time 1.0s
+
+theory 2d44 gauge sl2 matter fund*2 H=1 N=56 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 4 of them
+time 2.3s
+
+theory 2d44 gauge sl3 matter fund H=1 N=88 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 4 of them
+time 7.3s
+
+theory 2d88 gauge sl2 matter None H=1 N=48 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 4 of them
+time 1.2s
+
+theory 2d88 gauge su2 matter None H=1 N=48 nops=30 seed=7 jetmax=2 P=2147483647
+n=2 banana [(0, 1), (0, 1), (0, 1)]: outputs [0] -> hatQ_2 = 0
+{Q0, hatQ1} O = 0 on 30/30 operators (max terms of residual 0)
+hatQ1^2 O = 0 on 30/30 operators with >= 3 letters (max terms 0); hatQ1 acts nonzero on a term of hatQ1 O in 3 of them
+time 1.1s
+
+[2d88 sl3 skipped: superalg.check() Jacobi with object einsum at N=128 too slow]

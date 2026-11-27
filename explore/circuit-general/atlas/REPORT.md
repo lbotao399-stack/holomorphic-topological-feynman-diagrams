@@ -321,7 +321,10 @@ $N$ = diagrams (topologies), $C$ = computed exactly (value or vanishing per diag
 | $(H,1)$ MSYM | $Q_n$ | 2: 1, 2, 3, 4 / all; 4: 15/15 ($D=3$) | signed $Q_4$ assembly |
 | $(5,1)$ 11d | bulk | 2: 5/5, 3: 185/185 (0) | $n\ge4$ |
 | | order-$g$ obstruction | 2: $[X_1]\ne0$, $-\tfrac{63g}{256\pi^{10}}$ on the three-plus-six cycle [sugra-11d-qme/collaboration/current_complex] | one-loop counterterms beyond the detector |
-| $(H,T\ge2)$ | bulk | all: 0 | — |
+| $(H,T\ge2)$ | bulk | all: 0 (all $H,n$ [drv], taxonomy/one-loop) | — |
+| $(4,1)$ 9d CS | $O_2$ | 2: 4/4 thetas; $[O_2]\ne0$ ($\mathfrak g\ne\mathfrak{sl}_2$) [taxonomy/cs-class] | $\hbar^4$ |
+| $(H,1)$, $H=1,2,3$ | $Q_2$ (3d N=4/8, 5d N=1/2, 7d) | 2: all rooted thetas [taxonomy/qn-ht] | $Q_4$ at $H\ge2$ |
+| $(H,0)$, $H=1..5$ | $O_1$ polygon | 1: 1/1, 14 twists [taxonomy/one-loop] | — |
 | defects | $T=0$ line | all $m$: 1/1 | $T\ge1$ defects |
 
 ## 4. Not done; open

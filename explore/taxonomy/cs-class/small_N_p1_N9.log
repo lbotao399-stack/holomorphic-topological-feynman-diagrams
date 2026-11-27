@@ -1,0 +1,6 @@
+# small_N_p1_N9  2026-11-27 01:27:19
+prime p = 1048573  S7 = 90  S8 = 260
+sl_9: dim C^7_inv >= 37 (rank of 428 formal generators at 90 samples)
+sl_9: rank B = 34, rank[B;o'] = 35, rank[B;Q] = 37, rank[B;Q;o'] = 38  (S8 = 260), o' nonzero: True
+sl_9: o' not in span(Q, B) at these coordinates
+# done in 82.0 s

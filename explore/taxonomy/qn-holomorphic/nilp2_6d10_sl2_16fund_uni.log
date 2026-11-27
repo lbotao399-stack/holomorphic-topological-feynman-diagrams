@@ -1,0 +1,18 @@
+theory 6d10 gauge sl2 matter fund*16 H=3 N=70: order 2, O = gv,gv,gv, jets {}, functionals g,g,g,u,u, F = 6, seed 6, P = 2147483647
+blocks: {'g': 3, 'u': 64, 'gv': 3}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (0, 3), (2, 3)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (2, 5), (4, 5)]), ('G2.2', 2, [(0, 1), (1, 2), (2, 3), (2, 4), (0, 5), (3, 5), (4, 5)]), ('G2.3u', 1, [(0, 1), (1, 2), (1, 3), (2, 4), (3, 4), (0, 5), (2, 5)]), ('G2.4u', 2, [(0, 1), (1, 2), (1, 3), (2, 4), (3, 4), (0, 5), (4, 5)]), ('G2.5u', 2, [(0, 1), (0, 2), (1, 3), (2, 4), (3, 4), (0, 5), (3, 5)])]
+  <hatQ[Q0] hatQ[G2.1] O>: [1430616928, 159133712, 755573547, 875490271, 1590654760, 0]   (histories 240, keys 4, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.2] O>: [2146420747, 51070, 1073743906, 540800, 2147403347, 0]   (histories 240, keys 4, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.3u] O>: [0, 0, 0, 0, 0, 0]   (histories 12, keys 1, colour 210s, total 210s)
+  <hatQ[Q0] hatQ[G2.4u] O>: [0, 0, 0, 0, 0, 0]   (histories 12, keys 1, colour 68s, total 68s)
+  <hatQ[Q0] hatQ[G2.5u] O>: [0, 0, 0, 0, 0, 0]   (histories 12, keys 1, colour 55s, total 55s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [2145026047, 46960, 1909339184, 1428001898, 238453703, 0]   (histories 360, keys 6, colour 0s, total 0s)
+  <hatQ[G2.1] hatQ[Q0] O>: [717579819, 1988337075, 437342393, 557144827, 1511310499, 0]   (histories 360, keys 1, colour 0s, total 0s)
+  <hatQ[G2.2] hatQ[Q0] O>: [1578600, 2147421957, 1073637856, 306800, 113660, 0]   (histories 360, keys 1, colour 0s, total 0s)
+  <hatQ[G2.3u] hatQ[Q0] O>: [0, 0, 0, 0, 0, 0]   (histories 12, keys 1, colour 214s, total 214s)
+  <hatQ[G2.4u] hatQ[Q0] O>: [0, 0, 0, 0, 0, 0]   (histories 12, keys 1, colour 86s, total 86s)
+  <hatQ[G2.5u] hatQ[Q0] O>: [0, 0, 0, 0, 0, 0]   (histories 12, keys 1, colour 61s, total 61s)
+kappa_2 system: 6 equations, rank 2, augmented rank 2 (unknowns 5)
+consistent but underdetermined (rank 2 < 5)
+total time 695s

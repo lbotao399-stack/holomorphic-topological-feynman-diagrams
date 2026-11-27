@@ -1,0 +1,98 @@
+4d N=2, gauge sl2, matter fund: blocks {'g': 3, 'u': 4, 'gv': 3, 'g*': 3, 'u*': 4, 'gv*': 3}
+charges per block: [{'g': 0, 'g*': 1, 'gv': 2, 'gv*': -1, 'u': 1, 'u*': 0}, {'g': 0, 'g*': 1, 'gv': 0, 'gv*': 1, 'u': 0, 'u*': 1}]
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 X0* u1* d1d2.u2* + -2 X1* u0* d1d2.u3* + -1 X2* u0* d1d2.u2* + 1 X2* u1* d1d2.u3*
+    Q_2 O = 5/96 d2d2.X0 d1d1d1d2.Xv1* + -5/48 d1d2.X0 d1d1d2d2.Xv1* + -5/96 d1d2d2d2.X0 d1d1.Xv1* + 5/96 d1d1.X0 d1d2d2d2.Xv1* + 5/48 d1d1d2d2.X0 d1d2.Xv1* + -5/96 d1d1d1d2.X0 d2d2.Xv1* + 5/96 d2d2.X1 d1d1d1d2.Xv0* + -5/48 d1d2.X1 d1d1d2d2.Xv0* + -5/96 d1d2d2d2.X1 d1d1.Xv0* + 5/96 d1d1.X1 d1d2d2d2.Xv0* + 5/48 d1d1d2d2.X1 d1d2.Xv0* + -5/96 d1d1d1d2.X1 d2d2.Xv0* + 5/48 d2d2.X2 d1d1d1d2.Xv2* + -5/24 d1d2.X2 d1d1d2d2.Xv2* + ... (18 terms)
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 X0* d2.u1* d1.u2* + -2 X1* d2.u0* d1.u3* + -1 X2* d2.u0* d1.u2* + 1 X2* d2.u1* d1.u3*
+    Q_2 O = 5/108 d2d2d2.X0 d1d1d1.Xv1* + -5/36 d1d2d2.X0 d1d1d2.Xv1* + 5/36 d1d1d2.X0 d1d2d2.Xv1* + -5/108 d1d1d1.X0 d2d2d2.Xv1* + 5/108 d2d2d2.X1 d1d1d1.Xv0* + -5/36 d1d2d2.X1 d1d1d2.Xv0* + 5/36 d1d1d2.X1 d1d2d2.Xv0* + -5/108 d1d1d1.X1 d2d2d2.Xv0* + 5/54 d2d2d2.X2 d1d1d1.Xv2* + -5/18 d1d2d2.X2 d1d1d2.Xv2* + 5/18 d1d1d2.X2 d1d2d2.Xv2* + -5/54 d1d1d1.X2 d2d2d2.Xv2*
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 X0* d1.u1* d2.u2* + -2 X1* d1.u0* d2.u3* + -1 X2* d1.u0* d2.u2* + 1 X2* d1.u1* d2.u3*
+    Q_2 O = -5/108 d2d2d2.X0 d1d1d1.Xv1* + 5/36 d1d2d2.X0 d1d1d2.Xv1* + -5/36 d1d1d2.X0 d1d2d2.Xv1* + 5/108 d1d1d1.X0 d2d2d2.Xv1* + -5/108 d2d2d2.X1 d1d1d1.Xv0* + 5/36 d1d2d2.X1 d1d1d2.Xv0* + -5/36 d1d1d2.X1 d1d2d2.Xv0* + 5/108 d1d1d1.X1 d2d2d2.Xv0* + -5/54 d2d2d2.X2 d1d1d1.Xv2* + 5/18 d1d2d2.X2 d1d1d2.Xv2* + -5/18 d1d1d2.X2 d1d2d2.Xv2* + 5/54 d1d1d1.X2 d2d2d2.Xv2*
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 X0* d1d2.u1* u2* + -2 X1* d1d2.u0* u3* + -1 X2* d1d2.u0* u2* + 1 X2* d1d2.u1* u3*
+    Q_2 O = -5/96 d2d2.X0 d1d1d1d2.Xv1* + 5/48 d1d2.X0 d1d1d2d2.Xv1* + 5/96 d1d2d2d2.X0 d1d1.Xv1* + -5/96 d1d1.X0 d1d2d2d2.Xv1* + -5/48 d1d1d2d2.X0 d1d2.Xv1* + 5/96 d1d1d1d2.X0 d2d2.Xv1* + -5/96 d2d2.X1 d1d1d1d2.Xv0* + 5/48 d1d2.X1 d1d1d2d2.Xv0* + 5/96 d1d2d2d2.X1 d1d1.Xv0* + -5/96 d1d1.X1 d1d2d2d2.Xv0* + -5/48 d1d1d2d2.X1 d1d2.Xv0* + 5/96 d1d1d1d2.X1 d2d2.Xv0* + -5/48 d2d2.X2 d1d1d1d2.Xv2* + 5/24 d1d2.X2 d1d1d2d2.Xv2* + ... (18 terms)
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.X0* u1* d1.u2* + -2 d2.X1* u0* d1.u3* + -1 d2.X2* u0* d1.u2* + 1 d2.X2* u1* d1.u3*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.Xv1* + 5/216 d2d2d2.X0 d1d1d1.Xv1* + -5/144 d1d2.X0 d1d1d2d2.Xv1* + -5/72 d1d2d2.X0 d1d1d2.Xv1* + -5/288 d1d2d2d2.X0 d1d1.Xv1* + 5/288 d1d1.X0 d1d2d2d2.Xv1* + 5/72 d1d1d2.X0 d1d2d2.Xv1* + 5/144 d1d1d2d2.X0 d1d2.Xv1* + -5/216 d1d1d1.X0 d2d2d2.Xv1* + -5/288 d1d1d1d2.X0 d2d2.Xv1* + 5/288 d2d2.X1 d1d1d1d2.Xv0* + 5/216 d2d2d2.X1 d1d1d1.Xv0* + -5/144 d1d2.X1 d1d1d2d2.Xv0* + -5/72 d1d2d2.X1 d1d1d2.Xv0* + ... (30 terms)
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.X0* d1.u1* u2* + -2 d2.X1* d1.u0* u3* + -1 d2.X2* d1.u0* u2* + 1 d2.X2* d1.u1* u3*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.Xv1* + -5/216 d2d2d2.X0 d1d1d1.Xv1* + 5/144 d1d2.X0 d1d1d2d2.Xv1* + 5/72 d1d2d2.X0 d1d1d2.Xv1* + 5/288 d1d2d2d2.X0 d1d1.Xv1* + -5/288 d1d1.X0 d1d2d2d2.Xv1* + -5/72 d1d1d2.X0 d1d2d2.Xv1* + -5/144 d1d1d2d2.X0 d1d2.Xv1* + 5/216 d1d1d1.X0 d2d2d2.Xv1* + 5/288 d1d1d1d2.X0 d2d2.Xv1* + -5/288 d2d2.X1 d1d1d1d2.Xv0* + -5/216 d2d2d2.X1 d1d1d1.Xv0* + 5/144 d1d2.X1 d1d1d2d2.Xv0* + 5/72 d1d2d2.X1 d1d1d2.Xv0* + ... (30 terms)
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.X0* u1* d2.u2* + -2 d1.X1* u0* d2.u3* + -1 d1.X2* u0* d2.u2* + 1 d1.X2* u1* d2.u3*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.Xv1* + -5/216 d2d2d2.X0 d1d1d1.Xv1* + -5/144 d1d2.X0 d1d1d2d2.Xv1* + 5/72 d1d2d2.X0 d1d1d2.Xv1* + -5/288 d1d2d2d2.X0 d1d1.Xv1* + 5/288 d1d1.X0 d1d2d2d2.Xv1* + -5/72 d1d1d2.X0 d1d2d2.Xv1* + 5/144 d1d1d2d2.X0 d1d2.Xv1* + 5/216 d1d1d1.X0 d2d2d2.Xv1* + -5/288 d1d1d1d2.X0 d2d2.Xv1* + 5/288 d2d2.X1 d1d1d1d2.Xv0* + -5/216 d2d2d2.X1 d1d1d1.Xv0* + -5/144 d1d2.X1 d1d1d2d2.Xv0* + 5/72 d1d2d2.X1 d1d1d2.Xv0* + ... (30 terms)
+Q_2  q=(1, 3)  O ~ [('g*', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.X0* d2.u1* u2* + -2 d1.X1* d2.u0* u3* + -1 d1.X2* d2.u0* u2* + 1 d1.X2* d2.u1* u3*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.Xv1* + 5/216 d2d2d2.X0 d1d1d1.Xv1* + 5/144 d1d2.X0 d1d1d2d2.Xv1* + -5/72 d1d2d2.X0 d1d1d2.Xv1* + 5/288 d1d2d2d2.X0 d1d1.Xv1* + -5/288 d1d1.X0 d1d2d2d2.Xv1* + 5/72 d1d1d2.X0 d1d2d2.Xv1* + -5/144 d1d1d2d2.X0 d1d2.Xv1* + -5/216 d1d1d1.X0 d2d2d2.Xv1* + 5/288 d1d1d1d2.X0 d2d2.Xv1* + -5/288 d2d2.X1 d1d1d1d2.Xv0* + 5/216 d2d2d2.X1 d1d1d1.Xv0* + 5/144 d1d2.X1 d1d1d2d2.Xv0* + -5/72 d1d2d2.X1 d1d1d2.Xv0* + ... (30 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 X0* d1d2.u1* + -1 u0 X2* d1d2.u0* + -2 u1 X1* d1d2.u0* + 1 u1 X2* d1d2.u1*
+    Q_2 O = -5/96 d2d2.X0 d1d1d1d2.X1 + 5/48 d1d2.X0 d1d1d2d2.X1 + 5/96 d1d2d2d2.X0 d1d1.X1 + -5/96 d1d1.X0 d1d2d2d2.X1 + -5/48 d1d1d2d2.X0 d1d2.X1 + 5/96 d1d1d1d2.X0 d2d2.X1 + -5/48 d2d2.X2 d1d1d1d2.X2 + 5/24 d1d2.X2 d1d1d2d2.X2 + 5/48 d1d2d2d2.X2 d1d1.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 d2.X0* d1.u1* + -1 u0 d2.X2* d1.u0* + -2 u1 d2.X1* d1.u0* + 1 u1 d2.X2* d1.u1*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.X1 + -5/216 d2d2d2.X0 d1d1d1.X1 + 5/144 d1d2.X0 d1d1d2d2.X1 + 5/72 d1d2d2.X0 d1d1d2.X1 + 5/288 d1d2d2d2.X0 d1d1.X1 + -5/288 d1d1.X0 d1d2d2d2.X1 + -5/72 d1d1d2.X0 d1d2d2.X1 + -5/144 d1d1d2d2.X0 d1d2.X1 + 5/216 d1d1d1.X0 d2d2d2.X1 + 5/288 d1d1d1d2.X0 d2d2.X1 + -5/144 d2d2.X2 d1d1d1d2.X2 + -5/108 d2d2d2.X2 d1d1d1.X2 + 5/72 d1d2.X2 d1d1d2d2.X2 + 5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u0 d1.X0* d2.u1* + -1 u0 d1.X2* d2.u0* + -2 u1 d1.X1* d2.u0* + 1 u1 d1.X2* d2.u1*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.X1 + 5/216 d2d2d2.X0 d1d1d1.X1 + 5/144 d1d2.X0 d1d1d2d2.X1 + -5/72 d1d2d2.X0 d1d1d2.X1 + 5/288 d1d2d2d2.X0 d1d1.X1 + -5/288 d1d1.X0 d1d2d2d2.X1 + 5/72 d1d1d2.X0 d1d2d2.X1 + -5/144 d1d1d2d2.X0 d1d2.X1 + -5/216 d1d1d1.X0 d2d2d2.X1 + 5/288 d1d1d1d2.X0 d2d2.X1 + -5/144 d2d2.X2 d1d1d1d2.X2 + 5/108 d2d2d2.X2 d1d1d1.X2 + 5/72 d1d2.X2 d1d1d2d2.X2 + -5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.u0 X0* d1.u1* + -1 d2.u0 X2* d1.u0* + -2 d2.u1 X1* d1.u0* + 1 d2.u1 X2* d1.u1*
+    Q_2 O = -5/108 d2d2d2.X0 d1d1d1.X1 + 5/36 d1d2d2.X0 d1d1d2.X1 + -5/36 d1d1d2.X0 d1d2d2.X1 + 5/108 d1d1d1.X0 d2d2d2.X1 + -5/54 d2d2d2.X2 d1d1d1.X2 + 5/18 d1d2d2.X2 d1d1d2.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.u0 d1.X0* u1* + -1 d2.u0 d1.X2* u0* + -2 d2.u1 d1.X1* u0* + 1 d2.u1 d1.X2* u1*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.X1 + -5/216 d2d2d2.X0 d1d1d1.X1 + -5/144 d1d2.X0 d1d1d2d2.X1 + 5/72 d1d2d2.X0 d1d1d2.X1 + -5/288 d1d2d2d2.X0 d1d1.X1 + 5/288 d1d1.X0 d1d2d2d2.X1 + -5/72 d1d1d2.X0 d1d2d2.X1 + 5/144 d1d1d2d2.X0 d1d2.X1 + 5/216 d1d1d1.X0 d2d2d2.X1 + -5/288 d1d1d1d2.X0 d2d2.X1 + 5/144 d2d2.X2 d1d1d1d2.X2 + -5/108 d2d2d2.X2 d1d1d1.X2 + -5/72 d1d2.X2 d1d1d2d2.X2 + 5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.u0 X0* d2.u1* + -1 d1.u0 X2* d2.u0* + -2 d1.u1 X1* d2.u0* + 1 d1.u1 X2* d2.u1*
+    Q_2 O = 5/108 d2d2d2.X0 d1d1d1.X1 + -5/36 d1d2d2.X0 d1d1d2.X1 + 5/36 d1d1d2.X0 d1d2d2.X1 + -5/108 d1d1d1.X0 d2d2d2.X1 + 5/54 d2d2d2.X2 d1d1d1.X2 + -5/18 d1d2d2.X2 d1d1d2.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.u0 d2.X0* u1* + -1 d1.u0 d2.X2* u0* + -2 d1.u1 d2.X1* u0* + 1 d1.u1 d2.X2* u1*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.X1 + 5/216 d2d2d2.X0 d1d1d1.X1 + -5/144 d1d2.X0 d1d1d2d2.X1 + -5/72 d1d2d2.X0 d1d1d2.X1 + -5/288 d1d2d2d2.X0 d1d1.X1 + 5/288 d1d1.X0 d1d2d2d2.X1 + 5/72 d1d1d2.X0 d1d2d2.X1 + 5/144 d1d1d2d2.X0 d1d2.X1 + -5/216 d1d1d1.X0 d2d2d2.X1 + -5/288 d1d1d1d2.X0 d2d2.X1 + 5/144 d2d2.X2 d1d1d1d2.X2 + 5/108 d2d2d2.X2 d1d1d1.X2 + -5/72 d1d2.X2 d1d1d2d2.X2 + -5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d1d2.u0 X0* u1* + -1 d1d2.u0 X2* u0* + -2 d1d2.u1 X1* u0* + 1 d1d2.u1 X2* u1*
+    Q_2 O = 5/96 d2d2.X0 d1d1d1d2.X1 + -5/48 d1d2.X0 d1d1d2d2.X1 + -5/96 d1d2d2d2.X0 d1d1.X1 + 5/96 d1d1.X0 d1d2d2d2.X1 + 5/48 d1d1d2d2.X0 d1d2.X1 + -5/96 d1d1d1d2.X0 d2d2.X1 + 5/48 d2d2.X2 d1d1d1d2.X2 + -5/24 d1d2.X2 d1d1d2d2.X2 + -5/48 d1d2d2d2.X2 d1d1.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 X1* d1d2.u3* + -1 u2 X2* d1d2.u2* + -2 u3 X0* d1d2.u2* + 1 u3 X2* d1d2.u3*
+    Q_2 O = 5/96 d2d2.X0 d1d1d1d2.X1 + -5/48 d1d2.X0 d1d1d2d2.X1 + -5/96 d1d2d2d2.X0 d1d1.X1 + 5/96 d1d1.X0 d1d2d2d2.X1 + 5/48 d1d1d2d2.X0 d1d2.X1 + -5/96 d1d1d1d2.X0 d2d2.X1 + 5/48 d2d2.X2 d1d1d1d2.X2 + -5/24 d1d2.X2 d1d1d2d2.X2 + -5/48 d1d2d2d2.X2 d1d1.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 d2.X1* d1.u3* + -1 u2 d2.X2* d1.u2* + -2 u3 d2.X0* d1.u2* + 1 u3 d2.X2* d1.u3*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.X1 + 5/216 d2d2d2.X0 d1d1d1.X1 + -5/144 d1d2.X0 d1d1d2d2.X1 + -5/72 d1d2d2.X0 d1d1d2.X1 + -5/288 d1d2d2d2.X0 d1d1.X1 + 5/288 d1d1.X0 d1d2d2d2.X1 + 5/72 d1d1d2.X0 d1d2d2.X1 + 5/144 d1d1d2d2.X0 d1d2.X1 + -5/216 d1d1d1.X0 d2d2d2.X1 + -5/288 d1d1d1d2.X0 d2d2.X1 + 5/144 d2d2.X2 d1d1d1d2.X2 + 5/108 d2d2d2.X2 d1d1d1.X2 + -5/72 d1d2.X2 d1d1d2d2.X2 + -5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 u2 d1.X1* d2.u3* + -1 u2 d1.X2* d2.u2* + -2 u3 d1.X0* d2.u2* + 1 u3 d1.X2* d2.u3*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.X1 + -5/216 d2d2d2.X0 d1d1d1.X1 + -5/144 d1d2.X0 d1d1d2d2.X1 + 5/72 d1d2d2.X0 d1d1d2.X1 + -5/288 d1d2d2d2.X0 d1d1.X1 + 5/288 d1d1.X0 d1d2d2d2.X1 + -5/72 d1d1d2.X0 d1d2d2.X1 + 5/144 d1d1d2d2.X0 d1d2.X1 + 5/216 d1d1d1.X0 d2d2d2.X1 + -5/288 d1d1d1d2.X0 d2d2.X1 + 5/144 d2d2.X2 d1d1d1d2.X2 + -5/108 d2d2d2.X2 d1d1d1.X2 + -5/72 d1d2.X2 d1d1d2d2.X2 + 5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.u2 X1* d1.u3* + -1 d2.u2 X2* d1.u2* + -2 d2.u3 X0* d1.u2* + 1 d2.u3 X2* d1.u3*
+    Q_2 O = 5/108 d2d2d2.X0 d1d1d1.X1 + -5/36 d1d2d2.X0 d1d1d2.X1 + 5/36 d1d1d2.X0 d1d2d2.X1 + -5/108 d1d1d1.X0 d2d2d2.X1 + 5/54 d2d2d2.X2 d1d1d1.X2 + -5/18 d1d2d2.X2 d1d1d2.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.u2 d1.X1* u3* + -1 d2.u2 d1.X2* u2* + -2 d2.u3 d1.X0* u2* + 1 d2.u3 d1.X2* u3*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.X1 + 5/216 d2d2d2.X0 d1d1d1.X1 + 5/144 d1d2.X0 d1d1d2d2.X1 + -5/72 d1d2d2.X0 d1d1d2.X1 + 5/288 d1d2d2d2.X0 d1d1.X1 + -5/288 d1d1.X0 d1d2d2d2.X1 + 5/72 d1d1d2.X0 d1d2d2.X1 + -5/144 d1d1d2d2.X0 d1d2.X1 + -5/216 d1d1d1.X0 d2d2d2.X1 + 5/288 d1d1d1d2.X0 d2d2.X1 + -5/144 d2d2.X2 d1d1d1d2.X2 + 5/108 d2d2d2.X2 d1d1d1.X2 + 5/72 d1d2.X2 d1d1d2d2.X2 + -5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.u2 X1* d2.u3* + -1 d1.u2 X2* d2.u2* + -2 d1.u3 X0* d2.u2* + 1 d1.u3 X2* d2.u3*
+    Q_2 O = -5/108 d2d2d2.X0 d1d1d1.X1 + 5/36 d1d2d2.X0 d1d1d2.X1 + -5/36 d1d1d2.X0 d1d2d2.X1 + 5/108 d1d1d1.X0 d2d2d2.X1 + -5/54 d2d2d2.X2 d1d1d1.X2 + 5/18 d1d2d2.X2 d1d1d2.X2
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.u2 d2.X1* u3* + -1 d1.u2 d2.X2* u2* + -2 d1.u3 d2.X0* u2* + 1 d1.u3 d2.X2* u3*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.X1 + -5/216 d2d2d2.X0 d1d1d1.X1 + 5/144 d1d2.X0 d1d1d2d2.X1 + 5/72 d1d2d2.X0 d1d1d2.X1 + 5/288 d1d2d2d2.X0 d1d1.X1 + -5/288 d1d1.X0 d1d2d2d2.X1 + -5/72 d1d1d2.X0 d1d2d2.X1 + -5/144 d1d1d2d2.X0 d1d2.X1 + 5/216 d1d1d1.X0 d2d2d2.X1 + 5/288 d1d1d1d2.X0 d2d2.X1 + -5/144 d2d2.X2 d1d1d1d2.X2 + -5/108 d2d2d2.X2 d1d1d1.X2 + 5/72 d1d2.X2 d1d1d2d2.X2 + 5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('g*', 'u', 'u*')]  [Q0 O != 0]
+    O     = -2 d1d2.u2 X1* u3* + -1 d1d2.u2 X2* u2* + -2 d1d2.u3 X0* u2* + 1 d1d2.u3 X2* u3*
+    Q_2 O = -5/96 d2d2.X0 d1d1d1d2.X1 + 5/48 d1d2.X0 d1d1d2d2.X1 + 5/96 d1d2d2d2.X0 d1d1.X1 + -5/96 d1d1.X0 d1d2d2d2.X1 + -5/48 d1d1d2d2.X0 d1d2.X1 + 5/96 d1d1d1d2.X0 d2d2.X1 + -5/48 d2d2.X2 d1d1d1d2.X2 + 5/24 d1d2.X2 d1d1d2d2.X2 + 5/48 d1d2d2d2.X2 d1d1.X2
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 Xv0 u1* d1d2.u2* + -2 Xv1 u0* d1d2.u3* + -1 Xv2 u0* d1d2.u2* + 1 Xv2 u1* d1d2.u3*
+    Q_2 O = 5/96 d2d2.X0 d1d1d1d2.X1 + -5/48 d1d2.X0 d1d1d2d2.X1 + -5/96 d1d2d2d2.X0 d1d1.X1 + 5/96 d1d1.X0 d1d2d2d2.X1 + 5/48 d1d1d2d2.X0 d1d2.X1 + -5/96 d1d1d1d2.X0 d2d2.X1 + 5/48 d2d2.X2 d1d1d1d2.X2 + -5/24 d1d2.X2 d1d1d2d2.X2 + -5/48 d1d2d2d2.X2 d1d1.X2
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 Xv0 d2.u1* d1.u2* + -2 Xv1 d2.u0* d1.u3* + -1 Xv2 d2.u0* d1.u2* + 1 Xv2 d2.u1* d1.u3*
+    Q_2 O = 5/108 d2d2d2.X0 d1d1d1.X1 + -5/36 d1d2d2.X0 d1d1d2.X1 + 5/36 d1d1d2.X0 d1d2d2.X1 + -5/108 d1d1d1.X0 d2d2d2.X1 + 5/54 d2d2d2.X2 d1d1d1.X2 + -5/18 d1d2d2.X2 d1d1d2.X2
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 Xv0 d1.u1* d2.u2* + -2 Xv1 d1.u0* d2.u3* + -1 Xv2 d1.u0* d2.u2* + 1 Xv2 d1.u1* d2.u3*
+    Q_2 O = -5/108 d2d2d2.X0 d1d1d1.X1 + 5/36 d1d2d2.X0 d1d1d2.X1 + -5/36 d1d1d2.X0 d1d2d2.X1 + 5/108 d1d1d1.X0 d2d2d2.X1 + -5/54 d2d2d2.X2 d1d1d1.X2 + 5/18 d1d2d2.X2 d1d1d2.X2
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 Xv0 d1d2.u1* u2* + -2 Xv1 d1d2.u0* u3* + -1 Xv2 d1d2.u0* u2* + 1 Xv2 d1d2.u1* u3*
+    Q_2 O = -5/96 d2d2.X0 d1d1d1d2.X1 + 5/48 d1d2.X0 d1d1d2d2.X1 + 5/96 d1d2d2d2.X0 d1d1.X1 + -5/96 d1d1.X0 d1d2d2d2.X1 + -5/48 d1d1d2d2.X0 d1d2.X1 + 5/96 d1d1d1d2.X0 d2d2.X1 + -5/48 d2d2.X2 d1d1d1d2.X2 + 5/24 d1d2.X2 d1d1d2d2.X2 + 5/48 d1d2d2d2.X2 d1d1.X2
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.Xv0 u1* d1.u2* + -2 d2.Xv1 u0* d1.u3* + -1 d2.Xv2 u0* d1.u2* + 1 d2.Xv2 u1* d1.u3*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.X1 + 5/216 d2d2d2.X0 d1d1d1.X1 + -5/144 d1d2.X0 d1d1d2d2.X1 + -5/72 d1d2d2.X0 d1d1d2.X1 + -5/288 d1d2d2d2.X0 d1d1.X1 + 5/288 d1d1.X0 d1d2d2d2.X1 + 5/72 d1d1d2.X0 d1d2d2.X1 + 5/144 d1d1d2d2.X0 d1d2.X1 + -5/216 d1d1d1.X0 d2d2d2.X1 + -5/288 d1d1d1d2.X0 d2d2.X1 + 5/144 d2d2.X2 d1d1d1d2.X2 + 5/108 d2d2d2.X2 d1d1d1.X2 + -5/72 d1d2.X2 d1d1d2d2.X2 + -5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d2.Xv0 d1.u1* u2* + -2 d2.Xv1 d1.u0* u3* + -1 d2.Xv2 d1.u0* u2* + 1 d2.Xv2 d1.u1* u3*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.X1 + -5/216 d2d2d2.X0 d1d1d1.X1 + 5/144 d1d2.X0 d1d1d2d2.X1 + 5/72 d1d2d2.X0 d1d1d2.X1 + 5/288 d1d2d2d2.X0 d1d1.X1 + -5/288 d1d1.X0 d1d2d2d2.X1 + -5/72 d1d1d2.X0 d1d2d2.X1 + -5/144 d1d1d2d2.X0 d1d2.X1 + 5/216 d1d1d1.X0 d2d2d2.X1 + 5/288 d1d1d1d2.X0 d2d2.X1 + -5/144 d2d2.X2 d1d1d1d2.X2 + -5/108 d2d2d2.X2 d1d1d1.X2 + 5/72 d1d2.X2 d1d1d2d2.X2 + 5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.Xv0 u1* d2.u2* + -2 d1.Xv1 u0* d2.u3* + -1 d1.Xv2 u0* d2.u2* + 1 d1.Xv2 u1* d2.u3*
+    Q_2 O = 5/288 d2d2.X0 d1d1d1d2.X1 + -5/216 d2d2d2.X0 d1d1d1.X1 + -5/144 d1d2.X0 d1d1d2d2.X1 + 5/72 d1d2d2.X0 d1d1d2.X1 + -5/288 d1d2d2d2.X0 d1d1.X1 + 5/288 d1d1.X0 d1d2d2d2.X1 + -5/72 d1d1d2.X0 d1d2d2.X1 + 5/144 d1d1d2d2.X0 d1d2.X1 + 5/216 d1d1d1.X0 d2d2d2.X1 + -5/288 d1d1d1d2.X0 d2d2.X1 + 5/144 d2d2.X2 d1d1d1d2.X2 + -5/108 d2d2d2.X2 d1d1d1.X2 + -5/72 d1d2.X2 d1d1d2d2.X2 + 5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)
+Q_2  q=(2, 2)  O ~ [('gv', 'u*', 'u*')]  [Q0 O != 0]
+    O     = -2 d1.Xv0 d2.u1* u2* + -2 d1.Xv1 d2.u0* u3* + -1 d1.Xv2 d2.u0* u2* + 1 d1.Xv2 d2.u1* u3*
+    Q_2 O = -5/288 d2d2.X0 d1d1d1d2.X1 + 5/216 d2d2d2.X0 d1d1d1.X1 + 5/144 d1d2.X0 d1d1d2d2.X1 + -5/72 d1d2d2.X0 d1d1d2.X1 + 5/288 d1d2d2d2.X0 d1d1.X1 + -5/288 d1d1.X0 d1d2d2d2.X1 + 5/72 d1d1d2.X0 d1d2d2.X1 + -5/144 d1d1d2d2.X0 d1d2.X1 + -5/216 d1d1d1.X0 d2d2d2.X1 + 5/288 d1d1d1d2.X0 d2d2.X1 + -5/144 d2d2.X2 d1d1d1d2.X2 + 5/108 d2d2d2.X2 d1d1d1.X2 + 5/72 d1d2.X2 d1d1d2d2.X2 + -5/36 d1d2d2.X2 d1d1d2.X2 + ... (15 terms)

@@ -1,0 +1,29 @@
+(a) own layer: D(t) U^{H+1} = (-1)^H det(lam_0..lam_{H-1}) for every omitted edge
+  H=1: True  =>  K = (-1)^H Delta * vol(Delta^H) = -1 * Delta
+  H=2: True  =>  K = (-1)^H Delta * vol(Delta^H) = 1/2 * Delta
+  H=3: True  =>  K = (-1)^H Delta * vol(Delta^H) = -1/6 * Delta
+  H=4: True  =>  K = (-1)^H Delta * vol(Delta^H) = 1/24 * Delta
+  H=5: True  =>  K = (-1)^H Delta * vol(Delta^H) = -1/120 * Delta
+  H=6: True  =>  K = (-1)^H Delta * vol(Delta^H) = 1/720 * Delta
+  H=7: True  =>  K = (-1)^H Delta * vol(Delta^H) = -1/5040 * Delta
+  H=8: True  =>  K = (-1)^H Delta * vol(Delta^H) = 1/40320 * Delta
+(b) htk.kernel_exact(polygon(H+1)) / det(lam_0..lam_{H-1})
+  H=1: c_H = [Fraction(-1, 1), Fraction(-1, 1)]   (expected -1): True
+  H=2: c_H = [Fraction(1, 2)]   (expected 1/2): True
+  H=3: c_H = [Fraction(-1, 6), Fraction(-1, 6)]   (expected -1/6): True
+  H=4: c_H = [Fraction(1, 24), Fraction(1, 24)]   (expected 1/24): True
+  H=5: c_H = [Fraction(-1, 120), Fraction(-1, 120)]   (expected -1/120): True
+  H=6: c_H = [Fraction(1, 720), Fraction(1, 720)]   (expected 1/720): True
+(c) sum p = 0  =>  sgn(s) det(p_s(0),..,p_s(H-1)) = det(p_0..p_{H-1}) for all s in S_{H+1}
+  H=1: True (|S_2| = 2)
+  H=2: True (|S_3| = 6)
+  H=3: True (|S_4| = 24)
+  H=4: True (|S_5| = 120)
+  H=5: True (|S_6| = 720)
+(d) existing pieces
+  H=2 fan(1) (LLC triangle) K = -31/2 = -1/2 det;  polygon(3) K = 31/2 = 1/2 det;  I^S1 = -K_fan = 1/2 det (LLC eq-1-42: det/2)
+  H=3 box() (S2, edges (3,0),(0,1),(1,2),(2,3)) K = -1/6 det  (anomalies REPORT c_box = -1/6)
+  H=4 msym-D8 pentagon edge order K = 1/24 det  (msym-D8 VERIFY C5: <0123>/24)
+  H=5 polygon(6) K = -1/120 det  (type-i README: -det/120)
+  H=1 polygon(2) K = -1 * lam_0;  banana(2) (one edge reversed, (-1)^D) K = 1 * lam_0
+c_H = (-1)^H/H!: ['-1', '1/2', '-1/6', '1/24', '-1/120', '1/720', '-1/5040', '1/40320']

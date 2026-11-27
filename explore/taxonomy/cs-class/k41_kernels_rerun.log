@@ -1,0 +1,26 @@
+# k41_kernels_rerun  2026-11-27 01:42:58
+## kernels at (H,T) = (4,1): htk.kernel_exact vs s c_1 pi D_theta
+(1, 5, 5) trial 0 K_exact/pi = 2717/216  closed = 2717/216  s c1 D = 2717/216  equal: True  lambda_N-independent: True  s = 1
+(1, 5, 5) trial 1 K_exact/pi = 89095/5184  closed = 89095/5184  s c1 D = 89095/5184  equal: True  lambda_N-independent: True  s = 1
+(2, 4, 5) trial 0 K_exact/pi = -2225/168  closed = -2225/168  s c1 D = -2225/168  equal: True  lambda_N-independent: True  s = -1
+(2, 4, 5) trial 1 K_exact/pi = 2413/63  closed = 2413/63  s c1 D = 2413/63  equal: True  lambda_N-independent: True  s = -1
+(3, 3, 5) trial 0 K_exact/pi = 1763/2520  closed = 1763/2520  s c1 D = 1763/2520  equal: True  lambda_N-independent: True  s = 1
+(3, 3, 5) trial 1 K_exact/pi = -17/12  closed = -17/12  s c1 D = -17/12  equal: True  lambda_N-independent: True  s = 1
+(3, 4, 4) trial 0 K_exact/pi = 9776/405  closed = 9776/405  s c1 D = 9776/405  equal: True  lambda_N-independent: True  s = -1
+(3, 4, 4) trial 1 K_exact/pi = 143/630  closed = 143/630  s c1 D = 143/630  equal: True  lambda_N-independent: True  s = -1
+## Laplace form: D_theta = sum eps [4-minor][4-minor] over the 8 interior sources (vertex labels 1..8)
+(1, 5, 5) A,B,C interior = [] [1, 2, 3, 4] [5, 6, 7, 8]  D_theta = (+1)[1234][5678]
+(2, 4, 5) A,B,C interior = [1] [2, 3, 4] [5, 6, 7, 8]  D_theta = (+1)[1234][5678]
+(3, 3, 5) A,B,C interior = [1, 2] [3, 4] [5, 6, 7, 8]  D_theta = (+1)[1234][5678]
+(3, 4, 4) A,B,C interior = [1, 2] [3, 4, 5] [6, 7, 8]  D_theta = (+1)[1234][5678] + (-1)[1235][4678] + (+1)[1245][3678]
+## |Aut| of the theta graphs (graph automorphisms, external legs unlabelled)
+(1, 5, 5) |Aut| = 4  (2 prod m_l! = 4 )
+(2, 4, 5) |Aut| = 2  (2 prod m_l! = 2 )
+(3, 3, 5) |Aut| = 4  (2 prod m_l! = 4 )
+(3, 4, 4) |Aut| = 4  (2 prod m_l! = 4 )
+## (H,T) = (5,0) companions: htk.kernel_exact vs (sign) c_0 Q(Lbar)
+(1, 5, 5) K_exact = 55303/2400  closed = 55303/2400  K/(c0 Q(Lbar)) = 1  equal: True
+(2, 4, 5) K_exact = -27607/7200  closed = -27607/7200  K/(c0 Q(Lbar)) = -1  equal: True
+(3, 3, 5) K_exact = -689413/5760  closed = -689413/5760  K/(c0 Q(Lbar)) = 1  equal: True
+(3, 4, 4) K_exact = 680057/207360  closed = 680057/207360  K/(c0 Q(Lbar)) = -1  equal: True
+# done in 0.6 s

@@ -1,0 +1,7 @@
+theory 6d10 gauge sl2 matter fund*16 H=3 N=70: order 2, O = gv,gv,u, jets {}, functionals g,g,g,g,u, F = 6, seed 61, P = 2147483647
+blocks: {'g': 3, 'u': 64, 'gv': 3}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (0, 3), (2, 3)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (2, 5), (4, 5)]), ('G2.2', 2, [(0, 1), (1, 2), (2, 3), (2, 4), (0, 5), (3, 5), (4, 5)])]
+  <hatQ[Q0] hatQ[G2.1] O>: [984418806, 1271434399, 775094749, 310909733, 606631004, 1352473206]   (histories 120, keys 4, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.2] O>: [373177687, 2027037027, 834624193, 651748858, 1968603409, 537219274]   (histories 120, keys 4, colour 0s, total 0s)
+[killed at 24 min wall time (cap 30 min): composition hatQ[G1.1] hatQ[G1.1] on O = gv,gv,u (sl2 + 16 fund, N = 70, U block 64) not finished]

@@ -1,0 +1,15 @@
+theory: 3d U(1) charges [1] (H,T)=(1,1); grading: ghost ; weights in units of 1/4 ; sectors with sum(w) <= 16, w non-increasing, gauge charge 0
+letters: 17
+w=(Fraction(1, 1),) charges=(0, 0): dim C = {0: 1, 4: 3, 8: 2} ; dim H(Q0) = {4: 1, 8: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1),) charges=(0, 0): dim C = {0: 2, 4: 7, 8: 6, 12: 1} ; dim H(Q0) = {4: 2, 8: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 1),) charges=(0, 0): dim C = {0: 3, 4: 14, 8: 17, 12: 6} ; dim H(Q0) = {4: 3, 8: 4, 12: 1} ; Q2^hat z != 0 on 6 cocycle basis vectors ; rank d2 = {4: 1, 8: 1}
+    lifted (grade 4): O = -1/2*B_0 B_0 d1c_0 + 1*B_0 d1p0_0 s0_0
+       Q2^hat O = 1/2*d1c_0 d1d1c_0
+    lifted (grade 8): O = -1/2*B_0 B_0 c_0 d1c_0 + 1*B_0 c_0 d1p0_0 s0_0
+       Q2^hat O = -1/2*c_0 d1c_0 d1d1c_0
+w=(Fraction(4, 1),) charges=(0, 0): dim C = {0: 5, 4: 26, 8: 37, 12: 18, 16: 2} ; dim H(Q0) = {4: 4, 8: 6, 12: 2} ; Q2^hat z != 0 on 12 cocycle basis vectors ; rank d2 = {4: 2, 8: 2}
+    lifted (grade 4): O = -1/3*B_0 B_0 B_0 d1c_0 + 1*B_0 B_0 d1p0_0 s0_0
+       Q2^hat O = 1*B_0 d1c_0 d1d1c_0 + -4/3*d1c_0 d1p0_0 d1s0_0 + 1/15*d1c_0 d1d1p0_0 s0_0 + 16/15*d1d1c_0 d1p0_0 s0_0
+    lifted (grade 4): O = 1/2*B_0 B_0 d1d1c_0 + 1*B_0 d1B_0 d1c_0 + -1*B_0 d1p0_0 d1s0_0 + -1*B_0 d1d1p0_0 s0_0 + 1*d1B_0 p0_0 d1s0_0
+       Q2^hat O = -1/2*d1c_0 d1^3c_0
+time 2s

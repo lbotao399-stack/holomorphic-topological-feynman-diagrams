@@ -1,0 +1,220 @@
+## (1) z = 0 kernels K(lam;0)/pi, labelled graphs of hteng (root = nv-1, edges in contraction order)
+H=1 theta(1, 2, 2)@N   |Aut_O|=2 edges [(2, 3), (1, 3), (0, 1), (0, 2), (0, 3)] survivors [1, 2]: K/pi = -l1*l2/3
+H=1 theta(1, 2, 2)@(1, 1) |Aut_O|=2 edges [(2, 3), (1, 2), (1, 3), (0, 1), (0, 2)] survivors [0]: K/pi = l0**2/3
+H=2 theta(1, 3, 3)@N   |Aut_O|=2 edges [(4, 5), (3, 5), (2, 5), (1, 2), (1, 4), (0, 2), (0, 3)] survivors [0, 1, 3, 4]: K/pi = (l0x*l3y - l0y*l3x)*(l1x*l4y - l1y*l4x)/20
+H=2 theta(1, 3, 3)@(1, 1) |Aut_O|=1 edges [(4, 5), (3, 5), (2, 3), (2, 4), (1, 3), (0, 1), (0, 2)] survivors [0, 1, 4]: K/pi = -(l0x*l1y - l0y*l1x)*(l0x*l4y - l0y*l4x + l1x*l4y - l1y*l4x)/20
+H=2 theta(2, 2, 3)@N   |Aut_O|=2 edges [(4, 5), (3, 5), (2, 5), (1, 3), (1, 4), (0, 1), (0, 2)] survivors [0, 2, 3, 4]: K/pi = (l0x*l2y - l0y*l2x)*(l3x*l4y - l3y*l4x)/30
+H=2 theta(2, 2, 3)@(0, 1) |Aut_O|=2 edges [(4, 5), (3, 5), (2, 3), (2, 4), (1, 4), (0, 1), (0, 3)] survivors [0, 1, 2]: K/pi = -(l0x*l1y - l0y*l1x)*(l0x*l2y - l0y*l2x + l1x*l2y - l1y*l2x)/30
+H=2 theta(2, 2, 3)@(2, 1) |Aut_O|=2 edges [(4, 5), (3, 5), (2, 4), (1, 2), (1, 3), (0, 2), (0, 3)] survivors [0, 1, 4]: K/pi = -(l0x*l1y - l0y*l1x)*(l0x*l4y - l0y*l4x + l1x*l4y - l1y*l4x)/30
+H=3 theta(1, 4, 4)@N   |Aut_O|=2 edges [(6, 7), (5, 7), (4, 7), (3, 6), (2, 5), (1, 3), (1, 4), (0, 2), (0, 4)] survivors [0, 1, 2, 3, 5, 6]: K/pi = -(l0x*l2y*l5z - l0x*l2z*l5y - l0y*l2x*l5z + l0y*l2z*l5x + l0z*l2x*l5y - l0z*l2y*l5x)*(l1x*l3y*l6z - l1x*l3z*l6y - l1y*l3x*l6z + l1y*l3z*l6x + l1z*l3x*l6y - l1z*l3y*l6x)/252
+H=3 theta(1, 4, 4)@(1, 1) |Aut_O|=1 edges [(6, 7), (5, 7), (4, 6), (3, 5), (2, 4), (2, 5), (1, 3), (0, 1), (0, 2)] survivors [0, 1, 3, 4, 6]: K/pi = (l0x*l1y*l3z - l0x*l1z*l3y - l0y*l1x*l3z + l0y*l1z*l3x + l0z*l1x*l3y - l0z*l1y*l3x)*(l0x*l4y*l6z - l0x*l4z*l6y - l0y*l4x*l6z + l0y*l4z*l6x + l0z*l4x*l6y - l0z*l4y*l6x + l1x*l4y*l6z - l1x*l4z*l6y - l1y*l4x*l6z + l1y*l4z*l6x + l1z*l4x*l6y - l1z*l4y*l6x + l3x*l4y*l6z - l3x*l4z*l6y - l3y*l4x*l6z + l3y*l4z*l6x + l3z*l4x*l6y - l3z*l4y*l6x)/252
+H=3 theta(1, 4, 4)@(1, 2) |Aut_O|=2 edges [(6, 7), (5, 7), (4, 6), (3, 4), (3, 5), (2, 4), (1, 3), (0, 1), (0, 2)] survivors [0, 1, 2, 5, 6]: K/pi = -(l0x*l1y*l2z - l0x*l1z*l2y - l0y*l1x*l2z + l0y*l1z*l2x + l0z*l1x*l2y - l0z*l1y*l2x)*(l0x*l5y*l6z - l0x*l5z*l6y - l0y*l5x*l6z + l0y*l5z*l6x + l0z*l5x*l6y - l0z*l5y*l6x + l1x*l5y*l6z - l1x*l5z*l6y - l1y*l5x*l6z + l1y*l5z*l6x + l1z*l5x*l6y - l1z*l5y*l6x + l2x*l5y*l6z - l2x*l5z*l6y - l2y*l5x*l6z + l2y*l5z*l6x + l2z*l5x*l6y - l2z*l5y*l6x)/252
+H=3 theta(2, 3, 4)@N   |Aut_O|=1 edges [(6, 7), (5, 7), (4, 7), (3, 6), (2, 3), (2, 5), (1, 4), (0, 1), (0, 3)] survivors [0, 1, 2, 4, 5, 6]: K/pi = -(l0x*l1y*l4z - l0x*l1z*l4y - l0y*l1x*l4z + l0y*l1z*l4x + l0z*l1x*l4y - l0z*l1y*l4x)*(l2x*l5y*l6z - l2x*l5z*l6y - l2y*l5x*l6z + l2y*l5z*l6x + l2z*l5x*l6y - l2z*l5y*l6x)/420
+H=3 theta(2, 3, 4)@(0, 1) |Aut_O|=2 edges [(6, 7), (5, 7), (4, 6), (3, 6), (2, 4), (2, 5), (1, 5), (0, 1), (0, 3)] survivors [0, 1, 2, 3, 4]: K/pi = -(l0x*l1y*l3z - l0x*l1z*l3y - l0y*l1x*l3z + l0y*l1z*l3x + l0z*l1x*l3y - l0z*l1y*l3x)*(l0x*l2y*l4z - l0x*l2z*l4y - l0y*l2x*l4z + l0y*l2z*l4x + l0z*l2x*l4y - l0z*l2y*l4x + l1x*l2y*l4z - l1x*l2z*l4y - l1y*l2x*l4z + l1y*l2z*l4x + l1z*l2x*l4y - l1z*l2y*l4x - l2x*l3y*l4z + l2x*l3z*l4y + l2y*l3x*l4z - l2y*l3z*l4x - l2z*l3x*l4y + l2z*l3y*l4x)/420
+H=3 theta(2, 3, 4)@(1, 1) |Aut_O|=1 edges [(6, 7), (5, 7), (4, 6), (3, 4), (3, 5), (2, 5), (1, 4), (0, 1), (0, 2)] survivors [0, 1, 2, 3, 6]: K/pi = -(l0x*l1y*l2z - l0x*l1z*l2y - l0y*l1x*l2z + l0y*l1z*l2x + l0z*l1x*l2y - l0z*l1y*l2x)*(l0x*l3y*l6z - l0x*l3z*l6y - l0y*l3x*l6z + l0y*l3z*l6x + l0z*l3x*l6y - l0z*l3y*l6x + l1x*l3y*l6z - l1x*l3z*l6y - l1y*l3x*l6z + l1y*l3z*l6x + l1z*l3x*l6y - l1z*l3y*l6x + l2x*l3y*l6z - l2x*l3z*l6y - l2y*l3x*l6z + l2y*l3z*l6x + l2z*l3x*l6y - l2z*l3y*l6x)/420
+H=3 theta(2, 3, 4)@(2, 1) |Aut_O|=1 edges [(6, 7), (5, 7), (4, 6), (3, 5), (2, 5), (1, 3), (1, 4), (0, 1), (0, 2)] survivors [0, 2, 3, 4, 6]: K/pi = -(l0x*l2y*l3z - l0x*l2z*l3y - l0y*l2x*l3z + l0y*l2z*l3x + l0z*l2x*l3y - l0z*l2y*l3x)*(l0x*l4y*l6z - l0x*l4z*l6y - l0y*l4x*l6z + l0y*l4z*l6x + l0z*l4x*l6y - l0z*l4y*l6x + l2x*l4y*l6z - l2x*l4z*l6y - l2y*l4x*l6z + l2y*l4z*l6x + l2z*l4x*l6y - l2z*l4y*l6x + l3x*l4y*l6z - l3x*l4z*l6y - l3y*l4x*l6z + l3y*l4z*l6x + l3z*l4x*l6y - l3z*l4y*l6x)/420
+H=3 theta(2, 3, 4)@(2, 2) |Aut_O|=2 edges [(6, 7), (5, 7), (4, 6), (3, 5), (2, 3), (2, 4), (1, 4), (0, 1), (0, 3)] survivors [0, 1, 2, 5, 6]: K/pi = -(l0x*l1y*l2z - l0x*l1z*l2y - l0y*l1x*l2z + l0y*l1z*l2x + l0z*l1x*l2y - l0z*l1y*l2x)*(l0x*l5y*l6z - l0x*l5z*l6y - l0y*l5x*l6z + l0y*l5z*l6x + l0z*l5x*l6y - l0z*l5y*l6x + l1x*l5y*l6z - l1x*l5z*l6y - l1y*l5x*l6z + l1y*l5z*l6x + l1z*l5x*l6y - l1z*l5y*l6x + l2x*l5y*l6z - l2x*l5z*l6y - l2y*l5x*l6z + l2y*l5z*l6x + l2z*l5x*l6y - l2z*l5y*l6x)/420
+H=3 theta(3, 3, 3)@N   |Aut_O|=6 edges [(6, 7), (5, 7), (4, 7), (3, 6), (2, 5), (1, 4), (0, 1), (0, 2), (0, 3)] survivors [1, 2, 3, 4, 5, 6]: K/pi = -(l1x*l2x*l3y*l4y*l5z*l6z - l1x*l2x*l3y*l4z*l5y*l6z - l1x*l2x*l3z*l4y*l5z*l6y + l1x*l2x*l3z*l4z*l5y*l6y - l1x*l2y*l3x*l4y*l5z*l6z + l1x*l2y*l3x*l4z*l5z*l6y + l1x*l2y*l3y*l4z*l5x*l6z - l1x*l2y*l3y*l4z*l5z*l6x + l1x*l2y*l3z*l4y*l5z*l6x - l1x*l2y*l3z*l4z*l5x*l6y + l1x*l2z*l3x*l4y*l5y*l6z - l1x*l2z*l3x*l4z*l5y*l6y - l1x*l2z*l3y*l4y*l5x*l6z + l1x*l2z*l3y*l4z*l5y*l6x + l1x*l2z*l3z*l4y*l5x*l6y - l1x*l2z*l3z*l4y*l5y*l6x + l1y*l2x*l3x*l4z*l5y*l6z - l1y*l2x*l3x*l4z*l5z*l6y - l1y*l2x*l3y*l4x*l5z*l6z + l1y*l2x*l3y*l4z*l5z*l6x + l1y*l2x*l3z*l4x*l5z*l6y - l1y*l2x*l3z*l4z*l5y*l6x + l1y*l2y*l3x*l4x*l5z*l6z - l1y*l2y*l3x*l4z*l5x*l6z - l1y*l2y*l3z*l4x*l5z*l6x + l1y*l2y*l3z*l4z*l5x*l6x - l1y*l2z*l3x*l4x*l5y*l6z + l1y*l2z*l3x*l4z*l5x*l6y + l1y*l2z*l3y*l4x*l5x*l6z - l1y*l2z*l3y*l4z*l5x*l6x - l1y*l2z*l3z*l4x*l5x*l6y + l1y*l2z*l3z*l4x*l5y*l6x - l1z*l2x*l3x*l4y*l5y*l6z + l1z*l2x*l3x*l4y*l5z*l6y + l1z*l2x*l3y*l4x*l5y*l6z - l1z*l2x*l3y*l4y*l5z*l6x - l1z*l2x*l3z*l4x*l5y*l6y + l1z*l2x*l3z*l4y*l5y*l6x - l1z*l2y*l3x*l4x*l5z*l6y + l1z*l2y*l3x*l4y*l5x*l6z - l1z*l2y*l3y*l4x*l5x*l6z + l1z*l2y*l3y*l4x*l5z*l6x + l1z*l2y*l3z*l4x*l5x*l6y - l1z*l2y*l3z*l4y*l5x*l6x + l1z*l2z*l3x*l4x*l5y*l6y - l1z*l2z*l3x*l4y*l5x*l6y - l1z*l2z*l3y*l4x*l5y*l6x + l1z*l2z*l3y*l4y*l5x*l6x)/840
+H=3 theta(3, 3, 3)@(0, 1) |Aut_O|=2 edges [(6, 7), (5, 7), (4, 6), (3, 5), (2, 5), (1, 3), (1, 4), (0, 2), (0, 4)] survivors [0, 1, 2, 3, 6]: K/pi = -(l0x**2*l1y*l2y*l3z*l6z - l0x**2*l1y*l2z*l3z*l6y - l0x**2*l1z*l2y*l3y*l6z + l0x**2*l1z*l2z*l3y*l6y - l0x*l0y*l1x*l2y*l3z*l6z + l0x*l0y*l1x*l2z*l3z*l6y - l0x*l0y*l1y*l2x*l3z*l6z + l0x*l0y*l1y*l2z*l3z*l6x + l0x*l0y*l1z*l2x*l3y*l6z + l0x*l0y*l1z*l2y*l3x*l6z - l0x*l0y*l1z*l2z*l3x*l6y - l0x*l0y*l1z*l2z*l3y*l6x + l0x*l0z*l1x*l2y*l3y*l6z - l0x*l0z*l1x*l2z*l3y*l6y + l0x*l0z*l1y*l2x*l3z*l6y - l0x*l0z*l1y*l2y*l3x*l6z - l0x*l0z*l1y*l2y*l3z*l6x + l0x*l0z*l1y*l2z*l3x*l6y - l0x*l0z*l1z*l2x*l3y*l6y + l0x*l0z*l1z*l2y*l3y*l6x + l0x*l1x*l1y*l2z*l3y*l6z - l0x*l1x*l1y*l2z*l3z*l6y - l0x*l1x*l1z*l2y*l3y*l6z + l0x*l1x*l1z*l2y*l3z*l6y - l0x*l1x*l2y**2*l3z*l6z + l0x*l1x*l2y*l2z*l3y*l6z + l0x*l1x*l2y*l2z*l3z*l6y - l0x*l1x*l2y*l3y*l3z*l6z + l0x*l1x*l2y*l3z**2*l6y - l0x*l1x*l2z**2*l3y*l6y + l0x*l1x*l2z*l3y**2*l6z - l0x*l1x*l2z*l3y*l3z*l6y - l0x*l1y**2*l2z*l3x*l6z + l0x*l1y**2*l2z*l3z*l6x + l0x*l1y*l1z*l2y*l3x*l6z - l0x*l1y*l1z*l2y*l3z*l6x + l0x*l1y*l1z*l2z*l3x*l6y - l0x*l1y*l1z*l2z*l3y*l6x + l0x*l1y*l2x*l2y*l3z*l6z - l0x*l1y*l2x*l2z*l3z*l6y - l0x*l1y*l2y*l2z*l3x*l6z + l0x*l1y*l2y*l3x*l3z*l6z - l0x*l1y*l2y*l3z**2*l6x + l0x*l1y*l2z**2*l3x*l6y - l0x*l1y*l2z*l3x*l3y*l6z + l0x*l1y*l2z*l3y*l3z*l6x - l0x*l1z**2*l2y*l3x*l6y + l0x*l1z**2*l2y*l3y*l6x - l0x*l1z*l2x*l2y*l3y*l6z + l0x*l1z*l2x*l2z*l3y*l6y + l0x*l1z*l2y**2*l3x*l6z - l0x*l1z*l2y*l2z*l3x*l6y - l0x*l1z*l2y*l3x*l3z*l6y + l0x*l1z*l2y*l3y*l3z*l6x + l0x*l1z*l2z*l3x*l3y*l6y - l0x*l1z*l2z*l3y**2*l6x + l0y**2*l1x*l2x*l3z*l6z - l0y**2*l1x*l2z*l3z*l6x - l0y**2*l1z*l2x*l3x*l6z + l0y**2*l1z*l2z*l3x*l6x - l0y*l0z*l1x*l2x*l3y*l6z - l0y*l0z*l1x*l2x*l3z*l6y + l0y*l0z*l1x*l2y*l3z*l6x + l0y*l0z*l1x*l2z*l3y*l6x + l0y*l0z*l1y*l2x*l3x*l6z - l0y*l0z*l1y*l2z*l3x*l6x + l0y*l0z*l1z*l2x*l3x*l6y - l0y*l0z*l1z*l2y*l3x*l6x - l0y*l1x**2*l2z*l3y*l6z + l0y*l1x**2*l2z*l3z*l6y + l0y*l1x*l1y*l2z*l3x*l6z - l0y*l1x*l1y*l2z*l3z*l6x + l0y*l1x*l1z*l2x*l3y*l6z - l0y*l1x*l1z*l2x*l3z*l6y - l0y*l1x*l1z*l2z*l3x*l6y + l0y*l1x*l1z*l2z*l3y*l6x + l0y*l1x*l2x*l2y*l3z*l6z - l0y*l1x*l2x*l2z*l3y*l6z + l0y*l1x*l2x*l3y*l3z*l6z - l0y*l1x*l2x*l3z**2*l6y - l0y*l1x*l2y*l2z*l3z*l6x + l0y*l1x*l2z**2*l3y*l6x - l0y*l1x*l2z*l3x*l3y*l6z + l0y*l1x*l2z*l3x*l3z*l6y - l0y*l1y*l1z*l2x*l3x*l6z + l0y*l1y*l1z*l2x*l3z*l6x - l0y*l1y*l2x**2*l3z*l6z + l0y*l1y*l2x*l2z*l3x*l6z + l0y*l1y*l2x*l2z*l3z*l6x - l0y*l1y*l2x*l3x*l3z*l6z + l0y*l1y*l2x*l3z**2*l6x - l0y*l1y*l2z**2*l3x*l6x + l0y*l1y*l2z*l3x**2*l6z - l0y*l1y*l2z*l3x*l3z*l6x + l0y*l1z**2*l2x*l3x*l6y - l0y*l1z**2*l2x*l3y*l6x + l0y*l1z*l2x**2*l3y*l6z - l0y*l1z*l2x*l2y*l3x*l6z - l0y*l1z*l2x*l2z*l3y*l6x + l0y*l1z*l2x*l3x*l3z*l6y - l0y*l1z*l2x*l3y*l3z*l6x + l0y*l1z*l2y*l2z*l3x*l6x - l0y*l1z*l2z*l3x**2*l6y + l0y*l1z*l2z*l3x*l3y*l6x + l0z**2*l1x*l2x*l3y*l6y - l0z**2*l1x*l2y*l3y*l6x - l0z**2*l1y*l2x*l3x*l6y + l0z**2*l1y*l2y*l3x*l6x + l0z*l1x**2*l2y*l3y*l6z - l0z*l1x**2*l2y*l3z*l6y - l0z*l1x*l1y*l2x*l3y*l6z + l0z*l1x*l1y*l2x*l3z*l6y - l0z*l1x*l1y*l2y*l3x*l6z + l0z*l1x*l1y*l2y*l3z*l6x + l0z*l1x*l1z*l2y*l3x*l6y - l0z*l1x*l1z*l2y*l3y*l6x - l0z*l1x*l2x*l2y*l3z*l6y + l0z*l1x*l2x*l2z*l3y*l6y - l0z*l1x*l2x*l3y**2*l6z + l0z*l1x*l2x*l3y*l3z*l6y + l0z*l1x*l2y**2*l3z*l6x - l0z*l1x*l2y*l2z*l3y*l6x + l0z*l1x*l2y*l3x*l3y*l6z - l0z*l1x*l2y*l3x*l3z*l6y + l0z*l1y**2*l2x*l3x*l6z - l0z*l1y**2*l2x*l3z*l6x - l0z*l1y*l1z*l2x*l3x*l6y + l0z*l1y*l1z*l2x*l3y*l6x + l0z*l1y*l2x**2*l3z*l6y - l0z*l1y*l2x*l2y*l3z*l6x - l0z*l1y*l2x*l2z*l3x*l6y + l0z*l1y*l2x*l3x*l3y*l6z - l0z*l1y*l2x*l3y*l3z*l6x + l0z*l1y*l2y*l2z*l3x*l6x - l0z*l1y*l2y*l3x**2*l6z + l0z*l1y*l2y*l3x*l3z*l6x - l0z*l1z*l2x**2*l3y*l6y + l0z*l1z*l2x*l2y*l3x*l6y + l0z*l1z*l2x*l2y*l3y*l6x - l0z*l1z*l2x*l3x*l3y*l6y + l0z*l1z*l2x*l3y**2*l6x - l0z*l1z*l2y**2*l3x*l6x + l0z*l1z*l2y*l3x**2*l6y - l0z*l1z*l2y*l3x*l3y*l6x)/840
+
+## 3d N=4 SQED Nf=1, (H,T) = (1,1); interaction I = -1*c_0 p1_0 s1_0 + 1*c_0 p2_0 s2_0 + -1*p0_0 p1_0 p2_0
+  Q0 c_0 = 0
+  Q0 B_0 = -1*p1_0 s1_0 + 1*p2_0 s2_0
+  Q0 p0_0 = 0
+  Q0 s0_0 = -1*p1_0 p2_0
+  Q0 p1_0 = 1*c_0 p1_0
+  Q0 s1_0 = -1*c_0 s1_0 + -1*p0_0 p2_0
+  Q0 p2_0 = -1*c_0 p2_0
+  Q0 s2_0 = 1*c_0 s2_0 + -1*p0_0 p1_0
+  Q2^hat(1*B_0 B_0 B_0):
+     fan-type     = -2*d1p1_0 d1s1_0 + 2*d1p2_0 d1s2_0
+  Q2^hat(1*B_0 B_0 s0_0):
+     fan-type     = -2*d1p1_0 d1p2_0
+  Q2^hat(1*B_0 B_0 p1_0):
+     fan-type     = 2/3*d1c_0 d1p1_0
+  Q2^hat(1*B_0 B_0 s1_0):
+     fan-type     = -2/3*d1c_0 d1s1_0 + -2/3*d1p0_0 d1p2_0
+  Q2^hat(1*B_0 B_0 p2_0):
+     fan-type     = -2/3*d1c_0 d1p2_0
+  Q2^hat(1*B_0 B_0 s2_0):
+     fan-type     = 2/3*d1c_0 d1s2_0 + -2/3*d1p0_0 d1p1_0
+  Q2^hat(1*B_0 s0_0 s1_0):
+     fan-type     = 2/3*d1c_0 d1p2_0
+  Q2^hat(1*B_0 s0_0 s2_0):
+     fan-type     = 2/3*d1c_0 d1p1_0
+
+## 3d N=8 SU(2) (so3), (H,T) = (1,1); interaction I = 1*B_0 c_1 c_2 + -1*B_1 c_0 c_2 + 1*B_2 c_0 c_1 + -1*c_0 p0_1 s0_2 + 1*c_0 p0_2 s0_1 + -1*c_0 p1_1 s1_2 + 1*c_0 p1_2 s1_1 + -1*c_0 p2_1 s2_2 + 1*c_0 p2_2 s2_1 + 1*c_1 p0_0 s0_2 + -1*c_1 p0_2 s0_0 + 1*c_1 p1_0 s1_2 + -1*c_1 p1_2 s1_0 + 1*c_1 p2_0 s2_2 + -1*c_1 p2_2 s2_0 + -1*c_2 p0_0 s0_1 + 1*c_2 p0_1 s0_0 + -1*c_2 p1_0 s1_1 + 1*c_2 p1_1 s1_0 + -1*c_2 p2_0 s2_1 + 1*c_2 p2_1 s2_0 + -1*p0_0 p1_1 p2_2 + 1*p0_0 p1_2 p2_1 + 1*p0_1 p1_0 p2_2 + -1*p0_1 p1_2 p2_0 + -1*p0_2 p1_0 p2_1 + 1*p0_2 p1_1 p2_0
+  Q0 c_0 = 1*c_1 c_2
+  Q0 c_1 = -1*c_0 c_2
+  Q0 c_2 = 1*c_0 c_1
+  Q0 B_0 = -1*B_1 c_2 + 1*B_2 c_1 + -1*p0_1 s0_2 + 1*p0_2 s0_1 + -1*p1_1 s1_2 + 1*p1_2 s1_1 + -1*p2_1 s2_2 + 1*p2_2 s2_1
+  Q0 B_1 = 1*B_0 c_2 + -1*B_2 c_0 + 1*p0_0 s0_2 + -1*p0_2 s0_0 + 1*p1_0 s1_2 + -1*p1_2 s1_0 + 1*p2_0 s2_2 + -1*p2_2 s2_0
+  Q0 B_2 = -1*B_0 c_1 + 1*B_1 c_0 + -1*p0_0 s0_1 + 1*p0_1 s0_0 + -1*p1_0 s1_1 + 1*p1_1 s1_0 + -1*p2_0 s2_1 + 1*p2_1 s2_0
+  Q0 p0_0 = 1*c_1 p0_2 + -1*c_2 p0_1
+  Q0 p0_1 = -1*c_0 p0_2 + 1*c_2 p0_0
+  Q0 p0_2 = 1*c_0 p0_1 + -1*c_1 p0_0
+  Q0 s0_0 = 1*c_1 s0_2 + -1*c_2 s0_1 + -1*p1_1 p2_2 + 1*p1_2 p2_1
+  Q0 s0_1 = -1*c_0 s0_2 + 1*c_2 s0_0 + 1*p1_0 p2_2 + -1*p1_2 p2_0
+  Q0 s0_2 = 1*c_0 s0_1 + -1*c_1 s0_0 + -1*p1_0 p2_1 + 1*p1_1 p2_0
+  Q0 p1_0 = 1*c_1 p1_2 + -1*c_2 p1_1
+  Q0 p1_1 = -1*c_0 p1_2 + 1*c_2 p1_0
+  Q0 p1_2 = 1*c_0 p1_1 + -1*c_1 p1_0
+  Q0 s1_0 = 1*c_1 s1_2 + -1*c_2 s1_1 + 1*p0_1 p2_2 + -1*p0_2 p2_1
+  Q0 s1_1 = -1*c_0 s1_2 + 1*c_2 s1_0 + -1*p0_0 p2_2 + 1*p0_2 p2_0
+  Q0 s1_2 = 1*c_0 s1_1 + -1*c_1 s1_0 + 1*p0_0 p2_1 + -1*p0_1 p2_0
+  Q0 p2_0 = 1*c_1 p2_2 + -1*c_2 p2_1
+  Q0 p2_1 = -1*c_0 p2_2 + 1*c_2 p2_0
+  Q0 p2_2 = 1*c_0 p2_1 + -1*c_1 p2_0
+  Q0 s2_0 = 1*c_1 s2_2 + -1*c_2 s2_1 + -1*p0_1 p1_2 + 1*p0_2 p1_1
+  Q0 s2_1 = -1*c_0 s2_2 + 1*c_2 s2_0 + 1*p0_0 p1_2 + -1*p0_2 p1_0
+  Q0 s2_2 = 1*c_0 s2_1 + -1*c_1 s2_0 + -1*p0_0 p1_1 + 1*p0_1 p1_0
+  Q2^hat(1*B_0 B_0 c_0):
+     fan-type     = -2*d1c_1 d1c_2
+  Q2^hat(1*B_0 B_1 c_0):
+     fan-type     = 2/3*d1c_0 d1c_2
+  Q2^hat(1*B_0 B_2 c_0):
+     fan-type     = -2/3*d1c_0 d1c_1
+  Q2^hat(1*B_1 B_1 c_0):
+     fan-type     = -2/3*d1c_1 d1c_2
+  Q2^hat(1*B_2 B_2 c_0):
+     fan-type     = -2/3*d1c_1 d1c_2
+  Q2^hat(1*B_0 B_0 c_1):
+     fan-type     = 2/3*d1c_0 d1c_2
+  Q2^hat(1*B_0 B_1 c_1):
+     fan-type     = -2/3*d1c_1 d1c_2
+  Q2^hat(1*B_1 B_1 c_1):
+     fan-type     = 2*d1c_0 d1c_2
+  Q2^hat(1*B_1 B_2 c_1):
+     fan-type     = -2/3*d1c_0 d1c_1
+  Q2^hat(1*B_2 B_2 c_1):
+     fan-type     = 2/3*d1c_0 d1c_2
+  Q2^hat(1*B_0 B_0 c_2):
+     fan-type     = -2/3*d1c_0 d1c_1
+  Q2^hat(1*B_0 B_2 c_2):
+     fan-type     = -2/3*d1c_1 d1c_2
+  Q2^hat(1*B_1 B_1 c_2):
+     fan-type     = -2/3*d1c_0 d1c_1
+  Q2^hat(1*B_1 B_2 c_2):
+     fan-type     = 2/3*d1c_0 d1c_2
+
+## 5d N=1 U(1) + hyper q (BF R/g), q = 1, (H,T) = (2,1); interaction I = -1*c_0 p0_0 s0_0
+  Q0 c_0 = 0
+  Q0 B_0 = -1*p0_0 s0_0
+  Q0 p0_0 = 1*c_0 p0_0
+  Q0 s0_0 = -1*c_0 s0_0
+
+## 5d N=1 SU(2) pure (so3), (H,T) = (2,1); interaction I = 1*B_0 c_1 c_2 + -1*B_1 c_0 c_2 + 1*B_2 c_0 c_1
+  Q0 c_0 = 1*c_1 c_2
+  Q0 c_1 = -1*c_0 c_2
+  Q0 c_2 = 1*c_0 c_1
+  Q0 B_0 = 1*B_1 c_2 + -1*B_2 c_1
+  Q0 B_1 = -1*B_0 c_2 + 1*B_2 c_0
+  Q0 B_2 = 1*B_0 c_1 + -1*B_1 c_0
+  Q2^hat(1*B_0 B_1):
+     tadpole-type = 11/10*d2c_0 d1d2c_0 d1c_2 + -11/10*d2c_0 d1d1c_0 d2c_2 + 11/10*d2d2c_0 d1c_0 d1c_2 + 11/10*d1c_0 d1d2c_0 d2c_2 + 11/10*d2c_1 d1d2c_1 d1c_2 + -11/10*d2c_1 d1d1c_1 d2c_2 + 11/10*d2d2c_1 d1c_1 d1c_2 + 11/10*d1c_1 d1d2c_1 d2c_2
+  Q2^hat(1*B_0 B_2):
+     tadpole-type = -11/10*d2c_0 d1d2c_0 d1c_1 + 11/10*d2c_0 d1d1c_0 d2c_1 + -11/10*d2d2c_0 d1c_0 d1c_1 + -11/10*d1c_0 d1d2c_0 d2c_1 + 11/10*d2c_1 d2c_2 d1d1c_2 + -11/10*d2c_1 d1c_2 d1d2c_2 + -11/10*d1c_1 d2c_2 d1d2c_2 + -11/10*d1c_1 d2d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2):
+     tadpole-type = -11/10*d2c_0 d2c_1 d1d1c_1 + 11/10*d2c_0 d1c_1 d1d2c_1 + -11/10*d2c_0 d2c_2 d1d1c_2 + 11/10*d2c_0 d1c_2 d1d2c_2 + 11/10*d1c_0 d2c_1 d1d2c_1 + 11/10*d1c_0 d2d2c_1 d1c_1 + 11/10*d1c_0 d2c_2 d1d2c_2 + 11/10*d1c_0 d2d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 c_0):
+     tadpole-type = -11/10*c_0 d2c_0 d1d2c_0 d1c_2 + 11/10*c_0 d2c_0 d1d1c_0 d2c_2 + -11/10*c_0 d2d2c_0 d1c_0 d1c_2 + -11/10*c_0 d1c_0 d1d2c_0 d2c_2 + -11/10*c_0 d2c_1 d1d2c_1 d1c_2 + 11/10*c_0 d2c_1 d1d1c_1 d2c_2 + -11/10*c_0 d2d2c_1 d1c_1 d1c_2 + -11/10*c_0 d1c_1 d1d2c_1 d2c_2
+  Q2^hat(1*B_0 B_2 c_0):
+     tadpole-type = 11/10*c_0 d2c_0 d1d2c_0 d1c_1 + -11/10*c_0 d2c_0 d1d1c_0 d2c_1 + 11/10*c_0 d2d2c_0 d1c_0 d1c_1 + 11/10*c_0 d1c_0 d1d2c_0 d2c_1 + -11/10*c_0 d2c_1 d2c_2 d1d1c_2 + 11/10*c_0 d2c_1 d1c_2 d1d2c_2 + 11/10*c_0 d1c_1 d2c_2 d1d2c_2 + 11/10*c_0 d1c_1 d2d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2 c_0):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1c_1 + 11/10*d2c_0 d1c_0 d2c_2 d1c_2 + 11/10*d2c_1 d1c_1 d2c_2 d1c_2
+     tadpole-type = 11/10*c_0 d2c_0 d2c_1 d1d1c_1 + -11/10*c_0 d2c_0 d1c_1 d1d2c_1 + 11/10*c_0 d2c_0 d2c_2 d1d1c_2 + -11/10*c_0 d2c_0 d1c_2 d1d2c_2 + -11/10*c_0 d1c_0 d2c_1 d1d2c_1 + -11/10*c_0 d1c_0 d2d2c_1 d1c_1 + -11/10*c_0 d1c_0 d2c_2 d1d2c_2 + -11/10*c_0 d1c_0 d2d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 c_1):
+     tadpole-type = -11/10*d2c_0 d1d2c_0 c_1 d1c_2 + 11/10*d2c_0 d1d1c_0 c_1 d2c_2 + -11/10*d2d2c_0 d1c_0 c_1 d1c_2 + -11/10*d1c_0 d1d2c_0 c_1 d2c_2 + -11/10*c_1 d2c_1 d1d2c_1 d1c_2 + 11/10*c_1 d2c_1 d1d1c_1 d2c_2 + -11/10*c_1 d2d2c_1 d1c_1 d1c_2 + -11/10*c_1 d1c_1 d1d2c_1 d2c_2
+  Q2^hat(1*B_0 B_2 c_1):
+     fan-type     = -11/10*d2c_0 d1c_0 d2c_1 d1c_1 + -11/10*d2c_0 d1c_0 d2c_2 d1c_2 + -11/10*d2c_1 d1c_1 d2c_2 d1c_2
+     tadpole-type = 11/10*d2c_0 d1d2c_0 c_1 d1c_1 + -11/10*d2c_0 d1d1c_0 c_1 d2c_1 + 11/10*d2d2c_0 d1c_0 c_1 d1c_1 + 11/10*d1c_0 d1d2c_0 c_1 d2c_1 + -11/10*c_1 d2c_1 d2c_2 d1d1c_2 + 11/10*c_1 d2c_1 d1c_2 d1d2c_2 + 11/10*c_1 d1c_1 d2c_2 d1d2c_2 + 11/10*c_1 d1c_1 d2d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2 c_1):
+     tadpole-type = -11/10*d2c_0 c_1 d2c_1 d1d1c_1 + 11/10*d2c_0 c_1 d1c_1 d1d2c_1 + -11/10*d2c_0 c_1 d2c_2 d1d1c_2 + 11/10*d2c_0 c_1 d1c_2 d1d2c_2 + 11/10*d1c_0 c_1 d2c_1 d1d2c_1 + 11/10*d1c_0 c_1 d2d2c_1 d1c_1 + 11/10*d1c_0 c_1 d2c_2 d1d2c_2 + 11/10*d1c_0 c_1 d2d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 c_2):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1c_1 + 11/10*d2c_0 d1c_0 d2c_2 d1c_2 + 11/10*d2c_1 d1c_1 d2c_2 d1c_2
+     tadpole-type = -11/10*d2c_0 d1d2c_0 c_2 d1c_2 + 11/10*d2c_0 d1d1c_0 c_2 d2c_2 + -11/10*d2d2c_0 d1c_0 c_2 d1c_2 + -11/10*d1c_0 d1d2c_0 c_2 d2c_2 + -11/10*d2c_1 d1d2c_1 c_2 d1c_2 + 11/10*d2c_1 d1d1c_1 c_2 d2c_2 + -11/10*d2d2c_1 d1c_1 c_2 d1c_2 + -11/10*d1c_1 d1d2c_1 c_2 d2c_2
+  Q2^hat(1*B_0 B_2 c_2):
+     tadpole-type = -11/10*d2c_0 d1d2c_0 d1c_1 c_2 + 11/10*d2c_0 d1d1c_0 d2c_1 c_2 + -11/10*d2d2c_0 d1c_0 d1c_1 c_2 + -11/10*d1c_0 d1d2c_0 d2c_1 c_2 + 11/10*d2c_1 c_2 d2c_2 d1d1c_2 + -11/10*d2c_1 c_2 d1c_2 d1d2c_2 + -11/10*d1c_1 c_2 d2c_2 d1d2c_2 + -11/10*d1c_1 c_2 d2d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2 c_2):
+     tadpole-type = -11/10*d2c_0 d2c_1 d1d1c_1 c_2 + 11/10*d2c_0 d1c_1 d1d2c_1 c_2 + -11/10*d2c_0 c_2 d2c_2 d1d1c_2 + 11/10*d2c_0 c_2 d1c_2 d1d2c_2 + 11/10*d1c_0 d2c_1 d1d2c_1 c_2 + 11/10*d1c_0 d2d2c_1 d1c_1 c_2 + 11/10*d1c_0 c_2 d2c_2 d1d2c_2 + 11/10*d1c_0 c_2 d2d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 B_2):
+     fan-type     = 11/10*d2B_0 d1c_0 d2c_1 d1c_1 + 11/10*d2B_0 d1c_0 d2c_2 d1c_2 + -11/10*d1B_0 d2c_0 d2c_1 d1c_1 + -11/10*d1B_0 d2c_0 d2c_2 d1c_2 + 11/10*d2B_1 d2c_0 d1c_0 d1c_1 + 11/10*d2B_1 d1c_1 d2c_2 d1c_2 + -11/10*d1B_1 d2c_0 d1c_0 d2c_1 + -11/10*d1B_1 d2c_1 d2c_2 d1c_2 + 11/10*d2B_2 d2c_0 d1c_0 d1c_2 + 11/10*d2B_2 d2c_1 d1c_1 d1c_2 + -11/10*d1B_2 d2c_0 d1c_0 d2c_2 + -11/10*d1B_2 d2c_1 d1c_1 d2c_2
+     tadpole-type = 11/10*B_0 d2c_0 d2c_1 d1d1c_1 + -11/10*B_0 d2c_0 d1c_1 d1d2c_1 + 11/10*B_0 d2c_0 d2c_2 d1d1c_2 + -11/10*B_0 d2c_0 d1c_2 d1d2c_2 + -11/10*B_0 d1c_0 d2c_1 d1d2c_1 + -11/10*B_0 d1c_0 d2d2c_1 d1c_1 + -11/10*B_0 d1c_0 d2c_2 d1d2c_2 + -11/10*B_0 d1c_0 d2d2c_2 d1c_2 + -11/10*B_1 d2c_0 d1d2c_0 d1c_1 + 11/10*B_1 d2c_0 d1d1c_0 d2c_1 + -11/10*B_1 d2d2c_0 d1c_0 d1c_1 + -11/10*B_1 d1c_0 d1d2c_0 d2c_1 + 11/10*B_1 d2c_1 d2c_2 d1d1c_2 + -11/10*B_1 d2c_1 d1c_2 d1d2c_2 + -11/10*B_1 d1c_1 d2c_2 d1d2c_2 + -11/10*B_1 d1c_1 d2d2c_2 d1c_2 + ... (24 terms)
+
+## 5d N=2 SU(2) (so3, BF g/g), (H,T) = (2,1); interaction I = 1*B_0 c_1 c_2 + -1*B_1 c_0 c_2 + 1*B_2 c_0 c_1 + -1*c_0 p0_1 s0_2 + 1*c_0 p0_2 s0_1 + 1*c_1 p0_0 s0_2 + -1*c_1 p0_2 s0_0 + -1*c_2 p0_0 s0_1 + 1*c_2 p0_1 s0_0
+  Q0 c_0 = 1*c_1 c_2
+  Q0 c_1 = -1*c_0 c_2
+  Q0 c_2 = 1*c_0 c_1
+  Q0 B_0 = 1*B_1 c_2 + -1*B_2 c_1 + -1*p0_1 s0_2 + 1*p0_2 s0_1
+  Q0 B_1 = -1*B_0 c_2 + 1*B_2 c_0 + 1*p0_0 s0_2 + -1*p0_2 s0_0
+  Q0 B_2 = 1*B_0 c_1 + -1*B_1 c_0 + -1*p0_0 s0_1 + 1*p0_1 s0_0
+  Q0 p0_0 = 1*c_1 p0_2 + -1*c_2 p0_1
+  Q0 p0_1 = -1*c_0 p0_2 + 1*c_2 p0_0
+  Q0 p0_2 = 1*c_0 p0_1 + -1*c_1 p0_0
+  Q0 s0_0 = 1*c_1 s0_2 + -1*c_2 s0_1
+  Q0 s0_1 = -1*c_0 s0_2 + 1*c_2 s0_0
+  Q0 s0_2 = 1*c_0 s0_1 + -1*c_1 s0_0
+  Q2^hat(1*B_1 B_2 c_0):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1c_1 + 11/10*d2c_0 d1c_0 d2c_2 d1c_2 + 11/10*d2c_1 d1c_1 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_2 c_1):
+     fan-type     = -11/10*d2c_0 d1c_0 d2c_1 d1c_1 + -11/10*d2c_0 d1c_0 d2c_2 d1c_2 + -11/10*d2c_1 d1c_1 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 c_2):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1c_1 + 11/10*d2c_0 d1c_0 d2c_2 d1c_2 + 11/10*d2c_1 d1c_1 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 B_2):
+     fan-type     = 11/10*d2B_0 d1c_0 d2c_1 d1c_1 + 11/10*d2B_0 d1c_0 d2c_2 d1c_2 + -11/10*d1B_0 d2c_0 d2c_1 d1c_1 + -11/10*d1B_0 d2c_0 d2c_2 d1c_2 + 11/10*d2B_1 d2c_0 d1c_0 d1c_1 + 11/10*d2B_1 d1c_1 d2c_2 d1c_2 + -11/10*d1B_1 d2c_0 d1c_0 d2c_1 + -11/10*d1B_1 d2c_1 d2c_2 d1c_2 + 11/10*d2B_2 d2c_0 d1c_0 d1c_2 + 11/10*d2B_2 d2c_1 d1c_1 d1c_2 + -11/10*d1B_2 d2c_0 d1c_0 d2c_2 + -11/10*d1B_2 d2c_1 d1c_1 d2c_2 + -11/10*d2c_0 d1c_0 d2p0_1 d1s0_1 + 11/10*d2c_0 d1c_0 d1p0_1 d2s0_1 + -11/10*d2c_0 d1c_0 d2p0_2 d1s0_2 + 11/10*d2c_0 d1c_0 d1p0_2 d2s0_2 + ... (48 terms)
+  Q2^hat(1*B_0 B_1 p0_2):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1p0_1 + -11/10*d2c_0 d1c_0 d1c_1 d2p0_1 + 11/10*d2c_0 d1c_0 d2c_2 d1p0_2 + -11/10*d2c_0 d1c_0 d1c_2 d2p0_2 + 11/10*d2c_0 d2c_1 d1c_1 d1p0_0 + 11/10*d2c_0 d2c_2 d1c_2 d1p0_0 + -11/10*d1c_0 d2c_1 d1c_1 d2p0_0 + -11/10*d1c_0 d2c_2 d1c_2 d2p0_0 + 11/10*d2c_1 d1c_1 d2c_2 d1p0_2 + -11/10*d2c_1 d1c_1 d1c_2 d2p0_2 + 11/10*d2c_1 d2c_2 d1c_2 d1p0_1 + -11/10*d1c_1 d2c_2 d1c_2 d2p0_1
+  Q2^hat(1*B_0 B_1 s0_2):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1s0_1 + -11/10*d2c_0 d1c_0 d1c_1 d2s0_1 + 11/10*d2c_0 d1c_0 d2c_2 d1s0_2 + -11/10*d2c_0 d1c_0 d1c_2 d2s0_2 + 11/10*d2c_0 d2c_1 d1c_1 d1s0_0 + 11/10*d2c_0 d2c_2 d1c_2 d1s0_0 + -11/10*d1c_0 d2c_1 d1c_1 d2s0_0 + -11/10*d1c_0 d2c_2 d1c_2 d2s0_0 + 11/10*d2c_1 d1c_1 d2c_2 d1s0_2 + -11/10*d2c_1 d1c_1 d1c_2 d2s0_2 + 11/10*d2c_1 d2c_2 d1c_2 d1s0_1 + -11/10*d1c_1 d2c_2 d1c_2 d2s0_1
+  Q2^hat(1*B_0 B_2 p0_1):
+     fan-type     = -11/10*d2c_0 d1c_0 d2c_1 d1p0_1 + 11/10*d2c_0 d1c_0 d1c_1 d2p0_1 + -11/10*d2c_0 d1c_0 d2c_2 d1p0_2 + 11/10*d2c_0 d1c_0 d1c_2 d2p0_2 + -11/10*d2c_0 d2c_1 d1c_1 d1p0_0 + -11/10*d2c_0 d2c_2 d1c_2 d1p0_0 + 11/10*d1c_0 d2c_1 d1c_1 d2p0_0 + 11/10*d1c_0 d2c_2 d1c_2 d2p0_0 + -11/10*d2c_1 d1c_1 d2c_2 d1p0_2 + 11/10*d2c_1 d1c_1 d1c_2 d2p0_2 + -11/10*d2c_1 d2c_2 d1c_2 d1p0_1 + 11/10*d1c_1 d2c_2 d1c_2 d2p0_1
+  Q2^hat(1*B_0 B_2 s0_1):
+     fan-type     = -11/10*d2c_0 d1c_0 d2c_1 d1s0_1 + 11/10*d2c_0 d1c_0 d1c_1 d2s0_1 + -11/10*d2c_0 d1c_0 d2c_2 d1s0_2 + 11/10*d2c_0 d1c_0 d1c_2 d2s0_2 + -11/10*d2c_0 d2c_1 d1c_1 d1s0_0 + -11/10*d2c_0 d2c_2 d1c_2 d1s0_0 + 11/10*d1c_0 d2c_1 d1c_1 d2s0_0 + 11/10*d1c_0 d2c_2 d1c_2 d2s0_0 + -11/10*d2c_1 d1c_1 d2c_2 d1s0_2 + 11/10*d2c_1 d1c_1 d1c_2 d2s0_2 + -11/10*d2c_1 d2c_2 d1c_2 d1s0_1 + 11/10*d1c_1 d2c_2 d1c_2 d2s0_1
+  Q2^hat(1*B_0 p0_1 s0_2):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1c_1 + 11/10*d2c_0 d1c_0 d2c_2 d1c_2 + 11/10*d2c_1 d1c_1 d2c_2 d1c_2
+  Q2^hat(1*B_0 p0_2 s0_1):
+     fan-type     = -11/10*d2c_0 d1c_0 d2c_1 d1c_1 + -11/10*d2c_0 d1c_0 d2c_2 d1c_2 + -11/10*d2c_1 d1c_1 d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2 p0_0):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1p0_1 + -11/10*d2c_0 d1c_0 d1c_1 d2p0_1 + 11/10*d2c_0 d1c_0 d2c_2 d1p0_2 + -11/10*d2c_0 d1c_0 d1c_2 d2p0_2 + 11/10*d2c_0 d2c_1 d1c_1 d1p0_0 + 11/10*d2c_0 d2c_2 d1c_2 d1p0_0 + -11/10*d1c_0 d2c_1 d1c_1 d2p0_0 + -11/10*d1c_0 d2c_2 d1c_2 d2p0_0 + 11/10*d2c_1 d1c_1 d2c_2 d1p0_2 + -11/10*d2c_1 d1c_1 d1c_2 d2p0_2 + 11/10*d2c_1 d2c_2 d1c_2 d1p0_1 + -11/10*d1c_1 d2c_2 d1c_2 d2p0_1
+  Q2^hat(1*B_1 B_2 s0_0):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1s0_1 + -11/10*d2c_0 d1c_0 d1c_1 d2s0_1 + 11/10*d2c_0 d1c_0 d2c_2 d1s0_2 + -11/10*d2c_0 d1c_0 d1c_2 d2s0_2 + 11/10*d2c_0 d2c_1 d1c_1 d1s0_0 + 11/10*d2c_0 d2c_2 d1c_2 d1s0_0 + -11/10*d1c_0 d2c_1 d1c_1 d2s0_0 + -11/10*d1c_0 d2c_2 d1c_2 d2s0_0 + 11/10*d2c_1 d1c_1 d2c_2 d1s0_2 + -11/10*d2c_1 d1c_1 d1c_2 d2s0_2 + 11/10*d2c_1 d2c_2 d1c_2 d1s0_1 + -11/10*d1c_1 d2c_2 d1c_2 d2s0_1
+  Q2^hat(1*B_1 p0_0 s0_2):
+     fan-type     = -11/10*d2c_0 d1c_0 d2c_1 d1c_1 + -11/10*d2c_0 d1c_0 d2c_2 d1c_2 + -11/10*d2c_1 d1c_1 d2c_2 d1c_2
+  Q2^hat(1*B_1 p0_2 s0_0):
+     fan-type     = 11/10*d2c_0 d1c_0 d2c_1 d1c_1 + 11/10*d2c_0 d1c_0 d2c_2 d1c_2 + 11/10*d2c_1 d1c_1 d2c_2 d1c_2
+
+## 7d N=1 SU(2) (so3, BF Bg), (H,T) = (3,1); interaction I = 1*B_0 c_1 c_2 + -1*B_1 c_0 c_2 + 1*B_2 c_0 c_1
+  Q0 c_0 = 1*c_1 c_2
+  Q0 c_1 = -1*c_0 c_2
+  Q0 c_2 = 1*c_0 c_1
+  Q0 B_0 = -1*B_1 c_2 + 1*B_2 c_1
+  Q0 B_1 = 1*B_0 c_2 + -1*B_2 c_0
+  Q0 B_2 = -1*B_0 c_1 + 1*B_1 c_0
+  Q2^hat(1*B_0 B_0 c_0):
+     fan-type     = 2/3*d3c_0 d2c_0 d3c_1 d2c_1 d1c_1 d1c_2 + 2/3*d3c_0 d2c_0 d1c_1 d3c_2 d2c_2 d1c_2 + -2/3*d3c_0 d1c_0 d3c_1 d2c_1 d1c_1 d2c_2 + -2/3*d3c_0 d1c_0 d2c_1 d3c_2 d2c_2 d1c_2 + 2/3*d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 + 2/3*d2c_0 d1c_0 d3c_1 d3c_2 d2c_2 d1c_2 + 88/35*d3c_1 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 c_0):
+     fan-type     = -2/9*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_2 + 2/9*d3c_0 d2c_0 d1c_0 d3c_1 d1c_1 d2c_2 + -2/9*d3c_0 d2c_0 d1c_0 d2c_1 d1c_1 d3c_2 + -2/3*d3c_0 d2c_0 d1c_0 d3c_2 d2c_2 d1c_2 + -124/315*d3c_0 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2 + 124/315*d2c_0 d3c_1 d1c_1 d3c_2 d2c_2 d1c_2 + -124/315*d1c_0 d3c_1 d2c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_2 c_0):
+     fan-type     = 2/3*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 + 2/9*d3c_0 d2c_0 d1c_0 d3c_1 d2c_2 d1c_2 + -2/9*d3c_0 d2c_0 d1c_0 d2c_1 d3c_2 d1c_2 + 2/9*d3c_0 d2c_0 d1c_0 d1c_1 d3c_2 d2c_2 + 124/315*d3c_0 d3c_1 d2c_1 d1c_1 d2c_2 d1c_2 + -124/315*d2c_0 d3c_1 d2c_1 d1c_1 d3c_2 d1c_2 + 124/315*d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 d2c_2
+  Q2^hat(1*B_1 B_1 c_0):
+     fan-type     = 2/9*d3c_0 d2c_0 d3c_1 d2c_1 d1c_1 d1c_2 + 124/315*d3c_0 d2c_0 d1c_1 d3c_2 d2c_2 d1c_2 + -2/9*d3c_0 d1c_0 d3c_1 d2c_1 d1c_1 d2c_2 + -124/315*d3c_0 d1c_0 d2c_1 d3c_2 d2c_2 d1c_2 + 2/9*d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 + 124/315*d2c_0 d1c_0 d3c_1 d3c_2 d2c_2 d1c_2 + 2/3*d3c_1 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2 c_0):
+     fan-type     = 3/35*d3c_0 d2c_0 d3c_1 d1c_1 d2c_2 d1c_2 + -3/35*d3c_0 d2c_0 d2c_1 d1c_1 d3c_2 d1c_2 + -3/35*d3c_0 d1c_0 d3c_1 d2c_1 d2c_2 d1c_2 + 3/35*d3c_0 d1c_0 d2c_1 d1c_1 d3c_2 d2c_2 + 3/35*d2c_0 d1c_0 d3c_1 d2c_1 d3c_2 d1c_2 + -3/35*d2c_0 d1c_0 d3c_1 d1c_1 d3c_2 d2c_2
+  Q2^hat(1*B_2 B_2 c_0):
+     fan-type     = 124/315*d3c_0 d2c_0 d3c_1 d2c_1 d1c_1 d1c_2 + 2/9*d3c_0 d2c_0 d1c_1 d3c_2 d2c_2 d1c_2 + -124/315*d3c_0 d1c_0 d3c_1 d2c_1 d1c_1 d2c_2 + -2/9*d3c_0 d1c_0 d2c_1 d3c_2 d2c_2 d1c_2 + 124/315*d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 + 2/9*d2c_0 d1c_0 d3c_1 d3c_2 d2c_2 d1c_2 + 2/3*d3c_1 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_0 c_1):
+     fan-type     = -2/9*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_2 + 2/9*d3c_0 d2c_0 d1c_0 d3c_1 d1c_1 d2c_2 + -2/9*d3c_0 d2c_0 d1c_0 d2c_1 d1c_1 d3c_2 + -2/3*d3c_0 d2c_0 d1c_0 d3c_2 d2c_2 d1c_2 + -124/315*d3c_0 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2 + 124/315*d2c_0 d3c_1 d1c_1 d3c_2 d2c_2 d1c_2 + -124/315*d1c_0 d3c_1 d2c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_1 c_1):
+     fan-type     = 2/9*d3c_0 d2c_0 d3c_1 d2c_1 d1c_1 d1c_2 + 124/315*d3c_0 d2c_0 d1c_1 d3c_2 d2c_2 d1c_2 + -2/9*d3c_0 d1c_0 d3c_1 d2c_1 d1c_1 d2c_2 + -124/315*d3c_0 d1c_0 d2c_1 d3c_2 d2c_2 d1c_2 + 2/9*d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 + 124/315*d2c_0 d1c_0 d3c_1 d3c_2 d2c_2 d1c_2 + 2/3*d3c_1 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_2 c_1):
+     fan-type     = 3/35*d3c_0 d2c_0 d3c_1 d1c_1 d2c_2 d1c_2 + -3/35*d3c_0 d2c_0 d2c_1 d1c_1 d3c_2 d1c_2 + -3/35*d3c_0 d1c_0 d3c_1 d2c_1 d2c_2 d1c_2 + 3/35*d3c_0 d1c_0 d2c_1 d1c_1 d3c_2 d2c_2 + 3/35*d2c_0 d1c_0 d3c_1 d2c_1 d3c_2 d1c_2 + -3/35*d2c_0 d1c_0 d3c_1 d1c_1 d3c_2 d2c_2
+  Q2^hat(1*B_1 B_1 c_1):
+     fan-type     = -2/3*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_2 + 2/3*d3c_0 d2c_0 d1c_0 d3c_1 d1c_1 d2c_2 + -2/3*d3c_0 d2c_0 d1c_0 d2c_1 d1c_1 d3c_2 + -88/35*d3c_0 d2c_0 d1c_0 d3c_2 d2c_2 d1c_2 + -2/3*d3c_0 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2 + 2/3*d2c_0 d3c_1 d1c_1 d3c_2 d2c_2 d1c_2 + -2/3*d1c_0 d3c_1 d2c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_1 B_2 c_1):
+     fan-type     = 2/3*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 + 124/315*d3c_0 d2c_0 d1c_0 d3c_1 d2c_2 d1c_2 + -124/315*d3c_0 d2c_0 d1c_0 d2c_1 d3c_2 d1c_2 + 124/315*d3c_0 d2c_0 d1c_0 d1c_1 d3c_2 d2c_2 + 2/9*d3c_0 d3c_1 d2c_1 d1c_1 d2c_2 d1c_2 + -2/9*d2c_0 d3c_1 d2c_1 d1c_1 d3c_2 d1c_2 + 2/9*d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 d2c_2
+  Q2^hat(1*B_2 B_2 c_1):
+     fan-type     = -124/315*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_2 + 124/315*d3c_0 d2c_0 d1c_0 d3c_1 d1c_1 d2c_2 + -124/315*d3c_0 d2c_0 d1c_0 d2c_1 d1c_1 d3c_2 + -2/3*d3c_0 d2c_0 d1c_0 d3c_2 d2c_2 d1c_2 + -2/9*d3c_0 d2c_1 d1c_1 d3c_2 d2c_2 d1c_2 + 2/9*d2c_0 d3c_1 d1c_1 d3c_2 d2c_2 d1c_2 + -2/9*d1c_0 d3c_1 d2c_1 d3c_2 d2c_2 d1c_2
+  Q2^hat(1*B_0 B_0 c_2):
+     fan-type     = 2/3*d3c_0 d2c_0 d1c_0 d3c_1 d2c_1 d1c_1 + 2/9*d3c_0 d2c_0 d1c_0 d3c_1 d2c_2 d1c_2 + -2/9*d3c_0 d2c_0 d1c_0 d2c_1 d3c_2 d1c_2 + 2/9*d3c_0 d2c_0 d1c_0 d1c_1 d3c_2 d2c_2 + 124/315*d3c_0 d3c_1 d2c_1 d1c_1 d2c_2 d1c_2 + -124/315*d2c_0 d3c_1 d2c_1 d1c_1 d3c_2 d1c_2 + 124/315*d1c_0 d3c_1 d2c_1 d1c_1 d3c_2 d2c_2
+  Q2^hat(1*B_0 B_1 c_2):
+     fan-type     = 3/35*d3c_0 d2c_0 d3c_1 d1c_1 d2c_2 d1c_2 + -3/35*d3c_0 d2c_0 d2c_1 d1c_1 d3c_2 d1c_2 + -3/35*d3c_0 d1c_0 d3c_1 d2c_1 d2c_2 d1c_2 + 3/35*d3c_0 d1c_0 d2c_1 d1c_1 d3c_2 d2c_2 + 3/35*d2c_0 d1c_0 d3c_1 d2c_1 d3c_2 d1c_2 + -3/35*d2c_0 d1c_0 d3c_1 d1c_1 d3c_2 d2c_2

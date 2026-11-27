@@ -1,0 +1,3 @@
+theory GL(2)+1F: 40 undifferentiated monomials of degree 4..5 (sample of 336); Q2^2 != 0 on 28, {Q0,Q4fan} != 0 on 28, {Q0,T50} != 0 on 19; 296 coefficient equations  [5s]
+solution: u = 1, v = 1; inconsistent equations: 0 (unknowns determined: ['u', 'v'])
+[5s]

@@ -1,0 +1,18 @@
+# cartan_detector_wide  2026-11-27 01:30:20
+A9 sl10(Kac A9) dim 99 rank 9: o'|_C mod p (3 samples): [579022008, 631601605, 477008317]  nonzero: True
+A10 sl11(Kac A10) dim 120 rank 10: o'|_C mod p (3 samples): [907528826, 1131483339, 1711382061]  nonzero: True
+A11 sl12(Kac A11) dim 143 rank 11: o'|_C mod p (3 samples): [177809928, 1008966396, 19783115]  nonzero: True
+A12 sl13(Kac A12) dim 168 rank 12: o'|_C mod p (3 samples): [877064731, 939399222, 1197634361]  nonzero: True
+A13 sl14(Kac A13) dim 195 rank 13: o'|_C mod p (3 samples): [2040206700, 2083788430, 786325031]  nonzero: True
+A14 sl15(Kac A14) dim 224 rank 14: o'|_C mod p (3 samples): [1375863340, 632436352, 1811933972]  nonzero: True
+A15 sl16(Kac A15) dim 255 rank 15: o'|_C mod p (3 samples): [1978367149, 1327781788, 2069531569]  nonzero: True
+B6 so13(fold D7) dim 78 rank 6: o'|_C mod p (3 samples): [380938518, 2121449062, 519528492]  nonzero: True
+B7 so15(fold D8) dim 105 rank 7: o'|_C mod p (3 samples): [1062357996, 2041677324, 965824120]  nonzero: True
+B8 so17(fold D9) dim 136 rank 8: o'|_C mod p (3 samples): [164312726, 225904892, 1895430115]  nonzero: True
+C6 sp12(fold A11) dim 78 rank 6: o'|_C mod p (3 samples): [1096170690, 1809825441, 1622351417]  nonzero: True
+C7 sp14(fold A13) dim 105 rank 7: o'|_C mod p (3 samples): [1198752091, 941869444, 365279342]  nonzero: True
+C8 sp16(fold A15) dim 136 rank 8: o'|_C mod p (3 samples): [1295186277, 1182848339, 123396316]  nonzero: True
+D7 so14(Kac D7) dim 91 rank 7: o'|_C mod p (3 samples): [1993292872, 69755933, 1434812647]  nonzero: True
+D8 so16(Kac D8) dim 120 rank 8: o'|_C mod p (3 samples): [1645498193, 1395247326, 877783351]  nonzero: True
+D9 so18(Kac D9) dim 153 rank 9: o'|_C mod p (3 samples): [268910543, 103027242, 2142776269]  nonzero: True
+# done in 8.7 s

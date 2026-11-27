@@ -1,0 +1,29 @@
+# wick_colour_rerun  2026-11-27 01:43:00
+## standard Wick signs (local order L', target (e,0),(e,1) by edge, then externals)
+(1, 5, 5) sigma = -1
+(2, 4, 5) sigma = -1
+(3, 3, 5) sigma = -1
+(3, 4, 4) sigma = -1
+## invariance of sigma K C (6 random relabellings each, sources random integers)
+(4, 1) (1, 5, 5) invariant: True  control (one local-order sign flipped) invariant: False
+(4, 1) (2, 4, 5) invariant: True  control (one local-order sign flipped) invariant: False
+(4, 1) (3, 3, 5) invariant: True  control (one local-order sign flipped) invariant: False
+(4, 1) (3, 4, 4) invariant: True  control (one local-order sign flipped) invariant: False
+(5, 0) (1, 5, 5) invariant: True  control (one local-order sign flipped) invariant: False
+(5, 0) (2, 4, 5) invariant: True  control (one local-order sign flipped) invariant: False
+(5, 0) (3, 3, 5) invariant: True  control (one local-order sign flipped) invariant: False
+(5, 0) (3, 4, 4) invariant: True  control (one local-order sign flipped) invariant: False
+## ribbon expansion of C_std (gl_N, trace basis) vs explicit sl_3, sl_4 contraction (exact)
+(1, 5, 5) trace structures: 892  fixed-point-free: 652  N powers: [0, 1, 2]
+(2, 4, 5) trace structures: 908  fixed-point-free: 704  N powers: [0, 1]
+(3, 3, 5) trace structures: 928  fixed-point-free: 716  N powers: [0, 1]
+(3, 4, 4) trace structures: 934  fixed-point-free: 756  N powers: [0, 1]
+sl_3 (1, 5, 5) explicit = 5148  trace basis = 5148  equal: True
+sl_3 (2, 4, 5) explicit = 78000  trace basis = 78000  equal: True
+sl_3 (3, 3, 5) explicit = -214059  trace basis = -214059  equal: True
+sl_3 (3, 4, 4) explicit = 584705  trace basis = 584705  equal: True
+sl_4 (1, 5, 5) explicit = -5875678  trace basis = -5875678  equal: True
+sl_4 (2, 4, 5) explicit = -2515072  trace basis = -2515072  equal: True
+sl_4 (3, 3, 5) explicit = 3607647  trace basis = 3607647  equal: True
+sl_4 (3, 4, 4) explicit = 1058642  trace basis = 1058642  equal: True
+# done in 2.4 s

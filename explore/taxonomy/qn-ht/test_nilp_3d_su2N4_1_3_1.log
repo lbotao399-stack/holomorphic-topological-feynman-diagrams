@@ -1,0 +1,5 @@
+theory: 3d N=4 SU(2) Nf=1 (H,T) = (1,1), D = 2; interaction terms 21; shapes: theta(1, 2, 2)@N |Aut|=2, theta(1, 2, 2)@(1, 1) |Aut|=2 [setup 1.8s]
+5940 monomials (deg 2..3, total derivatives <= 1): Q2^hat != 0 on 691 (tadpole-type part != 0 on 0); Q0 Q2 and Q2 Q0 both != 0 on 691; {Q0,Q2} != 0 on 0
+   fan-type part alone: {Q0,.} != 0 on 0; tadpole-type part alone: 0
+   control (weight of one shape doubled): failures {}
+   [18s]

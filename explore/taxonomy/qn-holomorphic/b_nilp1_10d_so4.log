@@ -1,0 +1,10 @@
+theory 10d gauge so4 matter None H=5 N=6: order 1, O = g,g, jets {}, functionals g,g,g,g,g,g, F = 3, seed 201, P = 2147483647
+blocks: {'g': 6}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (4, 5)])]
+  <hatQ[Q0] hatQ[G1.1] O>: [1291322373, 717779429, 290634390]   (histories 10, keys 5, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[Q0] O>: [143616061, 1572070187, 978142187]   (histories 12, keys 1, colour 0s, total 0s)
+kappa_1 system: 3 equations, rank 1, augmented rank 1 (unknowns 1)
+order 1 residuals {Q0,hatQ_G}: {'G1.1': [1434938434, 142365969, 1268776577]}
+  kappa[G1.1] = 0   |Aut| = 2   kappa*|Aut| = 0
+residual with solved kappa_1: [0, 0, 0]
+total time 1s

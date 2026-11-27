@@ -1,0 +1,6 @@
+# family_slN  2026-11-27 01:32:17
+p = 2147483629: f(N) = N^3 det M(N): degree 0 (interpolated at N=9..14, verified at N=9..22: True), roots in F_p: 0
+p = 2147483629: g(N) = l_1(o'(N)): degree 1 (verified at N=9..22: True), roots in F_p: 1; f(9..22) all nonzero: True
+p = 2147483587: f(N) = N^3 det M(N): degree 0 (interpolated at N=9..14, verified at N=9..22: True), roots in F_p: 0
+p = 2147483587: g(N) = l_1(o'(N)): degree 1 (verified at N=9..22: True), roots in F_p: 1; f(9..22) all nonzero: True
+# done in 27.6 s

@@ -1,0 +1,4 @@
+kappa = 1/|Aut|: {'G1.1': '1/2', 'G2.1': '1/2', 'G2.2': '1', 'G2.3': '1/6'}
+residual sum kappa kappa E with kappa = 1/|Aut|: [801637202, 1338913354, 863277664, 536583745]
+sign patterns at order 2 (lower orders kappa = 1/|Aut|):
+  residual 0 for kappa = {'G2.1': '-1/2', 'G2.2': '-1', 'G2.3': '-1/6'}

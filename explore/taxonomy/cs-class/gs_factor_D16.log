@@ -1,0 +1,4 @@
+# gs_factor_D16  2026-11-27 01:32:05
+D16 so32(Kac D16)    rank 16 roots 480: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): True
+so(N), V = C^N: Tr_ad X^6 = (N-32) tr_V X^6 + 15 tr_V X^2 tr_V X^4  [src explore/type-i/README.md, closed exchange]
+# done in 3.3 s

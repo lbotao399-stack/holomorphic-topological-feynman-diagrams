@@ -1,0 +1,8 @@
+# o2_10d_slN  2026-11-27 01:28:54
+(1, 5, 5) Q(Lbar) minor expansion: 16 terms, equal to twoloop.Q_form at 3 random source sets
+(2, 4, 5) Q(Lbar) minor expansion: 16 terms, equal to twoloop.Q_form at 3 random source sets
+(3, 3, 5) Q(Lbar) minor expansion: 16 terms, equal to twoloop.Q_form at 3 random source sets
+(3, 4, 4) Q(Lbar) minor expansion: 42 terms, equal to twoloop.Q_form at 3 random source sets
+N = 9  nonzero C^9 coordinates of d F_G: {(1, 5, 5): 80, (2, 4, 5): 120, (3, 3, 5): 120, (3, 4, 4): 120}  of d o'_10: 120 of 320
+N = 11  nonzero C^9 coordinates of d F_G: {(1, 5, 5): 80, (2, 4, 5): 120, (3, 3, 5): 120, (3, 4, 4): 120}  of d o'_10: 120 of 320
+# done in 21.9 s

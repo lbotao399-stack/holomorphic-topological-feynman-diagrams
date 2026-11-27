@@ -1,0 +1,14 @@
+theory 6d10 gauge sl2 matter fund*16 H=3 N=70: order 2, O = gv,gv,gv, jets {}, functionals g,g,g,u,u, F = 6, seed 6, P = 2147483647
+blocks: {'g': 3, 'u': 64, 'gv': 3}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (0, 3), (2, 3)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (2, 5), (4, 5)]), ('G2.2', 2, [(0, 1), (1, 2), (2, 3), (2, 4), (0, 5), (3, 5), (4, 5)])]
+  <hatQ[Q0] hatQ[G2.1] O>: [1430616928, 159133712, 755573547, 875490271, 1590654760, 0]   (histories 240, keys 4, colour 1s, total 1s)
+  <hatQ[Q0] hatQ[G2.2] O>: [2146420747, 51070, 1073743906, 540800, 2147403347, 0]   (histories 240, keys 4, colour 1s, total 1s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [2145026047, 46960, 1909339184, 1428001898, 238453703, 0]   (histories 360, keys 6, colour 1s, total 1s)
+  <hatQ[G2.1] hatQ[Q0] O>: [717579819, 1988337075, 437342393, 557144827, 1511310499, 0]   (histories 360, keys 1, colour 1s, total 1s)
+  <hatQ[G2.2] hatQ[Q0] O>: [1578600, 2147421957, 1073637856, 306800, 113660, 0]   (histories 360, keys 1, colour 1s, total 1s)
+kappa_2 system: 6 equations, rank 2, augmented rank 2 (unknowns 2)
+  kappa[G2.1] = 1/2   |Aut| = 2   kappa*|Aut| = 1
+  kappa[G2.2] = 1/2   |Aut| = 2   kappa*|Aut| = 1
+residual with solved kappa_2: [0, 0, 0, 0, 0, 0]
+total time 4s

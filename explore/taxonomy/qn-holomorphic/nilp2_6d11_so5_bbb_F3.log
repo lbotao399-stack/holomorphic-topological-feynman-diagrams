@@ -1,0 +1,14 @@
+theory 6d11 gauge so5 matter None H=3 N=40: order 2, O = gt1t2,gt1t2,gt1t2, jets {}, functionals g,g,g,gt1,gt2, F = 3, seed 2, P = 2147483647
+blocks: {'g': 10, 'gt1': 10, 'gt2': 10, 'gt1t2': 10}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (0, 3), (2, 3)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (2, 5), (4, 5)]), ('G2.2', 2, [(0, 1), (1, 2), (2, 3), (2, 4), (0, 5), (3, 5), (4, 5)])]
+  <hatQ[Q0] hatQ[G2.1] O>: [123233473, 1932177519, 548329747]   (histories 480, keys 4, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.2] O>: [951294647, 359449161, 1556190955]   (histories 480, keys 4, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [939884969, 486984154, 73848521]   (histories 720, keys 6, colour 0s, total 0s)
+  <hatQ[G2.1] hatQ[Q0] O>: [477725925, 691860710, 1937897063]   (histories 720, keys 1, colour 0s, total 0s)
+  <hatQ[G2.2] hatQ[Q0] O>: [1199028941, 1067987827, 1289367092]   (histories 720, keys 1, colour 0s, total 0s)
+kappa_2 system: 3 equations, rank 2, augmented rank 2 (unknowns 2)
+  kappa[G2.1] = 1/2   |Aut| = 2   kappa*|Aut| = 1
+  kappa[G2.2] = 1/2   |Aut| = 2   kappa*|Aut| = 1
+residual with solved kappa_2: [0, 0, 0]
+total time 2s

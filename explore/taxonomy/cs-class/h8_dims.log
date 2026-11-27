@@ -1,0 +1,10 @@
+# h8_dims  2026-11-27 01:33:04
+H = 2, k = 3: generators 1, dim C^k = 1, rank d_k = 1 (coordinates 120 / 240)
+H = 2, k = 4: generators 10, dim C^k = 3, rank d_k = 1 (coordinates 240 / 240)
+H = 2, k = 5: generators 36, dim C^k = 6, rank d_k = 5 (coordinates 240 / 480)
+H = 2: dim Z^4 = 2, dim B^4 = 1, dim H^4 = 1
+H = 4, k = 6: generators 44, dim C^k = 4, rank d_k = 3 (coordinates 640 / 640)
+H = 4, k = 7: generators 428, dim C^k = 37, rank d_k = 34 (coordinates 640 / 1120)
+H = 4, k = 8: generators 3649, dim C^k = 179, rank d_k = 141 (coordinates 1120 / 1280)
+H = 4: dim Z^7 = 3, dim B^7 = 3, dim H^7 = 0
+# done in 9.3 s

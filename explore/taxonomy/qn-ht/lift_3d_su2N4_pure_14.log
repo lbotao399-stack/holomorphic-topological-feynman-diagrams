@@ -1,0 +1,42 @@
+theory: 3d N=4 SU(2) pure (sl2) (H,T)=(1,1); grading: ghost ; weights in units of 1/2 ; sectors with sum(w) <= 14, w non-increasing, gauge charge 0
+letters: 87
+w=(Fraction(1, 1),) charges=(0, 0): dim C = {0: 1, 2: 7, 4: 13, 6: 11, 8: 4} ; dim H(Q0) = {2: 1, 8: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(1, 1),) charges=(0, 2): dim C = {4: 2, 6: 4, 8: 4, 10: 2} ; dim H(Q0) = {4: 1, 10: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 2),) charges=(0, -3): dim C = {0: 1, 2: 1, 4: 1, 6: 1} ; dim H(Q0) = {0: 1, 6: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 2),) charges=(0, -1): dim C = {0: 4, 2: 16, 4: 24, 6: 18, 8: 6} ; dim H(Q0) = {2: 1, 8: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 2),) charges=(0, 1): dim C = {2: 4, 4: 17, 6: 29, 8: 23, 10: 7} ; dim H(Q0) = {2: 1, 4: 1, 8: 1, 10: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1),) charges=(0, -2): dim C = {0: 6, 2: 18, 4: 24, 6: 16, 8: 4} ; dim H(Q0) = {0: 1, 6: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1),) charges=(0, 0): dim C = {0: 3, 2: 24, 4: 62, 6: 80, 8: 51, 10: 12} ; dim H(Q0) = {2: 2, 8: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1),) charges=(0, 2): dim C = {4: 7, 6: 29, 8: 47, 10: 35, 12: 10} ; dim H(Q0) = {4: 1, 6: 1, 10: 1, 12: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1),) charges=(0, 4): dim C = {8: 3, 10: 7, 12: 7, 14: 3} ; dim H(Q0) = {8: 1, 14: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(5, 2),) charges=(0, -3): dim C = {0: 4, 2: 11, 4: 13, 6: 7, 8: 1} ; dim H(Q0) = {0: 1, 6: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(5, 2),) charges=(0, -1): dim C = {0: 11, 2: 59, 4: 119, 6: 119, 8: 60, 10: 12} ; dim H(Q0) = {2: 1, 8: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(5, 2),) charges=(0, 1): dim C = {2: 11, 4: 65, 6: 146, 8: 162, 10: 91, 12: 21} ; dim H(Q0) = {2: 1, 4: 2, 6: 1, 8: 1, 10: 2, 12: 1} ; Q2^hat z != 0 on 71 cocycle basis vectors
+w=(Fraction(5, 2),) charges=(0, 3): dim C = {6: 10, 8: 41, 10: 65, 12: 47, 14: 13} ; dim H(Q0) = {6: 1, 8: 1, 12: 1, 14: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 1),) charges=(0, -2): dim C = {0: 18, 2: 76, 4: 128, 6: 106, 8: 42, 10: 6} ; dim H(Q0) = {0: 1, 2: 1, 6: 1, 8: 1} ; Q2^hat z != 0 on 9 cocycle basis vectors
+w=(Fraction(3, 1),) charges=(0, 0): dim C = {0: 6, 2: 69, 4: 232, 6: 372, 8: 316, 10: 135, 12: 22} ; dim H(Q0) = {2: 2, 4: 2, 8: 2, 10: 2} ; Q2^hat z != 0 on 123 cocycle basis vectors
+w=(Fraction(3, 1),) charges=(0, 2): dim C = {4: 24, 6: 119, 8: 246, 10: 260, 12: 136, 14: 27} ; dim H(Q0) = {4: 2, 6: 3, 10: 2, 12: 3} ; Q2^hat z != 0 on 44 cocycle basis vectors
+w=(Fraction(3, 1),) charges=(0, 4): dim C = {8: 13, 10: 53, 12: 83, 14: 59, 16: 16} ; dim H(Q0) = {8: 1, 10: 1, 14: 1, 16: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 1),) charges=(0, 6): dim C = {12: 4, 14: 10, 16: 10, 18: 4} ; dim H(Q0) = {12: 1, 18: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(7, 2),) charges=(0, -3): dim C = {0: 16, 2: 54, 4: 77, 6: 55, 8: 17, 10: 1} ; dim H(Q0) = {0: 2, 2: 1, 6: 2, 8: 1} ; Q2^hat z != 0 on 3 cocycle basis vectors
+w=(Fraction(7, 2),) charges=(0, -1): dim C = {0: 27, 2: 178, 4: 442, 6: 558, 8: 377, 10: 122, 12: 12} ; dim H(Q0) = {2: 2, 4: 1, 8: 2, 10: 1} ; Q2^hat z != 0 on 128 cocycle basis vectors
+w=(Fraction(7, 2),) charges=(0, 1): dim C = {2: 27, 4: 198, 6: 552, 8: 778, 10: 589, 12: 224, 14: 32} ; dim H(Q0) = {2: 1, 4: 4, 6: 3, 8: 1, 10: 4, 12: 3} ; Q2^hat z != 0 on 542 cocycle basis vectors
+w=(Fraction(7, 2),) charges=(0, 3): dim C = {6: 36, 8: 180, 10: 358, 12: 356, 14: 178, 16: 36} ; dim H(Q0) = {6: 2, 8: 3, 10: 1, 12: 2, 14: 3, 16: 1} ; Q2^hat z != 0 on 137 cocycle basis vectors
+w=(Fraction(7, 2),) charges=(0, 5): dim C = {10: 16, 12: 65, 14: 101, 16: 71, 18: 19} ; dim H(Q0) = {10: 1, 12: 1, 16: 1, 18: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, -4): dim C = {0: 7, 2: 20, 4: 24, 6: 14, 8: 3} ; dim H(Q0) = {0: 1, 6: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, -2): dim C = {0: 51, 2: 249, 4: 500, 6: 518, 8: 279, 10: 67, 12: 4} ; dim H(Q0) = {0: 2, 2: 3, 6: 2, 8: 3} ; Q2^hat z != 0 on 108 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, 0): dim C = {0: 13, 2: 173, 4: 704, 6: 1377, 8: 1461, 10: 839, 12: 232, 14: 21} ; dim H(Q0) = {2: 2, 4: 4, 6: 1, 8: 2, 10: 4, 12: 1} ; Q2^hat z != 0 on 1693 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, 2): dim C = {4: 62, 6: 391, 8: 982, 10: 1276, 12: 898, 14: 317, 16: 42} ; dim H(Q0) = {4: 2, 6: 7, 8: 3, 10: 2, 12: 7, 14: 3} ; Q2^hat z != 0 on 878 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, 4): dim C = {8: 51, 10: 240, 12: 466, 14: 458, 16: 223, 18: 42} ; dim H(Q0) = {8: 3, 10: 3, 14: 3, 16: 3} ; Q2^hat z != 0 on 71 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, 6): dim C = {12: 19, 14: 77, 16: 119, 18: 83, 20: 22} ; dim H(Q0) = {12: 1, 14: 1, 18: 1, 20: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(4, 1),) charges=(0, 8): dim C = {16: 5, 18: 13, 20: 13, 22: 5} ; dim H(Q0) = {16: 1, 22: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(9, 2),) charges=(0, -3): dim C = {0: 50, 2: 203, 4: 341, 6: 292, 8: 124, 10: 21, 12: 1} ; dim H(Q0) = {0: 3, 2: 3, 6: 3, 8: 3} ; Q2^hat z != 0 on 38 cocycle basis vectors
+w=(Fraction(9, 2),) charges=(0, -1): dim C = {0: 60, 2: 473, 4: 1392, 6: 2090, 8: 1741, 10: 778, 12: 155, 14: 7} ; dim H(Q0) = {2: 3, 4: 5, 8: 3, 10: 5} ; Q2^hat z != 0 on 785 cocycle basis vectors
+w=(Fraction(9, 2),) charges=(0, 1): dim C = {2: 60, 4: 530, 6: 1745, 8: 2939, 10: 2772, 12: 1440, 14: 359, 16: 27} ; dim H(Q0) = {2: 1, 4: 6, 6: 8, 8: 2, 10: 6, 12: 8, 14: 1} ; Q2^hat z != 0 on 3260 cocycle basis vectors
+w=(Fraction(9, 2),) charges=(0, 3): dim C = {6: 107, 8: 618, 10: 1468, 12: 1816, 14: 1217, 16: 410, 18: 52} ; dim H(Q0) = {6: 4, 8: 7, 10: 3, 12: 4, 14: 7, 16: 3} ; Q2^hat z != 0 on 1163 cocycle basis vectors
+w=(Fraction(9, 2),) charges=(0, 5): dim C = {10: 63, 12: 303, 14: 580, 16: 554, 18: 265, 20: 51} ; dim H(Q0) = {10: 2, 12: 3, 14: 1, 16: 2, 18: 3, 20: 1} ; Q2^hat z != 0 on 203 cocycle basis vectors
+w=(Fraction(9, 2),) charges=(0, 7): dim C = {14: 22, 16: 89, 18: 137, 20: 95, 22: 25} ; dim H(Q0) = {14: 1, 16: 1, 20: 1, 22: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(5, 1),) charges=(0, -4): dim C = {0: 26, 2: 93, 4: 132, 6: 92, 8: 30, 10: 3} ; dim H(Q0) = {0: 1, 2: 1, 6: 1, 8: 1} ; Q2^hat z != 0 on 4 cocycle basis vectors
+w=(Fraction(5, 1),) charges=(0, -2): dim C = {0: 122, 2: 713, 4: 1665, 6: 2022, 8: 1349, 10: 464, 12: 64, 14: 1} ; dim H(Q0) = {0: 2, 2: 7, 4: 3, 6: 2, 8: 7, 10: 3} ; Q2^hat z != 0 on 1485 cocycle basis vectors
+w=(Fraction(5, 1),) charges=(0, 0): dim C = {0: 24, 2: 401, 4: 1915, 6: 4346, 8: 5465, 10: 3924, 12: 1520, 14: 263, 16: 10} ; dim H(Q0) = {2: 2, 4: 10, 6: 3, 8: 2, 10: 10, 12: 3} ; Q2^hat z != 0 on 6588 cocycle basis vectors
+w=(Fraction(5, 1),) charges=(0, 2): dim C = {4: 153, 6: 1103, 8: 3222, 10: 4979, 12: 4346, 14: 2088, 16: 485, 18: 36} ; dim H(Q0) = {4: 3, 6: 12, 8: 7, 10: 4, 12: 12, 14: 7, 16: 1} ; Q2^hat z != 0 on 5137 cocycle basis vectors

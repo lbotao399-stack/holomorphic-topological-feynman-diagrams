@@ -1,0 +1,13 @@
+# check_cartan_vs_trace  2026-11-27 01:26:36
+sl_3 sample 0: Cartan detector = 397368005, trace-basis cochain = 397368005, equal: True
+sl_3 sample 1: Cartan detector = 1558365252, trace-basis cochain = 1558365252, equal: True
+sl_4 sample 0: Cartan detector = 0, trace-basis cochain = 0, equal: True
+sl_4 sample 1: Cartan detector = 687765666, trace-basis cochain = 687765666, equal: True
+## 1/2{j_T,j_T} on Cartan cycles: cartan_lib.half_bracket_tensor vs trace-basis half_bracket_sym
+sl_4 T=(2, 3) sample 0: Cartan = 1880739209, trace basis = 1880739209, equal: True
+sl_4 T=(2, 3) sample 1: Cartan = 560721080, trace basis = 560721080, equal: True
+sl_5 T=(5,) sample 0: Cartan = 2077905687, trace basis = 2077905687, equal: True
+sl_5 T=(5,) sample 1: Cartan = 1965989327, trace basis = 1965989327, equal: True
+sl_5 T=(2, 3) sample 0: Cartan = 1047224404, trace basis = 1047224404, equal: True
+sl_5 T=(2, 3) sample 1: Cartan = 762081677, trace basis = 762081677, equal: True
+# done in 18.3 s

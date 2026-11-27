@@ -1,0 +1,7 @@
+Q0 phi_0^0 = 1 * phi_0^1 phi_0^2  ->  a0 = 1/2
+Q1(phi_t1^A phi_t2t3^B): coefficient / (CC_DE + CC_ED) of d1 phi_0^D d2 phi_0^E: {Fraction(1, 2)}
+Q1(phi_t2t3^A phi_t1t3^B): coefficient / (CC + CC) of d1 phi_0^D d2 phi_t3^E: {Fraction(-1, 2)}
+Q2(phi_t2t3^A1 phi_t1t3^A2 phi_t1t2^A3): coefficient / (T_DE - T_ED) of d1d1 phi_0^D d2d2 phi_0^E: {Fraction(-1, 48)}
+a0 = 1/2, a1 = 1/2, b1 = -1/2, a2 = -1/48
+a2 a0 / a1^2 = -1/24   (LLC: -1/24)
+b1 / a1 = -1   (LLC: -1)

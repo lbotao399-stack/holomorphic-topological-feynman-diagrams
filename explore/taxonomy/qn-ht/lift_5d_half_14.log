@@ -1,0 +1,15 @@
+theory: 5d N=1 SU(2) + half-hyper (U//g) (H,T)=(2,1); grading: parity ; weights in units of 1/2 ; sectors with sum(w) <= 14, w non-increasing, gauge charge 0
+letters: 227
+w=(Fraction(1, 1), Fraction(1, 1)) charges=(0, 0): dim C = {0: 22, 1: 22} ; dim H(Q0) = {0: 1, 1: 1} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1), Fraction(1, 1)) charges=(0, 0): dim C = {0: 64, 1: 64} ; dim H(Q0) = {0: 2, 1: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(2, 1), Fraction(2, 1)) charges=(0, 0): dim C = {0: 248, 1: 248} ; dim H(Q0) = {0: 4, 1: 4} ; Q2^hat z != 0 on 15 cocycle basis vectors
+w=(Fraction(3, 1), Fraction(1, 1)) charges=(0, 0): dim C = {0: 152, 1: 152} ; dim H(Q0) = {0: 2, 1: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 1), Fraction(2, 1)) charges=(0, 0): dim C = {0: 716, 1: 716} ; dim H(Q0) = {0: 4, 1: 4} ; Q2^hat z != 0 on 75 cocycle basis vectors
+w=(Fraction(4, 1), Fraction(1, 1)) charges=(0, 0): dim C = {0: 324, 1: 324} ; dim H(Q0) = {0: 2, 1: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(3, 1), Fraction(3, 1)) charges=(0, 0): dim C = {0: 2414, 1: 2414} ; dim H(Q0) = {0: 7, 1: 7} ; Q2^hat z != 0 on 465 cocycle basis vectors
+w=(Fraction(4, 1), Fraction(2, 1)) charges=(0, 0): dim C = {0: 1768, 1: 1768} ; dim H(Q0) = {0: 6, 1: 6} ; Q2^hat z != 0 on 243 cocycle basis vectors
+w=(Fraction(5, 1), Fraction(1, 1)) charges=(0, 0): dim C = {0: 636, 1: 636} ; dim H(Q0) = {0: 2, 1: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+w=(Fraction(4, 1), Fraction(3, 1)) charges=(0, 0): dim C = {0: 6724, 1: 6724} ; dim H(Q0) = {0: 12, 1: 12} ; Q2^hat z != 0 on 1764 cocycle basis vectors
+w=(Fraction(5, 1), Fraction(2, 1)) charges=(0, 0): dim C = {0: 3922, 1: 3922} ; dim H(Q0) = {0: 7, 1: 7} ; Q2^hat z != 0 on 685 cocycle basis vectors
+w=(Fraction(6, 1), Fraction(1, 1)) charges=(0, 0): dim C = {0: 1180, 1: 1180} ; dim H(Q0) = {0: 2, 1: 2} ; Q2^hat z != 0 on 0 cocycle basis vectors
+time 235s

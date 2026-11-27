@@ -1,0 +1,22 @@
+theory 6d11 gauge so5 matter None H=3 N=40: order 3, O = gt1t2,gt1t2,gt1t2,gt1t2, jets {}, functionals g,g,g,g,gt1,gt2, F = 1, seed 13, P = 2147483647
+blocks: {'g': 10, 'gt1': 10, 'gt2': 10, 'gt1t2': 10}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (0, 3), (2, 3)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (2, 5), (4, 5)]), ('G2.2', 2, [(0, 1), (1, 2), (2, 3), (2, 4), (0, 5), (3, 5), (4, 5)])]
+  order 3 graphs: [('G3.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (0, 7), (2, 7), (4, 7), (6, 7)]), ('G3.2', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (4, 6), (0, 7), (2, 7), (5, 7), (6, 7)]), ('G3.3', 1, [(0, 1), (1, 2), (2, 3), (3, 4), (3, 5), (4, 6), (0, 7), (2, 7), (5, 7), (6, 7)]), ('G3.4', 8, [(0, 1), (1, 2), (1, 3), (2, 4), (4, 5), (4, 6), (0, 7), (3, 7), (5, 7), (6, 7)]), ('G3.5', 2, [(0, 1), (1, 2), (1, 3), (2, 4), (2, 5), (4, 6), (0, 7), (3, 7), (5, 7), (6, 7)])]
+  <hatQ[Q0] hatQ[G3.1] O>: [1665801062]   (histories 3600, keys 5, colour 2s, total 2s)
+  <hatQ[Q0] hatQ[G3.2] O>: [1926181329]   (histories 3600, keys 5, colour 2s, total 2s)
+  <hatQ[Q0] hatQ[G3.3] O>: [194451134]   (histories 3600, keys 5, colour 2s, total 2s)
+  <hatQ[Q0] hatQ[G3.4] O>: [299034042]   (histories 3600, keys 5, colour 2s, total 2s)
+  <hatQ[Q0] hatQ[G3.5] O>: [3672449]   (histories 3600, keys 5, colour 2s, total 2s)
+  <hatQ[G1.1] hatQ[G2.1] O>: [88191165]   (histories 5760, keys 8, colour 4s, total 4s)
+  <hatQ[G1.1] hatQ[G2.2] O>: [75127108]   (histories 5760, keys 8, colour 4s, total 4s)
+  <hatQ[G2.1] hatQ[G1.1] O>: [1383312620]   (histories 6480, keys 9, colour 4s, total 4s)
+  <hatQ[G2.2] hatQ[G1.1] O>: [1594396931]   (histories 6480, keys 9, colour 5s, total 5s)
+  <hatQ[G3.1] hatQ[Q0] O>: [358254010]   (histories 5760, keys 1, colour 4s, total 4s)
+  <hatQ[G3.2] hatQ[Q0] O>: [519182522]   (histories 5760, keys 1, colour 4s, total 4s)
+  <hatQ[G3.3] hatQ[Q0] O>: [1367409404]   (histories 5760, keys 1, colour 4s, total 4s)
+  <hatQ[G3.4] hatQ[Q0] O>: [2056783405]   (histories 5760, keys 1, colour 4s, total 4s)
+  <hatQ[G3.5] hatQ[Q0] O>: [1518008425]   (histories 5760, keys 1, colour 4s, total 4s)
+kappa_3 system: 1 equations, rank 1, augmented rank 1 (unknowns 5)
+consistent but underdetermined (rank 1 < 5)
+total time 48s

@@ -1,0 +1,16 @@
+theory 4dN2 gauge sl2 matter fund*2 H=2 N=28; blocks {'g': 3, 'u': 8, 'gv': 3, 'g*': 3, 'u*': 8, 'gv*': 3}
+charges (per block): [{'g': 0, 'g*': 1, 'gv': 2, 'gv*': -1, 'u': 1, 'u*': 0}, {'g': 0, 'g*': 1, 'gv': 0, 'gv*': 1, 'u': 0, 'u*': 1}, None, None]
+Q1 charge shift dq = (-1, -1, 0, 0)  letter shift 0
+sector q=(-2, 2, 0, 0) d=(0, 0) k=2: monomials 2, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-3, 1, 0, 0), d=(1, 1), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(-4, 0, 0, 0), d=(2, 2), k=1): rank 0
+sector q=(0, 2, 0, 0) d=(0, 0) k=2: monomials 7, invariants 2, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(-1, 1, 0, 0), d=(1, 1), k=2): rank 1
+    source cocycle: -1 X0* Xv0* + -1 X1* Xv1* + -1 X2* Xv2* + 1 u0* u4* + 1 u1* u5* + 1 u2* u6* + 1 u3* u7*
+    Q_1 image     : -2 d2.X0 d1.Xv1* + 2 d1.X0 d2.Xv1* + -2 d2.X1 d1.Xv0* + 2 d1.X1 d2.Xv0* + -4 d2.X2 d1.Xv2* + 4 d1.X2 d2.Xv2*
+sector q=(1, 1, 0, 0) d=(0, 0) k=2: monomials 11, invariants 3, dim Z 2, rank B 0, dim H 2; d_1 -> (q=(0, 0, 0, 0), d=(1, 1), k=2): rank 1
+    source cocycle: -1 u0 u0* + -1 u1 u1* + -1 u2 u2* + -1 u3 u3* + 1 Xv0 Xv0* + 1 Xv1 Xv1* + 1 Xv2 Xv2*
+    Q_1 image     : 2 d2.X0 d1.X1 + -2 d1.X0 d2.X1 + 4 d2.X2 d1.X2
+    d_2 on ker d_1 (1 chains) -> (q=(-1, -1, 0, 0), d=(2, 2), k=1): rank 0
+sector q=(2, 0, 0, 0) d=(0, 0) k=2: monomials 4, invariants 1, dim Z 1, rank B 0, dim H 1; d_1 -> (q=(1, -1, 0, 0), d=(1, 1), k=2): rank 0
+    d_2 on ker d_1 (1 chains) -> (q=(0, -2, 0, 0), d=(2, 2), k=1): rank 0
+nonzero d_1: [((0, 2, 0, 0), (0, 0), 2, 1, 1), ((1, 1, 0, 0), (0, 0), 2, 2, 1)]
+total time 0s

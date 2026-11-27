@@ -1,0 +1,9 @@
+theory 8d gauge so5 matter None H=4 N=20: order 1, O = g^v,g^v, jets {}, functionals g,g,g,g,g^v, F = 3, seed 101, P = 2147483647
+blocks: {'g': 10, 'g^v': 10}
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (2, 3), (0, 4), (3, 4)])]
+  <hatQ[Q0] hatQ[G1.1] O>: [1610565136, 1250761079, 1431771468]   (histories 40, keys 4, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[Q0] O>: [536918511, 896722568, 715712179]   (histories 48, keys 1, colour 0s, total 0s)
+kappa_1 system: 3 equations, rank 0, augmented rank 0 (unknowns 1)
+order 1 residuals {Q0,hatQ_G}: {'G1.1': [0, 0, 0]}
+consistent but underdetermined (rank 0 < 1)
+total time 0s

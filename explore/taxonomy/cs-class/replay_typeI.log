@@ -1,0 +1,66 @@
+# replay_typeI  2026-11-27 01:27:51
+## hexagon.py  exit 0  3.3 s
+   raw antiholomorphic wedge = -t_mark det(p0,...,p4)/sum(t)
+   normalized projective volume 1/120 cyclic Wick sign -1
+   primitive coefficient N-32, polarized quadratic-quartic partitions 15
+## open_theta.py  exit 0  16.6 s
+   (1, 5, 5) color words 1120 surviving coefficients [((0, (8,)), 46), ((1, (8,)), 46), ((0, (2, 6)), 42), ((0, (2, 2, 4)), 16), ((1, (2, 6)), 42), ((2, (8,)), 46)]
+   (2, 4, 5) color words 1123 surviving coefficients [((0, (8,)), 56), ((0, (4, 4)), 16), ((0, (2, 6)), 42), ((1, (8,)), 56), ((0, (2, 2, 4)), 16), ((1, (2, 6)), 42)]
+   (3, 3, 5) color words 1199 surviving coefficients [((0, (8,)), 56), ((0, (4, 4)), 16), ((0, (2, 2, 4)), 16), ((0, (2, 6)), 42), ((1, (8,)), 56), ((1, (2, 6)), 42), ((1, (4, 4)), 16)]
+   (3, 4, 4) color words 1246 surviving coefficients [((0, (8,)), 56), ((0, (2, 6)), 32), ((0, (4, 4)), 16), ((1, (8,)), 56), ((0, (2, 2, 4)), 16), ((1, (2, 6)), 36)]
+   sum [((0, (8,)), 56), ((0, (4, 4)), 16), ((1, (4, 4)), 16), ((1, (8,)), 56), ((0, (2, 6)), 42), ((0, (2, 2, 4)), 16), ((1, (2, 6)), 42), ((2, (8,)), 46)]
+## open_ce.py  exit 0  2.8 s
+   84 candidates, CE rank 5, residual rank 3 across formal rank powers
+   all (2,6)-trace boundary coefficients vanish; raw [01][23] at SO(32) = 1/960
+## check_open_theta.py  exit 0  6.9 s
+   (1, 5, 5) -7/270
+   (2, 4, 5) -7/270
+   (3, 3, 5) -7/810
+   (3, 4, 4) -7/1620
+   nine-input CE boundary in the (2,7) trace sector [Fraction(13, 10800), Fraction(1, 10800), Fraction(0, 1)]
+## mixed_hexagon.py  exit 0  2.3 s
+   all six closed-edge positions; all four internal/external derivative cases; affine Dirichlet integral
+   rooted tree sign and four cubic Wick signs; mixed subtraction -1/8640
+## single_trace_descent.py  exit 0  2.7 s
+   {'orthogonal_rank': 32, 'mixed_tensor_subtraction': '1/8640', 'pure_gauge_preimages': [[[[7], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]], '23/46080'], [[[7], [0, 1, 2, 3, 4], [0, 1, 2, 3, 5]], '1/23040'], [[[7], [0, 1, 2, 3, 4], [0, 1, 2, 4, 5]], '-11/11520']]}
+## check_single_trace.py  exit 0  7.2 s
+   SO(32) eight-cycle currents: pure theta -299/17280 raw mixed -364 gauge differential 143/5760
+## closed_primitive.py  exit 0  2.8 s
+   seven-field preimages 3 closed two-form polynomial sizes [60, 60]
+## one_primary_descent.py  exit 0  3.0 s
+   single-trace differential rank 4 verified monomial coefficients 210
+   existing (2,6) lift multiplier -5760
+   closed disk exchange multiplier 80 verified monomial coefficients 142
+   {((0, 1, 2, 3, 4), (0, 1, 2)): Fraction(-14, 3), ((0, 1, 2, 3, 4), (0, 1, 3)): Fraction(-23, 3), ((0, 1, 2, 3, 4), (0, 1, 4)): Fraction(-23, 3), ((0, 1, 2, 3, 4), (0, 2, 3)): Fraction(-3, 1)}
+## primary_bv_sign.py  exit 0  0.1 s
+   signed one-primary hexagons, ordinary CE and both closed sewings cancel
+## primary_disk.py  exit 0  0.6 s
+   ranks (1, 1) moving (-2, -1) candidate columns 1 linear rank 1 representative
+   nonzero terms 0
+   ranks (1, 3) moving (-2, -1) candidate columns 3 linear rank 3 representative
+   nonzero terms 0
+   ranks (1, 5) moving (-2,) candidate columns 4 linear rank 4 representative
+   nonzero terms 0
+   ranks (3, 3) moving () candidate columns 12 linear rank 12 representative
+   nonzero terms 12
+   ranks (3, 5) moving () candidate columns 60 linear rank 59 representative
+   nonzero terms 48
+   ranks (3, 3) moving (-2, -1) candidate columns 42 linear rank 42 representative
+   nonzero terms 40
+   ranks (3, 5) moving (-2,) candidate columns 120 linear rank 118 representative
+   nonzero terms 100
+## top_primary_descent.py  exit 0  9.4 s
+   chart sizes [[268, 199], [254, 0], [0, 0], [0, 0]]
+   single-trace CE rank 10 representative {((0, 1, 2, 3, 4), (0, 1, 2, 3, 5)): Fraction(-9, 4), ((0, 1, 2, 3, 4), (0, 1, 2, 3, 6)): Fraction(-81, 20), ((0, 1, 2, 3, 4), (0, 1, 2, 4, 5)): Fraction(-9, 1), ((0, 1, 2, 3, 4), (0, 1, 2, 4, 6)): Fraction(-11, 10), ((0, 1, 2, 3, 4), (0, 1, 3, 4, 5)): Fraction(9, 2), ((0, 1, 2, 3, 4), (0, 1, 3, 5, 6)): Fraction(-62, 5), ((0, 1, 2, 3, 4), (0, 1, 4, 5, 6)): Fraction(-79, 10), ((0, 1, 2, 3, 4), (0, 2, 3, 5, 6)): Fraction(-71, 5), ((0, 1, 2, 3, 5), (0, 1, 2, 4, 5)): Fraction(-9, 1)} remainder size 0 slope remainder 0
+   unique rank-(3,5) disk coefficients (Fraction(81, 280), Fraction(-11, 30)) ordered sewing multiplier -48
+## descendant_disk.py  exit 0  0.2 s
+   24 primary/descendant symbols agree with the cyclic projection and the linear disk Ward identity
+## descendant_koszul.py  exit 0  0.0 s
+   polynomial Koszul homotopy identities 128
+## scalar_descendant.py  exit 0  0.1 s
+   24 scalar-descendant second disk Ward identities reproduced
+## external_closed.py  exit 0  3.6 s
+   nonzero topological candidates (external closed,b1,spheres,closed edges) [(0, 1, 0, 1), (0, 2, 0, 0), (1, 0, 0, 1), (1, 1, 0, 0), (2, 0, 0, 0), (2, 0, 1, 1)]
+   vector wheel cancels; two-vector disk commutator equals the Lie action
+   trivector wheel trace coefficients [{0: -23300, 1: Fraction(1000, 3)}, {0: 11000}, {}]
+# done in 61.7 s

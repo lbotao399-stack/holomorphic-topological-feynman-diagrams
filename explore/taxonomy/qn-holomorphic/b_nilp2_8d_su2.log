@@ -1,0 +1,15 @@
+theory 8d gauge su2 matter None H=4 N=6: order 2, O = g^v,g^v,g^v, jets {}, functionals g,g,g,g,g,g,g^v, F = 4, seed 102, P = 2147483647
+blocks: {'g': 3, 'g^v': 3}
+  [G2.3: block-triangular numeric density]
+  order 1 graphs: [('G1.1', 2, [(0, 1), (1, 2), (2, 3), (0, 4), (3, 4)])]
+  order 2 graphs: [('G2.1', 2, [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (0, 7), (3, 7), (6, 7)]), ('G2.2', 1, [(0, 1), (1, 2), (2, 3), (3, 4), (3, 5), (4, 6), (0, 7), (5, 7), (6, 7)]), ('G2.3', 6, [(0, 1), (1, 2), (2, 3), (2, 4), (3, 5), (4, 6), (0, 7), (5, 7), (6, 7)])]
+  <hatQ[Q0] hatQ[G2.1] O>: [21202495, 1594561448, 1998591517, 1149030360]   (histories 252, keys 6, colour 1s, total 7s)
+  <hatQ[Q0] hatQ[G2.2] O>: [814574424, 1411439417, 783063610, 1721260834]   (histories 252, keys 6, colour 1s, total 11s)
+  <hatQ[Q0] hatQ[G2.3] O>: [1697675268, 1354769924, 1278645552, 717110499]   (histories 252, keys 6, colour 1s, total 46s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [1603274404, 530343061, 1726555328, 1073167490]   (histories 480, keys 8, colour 2s, total 3s)
+  <hatQ[G2.1] hatQ[Q0] O>: [1174708394, 982988050, 152629324, 1147646692]   (histories 324, keys 1, colour 1s, total 3s)
+  <hatQ[G2.2] hatQ[Q0] O>: [1607901965, 530823637, 1124345488, 2082369145]   (histories 324, keys 1, colour 1s, total 3s)
+  <hatQ[G2.3] hatQ[Q0] O>: [1911998160, 455612496, 592939505, 1245600764]   (histories 324, keys 1, colour 1s, total 9s)
+kappa_2 system: 4 equations, rank 2, augmented rank 2 (unknowns 3)
+consistent but underdetermined (rank 2 < 3)
+total time 81s

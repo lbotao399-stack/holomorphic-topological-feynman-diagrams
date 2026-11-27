@@ -1,0 +1,24 @@
+source class (sector #gamma=2, d=0, k=2):
+4 gam[E12] gam[E21]
+1 gam[H] gam[H]
+Q_1 O  (76 monomials), first terms:
+-32/3 d4.c[E12] d3.c[E12] d2.c[E21] d1.gam[E12]
+32/3 d4.c[E12] d3.c[E12] d1.c[E21] d2.gam[E12]
+32/3 d4.c[E12] d2.c[E12] d3.c[E21] d1.gam[E12]
+-32/3 d4.c[E12] d2.c[E12] d1.c[E21] d3.gam[E12]
+-32/3 d4.c[E12] d1.c[E12] d3.c[E21] d2.gam[E12]
+32/3 d4.c[E12] d1.c[E12] d2.c[E21] d3.gam[E12]
+-32/3 d4.c[E12] d3.c[E21] d2.c[E21] d1.gam[E21]
+32/3 d4.c[E12] d3.c[E21] d1.c[E21] d2.gam[E21]
+-16/3 d4.c[E12] d3.c[E21] d2.c[H] d1.gam[H]
+16/3 d4.c[E12] d3.c[E21] d1.c[H] d2.gam[H]
+-32/3 d4.c[E12] d2.c[E21] d1.c[E21] d3.gam[E21]
+16/3 d4.c[E12] d2.c[E21] d3.c[H] d1.gam[H]
+... (76 terms)
+all monomials: four letters with d_1, d_2, d_3, d_4 once each: True
+Q_1 O is totally antisymmetric in the four derivative directions (eps^{abcd} structure): True
+letter content of Q_1 O: {('c', 'c', 'c', 'gam'): 76}
+T terms 76; Q_1 tr(gamma gamma) / [eps^{abcd} tr(d_d gamma d_a c d_b c d_c c)] : {Fraction(-16, 3)}
+fit Q_1 tr(gamma gamma) = sum_i x_i eps^{abcd} T_i (X=d_a c, Y=d_b c, Z=d_c c, g=d_d gamma, fundamental traces):
+  rank 1, augmented 1 (candidates ['tr(g X Y Z)', 'tr(X g Y Z)', 'tr(X Y g Z)', 'tr(g X) tr(Y Z)'])
+  candidate rank over Q: 1

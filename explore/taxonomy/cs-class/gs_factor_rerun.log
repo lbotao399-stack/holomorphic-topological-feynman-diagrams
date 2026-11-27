@@ -1,0 +1,29 @@
+# gs_factor_rerun  2026-11-27 01:43:04
+A1 sl2(Kac A1)      rank 1 roots 2: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): True
+A2 sl3(Kac A2)      rank 2 roots 6: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+A3 sl4(Kac A3)      rank 3 roots 12: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+A4 sl5(Kac A4)      rank 4 roots 20: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+A5 sl6(Kac A5)      rank 5 roots 30: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+A6 sl7(Kac A6)      rank 6 roots 42: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+A7 sl8(Kac A7)      rank 7 roots 56: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+B2 so5(fold D3)     rank 2 roots 8: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): True
+B3 so7(fold D4)     rank 3 roots 18: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+B4 so9(fold D5)     rank 4 roots 32: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+B5 so11(fold D6)    rank 5 roots 50: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+B6 so13(fold D7)    rank 6 roots 72: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+C3 sp6(fold A5)     rank 3 roots 18: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+C4 sp8(fold A7)     rank 4 roots 32: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+C5 sp10(fold A9)    rank 5 roots 50: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+C6 sp12(fold A11)   rank 6 roots 72: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+D4 so8(Kac D4)      rank 4 roots 24: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+D5 so10(Kac D5)     rank 5 roots 40: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+D6 so12(Kac D6)     rank 6 roots 60: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+D7 so14(Kac D7)     rank 7 roots 84: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+D8 so16(Kac D8)     rank 8 roots 112: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+G2 G2(fold D4)      rank 2 roots 12: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+F4 F4(fold E6)      rank 4 roots 48: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+E6 E6(Kac)          rank 6 roots 72: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+E7 E7(Kac)          rank 7 roots 126: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): False
+E8 E8(Kac)          rank 8 roots 240: P_6 != 0: True;  P_2 | P_6 (GS-type factorization): True
+so(N), V = C^N: Tr_ad X^6 = (N-32) tr_V X^6 + 15 tr_V X^2 tr_V X^4  [src explore/type-i/README.md, closed exchange]
+# done in 4.0 s

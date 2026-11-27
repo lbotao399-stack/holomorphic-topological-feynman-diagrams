@@ -1,0 +1,4 @@
+U(1) charges 1,2,-3, W = phi1 phi2 phi3: I identical: True; 3696 monomials (deg <= 4, derivatives <= 2): Q0 mismatches 0; Q2^hat != 0 on 807, mismatches 0 (fan part 0, tadpole part 0)  [19s]
+SU(2)+adj (so3), W = 0: I identical: True; 5812 monomials (deg <= 4, derivatives <= 1): Q0 mismatches 0; Q2^hat != 0 on 2484, mismatches 0 (fan part 0, tadpole part 0)  [40s]
+GL(2) + 1F (tadpole d^V != 0): I identical: True; 376 monomials (deg <= 3, derivatives <= 0): Q0 mismatches 0; Q2^hat != 0 on 109, mismatches 0 (fan part 0, tadpole part 0)  [9s]
+3d N=4 SQED Nf=1: I identical: True; 1352 monomials (deg <= 4, derivatives <= 1): Q0 mismatches 0; Q2^hat != 0 on 230, mismatches 0 (fan part 0, tadpole part 0)  [8s]

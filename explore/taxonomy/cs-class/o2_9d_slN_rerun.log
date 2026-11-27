@@ -1,0 +1,6 @@
+# o2_9d_slN_rerun  2026-11-27 01:44:59
+C^7 generators (spanning): 428  C^8 coordinates: 770  C^9 coordinates: 240
+N = 9  closed F_G: {(1, 5, 5): True, (2, 4, 5): True, (3, 3, 5): True, (3, 4, 4): True}  d j_5 = d j_23 = 0: [True, True]  j nonzero: [True, True]  closed 1/2{j,j}: True
+   ranks: {'B': 34, '[B;o]': 35, '[B;F_G]': [35, 35, 35, 35], '[B;F_all]': 35, '[B;Q55]': 35, '[B;Q2323]': 35, '[B;Q523]': 35, '[B;Q*]': 37, '[B;Q*;o]': 38}  (second prime equal: True )
+   o' = x55 Q55 + x523 {j5,j23} + x2323 Q2323 mod B: False  x = None  (solution unique only if [B;Q*] has full rank +3)
+# done in 2.6 s

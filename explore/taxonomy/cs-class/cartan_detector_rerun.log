@@ -1,0 +1,8 @@
+# cartan_detector_rerun  2026-11-27 01:44:58
+A1 sl2(Kac A1) dim 3 rank 1: o'|_C mod p (3 samples): [0, 0, 0]  nonzero: False
+A2 sl3(Kac A2) dim 8 rank 2: o'|_C mod p (3 samples): [2040564329, 1869236703, 1457083692]  nonzero: True  o'|_C / det(h (x) p) = [Fraction(81, 1), Fraction(81, 1), Fraction(81, 1)] (kappa of the construction)
+A3 sl4(Kac A3) dim 15 rank 3: o'|_C mod p (3 samples): [1358413071, 629096895, 865117331]  nonzero: True
+B2 so5(fold D3) dim 10 rank 2: o'|_C mod p (3 samples): [1893146757, 1454291759, 1052856586]  nonzero: True  o'|_C / det(h (x) p) = [Fraction(32, 1), Fraction(32, 1), Fraction(32, 1)] (kappa of the construction)
+G2 G2(fold D4) dim 14 rank 2: o'|_C mod p (3 samples): [753424094, 1014799852, 1375961810]  nonzero: True  o'|_C / det(h (x) p) = [Fraction(256, 3), Fraction(256, 3), Fraction(256, 3)] (kappa of the construction)
+E6 E6(Kac) dim 78 rank 6: o'|_C mod p (3 samples): [374476219, 267527762, 1111739987]  nonzero: True
+# done in 1.1 s
