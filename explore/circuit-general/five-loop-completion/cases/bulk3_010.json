@@ -1,0 +1,816 @@
+{
+  "all_original_first_current_coefficients": [
+    [
+      {
+        "1": "-35307263/39109522636800000",
+        "z3": "11353/15088550400000"
+      },
+      {
+        "1": "-35307263/39109522636800000",
+        "z3": "11353/15088550400000"
+      },
+      {
+        "1": "29771/133025587200000",
+        "z3": "-67/359251200000"
+      }
+    ],
+    [
+      {
+        "1": "74990863/78219045273600000",
+        "z3": "-24113/30177100800000"
+      },
+      {
+        "1": "-29771/532102348800000",
+        "z3": "67/1437004800000"
+      },
+      {
+        "1": "-29771/266051174400000",
+        "z3": "67/718502400000"
+      }
+    ],
+    [
+      {
+        "1": "-29771/532102348800000",
+        "z3": "67/1437004800000"
+      },
+      {
+        "1": "74990863/78219045273600000",
+        "z3": "-24113/30177100800000"
+      },
+      {
+        "1": "-29771/266051174400000",
+        "z3": "67/718502400000"
+      }
+    ],
+    [
+      {
+        "1": "-44059937/39109522636800000",
+        "z3": "14167/15088550400000"
+      },
+      {
+        "1": "-44059937/39109522636800000",
+        "z3": "14167/15088550400000"
+      },
+      {
+        "1": "-29771/133025587200000",
+        "z3": "67/359251200000"
+      }
+    ],
+    [
+      {
+        "1": "83743537/78219045273600000",
+        "z3": "-26927/30177100800000"
+      },
+      {
+        "1": "29771/532102348800000",
+        "z3": "-67/1437004800000"
+      },
+      {
+        "1": "29771/266051174400000",
+        "z3": "-67/718502400000"
+      }
+    ],
+    [
+      {
+        "1": "29771/532102348800000",
+        "z3": "-67/1437004800000"
+      },
+      {
+        "1": "83743537/78219045273600000",
+        "z3": "-26927/30177100800000"
+      },
+      {
+        "1": "29771/266051174400000",
+        "z3": "-67/718502400000"
+      }
+    ],
+    [
+      {
+        "1": "-29771/177367449600000",
+        "z3": "67/479001600000"
+      },
+      {
+        "1": "-29771/177367449600000",
+        "z3": "67/479001600000"
+      },
+      {
+        "1": "-29771/88683724800000",
+        "z3": "67/239500800000"
+      }
+    ],
+    [
+      {
+        "1": "-11497103/15643809054720000",
+        "z3": "3697/6035420160000"
+      },
+      {
+        "1": "-11497103/15643809054720000",
+        "z3": "3697/6035420160000"
+      },
+      {
+        "1": "29771/53210234880000",
+        "z3": "-67/143700480000"
+      }
+    ],
+    [
+      {
+        "1": "-20249777/15643809054720000",
+        "z3": "6511/6035420160000"
+      },
+      {
+        "1": "-20249777/15643809054720000",
+        "z3": "6511/6035420160000"
+      },
+      {
+        "1": "-29771/53210234880000",
+        "z3": "67/143700480000"
+      }
+    ],
+    [
+      {
+        "1": "-350153/312876181094400",
+        "z3": "703/754427520000"
+      },
+      {
+        "1": "-350153/312876181094400",
+        "z3": "703/754427520000"
+      },
+      {
+        "1": "-27581/69838433280000",
+        "z3": "71/215550720000"
+      }
+    ],
+    [
+      {
+        "1": "6010547/15643809054720000",
+        "z3": "-1927/6035420160000"
+      },
+      {
+        "1": "6010547/15643809054720000",
+        "z3": "-1927/6035420160000"
+      },
+      {
+        "1": "1066487/1117414932480000",
+        "z3": "-49/61585920000"
+      }
+    ],
+    [
+      {
+        "1": "-629417/869100503040000",
+        "z3": "101/167650560000"
+      },
+      {
+        "1": "-629417/869100503040000",
+        "z3": "101/167650560000"
+      },
+      {
+        "1": "27581/69838433280000",
+        "z3": "-71/215550720000"
+      }
+    ],
+    [
+      {
+        "1": "-8920271/15643809054720000",
+        "z3": "23/48283361280"
+      },
+      {
+        "1": "-8920271/15643809054720000",
+        "z3": "23/48283361280"
+      },
+      {
+        "1": "-1066487/1117414932480000",
+        "z3": "49/61585920000"
+      }
+    ],
+    [
+      {
+        "1": "5318959/15643809054720000",
+        "z3": "-1709/6035420160000"
+      },
+      {
+        "1": "5318959/15643809054720000",
+        "z3": "-1709/6035420160000"
+      },
+      {
+        "1": "5318959/7821904527360000",
+        "z3": "-1709/3017710080000"
+      }
+    ],
+    [
+      {
+        "1": "-22826609/15643809054720000",
+        "z3": "7333/6035420160000"
+      },
+      {
+        "1": "-22826609/15643809054720000",
+        "z3": "7333/6035420160000"
+      },
+      {
+        "1": "-2802677/2607301509120000",
+        "z3": "901/1005903360000"
+      }
+    ],
+    [
+      {
+        "1": "-6010547/15643809054720000",
+        "z3": "1927/6035420160000"
+      },
+      {
+        "1": "-6010547/15643809054720000",
+        "z3": "1927/6035420160000"
+      },
+      {
+        "1": "2802677/2607301509120000",
+        "z3": "-901/1005903360000"
+      }
+    ]
+  ],
+  "bare_coefficient": {
+    "1": "-9019/4444263936000",
+    "z3": "29/17146080000"
+  },
+  "bare_source_factor": "det(lambda_s0,lambda_s1,lambda_s2)^5",
+  "bare_status": "complete",
+  "complete_affine_current_polynomial_identities": 48,
+  "complete_bare_numerator": {
+    "sha256": "78df2f5c6368d88fc0f88d2ce04c7dcfbded64379f6c13b23ed64cb1fe02bc3d",
+    "terms": 1140
+  },
+  "complete_finite_targets": [
+    {
+      "complete_numerator": {
+        "sha256": "78df2f5c6368d88fc0f88d2ce04c7dcfbded64379f6c13b23ed64cb1fe02bc3d",
+        "terms": 1140
+      },
+      "complete_scalar_coefficients_sha256": "3f06f9eaf8a913a3462e15ab0a8dbe17468d80abefe718f1b2dce4ee26a27dd9",
+      "denominator_power": 8,
+      "edge": null,
+      "period_stats": {
+        "q": 8,
+        "read_only_tables": true,
+        "weighted_periods": 42
+      },
+      "source_direction": null,
+      "value": {
+        "1": "-9019/4444263936000",
+        "z3": "29/17146080000"
+      },
+      "weighted_core_periods": 42
+    },
+    {
+      "complete_numerator": {
+        "sha256": "729ff03e00d2fe27bd871027df9bd89d6ef7e1c598f3ae332d94b5badb0a5622",
+        "terms": 70425
+      },
+      "complete_scalar_coefficients_sha256": "330b750a3e6040a4cd4871642133534468299ae04564f479f3ecc35336529284",
+      "denominator_power": 9,
+      "edge": 5,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 87
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "29771/532102348800000",
+        "z3": "-67/1437004800000"
+      },
+      "weighted_core_periods": 87
+    },
+    {
+      "complete_numerator": {
+        "sha256": "0e8334c0c99b1b32c05d3a232f741ea2e9ab6c404fd023f049a1f1fe8101ec63",
+        "terms": 190380
+      },
+      "complete_scalar_coefficients_sha256": "fb9f87e4b9b53746c83cb9829136d1615c9116f20318946e8393628e88fc21ae",
+      "denominator_power": 9,
+      "edge": 5,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1585
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "83743537/78219045273600000",
+        "z3": "-26927/30177100800000"
+      },
+      "weighted_core_periods": 1585
+    },
+    {
+      "complete_numerator": {
+        "sha256": "85f601e42b8b7e74bc0fcbba2b5dd7a745133ad42fa4582656ab60f018ea0ca4",
+        "terms": 6930
+      },
+      "complete_scalar_coefficients_sha256": "eaaf0150694a25ced35c9d3275e4fc57e4c57a3186c3db73db7b23d71aeebee6",
+      "denominator_power": 9,
+      "edge": 5,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 87
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "29771/266051174400000",
+        "z3": "-67/718502400000"
+      },
+      "weighted_core_periods": 87
+    },
+    {
+      "complete_numerator": {
+        "sha256": "6a3ae05918547bb8c31580a14396bfbe1ec298eb37ee8707157fabd659c47aed",
+        "terms": 122669
+      },
+      "complete_scalar_coefficients_sha256": "c32d5c59516a835ec7be8cd3e04a5c397fe3fe3b2e3ae6837e38386d361e7707",
+      "denominator_power": 9,
+      "edge": 6,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 251
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "-29771/177367449600000",
+        "z3": "67/479001600000"
+      },
+      "weighted_core_periods": 251
+    },
+    {
+      "complete_numerator": {
+        "sha256": "31efefeff125a50430525deb6717441a808c48d1b336c712bb7730abc8d43aaf",
+        "terms": 122669
+      },
+      "complete_scalar_coefficients_sha256": "c32d5c59516a835ec7be8cd3e04a5c397fe3fe3b2e3ae6837e38386d361e7707",
+      "denominator_power": 9,
+      "edge": 6,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 251
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-29771/177367449600000",
+        "z3": "67/479001600000"
+      },
+      "weighted_core_periods": 251
+    },
+    {
+      "complete_numerator": {
+        "sha256": "44a8bf9822bd3ada54468ca4feea7f275dc9961235ae72a9663932a7ecef44ab",
+        "terms": 38808
+      },
+      "complete_scalar_coefficients_sha256": "95308334bd4b4cd9f573112fdadcaecd81c80b1ff5a595ed0b0a7cbd53dfecb6",
+      "denominator_power": 9,
+      "edge": 6,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 251
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-29771/88683724800000",
+        "z3": "67/239500800000"
+      },
+      "weighted_core_periods": 251
+    },
+    {
+      "complete_numerator": {
+        "sha256": "2b583fad6ff16b70912e5cc8d07f0fdab509d938f3c25f475991684e417d5d54",
+        "terms": 157660
+      },
+      "complete_scalar_coefficients_sha256": "dea0c51a319a9e6b0f9c3bab4a47443892259f4e1fde674bd483a8481923a23a",
+      "denominator_power": 9,
+      "edge": 13,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1296
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "5318959/15643809054720000",
+        "z3": "-1709/6035420160000"
+      },
+      "weighted_core_periods": 1296
+    },
+    {
+      "complete_numerator": {
+        "sha256": "e679f203367de11b4d16b450ea291a000c1658320bbd5823f9c474b73859e167",
+        "terms": 157660
+      },
+      "complete_scalar_coefficients_sha256": "dea0c51a319a9e6b0f9c3bab4a47443892259f4e1fde674bd483a8481923a23a",
+      "denominator_power": 9,
+      "edge": 13,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1296
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "5318959/15643809054720000",
+        "z3": "-1709/6035420160000"
+      },
+      "weighted_core_periods": 1296
+    },
+    {
+      "complete_numerator": {
+        "sha256": "f15d459d82f0612b00c481f37486672afdeced4ee5b12dcfe01da33744d882f6",
+        "terms": 207844
+      },
+      "complete_scalar_coefficients_sha256": "3f7d9995a16500505a4da9e61d922c92cf98f814754adfed52dc3722b9c3fef1",
+      "denominator_power": 9,
+      "edge": 13,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1296
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "5318959/7821904527360000",
+        "z3": "-1709/3017710080000"
+      },
+      "weighted_core_periods": 1296
+    },
+    {
+      "complete_numerator": {
+        "sha256": "70472bb6f2c7472d1e76d18e35dde1a312822ffb6ad3afd153d8a5eaa57de402",
+        "terms": 225720
+      },
+      "complete_scalar_coefficients_sha256": "efc3523e8b13f7aabd810ce9d550acab70c806d1dd0e8fc6ec48a40d415c8c56",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1584
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "-22826609/15643809054720000",
+        "z3": "7333/6035420160000"
+      },
+      "weighted_core_periods": 1584
+    },
+    {
+      "complete_numerator": {
+        "sha256": "1af8a2163c463a44885acff7b14ed2f295b302937047d7d929c5c2591d49369d",
+        "terms": 225720
+      },
+      "complete_scalar_coefficients_sha256": "efc3523e8b13f7aabd810ce9d550acab70c806d1dd0e8fc6ec48a40d415c8c56",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1584
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-22826609/15643809054720000",
+        "z3": "7333/6035420160000"
+      },
+      "weighted_core_periods": 1584
+    },
+    {
+      "complete_numerator": {
+        "sha256": "61d7ccb8bfb70ad99704580f9a8730ca492a6bf6b2823c7db22736528969587a",
+        "terms": 263204
+      },
+      "complete_scalar_coefficients_sha256": "4fb566aa6968b4745d5f350464393f4fa851146aa7fe85c758fe5b78cac402fc",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1596
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-2802677/2607301509120000",
+        "z3": "901/1005903360000"
+      },
+      "weighted_core_periods": 1596
+    },
+    {
+      "complete_numerator": {
+        "sha256": "55ac4ee71c9e36ccdfc6d10476cc0e2c90f67d013fccdb97ac0262985f6f1b3f",
+        "terms": 103465
+      },
+      "complete_scalar_coefficients_sha256": "5383c9b3bcd30583b10a5610ef107e096b41587e9bf0fabc65c53a838bafe860",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1292
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "-6010547/15643809054720000",
+        "z3": "1927/6035420160000"
+      },
+      "weighted_core_periods": 1292
+    },
+    {
+      "complete_numerator": {
+        "sha256": "8a81847649eabdb4679deb4c3332aadae845db6965669c0bda76ffcc48b63d38",
+        "terms": 103465
+      },
+      "complete_scalar_coefficients_sha256": "5383c9b3bcd30583b10a5610ef107e096b41587e9bf0fabc65c53a838bafe860",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1292
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-6010547/15643809054720000",
+        "z3": "1927/6035420160000"
+      },
+      "weighted_core_periods": 1292
+    },
+    {
+      "complete_numerator": {
+        "sha256": "bfb3f5397f53bc451c6f056884d229e0300cb830a57b5c5b91998ec69b2a04f0",
+        "terms": 263204
+      },
+      "complete_scalar_coefficients_sha256": "3c6a24d5904dea96019749b3be3a4a0a54d17547b419b41870d0e601556199ee",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 1596
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "2802677/2607301509120000",
+        "z3": "-901/1005903360000"
+      },
+      "weighted_core_periods": 1596
+    }
+  ],
+  "complete_series_chains": [
+    [
+      0
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10,
+      15
+    ],
+    [
+      11
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      13
+    ]
+  ],
+  "core_classification": "K4",
+  "dependencies_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/assembly/tables/K33_q8.json": "12496b23958872bc52f6e77a3bbfd03071ceb34817683087abfb621118e54f8c",
+    "explore/circuit-general/assembly/tables/K33_q9.json": "75d15ea03b2f68a2907106d2e05af6b0dd8765a649b7df5aba222feb01db6176",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/five-loop-completion/bulk3_periods.py": "5f83e2785db2206e48aa49bd653cedfa842201da9ad51bca9e807b6f96ebce8a",
+    "explore/circuit-general/five-loop-completion/certify.py": "3cd7ad5799a87d655cf7d253edcf7ebd88af993769cae9f7ebeea19d8bdce35c",
+    "explore/circuit-general/fiveloop/enum_d3.json": "85182250468c766a65972f458414d0d1dbbd265ccdf3426b22587a25b6e349e6",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/fiveloop/skel5.json": "62267064b43ff24413cbcfa6e01da5cebe85140e0a288fc1ce5f9a43e856d452",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "first_current_meaning": "bare_source_factor times the complete linear combination of lambda_s0,lambda_s1,lambda_s2",
+  "first_current_status": "complete",
+  "index": 10,
+  "integrated_original_source_identities": 36,
+  "ordered_oriented_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      10
+    ]
+  ],
+  "original_grounded_laplacian_density_checks": [
+    {
+      "U": "4319900032499/1793792000",
+      "complete_numerator": "34147294571064991823801783/22039939799829952000000000",
+      "resistances": [
+        "2",
+        "3/2",
+        "4/3",
+        "5/4",
+        "6/5",
+        "7/6",
+        "8/7",
+        "9/8",
+        "10/9",
+        "11/10",
+        "12/11",
+        "13/12",
+        "14/13",
+        "15/14",
+        "16/15",
+        "17/16"
+      ]
+    },
+    {
+      "U": "16005924096033/1793792000",
+      "complete_numerator": "2658752001642413985711589/770743062462464000000",
+      "resistances": [
+        "4",
+        "5/2",
+        "2",
+        "7/4",
+        "8/5",
+        "3/2",
+        "10/7",
+        "11/8",
+        "4/3",
+        "13/10",
+        "14/11",
+        "5/4",
+        "16/13",
+        "17/14",
+        "6/5",
+        "19/16"
+      ]
+    }
+  ],
+  "scalar_core_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "schema": "five-loop-bulk3-supported-source-v1",
+  "seconds": 266.741,
+  "source_cycle_tree": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "source_scope": "lambda_s0,lambda_s1,lambda_s2 arbitrary; lambda_s3=-sum; all other original sources zero",
+  "source_vertices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "vertices": 12
+}

@@ -1,0 +1,25 @@
+{
+  "complete_tensor_cases": 72,
+  "implementation_sha256": "9f3bd5ad3a33884e03f26c3e2cb7996407ba688b973687bc28ae57c5c7bb7cc8",
+  "index_specifications": [
+    "ab,bc,cd->ad",
+    "ab,ac,bd,cd->",
+    "ii,jj->ij",
+    "ij,ij,ij->ij",
+    "a,a,a->a",
+    "ab,b->a"
+  ],
+  "integer_scales": [
+    "1",
+    "1073741824",
+    "9223372036854775815"
+  ],
+  "result": "passed",
+  "schema": "independent-integer-contraction-audit-v1",
+  "seed": 22701,
+  "statistics": {
+    "bounded_integer_steps": 48,
+    "largest_machine_step_bound": 480,
+    "python_integer_steps": 60
+  }
+}

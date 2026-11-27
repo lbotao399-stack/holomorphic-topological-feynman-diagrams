@@ -1,0 +1,20 @@
+{
+  "Q0_columns_recomputed_by_original_Wick_engine": 30272,
+  "Q0_squared_columns_independently_checked": 30272,
+  "Q2_images_and_boundary_witnesses_checked": 64,
+  "certificate_sha256": "bb5ad9fe3a24b7b372008e00d35cba8c0f3e29fb0918ebfe010e1932848e6b26",
+  "complete_cochain_basis": 30272,
+  "complete_cohomology_basis": 64,
+  "d2_square_zero": true,
+  "full_commutator_justification": "Q0 has differential order one; Q2 has orders two and three. Their graded commutator has order at most three. It vanishes on constants and generators and on all occurring two/three-letter submonomials. Thus it vanishes on the complete declared complex.",
+  "local_commutator_inputs": {
+    "2": 178,
+    "3": 2248
+  },
+  "multigraded_product_counts_equal_complete_bases": true,
+  "nonzero_commutator_compositions_cancelled": 1372,
+  "result": "passed",
+  "schema": "gl2-cohomology-independent-replay-v1",
+  "seconds": 75.45,
+  "verifier_sha256": "142683c479a448a359c778fe1ce518281a0239bd8f2d82da76e40ed7e6dac473"
+}

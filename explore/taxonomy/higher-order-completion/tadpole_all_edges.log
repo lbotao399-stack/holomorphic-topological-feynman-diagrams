@@ -1,0 +1,177 @@
+exact density 55 terms; U 66 terms 1.03 s
+moment () {'sqrtpi^4': '1/630'} seconds 2.01
+scalar periods 50 word (0,) seconds 3.68
+scalar periods 100 word (0,) seconds 4.96
+scalar periods 150 word (0,) seconds 5.85
+scalar periods 200 word (0,) seconds 7.26
+scalar periods 250 word (0,) seconds 7.85
+scalar periods 300 word (0,) seconds 8.08
+scalar periods 350 word (0,) seconds 8.98
+scalar periods 400 word (0,) seconds 9.32
+scalar periods 450 word (0,) seconds 9.47
+scalar periods 500 word (0,) seconds 9.88
+scalar periods 550 word (0,) seconds 10.17
+scalar periods 600 word (0,) seconds 10.68
+moment (0,) {'sqrtpi^4': '1/1260'} seconds 11.16
+moment (1,) {'sqrtpi^4': '1/1260'} seconds 11.18
+moment (2,) {'sqrtpi^4': '1/2700'} seconds 11.19
+moment (3,) {'sqrtpi^4': '2/4725'} seconds 11.2
+moment (4,) {} seconds 11.21
+moment (5,) {'sqrtpi^4': '1/2700'} seconds 11.22
+moment (6,) {'sqrtpi^4': '-1/2700'} seconds 11.23
+moment (7,) {'sqrtpi^4': '1/2700'} seconds 11.24
+moment (8,) {'sqrtpi^4': '2/4725'} seconds 11.25
+scalar periods 650 word (0, 0) seconds 14.79
+scalar periods 700 word (0, 0) seconds 14.82
+scalar periods 750 word (0, 0) seconds 19.69
+scalar periods 800 word (0, 0) seconds 19.76
+scalar periods 850 word (0, 0) seconds 19.82
+scalar periods 900 word (0, 0) seconds 23.75
+scalar periods 950 word (0, 0) seconds 23.81
+scalar periods 1000 word (0, 0) seconds 23.88
+scalar periods 1050 word (0, 0) seconds 23.95
+scalar periods 1100 word (0, 0) seconds 26.08
+scalar periods 1150 word (0, 0) seconds 26.55
+scalar periods 1200 word (0, 0) seconds 26.58
+scalar periods 1250 word (0, 0) seconds 26.62
+scalar periods 1300 word (0, 0) seconds 26.65
+scalar periods 1350 word (0, 0) seconds 27.52
+scalar periods 1400 word (0, 0) seconds 27.81
+scalar periods 1450 word (0, 0) seconds 28.72
+scalar periods 1500 word (0, 0) seconds 28.75
+scalar periods 1550 word (0, 0) seconds 28.78
+scalar periods 1600 word (0, 0) seconds 29.87
+scalar periods 1650 word (0, 0) seconds 29.9
+scalar periods 1700 word (0, 0) seconds 29.94
+scalar periods 1750 word (0, 0) seconds 29.98
+scalar periods 1800 word (0, 0) seconds 30.48
+scalar periods 1850 word (0, 0) seconds 30.51
+scalar periods 1900 word (0, 0) seconds 30.55
+scalar periods 1950 word (0, 0) seconds 30.58
+scalar periods 2000 word (0, 0) seconds 33.58
+scalar periods 2050 word (0, 0) seconds 34.6
+scalar periods 2100 word (0, 0) seconds 34.83
+scalar periods 2150 word (0, 0) seconds 35.4
+scalar periods 2200 word (0, 0) seconds 35.43
+scalar periods 2250 word (0, 0) seconds 35.47
+scalar periods 2300 word (0, 0) seconds 35.77
+scalar periods 2350 word (0, 0) seconds 35.8
+scalar periods 2400 word (0, 0) seconds 35.83
+scalar periods 2450 word (0, 0) seconds 37.28
+scalar periods 2500 word (0, 0) seconds 37.39
+scalar periods 2550 word (0, 0) seconds 37.44
+scalar periods 2600 word (0, 0) seconds 37.48
+scalar periods 2650 word (0, 0) seconds 37.52
+scalar periods 2700 word (0, 0) seconds 39.35
+scalar periods 2750 word (0, 0) seconds 40.27
+scalar periods 2800 word (0, 0) seconds 40.37
+scalar periods 2850 word (0, 0) seconds 40.41
+scalar periods 2900 word (0, 0) seconds 40.43
+scalar periods 2950 word (0, 0) seconds 41.22
+scalar periods 3000 word (0, 0) seconds 41.25
+scalar periods 3050 word (0, 0) seconds 41.27
+scalar periods 3100 word (0, 0) seconds 41.3
+scalar periods 3150 word (0, 0) seconds 41.33
+scalar periods 3200 word (0, 0) seconds 41.35
+scalar periods 3250 word (0, 0) seconds 41.38
+scalar periods 3300 word (0, 0) seconds 42.43
+scalar periods 3350 word (0, 0) seconds 42.47
+scalar periods 3400 word (0, 0) seconds 42.97
+scalar periods 3450 word (0, 0) seconds 43.0
+scalar periods 3500 word (0, 0) seconds 43.24
+scalar periods 3550 word (0, 0) seconds 43.33
+scalar periods 3600 word (0, 0) seconds 43.36
+scalar periods 3650 word (0, 0) seconds 43.39
+scalar periods 3700 word (0, 0) seconds 43.42
+scalar periods 3750 word (0, 0) seconds 43.44
+scalar periods 3800 word (0, 0) seconds 43.46
+scalar periods 3850 word (0, 0) seconds 43.85
+scalar periods 3900 word (0, 0) seconds 45.38
+scalar periods 3950 word (0, 0) seconds 46.26
+scalar periods 4000 word (0, 0) seconds 46.5
+scalar periods 4050 word (0, 0) seconds 46.53
+scalar periods 4100 word (0, 0) seconds 46.57
+scalar periods 4150 word (0, 0) seconds 46.6
+scalar periods 4200 word (0, 0) seconds 46.63
+scalar periods 4250 word (0, 0) seconds 47.48
+scalar periods 4300 word (0, 0) seconds 47.93
+scalar periods 4350 word (0, 0) seconds 49.37
+scalar periods 4400 word (0, 0) seconds 49.41
+moment (0, 0) {'sqrtpi^4': '29/62370'} seconds 49.43
+scalar periods 4450 word (0, 1) seconds 53.26
+scalar periods 4500 word (0, 1) seconds 54.42
+scalar periods 4550 word (0, 1) seconds 54.43
+scalar periods 4600 word (0, 1) seconds 54.44
+scalar periods 4650 word (0, 1) seconds 55.06
+scalar periods 4700 word (0, 1) seconds 55.07
+scalar periods 4750 word (0, 1) seconds 55.29
+scalar periods 4800 word (0, 1) seconds 55.31
+scalar periods 4850 word (0, 1) seconds 55.32
+scalar periods 4900 word (0, 1) seconds 55.34
+scalar periods 4950 word (0, 1) seconds 55.35
+scalar periods 5000 word (0, 1) seconds 55.36
+scalar periods 5050 word (0, 1) seconds 55.39
+scalar periods 5100 word (0, 1) seconds 55.4
+scalar periods 5150 word (0, 1) seconds 55.41
+scalar periods 5200 word (0, 1) seconds 55.42
+scalar periods 5250 word (0, 1) seconds 56.39
+scalar periods 5300 word (0, 1) seconds 56.51
+scalar periods 5350 word (0, 1) seconds 56.54
+scalar periods 5400 word (0, 1) seconds 56.56
+scalar periods 5450 word (0, 1) seconds 56.59
+scalar periods 5500 word (0, 1) seconds 56.64
+scalar periods 5550 word (0, 1) seconds 56.67
+scalar periods 5600 word (0, 1) seconds 56.69
+scalar periods 5650 word (0, 1) seconds 56.71
+scalar periods 5700 word (0, 1) seconds 56.72
+scalar periods 5750 word (0, 1) seconds 57.04
+scalar periods 5800 word (0, 1) seconds 57.1
+scalar periods 5850 word (0, 1) seconds 57.23
+scalar periods 5900 word (0, 1) seconds 57.4
+scalar periods 5950 word (0, 1) seconds 57.47
+scalar periods 6000 word (0, 1) seconds 57.83
+scalar periods 6050 word (0, 1) seconds 58.4
+moment (0, 1) {'sqrtpi^4': '41/124740'} seconds 58.49
+moment (0, 2) {'sqrtpi^4': '1/4455'} seconds 58.58
+moment (0, 3) {'sqrtpi^4': '1/4158'} seconds 58.68
+moment (0, 4) {'sqrtpi^4': '37/1247400'} seconds 58.75
+moment (0, 5) {'sqrtpi^4': '3/15400'} seconds 59.94
+moment (0, 6) {'sqrtpi^4': '-13/89100'} seconds 59.98
+moment (0, 7) {'sqrtpi^4': '73/415800'} seconds 60.03
+moment (0, 8) {'sqrtpi^4': '19/103950'} seconds 60.08
+moment (1, 1) {'sqrtpi^4': '29/62370'} seconds 60.16
+moment (1, 2) {'sqrtpi^4': '13/89100'} seconds 60.19
+moment (1, 3) {'sqrtpi^4': '19/103950'} seconds 60.25
+moment (1, 4) {'sqrtpi^4': '-37/1247400'} seconds 60.29
+moment (1, 5) {'sqrtpi^4': '73/415800'} seconds 60.33
+moment (1, 6) {'sqrtpi^4': '-1/4455'} seconds 60.37
+moment (1, 7) {'sqrtpi^4': '3/15400'} seconds 60.43
+moment (1, 8) {'sqrtpi^4': '1/4158'} seconds 60.49
+moment (2, 2) {'sqrtpi^4': '127/873180'} seconds 60.51
+moment (2, 3) {'sqrtpi^4': '23/291060'} seconds 60.55
+moment (2, 4) {'sqrtpi^4': '307/8731800'} seconds 60.57
+moment (2, 5) {'sqrtpi^4': '107/970200'} seconds 60.59
+moment (2, 6) {'sqrtpi^4': '-71/1247400'} seconds 60.62
+moment (2, 7) {'sqrtpi^4': '67/727650'} seconds 60.64
+moment (2, 8) {'sqrtpi^4': '37/415800'} seconds 60.68
+moment (3, 3) {'sqrtpi^4': '47/291060'} seconds 60.72
+moment (3, 4) {'sqrtpi^4': '-2/363825'} seconds 60.75
+moment (3, 5) {'sqrtpi^4': '41/485100'} seconds 60.79
+moment (3, 6) {'sqrtpi^4': '-37/415800'} seconds 60.83
+moment (3, 7) {'sqrtpi^4': '9/107800'} seconds 60.87
+moment (3, 8) {'sqrtpi^4': '13/138600'} seconds 60.91
+moment (4, 4) {'sqrtpi^4': '227/4365900'} seconds 60.92
+moment (4, 5) {'sqrtpi^4': '-1/59400'} seconds 60.95
+moment (4, 6) {'sqrtpi^4': '307/8731800'} seconds 60.97
+moment (4, 7) {'sqrtpi^4': '1/59400'} seconds 60.99
+moment (4, 8) {'sqrtpi^4': '2/363825'} seconds 61.02
+moment (5, 5) {'sqrtpi^4': '37/291060'} seconds 61.05
+moment (5, 6) {'sqrtpi^4': '-67/727650'} seconds 61.07
+moment (5, 7) {'sqrtpi^4': '73/970200'} seconds 61.09
+moment (5, 8) {'sqrtpi^4': '9/107800'} seconds 61.13
+moment (6, 6) {'sqrtpi^4': '127/873180'} seconds 61.16
+moment (6, 7) {'sqrtpi^4': '-107/970200'} seconds 61.19
+moment (6, 8) {'sqrtpi^4': '-23/291060'} seconds 61.23
+moment (7, 7) {'sqrtpi^4': '37/291060'} seconds 61.26
+moment (7, 8) {'sqrtpi^4': '41/485100'} seconds 61.3
+moment (8, 8) {'sqrtpi^4': '47/291060'} seconds 61.36

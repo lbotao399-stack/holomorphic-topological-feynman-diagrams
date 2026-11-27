@@ -1,0 +1,96 @@
+verified Q0 0 1 2 seconds 16.7
+verified Q0 0 2 12 seconds 16.7
+verified Q0 0 3 24 seconds 16.7
+verified Q0 0 4 20 seconds 16.8
+verified Q0 0 5 12 seconds 16.8
+verified Q0 4 0 2 seconds 16.8
+verified Q0 4 1 40 seconds 16.8
+verified Q0 4 2 164 seconds 16.9
+verified Q0 4 3 254 seconds 17.0
+verified Q0 4 4 184 seconds 17.1
+verified Q0 4 5 72 seconds 17.1
+verified Q0 8 0 18 seconds 17.1
+verified Q0 8 1 234 seconds 17.2
+verified Q0 8 2 780 seconds 17.7
+verified Q0 8 3 1018 seconds 18.3
+verified Q0 8 4 638 seconds 18.8
+verified Q0 8 5 184 seconds 18.9
+verified Q0 12 0 64 seconds 18.9
+verified Q0 12 1 680 seconds 19.2
+verified Q0 12 2 1930 seconds 20.7
+verified Q0 12 3 2178 seconds 22.8
+verified Q0 12 4 1166 seconds 24.1
+verified Q0 12 5 254 seconds 24.3
+verified Q0 16 0 124 seconds 24.3
+verified Q0 16 1 1156 seconds 25.1
+verified Q0 16 2 2848 seconds 27.2
+verified Q0 16 3 2792 seconds 31.8
+verified Q0 16 4 1246 seconds 32.8
+verified Q0 16 5 198 seconds 32.9
+verified Q0 20 0 142 seconds 33.0
+verified Q0 20 1 1210 seconds 33.7
+verified Q0 20 2 2616 seconds 35.6
+verified Q0 20 3 2208 seconds 37.4
+verified Q0 20 4 784 seconds 38.0
+verified Q0 20 5 82 seconds 38.1
+verified Q0 24 0 96 seconds 38.1
+verified Q0 24 1 772 seconds 38.6
+verified Q0 24 2 1476 seconds 39.5
+verified Q0 24 3 1046 seconds 40.3
+verified Q0 24 4 268 seconds 40.5
+verified Q0 24 5 14 seconds 40.6
+verified Q0 28 0 36 seconds 40.6
+verified Q0 28 1 280 seconds 40.7
+verified Q0 28 2 478 seconds 41.0
+verified Q0 28 3 268 seconds 41.3
+verified Q0 28 4 38 seconds 41.3
+verified Q0 32 0 6 seconds 41.3
+verified Q0 32 1 48 seconds 41.3
+verified Q0 32 2 76 seconds 41.4
+verified Q0 32 3 28 seconds 41.4
+verified Q0 36 1 2 seconds 41.4
+verified Q0 36 2 4 seconds 41.4
+local commutator 100 of 2426 seconds 67.1
+local commutator 200 of 2426 seconds 69.0
+local commutator 300 of 2426 seconds 70.7
+local commutator 400 of 2426 seconds 72.0
+local commutator 500 of 2426 seconds 72.5
+local commutator 600 of 2426 seconds 72.7
+local commutator 700 of 2426 seconds 73.5
+local commutator 800 of 2426 seconds 73.9
+local commutator 900 of 2426 seconds 74.5
+local commutator 1000 of 2426 seconds 74.7
+local commutator 1100 of 2426 seconds 74.8
+local commutator 1200 of 2426 seconds 74.9
+local commutator 1300 of 2426 seconds 75.0
+local commutator 1400 of 2426 seconds 75.1
+local commutator 1500 of 2426 seconds 75.1
+local commutator 1600 of 2426 seconds 75.2
+local commutator 1700 of 2426 seconds 75.2
+local commutator 1800 of 2426 seconds 75.3
+local commutator 1900 of 2426 seconds 75.3
+local commutator 2000 of 2426 seconds 75.3
+local commutator 2100 of 2426 seconds 75.4
+local commutator 2200 of 2426 seconds 75.4
+local commutator 2300 of 2426 seconds 75.4
+local commutator 2400 of 2426 seconds 75.4
+{
+  "schema": "gl2-cohomology-independent-replay-v1",
+  "result": "passed",
+  "certificate_sha256": "bb5ad9fe3a24b7b372008e00d35cba8c0f3e29fb0918ebfe010e1932848e6b26",
+  "complete_cochain_basis": 30272,
+  "complete_cohomology_basis": 64,
+  "Q0_columns_recomputed_by_original_Wick_engine": 30272,
+  "Q0_squared_columns_independently_checked": 30272,
+  "multigraded_product_counts_equal_complete_bases": true,
+  "Q2_images_and_boundary_witnesses_checked": 64,
+  "local_commutator_inputs": {
+    "2": 178,
+    "3": 2248
+  },
+  "nonzero_commutator_compositions_cancelled": 1372,
+  "full_commutator_justification": "Q0 has differential order one; Q2 has orders two and three. Their graded commutator has order at most three. It vanishes on constants and generators and on all occurring two/three-letter submonomials. Thus it vanishes on the complete declared complex.",
+  "d2_square_zero": true,
+  "seconds": 75.45,
+  "verifier_sha256": "142683c479a448a359c778fe1ce518281a0239bd8f2d82da76e40ed7e6dac473"
+}

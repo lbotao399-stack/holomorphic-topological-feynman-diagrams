@@ -1,0 +1,14 @@
+test_bulk_vanishing_retains_insertions (__main__.BulkKernelChecks.test_bulk_vanishing_retains_insertions) ... ok
+test_current_orientation_and_edge_order (__main__.BulkKernelChecks.test_current_orientation_and_edge_order) ... ok
+test_dispatcher_keeps_every_spinor_direction (__main__.BulkKernelChecks.test_dispatcher_keeps_every_spinor_direction) ... ok
+test_exact_inputs_and_admissibility_fail_closed (__main__.BulkKernelChecks.test_exact_inputs_and_admissibility_fail_closed) ... ok
+test_half_integer_series_all_original_currents (__main__.BulkKernelChecks.test_half_integer_series_all_original_currents) ... ok
+test_half_integer_series_encloses_pi_with_a_narrow_rational_interval (__main__.BulkKernelChecks.test_half_integer_series_encloses_pi_with_a_narrow_rational_interval) ... ok
+test_incomplete_cube_atlas_is_never_returned (__main__.BulkKernelChecks.test_incomplete_cube_atlas_is_never_returned) ... ok
+test_new_complete_k33_derivative_is_nonzero (__main__.BulkKernelChecks.test_new_complete_k33_derivative_is_nonzero) ... ok
+test_quadratic_gaussian_identity_in_three_holomorphic_dimensions (__main__.BulkKernelChecks.test_quadratic_gaussian_identity_in_three_holomorphic_dimensions) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.499s
+
+OK

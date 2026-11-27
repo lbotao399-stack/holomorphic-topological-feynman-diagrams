@@ -1,0 +1,115 @@
+{'case': 'unknown_vertex', 'api': 'evaluate_bulk', 'rejected': 'ValueError'}
+{'case': 'unknown_vertex', 'api': 'BulkPolynomial', 'rejected': 'ValueError'}
+{'case': 'root_extra_component_list', 'api': 'evaluate_bulk', 'rejected': 'ValueError'}
+{'case': 'root_extra_component_list', 'api': 'BulkPolynomial', 'rejected': 'ValueError'}
+{'case': 'root_extra_component_dict', 'api': 'evaluate_bulk', 'rejected': 'ValueError'}
+{'case': 'root_extra_component_dict', 'api': 'BulkPolynomial', 'rejected': 'ValueError'}
+{'case': 'boolean_vertex', 'api': 'evaluate_bulk', 'rejected': 'TypeError'}
+{'case': 'boolean_vertex', 'api': 'BulkPolynomial', 'rejected': 'TypeError'}
+{'case': 'nonconserved_root', 'api': 'evaluate_bulk', 'rejected': 'ValueError'}
+{'case': 'nonconserved_root', 'api': 'BulkPolynomial', 'rejected': 'ValueError'}
+{'case': 'inexact_root', 'api': 'evaluate_bulk', 'rejected': 'TypeError'}
+{'case': 'inexact_root', 'api': 'BulkPolynomial', 'rejected': 'TypeError'}
+Explicit empty dictionary preserves H=2 in both APIs
+Beginning actual unavailable q=13/2 period case
+{
+  "status": "pass",
+  "input_checks": [
+    {
+      "case": "unknown_vertex",
+      "api": "evaluate_bulk",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "unknown_vertex",
+      "api": "BulkPolynomial",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "root_extra_component_list",
+      "api": "evaluate_bulk",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "root_extra_component_list",
+      "api": "BulkPolynomial",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "root_extra_component_dict",
+      "api": "evaluate_bulk",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "root_extra_component_dict",
+      "api": "BulkPolynomial",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "boolean_vertex",
+      "api": "evaluate_bulk",
+      "rejected": "TypeError"
+    },
+    {
+      "case": "boolean_vertex",
+      "api": "BulkPolynomial",
+      "rejected": "TypeError"
+    },
+    {
+      "case": "nonconserved_root",
+      "api": "evaluate_bulk",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "nonconserved_root",
+      "api": "BulkPolynomial",
+      "rejected": "ValueError"
+    },
+    {
+      "case": "inexact_root",
+      "api": "evaluate_bulk",
+      "rejected": "TypeError"
+    },
+    {
+      "case": "inexact_root",
+      "api": "BulkPolynomial",
+      "rejected": "TypeError"
+    }
+  ],
+  "missing_period_fallback": {
+    "graph": "triangular prism",
+    "sources": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ],
+    "word": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "pole": "13/2",
+    "reason": "prism_q13o2.json",
+    "returned_type": "ExactBulkSeries",
+    "source_and_word_retained": true,
+    "incomplete_atlas_rejected": "complete dominant-tree atlas exceeds max_charts"
+  },
+  "elapsed_seconds": 44.148
+}

@@ -1,0 +1,38 @@
+{
+  "bound_complete_artifacts_sha256": {
+    "explore/circuit-general/five-loop-completion/certificate.json": "2f280a8cbc5a0bd90eb87905efbf9f670e0b23adc2549369907b0ed9e9181c6d",
+    "explore/circuit-general/five-loop-completion/independent_certificate.json": "9695acbb897a82248b15b13df40d2759d2704cbafeb1ecabd6fada462a50ed9e",
+    "explore/circuit-general/five-loop-completion/symmetry_certificate.json": "32d7b69b65aef7d791feba44412872aa43f8dfede9c3827a450804d1084a6d69"
+  },
+  "checks": [
+    {
+      "command": "python3 explore/circuit-general/five-loop-completion/verify.py",
+      "exit_code": 0,
+      "log": "explore/circuit-general/five-loop-completion/verification/quick_replay.log",
+      "log_sha256": "8f13b1837e271a7e55b909a679896b4704935862196a3af833f9f15ecb887f28",
+      "name": "quick_replay"
+    },
+    {
+      "command": "python3 explore/circuit-general/five-loop-completion/independent_controls.py",
+      "exit_code": 0,
+      "log": "explore/circuit-general/five-loop-completion/verification/independent_replay.log",
+      "log_sha256": "d64fa6153bcc8ad46167c8ead0c6dfdcc5c854adac61a33b2418cce14baaaf11",
+      "name": "independent_replay"
+    },
+    {
+      "command": "python3 explore/circuit-general/five-loop-completion/symmetry_controls.py",
+      "exit_code": 0,
+      "log": "explore/circuit-general/five-loop-completion/verification/symmetry_replay.log",
+      "log_sha256": "4670864de9cfd830529a654f82d3a72948d1e6e335c5b93ef7e7d352910e8764",
+      "name": "symmetry_replay"
+    }
+  ],
+  "scope": "The quick replay checks stored complete results, exact relations, original density points and dependencies. Independent replay freshly reintegrates five whole current tensors and all declared coefficient/source controls; symmetry replay freshly checks all signed-zero witnesses. Full-census integration was performed separately and is recorded in the69 complete case files.",
+  "status": "all_exact_replays_passed",
+  "versions": {
+    "networkx": "3.7",
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "sympy": "1.14.0"
+  }
+}

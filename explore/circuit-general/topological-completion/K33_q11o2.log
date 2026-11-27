@@ -1,0 +1,4 @@
+q=5 unknowns 936 rows 9758 {'T': 0, 'D': 7960, 'I': 1377, 'B': 421, 'S': 0}  257.5s
+rank 936 of 936 unknowns, determined 936  3.3s
+K33 11/2 complete 936 orbits 9758 exact rows seconds 262.344
+K33 11/2 original cold controls 2 all equal

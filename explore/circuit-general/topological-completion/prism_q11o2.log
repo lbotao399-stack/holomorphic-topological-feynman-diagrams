@@ -1,0 +1,4 @@
+q=5 unknowns 3948 rows 43776 {'T': 36512, 'D': 0, 'I': 5535, 'B': 1729, 'S': 0}  154.7s
+rank 3948 of 3948 unknowns, determined 3948  9.2s
+prism 11/2 complete 3948 orbits 43776 exact rows seconds 169.489
+prism 11/2 original cold controls 2 all equal

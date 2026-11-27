@@ -1,0 +1,288 @@
+{
+  "bare_coefficient": {
+    "1": "-15903269/5866428395520000",
+    "z3": "5119/2263282560000"
+  },
+  "bare_source_factor": "det(lambda_s0,lambda_s1,lambda_s2)^5",
+  "bare_status": "complete",
+  "complete_bare_numerator": {
+    "sha256": "3d9b4b51564480db6af6916c50916e0280ace84e9912a4739c2ef959a1d9cd74",
+    "terms": 6275
+  },
+  "complete_finite_targets": [
+    {
+      "complete_numerator": {
+        "sha256": "3d9b4b51564480db6af6916c50916e0280ace84e9912a4739c2ef959a1d9cd74",
+        "terms": 6275
+      },
+      "complete_scalar_coefficients_sha256": "c07dc0520f2596866dd93034e93fe4f505668d468f3940400c64a4572319b32f",
+      "denominator_power": 8,
+      "edge": null,
+      "period_stats": {
+        "q": 8,
+        "read_only_tables": true,
+        "weighted_periods": 302
+      },
+      "source_direction": null,
+      "value": {
+        "1": "-15903269/5866428395520000",
+        "z3": "5119/2263282560000"
+      },
+      "weighted_core_periods": 302
+    }
+  ],
+  "complete_series_chains": [
+    [
+      0
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3
+    ],
+    [
+      6
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      8
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      10
+    ],
+    [
+      11
+    ],
+    [
+      12
+    ],
+    [
+      14
+    ]
+  ],
+  "core_classification": "prism",
+  "dependencies_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/assembly/tables/K33_q8.json": "12496b23958872bc52f6e77a3bbfd03071ceb34817683087abfb621118e54f8c",
+    "explore/circuit-general/assembly/tables/K33_q9.json": "75d15ea03b2f68a2907106d2e05af6b0dd8765a649b7df5aba222feb01db6176",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/five-loop-completion/bulk3_periods.py": "5f83e2785db2206e48aa49bd653cedfa842201da9ad51bca9e807b6f96ebce8a",
+    "explore/circuit-general/five-loop-completion/certify.py": "3cd7ad5799a87d655cf7d253edcf7ebd88af993769cae9f7ebeea19d8bdce35c",
+    "explore/circuit-general/fiveloop/enum_d3.json": "85182250468c766a65972f458414d0d1dbbd265ccdf3426b22587a25b6e349e6",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/fiveloop/skel5.json": "62267064b43ff24413cbcfa6e01da5cebe85140e0a288fc1ce5f9a43e856d452",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "first_current_meaning": "bare_source_factor times the complete linear combination of lambda_s0,lambda_s1,lambda_s2",
+  "first_current_status": "not_requested",
+  "index": 45,
+  "ordered_oriented_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      11
+    ]
+  ],
+  "original_grounded_laplacian_density_checks": [
+    {
+      "U": "363945252702173/145297152000",
+      "complete_numerator": "1631050506543013548721/196392196000000000000",
+      "resistances": [
+        "2",
+        "3/2",
+        "4/3",
+        "5/4",
+        "6/5",
+        "7/6",
+        "8/7",
+        "9/8",
+        "10/9",
+        "11/10",
+        "12/11",
+        "13/12",
+        "14/13",
+        "15/14",
+        "16/15",
+        "17/16"
+      ]
+    },
+    {
+      "U": "15929753219599/1793792000",
+      "complete_numerator": "14657148998803569834081/802816000000000000",
+      "resistances": [
+        "4",
+        "5/2",
+        "2",
+        "7/4",
+        "8/5",
+        "3/2",
+        "10/7",
+        "11/8",
+        "4/3",
+        "13/10",
+        "14/11",
+        "5/4",
+        "16/13",
+        "17/14",
+        "6/5",
+        "19/16"
+      ]
+    }
+  ],
+  "scalar_core_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "schema": "five-loop-bulk3-supported-source-v1",
+  "seconds": 4.619,
+  "source_cycle_tree": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "source_scope": "lambda_s0,lambda_s1,lambda_s2 arbitrary; lambda_s3=-sum; all other original sources zero",
+  "source_vertices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "vertices": 12
+}

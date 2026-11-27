@@ -1,0 +1,21 @@
+functional subset 0:3 of 13
+theory 8d gauge so5 matter None H=4 N=20: order 3, O = g^v,g^v,g^v,g^v, jets {}, functionals g,g,g,g,g,g,g,g,g^v, F = 13, seed 41, R = 4, nmom = 4, P = 2147483647
+blocks: {'g': 10, 'g^v': 10}
+  order 1 graphs: [('G1.1', 2)]
+  order 2 graphs: [('G2.1', 2), ('G2.2', 1), ('G2.3', 6)]
+  order 3 graphs: [('G3.1', 2), ('G3.2', 1), ('G3.3', 2), ('G3.4', 1), ('G3.5', 1), ('G3.6', 2), ('G3.7', 2), ('G3.8', 1), ('G3.9', 2), ('G3.10', 2), ('G3.11', 8), ('G3.12', 1)]
+  [G2.3: block-triangular numeric density, symbolic kernel from the tight plan]
+  [G3.6: block-triangular numeric density]
+  [G3.7: block-triangular numeric density]
+  [G3.9: block-triangular numeric density]
+  [G3.10: block-triangular numeric density]
+  [G3.11: block-triangular numeric density]
+complete Python-integer tensor control (1, 4, 4, 4, 4, 4, 4, 4, 4, 4) spectator True entries 262144
+complete Python-integer tensor control (1, 4, 4, 4, 4, 4, 4, 4, 4, 4) spectator False entries 262144
+  <hatQ[G3.2] hatQ[Q0] O>: [385226052, 72725297, 1498352798]   (histories 2304, keys 1, kernel pts 13860, colour 238s, total 280s)
+  <hatQ[G3.3] hatQ[Q0] O>: [885422594, 336555162, 1868970282]   (histories 2304, keys 1, kernel pts 13860, colour 235s, total 263s)
+  <hatQ[G3.4] hatQ[Q0] O>: [301251072, 954410204, 1660643213]   (histories 2304, keys 1, kernel pts 13860, colour 206s, total 255s)
+total time 798s
+exact-color statistics {'histories_with_spectators': 1729, 'integer_contractions': 6914, 'maximum_closed_matter_flavour_cycles': 0}
+certified integer bounds {'bounded_integer_steps': 255744, 'python_integer_steps': 0, 'largest_machine_step_bound': 180000926700}
+complete object-color controls [False, True]

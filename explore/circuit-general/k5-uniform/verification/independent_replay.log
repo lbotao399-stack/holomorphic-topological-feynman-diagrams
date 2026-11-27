@@ -1,0 +1,6 @@
+Replayed every exact value, guarded relation, failure, and source digest.
+q=9: 4905 labeled inputs; 73 orbits; 13 generic orbits; 9490 complete lower terms.
+Independent existing-table controls: 5; complete boundary scan: 54391 K5 orbits.
+Extra input relation: 11 vertex rows + 1 dimension row, radial identity, retained boundary 1/3.
+All-q generic K5 numerical closure remains open.
+canonical_certificate_sha256: 16c7a9f656085fcdb68f6a0832f9963947031ead2d4af7fd3a22eed964b87784

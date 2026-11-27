@@ -1,0 +1,203 @@
+{
+  "passed": true,
+  "prime": 2147483647,
+  "kernel_arithmetic": "finite field",
+  "color_arithmetic": "exact integers with prechecked intermediate bounds",
+  "universal_rational_nilpotency_claimed": false,
+  "order_two": {
+    "all_compositions_per_family": 7,
+    "complete_functionals": 12,
+    "matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        951021521,
+        156402005,
+        1368012191
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1506820657,
+        676339308,
+        1184327434
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1707721025,
+        52379479,
+        1770884134
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2026969904,
+        1254484958,
+        1430643826
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "rhs": [
+      0,
+      2003396732,
+      0,
+      0,
+      878260046,
+      0,
+      0,
+      1304010241,
+      0,
+      1072728864,
+      0,
+      0
+    ],
+    "rank": 3,
+    "augmented_rank": 3,
+    "weights": [
+      "-1/2",
+      "-1",
+      "-1/6"
+    ],
+    "residuals": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "order_three": {
+    "all_compositions": 30,
+    "corrected_compositions": 18,
+    "unaffected_original_input_compositions": 12,
+    "complete_functionals": 3,
+    "matrix": [
+      [
+        2105142343,
+        1472444908,
+        629057341,
+        1926042620,
+        23051704,
+        1835378464,
+        1038315750,
+        1645902726,
+        565289830,
+        1056737712,
+        1223606808,
+        592032029
+      ],
+      [
+        659164993,
+        522782388,
+        46937214,
+        214022882,
+        1056950620,
+        687508488,
+        622352339,
+        1082610642,
+        1711140040,
+        458843980,
+        1979984795,
+        973023897
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "rhs": [
+      1310032677,
+      1594766165,
+      0
+    ],
+    "rank": 2,
+    "augmented_rank": 2,
+    "complete_sign_patterns_checked": 4096,
+    "surviving_sign_patterns": [
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    ],
+    "changed_complete_compositions": [],
+    "unrestricted_weights_remain_underdetermined": true
+  },
+  "input_sha256": {
+    "explore/taxonomy/higher-order-completion/corrected_8d_order2_R3.json": "23f55d42ba3eb43605192d0807ca85eee2c2dcb03d0b75f96faee329fa999a29",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order2_R5.json": "0bff7b964800181e3a7dac3ae39c2433cceb96d296189ad775b29a1d824fdc9a",
+    "explore/taxonomy/b4-round2/o3g4/A_all.json": "894f1bff911ee6ac0b2ebb1e39d3d4dbafc7511fdc98b8ec6cfb0cdc2e2324f1",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_mixed.json": "4c1e9f655c7bc03cb473a082ae088e934cd44dc29580a7b3f3e12213bce495d2",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_mixed_part2.json": "c70ec68bf32fe0e1cec7dde14331833889c6ec4fb54b9b5b2a0a36f87690e7fd",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_mixed_part3.json": "3cdb66124c6ce84f884ff23c7b0364c2e45db79e9a84c243f6c4008a3c976281",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_mixed_part4.json": "16d2177b9e549143cd817db5207a10cdc7fbfd272ba3bc341c73949158ddaf96",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_q0.json": "db6ff93594566c563b8e1ee38cd982b00dc2cadb36c138aeb82fa112956eb93b",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_q0_part2.json": "0e027be46dcff2282387429237307da5068d1eeaa90d92ba7dee67610e80f6a8",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_q0_part3.json": "09918af38d64585b562d8713ea4ebd347629bbff426135e737a605fae3f4a993",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_q0_part4.json": "fc652c4eec77a7a125e5a9019ef99366cf545efcde44a3bb40517511df21e799",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order3_q0_part5.json": "e9066747fe0adb1d2b4d01c48d263b6021f7413939aa42d164e4b9df77fd6d5f",
+    "explore/taxonomy/higher-order-completion/exact_colour.py": "a3649c87c5b3695b234baa367984386f67475f201b2e2a5e59115059c7bfa5af",
+    "explore/taxonomy/higher-order-completion/safe_integer_contraction.py": "9f3bd5ad3a33884e03f26c3e2cb7996407ba688b973687bc28ae57c5c7bb7cc8",
+    "explore/taxonomy/higher-order-completion/b4_modular_probe.py": "da2230b42b6e93ce1af6c6975375b1f49cb76d64f519736a9be71cdca2b36a0f",
+    "explore/taxonomy/higher-order-completion/b4_bounded_integer_probe.py": "d17263820bd5cb5482fe96f6b2b51c1bddf37f24b6f16d481c51cb6e304a8042",
+    "explore/taxonomy/higher-order-completion/verify_corrected_8d.py": "046660d830f522d73959767ff666b2b7cd52b847caee161eb89d1935ebc55699"
+  }
+}

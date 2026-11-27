@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "prime": 2147483647,
+  "kernel_arithmetic": "finite field",
+  "color_arithmetic": "exact integers with prechecked intermediate bounds",
+  "universal_rational_nilpotency_claimed": false,
+  "order_two": {
+    "all_compositions_per_family": 7,
+    "complete_functionals": 12,
+    "matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        951021521,
+        156402005,
+        1368012191
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1506820657,
+        676339308,
+        1184327434
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1707721025,
+        52379479,
+        1770884134
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2026969904,
+        1254484958,
+        1430643826
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "rhs": [
+      0,
+      2003396732,
+      0,
+      0,
+      878260046,
+      0,
+      0,
+      1304010241,
+      0,
+      1072728864,
+      0,
+      0
+    ],
+    "rank": 3,
+    "augmented_rank": 3,
+    "weights": [
+      "-1/2",
+      "-1",
+      "-1/6"
+    ],
+    "residuals": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "input_sha256": {
+    "explore/taxonomy/higher-order-completion/corrected_8d_order2_R3.json": "23f55d42ba3eb43605192d0807ca85eee2c2dcb03d0b75f96faee329fa999a29",
+    "explore/taxonomy/higher-order-completion/corrected_8d_order2_R5.json": "0bff7b964800181e3a7dac3ae39c2433cceb96d296189ad775b29a1d824fdc9a",
+    "explore/taxonomy/higher-order-completion/exact_colour.py": "a3649c87c5b3695b234baa367984386f67475f201b2e2a5e59115059c7bfa5af",
+    "explore/taxonomy/higher-order-completion/safe_integer_contraction.py": "9f3bd5ad3a33884e03f26c3e2cb7996407ba688b973687bc28ae57c5c7bb7cc8",
+    "explore/taxonomy/higher-order-completion/b4_modular_probe.py": "da2230b42b6e93ce1af6c6975375b1f49cb76d64f519736a9be71cdca2b36a0f",
+    "explore/taxonomy/higher-order-completion/b4_bounded_integer_probe.py": "d17263820bd5cb5482fe96f6b2b51c1bddf37f24b6f16d481c51cb6e304a8042",
+    "explore/taxonomy/higher-order-completion/verify_corrected_8d.py": "046660d830f522d73959767ff666b2b7cd52b847caee161eb89d1935ebc55699"
+  }
+}

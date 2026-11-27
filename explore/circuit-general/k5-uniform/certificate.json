@@ -1,0 +1,747 @@
+{
+  "complete_boundary_scan": [
+    {
+      "all_formal_terms_zero_orbits": 2,
+      "divergent_nonzero_formal_terms": 0,
+      "nonzero_formal_terms": 0,
+      "orbits": 2,
+      "q": 3,
+      "safe_completed_recurrences": 0,
+      "safe_scalar_recurrences": 0
+    },
+    {
+      "all_formal_terms_zero_orbits": 5,
+      "divergent_nonzero_formal_terms": 11,
+      "nonzero_formal_terms": 92,
+      "orbits": 30,
+      "q": 4,
+      "safe_completed_recurrences": 1,
+      "safe_scalar_recurrences": 0
+    },
+    {
+      "all_formal_terms_zero_orbits": 5,
+      "divergent_nonzero_formal_terms": 1523,
+      "nonzero_formal_terms": 4375,
+      "orbits": 312,
+      "q": 5,
+      "safe_completed_recurrences": 23,
+      "safe_scalar_recurrences": 0
+    },
+    {
+      "all_formal_terms_zero_orbits": 5,
+      "divergent_nonzero_formal_terms": 21030,
+      "nonzero_formal_terms": 55719,
+      "orbits": 2107,
+      "q": 6,
+      "safe_completed_recurrences": 289,
+      "safe_scalar_recurrences": 0
+    },
+    {
+      "all_formal_terms_zero_orbits": 5,
+      "divergent_nonzero_formal_terms": 146654,
+      "nonzero_formal_terms": 397619,
+      "orbits": 10512,
+      "q": 7,
+      "safe_completed_recurrences": 2163,
+      "safe_scalar_recurrences": 0
+    },
+    {
+      "all_formal_terms_zero_orbits": 5,
+      "divergent_nonzero_formal_terms": 685814,
+      "nonzero_formal_terms": 1969673,
+      "orbits": 41428,
+      "q": 8,
+      "safe_completed_recurrences": 11263,
+      "safe_scalar_recurrences": 3
+    }
+  ],
+  "determinant": {
+    "complete_cayley_menger_terms": 130,
+    "guard_necessity_edge_witnesses": 15,
+    "guard_necessity_triangle_witnesses": 20,
+    "independent_gram_terms": 130,
+    "polynomial_sha256": "207808ec9a59f2f000608781f5769e728b37c547f2a7377bc490e231e9ca7a96"
+  },
+  "explicit_failures": [
+    {
+      "actual_value": {
+        "z3": "5/3",
+        "z5": "-5/3"
+      },
+      "alpha": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "formal_interior_value": {},
+      "missing": "coordinate boundary",
+      "q": 3
+    },
+    {
+      "alpha": [
+        2,
+        2,
+        3,
+        4,
+        2,
+        3,
+        3,
+        4,
+        3,
+        4
+      ],
+      "falling_factor": "1",
+      "gram_coefficient": "1/8",
+      "lower_alpha": [
+        1,
+        1,
+        3,
+        3,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "lower_q": 4,
+      "q": 5,
+      "shift": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "triangle_012_sum": 3
+    }
+  ],
+  "extra_input_relation": {
+    "class_6_k4_relabeling": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "exact_telescoping_boundary_at_2": "1/3",
+    "level_3_classes": [
+      [
+        -2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "proved_extra_input_relation": {
+      "J2": "1",
+      "J3_14": "-4",
+      "J3_5": "-16/3",
+      "J3_6": "-16"
+    },
+    "proved_intermediate": {
+      "J2": "1",
+      "J3_14": "-20",
+      "J3_9": "-24"
+    },
+    "radial_coefficient_controls": 153,
+    "row_witness": [
+      {
+        "coefficient": "22",
+        "kind": "X",
+        "ordered_vertices": [
+          0,
+          4,
+          5
+        ],
+        "row": {
+          "13": "1",
+          "9": "-1"
+        },
+        "source_class": 10
+      },
+      {
+        "coefficient": "1/2",
+        "kind": "X",
+        "ordered_vertices": [
+          2,
+          1,
+          3
+        ],
+        "row": {
+          "0": "1",
+          "1": "-1"
+        },
+        "source_class": 4
+      },
+      {
+        "coefficient": "-1/2",
+        "kind": "X",
+        "ordered_vertices": [
+          2,
+          3,
+          5
+        ],
+        "row": {
+          "1": "-1",
+          "2": "2",
+          "3": "2",
+          "4": "-2"
+        },
+        "source_class": 2
+      },
+      {
+        "coefficient": "-1",
+        "kind": "X",
+        "ordered_vertices": [
+          1,
+          4,
+          5
+        ],
+        "row": {
+          "2": "-1",
+          "6": "1",
+          "7": "1",
+          "8": "-1"
+        },
+        "source_class": 6
+      },
+      {
+        "coefficient": "3",
+        "kind": "X",
+        "ordered_vertices": [
+          4,
+          0,
+          2
+        ],
+        "row": {
+          "11": "-1",
+          "3": "1"
+        },
+        "source_class": 8
+      },
+      {
+        "coefficient": "3",
+        "kind": "X",
+        "ordered_vertices": [
+          3,
+          0,
+          1
+        ],
+        "row": {
+          "10": "-2",
+          "11": "1",
+          "12": "1",
+          "4": "1",
+          "8": "-2"
+        },
+        "source_class": 8
+      },
+      {
+        "coefficient": "-1",
+        "kind": "X",
+        "ordered_vertices": [
+          4,
+          0,
+          1
+        ],
+        "row": {
+          "12": "1",
+          "7": "-1"
+        },
+        "source_class": 4
+      },
+      {
+        "coefficient": "-1/2",
+        "kind": "X",
+        "ordered_vertices": [
+          2,
+          1,
+          3
+        ],
+        "row": {
+          "6": "-2",
+          "8": "2"
+        },
+        "source_class": 7
+      },
+      {
+        "coefficient": "-10",
+        "kind": "X",
+        "ordered_vertices": [
+          2,
+          0,
+          1
+        ],
+        "row": {
+          "10": "-2",
+          "13": "1",
+          "14": "2"
+        },
+        "source_class": 13
+      },
+      {
+        "coefficient": "6",
+        "kind": "X",
+        "ordered_vertices": [
+          2,
+          4,
+          5
+        ],
+        "row": {
+          "10": "-1",
+          "11": "1",
+          "13": "-2",
+          "8": "1"
+        },
+        "source_class": 10
+      },
+      {
+        "coefficient": "-2",
+        "kind": "X",
+        "ordered_vertices": [
+          2,
+          0,
+          1
+        ],
+        "row": {
+          "10": "2",
+          "3": "1",
+          "7": "-1",
+          "8": "-2",
+          "9": "1"
+        },
+        "source_class": 3
+      },
+      {
+        "coefficient": "1",
+        "decompletion": 0,
+        "kind": "DS",
+        "row": {
+          "0": "-1/2",
+          "10": "-4",
+          "11": "-6",
+          "12": "-2",
+          "15": "1",
+          "4": "-4",
+          "7": "-2",
+          "8": "-4"
+        }
+      }
+    ],
+    "telescoping_rational_controls": 20
+  },
+  "independent_table_controls": [
+    {
+      "lower_terms": 130,
+      "normalization": "I",
+      "q": 8,
+      "value": {
+        "1": "-1144553/367783416000",
+        "z3": "-4583/243243000",
+        "z5": "47/1891890"
+      },
+      "weights": [
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "lower_terms": 130,
+      "normalization": "I",
+      "q": 8,
+      "value": {
+        "1": "-2138797/490377888000",
+        "z3": "-6053/756756000",
+        "z5": "17/1261260"
+      },
+      "weights": [
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "lower_terms": 130,
+      "normalization": "I",
+      "q": 8,
+      "value": {
+        "1": "796141/163459296000",
+        "z3": "123371/13621608000",
+        "z5": "-23/1513512"
+      },
+      "weights": [
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "lower_terms": 130,
+      "normalization": "J",
+      "q": 4,
+      "value": {
+        "1": "1/60",
+        "z3": "-13/5",
+        "z5": "3"
+      },
+      "weights": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "lower_terms": 130,
+      "normalization": "J",
+      "q": 5,
+      "value": {
+        "1": "-13/630",
+        "z3": "19/30",
+        "z5": "-5/7"
+      },
+      "weights": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "new_level": {
+    "kind_counts": {
+      "G": 13,
+      "T1": 7,
+      "T2": 53
+    },
+    "labelled_inputs": 4905,
+    "orbits": 73,
+    "q": 9,
+    "region": "3 <= beta_e <= 7; sum beta_e = 36; alpha=9-beta"
+  },
+  "q9_values_sha256": "f41ff1fbc9c02095b5014af7d7c885b423a8c164fd63b9a7c04636fb851f8b22",
+  "scope": "guarded dimension lowering and origin of the extra input relation; all-q K5 closure remains open",
+  "source_sha256": {
+    "explore/circuit-general/k5-uniform/DERIVATION.md": "2745a4cfee77c4a6cf7cec52b4fcdb7e039952330b28496f7379176027598603",
+    "explore/circuit-general/k5-uniform/README.md": "61e96dc5ba6a8a8fb4b6dcc4b3d35c2a1ecb8a4ced0aac0bb2a46f8e781bff92",
+    "explore/circuit-general/k5-uniform/k5_dimension.py": "6a9ded01711f8945c4b024dce89ecf1ee619651bc7c9a286b7a696eeaeedd7a4",
+    "explore/circuit-general/k5-uniform/verify.py": "20e57fd41475993d54b4cc15a6501f79ce6c9b5650e9ce1e32271c0d40fa84bf",
+    "explore/circuit-general/k5/data/J_q2_tower.json": "0ccb408f702c52a6b73274919cb07121db0576a87b0721f59c16d86717c8ffbc",
+    "explore/circuit-general/k5/data/J_q3_tower.json": "b895205dcb09124d68499e3d8596cd60d5612c289e86e91cc4372f0cbe46290f",
+    "explore/circuit-general/k5/data/J_q4_tower.json": "115449e5f2b6caccffe9d83a2eca777a9e5a263608b526931ee6f5b57676d276",
+    "explore/circuit-general/k5/data/classes_q2.txt": "4b59b7708657a4df98c0999607441b1d4b67c6c0b455d13fd4ba1cc7abdedb0a",
+    "explore/circuit-general/k5/data/classes_q3.txt": "316e977e5fdcd6af39e5ce40ad17df22552191c9c8aeee5048d5b6bbaaba1230",
+    "explore/circuit-general/k5/tables/K5_q3.json": "493a0e5a9a1e278985aa0c1b54f8e347741065b16a98100a82de5480113dc296",
+    "explore/circuit-general/k5/tables/K5_q4.json": "99a0251b546556e3539b49cdeb104c0f66a104968694ca41f7ddc7b4000e0101",
+    "explore/circuit-general/k5/tables/K5_q5.json": "9131e0701357142c065e5d1166d25993d128e343915b8ed96ee05cf1d9628226",
+    "explore/circuit-general/k5/tables/K5_q6.json": "edcc9431adf4bc448dec0f47534f7e9eed248d95127262052e3a51811cf051e5",
+    "explore/circuit-general/k5/tables/K5_q7.json": "6193a3c412351cca4d8d023b8faff7883da78ad0a8d3a438019e9b5d8a3a678e",
+    "explore/circuit-general/k5/tables/K5_q8.json": "7c3028f06348032b4d814f5dc05c9d377ed98254cf0d6bc6aa3a022055620bec",
+    "notes/methods-paper/sections/periods.tex": "a752315d1f76e0e9b8f89db46ab5ecfe54595ad804e65d1a3243f4077cf2f173"
+  }
+}

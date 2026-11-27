@@ -1,0 +1,92 @@
+{
+  "H": 1,
+  "T": 1,
+  "complete_balanced_sources": [
+    [
+      2
+    ],
+    [
+      -3
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ],
+    [
+      -13
+    ],
+    [
+      2
+    ]
+  ],
+  "complete_source_polynomial_route": {
+    "sqrtpi^4": "-91544441/28350",
+    "sqrtpi^8": "5016761/15120"
+  },
+  "exact_dictionary_equality": true,
+  "forced_scalar_period_route": {
+    "sqrtpi^4": "-91544441/28350",
+    "sqrtpi^8": "5016761/15120"
+  },
+  "graph": {
+    "ordered_oriented_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "root": 5,
+    "vertices": 6
+  },
+  "implementation_sha256": {
+    "code/htk/_bulk_period_worker.py": "91333ddaff8f43ec23d277e683f5a509219c15670fcf289263585ab37ad8b317",
+    "code/htk/bulk_kernels.py": "ce6c75f659b3dc338ef53d0d4468ecd9b6adae1b0a28fe5e63649858e5fb29c0",
+    "code/htk/bulk_series.py": "7520376ae3432eed49ae3c03697b6e1d53d40e07e9102eb687e3aa96d6d94f71",
+    "code/htk/topological_polynomial.py": "485de471f50486876c7bbd0a53cacd31f6b8cf922e07077f2e0f0794334a52da",
+    "explore/circuit-general/topological-completion/prism_complete_polynomials.json": "f743569a49e68c3268d9b2046987dff2addd870c3fdf027999a865694f185d36"
+  },
+  "original_current_word": [
+    [
+      2,
+      0
+    ]
+  ],
+  "result": "passed",
+  "reviewer": "independent audit_reduction agent",
+  "schema": "independent-bulk-dispatch-comparison-v1",
+  "seconds": 13.752137766998203
+}

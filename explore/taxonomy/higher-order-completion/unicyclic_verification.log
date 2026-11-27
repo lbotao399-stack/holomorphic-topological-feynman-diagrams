@@ -1,0 +1,19 @@
+rank 5; unique full weights; all eight residuals zero; trees alone inconsistent
+Q0 G2.1 three nonzero complete rational kernel controls
+Q0 G2.2 three nonzero complete rational kernel controls
+Q0 G2.3u three nonzero complete rational kernel controls
+Q0 G2.4u three nonzero complete rational kernel controls
+Q0 G2.5u three nonzero complete rational kernel controls
+G1.1 G1.1 three nonzero complete rational kernel controls
+G2.1 Q0 three nonzero complete rational kernel controls
+G2.2 Q0 three nonzero complete rational kernel controls
+G2.3u Q0 three nonzero complete rational kernel controls
+G2.4u Q0 three nonzero complete rational kernel controls
+G2.5u Q0 three nonzero complete rational kernel controls
+four exact color algebras and complete inputs prepared 0.55
+Q0 G2.3u integer colors and flavour checks 1116 seconds 2.6
+Q0 G2.3u exact integrals 500 seconds 2.85
+Q0 G2.3u exact integrals 1000 seconds 3.1
+Q0 G2.3u values ['-433139072/99225', '0', '-20972995955089/198450', '-18714950036/225', '-4396564506944/14175', '0', '6496987136/75', '1679447540/1323'] seconds 3.15
+PASS: original spectator must remain multilinear; complete non-spectator tensor unchanged
+PASS: exact corrected weights, full rank and independent controls

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "synthetic_exact_controls": 4,
+  "complete_original_spectator_tensor_matches": true,
+  "complete_tensor_without_spectator_matches": true,
+  "statistics": {
+    "bounded_integer_steps": 87,
+    "python_integer_steps": 2,
+    "largest_machine_step_bound": 44352
+  },
+  "sha256": {
+    "safe_integer_contraction.py": "9f3bd5ad3a33884e03f26c3e2cb7996407ba688b973687bc28ae57c5c7bb7cc8",
+    "exact_colour.py": "a3649c87c5b3695b234baa367984386f67475f201b2e2a5e59115059c7bfa5af",
+    "verify_bounded_colour.py": "3e65c6f8c498e52a6ccfa417e05d4e02526c29eee400ce555d80bd4f32aff910"
+  }
+}

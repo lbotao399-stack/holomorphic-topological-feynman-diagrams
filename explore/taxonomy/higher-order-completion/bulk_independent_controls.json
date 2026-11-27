@@ -1,0 +1,537 @@
+{
+  "H3_T1_graph": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "H3_T1_scalar_period_value": {
+    "sqrtpi^2": "3138154/891"
+  },
+  "H3_T1_simplex_value": {
+    "pi^1": "3138154/891"
+  },
+  "H3_T1_sources": [
+    [
+      -1,
+      -2,
+      -3
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      1,
+      6,
+      23
+    ],
+    [
+      2,
+      13,
+      60
+    ],
+    [
+      3,
+      22,
+      121
+    ],
+    [
+      4,
+      33,
+      212
+    ],
+    [
+      5,
+      46,
+      339
+    ]
+  ],
+  "H3_T1_word": [
+    [
+      0,
+      2
+    ],
+    [
+      8,
+      0
+    ]
+  ],
+  "all_ten_prism_relabeling_controls": [
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "-20351/42",
+        "sqrtpi^8": "1027/21"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "-20351/42",
+        "sqrtpi^8": "1027/21"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [],
+      "transformed_word": []
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "-43831987/14175",
+        "sqrtpi^8": "9403969/30240"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "-43831987/14175",
+        "sqrtpi^8": "9403969/30240"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          0,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "-2316173/2700",
+        "sqrtpi^8": "104857/1260"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "-2316173/2700",
+        "sqrtpi^8": "104857/1260"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          1,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          7,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "-91544441/28350",
+        "sqrtpi^8": "5016761/15120"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "91544441/28350",
+        "sqrtpi^8": "-5016761/15120"
+      },
+      "exact_orientation_factor": -1,
+      "original_word": [
+        [
+          2,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "-765589/162",
+        "sqrtpi^8": "1466651/3024"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "-765589/162",
+        "sqrtpi^8": "1466651/3024"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          3,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          6,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "81553027/18900",
+        "sqrtpi^8": "-4425709/10080"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "81553027/18900",
+        "sqrtpi^8": "-4425709/10080"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          4,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "44846596/14175",
+        "sqrtpi^8": "-9625123/30240"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "44846596/14175",
+        "sqrtpi^8": "-9625123/30240"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          5,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "169019881/56700",
+        "sqrtpi^8": "-8962777/30240"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "-169019881/56700",
+        "sqrtpi^8": "8962777/30240"
+      },
+      "exact_orientation_factor": -1,
+      "original_word": [
+        [
+          6,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "39763/25",
+        "sqrtpi^8": "-1688731/10080"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "39763/25",
+        "sqrtpi^8": "-1688731/10080"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          7,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "complete_original_value": {
+        "sqrtpi^4": "-73819553/11340",
+        "sqrtpi^8": "1994449/3024"
+      },
+      "complete_transformed_value": {
+        "sqrtpi^4": "-73819553/11340",
+        "sqrtpi^8": "1994449/3024"
+      },
+      "exact_orientation_factor": 1,
+      "original_word": [
+        [
+          8,
+          0
+        ]
+      ],
+      "transformed_word": [
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "complete_original_prism_sources": [
+    [
+      2
+    ],
+    [
+      -3
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ],
+    [
+      -13
+    ],
+    [
+      2
+    ]
+  ],
+  "complete_transformed_sources": [
+    [
+      5
+    ],
+    [
+      -13
+    ],
+    [
+      -3
+    ],
+    [
+      2
+    ],
+    [
+      7
+    ],
+    [
+      2
+    ]
+  ],
+  "edge_order": [
+    8,
+    2,
+    6,
+    4,
+    0,
+    7,
+    3,
+    1,
+    5
+  ],
+  "forced_scalar_period_transformed_value": {
+    "sqrtpi^4": "91544441/28350",
+    "sqrtpi^8": "-5016761/15120"
+  },
+  "implementation_sha256": {
+    "code/htk/_bulk_period_worker.py": "91333ddaff8f43ec23d277e683f5a509219c15670fcf289263585ab37ad8b317",
+    "code/htk/bulk_kernels.py": "ce6c75f659b3dc338ef53d0d4468ecd9b6adae1b0a28fe5e63649858e5fb29c0",
+    "code/htk/bulk_series.py": "7520376ae3432eed49ae3c03697b6e1d53d40e07e9102eb687e3aa96d6d94f71",
+    "code/htk/topological_polynomial.py": "485de471f50486876c7bbd0a53cacd31f6b8cf922e07077f2e0f0794334a52da",
+    "explore/taxonomy/higher-order-completion/audit_bulk.py": "52eca0d5f3c9a7f4f2d785ec26eeb82e9d60e2f2ec0d150f7ae2a812f3f2fe07"
+  },
+  "mixed_current_series": {
+    "complete_atlas_statistics": {
+      "absolute_ratio": "3/4",
+      "all_original_current_slots_retained": true,
+      "all_original_sources_retained": true,
+      "centre": 4,
+      "combined_components": 1,
+      "complete_charts": 6,
+      "pole": "9/2",
+      "spanning_trees": 3,
+      "squared_coordinates": true
+    },
+    "complete_finite_value": {
+      "pi^1": "1/35"
+    },
+    "interval": [
+      "336003714398483597168531568206241357507653706297296274741924995933525044161460656251847263053078707648821/3762916603325526122713879093939848938206641513840776898286444325851194565423931627158438941758361226444800",
+      "339508174871255483218100710177547559079612930700928722267124268919872979650334876900885268399786178722101/3762916603325526122713879093939848938206641513840776898286444325851194565423931627158438941758361226444800"
+    ],
+    "known_interval_from_exact_Machin_identity": [
+      "85383267959264234339442563186774817022883176352893816517555095654972290785438800759505882319569107829583994279530296756633774222409667853588180115145813536706325758835677466503718289294129723120514711777682452/951241840713972473147564975302867185183475578297150397690493980947765681329084123223392465212942760197928049167092830354990221018327282075582242040517042859443222297615751215094093140578479506075382232666015625",
+      "37369473555813201072916511960038697249209212897476574920232301917870422682023708535250238787439191824676195337367776557603578581517778271084821911357019771945775519336790448937156813764956925727217127308872/416327550600467635872781015433407671952292317316376813120609749893981933671103500999366461202072250222303552619480064404943112436024965457354669053639223253901026897995374387306810604059137403964996337890625"
+    ],
+    "order": 65,
+    "original_graph": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "requested_width": "1/1000",
+    "sources": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        -1
+      ]
+    ],
+    "word": [
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ]
+  },
+  "original_prism_graph": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "result": "passed",
+  "reversed_original_edges": [
+    2,
+    6
+  ],
+  "schema": "independent-bulk-orientation-and-series-v1",
+  "seconds": 27.56,
+  "transformed_graph": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "vertex_permutation": [
+    5,
+    2,
+    0,
+    4,
+    1,
+    3
+  ]
+}

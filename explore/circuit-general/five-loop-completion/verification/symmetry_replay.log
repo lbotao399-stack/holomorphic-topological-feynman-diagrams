@@ -1,0 +1,7 @@
+{
+  "classified_graphs": 410,
+  "complete_bare_zeros": 27,
+  "zeros_outside_q8_available_families": 23,
+  "independent_density_transformation_points": 54,
+  "full_original_current_transformation_checks": 2592
+}

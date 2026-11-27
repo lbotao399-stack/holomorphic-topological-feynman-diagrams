@@ -1,0 +1,773 @@
+{
+  "all_original_first_current_coefficients": [
+    [
+      {
+        "1": "311/1843546521600",
+        "z3": "-1/7112448000"
+      },
+      {
+        "1": "-311/1843546521600",
+        "z3": "1/7112448000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "5909/6913299456000",
+        "z3": "-19/26671680000"
+      },
+      {
+        "1": "311/768144384000",
+        "z3": "-1/2963520000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "-4043/3950456832000",
+        "z3": "13/15240960000"
+      },
+      {
+        "1": "-311/1316818944000",
+        "z3": "1/5080320000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "311/768144384000",
+        "z3": "-1/2963520000"
+      },
+      {
+        "1": "5909/6913299456000",
+        "z3": "-19/26671680000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "-311/1316818944000",
+        "z3": "1/5080320000"
+      },
+      {
+        "1": "-4043/3950456832000",
+        "z3": "13/15240960000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "311/2765319782400",
+        "z3": "-1/10668672000"
+      },
+      {
+        "1": "-311/2765319782400",
+        "z3": "1/10668672000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "3421/4608866304000",
+        "z3": "-11/17781120000"
+      },
+      {
+        "1": "7153/13826598912000",
+        "z3": "-23/53343360000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "7153/13826598912000",
+        "z3": "-23/53343360000"
+      },
+      {
+        "1": "3421/4608866304000",
+        "z3": "-11/17781120000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "9641/55306395648000",
+        "z3": "-31/213373440000"
+      },
+      {
+        "1": "3421/55306395648000",
+        "z3": "-11/213373440000"
+      },
+      {
+        "1": "-311/790091366400",
+        "z3": "1/3048192000"
+      }
+    ],
+    [
+      {
+        "1": "31411/55306395648000",
+        "z3": "-101/213373440000"
+      },
+      {
+        "1": "311/682795008000",
+        "z3": "-1/2634240000"
+      },
+      {
+        "1": "311/790091366400",
+        "z3": "-1/3048192000"
+      }
+    ],
+    [
+      {
+        "1": "3421/55306395648000",
+        "z3": "-11/213373440000"
+      },
+      {
+        "1": "9641/55306395648000",
+        "z3": "-31/213373440000"
+      },
+      {
+        "1": "-311/790091366400",
+        "z3": "1/3048192000"
+      }
+    ],
+    [
+      {
+        "1": "311/682795008000",
+        "z3": "-1/2634240000"
+      },
+      {
+        "1": "31411/55306395648000",
+        "z3": "-101/213373440000"
+      },
+      {
+        "1": "311/790091366400",
+        "z3": "-1/3048192000"
+      }
+    ],
+    [
+      {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      {
+        "1": "-311/395045683200",
+        "z3": "1/1524096000"
+      }
+    ],
+    [
+      {
+        "1": "4043/3950456832000",
+        "z3": "-13/15240960000"
+      },
+      {
+        "1": "4043/3950456832000",
+        "z3": "-13/15240960000"
+      },
+      {
+        "1": "311/395045683200",
+        "z3": "-1/1524096000"
+      }
+    ],
+    [
+      {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      {
+        "1": "-311/1316818944000",
+        "z3": "1/5080320000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      {
+        "1": "311/658409472000",
+        "z3": "-1/2540160000"
+      }
+    ]
+  ],
+  "bare_coefficient": {
+    "1": "311/246903552000",
+    "z3": "-1/952560000"
+  },
+  "bare_source_factor": "det(lambda_s0,lambda_s1,lambda_s2)^5",
+  "bare_status": "complete",
+  "complete_affine_current_polynomial_identities": 48,
+  "complete_bare_numerator": {
+    "sha256": "b14724c871ded26be39f375ee9fac276e0c967513601d8ddfea0e70deb19a1aa",
+    "terms": 5
+  },
+  "complete_finite_targets": [
+    {
+      "complete_numerator": {
+        "sha256": "b14724c871ded26be39f375ee9fac276e0c967513601d8ddfea0e70deb19a1aa",
+        "terms": 5
+      },
+      "complete_scalar_coefficients_sha256": "18fa41110c8a33d411d7fcdaeab68beda85c922fadc1eb4d91dc13b40470afee",
+      "denominator_power": 8,
+      "edge": null,
+      "period_stats": {
+        "q": 8,
+        "read_only_tables": true,
+        "weighted_periods": 3
+      },
+      "source_direction": null,
+      "value": {
+        "1": "311/246903552000",
+        "z3": "-1/952560000"
+      },
+      "weighted_core_periods": 3
+    },
+    {
+      "complete_numerator": {
+        "sha256": "e0cde5447256aa8c887fc736594748efb81c8906a7b6ff69afff063a9f64c622",
+        "terms": 1276
+      },
+      "complete_scalar_coefficients_sha256": "f9c72a8926d73064e68df9e43fd7733b64ab6fcec53def741668b34722c0a5e1",
+      "denominator_power": 9,
+      "edge": 5,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 29
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "311/2765319782400",
+        "z3": "-1/10668672000"
+      },
+      "weighted_core_periods": 29
+    },
+    {
+      "complete_numerator": {
+        "sha256": "dc821155235967855d9ad88e356646cee744db8d1cf1eb551ba2b8012c6cb971",
+        "terms": 1276
+      },
+      "complete_scalar_coefficients_sha256": "c4854d34c9ebe5dcb60771bcb36589687d11266575ea816035302e11223f33ed",
+      "denominator_power": 9,
+      "edge": 5,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 29
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-311/2765319782400",
+        "z3": "1/10668672000"
+      },
+      "weighted_core_periods": 29
+    },
+    {
+      "complete_numerator": {
+        "sha256": "18cad10a5777af6265195c5e86f8957e71bb22d289720b290855bb761f738715",
+        "terms": 66
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 5,
+      "source_direction": 2,
+      "value": {},
+      "weighted_core_periods": 0
+    },
+    {
+      "complete_numerator": {
+        "sha256": "511fe746e40d4d911d77ed13e5ece5a3da33738d68fdc80eaf239bb7f1366e46",
+        "terms": 1240
+      },
+      "complete_scalar_coefficients_sha256": "9fa4eaff7578c80973b150b9d1fc7d00980ed581a835d1167f44271a4c849e84",
+      "denominator_power": 9,
+      "edge": 10,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "3421/55306395648000",
+        "z3": "-11/213373440000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "23d0abfa73c193b1a7d51918e354f33d64a98db42cd115588d127fde85542d26",
+        "terms": 1260
+      },
+      "complete_scalar_coefficients_sha256": "79389f22412490ebe99fbd3f9e73ed79820f6c152cdddcea5a3104eb84e28d55",
+      "denominator_power": 9,
+      "edge": 10,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "9641/55306395648000",
+        "z3": "-31/213373440000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "e5602a9459f7beb3b74535ea04c3b5c7349cbc98ee439638fee71f74df905575",
+        "terms": 560
+      },
+      "complete_scalar_coefficients_sha256": "3441a4a8cec87eca783d7b896f75b0270261b1bc59c92b11e1b52c3bccb682b9",
+      "denominator_power": 9,
+      "edge": 10,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 131
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-311/790091366400",
+        "z3": "1/3048192000"
+      },
+      "weighted_core_periods": 131
+    },
+    {
+      "complete_numerator": {
+        "sha256": "0cac0fe6bf9e948ca93412707b0e0c403c2e4c4e8ee4acfb11694af67751eb9d",
+        "terms": 1590
+      },
+      "complete_scalar_coefficients_sha256": "bc2f855c1692eb0ff4f232aa39edc10b17d3e50ef50a33d2c408abdc7007d480",
+      "denominator_power": 9,
+      "edge": 11,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "311/682795008000",
+        "z3": "-1/2634240000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "c0c0368bd8cd7d78311536f8ebce599c5b6fd8ea2e7fe4a8beb1d744157c335e",
+        "terms": 1620
+      },
+      "complete_scalar_coefficients_sha256": "08765600cd0cc16d931e06e6681f66001d7a08f100672710e833d297089321d4",
+      "denominator_power": 9,
+      "edge": 11,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "31411/55306395648000",
+        "z3": "-101/213373440000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "2da1deb0f232b859fbf0453dbbadb965d5edcb0ed685b016bc6f504673a2a1a2",
+        "terms": 560
+      },
+      "complete_scalar_coefficients_sha256": "7801b91800480790394e1c508cffcbbdef2526752f9d2788cc00ed42a73e7aa7",
+      "denominator_power": 9,
+      "edge": 11,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 131
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "311/790091366400",
+        "z3": "-1/3048192000"
+      },
+      "weighted_core_periods": 131
+    },
+    {
+      "complete_numerator": {
+        "sha256": "53142de21c2bd729c2a1b44c6c48d2e531da39a3ae72595f2357652a2ccc5a3f",
+        "terms": 1520
+      },
+      "complete_scalar_coefficients_sha256": "9653b36a37e652933d9dce97b90756719cc85cde03365977788f2e6ef89f29a4",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "d96b4a06774a15e28a86e68b1af401b938b6ed9a860f1739f181cb5f00bee3c9",
+        "terms": 1520
+      },
+      "complete_scalar_coefficients_sha256": "4872a83c763148b1cd2a4382366cccad39177f088c3401ba62152d102761e477",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-311/1316818944000",
+        "z3": "1/5080320000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "4f75dda3eebe36f3ad173173c75aff9ad43c390c2d41816692f97a62a7bde1ca",
+        "terms": 6
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 14,
+      "source_direction": 2,
+      "value": {},
+      "weighted_core_periods": 0
+    },
+    {
+      "complete_numerator": {
+        "sha256": "8d25d37a5747fce2c9cea3fe0bfc8f6425743901ffec8dd8f13696a79f6ad7b7",
+        "terms": 1620
+      },
+      "complete_scalar_coefficients_sha256": "7d50fe6e231974e842c73d54c62daefff5f41a8387efa9dbb5697a3aca4fef05",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "0fb996342c38e4acbb50038638039bc24060a9fa076dd13b3deab93cfce6651d",
+        "terms": 1620
+      },
+      "complete_scalar_coefficients_sha256": "7d50fe6e231974e842c73d54c62daefff5f41a8387efa9dbb5697a3aca4fef05",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "311/1316818944000",
+        "z3": "-1/5080320000"
+      },
+      "weighted_core_periods": 244
+    },
+    {
+      "complete_numerator": {
+        "sha256": "a2629d971a27cc78f3bbbc45e6ef759e8693efe8ad6c2330b698dd11a6e8f8d5",
+        "terms": 3076
+      },
+      "complete_scalar_coefficients_sha256": "d1541314ea826a6aaac4863b0fec4b6327635b0c6a03dc8d5dff089e26453e6b",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 244
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "311/658409472000",
+        "z3": "-1/2540160000"
+      },
+      "weighted_core_periods": 244
+    }
+  ],
+  "complete_series_chains": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2,
+      14,
+      4
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11
+    ],
+    [
+      12,
+      15,
+      13
+    ]
+  ],
+  "core_classification": "K4",
+  "dependencies_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/assembly/tables/K33_q8.json": "12496b23958872bc52f6e77a3bbfd03071ceb34817683087abfb621118e54f8c",
+    "explore/circuit-general/assembly/tables/K33_q9.json": "75d15ea03b2f68a2907106d2e05af6b0dd8765a649b7df5aba222feb01db6176",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/five-loop-completion/bulk3_periods.py": "5f83e2785db2206e48aa49bd653cedfa842201da9ad51bca9e807b6f96ebce8a",
+    "explore/circuit-general/five-loop-completion/certify.py": "3cd7ad5799a87d655cf7d253edcf7ebd88af993769cae9f7ebeea19d8bdce35c",
+    "explore/circuit-general/fiveloop/enum_d3.json": "85182250468c766a65972f458414d0d1dbbd265ccdf3426b22587a25b6e349e6",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/fiveloop/skel5.json": "62267064b43ff24413cbcfa6e01da5cebe85140e0a288fc1ce5f9a43e856d452",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "first_current_meaning": "bare_source_factor times the complete linear combination of lambda_s0,lambda_s1,lambda_s2",
+  "first_current_status": "complete",
+  "index": 3,
+  "integrated_original_source_identities": 36,
+  "ordered_oriented_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      10,
+      11
+    ]
+  ],
+  "original_grounded_laplacian_density_checks": [
+    {
+      "U": "17066937964357/7264857600",
+      "complete_numerator": "-200533921/21792402506250000",
+      "resistances": [
+        "2",
+        "3/2",
+        "4/3",
+        "5/4",
+        "6/5",
+        "7/6",
+        "8/7",
+        "9/8",
+        "10/9",
+        "11/10",
+        "12/11",
+        "13/12",
+        "14/13",
+        "15/14",
+        "16/15",
+        "17/16"
+      ]
+    },
+    {
+      "U": "101190941359/10762752",
+      "complete_numerator": "-10556001/91506250000",
+      "resistances": [
+        "4",
+        "5/2",
+        "2",
+        "7/4",
+        "8/5",
+        "3/2",
+        "10/7",
+        "11/8",
+        "4/3",
+        "13/10",
+        "14/11",
+        "5/4",
+        "16/13",
+        "17/14",
+        "6/5",
+        "19/16"
+      ]
+    }
+  ],
+  "scalar_core_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "schema": "five-loop-bulk3-supported-source-v1",
+  "seconds": 3.063,
+  "source_cycle_tree": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13
+  ],
+  "source_scope": "lambda_s0,lambda_s1,lambda_s2 arbitrary; lambda_s3=-sum; all other original sources zero",
+  "source_vertices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "vertices": 12
+}

@@ -1,0 +1,1303 @@
+{
+  "all_original_first_current_coefficients": [
+    [
+      {
+        "1": "3025997/51197920542720000",
+        "z3": "-247/4938071040000"
+      },
+      {
+        "1": "3025997/51197920542720000",
+        "z3": "-247/4938071040000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "-16884697/27811216097280000",
+        "z3": "271/536481792000"
+      },
+      {
+        "1": "-302586563/450541700775936000",
+        "z3": "121613/217275125760000"
+      },
+      {
+        "1": "-155761/127704563712000",
+        "z3": "1/985374720"
+      }
+    ],
+    [
+      {
+        "1": "1234516589/2252708503879680000",
+        "z3": "-98887/217275125760000"
+      },
+      {
+        "1": "153309883/250300944875520000",
+        "z3": "-2461/4828336128000"
+      },
+      {
+        "1": "155761/127704563712000",
+        "z3": "-1/985374720"
+      }
+    ],
+    [
+      {
+        "1": "-228410251/2252708503879680000",
+        "z3": "18017/217275125760000"
+      },
+      {
+        "1": "-554262349/2252708503879680000",
+        "z3": "8923/43455025152000"
+      },
+      {
+        "1": "-155761/383113691136000",
+        "z3": "1/2956124160"
+      }
+    ],
+    [
+      {
+        "1": "361554119/2252708503879680000",
+        "z3": "-5777/43455025152000"
+      },
+      {
+        "1": "687406217/2252708503879680000",
+        "z3": "-55483/217275125760000"
+      },
+      {
+        "1": "155761/383113691136000",
+        "z3": "-1/2956124160"
+      }
+    ],
+    [
+      {
+        "1": "-549949997/563177125969920000",
+        "z3": "44263/54318781440000"
+      },
+      {
+        "1": "-516798791/563177125969920000",
+        "z3": "41557/54318781440000"
+      },
+      {
+        "1": "-155761/95778422784000",
+        "z3": "1/739031040"
+      }
+    ],
+    [
+      {
+        "1": "832139531/2252708503879680000",
+        "z3": "-67297/217275125760000"
+      },
+      {
+        "1": "554262349/2252708503879680000",
+        "z3": "-8923/43455025152000"
+      },
+      {
+        "1": "155761/383113691136000",
+        "z3": "-1/2956124160"
+      }
+    ],
+    [
+      {
+        "1": "399017677/563177125969920000",
+        "z3": "-31943/54318781440000"
+      },
+      {
+        "1": "365866471/563177125969920000",
+        "z3": "-29237/54318781440000"
+      },
+      {
+        "1": "155761/95778422784000",
+        "z3": "-1/739031040"
+      }
+    ],
+    [
+      {
+        "1": "-361554119/2252708503879680000",
+        "z3": "5777/43455025152000"
+      },
+      {
+        "1": "-83676937/2252708503879680000",
+        "z3": "6203/217275125760000"
+      },
+      {
+        "1": "-155761/383113691136000",
+        "z3": "1/2956124160"
+      }
+    ],
+    [
+      {
+        "1": "1987940117/1407942814924800000",
+        "z3": "-50999/43455025152000"
+      },
+      {
+        "1": "2915993813/1407942814924800000",
+        "z3": "-74861/43455025152000"
+      },
+      {
+        "1": "-11062991/20113468784640000",
+        "z3": "71/155196518400"
+      }
+    ],
+    [
+      {
+        "1": "-87345847/36569943244800000",
+        "z3": "5611/2821754880000"
+      },
+      {
+        "1": "-1202283083/402269375692800000",
+        "z3": "77219/31039303680000"
+      },
+      {
+        "1": "-21646819/20113468784640000",
+        "z3": "139/155196518400"
+      }
+    ],
+    [
+      {
+        "1": "-2008528367/703971407462400000",
+        "z3": "103183/43455025152000"
+      },
+      {
+        "1": "-1476210443/703971407462400000",
+        "z3": "75877/43455025152000"
+      },
+      {
+        "1": "5779393/10056734392320000",
+        "z3": "-37/77598259200"
+      }
+    ],
+    [
+      {
+        "1": "911745623/255989602713600000",
+        "z3": "-58517/19752284160000"
+      },
+      {
+        "1": "7734174127/2815885629849600000",
+        "z3": "-496333/217275125760000"
+      },
+      {
+        "1": "1321939/1257091799040000",
+        "z3": "-17/19399564800"
+      }
+    ],
+    [
+      {
+        "1": "-184465147/127994801356800000",
+        "z3": "593/493807104000"
+      },
+      {
+        "1": "-36427073/1407942814924800000",
+        "z3": "127/5431878144000"
+      },
+      {
+        "1": "33053/1340897918976000",
+        "z3": "-1/51732172800"
+      }
+    ],
+    [
+      {
+        "1": "-911745623/255989602713600000",
+        "z3": "58517/19752284160000"
+      },
+      {
+        "1": "-7734174127/2815885629849600000",
+        "z3": "496333/217275125760000"
+      },
+      {
+        "1": "-31271/39907676160000",
+        "z3": "1/1539648000"
+      }
+    ],
+    [
+      {
+        "1": "150162347/127994801356800000",
+        "z3": "-481/493807104000"
+      },
+      {
+        "1": "-340903727/1407942814924800000",
+        "z3": "221/1086375628800"
+      },
+      {
+        "1": "-1177247/4022693756928000",
+        "z3": "191/775982592000"
+      }
+    ]
+  ],
+  "bare_coefficient": {
+    "1": "-12251/45712429056000",
+    "z3": "1/4408992000"
+  },
+  "bare_source_factor": "det(lambda_s0,lambda_s1,lambda_s2)^5",
+  "bare_status": "complete",
+  "complete_bare_numerator": {
+    "sha256": "b8c90cbc414c8dabf497819cc412b7efcfe18cfa10b9b7738f3fe72d220ce310",
+    "terms": 27650
+  },
+  "complete_current_relations": {
+    "automorphisms": [
+      {
+        "bare_multiplier": 1,
+        "source_matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "vertex_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "bare_forced_zero": false,
+    "complete_original_relation_rows": [
+      {
+        "0": "-1",
+        "12": "1",
+        "9": "1"
+      },
+      {
+        "1": "-1",
+        "10": "1",
+        "13": "1"
+      },
+      {
+        "11": "1",
+        "14": "1",
+        "2": "-1"
+      },
+      {
+        "15": "1",
+        "18": "1",
+        "3": "-1"
+      },
+      {
+        "16": "1",
+        "19": "1",
+        "4": "-1"
+      },
+      {
+        "17": "1",
+        "20": "1",
+        "5": "-1"
+      },
+      {
+        "21": "1",
+        "24": "1",
+        "6": "-1"
+      },
+      {
+        "22": "1",
+        "25": "1",
+        "7": "-1"
+      },
+      {
+        "23": "1",
+        "26": "1",
+        "8": "-1"
+      },
+      {
+        "18": "-1",
+        "48": "-1",
+        "9": "-1"
+      },
+      {
+        "10": "-1",
+        "19": "-1"
+      },
+      {
+        "11": "-1",
+        "20": "-1"
+      },
+      {
+        "12": "-1",
+        "24": "-1"
+      },
+      {
+        "13": "-1",
+        "25": "-1",
+        "48": "-1"
+      },
+      {
+        "14": "-1",
+        "26": "-1"
+      },
+      {
+        "15": "-1",
+        "27": "1",
+        "30": "1"
+      },
+      {
+        "16": "-1",
+        "28": "1",
+        "31": "1"
+      },
+      {
+        "17": "-1",
+        "29": "1",
+        "32": "1"
+      },
+      {
+        "21": "-1",
+        "33": "1",
+        "36": "1"
+      },
+      {
+        "22": "-1",
+        "34": "1",
+        "37": "1"
+      },
+      {
+        "23": "-1",
+        "35": "1",
+        "38": "1"
+      },
+      {
+        "27": "-1",
+        "33": "-1",
+        "39": "1"
+      },
+      {
+        "28": "-1",
+        "34": "-1",
+        "40": "1"
+      },
+      {
+        "29": "-1",
+        "35": "-1",
+        "41": "1"
+      },
+      {
+        "30": "-1",
+        "42": "1",
+        "45": "1"
+      },
+      {
+        "31": "-1",
+        "43": "1",
+        "46": "1"
+      },
+      {
+        "32": "-1",
+        "44": "1",
+        "47": "1"
+      },
+      {
+        "36": "-1",
+        "42": "-1"
+      },
+      {
+        "37": "-1",
+        "43": "-1"
+      },
+      {
+        "38": "-1",
+        "44": "-1",
+        "48": "-1"
+      },
+      {
+        "39": "-1",
+        "45": "-1",
+        "48": "1"
+      },
+      {
+        "40": "-1",
+        "46": "-1",
+        "48": "1"
+      },
+      {
+        "41": "-1",
+        "47": "-1",
+        "48": "1"
+      },
+      {
+        "2": "1",
+        "5": "1",
+        "8": "1"
+      },
+      {
+        "1": "1",
+        "4": "1",
+        "7": "1"
+      },
+      {
+        "0": "1",
+        "3": "1",
+        "6": "1"
+      }
+    ],
+    "exact_reduced_rows": [
+      {
+        "0": "1",
+        "18": "1",
+        "24": "1",
+        "48": "1"
+      },
+      {
+        "1": "1",
+        "19": "1",
+        "25": "1",
+        "48": "1"
+      },
+      {
+        "2": "1",
+        "20": "1",
+        "26": "1"
+      },
+      {
+        "18": "-1",
+        "3": "1",
+        "33": "1",
+        "42": "-1",
+        "48": "-1"
+      },
+      {
+        "19": "-1",
+        "34": "1",
+        "4": "1",
+        "43": "-1",
+        "48": "-1"
+      },
+      {
+        "20": "-1",
+        "35": "1",
+        "44": "-1",
+        "48": "-1",
+        "5": "1"
+      },
+      {
+        "24": "-1",
+        "33": "-1",
+        "42": "1",
+        "6": "1"
+      },
+      {
+        "25": "-1",
+        "34": "-1",
+        "43": "1",
+        "7": "1"
+      },
+      {
+        "26": "-1",
+        "35": "-1",
+        "44": "1",
+        "48": "1",
+        "8": "1"
+      },
+      {
+        "18": "1",
+        "48": "1",
+        "9": "1"
+      },
+      {
+        "10": "1",
+        "19": "1"
+      },
+      {
+        "11": "1",
+        "20": "1"
+      },
+      {
+        "12": "1",
+        "24": "1"
+      },
+      {
+        "13": "1",
+        "25": "1",
+        "48": "1"
+      },
+      {
+        "14": "1",
+        "26": "1"
+      },
+      {
+        "15": "1",
+        "33": "1",
+        "42": "-1",
+        "48": "-1"
+      },
+      {
+        "16": "1",
+        "34": "1",
+        "43": "-1",
+        "48": "-1"
+      },
+      {
+        "17": "1",
+        "35": "1",
+        "44": "-1",
+        "48": "-1"
+      },
+      {
+        "21": "1",
+        "33": "-1",
+        "42": "1"
+      },
+      {
+        "22": "1",
+        "34": "-1",
+        "43": "1"
+      },
+      {
+        "23": "1",
+        "35": "-1",
+        "44": "1",
+        "48": "1"
+      },
+      {
+        "27": "1",
+        "33": "1",
+        "45": "1",
+        "48": "-1"
+      },
+      {
+        "28": "1",
+        "34": "1",
+        "46": "1",
+        "48": "-1"
+      },
+      {
+        "29": "1",
+        "35": "1",
+        "47": "1",
+        "48": "-1"
+      },
+      {
+        "30": "1",
+        "42": "-1",
+        "45": "-1"
+      },
+      {
+        "31": "1",
+        "43": "-1",
+        "46": "-1"
+      },
+      {
+        "32": "1",
+        "44": "-1",
+        "47": "-1"
+      },
+      {
+        "36": "1",
+        "42": "1"
+      },
+      {
+        "37": "1",
+        "43": "1"
+      },
+      {
+        "38": "1",
+        "44": "1",
+        "48": "1"
+      },
+      {
+        "39": "1",
+        "45": "1",
+        "48": "-1"
+      },
+      {
+        "40": "1",
+        "46": "1",
+        "48": "-1"
+      },
+      {
+        "41": "1",
+        "47": "1",
+        "48": "-1"
+      }
+    ],
+    "independent_current_entries": [
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        15,
+        2
+      ]
+    ],
+    "rank": 33,
+    "unknown_order": "original edge major; source directions0,1,2; final column is bare coefficient"
+  },
+  "complete_finite_targets": [
+    {
+      "complete_numerator": {
+        "sha256": "b8c90cbc414c8dabf497819cc412b7efcfe18cfa10b9b7738f3fe72d220ce310",
+        "terms": 27650
+      },
+      "complete_scalar_coefficients_sha256": "0ccd1dcc305d03c5f628ce373f829a73ef58a754f825b50f57d8aa56710e3c2d",
+      "denominator_power": 8,
+      "edge": null,
+      "period_stats": {
+        "q": 8,
+        "read_only_tables": true,
+        "weighted_periods": 3948
+      },
+      "source_direction": null,
+      "value": {
+        "1": "-12251/45712429056000",
+        "z3": "1/4408992000"
+      },
+      "weighted_core_periods": 3948
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "e0ddb3e85ecb71c1010968be094e5ebe8070aa206747ec3cce2a99787d80ac16",
+        "terms": 128677
+      },
+      "complete_scalar_coefficients_sha256": "726391bcdcdf508de06cfd77104d432c3a871f0001e44f7e95235b0ecde09b27",
+      "denominator_power": 9,
+      "edge": 6,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 106384
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "832139531/2252708503879680000",
+        "z3": "-67297/217275125760000"
+      },
+      "weighted_core_periods": 106384
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "b1ffb7e93671c707b20cc0e4e304fdc69161c9046fb056a013f4b7dc01fb8010",
+        "terms": 90823
+      },
+      "complete_scalar_coefficients_sha256": "a135dbb6b1993cdc48eb50e4e0d0cf2438cda9d2e0dd7e23f16a57cf1187ecd6",
+      "denominator_power": 9,
+      "edge": 6,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 76944
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "554262349/2252708503879680000",
+        "z3": "-8923/43455025152000"
+      },
+      "weighted_core_periods": 76944
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "90abde80a04d831f560eb16aa16af33d05fce2ba863b97108a9e9c407cda5731",
+        "terms": 16170
+      },
+      "complete_scalar_coefficients_sha256": "39be74fa8bdc03265f7e306292d007f38156b6bf755706d041e342d189609510",
+      "denominator_power": 9,
+      "edge": 6,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 15552
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "155761/383113691136000",
+        "z3": "-1/2956124160"
+      },
+      "weighted_core_periods": 15552
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "f0d6a7d085e988280e9a46ce8a98eb221fe7703c8d35eacd474764deb3da7d1c",
+        "terms": 95020
+      },
+      "complete_scalar_coefficients_sha256": "fad69fca7b7e8f8aeafa4d9e026d4e1b6cfbeb3b0d32fc86546a2105af2461ea",
+      "denominator_power": 9,
+      "edge": 8,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 78964
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "-361554119/2252708503879680000",
+        "z3": "5777/43455025152000"
+      },
+      "weighted_core_periods": 78964
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "efeb32965fda4a07f018d6c186e555dc717c21246a1094843e9964c7665c1c0d",
+        "terms": 131810
+      },
+      "complete_scalar_coefficients_sha256": "bd907e097997727c7f5ef419164cd0049f2ceae4218e0b6528265968a919d609",
+      "denominator_power": 9,
+      "edge": 8,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 107421
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-83676937/2252708503879680000",
+        "z3": "6203/217275125760000"
+      },
+      "weighted_core_periods": 107421
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "facc71a3e6bf1c29f2a40572b1db15ceda36c20e7d33732461e4414e0a3e7d63",
+        "terms": 16170
+      },
+      "complete_scalar_coefficients_sha256": "6c41d8977a8698e91ca99247c979dd329ccf77e06e1a7cdaf8c17bbea881e91a",
+      "denominator_power": 9,
+      "edge": 8,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 15552
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-155761/383113691136000",
+        "z3": "1/2956124160"
+      },
+      "weighted_core_periods": 15552
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "f3658d16a2d41427d68cac38f69d6ba251c7937e4c7fb20e2956595c233cc305",
+        "terms": 91470
+      },
+      "complete_scalar_coefficients_sha256": "790a63d138ef98354764287d6038906245c2e60be10526f12cce81f753bc1df5",
+      "denominator_power": 9,
+      "edge": 11,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 79378
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "-2008528367/703971407462400000",
+        "z3": "103183/43455025152000"
+      },
+      "weighted_core_periods": 79378
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "465be5a46b2c65bec7538f47fd1ae2013d1353e5739d3d2b6a1352b2e80b1203",
+        "terms": 94050
+      },
+      "complete_scalar_coefficients_sha256": "9ed1cdf829aa8261ab968cc401e7b069f2cc2d05e547301358222b674f620561",
+      "denominator_power": 9,
+      "edge": 11,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 81489
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-1476210443/703971407462400000",
+        "z3": "75877/43455025152000"
+      },
+      "weighted_core_periods": 81489
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "d23778d0962d3b6fd8389b8e3e5bbfd9d2a85dd0baaaf38dea326fe893cc5bcc",
+        "terms": 106380
+      },
+      "complete_scalar_coefficients_sha256": "fe7239b98987ac071ac7c358aab9a4a2adeb31412b503b861bb8b8e23f8c6e06",
+      "denominator_power": 9,
+      "edge": 11,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 91414
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "5779393/10056734392320000",
+        "z3": "-37/77598259200"
+      },
+      "weighted_core_periods": 91414
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "e708b7d86fcff105d5a222df59cdb0cf65b01dd9de324aff018c524a49e42fbd",
+        "terms": 92413
+      },
+      "complete_scalar_coefficients_sha256": "29bbfc6227a83a6f5d9a232a40add9c0695c9648a3dcb601dfdab94d2d96115a",
+      "denominator_power": 9,
+      "edge": 14,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 72966
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "-911745623/255989602713600000",
+        "z3": "58517/19752284160000"
+      },
+      "weighted_core_periods": 72966
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "3c24e40c89575a718690a26b6c0f59635d04b8f0e686472760f7282b6fc6f98b",
+        "terms": 93561
+      },
+      "complete_scalar_coefficients_sha256": "7df0ed37a34a94ed296f0fd6b4b96b9e4b5d4da1b132c45fc6f60e9d6e2198c2",
+      "denominator_power": 9,
+      "edge": 14,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 73826
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-7734174127/2815885629849600000",
+        "z3": "496333/217275125760000"
+      },
+      "weighted_core_periods": 73826
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "00fa87bf4ef8acc92f1afdbaeee5acbb9b51d210a419514d000fc12bccb8acd5",
+        "terms": 151205
+      },
+      "complete_scalar_coefficients_sha256": "ba3cd360195d07d30d22f89328c4d4f15dc6a0b7de02f88574efbddd7ca2f2e2",
+      "denominator_power": 9,
+      "edge": 14,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 118134
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-31271/39907676160000",
+        "z3": "1/1539648000"
+      },
+      "weighted_core_periods": 118134
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "73d15809269f0550231369cf0b7371177d74ec9369793fcbf00e53c4e8fea067",
+        "terms": 142345
+      },
+      "complete_scalar_coefficients_sha256": "6091155a5a22c23fadb69c81ffd8f63b00e4fe777b60f397f96325817ff0c717",
+      "denominator_power": 9,
+      "edge": 15,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 111718
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "150162347/127994801356800000",
+        "z3": "-481/493807104000"
+      },
+      "weighted_core_periods": 111718
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "54e1ba26a7b6cc6f19e78f9a1fdcc769ece042869b14addfb22414ea5619f1a7",
+        "terms": 142148
+      },
+      "complete_scalar_coefficients_sha256": "8a400fabb20629e5bc988c795d5db917016bc9c617ab55e45a516057bf627da4",
+      "denominator_power": 9,
+      "edge": 15,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 111355
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-340903727/1407942814924800000",
+        "z3": "221/1086375628800"
+      },
+      "weighted_core_periods": 111355
+    },
+    {
+      "complete_core_numerator": {
+        "sha256": "5861debf78b3da415d56943e0966b74cac140813d6c3a7ad029d17b59cd36071",
+        "terms": 155535
+      },
+      "complete_scalar_coefficients_sha256": "1b3c29d471589a1eca28f5e280d85d7ef0320acc59d3176530b58d115815adb5",
+      "denominator_power": 9,
+      "edge": 15,
+      "method": "complete_series_fibre_before_linear_current",
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 120552
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-1177247/4022693756928000",
+        "z3": "191/775982592000"
+      },
+      "weighted_core_periods": 120552
+    }
+  ],
+  "complete_loop_adjugate_polynomial_identities": 25,
+  "complete_series_chains": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      13,
+      15
+    ]
+  ],
+  "complete_tree_planning": {
+    "considered_trees": 11,
+    "failed_complete_plans": [],
+    "selected_score": [
+      251,
+      117
+    ]
+  },
+  "completion_seconds": 523.296,
+  "core_classification": "V8_0",
+  "dependencies_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/assembly/tables/K33_q8.json": "12496b23958872bc52f6e77a3bbfd03071ceb34817683087abfb621118e54f8c",
+    "explore/circuit-general/assembly/tables/K33_q9.json": "75d15ea03b2f68a2907106d2e05af6b0dd8765a649b7df5aba222feb01db6176",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/five-loop-completion/bulk3_periods.py": "5f83e2785db2206e48aa49bd653cedfa842201da9ad51bca9e807b6f96ebce8a",
+    "explore/circuit-general/five-loop-completion/certify.py": "3cd7ad5799a87d655cf7d253edcf7ebd88af993769cae9f7ebeea19d8bdce35c",
+    "explore/circuit-general/fiveloop/enum_d3.json": "85182250468c766a65972f458414d0d1dbbd265ccdf3426b22587a25b6e349e6",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/fiveloop/skel5.json": "62267064b43ff24413cbcfa6e01da5cebe85140e0a288fc1ce5f9a43e856d452",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "first_current_meaning": "bare_source_factor times the complete linear combination of lambda_s0,lambda_s1,lambda_s2",
+  "first_current_status": "complete",
+  "index": 59,
+  "integrated_original_source_identities": 36,
+  "method": "complete_current_relations_and_exact_series_fibres",
+  "ordered_oriented_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      11
+    ]
+  ],
+  "original_grounded_laplacian_density_checks": [
+    {
+      "U": "70623505101629/24216192000",
+      "complete_numerator": "2071671061972057400597093223178571/1952154607860238253472000000000",
+      "resistances": [
+        "2",
+        "3/2",
+        "4/3",
+        "5/4",
+        "6/5",
+        "7/6",
+        "8/7",
+        "9/8",
+        "10/9",
+        "11/10",
+        "12/11",
+        "13/12",
+        "14/13",
+        "15/14",
+        "16/15",
+        "17/16"
+      ]
+    },
+    {
+      "U": "32312897455939/2690688000",
+      "complete_numerator": "221206279794807054318540385571/16928720260452000000000",
+      "resistances": [
+        "4",
+        "5/2",
+        "2",
+        "7/4",
+        "8/5",
+        "3/2",
+        "10/7",
+        "11/8",
+        "4/3",
+        "13/10",
+        "14/11",
+        "5/4",
+        "16/13",
+        "17/14",
+        "6/5",
+        "19/16"
+      ]
+    }
+  ],
+  "planning_dependencies_sha256": {
+    "explore/circuit-general/five-loop-completion/chain_currents.py": "b31991650f15952a30a30e953849458e24dd7027a3dfe9f10215f4510c2134fe",
+    "explore/circuit-general/five-loop-completion/current_relations.py": "de8a6a4855d2e5229de5456e739135a2a65d9e0c7a80961a3ba51f6eb36427bb",
+    "explore/circuit-general/five-loop-completion/finish_currents.py": "ab43e2039fb99409549b89021af64baece51152562dfe1213dc63747484c8094",
+    "explore/circuit-general/five-loop-completion/planned_cases.py": "c9acaa318d1e3c1fced94edf373beb6805ba9c39f28005658e2f13092df05400"
+  },
+  "scalar_core_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "schema": "five-loop-bulk3-supported-source-v1",
+  "seconds": 5.945,
+  "source_cycle_tree": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    13,
+    14
+  ],
+  "source_scope": "lambda_s0,lambda_s1,lambda_s2 arbitrary; lambda_s3=-sum; all other original sources zero",
+  "source_vertices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "vertices": 12
+}

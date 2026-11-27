@@ -1,0 +1,362 @@
+{
+  "passed": true,
+  "cores": [
+    {
+      "core": "prism",
+      "samples": [
+        {
+          "sources": [
+            2,
+            -1,
+            2,
+            -1,
+            1
+          ],
+          "bare_numerator": {
+            "terms": 2064,
+            "sha256": "a8937fc84c71c19f2a4fe1e940fb1dcaeccef0c04ed112f681ceb4421665e634"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            0,
+            2,
+            2,
+            2,
+            3
+          ],
+          "bare_numerator": {
+            "terms": 1922,
+            "sha256": "246f24dde8bf221a8474b7c26d446a151c324107ef67abe682bc574da185f6ef"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            2,
+            -1,
+            2,
+            -1,
+            2
+          ],
+          "bare_numerator": {
+            "terms": 2112,
+            "sha256": "e05b1b0ec00326e60cdce0751704f04275e6259888bb6604e98b8cc7a4f21c54"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            3,
+            1,
+            0,
+            -1,
+            -2
+          ],
+          "bare_numerator": {
+            "terms": 1909,
+            "sha256": "8f1183aeea0886dae711e8eee1dfaa807458cedf55e07f9fe26364a2d43838d8"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            1,
+            3,
+            -2,
+            -1,
+            3
+          ],
+          "bare_numerator": {
+            "terms": 2130,
+            "sha256": "a348d45a8b91ea5d3923b15cf70ba2ace107766c0a7999402a4f0ef12a853c9f"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            0,
+            3,
+            1,
+            2,
+            2
+          ],
+          "bare_numerator": {
+            "terms": 1922,
+            "sha256": "a6bb8872101ffe750c43ee35f6eb74e8c5e187b92b08f75cd427917aa8e15c4e"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            1,
+            1,
+            0,
+            3,
+            -1
+          ],
+          "bare_numerator": {
+            "terms": 1818,
+            "sha256": "a76a2066c6a4986679f1cf914828dc68a8b781ba55f0941a7f721ad5a49679bf"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            1,
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "bare_numerator": {
+            "terms": 1930,
+            "sha256": "94bf4e56a41753d1ed6b414b4b04a80e19fcb5a791bff94b514b54d2b5c5c538"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            -2,
+            -2,
+            2,
+            0,
+            3
+          ],
+          "bare_numerator": {
+            "terms": 1715,
+            "sha256": "814fa1dd693c394124f7afd1d4c4370365f63ce125758d464e51e13f7ff51c18"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            3,
+            -2,
+            3,
+            2,
+            -1
+          ],
+          "bare_numerator": {
+            "terms": 2190,
+            "sha256": "d3e2ee282d0bcc0e66abf22c78cade43a65481cdb37dc8580a22bba0ae989023"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            1,
+            -1,
+            -1,
+            -1,
+            2
+          ],
+          "bare_numerator": {
+            "terms": 1647,
+            "sha256": "7605a21b4bc719eafe8820d1406b10a3816db9a036259884f244c61d7d12bdab"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            3,
+            2,
+            1,
+            3,
+            -2
+          ],
+          "bare_numerator": {
+            "terms": 2173,
+            "sha256": "83e808818ebda86ada48f0cbea8e804a75c4168c58b1c1e8ebef79a5b4640574"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            1,
+            3,
+            -1,
+            -2,
+            2
+          ],
+          "bare_numerator": {
+            "terms": 2125,
+            "sha256": "701c1ecf6f43a80481847fe50133e6f82c3a5fbe1ea8b7fd2980ed3a0ad9bed5"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            0,
+            3,
+            1,
+            1,
+            1
+          ],
+          "bare_numerator": {
+            "terms": 1926,
+            "sha256": "11616071e2c7d3528bb5c2ed66f3cfe6e818111f675edaec9231038665245d8d"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1/2",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        }
+      ],
+      "distinct_original_scalar_monomials_checked": 2238,
+      "every_proper_edge_subset_checked": 510,
+      "all_source_coefficient_convergence": {
+        "distinct_relabelled_source_points": 162,
+        "ranks": {
+          "1": {
+            "exact_rank": 5,
+            "all_homogeneous_monomials": 5
+          },
+          "4": {
+            "exact_rank": 70,
+            "all_homogeneous_monomials": 70
+          },
+          "5": {
+            "exact_rank": 126,
+            "all_homogeneous_monomials": 126
+          }
+        }
+      }
+    },
+    {
+      "core": "K33",
+      "samples": [
+        {
+          "sources": [
+            2,
+            -1,
+            2,
+            -1,
+            1
+          ],
+          "bare_numerator": {
+            "terms": 2196,
+            "sha256": "be26ea4ede66a1898e1ca765827a00498aa1713c446c59edc28f892f48a7fe8a"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            0,
+            2,
+            2,
+            2,
+            3
+          ],
+          "bare_numerator": {
+            "terms": 2108,
+            "sha256": "453c1669ae0ea4b23fdfeb4ddc59bc0bd1fd5db636bf9a66e8571850b7791403"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            2,
+            -1,
+            2,
+            -1,
+            2
+          ],
+          "bare_numerator": {
+            "terms": 2230,
+            "sha256": "03a8e3b93736919eefba5d4d91384d656db211d9b126564710f248eba4ab26d3"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "bare_numerator": {
+            "terms": 2474,
+            "sha256": "b89b5343e5a553e6490e5f12374789227c58e1d8cd26b1c16febb2e7beadc086"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        },
+        {
+          "sources": [
+            2,
+            -3,
+            5,
+            7,
+            -13
+          ],
+          "bare_numerator": {
+            "terms": 2483,
+            "sha256": "76ce8df194f88d14058277550c9fe3ceb96b2d0bf2a9de1f48e525a583775ac4"
+          },
+          "pole": "9/2",
+          "smallest_strict_cut_margin": "1",
+          "all_nine_original_currents_bounded_by_cotree_weights": true
+        }
+      ],
+      "distinct_original_scalar_monomials_checked": 2496,
+      "every_proper_edge_subset_checked": 510,
+      "all_source_coefficient_convergence": {
+        "distinct_relabelled_source_points": 252,
+        "ranks": {
+          "1": {
+            "exact_rank": 5,
+            "all_homogeneous_monomials": 5
+          },
+          "4": {
+            "exact_rank": 70,
+            "all_homogeneous_monomials": 70
+          },
+          "5": {
+            "exact_rank": 124,
+            "all_homogeneous_monomials": 126
+          }
+        }
+      }
+    }
+  ],
+  "inputs_sha256": {
+    "explore/circuit-general/topological-completion/verify_source_convergence.py": "820a7adc804a0a61dd8e73d7d5d6d4731e90573e9a505d450c6cefd47c574cdd",
+    "code/htk/topological_polynomial.py": "485de471f50486876c7bbd0a53cacd31f6b8cf922e07077f2e0f0794334a52da",
+    "explore/circuit-general/topological-completion/source_covariance.py": "375afa80bea219c5d186c38192c8d0a701b7dc7e7b73308e8775f4b7f5b49836"
+  }
+}

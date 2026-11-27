@@ -1,0 +1,166 @@
+four exact color algebras and complete inputs prepared 1.01
+Q0 G2.1 integer colors and flavour checks 9596 seconds 4.73
+Q0 G2.1 exact integrals 500 seconds 10.16
+Q0 G2.1 exact integrals 1000 seconds 14.73
+Q0 G2.1 exact integrals 1500 seconds 18.6
+Q0 G2.1 exact integrals 2000 seconds 23.1
+Q0 G2.1 exact integrals 2500 seconds 26.82
+Q0 G2.1 exact integrals 3000 seconds 31.38
+Q0 G2.1 exact integrals 3500 seconds 36.96
+Q0 G2.1 exact integrals 4000 seconds 40.97
+Q0 G2.1 exact integrals 4500 seconds 43.84
+Q0 G2.1 exact integrals 5000 seconds 46.45
+Q0 G2.1 exact integrals 5500 seconds 50.2
+Q0 G2.1 exact integrals 6000 seconds 54.51
+Q0 G2.1 exact integrals 6500 seconds 58.34
+Q0 G2.1 exact integrals 7000 seconds 62.83
+Q0 G2.1 exact integrals 7500 seconds 66.72
+Q0 G2.1 exact integrals 8000 seconds 70.88
+Q0 G2.1 exact integrals 8500 seconds 74.4
+Q0 G2.1 exact integrals 9000 seconds 78.02
+Q0 G2.1 exact integrals 9500 seconds 81.5
+Q0 G2.1 values ['-1348144627897/11907000', '10317378420383/47628000', '61853336286538787/381024000', '27036514610807/1296000', '445390795669627/1190700', '0', '-1947288850827181/7056000', '-947703977489467/19051200'] seconds 82.26
+Q0 G2.2 integer colors and flavour checks 9566 seconds 3.72
+Q0 G2.2 exact integrals 500 seconds 7.8
+Q0 G2.2 exact integrals 1000 seconds 11.61
+Q0 G2.2 exact integrals 1500 seconds 16.44
+Q0 G2.2 exact integrals 2000 seconds 20.79
+Q0 G2.2 exact integrals 2500 seconds 25.17
+Q0 G2.2 exact integrals 3000 seconds 28.88
+Q0 G2.2 exact integrals 3500 seconds 32.41
+Q0 G2.2 exact integrals 4000 seconds 36.97
+Q0 G2.2 exact integrals 4500 seconds 40.82
+Q0 G2.2 exact integrals 5000 seconds 46.57
+Q0 G2.2 exact integrals 5500 seconds 52.03
+Q0 G2.2 exact integrals 6000 seconds 57.04
+Q0 G2.2 exact integrals 6500 seconds 61.31
+Q0 G2.2 exact integrals 7000 seconds 65.19
+Q0 G2.2 exact integrals 7500 seconds 70.35
+Q0 G2.2 exact integrals 8000 seconds 75.1
+Q0 G2.2 exact integrals 8500 seconds 79.42
+Q0 G2.2 exact integrals 9000 seconds 84.41
+Q0 G2.2 exact integrals 9500 seconds 89.11
+Q0 G2.2 values ['-1070076919067/15876000', '580619970709/6804000', '-10415648604094141/8467200', '26179580210227/518400', '3462359884373/22050', '0', '44695940841229/156800', '-1918404454163773/21168000'] seconds 89.9
+Q0 G2.3u integer colors and flavour checks 1116 seconds 4.34
+Q0 G2.3u exact integrals 500 seconds 5.11
+Q0 G2.3u exact integrals 1000 seconds 5.61
+Q0 G2.3u values ['-433139072/99225', '0', '-20972995955089/198450', '-18714950036/225', '-4396564506944/14175', '0', '6496987136/75', '1679447540/1323'] seconds 5.77
+Q0 G2.4u integer colors and flavour checks 1056 seconds 3.61
+Q0 G2.4u exact integrals 500 seconds 4.88
+Q0 G2.4u exact integrals 1000 seconds 5.9
+Q0 G2.4u values ['3086752/2025', '0', '-1091077778593/28350', '-4244041004/225', '-2672998536896/14175', '0', '7650070016/75', '1671314044/4725'] seconds 6.04
+Q0 G2.5u integer colors and flavour checks 1116 seconds 4.22
+Q0 G2.5u exact integrals 500 seconds 6.32
+Q0 G2.5u exact integrals 1000 seconds 8.12
+Q0 G2.5u values ['-5691584/4725', '0', '-664150449731/28350', '-5153744239/270', '-269655438272/2025', '0', '1460260352/25', '4454287328/14175'] seconds 8.39
+G1.1 G1.1 integer colors and flavour checks 15996 seconds 44.56
+G1.1 G1.1 exact integrals 500 seconds 45.95
+G1.1 G1.1 exact integrals 1000 seconds 48.6
+G1.1 G1.1 exact integrals 1500 seconds 51.14
+G1.1 G1.1 exact integrals 2000 seconds 53.51
+G1.1 G1.1 exact integrals 2500 seconds 55.3
+G1.1 G1.1 exact integrals 3000 seconds 57.14
+G1.1 G1.1 exact integrals 3500 seconds 58.62
+G1.1 G1.1 exact integrals 4000 seconds 61.15
+G1.1 G1.1 exact integrals 4500 seconds 63.46
+G1.1 G1.1 exact integrals 5000 seconds 65.38
+G1.1 G1.1 exact integrals 5500 seconds 66.97
+G1.1 G1.1 exact integrals 6000 seconds 68.73
+G1.1 G1.1 exact integrals 6500 seconds 70.28
+G1.1 G1.1 exact integrals 7000 seconds 71.79
+G1.1 G1.1 exact integrals 7500 seconds 73.59
+G1.1 G1.1 exact integrals 8000 seconds 75.12
+G1.1 G1.1 exact integrals 8500 seconds 76.73
+G1.1 G1.1 exact integrals 9000 seconds 79.25
+G1.1 G1.1 exact integrals 9500 seconds 81.55
+G1.1 G1.1 exact integrals 10000 seconds 84.46
+G1.1 G1.1 exact integrals 10500 seconds 86.31
+G1.1 G1.1 exact integrals 11000 seconds 88.01
+G1.1 G1.1 exact integrals 11500 seconds 90.52
+G1.1 G1.1 exact integrals 12000 seconds 92.2
+G1.1 G1.1 exact integrals 12500 seconds 94.54
+G1.1 G1.1 exact integrals 13000 seconds 96.2
+G1.1 G1.1 exact integrals 13500 seconds 97.95
+G1.1 G1.1 exact integrals 14000 seconds 99.82
+G1.1 G1.1 exact integrals 14500 seconds 101.6
+G1.1 G1.1 exact integrals 15000 seconds 103.24
+G1.1 G1.1 exact integrals 15500 seconds 104.66
+G1.1 G1.1 values ['-5196878219/33075', '-121985459401/158760', '-2607118724527307/1587600', '1209370321631/12960', '-4837664668672/14175', '0', '40197632778403/58800', '10908930108397/99225'] seconds 105.96
+G2.1 Q0 integer colors and flavour checks 15976 seconds 18.72
+G2.1 Q0 exact integrals 500 seconds 21.13
+G2.1 Q0 exact integrals 1000 seconds 23.58
+G2.1 Q0 exact integrals 1500 seconds 26.07
+G2.1 Q0 exact integrals 2000 seconds 28.48
+G2.1 Q0 exact integrals 2500 seconds 31.84
+G2.1 Q0 exact integrals 3000 seconds 34.28
+G2.1 Q0 exact integrals 3500 seconds 37.22
+G2.1 Q0 exact integrals 4000 seconds 42.03
+G2.1 Q0 exact integrals 4500 seconds 45.65
+G2.1 Q0 exact integrals 5000 seconds 48.86
+G2.1 Q0 exact integrals 5500 seconds 52.47
+G2.1 Q0 exact integrals 6000 seconds 55.54
+G2.1 Q0 exact integrals 6500 seconds 59.35
+G2.1 Q0 exact integrals 7000 seconds 63.63
+G2.1 Q0 exact integrals 7500 seconds 68.5
+G2.1 Q0 exact integrals 8000 seconds 73.13
+G2.1 Q0 exact integrals 8500 seconds 76.94
+G2.1 Q0 exact integrals 9000 seconds 80.45
+G2.1 Q0 exact integrals 9500 seconds 84.32
+G2.1 Q0 exact integrals 10000 seconds 89.2
+G2.1 Q0 exact integrals 10500 seconds 93.3
+G2.1 Q0 exact integrals 11000 seconds 96.05
+G2.1 Q0 exact integrals 11500 seconds 98.57
+G2.1 Q0 exact integrals 12000 seconds 100.96
+G2.1 Q0 exact integrals 12500 seconds 103.84
+G2.1 Q0 exact integrals 13000 seconds 106.63
+G2.1 Q0 exact integrals 13500 seconds 109.36
+G2.1 Q0 exact integrals 14000 seconds 113.11
+G2.1 Q0 exact integrals 14500 seconds 116.42
+G2.1 Q0 exact integrals 15000 seconds 120.66
+G2.1 Q0 exact integrals 15500 seconds 124.08
+G2.1 Q0 values ['662501409809/4762800', '8593126483/381024', '167960739920103673/108864000', '-1351784349981317/7776000', '-2054023008922627/11907000', '0', '-82771103986019/470400', '2585340207920909/95256000'] seconds 126.89
+G2.2 Q0 integer colors and flavour checks 16012 seconds 23.92
+G2.2 Q0 exact integrals 500 seconds 25.34
+G2.2 Q0 exact integrals 1000 seconds 28.19
+G2.2 Q0 exact integrals 1500 seconds 31.6
+G2.2 Q0 exact integrals 2000 seconds 34.75
+G2.2 Q0 exact integrals 2500 seconds 38.08
+G2.2 Q0 exact integrals 3000 seconds 41.05
+G2.2 Q0 exact integrals 3500 seconds 43.33
+G2.2 Q0 exact integrals 4000 seconds 46.35
+G2.2 Q0 exact integrals 4500 seconds 49.39
+G2.2 Q0 exact integrals 5000 seconds 52.66
+G2.2 Q0 exact integrals 5500 seconds 55.42
+G2.2 Q0 exact integrals 6000 seconds 58.05
+G2.2 Q0 exact integrals 6500 seconds 60.74
+G2.2 Q0 exact integrals 7000 seconds 63.9
+G2.2 Q0 exact integrals 7500 seconds 66.72
+G2.2 Q0 exact integrals 8000 seconds 70.0
+G2.2 Q0 exact integrals 8500 seconds 72.69
+G2.2 Q0 exact integrals 9000 seconds 74.76
+G2.2 Q0 exact integrals 9500 seconds 78.03
+G2.2 Q0 exact integrals 10000 seconds 80.82
+G2.2 Q0 exact integrals 10500 seconds 84.17
+G2.2 Q0 exact integrals 11000 seconds 87.43
+G2.2 Q0 exact integrals 11500 seconds 90.24
+G2.2 Q0 exact integrals 12000 seconds 93.49
+G2.2 Q0 exact integrals 12500 seconds 96.24
+G2.2 Q0 exact integrals 13000 seconds 99.44
+G2.2 Q0 exact integrals 13500 seconds 102.36
+G2.2 Q0 exact integrals 14000 seconds 105.25
+G2.2 Q0 exact integrals 14500 seconds 108.56
+G2.2 Q0 exact integrals 15000 seconds 111.29
+G2.2 Q0 exact integrals 15500 seconds 114.36
+G2.2 Q0 values ['5719547488379/47628000', '2841959884429/47628000', '26984150997906671/21772800', '-195909930539023/777600', '116833833306593/1323000', '0', '-2637405688123139/7056000', '153714792427303/3024000'] seconds 117.21
+G2.3u Q0 integer colors and flavour checks 1448 seconds 10.93
+G2.3u Q0 exact integrals 500 seconds 11.32
+G2.3u Q0 exact integrals 1000 seconds 11.7
+G2.3u Q0 values ['433139072/99225', '0', '-211393090116239/793800', '14636232412/75', '3623629433248/14175', '0', '-4009001984/75', '50697426548/33075'] seconds 12.04
+G2.4u Q0 integer colors and flavour checks 1344 seconds 11.3
+G2.4u Q0 exact integrals 500 seconds 12.15
+G2.4u Q0 exact integrals 1000 seconds 13.04
+G2.4u Q0 values ['-3086752/2025', '0', '-3261183608033/113400', '5751057508/75', '1359440595424/14175', '0', '-1353508352/75', '57025484/105'] seconds 13.62
+G2.5u Q0 integer colors and flavour checks 1464 seconds 18.02
+G2.5u Q0 exact integrals 500 seconds 19.52
+G2.5u Q0 exact integrals 1000 seconds 21.1
+G2.5u Q0 values ['5691584/4725', '0', '-6654350908321/113400', '811574561/18', '39583273664/675', '0', '-49304064/5', '8702331256/14175'] seconds 22.41

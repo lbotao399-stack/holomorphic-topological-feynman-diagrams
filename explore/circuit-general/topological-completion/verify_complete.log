@@ -1,0 +1,10 @@
+K33_q11o2.json 936 full rank; exact rows 9758
+K33_q7o2.json 16 full rank; exact rows 125
+K33_q9o2.json 154 full rank; exact rows 1415
+prism_q11o2.json 3948 full rank; exact rows 43776
+independent dimension shift {'core': 'K33', 'lower_pole': '7/2', 'independent_identities': 16, 'summands_per_identity': 81}
+independent dimension shift {'core': 'K33', 'lower_pole': '9/2', 'independent_identities': 154, 'summands_per_identity': 81}
+independent dimension shift {'core': 'prism', 'lower_pole': '9/2', 'independent_identities': 615, 'summands_per_identity': 75}
+prism all source identities and all ten independent Gaussian-minor holdouts pass
+K33 all source identities and all ten independent Gaussian-minor holdouts pass
+ALL EXACT CHECKS PASS 916.16 seconds

@@ -1,0 +1,728 @@
+{
+  "all_original_first_current_coefficients": [
+    [
+      {
+        "1": "15571/23044331520000",
+        "z3": "-1/1778112000"
+      },
+      {
+        "1": "-15571/23044331520000",
+        "z3": "1/1778112000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "295849/86416243200000",
+        "z3": "-19/6667920000"
+      },
+      {
+        "1": "15571/9601804800000",
+        "z3": "-1/740880000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "-202423/49380710400000",
+        "z3": "13/3810240000"
+      },
+      {
+        "1": "-15571/16460236800000",
+        "z3": "1/1270080000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "15571/9601804800000",
+        "z3": "-1/740880000"
+      },
+      {
+        "1": "295849/86416243200000",
+        "z3": "-19/6667920000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "-15571/16460236800000",
+        "z3": "1/1270080000"
+      },
+      {
+        "1": "-202423/49380710400000",
+        "z3": "13/3810240000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "295849/172832486400000",
+        "z3": "-19/13335840000"
+      },
+      {
+        "1": "15571/19203609600000",
+        "z3": "-1/1481760000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "295849/172832486400000",
+        "z3": "-19/13335840000"
+      },
+      {
+        "1": "15571/19203609600000",
+        "z3": "-1/1481760000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "15571/19203609600000",
+        "z3": "-1/1481760000"
+      },
+      {
+        "1": "295849/172832486400000",
+        "z3": "-19/13335840000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "15571/19203609600000",
+        "z3": "-1/1481760000"
+      },
+      {
+        "1": "295849/172832486400000",
+        "z3": "-19/13335840000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {}
+    ],
+    [
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {}
+    ],
+    [
+      {},
+      {},
+      {
+        "1": "-15571/6172588800000",
+        "z3": "1/476280000"
+      }
+    ],
+    [
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      }
+    ],
+    [
+      {},
+      {},
+      {
+        "1": "-15571/6172588800000",
+        "z3": "1/476280000"
+      }
+    ],
+    [
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      }
+    ],
+    [
+      {
+        "1": "15571/16460236800000",
+        "z3": "-1/1270080000"
+      },
+      {
+        "1": "-15571/16460236800000",
+        "z3": "1/1270080000"
+      },
+      {}
+    ]
+  ],
+  "bare_coefficient": {
+    "1": "15571/3086294400000",
+    "z3": "-1/238140000"
+  },
+  "bare_source_factor": "det(lambda_s0,lambda_s1,lambda_s2)^5",
+  "bare_status": "complete",
+  "complete_affine_current_polynomial_identities": 48,
+  "complete_bare_numerator": {
+    "sha256": "74fc679645b011f132cb7a909d8e23d626d954007020400457c3ae4b86962639",
+    "terms": 25
+  },
+  "complete_finite_targets": [
+    {
+      "complete_numerator": {
+        "sha256": "74fc679645b011f132cb7a909d8e23d626d954007020400457c3ae4b86962639",
+        "terms": 25
+      },
+      "complete_scalar_coefficients_sha256": "6f356df25364ed047eabc74afd83c45333ef53b77955f87b79734e76fb916b37",
+      "denominator_power": 8,
+      "edge": null,
+      "period_stats": {
+        "q": 8,
+        "read_only_tables": true,
+        "weighted_periods": 3
+      },
+      "source_direction": null,
+      "value": {
+        "1": "15571/3086294400000",
+        "z3": "-1/238140000"
+      },
+      "weighted_core_periods": 3
+    },
+    {
+      "complete_numerator": {
+        "sha256": "fd8d04b87238d6660c66c6d554e47bf2521692f96b482e1d1bc94a290da3a1cf",
+        "terms": 7300
+      },
+      "complete_scalar_coefficients_sha256": "26140520943d318dd40ce0b43a50b0da0b7eaaf492a839ceb0b7faf2469be066",
+      "denominator_power": 9,
+      "edge": 7,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "15571/19203609600000",
+        "z3": "-1/1481760000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "cecc95177839beef64bfbab2fd4730a271872d36bcef0e42dd5ef3ba70b82702",
+        "terms": 7780
+      },
+      "complete_scalar_coefficients_sha256": "4dda7c61e68c554325544c4d27bdad90978116cbe13e358587331d2acb8fe516",
+      "denominator_power": 9,
+      "edge": 7,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "295849/172832486400000",
+        "z3": "-19/13335840000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "335c0bd24e9abad179b905ff41e50b476388563d03b02de66bc03fd692783f04",
+        "terms": 900
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 7,
+      "source_direction": 2,
+      "value": {},
+      "weighted_core_periods": 0
+    },
+    {
+      "complete_numerator": {
+        "sha256": "a94ae0c5d680566673f48944a93755b648b0eb198d293456ddbb4443a1240337",
+        "terms": 7300
+      },
+      "complete_scalar_coefficients_sha256": "26140520943d318dd40ce0b43a50b0da0b7eaaf492a839ceb0b7faf2469be066",
+      "denominator_power": 9,
+      "edge": 8,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "15571/19203609600000",
+        "z3": "-1/1481760000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "fe64790ce69c586b94b53e5c839f1ca6550eb180e1ae02b6255ae94884a0897e",
+        "terms": 7780
+      },
+      "complete_scalar_coefficients_sha256": "4dda7c61e68c554325544c4d27bdad90978116cbe13e358587331d2acb8fe516",
+      "denominator_power": 9,
+      "edge": 8,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "295849/172832486400000",
+        "z3": "-19/13335840000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "a94c501e0eab27b782ccea5afa29983ea03a4c66867fc497e339691c47b7297e",
+        "terms": 900
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 8,
+      "source_direction": 2,
+      "value": {},
+      "weighted_core_periods": 0
+    },
+    {
+      "complete_numerator": {
+        "sha256": "33ad79229f268a7a602fec341887ff497efaabbdbf079e88bb526956b5c27587",
+        "terms": 4340
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 13,
+      "source_direction": 0,
+      "value": {},
+      "weighted_core_periods": 0
+    },
+    {
+      "complete_numerator": {
+        "sha256": "1454623e6cb7abd646c9b7af39d9639e8cd57892d0b5e2a5119e7c41bb6dbd69",
+        "terms": 4340
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 13,
+      "source_direction": 1,
+      "value": {},
+      "weighted_core_periods": 0
+    },
+    {
+      "complete_numerator": {
+        "sha256": "da2336165dd13de7955f9f2e7be5f778307077f835837217aff20348ead0380f",
+        "terms": 11080
+      },
+      "complete_scalar_coefficients_sha256": "8f641949b49913773604171998400ed4acd07229f8869de2ff1e25f90eb41307",
+      "denominator_power": 9,
+      "edge": 13,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "-15571/6172588800000",
+        "z3": "1/476280000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "b142220b22677655f655ab738439e4900a59d266f227e759fac0c104127b14dc",
+        "terms": 11300
+      },
+      "complete_scalar_coefficients_sha256": "ac03be8412c48152fa465c0b9fb885185c9cbda5575215240cd677bfe3c64d25",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "ef487675952f3df3bff29ba6018adce48447d280799fd1e8279f471817cabc46",
+        "terms": 11300
+      },
+      "complete_scalar_coefficients_sha256": "ac03be8412c48152fa465c0b9fb885185c9cbda5575215240cd677bfe3c64d25",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "f216ca30b58f0009ac03cdeb951c45efc4693afc576dc2fd2596f72332c99af0",
+        "terms": 11080
+      },
+      "complete_scalar_coefficients_sha256": "ac03be8412c48152fa465c0b9fb885185c9cbda5575215240cd677bfe3c64d25",
+      "denominator_power": 9,
+      "edge": 14,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 2,
+      "value": {
+        "1": "15571/6172588800000",
+        "z3": "-1/476280000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "54a6a579950cf7d40a01581d2e36df8c22b77206b6722cf9a7f01c38965d4ef5",
+        "terms": 7820
+      },
+      "complete_scalar_coefficients_sha256": "c4359564139cc717af34cfb9e1b45dcc23fbf66d6335344f7cd12f0d1475c7e7",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 0,
+      "value": {
+        "1": "15571/16460236800000",
+        "z3": "-1/1270080000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "2e04a3d1f24d757733ed05ced1acb5447ae4797f9ed0419a8865086ea8284597",
+        "terms": 7820
+      },
+      "complete_scalar_coefficients_sha256": "d1d4f4f5b3a64d7c567c460412f0b4e9452b8bc1a58f487a53e74265bc3cac42",
+      "denominator_power": 9,
+      "edge": 15,
+      "period_stats": {
+        "q": 9,
+        "read_only_tables": true,
+        "weighted_periods": 122
+      },
+      "source_direction": 1,
+      "value": {
+        "1": "-15571/16460236800000",
+        "z3": "1/1270080000"
+      },
+      "weighted_core_periods": 122
+    },
+    {
+      "complete_numerator": {
+        "sha256": "9c6481313ee000fcc4bde2e95c4310b24e87a9e209964b8b57ffd3bd3688cd4c",
+        "terms": 36
+      },
+      "complete_scalar_coefficients_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "denominator_power": 9,
+      "edge": 15,
+      "source_direction": 2,
+      "value": {},
+      "weighted_core_periods": 0
+    }
+  ],
+  "complete_series_chains": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2,
+      15,
+      4
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      14
+    ]
+  ],
+  "core_classification": "K4",
+  "dependencies_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/assembly/tables/K33_q8.json": "12496b23958872bc52f6e77a3bbfd03071ceb34817683087abfb621118e54f8c",
+    "explore/circuit-general/assembly/tables/K33_q9.json": "75d15ea03b2f68a2907106d2e05af6b0dd8765a649b7df5aba222feb01db6176",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/five-loop-completion/bulk3_periods.py": "5f83e2785db2206e48aa49bd653cedfa842201da9ad51bca9e807b6f96ebce8a",
+    "explore/circuit-general/five-loop-completion/certify.py": "3cd7ad5799a87d655cf7d253edcf7ebd88af993769cae9f7ebeea19d8bdce35c",
+    "explore/circuit-general/fiveloop/enum_d3.json": "85182250468c766a65972f458414d0d1dbbd265ccdf3426b22587a25b6e349e6",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/fiveloop/skel5.json": "62267064b43ff24413cbcfa6e01da5cebe85140e0a288fc1ce5f9a43e856d452",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "first_current_meaning": "bare_source_factor times the complete linear combination of lambda_s0,lambda_s1,lambda_s2",
+  "first_current_status": "complete",
+  "index": 12,
+  "integrated_original_source_identities": 36,
+  "ordered_oriented_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "original_grounded_laplacian_density_checks": [
+    {
+      "U": "125174487841891/50295168000",
+      "complete_numerator": "-83521/38256976690237337760000",
+      "resistances": [
+        "2",
+        "3/2",
+        "4/3",
+        "5/4",
+        "6/5",
+        "7/6",
+        "8/7",
+        "9/8",
+        "10/9",
+        "11/10",
+        "12/11",
+        "13/12",
+        "14/13",
+        "15/14",
+        "16/15",
+        "17/16"
+      ]
+    },
+    {
+      "U": "8869532944991/896896000",
+      "complete_numerator": "-130321/172646445991591936",
+      "resistances": [
+        "4",
+        "5/2",
+        "2",
+        "7/4",
+        "8/5",
+        "3/2",
+        "10/7",
+        "11/8",
+        "4/3",
+        "13/10",
+        "14/11",
+        "5/4",
+        "16/13",
+        "17/14",
+        "6/5",
+        "19/16"
+      ]
+    }
+  ],
+  "scalar_core_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "schema": "five-loop-bulk3-supported-source-v1",
+  "seconds": 9.929,
+  "source_cycle_tree": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+  ],
+  "source_scope": "lambda_s0,lambda_s1,lambda_s2 arbitrary; lambda_s3=-sum; all other original sources zero",
+  "source_vertices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "vertices": 12
+}

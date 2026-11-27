@@ -1,0 +1,10 @@
+Recomputed all original source directions and current vectors for 3
+Recomputed all original source directions and current vectors for 46
+{
+  "full_current_tensors_reintegrated": 5,
+  "all_original_current_coefficients_reintegrated": 240,
+  "complete_scalar_dictionaries_compared": 63,
+  "all_scalar_coefficients_compared": 101517,
+  "complete_nonunit_or_degenerate_source_polynomials": 6,
+  "full_original_current_source_transformation_checks": 288
+}

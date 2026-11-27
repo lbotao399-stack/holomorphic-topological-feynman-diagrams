@@ -1,0 +1,22 @@
+prism 0 all original numerator monomials converge; all currents bounded
+prism 1 all original numerator monomials converge; all currents bounded
+prism 2 all original numerator monomials converge; all currents bounded
+prism 3 all original numerator monomials converge; all currents bounded
+prism 4 all original numerator monomials converge; all currents bounded
+prism 5 all original numerator monomials converge; all currents bounded
+prism 6 all original numerator monomials converge; all currents bounded
+prism 7 all original numerator monomials converge; all currents bounded
+prism 8 all original numerator monomials converge; all currents bounded
+prism 9 all original numerator monomials converge; all currents bounded
+prism 10 all original numerator monomials converge; all currents bounded
+prism 11 all original numerator monomials converge; all currents bounded
+prism 12 all original numerator monomials converge; all currents bounded
+prism 13 all original numerator monomials converge; all currents bounded
+prism {'distinct_relabelled_source_points': 162, 'ranks': {'1': {'exact_rank': 5, 'all_homogeneous_monomials': 5}, '4': {'exact_rank': 70, 'all_homogeneous_monomials': 70}, '5': {'exact_rank': 126, 'all_homogeneous_monomials': 126}}}
+K33 0 all original numerator monomials converge; all currents bounded
+K33 1 all original numerator monomials converge; all currents bounded
+K33 2 all original numerator monomials converge; all currents bounded
+K33 3 all original numerator monomials converge; all currents bounded
+K33 4 all original numerator monomials converge; all currents bounded
+K33 {'distinct_relabelled_source_points': 252, 'ranks': {'1': {'exact_rank': 5, 'all_homogeneous_monomials': 5}, '4': {'exact_rank': 70, 'all_homogeneous_monomials': 70}, '5': {'exact_rank': 124, 'all_homogeneous_monomials': 126}}}
+PASS: arbitrary-source coefficient convergence and every finite holomorphic-current word

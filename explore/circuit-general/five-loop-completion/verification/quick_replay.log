@@ -1,0 +1,22 @@
+{
+  "total_bulk3_graphs": 410,
+  "complete_bare_source_polynomials": 92,
+  "new_nonsp_bare_source_polynomials": 89,
+  "complete_first_current_tensors": 37,
+  "new_nonsp_first_current_tensors": 34,
+  "complete_original_first_current_vectors": 592,
+  "complete_first_current_source_coefficients": 1776,
+  "complete_bare_signed_zeros": 27,
+  "original_density_points_replayed": 136,
+  "complete_integrated_relation_rows_replayed": 5822,
+  "complete_scalar_targets": 463,
+  "complete_scalar_coefficients": 7152332,
+  "period_channels": [
+    "1",
+    "z3",
+    "z3*z3",
+    "z5"
+  ]
+}
+Quick replay checked complete stored values and exact relations; it did not repeat all period integrations.
+certificate_sha256: 2f280a8cbc5a0bd90eb87905efbf9f670e0b23adc2549369907b0ed9e9181c6d

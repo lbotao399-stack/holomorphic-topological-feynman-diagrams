@@ -1,0 +1,20 @@
+prism response integration 1 of 14 bare and all nine currents complete; seconds 28.71
+prism response integration 2 of 14 bare and all nine currents complete; seconds 40.28
+prism response integration 3 of 14 bare and all nine currents complete; seconds 55.44
+prism response integration 4 of 14 bare and all nine currents complete; seconds 71.44
+prism response integration 5 of 14 bare and all nine currents complete; seconds 87.72
+prism response integration 6 of 14 bare and all nine currents complete; seconds 99.83
+prism response integration 7 of 14 bare and all nine currents complete; seconds 111.2
+prism response integration 8 of 14 bare and all nine currents complete; seconds 125.24
+prism response integration 9 of 14 bare and all nine currents complete; seconds 136.62
+prism response integration 10 of 14 bare and all nine currents complete; seconds 149.64
+prism response integration 11 of 14 bare and all nine currents complete; seconds 160.6
+prism response integration 12 of 14 bare and all nine currents complete; seconds 172.09
+prism response integration 13 of 14 bare and all nine currents complete; seconds 183.6
+prism response integration 14 of 14 bare and all nine currents complete; seconds 195.46
+Replayed the complete integrated response and every exact source/current coefficient.
+Prism: 14 unisolvent sources; 140 integrated outputs; 1204 original coefficients; exact rank 49.
+Pointwise source convergence: 162 automorphism rows; full exact degree-four/five ranks 70 and 126.
+Nonzero contact controls include an unsourced deleted vertex; every double-contact term vanishes.
+Complete result coefficient counts: [114, 230, 237, 237, 238, 237, 237, 236, 236, 228]
+canonical_certificate_sha256: 9e1206e6182370187cfb0165a9202f883c717e620181b9a5a4b49cec1a766ff3

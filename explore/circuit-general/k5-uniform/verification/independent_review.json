@@ -1,0 +1,36 @@
+{
+  "canonical_certificate_sha256": "16c7a9f656085fcdb68f6a0832f9963947031ead2d4af7fd3a22eed964b87784",
+  "files_sha256": {
+    "explore/circuit-general/k5-uniform/DERIVATION.md": "2745a4cfee77c4a6cf7cec52b4fcdb7e039952330b28496f7379176027598603",
+    "explore/circuit-general/k5-uniform/README.md": "61e96dc5ba6a8a8fb4b6dcc4b3d35c2a1ecb8a4ced0aac0bb2a46f8e781bff92",
+    "explore/circuit-general/k5-uniform/certificate.json": "e433ba07374a7b28c0799dfcb6b977d59888665287bb0b9bec765a4d19a4536e",
+    "explore/circuit-general/k5-uniform/k5_dimension.py": "6a9ded01711f8945c4b024dce89ecf1ee619651bc7c9a286b7a696eeaeedd7a4",
+    "explore/circuit-general/k5-uniform/q9_interior.json": "62f5490a50c334da9b6498523a74a3e48f45818c9cdb206230f98790f399a4f4",
+    "explore/circuit-general/k5-uniform/verification/independent_replay.log": "808592de68190d46a934d8e98671b14ee9bb7c566088755226d855f29d9bba3d",
+    "explore/circuit-general/k5-uniform/verify.py": "20e57fd41475993d54b4cc15a6501f79ce6c9b5650e9ce1e32271c0d40fa84bf"
+  },
+  "manual_mathematical_checks": [
+    "The normalized transverse-Gram angular-constant ratio is 4/((q-2)(2q-3)(2q-5)); its lower transverse dimension is at least three for q>=3.",
+    "The six-by-six distance determinant is -16 times the four-by-four Gram determinant; decompletion and Gamma(q-1)/Gamma(q) give the scalar prefactor exactly.",
+    "Every edge and three-vertex strict convergence cut is retained. A Hamiltonian cycle omitting an offending edge, or alternating across an offending triangle cut, proves necessity of the raw termwise guard.",
+    "For all stated q9 inputs, original beta is at least3, completed beta is at most7, and every completed triangle sum is at most15; every q8 shifted term has positive original weights and strict cuts.",
+    "Both radial-wheel complete graph maps and their factors J3_class9=2*I3_W4 and J2=I2_W4 agree with the original graph normalization.",
+    "Class5 reduces to three convergent six-dimensional bubbles of value1. Class6 reduces by a unit-normalized unique star to twice the stated K4 period.",
+    "The complete residue summand and rational telescoping retain B(2)=1/3 and a vanishing infinite endpoint. The twenty rational checks prove an identity: the common-denominator numerator has degree at most16.",
+    "Eliminating J3_class9 from the independently regenerated vertex/dimension identity and radial identity yields J2=4*J3_class14+16*J3_class6+(16/3)*J3_class5 without fitting known zeta values."
+  ],
+  "replay_command": "python3 explore/circuit-general/k5-uniform/verify.py",
+  "replayed": {
+    "boundary_scan_orbits": 54391,
+    "complete_lower_terms": 9490,
+    "exact_dimension_rows_in_input_witness": 1,
+    "exact_vertex_rows_in_input_witness": 11,
+    "independent_table_controls": 5,
+    "new_q9_generic_orbits": 13,
+    "new_q9_labeled_inputs": 4905,
+    "new_q9_orbits": 73
+  },
+  "reviewer": "independent finite-completion agent",
+  "scope": "The extra tower-input relation origin is resolved, and the guarded all-q lowering identity and the stated q9 region are certified. Unrestricted all-integer-q K5 numerical closure remains open. Existing lower tables are declared inputs, not recomputed by this audit.",
+  "status": "pass"
+}

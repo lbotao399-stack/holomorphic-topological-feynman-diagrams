@@ -1,0 +1,184 @@
+{
+  "assessment": "The unified dispatcher supports the stated admissible bulk problem through five loops, at exact rational holomorphic sources and zero topological momentum, with every slot of a finite original holomorphic-current word retained. Within the selected complete-computation budgets it returns a finite exact value or a complete convergent series representation with certified rational remainder methods. Budget exhaustion raises an explicit exception.",
+  "code_review": [
+    "The public dispatcher validates source, dimension, connectivity, tightness, every original current slot, and all Laman inequalities before taking a vanishing route.",
+    "The source validator rejects unknown, negative, boolean, and nonintegral dictionary vertices and checks every supplied row before the older helper can omit the root or an unknown key.",
+    "The complete inserted current numerator is formed before chain reduction, retaining affine sourced flow and correlations between repeated or distinct currents; every chain monomial receives its exact Dirichlet factor.",
+    "Finite scalar workers use read-only tables. Divergent scalar terms and arithmetic failures raise; missing finite data and worker timeout alone trigger the complete-series fallback.",
+    "If a finite scalar lookup stops after processing some terms, the partial subtotal is discarded and the entire pushed numerator is used by the fallback.",
+    "Simple-graph edge automorphisms are used only for simple scalar graphs. Parallel scalar edges retain their full original labels.",
+    "The original graph, all normalized original sources, and the original current word are attached to the fallback series.",
+    "The polynomial and series engines expose term, aggregate-buffer, determinant/minor, chart, tree-enumeration, and expansion-order budgets; the finite scalar worker exposes a timeout. These are algorithmic bounds, not a global OS memory or wall-clock guarantee.",
+    "The focused nine-test suite was inspected. The independent execution recorded here adds actual missing-table behavior, malformed full/root inputs, conservation, exact input types, and explicit zero sources; it does not claim a fresh reintegration of every historical census."
+  ],
+  "default_budgets": {
+    "admissibility_max_chains": 20,
+    "finite_period_timeout_seconds": 180,
+    "polynomial_max_minors": 100000,
+    "polynomial_max_terms": 1000000,
+    "polynomial_max_total_terms": 3000000,
+    "series_max_charts": 1000000,
+    "series_max_order": 10000,
+    "series_max_terms": 1000000,
+    "series_max_total_terms": 3000000,
+    "series_max_tree_candidates": 1000000
+  },
+  "environment": {
+    "implementation": "CPython",
+    "python": "3.12.14"
+  },
+  "independently_executed": {
+    "elapsed_seconds": 44.148,
+    "input_checks": [
+      {
+        "api": "evaluate_bulk",
+        "case": "unknown_vertex",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "BulkPolynomial",
+        "case": "unknown_vertex",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "evaluate_bulk",
+        "case": "root_extra_component_list",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "BulkPolynomial",
+        "case": "root_extra_component_list",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "evaluate_bulk",
+        "case": "root_extra_component_dict",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "BulkPolynomial",
+        "case": "root_extra_component_dict",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "evaluate_bulk",
+        "case": "boolean_vertex",
+        "rejected": "TypeError"
+      },
+      {
+        "api": "BulkPolynomial",
+        "case": "boolean_vertex",
+        "rejected": "TypeError"
+      },
+      {
+        "api": "evaluate_bulk",
+        "case": "nonconserved_root",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "BulkPolynomial",
+        "case": "nonconserved_root",
+        "rejected": "ValueError"
+      },
+      {
+        "api": "evaluate_bulk",
+        "case": "inexact_root",
+        "rejected": "TypeError"
+      },
+      {
+        "api": "BulkPolynomial",
+        "case": "inexact_root",
+        "rejected": "TypeError"
+      }
+    ],
+    "missing_period_fallback": {
+      "graph": "triangular prism",
+      "incomplete_atlas_rejected": "complete dominant-tree atlas exceeds max_charts",
+      "pole": "13/2",
+      "reason": "prism_q13o2.json",
+      "returned_type": "ExactBulkSeries",
+      "source_and_word_retained": true,
+      "sources": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "status": "pass"
+  },
+  "log_sha256": "643099877f166368ff443e79133d0b14eb66c32f13d5286d4013184fe3911cbc",
+  "replay": {
+    "actual_missing_table_python": "from fractions import Fraction\nimport json\nfrom pathlib import Path\nfrom htk.graph import Graph\nfrom htk.bulk_kernels import evaluate_bulk\nfrom htk.bulk_series import ExactBulkSeries, BulkSeriesBudgetExceeded\np=Path('explore/circuit-general/topological-completion/prism_complete_polynomials.json')\ng=Graph(6,json.loads(p.read_text())['edges'])\nsources=[[1],[2],[3],[4],[5]]\nword=((0,0),(1,0))\na=evaluate_bulk(g,sources,H=1,T=1,word=word,route='periods',period_timeout=30,series_options={'max_charts':1})\nassert isinstance(a,ExactBulkSeries)\nassert a.original_graph is g and a.original_word==word\nassert a.original_sources==tuple(tuple(Fraction(x) for x in row) for row in sources)\nassert a.power==Fraction(13,2) and a.reason=='prism_q13o2.json'\ntry:\n    a.interval(0)\nexcept BulkSeriesBudgetExceeded:\n    pass\nelse:\n    raise AssertionError('An incomplete atlas was accepted')\n",
+    "python_environment": "Run the missing-table Python code from the repository root with PYTHONPATH=code; this control intentionally depends on the q13/2 table remaining unavailable.",
+    "source_regressions": "python3 code/tests/test_bulk_kernels.py BulkKernelChecks.test_exact_inputs_and_admissibility_fail_closed"
+  },
+  "resolved_finding": {
+    "description": "Before this audit, unknown dictionary vertices and extra root components could be silently dropped by the inherited source normalizer.",
+    "remaining_api_findings": [],
+    "resolution": "The implementation owner added source_vectors and uses it in evaluate_bulk, BulkPolynomial, and alternate-source check_at. The independent probes below verify the corrected paths."
+  },
+  "reviewer": "independent finite_completion agent",
+  "schema": "independent-bulk-api-review-v1",
+  "scope": {
+    "currents": "Original edge and spinor slots are validated and retained with multiplicities. The API integrates products of positive currents; derivatives of exp(-sum(y*z)) acquire the external sign (-1)^word_length.",
+    "dimensions": "Nonnegative integer H and T; the admissible connected tight bulk graph must satisfy edges=(H+T)*loops+1.",
+    "excluded": [
+      "Defect kernels",
+      "Nonzero topological momentum",
+      "Inserted topological currents",
+      "A universal finite zeta basis",
+      "Uniform efficiency or a guarantee that fixed default budgets suffice for every input",
+      "Full theory-specific Wick or color factors"
+    ],
+    "five_loop_admissibility": "At most five loops, a bridgeless contracted graph has at most twelve maximal bivalent chains (a polygon has one), so the explicit twenty-chain admissibility cap covers the stated graph class.",
+    "lazy_series": "Missing finite period data returns a complete exact-series representation. Building its atlas or requesting terms can still encounter the explicit resource limits. No partial atlas or finite truncation is called the exact value.",
+    "sources": "Every original supplied vertex and every component, including the conserved root row, is validated before normalization. Rational sparse dictionaries, non-root lists, and conserved full lists are supported. Formal sources belong to BulkPolynomial; certified series bounds require rational values."
+  },
+  "source_sha256": {
+    "code/htk/_bulk_period_worker.py": "91333ddaff8f43ec23d277e683f5a509219c15670fcf289263585ab37ad8b317",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/bulk_kernels.py": "ce6c75f659b3dc338ef53d0d4468ecd9b6adae1b0a28fe5e63649858e5fb29c0",
+    "code/htk/bulk_series.py": "7520376ae3432eed49ae3c03697b6e1d53d40e07e9102eb687e3aa96d6d94f71",
+    "code/htk/core_sector_periods.py": "320bbbb4b9e3829bee85ed713f29141becfec51059535eb193f93f963679f66e",
+    "code/htk/forest_cube_expansion.py": "bddff3f41440fd5edbe5950404e9b3fb38ada2bb6844e0b5cf66b17f61f6188b",
+    "code/htk/forest_cubes.py": "7f269f29d5774d7eb00e8204f06d6b31882f51c3cbe71bed61e9c67eb9ba6d5d",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/simplex.py": "92a95d913289782718186d5dd77c3eddbe7ac9641fe6ab4561eb11ca8c234ad6",
+    "code/htk/spred.py": "9580c037bcd4e087d8a5e4c9ea730427e25bbce57e1beadcb171a55a2a41b6d3",
+    "code/htk/topological_polynomial.py": "485de471f50486876c7bbd0a53cacd31f6b8cf922e07077f2e0f0794334a52da",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "code/tests/test_bulk_kernels.py": "6f9ca628dcec3a9a0853fdb2c4ef0d70d4c282f69836620735370e1088233048",
+    "explore/circuit-general/cores/cores.py": "a98299e809b95398b009fb284757c2d94e23662b24d86250489ffd21c1a73c4a",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/laurent.py": "2119dd84fe6eda433f8893d186741d523e5e62158e2822b391181c2d56f8eb61",
+    "explore/circuit-general/cores/prop.py": "f13ab84ed093168eb0502d3cb5c2541b1dc6310eac10b70d8afbe8f70ff8922f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/topological-completion/K33_complete_polynomials.json": "e457c927c221e4bcf111c4fcc7fcae4922a0fad182dea2597fa48609a4adea18",
+    "explore/circuit-general/topological-completion/prism_complete_polynomials.json": "f743569a49e68c3268d9b2046987dff2addd870c3fdf027999a865694f185d36"
+  },
+  "status": "pass"
+}

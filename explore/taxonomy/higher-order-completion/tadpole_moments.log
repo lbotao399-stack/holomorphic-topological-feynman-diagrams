@@ -1,0 +1,137 @@
+exact density 55 terms; U 66 terms 1.0 s
+moment () {'sqrtpi^4': '1/630'} seconds 2.15
+scalar periods 50 word (3,) seconds 3.24
+scalar periods 100 word (3,) seconds 6.38
+scalar periods 150 word (3,) seconds 6.58
+scalar periods 200 word (3,) seconds 8.13
+scalar periods 250 word (3,) seconds 8.97
+scalar periods 300 word (3,) seconds 9.77
+scalar periods 350 word (3,) seconds 10.23
+scalar periods 400 word (3,) seconds 10.3
+scalar periods 450 word (3,) seconds 11.2
+moment (3,) {'sqrtpi^4': '2/4725'} seconds 12.28
+scalar periods 500 word (5,) seconds 12.58
+scalar periods 550 word (5,) seconds 13.35
+scalar periods 600 word (5,) seconds 13.7
+moment (5,) {'sqrtpi^4': '1/2700'} seconds 13.9
+moment (7,) {'sqrtpi^4': '1/2700'} seconds 13.91
+moment (8,) {'sqrtpi^4': '2/4725'} seconds 13.93
+scalar periods 650 word (3, 3) seconds 15.69
+scalar periods 700 word (3, 3) seconds 21.55
+scalar periods 750 word (3, 3) seconds 23.68
+scalar periods 800 word (3, 3) seconds 25.26
+scalar periods 850 word (3, 3) seconds 25.74
+scalar periods 900 word (3, 3) seconds 26.4
+scalar periods 950 word (3, 3) seconds 26.99
+scalar periods 1000 word (3, 3) seconds 29.96
+scalar periods 1050 word (3, 3) seconds 32.1
+scalar periods 1100 word (3, 3) seconds 32.17
+scalar periods 1150 word (3, 3) seconds 32.24
+scalar periods 1200 word (3, 3) seconds 32.3
+scalar periods 1250 word (3, 3) seconds 32.36
+scalar periods 1300 word (3, 3) seconds 32.43
+scalar periods 1350 word (3, 3) seconds 32.52
+scalar periods 1400 word (3, 3) seconds 32.57
+scalar periods 1450 word (3, 3) seconds 34.52
+scalar periods 1500 word (3, 3) seconds 36.53
+scalar periods 1550 word (3, 3) seconds 36.6
+scalar periods 1600 word (3, 3) seconds 36.67
+scalar periods 1650 word (3, 3) seconds 36.74
+scalar periods 1700 word (3, 3) seconds 36.81
+scalar periods 1750 word (3, 3) seconds 36.89
+scalar periods 1800 word (3, 3) seconds 36.96
+scalar periods 1850 word (3, 3) seconds 38.89
+scalar periods 1900 word (3, 3) seconds 40.32
+scalar periods 1950 word (3, 3) seconds 40.69
+scalar periods 2000 word (3, 3) seconds 40.76
+scalar periods 2050 word (3, 3) seconds 40.88
+scalar periods 2100 word (3, 3) seconds 40.94
+scalar periods 2150 word (3, 3) seconds 43.83
+scalar periods 2200 word (3, 3) seconds 44.27
+scalar periods 2250 word (3, 3) seconds 44.33
+scalar periods 2300 word (3, 3) seconds 46.83
+scalar periods 2350 word (3, 3) seconds 46.91
+scalar periods 2400 word (3, 3) seconds 46.97
+scalar periods 2450 word (3, 3) seconds 47.02
+scalar periods 2500 word (3, 3) seconds 47.09
+scalar periods 2550 word (3, 3) seconds 48.97
+scalar periods 2600 word (3, 3) seconds 49.03
+scalar periods 2650 word (3, 3) seconds 49.11
+scalar periods 2700 word (3, 3) seconds 49.19
+scalar periods 2750 word (3, 3) seconds 50.25
+scalar periods 2800 word (3, 3) seconds 52.01
+scalar periods 2850 word (3, 3) seconds 52.16
+scalar periods 2900 word (3, 3) seconds 52.23
+scalar periods 2950 word (3, 3) seconds 53.33
+moment (3, 3) {'sqrtpi^4': '47/291060'} seconds 54.56
+scalar periods 3000 word (3, 5) seconds 54.62
+scalar periods 3050 word (3, 5) seconds 55.69
+scalar periods 3100 word (3, 5) seconds 56.86
+scalar periods 3150 word (3, 5) seconds 57.65
+scalar periods 3200 word (3, 5) seconds 58.12
+scalar periods 3250 word (3, 5) seconds 58.16
+scalar periods 3300 word (3, 5) seconds 58.64
+scalar periods 3350 word (3, 5) seconds 58.69
+scalar periods 3400 word (3, 5) seconds 58.73
+scalar periods 3450 word (3, 5) seconds 60.68
+scalar periods 3500 word (3, 5) seconds 60.74
+scalar periods 3550 word (3, 5) seconds 61.14
+scalar periods 3600 word (3, 5) seconds 62.13
+scalar periods 3650 word (3, 5) seconds 62.24
+scalar periods 3700 word (3, 5) seconds 62.31
+scalar periods 3750 word (3, 5) seconds 62.39
+scalar periods 3800 word (3, 5) seconds 62.88
+scalar periods 3850 word (3, 5) seconds 62.91
+scalar periods 3900 word (3, 5) seconds 62.95
+scalar periods 3950 word (3, 5) seconds 63.74
+scalar periods 4000 word (3, 5) seconds 63.8
+scalar periods 4050 word (3, 5) seconds 63.85
+scalar periods 4100 word (3, 5) seconds 64.1
+scalar periods 4150 word (3, 5) seconds 66.37
+scalar periods 4200 word (3, 5) seconds 66.41
+scalar periods 4250 word (3, 5) seconds 67.05
+moment (3, 5) {'sqrtpi^4': '41/485100'} seconds 68.27
+scalar periods 4300 word (3, 7) seconds 68.6
+scalar periods 4350 word (3, 7) seconds 69.45
+scalar periods 4400 word (3, 7) seconds 69.73
+scalar periods 4450 word (3, 7) seconds 70.33
+scalar periods 4500 word (3, 7) seconds 70.59
+scalar periods 4550 word (3, 7) seconds 70.63
+scalar periods 4600 word (3, 7) seconds 70.7
+scalar periods 4650 word (3, 7) seconds 70.77
+scalar periods 4700 word (3, 7) seconds 70.98
+scalar periods 4750 word (3, 7) seconds 71.17
+scalar periods 4800 word (3, 7) seconds 71.29
+scalar periods 4850 word (3, 7) seconds 71.57
+scalar periods 4900 word (3, 7) seconds 71.94
+scalar periods 4950 word (3, 7) seconds 72.01
+scalar periods 5000 word (3, 7) seconds 72.05
+scalar periods 5050 word (3, 7) seconds 72.38
+scalar periods 5100 word (3, 7) seconds 73.48
+moment (3, 7) {'sqrtpi^4': '9/107800'} seconds 73.5
+scalar periods 5150 word (3, 8) seconds 76.1
+scalar periods 5200 word (3, 8) seconds 76.14
+scalar periods 5250 word (3, 8) seconds 76.29
+scalar periods 5300 word (3, 8) seconds 76.33
+scalar periods 5350 word (3, 8) seconds 76.39
+scalar periods 5400 word (3, 8) seconds 76.57
+scalar periods 5450 word (3, 8) seconds 76.63
+scalar periods 5500 word (3, 8) seconds 76.82
+moment (3, 8) {'sqrtpi^4': '13/138600'} seconds 76.87
+scalar periods 5550 word (5, 5) seconds 76.95
+scalar periods 5600 word (5, 5) seconds 77.26
+scalar periods 5650 word (5, 5) seconds 77.35
+scalar periods 5700 word (5, 5) seconds 77.84
+scalar periods 5750 word (5, 5) seconds 78.14
+scalar periods 5800 word (5, 5) seconds 78.19
+scalar periods 5850 word (5, 5) seconds 78.21
+scalar periods 5900 word (5, 5) seconds 78.27
+scalar periods 5950 word (5, 5) seconds 78.72
+scalar periods 6000 word (5, 5) seconds 79.32
+moment (5, 5) {'sqrtpi^4': '37/291060'} seconds 79.35
+scalar periods 6050 word (5, 7) seconds 79.39
+moment (5, 7) {'sqrtpi^4': '73/970200'} seconds 79.45
+moment (5, 8) {'sqrtpi^4': '9/107800'} seconds 79.51
+moment (7, 7) {'sqrtpi^4': '37/291060'} seconds 79.54
+moment (7, 8) {'sqrtpi^4': '41/485100'} seconds 79.6
+moment (8, 8) {'sqrtpi^4': '47/291060'} seconds 79.66

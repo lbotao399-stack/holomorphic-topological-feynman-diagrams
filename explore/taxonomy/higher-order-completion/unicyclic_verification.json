@@ -1,0 +1,1938 @@
+{
+  "all_eight_linear_equations": [
+    [
+      "616217793251/23814000",
+      "1254658365589/23814000",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "5695759615379/23814000",
+      "215821864981/1488375",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "259886370402760657/152409600",
+      "1407382111652159/152409600",
+      "-19685671595773/52920",
+      "-72623759261/1080",
+      "-29558580023/360"
+    ],
+    [
+      "-47582610492659/311040",
+      "-62656224089473/311040",
+      "1007749888/9",
+      "2601826304/45",
+      "3509937088/135"
+    ],
+    [
+      "799961649257881/3969000",
+      "324575426368973/1323000",
+      "-772935073696/14175",
+      "-187651134496/2025",
+      "-30181123456/405"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-1594427705308733/3528000",
+      "-313044175133917/3528000",
+      "829328384/25",
+      "2098853888/25",
+      "1213740032/25"
+    ],
+    [
+      "-358863279921071/15876000",
+      "-70200075597721/1764000",
+      "92683615048/33075",
+      "4237460824/4725",
+      "4385539528/4725"
+    ]
+  ],
+  "all_eight_right_hand_sides": [
+    "5196878219/132300",
+    "121985459401/635040",
+    "2607118724527307/6350400",
+    "-1209370321631/51840",
+    "1209416167168/14175",
+    "0",
+    "-40197632778403/235200",
+    "-10908930108397/396900"
+  ],
+  "all_residuals": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "augmented_rank": 5,
+  "certificate_sha256": "7b1845fa35aae371887e0fe9fc724adf4a5820ee24ca9396d81966093c00a59c",
+  "deep_full_reintegration": false,
+  "fully_reintegrated_compositions": [
+    "Q0|G2.3u"
+  ],
+  "graph_order": [
+    "G2.1",
+    "G2.2",
+    "G2.3u",
+    "G2.4u",
+    "G2.5u"
+  ],
+  "independent_factorial_moment_controls": [
+    {
+      "complete_integrand_terms": 11865,
+      "rational_integral": "33751643/7938000",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 12513,
+      "rational_integral": "-3155519/1134000",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 11884,
+      "rational_integral": "500173/158760",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 13447,
+      "rational_integral": "13853879/27216000",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 11889,
+      "rational_integral": "-1303943/1814400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 13462,
+      "rational_integral": "116892491/27216000",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 602,
+      "rational_integral": "-435657385/254016",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 602,
+      "rational_integral": "-743627923/84672",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 602,
+      "rational_integral": "2864279/9408",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 2774,
+      "rational_integral": "10916975/36288",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 2778,
+      "rational_integral": "-447661/448",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 2776,
+      "rational_integral": "4617353/3024",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 5593,
+      "rational_integral": "3516263/36288",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 5600,
+      "rational_integral": "-14545081/36288",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 5600,
+      "rational_integral": "1123921/1344",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 3003,
+      "rational_integral": "-2101107707/1058400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 3021,
+      "rational_integral": "-5045519131/352800",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 7785,
+      "rational_integral": "151153171/1058400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 3053,
+      "rational_integral": "46957742831/6350400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 3051,
+      "rational_integral": "116785975637/2116800",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 3469,
+      "rational_integral": "383706017/2116800",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 7296,
+      "rational_integral": "-66222911089/25401600",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 7296,
+      "rational_integral": "-462902223041/25401600",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 12980,
+      "rational_integral": "-29969675459/2822400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 587,
+      "rational_integral": "-320332247/1058400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 587,
+      "rational_integral": "7966211/352800",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 587,
+      "rational_integral": "-320332247/1058400",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 2724,
+      "rational_integral": "13298531/75600",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 2720,
+      "rational_integral": "-698809/226800",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 2724,
+      "rational_integral": "13298531/75600",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 5497,
+      "rational_integral": "-1955713/9450",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 5492,
+      "rational_integral": "-3041221/453600",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "complete_integrand_terms": 5497,
+      "rational_integral": "-1955713/9450",
+      "simplex_blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  ],
+  "matrix_rank": 5,
+  "nonzero_complete_kernel_controls": [
+    {
+      "all_five_momentum_spinors": [
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          -3,
+          4
+        ]
+      ],
+      "composition": "Q0|G2.1",
+      "history_key": "('Q0', 'G2.1', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('i', 2))))",
+      "independent_modular_kernel": 713141224,
+      "prime": 2147483647,
+      "rational_value": "-33751643/7938000"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          -3,
+          4
+        ]
+      ],
+      "composition": "Q0|G2.1",
+      "history_key": "('Q0', 'G2.1', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 2)), (('O', 2), ('i', 1))))",
+      "independent_modular_kernel": 518545342,
+      "prime": 2147483647,
+      "rational_value": "3155519/1134000"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          -3,
+          4
+        ]
+      ],
+      "composition": "Q0|G2.1",
+      "history_key": "('Q0', 'G2.1', (0,), ((('O', 0), ('i', 1)), (('O', 1), ('i', 0)), (('O', 2), ('i', 2))))",
+      "independent_modular_kernel": 938462254,
+      "prime": 2147483647,
+      "rational_value": "-500173/158760"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          -3,
+          4
+        ]
+      ],
+      "composition": "Q0|G2.2",
+      "history_key": "('Q0', 'G2.2', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('i', 2))))",
+      "independent_modular_kernel": 907256370,
+      "prime": 2147483647,
+      "rational_value": "-13853879/27216000"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          -3,
+          4
+        ]
+      ],
+      "composition": "Q0|G2.2",
+      "history_key": "('Q0', 'G2.2', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 2)), (('O', 2), ('i', 1))))",
+      "independent_modular_kernel": 1595736346,
+      "prime": 2147483647,
+      "rational_value": "1303943/1814400"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -4,
+          4,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          5,
+          -3,
+          4
+        ]
+      ],
+      "composition": "Q0|G2.2",
+      "history_key": "('Q0', 'G2.2', (0,), ((('O', 0), ('i', 1)), (('O', 1), ('i', 0)), (('O', 2), ('i', 2))))",
+      "independent_modular_kernel": 352994435,
+      "prime": 2147483647,
+      "rational_value": "-116892491/27216000"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.3u",
+      "history_key": "('Q0', 'G2.3u', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 813337910,
+      "prime": 2147483647,
+      "rational_value": "2178286925/254016"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.3u",
+      "history_key": "('Q0', 'G2.3u', (0,), ((('O', 0), ('i', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 960136900,
+      "prime": 2147483647,
+      "rational_value": "3718139615/84672"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.3u",
+      "history_key": "('Q0', 'G2.3u', (1,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 178270664,
+      "prime": 2147483647,
+      "rational_value": "-14321395/9408"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.4u",
+      "history_key": "('Q0', 'G2.4u', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 1493496203,
+      "prime": 2147483647,
+      "rational_value": "-54584875/36288"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.4u",
+      "history_key": "('Q0', 'G2.4u', (0,), ((('O', 0), ('i', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 1078540310,
+      "prime": 2147483647,
+      "rational_value": "2238305/448"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.4u",
+      "history_key": "('Q0', 'G2.4u', (1,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 115746279,
+      "prime": 2147483647,
+      "rational_value": "-23086765/3024"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.5u",
+      "history_key": "('Q0', 'G2.5u', (0,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 844423131,
+      "prime": 2147483647,
+      "rational_value": "-17581315/36288"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.5u",
+      "history_key": "('Q0', 'G2.5u', (0,), ((('O', 0), ('i', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 1679558149,
+      "prime": 2147483647,
+      "rational_value": "72725405/36288"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "Q0|G2.5u",
+      "history_key": "('Q0', 'G2.5u', (1,), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 477747017,
+      "prime": 2147483647,
+      "rational_value": "-5619605/1344"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G1.1|G1.1",
+      "history_key": "('G1.1', 'G1.1', (0, 1), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 98406263,
+      "prime": 2147483647,
+      "rational_value": "-2101107707/211680"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G1.1|G1.1",
+      "history_key": "('G1.1', 'G1.1', (0, 1), ((('O', 0), ('i', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 880500267,
+      "prime": 2147483647,
+      "rational_value": "-5045519131/70560"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G1.1|G1.1",
+      "history_key": "('G1.1', 'G1.1', (0, 2), ((('O', 0), ('i', 0)), (('O', 1), ('i', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 82651646,
+      "prime": 2147483647,
+      "rational_value": "151153171/211680"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.1|Q0",
+      "history_key": "('G2.1', 'Q0', (0, 1, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 2)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 2025086706,
+      "prime": 2147483647,
+      "rational_value": "-46957742831/1270080"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.1|Q0",
+      "history_key": "('G2.1', 'Q0', (0, 1, None), ((('O', 0), ('o', 2)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 1336478947,
+      "prime": 2147483647,
+      "rational_value": "-116785975637/423360"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.1|Q0",
+      "history_key": "('G2.1', 'Q0', (0, None, 1), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 699752298,
+      "prime": 2147483647,
+      "rational_value": "-383706017/423360"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.2|Q0",
+      "history_key": "('G2.2', 'Q0', (0, 1, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 2)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 704526336,
+      "prime": 2147483647,
+      "rational_value": "66222911089/5080320"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.2|Q0",
+      "history_key": "('G2.2', 'Q0', (0, 1, None), ((('O', 0), ('o', 2)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 533553747,
+      "prime": 2147483647,
+      "rational_value": "462902223041/5080320"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.2|Q0",
+      "history_key": "('G2.2', 'Q0', (0, None, 1), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 685457529,
+      "prime": 2147483647,
+      "rational_value": "29969675459/564480"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.3u|Q0",
+      "history_key": "('G2.3u', 'Q0', (0, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 155412048,
+      "prime": 2147483647,
+      "rational_value": "320332247/211680"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.3u|Q0",
+      "history_key": "('G2.3u', 'Q0', (0, None), ((('O', 0), ('o', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 1268920461,
+      "prime": 2147483647,
+      "rational_value": "-7966211/70560"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.3u|Q0",
+      "history_key": "('G2.3u', 'Q0', (1, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 155412048,
+      "prime": 2147483647,
+      "rational_value": "320332247/211680"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.4u|Q0",
+      "history_key": "('G2.4u', 'Q0', (0, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 910833289,
+      "prime": 2147483647,
+      "rational_value": "-13298531/15120"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.4u|Q0",
+      "history_key": "('G2.4u', 'Q0', (0, None), ((('O', 0), ('o', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 1556310199,
+      "prime": 2147483647,
+      "rational_value": "698809/45360"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.4u|Q0",
+      "history_key": "('G2.4u', 'Q0', (1, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 910833289,
+      "prime": 2147483647,
+      "rational_value": "-13298531/15120"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.5u|Q0",
+      "history_key": "('G2.5u', 'Q0', (0, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 353370037,
+      "prime": 2147483647,
+      "rational_value": "1955713/1890"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.5u|Q0",
+      "history_key": "('G2.5u', 'Q0', (0, None), ((('O', 0), ('o', 1)), (('O', 1), ('i', 0)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 197823235,
+      "prime": 2147483647,
+      "rational_value": "3041221/90720"
+    },
+    {
+      "all_five_momentum_spinors": [
+        [
+          0,
+          -5,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          2,
+          -5,
+          5
+        ]
+      ],
+      "composition": "G2.5u|Q0",
+      "history_key": "('G2.5u', 'Q0', (1, None), ((('O', 0), ('i', 0)), (('O', 1), ('o', 1)), (('O', 2), ('s', 4))))",
+      "independent_modular_kernel": 353370037,
+      "prime": 2147483647,
+      "rational_value": "1955713/1890"
+    }
+  ],
+  "nonzero_minor_determinant": "-40218192879848296158871138572416947490900261260590322/5450370668490234375",
+  "nonzero_minor_rows": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "result": "passed",
+  "schema": "six-dimensional-exact-weights-independent-checks-v1",
+  "scope": "unique weights from the complete stated finite-functional equations; no universal all-order nilpotency claim",
+  "seconds": 9.4,
+  "trees_only_augmented_rank": 3,
+  "trees_only_rank": 2,
+  "unique_weights": [
+    "1/2",
+    "1/2",
+    "1",
+    "1/2",
+    "1/2"
+  ],
+  "verifier_sha256": "ef48c0326f8312321227845ae8bbf63b80c079cec022d7e584b2fbec0f6e1437"
+}
