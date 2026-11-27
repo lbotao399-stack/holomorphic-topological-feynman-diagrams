@@ -1,0 +1,13 @@
+theory 8d gauge so5 matter None H=4 N=20: order 3, O = g^v,g^v,g^v, jets {('O', 0): (0,)}, functionals g,g,g,g,g,g,g,g, F = 14, seed 31, R = 5, nmom = 4, P = 2147483647
+blocks: {'g': 10, 'g^v': 10}
+  order 1 graphs: [('G1.1', 2)]
+  order 2 graphs: [('G2.1', 2), ('G2.2', 1), ('G2.3', 6)]
+  order 3 graphs: [('G3.1', 2), ('G3.2', 1), ('G3.3', 2), ('G3.4', 1), ('G3.5', 1), ('G3.6', 2), ('G3.7', 2), ('G3.8', 1), ('G3.9', 2), ('G3.10', 2), ('G3.11', 8), ('G3.12', 1)]
+  [G2.3: block-triangular numeric density, symbolic kernel from the tight plan]
+  [G3.6: block-triangular numeric density]
+  [G3.7: block-triangular numeric density]
+  [G3.9: block-triangular numeric density]
+  [G3.10: block-triangular numeric density]
+  [G3.11: block-triangular numeric density]
+  <hatQ[G3.11] hatQ[Q0] O>: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]   (histories 144, keys 0, kernel pts 0, colour 5s, total 5s)
+total time 5s

@@ -1,0 +1,2 @@
+patterns s in {0,+1,-1}^5 with residual 0 on 20 equations: 1 of 243
+   {'G2.1': 1, 'G2.2': 1, 'G2.3u': 1, 'G2.4u': 1, 'G2.5u': 1}  15k3+6k4+4k5 = 20

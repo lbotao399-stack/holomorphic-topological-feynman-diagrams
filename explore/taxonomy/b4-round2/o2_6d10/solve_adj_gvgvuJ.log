@@ -1,0 +1,7 @@
+group o2_6d10/E_adj_gvgvuJ.json: F = 10, compositions 11, missing none
+  lower compositions used: ['G1.1|G1.1']
+order 2 system: 10 equations, 5 unknowns, rank 2, augmented rank 2
+nonzero columns: ['G2.1', 'G2.2']
+ansatz kappa = +1/|Aut|: residual [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ansatz kappa = -1/|Aut|: residual [1002225207, 1215158212, 0, 398684234, 1504221130, 1457802098, 0, 238757989, 0, 635370915]
+consistent, underdetermined: rank 2 < 5

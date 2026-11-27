@@ -1,0 +1,16 @@
+theory 6d10 gauge sl2 matter fund*1 H=3 N=10: order 2, O = gv,gv,u, jets {('O', 0): (0,), ('O', 2): (1,)}, functionals g,g,g,g,u, F = 10, seed 62, R = 3, nmom = 4, P = 2147483647
+blocks: {'g': 3, 'u': 4, 'gv': 3}
+  order 1 graphs: [('G1.1', 2)]
+  order 2 graphs: [('G2.1', 2), ('G2.2', 2), ('G2.3u', 1), ('G2.4u', 2), ('G2.5u', 2)]
+  <hatQ[Q0] hatQ[G2.1] O>: [21891299, 1974465056, 1491452534, 0, 387225117, 197247888, 91370173, 677313545, 373219051, 0]   (histories 120, keys 24, kernel pts 6518, colour 0s, total 1s)
+  <hatQ[Q0] hatQ[G2.2] O>: [1641356052, 1747047128, 812827295, 0, 1912619259, 717587941, 1288655376, 985371166, 1205544152, 0]   (histories 120, keys 24, kernel pts 6502, colour 0s, total 1s)
+  <hatQ[Q0] hatQ[G2.3u] O>: [0, 4507568, 2145742330, 0, 710826549, 2147480002, 2751280, 0, 0, 0]   (histories 20, keys 8, kernel pts 530, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.4u] O>: [0, 432652027, 1502019631, 0, 712326949, 1073739272, 1925896, 0, 0, 0]   (histories 20, keys 8, kernel pts 468, colour 0s, total 0s)
+  <hatQ[Q0] hatQ[G2.5u] O>: [0, 1004262567, 1717174303, 0, 1190712515, 2147481946, 717111813, 0, 0, 0]   (histories 20, keys 8, kernel pts 580, colour 0s, total 0s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [1040617667, 2139281245, 696507354, 0, 2002283647, 0, 554565742, 1215115617, 1710287576, 0]   (histories 216, keys 48, kernel pts 10976, colour 0s, total 1s)
+  <hatQ[G2.1] hatQ[Q0] O>: [1778681339, 921465271, 397335350, 0, 684477243, 1037656862, 1998084521, 2129777492, 917310917, 0]   (histories 216, keys 48, kernel pts 11008, colour 1s, total 1s)
+  <hatQ[G2.2] hatQ[Q0] O>: [1406471594, 1905312687, 1245098438, 0, 139752943, 194990956, 639574353, 968689106, 943749386, 0]   (histories 216, keys 48, kernel pts 10976, colour 0s, total 1s)
+  <hatQ[G2.3u] hatQ[Q0] O>: [0, 2145815279, 1741317, 0, 712762549, 3645, 2144732367, 0, 0, 0]   (histories 24, keys 10, kernel pts 602, colour 0s, total 0s)
+  <hatQ[G2.4u] hatQ[Q0] O>: [0, 1716819060, 645464016, 0, 713682149, 1073744375, 2145557751, 0, 0, 0]   (histories 24, keys 10, kernel pts 496, colour 0s, total 0s)
+  <hatQ[G2.5u] hatQ[Q0] O>: [0, 1144546040, 430309344, 0, 1907443864, 1701, 1430371834, 0, 0, 0]   (histories 24, keys 10, kernel pts 632, colour 0s, total 0s)
+total time 5s

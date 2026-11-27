@@ -1,0 +1,11 @@
+group o2_6d10/E_f16interp_gv3J.json: F = 10, compositions 11, missing none
+  lower compositions used: ['G1.1|G1.1']
+order 2 system: 10 equations, 5 unknowns, rank 2, augmented rank 2
+nonzero columns: ['G2.1', 'G2.2']
+ansatz kappa = +1/|Aut|: residual [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ansatz kappa = -1/|Aut|: residual [0, 1398170549, 1518909922, 1440207638, 420547431, 1399950941, 803336605, 207528652, 1974448628, 508729960]
+consistent, underdetermined: rank 2 < 5
+null space of the coefficient matrix (3 vectors):
+   {'G2.3u': '1'}
+   {'G2.4u': '1'}
+   {'G2.5u': '1'}

@@ -1,0 +1,10 @@
+fan(4) Taylor order 2 available
+tadpole(5,0) edges (order -v,w): [(4, 5), (3, 4), (3, 5), (2, 3), (2, 5), (1, 2), (1, 5), (0, 1), (0, 4)] ; z=0 moment sign 1
+tadpole root edges in key order: ([4, 3, 2, 1],5); unknown moments t_p: 4
+theory GL(2)+1F: 3124 monomials (deg 4-5, N_B + N_psi >= 4, 1 <= total derivative <= 1), sample 150
+nonzero on: Q2^2 68, {Q0,Q4fan} 68, {Q0,T50 z=0} 45, {Q0,T50 unknown moments} 28 ; equations 1175  [41s]
+rank 2 of 4 unknowns; inconsistent equations: 0
+  1*t(0, 0, 0, 1) + 1*t(1, 0, 0, 0) = 4/4725
+  1*t(0, 0, 1, 0) + 1*t(0, 1, 0, 0) = 1/1350
+undetermined: [(0, 1, 0, 0), (1, 0, 0, 0)]
+[41s]

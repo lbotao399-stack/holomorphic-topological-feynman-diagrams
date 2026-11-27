@@ -1,0 +1,8 @@
+fan(4) Taylor order 2 available
+tadpole(5,0) edges (order -v,w): [(4, 5), (3, 4), (3, 5), (2, 3), (2, 5), (1, 2), (1, 5), (0, 1), (0, 4)] ; z=0 moment sign 1
+tadpole root edges in key order: ([4, 3, 2, 1],5); unknown moments t_p: 14
+theory 3d U(1) charges [1]: 78 monomials (deg 4-5, N_B + N_psi >= 4, 1 <= total derivative <= 2), sample 78
+nonzero on: Q2^2 18, {Q0,Q4fan} 18, {Q0,T50 z=0} 0, {Q0,T50 unknown moments} 0 ; equations 63  [1s]
+rank 0 of 14 unknowns; inconsistent equations: 0
+undetermined: [(0, 0, 0, 1), (0, 0, 1, 0), (0, 1, 0, 0), (1, 0, 0, 0), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 2, 0), (0, 1, 0, 1), (0, 1, 1, 0), (0, 2, 0, 0), (1, 0, 0, 1), (1, 0, 1, 0), (1, 1, 0, 0), (2, 0, 0, 0)]
+[1s]

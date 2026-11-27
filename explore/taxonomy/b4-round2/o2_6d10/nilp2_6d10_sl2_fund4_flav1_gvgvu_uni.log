@@ -1,0 +1,10 @@
+theory 6d10 gauge sl2 matter fund*4 H=3 N=22: order 2, O = gv,gv,u, jets {}, functionals g,g,g,g,u, F = 8, seed 61, R = 3, nmom = 3, P = 2147483647
+blocks: {'g': 3, 'u': 16, 'gv': 3}
+  order 1 graphs: [('G1.1', 2)]
+  order 2 graphs: [('G2.1', 2), ('G2.2', 2), ('G2.3u', 1), ('G2.4u', 2), ('G2.5u', 2)]
+  <hatQ[Q0] hatQ[G2.1] O>: [1074013802, 2147261555, 1908872504, 1069437816, 636088136, 0, 0, 0]   (histories 120, keys 4, kernel pts 624, colour 1s, total 1s)
+  <hatQ[Q0] hatQ[G2.2] O>: [1074008714, 2147203037, 2147481567, 533488588, 1192852259, 0, 0, 0]   (histories 120, keys 4, kernel pts 504, colour 2s, total 3s)
+  <hatQ[Q0] hatQ[G2.3u] O>: [0, 0, 0, 0, 0, 0, 0, 0]   (histories 20, keys 4, kernel pts 214, colour 4s, total 4s)
+  <hatQ[Q0] hatQ[G2.4u] O>: [0, 0, 0, 0, 0, 0, 0, 0]   (histories 20, keys 4, kernel pts 214, colour 2s, total 3s)
+  <hatQ[Q0] hatQ[G2.5u] O>: [0, 0, 0, 0, 0, 0, 0, 0]   (histories 20, keys 4, kernel pts 218, colour 3s, total 3s)
+[killed 05:16, same reason]

@@ -1,0 +1,13 @@
+theory 8d gauge so5 matter None H=4 N=20: order 2, O = g^v,g^v,g^v, jets {}, functionals g,g,g,g,g,g,g^v, F = 6, seed 11, R = 3, nmom = 4, P = 2147483647
+blocks: {'g': 10, 'g^v': 10}
+  order 1 graphs: [('G1.1', 2)]
+  order 2 graphs: [('G2.1', 2), ('G2.2', 1), ('G2.3', 6)]
+  [G2.3: block-triangular numeric density]
+  <hatQ[Q0] hatQ[G2.1] O>: [0, 319733249, 1406624635, 983041269, 776084846, 1567204866]   (histories 252, keys 6, kernel pts 16380, colour 0s, total 1s)
+  <hatQ[Q0] hatQ[G2.2] O>: [0, 392302401, 1762749973, 1967000905, 1139662377, 1909698723]   (histories 252, keys 6, kernel pts 16338, colour 0s, total 1s)
+  <hatQ[Q0] hatQ[G2.3] O>: [0, 1076734776, 871045704, 1530465306, 920462548, 1639247228]   (histories 252, keys 6, kernel pts 15744, colour 0s, total 4s)
+  <hatQ[G1.1] hatQ[G1.1] O>: [0, 576347660, 0, 0, 781927110, 0]   (histories 480, keys 8, kernel pts 21840, colour 14s, total 14s)
+  <hatQ[G2.1] hatQ[Q0] O>: [0, 631288272, 740859012, 1164442378, 730735811, 580278781]   (histories 324, keys 1, kernel pts 2730, colour 5s, total 5s)
+  <hatQ[G2.2] hatQ[Q0] O>: [0, 1911583251, 384733674, 180482742, 1684160578, 237784924]   (histories 324, keys 1, kernel pts 2730, colour 7s, total 7s)
+  <hatQ[G2.3] hatQ[Q0] O>: [0, 291277415, 1276437943, 617018341, 263864886, 508236419]   (histories 324, keys 1, kernel pts 2436, colour 8s, total 9s)
+total time 40s
