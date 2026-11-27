@@ -160,6 +160,7 @@ Not included: intermediate data above 0.5 MB (pickles, SQLite, binary caches, th
 
 | path | content |
 |---|---|
+| `SCORE.md` | 100-point rubric (items A1–D3, max per item, current score, evidence folder, what full marks needs) and log of score changes |
 | `PLAN.md` | problem list; §10: circuit-reduction formalism by $(H,T)$ with every result and its folder |
 | `code/htk/` | kernel engine: graphs, series–parallel and $Y$–$\Delta$ reduction, brute-force oracle, conventions |
 | `explore/circuit-general/` | atlas, cores, symmetry, graphical functions, locality, five-loop, $K_5$, assembly |
