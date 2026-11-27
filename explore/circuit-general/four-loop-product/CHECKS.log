@@ -1,0 +1,48 @@
+Complete four-loop product; exact arithmetic throughout.
+Recorded 2026-11-27.
+
+python3 explore/circuit-general/four-loop-product/quartic_b_squared.py --recompute --write
+  21 complete triangular source-grid nodes.
+  4 independent complete source assignments, including dependent and zero sources.
+  14 sourced geometries per source assignment; every required original current retained.
+  Wrote the complete four-loop product certificate.
+  Elapsed 238.627 seconds.
+
+python3 explore/circuit-general/four-loop-product/run_checks.py
+  check_wick.py:
+    all four superpotential placements and complete balanced source rows: passed.
+    complete source/covariant reconstruction and physical specializations: passed.
+    every original matching against independent literal Delta operators: passed.
+    normalization and exact-source input guards: passed.
+    Ran 4 tests in 1.226 seconds; OK.
+  check_geometries.py:
+    Every original graph current agrees: 54 complete moments.
+    sourcefree_contractions: 10 graphs.
+    series_parallel_generic: 1 graph.
+    sourced_core_periods: 3 graphs.
+    Elapsed 4.299 seconds.
+  check_dependencies.py:
+    Verified 38 runtime, exact-data, and complete-certificate fingerprints.
+  render_tensor.py --check:
+    Every printed physical and symbolic-charge spinor coefficient agrees.
+  Complete four-loop product checks passed.
+
+An additional complete direct generic-source evaluation was replayed while
+recording all file reads in both parent and finite-period worker processes.
+The entire result agreed with its saved graph data. The independent
+contraction route was also traced. These executions opened no finite
+period lookup tables: the exact structural and wheel formulas suffice.
+The separately checked dependency manifest records every opened repository
+implementation/data file and every verification/rendering script.
+
+Counts at every complete source reconstruction:
+  324 valid original Wick matchings per fixed superpotential position.
+  732 excluded matchings with explicit parallel-edge or Laman witnesses.
+  14 distinct original sourced geometries.
+  16 nonzero cubic charge coefficients; the four remaining coefficients are zero.
+  Every nonrational channel cancels as an all-source polynomial.
+  Seven generic-source geometries individually have nonzero zeta(3) terms.
+
+The default replay reassembles stored all-source graph data and freshly
+integrates the generic-source controls. --recompute repeats all original
+geometric integrations; the two verification scopes are not conflated.

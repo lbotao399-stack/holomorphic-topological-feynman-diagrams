@@ -1,0 +1,93 @@
+FULL SUPPORTED-SOURCE FIVE-LOOP KERNEL: OBSERVED RUNS
+
+Exploratory source reconstruction and complete shared solve:
+  All eleven interpolation points reconstructed without changing any source.
+  Ten nonzero scalar-numerator coefficients have exact rational rank ten;
+  the additional candidate pure fifth power is exactly zero.
+  Joint scalar support: 14,937 power orbits.
+  Successful witness-free shared elimination:
+    65,226 variables; 258,089 complete inherited rows; 59,344 pivots.
+    2,367,547 nonconstant rational coefficient products.
+    Every one of eleven residual dictionaries is empty.
+    Elapsed 43.922 seconds including loading.
+  Complete finite coefficients are recorded in README.md and source_certificate.json.
+
+Observed controlled tree/basis comparison on interpolation sample (3,1):
+  Default source numerator: 109.748 seconds (one sample, not a cumulative clock).
+  Joint tree-flow and cycle-basis numerator: 3.796 seconds.
+  Including equality of all 12,014 scalar-core coefficients: 4.732 seconds.
+  Both numerator outputs contain 37,514 terms; the observed full equality
+  comparison checks every scalar-core coefficient, including all sources.
+  The optional benchmark_trees.py --baseline command repeats the complete check.
+
+First public certificate generation: bounded proof-history stop.
+  All eleven original source numerators were reconstructed in 52.414 seconds.
+  A fresh transformed rational source matched all 14,916 scalar coefficients.
+  215,623 complete local/dimension rows and 42,472 complete annihilator rows regenerated.
+  The 4,000,000 recorded-history-entry bound prevented complete proof construction.
+  A diagnostic rerun of the successful scratch ordering isolated the same bound:
+    3,999,943 history entries; 55,829 pivots; 1,954,765 coefficient products.
+    56 residual coefficients remained across four targets; seven targets were complete.
+    Every stopped whole-target identity was still directly verified.
+  This was a history-recording limit, NOT a 100-million arithmetic limit,
+  incorrect finite value, lost source, or demonstrated row-order failure.
+  No complete certificate was written by the stopped run.
+  Only the identified proof-history cap was then raised to 6,000,000.
+  The 100-million arithmetic and 5-million active coefficient bounds remain unchanged.
+
+Completed final PUBLIC certificate GENERATION and direct original-row verification:
+  python3 explore/circuit-general/forest-finite-jets/certify_sources.py --write
+  Source (1, 1): 10577 original / 7368 scalar terms. (1.727 s)
+  Source (1, -1): 27892 original / 11520 scalar terms. (8.636 s)
+  Source (3, 1): 37514 original / 12014 scalar terms. (10.300 s)
+  Source (1, 0): 75615 original / 14265 scalar terms. (21.568 s)
+  Source (2, 0): 103324 original / 14292 scalar terms. (25.913 s)
+  Source (0, 1): 35907 original / 11585 scalar terms. (27.467 s)
+  Source (0, 2): 99678 original / 14288 scalar terms. (31.996 s)
+  Source (0, 3): 99865 original / 14293 scalar terms. (36.400 s)
+  Source (1, 2): 75617 original / 14759 scalar terms. (48.155 s)
+  Source (2, 1): 37779 original / 11979 scalar terms. (49.845 s)
+  Source (2, 2): 61105 original / 13130 scalar terms. (52.539 s)
+  Fresh general-frame source: every one of 14916 scalar coefficients agrees. (88.706 s)
+  Regenerated 2277 complete finite seeds. (134.648 s)
+  Closed 47092 local scalar variables. (238.549 s)
+  Regenerated 215623 local/dimension rows. (317.964 s)
+  Regenerated 42472 complete annihilator rows. (374.744 s)
+  Shared elimination statistics: {'variables': 65226, 'rows': 258095, 'pivots': 59411, 'rational_coefficient_products': 2474777, 'peak_active_coefficients': 4036907, 'active_coefficients': 240686, 'history_entries': 4191829, 'stopped_by': None, 'targets': 11, 'residual_periods': 0, 'witness_rows': 31447, 'target_residual_periods': 0} (458.016 s)
+  All eleven original-row identities verified with zero residual. (462.097 s)
+  Wrote source_certificate.json and exact source_witnesses.json.gz. (462.396 s)
+
+Completed final FOCUSED checks:
+  python3 explore/circuit-general/forest-finite-jets/check_sources.py
+  test_complete_and_budget_stopped_targets (__main__.BatchWitnessChecks.test_complete_and_budget_stopped_targets) ... ok
+  test_history_and_initial_storage_guards (__main__.BatchWitnessChecks.test_history_and_initial_storage_guards) ... ok
+  test_full_source_evaluator_support_and_degenerate_sources (__main__.CovariantFormulaChecks.test_full_source_evaluator_support_and_degenerate_sources) ... ok
+  test_ten_real_coefficients_are_nonzero_without_zeta_independence (__main__.CovariantFormulaChecks.test_ten_real_coefficients_are_nonzero_without_zeta_independence) ... ok
+  test_zeta5_factorization_and_source_specializations (__main__.CovariantFormulaChecks.test_zeta5_factorization_and_source_specializations) ... ok
+  test_both_structural_source_zeros (__main__.TreeMinorChecks.test_both_structural_source_zeros) ... ok
+  test_exhausted_budget_never_installs_partial_cache (__main__.TreeMinorChecks.test_exhausted_budget_never_installs_partial_cache) ... ok
+  test_full_rational_sources_and_orientation (__main__.TreeMinorChecks.test_full_rational_sources_and_orientation) ... ok
+  test_parallel_edges_keep_individual_positions (__main__.TreeMinorChecks.test_parallel_edges_keep_individual_positions) ... ok
+  test_rank_zero_is_exact_zero (__main__.TreeMinorChecks.test_rank_zero_is_exact_zero) ... ok
+  test_tree_and_allocation_guards (__main__.TreeMinorChecks.test_tree_and_allocation_guards) ... ok
+
+  ----------------------------------------------------------------------
+  Ran 11 tests in 3.872s
+
+  OK
+
+All 42 implementation hashes, all four period-table hashes, all three immutable
+reference hashes, and compressed/decompressed complete witness hashes match.
+
+Stored-certificate REPLAY status:
+  No duplicate long replay was launched after the successful fresh generation.
+  The generation directly summed and verified every original-row witness.
+  Default certify_sources.py supports future full source reconstruction plus
+  stored-witness replay, without repeating elimination.
+  run_checks.py runs the focused tests followed by that complete future replay.
+
+Final publication formatting check:
+  Removed one extra EOF blank line in new symmetry/batch_witness.py.
+  ast.dump before and after is identical; only its implementation fingerprint
+  in the new source certificate was refreshed. Mathematical data and every
+  original-row witness are unchanged. All 11 focused tests passed again.

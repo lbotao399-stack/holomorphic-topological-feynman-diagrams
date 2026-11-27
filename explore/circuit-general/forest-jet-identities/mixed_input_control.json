@@ -1,0 +1,1101 @@
+{
+  "schema": 1,
+  "source_spinors_gamma4_c_gamma5": [
+    [
+      2,
+      1
+    ],
+    [
+      -1,
+      4
+    ],
+    [
+      3,
+      -2
+    ]
+  ],
+  "complete_tensor_index_order": [
+    "beta1",
+    "beta2",
+    "beta3",
+    "b"
+  ],
+  "scope": "all 16 entries of the entire rank-four tensor, every original source and routed edge retained",
+  "common_chord_input_currents": [
+    "y_AB-y_WA-lambda_gamma5",
+    "y_WA",
+    "y_WB",
+    "lambda_gamma4+lambda_c+lambda_gamma5-y_WB-y_AB"
+  ],
+  "physical_head_factors_not_applied": "(-2)^4; this is the complete raw geometric current tensor",
+  "complete_original_graph_tensors": [
+    {
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "complete_balanced_sources": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "4"
+        ],
+        [
+          "3",
+          "-2"
+        ],
+        [
+          "-4",
+          "-3"
+        ]
+      ],
+      "original_edges_beta1_beta2_beta3_b": [
+        5,
+        1,
+        2,
+        4
+      ],
+      "complete_rank_four_tensor": [
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-994823387/50803200",
+            "z3": "453289/58800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-433346113/25401600",
+            "z3": "-24743/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "1718963383/76204800",
+            "z3": "-229939/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "76786511/10160640",
+            "z3": "-34317/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "6803337853/228614400",
+            "z3": "-1676663/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "1291738621/50803200",
+            "z3": "-21363/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "4092903299/50803200",
+            "z3": "-18871/294"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "609706333/16934400",
+            "z3": "-243679/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-3818919977/228614400",
+            "z3": "2463481/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-2529365527/50803200",
+            "z3": "516013/7350"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-1209864961/152409600",
+            "z3": "36109/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "28308941/7257600",
+            "z3": "15259/1400"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-729711307/21772800",
+            "z3": "7009/350"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "1237204309/65318400",
+            "z3": "-435277/12600"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-2145041701/91445760",
+            "z3": "1341677/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-965007187/152409600",
+            "z3": "-7297/2352"
+          }
+        }
+      ]
+    },
+    {
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "complete_balanced_sources": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "-1",
+          "4"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "3",
+          "-2"
+        ],
+        [
+          "-4",
+          "-3"
+        ]
+      ],
+      "original_edges_beta1_beta2_beta3_b": [
+        4,
+        1,
+        2,
+        5
+      ],
+      "complete_rank_four_tensor": [
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "50629063/10886400",
+            "z3": "-453289/58800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-91714337/7257600",
+            "z3": "24743/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-1480914007/50803200",
+            "z3": "229939/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-24268889/1254400",
+            "z3": "34317/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "12965797009/457228800",
+            "z3": "1676663/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "74086685/1354752",
+            "z3": "21363/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-7684857511/304819200",
+            "z3": "18871/294"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "87887641/4064256",
+            "z3": "243679/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "16026914233/457228800",
+            "z3": "-2463481/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "774367799/8709120",
+            "z3": "-516013/7350"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "1814132879/101606400",
+            "z3": "-36109/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "282909181/20321280",
+            "z3": "-15259/1400"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "744079631/101606400",
+            "z3": "-7009/350"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-64275141911/914457600",
+            "z3": "435277/12600"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "122205751/130636800",
+            "z3": "-1341677/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-36514913/1360800",
+            "z3": "7297/2352"
+          }
+        }
+      ]
+    },
+    {
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "complete_balanced_sources": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "4"
+        ],
+        [
+          "3",
+          "-2"
+        ],
+        [
+          "-4",
+          "-3"
+        ]
+      ],
+      "original_edges_beta1_beta2_beta3_b": [
+        4,
+        1,
+        2,
+        5
+      ],
+      "complete_rank_four_tensor": [
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "394716569/38102400",
+            "z3": "-453289/58800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-42065419/4233600",
+            "z3": "24743/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-359314189/12700800",
+            "z3": "229939/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-2060625817/101606400",
+            "z3": "34317/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-6010341901/228614400",
+            "z3": "1676663/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-1379609521/101606400",
+            "z3": "21363/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "-2635421039/33868800",
+            "z3": "18871/294"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-2979519139/101606400",
+            "z3": "243679/9800"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "7404560777/228614400",
+            "z3": "-2463481/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "216074147/2257920",
+            "z3": "-516013/7350"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "5387167549/304819200",
+            "z3": "-36109/2450"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "22826891/1244160",
+            "z3": "-15259/1400"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "complete_period_value": {
+            "1": "1183750723/43545600",
+            "z3": "-7009/350"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-191124389/5225472",
+            "z3": "435277/12600"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "complete_period_value": {
+            "1": "17575019533/914457600",
+            "z3": "-1341677/88200"
+          }
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "complete_period_value": {
+            "1": "-7063297/4233600",
+            "z3": "7297/2352"
+          }
+        }
+      ]
+    }
+  ],
+  "complete_rational_pair_tensors": [
+    {
+      "graph_positions": [
+        0,
+        1
+      ],
+      "complete_rank_four_tensor": [
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "complete_rational_value": "-2275663279/152409600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "complete_rational_value": "-301738517/10160640"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "complete_rational_value": "-200963051/30481920"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "complete_rational_value": "-1197914899/101606400"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "complete_rational_value": "1771498181/30481920"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "complete_rational_value": "8139978617/101606400"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "complete_rational_value": "16872562283/304819200"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "complete_rational_value": "5855429023/101606400"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "complete_rational_value": "2796358093/152409600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "complete_rational_value": "11926679803/304819200"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "complete_rational_value": "604533743/60963840"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "complete_rational_value": "603623693/33868800"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "complete_rational_value": "-1596743881/60963840"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "complete_rational_value": "-3130285439/60963840"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "complete_rational_value": "-6864992251/304819200"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "complete_rational_value": "-561630827/16934400"
+        }
+      ]
+    },
+    {
+      "graph_positions": [
+        0,
+        2
+      ],
+      "complete_rank_four_tensor": [
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "complete_rational_value": "-40160111/4354560"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "complete_rational_value": "-97962661/3628800"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "complete_rational_value": "-62417393/10886400"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "complete_rational_value": "-184680101/14515200"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "complete_rational_value": "2360107/680400"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "complete_rational_value": "24568729/2073600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "complete_rational_value": "5704969/2073600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "complete_rational_value": "96959837/14515200"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "complete_rational_value": "213431/13608"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "complete_rational_value": "666372223/14515200"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "complete_rational_value": "423919661/43545600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "complete_rational_value": "968794831/43545600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "complete_rational_value": "-275671891/43545600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "complete_rational_value": "-767900369/43545600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "complete_rational_value": "-184542737/43545600"
+        },
+        {
+          "ordered_free_spinor_entries": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "complete_rational_value": "-174183697/21772800"
+        }
+      ]
+    }
+  ]
+}

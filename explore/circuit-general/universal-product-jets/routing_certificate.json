@@ -1,0 +1,3990 @@
+{
+  "schema": 1,
+  "scope": "all simultaneous finite input-current words on beta1,beta2,beta3,b; every original source and free spinor index retained",
+  "affine_spinor_basis_in_order": [
+    "lambda_gamma4",
+    "lambda_c",
+    "lambda_gamma5",
+    "y_WA",
+    "y_WB",
+    "y_AB"
+  ],
+  "complete_original_matching_count": 16,
+  "all_original_matching_maps": [
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        1,
+        1
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            1,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            1,
+            [
+              "B",
+              "A"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        1,
+        1
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            1,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            1,
+            [
+              "A",
+              "B"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        1,
+        1
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            1,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            1,
+            [
+              "A",
+              "B"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        1,
+        1
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            1,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            1,
+            [
+              "B",
+              "A"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        2,
+        2
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            2,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            2,
+            [
+              "B",
+              "A"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        2,
+        2
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            2,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            2,
+            [
+              "A",
+              "B"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        2,
+        2
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            2,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            2,
+            [
+              "A",
+              "B"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "M"
+      ],
+      "matter_flavors": [
+        2,
+        2
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            2,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "MM",
+        [
+          [
+            2,
+            [
+              "B",
+              "A"
+            ]
+          ]
+        ]
+      ],
+      "color_prefactor": "1",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "G"
+      ],
+      "matter_flavors": [
+        1,
+        0
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            1,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            2,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "fR",
+        1
+      ],
+      "color_prefactor": "-1/2",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "G"
+      ],
+      "matter_flavors": [
+        1,
+        0
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            1,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            2,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "fR",
+        1
+      ],
+      "color_prefactor": "1/2",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "G"
+      ],
+      "matter_flavors": [
+        2,
+        0
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            2,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            2,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "fR",
+        2
+      ],
+      "color_prefactor": "-1/2",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "M",
+        "G"
+      ],
+      "matter_flavors": [
+        2,
+        0
+      ],
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "beta",
+            2,
+            1,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            2,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "fR",
+        2
+      ],
+      "color_prefactor": "1/2",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 2,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            1,
+            3
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            2,
+            4
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "G",
+        "M"
+      ],
+      "matter_flavors": [
+        0,
+        1
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "b",
+            0,
+            1,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "fR",
+        1
+      ],
+      "color_prefactor": "-1/2",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "G",
+        "M"
+      ],
+      "matter_flavors": [
+        0,
+        1
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "b",
+            0,
+            1,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "fR",
+        1
+      ],
+      "color_prefactor": "1/2",
+      "commutator_slot": 1,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "G",
+        "M"
+      ],
+      "matter_flavors": [
+        0,
+        2
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "b",
+            0,
+            1,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": 1,
+      "generator_word": [
+        "fR",
+        2
+      ],
+      "color_prefactor": "-1/2",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    },
+    {
+      "cubic_types": [
+        "G",
+        "M"
+      ],
+      "matter_flavors": [
+        0,
+        2
+      ],
+      "ordered_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pairs": [
+        [
+          [
+            "b",
+            0,
+            1,
+            0
+          ],
+          [
+            "c",
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            2,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          [
+            "gamma",
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            "b",
+            0,
+            4,
+            0
+          ],
+          [
+            "c",
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          [
+            "gamma",
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "wick_sign": -1,
+      "generator_word": [
+        "fR",
+        2
+      ],
+      "color_prefactor": "1/2",
+      "commutator_slot": 2,
+      "full_source_vertices": {
+        "lambda_gamma4": 0,
+        "lambda_c": 1,
+        "lambda_gamma5": 3,
+        "dependent_balanced_source": 4
+      },
+      "original_tree_edges": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "common_chord_edges": [
+        1,
+        2,
+        6
+      ],
+      "all_original_input_current_maps": [
+        {
+          "input": "beta1",
+          "original_field": [
+            "beta",
+            1,
+            3,
+            0
+          ],
+          "original_edge": [
+            0,
+            3
+          ],
+          "edge_position": 1,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            1,
+            "0",
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta2",
+          "original_field": [
+            "beta",
+            2,
+            3,
+            0
+          ],
+          "original_edge": [
+            2,
+            3
+          ],
+          "edge_position": 5,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "beta3",
+          "original_field": [
+            "beta",
+            3,
+            4,
+            0
+          ],
+          "original_edge": [
+            0,
+            4
+          ],
+          "edge_position": 2,
+          "full_spinor_affine_coefficients": [
+            "0",
+            "0",
+            "0",
+            "0",
+            1,
+            "0"
+          ],
+          "head_derivative_factor": -2
+        },
+        {
+          "input": "b",
+          "original_field": [
+            "b",
+            0,
+            4,
+            0
+          ],
+          "original_edge": [
+            1,
+            4
+          ],
+          "edge_position": 4,
+          "full_spinor_affine_coefficients": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          "head_derivative_factor": -2
+        }
+      ]
+    }
+  ],
+  "spectator_derivatives": "derivatives on the separate free gamma5 are external source factors and are never reassigned to a propagator",
+  "geometric_period_relation_not_assumed": true,
+  "implementation_sha256": {
+    "explore/circuit-general/universal-product-jets/routing.py": "a511441bf34e94a288ac7437b84c81f8069e3721d932e208349839f6dec9165e",
+    "explore/circuit-general/universal-quartic-product/quartic_tensor.py": "541deeb2b1fdb06413199a13d8535ec2638dae756173a06a42239071be1dd0ad",
+    "explore/circuit-general/nonrenormalizable-product/nonabelian_wick.py": "f9904dd5bdb80445ee59f447a62ad56f02d549cae9ab8b31416bccf7f2f1f639"
+  }
+}

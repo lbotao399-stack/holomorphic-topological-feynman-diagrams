@@ -1,0 +1,4224 @@
+{
+  "schema": 1,
+  "scope": "complete original-current/source maps, smooth Hepp charts, every proper time face, and direct original-graph controls",
+  "independent_full_source_spinors": [
+    [
+      "2",
+      "-1"
+    ],
+    [
+      "-1",
+      "3"
+    ],
+    [
+      "4",
+      "2"
+    ]
+  ],
+  "radial_original_graph_maps": [
+    {
+      "graph_position": 1,
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "all_balanced_sources": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          "-1",
+          "3"
+        ],
+        [
+          "4",
+          "2"
+        ],
+        [
+          "-5",
+          "-4"
+        ]
+      ],
+      "original_times": [
+        "2",
+        "7",
+        "11",
+        "39/17",
+        "5",
+        "12/17",
+        "1"
+      ],
+      "series_coordinate_jacobian": "-3",
+      "complete_pulled_back_kernel_density": "3153966965/44791958721410208",
+      "full_original_current_affine_basis": [
+        "lambda_W",
+        "lambda_c",
+        "lambda_A",
+        "J_WA",
+        "J_WB",
+        "J_AB"
+      ],
+      "all_seven_original_current_coefficients": [
+        [
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "-1",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    {
+      "graph_position": 2,
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "all_balanced_sources": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "3"
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          "4",
+          "2"
+        ],
+        [
+          "-5",
+          "-4"
+        ]
+      ],
+      "original_times": [
+        "8/17",
+        "7",
+        "11",
+        "26/17",
+        "3",
+        "5",
+        "1"
+      ],
+      "series_coordinate_jacobian": "2",
+      "complete_pulled_back_kernel_density": "-9590532115/92383414862908554",
+      "full_original_current_affine_basis": [
+        "lambda_W",
+        "lambda_c",
+        "lambda_A",
+        "J_WA",
+        "J_WB",
+        "J_AB"
+      ],
+      "all_seven_original_current_coefficients": [
+        [
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "1",
+          "0",
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    {
+      "graph_position": 3,
+      "ordered_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "all_balanced_sources": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          "-1",
+          "3"
+        ],
+        [
+          "4",
+          "2"
+        ],
+        [
+          "-5",
+          "-4"
+        ]
+      ],
+      "original_times": [
+        "2",
+        "7",
+        "11",
+        "65/17",
+        "3",
+        "20/17",
+        "1"
+      ],
+      "series_coordinate_jacobian": "5",
+      "complete_pulled_back_kernel_density": "28580435/129388536222561",
+      "full_original_current_affine_basis": [
+        "lambda_W",
+        "lambda_c",
+        "lambda_A",
+        "J_WA",
+        "J_WB",
+        "J_AB"
+      ],
+      "all_seven_original_current_coefficients": [
+        [
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "complete_outer_affine_current_correction": [
+    {
+      "triangle": "TWA",
+      "chart_variables": [
+        "s1",
+        "s2",
+        "w1",
+        "w2",
+        "rX",
+        "rQ"
+      ],
+      "exact_parameter_point": [
+        "2/5",
+        "3/7",
+        "1/5",
+        "1/4",
+        "2/7",
+        "3/8"
+      ],
+      "coordinate_orientation": -1,
+      "coordinate_jacobian": "-97240500/65450827",
+      "full_corrected_jacobian": "-729/7840",
+      "incorrect_half_edge_jacobian": "8019/31360",
+      "nonzero_required_correction": "-2187/6272",
+      "grounded_core_current_check": {
+        "core_times": [
+          "160/403",
+          "420/403",
+          "440/403",
+          "5",
+          "20/7",
+          "20/3"
+        ],
+        "core_sources": [
+          [
+            "11/8",
+            "7/8"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "29/8",
+            "25/8"
+          ],
+          [
+            "-5",
+            "-4"
+          ]
+        ],
+        "common_currents": [
+          "-123/280",
+          "-111/280",
+          "677/560",
+          "529/560",
+          "1329/1568",
+          "1101/1568"
+        ],
+        "affine_chord_and_differential_checked": true
+      }
+    },
+    {
+      "triangle": "TBA",
+      "chart_variables": [
+        "s1",
+        "s2",
+        "w1",
+        "w2",
+        "rX",
+        "rQ"
+      ],
+      "exact_parameter_point": [
+        "2/5",
+        "3/7",
+        "1/5",
+        "1/4",
+        "2/7",
+        "3/8"
+      ],
+      "coordinate_orientation": -1,
+      "coordinate_jacobian": "-4917248000/589057443",
+      "full_corrected_jacobian": "-505521/39200",
+      "incorrect_half_edge_jacobian": "5560731/156800",
+      "nonzero_required_correction": "-1516563/31360",
+      "grounded_core_current_check": {
+        "core_times": [
+          "440/403",
+          "420/403",
+          "160/403",
+          "20/3",
+          "20/7",
+          "5"
+        ],
+        "core_sources": [
+          [
+            "2",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "29/8",
+            "25/8"
+          ],
+          [
+            "-45/8",
+            "-17/8"
+          ]
+        ],
+        "common_currents": [
+          "-321/1568",
+          "-669/1568",
+          "111/112",
+          "-1/560",
+          "47/56",
+          "159/280"
+        ],
+        "affine_chord_and_differential_checked": true
+      }
+    }
+  ],
+  "all_greedy_tree_sector_checks": {
+    "all_ordered_Hepp_sectors": 720,
+    "all_core_spanning_trees": 16,
+    "every_current_numerator_has_same_common_monomial": true,
+    "residual_denominator_constant_coefficient": 1
+  },
+  "all_proper_time_face_probes": [
+    {
+      "triangle": "TWA",
+      "source_simplex_point": [
+        "1/5",
+        "2/7"
+      ],
+      "scope": "all 62 exact pointwise leading-tree probes; sample zeros are not a universal vanishing proof",
+      "every_proper_subset": [
+        {
+          "shrinking_edge_subset": [
+            0
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "877566825/10645712896"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            1,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            0,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            4,
+            0,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            4,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            4,
+            0,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            4,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            4,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            4,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            4,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            3,
+            4,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            3,
+            4,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            3,
+            4,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            3,
+            4,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        }
+      ]
+    },
+    {
+      "triangle": "TBA",
+      "source_simplex_point": [
+        "1/5",
+        "2/7"
+      ],
+      "scope": "all 62 exact pointwise leading-tree probes; sample zeros are not a universal vanishing proof",
+      "every_proper_subset": [
+        {
+          "shrinking_edge_subset": [
+            0
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "123195541248000/5918755643287249"
+        },
+        {
+          "shrinking_edge_subset": [
+            1
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            0,
+            1,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            1,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            0,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            4,
+            0,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            4,
+            1,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            4,
+            0,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            4,
+            2
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            4,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            4,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            4,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            3,
+            4,
+            0,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            3,
+            4,
+            1
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            3,
+            4,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            2,
+            3,
+            4,
+            0
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        },
+        {
+          "shrinking_edge_subset": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "time_face_coordinate_edges": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "complete_six_current_jacobian": "0"
+        }
+      ]
+    }
+  ],
+  "direct_period_and_rational_boundary_controls": [
+    {
+      "degree": 0,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        0,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "2023/96"
+        },
+        {
+          "1": "215/64"
+        },
+        {
+          "1": "2071/192"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "127/64",
+          "all_time_faces_sum": "-2155/96",
+          "complete_rational_pair": "4691/192"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "3707/192",
+          "all_time_faces_sum": "-1205/96",
+          "complete_rational_pair": "2039/64"
+        }
+      ]
+    },
+    {
+      "degree": 0,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        0,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "2023/96"
+        },
+        {
+          "1": "215/64"
+        },
+        {
+          "1": "2071/192"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "127/64",
+          "all_time_faces_sum": "-2155/96",
+          "complete_rational_pair": "4691/192"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "3707/192",
+          "all_time_faces_sum": "-1205/96",
+          "complete_rational_pair": "2039/64"
+        }
+      ]
+    },
+    {
+      "degree": 1,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        0,
+        1
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-8205703/302400",
+          "z3": "-6289/2100"
+        },
+        {
+          "1": "-898001/151200",
+          "z3": "6289/2100"
+        },
+        {
+          "1": "-165671/11200",
+          "z3": "6289/2100"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-50651/17280",
+          "all_time_faces_sum": "11575/384",
+          "complete_rational_pair": "-285763/8640"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-201137/8640",
+          "all_time_faces_sum": "10741/576",
+          "complete_rational_pair": "-90563/2160"
+        }
+      ]
+    },
+    {
+      "degree": 1,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        0,
+        1
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-696979/302400",
+          "z3": "17699/1050"
+        },
+        {
+          "1": "3029927/151200",
+          "z3": "-17699/1050"
+        },
+        {
+          "1": "3023627/151200",
+          "z3": "-17699/1050"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "653/384",
+          "all_time_faces_sum": "-6157/384",
+          "complete_rational_pair": "1135/64"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "10879/1152",
+          "all_time_faces_sum": "-9503/1152",
+          "complete_rational_pair": "3397/192"
+        }
+      ]
+    },
+    {
+      "degree": 1,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        1,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "5477/864",
+          "z3": "-304/15"
+        },
+        {
+          "1": "-39785/1728",
+          "z3": "304/15"
+        },
+        {
+          "1": "-139019/4320",
+          "z3": "304/15"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-6851/3456",
+          "all_time_faces_sum": "16937/1152",
+          "complete_rational_pair": "-28831/1728"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-82133/8640",
+          "all_time_faces_sum": "9409/576",
+          "complete_rational_pair": "-55817/2160"
+        }
+      ]
+    },
+    {
+      "degree": 1,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        1,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-199267/4800",
+          "z3": "2981/300"
+        },
+        {
+          "1": "126289/21600",
+          "z3": "-2981/300"
+        },
+        {
+          "1": "-40987/7200",
+          "z3": "-2981/300"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-1403/384",
+          "all_time_faces_sum": "110639/3456",
+          "complete_rational_pair": "-61633/1728"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-38225/1152",
+          "all_time_faces_sum": "16157/1152",
+          "complete_rational_pair": "-27191/576"
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        0,
+        2
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "7057627/129600",
+          "z3": "171/100"
+        },
+        {
+          "1": "223741/64800",
+          "z3": "-171/100"
+        },
+        {
+          "1": "4482553/259200",
+          "z3": "-171/100"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "25811/4800",
+          "all_time_faces_sum": "-21013/400",
+          "complete_rational_pair": "277967/4800"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "214483/5760",
+          "all_time_faces_sum": "-41417/1200",
+          "complete_rational_pair": "2066423/28800"
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        0,
+        2
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "3225101/151200",
+          "z3": "5723/1050"
+        },
+        {
+          "1": "13262903/1814400",
+          "z3": "-5723/1050"
+        },
+        {
+          "1": "5405861/453600",
+          "z3": "-5723/1050"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "794279/259200",
+          "all_time_faces_sum": "-368287/14400",
+          "complete_rational_pair": "1484689/51840"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "63421/3240",
+          "all_time_faces_sum": "-2051/150",
+          "complete_rational_pair": "538613/16200"
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        1,
+        1
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "19938979/907200",
+          "z3": "1577/140"
+        },
+        {
+          "1": "946027/72576",
+          "z3": "-1577/140"
+        },
+        {
+          "1": "88891493/3628800",
+          "z3": "-1577/140"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "94033/28800",
+          "all_time_faces_sum": "-152393/4800",
+          "complete_rational_pair": "1008391/28800"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "199787/11520",
+          "all_time_faces_sum": "-69917/2400",
+          "complete_rational_pair": "2676943/57600"
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        1,
+        1
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "7071263/302400",
+          "z3": "-37873/1050"
+        },
+        {
+          "1": "-50413697/1209600",
+          "z3": "37873/1050"
+        },
+        {
+          "1": "-29408053/725760",
+          "z3": "37873/1050"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-146009/57600",
+          "all_time_faces_sum": "113467/7200",
+          "complete_rational_pair": "-210749/11520"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-1071919/103680",
+          "all_time_faces_sum": "146833/21600",
+          "complete_rational_pair": "-8883587/518400"
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        2,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "1370879/120960",
+          "z3": "8417/525"
+        },
+        {
+          "1": "200177/9450",
+          "z3": "-8417/525"
+        },
+        {
+          "1": "2271589/75600",
+          "z3": "-8417/525"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "60439/28800",
+          "all_time_faces_sum": "-12167/400",
+          "complete_rational_pair": "936463/28800"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "83053/5760",
+          "all_time_faces_sum": "-43139/1600",
+          "complete_rational_pair": "1191767/28800"
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        2,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "16"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-8"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "2046229/17280",
+          "z3": "-653/12"
+        },
+        {
+          "1": "-527429/10368",
+          "z3": "653/12"
+        },
+        {
+          "1": "-3966329/129600",
+          "z3": "653/12"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "950363/129600",
+          "all_time_faces_sum": "-650291/10800",
+          "complete_rational_pair": "1750771/25920"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "3528211/51840",
+          "all_time_faces_sum": "-284429/14400",
+          "complete_rational_pair": "22760777/259200"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        0,
+        3
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-889783369/6350400",
+          "z3": "76201/4900"
+        },
+        {
+          "1": "115599553/6350400",
+          "z3": "-76201/4900"
+        },
+        {
+          "1": "-52104139/7938000",
+          "z3": "-76201/4900"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-84853/7200",
+          "all_time_faces_sum": "123341/1120",
+          "complete_rational_pair": "-1536079/12600"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-1455131/20160",
+          "all_time_faces_sum": "3128971/42000",
+          "complete_rational_pair": "-73925927/504000"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        0,
+        3
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-8"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "12"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-12"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "12"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "3"
+        },
+        {
+          "powers": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "100957789/3175200",
+          "z3": "53707/4900"
+        },
+        {
+          "1": "41795591/3175200",
+          "z3": "-53707/4900"
+        },
+        {
+          "1": "465672551/31752000",
+          "z3": "-53707/4900"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "438167/86400",
+          "all_time_faces_sum": "-2680439/67200",
+          "complete_rational_pair": "339889/7560"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "910241/34560",
+          "all_time_faces_sum": "-13523101/672000",
+          "complete_rational_pair": "70250021/1512000"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        1,
+        2
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-266315989/2381400",
+          "z3": "100531/3675"
+        },
+        {
+          "1": "79959343/2381400",
+          "z3": "-100531/3675"
+        },
+        {
+          "1": "1387191067/95256000",
+          "z3": "-100531/3675"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-353021/50400",
+          "all_time_faces_sum": "102601/1440",
+          "complete_rational_pair": "-493007/6300"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-3672433/100800",
+          "all_time_faces_sum": "1095049/18000",
+          "complete_rational_pair": "-16341179/168000"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        1,
+        2
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-16"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "16"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-16"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "8"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "2"
+        },
+        {
+          "powers": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-73782059/12700800",
+          "z3": "-56677/2450"
+        },
+        {
+          "1": "-41728529/1411200",
+          "z3": "56677/2450"
+        },
+        {
+          "1": "-2380649833/63504000",
+          "z3": "56677/2450"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-1209983/259200",
+          "all_time_faces_sum": "2653399/86400",
+          "complete_rational_pair": "-458509/12960"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-15125171/518400",
+          "all_time_faces_sum": "12200363/864000",
+          "complete_rational_pair": "-876773/20250"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        2,
+        1
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-23392651/272160",
+          "z3": "9461/525"
+        },
+        {
+          "1": "6909323/340200",
+          "z3": "-9461/525"
+        },
+        {
+          "1": "62280767/13608000",
+          "z3": "-9461/525"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-899021/201600",
+          "all_time_faces_sum": "39157/640",
+          "complete_rational_pair": "-3308369/50400"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-677053/25200",
+          "all_time_faces_sum": "436063/8000",
+          "complete_rational_pair": "-41013029/504000"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        2,
+        1
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-32"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "16"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "16"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-8"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-16"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-16"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "8"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "4"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-8"
+        },
+        {
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "2"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-693003631/19051200",
+          "z3": "740843/14700"
+        },
+        {
+          "1": "517697501/9525600",
+          "z3": "-740843/14700"
+        },
+        {
+          "1": "4737307271/95256000",
+          "z3": "-740843/14700"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "1969433/518400",
+          "all_time_faces_sum": "-816371/57600",
+          "complete_rational_pair": "2329193/129600"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "2223733/259200",
+          "all_time_faces_sum": "-2063797/432000",
+          "complete_rational_pair": "2163757/162000"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 1,
+      "all_symmetric_spinor_powers": [
+        3,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-24255983/907200",
+          "z3": "-844/35"
+        },
+        {
+          "1": "-3699901/129600",
+          "z3": "844/35"
+        },
+        {
+          "1": "-7535483/162000",
+          "z3": "844/35"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-136999/40320",
+          "all_time_faces_sum": "19925/384",
+          "complete_rational_pair": "-557281/10080"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-247931/12600",
+          "all_time_faces_sum": "1285811/24000",
+          "complete_rational_pair": "-36919271/504000"
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "leg": 2,
+      "all_symmetric_spinor_powers": [
+        3,
+        0
+      ],
+      "common_current_polynomial": [
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-64"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "48"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "-12"
+        },
+        {
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-48"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "24"
+        },
+        {
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-12"
+        },
+        {
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "3"
+        },
+        {
+          "powers": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1"
+        }
+      ],
+      "complete_individual_graph_periods": [
+        {
+          "1": "-577950977/1814400",
+          "z3": "29927/175"
+        },
+        {
+          "1": "298676639/1814400",
+          "z3": "-29927/175"
+        },
+        {
+          "1": "1148643163/9072000",
+          "z3": "-29927/175"
+        }
+      ],
+      "both_exact_boundary_identities": [
+        {
+          "original_graph_positions": [
+            1,
+            2
+          ],
+          "outer_complete_current_form": "-2725391/172800",
+          "all_time_faces_sum": "4774433/34560",
+          "complete_rational_pair": "-738821/4800"
+        },
+        {
+          "original_graph_positions": [
+            1,
+            3
+          ],
+          "outer_complete_current_form": "-13679321/86400",
+          "all_time_faces_sum": "14513477/432000",
+          "complete_rational_pair": "-13818347/72000"
+        }
+      ]
+    }
+  ],
+  "complete_rational_pair_checks": 40,
+  "all_degree_proof": "DERIVATION.md; finite samples are independent controls, not extrapolation",
+  "implementation_sha256": {
+    "explore/circuit-general/forest-jet-identities/check_identities.py": "368d802331060bceb7d84b706c9774f77dbf487734c73988824bc6b7dfd0a9e6",
+    "explore/circuit-general/forest-jet-identities/outer_faces.py": "d54b1fccad1f380b647f42e8c8ec1cd44348a6cf04a41e9a23b465489449fba9",
+    "explore/circuit-general/universal-product-jets/boundary_faces.py": "d2e873aa98e04ac7e934464f323a9c309447567ade4c6410923058621187d267",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c"
+  }
+}

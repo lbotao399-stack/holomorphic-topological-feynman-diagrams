@@ -1,0 +1,21 @@
+
+Running explore/circuit-general/forest-jet-identities/check_identities.py
+Checked all complete direct tensor entries through degree 0
+Checked all complete direct tensor entries through degree 1
+Checked all complete direct tensor entries through degree 2
+Checked all complete direct tensor entries through degree 3
+Verified all original maps, both corrected outer forms, 720 sectors, 124 proper-face probes, and 40 complete period-pair identities.
+Elapsed 4.115 seconds.
+
+Running explore/circuit-general/universal-product-jets/routing.py
+Verified all four complete input currents and all source rows on all sixteen original matchings.
+
+Running explore/circuit-general/universal-product-jets/test_boundary_product.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 13.607s
+
+OK
+
+All complete source-simplex, boundary, and original-current checks passed.
+Elapsed 20.125 seconds.

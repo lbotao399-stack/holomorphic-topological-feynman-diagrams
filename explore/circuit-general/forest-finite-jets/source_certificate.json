@@ -1,0 +1,1888 @@
+{
+  "finite_coefficients_in_basis_order": [
+    {
+      "1": "-456409/10450944000",
+      "z3": "-20101/217728000",
+      "z5": "1/6720"
+    },
+    {
+      "1": "-99833/2090188800",
+      "z3": "-1549/17418240",
+      "z5": "1/6720"
+    },
+    {
+      "1": "18001/387072000",
+      "z3": "3571/27216000",
+      "z5": "-1/5040"
+    },
+    {
+      "1": "79091/696729600",
+      "z3": "127/362880",
+      "z5": "-1/1920"
+    },
+    {
+      "1": "18733/139345920",
+      "z3": "2887/7257600",
+      "z5": "-1/1680"
+    },
+    {
+      "1": "1433/19906560",
+      "z3": "7613/43545600",
+      "z5": "-11/40320"
+    },
+    {},
+    {
+      "1": "-29/9331200",
+      "z3": "-79/17418240",
+      "z5": "1/120960"
+    },
+    {
+      "1": "-18811/2090188800",
+      "z3": "-17/806400",
+      "z5": "1/30240"
+    },
+    {
+      "1": "-27217/2090188800",
+      "z3": "-361/14515200",
+      "z5": "1/24192"
+    },
+    {
+      "1": "-587/149299200",
+      "z3": "-479/43545600",
+      "z5": "1/60480"
+    }
+  ],
+  "fresh_source_control": {
+    "equality": "every complete scalar numerator coefficient",
+    "full_balanced_sources": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "2",
+        "1"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "5/2",
+        "2"
+      ],
+      [
+        "-11/2",
+        "-5"
+      ]
+    ],
+    "original_numerator": {
+      "nonzero_terms": 102605,
+      "sha256": "e450d2cb2b59366bba56700ce958b644869965c3a723d1879bcce95f4d3e5b9e"
+    },
+    "reconstructed_numerator": {
+      "nonzero_terms": 14916,
+      "sha256": "ff013d53daca36e20bc529486230fd1d4b9846d5624ddeb2791d742d91992ff1"
+    },
+    "scalar_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "scalar_numerator": {
+      "nonzero_terms": 14916,
+      "sha256": "ff013d53daca36e20bc529486230fd1d4b9846d5624ddeb2791d742d91992ff1"
+    },
+    "tree_plan": {
+      "attempted_plans": 3,
+      "budget_failed_trees": [
+        [
+          1,
+          3,
+          4,
+          6,
+          8,
+          10
+        ],
+        [
+          1,
+          3,
+          5,
+          7,
+          9,
+          10
+        ]
+      ],
+      "cached": false,
+      "chosen_tree": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "constant_rank_zero": false,
+      "distinct_valid_trees": 195,
+      "exhaustive_tree_scan": true,
+      "independent_density_checks": 1,
+      "linear_matrix_nonzero_entries": 183,
+      "linear_matrix_terms": 313,
+      "max_matrix_entries": 1000000,
+      "max_plans": 8,
+      "max_terms_per_attempt": 750000,
+      "numerator_terms": 102605,
+      "scanned_subsets": 462,
+      "source_component_scales": [
+        2,
+        1
+      ]
+    }
+  },
+  "implementation_sha256": {
+    "code/htk/__init__.py": "5089306c628ac73c980f2c00d1038483ceb52c05d84de1f9485d11e5879b09d8",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/catalog.py": "ec658a78ec435aaca3a039954373ccbba3323700588892b72e33e1043c7c1c69",
+    "code/htk/conventions.py": "998f0b09ede1f7e3f14285531434b7b19f4848e782e8df80ea6740c9294bdbc8",
+    "code/htk/fan_moments.py": "fc3702fbbe0d1c359e866af295706341dfb24e5af8e35ab48c3ea35b5986095a",
+    "code/htk/forest_contractions.py": "19222ab94a70691a48bd88ebc718981e0e8de5f631f98bdf480624194acf5729",
+    "code/htk/forest_model.py": "e1074f0201f69667a8d1094c2eeda199122c2ce092e6a975ed8833a300c21f05",
+    "code/htk/forest_moments.py": "0c6e83bc286f725676e40577f22c8fa3cfd5e625c20c69ea9ffc84fa15b3bd58",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/oracle.py": "f9e0bbc3b938639aaedc83ba2afaf061bdd4476fde94301f10dcaa9326f6978d",
+    "code/htk/product_forests.py": "bf788aa268fc8baca5c2b484122386813040a1d63cfbf89ee27d2865a27b7eee",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/simplex.py": "92a95d913289782718186d5dd77c3eddbe7ac9641fe6ab4561eb11ca8c234ad6",
+    "code/htk/spred.py": "9580c037bcd4e087d8a5e4c9ea730427e25bbce57e1beadcb171a55a2a41b6d3",
+    "code/htk/star.py": "9ac0a3ca452fabfd09431ffe3151b6d97764ac47e4c54f86f19d8ae5397f8829",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/cores/cores.py": "a98299e809b95398b009fb284757c2d94e23662b24d86250489ffd21c1a73c4a",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/halfq.py": "02f4141c71ad71806477b10658d48cc3c756088c6603e34e8e4adfc52afbe645",
+    "explore/circuit-general/cores/laurent.py": "2119dd84fe6eda433f8893d186741d523e5e62158e2822b391181c2d56f8eb61",
+    "explore/circuit-general/cores/msys.py": "bc0acbe0090b7591d2929463ce17846c1b84c0a6d1a987a4806390cb8220a6f1",
+    "explore/circuit-general/cores/prop.py": "f13ab84ed093168eb0502d3cb5c2541b1dc6310eac10b70d8afbe8f70ff8922f",
+    "explore/circuit-general/cores/startri.py": "5e87ffb9595dc4a0909b55309b6a73d42aed34dc9d1cd641cab616afc336463e",
+    "explore/circuit-general/cores/vac.py": "627b7b860a2fec1093da008e6bd78f7614e98df3a12f1a36d8e5958d66c1f9f5",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/fiveloop/syz5.py": "77cec7b6bb01e72c72b30af18f8851d2367eeca5ae5dce71c4a0aee7b843fd52",
+    "explore/circuit-general/forest-finite-jets/certify_sources.py": "479b2c90d1d3e8ff10c00c85fbbdf278bd8e97160e9caacdaf40b2490b2cef6a",
+    "explore/circuit-general/forest-finite-jets/source_family.py": "0f490c8d7653081fc46b5ebacefdd2c4735f22579ae636bcf1522f56c12def73",
+    "explore/circuit-general/forest-target-reduction/certify_target.py": "be3f4811636aaf3b0ec9f0ec3277186e19f022b049afc74de5806dbee34b1af6",
+    "explore/circuit-general/period-dispatch/k5_bridge.py": "10eed3c7ccb5ec065b748fcfd8b35cb518bed09f0ab8649d5b4c3366aaca7d88",
+    "explore/circuit-general/symmetry/annihilator_target.py": "dd14218d2619169b9a1c601a6aa6357ddec9aac9205741e36757343773c35a14",
+    "explore/circuit-general/symmetry/batch_witness.py": "3e5dd95b5f4487a0c447cf2c382efeac0e1f1282ca359aadc21c3effcd5500ca",
+    "explore/circuit-general/symmetry/engine.py": "051e091b1cc30689e544053b302afbe9ac60f6a612005ed238d678f917359694",
+    "explore/circuit-general/symmetry/family_target.py": "91244a5b5193699d3c99a51c794a7ed18ed8b971c7a444e5a663436cc6d5a7a0",
+    "explore/circuit-general/symmetry/relation_witness.py": "e580a694d2b63127fcf9f231060e6ce92bbb18ce26d9b325158082163e870814",
+    "explore/circuit-general/symmetry/tree_minor.py": "136cd5c261430da4fe7f3758fdbb620f8dcd3c7cf1f743f1e01ff26059881db0",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "normalization": "I_q=integral_Omega product(t_e^(alpha_e-1))/U^q; no Gamma(alpha) or completion factor; all source/orientation signs retained",
+  "old_complete_specialization": {
+    "1": "1187/435456000",
+    "z3": "-17/9072000"
+  },
+  "period_table_sha256": {
+    "explore/circuit-general/cores/tables/K33_q7.json": "ca6caf93be7b0520c63417330f3a70eb2b017afd2e23967117ee1545aa420660",
+    "explore/circuit-general/cores/tables/prism_q7.json": "e0dd6d85279e3f4fefd051f5960f4372526a0b94006ac19097eba26710a69d3d",
+    "explore/circuit-general/fiveloop/tables/K33+e_q5.json": "5fb90ee0ef51bcb3835d45489234976bb581573bb292934cac6f9ca4156e7897",
+    "explore/circuit-general/k5/tables/K5_q7.json": "6193a3c412351cca4d8d023b8faff7883da78ad0a8d3a438019e9b5d8a3a678e"
+  },
+  "reference_file_sha256": {
+    "explore/circuit-general/forest-finite-target/annihilators.json": "1c4b41b52de89b808cbcb6843644da5049d0543ec9fc5e27ee1e0a421a276e07",
+    "explore/circuit-general/forest-finite-target/finite_certificate.json": "cc483298178c35eef1a3e260c157fea8fd142aa1d5d8c3bd5b9692cb3fde0f3b",
+    "explore/circuit-general/forest-target-reduction/dimension_certificate.json": "fa765ab202321680e708120baafd524d91fb58abce7f113a43ef2af68e3d9d12"
+  },
+  "relations": {
+    "all_coordinate_faces_retained": true,
+    "annihilator_generation": {
+      "accepted_rows": 42472,
+      "candidate_bases": 44382,
+      "classification_rejections": 0,
+      "convergence_rejections": 1898,
+      "generation_stopped_by": null
+    },
+    "annihilator_polynomial_verification": {
+      "generators": 17,
+      "kirchhoff_terms": 135,
+      "verified_polynomial_products": 35949
+    },
+    "construction_options": {
+      "max_input_terms": 20000,
+      "max_row_coefficients": 5000000,
+      "max_rows": 260000,
+      "max_variables": 70000
+    },
+    "dimension_rows": 687,
+    "finite_seed_search_states": 40,
+    "local_relation_counts": {
+      "B": 0,
+      "D": 154694,
+      "I": 0,
+      "S": 11327,
+      "T": 0,
+      "X": 33722,
+      "Y": 12916,
+      "dimension": 687,
+      "finite_seed": 2277
+    },
+    "lower_dimension": 5,
+    "read_only_period_tables": true,
+    "rows": 258095,
+    "rows_sha256": "166e6c8bd2b526da6ac0ff7dc2e6a2aa3a08db1f03a43e017fb04a05274cce56",
+    "variables": 65226,
+    "vertex_row_edge_power_limits": {
+      "9": 4
+    }
+  },
+  "schema_version": 1,
+  "scope": "full bare H=2,T=0 kernel; arbitrary balanced spinors at vertices 1,3,5,6; sources at 0,2,4 vanish structurally; no current insertion",
+  "shared_elimination_options": {
+    "max_active_coefficients": 5000000,
+    "max_history_entries": 6000000,
+    "max_operations": 100000000,
+    "max_pivots": 70000
+  },
+  "shared_elimination_statistics": {
+    "active_coefficients": 240686,
+    "history_entries": 4191829,
+    "peak_active_coefficients": 4036907,
+    "pivots": 59411,
+    "rational_coefficient_products": 2474777,
+    "residual_periods": 0,
+    "rows": 258095,
+    "stopped_by": null,
+    "targets": 11,
+    "variables": 65226
+  },
+  "source_reconstruction": {
+    "basis": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "basis_meaning": "<lambda_1,lambda_3>^(5-i-j) <lambda_3,lambda_5-lambda_6>^i <lambda_1,lambda_5-lambda_6>^j",
+    "bracket_degree": 5,
+    "coefficient_numerators": [
+      {
+        "nonzero_terms": 13760,
+        "sha256": "1ad0f5ecccf67660d9f7771efee52cf89a088f6c7a833d66a9c9c0740449cafc"
+      },
+      {
+        "nonzero_terms": 13889,
+        "sha256": "d2edb5133ddd9fa666c6e0c742f0aee206c915ccaa0e5803d03535fd393b9a1e"
+      },
+      {
+        "nonzero_terms": 12639,
+        "sha256": "a09d6ab29932b77f6125d1990e9450937e88deacc8ec6766a7c40b6cf8c9a78a"
+      },
+      {
+        "nonzero_terms": 14678,
+        "sha256": "d5b2ae6eca8d3607a6fa5464640a9057fe57eed93bc29f0af8b93c2cac656f21"
+      },
+      {
+        "nonzero_terms": 9344,
+        "sha256": "7af67bc8e09fc89d9fa25a7ecefabed9e5e17990f16475dd17d425558e29c690"
+      },
+      {
+        "nonzero_terms": 3390,
+        "sha256": "95a470c52733b1dc2a150ce0eabb73d1af9f8b151a0760f3f402da1910c3b6ce"
+      },
+      {
+        "nonzero_terms": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "nonzero_terms": 2966,
+        "sha256": "3ed803fafce3d0221370a848f92506ea9123d9ce9dc285b6105ad6460b050dab"
+      },
+      {
+        "nonzero_terms": 2855,
+        "sha256": "e68e8f1450289aef0cf3e7101b43b534083a55b5a900e327002470b7b18c5bdf"
+      },
+      {
+        "nonzero_terms": 1485,
+        "sha256": "b54a4da95049ce4a53d77b252535ee059bbaa2b24f4acc929ec8aaf6ed98ce7d"
+      },
+      {
+        "nonzero_terms": 392,
+        "sha256": "7d447015b352a4bd9919781ca141a0833532e5cf9d53fde74c48cf6663d5cb34"
+      }
+    ],
+    "explicit_tree_candidates": [
+      [
+        0,
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      [
+        0,
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      [
+        1,
+        2,
+        5,
+        7,
+        9,
+        10
+      ]
+    ],
+    "marked": [
+      5,
+      6
+    ],
+    "original_graph": {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "loops": 5,
+      "vertices": 7
+    },
+    "planner_options": {
+      "max_plans": 3,
+      "max_tree_subsets": 3
+    },
+    "q": 7,
+    "sample_points": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "samples": [
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "-1"
+          ]
+        ],
+        "interpolation_point": [
+          1,
+          1
+        ],
+        "original_numerator": {
+          "nonzero_terms": 10577,
+          "sha256": "0598c5a835d1a0f2f6612f170bae9deb0d915a14a78c6644963d9a384ad1c50e"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 7368,
+          "sha256": "86132f19ca4aed8a15f0ea5bd58b4feb2810631db8b0a7e3bcedb01bbfd4e202"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            1,
+            2,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 143,
+          "linear_matrix_terms": 225,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 10577,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ],
+        "interpolation_point": [
+          1,
+          -1
+        ],
+        "original_numerator": {
+          "nonzero_terms": 27892,
+          "sha256": "8f015eef2f902b4cd136285356f500e858eb34a9ede698bbdf19050497b0556c"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 11520,
+          "sha256": "80557591190d7d88e0cded50641b6629a592bf6aab82b02f8c071cc267127e18"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            1,
+            2,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 154,
+          "linear_matrix_terms": 242,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 27892,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "-2",
+            "-1"
+          ]
+        ],
+        "interpolation_point": [
+          3,
+          1
+        ],
+        "original_numerator": {
+          "nonzero_terms": 37514,
+          "sha256": "b1040de5d19fd026f425440de257ad232812bb5778af92866c9e41b5ca5c9cba"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 12014,
+          "sha256": "897323e792488b72de0fc012d7d0485c7ac44caed1a92d0a73de0f5c52f581b5"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 151,
+          "linear_matrix_terms": 251,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 37514,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2"
+          ],
+          [
+            "-1",
+            "-1/2"
+          ]
+        ],
+        "interpolation_point": [
+          1,
+          0
+        ],
+        "original_numerator": {
+          "nonzero_terms": 75615,
+          "sha256": "f1a1eb70e70fc32c51ab3195e4752d93b855c0c22c7cf4ac5ca03fbb6d7494c7"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 14265,
+          "sha256": "54b2e959ee25a8042d02401c859d5954264822d182a1589c7134c04ae2cb6b7a"
+        },
+        "tree_plan": {
+          "attempted_plans": 2,
+          "budget_failed_trees": [
+            [
+              1,
+              2,
+              5,
+              7,
+              9,
+              10
+            ]
+          ],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 149,
+          "linear_matrix_terms": 249,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 75615,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "-3/2",
+            "-1/2"
+          ]
+        ],
+        "interpolation_point": [
+          2,
+          0
+        ],
+        "original_numerator": {
+          "nonzero_terms": 103324,
+          "sha256": "b78a00ec7ccd6d9ccede62fdd9ae89da7541ccd0d614e0de0c9bfc83ebcd36a6"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 14292,
+          "sha256": "21561dfa35d8a250a3f2a439d1f5b7789e754df586db8a8f4c35666a26b1f536"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            4,
+            6,
+            8,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 164,
+          "linear_matrix_terms": 272,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 103324,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "-1"
+          ]
+        ],
+        "interpolation_point": [
+          0,
+          1
+        ],
+        "original_numerator": {
+          "nonzero_terms": 35907,
+          "sha256": "778a87d952c1387a99fc6aa5e98b94d6e660f28c0db0302aa9c6b8622709ce64"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 11585,
+          "sha256": "9d48f2af5353ab7a9f00a685293e48b7bbca97b3a431069dc3f94f53aba781c1"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 151,
+          "linear_matrix_terms": 251,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 35907,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1/2"
+          ],
+          [
+            "-1/2",
+            "-3/2"
+          ]
+        ],
+        "interpolation_point": [
+          0,
+          2
+        ],
+        "original_numerator": {
+          "nonzero_terms": 99678,
+          "sha256": "82833c9841d6020e0465c2679b99e464a3eb77452c666b3b2a5ad6bbd2bf7eab"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 14288,
+          "sha256": "f3cfe652b6d1558f897b1103d552a59d1cd4ddd9417f2c8f21464dc3b812b163"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            4,
+            6,
+            8,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 164,
+          "linear_matrix_terms": 272,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 99678,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1"
+          ],
+          [
+            "-1/2",
+            "-2"
+          ]
+        ],
+        "interpolation_point": [
+          0,
+          3
+        ],
+        "original_numerator": {
+          "nonzero_terms": 99865,
+          "sha256": "845ec6fdeb0855f2bfec8a939491567568117854c3ee7ab18d601ee7aa8c55ca"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 14293,
+          "sha256": "418acc0cf87bbbe674bfbda6ca8075449379006c792d68ada58d298ee9f49914"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            4,
+            6,
+            8,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 164,
+          "linear_matrix_terms": 272,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 99865,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ],
+          [
+            "-1",
+            "-3/2"
+          ]
+        ],
+        "interpolation_point": [
+          1,
+          2
+        ],
+        "original_numerator": {
+          "nonzero_terms": 75617,
+          "sha256": "93279eb0aac95cd7b10b970789ee42ab337ecb97b7c4120942f97c3d57bc5a77"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 14759,
+          "sha256": "173c8423ede1bd41d2f27da711ab6f94966dd157bc08559b273e503509ed9744"
+        },
+        "tree_plan": {
+          "attempted_plans": 2,
+          "budget_failed_trees": [
+            [
+              1,
+              2,
+              5,
+              7,
+              9,
+              10
+            ]
+          ],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 149,
+          "linear_matrix_terms": 249,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 75617,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "-3/2",
+            "-1"
+          ]
+        ],
+        "interpolation_point": [
+          2,
+          1
+        ],
+        "original_numerator": {
+          "nonzero_terms": 37779,
+          "sha256": "643c3211e0c47ba1d942e5df677d8590b5a269d1842a554e34e8f0a38fed8560"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 11979,
+          "sha256": "dcbfd3058f4dfde52e60959f48989a9cbd71786badab88a2a58e30cf09012c08"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 151,
+          "linear_matrix_terms": 251,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 37779,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "full_balanced_sources": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2"
+          ]
+        ],
+        "interpolation_point": [
+          2,
+          2
+        ],
+        "original_numerator": {
+          "nonzero_terms": 61105,
+          "sha256": "8f2a7085a0a928a2bb78ec6a4dabedaca25358351573be18b6cd5ddfbb1abe67"
+        },
+        "scalar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "scalar_numerator": {
+          "nonzero_terms": 13130,
+          "sha256": "dd1a19fca52226a5f1bc6ef3ca72b781ad3d424002ab60daaf5b3d5a74c09dd2"
+        },
+        "tree_plan": {
+          "attempted_plans": 1,
+          "budget_failed_trees": [],
+          "cached": false,
+          "chosen_tree": [
+            0,
+            3,
+            4,
+            6,
+            8,
+            10
+          ],
+          "constant_rank_zero": false,
+          "distinct_valid_trees": 3,
+          "exhaustive_tree_scan": false,
+          "independent_density_checks": 1,
+          "linear_matrix_nonzero_entries": 164,
+          "linear_matrix_terms": 272,
+          "max_matrix_entries": 1000000,
+          "max_plans": 3,
+          "max_terms_per_attempt": 750000,
+          "numerator_terms": 61105,
+          "scanned_subsets": 3,
+          "source_component_scales": [
+            2,
+            2
+          ]
+        }
+      }
+    ],
+    "scalar_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "source_coefficient_rank": 10,
+    "source_degree": 10,
+    "source_options": {
+      "check": 1,
+      "max_period_terms": 200000,
+      "max_terms": 750000
+    },
+    "source_support": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "structurally_zero_source_vertices": [
+      0,
+      2,
+      4
+    ],
+    "union_scalar_support": 14937
+  },
+  "witness_file": "source_witnesses.json.gz",
+  "witness_file_sha256": "eab5f00bc4d645bd04806346b31a4221b281d63beadf511cd1d7f983b49dd2dc",
+  "witness_row_counts": [
+    31447,
+    31475,
+    27601,
+    31608,
+    25125,
+    16581,
+    0,
+    19252,
+    18592,
+    12112,
+    2291
+  ],
+  "witness_uncompressed_sha256": "1c52899d3956a8c054a8c2df6e982c28b5b9b2a759fc035253ed0bd0fb7d66d8",
+  "zero_residuals_for_every_coefficient": true
+}
