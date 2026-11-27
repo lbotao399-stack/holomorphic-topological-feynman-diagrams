@@ -1,0 +1,76 @@
+\section{Complete finite certificates and verification scope}
+\label{app:certificates}
+
+\subsection{The finite base range in the wheel proof}
+
+For the six-power $K_4$ family used in the wheel proof,
+the rational coefficient is denoted $R_q$ and the coefficient
+of $\zeta(3)$ is $12((q-2)!)^2/(2q-2)!$.
+The following table is the complete finite base range, generated
+from the exact certificate and parsed independently. All entries
+are exact fractions. The uniform factorial inequality in the
+proof treats every $q\ge21$, so no extrapolation from these
+eighteen rows is required.
+\begingroup\small
+\input{generated/wheel_bases}
+\endgroup
+
+\clearpage
+\subsection{All nonzero boundary primitives for the scalar controls}
+
+Each following table specifies the complete rightmost sum of
+\eqref{implementation:certificate}. Its row is the coefficient
+times the derivative of the displayed primitive with respect
+to the displayed coordinate. No additional primitive is
+understood. For the banana graph the same table is used on each
+of its six separately retained ordered sectors.
+\input{generated/boundary_witnesses}
+
+\clearpage
+\subsection{Evidence packages}
+
+\begin{longtable}{@{}p{.35\textwidth}p{.60\textwidth}@{}}
+\toprule Result & Complete evidence and check meaning \\
+\midrule\endfirsthead
+\toprule Result & Complete evidence and check meaning \\
+\midrule\endhead
+Fixed-core stabilization &
+\path{explore/circuit-general/core-period-stabilization/}.
+The written proof treats all positive integer powers; a standard-library
+verifier independently checks 908 sectors, 12,700 cotree factorizations,
+430,388 nonnegative coordinate exponents and 2,082 pole-raising terms.\\
+Complete wheel span &
+\path{explore/circuit-general/core-period-closure/}.
+Eighteen exact $K_4$ bases, a rational all-$q$ inequality,
+ten rational-wheel controls, nine star--triangle embeddings
+and ten spanning determinants. The infinite theorem is proved
+analytically.\\
+Relative target reduction &
+\path{explore/circuit-general/core-sector-reduction/}.
+Eight full target certificates, all 82 primitive end faces,
+independent symbolic differentiation and ten focused
+production tests.\\
+Five-loop source polynomials &
+\path{explore/circuit-general/forest-source-currents/}.
+All 28 complete interpolation nodes; independent finite
+differences for every coefficient; all eleven source spinors;
+complete fresh and degenerate all-edge integrations.\\
+Rational cube representation &
+\path{explore/circuit-general/forest-cube-expansion/}.
+Complete rational-series specification, explicit rational tails,
+all-order triangle controls and complete sourced three-loop
+chart controls.\\
+Manuscript-specific controls &
+\path{notes/methods-paper/checks/} and
+\path{notes/methods-paper/verification/}.
+Independent complete fork integration, independently parsed
+printed tables, complete displayed scalar witnesses, build
+records and attributed internal reviews.\\
+\bottomrule
+\end{longtable}
+
+The verification manifest pins the exact source and certificate
+files used by the manuscript. A successful replay certifies the
+listed finite calculations and bindings. It does not turn
+an open uniform closure claim into a theorem or replace a
+written analytical proof by a finite rank calculation.

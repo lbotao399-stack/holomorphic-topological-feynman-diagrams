@@ -1,0 +1,168 @@
+\section{Exact computation and independently checked certificates}
+\label{implementation:certificates}
+
+\subsection{A calculation returns an identity}
+
+The production implementation separates original-graph current
+reconstruction, scalar reduction and certificate verification. Its
+arithmetic uses exact integers and rational numbers. Finite scalar
+tables retain explicit rational coefficients of named constants;
+an unresolved scalar period remains an error or an explicitly
+unevaluated target. It is never assigned coefficient zero.
+
+For the relative-period algorithm of
+Theorem~\ref{periods:finite-span}, fix a cube denominator $U$ with
+nonnegative rational coefficients and positive constant coefficient.
+Its reciprocal is regular on the entire closed cube. A candidate
+target $P/U^q$ is reduced to caller-supplied master forms and an
+explicit finite sum of derivatives
+\begin{equation}
+ \frac{P}{U^q}
+ =\sum_j c_j\frac{P_j}{U^{q_j}}
+  +\sum_{i,a,r}c_{i,a,r}\,
+   \partial_{x_i}\left[x_i(1-x_i)\frac{x^a}{U^r}\right].
+ \label{implementation:certificate}
+\end{equation}
+Here $a$ is a tuple of nonnegative integer powers, $r$ is a
+nonnegative integer, and the displayed sums are exactly those
+stored in the certificate. All coefficients are rational. The
+primitive in each term vanishes on both faces normal to its
+differentiation coordinate.
+
+The search enumerates a finite caller-declared range of numerator
+degrees and pole orders and performs exact sparse Gaussian
+elimination. Each row operation updates the full witness vector.
+After a target is eliminated, the implementation clears a common
+denominator and checks \eqref{implementation:certificate} as a
+polynomial identity. A separate verifier differentiates the stored
+primitive expressions with a general symbolic algebra system,
+checks each endpoint face, and independently checks that the
+denominator, target and masters are the intended ones. This final
+binding excludes an algebraically valid certificate for a different
+target.
+
+\begin{proposition}[Soundness of a returned target certificate]
+Under the stated positivity condition on $U$, a verified identity
+\eqref{implementation:certificate} implies the exact corresponding
+integral identity on the closed cube.
+\end{proposition}
+\begin{proof}
+Every form and primitive is smooth on the compact cube because
+$U$ is bounded below by its positive constant coefficient.
+Integrate each derivative in its own coordinate. Its two endpoint
+values vanish because of $x_i(1-x_i)$. Fubini's theorem applies
+to these continuous functions, so each derivative contributes
+zero. Integrating the remaining finite rational identity gives
+the result, with no discarded face integral.
+\end{proof}
+
+A search failure retains the complete rational residual and its
+declared search bounds. It proves neither a nonzero period nor
+independence of the supplied masters. Finiteness of the full
+relative quotient does not provide a stopping test for an arbitrary
+finite relation bank. General effective de Rham algorithms exist
+\cite{oaku2001,walther2000}; they are not replaced by a rank plateau
+in this implementation.
+
+\subsection{Complete scalar controls}
+
+The three-edge banana graph has two vertices and three parallel
+edges, with scalar Kirchhoff polynomial
+$U=t_0t_1+t_0t_2+t_1t_2$. At edge powers $(2,2,2)$ and denominator
+power three, every one of its six Hepp sectors is
+\begin{align}
+ \int_0^1\int_0^1\frac{x}{(1+x+xy)^3}\,dy\,dx
+ &=\frac12\int_0^1\left(\frac1{(1+x)^2}
+                         -\frac1{(1+2x)^2}\right)dx\nonumber\\
+ &=\frac12\left(\frac12-\frac13\right)=\frac1{12}.
+ \label{implementation:banana}
+\end{align}
+Thus the complete positive projective period is $6/12=1/2$.
+All six ordered sectors have separate complete certificates.
+This is a scalar-period control, not an assertion that the
+three-edge banana is an admissible original holomorphic graph.
+
+Two further controls test nonrational master values. For the
+one-variable denominator $1+x$, the exact antiderivative after
+the substitution $u=1+x$ gives
+\begin{align}
+ \int_0^1\frac{x^7}{(1+x)^5}\,dx
+ &=\left[
+ \frac{u^3}{3}-\frac{7u^2}{2}+21u-35\log u
+ -\frac{35}{u}+\frac{21}{2u^2}-\frac{7}{3u^3}
+ +\frac{1}{4u^4}\right]_{u=1}^{u=2}\nonumber\\
+ &=\frac{1553}{64}-35\log2.
+ \label{implementation:onevar}
+\end{align}
+Its supplied master forms are $1$ and $(1+x)^{-1}$; the complete
+derivative certificate has six nonzero primitives.
+
+For $U=1+xy$, direct integration gives
+\begin{align}
+ \int_{[0,1]^2}\frac{dx\,dy}{U}&=\frac{\pi^2}{12},\nonumber\\
+ \int_{[0,1]^2}\frac{dx\,dy}{U^2}&=\log2,\qquad
+ \int_{[0,1]^2}\frac{dx\,dy}{U^3}
+ =\frac14+\frac12\log2.\label{implementation:two-base}
+\end{align}
+For the first identity, the absolutely integrable series of
+monomial integrals is
+$\sum_{m\ge0}(-1)^m/(m+1)^2=(1-2^{-1})\zeta(2)=\pi^2/12$.
+The two remaining identities follow by integrating in $y$ first.
+Using $(xy)^2/U^3=U^{-1}-2U^{-2}+U^{-3}$ yields
+\begin{equation}
+ \int_{[0,1]^2}\frac{x^2y^2}{(1+xy)^3}\,dx\,dy
+ =\frac{\pi^2}{12}-\frac32\log2+\frac14.
+ \label{implementation:twovar}
+\end{equation}
+The supplied masters $1$, $1/U$, $x/U$ have values
+$1$, $\pi^2/12$, $2\log2-1$; their exact certificate
+coefficients are $(-1/2,1,-3/4)$. Appendix~\ref{app:certificates}
+prints the complete derivative witnesses. These cube controls
+test the reduction engine; their constants are not claimed as
+new irreducible periods of the forest family.
+
+\subsection{Scope of the finite census}
+
+The sourced network classification has 1,135 product-forest
+topologies through six loops. The finite integration census through
+five loops covers 261 topologies at their individually recorded
+balanced rational sources, with 5,418 original first-current scalar
+entries. Its five-loop part consists of 200 topologies, 200 bare
+kernels and 2,200 complete first-current spinors. Those counts are
+finite-source results. They do not by themselves interpolate the
+arbitrary-source polynomials, which require the separate argument
+and calculation of Section~\ref{currents:family}.
+
+The existing scalar tables and original numerator checks are
+dependencies of these finite results. The new manuscript replay
+distinguishes verification of stored complete certificates from
+recomputing every original period table. The former is performed
+by the normal replay command; expensive source integrations can
+be regenerated by the documented deep replay. No claim that every
+period table was independently regenerated during manuscript
+preparation is made.
+
+\subsection{Resource bounds and reproducibility}
+
+Graph enumeration, polynomial support, source reconstruction,
+relation generation and sparse elimination have explicit finite
+budgets. Exceeding a budget raises an error before a partial
+result can be returned as a complete target. The scalar tests
+exercise divergent weights, exhausted searches, corrupted
+witnesses and target substitutions. The complete graph pullbacks
+are compared with direct Kirchhoff determinants and their full
+Jacobian factors.
+
+The manuscript source and supplement build from the repository
+root by running
+\begin{center}
+\texttt{python3 notes/methods-paper/build.py}
+\end{center}
+The exact data and manuscript controls replay by
+\begin{center}
+\texttt{python3 notes/methods-paper/run\_checks.py}
+\end{center}
+The accepted build records source hashes, page counts, PDF hashes,
+compiler version and unresolved-reference/overflow checks. The
+verification directory records the independent mathematical and
+layout review separately from the numerical certificate results.

@@ -1,0 +1,14 @@
+Replayed every exact stabilization control and source digest.
+complete_hepp_sectors: 908
+convergence_preserving_cotree_shift_terms: 2082
+convergent_sector_coordinate_checks: 430388
+cotree_factorization_checks: 12700
+graphs: 8
+rejected_scalar_weight_witnesses: 501
+tested_scalar_weights: 667
+signed_numerator_sectors: 720
+independently_integrated_cycle_weights: 490
+one_variable_complete_relative_identities: 169
+polynomial_cube_complete_relative_identities: 150
+canonical_certificate_sha256: cca9766cab2a5f0e3a841b3b24f41c039cc0008aa0ad429cb32e7d13d1dd16c4
+No general core master basis, numerical independence, or stabilization threshold was computed.

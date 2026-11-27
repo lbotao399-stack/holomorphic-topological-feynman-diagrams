@@ -1,0 +1,113 @@
+\section{Introduction and scope}
+\label{intro:scope}
+
+The electrical-network interpretation of a holomorphic Feynman graph
+turns Schwinger parameters into resistances and external holomorphic
+momenta into injected currents. It separates two questions. The first
+is how to reconstruct the complete original current form after reducing
+the network. The second is how to integrate the resulting rational
+form. A local elimination can solve the first question exactly while
+leaving nontrivial scalar periods in the second. Current insertions make
+this distinction essential: an integrated bare kernel can vanish while
+its complete first-current spinor is nonzero.
+
+The starting current-area construction is that of
+Li--Liu--Chang \cite{li2026}. We use the repository's ordered scalar
+convention; its loop-dependent sign relative to that manuscript is
+stated explicitly after \eqref{networks:density-cofactor}.
+Wang's compactification and finiteness
+results provide the holomorphic graph-integral setting
+\cite{wang2025}. Gui--Wang--Williams already give an all-order cube
+recursion for Type~I$'$ Laman weights
+\cite[Theorem~4.13 and Remark~4.14]{gui2025}; their explicit examples
+through three loops do not limit the scope of that recursion. The
+network constructions below retain the original sources and currents
+and cover product forests whose elimination does not remain within
+that Type~I$'$ construction. We do not claim the original all-order
+recursion, ultraviolet finiteness, or the higher-operation identities as
+new results of this manuscript.
+
+The second part of the paper concerns a fixed scalar Kirchhoff core.
+Graph periods and their relative cohomology have a well-established
+algebraic-geometric interpretation \cite{bloch2006,brown2015}; finiteness
+of master-integral families is also a general theorem
+\cite{smirnov2010}. Here we give a sectorwise proof adapted to the
+particular problem of varying \emph{all positive integer pole orders}
+and all convergent polynomial numerators on one fixed core. It keeps the
+integration boundary and identifies a complete family of relative
+derivative relations. Algebraic de Rham finiteness is an external
+input \cite{grothendieck1966}; the sector convergence, boundary
+presentation, pole-raising identities and wheel constructions are
+proved explicitly in the text.
+
+\subsection{Results and their distinct meanings}
+
+The paper establishes the following statements.
+\begin{enumerate}
+\item Sourced leaf elimination is an exact identity of networks with
+all original current maps retained. Differentiation includes every
+source-transfer coefficient. For the product-forest class considered
+here, each eliminated vertex has at most three remaining neighbours.
+\item On compact spanning-tree cubes, every finite polynomial in
+the original currents has an explicit rational series representation.
+Each series coefficient and a closed upper bound on the entire tail
+are rational calculations. This is an exact infinite-series answer;
+a finite truncation remains accompanied by its remainder.
+\item Theorem~\ref{periods:finite-span} proves finite rational period
+span and eventual stabilization for a fixed normalized core at
+positive integer denominator powers. It does not compute a general
+stabilization threshold or a minimal numerical period basis.
+\item Theorem~\ref{periods:wheel-span} computes the full stable scalar
+span for every wheel, with the explicit sufficient threshold
+$q\ge\max(3,n-1)$. No arithmetic independence of real zeta values is
+assumed.
+\item Section~\ref{currents:family} gives the complete source dependence
+of the bare kernel and every first-current spinor of one physical
+quartic five-loop forest. The formulas retain all source directions
+and extend polynomially to degenerate root-source frames.
+\end{enumerate}
+
+These statements have different scopes. A complete sourced network
+reduction is not, by itself, a finite zeta evaluation. A finite scalar
+period space need not be a field or an algebra, and its dimension need
+not equal the number of displayed zeta generators. A graph's geometric
+kernel is not the full Wick, colour and coupling sum of an interacting
+observable. We attach none of those additional claims to the results
+below.
+
+\subsection{Normalization and relation to dimensions}
+
+All explicitly computed forest kernels use two holomorphic directions
+and no topological direction, denoted $H=2,T=0$. The heat-kernel
+normalization is removed once and the remaining loop sign is fixed by
+\eqref{networks:area-definition}--\eqref{networks:density-cofactor};
+ordered edge orientations and the projective sign are retained.
+An inserted original current is the negative first derivative with
+respect to the original edge displacement. A scalar core period uses
+the positive projective measure, without dividing by edge gamma
+factors. Section~\ref{periods:normalization} states that scalar
+normalization before any graph transformation.
+
+The fixed-core theorem is not confined to $H=2$. It applies to any
+dimension or finite insertion order that reduces, after its stated
+normalization, to a rational polynomial numerator over a positive
+integer power of the same Kirchhoff polynomial. It does not cover
+noninteger analytic regularization, unrestricted logarithmic
+insertions, or additional topological contact distributions merely
+by changing a dimension label.
+
+\subsection{Exact data and provenance}
+
+All numerical assertions below are equalities of rational numbers or
+specified rational linear combinations of constants. The existing
+source calculations are pinned to repository commit
+\texttt{75a9218178da47e7926df75ef29ee86f4616e421}; the manuscript's
+manifest records the exact files and hashes used. The supplement is
+generated from the complete source certificate, and a second parser
+compares every printed coefficient with that certificate. This
+manuscript develops and unifies those repository results; the tables
+are not represented as new calculations performed during drafting.
+
+The software reviews accompanying this draft are internal reviews by
+separate artificial-intelligence agents, with their roles recorded in
+the verification directory. They are not external peer review.

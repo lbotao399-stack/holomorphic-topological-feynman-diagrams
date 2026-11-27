@@ -1,0 +1,11 @@
+test_atomic_cli_output_and_failure_preserve_existing_result (__main__.ProductForestCubeCliChecks.test_atomic_cli_output_and_failure_preserve_existing_result) ... ok
+test_both_backends_enclose_independent_simplex_integral (__main__.ProductForestCubeCliChecks.test_both_backends_enclose_independent_simplex_integral) ... ok
+test_invalid_or_partial_tensor_requests_rejected (__main__.ProductForestCubeCliChecks.test_invalid_or_partial_tensor_requests_rejected) ... ok
+test_original_edge_reversal_changes_every_odd_current (__main__.ProductForestCubeCliChecks.test_original_edge_reversal_changes_every_odd_current) ... ok
+test_specification_without_finite_evaluation_and_balanced_last_source (__main__.ProductForestCubeCliChecks.test_specification_without_finite_evaluation_and_balanced_last_source) ... ok
+test_whole_tensor_with_repeated_original_edge_and_exact_enclosure (__main__.ProductForestCubeCliChecks.test_whole_tensor_with_repeated_original_edge_and_exact_enclosure) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.131s
+
+OK

@@ -1,0 +1,706 @@
+\section{Exact sourced networks and convergent rational integration}
+\label{networks:section}
+
+We work in the purely holomorphic case with two-dimensional source
+spinors.  The graph, the order and orientation of its edges, and every
+original source remain fixed throughout a reduction.  This section proves
+an exact evaluation by a convergent rational series at every finite current
+order.  A finite expression in a prescribed set of periods is a separate
+property, considered in Theorem~\ref{periods:finite-span}.
+
+\subsection{Original currents, projective measure, and signs}
+\label{networks:conventions}
+
+Let $\Gamma$ be a connected ordered graph with $N$ edges, loop number
+$n=N-|V|+1\ge1$, and $N=2n+1$.  Thus $|V|=n+2$.  Its source spinors obey
+$\sum_{v\in V}\lambda_{v,+\dot a}=0$.  The two dotted indices are
+oriented by $\epsilon^{\dot+\dot-}=1$, and we write
+\begin{equation}
+ \langle\lambda_u,\lambda_v\rangle
+ =\epsilon^{\dot a\dot b}\lambda_{u,+\dot a}\lambda_{v,+\dot b},
+ \qquad
+ d^2y_e=\frac12\epsilon^{\dot a\dot b}
+ dy_{e,+\dot a}\wedge dy_{e,+\dot b}.
+ \label{networks:spinor-volume}
+\end{equation}
+The brackets contract only the displayed indices.  The indices of an
+inserted current word remain free.
+
+Choose one ground vertex and delete its column from the incidence matrix.
+For an edge $e$ directed from $e(0)$ to $e(1)$, its row is
+$B_{ev}=\delta_{v,e(0)}-\delta_{v,e(1)}$.  Positive Schwinger parameters
+$t_e$ are resistances.  Kirchhoff's equations and their unique grounded
+solution are
+\begin{equation}
+ B^{\mathsf T}y_{+\dot a}=\lambda_{+\dot a},\qquad
+ t\,y_{+\dot a}=B\varphi_{+\dot a},\qquad
+ \Lambda=B^{\mathsf T}t^{-1}B,\qquad
+ \varphi_{+\dot a}=\Lambda^{-1}\lambda_{+\dot a}.
+ \label{networks:kirchhoff}
+\end{equation}
+Here $t$ is the diagonal resistance matrix.  Its positive quadratic form
+makes $\Lambda$ invertible.
+
+For a spanning tree $T$, order its complementary edges as
+$c_1<\cdots<c_n$.  The fundamental cycle matrix $C_T$ has entry $+1$ on
+its own complementary edge and the signed return path on the tree.
+Define $M=C_TtC_T^{\mathsf T}$ and $U_\Gamma=\det M$.  Cauchy--Binet,
+together with the unimodularity of the cycle minors, gives
+\begin{equation}
+ U_\Gamma(t)=\sum_{T'\text{ spanning tree}}
+                  \prod_{e\notin T'}t_e.
+ \label{networks:kirchhoff-polynomial}
+\end{equation}
+Let $y^T$ be the unique source flow supported on $T$.  Every original edge
+current has the exact affine expression
+\begin{equation}
+ y_{e,+\dot a}=y^T_{e,+\dot a}
+       +\sum_{r=1}^n(C_T)_{re}y_{c_r,+\dot a}.
+ \label{networks:affine-original-currents}
+\end{equation}
+This identity is used before integrating a current polynomial; in
+particular it retains constant source terms in words of mixed degree.
+
+The cycle forms are
+$\psi_{r,+\dot a}=\sum_e(C_T)_{re}y_{e,+\dot a}\,dt_e$.
+The kernel convention used here is
+\begin{equation}
+ \Omega_\Gamma=U_\Gamma^{-2}
+       \bigwedge_{\dot a=\dot+,\dot-}\ \bigwedge_{r=1}^n\psi_{r,+\dot a}
+       =D_\Gamma(t)\,\iota_{\sum_e t_e\partial_{t_e}}
+                          (dt_0\wedge\cdots\wedge dt_{N-1}).
+ \label{networks:area-definition}
+\end{equation}
+Differentiating $C_Tty=0$ at fixed original sources and using
+\eqref{networks:affine-original-currents} gives
+$\psi_{r,+\dot a}=-\sum_sM_{rs}dy_{c_s,+\dot a}$.
+The two determinants cancel $U_\Gamma^{-2}$; interleaving their cycle rows
+gives the exact current-area identity
+\begin{equation}
+ \boxed{\Omega_\Gamma=(-1)^{\binom n2}
+              \bigwedge_{r=1}^n d^2y_{c_r}.}
+ \label{networks:current-area}
+\end{equation}
+A unimodular change of cycle basis has squared determinant one, so this
+formula does not depend on the spanning tree.  The positive projective
+orientation is the radial contraction in
+\eqref{networks:area-definition}.  For any gauge edge $g$, the equivalent
+cofactor formula is
+\begin{equation}
+ D_\Gamma(t)=\frac{(-1)^{g+\binom n2}}{t_g}
+ \det\left(\frac{\partial y_{c_r,+\dot a}}{\partial t_f}\right)
+ _{(r,\dot a),\ f\ne g}.
+ \label{networks:density-cofactor}
+\end{equation}
+Columns retain the original edge order.  Reversing an edge leaves the
+bare two-dimensional kernel unchanged and negates that edge's inserted
+current.  Permuting the edges multiplies the kernel by the parity of the
+permutation.  These signs are never absorbed into a new edge convention.
+For comparison with the current-area convention of~\cite{li2026},
+$\mathcal I_\Gamma=(-1)^{n(n+1)/2}K_\Gamma$.
+
+The complete current moment with free indices is
+\begin{equation}
+ K_\Gamma[e_1,\ldots,e_m]_{+\dot a_1\cdots+\dot a_m}
+ =\int_{\mathbb{RP}^{N-1}_{>0}}
+       \prod_{j=1}^m y_{e_j,+\dot a_j}\,\Omega_\Gamma.
+ \label{networks:moment}
+\end{equation}
+It is the coefficient obtained by applying the corresponding $m$ operators
+$-\partial/\partial z_{e_j}^{+\dot a_j}$ to
+$\int e^{-\sum_e y_{e,+\dot a}z_e^{+\dot a}}\Omega_\Gamma$ at $z=0$.
+All statements below also apply to finite linear combinations of these
+words, including different degrees.
+
+\subsection{Source-preserving elimination on every product forest}
+\label{networks:elimination}
+
+A marked product forest has ordered distinguished vertices $A,B$, the
+marked edge $AB$, and $n$ interaction vertices.  Removing $A,B$ leaves
+trees.  A component with $k$ interaction vertices has $k-1$ internal edges
+and $k+1$ spokes, and meets both marked vertices.  These are the graph
+conditions arising in the product-forest classification of~\cite{li2026}.
+The following network argument permits arbitrary balanced sources at all
+vertices; it does not impose a cubic source-support restriction.
+
+\begin{proposition}[Terminating sourced elimination]
+\label{networks:kron-theorem}
+Choose a root in each interaction tree and remove descendants before
+their parents.  Every removed vertex has at most three retained
+neighbors.  Exact Schur complementation terminates at the marked resistor,
+preserves all original source coefficients, and reconstructs every
+original current by reverse substitution.
+\end{proposition}
+\begin{proof}
+After the descendants of $v$ are removed, its only possible retained
+neighbors are its parent and $A,B$.  Eliminating a vertex adds edges only
+between its retained neighbors.  Such an operation cannot connect two
+distinct unprocessed interaction branches.  This proves the assertion
+inductively, including a root of arbitrarily high original valence.
+
+Write $g_{vu}=1/t_{vu}$ for the present conductance, allowing zero for an
+absent edge, and $g_v=\sum_u g_{vu}$.  The equation at $v$ gives
+\begin{equation}
+ \varphi_{v,+\dot a}
+ =\frac{\lambda_{v,+\dot a}}{g_v}
+       +\sum_u\frac{g_{vu}}{g_v}\varphi_{u,+\dot a}.
+ \label{networks:reverse-potential}
+\end{equation}
+Substitution into the retained equations yields
+\begin{equation}
+ \boxed{g^{\rm red}_{uw}=g_{uw}+\frac{g_{vu}g_{vw}}{g_v},\qquad
+ \lambda^{\rm red}_{u,+\dot a}
+       =\lambda_{u,+\dot a}+\frac{g_{vu}}{g_v}\lambda_{v,+\dot a}.}
+ \label{networks:sourced-schur}
+\end{equation}
+All pivots are positive, and the transfer coefficients sum to one.
+Consequently the complete source conservation equation survives each
+step.  At this stage $\lambda_v$ means the source accumulated from every
+previously eliminated vertex, with its full resistance dependence.
+At the end, ground $B$ and use
+$\varphi_A=\lambda_A^{\rm final}/g_{AB}^{\rm final}$.
+Applying \eqref{networks:reverse-potential} in reverse order recovers all
+potentials and hence $y_{e,+\dot a}=(\varphi_{e(0),+\dot a}
+-\varphi_{e(1),+\dot a})/t_e$ on every original edge.
+\end{proof}
+
+For example, the complete affine current map of one eliminated star can
+be displayed without solving the rest of the network.  Orient its edges
+outward from $v$, and orient a generated triangle edge from $u$ to $w$.
+Let $y^{(v)}_{uw}$ denote the current in just the generated parallel branch.
+Then
+\begin{align}
+ y^{(v)}_{uw,+\dot a}
+ &=\frac{g_{vu}g_{vw}/g_v}{g^{\rm red}_{uw}}y^{\rm red}_{uw,+\dot a},
+ &y^{\rm old}_{uw,+\dot a}
+ &=\frac{g_{uw}}{g^{\rm red}_{uw}}y^{\rm red}_{uw,+\dot a},\\
+ y_{vu,+\dot a}
+ &=\frac{g_{vu}}{g_v}\lambda_{v,+\dot a}
+       -\sum_{w\ne u}y^{(v)}_{uw,+\dot a}.
+ \label{networks:full-star-current}
+\end{align}
+Antisymmetry gives $y^{(v)}_{wu}=-y^{(v)}_{uw}$, so summing the last line
+recovers $\sum_u y_{vu}=\lambda_v$.  Every old parallel branch and every
+source offset is separately retained.
+
+The determinant part of the Schur complement also gives an unexpanded
+Kirchhoff polynomial:
+\begin{equation}
+ U_\Gamma(t)
+ =\left(\prod_{e\in E}t_e\right)g_{AB}^{\rm final}
+       \prod_{v\text{ eliminated}}g_v.
+ \label{networks:pivot-U}
+\end{equation}
+Indeed $U_\Gamma=(\prod_e t_e)\det\Lambda$, and each elimination removes
+one positive pivot.  The final grounded determinant is
+$g_{AB}^{\rm final}$.  There are linearly many local steps and at most
+quadratically many arithmetic operations on complete source-coefficient
+rows.  This is not a bound on rational bit sizes.
+
+Intermediate networks need not satisfy $N=2n+1$.  Formula
+\eqref{networks:sourced-schur} remains valid on them, while the area form
+is always the original form \eqref{networks:current-area}.  In particular,
+one cannot substitute a lower-loop tight-graph kernel for a nontight
+intermediate network.
+
+\subsection{All differentials of transferred sources}
+\label{networks:differentials}
+
+The transferred source depends on the resistances.  Differentiating
+\eqref{networks:sourced-schur} includes the term
+$\lambda_{v,+\dot a}\,d(g_{vu}/g_v)$ as well as the differentials of
+sources accumulated earlier.  Freezing a transferred source changes the
+area form.  A convenient exact evaluation differentiates the reconstructed
+original network instead.  At fixed original sources,
+\begin{equation}
+ \frac{\partial\varphi_{+\dot a}}{\partial t_f}
+ =\Lambda^{-1}B_f^{\mathsf T}\frac{y_{f,+\dot a}}{t_f},\qquad
+ \boxed{
+ \frac{\partial y_{e,+\dot a}}{\partial t_f}
+ =\left(\frac{B_e\Lambda^{-1}B_f^{\mathsf T}}{t_e}
+                  -\delta_{ef}\right)\frac{y_{f,+\dot a}}{t_f}.}
+ \label{networks:full-derivative}
+\end{equation}
+This follows from
+$\partial_{t_f}\Lambda=-B_f^{\mathsf T}B_f/t_f^2$ and
+\eqref{networks:kirchhoff}.  Equations
+\eqref{networks:full-derivative} and \eqref{networks:density-cofactor}
+therefore include every source-transfer differential without separately
+expanding them.
+
+An important local instance is a sourced degree-two vertex $v$ between
+$u,w$, with a direct edge $uw$.  Orient the three original currents as
+$u\to v,v\to w,u\to w$.  If the retained resistance and current are
+$T$ and $J$, positive coordinates $0<r,z<1$ give
+\begin{align}
+ t_{uv}=rT/z,\quad t_{vw}=(1-r)T/z,\quad t_{uw}=T/(1-z),\\
+ \lambda_u^{\rm red}=\lambda_u+(1-r)\lambda_v,\qquad
+ \lambda_w^{\rm red}=\lambda_w+r\lambda_v,\\
+ y_{uv,+\dot a}=zJ_{+\dot a}-(1-r)\lambda_{v,+\dot a},\\
+ y_{vw,+\dot a}=zJ_{+\dot a}+r\lambda_{v,+\dot a},\\
+ y_{uw,+\dot a}=(1-z)J_{+\dot a}.
+ \label{networks:ear-map}
+\end{align}
+Choose a reduced spanning tree containing $uw$.  Modulo its other chord
+differentials, source conservation gives $dJ=-\lambda_v\,dr$.
+The new chord $(1-z)J$ has area
+$(1-z)\langle\lambda_v,J\rangle\,dr\wedge dz$.
+The local resistance Jacobian in order $(uv,vw,uw)$ is
+$-T^2/[z^3(1-z)^2]$.  Combining its sign with the ratio of the signs in
+\eqref{networks:current-area} gives the complete density factor
+\begin{equation}
+ (-1)^n\operatorname{sgn}(\text{original edge permutation})
+ (1-z)\langle\lambda_v,J\rangle\,dr\,dz.
+ \label{networks:ear-density}
+\end{equation}
+The reduced kernel is evaluated at the full sources in
+\eqref{networks:ear-map}; its retained coordinates are differentiated at
+fixed $r$.  The displayed local factor already accounts for the varying
+source in the $r$ direction.  A current word is expanded using all three
+affine maps.  Each splitting monomial integrates exactly as
+\begin{equation}
+ \int_0^1 z^a(1-z)^{b+1}dz=\frac{a!(b+1)!}{(a+b+2)!}.
+ \label{networks:ear-beta}
+\end{equation}
+The remaining source transfer is polynomial at any finite current order
+and is integrated by the ordinary interval moments.  This local formula
+requires the removed source to be fixed during that step; the general
+rule \eqref{networks:full-derivative} applies without that restriction.
+
+\subsection{Series chains and complete scalar reduction}
+\label{networks:chains}
+
+Consider a maximal path from a retained vertex $p$ to $q$.  Orient it
+consistently and let $s_j=\pm1$ compare that direction with the original
+direction of its $j$th edge.  Write its resistance as $t_j=Rx_j$,
+$\sum_{j=1}^Lx_j=1$, and denote its internal vertices by
+$u_1,\ldots,u_{L-1}$.  Define the complete cumulative sources and their
+weighted average by
+\begin{equation}
+ Q_{j,+\dot a}=\sum_{k<j}\lambda_{u_k,+\dot a},\qquad
+ \widehat\lambda_{+\dot a}
+   =\sum_{k=1}^{L-1}\left(\sum_{j>k}x_j\right)\lambda_{u_k,+\dot a}.
+ \label{networks:chain-sources}
+\end{equation}
+If $Y$ is the current of the retained path, every original current and
+both retained source rows are
+\begin{align}
+ y_{j,+\dot a}&=s_j\bigl(Y_{+\dot a}-\widehat\lambda_{+\dot a}
+                                  +Q_{j,+\dot a}\bigr),\\
+ \lambda_{p,+\dot a}^{\rm red}&=\lambda_{p,+\dot a}
+                                      +\widehat\lambda_{+\dot a},\\
+ \lambda_{q,+\dot a}^{\rm red}&=\lambda_{q,+\dot a}
+              +\sum_k\lambda_{u_k,+\dot a}-\widehat\lambda_{+\dot a}.
+ \label{networks:chain-map}
+\end{align}
+Conservation along the path gives successive differences $\lambda_{u_k}$,
+and its voltage drop is $R Y=\sum_jt_js_jy_j$.  These two equations prove
+\eqref{networks:chain-map}.  Thus neither endpoint source nor the offsets
+of any removed edge are omitted.
+
+The cycle columns on a consistently oriented series path coincide.
+Consequently, for positive Lebesgue measures,
+\begin{equation}
+ U_\Gamma(t)=U_{\rm core}(R),\qquad
+ \prod_e dt_e=\prod_{\text{paths}}R^{L-1}\,dR\,d^{L-1}x.
+ \label{networks:chain-measure}
+\end{equation}
+For a complete numerator monomial with nonnegative exponents $k_e$, the
+exact push-forward on one path is
+\begin{equation}
+ \boxed{\alpha_{\rm path}=\sum_{e\in\rm path}(k_e+1),\qquad
+ \int_{\Delta^{L-1}}\prod_{e\in\rm path}x_e^{k_e}d^{L-1}x
+       =\frac{\prod_{e\in\rm path}k_e!}{(\alpha_{\rm path}-1)!}.}
+ \label{networks:chain-factor}
+\end{equation}
+This changes neither the loop number nor the denominator exponent.
+
+For completeness, the spanning-tree current formula is
+\begin{equation}
+ U_\Gamma y_{e,+\dot a}
+ =\sum_{T'}\left(\prod_{f\notin T'}t_f\right)y^{T'}_{e,+\dot a}.
+ \label{networks:tree-current}
+\end{equation}
+It follows from Cramer's rule for \eqref{networks:kirchhoff} and the same
+tree-minor expansion as \eqref{networks:kirchhoff-polynomial}.  Thus the
+current is a convex weighted average of finitely many source flows and
+is bounded on positive times.
+
+The bare Schwinger numerator $P=U_\Gamma^{n+2}D_\Gamma$ is polynomial
+of time degree $n^2-1$.  Start with the $\psi$-row representation
+\eqref{networks:area-definition}, before passing to the current Jacobian.
+Clearing one factor $U_\Gamma$ from each of its $2n$ rows gives denominator
+$t_gU_\Gamma^{2n+2}$ and polynomial entries
+$(C_T)_{re}(U_\Gamma y_{e,+\dot a})$, with column $g$ omitted.
+At a simple zero of any irreducible factor
+of the multiaffine $U_\Gamma$, the cycle matrix $M$ has corank one.
+Its adjugate makes the two source blocks proportional there; subtracting
+one block from the other supplies at least $n$ factors of that
+irreducible polynomial.  Changing the omitted edge in
+\eqref{networks:density-cofactor} removes the apparent factor $1/t_g$.
+Since a multiaffine polynomial has no repeated nonconstant factor, the
+division is exact and the $n$ cancelled factors leave denominator
+$U_\Gamma^{n+2}$.  Homogeneity then gives the asserted degree.
+A word of degree $m$ therefore gives the complete scalar reduction
+\begin{equation}
+ \frac{P(t)\prod_{j=1}^m(U_\Gamma y_{e_j,+\dot a_j})}
+      {U_\Gamma^{q}},\qquad
+ q=n+2+m,\qquad
+ \deg_t\bigl(P\prod_j U_\Gamma y_{e_j}\bigr)=n^2-1+nm.
+ \label{networks:scalar-numerator}
+\end{equation}
+Its source degree is $2n+m$, with all free indices retained.  Apply
+\eqref{networks:chain-factor} to every collected monomial, including its
+sign and full source coefficient.  The strict convergence criterion of
+Proposition~\ref{periods:integer-convergence} applies to these monomials.
+The compact construction below independently proves absolute convergence
+of the complete moments.
+
+\subsection{A compact cube atlas with a positive denominator}
+\label{networks:cubes}
+
+If a bridge is present, its resistance changes no current; together with
+common scaling this makes the current Jacobian deficient and all moments
+\eqref{networks:moment} vanish.  Assume henceforth that the graph is
+bridgeless.  Let $\tau_\Gamma$ be its number of spanning trees.
+For each spanning tree $T$, choose an ordering $c_1,\ldots,c_n$ of its
+complementary edges.  The ordering here is by increasing resistance,
+not necessarily the original edge order.  Put
+\begin{equation}
+ t_{c_n}=1,\qquad
+ t_{c_j}=\prod_{k=j}^{n-1}r_k\quad(j<n),\qquad
+ t_f=x_f t_{c_{j(f)}}\quad(f\in T),
+ \label{networks:cube-map}
+\end{equation}
+where $j(f)$ is the first complementary edge whose fundamental cycle
+contains $f$.  All $x_f,r_k$ range independently over $(0,1)$.
+There are $|T|+n-1=N-1=2n$ coordinates.
+
+\begin{proposition}[Complete compact atlas]
+\label{networks:atlas}
+The $\tau_\Gamma n!$ maps \eqref{networks:cube-map} cover the positive
+projective resistance space exactly once away from equality walls.
+After division by the selected complementary monomial, the Kirchhoff
+polynomial becomes a polynomial $\widetilde U$ with nonnegative integer
+coefficients and constant term one.  On every closed cube,
+\begin{equation}
+              1\le\widetilde U\le\tau_\Gamma.
+ \label{networks:cube-bounds}
+\end{equation}
+Every original current extends as a rational function without poles to
+the closed cube.
+\end{proposition}
+\begin{proof}
+The minimum-spanning-tree cycle criterion is
+$t_f\le t_c$ whenever $f$ belongs to the tree path of the chord $c$.
+With the complementary order fixed, these are exactly the inequalities
+in \eqref{networks:cube-map}.  The minimum tree and complementary order
+are unique away from ties, proving the covering assertion.
+
+For a prefix $c_1,\ldots,c_k$, include those tree edges whose upper
+resistance in \eqref{networks:cube-map} belongs to the prefix.  The
+resulting subgraph has cycle rank $k$: it contains the fundamental path
+of each prefix chord, while its tree edges are acyclic.  Every other
+spanning-tree complement contains at least $k$ edges in this subgraph.
+These inequalities say precisely that each exponent of a successive
+ratio $r_k$ in
+$\prod_{e\notin T'}t_e/\prod_{e\notin T}t_e$ is nonnegative.
+Tree-fraction exponents are already zero or one.  The chosen complement
+gives the unique constant monomial.  At the all-one corner each tree
+monomial is one, proving \eqref{networks:cube-bounds}.
+Divide \eqref{networks:tree-current} by the same monomial.  Every numerator
+is now polynomial and the common denominator is $\widetilde U\ge1$.
+\end{proof}
+
+Order the cube coordinates by the original tree-edge order, followed by
+$r_1,\ldots,r_{n-1}$.  If $t_e=\prod_jx_j^{a_{ej}}$ in these coordinates,
+the projective orientation sign is
+\begin{equation}
+ \chi_{T,c}=\det\bigl[\mathbf1\mid(a_{ej})\bigr]\in\{1,-1\},\qquad
+ \det[t,\partial_1t,\ldots,\partial_{2n}t]
+       =\chi_{T,c}\frac{\prod_e t_e}{\prod_jx_j}.
+ \label{networks:cube-sign}
+\end{equation}
+The determinant has absolute value one because the inverse coordinates
+are the successive ratios and tree fractions in
+\eqref{networks:cube-map}.  Permuting whole two-row chord blocks has even
+parity.  Hence the complete signed cube integrand is
+\begin{equation}
+ \chi_{T,c}(-1)^{\binom n2}
+ \det\left(\frac{\partial y_{c_r,+\dot a}}{\partial x_j}\right)
+ \prod_{\ell=1}^m y_{e_\ell,+\dot a_\ell}.
+ \label{networks:cube-integrand}
+\end{equation}
+It is continuous on the closed cube.  The finite atlas proves absolute
+integrability of every finite original-current moment, including arbitrary
+balanced rational source assignments.
+
+\subsection{Polynomial coefficients and an explicit rational tail}
+\label{networks:series}
+
+On one cube write the full current numerators as
+$Y_{e,+\dot a}=\widetilde U y_{e,+\dot a}$.
+Arrange all chord spinors in their complete cycle order.  The augmented
+polynomial determinant satisfies
+\begin{equation}
+ \boxed{
+ \det(\partial_j y_{c_r,+\dot a})
+ =\frac{\det\begin{pmatrix}
+ \widetilde U&\partial_1\widetilde U&\cdots&\partial_{2n}\widetilde U\\
+ Y&\partial_1Y&\cdots&\partial_{2n}Y
+ \end{pmatrix}}{\widetilde U^{2n+1}}.}
+ \label{networks:augmented}
+\end{equation}
+Subtract $y_{c_r,+\dot a}$ times the first row from its corresponding
+row.  The first column then has only its top entry, and the other entries
+are $\widetilde U\partial_jy_{c_r,+\dot a}$, proving the identity.
+All derivatives hold the original sources fixed.
+
+A degree-$m$ current word initially gives denominator exponent
+$2n+1+m$.  Exact polynomial division may remove factors of
+$\widetilde U$; each zero remainder must be checked.  Group terms of mixed
+degree without discarding any term, and combine complete numerators with
+identical denominators and powers.  Label the retained components by $c$,
+with full numerator $P_c$ and positive denominator exponent $\nu_c$.
+Components with exponent zero are integrated as polynomials separately.
+
+\begin{theorem}[Complete rational series with a certified finite tail]
+\label{networks:rational-series}
+Every finite current moment on a product forest has a finite specification
+as a convergent series of rational coefficients at rational sources.
+Each coefficient is computed by finite polynomial multiplication and
+monomial integration.  For every positive rational error tolerance a
+finite sufficient order is determined by an explicit rational bound.
+The assertion holds coefficientwise for the complete source polynomial
+and every free spinor index.
+\end{theorem}
+\begin{proof}
+Set the expansion center to $(\tau_\Gamma+1)/2$.  By
+\eqref{networks:cube-bounds}, the absolute expansion ratio is bounded by
+$(\tau_\Gamma-1)/(\tau_\Gamma+1)<1$.  The exact binomial expansion is
+\begin{equation}
+ \frac{P_c}{\widetilde U_c^{\nu_c}}
+ =\sum_{k=0}^{\infty}
+ \frac{\binom{\nu_c+k-1}{k}}
+      {((\tau_\Gamma+1)/2)^{\nu_c+k}}
+ P_c\bigl((\tau_\Gamma+1)/2-\widetilde U_c\bigr)^k.
+ \label{networks:binomial-series}
+\end{equation}
+It converges absolutely and uniformly on the closed cube.  If the
+complete polynomial in its $k$th summand has coefficients $p_{c,k,\beta}$,
+its integral is the finite rational number
+\begin{equation}
+ \sum_{\beta}p_{c,k,\beta}
+           \prod_{j=1}^{2n}\frac1{\beta_j+1},\qquad
+ \int_{[0,1]^{2n}}\prod_jx_j^{\beta_j}d^{2n}x
+                   =\prod_j\frac1{\beta_j+1}.
+ \label{networks:cube-moments}
+\end{equation}
+All charts and all polynomial terms contribute to each complete level.
+
+Write $P_c=\sum_\beta p_{c,\beta}x^\beta$ and define its rational absolute
+moment by
+$A_c=\sum_\beta|p_{c,\beta}|\prod_j(\beta_j+1)^{-1}$.
+After order $K$, an absolute bound for the entire remainder is
+\begin{equation}
+ \boxed{
+ B_K=\left(\frac{\tau_\Gamma-1}{\tau_\Gamma+1}\right)^{K+1}
+ \sum_c A_c\sum_{j=0}^{\nu_c-1}
+       \binom{K+j}{j}\left(\frac2{\tau_\Gamma+1}\right)^j.}
+ \label{networks:tail}
+\end{equation}
+For a positive integer $\nu$ and $0\le r<1$, the identity behind this
+formula is
+\begin{equation}
+ (1-r)^\nu\sum_{k=K+1}^{\infty}\binom{\nu+k-1}{k}r^k
+ =r^{K+1}\sum_{j=0}^{\nu-1}\binom{K+j}{j}(1-r)^j.
+ \label{networks:finite-tail-identity}
+\end{equation}
+For $\nu=1$ this is the geometric tail.  Pascal's identity proves the
+general case by induction; equivalently, both sides have identical
+successive differences in $K$ and tend to zero.  Apply it with
+$1-r=2/(\tau_\Gamma+1)$ and use
+$\int|P_c|\le A_c$.
+The bound is decreasing and tends to zero, being a geometric factor
+times a polynomial of finite degree in $K$.  If a width $\eta>0$ is
+requested, the first $K$ with $2B_K\le\eta$ is a sufficient order before
+any of the corresponding series coefficients are computed.  The exact
+partial sum plus or minus $B_K$ is a certified rational interval.
+\end{proof}
+
+At word degree $m$, the numerator has source degree $2n+m$.  Hence there
+are finitely many source coefficients, each covered by the theorem.
+For a fixed rational source assignment the same construction retains the
+entire free-index tensor.  A finite specification consists of the original
+graph and sources, the complete component polynomials, their powers, and
+\eqref{networks:binomial-series}--\eqref{networks:tail}; it contains no
+unevaluated resistance integral.  A finite partial sum alone is not that
+specification.  Storage or order limits may halt a computation, but must
+not turn a partial result into an exact answer.
+
+\subsection{Two complete analytic controls}
+\label{networks:controls}
+
+\paragraph{The triangle, including its full rational series.}
+Take ordered edges $(01,02,12)$ and arbitrary balanced sources
+$\lambda_2=-\lambda_0-\lambda_1$.  In the simplex gauge
+$t_{01}+t_{02}+t_{12}=1$, put $x=t_{02}$ and $y=t_{12}$.  Direct solution
+of \eqref{networks:kirchhoff} gives
+\begin{align}
+ y_{01,+\dot a}&=x\lambda_{0,+\dot a}-y\lambda_{1,+\dot a},\\
+ y_{02,+\dot a}&=(1-x)\lambda_{0,+\dot a}+y\lambda_{1,+\dot a},\\
+ y_{12,+\dot a}&=x\lambda_{0,+\dot a}+(1-y)\lambda_{1,+\dot a},\\
+ \Omega_\Gamma&=-\langle\lambda_0,\lambda_1\rangle\,dx\,dy,
+ \qquad x,y>0,\quad x+y<1.
+ \label{networks:triangle-chart}
+\end{align}
+The complete bare and first-current values are
+\begin{align}
+ K_\Gamma&=-\frac12\langle\lambda_0,\lambda_1\rangle,\\
+ K_\Gamma[01]_{+\dot a}
+ &=\frac{\langle\lambda_0,\lambda_1\rangle}{6}
+                       (-\lambda_{0,+\dot a}+\lambda_{1,+\dot a}),\\
+ K_\Gamma[02]_{+\dot a}
+ &=-\frac{\langle\lambda_0,\lambda_1\rangle}{6}
+                       (2\lambda_{0,+\dot a}+\lambda_{1,+\dot a}),\\
+ K_\Gamma[12]_{+\dot a}
+ &=-\frac{\langle\lambda_0,\lambda_1\rangle}{6}
+                       (\lambda_{0,+\dot a}+2\lambda_{1,+\dot a}).
+ \label{networks:triangle-values}
+\end{align}
+For example, the entire order-$m$ tensor on edge $01$ is
+\begin{equation}
+ -\frac{\langle\lambda_0,\lambda_1\rangle}{(m+2)!}
+ \sum_{S\subseteq\{1,\ldots,m\}}(-1)^{m-|S|}|S|!(m-|S|)!
+ \prod_{j\in S}\lambda_{0,+\dot a_j}
+ \prod_{j\notin S}\lambda_{1,+\dot a_j}.
+ \label{networks:triangle-all-orders}
+\end{equation}
+This is the full tensor, with no free-index contraction.
+
+For $\lambda_0=(1,0)$ and $\lambda_1=(0,1)$, the three complete cube
+integrands combine to $-3/(1+x+y)^3$ on $[0,1]^2$.
+Here $\tau_\Gamma=3$.  Since
+\begin{equation}
+ \int_0^1\!\int_0^1(1-x-y)^kdx\,dy
+          =\frac{1+(-1)^k}{(k+1)(k+2)},
+\end{equation}
+the exact coefficients of \eqref{networks:binomial-series} are
+\begin{equation}
+ a_{2j}=-\frac3{2^{2j+3}},\qquad a_{2j+1}=0,\qquad
+ \sum_{k=0}^{\infty}a_k=-\frac38\sum_{j=0}^{\infty}4^{-j}
+                      =-\frac12.
+ \label{networks:triangle-series}
+\end{equation}
+For requested width $1/1000$, the general bound first permits $K=18$:
+\begin{equation}
+ \sum_{k=0}^{18}a_k=-\frac{1048575}{2097152},\qquad
+ B_{18}=\frac{87}{262144},\qquad
+ \left|K_\Gamma-\sum_{k=0}^{18}a_k\right|=\frac1{2097152}.
+ \label{networks:triangle-tail-control}
+\end{equation}
+The last equality is the sharper independently summed tail; the general
+algorithm uses the middle bound.
+
+\paragraph{A three-loop fork with zero bare value and all first currents.}
+Order the edges as $(12,13,2A,2B,3A,3B,AB)$.  The sources are arbitrary
+$\lambda_1,\lambda_A$, zero at $2,3$, and
+$\lambda_B=-\lambda_1-\lambda_A$.  Two passive-star eliminations and the
+remaining triangle give coordinates
+\begin{equation}
+ (r_1,r_2)\in(0,1)^2,\qquad
+ (r_3,r_4)\in\Delta^2,\qquad(r_5,r_6)\in\Delta^2.
+ \label{networks:fork-domain}
+\end{equation}
+To display every current without suppressing a source, write the three
+retained triangle currents explicitly as
+\begin{equation}
+ y_{1A}^{\rm red}=r_5\lambda_1-r_6\lambda_A,\quad
+ y_{1B}^{\rm red}=(1-r_5)\lambda_1+r_6\lambda_A,\quad
+ y_{AB}^{\rm red}=r_5\lambda_1+(1-r_6)\lambda_A.
+ \label{networks:fork-reduced}
+\end{equation}
+Each equation below is an equality of complete spinors:
+\begin{align}
+ y_{12}&=r_1y_{1A}^{\rm red}+r_2y_{1B}^{\rm red},&
+ y_{13}&=(1-r_1)y_{1A}^{\rm red}+(1-r_2)y_{1B}^{\rm red},\\
+ y_{2A}&=r_1y_{1A}^{\rm red}-r_3y_{AB}^{\rm red},&
+ y_{2B}&=r_2y_{1B}^{\rm red}+r_3y_{AB}^{\rm red},\\
+ y_{3A}&=(1-r_1)y_{1A}^{\rm red}-r_4y_{AB}^{\rm red},&
+ y_{3B}&=(1-r_2)y_{1B}^{\rm red}+r_4y_{AB}^{\rm red},\\
+ y_{AB}&=(1-r_3-r_4)y_{AB}^{\rm red}.&&
+ \label{networks:fork-all-currents}
+\end{align}
+The full density, including orientation, is
+\begin{equation}
+ \Omega_\Gamma=\langle\lambda_1,\lambda_A\rangle^3
+ (r_1-r_2)(1-r_3-r_4)r_5(1-r_5-r_6)
+                       \,dr_1\cdots dr_6.
+ \label{networks:fork-density}
+\end{equation}
+For the tree $(12,13,2A,2B)$, compute the full Jacobian of the chord
+spinors $(y_{3A},y_{3B},y_{AB})$.  Its determinant is minus the scalar
+polynomial in \eqref{networks:fork-density}.  The sign
+$(-1)^{\binom32}=-1$ in \eqref{networks:current-area} cancels it.
+The resistance chart preserves projective orientation: the two inverse
+star changes reverse orientation twice, and their parallel fractions and
+the final triangle have the displayed positive orientation.  The
+independent replay also checks the full original resistance Jacobian and
+original-network density at exact interior points.
+
+The bare integral vanishes because $\int_0^1\int_0^1(r_1-r_2)dr_1dr_2=0$.
+All seven complete first-current spinors are nevertheless determined.
+Each row below gives $K_\Gamma[e]_{+\dot a}$ as
+$\langle\lambda_1,\lambda_A\rangle^3/8640$ times the indicated spinor:
+\begin{equation}
+ \begin{array}{c|c}
+ e & \text{complete spinor factor}\\
+ \hline
+ 12&-\lambda_{1,+\dot a}-2\lambda_{A,+\dot a}\\
+ 13&\lambda_{1,+\dot a}+2\lambda_{A,+\dot a}\\
+ 2A&2\lambda_{1,+\dot a}-\lambda_{A,+\dot a}\\
+ 2B&-3\lambda_{1,+\dot a}-\lambda_{A,+\dot a}\\
+ 3A&-2\lambda_{1,+\dot a}+\lambda_{A,+\dot a}\\
+ 3B&3\lambda_{1,+\dot a}+\lambda_{A,+\dot a}\\
+ AB&0
+ \end{array}
+ \label{networks:fork-values}
+\end{equation}
+The table denotes polynomial identities after multiplication by the
+displayed bracket cubed; it remains valid when that bracket vanishes.
+To calculate it directly, the two interval moments are $1/12$ and
+$-1/12$ after multiplication by $r_1$ and $r_2$ respectively, while
+\begin{align}
+ \int_{\Delta^2}(1-r_3-r_4)dr_3dr_4&=\frac16,\\
+ \int_{\Delta^2}r_5(1-r_5-r_6)y_{1A}^{\rm red}dr_5dr_6
+                           &=\frac{2\lambda_1-\lambda_A}{120},\\
+ \int_{\Delta^2}r_5(1-r_5-r_6)y_{1B}^{\rm red}dr_5dr_6
+                           &=\frac{3\lambda_1+\lambda_A}{120}.
+ \label{networks:fork-factorized-moments}
+\end{align}
+All terms independent of $r_1,r_2$ cancel before these remaining finite
+integrals.  The full polynomial calculation independently gives the same
+values and all integrated Kirchhoff identities.  Its executable and
+certificate are listed in Appendix~\ref{app:certificates}.
+
+\subsection{Relation to finite periods and physical assembly}
+\label{networks:scope}
+
+Theorem~\ref{networks:rational-series} evaluates every finite original
+current word on every valid product forest by an exact infinite series
+with finite specification and a finite order-to-error rule.  The chain
+reduction \eqref{networks:chain-factor} can instead terminate in a finite
+period expression when the required scalar values are known.  Theorem
+\ref{periods:wheel-span} supplies such a uniform classification for wheel
+cores.  The finite census and source-polynomial calculations in the
+computational appendix have their separately stated topological, source,
+and derivative ranges.
+
+Finally, $K_\Gamma$ is an oriented geometric kernel.  It contains neither
+the full Wick matching sum nor the color, representation, coupling,
+Koszul, and propagator-normalization factors of a physical product.
+Vanishing of a bare geometric kernel does not imply vanishing of its
+current moments, as \eqref{networks:fork-values} shows.  Cancellation of
+periods after complete physical assembly must be proved for the specified
+fields and contractions; it is not a consequence of sourced circuit
+elimination or of the convergent rational series.

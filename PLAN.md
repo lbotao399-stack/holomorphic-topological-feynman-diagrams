@@ -23,6 +23,8 @@ A problem is admitted when
 
 ## 2. Pipeline
 
+**Methods manuscript, 27 November 2026 [chk]:** [Complete sourced circuits and fixed-core periods](notes/methods-paper/README.md), with a 35-page main text and 13-page complete source-coefficient supplement. The draft proves sourced elimination and the rational cube series, fixed-core integer-pole stabilization, the explicit all-loop wheel scalar span, and complete five-loop source reconstruction. Three manuscript-specific independent checks recompute the full fork control, all eighteen wheel bases and every printed scalar coefficient; the combined replay passes twelve commands and 23 focused tests. [Final internal review](notes/methods-paper/verification/INDEPENDENT_REVIEW.md), [replay manifest](notes/methods-paper/verification/checks.json), [build](notes/methods-paper/verification/build.json) and [all-page layout record](notes/methods-paper/verification/layout.json) are recorded. Under the existing [score rubric](SCORE.md), C3 is 4/4 and D2 is 5/5; the total is 75/100. General-core numerical bases, all-power three-zeta closure for the prism, $K_{3,3}$ and $K_5$, and the stated physical-assembly questions remain open.
+
 Same steps as [LLC §3–§5] and [6d §2–§8]; each step has its own check.
 
 | step | content | check |

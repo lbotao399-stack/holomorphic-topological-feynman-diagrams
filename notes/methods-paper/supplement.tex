@@ -1,0 +1,43 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\input{preamble}
+\hypersetup{pdftitle={Complete five-loop source-current coefficients}}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.35}
+\title{Complete five-loop source-current coefficients\\
+\large Supplement to \emph{Exact sourced networks and finite period spaces}}
+\author{Holomorphic--Topological Feynman Diagrams Project}
+\date{27 November 2026}
+\begin{document}
+\maketitle
+The ordered, oriented original edges are
+\[
+(01,13,02,24,05,06,35,36,45,46,56).
+\]
+The independent source spinors are $\lambda_1,\lambda_2,\lambda_5$,
+with $\lambda_6=-\lambda_1-\lambda_2-\lambda_5$ and
+$\lambda_0=\lambda_3=\lambda_4=0$. The marked vertices are $5,6$.
+Every bracket is the determinant of its two displayed source spinors.
+In each row multiply the complete displayed monomial by the rational
+column plus the second column times $\zeta(3)$ plus the third column
+times $\zeta(5)$. Sum every row in the indicated original edge.
+All unlisted monomial coefficients are exactly zero. The free spinor
+index $+\dot a$ is retained in every current row, and every bracket
+power is nonnegative. The result therefore applies at degenerate source
+frames as well.
+
+These are normalized geometric kernels in two holomorphic directions
+and no topological direction, before Wick, colour and coupling
+assembly. The first-current insertion uses the negative displacement
+derivative convention of the main manuscript. There are sixteen
+nonzero bare monomials and 468 nonzero current monomials, carrying
+1,334 nonzero rational current coefficients. All source data come from
+the complete exact certificate in
+\path{explore/circuit-general/forest-source-currents/certificate.json}
+at repository commit \texttt{75a9218}. The generator and an independent
+table parser check every printed monomial and rational coefficient.
+\tableofcontents
+\clearpage
+\small
+\input{generated/all_currents}
+\end{document}

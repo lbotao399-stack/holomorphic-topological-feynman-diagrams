@@ -1,0 +1,12 @@
+test_augmented_determinant_retains_all_three_loop_sources (__main__.GeometricCubeChecks.test_augmented_determinant_retains_all_three_loop_sources) ... ok
+test_explicit_budgets_and_atomic_retry (__main__.GeometricCubeChecks.test_explicit_budgets_and_atomic_retry) ... ok
+test_finite_tail_identity_and_monotonicity (__main__.GeometricCubeChecks.test_finite_tail_identity_and_monotonicity) ... ok
+test_mixed_current_polynomial_and_complete_spinor (__main__.GeometricCubeChecks.test_mixed_current_polynomial_and_complete_spinor) ... ok
+test_original_edge_reversal_and_permutation_at_every_order (__main__.GeometricCubeChecks.test_original_edge_reversal_and_permutation_at_every_order) ... ok
+test_triangle_every_term_and_exact_infinite_sum (__main__.GeometricCubeChecks.test_triangle_every_term_and_exact_infinite_sum) ... ok
+test_zero_loop_zero_input_and_replayable_complete_specification (__main__.GeometricCubeChecks.test_zero_loop_zero_input_and_replayable_complete_specification) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.916s
+
+OK

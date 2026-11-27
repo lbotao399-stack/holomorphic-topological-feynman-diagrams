@@ -1,0 +1,378 @@
+{
+  "schema": "methods-paper-layout-v1",
+  "review_date": "2026-11-27",
+  "reviewer": "root assistant; visual inspection of rendered pages",
+  "result": "passed",
+  "rendering": {
+    "program": "pdftoppm version 26.05.0",
+    "format": "PNG",
+    "dpi": 90,
+    "command": "pdftoppm -r 90 -png output/pdf/DOCUMENT.pdf tmp/layout/DOCUMENT/page"
+  },
+  "documents": {
+    "paper": {
+      "pdf": "output/pdf/paper.pdf",
+      "pdf_sha256": "3c72970c8ceb94a321aaa8c0d7edcbfe8b28e468cef1e60849e66a9e740e30e1",
+      "pages": 35,
+      "page_checks": [
+        {
+          "page": 1,
+          "render_sha256": "e2c77e610a88901da4686db433aa58a49009491b816f1f3eacf9a38913579af5",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "render_sha256": "bb17b2c34e6e9b56ec376af4de02d287f70a7a15d1f1422800016fad74a72483",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "render_sha256": "a4570b6486e9a241b4ed771d6b32f5720779fd9630c2f8811a1d1a66497168f1",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "render_sha256": "439b24a152f2fbbd12a1d870fad58f0a6a85d5d33a747bc0b92a7fb94feb6df1",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "render_sha256": "b4761bd97e7fbd22b19fbcdad854c5fb768bce10ac085ebb8eb3f66e79217f62",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "render_sha256": "f324260b8b12c77c61d911f2a96795832a0aa2d52ff4820cc257e72396961e4e",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "render_sha256": "62a98fe5f4ec3fa08d5e716155b477d880a0e0d3f7cc279a25ac371b3193d7d2",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "render_sha256": "4d0e9f554775e9122e7ae4720e2115dd53e0ae5a36db2344040f9518ac8fc301",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "render_sha256": "3f250f414ef77d64dba00d6ff19e21f8e51706beb3d40f72d7e54340dcc8266f",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "render_sha256": "2f64ed3b4c4357e3255a2bd1e3ab3bf3d51294001cb44a8279893f07bd197901",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "render_sha256": "5fdadfe73909e9acbf86f1ecadd440967329b8656fe683a84fb93f8ef41b8a92",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "render_sha256": "fd670cae9460951ae20ce069e908ca7fa75b6b36081896d8a60d5e4ea87137d2",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "render_sha256": "8652fd1cecb2d47a60606bfcd98d99eeec21be053a6163f70eb5fe08f5ab8681",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "render_sha256": "13f13eae23af8a31528568255f371e031cfbd38696a9bee3049014d21cc0a1ab",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "render_sha256": "0e288f26a196d1fa635f1c59dd9b1fbf07700ffb5a74f7d6dedc74e0cb9abc17",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "render_sha256": "bc6db894ef86b83d9e7887635e0354440fdf66aa8454e63ecb6ed6ab9223238c",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "render_sha256": "1756d390d969e3cf7b304db678a0394b82dc9754abc3e8fcd381dfc8912209f4",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "render_sha256": "08dfd05c04143a578525f250680033af5a3e56e6a30c7b5c06ac6c682d3141a3",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "render_sha256": "ff6ce13fac7b03be851298308ce43683064504f905391fcb0304e97d21a0c49e",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "render_sha256": "ae434af79a484161faa67d40cceb0c7c110c3f80ed02491a5de45cedb8ccf06a",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 21,
+          "render_sha256": "f8ad0c8b3199789843eaaf3137c60a540108b58c1eb51b9bd738f375ed8d0d8c",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 22,
+          "render_sha256": "4163ef65496a49012bb4472396d387ef9f762e6ecce101b336c7841968bf9358",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 23,
+          "render_sha256": "07a7e087dc990772ea1ea73db65f281c3018ce3304209eea691fc0c07bedaf21",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 24,
+          "render_sha256": "80c1bcb72353089111b201a6712532dd6b59e0cc20ff7cfcbee2441f370a2168",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 25,
+          "render_sha256": "8fc325cd6d34e7f55734d5b5535451dbebbfbded19d3098e9103d3f0cf5849c8",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 26,
+          "render_sha256": "5e3a6bc8beee62783e25fa1d78fec05232e962e1e9bc2488eddc4156a1538db4",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 27,
+          "render_sha256": "a247b6c23ebfbc141371625e5d6eba9c37c25b45f563b64b8a015dd0f3697025",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 28,
+          "render_sha256": "c0cf641952390bb8ba74a9b7e7529c5b346ab501bc77022a1417099fc4c6abef",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 29,
+          "render_sha256": "55abc659b18b3f1a8eb251c1e9e58e421711a745bb41533bcf35f2d2421630ce",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 30,
+          "render_sha256": "6d9f3ad7770161331c0f35ab3c9d06f58f17974ddd41d2846146a808764ee0e2",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 31,
+          "render_sha256": "4aea4aac099514bbfc37702da79b9906867c768fa991ecb772d4d088f196a462",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 32,
+          "render_sha256": "fa71cd3a2803c40ee97d1440f6310e418570f397929bbbee62d4f66b9b31bc52",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 33,
+          "render_sha256": "1bd9d6411a1ecb556c28652e996b19fc49cc0606c3de294adf88753ba740462f",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 34,
+          "render_sha256": "b48b0f40332013195f83782fb2b42edfbb5f25333028425ecdd47fe6e4e49c0e",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 35,
+          "render_sha256": "2fc6c0b881311085f12c77b83fccf81910e3f807e8cdd65b44fe17c8c3aa523e",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        }
+      ],
+      "no_clipped_text_or_equations_observed": true,
+      "no_overlapping_table_rows_observed": true,
+      "no_stranded_table_labels_observed": true
+    },
+    "supplement": {
+      "pdf": "output/pdf/supplement.pdf",
+      "pdf_sha256": "e39beb85f0b65e4203cfeb06a986f95c5b3f1813266482931bf9553f4a35716d",
+      "pages": 13,
+      "page_checks": [
+        {
+          "page": 1,
+          "render_sha256": "f168674f763e9f22be34d6f7895f96e80951854dfcd026d1f47a9fece7cce16e",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "render_sha256": "27c82c73c38e5b8d3eedc0bdc4d2afd6e8d1bbd1a50de4d0197759cbb12a67c0",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "render_sha256": "7fc4d922826095d5b135b40cd0381fc50d374ef3186f7d030eb303ddb9855d94",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "render_sha256": "7fc43e60d96405de6977f511cef07fa924649f18e1c7fd54aae956abb949d792",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "render_sha256": "646901a77bba1ea7238a313b1915cf043dd4d7fcf3034fccdf02cf615bc9349f",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "render_sha256": "8c9dcb3730d3cc458da6e8c1aa0dfb8f349fecc2e976672a78714f977b9da949",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "render_sha256": "7a6b929e85a12d71ac5942357526d38c5d63a78d6cc26694505b0c217d0cace7",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "render_sha256": "159e7cee2a9104e6db3901ed41711414bf1f90564ad042e3b2dabaca5017bab7",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "render_sha256": "ae56fff5f60f02d5d8929512850f9230a7376e04640fe2e89babe72275b145ae",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "render_sha256": "d2de0f1295bd519a3eacf4ab48c914b9ceecbd665eec233d23c8a38006520380",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "render_sha256": "226bc5eb34759e418cbc14649c0d0c898c16e0e8d06e5ff87c12ba6d52dffd1f",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "render_sha256": "0539790994cd62c0ca243a9c623f05a95c514045f1b381958f0766deedb60139",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "render_sha256": "bd38be435f69d3b8a35755b1a9b73fff05acebb14bc4e30d1e9792fb77cf912e",
+          "nonempty_text": true,
+          "all_words_inside_18_point_page_inset": true,
+          "visual_review": "passed"
+        }
+      ],
+      "no_clipped_text_or_equations_observed": true,
+      "no_overlapping_table_rows_observed": true,
+      "no_stranded_table_labels_observed": true
+    }
+  },
+  "findings_resolved": [
+    "Split a wide principal-coefficient display and moved an exact long integer to a display.",
+    "Increased main-manuscript fraction-table row spacing.",
+    "Kept every boundary-table label with its table and started evidence packages and the bibliography on their own pages."
+  ],
+  "inspection": "All final rendered pages inspected in page contact sheets; detailed full-page inspection of dense fractions, the wheel table, all boundary primitives, evidence table and references. After the last page-break changes, all 48 pages were rendered again: manuscript pages 2 and 32 through 35 changed and were inspected at full size; all other manuscript pages and all supplement pages were pixel-identical to their already reviewed renders.",
+  "checks_manifest_sha256": "b3cea0fde11a88d2943d3e5747a0736f9498ab92911e6578cbac598df0cb3f15",
+  "build_record_sha256": "06f7e876291a6d13846d10742d474bb8e0fc8b51b0ba96d306446373313d53f0"
+}

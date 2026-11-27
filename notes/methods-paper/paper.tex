@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=27mm]{geometry}
+\input{preamble}
+\renewcommand{\arraystretch}{1.65}
+\title{Exact sourced networks and finite period spaces\\
+for holomorphic Feynman kernels}
+\author{Holomorphic--Topological Feynman Diagrams Project\\
+\small Methods manuscript}
+\date{27 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We present an exact computational framework for holomorphic graph kernels
+with arbitrary retained sources and finite current insertions. Local
+network elimination keeps the affine source flow and every original
+current. A compact spanning-tree atlas converts the complete current-area
+form into rational integrals on closed cubes and gives a convergent
+rational series with an explicit finite formula for its remainder.
+For a fixed Kirchhoff core, we prove that all absolutely convergent
+normalized periods with rational polynomial numerators and positive
+integer denominator powers lie in a finite rational vector space.
+The full scalar spaces are nested and eventually stabilize. Their
+relative boundary relations yield complete, independently verifiable
+target-reduction certificates. For an $n$-spoke wheel the full scalar span
+is $\Q+\sum_{j=2}^{n-1}\Q\zeta(2j-1)$ at every integer denominator
+power $q\ge\max(3,n-1)$. A five-loop quartic product forest illustrates
+the method: all eleven first-current spinors are obtained as complete
+source polynomials, including degenerate source frames. The accompanying
+supplement prints all 468 nonzero current monomials and their 1,334
+nonzero rational period coefficients. Exact certificates, replay scripts,
+normalizations and the remaining physical assembly questions are stated
+explicitly.
+\end{abstract}
+\tableofcontents
+\input{sections/introduction}
+\input{sections/networks}
+\input{sections/periods}
+\input{sections/currents}
+\input{sections/implementation}
+\input{sections/discussion}
+\clearpage
+\appendix
+\input{sections/certificates}
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

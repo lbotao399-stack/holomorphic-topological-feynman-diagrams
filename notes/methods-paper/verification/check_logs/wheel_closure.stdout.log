@@ -1,0 +1,3 @@
+PASS: 18 K4 finite bases, the uniform q>=21 inequality, 10 rational wheel controls,
+      9 independent star--triangle embeddings, and 10 complete spanning determinants.
+The all-n and all-q proof is in README.md; finite ranks are controls, not an extrapolation.

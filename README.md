@@ -8,7 +8,15 @@ Starting point: Li–Liu–Chang, *Holomorphic Feynman diagrams in four dimensio
 
 Status tags in all reports: [chk] exact check (script and log in the folder), [drv] derived, [src] taken from a source, [open]. Nothing here is peer-reviewed.
 
+**Recorded score: 75 / 100.** The [existing rubric and change log](SCORE.md) record the accepted uniform-period statements and the complete methods draft. The [acceptance audit](notes/methods-paper/ACCEPTANCE.md) identifies the exact requirements and evidence.
+
 ## Most important results
+
+### Methods paper: sourced circuits and fixed-core periods
+
+[Exact sourced networks and finite period spaces for holomorphic Feynman kernels](notes/methods-paper/README.md) — [35-page manuscript](notes/methods-paper/output/pdf/paper.pdf) · [13-page complete coefficient supplement](notes/methods-paper/output/pdf/supplement.pdf) · [independent internal review](notes/methods-paper/verification/INDEPENDENT_REVIEW.md).
+
+The draft derives complete sourced network elimination, rational cube integration with an explicit remainder, fixed-core stabilization at positive integer pole orders, and the full wheel scalar span for every integer $q\ge\max(3,n-1)$. The five-loop supplement retains all eleven original first-current spinors: 16 bare and 468 current monomials, with 1,334 nonzero rational current coefficients. Its independent controls reproduce the fork currents, every wheel base value and every printed coefficient. All twelve bounded replay commands and all 23 focused tests pass; both PDFs have resolved references and reviewed page layouts. The inherited calculations, normalization signs, original literature and remaining all-core and physical-assembly questions are stated explicitly.
 
 ### 5d Chern–Simons theory on $\mathbb R\times\mathbb C^2$ (`notes/flagship/flagship.tex`, `deepen/`, `notes/interpretation/`)
 

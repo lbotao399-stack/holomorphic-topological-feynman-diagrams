@@ -1,0 +1,9 @@
+Replayed every independent wheel coefficient and source digest.
+complete_base_values: 18
+proper_subset_convergence_checks: 1116
+principal_coefficient_checks: 396
+spectral_coefficient_checks: 1458
+complete_polynomial_parts_cancelled: 18
+Uniform q>=21 bound and its positive growth polynomial: exact.
+The unbounded wheel theorem is proved in periods.tex; finite ranks are not extrapolated.
+canonical_certificate_sha256: 0728eaead227c66c20738b56cefb6e54fc06e29defc1ce2c9f171658a487b441

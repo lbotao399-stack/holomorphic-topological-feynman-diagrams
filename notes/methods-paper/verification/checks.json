@@ -1,0 +1,395 @@
+{
+  "build_artifacts_sha256": {
+    "notes/methods-paper/output/pdf/paper.pdf": "3c72970c8ceb94a321aaa8c0d7edcbfe8b28e468cef1e60849e66a9e740e30e1",
+    "notes/methods-paper/output/pdf/supplement.pdf": "e39beb85f0b65e4203cfeb06a986f95c5b3f1813266482931bf9553f4a35716d",
+    "notes/methods-paper/verification/build.json": "06f7e876291a6d13846d10742d474bb8e0fc8b51b0ba96d306446373313d53f0"
+  },
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "notes/methods-paper/generate_tables.py"
+      ],
+      "counts": {
+        "complete_generated_files": 4
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 0.065,
+      "name": "generated_tables",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/generated_tables.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/generated_tables.stdout.log",
+      "stdout_sha256": "da9cf97197ec3060d53dba2e17e868de3643402b39e1ff0d084962b1699c0c22",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "notes/methods-paper/checks/printed_tables.py"
+      ],
+      "counts": {
+        "all_printed_primitives": 16,
+        "all_printed_rational_entries": 1452,
+        "bare_monomials": 16,
+        "coefficientwise_specialized_conservation_checks": 42,
+        "complete_printed_boundary_identities": 3,
+        "complete_specialized_spinors": 11,
+        "complete_wheel_base_rows": 18,
+        "current_monomials": 468,
+        "nonzero_current_rational_coefficients": 1334,
+        "printed_primitive_faces": 32
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 0.968,
+      "name": "printed_tables",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/printed_tables.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/printed_tables.stdout.log",
+      "stdout_sha256": "cccbca8ebe1a8581f057d9f87ae6fada9eaef56714ab0facfb616788a978f39e",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "notes/methods-paper/checks/fork_control.py"
+      ],
+      "counts": {
+        "complete_first_current_spinors": 7,
+        "cube_variables": 6,
+        "independent_original_network_controls": 2,
+        "integrated_kirchhoff_identities": 10,
+        "polynomial_kirchhoff_identities": 10
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 2.268,
+      "name": "fork_control",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/fork_control.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/fork_control.stdout.log",
+      "stdout_sha256": "b5171bef6f3a9b9324bf24ab0d8f82caaf2eb448748a00c4de6507665c60d77f",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "notes/methods-paper/checks/wheel_residue.py"
+      ],
+      "counts": {
+        "complete_base_values": 18,
+        "complete_polynomial_parts_cancelled": 18,
+        "principal_coefficient_checks": 396,
+        "proper_subset_convergence_checks": 1116,
+        "spectral_coefficient_checks": 1458
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 0.516,
+      "name": "wheel_residue",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/wheel_residue.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/wheel_residue.stdout.log",
+      "stdout_sha256": "f5f1accb77edf3657f8a5934cc9ed27d76807c6a14ec7edd4b3ad21c25fe2f8b",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "explore/circuit-general/core-period-stabilization/run_checks.py"
+      ],
+      "counts": {
+        "complete_hepp_sectors": 908,
+        "convergence_preserving_cotree_shift_terms": 2082,
+        "convergent_sector_coordinate_checks": 430388,
+        "cotree_factorization_checks": 12700,
+        "graphs": 8,
+        "rejected_scalar_weight_witnesses": 501,
+        "tested_scalar_weights": 667
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 2.178,
+      "name": "fixed_core_stabilization",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/fixed_core_stabilization.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/fixed_core_stabilization.stdout.log",
+      "stdout_sha256": "d06e4a3902832cc1eabeb1b3cc142f42c7654046dbf0d5b6956ad54ef9d9e044",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "explore/circuit-general/core-period-closure/verify.py"
+      ],
+      "counts": {
+        "finite_k4_base_range": 18,
+        "k4_embedding_controls": 9,
+        "rational_witness_controls": 10,
+        "spanning_controls": 10
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 2.678,
+      "name": "wheel_closure",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/wheel_closure.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/wheel_closure.stdout.log",
+      "stdout_sha256": "d4d2968f46e87f4eb9d952373a8932f6000ef58f01f1c173bd8eb261e3573396",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "code/tests/test_core_sector_periods.py"
+      ],
+      "counts": {
+        "tests_passed": 10
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 1.726,
+      "name": "relative_engine_tests",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/relative_engine_tests.stderr.log",
+      "stderr_sha256": "6393ea440eea43525f248f590c4fdd73264ca8e6215b78b3f2ee347a7b002e38",
+      "stdout": "notes/methods-paper/verification/check_logs/relative_engine_tests.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "explore/circuit-general/core-sector-reduction/certify.py"
+      ],
+      "counts": {
+        "complete_certificates": 8,
+        "full_graph_sectors": 6,
+        "independent_primitive_faces": 82,
+        "independent_rational_identities": 8,
+        "intended_target_bindings": 8
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 2.181,
+      "name": "relative_certificates",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/relative_certificates.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/relative_certificates.stdout.log",
+      "stdout_sha256": "eae5c254617682c18969f3d65cf44c8983c3a308347275901213360bb094ce72",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "explore/circuit-general/forest-source-currents/run_checks.py"
+      ],
+      "counts": {
+        "complete_original_scalar_entries": 22,
+        "complete_original_spinors": 11,
+        "direct_nodes_stored": 16,
+        "frame_coefficients": 644,
+        "independent_complete_controls_stored": 2,
+        "interpolation_nodes": 28,
+        "residual_periods": 0
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 3.393,
+      "name": "supported_source_replay",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/supported_source_replay.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/supported_source_replay.stdout.log",
+      "stdout_sha256": "e126418cbc571a325431bdb6f33f04dec4e61ed0498d7f849e4848b7df395f48",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "code/tests/test_forest_cube_expansion.py"
+      ],
+      "counts": {
+        "tests_passed": 7
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 3.47,
+      "name": "cube_expansion_tests",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/cube_expansion_tests.stderr.log",
+      "stderr_sha256": "1842bec99b21e6bc0d3a885aedeb0aac0a3e74fb0b4f1c709ec8828868cf2b14",
+      "stdout": "notes/methods-paper/verification/check_logs/cube_expansion_tests.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "code/tests/test_solve_product_forest_cubes.py"
+      ],
+      "counts": {
+        "tests_passed": 6
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 3.235,
+      "name": "complete_cube_cli_tests",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/complete_cube_cli_tests.stderr.log",
+      "stderr_sha256": "8ff968338f4370be713bd566257c75065266254b35f8928cbb0e3696117b67c1",
+      "stdout": "notes/methods-paper/verification/check_logs/complete_cube_cli_tests.stdout.log",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timeout_seconds": 300
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "notes/methods-paper/build.py",
+        "--verify"
+      ],
+      "counts": {
+        "paper_pages": 35,
+        "supplement_pages": 13
+      },
+      "cwd": "/workspace/scratch/229d0be1abcc/holomorphic-topological-feynman-diagrams",
+      "elapsed_seconds": 0.417,
+      "name": "pdf_build",
+      "returncode": 0,
+      "status": "passed",
+      "stderr": "notes/methods-paper/verification/check_logs/pdf_build.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "notes/methods-paper/verification/check_logs/pdf_build.stdout.log",
+      "stdout_sha256": "6e75efaf0f73a02ea34c6a59766a5ea095e944269d36cae069ef82ce957eb336",
+      "timeout_seconds": 300
+    }
+  ],
+  "commands_passed": 12,
+  "commands_run": 12,
+  "expensive_source_reintegration_performed": false,
+  "finished_utc": "2026-11-27T15:56:35.933264+00:00",
+  "full_replay_passed": true,
+  "mode": "full",
+  "prior_period_tables_regenerated": false,
+  "schema": "methods-paper-replay-v1",
+  "scope": "Bounded exact controls, complete stored-certificate bindings, and existing PDF build verification; independent mathematical and visual review remain separate.",
+  "sources_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/__init__.py": "5089306c628ac73c980f2c00d1038483ceb52c05d84de1f9485d11e5879b09d8",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/catalog.py": "ec658a78ec435aaca3a039954373ccbba3323700588892b72e33e1043c7c1c69",
+    "code/htk/conventions.py": "998f0b09ede1f7e3f14285531434b7b19f4848e782e8df80ea6740c9294bdbc8",
+    "code/htk/core_sector_periods.py": "320bbbb4b9e3829bee85ed713f29141becfec51059535eb193f93f963679f66e",
+    "code/htk/dirichlet.py": "4d1f2dc4a94be1ba8ba8b8755554802f516bcfc2f2cf7790ee0397b8722a8fb8",
+    "code/htk/fan_moments.py": "fc3702fbbe0d1c359e866af295706341dfb24e5af8e35ab48c3ea35b5986095a",
+    "code/htk/fibres.py": "071d7fe1b14106890c826beb47ebcc05be2e3ff9e29e2a652c0cfbda81b8bcd2",
+    "code/htk/forest_chain_periods.py": "104b9042e7d0f3fe1dfcb519f0867d0151fe15846e01942d4425cefdddaa825b",
+    "code/htk/forest_contractions.py": "19222ab94a70691a48bd88ebc718981e0e8de5f631f98bdf480624194acf5729",
+    "code/htk/forest_cube_expansion.py": "bddff3f41440fd5edbe5950404e9b3fb38ada2bb6844e0b5cf66b17f61f6188b",
+    "code/htk/forest_cubes.py": "7f269f29d5774d7eb00e8204f06d6b31882f51c3cbe71bed61e9c67eb9ba6d5d",
+    "code/htk/forest_ears.py": "75ed000666612e0f1a766dfb15f9429800c1928d33fb4063947562e4484fc5d2",
+    "code/htk/forest_kron.py": "fce3a58194ab525cc51c2a424cf3b7220f509252a7901b6f6bcb115fb8d318e2",
+    "code/htk/forest_model.py": "e1074f0201f69667a8d1094c2eeda199122c2ce092e6a975ed8833a300c21f05",
+    "code/htk/forest_moments.py": "0c6e83bc286f725676e40577f22c8fa3cfd5e625c20c69ea9ffc84fa15b3bd58",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/forest_reduction.py": "5ddb01c7a8616d1ae5322ceb18ff2cb5cc08556a5cef1113183ef99793626adb",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/oracle.py": "f9e0bbc3b938639aaedc83ba2afaf061bdd4476fde94301f10dcaa9326f6978d",
+    "code/htk/product_forests.py": "bf788aa268fc8baca5c2b484122386813040a1d63cfbf89ee27d2865a27b7eee",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/simplex.py": "92a95d913289782718186d5dd77c3eddbe7ac9641fe6ab4561eb11ca8c234ad6",
+    "code/htk/spred.py": "9580c037bcd4e087d8a5e4c9ea730427e25bbce57e1beadcb171a55a2a41b6d3",
+    "code/htk/star.py": "9ac0a3ca452fabfd09431ffe3151b6d97764ac47e4c54f86f19d8ae5397f8829",
+    "code/htk/support.py": "1bb93a51f4dae46a39ff58107e3c8cc108eac5260811e50ebbafe2c624c0d9b3",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "code/solve_product_forest_cubes.py": "46eebf28cb3f77e3fc37bafe429474e8ee23ab8fce18932c6e4963f66bf7be94",
+    "code/tests/test_core_sector_periods.py": "ba8bff93e406caed069b18c40ea980d058e3d19f3a2b9fb115178b2e7294ce05",
+    "code/tests/test_forest_cube_expansion.py": "8ec672727093bde9388c787b7493a3dca17531b58afa162203b7d110aabf7ab2",
+    "code/tests/test_solve_product_forest_cubes.py": "fcd876d881e66d73524d783d03d0caf1eadc0412f7d193617c8d766d5b35a76e",
+    "explore/circuit-general/assembly/tables/prism_q8.json": "0d5fdfc9e73eb1b5a9b651dbe5ab8ec7ccf75df86172b7c0932e1a5099bf44aa",
+    "explore/circuit-general/core-period-closure/README.md": "82cd74517ec16fe96d17ac49b4f74a70c405d19825d8a0e551482cde65465c43",
+    "explore/circuit-general/core-period-closure/certificate.json": "b03addb0e56eb42e483a9385a6a798bfd8b732046040e2f98a45e73524749ca9",
+    "explore/circuit-general/core-period-closure/verify.py": "3cb0f131c7767f59cba507bc0950de8985920ccdc6f4be8f5153b3649a795a7b",
+    "explore/circuit-general/core-period-stabilization/DERIVATION.md": "c189c23016327e378cfd409e1883f3797b0e392386307c518a0eeca66514be72",
+    "explore/circuit-general/core-period-stabilization/README.md": "6005f1b76f329cd8f6b447267ec65a633d7fa849e4666cf12c21a6275ccffa9b",
+    "explore/circuit-general/core-period-stabilization/checks.json": "4a92a24ef2594fab53080824b40a8a43c9904564d763b0bdaca01c769e49d458",
+    "explore/circuit-general/core-period-stabilization/run_checks.py": "416d079ffb6ffc0f3738e63958900072474c4bb243fae2c170b65823dadb255a",
+    "explore/circuit-general/core-period-stabilization/verify.py": "d098de76b890d1974862ecd919b00387fcd68520e52ef0674c249b95a256fec8",
+    "explore/circuit-general/core-sector-reduction/README.md": "321ef70b828fcd90860ff01a99f4607edc556f55026a7ebe54e2e351fa4a701b",
+    "explore/circuit-general/core-sector-reduction/certify.py": "e1ef54e85e86d67a1036b8133c5d7efca1f91c2c96e967073c9c97ab8789d1ec",
+    "explore/circuit-general/core-sector-reduction/reductions.json": "b3a918471dfc5c4c78527900e134cb831c9f117cde822de1fc5bc9f3aa06755a",
+    "explore/circuit-general/core-sector-reduction/run_checks.py": "f102461027441103e27d47b6e7357524314d8a889f69d87782d04ee0a457be6c",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/tables/prism_q7.json": "e0dd6d85279e3f4fefd051f5960f4372526a0b94006ac19097eba26710a69d3d",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/forest-cube-expansion/DERIVATION.md": "1d523bddd679d1aa799ee5de43b6a6eb0c0b8d039a0f668d85045f925ad1dc27",
+    "explore/circuit-general/forest-cube-expansion/README.md": "90c26bc02b09aeb168b012f6ad46c5d479f3071114cc398050625a1c8f60ddce",
+    "explore/circuit-general/forest-source-currents/DERIVATION.md": "4a659a577db017f0d31013f4de9e9a519bf335b9fb7d53b936394a2fc78cecd8",
+    "explore/circuit-general/forest-source-currents/FULL_RESULTS.md": "8c10968faa84fecc310f5faf5354464e0bdfde87d1bed76cea26ce4fb6900ecd",
+    "explore/circuit-general/forest-source-currents/README.md": "e325e0aaf1e99c349c98b2d72ea04bcbc6bb8e5e26e287a31f0ee24cc467c9af",
+    "explore/circuit-general/forest-source-currents/certificate.json": "d16bc6c84383ba67d4dc80ecf4eee0b4c9efa339f235c2439643cde98dc74b98",
+    "explore/circuit-general/forest-source-currents/certify.py": "7db2b3ab5d3c6aa6a49e6d9721627c1398d3978ccd72697944dc70919a8e784f",
+    "explore/circuit-general/forest-source-currents/degenerate_frame.json": "b92b536c19904afb402fccc63c1d289f5d8e20f719905fe0567e66b565b9be84",
+    "explore/circuit-general/forest-source-currents/fresh_nonunit_frame.json": "736ea13ffbb666d8c7345b152f399d9932d14e681a0f3faac072795375a2c061",
+    "explore/circuit-general/forest-source-currents/independent_controls.py": "4484158b6c1c47a19b1f97519d547e2341c50edf936ee26d76d235fb5562b6d3",
+    "explore/circuit-general/forest-source-currents/render.py": "eec319b4bd6b2a11d4a3bad8ce491a9da445a7d4537e39c32f0948dd18bf7c43",
+    "explore/circuit-general/forest-source-currents/run_checks.py": "7a40904d5780f6f0b52eaa9fee141041c77d4e59ad3fe041875619621c5303b8",
+    "explore/circuit-general/forest-source-currents/source_currents.py": "3bf46934188bb42d03327be1b595cee69b994acc8bfd7479074c0533d089c1f2",
+    "explore/circuit-general/forest-source-currents/verify.py": "6e1032924813fc7966b8ce363821c3344de49feb71d9bc92a18e88344f86cbd2",
+    "explore/circuit-general/symmetry/tree_minor.py": "136cd5c261430da4fe7f3758fdbb620f8dcd3c7cf1f743f1e01ff26059881db0",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79",
+    "notes/methods-paper/README.md": "c59e441457ed9dd7ae4bf4112760e4488e79b5d1aeaf3e32ebdc7fb5b59f2414",
+    "notes/methods-paper/build.py": "638be7e1056c9a6608b5effbf2a7c21721dfbe2829c818ec69ff687e3f337292",
+    "notes/methods-paper/checks/fork_control.py": "37cb5814d7dc1c5e25bd18f97ea2d3045ca2b2f48f31e411dbc12f70734a59db",
+    "notes/methods-paper/checks/printed_tables.py": "63dee4078799edf502cfb8b2a239b163aff5a351084d6bc08be1afe43e94b9d4",
+    "notes/methods-paper/checks/wheel_residue.py": "d4b4f65e3220983237ac368db5137d6f83d320fa82500ded68576fcbba8630c6",
+    "notes/methods-paper/generate_tables.py": "bf6ab29bdc4906b7b1ef169c0576ba423201de26314006a41ce156ea1373f88e",
+    "notes/methods-paper/generated/all_currents.tex": "ac56d7c8f2c8f03336d71a2c32821300eaab70283b593728b6bffb26f407ca13",
+    "notes/methods-paper/generated/boundary_witnesses.tex": "fd1bd8cdd2ad417ebd9ce100b3ace1097a069a7b1f54dc50583571b9c5fe6a7d",
+    "notes/methods-paper/generated/wheel_bases.tex": "180583294da0b74df13d4da8f9af89d7489243d514f1a10ff2985356ecc7a0a7",
+    "notes/methods-paper/generated/zero_marked_currents.tex": "9c695b5415a7d9d1cc847fc7e591f16a59a1d412b69c82aefeaa2591c2647920",
+    "notes/methods-paper/paper.tex": "28cf108adfe6b394c06f2b08ac18376ca9b5b447203f95f0fca012647d3ddd0a",
+    "notes/methods-paper/preamble.tex": "4832cc1649038461905602c1df4582b8f276e7647c1539f41e23c5f5e9d65ecd",
+    "notes/methods-paper/references.bib": "027762725f6f480c56bbdde0a1a93b498a925f6ac5215360b6b0aee35944e45d",
+    "notes/methods-paper/run_checks.py": "006fd217bf6dab305b7cd051cbcde37da05bc268611b3669d66e5603da2bbd66",
+    "notes/methods-paper/sections/certificates.tex": "0a73d01621f2080b3c5a657d719f286c7798fc6488203a3bf34402e7f020070d",
+    "notes/methods-paper/sections/currents.tex": "6a00f8c6e9192c87b9260f6e9d91ad874deaba5f2f11e3b227b28d120b4dc515",
+    "notes/methods-paper/sections/discussion.tex": "a0ef1a3877eebe8957374dcdacf249f5e60f36603c7bd469168e21e94a5d8e5a",
+    "notes/methods-paper/sections/implementation.tex": "238d00c84c07837101528d6ae1dce144e539db695d72ea564b3cfcbc93c01397",
+    "notes/methods-paper/sections/introduction.tex": "cdf681e981667e191b5ec1a8fdd78db5a4061c43552f025aa20158f48babd339",
+    "notes/methods-paper/sections/networks.tex": "0a1c96f831ac359c87bb257cf923c00b0c5c91466e46998dbc6b4ed83b88d1e1",
+    "notes/methods-paper/sections/periods.tex": "a752315d1f76e0e9b8f89db46ab5ecfe54595ad804e65d1a3243f4077cf2f173",
+    "notes/methods-paper/supplement.tex": "65ea5df2725d7055c6fae16007a472ea28825b646df4419ed4c0bad7e5be05e2",
+    "notes/methods-paper/verification/fork_control.json": "c73b0cf7470f8a9195f48107eaa4c66660f6ae2e24277a88d51744edde4ca64d",
+    "notes/methods-paper/verification/printed_tables.json": "cccbca8ebe1a8581f057d9f87ae6fada9eaef56714ab0facfb616788a978f39e",
+    "notes/methods-paper/verification/wheel_residue.json": "aba682c29e5d3a3e0785dfc6a65e880fab502cb13c02b5f6034d5c29110523e5"
+  },
+  "started_utc": "2026-11-27T15:56:12.663193+00:00",
+  "status": "passed",
+  "versions": {
+    "bibtex": "BibTeX 0.99d (TeX Live 2025/dev/Debian)",
+    "packages": {
+      "pypdf": "6.21.4",
+      "pytest": null,
+      "python-flint": "0.9.0",
+      "sympy": "1.14.0"
+    },
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "python_implementation": "CPython"
+  }
+}

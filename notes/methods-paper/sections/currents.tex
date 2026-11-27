@@ -1,0 +1,299 @@
+\section{A complete five-loop source-current family}
+\label{currents:family}
+
+\subsection{Original graph and retained source support}
+
+The example has seven vertices, labelled $0,1,\ldots,6$, and the following
+ordered, oriented edges:
+\begin{equation}
+ (01,13,02,24,05,06,35,36,45,46,56).
+ \label{currents:edges}
+\end{equation}
+The two marked vertices are $5,6$. The independent source spinors are
+$\lambda_1,\lambda_2,\lambda_5$, with the remaining sources fixed by
+\begin{equation}
+ \lambda_0=\lambda_3=\lambda_4=0,\qquad
+ \lambda_6=-\lambda_1-\lambda_2-\lambda_5.
+ \label{currents:sources}
+\end{equation}
+The quartic vertex is $0$; its zero source is part of this family.
+Sources at vertices $0,3,4$ are not varied by the result.
+
+Write $K(\lambda)$ for the normalized integrated bare kernel and
+$M_{e,+\dot a}(\lambda)$ for the integral with the complete original
+current $y_{e,+\dot a}$ inserted on edge $e$. The index $+\dot a$
+remains free. With the incidence sign equal to $+1$ at an edge's
+initial vertex and $-1$ at its terminal vertex, current conservation
+requires, before and after integration,
+\begin{equation}
+ \sum_{e:\,e(0)=v}M_{e,+\dot a}
+ -\sum_{e:\,e(1)=v}M_{e,+\dot a}
+ =\lambda_{v,+\dot a}K.
+ \label{currents:conservation}
+\end{equation}
+All seven spinor equations are kept, including the dependent total sum.
+
+\begin{theorem}[Complete supported-source polynomial]
+\label{currents:complete}
+For the ordered graph \eqref{currents:edges} and source support
+\eqref{currents:sources}, the bare kernel and all eleven first-current
+spinors are homogeneous source polynomials of degrees ten and eleven.
+Their coefficients belong to $\Q+\Q\zeta(3)+\Q\zeta(5)$. The complete
+formulas have sixteen nonzero bare bracket monomials and 468 nonzero
+current bracket/source monomials, with 1,334 nonzero rational
+coefficients in the three displayed period channels. Every bracket
+power is nonnegative, so the formulas include all degenerate source
+frames. The complete coefficient tables are printed in the companion
+supplement and recorded in the exact certificate.
+\end{theorem}
+
+The proof has two parts: a finite algebraic reconstruction whose
+completeness is proved a priori, and exact integration of every sample
+needed by that reconstruction. We describe both, including the
+independent controls, rather than infer a general formula from a
+numerical fit.
+
+\subsection{Polynomial degree and coefficientwise convergence}
+
+The five-loop current-area form contains ten source-linear current
+differentials. Its complete rational numerator therefore has source
+degree ten, and its denominator is independent of all sources. Inserting
+one full original current raises the degree by one. All tree-flow
+currents are finite source sums; the full network current is a convex
+combination of them at positive resistances. Thus each inserted current
+is bounded on positive projective resistance space at a fixed source
+assignment.
+
+The compact-cube construction of the preceding network section proves
+absolute convergence of the complete density at each fixed rational
+balanced source assignment. Multiplication by a bounded current
+preserves it. To justify integrating every source coefficient, take a
+finite rational unisolvent grid for polynomials of total degree at most
+eleven in the six independent source coordinates. Each coefficient
+integrand is a finite rational linear combination of evaluated
+integrands on that grid. The triangle inequality proves absolute
+convergence of each coefficient. Integration is consequently a
+well-defined linear map on the complete finite source polynomial.
+
+For an invertible linear change $g$ of the two-dimensional source
+space, the alternating spinor pairing is multiplied by $\det g$.
+The five area factors and the remaining free current index give
+\begin{align}
+ K(g\lambda)&=(\det g)^5 K(\lambda),\label{currents:scalarcov}\\
+ M_{e,+\dot a}(g\lambda)&=(\det g)^5
+ g_{+\dot a}{}^{+\dot b}M_{e,+\dot b}(\lambda).
+ \label{currents:vectorcov}
+\end{align}
+These identities hold before integration. They are preserved by all
+rational chain integrations and scalar-period reductions. No
+independence assumption about the numerical constants is involved.
+
+\subsection{An exact interpolation bound}
+
+Choose a source frame with $\lambda_1=(1,0)$,
+$\lambda_2=(0,1)$ and $\lambda_5=(a,b)$. The scalar coefficient
+functions of a current in this frame are polynomials $f_e(a,b)$,
+$g_e(a,b)$. We now prove the bound on their degrees, rather than
+assume one from observed samples.
+
+Temporarily set $\lambda_1=(1,0)$, $\lambda_2=(s,t)$,
+$\lambda_5=(0,1)$. For $t\ne0$, source covariance gives the two
+frame coefficient functions
+\begin{equation}
+ t^5\bigl(f_e(-s/t,1/t)+s\,g_e(-s/t,1/t)\bigr),\qquad
+ t^6g_e(-s/t,1/t).
+ \label{currents:degreeproof}
+\end{equation}
+The original source expression is polynomial in $s,t$, including
+$t=0$. If a homogeneous part had degree greater than six, the second
+expression would force that highest part of $g_e$ to vanish, and then
+the first would force the corresponding part of $f_e$ to vanish.
+Descending on degree proves
+\begin{equation}
+ \deg f_e\le6,\qquad \deg g_e\le6.
+ \label{currents:degree}
+\end{equation}
+At degree six, regularity of the first expression instead gives
+\begin{equation}
+ b f_{e,6}(a,b)=a g_{e,6}(a,b).
+ \label{currents:syzygy}
+\end{equation}
+Here the subscript $6$ denotes the homogeneous part of degree six.
+Because the two coordinate polynomials $a,b$ are relatively prime,
+there is a homogeneous polynomial $h_{e,5}$ of degree five with
+\begin{equation}
+ f_{e,6}=a h_{e,5},\qquad g_{e,6}=b h_{e,5}.
+ \label{currents:high}
+\end{equation}
+The scalar version of \eqref{currents:degreeproof}, with only the
+factor $t^5$, proves degree at most five for the bare frame polynomial.
+
+There are $\binom{8}{2}=28$ monomials $a^i b^j$ with $i+j\le6$.
+The 28 integer nodes
+\begin{equation}
+ a,b\ge0,\qquad a+b\le6
+ \label{currents:nodes}
+\end{equation}
+are unisolvent: the basis of products of falling factorials has a
+triangular evaluation matrix with diagonal $i!j!$. The production
+reconstruction inverts the monomial evaluation matrix over $\Q$.
+The independent verifier instead uses
+\begin{equation}
+ \frac{\Delta_a^i\Delta_b^j F(0,0)}{i!j!}
+ =\frac1{i!j!}\sum_{r=0}^{i}\sum_{s=0}^{j}
+ (-1)^{i+j-r-s}\binom{i}{r}\binom{j}{s}F(r,s),
+ \label{currents:newton}
+\end{equation}
+and expands the falling-factorial basis. The differences in this
+formula are forward differences of the full scalar coefficient
+polynomial. Every node on its right satisfies $r+s\le i+j\le6$.
+
+The graph involution $(1\ 2)(3\ 4)$ induces the even edge permutation
+$(0\ 2)(1\ 3)(6\ 8)(7\ 9)$ in the zero-based order
+\eqref{currents:edges}; no edge orientation reverses. Combining it
+with the determinant-minus-one exchange of the source coordinates
+takes $(a,b)$ to $(b,a)$. It changes the bare sign and acts on the
+full current by the corresponding source-coordinate exchange and
+minus sign. Hence the sixteen nodes $a\le b$ supply the remaining
+twelve nodes exactly. The symmetry is a derived equality of original
+graphs, not an assumption about an integrated period table.
+
+\subsection{Exact scalar integration of the samples}
+
+The sourced chains are $0$--$1$--$3$ and $0$--$2$--$4$.
+Their exact simplex integrations leave the complete graph on
+vertices $0,3,4,5,6$ with the edge $34$ absent. Each scalar monomial
+retains its exact factorial coefficient and original-current label.
+Projective inversion maps this scalar family to the planar-dual
+triangular prism, replacing an edge power by the denominator power
+minus that edge power. The existing exact prism tables at denominator
+powers seven and eight evaluate every bare and first-current
+monomial encountered here. Strict convergence is checked before each
+lookup; an absent table entry is an error, never a zero coefficient.
+
+At every direct source node, five complete chord-current spinors are
+integrated independently. The six tree currents follow from the
+original tree flow plus their signed fundamental-cycle contributions.
+In particular the tree-flow term is multiplied by the full bare
+kernel and retained. This reconstructs all eleven full spinors and
+gives \eqref{currents:conservation} at every node. There are
+$28(1+22)=644$ frame coefficient dictionaries. Both reconstruction
+methods agree on every dictionary and on every coefficient of all
+fourteen scalar entries of \eqref{currents:conservation}.
+
+\subsection{The denominator-free covariant formula}
+
+For two original spinors, $\langle\lambda_u,\lambda_v\rangle$
+denotes their alternating determinant. On the open set where
+$\langle\lambda_1,\lambda_2\rangle\ne0$, the frame coordinates are
+\begin{equation}
+ a=\frac{\langle\lambda_5,\lambda_2\rangle}
+ {\langle\lambda_1,\lambda_2\rangle},\qquad
+ b=\frac{\langle\lambda_1,\lambda_5\rangle}
+ {\langle\lambda_1,\lambda_2\rangle}.
+\end{equation}
+Let $f_{e,ij},g_{e,ij}$ be the coefficients of $a^i b^j$ in the
+parts of $f_e,g_e$ of degrees at most five, and let $h_{e,ij}$ be the
+coefficients of $h_{e,5}$. Then the complete original free-index result
+is
+\begin{align}
+ M_{e,+\dot a}(\lambda)
+ ={}&\sum_{i+j\le5}
+ \langle\lambda_1,\lambda_2\rangle^{5-i-j}
+ \langle\lambda_5,\lambda_2\rangle^i
+ \langle\lambda_1,\lambda_5\rangle^j
+ \bigl(f_{e,ij}\lambda_{1,+\dot a}
+       +g_{e,ij}\lambda_{2,+\dot a}\bigr)
+ \nonumber\\
+ &+\sum_{i+j=5}
+ \langle\lambda_5,\lambda_2\rangle^i
+ \langle\lambda_1,\lambda_5\rangle^j
+ h_{e,ij}\lambda_{5,+\dot a}.
+ \label{currents:covariant}
+\end{align}
+The second line follows from
+$a\lambda_1+b\lambda_2=\lambda_5$ and
+\eqref{currents:high}. Every exponent is nonnegative. The bare formula
+uses the first line's bracket monomials without the extra source
+spinor. Both sides are polynomial in all original source coordinates
+and agree on a dense open set. Thus they agree everywhere, including
+parallel or zero root sources. This proves the reconstruction and
+degenerate-extension parts of Theorem~\ref{currents:complete}.
+
+Every coefficient in \eqref{currents:covariant} is evaluated by the
+finite exact scalar integrations above. The companion supplement
+prints the full list; its table generator and independent parser
+verify all 468 nonzero current monomials and every one of their
+1,334 nonzero rational period coefficients.
+
+\subsection{A complete vanishing-bare control}
+
+Set $\lambda_5=0$ and retain arbitrary $\lambda_1,\lambda_2$.
+Every term of the complete bare polynomial contains a bracket with
+$\lambda_5$, so $K=0$. Define the two scalar coefficients in each
+row of the following table by
+\begin{equation}
+ M_{e,+\dot a}\big|_{\lambda_5=0}
+ =\langle\lambda_1,\lambda_2\rangle^5
+ \bigl(A_e\lambda_{1,+\dot a}+B_e\lambda_{2,+\dot a}\bigr).
+ \label{currents:barezero}
+\end{equation}
+The table gives all original edges, with their original orientations.
+\input{generated/zero_marked_currents}
+
+For edge $01$, the elementary estimate
+\begin{equation}
+ \zeta(3)=1+\frac18+\sum_{m=3}^{\infty}\frac1{m^3}
+ <1+\frac18+\int_2^{\infty}\frac{dx}{x^3}=\frac54
+\end{equation}
+gives the exact positive lower bounds
+\begin{align}
+ \frac{923}{1828915200}-\frac{\zeta(3)}{8467200}
+ &>\frac{653}{1828915200},\nonumber\\
+ \frac{17}{114307200}-\frac{\zeta(3)}{8467200}
+ &>\frac{2}{1828915200}.
+\end{align}
+Consequently the complete current is a nonzero covariant polynomial
+even though the bare polynomial vanishes identically on this
+specialization. The complete coefficient table also satisfies every
+zero-source divergence equation \eqref{currents:conservation}.
+
+\subsection{Fresh-source and degenerate-frame controls}
+
+Two additional calculations integrate every original edge separately,
+using the alternative source-flow tree with edge indices
+$(0,2,4,6,8,10)$ instead of the interpolation tree.
+Their independent source assignments are
+\begin{align}
+ (\lambda_1,\lambda_2,\lambda_5)&=((2,1),(1,2),(-1,4)),
+ \label{currents:fresh}\\
+ (\lambda_1,\lambda_2,\lambda_5)&=((1,0),(2,0),(0,1)).
+ \label{currents:degenerate}
+\end{align}
+The first root determinant is three and its frame point is $(-2,3)$,
+outside \eqref{currents:nodes}. The second root determinant is zero.
+Each calculation reproduces the bare value and all 22 scalar entries
+of the eleven complete spinors. Neither control uses source
+interpolation nor chord reconstruction. Their original source
+numerators also agree coefficientwise across the two source-flow
+and cycle bases. The numerator formula and scalar tables are shared
+with the production calculation; the source assignments, network
+bases and all-edge integrations are independent checks.
+
+A previous physical-quartic calculation supplies the further source
+assignment $\lambda_1=(1,2)$, $\lambda_2=(3,-1)$,
+$\lambda_5=(5,3)$ and $\lambda_6=(-9,-4)$. Its complete bare value is
+\begin{equation}
+ K=\frac{3327759589}{46656000}
+   +\frac{50942017}{324000}\zeta(3)
+   -\frac{45619}{180}\zeta(5).
+ \label{currents:physicalvalue}
+\end{equation}
+The full reconstructed polynomial gives exactly the same three
+rational coefficients.
+
+The different five-loop source family whose suppressed core is
+$K_{3,3}$ with one additional edge requires a missing denominator-power-eight
+current family. The present theorem concerns the graph
+\eqref{currents:edges}; it supplies no result for that other core or
+for a complete interacting Wick/colour sum.

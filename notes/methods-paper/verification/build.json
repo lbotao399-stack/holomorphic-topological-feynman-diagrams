@@ -1,0 +1,42 @@
+{
+  "schema": "methods-paper-build.v1",
+  "compiler": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "configuration": {
+    "local_format_created": true,
+    "local_font_map_created": true,
+    "installed_tree_configuration": "/usr/share/texlive/texmf-dist"
+  },
+  "sources_sha256": {
+    "generated/all_currents.tex": "ac56d7c8f2c8f03336d71a2c32821300eaab70283b593728b6bffb26f407ca13",
+    "generated/boundary_witnesses.tex": "fd1bd8cdd2ad417ebd9ce100b3ace1097a069a7b1f54dc50583571b9c5fe6a7d",
+    "generated/wheel_bases.tex": "180583294da0b74df13d4da8f9af89d7489243d514f1a10ff2985356ecc7a0a7",
+    "generated/zero_marked_currents.tex": "9c695b5415a7d9d1cc847fc7e591f16a59a1d412b69c82aefeaa2591c2647920",
+    "paper.tex": "28cf108adfe6b394c06f2b08ac18376ca9b5b447203f95f0fca012647d3ddd0a",
+    "preamble.tex": "4832cc1649038461905602c1df4582b8f276e7647c1539f41e23c5f5e9d65ecd",
+    "references.bib": "027762725f6f480c56bbdde0a1a93b498a925f6ac5215360b6b0aee35944e45d",
+    "sections/certificates.tex": "0a73d01621f2080b3c5a657d719f286c7798fc6488203a3bf34402e7f020070d",
+    "sections/currents.tex": "6a00f8c6e9192c87b9260f6e9d91ad874deaba5f2f11e3b227b28d120b4dc515",
+    "sections/discussion.tex": "a0ef1a3877eebe8957374dcdacf249f5e60f36603c7bd469168e21e94a5d8e5a",
+    "sections/implementation.tex": "238d00c84c07837101528d6ae1dce144e539db695d72ea564b3cfcbc93c01397",
+    "sections/introduction.tex": "cdf681e981667e191b5ec1a8fdd78db5a4061c43552f025aa20158f48babd339",
+    "sections/networks.tex": "0a1c96f831ac359c87bb257cf923c00b0c5c91466e46998dbc6b4ed83b88d1e1",
+    "sections/periods.tex": "a752315d1f76e0e9b8f89db46ab5ecfe54595ad804e65d1a3243f4077cf2f173",
+    "supplement.tex": "65ea5df2725d7055c6fae16007a472ea28825b646df4419ed4c0bad7e5be05e2"
+  },
+  "documents": {
+    "paper": {
+      "pdf": "output/pdf/paper.pdf",
+      "pages": 35,
+      "sha256": "3c72970c8ceb94a321aaa8c0d7edcbfe8b28e468cef1e60849e66a9e740e30e1",
+      "overfull_boxes": [],
+      "unresolved_references": []
+    },
+    "supplement": {
+      "pdf": "output/pdf/supplement.pdf",
+      "pages": 13,
+      "sha256": "e39beb85f0b65e4203cfeb06a986f95c5b3f1813266482931bf9553f4a35716d",
+      "overfull_boxes": [],
+      "unresolved_references": []
+    }
+  }
+}

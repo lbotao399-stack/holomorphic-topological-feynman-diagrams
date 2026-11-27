@@ -1,0 +1,35 @@
+{
+  "schema": "methods-paper-score-change.v1",
+  "date": "2026-11-27",
+  "baseline_commit": "fac864229e7990310e9069244b5d2484bfc0a5e0",
+  "baseline_score_sha256": "4593d9e44da534bf4dda4188998a95f806726c3e873dbf89f9be7b56c21cf1b2",
+  "score_sha256": "b607aa3817b7804cefda851e67faef589b8d36abe7a31df8b9fe5338e96b6792",
+  "maximum": "100",
+  "baseline_total": "139/2",
+  "accepted_total": "75",
+  "increase": "11/2",
+  "arithmetic": "69.5 + 0.5 + 5 = 75",
+  "changed_rows": {
+    "C3": {
+      "before": "7/2",
+      "after": "4",
+      "maximum": "4",
+      "increase": "1/2"
+    },
+    "D2": {
+      "before": "0",
+      "after": "5",
+      "maximum": "5",
+      "increase": "5"
+    }
+  },
+  "all_other_sixteen_rows_identical": true,
+  "all_item_maxima_unchanged": true,
+  "evidence_sha256": {
+    "notes/methods-paper/verification/INDEPENDENT_REVIEW.md": "09e505d6eb1781fbfeb5070ce2a914b64fa53642614bb91244ff65316c2eb1e2",
+    "notes/methods-paper/ACCEPTANCE.md": "1276785dcd95bc78fd7312ee1437dbf29fdc1f7bcd97ac17e262fa9c129804ab",
+    "notes/methods-paper/verification/checks.json": "b3cea0fde11a88d2943d3e5747a0736f9498ab92911e6578cbac598df0cb3f15",
+    "notes/methods-paper/verification/build.json": "06f7e876291a6d13846d10742d474bb8e0fc8b51b0ba96d306446373313d53f0",
+    "notes/methods-paper/verification/layout.json": "0b29bc23ca135fa7736089607d071a1f2adf106131db23c6cb5a387c665baf2d"
+  }
+}

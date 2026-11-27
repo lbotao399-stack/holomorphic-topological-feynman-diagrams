@@ -1,0 +1,1430 @@
+{
+  "all_first_current_spinors_after_bracket_cubed": [
+    {
+      "edge": "12",
+      "lambda_1": "-1/8640",
+      "lambda_A": "-1/4320"
+    },
+    {
+      "edge": "13",
+      "lambda_1": "1/8640",
+      "lambda_A": "1/4320"
+    },
+    {
+      "edge": "2A",
+      "lambda_1": "1/4320",
+      "lambda_A": "-1/8640"
+    },
+    {
+      "edge": "2B",
+      "lambda_1": "-1/2880",
+      "lambda_A": "-1/8640"
+    },
+    {
+      "edge": "3A",
+      "lambda_1": "-1/4320",
+      "lambda_A": "1/8640"
+    },
+    {
+      "edge": "3B",
+      "lambda_1": "1/2880",
+      "lambda_A": "1/8640"
+    },
+    {
+      "edge": "AB",
+      "lambda_1": "0",
+      "lambda_A": "0"
+    }
+  ],
+  "all_integrated_kirchhoff_identities": [
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 0
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 0
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 1
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 1
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 2
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 2
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 3
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 3
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 4
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 4
+    }
+  ],
+  "all_polynomial_kirchhoff_identities": [
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 0
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 0
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 1
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 1
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 2
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 2
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 3
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 3
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 0,
+      "vertex": 4
+    },
+    {
+      "complete_residual": "0",
+      "source_direction": 1,
+      "vertex": 4
+    }
+  ],
+  "bare_kernel": "0",
+  "complete_chord_current_jacobian_determinant": [
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "complete_density_polynomial": [
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coefficient": "-1",
+      "powers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "complete_resistance_map": [
+    "-r3*r5*(r5 + r6 - 1)/(r1*r2*r6 + r1*r3*r5 - r2*r3*r5 - r2*r3*r6 + r2*r3)",
+    "-r4*r5*(r5 + r6 - 1)/(r1*r2*r6 - r1*r4*r5 - r1*r6 + r2*r4*r5 + r2*r4*r6 - r2*r4 - r2*r6 - r4*r6 + r4 + r6)",
+    "-r2*r6*(r5 + r6 - 1)/(r1*r2*r6 + r1*r3*r5 - r2*r3*r5 - r2*r3*r6 + r2*r3)",
+    "r1*r5*r6/(r1*r2*r6 + r1*r3*r5 - r2*r3*r5 - r2*r3*r6 + r2*r3)",
+    "r6*(r2 - 1)*(r5 + r6 - 1)/(r1*r2*r6 - r1*r4*r5 - r1*r6 + r2*r4*r5 + r2*r4*r6 - r2*r4 - r2*r6 - r4*r6 + r4 + r6)",
+    "-r5*r6*(r1 - 1)/(r1*r2*r6 - r1*r4*r5 - r1*r6 + r2*r4*r5 + r2*r4*r6 - r2*r4 - r2*r6 - r4*r6 + r4 + r6)",
+    "r6/(-r3 - r4 + 1)"
+  ],
+  "dependencies_sha256": {
+    "code/htk/CONVENTIONS.md": "e607e6b8a753b02554062327975767c9d8c2b77e5d6846ad4129e64b32dee03b",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "notes/methods-paper/checks/fork_control.py": "37cb5814d7dc1c5e25bd18f97ea2d3045ca2b2f48f31e411dbc12f70734a59db",
+    "notes/methods-paper/sections/networks.tex": "0a1c96f831ac359c87bb257cf923c00b0c5c91466e46998dbc6b4ed83b88d1e1"
+  },
+  "domain": "(0,1)^2 times Delta^2 times Delta^2",
+  "edge_names": [
+    "12",
+    "13",
+    "2A",
+    "2B",
+    "3A",
+    "3B",
+    "AB"
+  ],
+  "full_chord_current_jacobian": [
+    [
+      "-r5",
+      "0",
+      "0",
+      "-r5",
+      "-r1 - r4 + 1",
+      "0"
+    ],
+    [
+      "r6",
+      "0",
+      "0",
+      "r6 - 1",
+      "0",
+      "r1 + r4 - 1"
+    ],
+    [
+      "0",
+      "r5 - 1",
+      "0",
+      "r5",
+      "r2 + r4 - 1",
+      "0"
+    ],
+    [
+      "0",
+      "-r6",
+      "0",
+      "1 - r6",
+      "0",
+      "-r2 - r4 + 1"
+    ],
+    [
+      "0",
+      "0",
+      "-r5",
+      "-r5",
+      "-r3 - r4 + 1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "r6 - 1",
+      "r6 - 1",
+      "0",
+      "r3 + r4 - 1"
+    ]
+  ],
+  "full_current_polynomials_in_original_source_directions": [
+    {
+      "edge": "12",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "edge": "13",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "edge": "2A",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "edge": "2B",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "edge": "3A",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "edge": "3B",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "edge": "AB",
+      "lambda_1_coefficient": [
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lambda_A_coefficient": [
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "marked": [
+    3,
+    4
+  ],
+  "ordered_oriented_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "orientation": {
+    "cotree_edges": [
+      4,
+      5,
+      6
+    ],
+    "current_area_sign": -1,
+    "determinant_plus_density_polynomial": "0",
+    "projective_chart_sign": 1,
+    "tree_edges": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "original_network_controls": [
+    {
+      "all_original_currents": [
+        [
+          "3/5",
+          "1/12"
+        ],
+        [
+          "2/5",
+          "-1/12"
+        ],
+        [
+          "1/60",
+          "-13/48"
+        ],
+        [
+          "7/12",
+          "17/48"
+        ],
+        [
+          "7/75",
+          "-19/60"
+        ],
+        [
+          "23/75",
+          "7/30"
+        ],
+        [
+          "11/100",
+          "33/80"
+        ]
+      ],
+      "complete_pulled_back_density": "-121/6000",
+      "full_balanced_sources": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "original_density": "-2767579169267/318864600000000",
+      "original_resistances": [
+        "99/590",
+        "99/535",
+        "33/59",
+        "6/59",
+        "165/428",
+        "30/107",
+        "5/11"
+      ],
+      "positive_projective_jacobian": "584585100000/251598106297",
+      "ratio_point": [
+        "1/3",
+        "2/3",
+        "1/4",
+        "1/5",
+        "1/5",
+        "1/4"
+      ],
+      "source_bracket": 1
+    },
+    {
+      "all_original_currents": [
+        [
+          "17/12",
+          "-3/10"
+        ],
+        [
+          "7/12",
+          "-7/10"
+        ],
+        [
+          "-1/9",
+          "-4/5"
+        ],
+        [
+          "55/36",
+          "1/2"
+        ],
+        [
+          "-31/147",
+          "-309/245"
+        ],
+        [
+          "467/588",
+          "55/98"
+        ],
+        [
+          "299/441",
+          "46/49"
+        ]
+      ],
+      "complete_pulled_back_density": "-322/45",
+      "full_balanced_sources": [
+        [
+          2,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          -3,
+          -2
+        ]
+      ],
+      "original_density": "-88757936491/70778880000",
+      "original_resistances": [
+        "16/147",
+        "640/2597",
+        "4/7",
+        "8/35",
+        "40/159",
+        "24/53",
+        "14/23"
+      ],
+      "positive_projective_jacobian": "3145728000/551291531",
+      "ratio_point": [
+        "2/5",
+        "3/4",
+        "1/6",
+        "2/7",
+        "2/7",
+        "1/3"
+      ],
+      "source_bracket": 7
+    }
+  ],
+  "original_vertex_labels": [
+    "1",
+    "2",
+    "3",
+    "A",
+    "B"
+  ],
+  "schema": "methods_paper_fork_control_v1",
+  "source_factor_in_density": "<lambda_1,lambda_A>^3",
+  "source_scope": "lambda_1 and lambda_A arbitrary complete spinors; lambda_2=lambda_3=0; lambda_B=-lambda_1-lambda_A",
+  "symbolic_basis_source_rows": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "variables": [
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "r5",
+    "r6"
+  ]
+}

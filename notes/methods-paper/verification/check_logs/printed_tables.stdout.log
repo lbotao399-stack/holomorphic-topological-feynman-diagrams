@@ -1,0 +1,24 @@
+{
+  "schema": "methods-paper-printed-data.v1",
+  "bare_monomials": 16,
+  "current_monomials": 468,
+  "nonzero_current_rational_coefficients": 1334,
+  "all_printed_rational_entries": 1452,
+  "complete_specialized_spinors": 11,
+  "coefficientwise_specialized_conservation_checks": 42,
+  "strict_positive_lower_bounds": [
+    "653/1828915200",
+    "1/914457600"
+  ],
+  "complete_wheel_base_rows": 18,
+  "complete_printed_boundary_identities": 3,
+  "all_printed_primitives": 16,
+  "printed_primitive_faces": 32,
+  "generated_sha256": {
+    "all_currents.tex": "ac56d7c8f2c8f03336d71a2c32821300eaab70283b593728b6bffb26f407ca13",
+    "boundary_witnesses.tex": "fd1bd8cdd2ad417ebd9ce100b3ace1097a069a7b1f54dc50583571b9c5fe6a7d",
+    "wheel_bases.tex": "180583294da0b74df13d4da8f9af89d7489243d514f1a10ff2985356ecc7a0a7",
+    "zero_marked_currents.tex": "9c695b5415a7d9d1cc847fc7e591f16a59a1d412b69c82aefeaa2591c2647920"
+  },
+  "source_certificate_sha256": "d16bc6c84383ba67d4dc80ecf4eee0b4c9efa339f235c2439643cde98dc74b98"
+}

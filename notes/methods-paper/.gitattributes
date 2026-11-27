@@ -1,0 +1,3 @@
+# PDFs are binary artifacts; preserve the compiler's raw diagnostic logs.
+output/pdf/*.pdf binary
+verification/*_build.log -whitespace

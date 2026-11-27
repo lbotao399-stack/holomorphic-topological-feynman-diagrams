@@ -1,0 +1,940 @@
+\section{Fixed core periods and explicit wheel stabilization}
+\label{periods:section}
+
+The network reductions leave scalar integrals with a fixed Kirchhoff
+polynomial and varying numerator and pole order.  Two different statements
+are needed at this stage.  For an arbitrary fixed core, the full period
+space is finite dimensional, but a numerical basis need not be known.  For
+a wheel, the space can be identified explicitly, uniformly in the integer
+pole order.  We prove both statements with the boundary conditions retained.
+The graph-period interpretation is consistent with the relative pairs of
+Bloch, Esnault, and Kreimer~\cite{bloch2006} and Brown's treatment of
+polynomial numerators~\cite[Section~6.7]{brown2015}; the sector presentation
+below makes the required relative relations explicit.
+
+\subsection{Normalized projective forms}
+\label{periods:normalization}
+
+Let $G=(V,E)$ be a fixed connected graph, let $N=|E|\ge2$ be its number
+of labeled edges, and let $h_G=|E|-|V|+1$ be its loop number.  Multiple
+edges remain distinct.  Its resistance Kirchhoff polynomial is
+\begin{equation}
+ U_G(t)=\sum_{T\text{ spanning tree of }G}\prod_{e\notin T}t_e.
+ \label{periods:kirchhoff}
+\end{equation}
+The complement $E\setminus T$ of a spanning tree is called a cotree.
+Every term in \eqref{periods:kirchhoff} has degree $h_G$ and coefficient
+one.  The projective differential form associated with the chosen edge
+order is
+\begin{equation}
+ \Omega_G=\sum_{j=1}^{N}(-1)^{j-1}t_j\,
+ dt_1\wedge\cdots\wedge\widehat{dt_j}\wedge\cdots\wedge dt_N,
+ \label{periods:omega}
+\end{equation}
+where the hat denotes omission.  We orient the positive projective
+simplex so that the induced measure in the gauge $\sum_e t_e=1$ is
+positive.  With this orientation our scalar convention is
+\begin{equation}
+ I_q(G;\alpha)=
+ \int_{\mathbb{RP}^{N-1}_{>0}}
+ \frac{\prod_{e\in E}t_e^{\alpha_e-1}}{U_G(t)^q}\,\Omega_G,
+ \qquad
+ q\in\mathbb Z_{>0},\quad \alpha_e\in\mathbb Z_{>0},\quad
+ \sum_e\alpha_e=q h_G.
+ \label{periods:scalar}
+\end{equation}
+For positive integer arguments $\Gamma(k)=(k-1)!$; there is no division
+by $\prod_e\Gamma(\alpha_e)$.  The homogeneity in
+\eqref{periods:scalar} is precisely the condition for descent under
+common positive rescaling of the Schwinger parameters.
+
+A complete numerator is a homogeneous polynomial $P\in\mathbb Q[t_e:e\in E]$,
+including arbitrary signs, with
+\begin{equation}
+ \omega_{P,q}=\frac{P(t)}{U_G(t)^q}\Omega_G,
+ \qquad \deg P=q h_G-N.
+ \label{periods:polynomial-form}
+\end{equation}
+If the required degree is negative, this polynomial space is zero.  All
+integrability statements in this section mean absolute convergence.  We
+allow finite sums of \eqref{periods:polynomial-form} at different integer
+pole orders, while keeping the graph and its polynomial fixed.  The
+one-edge cases are immediate: a bridge has no positive-weight family in
+\eqref{periods:scalar}, and a self-loop has the constant period one.
+
+For each $q$, let $\mathcal P_q(G)$ denote the rational vector space
+spanned by every convergent scalar period \eqref{periods:scalar} at that
+order.  This is the full scalar space; a prescribed physical numerator
+family may occupy a proper subspace.
+
+\subsection{Exact ordered sectors and integer convergence}
+\label{periods:hepp}
+
+Fix a permutation $\sigma$ of the edges.  The corresponding ordered
+sector has $0<t_{\sigma(1)}<\cdots<t_{\sigma(N)}$, and we set the largest
+parameter equal to one.  Introduce successive ratios by
+\begin{equation}
+ t_{\sigma(i)}=\prod_{j=i}^{N-1}x_j\quad(1\le i<N),
+ \qquad t_{\sigma(N)}=1,
+ \qquad 0<x_j<1.
+ \label{periods:ratios}
+\end{equation}
+For a prefix $S_j=\{\sigma(1),\ldots,\sigma(j)\}$, write $h(S_j)$ for
+its cycle rank, computed on the original vertex set.  Equivalently,
+$|S_j|-h(S_j)$ is the number of edges in a maximal forest of that prefix.
+
+\begin{lemma}[Greedy cotree factorization]
+\label{periods:greedy}
+The substitution \eqref{periods:ratios} gives the exact polynomial identity
+\begin{align}
+ U_G(t(x))&=\left(\prod_{j=1}^{N-1}x_j^{h(S_j)}\right)U_\sigma(x),
+ \label{periods:factorization}\\
+ U_\sigma(x)&=
+ \sum_{T\text{ spanning tree}}
+ \prod_{j=1}^{N-1}x_j^{|(E\setminus T)\cap S_j|-h(S_j)}.
+ \label{periods:sector-polynomial}
+\end{align}
+Every exponent in \eqref{periods:sector-polynomial} is nonnegative, and
+the constant coefficient is exactly one.  Consequently, on the closed cube,
+\begin{equation}
+ 1\le U_\sigma(x)\le \#\{T:T\text{ is a spanning tree of }G\}.
+ \label{periods:positive-denominator}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For every spanning tree $T$, its intersection with a prefix is a forest.
+Therefore
+\begin{equation}
+ |T\cap S_j|\le |S_j|-h(S_j),\qquad
+ |(E\setminus T)\cap S_j|\ge h(S_j).
+ \label{periods:cotree-bound}
+\end{equation}
+Run the greedy algorithm in the order $\sigma$, accepting an edge when
+it joins two distinct current components.  After each prefix, the accepted
+edges form a maximal forest of that prefix.  The final accepted edges
+form a spanning tree whose cotree attains equality in every inequality
+\eqref{periods:cotree-bound} simultaneously.  This is the standard greedy
+description of Hepp sectors~\cite[Lemma~2.8]{panzer2023}.
+
+The exponent of $x_j$ in a cotree monomial after
+\eqref{periods:ratios} is its number of edges in $S_j$, proving
+\eqref{periods:factorization}.  The greedy cotree contributes the constant
+term.  It is unique: successive differences of the complete prefix-count
+sequence determine membership of the first $N-1$ edges, and the fixed
+cotree cardinality determines the last edge.  Finally, every monomial of
+\eqref{periods:sector-polynomial} lies between zero and one on the cube,
+and its constant monomial equals one.  This proves
+\eqref{periods:positive-denominator} without replacing the full polynomial
+by a selected monomial.
+\end{proof}
+
+The absolute Jacobian of \eqref{periods:ratios} is
+$\prod_{j=1}^{N-1}x_j^{j-1}$.  A scalar form therefore becomes
+\begin{equation}
+ \frac{\prod_{j=1}^{N-1}
+ x_j^{\sum_{e\in S_j}\alpha_e-qh(S_j)-1}}
+ {U_\sigma(x)^q}\,dx_1\cdots dx_{N-1}.
+ \label{periods:scalar-pullback}
+\end{equation}
+Every edge ordering is retained; the equal-parameter faces have zero
+interior measure but will remain part of the relative boundary.
+
+\begin{proposition}[Integer convergence, including complete numerators]
+\label{periods:integer-convergence}
+The scalar form \eqref{periods:scalar} converges if and only if
+\begin{equation}
+ \sum_{e\in S}\alpha_e>q h(S)
+ \qquad\text{for every }\varnothing\ne S\subsetneq E.
+ \label{periods:power-counting}
+\end{equation}
+For a homogeneous rational-coefficient polynomial $P$, the complete form
+\eqref{periods:polynomial-form} converges if and only if every surviving
+monomial of $P$, after exact collection of identical terms, satisfies
+\eqref{periods:power-counting}.  Equivalently, every ordered-sector
+pullback has a polynomial numerator over $U_\sigma^q$ and is regular
+on the entire closed cube.
+\end{proposition}
+
+\begin{proof}
+By \eqref{periods:positive-denominator}, integrability of
+\eqref{periods:scalar-pullback} is equivalent to each exponent being
+greater than $-1$.  Since the exponents are integers, they must be
+nonnegative.  Every nonempty proper subset appears as a prefix of some
+ordering.  This gives \eqref{periods:power-counting}, in agreement with
+the positive power-counting characterization in
+\cite[Proposition~2.9]{panzer2023}.
+
+For the signed numerator, perform the complete substitution, factorization,
+and Jacobian multiplication first.  The result is a finite Laurent
+polynomial divided by $U_\sigma^q$.  A Laurent polynomial is a finite
+sum of integer powers, which at this intermediate stage may be negative.
+If the collected numerator has least exponent $r<0$ in $x_i$, it can be
+written
+\begin{equation}
+ x_i^r\bigl(L(x_1,\ldots,\widehat{x_i},\ldots,x_{N-1})+x_i R(x)\bigr),
+ \label{periods:leading-boundary}
+\end{equation}
+where $L$ is nonzero.  Choose a compact positive patch in the face $x_i=0$,
+away from every other coordinate face, on which $|L|$ has a positive lower
+bound.  Such a patch exists because a nonzero polynomial cannot vanish on
+an open real set.  On a sufficiently small product neighborhood of this
+patch, the absolute numerator is bounded below by a positive multiple of
+$x_i^r$, while \eqref{periods:positive-denominator} bounds the denominator
+above.  The absolute integral diverges because the integer $r$ is at most
+$-1$.  Thus convergence removes every negative coordinate exponent.
+
+Distinct homogeneous monomials cannot disappear through the substitution:
+their prefix exponents determine the first $N-1$ original powers by
+successive differences, and their common total degree determines the last
+power.  The common Jacobian and denominator shifts preserve this
+injectivity.  Hence every surviving original monomial has nonnegative
+sector exponents.  Conversely, a finite sum of convergent scalar
+monomials is absolutely convergent.  No cancellation between divergent
+absolute integrals has been used.
+\end{proof}
+
+\subsection{A fixed relative boundary complex}
+\label{periods:relative}
+
+For one fixed sector, put $m=N-1$.  Writing $\mathbb A^m_{\mathbb Q}$
+for affine $m$-space over the rational numbers, define
+\begin{equation}
+ A_\sigma=\mathbb Q[x_1,\ldots,x_m,U_\sigma^{-1}],\qquad
+ X_\sigma=\mathbb A^m_{\mathbb Q}\setminus\{U_\sigma=0\}.
+ \label{periods:ring}
+\end{equation}
+Thus $A_\sigma$ consists of rational functions with denominators that are
+powers of the one fixed polynomial $U_\sigma$.  Let $B_\sigma$ be the
+union, inside $X_\sigma$, of the $2m$ faces $x_i=0$ and $x_i=1$.  These
+faces have simple normal crossings: locally, all components through a
+point are distinct coordinate hyperplanes.  Every nonempty intersection
+of compatible faces is smooth and affine.  The cube is a relative chain
+in $(X_\sigma,B_\sigma)$ because of
+\eqref{periods:positive-denominator}.
+
+We describe its relative differential complex explicitly.  In degree $p$,
+take the regular algebraic $p$-forms on $X_\sigma$ whose restriction to
+every component of $B_\sigma$ vanishes.  If a coordinate wedge contains
+precisely the differentials indexed by $J\subseteq\{1,\ldots,m\}$, its
+coefficient must be divisible in $A_\sigma$ by
+\begin{equation}
+ \prod_{i\notin J}x_i(1-x_i).
+ \label{periods:boundary-factors}
+\end{equation}
+For $i\in J$, the wedge already restricts to zero on both faces normal
+to $x_i$, so no corresponding coefficient factor is required.
+
+\begin{lemma}[Relative presentation]
+\label{periods:relative-presentation}
+The top relative algebraic de Rham group is the rational vector-space
+quotient
+\begin{equation}
+ \boxed{
+ H_{\mathrm{dR}}^m(X_\sigma,B_\sigma;\mathbb Q)
+ =\frac{A_\sigma}
+ {\displaystyle\sum_{i=1}^m
+ \partial_{x_i}\bigl(x_i(1-x_i)A_\sigma\bigr)}.}
+ \label{periods:relative-quotient}
+\end{equation}
+It is finite dimensional over $\mathbb Q$.
+\end{lemma}
+
+\begin{proof}
+For each form degree, augment restriction to the individual faces by
+alternating restriction to their double intersections, triple intersections,
+and so on.  In local normal-crossing coordinates this finite face complex
+is exact after adjoining the kernel
+\eqref{periods:boundary-factors}.  The corresponding alternating complex
+of constant sheaves resolves the constant sheaf on the union of the
+faces: at a point it is the augmented simplex complex of the boundary
+components through that point.  The algebraic de Rham comparison theorem
+on $X_\sigma$ and on each smooth affine face
+intersection~\cite[Theorem~1]{grothendieck1966} consequently identifies
+the kernel differential complex with relative cohomology.
+
+In customary notation the kernel is
+$\Omega_{X_\sigma}^{\bullet}(\log B_\sigma)(-B_\sigma)$, the logarithmic
+differential complex twisted to vanish on the boundary.  Formula
+\eqref{periods:boundary-factors} describes its terms without relying on
+that notation.  Its terms are locally free on the affine variety
+$X_\sigma$, so their higher coherent cohomology vanishes and global
+sections compute its cohomology.  In degree $m$ the global term is
+$A_\sigma\,dx_1\wedge\cdots\wedge dx_m$.  In degree $m-1$, the term
+omitting $dx_i$ has coefficient in $x_i(1-x_i)A_\sigma$.  Its differential
+gives exactly the denominator of \eqref{periods:relative-quotient}.
+
+The complement and every face intersection are algebraic varieties of
+finite type, with finite-dimensional singular cohomology.  The finite
+relative face complex and comparison therefore give finite-dimensional
+de Rham cohomology after extension of scalars to $\mathbb C$.  The
+complex is defined over $\mathbb Q$, and field extension commutes with
+its cohomology; hence its dimension over $\mathbb Q$ is finite as well.
+\end{proof}
+
+The denominator of \eqref{periods:relative-quotient} is a vector
+subspace, generally not an ideal.  Multiplication of a derivative relation
+by a polynomial requires its product-rule correction.  For every
+polynomial $P$, coordinate $i$, and integer $q\ge0$, the complete
+relation is
+\begin{align}
+ \partial_{x_i}\left(\frac{x_i(1-x_i)P}{U_\sigma^q}\right)
+ ={}&\frac{(1-2x_i)P+x_i(1-x_i)\partial_{x_i}P}{U_\sigma^q}
+ \notag\\[-2pt]
+ &-q\frac{x_i(1-x_i)P\,\partial_{x_i}U_\sigma}{U_\sigma^{q+1}}.
+ \label{periods:complete-relation}
+\end{align}
+Every term is regular on the closed cube.  The primitive vanishes on the
+two faces normal to $x_i$, and its differential wedge restricts to zero
+on the other faces.  Its integral is therefore exactly zero.  Allowing
+all polynomials and all pole orders in
+\eqref{periods:complete-relation} gives the full relative-exact subspace
+in \eqref{periods:relative-quotient}.  This completeness statement does
+not identify a particular finite row bank with that subspace, and does
+not assert that every numerical identity between periods is cohomological.
+
+\subsection{Finite span and stabilization of the full scalar levels}
+\label{periods:stabilization}
+
+\begin{theorem}[Fixed core finite span and eventual stabilization]
+\label{periods:finite-span}
+For a fixed connected graph $G$, the rational span of every absolutely
+convergent form \eqref{periods:polynomial-form}, at all positive integer
+pole orders, is finite dimensional.  Moreover,
+\begin{equation}
+ \mathcal P_q(G)\subseteq\mathcal P_{q+1}(G),
+ \qquad
+ \mathcal P_q(G)=\bigcup_{r\ge1}\mathcal P_r(G)
+ \quad\text{for all sufficiently large }q.
+ \label{periods:stabilization-equation}
+\end{equation}
+The eventual threshold is existential; the assertion includes no
+numerical basis or arithmetic-independence claim.
+\end{theorem}
+
+\begin{proof}
+Proposition~\ref{periods:integer-convergence} puts every input into the
+finite direct sum, over all edge orderings, of the fixed spaces
+\eqref{periods:relative-quotient}.  Integration over each cube is a
+rational linear functional on its relative cohomology.  Choose a rational
+basis of each finite-dimensional group and regular top-form representatives.
+Their cube integrals form a finite spanning list for all the original
+periods.  Integration need not be injective, so this list need not be
+numerically independent.  The artificial internal sector faces may
+also make the direct sum larger than the original graph-family image.
+
+For nesting, multiply the numerator by the complete Kirchhoff polynomial:
+\begin{equation}
+ I_q(G;\alpha)=
+ \sum_{T\text{ spanning tree}}
+ I_{q+1}(G;\alpha+\mathbf1_{E\setminus T}),
+ \label{periods:dimension-shift}
+\end{equation}
+where $\mathbf1_{E\setminus T}$ adds one on exactly the cotree edges.
+Every summand converges separately.  Its positive integrand is the old
+positive integrand multiplied by
+\begin{equation}
+ 0\le \frac{\prod_{e\notin T}t_e}{U_G(t)}\le1.
+ \label{periods:dominated-shift}
+\end{equation}
+Equivalently, \eqref{periods:cotree-bound} preserves every strict
+inequality in \eqref{periods:power-counting}.  This proves nesting.
+Finally, choose a finite basis of the union from actual scalar periods.
+Each of its finitely many elements occurs at a finite pole order.  The
+maximum of these orders is a sufficient threshold by nesting.
+\end{proof}
+
+\begin{example}[A plateau does not locate the threshold]
+\label{periods:plateau}
+For the cycle with $N$ edges, including the two-edge cycle of parallel
+edges, one has $h_G=1$ and $U_G=\sum_e t_e$.  There are no positive
+integer weights with sum $q<N$.  In the unit-sum gauge, however,
+\begin{equation}
+ I_q(G;\alpha)=\frac{\prod_e(\alpha_e-1)!}{(q-1)!},
+ \qquad
+ I_N(G;1,\ldots,1)=\frac1{(N-1)!}.
+ \label{periods:cycle-moments}
+\end{equation}
+Thus the full scalar spaces are zero at every $q<N$ and equal to
+$\mathbb Q$ at every $q\ge N$.  Arbitrarily many consecutive equal
+levels can precede a strict increase.  Finite dimension bounds the
+number of strict increases, not the location of the final increase.
+\end{example}
+
+There is a constructive route to the finite relative space, though its
+cost is a separate issue.  Algorithms for localization, restriction, and
+de Rham cohomology of algebraic differential modules and their complexes
+apply to the finite face complex~\cite{oaku2001,walther2000}.  Once
+representatives $f_1,\ldots,f_r\in A_\sigma$ of a rational basis have
+been computed, a requested integrand $f\in A_\sigma$ admits an identity
+\begin{equation}
+ f-\sum_{j=1}^r c_j f_j
+ =\sum_{i=1}^m\partial_{x_i}\bigl[x_i(1-x_i)g_i\bigr],
+ \qquad c_j\in\mathbb Q,\quad g_i\in A_\sigma.
+ \label{periods:target-certificate}
+\end{equation}
+Searching increasing polynomial-degree and pole-order bounds for the
+$g_i$ is finite rational linear algebra at each step, and existence of
+the spanning basis guarantees eventual success.  The full rational
+identity and its boundary factors are an independently checkable
+certificate.  A bounded search against caller-supplied master forms is
+useful without having computed a complete basis; its failure does not
+certify independence or a nonzero residual value.
+
+For example, when $U_\sigma=1+x$, partial fractions show that the relative
+quotient is spanned by $1$ and $1/(1+x)$.  To see this with its boundary
+condition, write a rational function as $f=a/(1+x)+R'$ with
+$R\in\mathbb Q[x,(1+x)^{-1}]$.  Then
+\begin{equation}
+ f=R(1)-R(0)+\frac{a}{1+x}
+ +\partial_x\bigl[R(x)-R(0)-x(R(1)-R(0))\bigr].
+ \label{periods:one-dimensional-relative}
+\end{equation}
+The last primitive is divisible by $x(1-x)$ in that ring.  A rational
+derivative has zero residue at $x=-1$; after removing that coefficient,
+the endpoint condition also rules out a nonzero exact constant.  These
+two classes are therefore independent in relative cohomology and have
+periods $1,\log2$.  The original two-edge cycle nevertheless has only the
+one-dimensional rational scalar span in \eqref{periods:cycle-moments}.
+The sector cohomology can strictly exceed the original graph-family image.
+
+The finite-span theorem applies coefficientwise to the complete finite
+source polynomials, with every original free spinor index retained.
+Changing an integer holomorphic dimension or taking finitely many current
+insertions is covered whenever the preceding network reduction yields
+the absolutely convergent normalized forms
+\eqref{periods:polynomial-form} with the same $U_G$.  This does not make
+all arbitrary complex source evaluations a finite-dimensional rational
+space.  Dimension-dependent normalization factors must first be
+separated.  Noninteger exponents, regulator logarithms, changing divisors,
+and an unbounded family of different cores are outside the theorem.
+
+\subsection{Arbitrary integer powers on a wheel}
+\label{periods:wheel-upper}
+
+Let $W_n$, with $n\ge3$, have hub $0$, cyclic rim vertices
+$1,\ldots,n$, and spokes $0i$.  It has $2n$ edges and loop number $n$.
+Write the spoke weights as $a_i$ and the rim weights on $i(i+1)$ as
+$\rho_i$, with cyclic indices.  Then
+$\sum_i(a_i+\rho_i)=nq$.  Convergence implies
+$1\le a_i,\rho_i<q$ by applying
+\eqref{periods:power-counting} to the complement of each edge, so $q\ge2$.
+
+\begin{proposition}[Wheel upper inclusion]
+\label{periods:wheel-upper-proposition}
+Every convergent positive-integer wheel monomial belongs to
+\begin{equation}
+ I_q(W_n;\alpha)\in
+ \mathbb Q+\sum_{j=2}^{n-1}\mathbb Q\,\zeta(2j-1).
+ \label{periods:wheel-upper-space}
+\end{equation}
+Here $\zeta(k)=\sum_{s=1}^{\infty}s^{-k}$ for integers $k>1$.
+\end{proposition}
+
+\begin{proof}
+We give the complete rational spectral reduction, including its
+normalization.  Put $b_i=q-a_i$ and $\beta_i=q-\rho_i$ for the
+corresponding position powers.  With $\xi_i\in\mathbb R^{2q}$, use the
+Dirac delta to fix the first squared radius to one.  The projective
+position integral is
+\begin{equation}
+ \left(\prod_i\Gamma(b_i)\Gamma(\beta_i)\right)
+ \int\prod_i\frac{d^{2q}\xi_i}{\pi^q}\,
+ \delta(|\xi_1|^2-1)
+ \prod_i|\xi_i|^{-2b_i}|\xi_i-\xi_{i+1}|^{-2\beta_i}.
+ \label{periods:position-wheel}
+\end{equation}
+It equals \eqref{periods:scalar}.  Indeed, Schwinger parametrization and
+Gaussian integration give the inverse $q$th power of the grounded
+conductance Laplacian determinant.  For conductances $s_e$ this determinant
+is $(\prod_e s_e)U_G(s^{-1})$; inversion $s_e=t_e^{-1}$ changes each
+power $\beta_e$ to $q-\beta_e$.  Removing the common logarithmic scale
+by fixing one squared radius gives the delta factor in
+\eqref{periods:position-wheel}.  In logarithmic radii $v_i=\log|\xi_i|$,
+unit angular measure contributes $(2/\Gamma(q))^n$, and the fixed squared
+radius contributes $1/2$.  Thus the radial prefactor before angular
+eigenvalues is $2^{n-1}/\Gamma(q)^n$, multiplied by the displayed gamma
+factors.
+
+For angular harmonic degree $\nu\ge0$, set $s=\nu+q-1$.  The harmonic
+space consists of restrictions to the unit sphere of homogeneous
+harmonic polynomials of degree $\nu$.  Its dimension, obtained by
+subtracting the traced polynomials, is
+\begin{equation}
+ M_q(s)=
+ \binom{\nu+2q-1}{2q-1}-\binom{\nu+2q-3}{2q-1}
+ =\frac{2s^2}{(2q-2)!}\prod_{j=1}^{q-2}(s^2-j^2).
+ \label{periods:spherical-multiplicity}
+\end{equation}
+For a rim power $\beta$, put $d=q-1-\beta\ge0$.  Factoring out the
+symmetric powers of the two radii, the angular eigenvalue at their ratio
+$0<r<1$ is
+\begin{equation}
+ \sum_{k=0}^{d} E_{d,k}(s)r^{s+2k-d},\qquad
+ E_{d,k}(s)=\frac{\Gamma(q)}{\Gamma(\beta)}
+ \frac{(-1)^k\binom dk}{\prod_{j=0}^{d}(s+k-d+j)}.
+ \label{periods:angular-eigenvalue}
+\end{equation}
+For completeness, if $(u)_k=u(u+1)\cdots(u+k-1)$ denotes a rising
+factorial, angular integration of the binomial expansion gives
+\begin{equation}
+ r^{\nu+\beta}\frac{(\beta)_\nu}{(q)_\nu}
+ \sum_{k=0}^{d}
+ \frac{(\nu+\beta)_k(-d)_k}{(\nu+q)_k k!}\,r^{2k}.
+ \label{periods:terminating-angular}
+\end{equation}
+Replacing the rising factorials by gamma ratios gives
+\eqref{periods:angular-eigenvalue} term by term.  The unsplit angular
+operator has nonnegative eigenvalues: the positive Laplace representation
+of $(1-2rz+r^2)^{-\beta}$ is a positive mixture of $\exp(uz)$, $u>0$,
+whose expansion consists of positive-semidefinite tensor kernels.
+Consequently the cyclic harmonic traces are nonnegative and can be summed
+under the convergent radial integral.
+
+The radial drift at vertex $i$ is
+$2q-2b_i-\beta_{i-1}-\beta_i$.  Its sum is zero; choose integers $c_i$
+such that
+\begin{equation}
+ c_i-c_{i-1}=2q-2b_i-\beta_{i-1}-\beta_i,
+ \qquad c_0=c_n=0.
+ \label{periods:radial-drift}
+\end{equation}
+Selecting the term $k_i$ in each angular eigenvalue gives the radial
+integrand
+\begin{equation}
+ \exp\left\{\sum_i(c_i-c_{i-1})v_i
+ -\sum_i(s+2k_i-d_i)|v_i-v_{i+1}|\right\},
+ \qquad v_1=0,\quad d_i=\rho_i-1.
+ \label{periods:radial-integrand}
+\end{equation}
+In an ordering of the $v_i$, each gap has inverse decay coefficient
+$\sum_{i\in S}(c_i-c_{i-1})+
+\sum_{i\in\partial S}(s+2k_i-d_i)$, where $S$ is the set below the
+gap and $\partial S$ denotes its crossing rim edges.  At $s=q-1$ and
+all $k_i=0$, positivity follows by restricting the convergent position
+integral to separated radial annuli and a fixed open angular set.
+Increasing $s$ or any $k_i$ preserves it.  Hence each selected radial
+term has a convergent gap integral.
+
+The bilateral Laplace transform of $\exp(-p|v|)$ is
+$2p/(p^2-w^2)$.  Summing a complete link before taking the convolution
+residue uses the finite rational identity
+\begin{equation}
+ \sum_{k=0}^{d}
+ \frac{(-1)^k\binom dk}{\prod_{j=0}^{d}(s+k-d+j)}
+ \frac{2(s+2k-d)}{(s+2k-d)^2-w^2}
+ =\frac{2\,4^d d!}
+ {\prod_{k=0}^{d}((s+2k-d)^2-w^2)}.
+ \label{periods:link-identity}
+\end{equation}
+Both sides are even rational functions of $w$ vanishing at infinity.
+At a pole $w=-(s+2k-d)$ their residues agree because the product of the
+other denominator differences is
+\begin{equation}
+ \prod_{j\ne k}\bigl((s+2j-d)^2-(s+2k-d)^2\bigr)
+ =\frac{4^d(-1)^k k!(d-k)!}{s+2k-d}
+ \prod_{j=0}^{d}(s+k-d+j).
+ \label{periods:link-residues}
+\end{equation}
+The positive-pole residues then agree as well, proving
+\eqref{periods:link-identity}.
+
+For each link $i$, form the integers
+$c_i-d_i,c_i-d_i+2,\ldots,c_i+d_i$.  They have one common parity by
+\eqref{periods:radial-drift}.  Subtract the common minimum and divide
+by two; let $N_j$ be the number of resulting occurrences of $j$, and let
+$L$ be the largest occupied integer.  Gap positivity for every contiguous
+rim segment and its complement implies
+$|c_i-c_j|<\beta_i+\beta_j$.  Therefore
+\begin{equation}
+ \max_i(c_i+d_i)-\min_i(c_i-d_i)<2(q-1),
+ \qquad 0\le L\le q-2.
+ \label{periods:residue-strip}
+\end{equation}
+Each link contributes at most one occurrence to each $j$, so $N_j\le n$.
+
+Define the univariate rational function and its principal coefficients by
+\begin{align}
+ P_*(w)&=\prod_{j=0}^{L}(w-j)^{-N_j}
+       =\sum_{j=0}^{L}\sum_{k=1}^{N_j}\frac{A_{j,k}}{(w-j)^k},
+ \label{periods:univariate-function}\\
+ A_{j,k}&=\left.
+ \frac{1}{(N_j-k)!}\left(\frac{d}{dw}\right)^{N_j-k}
+ \prod_{l\ne j}(w-l)^{-N_l}\right|_{w=j}.
+ \label{periods:principal-coefficients}
+\end{align}
+Zero multiplicities contribute no terms.  Let $N_{\mathrm{tot}}=\sum_jN_j$.
+After \eqref{periods:link-identity}, rescaling the convolution variable
+by two cancels the factor $2^{2N_{\mathrm{tot}}-1}$ from the radial
+measure and links: the differential contributes $2$, and their
+$N_{\mathrm{tot}}$ quadratic factors contribute $4^{N_{\mathrm{tot}}}$.
+The remaining spectral rational function is
+\begin{equation}
+ F(s)=\sum_{j,k,l,t}
+ \frac{(-1)^{N_{\mathrm{tot}}+t}
+ \binom{k+t-2}{k-1}A_{j,k}A_{l,t}}
+ {(s+l-j)^{k+t-1}},
+ \label{periods:convolution-residues}
+\end{equation}
+where $1\le k\le N_j$ and $1\le t\le N_l$.  Indeed, this is the sum
+of the left residues of $(-1)^{N_{\mathrm{tot}}}P_*(w)P_*(w-s)$;
+expanding $(s+l-w)^{-t}$ at $w=j$ gives the displayed binomial coefficient.
+All normalization factors now give the complete period
+\begin{equation}
+ I_q(W_n;\alpha)=
+ \left(\prod_i(b_i-1)!d_i!\right)
+ \sum_{s=q-1}^{\infty}M_q(s)F(s).
+ \label{periods:wheel-residue-sum}
+\end{equation}
+
+Only integer poles $s=j-l$ occur, with $|j-l|\le q-2$.
+Since $k,t\le n$, their order before multiplication by $M_q$ is at
+most $2n-1$.  The multiplicity has a double zero at zero and a simple
+zero at every other possible pole.  Thus the remaining order is at
+most $2n-3$ at zero and at most $2n-2$ elsewhere.
+
+The function $F$ is odd.  Translating $w$ exchanges the left residues
+at $s$ with the right residues at $-s$; their sums are negatives because
+$P_*(w)P_*(w-s)$ has no residue at infinity.  Since $M_q$ is even,
+$M_q(s)F(s)$ is odd as well.  Opposite nonzero poles consequently have
+coefficients $B_{-h,u}=(-1)^{u+1}B_{h,u}$ at order $u$.  Summing their
+partial fractions over integers $s\ge q-1$ cancels every even zeta
+coefficient.  At zero only odd pole orders occur.  There is no polynomial
+part: the nonnegative harmonic series in
+\eqref{periods:wheel-residue-sum} converges.  Its total simple-pole
+coefficient also vanishes by convergence.  The finite lower-limit
+corrections are rational harmonic sums.  The remaining zeta weights
+are therefore exactly among $3,5,\ldots,2n-3$, proving
+\eqref{periods:wheel-upper-space}.
+\end{proof}
+
+\subsection{Radial periods and the odd-zeta directions}
+\label{periods:radial}
+
+Set every spoke weight to $q'-1$ and every rim weight to one.  The
+angular defects and radial drifts vanish.  The convolution of $n$
+copies of $\exp(-s|v|)$ at zero is
+\begin{equation}
+ \int_{\mathbb R}\left(\frac{2s}{s^2+y^2}\right)^n\frac{dy}{2\pi}
+ =2^{1-n}\binom{2n-2}{n-1}s^{1-n}.
+ \label{periods:radial-convolution}
+\end{equation}
+Together with the radial measure and angular eigenvalues, this gives
+\begin{equation}
+ I_{q'}(W_n;q'-1,\ldots,q'-1;1,\ldots,1)
+ =\binom{2n-2}{n-1}
+ \sum_{s=1}^{\infty}
+ \frac{2s^2\prod_{j=1}^{q'-2}(s^2-j^2)}
+ {(2q'-2)!\,s^{2n-1}},
+ \quad 2\le q'<n.
+ \label{periods:radial-master}
+\end{equation}
+Terms below $s=q'-1$ vanish.  The tail converges precisely in the
+displayed range.  At $q'=2$ this is
+$\binom{2n-2}{n-1}\zeta(2n-3)$, the usual wheel period
+\cite{bloch2006}.  As $q'$ increases from $2$ to $n-1$, the lowest zeta
+weight in \eqref{periods:radial-master} is
+$2n-2q'+1$, with coefficient
+\begin{equation}
+ \frac{2\binom{2n-2}{n-1}}{(2q'-2)!}\ne0.
+ \label{periods:radial-diagonal}
+\end{equation}
+These values therefore span all the odd-zeta directions by a triangular
+rational coefficient matrix.  This is a statement about explicit linear
+combinations, not arithmetic independence of their numerical values.
+
+\subsection{Exact star--triangle and parallel normalizations}
+\label{periods:star-parallel}
+
+We next construct a nonzero rational direction at the same pole level.
+The normalization of the graph operations matters.  At a trivalent
+vertex, let the incident resistance powers be $a_1,a_2,a_3$, with
+$a_1+a_2+a_3=q$.  If $x_i$ is the resistance on the new triangle edge
+opposite the old edge $i$, the positive transformation is
+\begin{equation}
+ r_i=\frac{x_jx_k}{x_1+x_2+x_3},\qquad
+ U_{\triangle}=(x_1+x_2+x_3)U_{\star},\qquad
+ \left|\frac{\partial(r_1,r_2,r_3)}{\partial(x_1,x_2,x_3)}\right|
+ =\frac{x_1x_2x_3}{(x_1+x_2+x_3)^3}.
+ \label{periods:star-map}
+\end{equation}
+The inverse is $x_i=(r_1r_2+r_2r_3+r_3r_1)/r_i$.  Substitution gives
+$\prod_i x_i^{q-a_i-1}/U_\triangle^q$; the remaining power of
+$x_1+x_2+x_3$ is $q-\sum_i a_i=0$.  Thus the opposite triangle powers
+are $q-a_i$ and there is no scalar prefactor.  Homogeneity makes the
+same identity valid for the projective measure.
+
+For parallel resistances with powers $a,b$, use
+$x=r/(1-z)$ and $y=r/z$, with $0<z<1$.  Since
+$U_G=(x+y)U_{G'}(xy/(x+y))$ and
+$|\partial(x,y)/\partial(r,z)|=r/[z^2(1-z)^2]$, the fiber integral is
+\begin{equation}
+ \int_0^1 z^{q-b-1}(1-z)^{q-a-1}\,dz
+ =\frac{\Gamma(q-a)\Gamma(q-b)}{\Gamma(2q-a-b)},
+ \qquad \alpha_{\mathrm{new}}=a+b-q.
+ \label{periods:parallel-beta}
+\end{equation}
+All applications below satisfy $0<a,b<q$ and $a+b>q$.  The fiber is
+therefore an ordinary convergent beta integral, and the new edge has a
+positive integer power.  Positive changes of variables and these finite
+fibers permit convergence to be checked on the final reduced graph.
+
+\subsection{A nonzero rational coefficient for every pole order}
+\label{periods:k4-direction}
+
+On $K_4=W_3$, take spoke powers $(q-1,1,1)$ and cyclic rim powers
+$(1,q-1,q-1)$, with $q\ge3$.  The three heavy edges form a path, as do
+the complementary light edges.  Every triangle has power sum $q+1$ or
+$2q-1$; every four-cycle has power sum greater than $q$; and removing
+one edge leaves sum greater than $2q$.  These cover all potentially
+nontrivial inequalities \eqref{periods:power-counting}, so the period
+converges.
+
+\begin{lemma}[Uniform rational direction on $K_4$]
+\label{periods:k4-rational}
+There is a rational number $R_q$ such that
+\begin{equation}
+ I_q(K_4;q-1,1,1;1,q-1,q-1)
+ =R_q+\frac{12((q-2)!)^2}{(2q-2)!}\zeta(3),
+ \qquad R_q\ne0\quad(q\ge3).
+ \label{periods:k4-value}
+\end{equation}
+In fact $R_3=-1/6$, and $R_q>0$ for every $q\ge4$.
+\end{lemma}
+
+\begin{proof}
+Put $r=q-2$.  The occupied multiplicities in
+\eqref{periods:univariate-function} are $(2,\ldots,2,3)$ at
+$0,\ldots,r$, and the factorial prefactor in
+\eqref{periods:wheel-residue-sum} is $(r!)^4$.  Thus
+\begin{equation}
+ \begin{aligned}
+ P_*(w)&=\frac1{(w-r)^3\prod_{j=0}^{r-1}(w-j)^2},\\
+ A_{r,3}&=\frac1{(r!)^2},\\
+ A_{j,2}&=-\frac1{(j!)^2((r-j)!)^2(r-j)}\quad(j<r).
+ \end{aligned}
+ \label{periods:k4-principal}
+\end{equation}
+Only the order-five pole at shift zero and the order-four poles at
+nonzero shifts can contribute to $\zeta(3)$ after multiplication by
+$M_q$.  Including $(r!)^4$, the first contribution is
+$12(-1)^r(r!)^2/(2r+2)!$.  For paired shifts $k,-k$, $1\le k\le r$,
+the relevant derivative is
+\begin{equation}
+ M_q'(k)=\frac{2(-1)^{r-k}k(r-k)!(r+k)!}{(2r+2)!}.
+ \label{periods:multiplicity-derivative}
+\end{equation}
+Together with \eqref{periods:k4-principal} and the binomial factor three
+in \eqref{periods:convolution-residues}, the paired contribution is
+\begin{equation}
+ \frac{12(r!)^2}{(2r+2)!}
+ (-1)^{r-k}\binom rk\binom{r+k}{k}.
+ \label{periods:paired-k4-contribution}
+\end{equation}
+The sum, including $k=0$, equals the coefficient in
+\eqref{periods:k4-value}.  If $[x^r]$ denotes extraction of the
+coefficient of $x^r$, the required identity is
+\begin{equation}
+ \sum_{k=0}^r(-1)^{r-k}\binom rk\binom{r+k}{k}
+ =[x^r](1+x)^r((1+x)-1)^r=1.
+ \label{periods:binomial-one}
+\end{equation}
+The upper inclusion already proved for $n=3$ leaves only a rational
+coefficient $R_q$.
+
+We specify the finite calculation needed below.  Define
+$H_a^{(u)}=\sum_{k=1}^{a}k^{-u}$, with $H_0^{(u)}=0$.
+The remaining principal coefficients are explicitly
+\begin{align}
+ A_{r,2}&=-\frac{2H_r^{(1)}}{(r!)^2},&
+ A_{r,1}&=\frac{2(H_r^{(1)})^2+H_r^{(2)}}{(r!)^2},\notag\\
+ A_{j,1}&=A_{j,2}\left(-\frac3{j-r}
+ -2\sum_{\substack{0\le l<r\\l\ne j}}\frac1{j-l}\right)
+ &&(0\le j<r).
+ \label{periods:k4-lower-principal}
+\end{align}
+These follow by logarithmic differentiation of
+\eqref{periods:principal-coefficients}.  Form $F(s)$ by
+\eqref{periods:convolution-residues} using these complete coefficients.
+Its product with
+$M_q(s)$ has poles of order at most three:
+\begin{equation}
+ M_q(s)F(s)=\sum_{h=-r}^{r}\sum_{u=1}^{3}\frac{B_{h,u}}{(s-h)^u},
+ \qquad
+ B_{h,u}=\left.\frac1{(3-u)!}
+ \left(\frac{d}{ds}\right)^{3-u}
+ \bigl[(s-h)^3M_q(s)F(s)\bigr]\right|_{s=h}.
+ \label{periods:k4-finite-residues}
+\end{equation}
+The complete rational coefficient is the finite expression
+\begin{equation}
+ R_q=-(r!)^4\sum_{h=-r}^{r}\sum_{u=1}^{3}B_{h,u}H_{r-h}^{(u)}.
+ \label{periods:k4-rational-algorithm}
+\end{equation}
+All quantities in this formula are rational.  Its exact evaluation gives
+\begin{equation}
+ R_3=-\frac16,\qquad R_4=\frac7{360},\qquad
+ R_5=\frac{1459}{60480},\qquad R_q>0\quad(6\le q\le20).
+ \label{periods:k4-finite-base}
+\end{equation}
+The complete fractions for $3\le q\le20$, the source digests, and their
+rational-arithmetic replay are part of the wheel certificate in
+Appendix~\ref{app:certificates}.  Equations
+\eqref{periods:principal-coefficients},
+\eqref{periods:k4-finite-residues}, and
+\eqref{periods:k4-rational-algorithm} specify every finite operation;
+the finite check is used only for this bounded base range.
+
+For a uniform proof beyond it, work on the six-variable unit simplex.
+The polynomial $U_{K_4}$ contains sixteen of the twenty square-free
+triple products.  Their complete sum is the third elementary symmetric
+polynomial.  Averaging two variables with their sum fixed increases
+this sum, since its only varying term is their product times the sum
+of the other four variables.  Its maximum is therefore attained at
+six equal variables, and
+\begin{equation}
+ U_{K_4}(t)\le\frac5{54},\qquad
+ I_q(K_4;q-1,1,1;1,q-1,q-1)
+ \ge\left(\frac{54}{5}\right)^q
+ \frac{((q-2)!)^3}{(3q-1)!}.
+ \label{periods:k4-integral-lower}
+\end{equation}
+After division by the positive zeta coefficient in
+\eqref{periods:k4-value}, the lower bound is
+\begin{equation}
+ \left(\frac{54}{5}\right)^q
+ \frac{(q-2)!(2q-2)!}{12(3q-1)!}.
+ \label{periods:lower-ratio}
+\end{equation}
+At $q=21$ it equals
+\begin{equation}
+ \frac{2778146948724569113512799974260736}
+ {2099879042434213173389434814453125}>\frac54,
+ \label{periods:q21-ratio}
+\end{equation}
+because four times the numerator minus five times the denominator is
+\[
+ 613192582727210587104025824777319>0.
+\]
+The ratio of
+\eqref{periods:lower-ratio} at $q+1$ to its value at $q$ is
+\begin{equation}
+ \frac{36(q-1)(2q-1)}{5(3q+1)(3q+2)}>1\quad(q\ge6),
+ \label{periods:ratio-growth}
+\end{equation}
+as the numerator minus denominator is
+$27(q-6)^2+171(q-6)+80$.  Finally,
+\begin{equation}
+ \zeta(3)<1+\frac18+\int_2^{\infty}x^{-3}\,dx=\frac54.
+ \label{periods:zeta3-bound}
+\end{equation}
+Equations \eqref{periods:k4-value}--\eqref{periods:zeta3-bound} imply
+$R_q>0$ for every $q\ge21$.  Together with the exact finite base range,
+this proves the lemma at every integer order.
+\end{proof}
+
+\subsection{The wheel space at a uniform sufficient threshold}
+\label{periods:wheel-threshold}
+
+\begin{theorem}[Complete wheel scalar span]
+\label{periods:wheel-span}
+For every $n\ge3$ and every integer $q\ge\max(3,n-1)$,
+\begin{equation}
+ \boxed{
+ \mathcal P_q(W_n)=
+ \mathbb Q+\sum_{j=2}^{n-1}\mathbb Q\,\zeta(2j-1).}
+ \label{periods:wheel-space}
+\end{equation}
+The threshold is sufficient; optimality and arithmetic independence are
+not asserted.
+\end{theorem}
+
+\begin{proof}
+Let first $n\ge4$ and $q=n-1$.  Give the spokes the powers
+\begin{equation}
+ (q-1,q-1,\underbrace{q-2,\ldots,q-2}_{n-3},q-1)
+ \label{periods:embedded-spokes}
+\end{equation}
+and the cyclic rim the powers $(1,\ldots,1,q-1)$.  Their sum is $nq$.
+Eliminate rim vertices $3,4,\ldots,n-1$ in that order by
+\eqref{periods:star-map}, combining every resulting parallel pair by
+\eqref{periods:parallel-beta}.  At step $k$, vertex $k+2$ has incident
+powers $(q-k-1,k,1)$, whose sum is $q$.  The two nontrivial parallel
+factors are
+\begin{equation}
+ \frac1k,\qquad
+ \begin{cases}
+ 1/[k(k+1)],&1\le k\le q-3,\\
+ 1/(q-2),&k=q-2.
+ \end{cases}
+ \label{periods:embedding-factors}
+\end{equation}
+Indeed, the first merge combines powers $q-k$ and $q-1$ into
+$q-k-1$.  The second combines $q-2$ and $q-k$ at an intermediate
+vertex, or $q-1$ and $q-k$ at the final vertex.  Formula
+\eqref{periods:parallel-beta} gives exactly
+\eqref{periods:embedding-factors}.  Their complete product is
+$1/((q-2)!)^3$.
+
+The remaining vertices are $0,1,2,n$, with powers
+\begin{equation}
+ \alpha_{01}=q-1,\qquad
+ \alpha_{02}=\alpha_{0n}=\alpha_{12}=1,\qquad
+ \alpha_{2n}=\alpha_{1n}=q-1.
+ \label{periods:final-k4}
+\end{equation}
+This is the $K_4$ of Lemma~\ref{periods:k4-rational}.  All beta fibers
+and the final graph converge, so the original positive integral
+converges as well.  Its value is
+\begin{equation}
+ \frac{R_q}{((q-2)!)^3}
+ +\frac{12}{(q-2)!(2q-2)!}\zeta(3),
+ \qquad R_q\ne0.
+ \label{periods:embedded-k4-value}
+\end{equation}
+
+For every $2\le q'<n$, multiply the numerator of the radial form
+\eqref{periods:radial-master} by $U_{W_n}^{n-1-q'}$ and raise its
+denominator to the same order.  Every resulting monomial converges by
+\eqref{periods:dominated-shift}.  The triangular coefficients
+\eqref{periods:radial-diagonal} therefore put every displayed odd zeta
+value into $\mathcal P_{n-1}(W_n)$.  Subtract the zeta term from
+\eqref{periods:embedded-k4-value} and divide by its nonzero rational
+coefficient to obtain $1$ at the same level.
+
+For $n=3$, use $q=3$ and spoke powers $(2,1,2)$ with rim powers
+$(1,1,2)$.  The middle rim vertex is a unique star with powers $(1,1,1)$.
+The star--triangle transformation and its parallel factors reduce it
+to the one-loop triangle with powers $(1,1,1)$, whose period is $1/2$
+by \eqref{periods:cycle-moments}.  The radial value at $q'=2$ is
+$6\zeta(3)$ and lifts to $q=3$ by one multiplication by $U$.
+This supplies both directions for $W_3$.
+
+The upper inclusion is Proposition~\ref{periods:wheel-upper-proposition}.
+Nesting \eqref{periods:dimension-shift} extends equality from the
+indicated starting level to every larger integer $q$.
+\end{proof}
+
+As an additional normalized control, at $q=n$ give the first and last
+spokes power $q-1$, all other spokes power $q-2$, the open rim path
+power one, and the closing rim edge power $q-1$.  Eliminating vertices
+$2,\ldots,n-1$ gives the same factor $1/((q-2)!)^3$, followed by a
+one-loop triangle with powers $(1,1,q-2)$.  Its exact wheel period is
+\begin{equation}
+ \frac{1}{(n-1)(n-2)((n-2)!)^3}.
+ \label{periods:rational-wheel-control}
+\end{equation}
+The accompanying wheel certificate checks this independent graph
+reduction, the embedded $K_4$ construction, and complete radial coefficient
+matrices through twelve loops.  These finite controls audit the formulas;
+the all-order statements follow from the preceding proofs and the
+explicit bounded base verification in
+\eqref{periods:k4-finite-base}.
+
+For a wheel core obtained after the complete network and series-chain
+reduction, the rational factorial coefficients preserve
+\eqref{periods:wheel-upper-space} coefficientwise in all retained source
+spinors.  A specified source support or insertion family can span less
+than the full scalar space.  Theorem~\ref{periods:wheel-span} does not
+claim an all-order three-zeta closure for the triangular prism,
+$K_{3,3}$, or $K_5$, nor a wheel threshold $q=3$ independent of $n$.

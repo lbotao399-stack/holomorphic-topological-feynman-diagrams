@@ -3,12 +3,14 @@
 Updated 27 November 2026. Scope: the product-forest and scalar-core work in
 this repository, not its separate physical-theory and holography projects.
 
-The user requested a numerical target of **75**. No numerical score,
-100-point rubric, or definition of that target exists in the repository's
-current `PLAN.md` or the earlier project discussion. This ledger therefore
-records concrete acceptance gates without assigning invented point credits
-or claiming that 75 has been reached. The governing existing standards are
-the admission rule and P1--P9 pipeline in [PLAN.md](../../PLAN.md).
+The repository's [100-point rubric](../../SCORE.md) now records **75 / 100**.
+The accepted changes from 69.5 are C3, 3.5 to 4, for uniform integer-pole
+period statements, and D2, 0 to 5, for the complete methods draft. The
+[acceptance audit](../../notes/methods-paper/ACCEPTANCE.md) and
+[final internal review](../../notes/methods-paper/verification/INDEPENDENT_REVIEW.md)
+record the requirements and evidence. This ledger preserves the exact scope
+of each result and its remaining gates. The admission rule and P1--P9
+pipeline in [PLAN.md](../../PLAN.md) continue to govern the calculations.
 
 ## Completed, with exact scope
 
@@ -22,6 +24,7 @@ the admission rule and P1--P9 pipeline in [PLAN.md](../../PLAN.md).
 | Fixed-core stabilization | All normalized, absolutely convergent rational numerators and positive integer pole orders on a fixed graph; existential threshold and finite ambient period span | [Theorem and independent exhaustive controls](core-period-stabilization/README.md) |
 | Explicit all-loop wheel scalar span | Every $n\ge3$, every integer $q\ge\max(3,n-1)$, full convergent scalar span exactly $\mathbb Q+\sum_{j=2}^{n-1}\mathbb Q\zeta(2j-1)$ | [Constructive wheel proof and exact certificate](core-period-closure/README.md) |
 | Complete relative target certificates | General relation generator and bounded exact search; every successful specified target carries all boundary primitives; no numerical master independence claim | [Production engine and independent certificate replay](core-sector-reduction/README.md) |
+| Complete methods draft | 35-page manuscript and 13-page complete coefficient supplement; normalization, derivations, exact controls, provenance, reproducible build and final internal review | [Methods paper and replay](../../notes/methods-paper/README.md) |
 | Six-loop $K_5$ bare examples | All three recorded admissible subdivision shapes at specified balanced source assignments; complete core integration | [Complete reciprocal reconstructions](series-fibres/CORE_RESULTS.md) |
 
 The stabilization theorem uses fixed relative cohomology and the complete
