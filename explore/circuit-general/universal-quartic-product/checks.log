@@ -1,0 +1,13 @@
+Running explore/circuit-general/universal-quartic-product/quartic_tensor.py
+Verified all 28 matchings, 12 open tensor words, and the complete 10-word rational result.
+Running explore/circuit-general/universal-quartic-product/higher_W.py
+Verified the complete representative ledgers and all higher-degree source/current replays.
+Running explore/circuit-general/universal-quartic-product/test_quartic_tensor.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.539s
+
+OK
+Running explore/circuit-general/universal-quartic-product/render_tensor.py
+Verified every printed full-source tensor coefficient.
+All universal tensor and higher-W controls passed (4.218 seconds).

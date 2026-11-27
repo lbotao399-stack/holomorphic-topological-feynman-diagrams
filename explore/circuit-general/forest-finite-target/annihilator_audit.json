@@ -1,0 +1,427 @@
+{
+  "U_terms": 135,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "generators": 17,
+  "q3": {
+    "boundary_generators": [
+      0,
+      1,
+      2,
+      11,
+      13,
+      14
+    ],
+    "counts": {
+      "candidates": 12966,
+      "classifier_guard_agrees": 64,
+      "divergence_guard_rejected": 12835,
+      "nontrivial": 67,
+      "strict_face_or_summed_guard_rejected": 64,
+      "verified": 67,
+      "with_coordinate_faces": 60
+    },
+    "q": 3,
+    "verified_by_generator": {
+      "0": 15,
+      "1": 15,
+      "11": 5,
+      "13": 12,
+      "14": 5,
+      "2": 15
+    }
+  },
+  "q4": {
+    "boundary_generators": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "counts": {
+      "candidates": 193477,
+      "classifier_guard_agrees": 246,
+      "divergence_guard_rejected": 192381,
+      "nontrivial": 850,
+      "strict_face_or_summed_guard_rejected": 246,
+      "verified": 850,
+      "with_coordinate_faces": 788
+    },
+    "q": 4,
+    "verified_by_generator": {
+      "0": 50,
+      "1": 50,
+      "10": 50,
+      "11": 50,
+      "12": 50,
+      "13": 50,
+      "14": 50,
+      "15": 50,
+      "16": 50,
+      "2": 50,
+      "3": 50,
+      "4": 50,
+      "5": 50,
+      "6": 50,
+      "7": 50,
+      "8": 50,
+      "9": 50
+    }
+  },
+  "q7": {
+    "counts": {
+      "generators": 17,
+      "rational_divergence_values": 34,
+      "rational_face_values": 4
+    },
+    "records": [
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          5
+        ],
+        "degree": 1,
+        "generator": 0
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          5
+        ],
+        "degree": 1,
+        "generator": 1
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          3,
+          3,
+          4,
+          4,
+          3,
+          4,
+          5
+        ],
+        "degree": 1,
+        "generator": 2
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          5
+        ],
+        "degree": 2,
+        "generator": 3
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          2,
+          3,
+          5
+        ],
+        "degree": 2,
+        "generator": 4
+      },
+      {
+        "beta": [
+          1,
+          3,
+          5,
+          3,
+          4,
+          4,
+          4,
+          2,
+          3,
+          5
+        ],
+        "degree": 2,
+        "generator": 5
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4
+        ],
+        "degree": 2,
+        "generator": 6
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4
+        ],
+        "degree": 2,
+        "generator": 7
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4
+        ],
+        "degree": 2,
+        "generator": 8
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          3,
+          4,
+          4,
+          3,
+          4,
+          5
+        ],
+        "degree": 2,
+        "generator": 9
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          3,
+          3,
+          4,
+          5
+        ],
+        "degree": 2,
+        "generator": 10
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          2,
+          3,
+          5
+        ],
+        "degree": 2,
+        "generator": 11
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          5
+        ],
+        "degree": 2,
+        "generator": 12
+      },
+      {
+        "beta": [
+          1,
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          5
+        ],
+        "degree": 2,
+        "generator": 13
+      },
+      {
+        "beta": [
+          2,
+          2,
+          4,
+          3,
+          3,
+          4,
+          4,
+          3,
+          4,
+          5
+        ],
+        "degree": 2,
+        "generator": 14
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4
+        ],
+        "degree": 2,
+        "generator": 15
+      },
+      {
+        "beta": [
+          2,
+          3,
+          4,
+          2,
+          3,
+          4,
+          4,
+          3,
+          4,
+          5
+        ],
+        "degree": 2,
+        "generator": 16
+      }
+    ]
+  },
+  "scope": "Independent polynomial, divergence, boundary, low-level period, target-order and final-arithmetic controls; the complete target witness is checked separately.",
+  "source_sha256": {
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/syz5.py": "77cec7b6bb01e72c72b30af18f8851d2367eeca5ae5dce71c4a0aee7b843fd52",
+    "explore/circuit-general/fiveloop/syz_cache/0-1_0-2_0-3_0-4_1-2_1-3_1-4_2-5_3-5_4-5_k2.pkl": "564e7e505b520ddc5b63bbee6d8ba420b24eb08e1b94d6b14d2a4204fdf2a793",
+    "explore/circuit-general/fiveloop/tables/K33+e_q3.json": "03c67963d342b3f9f746fa40cbd5f69b3ad2e42de7d82e4ef7741af61bbf05d4",
+    "explore/circuit-general/fiveloop/tables/K33+e_q4.json": "fc9c07f0fcce8fa52d671a40aa7cf89c2cbcd0d891c45a4244f6fa0f2f33a823",
+    "explore/circuit-general/fiveloop/tables/K33_q3.json": "ee820a2fc172356605426045bdedeab74bc353bde9ebd707640264cff679604b",
+    "explore/circuit-general/fiveloop/tables/K33_q4.json": "80433256cec5df7de59dacff599f41dc81d560f787363b6aa011a10b9b3126d9",
+    "explore/circuit-general/fiveloop/tables/prism_q3.json": "7401b0565587b71bda5cae61eeb1087a0230ceb1898f0f6f5e8b4175c12fb268",
+    "explore/circuit-general/fiveloop/tables/prism_q4.json": "a5d323efa8c4726edc7afa6650d44c02c018803ac751e129a3701d812e90b43b",
+    "explore/circuit-general/forest-finite-target/annihilators.json": "1c4b41b52de89b808cbcb6843644da5049d0543ec9fc5e27ee1e0a421a276e07",
+    "explore/circuit-general/forest-finite-target/check_annihilators.py": "4636eac0cf66e15812599745bb7d0638c97831edfd57db8739dc7c1d0e5527ac",
+    "explore/circuit-general/forest-target-reduction/dimension_certificate.json": "fa765ab202321680e708120baafd524d91fb58abce7f113a43ef2af68e3d9d12",
+    "explore/circuit-general/symmetry/family_target.py": "91244a5b5193699d3c99a51c794a7ed18ed8b971c7a444e5a663436cc6d5a7a0"
+  },
+  "target_sum": {
+    "1": "1187/435456000",
+    "z3": "-17/9072000"
+  }
+}

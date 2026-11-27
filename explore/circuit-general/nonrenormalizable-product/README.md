@@ -6,6 +6,12 @@ signs, differentiated input legs, and all surviving source spinors.
 Individual geometric forest periods and coefficients of the assembled
 operator product are distinct quantities.
 
+**Universal continuation:** [all color indices and arbitrary-degree pure
+matter superpotentials](../universal-quartic-product/README.md) derives the
+zeta cancellation from the representation identity before any color
+contraction. It prints the complete quartic tensor and proves rationality
+at every order for the same fixed input family and a neutral free spectator.
+
 ## What the Leibniz identity forces
 
 For the full differential and marked product of

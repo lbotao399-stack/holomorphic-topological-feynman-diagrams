@@ -1,10 +1,15 @@
 # Reduce the whole sourced numerator before solving scalar periods
 
+**Completed in the [polynomial-annihilator continuation](../forest-finite-target/README.md):**
+the full kernel is $(1187-816\zeta(3))/435456000>0$.
+The seventeen-term identity and its original certificates below remain the
+complete input to that directly verifiable finite proof.
+
 The complete missing five-loop product-forest fixture reduces from **7,368
 scalar terms to 19 retained periods by local identities, then to 17 with
 687 exact lower-level constraints**. Every original source and every signed
-coefficient is retained. The best finite contribution is accompanied by all
-17 periods below; this is an incomplete finite evaluation.
+coefficient is retained. This earlier finite contribution is accompanied by
+all 17 periods below; the continuation evaluates their entire weighted sum.
 The existing public `ExactForestSeries` remains an exact representation of
 the complete original kernel.
 

@@ -1,0 +1,37 @@
+COMPLETE FINITE FIVE-LOOP TARGET: OBSERVED RUNS
+
+Completed fresh bounded certificate GENERATION:
+  python3 explore/circuit-general/forest-finite-target/certify_finite.py --recompute --write
+  Reconstructed every original source coefficient: 10577 original, 7368 scalar (1.508 s).
+  Generated 42472 complete annihilator rows on 14553 scalar variables (61.092 s).
+  Complete finite closure: {'1': '1187/435456000', 'z3': '-17/9072000'}.
+  1039 independently summable witness rows (71.048 s).
+  Wrote the complete finite certificate.
+  Elapsed 71.394 seconds.
+  No generation/elimination budget was reached.
+  Every remaining scalar period canceled in the complete target.
+  The independent original-row sum reproduces all 17 target coefficients.
+
+Completed independent controls and fast stored-certificate REPLAY:
+  python3 explore/circuit-general/forest-finite-target/run_checks.py
+
+test_candidate_budget_preserves_every_archived_target_coefficient (__main__.WitnessChecks.test_candidate_budget_preserves_every_archived_target_coefficient) ... ok
+test_fill_budget_stops_before_a_whole_pivot (__main__.WitnessChecks.test_fill_budget_stops_before_a_whole_pivot) ... ok
+test_finite_and_partial_witnesses_reproduce_the_entire_target (__main__.WitnessChecks.test_finite_and_partial_witnesses_reproduce_the_entire_target) ... ok
+test_inconsistent_finite_rows_raise (__main__.WitnessChecks.test_inconsistent_finite_rows_raise) ... ok
+test_invalid_polynomial_or_degree_cannot_be_certified (__main__.WitnessChecks.test_invalid_polynomial_or_degree_cannot_be_certified) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.134s
+
+OK
+{'generators': 17, 'U_terms': 135, 'target_sum': {'1': '1187/435456000', 'z3': '-17/9072000'}}
+q3 {'q': 3, 'counts': {'candidates': 12966, 'divergence_guard_rejected': 12835, 'verified': 67, 'nontrivial': 67, 'with_coordinate_faces': 60, 'strict_face_or_summed_guard_rejected': 64, 'classifier_guard_agrees': 64}, 'verified_by_generator': {0: 15, 1: 15, 2: 15, 11: 5, 13: 12, 14: 5}, 'boundary_generators': [0, 1, 2, 11, 13, 14]}
+q4 {'q': 4, 'counts': {'candidates': 193477, 'divergence_guard_rejected': 192381, 'verified': 850, 'nontrivial': 850, 'with_coordinate_faces': 788, 'strict_face_or_summed_guard_rejected': 246, 'classifier_guard_agrees': 246}, 'verified_by_generator': {0: 50, 1: 50, 2: 50, 3: 50, 4: 50, 5: 50, 6: 50, 7: 50, 8: 50, 9: 50, 10: 50, 11: 50, 12: 50, 13: 50, 14: 50, 15: 50, 16: 50}, 'boundary_generators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}
+q7 {'rational_divergence_values': 34, 'rational_face_values': 4, 'generators': 17}
+Every independent annihilator audit field replays.
+All independent annihilator checks passed (9.147 seconds).
+Verified all 1039 complete row identities and every original source coefficient.
+Complete kernel: {'1': '1187/435456000', 'z3': '-17/9072000'}.
+Strictly positive rational interval: [167/435456000, 671/1306368000].
+Elapsed 3.697 seconds.
