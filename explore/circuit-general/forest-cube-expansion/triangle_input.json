@@ -1,0 +1,18 @@
+{
+  "name": "triangle_full_currents",
+  "vertices": 3,
+  "edges": [[0, 1], [0, 2], [1, 2]],
+  "marked": [1, 2],
+  "sources": [[1, 0], [0, 1], [-1, -1]],
+  "requests": [
+    {"name": "bare", "powers": []},
+    {"name": "current_01", "tensor_edges": [0], "indices": ["+dot_a"]},
+    {"name": "current_02", "tensor_edges": [1], "indices": ["+dot_a"]},
+    {"name": "current_12", "tensor_edges": [2], "indices": ["+dot_a"]},
+    {"name": "mixed", "polynomial": [
+      {"coefficient": 1},
+      {"coefficient": 1, "powers": [[0, 0, 1]]},
+      {"coefficient": -2, "powers": [[0, 0, 1], [1, 1, 1]]}
+    ]}
+  ]
+}

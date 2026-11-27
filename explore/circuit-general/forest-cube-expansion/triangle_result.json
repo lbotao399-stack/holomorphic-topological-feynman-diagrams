@@ -1,0 +1,1947 @@
+{
+  "all_requests_complete": true,
+  "backend": "geometric",
+  "budgets": {
+    "max_tensor_entries": 65536
+  },
+  "convention": "htk H=2,T=0 geometric kernels in the original edge order, before physical normalization and displacement factorials",
+  "full_balanced_sources": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "1"
+    ],
+    [
+      "-1",
+      "-1"
+    ]
+  ],
+  "graph": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "marked": [
+      1,
+      2
+    ],
+    "vertices": 3
+  },
+  "results": [
+    {
+      "name": "bare",
+      "result": {
+        "all_original_current_terms_retained": true,
+        "backend": "geometric",
+        "certified_enclosure": {
+          "absolute_tail_bound": "87/262144",
+          "charts": 3,
+          "lower": "-1049271/2097152",
+          "order": 18,
+          "partial_sum": "-1048575/2097152",
+          "polynomial_terms": 193,
+          "term": "-3/2097152",
+          "upper": "-1047879/2097152"
+        },
+        "certified_finite_terms": [
+          {
+            "absolute_tail_bound": "21/8",
+            "charts": 3,
+            "lower": "-3",
+            "order": 0,
+            "partial_sum": "-3/8",
+            "polynomial_terms": 4,
+            "term": "-3/8",
+            "upper": "9/4"
+          },
+          {
+            "absolute_tail_bound": "33/16",
+            "charts": 3,
+            "lower": "-39/16",
+            "order": 1,
+            "partial_sum": "-3/8",
+            "polynomial_terms": 6,
+            "term": "0",
+            "upper": "27/16"
+          },
+          {
+            "absolute_tail_bound": "3/2",
+            "charts": 3,
+            "lower": "-63/32",
+            "order": 2,
+            "partial_sum": "-15/32",
+            "polynomial_terms": 9,
+            "term": "-3/32",
+            "upper": "33/32"
+          },
+          {
+            "absolute_tail_bound": "33/32",
+            "charts": 3,
+            "lower": "-3/2",
+            "order": 3,
+            "partial_sum": "-15/32",
+            "polynomial_terms": 13,
+            "term": "0",
+            "upper": "9/16"
+          },
+          {
+            "absolute_tail_bound": "87/128",
+            "charts": 3,
+            "lower": "-75/64",
+            "order": 4,
+            "partial_sum": "-63/128",
+            "polynomial_terms": 18,
+            "term": "-3/128",
+            "upper": "3/16"
+          },
+          {
+            "absolute_tail_bound": "111/256",
+            "charts": 3,
+            "lower": "-237/256",
+            "order": 5,
+            "partial_sum": "-63/128",
+            "polynomial_terms": 24,
+            "term": "0",
+            "upper": "-15/256"
+          },
+          {
+            "absolute_tail_bound": "69/256",
+            "charts": 3,
+            "lower": "-393/512",
+            "order": 6,
+            "partial_sum": "-255/512",
+            "polynomial_terms": 31,
+            "term": "-3/512",
+            "upper": "-117/512"
+          }
+        ],
+        "finite_certificate_is_not_the_exact_value": true,
+        "full_original_graph_and_sources": "enclosing_document",
+        "original_current_polynomial": [
+          {
+            "coefficient": "1",
+            "exponents": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "requested_interval_width": "1/1000",
+        "series_specification": {
+          "absolute_ratio": "1/2",
+          "centre": "2",
+          "complete_cubes": 3,
+          "components": [
+            {
+              "absolute_moment": "3",
+              "denominator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    1,
+                    0
+                  ],
+                  "1"
+                ]
+              ],
+              "numerator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "-3"
+                ]
+              ],
+              "power": 3
+            }
+          ],
+          "constant": "0",
+          "dimension": 2,
+          "kind": "complete_geometric_rational_series",
+          "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+          "original_current_polynomial": [
+            [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "1"
+            ]
+          ],
+          "original_graph": {
+            "marked": [
+              1,
+              2
+            ],
+            "ordered_oriented_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "vertices": 3
+          },
+          "original_sources": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "-1"
+            ]
+          ],
+          "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+          "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+          "version": 1
+        },
+        "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+        "type": "complete_convergent_rational_series"
+      }
+    },
+    {
+      "name": "current_01",
+      "result": {
+        "entries": [
+          {
+            "storage_indices": [
+              0
+            ],
+            "value": {
+              "all_original_current_terms_retained": true,
+              "backend": "geometric",
+              "certified_enclosure": {
+                "absolute_tail_bound": "1/2048",
+                "charts": 3,
+                "lower": "-525821/3145728",
+                "order": 19,
+                "partial_sum": "-524285/3145728",
+                "polynomial_terms": 223,
+                "term": "5/6291456",
+                "upper": "-522749/3145728"
+              },
+              "certified_finite_terms": [
+                {
+                  "absolute_tail_bound": "15/8",
+                  "charts": 3,
+                  "lower": "-2",
+                  "order": 0,
+                  "partial_sum": "-1/8",
+                  "polynomial_terms": 6,
+                  "term": "-1/8",
+                  "upper": "7/4"
+                },
+                {
+                  "absolute_tail_bound": "13/8",
+                  "charts": 3,
+                  "lower": "-83/48",
+                  "order": 1,
+                  "partial_sum": "-5/48",
+                  "polynomial_terms": 7,
+                  "term": "1/48",
+                  "upper": "73/48"
+                },
+                {
+                  "absolute_tail_bound": "21/16",
+                  "charts": 3,
+                  "lower": "-47/32",
+                  "order": 2,
+                  "partial_sum": "-5/32",
+                  "polynomial_terms": 13,
+                  "term": "-5/96",
+                  "upper": "37/32"
+                },
+                {
+                  "absolute_tail_bound": "1",
+                  "charts": 3,
+                  "lower": "-55/48",
+                  "order": 3,
+                  "partial_sum": "-7/48",
+                  "polynomial_terms": 15,
+                  "term": "1/96",
+                  "upper": "41/48"
+                },
+                {
+                  "absolute_tail_bound": "93/128",
+                  "charts": 3,
+                  "lower": "-57/64",
+                  "order": 4,
+                  "partial_sum": "-21/128",
+                  "polynomial_terms": 24,
+                  "term": "-7/384",
+                  "upper": "9/16"
+                },
+                {
+                  "absolute_tail_bound": "65/128",
+                  "charts": 3,
+                  "lower": "-171/256",
+                  "order": 5,
+                  "partial_sum": "-41/256",
+                  "polynomial_terms": 27,
+                  "term": "1/256",
+                  "upper": "89/256"
+                },
+                {
+                  "absolute_tail_bound": "11/32",
+                  "charts": 3,
+                  "lower": "-261/512",
+                  "order": 6,
+                  "partial_sum": "-85/512",
+                  "polynomial_terms": 39,
+                  "term": "-3/512",
+                  "upper": "91/512"
+                }
+              ],
+              "finite_certificate_is_not_the_exact_value": true,
+              "full_original_graph_and_sources": "enclosing_document",
+              "original_current_polynomial": [
+                {
+                  "coefficient": "1",
+                  "exponents": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "requested_interval_width": "1/1000",
+              "series_specification": {
+                "absolute_ratio": "1/2",
+                "centre": "2",
+                "complete_cubes": 3,
+                "components": [
+                  {
+                    "absolute_moment": "2",
+                    "denominator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "1"
+                      ]
+                    ],
+                    "numerator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "-1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "-1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "-1"
+                      ]
+                    ],
+                    "power": 4
+                  }
+                ],
+                "constant": "0",
+                "dimension": 2,
+                "kind": "complete_geometric_rational_series",
+                "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+                "original_current_polynomial": [
+                  [
+                    [
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "original_graph": {
+                  "marked": [
+                    1,
+                    2
+                  ],
+                  "ordered_oriented_edges": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      1,
+                      2
+                    ]
+                  ],
+                  "vertices": 3
+                },
+                "original_sources": [
+                  [
+                    "1",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "-1",
+                    "-1"
+                  ]
+                ],
+                "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+                "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+                "version": 1
+              },
+              "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+              "type": "complete_convergent_rational_series"
+            }
+          },
+          {
+            "storage_indices": [
+              1
+            ],
+            "value": {
+              "all_original_current_terms_retained": true,
+              "backend": "geometric",
+              "certified_enclosure": {
+                "absolute_tail_bound": "1/2048",
+                "charts": 3,
+                "lower": "522749/3145728",
+                "order": 19,
+                "partial_sum": "524285/3145728",
+                "polynomial_terms": 227,
+                "term": "-5/6291456",
+                "upper": "525821/3145728"
+              },
+              "certified_finite_terms": [
+                {
+                  "absolute_tail_bound": "15/8",
+                  "charts": 3,
+                  "lower": "-7/4",
+                  "order": 0,
+                  "partial_sum": "1/8",
+                  "polynomial_terms": 5,
+                  "term": "1/8",
+                  "upper": "2"
+                },
+                {
+                  "absolute_tail_bound": "13/8",
+                  "charts": 3,
+                  "lower": "-73/48",
+                  "order": 1,
+                  "partial_sum": "5/48",
+                  "polynomial_terms": 8,
+                  "term": "-1/48",
+                  "upper": "83/48"
+                },
+                {
+                  "absolute_tail_bound": "21/16",
+                  "charts": 3,
+                  "lower": "-37/32",
+                  "order": 2,
+                  "partial_sum": "5/32",
+                  "polynomial_terms": 11,
+                  "term": "5/96",
+                  "upper": "47/32"
+                },
+                {
+                  "absolute_tail_bound": "1",
+                  "charts": 3,
+                  "lower": "-41/48",
+                  "order": 3,
+                  "partial_sum": "7/48",
+                  "polynomial_terms": 16,
+                  "term": "-1/96",
+                  "upper": "55/48"
+                },
+                {
+                  "absolute_tail_bound": "93/128",
+                  "charts": 3,
+                  "lower": "-9/16",
+                  "order": 4,
+                  "partial_sum": "21/128",
+                  "polynomial_terms": 22,
+                  "term": "7/384",
+                  "upper": "57/64"
+                },
+                {
+                  "absolute_tail_bound": "65/128",
+                  "charts": 3,
+                  "lower": "-89/256",
+                  "order": 5,
+                  "partial_sum": "41/256",
+                  "polynomial_terms": 28,
+                  "term": "-1/256",
+                  "upper": "171/256"
+                },
+                {
+                  "absolute_tail_bound": "11/32",
+                  "charts": 3,
+                  "lower": "-91/512",
+                  "order": 6,
+                  "partial_sum": "85/512",
+                  "polynomial_terms": 36,
+                  "term": "3/512",
+                  "upper": "261/512"
+                }
+              ],
+              "finite_certificate_is_not_the_exact_value": true,
+              "full_original_graph_and_sources": "enclosing_document",
+              "original_current_polynomial": [
+                {
+                  "coefficient": "1",
+                  "exponents": [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "requested_interval_width": "1/1000",
+              "series_specification": {
+                "absolute_ratio": "1/2",
+                "centre": "2",
+                "complete_cubes": 3,
+                "components": [
+                  {
+                    "absolute_moment": "2",
+                    "denominator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "1"
+                      ]
+                    ],
+                    "numerator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "2"
+                      ]
+                    ],
+                    "power": 4
+                  }
+                ],
+                "constant": "0",
+                "dimension": 2,
+                "kind": "complete_geometric_rational_series",
+                "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+                "original_current_polynomial": [
+                  [
+                    [
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "original_graph": {
+                  "marked": [
+                    1,
+                    2
+                  ],
+                  "ordered_oriented_edges": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      1,
+                      2
+                    ]
+                  ],
+                  "vertices": 3
+                },
+                "original_sources": [
+                  [
+                    "1",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "-1",
+                    "-1"
+                  ]
+                ],
+                "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+                "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+                "version": 1
+              },
+              "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+              "type": "complete_convergent_rational_series"
+            }
+          }
+        ],
+        "free_lower_spinor_indices": [
+          "+dot_a"
+        ],
+        "original_edges": [
+          0
+        ],
+        "type": "complete_spinor_tensor"
+      }
+    },
+    {
+      "name": "current_02",
+      "result": {
+        "entries": [
+          {
+            "storage_indices": [
+              0
+            ],
+            "value": {
+              "all_original_current_terms_retained": true,
+              "backend": "geometric",
+              "certified_enclosure": {
+                "absolute_tail_bound": "1313/4194304",
+                "charts": 3,
+                "lower": "-8396473/25165824",
+                "order": 21,
+                "partial_sum": "-8388595/25165824",
+                "polynomial_terms": 267,
+                "term": "11/25165824",
+                "upper": "-8380717/25165824"
+              },
+              "certified_finite_terms": [
+                {
+                  "absolute_tail_bound": "15/4",
+                  "charts": 3,
+                  "lower": "-4",
+                  "order": 0,
+                  "partial_sum": "-1/4",
+                  "polynomial_terms": 6,
+                  "term": "-1/4",
+                  "upper": "7/2"
+                },
+                {
+                  "absolute_tail_bound": "13/4",
+                  "charts": 3,
+                  "lower": "-83/24",
+                  "order": 1,
+                  "partial_sum": "-5/24",
+                  "polynomial_terms": 7,
+                  "term": "1/24",
+                  "upper": "73/24"
+                },
+                {
+                  "absolute_tail_bound": "21/8",
+                  "charts": 3,
+                  "lower": "-47/16",
+                  "order": 2,
+                  "partial_sum": "-5/16",
+                  "polynomial_terms": 13,
+                  "term": "-5/48",
+                  "upper": "37/16"
+                },
+                {
+                  "absolute_tail_bound": "2",
+                  "charts": 3,
+                  "lower": "-55/24",
+                  "order": 3,
+                  "partial_sum": "-7/24",
+                  "polynomial_terms": 15,
+                  "term": "1/48",
+                  "upper": "41/24"
+                },
+                {
+                  "absolute_tail_bound": "93/64",
+                  "charts": 3,
+                  "lower": "-57/32",
+                  "order": 4,
+                  "partial_sum": "-21/64",
+                  "polynomial_terms": 24,
+                  "term": "-7/192",
+                  "upper": "9/8"
+                },
+                {
+                  "absolute_tail_bound": "65/64",
+                  "charts": 3,
+                  "lower": "-171/128",
+                  "order": 5,
+                  "partial_sum": "-41/128",
+                  "polynomial_terms": 27,
+                  "term": "1/128",
+                  "upper": "89/128"
+                },
+                {
+                  "absolute_tail_bound": "11/16",
+                  "charts": 3,
+                  "lower": "-261/256",
+                  "order": 6,
+                  "partial_sum": "-85/256",
+                  "polynomial_terms": 39,
+                  "term": "-3/256",
+                  "upper": "91/256"
+                }
+              ],
+              "finite_certificate_is_not_the_exact_value": true,
+              "full_original_graph_and_sources": "enclosing_document",
+              "original_current_polynomial": [
+                {
+                  "coefficient": "1",
+                  "exponents": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "requested_interval_width": "1/1000",
+              "series_specification": {
+                "absolute_ratio": "1/2",
+                "centre": "2",
+                "complete_cubes": 3,
+                "components": [
+                  {
+                    "absolute_moment": "4",
+                    "denominator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "1"
+                      ]
+                    ],
+                    "numerator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "-2"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "-2"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "-2"
+                      ]
+                    ],
+                    "power": 4
+                  }
+                ],
+                "constant": "0",
+                "dimension": 2,
+                "kind": "complete_geometric_rational_series",
+                "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+                "original_current_polynomial": [
+                  [
+                    [
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "original_graph": {
+                  "marked": [
+                    1,
+                    2
+                  ],
+                  "ordered_oriented_edges": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      1,
+                      2
+                    ]
+                  ],
+                  "vertices": 3
+                },
+                "original_sources": [
+                  [
+                    "1",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "-1",
+                    "-1"
+                  ]
+                ],
+                "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+                "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+                "version": 1
+              },
+              "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+              "type": "complete_convergent_rational_series"
+            }
+          },
+          {
+            "storage_indices": [
+              1
+            ],
+            "value": {
+              "all_original_current_terms_retained": true,
+              "backend": "geometric",
+              "certified_enclosure": {
+                "absolute_tail_bound": "1/2048",
+                "charts": 3,
+                "lower": "-525821/3145728",
+                "order": 19,
+                "partial_sum": "-524285/3145728",
+                "polynomial_terms": 227,
+                "term": "5/6291456",
+                "upper": "-522749/3145728"
+              },
+              "certified_finite_terms": [
+                {
+                  "absolute_tail_bound": "15/8",
+                  "charts": 3,
+                  "lower": "-2",
+                  "order": 0,
+                  "partial_sum": "-1/8",
+                  "polynomial_terms": 5,
+                  "term": "-1/8",
+                  "upper": "7/4"
+                },
+                {
+                  "absolute_tail_bound": "13/8",
+                  "charts": 3,
+                  "lower": "-83/48",
+                  "order": 1,
+                  "partial_sum": "-5/48",
+                  "polynomial_terms": 8,
+                  "term": "1/48",
+                  "upper": "73/48"
+                },
+                {
+                  "absolute_tail_bound": "21/16",
+                  "charts": 3,
+                  "lower": "-47/32",
+                  "order": 2,
+                  "partial_sum": "-5/32",
+                  "polynomial_terms": 11,
+                  "term": "-5/96",
+                  "upper": "37/32"
+                },
+                {
+                  "absolute_tail_bound": "1",
+                  "charts": 3,
+                  "lower": "-55/48",
+                  "order": 3,
+                  "partial_sum": "-7/48",
+                  "polynomial_terms": 16,
+                  "term": "1/96",
+                  "upper": "41/48"
+                },
+                {
+                  "absolute_tail_bound": "93/128",
+                  "charts": 3,
+                  "lower": "-57/64",
+                  "order": 4,
+                  "partial_sum": "-21/128",
+                  "polynomial_terms": 22,
+                  "term": "-7/384",
+                  "upper": "9/16"
+                },
+                {
+                  "absolute_tail_bound": "65/128",
+                  "charts": 3,
+                  "lower": "-171/256",
+                  "order": 5,
+                  "partial_sum": "-41/256",
+                  "polynomial_terms": 28,
+                  "term": "1/256",
+                  "upper": "89/256"
+                },
+                {
+                  "absolute_tail_bound": "11/32",
+                  "charts": 3,
+                  "lower": "-261/512",
+                  "order": 6,
+                  "partial_sum": "-85/512",
+                  "polynomial_terms": 36,
+                  "term": "-3/512",
+                  "upper": "91/512"
+                }
+              ],
+              "finite_certificate_is_not_the_exact_value": true,
+              "full_original_graph_and_sources": "enclosing_document",
+              "original_current_polynomial": [
+                {
+                  "coefficient": "1",
+                  "exponents": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "requested_interval_width": "1/1000",
+              "series_specification": {
+                "absolute_ratio": "1/2",
+                "centre": "2",
+                "complete_cubes": 3,
+                "components": [
+                  {
+                    "absolute_moment": "2",
+                    "denominator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "1"
+                      ]
+                    ],
+                    "numerator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "-1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "-2"
+                      ]
+                    ],
+                    "power": 4
+                  }
+                ],
+                "constant": "0",
+                "dimension": 2,
+                "kind": "complete_geometric_rational_series",
+                "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+                "original_current_polynomial": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "original_graph": {
+                  "marked": [
+                    1,
+                    2
+                  ],
+                  "ordered_oriented_edges": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      1,
+                      2
+                    ]
+                  ],
+                  "vertices": 3
+                },
+                "original_sources": [
+                  [
+                    "1",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "-1",
+                    "-1"
+                  ]
+                ],
+                "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+                "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+                "version": 1
+              },
+              "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+              "type": "complete_convergent_rational_series"
+            }
+          }
+        ],
+        "free_lower_spinor_indices": [
+          "+dot_a"
+        ],
+        "original_edges": [
+          1
+        ],
+        "type": "complete_spinor_tensor"
+      }
+    },
+    {
+      "name": "current_12",
+      "result": {
+        "entries": [
+          {
+            "storage_indices": [
+              0
+            ],
+            "value": {
+              "all_original_current_terms_retained": true,
+              "backend": "geometric",
+              "certified_enclosure": {
+                "absolute_tail_bound": "1/2048",
+                "charts": 3,
+                "lower": "-525821/3145728",
+                "order": 19,
+                "partial_sum": "-524285/3145728",
+                "polynomial_terms": 223,
+                "term": "5/6291456",
+                "upper": "-522749/3145728"
+              },
+              "certified_finite_terms": [
+                {
+                  "absolute_tail_bound": "15/8",
+                  "charts": 3,
+                  "lower": "-2",
+                  "order": 0,
+                  "partial_sum": "-1/8",
+                  "polynomial_terms": 6,
+                  "term": "-1/8",
+                  "upper": "7/4"
+                },
+                {
+                  "absolute_tail_bound": "13/8",
+                  "charts": 3,
+                  "lower": "-83/48",
+                  "order": 1,
+                  "partial_sum": "-5/48",
+                  "polynomial_terms": 7,
+                  "term": "1/48",
+                  "upper": "73/48"
+                },
+                {
+                  "absolute_tail_bound": "21/16",
+                  "charts": 3,
+                  "lower": "-47/32",
+                  "order": 2,
+                  "partial_sum": "-5/32",
+                  "polynomial_terms": 13,
+                  "term": "-5/96",
+                  "upper": "37/32"
+                },
+                {
+                  "absolute_tail_bound": "1",
+                  "charts": 3,
+                  "lower": "-55/48",
+                  "order": 3,
+                  "partial_sum": "-7/48",
+                  "polynomial_terms": 15,
+                  "term": "1/96",
+                  "upper": "41/48"
+                },
+                {
+                  "absolute_tail_bound": "93/128",
+                  "charts": 3,
+                  "lower": "-57/64",
+                  "order": 4,
+                  "partial_sum": "-21/128",
+                  "polynomial_terms": 24,
+                  "term": "-7/384",
+                  "upper": "9/16"
+                },
+                {
+                  "absolute_tail_bound": "65/128",
+                  "charts": 3,
+                  "lower": "-171/256",
+                  "order": 5,
+                  "partial_sum": "-41/256",
+                  "polynomial_terms": 27,
+                  "term": "1/256",
+                  "upper": "89/256"
+                },
+                {
+                  "absolute_tail_bound": "11/32",
+                  "charts": 3,
+                  "lower": "-261/512",
+                  "order": 6,
+                  "partial_sum": "-85/512",
+                  "polynomial_terms": 39,
+                  "term": "-3/512",
+                  "upper": "91/512"
+                }
+              ],
+              "finite_certificate_is_not_the_exact_value": true,
+              "full_original_graph_and_sources": "enclosing_document",
+              "original_current_polynomial": [
+                {
+                  "coefficient": "1",
+                  "exponents": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "requested_interval_width": "1/1000",
+              "series_specification": {
+                "absolute_ratio": "1/2",
+                "centre": "2",
+                "complete_cubes": 3,
+                "components": [
+                  {
+                    "absolute_moment": "2",
+                    "denominator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "1"
+                      ]
+                    ],
+                    "numerator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "-1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "-1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "-1"
+                      ]
+                    ],
+                    "power": 4
+                  }
+                ],
+                "constant": "0",
+                "dimension": 2,
+                "kind": "complete_geometric_rational_series",
+                "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+                "original_current_polynomial": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "1"
+                  ]
+                ],
+                "original_graph": {
+                  "marked": [
+                    1,
+                    2
+                  ],
+                  "ordered_oriented_edges": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      1,
+                      2
+                    ]
+                  ],
+                  "vertices": 3
+                },
+                "original_sources": [
+                  [
+                    "1",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "-1",
+                    "-1"
+                  ]
+                ],
+                "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+                "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+                "version": 1
+              },
+              "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+              "type": "complete_convergent_rational_series"
+            }
+          },
+          {
+            "storage_indices": [
+              1
+            ],
+            "value": {
+              "all_original_current_terms_retained": true,
+              "backend": "geometric",
+              "certified_enclosure": {
+                "absolute_tail_bound": "1313/4194304",
+                "charts": 3,
+                "lower": "-8396473/25165824",
+                "order": 21,
+                "partial_sum": "-8388595/25165824",
+                "polynomial_terms": 276,
+                "term": "11/25165824",
+                "upper": "-8380717/25165824"
+              },
+              "certified_finite_terms": [
+                {
+                  "absolute_tail_bound": "15/4",
+                  "charts": 3,
+                  "lower": "-4",
+                  "order": 0,
+                  "partial_sum": "-1/4",
+                  "polynomial_terms": 6,
+                  "term": "-1/4",
+                  "upper": "7/2"
+                },
+                {
+                  "absolute_tail_bound": "13/4",
+                  "charts": 3,
+                  "lower": "-83/24",
+                  "order": 1,
+                  "partial_sum": "-5/24",
+                  "polynomial_terms": 9,
+                  "term": "1/24",
+                  "upper": "73/24"
+                },
+                {
+                  "absolute_tail_bound": "21/8",
+                  "charts": 3,
+                  "lower": "-47/16",
+                  "order": 2,
+                  "partial_sum": "-5/16",
+                  "polynomial_terms": 12,
+                  "term": "-5/48",
+                  "upper": "37/16"
+                },
+                {
+                  "absolute_tail_bound": "2",
+                  "charts": 3,
+                  "lower": "-55/24",
+                  "order": 3,
+                  "partial_sum": "-7/24",
+                  "polynomial_terms": 17,
+                  "term": "1/48",
+                  "upper": "41/24"
+                },
+                {
+                  "absolute_tail_bound": "93/64",
+                  "charts": 3,
+                  "lower": "-57/32",
+                  "order": 4,
+                  "partial_sum": "-21/64",
+                  "polynomial_terms": 23,
+                  "term": "-7/192",
+                  "upper": "9/8"
+                },
+                {
+                  "absolute_tail_bound": "65/64",
+                  "charts": 3,
+                  "lower": "-171/128",
+                  "order": 5,
+                  "partial_sum": "-41/128",
+                  "polynomial_terms": 30,
+                  "term": "1/128",
+                  "upper": "89/128"
+                },
+                {
+                  "absolute_tail_bound": "11/16",
+                  "charts": 3,
+                  "lower": "-261/256",
+                  "order": 6,
+                  "partial_sum": "-85/256",
+                  "polynomial_terms": 38,
+                  "term": "-3/256",
+                  "upper": "91/256"
+                }
+              ],
+              "finite_certificate_is_not_the_exact_value": true,
+              "full_original_graph_and_sources": "enclosing_document",
+              "original_current_polynomial": [
+                {
+                  "coefficient": "1",
+                  "exponents": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "requested_interval_width": "1/1000",
+              "series_specification": {
+                "absolute_ratio": "1/2",
+                "centre": "2",
+                "complete_cubes": 3,
+                "components": [
+                  {
+                    "absolute_moment": "4",
+                    "denominator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "1"
+                      ]
+                    ],
+                    "numerator": [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        "-2"
+                      ],
+                      [
+                        [
+                          0,
+                          1
+                        ],
+                        "-1"
+                      ],
+                      [
+                        [
+                          1,
+                          0
+                        ],
+                        "-3"
+                      ]
+                    ],
+                    "power": 4
+                  }
+                ],
+                "constant": "0",
+                "dimension": 2,
+                "kind": "complete_geometric_rational_series",
+                "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+                "original_current_polynomial": [
+                  [
+                    [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    ],
+                    "1"
+                  ]
+                ],
+                "original_graph": {
+                  "marked": [
+                    1,
+                    2
+                  ],
+                  "ordered_oriented_edges": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      1,
+                      2
+                    ]
+                  ],
+                  "vertices": 3
+                },
+                "original_sources": [
+                  [
+                    "1",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "-1",
+                    "-1"
+                  ]
+                ],
+                "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+                "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+                "version": 1
+              },
+              "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+              "type": "complete_convergent_rational_series"
+            }
+          }
+        ],
+        "free_lower_spinor_indices": [
+          "+dot_a"
+        ],
+        "original_edges": [
+          2
+        ],
+        "type": "complete_spinor_tensor"
+      }
+    },
+    {
+      "name": "mixed",
+      "result": {
+        "all_original_current_terms_retained": true,
+        "backend": "geometric",
+        "certified_enclosure": {
+          "absolute_tail_bound": "77835/268435456",
+          "charts": 3,
+          "lower": "-156665221/268435456",
+          "order": 23,
+          "partial_sum": "-78293693/134217728",
+          "polynomial_terms": 937,
+          "term": "-73/134217728",
+          "upper": "-156509551/268435456"
+        },
+        "certified_finite_terms": [
+          {
+            "absolute_tail_bound": "443/64",
+            "charts": 3,
+            "lower": "-235/32",
+            "order": 0,
+            "partial_sum": "-27/64",
+            "polynomial_terms": 15,
+            "term": "-27/64",
+            "upper": "13/2"
+          },
+          {
+            "absolute_tail_bound": "757/128",
+            "charts": 3,
+            "lower": "-305/48",
+            "order": 1,
+            "partial_sum": "-169/384",
+            "polynomial_terms": 21,
+            "term": "-7/384",
+            "upper": "1051/192"
+          },
+          {
+            "absolute_tail_bound": "1215/256",
+            "charts": 3,
+            "lower": "-4055/768",
+            "order": 2,
+            "partial_sum": "-205/384",
+            "polynomial_terms": 33,
+            "term": "-3/32",
+            "upper": "3235/768"
+          },
+          {
+            "absolute_tail_bound": "1855/512",
+            "charts": 3,
+            "lower": "-2137/512",
+            "order": 3,
+            "partial_sum": "-141/256",
+            "polynomial_terms": 44,
+            "term": "-13/768",
+            "upper": "1573/512"
+          },
+          {
+            "absolute_tail_bound": "85/32",
+            "charts": 3,
+            "lower": "-3301/1024",
+            "order": 4,
+            "partial_sum": "-581/1024",
+            "polynomial_terms": 64,
+            "term": "-17/1024",
+            "upper": "2139/1024"
+          },
+          {
+            "absolute_tail_bound": "1929/1024",
+            "charts": 3,
+            "lower": "-5039/2048",
+            "order": 5,
+            "partial_sum": "-1181/2048",
+            "polynomial_terms": 79,
+            "term": "-19/2048",
+            "upper": "2677/2048"
+          },
+          {
+            "absolute_tail_bound": "2661/2048",
+            "charts": 3,
+            "lower": "-3845/2048",
+            "order": 6,
+            "partial_sum": "-37/64",
+            "polynomial_terms": 106,
+            "term": "-3/2048",
+            "upper": "1477/2048"
+          }
+        ],
+        "finite_certificate_is_not_the_exact_value": true,
+        "full_original_graph_and_sources": "enclosing_document",
+        "original_current_polynomial": [
+          {
+            "coefficient": "1",
+            "exponents": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "1",
+            "exponents": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "-2",
+            "exponents": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "requested_interval_width": "1/1000",
+        "series_specification": {
+          "absolute_ratio": "1/2",
+          "centre": "2",
+          "complete_cubes": 3,
+          "components": [
+            {
+              "absolute_moment": "3",
+              "denominator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    1,
+                    0
+                  ],
+                  "1"
+                ]
+              ],
+              "numerator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "-3"
+                ]
+              ],
+              "power": 3
+            },
+            {
+              "absolute_moment": "2",
+              "denominator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    1,
+                    0
+                  ],
+                  "1"
+                ]
+              ],
+              "numerator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "-1"
+                ],
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "-1"
+                ],
+                [
+                  [
+                    1,
+                    0
+                  ],
+                  "-1"
+                ]
+              ],
+              "power": 4
+            },
+            {
+              "absolute_moment": "5/2",
+              "denominator": [
+                [
+                  [
+                    0,
+                    0
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "1"
+                ],
+                [
+                  [
+                    1,
+                    0
+                  ],
+                  "1"
+                ]
+              ],
+              "numerator": [
+                [
+                  [
+                    0,
+                    1
+                  ],
+                  "4"
+                ],
+                [
+                  [
+                    1,
+                    1
+                  ],
+                  "2"
+                ]
+              ],
+              "power": 5
+            }
+          ],
+          "constant": "0",
+          "dimension": 2,
+          "kind": "complete_geometric_rational_series",
+          "monomial_cube_moment": "cube_moment(x^exponent) = product_j 1/(exponent_j+1)",
+          "original_current_polynomial": [
+            [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "1"
+            ],
+            [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "-2"
+            ]
+          ],
+          "original_graph": {
+            "marked": [
+              1,
+              2
+            ],
+            "ordered_oriented_edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "vertices": 3
+          },
+          "original_sources": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "-1"
+            ]
+          ],
+          "series_rule": "constant + sum_components sum_k>=0 binom(power+k-1,k) * cube_moment(numerator*(centre-denominator)^k) / centre^(power+k)",
+          "tail_after_order": "absolute_ratio^(order+1) * sum_components absolute_moment * sum_j=0..power-1 binom(order+j,j)/centre^j",
+          "version": 1
+        },
+        "term_rule": "htk.forest_cube_expansion.ExactCubeExpansion.terms",
+        "type": "complete_convergent_rational_series"
+      }
+    }
+  ],
+  "schema_version": 1
+}

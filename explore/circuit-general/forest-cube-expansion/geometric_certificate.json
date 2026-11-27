@@ -1,0 +1,226 @@
+{
+  "complete_certificate": {
+    "encoding": "gzip-compressed complete UTF-8 JSON",
+    "file": "geometric_certificate.json.gz",
+    "uncompressed_bytes": 2498696,
+    "uncompressed_canonical_sha256": "a3c1ffa5074069ae6537a0b2aa11e4d8ed99a0ad9f8da0421454e788e7332d2f"
+  },
+  "dependencies": {
+    "code/htk/forest_cube_expansion.py": "bddff3f41440fd5edbe5950404e9b3fb38ada2bb6844e0b5cf66b17f61f6188b",
+    "code/htk/forest_cubes.py": "7f269f29d5774d7eb00e8204f06d6b31882f51c3cbe71bed61e9c67eb9ba6d5d",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "code/solve_product_forest_cubes.py": "46eebf28cb3f77e3fc37bafe429474e8ee23ab8fce18932c6e4963f66bf7be94"
+  },
+  "schema": 1,
+  "scope": "universal geometric rational expansion with complete exact polynomial data and certified finite tails",
+  "sourced_three_loop": {
+    "all_balanced_sources": [
+      [
+        2,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        -5,
+        -4
+      ]
+    ],
+    "complete_cubes_checked": 144,
+    "complete_original_current_entries_checked": 2016,
+    "complete_original_density_values_checked": 144,
+    "marked": [
+      3,
+      4
+    ],
+    "ordered_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "series": [
+      {
+        "complete_finite_reference": {
+          "1": "2023/96"
+        },
+        "complete_rational_components": 114,
+        "original_current_word": [],
+        "sufficient_order_coefficients_computed": false,
+        "sufficient_order_for_width_1_over_1000": 367,
+        "verified_complete_orders_0_through_2": [
+          {
+            "charts": 144,
+            "error_bound": "42733066114408237/151875000000",
+            "lower": "-42732964631400877/151875000000",
+            "order": 0,
+            "partial_sum": "105711466/158203125",
+            "polynomial_terms": 10902,
+            "term": "105711466/158203125",
+            "upper": "42733167597415597/151875000000"
+          },
+          {
+            "charts": 144,
+            "error_bound": "71220703308044587/253125000000",
+            "lower": "-197834148397740731/703125000000",
+            "order": 1,
+            "partial_sum": "320222545253/197753906250",
+            "polynomial_terms": 62940,
+            "term": "62694404251/65917968750",
+            "upper": "1780527829822562771/6328125000000"
+          },
+          {
+            "charts": 144,
+            "error_bound": "593481169266414641/2109375000000",
+            "lower": "-5563827869418014424799/19775390625000000",
+            "order": 2,
+            "partial_sum": "3630778413927161/1235961914062500",
+            "polynomial_terms": 260754,
+            "term": "181043056232879/137329101562500",
+            "upper": "5563944054327260093951/19775390625000000"
+          }
+        ]
+      },
+      {
+        "complete_finite_reference": {
+          "1": "5477/864",
+          "z3": "-304/15"
+        },
+        "complete_rational_components": 114,
+        "original_current_word": [
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "sufficient_order_coefficients_computed": false,
+        "sufficient_order_for_width_1_over_1000": 426,
+        "verified_complete_orders_0_through_2": [
+          {
+            "charts": 144,
+            "error_bound": "96892628339442047/31250000000",
+            "lower": "-196207593874861221911/63281250000000",
+            "order": 0,
+            "partial_sum": "-167871024037/494384765625",
+            "polynomial_terms": 44316,
+            "term": "-167871024037/494384765625",
+            "upper": "196207550899879068439/63281250000000"
+          },
+          {
+            "charts": 144,
+            "error_bound": "65402429489364917597/21093750000000",
+            "lower": "-1839443818761776041630217/593261718750000000",
+            "order": 1,
+            "partial_sum": "-7646459183347103/9269714355468750",
+            "polynomial_terms": 207072,
+            "term": "-4498877482653353/9269714355468750",
+            "upper": "1839442840015000573201033/593261718750000000"
+          },
+          {
+            "charts": 144,
+            "error_bound": "1635053118733566577621/527343750000000",
+            "lower": "-3540913738213921903626529453/1142028808593750000000",
+            "order": 2,
+            "partial_sum": "-14280910482687234776/8922100067138671875",
+            "polynomial_terms": 697038,
+            "term": "-4614129012477098759/5948066711425781250",
+            "upper": "3540910082300838335694426797/1142028808593750000000"
+          }
+        ]
+      },
+      {
+        "complete_finite_reference": {
+          "1": "-8205703/302400",
+          "z3": "-6289/2100"
+        },
+        "complete_rational_components": 114,
+        "original_current_word": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "sufficient_order_coefficients_computed": false,
+        "sufficient_order_for_width_1_over_1000": 426,
+        "verified_complete_orders_0_through_2": [
+          {
+            "charts": 144,
+            "error_bound": "5518658842845999739/1875000000000",
+            "lower": "-248339701321636911839/84375000000000",
+            "order": 0,
+            "partial_sum": "-834274483181/1318359375000",
+            "polynomial_terms": 44292,
+            "term": "-834274483181/1318359375000",
+            "upper": "248339594534503064671/84375000000000"
+          },
+          {
+            "charts": 144,
+            "error_bound": "3725089328577647195089/1265625000000000",
+            "lower": "-6984546017756803862344579/2373046875000000000",
+            "order": 1,
+            "partial_sum": "-55104276802680511/37078857421875000",
+            "polynomial_terms": 206604,
+            "term": "-15820153481607443/18539428710937500",
+            "upper": "6984538964409373119239171/2373046875000000000"
+          },
+          {
+            "charts": 144,
+            "error_bound": "93126799291797268263977/31640625000000000",
+            "lower": "-3666871297753947729886550311/1245849609375000000000",
+            "order": 2,
+            "partial_sum": "-13967341524578095531/4866600036621093750",
+            "polynomial_terms": 697614,
+            "term": "-26939620776905113849/19466400146484375000",
+            "upper": "3666864146475087145901638439/1245849609375000000000"
+          }
+        ]
+      }
+    ]
+  },
+  "triangle": {
+    "all_order_even_term": "-3/2^(2*j+3)",
+    "all_order_odd_term": "0",
+    "complete_bare_first_current_and_mixed_enclosures": 8,
+    "complete_cli_result": "triangle_result.json",
+    "complete_verified_terms": 21,
+    "exact_sum": "-1/2",
+    "requested_enclosure_width": "1/1000"
+  }
+}

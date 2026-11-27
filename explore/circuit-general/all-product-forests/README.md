@@ -13,6 +13,19 @@ the compact cube cover, and proves convergence of its rational series.
 Every requested finite current polynomial and every free spinor index is
 retained. Explicit budgets bound computation and storage.
 
+**Further exact integration:** the [geometric cube expansion](../forest-cube-expansion/README.md)
+integrates every series coefficient by a finite polynomial-moment formula.
+Its centered binomial expansion has a closed rational remainder bound and
+an explicit sufficient order. The [direct JSON entry point](../../../code/solve_product_forest_cubes.py)
+retains complete current words, mixed-degree inputs, and free-index tensors.
+
+**Complete finite five-loop continuation:** [All 200 additional topologies](../five-loop-forest-census/README.md)
+have finite bare kernels and all 4,400 original first-current entries at the
+recorded admissible full source assignments. Together with this directory's
+61 cases, the finite census contains 261 topologies and 5,418 current entries
+through five loops. [Every five-loop spinor](../five-loop-forest-census/FULL_RESULTS.md)
+is written in original-source directions with its free lower index retained.
+
 ## What is now executable
 
 | Task | Exact implementation | Output |

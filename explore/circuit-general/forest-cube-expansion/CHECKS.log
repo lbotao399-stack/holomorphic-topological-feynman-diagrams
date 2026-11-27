@@ -1,0 +1,29 @@
+Running code/tests/test_forest_cube_expansion.py
+test_augmented_determinant_retains_all_three_loop_sources (__main__.GeometricCubeChecks.test_augmented_determinant_retains_all_three_loop_sources) ... ok
+test_explicit_budgets_and_atomic_retry (__main__.GeometricCubeChecks.test_explicit_budgets_and_atomic_retry) ... ok
+test_finite_tail_identity_and_monotonicity (__main__.GeometricCubeChecks.test_finite_tail_identity_and_monotonicity) ... ok
+test_mixed_current_polynomial_and_complete_spinor (__main__.GeometricCubeChecks.test_mixed_current_polynomial_and_complete_spinor) ... ok
+test_original_edge_reversal_and_permutation_at_every_order (__main__.GeometricCubeChecks.test_original_edge_reversal_and_permutation_at_every_order) ... ok
+test_triangle_every_term_and_exact_infinite_sum (__main__.GeometricCubeChecks.test_triangle_every_term_and_exact_infinite_sum) ... ok
+test_zero_loop_zero_input_and_replayable_complete_specification (__main__.GeometricCubeChecks.test_zero_loop_zero_input_and_replayable_complete_specification) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.259s
+
+OK
+Running code/tests/test_solve_product_forest_cubes.py
+test_atomic_cli_output_and_failure_preserve_existing_result (__main__.ProductForestCubeCliChecks.test_atomic_cli_output_and_failure_preserve_existing_result) ... ok
+test_both_backends_enclose_independent_simplex_integral (__main__.ProductForestCubeCliChecks.test_both_backends_enclose_independent_simplex_integral) ... ok
+test_invalid_or_partial_tensor_requests_rejected (__main__.ProductForestCubeCliChecks.test_invalid_or_partial_tensor_requests_rejected) ... ok
+test_original_edge_reversal_changes_every_odd_current (__main__.ProductForestCubeCliChecks.test_original_edge_reversal_changes_every_odd_current) ... ok
+test_specification_without_finite_evaluation_and_balanced_last_source (__main__.ProductForestCubeCliChecks.test_specification_without_finite_evaluation_and_balanced_last_source) ... ok
+test_whole_tensor_with_repeated_original_edge_and_exact_enclosure (__main__.ProductForestCubeCliChecks.test_whole_tensor_with_repeated_original_edge_and_exact_enclosure) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.946s
+
+OK
+Running explore/circuit-general/forest-cube-expansion/certify.py
+Verified 21 all-order triangle coefficients and 8 complete bare/current/mixed enclosures.
+Verified every original current and density on 144 sourced three-loop cubes; all 3 complete series specifications and 9 coefficients.
+Complete geometric certificate and all original source/current results replay exactly.

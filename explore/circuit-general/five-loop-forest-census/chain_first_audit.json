@@ -1,0 +1,349 @@
+{
+  "all_current_terms_and_sources_retained": true,
+  "bare_and_complete_first_current_spinor_checked": true,
+  "complete_source_minor_plan": {
+    "attempted_plans": 1,
+    "budget_failed_trees": [],
+    "cached": false,
+    "chosen_tree": [
+      1,
+      2,
+      5,
+      8,
+      9,
+      10
+    ],
+    "constant_rank_zero": false,
+    "distinct_valid_trees": 176,
+    "exhaustive_tree_scan": true,
+    "independent_density_checks": 2,
+    "linear_matrix_nonzero_entries": 174,
+    "linear_matrix_terms": 271,
+    "max_matrix_entries": 1000000,
+    "max_plans": 8,
+    "max_terms_per_attempt": 4000000,
+    "numerator_terms": 121480,
+    "scanned_subsets": 462,
+    "source_component_scales": [
+      1,
+      1
+    ]
+  },
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "finite_period_tables_used": false,
+  "full_balanced_sources": [
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      13,
+      8
+    ],
+    [
+      -22,
+      -20
+    ]
+  ],
+  "implementation_sha256": {
+    "code/htk/forest_chain_periods.py": "104b9042e7d0f3fe1dfcb519f0867d0151fe15846e01942d4425cefdddaa825b",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/all-product-forests/catalog.py": "df0299d9d8fd7d0611a27749338f567b2283ec5d66adfd1b525a18f443e0ac88",
+    "explore/circuit-general/all-product-forests/certify_integrals.py": "08c5956f5796c55b9ab1238bd5f4054db0b1ebdb0aeb784c337da0b78122074b",
+    "explore/circuit-general/symmetry/tree_minor.py": "136cd5c261430da4fe7f3758fdbb620f8dcd3c7cf1f743f1e01ff26059881db0",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "index": 47,
+  "large_rational_source_regression": {
+    "all_large_rational_coefficients_preserved": true,
+    "complete_scalar_coefficients_checked": 13,
+    "complete_source_homogeneity_degree": 6,
+    "integer_string_digit_limit_changed": false,
+    "maximum_exact_numerator_bits": 15960,
+    "source_scale": "10**800"
+  },
+  "loops": 5,
+  "marked": [
+    5,
+    6
+  ],
+  "records": [
+    {
+      "chain_first_statistics": {
+        "backend": "chain_first_schwinger_numerator",
+        "bare_numerator_terms": 121480,
+        "chain_power_terms_before_symmetry": {
+          "7": 13938
+        },
+        "core_edges": 9,
+        "core_period_orbits": 2994,
+        "current_U_cancellations": {
+          "0": 0
+        },
+        "denominator_powers": [
+          7
+        ],
+        "independent_checks": 2,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 121480,
+        "used_automorphisms": 12
+      },
+      "complete_denominator_powers": [
+        7
+      ],
+      "complete_scalar_dictionary_sha256": "472d3584c3f8f8b7427c42dd1709152a175c8a65ddea350628e0a85d5794377a",
+      "complete_scalar_terms": 2994,
+      "name": "bare",
+      "old_and_new_dictionaries_identical": true,
+      "original_current_exponents": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_statistics": {
+        "backend": "schwinger_numerator",
+        "bare_numerator_terms": 121480,
+        "core_edges": 9,
+        "core_period_orbits": 2994,
+        "current_U_cancellations": {
+          "0": 0
+        },
+        "denominator_powers": [
+          7
+        ],
+        "independent_checks": 2,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 121480,
+        "used_automorphisms": 12
+      }
+    },
+    {
+      "chain_first_statistics": {
+        "backend": "chain_first_schwinger_numerator",
+        "bare_numerator_terms": 121480,
+        "chain_power_terms_before_symmetry": {
+          "8": 79716
+        },
+        "core_edges": 9,
+        "core_period_orbits": 15606,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 2,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 852067,
+        "used_automorphisms": 12
+      },
+      "complete_denominator_powers": [
+        8
+      ],
+      "complete_scalar_dictionary_sha256": "ca049b4273343fda6b14193795f1b0285567c7d65acac6a25e03e31133337f46",
+      "complete_scalar_terms": 15606,
+      "name": "edge_0_entry_0",
+      "old_and_new_dictionaries_identical": true,
+      "original_current_exponents": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_statistics": {
+        "backend": "schwinger_numerator",
+        "bare_numerator_terms": 121480,
+        "core_edges": 9,
+        "core_period_orbits": 15606,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 2,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 852067,
+        "used_automorphisms": 12
+      }
+    },
+    {
+      "chain_first_statistics": {
+        "backend": "chain_first_schwinger_numerator",
+        "bare_numerator_terms": 121480,
+        "chain_power_terms_before_symmetry": {
+          "8": 79716
+        },
+        "core_edges": 9,
+        "core_period_orbits": 15606,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 2,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 852066,
+        "used_automorphisms": 12
+      },
+      "complete_denominator_powers": [
+        8
+      ],
+      "complete_scalar_dictionary_sha256": "50e7ba29f3a4ed6e1f5f4c1ae2f442301eb138f58c91cf31a8d12dd6fa481ff2",
+      "complete_scalar_terms": 15606,
+      "name": "edge_0_entry_1",
+      "old_and_new_dictionaries_identical": true,
+      "original_current_exponents": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_statistics": {
+        "backend": "schwinger_numerator",
+        "bare_numerator_terms": 121480,
+        "core_edges": 9,
+        "core_period_orbits": 15606,
+        "current_U_cancellations": {
+          "1": 0
+        },
+        "denominator_powers": [
+          8
+        ],
+        "independent_checks": 2,
+        "input_current_terms": 1,
+        "inserted_numerator_terms": 852066,
+        "used_automorphisms": 12
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Equality of the entire scalar-coefficient dictionaries for the original bare kernel and both original edge-zero first-current entries on a hard five-loop forest. Both routes retain the same complete original source/current numerator; no period evaluation is used.",
+  "source_numerator_monomials": 121480,
+  "superpotential_vertices": [
+    {
+      "degree": 5,
+      "vertex": 2
+    }
+  ],
+  "total_scalar_coefficients_compared": 34206
+}

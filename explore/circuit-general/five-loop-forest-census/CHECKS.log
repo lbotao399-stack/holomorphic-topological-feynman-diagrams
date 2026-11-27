@@ -1,0 +1,9 @@
+Complete Kirchhoff reconstruction agrees with all 1018 independently integrated entries through four loops.
+All 1018 transported entries also preserve reversed currents and the odd edge-permutation sign.
+Complete Kirchhoff reconstruction agrees with all 1320 independently integrated five-loop entries.
+Every topology, source, finite current entry and complete integrated source identity is retained.
+Every exact dependency hash verified for independent_core_certificate.json.
+Every exact dependency hash verified for chain_first_audit.json.
+Every recorded independent source and all three complete kernels agree with the census.
+All 200 printed bare kernels and all 2200 printed original-current spinors agree exactly.
+Complete stored five-loop census validation passed in 3.806 seconds.
