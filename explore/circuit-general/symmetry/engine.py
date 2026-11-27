@@ -13,8 +13,8 @@ Moves on completed graphs (Pi(G) = factor * Pi(G')):
   FT  planar decompletion H = Gc - c  ->  completion of H*       factor prod_{e in H} Gamma(q-b_e)/Gamma(b_e)
   TW  twist at a 4-vertex cut (equal G2-weights in each pair)    factor 1
   PR  product at a 3-vertex cut                                  Pi(G) = Pi(G1) Pi(G2)
-Terminal: a decompletion Gc - c evaluable by cores.period (SP reduction to banana, W_n, prism, K33;
-prism/K33 only for q <= QTAB).
+Terminal: a decompletion Gc - c evaluable by cores.period (SP reduction to banana, W_n, prism, K33),
+or by the existing read-only K5 and K5-e/prism/K33 certificates.  No table is constructed here.
 Values: dict  monomial -> Fraction,  monomial = sorted tuple of zeta labels ('z3', 'z5', ...).
 """
 import heapq
@@ -46,6 +46,9 @@ _orig_table = cores.table
 def _guarded_table(name, q, verbose=False):
     if F(q).denominator != 1 or F(q) > QTAB:
         raise NotTabulated('%s q=%s' % (name, q))
+    path = os.path.join(CORES, 'tables', '%s_q%d.json' % (name, int(q)))
+    if not os.path.isfile(path):
+        raise NotTabulated('%s q=%s' % (name, q))
     return _orig_table(name, q, verbose=False)
 
 
@@ -61,7 +64,11 @@ def gam(x):
 
 
 def from_cores(d):
-    return {(() if k == '1' else (k,)): F(v) for k, v in d.items() if v}
+    result = {}
+    for label, value in d.items():
+        monomial = () if label == '1' else tuple(sorted(label.split('*')))
+        result[monomial] = result.get(monomial, F(0)) + F(value)
+    return {monomial: value for monomial, value in result.items() if value}
 
 
 def vmul(a, b):
@@ -262,6 +269,10 @@ def skeleton_type(edges):
     for u, v in E:
         deg[u] += 1
         deg[v] += 1
+    if n == 5 and len(E) == 10 and all(deg[v] == 4 for v in verts):
+        return 'K5'
+    if n == 5 and len(E) == 9 and sorted(deg.values()) == [3, 3, 4, 4, 4]:
+        return 'K5-e'
     if len(E) == 2 * (n - 1) and n >= 4:
         hubs = [v for v in verts if deg[v] == n - 1]
         rest = [v for v in verts if deg[v] == 3]
@@ -276,14 +287,49 @@ def skeleton_type(edges):
 STATS = {'eval': 0, 'eval_ok': 0, 'nonconv_terminal': 0}
 
 
+def _certificate_period(edges, alpha, q, kind):
+    """Additional finite terminals, using only certificates already on disk.
+
+    The scalar reducer reaches the recognized reduced skeleton.
+    K5 reads its dedicated immutable tables; K5-e is dual to the prism.
+    Preloading the latter's table with build=False ensures the subsequent
+    reduction cannot start an implicit relation-system computation.
+    """
+    if F(q).denominator != 1:
+        return None
+    q = int(q)
+    if kind == 'K5' and q not in range(3, 9):
+        return None
+    path = os.path.normpath(os.path.join(HERE, '..', 'fiveloop'))
+    if path not in sys.path:
+        sys.path.insert(0, path)
+    import per5
+    if kind != 'K5':
+        name = 'prism' if kind == 'K5-e' else kind
+        if per5.table(name, q, build=False, verbose=False) is None:
+            return None
+    try:
+        return per5.period(list(edges), list(alpha), q)
+    except per5.UnknownCore:
+        return None
+    except ValueError as error:
+        if str(error).startswith('divergent or unavailable:'):
+            return None
+        raise
+
+
 def eval_I(edges, alpha, q):
     """I_q(edges; alpha) if tabulated, else None"""
     t = skeleton_type(edges)
     if t is None:
         return None
-    if t in ('prism', 'K33') and q > QTAB:
-        return None
     STATS['eval'] += 1
+    if t in ('K5', 'K5-e') or (t in ('prism', 'K33') and q > QTAB):
+        val = _certificate_period(edges, alpha, q, t)
+        if val is None:
+            return None
+        STATS['eval_ok'] += 1
+        return from_cores(val), t
     try:
         val = cores.period(list(edges), list(alpha), q)
     except (ValueError, NotTabulated, ArithmeticError, ZeroDivisionError, AssertionError, KeyError):

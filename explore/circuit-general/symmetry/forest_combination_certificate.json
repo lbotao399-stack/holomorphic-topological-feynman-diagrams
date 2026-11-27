@@ -1,0 +1,235 @@
+{
+  "complete_finite_reduction": false,
+  "complete_residual_expression": {
+    "nonzero_terms": 5694,
+    "sha256": "3a926aadc25e3281b6c20ae45a009201ad232a753c48f0ddbd44e3e0b1e072ac"
+  },
+  "convention": "htk kernel with the listed original edge order and orientations",
+  "current_powers": [],
+  "finite_coefficients": {
+    "1": "-11067833197/134369280000",
+    "z3": "-71241493969/323326080000",
+    "z5": "187969/561330"
+  },
+  "finite_value_access_control": {
+    "exception": "IncompleteCombination",
+    "message": "5694 completed periods remain",
+    "rejected": true
+  },
+  "full_balanced_sources": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "implementation_sha256": {
+    "code/htk/__init__.py": "5089306c628ac73c980f2c00d1038483ceb52c05d84de1f9485d11e5879b09d8",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/brute.py": "fc130d346ca202f4dc485263e67167258fd1fee8412dc48028d9373359390bc5",
+    "code/htk/catalog.py": "ec658a78ec435aaca3a039954373ccbba3323700588892b72e33e1043c7c1c69",
+    "code/htk/conventions.py": "998f0b09ede1f7e3f14285531434b7b19f4848e782e8df80ea6740c9294bdbc8",
+    "code/htk/fan_moments.py": "fc3702fbbe0d1c359e866af295706341dfb24e5af8e35ab48c3ea35b5986095a",
+    "code/htk/forest_contractions.py": "19222ab94a70691a48bd88ebc718981e0e8de5f631f98bdf480624194acf5729",
+    "code/htk/forest_model.py": "e1074f0201f69667a8d1094c2eeda199122c2ce092e6a975ed8833a300c21f05",
+    "code/htk/forest_moments.py": "0c6e83bc286f725676e40577f22c8fa3cfd5e625c20c69ea9ffc84fa15b3bd58",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/graph.py": "b010ab5e1fec001374ad59dd8ee5df68e067c0e4ec66ea34791831b8990d7b54",
+    "code/htk/linalg.py": "c885562ac45d4aa00ea2d493fb18e2fb14bbfc1a14b950f47528ea7adbfc51f7",
+    "code/htk/oracle.py": "f9e0bbc3b938639aaedc83ba2afaf061bdd4476fde94301f10dcaa9326f6978d",
+    "code/htk/product_forests.py": "bf788aa268fc8baca5c2b484122386813040a1d63cfbf89ee27d2865a27b7eee",
+    "code/htk/series.py": "002d1d90d9e34aaf013ed199a11ea0b3741dfe61f08e4a390ce41b42009da272",
+    "code/htk/simplex.py": "92a95d913289782718186d5dd77c3eddbe7ac9641fe6ab4561eb11ca8c234ad6",
+    "code/htk/spred.py": "9580c037bcd4e087d8a5e4c9ea730427e25bbce57e1beadcb171a55a2a41b6d3",
+    "code/htk/star.py": "9ac0a3ca452fabfd09431ffe3151b6d97764ac47e4c54f86f19d8ae5397f8829",
+    "code/htk/treeflow.py": "7cfee0f08dcf8ded4bbfc589f07def2ee5e20ee9786d041ae1d499121d0c1ce0",
+    "explore/circuit-general/cores/cores.py": "a98299e809b95398b009fb284757c2d94e23662b24d86250489ffd21c1a73c4a",
+    "explore/circuit-general/cores/gutil.py": "e89a0af4102157c79a07e74ce17b4493340dce4070010071902d736306851c84",
+    "explore/circuit-general/cores/halfq.py": "02f4141c71ad71806477b10658d48cc3c756088c6603e34e8e4adfc52afbe645",
+    "explore/circuit-general/cores/laurent.py": "2119dd84fe6eda433f8893d186741d523e5e62158e2822b391181c2d56f8eb61",
+    "explore/circuit-general/cores/msys.py": "bc0acbe0090b7591d2929463ce17846c1b84c0a6d1a987a4806390cb8220a6f1",
+    "explore/circuit-general/cores/prop.py": "f13ab84ed093168eb0502d3cb5c2541b1dc6310eac10b70d8afbe8f70ff8922f",
+    "explore/circuit-general/cores/startri.py": "5e87ffb9595dc4a0909b55309b6a73d42aed34dc9d1cd641cab616afc336463e",
+    "explore/circuit-general/cores/vac.py": "627b7b860a2fec1093da008e6bd78f7614e98df3a12f1a36d8e5958d66c1f9f5",
+    "explore/circuit-general/cores/wheel.py": "26b616a26d1ad620b676dd645c2606b39868e2919dd9fe2f4f9c22b8e2537b24",
+    "explore/circuit-general/fiveloop/msys5.py": "07e760cc88e23a7bc5d541ea708709559c980dea6c80db260bc59890e9dd9c4f",
+    "explore/circuit-general/fiveloop/per5.py": "ea9a3bfe8184eac9737bffef543bb08197b4c1c242631d616cd44eec1365fe7b",
+    "explore/circuit-general/fiveloop/rel5.py": "663cbbd4c773b16c7876fbc736d458a2a3f3ee7af04af40ede61a07f92e13840",
+    "explore/circuit-general/period-dispatch/k5_bridge.py": "10eed3c7ccb5ec065b748fcfd8b35cb518bed09f0ab8649d5b4c3366aaca7d88",
+    "explore/circuit-general/symmetry/certify_forest_combination.py": "2af4b8d84edf13bd927816bf15f1ac2e31a09faea336f0c191a64aaf9e35d539",
+    "explore/circuit-general/symmetry/combination.py": "de5aa27b1e457d724dbea801be9b1dfce79adf8612d9fa2edb68602da716af96",
+    "explore/circuit-general/symmetry/engine.py": "051e091b1cc30689e544053b302afbe9ac60f6a612005ed238d678f917359694",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "kernel_nonvanishing_proved": false,
+  "marked": [
+    5,
+    6
+  ],
+  "meaning": "The finite contribution plus EVERY residual completed graph period is the entire original kernel. The finite contribution alone is not the answer. Unresolved coefficients are retained exactly; no zero or nonzero conclusion is drawn for the kernel.",
+  "numerator_digest_encoding": "UTF-8 compact JSON of [[full exponent tuple as list, reduced Fraction string], ...], sorted lexicographically; all nonzero coefficients included. Bare variables follow original edges; scalar variables follow scalar_core.edges.",
+  "original_bare_numerator": {
+    "denominator_power": 7,
+    "nonzero_terms": 10577,
+    "sha256": "0598c5a835d1a0f2f6612f170bae9deb0d915a14a78c6644963d9a384ad1c50e"
+  },
+  "original_finite_period_unavailable_reason": "K33+e at q=7 not tabulated",
+  "original_graph": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "loops": 5,
+    "vertices": 7
+  },
+  "period_table_sha256": {
+    "explore/circuit-general/cores/tables/K33_q7.json": "ca6caf93be7b0520c63417330f3a70eb2b017afd2e23967117ee1545aa420660",
+    "explore/circuit-general/cores/tables/prism_q7.json": "e0dd6d85279e3f4fefd051f5960f4372526a0b94006ac19097eba26710a69d3d",
+    "explore/circuit-general/k5/tables/K5_q7.json": "6193a3c412351cca4d8d023b8faff7883da78ad0a8d3a438019e9b5d8a3a678e"
+  },
+  "reduction_options": {
+    "max_edges": 10,
+    "max_input_terms": 10000,
+    "max_nodes": 50000,
+    "max_states": 30000,
+    "max_vertices": 8,
+    "use_inverse_uniqueness": true
+  },
+  "residual_digest_encoding": "UTF-8 compact JSON of sorted [q, vertex count, [[first,second,integer weight], ...], reduced Fraction coefficient string] rows. Every residual is coefficient times the complete weighted graph period Pi in symmetry/engine.py normalization. The graph and every signed edge weight are included, not a graph hash alone.",
+  "scalar_core": {
+    "denominator_power": 7,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "nonzero_terms": 7368,
+    "sha256": "393711b3394c9642862a0bee38f24b39e8a02f6859d5ca443335a00065b9acc3"
+  },
+  "schema_version": 1,
+  "scope": "H=2,T=0, listed full balanced sources, bare current word",
+  "source_reconstruction_options": {
+    "check": 2,
+    "max_terms": 1000000
+  },
+  "statistics": {
+    "cancelled_state_skips": 0,
+    "cancelled_unresolved_components": 5,
+    "checked_identity_cycles": 46928,
+    "expanded_states": 30000,
+    "finite_input_orbits": 1007,
+    "input_completed_orbits": 7085,
+    "input_terms": 7368,
+    "merged_states": 43294,
+    "node_budget_skips": 1489,
+    "pending_states": 19980,
+    "read_only_tables": true,
+    "residual_components": 5694,
+    "state_budget_reached": true,
+    "stored_states": 50000,
+    "terminal_values": 1007,
+    "vertex_budget_skips": 10547
+  }
+}

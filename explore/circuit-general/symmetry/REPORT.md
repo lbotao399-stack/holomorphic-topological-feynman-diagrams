@@ -5,6 +5,9 @@ Tags: [chk] exact check (script, log in this folder), [drv] derived here, [src] 
 | file | content | log |
 |---|---|---|
 | `engine.py` | completion/decompletion, canonical form of weighted completed graphs, moves M1 M2 FT TW PR, two-point terminal, search | — |
+| `combination.py` | bounded reduction of a whole exact linear combination; finite coefficients plus every unresolved completed period | — |
+| `check_conformal_combination.py` | archived K5 controls, read-only terminals, weighted cancellation across graphs, exact budget residuals | seven exact tests |
+| `certify_forest_combination.py` | reconstruct and reduce the complete missing-period five-loop forest at fixed bounds | `forest_combination_certificate.json` |
 | `check_completion.py` | completion invariance; cut criterion vs `gutil.convergent` | `check_completion.log` |
 | `check_wheel_hub.py` | wheel hub ↔ ∞ | `check_wheel_hub.log` |
 | `check_moves.py` | each move, both sides tabulated | `check_moves.log` |
@@ -120,13 +123,88 @@ Several negative edges outside star(c) ∪ {ab}: Taylor coefficient with mixed s
 - State: canonical form of the weighted $\hat G$ (individualization–refinement).
 - Search: best-first by $|V|$ over M1, M2 (exact triangles), FT (all c), TW (all 4-cuts and pairings).
 - PR at a 3-cut with both sides ≥2 vertices: AND node, recursive, memoized.
-- Terminal (a): some c with $\hat\beta|_{\hat G-c}\in[1,q-1]$ and `cores.period` evaluable (SP → banana, $W_n$ any q; prism and K33 only for q ≤ 7).
+- Terminal (a): some c with $\hat\beta|_{\hat G-c}\in[1,q-1]$ and an exact available value (SP → banana, $W_n$ any q; existing prism/K33 certificates, K5 tables for q=3,…,8, and K5−e by prism duality). Table access is read-only, including legacy `cores.table`; a missing certificate cannot start a table construction.
 - Terminal (b): (NT) with k ≤ 3.
 - Limits: budget 60 states, $|V|\le|V(\hat G_0)|+1$.
 - Budget saturation (not logged): budget 400 or split-M2 changed reach on 30-sample subsets only for K33+e (11 → 12 of 30).
 
+### 3.1a Whole combinations and exact cancellation
+
+`combination.reduce_period_combination(terms, q, ...)` accepts rows
+`(edges, powers, exact_coefficient)`. Each scalar monomial must be strictly
+convergent. It first multiplies its coefficient by
+$\prod_e\Gamma(q-\alpha_e)/\Gamma(q)$ and combines isomorphic completed
+graphs. A weighted union-find then records the existing exact identities
+$\Pi(G)=f\Pi(G')$ from M1, M2, FT and TW. Stored parent weights express each
+period in the normalization of its component representative. Coefficients
+are added in that common normalization; a component with exactly zero total
+coefficient needs no period evaluation. Every rational factor around an
+already connected identity cycle is checked exactly.
+
+The return value has `finite_coefficients`, with labels `1`, `z3`, `z5`,
+`z3*z3`, and so on, and `residuals`. A residual stores its exact rational
+coefficient, q, vertex count and full weighted completed graph, in the
+$\Pi$ normalization of §1.2. Their sum is the whole supplied expression.
+`complete` is true precisely when no residual remains; requesting `value`
+with a residual raises `IncompleteCombination`. No arithmetic independence
+of zeta values is used. Canonicalization adds coefficients of equivalent
+product labels, including opposite-order labels, before removing exact zeros.
+
+`max_states`, `max_nodes` and `max_vertices` bound the search. Reaching a
+search bound leaves the unmatched terms explicitly present. Input size
+limits raise `CombinationBudgetExceeded`. The combination layer uses the
+linear conformal equivalences; `engine.solve` additionally implements product
+factorization and numerator terminals. Neither a search failure nor a
+nonempty coefficient dictionary is a claim that an integral is zero or nonzero.
+
+The focused replay is
+`python3 explore/circuit-general/symmetry/check_conformal_combination.py`.
+It compares the new K5 and K5−e terminals with all four independent values in
+`check_k5_examples.log`, including a value previously obtained through a
+two-point numerator and twist. It also turns off every finite terminal and
+checks an exact Fourier-related cancellation between a ten-edge K5 term and
+an eleven-edge term with relative coefficient $-16/5$. Zero search budget
+retains both terms; the proved Fourier identity cancels the whole pair.
+The same replay verifies that a one-node storage budget preserves the full
+unresolved coefficient and that unavailable tables are never built.
+
+### 3.1b Reproducible full sourced-forest control
+
+`python3 explore/circuit-general/symmetry/certify_forest_combination.py`
+reconstructs the complete five-loop fixture from the original graph, ordered
+marked pair and every balanced source in `forest_combination_certificate.json`.
+It uses the public `ProductForestMoments` numerator and then the production
+`reduce_period_combination` API. The original numerator has 10,577 nonzero
+terms; exact series-chain integration and graph symmetries give 7,368 scalar
+terms at q=7 on K3,3 with an extra edge. Their digests agree with the existing
+[`sourced-forests` missing-period certificate](../sourced-forests/missing_period_certificate.json).
+
+The declared bounds are 30,000 expanded states, 50,000 stored states and at
+most eight vertices in a completed graph. Starting from 7,085 completed
+input orbits, the run reaches finite values for 1,007 input orbits and
+cancels five unresolved components by exact coefficient addition. It retains
+**5,694 nonzero residual completed-period terms**. Both state and node bounds
+are reached; neither is interpreted as vanishing. The finite contribution is
+
+$$
+-\frac{11067833197}{134369280000}
+-\frac{71241493969}{323326080000}\zeta(3)
++\frac{187969}{561330}\zeta(5).
+$$
+
+This finite contribution **plus all 5,694 residuals** is the whole original
+kernel. The finite contribution alone is not its value, and no nonvanishing
+claim is made. The default replay verifies the full original and core
+coefficient digests, every finite coefficient, the digest of every sorted
+residual coefficient and complete weighted graph, all deterministic counts,
+the declared bounds, implementation and table hashes, and refusal to expose
+the incomplete finite contribution as `value`. Numerators and residuals are
+reconstructed algorithmically, so the compact certificate needs no monomial
+or graph dump. `--write` explicitly refreshes the record. The independently
+certified convergent series remains available through the public forest API.
+
 ### 3.2 Coverage
-Uniform samples of convergent $\alpha\in[1,q-1]^E$, $\sum\alpha=nq$. Columns "+NT": 500 samples with 95% Wilson interval. Columns "moves": 250 samples (the first 250 of the same sequence), NT off. q=7: D=2 bare; q=8: D=3 bare (five loops) and D=2 bare (K5). [chk `coverage_q{7,8}_k{3,0}.log`]
+Historical coverage before the added K5 certificate terminals: uniform samples of convergent $\alpha\in[1,q-1]^E$, $\sum\alpha=nq$. Columns "+NT": 500 samples with 95% Wilson interval. Columns "moves": 250 samples (the first 250 of the same sequence), NT off. q=7: D=2 bare; q=8: D=3 bare (five loops) and D=2 bare (K5). [chk `coverage_q{7,8}_k{3,0}.log`]
 
 | core | V,E; planar; conn | q=7 +NT | q=7 moves | q=8 +NT | q=8 moves |
 |---|---|---|---|---|---|

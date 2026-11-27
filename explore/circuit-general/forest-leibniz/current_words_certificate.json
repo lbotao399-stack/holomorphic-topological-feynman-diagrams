@@ -1,0 +1,9015 @@
+{
+  "meaning": "Complete current-word graph Ward identities, before theory-specific Wick assembly",
+  "period_handling": "Explicit rational coefficients cancel; no arithmetic independence is assumed",
+  "scope": "All original-current monomials through degree two at the specified generic sources; additional exact controls",
+  "implementation_sha256": {
+    "explore/circuit-general/forest-leibniz/ward_three.py": "1ddd2b9849e70626a75a4e00f1e22d9841f915aa154534b6b3593064cfcc1f41",
+    "explore/circuit-general/forest-leibniz/certify_words.py": "c740860efde31b325cb92734adc4a9e18b5fa9cc402bed55b0f8d1690495b5d2",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6"
+  },
+  "cases": [
+    {
+      "name": "generic_complete_degree_two",
+      "sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -9,
+          -4
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "original_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quotients": [
+        {
+          "position": 0,
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "4",
+              "1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-9",
+              "-4"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 1,
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-9",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 2,
+          "contracted_edge": [
+            1,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "8",
+              "2"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "-9",
+              "-4"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 3,
+          "contracted_edge": [
+            1,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "-6",
+              "-5"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 4,
+          "contracted_edge": [
+            2,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "3",
+              "7"
+            ],
+            [
+              "-9",
+              "-4"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 5,
+          "contracted_edge": [
+            2,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-11",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 6,
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-9",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 7,
+          "contracted_edge": [
+            3,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "-4",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        }
+      ],
+      "word_count": 153,
+      "words_with_individual_periods": 152,
+      "complete_words": [
+        {
+          "powers": [],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-6223/32"
+            },
+            {
+              "1": "42875/576"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1715/192"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-9359/36"
+          },
+          "independent_rational_boundary": "-9359/36",
+          "exact_period_coefficient_cancellations": {}
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "85555387/75600",
+              "z3": "-817017/700"
+            },
+            {
+              "1": "459136871/302400",
+              "z3": "-780659/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-2772371/43200",
+              "z3": "2597/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2254/5"
+          },
+          "independent_rational_boundary": "-2254/5",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "623435/756",
+              "z3": "-16239/28"
+            },
+            {
+              "1": "13014401/20160",
+              "z3": "-232609/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-230251/8640",
+              "z3": "392/15"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "1372/9"
+          },
+          "independent_rational_boundary": "1372/9",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-200514449/151200",
+              "z3": "817017/700"
+            },
+            {
+              "1": "-54578437/37800",
+              "z3": "780659/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1579123/21600",
+              "z3": "-2597/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "34349/180"
+          },
+          "independent_rational_boundary": "34349/180",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-3669887/3024",
+              "z3": "16239/28"
+            },
+            {
+              "1": "-3337717/6720",
+              "z3": "232609/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "384601/8640",
+              "z3": "-392/15"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-12103/18"
+          },
+          "independent_rational_boundary": "-12103/18",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "20310961/25200",
+              "z3": "-324999/350"
+            },
+            {
+              "1": "296239981/302400",
+              "z3": "-157526/175"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-430171/14400",
+              "z3": "1421/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-219793/1080"
+          },
+          "independent_rational_boundary": "-219793/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "5298457/15120",
+              "z3": "-237/7"
+            },
+            {
+              "1": "-59929/504",
+              "z3": "-2869/105"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-7007/432",
+              "z3": "98/15"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "163121/360"
+          },
+          "independent_rational_boundary": "163121/360",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-38966017/151200",
+              "z3": "-167019/700"
+            },
+            {
+              "1": "46085003/60480",
+              "z3": "-30111/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-324233/43200",
+              "z3": "588/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1109381/1080"
+          },
+          "independent_rational_boundary": "-1109381/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "6740407/10080",
+              "z3": "-15291/28"
+            },
+            {
+              "1": "1738867/2520",
+              "z3": "-73711/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-27881/1440",
+              "z3": "98/5"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-14651/360"
+          },
+          "independent_rational_boundary": "-14651/360",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "7573771/50400",
+              "z3": "108853/350"
+            },
+            {
+              "1": "-10315633/25200",
+              "z3": "101307/350"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "203987/21600",
+              "z3": "-539/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "614593/1080"
+          },
+          "independent_rational_boundary": "614593/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-10621831/15120",
+              "z3": "16103/28"
+            },
+            {
+              "1": "-11180873/20160",
+              "z3": "233999/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "152831/8640",
+              "z3": "-539/30"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-140623/1080"
+          },
+          "independent_rational_boundary": "-140623/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-111617881/75600",
+              "z3": "599311/700"
+            },
+            {
+              "1": "-3128399/3024",
+              "z3": "115609/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "42973/675",
+              "z3": "-1519/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-408499/1080"
+          },
+          "independent_rational_boundary": "-408499/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-643967/1260",
+              "z3": "34/7"
+            },
+            {
+              "1": "583861/10080",
+              "z3": "-139/42"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "23177/864",
+              "z3": "-49/6"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-585557/1080"
+          },
+          "independent_rational_boundary": "-585557/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "259321799/151200",
+              "z3": "-817017/700"
+            },
+            {
+              "1": "195804373/151200",
+              "z3": "-780659/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-982499/10800",
+              "z3": "2597/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "19747/60"
+          },
+          "independent_rational_boundary": "19747/60",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1317593/3024",
+              "z3": "-16239/28"
+            },
+            {
+              "1": "16015651/20160",
+              "z3": "-232609/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-75901/8640",
+              "z3": "392/15"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-735/2"
+          },
+          "independent_rational_boundary": "-735/2",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-402/25",
+              "z3": "-15439/25"
+            },
+            {
+              "1": "2035709/2160",
+              "z3": "-6107/10"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "261709/10800",
+              "z3": "343/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-33635/36"
+          },
+          "independent_rational_boundary": "-33635/36",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-149677/160",
+              "z3": "2165/4"
+            },
+            {
+              "1": "-72033/160",
+              "z3": "31789/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "30527/1080",
+              "z3": "-343/30"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-49357/108"
+          },
+          "independent_rational_boundary": "-49357/108",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "970520063/604800",
+              "z3": "-1249041/700"
+            },
+            {
+              "1": "534124237/201600",
+              "z3": "-4013291/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "61789/400",
+              "z3": "-9506/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-480739/540"
+          },
+          "independent_rational_boundary": "-480739/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "26039993/86400",
+              "z3": "-1743/50"
+            },
+            {
+              "1": "-3873821/86400",
+              "z3": "-1092/25"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "17199/1600",
+              "z3": "-441/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "96383/270"
+          },
+          "independent_rational_boundary": "96383/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-95358989/201600",
+              "z3": "108006/175"
+            },
+            {
+              "1": "-684098969/604800",
+              "z3": "835657/1050"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-9445583/43200",
+              "z3": "26803/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "237307/540"
+          },
+          "independent_rational_boundary": "237307/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1186606241/604800",
+              "z3": "-402408/175"
+            },
+            {
+              "1": "1863664231/604800",
+              "z3": "-765371/350"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1201823/8640",
+              "z3": "1127/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-67963/54"
+          },
+          "independent_rational_boundary": "-67963/54",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "18156539/60480",
+              "z3": "-51313/70"
+            },
+            {
+              "1": "786567413/907200",
+              "z3": "-603339/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "843731/5400",
+              "z3": "-12887/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1330259/3240"
+          },
+          "independent_rational_boundary": "-1330259/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-557179823/181440",
+              "z3": "102894/35"
+            },
+            {
+              "1": "-2281161173/604800",
+              "z3": "11886631/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "34939793/259200",
+              "z3": "-65807/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "50141/60"
+          },
+          "independent_rational_boundary": "50141/60",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "315809329/67200",
+              "z3": "-1593481/350"
+            },
+            {
+              "1": "2299689397/362880",
+              "z3": "-1845841/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-8393749/43200",
+              "z3": "47383/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-5935951/3240"
+          },
+          "independent_rational_boundary": "-5935951/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "813061759/362880",
+              "z3": "-253053/140"
+            },
+            {
+              "1": "333942671/151200",
+              "z3": "-7386133/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-15519329/259200",
+              "z3": "29351/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-15071/540"
+          },
+          "independent_rational_boundary": "-15071/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-769255321/302400",
+              "z3": "484391/175"
+            },
+            {
+              "1": "-202362961/56700",
+              "z3": "1928303/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "2527861/129600",
+              "z3": "-1323/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "3384773/3240"
+          },
+          "independent_rational_boundary": "3384773/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-160830427/907200",
+              "z3": "63821/700"
+            },
+            {
+              "1": "141818141/1814400",
+              "z3": "456671/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1050511/51840",
+              "z3": "2107/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-148883/540"
+          },
+          "independent_rational_boundary": "-148883/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "50097347/24192",
+              "z3": "-75277/35"
+            },
+            {
+              "1": "884663569/362880",
+              "z3": "-822719/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-3086461/12960",
+              "z3": "2303/12"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1960931/3240"
+          },
+          "independent_rational_boundary": "-1960931/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "3881479577/1814400",
+              "z3": "-1673453/700"
+            },
+            {
+              "1": "681146819/226800",
+              "z3": "-9641123/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-6160427/51840",
+              "z3": "11417/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-530747/540"
+          },
+          "independent_rational_boundary": "-530747/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-43312369/24192",
+              "z3": "120201/70"
+            },
+            {
+              "1": "-25609967/13440",
+              "z3": "150632/105"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "199871/576",
+              "z3": "-8477/30"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "249557/540"
+          },
+          "independent_rational_boundary": "249557/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "517055381/201600",
+              "z3": "-414609/175"
+            },
+            {
+              "1": "603143579/201600",
+              "z3": "-795947/350"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5080369/43200",
+              "z3": "4753/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-147049/270"
+          },
+          "independent_rational_boundary": "-147049/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "73759651/21600",
+              "z3": "-380093/100"
+            },
+            {
+              "1": "316843793/64800",
+              "z3": "-368333/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-117551/810",
+              "z3": "588/5"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-874741/540"
+          },
+          "independent_rational_boundary": "-874741/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1903777/12960",
+              "z3": "-941/2"
+            },
+            {
+              "1": "2232569/2592",
+              "z3": "-2034/5"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-9359/120",
+              "z3": "637/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-42791/54"
+          },
+          "independent_rational_boundary": "-42791/54",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-44536657/67200",
+              "z3": "282441/700"
+            },
+            {
+              "1": "-18837659/40320",
+              "z3": "59781/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-535129/21600",
+              "z3": "588/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-29743/135"
+          },
+          "independent_rational_boundary": "-29743/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "316468049/604800",
+              "z3": "-381573/700"
+            },
+            {
+              "1": "417548777/604800",
+              "z3": "-1071317/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-403907/10800",
+              "z3": "5243/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-55223/270"
+          },
+          "independent_rational_boundary": "-55223/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1398325913/604800",
+              "z3": "-1094391/700"
+            },
+            {
+              "1": "70895263/40320",
+              "z3": "-644561/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-308063/10800",
+              "z3": "2156/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "70903/135"
+          },
+          "independent_rational_boundary": "70903/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-355305061/907200",
+              "z3": "90102/175"
+            },
+            {
+              "1": "-312025963/604800",
+              "z3": "2018731/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "11534159/259200",
+              "z3": "-20531/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "91133/540"
+          },
+          "independent_rational_boundary": "91133/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-250304449/151200",
+              "z3": "807377/700"
+            },
+            {
+              "1": "-230272103/181440",
+              "z3": "465767/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "6439237/129600",
+              "z3": "-3332/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-272671/810"
+          },
+          "independent_rational_boundary": "-272671/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "229847279/72576",
+              "z3": "-320547/140"
+            },
+            {
+              "1": "728102653/302400",
+              "z3": "-9180457/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-29470511/259200",
+              "z3": "62279/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "348593/540"
+          },
+          "independent_rational_boundary": "348593/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "33879961/201600",
+              "z3": "-118961/700"
+            },
+            {
+              "1": "56746057/362880",
+              "z3": "-10763/84"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-3098123/64800",
+              "z3": "3136/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-29267/810"
+          },
+          "independent_rational_boundary": "-29267/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-2020511257/907200",
+              "z3": "267019/175"
+            },
+            {
+              "1": "-3289834237/1814400",
+              "z3": "6270913/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "7974211/259200",
+              "z3": "-19649/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1533/4"
+          },
+          "independent_rational_boundary": "-1533/4",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "106036369/151200",
+              "z3": "-191101/350"
+            },
+            {
+              "1": "17037707/30240",
+              "z3": "-11665/21"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "299047/32400",
+              "z3": "-1421/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "119161/810"
+          },
+          "independent_rational_boundary": "119161/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "4990426661/1814400",
+              "z3": "-1449649/700"
+            },
+            {
+              "1": "567810071/226800",
+              "z3": "-8413547/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-17667979/259200",
+              "z3": "40621/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "96509/540"
+          },
+          "independent_rational_boundary": "96509/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "974180437/604800",
+              "z3": "-712189/700"
+            },
+            {
+              "1": "144534961/120960",
+              "z3": "-137087/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-305809/8100",
+              "z3": "1911/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "306257/810"
+          },
+          "independent_rational_boundary": "306257/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-1313964049/604800",
+              "z3": "1193523/700"
+            },
+            {
+              "1": "-1198412837/604800",
+              "z3": "1132469/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "653023/7200",
+              "z3": "-4361/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-27097/270"
+          },
+          "independent_rational_boundary": "-27097/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "596666087/604800",
+              "z3": "-529509/700"
+            },
+            {
+              "1": "738221/896",
+              "z3": "-57175/84"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-11711/150",
+              "z3": "5684/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "11417/135"
+          },
+          "independent_rational_boundary": "11417/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "97485263/64800",
+              "z3": "-85913/100"
+            },
+            {
+              "1": "58234583/64800",
+              "z3": "-79543/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-3479/60",
+              "z3": "637/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "147889/270"
+          },
+          "independent_rational_boundary": "147889/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "273563/180",
+              "z3": "-2265/2"
+            },
+            {
+              "1": "15953069/12960",
+              "z3": "-1108"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-272587/12960",
+              "z3": "49/2"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "7231/27"
+          },
+          "independent_rational_boundary": "7231/27",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-73711547/86400",
+              "z3": "54999/100"
+            },
+            {
+              "1": "-27022289/86400",
+              "z3": "95809/300"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "12603829/43200",
+              "z3": "-17297/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-6713/27"
+          },
+          "independent_rational_boundary": "-6713/27",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-640194547/201600",
+              "z3": "2015607/700"
+            },
+            {
+              "1": "-2164058761/604800",
+              "z3": "5755271/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "66101/360",
+              "z3": "-833/6"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "15827/27"
+          },
+          "independent_rational_boundary": "15827/27",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "152948837/302400",
+              "z3": "-34217/175"
+            },
+            {
+              "1": "10215253/90720",
+              "z3": "-5353/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-8040361/43200",
+              "z3": "15729/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "16772/81"
+          },
+          "independent_rational_boundary": "16772/81",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "620761307/181440",
+              "z3": "-104079/35"
+            },
+            {
+              "1": "2209246373/604800",
+              "z3": "-12001391/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-39143993/259200",
+              "z3": "69727/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-27545/72"
+          },
+          "independent_rational_boundary": "-27545/72",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-2998148029/604800",
+              "z3": "3019943/700"
+            },
+            {
+              "1": "-2023179379/362880",
+              "z3": "438877/105"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "2017379/10800",
+              "z3": "-40327/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "325976/405"
+          },
+          "independent_rational_boundary": "325976/405",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-570407107/362880",
+              "z3": "88299/70"
+            },
+            {
+              "1": "-229610651/151200",
+              "z3": "5174803/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "10500749/259200",
+              "z3": "-17591/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-13811/1080"
+          },
+          "independent_rational_boundary": "-13811/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "116385421/43200",
+              "z3": "-122847/50"
+            },
+            {
+              "1": "102373021/32400",
+              "z3": "-246527/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1303939/129600",
+              "z3": "-833/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-770497/1620"
+          },
+          "independent_rational_boundary": "-770497/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-476479433/907200",
+              "z3": "169377/350"
+            },
+            {
+              "1": "-1148096711/1814400",
+              "z3": "627773/1400"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1967497/51840",
+              "z3": "-1421/40"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "52381/360"
+          },
+          "independent_rational_boundary": "52381/360",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-306482389/86400",
+              "z3": "300693/100"
+            },
+            {
+              "1": "-180010207/51840",
+              "z3": "83539/30"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "19557713/64800",
+              "z3": "-66689/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "367717/1620"
+          },
+          "independent_rational_boundary": "367717/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-4808792057/1814400",
+              "z3": "1676853/700"
+            },
+            {
+              "1": "-1336019893/453600",
+              "z3": "9627223/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "7551047/51840",
+              "z3": "-12397/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "475937/1080"
+          },
+          "independent_rational_boundary": "475937/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "235566269/67200",
+              "z3": "-2019027/700"
+            },
+            {
+              "1": "1935666007/604800",
+              "z3": "-5354617/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-18920321/43200",
+              "z3": "25088/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-35917/270"
+          },
+          "independent_rational_boundary": "-35917/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-183949649/86400",
+              "z3": "178923/100"
+            },
+            {
+              "1": "-63283867/28800",
+              "z3": "516091/300"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "73451/675",
+              "z3": "-10339/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "23912/135"
+          },
+          "independent_rational_boundary": "23912/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-74106979/21600",
+              "z3": "318337/100"
+            },
+            {
+              "1": "-255772523/64800",
+              "z3": "307263/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "5487167/32400",
+              "z3": "-5537/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "92554/135"
+          },
+          "independent_rational_boundary": "92554/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-7013807/6480",
+              "z3": "4047/4"
+            },
+            {
+              "1": "-8498759/6480",
+              "z3": "56197/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "57379/540",
+              "z3": "-1127/15"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "4025/12"
+          },
+          "independent_rational_boundary": "4025/12",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-2866280713/604800",
+              "z3": "1906341/700"
+            },
+            {
+              "1": "-110947867/40320",
+              "z3": "1109779/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "846377/7200",
+              "z3": "-6076/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-252448/135"
+          },
+          "independent_rational_boundary": "-252448/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1817694253/907200",
+              "z3": "-415101/175"
+            },
+            {
+              "1": "1496985887/604800",
+              "z3": "-9579979/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5404063/51840",
+              "z3": "10927/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-51821/90"
+          },
+          "independent_rational_boundary": "-51821/90",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "16965409/7200",
+              "z3": "-122111/100"
+            },
+            {
+              "1": "26731889/25920",
+              "z3": "-69817/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-10643437/129600",
+              "z3": "4312/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "2013431/1620"
+          },
+          "independent_rational_boundary": "2013431/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-6681366383/1814400",
+              "z3": "1268697/700"
+            },
+            {
+              "1": "-267252623/302400",
+              "z3": "7373797/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "5115943/51840",
+              "z3": "-6811/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-728987/270"
+          },
+          "independent_rational_boundary": "-728987/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "11225539/9600",
+              "z3": "-92227/100"
+            },
+            {
+              "1": "63435377/51840",
+              "z3": "-55493/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "588833/64800",
+              "z3": "-196/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-14665/324"
+          },
+          "independent_rational_boundary": "-14665/324",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "2293167013/907200",
+              "z3": "-158166/175"
+            },
+            {
+              "1": "360876617/362880",
+              "z3": "-767909/840"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-3078523/259200",
+              "z3": "-6223/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "205387/135"
+          },
+          "independent_rational_boundary": "205387/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-106157663/50400",
+              "z3": "296838/175"
+            },
+            {
+              "1": "-25290163/15120",
+              "z3": "116883/70"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1694371/64800",
+              "z3": "-1323/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-660191/1620"
+          },
+          "independent_rational_boundary": "-660191/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-10348084949/1814400",
+              "z3": "2648271/700"
+            },
+            {
+              "1": "-1037069921/226800",
+              "z3": "15350087/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "50671243/259200",
+              "z3": "-77077/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-4676/5"
+          },
+          "independent_rational_boundary": "-4676/5",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-1592388757/604800",
+              "z3": "718989/700"
+            },
+            {
+              "1": "-130522297/120960",
+              "z3": "408481/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "2961511/32400",
+              "z3": "-8183/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-473837/324"
+          },
+          "independent_rational_boundary": "-473837/324",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "3388538441/604800",
+              "z3": "-2827557/700"
+            },
+            {
+              "1": "2764847821/604800",
+              "z3": "-2693787/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1177813/4320",
+              "z3": "1911/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "20482/27"
+          },
+          "independent_rational_boundary": "20482/27",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-7736543/67200",
+              "z3": "-282441/700"
+            },
+            {
+              "1": "30842659/40320",
+              "z3": "-59781/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1306879/21600",
+              "z3": "-588/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-110642/135"
+          },
+          "independent_rational_boundary": "-110642/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-99569231/64800",
+              "z3": "-37599/100"
+            },
+            {
+              "1": "63907957/64800",
+              "z3": "-42597/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "574819/5400",
+              "z3": "-2499/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-326207/135"
+          },
+          "independent_rational_boundary": "-326207/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-488269/144",
+              "z3": "2215"
+            },
+            {
+              "1": "-5524483/2592",
+              "z3": "65029/30"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "201047/2592",
+              "z3": "-1421/30"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-7091/6"
+          },
+          "independent_rational_boundary": "-7091/6",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-10097413/21600",
+              "z3": "-19057/50"
+            },
+            {
+              "1": "57276269/86400",
+              "z3": "-36646/75"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "12536993/86400",
+              "z3": "-16121/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2660279/2700"
+          },
+          "independent_rational_boundary": "-2660279/2700",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-983151887/453600",
+              "z3": "773847/350"
+            },
+            {
+              "1": "-1396094311/604800",
+              "z3": "4472611/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "5118589/51840",
+              "z3": "-24353/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "17255/72"
+          },
+          "independent_rational_boundary": "17255/72",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "35679299/11200",
+              "z3": "-1098163/350"
+            },
+            {
+              "1": "1140530567/362880",
+              "z3": "-1290973/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-10045/128",
+              "z3": "19159/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-290153/8100"
+          },
+          "independent_rational_boundary": "-290153/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "97756013/100800",
+              "z3": "-134322/175"
+            },
+            {
+              "1": "245794193/302400",
+              "z3": "-3145867/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-526309/21600",
+              "z3": "11123/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "71617/540"
+          },
+          "independent_rational_boundary": "71617/540",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-21828577/20160",
+              "z3": "1226907/700"
+            },
+            {
+              "1": "-342270847/181440",
+              "z3": "125469/70"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-423997/7200",
+              "z3": "3969/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "12065083/16200"
+          },
+          "independent_rational_boundary": "12065083/16200",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "904859/4032",
+              "z3": "-194429/700"
+            },
+            {
+              "1": "56165449/201600",
+              "z3": "-1051669/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-9118067/259200",
+              "z3": "3283/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-72379/810"
+          },
+          "independent_rational_boundary": "-72379/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "17156339/10800",
+              "z3": "-7793/4"
+            },
+            {
+              "1": "17271493/8640",
+              "z3": "-36613/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5496379/43200",
+              "z3": "588/5"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2903561/5400"
+          },
+          "independent_rational_boundary": "-2903561/5400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "115292927/64800",
+              "z3": "-8377/4"
+            },
+            {
+              "1": "9489211/4320",
+              "z3": "-40611/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-745927/10800",
+              "z3": "637/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-39401/81"
+          },
+          "independent_rational_boundary": "-39401/81",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-640411901/302400",
+              "z3": "359216/175"
+            },
+            {
+              "1": "-58737263/28350",
+              "z3": "1286973/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "10621387/43200",
+              "z3": "-21413/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "323939/1620"
+          },
+          "independent_rational_boundary": "323939/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1107084131/907200",
+              "z3": "-234897/175"
+            },
+            {
+              "1": "290977987/201600",
+              "z3": "-5542517/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-3951997/259200",
+              "z3": "13573/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-6433/27"
+          },
+          "independent_rational_boundary": "-6433/27",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "749865223/302400",
+              "z3": "-2289881/700"
+            },
+            {
+              "1": "6667292609/1814400",
+              "z3": "-3356789/1050"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5456101/86400",
+              "z3": "4459/60"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-10190533/8100"
+          },
+          "independent_rational_boundary": "-10190533/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "61553327/129600",
+              "z3": "-85247/100"
+            },
+            {
+              "1": "39274423/43200",
+              "z3": "-492617/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-187621/7200",
+              "z3": "3773/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-745589/1620"
+          },
+          "independent_rational_boundary": "-745589/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-185175803/151200",
+              "z3": "3615/7"
+            },
+            {
+              "1": "-149485979/907200",
+              "z3": "501433/1050"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "7457849/129600",
+              "z3": "-5831/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-16238641/16200"
+          },
+          "independent_rational_boundary": "-16238641/16200",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "14902991/100800",
+              "z3": "219543/350"
+            },
+            {
+              "1": "-550405631/302400",
+              "z3": "2597129/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-136073/10800",
+              "z3": "-5341/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "351967/180"
+          },
+          "independent_rational_boundary": "351967/180",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-1230346/1575",
+              "z3": "469577/700"
+            },
+            {
+              "1": "-27937573/28350",
+              "z3": "1383349/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "33859/4050",
+              "z3": "-1813/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "430597/2025"
+          },
+          "independent_rational_boundary": "430597/2025",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "56041999/302400",
+              "z3": "-123121/140"
+            },
+            {
+              "1": "225002971/201600",
+              "z3": "-3473081/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-2519629/51840",
+              "z3": "31507/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1586573/1620"
+          },
+          "independent_rational_boundary": "-1586573/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "6339211/4320",
+              "z3": "-117111/100"
+            },
+            {
+              "1": "1869583/1728",
+              "z3": "-68287/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-4732469/129600",
+              "z3": "4949/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "2826571/8100"
+          },
+          "independent_rational_boundary": "2826571/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "209691467/64800",
+              "z3": "-8377/4"
+            },
+            {
+              "1": "10958839/4320",
+              "z3": "-40611/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1106077/10800",
+              "z3": "637/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "1933621/3240"
+          },
+          "independent_rational_boundary": "1933621/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "4800043/5400",
+              "z3": "-50"
+            },
+            {
+              "1": "-81991/1620",
+              "z3": "-51/2"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-738871/16200",
+              "z3": "49/2"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "603382/675"
+          },
+          "independent_rational_boundary": "603382/675",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-21369265/5184",
+              "z3": "15207/5"
+            },
+            {
+              "1": "-295059539/86400",
+              "z3": "1747273/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "47552393/259200",
+              "z3": "-77567/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-62839/120"
+          },
+          "independent_rational_boundary": "-62839/120",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-144335309/151200",
+              "z3": "759977/700"
+            },
+            {
+              "1": "-273420983/181440",
+              "z3": "29521/28"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "2235037/129600",
+              "z3": "-784/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "922747/1620"
+          },
+          "independent_rational_boundary": "922747/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-29805811/129600",
+              "z3": "116227/100"
+            },
+            {
+              "1": "-77189957/43200",
+              "z3": "699763/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-4459/144",
+              "z3": "2401/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "2471887/1620"
+          },
+          "independent_rational_boundary": "2471887/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "16304191/12600",
+              "z3": "-529377/700"
+            },
+            {
+              "1": "31776781/56700",
+              "z3": "-519773/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-9947/360",
+              "z3": "343/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "2858959/4050"
+          },
+          "independent_rational_boundary": "2858959/4050",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "21333791/28800",
+              "z3": "-213099/100"
+            },
+            {
+              "1": "71024603/12960",
+              "z3": "-39327/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-11952521/86400",
+              "z3": "4116/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-39510797/8100"
+          },
+          "independent_rational_boundary": "-39510797/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "5945520341/1814400",
+              "z3": "-937401/350"
+            },
+            {
+              "1": "1048083269/302400",
+              "z3": "-453094/175"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-24259361/259200",
+              "z3": "4459/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2261/8"
+          },
+          "independent_rational_boundary": "-2261/8",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-10910671/10800",
+              "z3": "7793/4"
+            },
+            {
+              "1": "-75444043/25920",
+              "z3": "36613/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "13831573/129600",
+              "z3": "-588/5"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "10838489/5400"
+          },
+          "independent_rational_boundary": "10838489/5400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-162596663/64800",
+              "z3": "8377/4"
+            },
+            {
+              "1": "-48321523/25920",
+              "z3": "40611/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "2936717/43200",
+              "z3": "-637/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1869389/3240"
+          },
+          "independent_rational_boundary": "-1869389/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-2387150453/604800",
+              "z3": "414042/175"
+            },
+            {
+              "1": "-966962777/362880",
+              "z3": "197327/84"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "415079/5184",
+              "z3": "-5047/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-19476427/16200"
+          },
+          "independent_rational_boundary": "-19476427/16200",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-709553273/604800",
+              "z3": "-98639/350"
+            },
+            {
+              "1": "222373859/226800",
+              "z3": "-1154513/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "7959413/259200",
+              "z3": "833/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1375691/648"
+          },
+          "independent_rational_boundary": "-1375691/648",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "220658411/40320",
+              "z3": "-537181/140"
+            },
+            {
+              "1": "1470159343/362880",
+              "z3": "-787421/210"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-148421/864",
+              "z3": "5243/60"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "2024239/1620"
+          },
+          "independent_rational_boundary": "2024239/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "4810997567/1814400",
+              "z3": "-1936773/700"
+            },
+            {
+              "1": "396317561/100800",
+              "z3": "-10987117/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-33361307/259200",
+              "z3": "90503/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-21133/15"
+          },
+          "independent_rational_boundary": "-21133/15",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "53636423/60480",
+              "z3": "-833823/350"
+            },
+            {
+              "1": "32596979/8064",
+              "z3": "-194753/84"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-2404969/259200",
+              "z3": "19159/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-25634207/8100"
+          },
+          "independent_rational_boundary": "-25634207/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-406230667/129600",
+              "z3": "50143/25"
+            },
+            {
+              "1": "-181235009/129600",
+              "z3": "1202207/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "236621/7200",
+              "z3": "-49/24"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1379603/810"
+          },
+          "independent_rational_boundary": "-1379603/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "56556109/201600",
+              "z3": "-206263/700"
+            },
+            {
+              "1": "91083413/201600",
+              "z3": "-182253/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-397537/10800",
+              "z3": "343/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1123607/5400"
+          },
+          "independent_rational_boundary": "-1123607/5400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-83034469/32400",
+              "z3": "8377/4"
+            },
+            {
+              "1": "-3265811/1296",
+              "z3": "40611/20"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "188797/2700",
+              "z3": "-637/10"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "87637/3240"
+          },
+          "independent_rational_boundary": "87637/3240",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-76331/1200",
+              "z3": "50"
+            },
+            {
+              "1": "77951/2160",
+              "z3": "51/2"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "37877/1350",
+              "z3": "-49/2"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-128953/1800"
+          },
+          "independent_rational_boundary": "-128953/1800",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "199766081/201600",
+              "z3": "-116597/140"
+            },
+            {
+              "1": "454201897/453600",
+              "z3": "-3353507/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-7623763/259200",
+              "z3": "20629/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-12907/324"
+          },
+          "independent_rational_boundary": "-12907/324",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "11836187/9600",
+              "z3": "-97227/100"
+            },
+            {
+              "1": "61564553/51840",
+              "z3": "-57023/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1229263/64800",
+              "z3": "3283/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "427327/16200"
+          },
+          "independent_rational_boundary": "427327/16200",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "12156829/51840",
+              "z3": "-846/5"
+            },
+            {
+              "1": "2992373/21600",
+              "z3": "-107449/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-463589/259200",
+              "z3": "-5929/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "101717/1080"
+          },
+          "independent_rational_boundary": "101717/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "303496241/201600",
+              "z3": "-883511/700"
+            },
+            {
+              "1": "557539753/362880",
+              "z3": "-496081/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5607413/64800",
+              "z3": "6076/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-190393/1620"
+          },
+          "independent_rational_boundary": "-190393/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "45372061/25920",
+              "z3": "-35096/25"
+            },
+            {
+              "1": "225896497/129600",
+              "z3": "-810601/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-34594/675",
+              "z3": "31703/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-35489/810"
+          },
+          "independent_rational_boundary": "-35489/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "58529131/50400",
+              "z3": "-160562/175"
+            },
+            {
+              "1": "254178361/226800",
+              "z3": "-470024/525"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-280819/12960",
+              "z3": "1666/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "153157/8100"
+          },
+          "independent_rational_boundary": "153157/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "6757327/151200",
+              "z3": "-287533/175"
+            },
+            {
+              "1": "193955197/100800",
+              "z3": "-286161/175"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "557669/14400",
+              "z3": "196/25"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-4969999/2700"
+          },
+          "independent_rational_boundary": "-4969999/2700",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "184026137/181440",
+              "z3": "-156537/175"
+            },
+            {
+              "1": "368205589/403200",
+              "z3": "-934763/1050"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "5106143/518400",
+              "z3": "637/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "239533/2160"
+          },
+          "independent_rational_boundary": "239533/2160",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "801183293/302400",
+              "z3": "-284863/350"
+            },
+            {
+              "1": "224169563/181440",
+              "z3": "-116209/140"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-79037/1620",
+              "z3": "-1617/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "2764378/2025"
+          },
+          "independent_rational_boundary": "2764378/2025",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "19069949/12600",
+              "z3": "-1629/175"
+            },
+            {
+              "1": "294915869/3628800",
+              "z3": "-100493/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-11263189/518400",
+              "z3": "-8771/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "1015553/720"
+          },
+          "independent_rational_boundary": "1015553/720",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-905583199/302400",
+              "z3": "642223/350"
+            },
+            {
+              "1": "-530929753/226800",
+              "z3": "1320461/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-228781/25920",
+              "z3": "1029/20"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-536641/810"
+          },
+          "independent_rational_boundary": "-536641/810",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-249693643/129600",
+              "z3": "53696/25"
+            },
+            {
+              "1": "-682183627/259200",
+              "z3": "1243183/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "12869899/259200",
+              "z3": "-45521/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "203819/270"
+          },
+          "independent_rational_boundary": "203819/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-86700871/302400",
+              "z3": "233061/140"
+            },
+            {
+              "1": "-911285701/453600",
+              "z3": "280779/175"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "233779/8640",
+              "z3": "-6027/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "7084891/4050"
+          },
+          "independent_rational_boundary": "7084891/4050",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "374310079/226800",
+              "z3": "-117727/140"
+            },
+            {
+              "1": "35895683/44800",
+              "z3": "-3565081/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5403083/518400",
+              "z3": "-4753/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "5434981/6480"
+          },
+          "independent_rational_boundary": "5434981/6480",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-408671441/604800",
+              "z3": "318613/700"
+            },
+            {
+              "1": "-70441043/201600",
+              "z3": "959269/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "30331/8100",
+              "z3": "49/30"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-10450907/32400"
+          },
+          "independent_rational_boundary": "-10450907/32400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-77589451/50400",
+              "z3": "482451/350"
+            },
+            {
+              "1": "-5610043723/3628800",
+              "z3": "5622371/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "14568827/518400",
+              "z3": "-23863/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "74753/2160"
+          },
+          "independent_rational_boundary": "74753/2160",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-173044103/120960",
+              "z3": "868739/700"
+            },
+            {
+              "1": "-800283391/604800",
+              "z3": "2547221/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1451723/64800",
+              "z3": "-2107/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2752913/32400"
+          },
+          "independent_rational_boundary": "-2752913/32400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1751099153/907200",
+              "z3": "-285976/175"
+            },
+            {
+              "1": "3160653851/1814400",
+              "z3": "-6563299/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-3801469/51840",
+              "z3": "1715/24"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "124103/1080"
+          },
+          "independent_rational_boundary": "124103/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-106400251/151200",
+              "z3": "105737/175"
+            },
+            {
+              "1": "-1031557/1890",
+              "z3": "117349/210"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "2890559/64800",
+              "z3": "-6811/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-183547/1620"
+          },
+          "independent_rational_boundary": "-183547/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-103141267/45360",
+              "z3": "596149/350"
+            },
+            {
+              "1": "-637550813/403200",
+              "z3": "6909229/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "32719309/518400",
+              "z3": "-34937/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-4079123/6480"
+          },
+          "independent_rational_boundary": "-4079123/6480",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-265267207/201600",
+              "z3": "706561/700"
+            },
+            {
+              "1": "-563247649/604800",
+              "z3": "2079209/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1315111/64800",
+              "z3": "-2891/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-11800693/32400"
+          },
+          "independent_rational_boundary": "-11800693/32400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-3747743309/604800",
+              "z3": "2674577/700"
+            },
+            {
+              "1": "-341682115/72576",
+              "z3": "1518173/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "22719193/64800",
+              "z3": "-30919/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-9218927/8100"
+          },
+          "independent_rational_boundary": "-9218927/8100",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-7554864713/1814400",
+              "z3": "1683369/700"
+            },
+            {
+              "1": "-10983075013/3628800",
+              "z3": "810643/350"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "28924553/172800",
+              "z3": "-8869/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-418957/432"
+          },
+          "independent_rational_boundary": "-418957/432",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "3931262819/604800",
+              "z3": "-3303473/700"
+            },
+            {
+              "1": "2010887209/362880",
+              "z3": "-93160/21"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-27808529/64800",
+              "z3": "84917/300"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "42889/81"
+          },
+          "independent_rational_boundary": "42889/81",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-52461661/259200",
+              "z3": "-35861/100"
+            },
+            {
+              "1": "14078603/32400",
+              "z3": "-211001/600"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "3067057/51840",
+              "z3": "833/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-31199/54"
+          },
+          "independent_rational_boundary": "-31199/54",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-190159367/60480",
+              "z3": "531527/350"
+            },
+            {
+              "1": "-21978049/11340",
+              "z3": "41109/28"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "18441983/129600",
+              "z3": "-5047/100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-4308271/4050"
+          },
+          "independent_rational_boundary": "-4308271/4050",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-154948331/56700",
+              "z3": "64843/35"
+            },
+            {
+              "1": "-7666855363/3628800",
+              "z3": "7498871/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "60486923/518400",
+              "z3": "-40327/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-3261481/6480"
+          },
+          "independent_rational_boundary": "-3261481/6480",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-121194707/100800",
+              "z3": "-2995/14"
+            },
+            {
+              "1": "73835953/302400",
+              "z3": "-42068/175"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "496811/7200",
+              "z3": "-1323/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-14876929/10800"
+          },
+          "independent_rational_boundary": "-14876929/10800",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "6663417017/1814400",
+              "z3": "-1683653/700"
+            },
+            {
+              "1": "1283472403/453600",
+              "z3": "-9599423/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-10332287/51840",
+              "z3": "14357/120"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "695177/1080"
+          },
+          "independent_rational_boundary": "695177/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "355972117/604800",
+              "z3": "-705389/700"
+            },
+            {
+              "1": "31709525/24192",
+              "z3": "-414041/420"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "515039/32400",
+              "z3": "3283/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1144157/1620"
+          },
+          "independent_rational_boundary": "-1144157/1620",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "334428053/453600",
+              "z3": "-1455491/700"
+            },
+            {
+              "1": "9316802909/3628800",
+              "z3": "-8698303/4200"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "4492663/103680",
+              "z3": "4949/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-11578813/6480"
+          },
+          "independent_rational_boundary": "-11578813/6480",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-418309393/201600",
+              "z3": "843939/700"
+            },
+            {
+              "1": "-2177395153/1814400",
+              "z3": "2472821/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "463883/8100",
+              "z3": "-2107/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-26490707/32400"
+          },
+          "independent_rational_boundary": "-26490707/32400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-4194670813/604800",
+              "z3": "3653061/700"
+            },
+            {
+              "1": "-1167366997/201600",
+              "z3": "10038571/2100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "8926771/14400",
+              "z3": "-32879/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-70903/135"
+          },
+          "independent_rational_boundary": "-70903/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "253536781/201600",
+              "z3": "-440511/700"
+            },
+            {
+              "1": "122674049/201600",
+              "z3": "-428849/700"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1970927/21600",
+              "z3": "833/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "75313/135"
+          },
+          "independent_rational_boundary": "75313/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "14960327/4320",
+              "z3": "-7793/4"
+            },
+            {
+              "1": "133629983/64800",
+              "z3": "-185123/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-7057421/32400",
+              "z3": "4851/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "319417/270"
+          },
+          "independent_rational_boundary": "319417/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "4784411/1620",
+              "z3": "-8377/4"
+            },
+            {
+              "1": "1791679/810",
+              "z3": "-7985/4"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-14651/90",
+              "z3": "98"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "62489/108"
+          },
+          "independent_rational_boundary": "62489/108",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "160529041/86400",
+              "z3": "-191637/100"
+            },
+            {
+              "1": "13897507/5760",
+              "z3": "-107299/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-2065889/21600",
+              "z3": "9604/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-87808/135"
+          },
+          "independent_rational_boundary": "-87808/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "19080259/12960",
+              "z3": "-8377/4"
+            },
+            {
+              "1": "180377123/64800",
+              "z3": "-201683/100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-51401/5400",
+              "z3": "3871/50"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-178318/135"
+          },
+          "independent_rational_boundary": "-178318/135",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-252841/720",
+              "z3": "-50"
+            },
+            {
+              "1": "4283723/12960",
+              "z3": "-1451/30"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "460061/12960",
+              "z3": "49/30"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-34895/54"
+          },
+          "independent_rational_boundary": "-34895/54",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              0,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "1109117/525",
+              "z3": "-821509/175"
+            },
+            {
+              "1": "2314425521/362880",
+              "z3": "-487829/105"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "7350049/86400",
+              "z3": "3626/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-16930063/4050"
+          },
+          "independent_rational_boundary": "-16930063/4050",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              0,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-17149847/6720",
+              "z3": "709011/700"
+            },
+            {
+              "1": "-130796023/241920",
+              "z3": "82255/84"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "10870601/103680",
+              "z3": "-5047/150"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2470895/1296"
+          },
+          "independent_rational_boundary": "-2470895/1296",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              1,
+              2
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-27151391/9600",
+              "z3": "187687/100"
+            },
+            {
+              "1": "-89241389/51840",
+              "z3": "110221/60"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "5019511/64800",
+              "z3": "-2989/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-33350321/32400"
+          },
+          "independent_rational_boundary": "-33350321/32400",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "generic_mixed_degree_three",
+      "sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -9,
+          -4
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "original_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quotients": [
+        {
+          "position": 0,
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "4",
+              "1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-9",
+              "-4"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 1,
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-9",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 2,
+          "contracted_edge": [
+            1,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "8",
+              "2"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "-9",
+              "-4"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 3,
+          "contracted_edge": [
+            1,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "-6",
+              "-5"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 4,
+          "contracted_edge": [
+            2,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "3",
+              "7"
+            ],
+            [
+              "-9",
+              "-4"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 5,
+          "contracted_edge": [
+            2,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-11",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 6,
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-9",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 7,
+          "contracted_edge": [
+            3,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3",
+              "-1"
+            ],
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "-4",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        }
+      ],
+      "word_count": 4,
+      "words_with_individual_periods": 4,
+      "complete_words": [
+        {
+          "powers": [
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-36236554931/3810240",
+              "z3": "21373323/2450"
+            },
+            {
+              "1": "-1302005372149/114307200",
+              "z3": "390296651/44100"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-363222811/2332800",
+              "z3": "113813/900"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "1862347/1080"
+          },
+          "independent_rational_boundary": "1862347/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "8993086841/7620480",
+              "z3": "-2307189/980"
+            },
+            {
+              "1": "40991068463/9144576",
+              "z3": "-42097067/17640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "106528933/933120",
+              "z3": "-2317/72"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-860833/270"
+          },
+          "independent_rational_boundary": "-860833/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-27244593067/9525600",
+              "z3": "6409721/3675"
+            },
+            {
+              "1": "-76551687103/38102400",
+              "z3": "17633043/9800"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-2051273/28800",
+              "z3": "33089/600"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-14940697/16200"
+          },
+          "independent_rational_boundary": "-14940697/16200",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              1,
+              3
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-24489982823/3024000",
+              "z3": "3902547/700"
+            },
+            {
+              "1": "-18761928107/3628800",
+              "z3": "1527689/280"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "109923793/518400",
+              "z3": "-23807/200"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-18334421/6750"
+          },
+          "independent_rational_boundary": "-18334421/6750",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "higher_superpotential_source_pattern",
+      "sources": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -8,
+          -1
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "original_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quotients": [
+        {
+          "position": 0,
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-8",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 1,
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "3",
+              "-2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-8",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "position": 2,
+          "contracted_edge": [
+            1,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-8",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 3,
+          "contracted_edge": [
+            1,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "-8",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 4,
+          "contracted_edge": [
+            2,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-8",
+              "-1"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 5,
+          "contracted_edge": [
+            2,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-8",
+              "-1"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "position": 6,
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "-4"
+            ],
+            [
+              "5",
+              "3"
+            ],
+            [
+              "-8",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "position": 7,
+          "contracted_edge": [
+            3,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-3",
+              "2"
+            ],
+            [
+              "2",
+              "-4"
+            ]
+          ]
+        }
+      ],
+      "word_count": 17,
+      "words_with_individual_periods": 16,
+      "complete_words": [
+        {
+          "powers": [],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "301/24"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-655/72"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "31/9"
+          },
+          "independent_rational_boundary": "31/9",
+          "exact_period_coefficient_cancellations": {}
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "544409/3360",
+              "z3": "-50321/420"
+            },
+            {
+              "1": "-89167/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-9024427/60480",
+              "z3": "50321/420"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "347/15"
+          },
+          "independent_rational_boundary": "347/15",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "598009/18900",
+              "z3": "-23372/525"
+            },
+            {
+              "1": "-6859/2160"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1935767/25200",
+              "z3": "23372/525"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-42"
+          },
+          "independent_rational_boundary": "-42",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-167423/1120",
+              "z3": "50321/420"
+            },
+            {
+              "1": "89167/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "8474227/60480",
+              "z3": "-50321/420"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-886/45"
+          },
+          "independent_rational_boundary": "-886/45",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-61967/9450",
+              "z3": "23372/525"
+            },
+            {
+              "1": "6859/2160"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1477267/25200",
+              "z3": "-23372/525"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "440/9"
+          },
+          "independent_rational_boundary": "440/9",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "2687609/75600",
+              "z3": "-36971/1050"
+            },
+            {
+              "1": "6859/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-8262811/302400",
+              "z3": "36971/1050"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "8027/1080"
+          },
+          "independent_rational_boundary": "8027/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "6131249/151200",
+              "z3": "-109241/2100"
+            },
+            {
+              "1": "-48013/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-7186691/100800",
+              "z3": "109241/2100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-2267/90"
+          },
+          "independent_rational_boundary": "-2267/90",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "19123187/151200",
+              "z3": "-59221/700"
+            },
+            {
+              "1": "-48013/4320"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-9214831/75600",
+              "z3": "59221/700"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "16957/1080"
+          },
+          "independent_rational_boundary": "16957/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              3,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-449059/50400",
+              "z3": "5251/700"
+            },
+            {
+              "1": "6859/2880"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-185459/33600",
+              "z3": "-5251/700"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-1513/90"
+          },
+          "independent_rational_boundary": "-1513/90",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-871387/12600",
+              "z3": "45553/1050"
+            },
+            {
+              "1": "-6859/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "585469/11200",
+              "z3": "-45553/1050"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-17377/1080"
+          },
+          "independent_rational_boundary": "-17377/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              4,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "2993087/151200",
+              "z3": "-44663/2100"
+            },
+            {
+              "1": "48013/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "775267/100800",
+              "z3": "44663/2100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "5921/270"
+          },
+          "independent_rational_boundary": "5921/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-2784287/50400",
+              "z3": "160499/2100"
+            },
+            {
+              "1": "48013/4320"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "658171/9450",
+              "z3": "-160499/2100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "3553/1080"
+          },
+          "independent_rational_boundary": "3553/1080",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              5,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-11569759/151200",
+              "z3": "138151/2100"
+            },
+            {
+              "1": "-6859/2880"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "8801801/100800",
+              "z3": "-138151/2100"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "3559/270"
+          },
+          "independent_rational_boundary": "3559/270",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "417989/3360",
+              "z3": "-50321/420"
+            },
+            {
+              "1": "-89167/8640"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-7373827/60480",
+              "z3": "50321/420"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "64/5"
+          },
+          "independent_rational_boundary": "64/5",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "268021/4725",
+              "z3": "-23372/525"
+            },
+            {
+              "1": "-6859/2160"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-798089/8400",
+              "z3": "23372/525"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-316/9"
+          },
+          "independent_rational_boundary": "-316/9",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "314291/10800",
+              "z3": "613/75"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-221791/10800",
+              "z3": "-613/75"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "925/108"
+          },
+          "independent_rational_boundary": "925/108",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              7,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "3703309/37800",
+              "z3": "-38476/525"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-1145303/12600",
+              "z3": "38476/525"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "191/27"
+          },
+          "independent_rational_boundary": "191/27",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "nonintegral_conserved_sources",
+      "sources": [
+        [
+          "2/3",
+          "4/3"
+        ],
+        [
+          "2",
+          "-2/3"
+        ],
+        [
+          "-4/3",
+          "8/3"
+        ],
+        [
+          "10/3",
+          "2"
+        ],
+        [
+          "-6",
+          "-8/3"
+        ],
+        [
+          "4/3",
+          "-8/3"
+        ]
+      ],
+      "original_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quotients": [
+        {
+          "position": 0,
+          "contracted_edge": [
+            0,
+            1
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "8/3",
+              "2/3"
+            ],
+            [
+              "-4/3",
+              "8/3"
+            ],
+            [
+              "10/3",
+              "2"
+            ],
+            [
+              "-6",
+              "-8/3"
+            ],
+            [
+              "4/3",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 1,
+          "contracted_edge": [
+            0,
+            5
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "2",
+              "-4/3"
+            ],
+            [
+              "2",
+              "-2/3"
+            ],
+            [
+              "-4/3",
+              "8/3"
+            ],
+            [
+              "10/3",
+              "2"
+            ],
+            [
+              "-6",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 2,
+          "contracted_edge": [
+            1,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "2/3",
+              "4/3"
+            ],
+            [
+              "16/3",
+              "4/3"
+            ],
+            [
+              "-4/3",
+              "8/3"
+            ],
+            [
+              "-6",
+              "-8/3"
+            ],
+            [
+              "4/3",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 3,
+          "contracted_edge": [
+            1,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "sources": [
+            [
+              "2/3",
+              "4/3"
+            ],
+            [
+              "-4",
+              "-10/3"
+            ],
+            [
+              "-4/3",
+              "8/3"
+            ],
+            [
+              "10/3",
+              "2"
+            ],
+            [
+              "4/3",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 4,
+          "contracted_edge": [
+            2,
+            3
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "sources": [
+            [
+              "2/3",
+              "4/3"
+            ],
+            [
+              "2",
+              "-2/3"
+            ],
+            [
+              "2",
+              "14/3"
+            ],
+            [
+              "-6",
+              "-8/3"
+            ],
+            [
+              "4/3",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 5,
+          "contracted_edge": [
+            2,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "sources": [
+            [
+              "2/3",
+              "4/3"
+            ],
+            [
+              "2",
+              "-2/3"
+            ],
+            [
+              "-22/3",
+              "0"
+            ],
+            [
+              "10/3",
+              "2"
+            ],
+            [
+              "4/3",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 6,
+          "contracted_edge": [
+            2,
+            5
+          ],
+          "sign": 1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "2/3",
+              "4/3"
+            ],
+            [
+              "2",
+              "-2/3"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "10/3",
+              "2"
+            ],
+            [
+              "-6",
+              "-8/3"
+            ]
+          ]
+        },
+        {
+          "position": 7,
+          "contracted_edge": [
+            3,
+            4
+          ],
+          "sign": -1,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "sources": [
+            [
+              "2/3",
+              "4/3"
+            ],
+            [
+              "2",
+              "-2/3"
+            ],
+            [
+              "-4/3",
+              "8/3"
+            ],
+            [
+              "-8/3",
+              "-2/3"
+            ],
+            [
+              "4/3",
+              "-8/3"
+            ]
+          ]
+        }
+      ],
+      "word_count": 4,
+      "words_with_individual_periods": 3,
+      "complete_words": [
+        {
+          "powers": [],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-12446/729"
+            },
+            {
+              "1": "42875/6561"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "1715/2187"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-149744/6561"
+          },
+          "independent_rational_boundary": "-149744/6561",
+          "exact_period_coefficient_cancellations": {}
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "684443096/10333575",
+              "z3": "-8714848/127575"
+            },
+            {
+              "1": "918273742/10333575",
+              "z3": "-24981088/382725"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-5544742/1476225",
+              "z3": "166208/54675"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-288512/10935"
+          },
+          "independent_rational_boundary": "-288512/10935",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "162487688/3444525",
+              "z3": "-770368/14175"
+            },
+            {
+              "1": "592479962/10333575",
+              "z3": "-20163328/382725"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "-860342/492075",
+              "z3": "90944/54675"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "-3516688/295245"
+          },
+          "independent_rational_boundary": "-3516688/295245",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        },
+        {
+          "powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "quotient_values_in_edge_order": [
+            {
+              "1": "-2228719292/18600435",
+              "z3": "8780288/76545"
+            },
+            {
+              "1": "-4562322346/31000725",
+              "z3": "380372192/3444525"
+            },
+            {},
+            {},
+            {},
+            {},
+            {
+              "1": "69879586/13286025",
+              "z3": "-2105824/492075"
+            },
+            {}
+          ],
+          "signed_sum": {
+            "1": "3209024/98415"
+          },
+          "independent_rational_boundary": "3209024/98415",
+          "exact_period_coefficient_cancellations": {
+            "z3": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "total_verified_words": 178
+}
