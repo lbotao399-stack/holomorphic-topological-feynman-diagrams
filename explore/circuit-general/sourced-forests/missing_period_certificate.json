@@ -1,0 +1,214 @@
+{
+  "convention": "htk K_Gamma with the listed original edge order and orientations",
+  "current_powers": [],
+  "evaluation_options": {
+    "check": 2,
+    "max_terms": 1000000
+  },
+  "exact_series": {
+    "certified_terms": [
+      {
+        "absolute_tail_bound": "281363978029126609627519046457589157666960424095579/145773706351790394202855165456201301606400000000",
+        "order": 0,
+        "partial_sum": "523333155576732791832258418441191424/81327074256703739746732970992925416412109375",
+        "rational_lower": "-164597927146490312045156614013761355031796457357301491/85277618215797380608670271791877761439744000000000",
+        "rational_upper": "164597927147587821219040670341617959438547238834525939/85277618215797380608670271791877761439744000000000",
+        "term": "523333155576732791832258418441191424/81327074256703739746732970992925416412109375"
+      }
+    ],
+    "components": [
+      {
+        "denominator_power": 7,
+        "nonzero_terms": 7368,
+        "sha256": "393711b3394c9642862a0bee38f24b39e8a02f6859d5ca443335a00065b9acc3"
+      }
+    ],
+    "constant": "0",
+    "core_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "integral_nonvanishing_proved": false,
+    "interval_contains_zero": true,
+    "meaning": "complete infinite Gegenbauer series with its exact rational recurrence and tail bound",
+    "unavailable_finite_period_reason": "K33+e at q=7 not tabulated"
+  },
+  "finite_only_control": {
+    "cause": "K33+e at q=7 not tabulated",
+    "exception": "UnsupportedProductForestReduction",
+    "message": "finite-only product-forest evaluation has an unavailable core period; use allow_series=True or .series(powers) for its exact convergent series",
+    "rejected": true
+  },
+  "full_balanced_sources": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "implementation_sha256": {
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/forest_contractions.py": "19222ab94a70691a48bd88ebc718981e0e8de5f631f98bdf480624194acf5729",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/product_forests.py": "bf788aa268fc8baca5c2b484122386813040a1d63cfbf89ee27d2865a27b7eee",
+    "explore/circuit-general/sourced-forests/certify_missing_period.py": "6821f9f3f61e2106eedce2affa693bcf7fcb4612cf0314b2f5b9ebb9bdb4075f",
+    "explore/nonSP/verify/hepp_series/period.py": "e2825257a056fa8e54e1ff21bba24dc66db2c438e9716b35ba6076d0f2a0f657",
+    "explore/nonSP/verify/k4_periods/current_minor.py": "8dd344d4aefd422ac5ac3f32d2d86231d69430365f3c3b1856c96608fe564a79"
+  },
+  "marked": [
+    5,
+    6
+  ],
+  "numerator_digest_encoding": "UTF-8 compact JSON of [[exponent_tuple_as_list, reduced_Fraction_string], ...], sorted lexicographically by the full exponent tuple; every nonzero coefficient included. Bare variables follow original edges; series variables follow core_edges after exact chain integration and graph-orbit aggregation.",
+  "original_bare_numerator": {
+    "denominator_power": 7,
+    "nonzero_terms": 10577,
+    "sha256": "0598c5a835d1a0f2f6612f170bae9deb0d915a14a78c6644963d9a384ad1c50e"
+  },
+  "original_graph": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "loops": 5,
+    "vertices": 7
+  },
+  "schema_version": 1,
+  "scope": "H=2,T=0, exact supplied balanced sources, bare current word",
+  "statistics": {
+    "all_original_sources_retained": true,
+    "backend": "exact_convergent_series",
+    "bare_numerator_terms": 10577,
+    "contraction": {
+      "contraction_steps": 0,
+      "exact_point_checks": 0,
+      "global_ratio_coordinates": 0,
+      "input_current_degree": 0,
+      "largest_local_ratio_count": 0,
+      "largest_polynomial_terms": 1,
+      "original_loops": 5,
+      "output_current_degree": 0,
+      "output_terms": 1,
+      "paired_steps": 0,
+      "reduced_loops": 5,
+      "single_steps": 0,
+      "step_term_counts": []
+    },
+    "core_edges": 10,
+    "core_period_orbits": 7368,
+    "current_U_cancellations": {
+      "0": 0
+    },
+    "denominator_powers": [
+      7
+    ],
+    "finite_period_unavailable": "K33+e at q=7 not tabulated",
+    "independent_checks": 2,
+    "input_current_terms": 1,
+    "inserted_numerator_terms": 10577,
+    "used_automorphisms": 12
+  }
+}

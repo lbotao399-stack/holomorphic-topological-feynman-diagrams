@@ -167,7 +167,7 @@ provide independent validation beyond certificate replay.
 The recorded [complete check run](CHECKS.log) passes 31 validation groups
 and all five higher-loop examples. An additional independent read-through
 checked cache keys, degree shifts, source handling, orientation factors,
-and the exact unsupported-case boundary.
+and exact source-preserving dispatch.
 
 ## Scope of “all product forests”
 
@@ -201,8 +201,15 @@ complete bare value `55625/432` and a mixed degree-three moment
 degree-two vertices. Both are exact generic-source integrals; this routing
 is existing-method coverage, not a new sourced-star formula.
 
-Completing the remaining non-series-
-parallel sourced forests requires an exact treatment of the rational
-sourced-star messages. That step remains open; it is not replaced with a
-vanishing claim or a cubic source restriction. The adapter raises
-`UnsupportedProductForestReduction` for those retained source patterns.
+The [source-complete continuation](../sourced-forests/README.md) now handles
+these remaining sourced non-series-parallel forests. It contracts only
+permitted passive stars, retains the full residual source polynomial,
+cancels exact Kirchhoff factors in current brackets, and integrates the
+remaining sourced core. Available periods give finite rational/zeta
+expressions; otherwise the adapter returns an explicit convergent rational
+series with rigorous remainder bounds. `UnsupportedProductForestReduction`
+now occurs only when a finite-only result was requested and its period is
+unavailable. The new certificates include physical five/six-loop quartic
+forests and higher-valence moments through nineteen loops. Finite zeta
+closure for every forest and efficient evaluation at arbitrary size remain
+open.

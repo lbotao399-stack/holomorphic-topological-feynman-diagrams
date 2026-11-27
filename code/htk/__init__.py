@@ -13,7 +13,9 @@ Layers (see CONVENTIONS.md):
     catalog    graph utilities (enumeration, series-parallel test, parallel-chain reducibility)
     forest_model    marked product-forest recognition and canonical cubic trees
     forest_moments  exact local current messages for cubic product forests
-    product_forests cubic messages or the existing all-source series-parallel method
+    product_forests exact source-preserving forest dispatch and current moments
+    forest_contractions source-free local stars inside fully sourced forests
+    forest_periods exact residual periods and convergent rational series
     fan_moments     all-loop fan words and bounded-state displacement Taylor coefficients
     conventions  conversion to the normalizations of the source notes
 """
@@ -37,7 +39,9 @@ __all__ = ["Graph", "polygon", "theta", "banana", "fan", "box", "graph_A", "grap
            "recognize_product_forest", "forest_graph", "forest_counts", "ForestMoments",
            "forest_moment", "ForestBudgetExceeded", "FanTaylorResult", "fan_endpoint_moment",
            "fan_current_moment", "fan_taylor", "ProductForestMoments", "product_forest_moment",
-           "UnsupportedProductForestReduction"]
+           "UnsupportedProductForestReduction", "ForestContractions", "ContractionResult",
+           "ContractionBudgetExceeded", "CoreCurrentPeriods", "ExactPeriod", "ExactForestSeries",
+           "SeriesTerm", "ForestPeriodBudgetExceeded", "MissingForestPeriod"]
 
 
 def __getattr__(name):
@@ -51,6 +55,17 @@ def __getattr__(name):
     if name in ("ProductForestMoments", "product_forest_moment", "UnsupportedProductForestReduction"):
         from . import product_forests
         value = getattr(product_forests, name)
+        globals()[name] = value
+        return value
+    if name in ("ForestContractions", "ContractionResult", "ContractionBudgetExceeded"):
+        from . import forest_contractions
+        value = getattr(forest_contractions, name)
+        globals()[name] = value
+        return value
+    if name in ("CoreCurrentPeriods", "ExactPeriod", "ExactForestSeries", "SeriesTerm",
+                "ForestPeriodBudgetExceeded", "MissingForestPeriod"):
+        from . import forest_periods
+        value = getattr(forest_periods, name)
         globals()[name] = value
         return value
     raise AttributeError("module %r has no attribute %r" % (__name__, name))

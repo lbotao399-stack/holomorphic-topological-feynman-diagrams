@@ -1,0 +1,2016 @@
+{
+  "method": "source-preserving local contractions, exact current brackets, and residual periods",
+  "scope": "H=2,T=0 product forests at exact supplied rational sources",
+  "implementation_sha256": {
+    "code/htk/forest_contractions.py": "19222ab94a70691a48bd88ebc718981e0e8de5f631f98bdf480624194acf5729",
+    "code/htk/forest_periods.py": "c62884f56b03b472c2d639639af5c79c363f9ef1a9b343e1c76c5296ac069b6c",
+    "code/htk/_forest_period_worker.py": "abea469e9693161a0f512d127fa4a1f53eba793caf8b4b1becf38915a84caac6",
+    "code/htk/product_forests.py": "bf788aa268fc8baca5c2b484122386813040a1d63cfbf89ee27d2865a27b7eee",
+    "explore/circuit-general/sourced-forests/fixtures.py": "52477d623770bb9bc2591da7177a03606f51ecb2c942f88320527117b08cfc5d",
+    "explore/circuit-general/sourced-forests/certify.py": "a3ebcb75c16cfc25af47f5f799a310fa5ad4883601c7f21a3a6a10f72deeefeb",
+    "explore/circuit-general/sourced-forests/comb_reference.py": "dade79dd58d5992e2a107097c64c8c354d1a0814236d5bb1c4af5fbff2fd94f6",
+    "explore/circuit-general/sourced-forests/independent_duality.py": "033af40b0aba32a05996063c1bc529c70055e0d3b669c3c839757f70e6811e84",
+    "explore/circuit-general/sourced-forests/independent_six.py": "ea3ecbef09bb1355bcae461279d5feeff5ea614ee1f5af3f90eb14fdbbd5a864"
+  },
+  "complete_finite_examples": [
+    {
+      "name": "sourced_fork",
+      "loops": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -9,
+          -4
+        ]
+      ],
+      "marked": [
+        3,
+        4
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [],
+          "complete_value": {
+            "1": "1715/192"
+          },
+          "statistics": {
+            "backend": "finite_periods",
+            "input_current_terms": 1,
+            "bare_numerator_terms": 64,
+            "inserted_numerator_terms": 64,
+            "core_edges": 6,
+            "used_automorphisms": 24,
+            "core_period_orbits": 13,
+            "denominator_powers": [
+              5
+            ],
+            "independent_checks": 1,
+            "current_U_cancellations": {
+              "0": 0
+            },
+            "period_records": [
+              {
+                "q": 5,
+                "weighted_periods": 13,
+                "read_only_tables": true
+              }
+            ],
+            "contraction": {
+              "original_loops": 3,
+              "reduced_loops": 3,
+              "input_current_degree": 0,
+              "output_current_degree": 0,
+              "contraction_steps": 0,
+              "single_steps": 0,
+              "paired_steps": 0,
+              "largest_polynomial_terms": 1,
+              "largest_local_ratio_count": 0,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 0,
+              "step_term_counts": [],
+              "output_terms": 1
+            },
+            "all_original_sources_retained": true
+          }
+        },
+        {
+          "current_powers": [
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "complete_value": {
+            "1": "-2772371/43200",
+            "z3": "2597/50"
+          },
+          "statistics": {
+            "backend": "finite_periods",
+            "input_current_terms": 1,
+            "bare_numerator_terms": 64,
+            "inserted_numerator_terms": 420,
+            "core_edges": 6,
+            "used_automorphisms": 24,
+            "core_period_orbits": 44,
+            "denominator_powers": [
+              6
+            ],
+            "independent_checks": 1,
+            "current_U_cancellations": {
+              "1": 0
+            },
+            "period_records": [
+              {
+                "q": 6,
+                "weighted_periods": 44,
+                "read_only_tables": true
+              }
+            ],
+            "contraction": {
+              "original_loops": 3,
+              "reduced_loops": 3,
+              "input_current_degree": 1,
+              "output_current_degree": 1,
+              "contraction_steps": 0,
+              "single_steps": 0,
+              "paired_steps": 0,
+              "largest_polynomial_terms": 1,
+              "largest_local_ratio_count": 0,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 0,
+              "step_term_counts": [],
+              "output_terms": 1
+            },
+            "all_original_sources_retained": true
+          }
+        },
+        {
+          "current_powers": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ]
+          ],
+          "complete_value": {
+            "1": "-9359/120",
+            "z3": "637/10"
+          },
+          "statistics": {
+            "backend": "finite_periods",
+            "input_current_terms": 1,
+            "bare_numerator_terms": 64,
+            "inserted_numerator_terms": 1412,
+            "core_edges": 6,
+            "used_automorphisms": 24,
+            "core_period_orbits": 98,
+            "denominator_powers": [
+              7
+            ],
+            "independent_checks": 1,
+            "current_U_cancellations": {
+              "2": 0
+            },
+            "period_records": [
+              {
+                "q": 7,
+                "weighted_periods": 98,
+                "read_only_tables": true
+              }
+            ],
+            "contraction": {
+              "original_loops": 3,
+              "reduced_loops": 3,
+              "input_current_degree": 2,
+              "output_current_degree": 2,
+              "contraction_steps": 0,
+              "single_steps": 0,
+              "paired_steps": 0,
+              "largest_polynomial_terms": 1,
+              "largest_local_ratio_count": 0,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 0,
+              "step_term_counts": [],
+              "output_terms": 1
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "paired_higher_five",
+      "loops": 5,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -7,
+          -8
+        ]
+      ],
+      "marked": [
+        5,
+        6
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [],
+          "complete_value": {},
+          "statistics": {
+            "backend": "exact_zero",
+            "input_current_terms": 0,
+            "contraction": {
+              "original_loops": 5,
+              "reduced_loops": 3,
+              "input_current_degree": 0,
+              "output_current_degree": 4,
+              "contraction_steps": 1,
+              "single_steps": 0,
+              "paired_steps": 1,
+              "largest_polynomial_terms": 1,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 1,
+              "step_term_counts": [
+                0
+              ],
+              "output_terms": 0
+            },
+            "all_original_sources_retained": true
+          }
+        },
+        {
+          "current_powers": [
+            [
+              6,
+              0,
+              1
+            ]
+          ],
+          "complete_value": {
+            "1": "82364363/2721600"
+          },
+          "statistics": {
+            "backend": "series_parallel_generic",
+            "input_current_terms": 4,
+            "independent_checks": 1,
+            "current_factors": 3,
+            "distinct_current_factors": 3,
+            "ratio_factors": 12,
+            "density_factors": 6,
+            "substituted_factor_terms": 29,
+            "contraction": {
+              "original_loops": 5,
+              "reduced_loops": 3,
+              "input_current_degree": 1,
+              "output_current_degree": 5,
+              "contraction_steps": 1,
+              "single_steps": 0,
+              "paired_steps": 1,
+              "largest_polynomial_terms": 4,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 1,
+              "step_term_counts": [
+                4
+              ],
+              "output_terms": 4
+            },
+            "all_original_sources_retained": true
+          }
+        },
+        {
+          "current_powers": [
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              10,
+              1,
+              2
+            ]
+          ],
+          "complete_value": {
+            "1": "-2542321651/47628000"
+          },
+          "statistics": {
+            "backend": "series_parallel_generic",
+            "input_current_terms": 4,
+            "independent_checks": 1,
+            "current_factors": 5,
+            "distinct_current_factors": 4,
+            "ratio_factors": 16,
+            "density_factors": 6,
+            "substituted_factor_terms": 49,
+            "contraction": {
+              "original_loops": 5,
+              "reduced_loops": 3,
+              "input_current_degree": 3,
+              "output_current_degree": 7,
+              "contraction_steps": 1,
+              "single_steps": 0,
+              "paired_steps": 1,
+              "largest_polynomial_terms": 12,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 1,
+              "step_term_counts": [
+                4
+              ],
+              "output_terms": 4
+            },
+            "all_original_sources_retained": true
+          }
+        },
+        {
+          "current_powers": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              6,
+              0,
+              2
+            ]
+          ],
+          "complete_value": {
+            "1": "79343557121/6858432000"
+          },
+          "statistics": {
+            "backend": "series_parallel_generic",
+            "input_current_terms": 8,
+            "independent_checks": 1,
+            "current_factors": 5,
+            "distinct_current_factors": 5,
+            "ratio_factors": 16,
+            "density_factors": 6,
+            "substituted_factor_terms": 55,
+            "contraction": {
+              "original_loops": 5,
+              "reduced_loops": 3,
+              "input_current_degree": 3,
+              "output_current_degree": 7,
+              "contraction_steps": 1,
+              "single_steps": 0,
+              "paired_steps": 1,
+              "largest_polynomial_terms": 8,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 1,
+              "step_term_counts": [
+                8
+              ],
+              "output_terms": 8
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "irreducible_quartic_five",
+      "loops": 5,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -9,
+          -4
+        ]
+      ],
+      "marked": [
+        5,
+        6
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [],
+          "complete_value": {
+            "1": "3327759589/46656000",
+            "z3": "50942017/324000",
+            "z5": "-45619/180"
+          },
+          "statistics": {
+            "backend": "finite_periods",
+            "input_current_terms": 1,
+            "bare_numerator_terms": 91473,
+            "inserted_numerator_terms": 91473,
+            "core_edges": 9,
+            "used_automorphisms": 12,
+            "core_period_orbits": 2474,
+            "denominator_powers": [
+              7
+            ],
+            "independent_checks": 1,
+            "current_U_cancellations": {
+              "0": 0
+            },
+            "period_records": [
+              {
+                "q": 7,
+                "weighted_periods": 2474,
+                "read_only_tables": true
+              }
+            ],
+            "contraction": {
+              "original_loops": 5,
+              "reduced_loops": 5,
+              "input_current_degree": 0,
+              "output_current_degree": 0,
+              "contraction_steps": 0,
+              "single_steps": 0,
+              "paired_steps": 0,
+              "largest_polynomial_terms": 1,
+              "largest_local_ratio_count": 0,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 0,
+              "step_term_counts": [],
+              "output_terms": 1
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ],
+      "strict_nonvanishing_certificate": {
+        "method": "positive-series integral-test bounds for zeta(3) and zeta(5), through 32 terms",
+        "rational_lower": "-55790571828858764254707978452749215915870853290877236759389915900359/22522855601735187436814883140761291530761101764158796595200000000000",
+        "rational_upper": "-55687206989645097590720792576262607832263732361566058684234869025359/22522855601735187436814883140761291530761101764158796595200000000000",
+        "consequence": "-3 < complete kernel < -2"
+      }
+    },
+    {
+      "name": "nonplanar_quartic_six",
+      "loops": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -9,
+          -4
+        ]
+      ],
+      "marked": [
+        6,
+        7
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [],
+          "complete_value": {
+            "1": "-2553462100217/369515520000",
+            "z3": "-107288658589/1710720000",
+            "z5": "7666393/95040"
+          },
+          "statistics": {
+            "backend": "finite_periods",
+            "input_current_terms": 2,
+            "bare_numerator_terms": 91473,
+            "inserted_numerator_terms": 287184,
+            "core_edges": 9,
+            "used_automorphisms": 12,
+            "core_period_orbits": 7784,
+            "denominator_powers": [
+              8
+            ],
+            "independent_checks": 1,
+            "current_U_cancellations": {
+              "2": 1
+            },
+            "period_records": [
+              {
+                "q": 8,
+                "weighted_periods": 7784,
+                "read_only_tables": true
+              }
+            ],
+            "contraction": {
+              "original_loops": 6,
+              "reduced_loops": 5,
+              "input_current_degree": 0,
+              "output_current_degree": 2,
+              "contraction_steps": 1,
+              "single_steps": 1,
+              "paired_steps": 0,
+              "largest_polynomial_terms": 2,
+              "largest_local_ratio_count": 2,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 1,
+              "step_term_counts": [
+                2
+              ],
+              "output_terms": 2
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "higher_paired_comb_3",
+      "loops": 9,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "marked": [
+        3,
+        4
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [
+            [
+              14,
+              0,
+              1
+            ]
+          ],
+          "complete_value": {
+            "1": "-11549895079003417/586642839552000000"
+          },
+          "statistics": {
+            "backend": "series_parallel_generic",
+            "input_current_terms": 16,
+            "independent_checks": 1,
+            "current_factors": 7,
+            "distinct_current_factors": 3,
+            "ratio_factors": 28,
+            "density_factors": 6,
+            "substituted_factor_terms": 65,
+            "contraction": {
+              "original_loops": 9,
+              "reduced_loops": 3,
+              "input_current_degree": 1,
+              "output_current_degree": 13,
+              "contraction_steps": 3,
+              "single_steps": 0,
+              "paired_steps": 3,
+              "largest_polynomial_terms": 270,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 3,
+              "step_term_counts": [
+                4,
+                9,
+                16
+              ],
+              "output_terms": 16
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "higher_paired_comb_5",
+      "loops": 13,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "marked": [
+        3,
+        4
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [
+            [
+              22,
+              0,
+              1
+            ]
+          ],
+          "complete_value": {
+            "1": "-653729304337869467963209/3257778542909926806650880000000"
+          },
+          "statistics": {
+            "backend": "series_parallel_generic",
+            "input_current_terms": 36,
+            "independent_checks": 1,
+            "current_factors": 11,
+            "distinct_current_factors": 3,
+            "ratio_factors": 44,
+            "density_factors": 6,
+            "substituted_factor_terms": 101,
+            "contraction": {
+              "original_loops": 13,
+              "reduced_loops": 3,
+              "input_current_degree": 1,
+              "output_current_degree": 21,
+              "contraction_steps": 5,
+              "single_steps": 0,
+              "paired_steps": 5,
+              "largest_polynomial_terms": 2250,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 5,
+              "step_term_counts": [
+                4,
+                9,
+                16,
+                25,
+                36
+              ],
+              "output_terms": 36
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "higher_paired_comb_8",
+      "loops": 19,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          16,
+          13
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          16,
+          4
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          18,
+          15
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          18,
+          4
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          19,
+          3
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          20,
+          3
+        ],
+        [
+          20,
+          4
+        ]
+      ],
+      "full_balanced_sources": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "marked": [
+        3,
+        4
+      ],
+      "convention": "htk K_Gamma with the listed original edge order and orientations",
+      "moments": [
+        {
+          "current_powers": [
+            [
+              34,
+              0,
+              1
+            ]
+          ],
+          "complete_value": {
+            "1": "241018376797614391720336915629690895727/23196061207306780193313894655375109127143424000000000000"
+          },
+          "statistics": {
+            "backend": "series_parallel_generic",
+            "input_current_terms": 81,
+            "independent_checks": 1,
+            "current_factors": 17,
+            "distinct_current_factors": 3,
+            "ratio_factors": 68,
+            "density_factors": 6,
+            "substituted_factor_terms": 155,
+            "contraction": {
+              "original_loops": 19,
+              "reduced_loops": 3,
+              "input_current_degree": 1,
+              "output_current_degree": 33,
+              "contraction_steps": 8,
+              "single_steps": 0,
+              "paired_steps": 8,
+              "largest_polynomial_terms": 15360,
+              "largest_local_ratio_count": 4,
+              "global_ratio_coordinates": 0,
+              "exact_point_checks": 8,
+              "step_term_counts": [
+                4,
+                9,
+                16,
+                25,
+                36,
+                49,
+                64,
+                81
+              ],
+              "output_terms": 81
+            },
+            "all_original_sources_retained": true
+          }
+        }
+      ]
+    }
+  ],
+  "exact_series_example": {
+    "meaning": "complete infinite Gegenbauer series, with the explicit recurrence in DERIVATION.md",
+    "core_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "components": [
+      {
+        "denominator_power": 6,
+        "numerator": [
+          [
+            [
+              0,
+              1,
+              1,
+              3,
+              4,
+              3
+            ],
+            "3773/12"
+          ],
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              3,
+              3
+            ],
+            "-343/2"
+          ],
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              2
+            ],
+            "2401/4"
+          ],
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              2,
+              3
+            ],
+            "3773/6"
+          ],
+          [
+            [
+              0,
+              1,
+              2,
+              4,
+              3,
+              2
+            ],
+            "3773/6"
+          ],
+          [
+            [
+              0,
+              1,
+              3,
+              3,
+              2,
+              3
+            ],
+            "-343/2"
+          ],
+          [
+            [
+              0,
+              1,
+              3,
+              3,
+              3,
+              2
+            ],
+            "-6860"
+          ],
+          [
+            [
+              0,
+              1,
+              3,
+              3,
+              4,
+              1
+            ],
+            "1715/6"
+          ],
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              1,
+              3
+            ],
+            "3773/12"
+          ],
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              2,
+              2
+            ],
+            "3773/6"
+          ],
+          [
+            [
+              0,
+              1,
+              3,
+              4,
+              3,
+              1
+            ],
+            "3773/12"
+          ],
+          [
+            [
+              0,
+              1,
+              4,
+              3,
+              2,
+              2
+            ],
+            "2401/4"
+          ],
+          [
+            [
+              0,
+              1,
+              4,
+              3,
+              3,
+              1
+            ],
+            "1715/6"
+          ],
+          [
+            [
+              0,
+              2,
+              2,
+              2,
+              3,
+              3
+            ],
+            "-343"
+          ],
+          [
+            [
+              0,
+              2,
+              2,
+              2,
+              4,
+              2
+            ],
+            "2401/2"
+          ],
+          [
+            [
+              0,
+              2,
+              2,
+              3,
+              3,
+              2
+            ],
+            "33271/6"
+          ],
+          [
+            [
+              0,
+              2,
+              2,
+              3,
+              4,
+              1
+            ],
+            "12691/12"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              2,
+              3,
+              2
+            ],
+            "-6860"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              2,
+              4,
+              1
+            ],
+            "1715/3"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              3,
+              2,
+              2
+            ],
+            "33271/6"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              3,
+              3,
+              1
+            ],
+            "-25382"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              3,
+              4,
+              0
+            ],
+            "686/3"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              2,
+              1
+            ],
+            "12691/12"
+          ],
+          [
+            [
+              0,
+              2,
+              3,
+              4,
+              3,
+              0
+            ],
+            "1372/3"
+          ],
+          [
+            [
+              0,
+              3,
+              3,
+              3,
+              3,
+              0
+            ],
+            "-34643/3"
+          ],
+          [
+            [
+              1,
+              1,
+              1,
+              2,
+              3,
+              4
+            ],
+            "2744/3"
+          ],
+          [
+            [
+              1,
+              1,
+              1,
+              3,
+              3,
+              3
+            ],
+            "6860/3"
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              2,
+              2,
+              4
+            ],
+            "7203/4"
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              2,
+              3,
+              3
+            ],
+            "-3773"
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              3,
+              1,
+              4
+            ],
+            "10633/12"
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              3,
+              2,
+              3
+            ],
+            "8575/2"
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              4,
+              1,
+              3
+            ],
+            "2401/2"
+          ],
+          [
+            [
+              1,
+              1,
+              2,
+              4,
+              2,
+              2
+            ],
+            "16121/12"
+          ],
+          [
+            [
+              1,
+              1,
+              3,
+              2,
+              2,
+              3
+            ],
+            "-28469/2"
+          ],
+          [
+            [
+              1,
+              1,
+              3,
+              3,
+              1,
+              3
+            ],
+            "1715"
+          ],
+          [
+            [
+              1,
+              1,
+              3,
+              3,
+              2,
+              2
+            ],
+            "123137/6"
+          ],
+          [
+            [
+              1,
+              1,
+              3,
+              4,
+              1,
+              2
+            ],
+            "3430/3"
+          ],
+          [
+            [
+              1,
+              1,
+              4,
+              2,
+              2,
+              2
+            ],
+            "2401/2"
+          ],
+          [
+            [
+              1,
+              2,
+              2,
+              2,
+              2,
+              3
+            ],
+            "-8575/2"
+          ],
+          [
+            [
+              1,
+              2,
+              2,
+              2,
+              3,
+              2
+            ],
+            "-99127/6"
+          ],
+          [
+            [
+              1,
+              2,
+              2,
+              2,
+              4,
+              1
+            ],
+            "3087/2"
+          ],
+          [
+            [
+              1,
+              2,
+              2,
+              3,
+              3,
+              1
+            ],
+            "-22295/6"
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              3,
+              2,
+              1
+            ],
+            "17836/3"
+          ],
+          [
+            [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "-1372"
+          ]
+        ]
+      }
+    ],
+    "constant": "0",
+    "certified_terms": [
+      {
+        "order": 0,
+        "term": "-4841299372/10986328125",
+        "partial_sum": "-4841299372/10986328125",
+        "absolute_tail_bound": "2435175907378592651/18750000000000"
+      },
+      {
+        "order": 1,
+        "term": "-111745193602448/185394287109375",
+        "partial_sum": "-193442120504948/185394287109375",
+        "absolute_tail_bound": "4058136238405870397/31250000000000"
+      },
+      {
+        "order": 2,
+        "term": "-65911499082843064/115871429443359375",
+        "partial_sum": "-62270941466145188/38623809814453125",
+        "absolute_tail_bound": "20281120851139563569/156250000000000"
+      }
+    ],
+    "finite_period_control": {
+      "1": "-2772371/43200",
+      "z3": "2597/50"
+    }
+  }
+}
