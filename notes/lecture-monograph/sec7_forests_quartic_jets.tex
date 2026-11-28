@@ -1,0 +1,429 @@
+% ============================================================================
+\section{Five-Loop \texorpdfstring{$K_{3,3}+e$}{K\_\{3,3\}+e} Completion, \texorpdfstring{$200/200$}{200/200} Forest Census, Universal Open-Color Quartic Products, and \texorpdfstring{$6$}{6}-Current Simplex Jets}
+\label{sec:forests-quartic-jets}
+% ============================================================================
+
+In four-dimensional holomorphic gauge-matter theories on $\C^2$ ($H=2, T=0$), cochain star products $A \star B$ and higher $A_\infty / L_\infty$ homotopy operations localize onto \emph{marked product forests}: connected bridgeless graphs $\Gamma = (V,E)$ ($|E| = 2n+1$, $|V| = n+2$) with distinguished input vertices $A,B$, marked edge $AB$, and $n$ internal interaction vertices such that $\Gamma\setminus\{A,B\}$ is a disjoint union of trees~\cite{BGKWY,GKW,LLC,Repo9e833c8}. Because every internal edge in $\Gamma\setminus\{AB\}$ originates from a homotopy propagator $K_{\mathrm{hom}}$ connecting interaction vertices to one another or to $\{A,B\}$, cycle-free tree topology on $\Gamma\setminus\{A,B\}$ is forced by form-degree counting on $\C^2$.
+
+Individual forest integrals regularly evaluate in $\QQ + \QQ\zeta(3) + \QQ\zeta(5)$, yet satisfy exact rational differential Ward identities $D m = b$ (quantum Leibniz rules against rational spider boundaries) because homogeneous cycles $z \in \ker D$ carry transcendental periods without altering $D(m + c\,z) = b$. This chapter establishes universal sourced elimination and compact spanning-tree cube series, closes the five-loop $K_{3,3}+e$ forest target and all $200/200$ five-loop product forests, proves representation-commutator $\zeta(3)$ cancellation across all open-color nonrenormalizable products and $4$-loop $\ghb^2$ products, and reduces all simultaneous input derivative jets via a closed $6$-current simplex form.
+
+\subsection{Terminating Post-Order Elimination, Spanning-Tree Cube Atlas, and Local Logarithms}
+\label{subsec:forest-cube-atlas}
+
+\begin{theorem}[Post-order sourced elimination, $\tau_\Gamma n!$ cube atlas, and negative-binomial tail bound~{\cite{Repo9e833c8}}]
+\label{thm:forest-cube-series}
+Let $\Gamma$ be an $n$-loop marked product forest on $\C^2$ with arbitrary balanced spinor sources $\sum_{\substack{v\in V\\\mathrm{vertices}}}\lambda_{v,+\dot{a}} = 0$ ($\langle\lambda_u,\lambda_v\rangle := \eps^{\dot{a}\dot{b}}\lambda_{u,+\dot{a}}\lambda_{v,+\dot{b}}$).
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Valence-$\le 3$ post-order Schur elimination:} Rooting each component of $\Gamma\setminus\{A,B\}$ and eliminating descendants before parents keeps \textbf{at most $3$ retained neighbors $\{\mathrm{parent}(v), A, B\}$} at every step ($190{,}326$ checks across all $1{,}135$ topologies through $6$ loops), factoring $U_\Gamma(t) = (\prod_{\substack{e\in E\\\mathrm{edges}}}t_e)g_{AB}^{\mathrm{final}}\prod_{\substack{v\\\mathrm{eliminated}}}g_v$ and reconstructing original currents with exact resistance derivatives $\frac{\partial y_{e,+\dot{a}}}{\partial t_f} = (\frac{B^u{}_e(\Lambda^{-1})_{uv}B^v{}_f}{t_e} - \delta_{ef})\frac{y_{f,+\dot{a}}}{t_f}$.
+
+  \item \emph{Compact $\tau_\Gamma n!$ MST cube atlas and $4n \to 2n+1$ determinant drop:} Partitioning $\mathbb{RP}^{2n}_{>0}$ into $\tau_\Gamma n!$ chord-ordered minimum-spanning-tree cubes ($t_{c_n}=1$, $t_{c_j}=\prod_{\substack{k\in\{j,\dots,n-1\}\\\mathrm{ratios}}}r_k$, $t_f = x_f t_{c_{j(f)}} \in [0,1]^{2n}$; e.g.\ $144$ vs.\ $5{,}040$ Hepp chambers at $n=3$) produces $\widetilde{U}(x) \in 1 + \ZZ_{\ge 0}[x]$ with $1 \le \widetilde{U}(x) \le \tau_\Gamma$, while the $(2n+1)\times(2n+1)$ augmented determinant
+  \begin{equation}
+  \label{eq:augmented-det-drop}
+  \det\!\left(\frac{\partial(Y/\widetilde{U})}{\partial x_j}\right)_{1\le p,j\le 2n} = \frac{1}{\widetilde{U}^{2n+1}}\det\!\begin{pmatrix}\widetilde{U} & \partial_1\widetilde{U} & \cdots & \partial_{2n}\widetilde{U}\\ Y & \partial_1 Y & \cdots & \partial_{2n}Y\end{pmatrix}
+  \end{equation}
+  lowers the raw denominator power from $\widetilde{U}^{4n}$ to $\widetilde{U}^{2n+1}$.
+
+  \item \emph{Certified midpoint series:} Expanding $P_c/\widetilde{U}_c^{\nu_c}$ around $c_{\mathrm{mid}} := \frac{\tau_\Gamma+1}{2}$ (ratio $r := \frac{\tau_\Gamma-1}{\tau_\Gamma+1} < 1$) converges to an exact rational series whose remainder after order $K$ is bounded a priori by $B_K := r^{K+1}\sum_{\substack{c\\\mathrm{cubes}}}A_c\sum_{\substack{j\in\{0,\dots,\nu_c-1\}\\\mathrm{tail\ terms}}}\binom{K+j}{j}\bigl(\frac{2}{\tau_\Gamma+1}\bigr)^j \to 0$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), eliminating a leaf $v$ of the interaction tree adds fill-in edges solely inside $\{\mathrm{parent}(v), A, B\}$, never linking distinct branches. In~(2), subtracting $y_p = Y_p/\widetilde{U}$ times row $0$ from row $p$ in~\eqref{eq:augmented-det-drop} reduces column $0$ to $(\widetilde{U},0,\dots,0)$ and the remaining $2n\times 2n$ block to $\widetilde{U}\partial_j y_p$, cancelling $\widetilde{U}^{2n+1}/\widetilde{U}^{2n+1} = 1$. In~(3), Pascal induction proves $(1-r)^\nu\sum_{\substack{k\ge K+1\\\mathrm{omitted}}}\binom{\nu+k-1}{k}r^k = r^{K+1}\sum_{\substack{j\in\{0,\dots,\nu-1\}\\\mathrm{finite\ sum}}}\binom{K+j}{j}(1-r)^j$ at $1-r = \frac{2}{\tau_\Gamma+1}$.
+\end{proof}
+
+\begin{example}[{Passive $19$-loop combs, $128$-loop fans, $k$-ears, and local $\log\frac{25}{6}$ vs.\ global $-26$}]
+\label{ex:local-log-vs-global-int}
+For passive source-free stars, Schur's identity cancels one $U$ factor per spinor bracket, evaluating paired-star Ward quotients through $19$ loops ($q=22$); reverse spoke transfer on $\texttt{fan}(n)$ computes all $m \le 8$ Taylor jets at \textbf{$128$ loops} ($257$ edges) in $\binom{11}{3} = 165$ states; and $k$-ear bundles evaluate through $11$ loops in $\le\binom{m+k+q+2}{2}$ core samples.
+
+Conversely, applying a \emph{single} sourced star move $\mathrm{Y}_1$ on the $2$-loop forest $(01,02,03,13,23)$ at $(T_{12},T_{13},T_{23}) = (2,3,5)$ produces a bilinear denominator $D = 2r_1 r_2 - 7r_1 - 5r_2 + 10$ whose fiber integral equals $\frac{147541}{20577000} + \frac{30781}{9774075}\log\frac{25}{6}$, whereas two independent integrations of the complete $2$-loop graph give the rational integer $-26 \in \ZZ$!
+\end{example}
+
+\begin{lemma}[{Augmented $(2n+1)\times(2n+1)$ current-area determinant drop and negative-binomial tail identity}]
+\label{lem:augmented-det-tail}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item For smooth functions $Y = (Y_1,\dots,Y_{2n})$ and $\widetilde{U} > 0$ of $x = (x_1,\dots,x_{2n})$ with $y_p := Y_p/\widetilde{U}$, elementary row elimination proves~\eqref{eq:augmented-det-drop}, cancelling $\widetilde{U}^{2n-1}$ out of the naive quotient-rule denominator $\widetilde{U}^{4n}$.
+
+  \item For $|u| \le r < 1$ and integer $\nu \ge 1$,
+  \[
+  (1-r)^\nu\sum_{\substack{k\ge K+1\\\mathrm{tail\ index}}}\binom{\nu+k-1}{k}r^k = r^{K+1}\sum_{\substack{j\in\{0,\dots,\nu-1\}\\\mathrm{finite\ sum}}}\binom{K+j}{j}(1-r)^j,
+  \]
+  and setting $u := \frac{c_{\mathrm{mid}}-\widetilde{U}(x)}{c_{\mathrm{mid}}}$ at $c_{\mathrm{mid}} = \frac{\tau_\Gamma+1}{2}$ gives $|u| \le \frac{\tau_\Gamma-1}{\tau_\Gamma+1} = r < 1$ across $[0,1]^{2n}$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Row-operation cancellation of $\widetilde{U}^{2n-1}$}
+In the $(2n+1)\times(2n+1)$ matrix of~\eqref{eq:augmented-det-drop}, subtracting $y_p = Y_p/\widetilde{U}$ times row $0$ from row $p$ ($1 \le p \le 2n$) zeroes $(p,0)$ and turns $(p,j)$ into $\partial_j Y_p - (Y_p/\widetilde{U})\partial_j\widetilde{U} = \widetilde{U}\partial_j(Y_p/\widetilde{U})$. Cofactor expansion down column $0$ extracts $\widetilde{U}\cdot\widetilde{U}^{2n}\det(\partial_j y_p) = \widetilde{U}^{2n+1}\det(\partial_j y_p)$, proving divisibility of the integer determinant by $\widetilde{U}^{2n-1}$ in $\ZZ[x]$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Inductive Pascal telescoping and cube radius}
+At $\nu = 1$, $(1-r)\sum_{\substack{k\ge K+1\\\mathrm{tail}}}r^k = r^{K+1}$. Inducting from $\nu$ to $\nu+1$ via $\binom{\nu+k}{k} = \binom{\nu+k-1}{k} + \binom{\nu+k-1}{k-1}$ and shifting $k' = k-1$ in the second sum telescopes $(1-r)\binom{K+j}{j}$ against $r\binom{\nu+K}{K}(1-r)^\nu$, yielding $r^{K+1}\sum_{\substack{j\in\{0,\dots,\nu\}\\\mathrm{sum}}}\binom{K+j}{j}(1-r)^j$. Since $1 \le \widetilde{U}(x) \le \tau_\Gamma$, $|\widetilde{U}(x)-c_{\mathrm{mid}}| \le \frac{\tau_\Gamma-1}{2}$, dividing by $c_{\mathrm{mid}} = \frac{\tau_\Gamma+1}{2}$ gives $|u| \le \frac{\tau_\Gamma-1}{\tau_\Gamma+1} < 1$.
+\end{proofpart}
+\end{proof}
+
+\begin{proposition}[{Passive $19$-loop paired-star Schur determinant, $128$-loop endpoint fan transfer, and $k$-ear bundles~{\cite{LLC,Repo9e833c8}}}]
+\label{prop:passive-comb-fan-ear}
+On $\C^2$ ($H=2, T=0$, Figure~\ref{fig:comb-fan-ear}):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Passive paired-star Schur cancellation through $19$ loops:} Eliminating $m$ unsourced internal trivalent star vertices $v_1,\dots,v_m \notin S_{\mathrm{src}}$ attached exclusively to three retained boundary terminals $\{u_1,u_2,u_3\}$ replaces $U_\Gamma(t) = (\prod_{\substack{p\in\{1,\dots,m\}\\\mathrm{stars}}}S_p)U_{\mathrm{red}}(c(t))$ ($S_p := t_{p,1}t_{p,2} + t_{p,2}t_{p,3} + t_{p,3}t_{p,1}$), while Schur's determinant identity on each $2\times 2$ spinor current block cancels one factor of $U_{\mathrm{red}}$ per loop, compressing paired-star Ward-quotient integration to rational simplex moments verified through $n = 19$ loops ($q = 22$).
+
+  \item \emph{Reverse spoke transfer on $\texttt{fan}(n)$ through $128$ loops and $k$-ear core bundles:} On the $n$-loop endpoint fan $\texttt{fan}(n)$ ($2n+1$ edges: $n+1$ spokes + $n$ base segments~\cite{LLC}), integrating spoke variables sequentially from $n$ down to $1$ evolves degree-$\le m$ polynomial Taylor jets in a state space of fixed dimension $\binom{m+3}{3}$ independent of $n$ ($165$ states at $m=8$, evaluating $128$-loop $257$-edge jets in exact $\QQ$), while attaching $k$ parallel $2$-edge ears across an irreducible core evaluates through $11$ loops from at most $\binom{m+k+q+2}{2}$ core period samples.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Unsourced star--triangle Jacobian and Schur cancellation}
+Each unsourced star $v_p$ carries zero external source ($\lambda^{v_p}{}_{+\dot{a}} = 0$), so its elimination shifts zero sources onto $\{u_1,u_2,u_3\}$ and contributes a pure beta-simplex Jacobian over $(t_{p,1},t_{p,2},t_{p,3})$ at fixed effective conductances $c_{ab}^{(p)} = t_{p,c}/S_p$, while cofactor extraction as in~\eqref{eq:augmented-det-drop} cancels $U_{\mathrm{red}}^{n-1}$ before summing the reduced $3$-terminal triangle.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Bounded-degree Markov state space on $\texttt{fan}(n)$ and $k$-ear fibers}
+At step $s$ of the reverse spoke scan on $\texttt{fan}(n)$, integrating spoke resistance $t_{\mathrm{sp},s} \in (0,\infty)$ against $(t_{\mathrm{sp},s} + R_{\mathrm{tail}})^{-\nu}$ maps any homogeneous polynomial of degree $m$ in $(R_{\mathrm{tail}}, \lambda_{\mathrm{acc},+\dot{+}}, \lambda_{\mathrm{acc},+\dot{-}})$ into the identical $\binom{m+3}{3}$-dimensional polynomial space at step $s-1$; similarly, integrating $k$ parallel $2$-edge ears inserts a degree-$\le(m+k+q)$ bivariate polynomial into the fixed core.
+\end{proofpart}
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.89]
+  % (a) 128-loop endpoint fan(n)
+  \begin{scope}[xshift=-5.35cm]
+    \draw[rounded corners=2.5pt, draw=NavyBlue!55, fill=white, line width=0.5pt] (-2.30,-1.45) rectangle (2.30,1.45);
+    \node[font=\tiny\bfseries, text=NavyBlue!85!black] at (0,1.15) {(a) Endpoint $\texttt{fan}(n)$};
+    \coordinate (ap) at (0,0.68);
+    \foreach \idx/\xx in {0/-1.45, 1/-0.65, 2/0.15, 3/1.45} {
+      \coordinate (bs\idx) at (\xx,-0.45);
+      \draw[prop, NavyBlue!85!black] (ap)--(bs\idx);
+      \filldraw[vbiv] (bs\idx) circle (0.048cm);
+    }
+    \draw[prop] (bs0)--(bs1)--(bs2);
+    \draw[prop, dotted] (bs2)--(bs3);
+    \filldraw[v0] (ap) circle (0.054cm);
+    \node[font=\tiny] at (0,-1.08) {$n=128$: $\binom{11}{3}=165$ states};
+  \end{scope}
+  % (b) 19-loop passive paired-star comb
+  \begin{scope}[xshift=0cm]
+    \draw[rounded corners=2.5pt, draw=PineGreen!55, fill=white, line width=0.5pt] (-2.30,-1.45) rectangle (2.30,1.45);
+    \node[font=\tiny\bfseries, text=PineGreen!85!black] at (0,1.15) {(b) Paired-Star Comb};
+    \coordinate (ta) at (-1.35, 0.55);
+    \coordinate (tb) at ( 1.35, 0.55);
+    \coordinate (tc) at ( 0.00,-0.65);
+    \draw[line width=0.95pt, densely dashed, draw=PineGreen!85!black] (ta)--(tb);
+    \foreach \xx in {-0.65, 0.00, 0.65} {
+      \coordinate (st) at (\xx,0.08);
+      \draw[prop] (st)--(ta); \draw[prop] (st)--(tb); \draw[prop] (st)--(tc);
+      \filldraw[v0] (st) circle (0.045cm);
+    }
+    \filldraw[vbiv] (ta) circle (0.052cm); \filldraw[vbiv] (tb) circle (0.052cm); \filldraw[vbiv] (tc) circle (0.052cm);
+    \node[font=\tiny] at (0,-1.08) {Schur drop ($n \le 19$)};
+  \end{scope}
+  % (c) k-ear core bundle
+  \begin{scope}[xshift=5.35cm]
+    \draw[rounded corners=2.5pt, draw=Plum!65, fill=white, line width=0.5pt] (-2.30,-1.45) rectangle (2.30,1.45);
+    \node[font=\tiny\bfseries, text=Plum!85!black] at (0,1.15) {(c) $k$-Ear Core Bundle};
+    \coordinate (ea) at (-1.15,-0.15); \coordinate (eb) at (1.15,-0.15);
+    \coordinate (ec) at (0,0.62); \coordinate (ed) at (0,-0.62);
+    \draw[prop] (ea)--(ec)--(eb)--(ed)--cycle; \draw[prop] (ec)--(ed);
+    \draw[prop, Plum!85!black] (ea) .. controls (-0.45,0.88) and (0.45,0.88) .. node[pos=0.5, vbiv, scale=0.78] {} (eb);
+    \draw[prop, Plum!85!black] (ea) .. controls (-0.45,-0.92) and (0.45,-0.92) .. node[pos=0.5, vbiv, scale=0.78] {} (eb);
+    \foreach \pt in {ea,eb,ec,ed} \filldraw[v0] (\pt) circle (0.048cm);
+    \node[font=\tiny] at (0,-1.08) {$k$ ears ($n \le 11$)};
+  \end{scope}
+\end{tikzpicture}
+\caption{All-order and high-loop tractable product-forest families of Proposition~\ref{prop:passive-comb-fan-ear}: (a)~endpoint $\texttt{fan}(n)$ evaluated at $128$ loops via $165$-state reverse spoke transfer; (b)~passive paired-star comb through $19$ loops; (c)~$k$-ear bundle over an irreducible core through $11$ loops.}
+\label{fig:comb-fan-ear}
+\end{figure}
+
+\subsection{Finite Five-Loop \texorpdfstring{$K_{3,3}+e$}{K\_\{3,3\}+e} Completion and \texorpdfstring{$200/200$}{200/200} Five-Loop Forest Census}
+\label{subsec:k33e-and-census}
+
+\begin{theorem}[Finite $5$-loop $K_{3,3}+e$ evaluation, $468$-monomial $K_5-e$ currents, and $200/200$ census~{\cite{BBKP18,Repo9e833c8}}]
+\label{thm:k33e-completion}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Exact $K_{3,3}+e$ closure via $17$ parametric annihilators:} On the $5$-loop $K_{3,3}+e$ product forest ($10{,}577$ original / $7{,}368$ scalar numerator terms compressed to $17$ $I_7$ periods), $17$ Bitoun--Bogner--Klausen--Panzer parametric annihilators~\cite{BBKP18} ($\sum_{\substack{p\in\{1,\dots,10\}\\\mathrm{edges}}}a_p\partial_p U = bU$: $3$ degree-$1$ $+ 14$ degree-$2$ on $135$-term $U$) generate $42{,}472$ rows and $1{,}039$ identities evaluating $R_{17} = +\frac{529509659453}{3990767616000} + \frac{272322049}{769824000}\zeta(3) - \frac{57527}{106920}\zeta(5)$, cancelling $+\frac{57527}{106920}\zeta(5)$ in $F_{\mathrm{old}}$ identically to yield
+  \begin{equation}
+  \label{eq:k33e-1187-exact}
+  K_{K_{3,3}+e}(1,0;\,2,1;\,-3,-1) = \frac{1187 - 816\zeta(3)}{435456000} = \frac{1187}{435456000} - \frac{17}{9072000}\zeta(3) > 0,
+  \end{equation}
+  while its general $4$-source polynomial ($10$ bracket orbits in $\QQ+\QQ\zeta(3)+\QQ\zeta(5)$) factors $\frac{\langle\lambda_5,\lambda_6\rangle}{60480}$ out of $C_{\zeta(5)}$ (explaining $[\zeta(5)] = 0$ at $\lambda_5=0$).
+
+  \item \emph{Syzygy-free $K_5-e$ current polynomial and $200/200$ five-loop census:} On the physical $5$-loop quartic forest $(01,13,02,24,05,06,35,36,45,46,56)$ reducing to $K_5-e$ (\texttt{prism} dual at $q=7,8$), top-degree syzygy $b f_{e,6} = a g_{e,6}$ ($f_{e,6}=a h_{e,5}, g_{e,6}=b h_{e,5}$) reconstructs $K(\lambda)$ ($16$ bracket monomials; benchmark $K((1,2),(3,-1),(5,3),(-9,-4)) = \frac{3327759589}{46656000} + \frac{50942017}{324000}\zeta(3) - \frac{45619}{180}\zeta(5)$) and all $11$ first-current spinors ($468$ monomials, $1{,}334$ rational coefficients) in denominator-free $\GL_2(\C)$-covariant form valid across all degenerate source frames:
+  \begin{equation}
+  \label{eq:k5me-covariant-current}
+  \begin{aligned}
+  M_{e,+\dot{a}}(\lambda) &= \sum_{\substack{p+q\le 5\\\mathrm{frame\ deg}}}\langle\lambda_1,\lambda_2\rangle^{5-p-q}\langle\lambda_5,\lambda_2\rangle^p\langle\lambda_1,\lambda_5\rangle^q\bigl(f_{e,pq}\lambda_{1,+\dot{a}} + g_{e,pq}\lambda_{2,+\dot{a}}\bigr)\\
+  &\quad + \sum_{\substack{p+q=5\\\mathrm{top\ syzygy}}}\langle\lambda_5,\lambda_2\rangle^p\langle\lambda_1,\lambda_5\rangle^q h_{e,pq}\lambda_{5,+\dot{a}}.
+  \end{aligned}
+  \end{equation}
+  Across \textbf{all $200/200$ five-loop product forests} ($2{,}200$ spinors, $4{,}400$ entries, Figure~\ref{fig:five-loop-forests}), $10$ bare kernels vanish ($10/10$ have nonzero first currents, exemplified in Table~\ref{tab:zero-marked-currents}), $107 \in \QQ$, $77 \in \QQ+\QQ\zeta(3)$, and $6 \in \QQ+\QQ\zeta(3)+\QQ\zeta(5)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), integrating $\sum_{\substack{p\\\mathrm{edges}}}\partial_p(t_p^{\alpha_p}a_p U^{-q}) = 0$ on $\mathbb{RP}^9_{>0}$ yields exact rational period relations without pole shifts; $2{,}580$ pivots express $R_{17}$ in $K_{3,3}$/\texttt{prism} masters, cancelling $\zeta(5)$ and matching \texttt{ForestCubeExpansion} intervals. In~(2), comparing $\GL_2$ frames $\lambda_1=(1,0),\lambda_2=(0,1),\lambda_5=(a,b)$ and $\lambda_2=(s,t),\lambda_5=(0,1)$ at $t=0$ proves $\deg f_e,\deg g_e \le 6$ and $f_{e,6}=a h_{e,5}, g_{e,6}=b h_{e,5}$, unisolvent on $16$ symmetry-reduced integer nodes and verified independently on $((2,1),(1,2),(-1,4))$ and degenerate $((1,0),(2,0),(0,1))$.
+\end{proof}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}crr@{}}
+\toprule
+\textbf{Oriented Edge $e$} & \textbf{Coefficient $A_e$} & \textbf{Coefficient $B_e$} \\
+\midrule
+$0\to 1$ and $1\to 3$ & $\frac{923}{1828915200} - \frac{1}{8467200}\zeta(3) > 0$ & $\frac{17}{114307200} - \frac{1}{8467200}\zeta(3) > 0$ \\
+$0\to 2$ and $2\to 4$ & $-\frac{17}{114307200} + \frac{1}{8467200}\zeta(3)$ & $-\frac{923}{1828915200} + \frac{1}{8467200}\zeta(3)$ \\
+$0\to 5$ & $\frac{38987}{30481920000} - \frac{137}{105840000}\zeta(3)$ & $-\frac{38987}{30481920000} + \frac{137}{105840000}\zeta(3)$ \\
+$0\to 6$ & $-\frac{49837}{30481920000} + \frac{137}{105840000}\zeta(3)$ & $\frac{49837}{30481920000} - \frac{137}{105840000}\zeta(3)$ \\
+$3\to 5$ & $\frac{1597}{2612736000} - \frac{1}{6048000}\zeta(3)$ & $\frac{341}{338688000} - \frac{11}{14112000}\zeta(3)$ \\
+$3\to 6$ & $-\frac{1949}{18289152000} + \frac{1}{21168000}\zeta(3)$ & $-\frac{1121}{1306368000} + \frac{1}{1512000}\zeta(3)$ \\
+$4\to 5$ & $-\frac{341}{338688000} + \frac{11}{14112000}\zeta(3)$ & $-\frac{1597}{2612736000} + \frac{1}{6048000}\zeta(3)$ \\
+$4\to 6$ & $\frac{1121}{1306368000} - \frac{1}{1512000}\zeta(3)$ & $\frac{1949}{18289152000} - \frac{1}{21168000}\zeta(3)$ \\
+$5\to 6$ & $\frac{40393}{45722880000} - \frac{1}{1470000}\zeta(3)$ & $-\frac{40393}{45722880000} + \frac{1}{1470000}\zeta(3)$ \\
+\bottomrule
+\end{tabular}
+\caption{Complete $11$-edge first-current spinors $M_{e,+\dot{a}}|_{\lambda_5=0} = \langle\lambda_1,\lambda_2\rangle^5(A_e\lambda_{1,+\dot{a}} + B_e\lambda_{2,+\dot{a}})$ on the five-loop $K_5-e$ quartic forest where $K|_{\lambda_5=0} \equiv 0$, obeying $\zeta(3) < \frac{5}{4} \implies A_{01} > \frac{653}{1828915200} > 0$~\cite{Repo9e833c8}.}
+\label{tab:zero-marked-currents}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.90]
+  % Left: 5-loop K_{3,3}+e product forest
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=NavyBlue!60!black, fill=NavyBlue!2.5, line width=0.5pt] (-3.85,-1.75) rectangle (3.85,1.75);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.42) {(a) $5$-Loop $K_{3,3}+e$ Forest};
+    \foreach \idx/\xx in {1/-1.55, 2/0.0, 3/1.55} {
+      \coordinate (ua\idx) at (\xx, 0.78);
+      \coordinate (ub\idx) at (\xx,-0.34);
+    }
+    \foreach \p in {1,2,3} \foreach \q in {1,2,3} \draw[prop, gray!80!black] (ua\p)--(ub\q);
+    \draw[line width=1.1pt, densely dashed, draw=PineGreen!85!black] (ub1) .. controls (0,-0.78) .. node[below=0.5pt, font=\tiny, text=PineGreen!85!black] {$e_{AB}$} (ub3);
+    \foreach \p in {1,2,3} \filldraw[v0] (ua\p) circle (0.052cm);
+    \filldraw[vbiv] (ub1) circle (0.055cm) node[left=1pt, font=\tiny] {$A$};
+    \filldraw[v0] (ub2) circle (0.052cm);
+    \filldraw[vbiv] (ub3) circle (0.055cm) node[right=1pt, font=\tiny] {$B$};
+    \node[font=\tiny] at (0,-1.40) {$K = \frac{1187 - 816\zeta(3)}{435456000}$};
+  \end{scope}
+
+  % Right: 5-loop K_5 - e quartic product forest
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=PineGreen!65!black, fill=PineGreen!2.5, line width=0.5pt] (-3.85,-1.75) rectangle (3.85,1.75);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.42) {(b) $5$-Loop Quartic $K_5-e$ Forest};
+    \coordinate (v0) at (0,0.82);
+    \coordinate (v1) at (-1.55,0.28); \coordinate (v3) at (-1.55,-0.58);
+    \coordinate (v2) at ( 1.55,0.28); \coordinate (v4) at ( 1.55,-0.58);
+    \coordinate (v5) at (-0.65,-0.68); \coordinate (v6) at ( 0.65,-0.68);
+    \draw[line width=1.1pt, densely dashed, draw=PineGreen!85!black] (v5)--(v6);
+    \draw[prop] (v0)--(v1)--(v3)--(v5); \draw[prop] (v3)--(v6);
+    \draw[prop] (v0)--(v2)--(v4)--(v5); \draw[prop] (v4)--(v6);
+    \draw[prop] (v0)--(v5); \draw[prop] (v0)--(v6);
+    \draw[extleg] (v1)--++(-0.35,0.12) node[left=-1pt, font=\tiny] {$\lambda_1$};
+    \draw[extleg] (v2)--++( 0.35,0.12) node[right=-1pt, font=\tiny] {$\lambda_2$};
+    \node[vi2] at (v0) {};
+    \foreach \pt in {v1,v2,v3,v4} \filldraw[v0] (\pt) circle (0.05cm);
+    \filldraw[vbiv] (v5) circle (0.055cm) node[below=1pt, font=\tiny] {$5$};
+    \filldraw[vbiv] (v6) circle (0.055cm) node[below=1pt, font=\tiny] {$6$};
+    \node[font=\tiny] at (0,-1.35) {$16$ bare $+ 468$ current monomials};
+  \end{scope}
+\end{tikzpicture}
+\caption{Key five-loop $\C^2$ product forests completed in Theorem~\ref{thm:k33e-completion}: (a)~$K_{3,3}+e$ evaluated via $17$ parametric annihilators cancelling $\zeta(5)$; (b)~physical quartic $K_5-e$ ($\blacksquare = \Wb_4$) with $16$ bare and $468$ first-current spinor monomials across $200/200$ five-loop forests.}
+\label{fig:five-loop-forests}
+\end{figure}
+
+\subsection{In-Situ \texorpdfstring{$4\mathrm{D}$}{4D} Twist Background, Open-Color \texorpdfstring{$\zeta(3)$}{zeta(3)} Cancellation, and \texorpdfstring{$4$}{4}-Loop \texorpdfstring{$\ghb^2$}{b\^2} Product}
+\label{subsec:universal-quartic-product}
+
+To evaluate multi-loop product forests of physical gauge--matter operators with nonrenormalizable superpotentials (and later $\mathcal{N}=4$ superfields in Section~\ref{sec:sugra-bcov-holo}), we now introduce in situ the off-shell four-dimensional supersymmetric twist on $\RR^4 \cong \C^2$ from scratch.
+
+\begin{zkmodule}{Off-Shell $4\mathrm{D}$ $\mathcal{N}=1$ Twist to Holomorphic $BF$--$\beta\gamma$ and $\mathcal{N}=4$ to $\C^{2|3}$ Chern--Simons}{offshell-n1-bv-master-action}
+On flat Euclidean $\RR^4 \cong \C^2$ ($\Omega := 2\,\dd x^{+\dot{+}}\wedge\dd x^{+\dot{-}}$, $\dbar := \frac{1}{2}\dd x^-_{\dot{a}}\partial_-{}^{\dot{a}}$; spinor and bispinor conventions in Appendix~\ref{app:conventions}) with compact gauge Lie algebra $\fg$, matter representation $\cR$, chiral superpotential $W(\phi) = \sum_{\substack{m\ge 2\\\mathrm{arity}}}\frac{1}{m!}W_{I_1\cdots I_m}\phi^{I_1}\cdots\phi^{I_m}$, and independent antichiral superpotential $\Wb(\bar{\phi}) = \sum_{\substack{m\ge 2\\\mathrm{arity}}}\frac{1}{m!}\Wb^{I_1\cdots I_m}\bar{\phi}_{I_1}\cdots\bar{\phi}_{I_m}$, the off-shell vector multiplet $(V_\mu{}^A, \lambda_a{}^A, \bar{\lambda}_{\dot{a}}{}^A, D^A)$ and chiral/antichiral matter $(\phi^I, \psi_a{}^I, F^I; \bar{\phi}_I, \bar{\psi}_{\dot{a}I}, \bar{F}_I)$ carry the physical Euclidean action
+\begin{equation}
+\label{eq:4d-offshell-euclidean-action}
+\begin{aligned}
+S_{E,\mathrm{phys}} = \int_{\RR^4}\dd^4x\,\Bigl[&\tfrac{1}{4}\kappa_{AB}f_{\mu\nu}{}^A f^{\mu\nu B} - \ii\kappa_{AB}\lambda^{a A}(\sigma^\mu)_{a\dot{b}}(\nabla_\mu\bar{\lambda}^{\dot{b}})^B - \tfrac{1}{2}\kappa_{AB}D^A D^B\\
+&+ (\nabla_\mu\bar{\phi})_I(\nabla^\mu\phi)^I - \ii\bar{\psi}^{\dot{b}}{}_I(\bar{\sigma}^\mu)_{\dot{b}a}(\nabla_\mu\psi^a)^I - \bar{F}_I F^I\\
+&+ \ii\sqrt{2}\,g\bigl(\bar{\phi}_I(t_A)^I{}_J\psi^{a J}\lambda_a{}^A - \bar{\lambda}_{\dot{a}}{}^A\bar{\psi}^{\dot{a}}{}_I(t_A)^I{}_J\phi^J\bigr) + \ii g D^A\bar{\phi}_I(t_A)^I{}_J\phi^J\\
+&- F^I\partial_I W(\phi) + \tfrac{1}{2}\partial_I\partial_J W(\phi)\psi^{a I}\psi_a{}^J - \bar{F}_I\partial^{\bar{I}}\Wb(\bar{\phi}) + \tfrac{1}{2}\partial^{\bar{I}}\partial^{\bar{J}}\Wb(\bar{\phi})\bar{\psi}_{\dot{a}I}\bar{\psi}^{\dot{a}}{}_J\Bigr].
+\end{aligned}
+\end{equation}
+Specializing the commuting supersymmetry parameter to $\xi_0{}^a = \delta^a{}_-$ ($\bar{\xi}_{0,\dot{a}} = 0$, $Q_-^2 = 0$) gives $Q_- V_{-\dot{a}}{}^A = 0$, $Q_- V_{+\dot{a}}{}^A = -2\bar{\lambda}_{\dot{a}}{}^A$, $Q_-\bar{\lambda}_{\dot{a}}{}^A = 0$, $Q_-\lambda_a{}^A = \frac{1}{2}(\sigma^{\mu\nu})_a{}^- f_{\mu\nu}{}^A + \ii\delta_a{}^- D^A$, $Q_-\bar{\phi}_I = 0$, $Q_-\phi^I = -\sqrt{2}\psi_-{}^I$, $Q_-\psi_+{}^I = -\ii\sqrt{2}\,F^I$, and $Q_-\bar{\psi}_{\dot{a}I} = -\ii\sqrt{2}(\nabla_{-\dot{a}}\bar{\phi})_I$.
+\end{zkmodule}
+
+\begin{proposition}[{First-principles off-shell BV twist to holomorphic $BF$--$\beta\gamma$ on $\C^2$ and $\C^{2|3}$ Chern--Simons~{\cite{CostelloNotes,ESW,BGKWY,LLC}}}]
+\label{prop:4d-offshell-twist}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Adding right-placed BV antifield couplings $\int\dd^4x\,(s_{\mathrm{BRST}} + Q_-)\Phi^\Lambda\,\Phi^\ddagger_\Lambda + \mathcal{O}((\Phi^\ddagger)^2)$ to~\eqref{eq:4d-offshell-euclidean-action}, shifting $(\lambda^{\ddagger -}{}_A, \bar{F}^{\ddagger I})$ to absorb quadratic $Q_-$ terms, and integrating out the algebraic/contractible pairs $(D^A, \lambda_-{}^A)$, $(F^I, \bar{F}_I)$, and $(\phi^I, \psi_-{}^I)$ (decoupling $W(\phi)$ entirely) packages $\mathcal{A}^A \in \Omega^{0,\bullet}(\C^2)\otimes\fg[1]$, $\mathcal{B}_A \in \Omega^{2,\bullet}(\C^2)\otimes\fg^*[-1]$, $\gamma_I \in \Omega^{0,\bullet}(\C^2)\otimes\cR^*$, and $\beta^I \in \Omega^{2,\bullet}(\C^2)\otimes\cR[-1]$ into the holomorphic $BF$--$\beta\gamma$ Euclidean BV action $S_{E,\mathrm{hol}} = S_{E,\mathrm{hol,free}} + \Ihol$:
+  \begin{equation}
+  \label{eq:sum-Ihol}
+  \begin{aligned}
+  S_{E,\mathrm{hol}}[\mathcal{A},\mathcal{B},\beta,\gamma] &= \int_{\C^2}\!\left(\mathcal{B}_A\wedge\dbar\mathcal{A}^A + \beta^I\wedge\dbar\gamma_I\right)\\
+  &\quad + \int_{\C^2}\!\left(\tfrac{1}{2}f^A{}_{BC}\mathcal{B}_A\wedge\mathcal{A}^B\wedge\mathcal{A}^C + \ii g(t_A)^J{}_I\beta^I\wedge\mathcal{A}^A\wedge\gamma_J + \Omega\wedge\Wb(\gamma)\right).
+  \end{aligned}
+  \end{equation}
+
+  \item Specializing~\eqref{eq:sum-Ihol} to three adjoint chirals $\cR = \fg\otimes\C^3$ ($\hat{\alpha},\hat{\beta},\hat{\gamma} \in \{1,2,3\}$) with $\Wb(\gamma) = \frac{g}{6}f^{ABC}\eps^{\hat{\alpha}\hat{\beta}\hat{\gamma}}\gamma_{\hat{\alpha},A}\gamma_{\hat{\beta},B}\gamma_{\hat{\gamma},C}$ and $\boldsymbol{\mathcal{A}}^A(z,\bar{z},\theta) := \mathcal{A}^A + \theta^{\hat{\alpha}}\gamma_{\hat{\alpha}}{}^A + \frac{1}{2}\eps_{\hat{\alpha}\hat{\beta}\hat{\gamma}}\theta^{\hat{\alpha}}\theta^{\hat{\beta}}\beta^{\hat{\gamma}A} + \theta^1\theta^2\theta^3\mathcal{B}^A$ collapses~\eqref{eq:sum-Ihol} into holomorphic Chern--Simons on $\C^{2|3}$:
+  \begin{equation}
+  \label{eq:n4-super-hcs}
+  S_{E,\mathcal{N}=4}[\boldsymbol{\mathcal{A}}] = \int_{\C^{2|3}}\Omega_{2|3}\wedge\left(\frac{1}{2}\kappa_{AB}\boldsymbol{\mathcal{A}}^A\wedge\dbar\boldsymbol{\mathcal{A}}^B + \frac{g}{6}f_{ABC}\boldsymbol{\mathcal{A}}^A\wedge\boldsymbol{\mathcal{A}}^B\wedge\boldsymbol{\mathcal{A}}^C\right).
+  \end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Part (1): Bispinor splitting and contractible doublet elimination}
+From $\{Q_a,\bar{Q}_{\dot{b}}\} = -2\ii\partial_{a\dot{b}}$, $Q_- = \delta^a{}_- Q_a$ obeys $Q_-^2 = 0$ and $\{Q_-,\bar{Q}_{\dot{a}}\} = -4\ii\dbar_{\dot{a}}$. Splitting $\frac{1}{4}f_{\mu\nu}f^{\mu\nu} = \frac{1}{8}f_{ab}f^{ab} + \frac{1}{8}\bar{f}_{\dot{a}\dot{b}}\bar{f}^{\dot{a}\dot{b}}$ modulo the Pontryagin density and shifting $(\lambda^{\ddagger -}{}_A, \bar{F}^{\ddagger I})$ converts the kinetic terms into $\mathcal{B}_A\wedge\dbar\mathcal{A}^A + \beta^I\wedge\dbar\gamma_I$ ($\mathcal{A}^A = \ghc^A + \frac{1}{2}g\,\dd x^-_{\dot{a}}V_-{}^{\dot{a}A} + \cdots$, $\gamma_I = \bar{\phi}_I + \cdots$), while Gaussian/acyclic elimination of $(D^{\mathrm{shift},A},\lambda_-{}^A)$ and $(\phi^I,\psi_-{}^I)$ sets $\phi^I = \psi_-{}^I = 0$ inside $W(\phi)$, leaving~\eqref{eq:sum-Ihol}.
+\end{proofpart}
+\begin{proofpart}{Part (2): Berezin integration over $\theta^1\theta^2\theta^3$}
+Selecting the $\theta^1\theta^2\theta^3$ top Berezin component in~\eqref{eq:n4-super-hcs} pairs $\theta^0$ with $\theta^3$ into $\mathcal{B}_A\wedge F^{0,2}(\mathcal{A})^A$, $\theta^1$ with $\theta^2$ into $\beta^{\hat{\alpha}}_A\wedge\dbar_{\mathcal{A}}\gamma_{\hat{\alpha}}{}^A$, and $(\theta^1)^3$ into $\Omega\wedge\Wb(\gamma)$ (Figure~\ref{fig:4d-twist-reduction}).
+\end{proofpart}
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.92]
+  % Left: 4D N=1 off-shell -> Holomorphic BF-betagamma
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=3pt, draw=NavyBlue!75!black, fill=NavyBlue!2.5, line width=0.55pt] (-3.85,-1.75) rectangle (3.85,1.75);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.42) {(a) $4\mathrm{D}$ $\mathcal{N}=1 \mapsto$ Hol.\ $BF$--$\beta\gamma$};
+    \node[draw=BrickRed!75!black, rounded corners=2pt, fill=white, inner sep=2.8pt, font=\tiny] (ac) at (-2.15, 0.55) {$(D,\lambda_-),\ (\phi,\psi_-),\ W$};
+    \node[draw=PineGreen!80!black, rounded corners=2pt, fill=white, inner sep=2.8pt, font=\tiny] (su) at (-2.15,-0.45) {$(V_{-\dot{a}},\ghc,\bar{\lambda}_{\dot{a}},f_{++};\ \bar{\phi},\psi_+)$};
+    \node[draw=NavyBlue!80!black, rounded corners=2pt, fill=white, inner sep=3.2pt, font=\scriptsize] (bf) at ( 2.05,-0.45) {$(\mathcal{A}^A,\mathcal{B}_A;\ \gamma_I,\beta^I)$};
+    \node[font=\tiny, text=BrickRed!85!black] at ( 2.05, 0.55) {$Q_-$-acyclic $= 0$};
+    \draw[-{Stealth[length=1.8mm,width=1.3mm]}, dashed, BrickRed!80!black, line width=0.6pt] (ac) -- (1.05,0.55);
+    \draw[-{Stealth[length=1.8mm,width=1.3mm]}, PineGreen!80!black, line width=0.65pt] (su) -- node[above=1pt, font=\tiny] {$Q_-$} (bf);
+    \node[font=\tiny] at (0,-1.28) {$\mathcal{B}\dbar_{\mathcal{A}}\mathcal{A} + \beta\dbar_{\mathcal{A}}\gamma + \Omega\Wb(\gamma)$};
+  \end{scope}
+
+  % Right: 4D N=4 -> C^{2|3} hCS
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=3pt, draw=PineGreen!75!black, fill=PineGreen!2.5, line width=0.55pt] (-3.85,-1.75) rectangle (3.85,1.75);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.42) {(b) $4\mathrm{D}$ $\mathcal{N}=4 \mapsto \C^{2|3}$ hCS};
+    \foreach \pp/\xx/\lbl in {
+      0/-2.65/{\mathcal{A}^A},
+      1/-0.95/{\theta^{\hat{\alpha}}\gamma_{\hat{\alpha}}{}^A},
+      2/ 0.95/{\theta^2\beta^{\hat{\gamma}A}},
+      3/ 2.68/{\theta^3\mathcal{B}^A}%
+    } {
+      \node[draw=PineGreen!75!black, rounded corners=2pt, fill=white, inner sep=2.6pt, font=\scriptsize] at (\xx,0.22) {$\lbl$};
+      \node[font=\tiny] at (\xx,-0.32) {$\theta^{\pp}$};
+    }
+    \node[font=\tiny] at (0,-1.28) {$\int_{\C^{2|3}}\Omega_{2|3}\wedge\frac{1}{2}\mathrm{CS}_{\dbar}[\boldsymbol{\mathcal{A}}]$};
+  \end{scope}
+\end{tikzpicture}
+\caption{In-situ off-shell four-dimensional BV twists (Background Card~5.1 and Proposition~\ref{prop:4d-offshell-twist}): (a)~$\mathcal{N}=1$ elimination of $Q_-$-contractible pairs and holomorphic $W(\phi)$ leaving $BF$--$\beta\gamma + \Omega\Wb(\gamma)$ on $\C^2$; (b)~$\mathcal{N}=4$ superfield assembly into holomorphic Chern--Simons on $\C^{2|3}$.}
+\label{fig:4d-twist-reduction}
+\end{figure}
+
+\begin{theorem}[Universal open-color $\zeta(3)$ cancellation for all $\deg\Wb \ge 3$ and $4$-loop $\ghb^2$ product~{\cite{Repo9e833c8}}]
+\label{thm:universal-quartic}
+In $4\mathrm{D}$ $\mathcal{N}=1$ twisted gauge-matter theory~\eqref{eq:sum-Ihol} for \textbf{any} compact Lie algebra $\fg$ and representation $\cR$:
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Open-color $3$-loop quartic and arbitrary-degree pure-$\Wb$ rationality:} On $A = \beta^{1 i_1}(\partial_{+\dot{a}}\beta^{2 i_2})\gamma_5$ and $B = \ghb_A\beta^{3 i_3}$ ($\gamma_5$ neutral spectator, $[\hbar^{\ge 4}] = 0$ by $n+r \le 4$), across all $28$ Wick matchings ($12$ unreduced color words), the $16$ commutator-triple matchings on $K_4$-wheels $G_1,G_2,G_3$ concentrate the \textbf{entire} $\zeta(3)$ coefficient into the representation commutator identity
+  \begin{equation}
+  \label{eq:universal-commutator-zeta3}
+  \mathcal{T}_{\zeta(3)} = \zeta(3)\Bigl[S^{(1)}_{+\dot{a}}(\lambda)\bigl([t_A,t_B] - \ii C^C{}_{AB}t_C\bigr)^{i_1}{}_{j_1}\Wb^{j_1 i_2 i_3 i_4} + S^{(2)}_{+\dot{a}}(\lambda)\bigl([t_A,t_B] - \ii C^C{}_{AB}t_C\bigr)^{i_2}{}_{j_2}\Wb^{i_1 j_2 i_3 i_4}\Bigr] \equiv 0,
+  \end{equation}
+  leaving $10$ explicit rational color words (specializing on $\mathrm{U}(1)$ at $(1,-1,0,0)$ to $\frac{g^2}{552960(8\pi^2)^3}(\partial_1\cdot\partial_2)^3(12\partial_1-19\partial_2)\gamma_4\ghc$ and on $\SU(2)$ adjoints to $-\frac{g^2}{92160(8\pi^2)^3}(\partial_1\cdot\partial_2)^3(8\partial_1+5\partial_2)\gamma_4^E\ghc_E$). The identical $16$-matching commutator mechanism cancels $\zeta(3)$ for \textbf{every pure-matter superpotential of arbitrary degree $\deg\Wb \ge 3$} ($16$ commutator $+ 8$ passive star $+ 4(\deg\Wb-3)$ SP matchings per slot-triple)!
+
+  \item \emph{Complete $4$-loop two-antighost product:} For $\beta^1(\partial_{+\dot{a}}\beta^2)\gamma_5 \star \ghb^2\beta^3 \to \ghc\gamma_4\gamma_5$ ($324$ matchings across $14$ geometries, $7$ carrying individual $\zeta(3)$ periods; $[\hbar^{\ge 5}]=0$), all $16$ nonzero cubic charge polynomials are purely rational ($4$ vanish), evaluating at $(1,-1,0,0)$ and $\lambda_{\gamma_5}=\lambda_{\gamma_4}$ to $\frac{\ii g^3}{14745600(8\pi^2)^4}\langle\lambda_{\gamma_4},\lambda_{\ghc}\rangle^4(10\lambda_{\gamma_4,+\dot{a}} - 3\lambda_{\ghc,+\dot{a}})$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), fixing three contracted $\Wb$-slots $(s_1,s_2,s_3)$, the $8$ passive-star matchings and $4(\deg\Wb-3)$ SP matchings are rational individually, while the $16$ wheel matchings across $G_1$ ($e_A$ on $s_1$, $e_B$ on $s_2$), $G_2$ ($e_B$ on $s_1$, $e_A$ on $s_2$), and $G_3$ ($3$-gluon vertex $C^C{}_{AB}$ joining $s_1$ or $s_2$) share identical $\zeta(3)$ spinor polynomials $S^{(1,2)}_{+\dot{a}}(\lambda)$ weighted by $(t_A t_B - t_B t_A - \ii C^C{}_{AB}t_C) \equiv 0$, proving~\eqref{eq:universal-commutator-zeta3} without invoking color singlets or specific representations! In~(2), $21$-node exact interpolation across all $324$ matchings cancels $\zeta(3)$ across every cubic charge monomial $q_p q_l q_m$.
+\end{proof}
+
+\subsection{Arbitrary Input Derivative Jets via the Closed \texorpdfstring{$6$}{6}-Current Simplex Form}
+\label{subsec:simplex-jets}
+
+\begin{theorem}[Rationality of arbitrary simultaneous input derivative jets via closed $6$-current simplex Stokes reduction~{\cite{Repo9e833c8}}]
+\label{thm:simplex-jets}
+Equip $G_1, G_2, G_3$ with common fundamental chord routing $(J_{WA}, J_{WB}, J_{AB})$ on $K_4$ ($r_c \in \Delta^2_{\mathrm{source}}$ parameterizing the subdivided chord $c \in \{WA, WB, BA\}$). For any simultaneous multi-index jet $q$ on all input slots, there exists a polynomial $F_q(J)$ defining the closed $6$-form
+\begin{equation}
+\label{eq:closed-6current-form}
+\omega_{F_q} := F_q(J_{WA}, J_{WB}, J_{AB})\,\dd^2 J_{WA}\wedge\dd^2 J_{WB}\wedge\dd^2 J_{AB},\qquad
+\dd\omega_{F_q} = 0\quad \text{on }\mathrm{Time}^5\times\Delta^2_{\mathrm{source}}.
+\end{equation}
+Applying Stokes' theorem to the simplex homotopies joining $c = WA$ to $WB$ and $BA$ reduces $I_{G_1}[F_q] + I_{G_2}[F_q]$ and $I_{G_1}[F_q] + I_{G_3}[F_q]$ onto outer boundary chords ($\dd^2 J_{uw} = \dd^2 y_{uc} - \dd r_c\wedge\langle\lambda_{\ghc}, \dd y_{uc}\rangle$) plus the $62$ proper shrinking scale faces of $K_4$: $46$ source-independent null faces ($\equiv 0$) and $16$ polynomial SP minor faces ($6$ edges $+ 4$ triangles $+ 6$ edge-complements), proving that \textbf{every simultaneous input derivative jet evaluates in $\QQ[\lambda]$ with zero $\zeta(3)$}!
+\end{theorem}
+
+\begin{proof}
+Because $\omega_{F_q}$ is a holomorphic top $(6,0)$-form in the $6$ complex coordinates $(J_{WA,\dot{\pm}}, \allowbreak J_{WB,\dot{\pm}}, \allowbreak J_{AB,\dot{\pm}})$, $\dd\omega_{F_q} = 0$ holds identically for every polynomial $F_q$. Pulling back along $\mathrm{Time}^5\times\allowbreak\Delta^1_{WA\leftrightarrow WB}$ and $\mathrm{Time}^5\times\allowbreak\Delta^1_{WA\leftrightarrow BA}$ equates $I_{G_1}+I_{G_2}$ and $I_{G_1}+I_{G_3}$ to $\int_{\partial(\mathrm{Time}^5)}\omega_{F_q}$. Every proper subset $S \subsetneq E(K_4)$ either disconnects/leaves a bridge ($46$ null faces where $\rk\dd J < 6$) or leaves an SP $K_4$-minor ($16$ faces), whose Dirichlet simplex integrals lie purely in $\QQ[\lambda]$; substituting $[t_A,t_B] - \ii C^C{}_{AB}t_C = 0$ eliminates $I_{G_1}$ cleanly in favor of rational SP boundary integrals.
+\end{proof}
+
+\begin{lemma}[{Closedness of $\Phi^*\omega_{F_q}$ and enumeration of all $62 = 46 + 16$ shrinking faces of $K_4$}]
+\label{lem:k4-62-faces}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item For every polynomial $F_q(J_{WA,\dot{\pm}}, J_{WB,\dot{\pm}}, J_{AB,\dot{\pm}})$ and smooth map $\Phi : \mathrm{Time}^5\times\Delta^2_{\mathrm{source}} \to \C^6$, the pullback $6$-form $\Phi^*\omega_{F_q}$ satisfies $\dd(\Phi^*\omega_{F_q}) = 0$.
+
+  \item Across all $2^6 - 2 = 62$ nonempty proper subsets $S \subsetneq E(K_4)$ ($|E(K_4)| = 6$), precisely $16$ subsets ($6$ single edges, $4$ triangles, and $6$ five-edge complements) retain full $6$-current differential rank as SP minor pairs, while the remaining $46$ subsets lose differential rank and vanish identically.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Holomorphic top-form closedness}
+On $\C^6$ with linear coordinates $(z_1,\dots,z_6) = (J_{WA,\dot{\pm}}, J_{WB,\dot{\pm}}, J_{AB,\dot{\pm}})$, $\omega_{F_q} = F_q(z)\,\dd z_1\wedge\cdots\wedge\dd z_6$ has $\dbar F_q = 0$ and $\dd z_k\wedge(\dd z_1\wedge\cdots\wedge\dd z_6) = 0$ ($\forall\,k$), giving $\dd\omega_{F_q} = 0$ and $\dd(\Phi^*\omega_{F_q}) = \Phi^*(\dd\omega_{F_q}) = 0$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Subset census by cardinality $|S| \in \{1,2,3,4,5\}$}
+Shrinking $t_e \to 0$ on $S \subsetneq E(K_4)$ factors $K_4$ into $K_4|_S$ (loop number $h(S)$) and $K_4/S$ (loop number $3-h(S)$), retaining full rank $6$ along $\partial(\mathrm{Time}^5)\times\Delta^1$ precisely when $K_4|_S$ is bridgeless with $|S| - 2h(S) \in \{0,1\}$: $|S|=1$ gives $6$ SP edges ($h=0$); $|S|=2$ gives $15$ null forest pairs ($h=0$, $\rk\dd J \le 5$); $|S|=3$ splits $\binom{6}{3}=20$ into $4$ SP triangles ($h=1$) plus $16$ null spanning trees ($h=0$); $|S|=4$ gives $15$ null subsets ($12$ bridged triangle-plus-edge, $3$ $4$-cycles with $|S|-2h=2$); and $|S|=5$ gives $6$ SP diamonds $K_4-e$ ($h=2$), totaling $6+4+6 = 16$ SP faces and $15+16+15 = 46$ null faces.
+\end{proofpart}
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.90]
+  % Left: Open-color wheel triple G1, G2, G3
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=BrickRed!65!black, fill=BrickRed!2.5, line width=0.5pt] (-3.85,-1.70) rectangle (3.85,1.70);
+    \node[font=\scriptsize\bfseries, text=BrickRed!85!black] at (0,1.38) {(a) Commutator Wheels $G_1, G_2, G_3$};
+    % G1+G2
+    \begin{scope}[shift={(-1.75,0.05)}]
+      \coordinate (x0) at (0,0.72); \coordinate (x1) at (0,0.05);
+      \coordinate (xa) at (-0.95,-0.48); \coordinate (xb) at (0.95,-0.48);
+      \draw[line width=1.0pt, densely dashed, draw=PineGreen!85!black] (xa)--(xb);
+      \draw[prop] (x0)--(xa); \draw[prop] (x0)--(xb); \draw[prop] (x0)--(x1); \draw[prop] (x1)--(xb);
+      \draw[prop, BrickRed!85!black] (x1) -- node[vbiv, scale=0.8] (xc) {} (xa);
+      \draw[extleg] (xc)--++(-0.22,0.22) node[left=-1pt, font=\tiny] {$\ghc$};
+      \node[vi2] at (x0) {}; \filldraw[v0] (x1) circle (0.048cm);
+      \filldraw[vbiv] (xa) circle (0.05cm); \filldraw[vbiv] (xb) circle (0.05cm);
+      \node[font=\tiny] at (0,-0.92) {$[t_A, t_B]$};
+    \end{scope}
+    \node[font=\scriptsize\bfseries] at (0,0.05) {$-$};
+    % G3
+    \begin{scope}[shift={(1.75,0.05)}]
+      \coordinate (y0) at (0,0.72); \coordinate (y1) at (0,0.05);
+      \coordinate (ya) at (-0.95,-0.48); \coordinate (yb) at (0.95,-0.48);
+      \draw[line width=1.0pt, densely dashed, draw=PineGreen!85!black] (ya)--(yb);
+      \draw[prop] (y0)--(ya); \draw[prop] (y0)--(yb); \draw[prop] (y0)--(y1); \draw[prop] (y1)--(ya);
+      \draw[cprop] (y1) -- node[vtcent, scale=0.78] (yg) {} (yb);
+      \draw[cextleg] (yg)--++(0.22,0.22) node[right=-1pt, font=\tiny, text=RoyalBlue!85!black] {$\ghc$};
+      \node[vi2] at (y0) {}; \filldraw[v0] (y1) circle (0.048cm);
+      \filldraw[vbiv] (ya) circle (0.05cm); \filldraw[vbiv] (yb) circle (0.05cm);
+      \node[font=\tiny] at (0,-0.92) {$\ii C^C{}_{AB}t_C$};
+    \end{scope}
+    \node[font=\tiny] at (0,-1.35) {$\mathcal{T}_{\zeta(3)} \equiv 0$ ($\forall\,\deg\Wb \ge 3$)};
+  \end{scope}
+
+  % Right: Closed 6-current simplex form on K_4
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=RoyalBlue!65!black, fill=RoyalBlue!2.5, line width=0.5pt] (-3.85,-1.70) rectangle (3.85,1.70);
+    \node[font=\scriptsize\bfseries, text=RoyalBlue!85!black] at (0,1.38) {(b) $6$-Current Simplex $\Delta^2_{\mathrm{source}}$};
+    \coordinate (sw) at (0,0.78);
+    \coordinate (sa) at (-1.25,-0.55);
+    \coordinate (sb) at ( 1.25,-0.55);
+    \fill[RoyalBlue!10] (sw)--(sa)--(sb)--cycle;
+    \draw[prop, RoyalBlue!85!black, line width=0.9pt] (sw) -- node[left=2pt, font=\tiny] {$J_{WA}$} (sa);
+    \draw[prop, RoyalBlue!85!black, line width=0.9pt] (sw) -- node[right=2pt, font=\tiny] {$J_{WB}$} (sb);
+    \draw[line width=1.05pt, densely dashed, draw=PineGreen!85!black] (sa) -- node[below=1pt, font=\tiny, text=PineGreen!85!black] {$J_{AB}$} (sb);
+    \node[vi2] at (sw) {};
+    \filldraw[vbiv] (sa) circle (0.054cm) node[left=1pt, font=\tiny] {$A$};
+    \filldraw[vbiv] (sb) circle (0.054cm) node[right=1pt, font=\tiny] {$B$};
+    \node[font=\tiny] at (0,0.02) {$\dd\omega_{F_q} = 0$};
+    \node[font=\tiny] at (0,-1.35) {$62$ faces: $46$ null $+ 16$ SP minors};
+  \end{scope}
+\end{tikzpicture}
+\caption{Mechanisms of Theorems~\ref{thm:universal-quartic} and~\ref{thm:simplex-jets}: (a)~representation-commutator triple $G_1,G_2,G_3$ cancelling $\zeta(3)$ for arbitrary gauge group and $\deg\Wb \ge 3$; (b)~closed $6$-current form $\omega_{F_q}$ on $\mathrm{Time}^5\times\Delta^2_{\mathrm{source}}$ reducing arbitrary simultaneous derivative jets to $16$ rational SP boundary minors.}
+\label{fig:open-color-and-simplex}
+\end{figure}

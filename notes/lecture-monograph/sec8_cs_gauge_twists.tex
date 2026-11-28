@@ -1,0 +1,889 @@
+% ============================================================================
+\section{Commutative \texorpdfstring{$5\mathrm{D}$}{5D}, \texorpdfstring{$9\mathrm{D}$}{9D}, and \texorpdfstring{$10\mathrm{D}$}{10D} Chern--Simons Quantization and Multi-Loop \texorpdfstring{$2\mathrm{D}$--$8\mathrm{D}$}{2D--8D} Gauge Cohomology}
+\label{sec:cs-gauge-twists}
+% ============================================================================
+
+Having developed the $(H,T)$ Schwinger period and forest engines in Sections~\ref{sec:schwinger-periods-k5}--\ref{sec:forests-quartic-jets}, we now analyze multi-loop quantization and anomalies across five-, nine-, and ten-dimensional Chern--Simons theories and two- to eight-dimensional gauge twists~\cite{Costello16,CDG20,ESW,GKW,Repo9e833c8}. Following the proximity principle, each concrete background module enters at the exact point where the calculation invokes it: (i)~Chern--Weil transgression, finite large gauge transformations with exact Wess--Zumino winding $N_W[g]\in\ZZ$, and AKSZ superconnections open the Chern--Simons analysis; (ii)~after evaluating the two-loop $5\mathrm{D}$ Chern--Simons Feynman diagrams $\theta(1,3,3)$ and $\theta(2,2,3)$, Chevalley--Whitehead rigidity and Vogel's split-Casimir ladder plane enter directly at the Lie color contraction step; and (iii)~the Elliott--Safronov--Williams pure-spinor twist taxonomy enters right ahead of the $2\mathrm{D}$--$8\mathrm{D}$ gauge supercharge theorems.
+
+\subsection{In-Situ TQFT Background: Chern--Weil Transgression, Exact Winding \texorpdfstring{$N_W[g]\in\ZZ$}{N\_W[g] in Z}, and AKSZ Collapse}
+\label{subsec:cs-aksz-lecture}
+
+\begin{zkmodule}{Witten vs.\ Schwarz TQFTs, Chern--Weil Transgression of $\mathrm{CS}_{2k+1}$, and AKSZ Collapse}{aksz-superconnection-ht-cs-ladder}
+Topological quantum field theories separate into \emph{cohomological (Witten-type) TQFTs}---where the stress-energy tensor is $Q$-exact, $T_{\mu\nu} = \{Q, G_{\mu\nu}\}$---and \emph{Schwarz-type TQFTs}~\cite{Witten89}, whose classical action is written purely with exterior wedge products without any background metric $g_{\mu\nu}$ (a metric enters solely inside the BV gauge-fixing codifferential $D^*$ of~\eqref{eq:dstar-definition}).
+
+\paragraph{1.\ Collision-free Lie indices and step-by-step Chern--Weil transgression of $\mathrm{CS}_3$ and $\mathrm{CS}_5$.}
+Let $\fg$ have basis $T_A$ indexed by uppercase abstract Lie-algebra slots $A, B, C, E$ ($[T_B, T_C] = f^A{}_{BC}T_A$, $f_{ABC} := \kappa_{AE}f^E{}_{BC}$), and let $A = A^A T_A \in \Omega^1(M;\fg)$ be a connection $1$-form with Lie-bracket $2$-form $[A, A]^A := f^A{}_{BC}A^B\wedge A^C$ and curvature $2$-form $F^A := \dd A^A + \frac{1}{2}f^A{}_{BC}A^B\wedge A^C$. To avoid any visual collision between the connection $1$-form $A$ and the Lie-algebra slot $A$, we denote the exterior covariant derivative by $\dd_\nabla$, acting on $\eta = \eta^A T_A \in \Omega^p(M;\fg)$ by
+\begin{equation}
+\label{eq:covariant-d-nabla}
+(\dd_\nabla\eta)^A := \dd\eta^A + f^A{}_{BC}A^B\wedge\eta^C,\qquad
+(\dd_\nabla F)^A = \dd F^A + f^A{}_{BC}A^B\wedge F^C = 0\quad (\text{Bianchi identity}),
+\end{equation}
+with infinitesimal gauge transformation locked to the minus-sign convention
+\begin{equation}
+\label{eq:gauge-var-minus-dnabla}
+\delta_\epsilon A^A := -(\dd_\nabla\epsilon)^A = -\bigl(\dd\epsilon^A + f^A{}_{BC}A^B\epsilon^C\bigr)\qquad \bigl(\epsilon = \epsilon^A T_A \in \Omega^0(M;\fg)\bigr).
+\end{equation}
+For any $\ad$-invariant symmetric polynomial $P \in (\Sym^{k+1}\fg^*)^{\fg}$ ($k \ge 1$), the Bianchi identity~\eqref{eq:covariant-d-nabla} gives $\dd P(F^{\wedge(k+1)}) = 0$. Along the linear connection path $A_s := sA$ ($s \in [0,1]$, covariant derivative $\dd_{\nabla_s} := \dd + s[A, -]$), the path curvature and velocity are
+\begin{equation}
+\label{eq:Fs-linear-path}
+F_s^A = s\,\dd A^A + \frac{s^2}{2}[A, A]^A,\qquad
+\partial_s F_s^A = \dd A^A + s[A, A]^A = (\dd_{\nabla_s}A)^A,
+\end{equation}
+so $\partial_s P(F_s^{\wedge(k+1)}) = (k+1)P(\dd_{\nabla_s}A, F_s^{\wedge k}) = (k+1)\dd P(A, F_s^{\wedge k})$ (using $\dd F_s = -s[A, F_s]$ and $\ad$-invariance of $P$). Integrating over $s \in [0,1]$ constructs the \emph{Chern--Simons $(2k+1)$-form}:
+\begin{equation}
+\label{eq:chern-weil-transgression}
+\mathrm{CS}_{2k+1}[A] := (k+1)\int_0^1 \dd s\; P\!\bigl(A,\, F_s^{\wedge k}\bigr),\qquad
+\dd\,\mathrm{CS}_{2k+1}[A] = P\!\bigl(F^{\wedge(k+1)}\bigr).
+\end{equation}
+Substituting $F_s^B = s\,\dd A^B + \frac{s^2}{2}[A,A]^B$ directly into~\eqref{eq:chern-weil-transgression} exhibits the numerical coefficients at $k = 1$ and $k = 2$ step by step:
+\begin{itemize}[leftmargin=*]
+  \item \textbf{At $k = 1$ ($P_2(X,Y) = \kappa_{AB}X^A Y^B$):} Integrating $2\int_0^1 s\,\dd s = 1$ and $2\int_0^1\frac{s^2}{2}\,\dd s = \frac{1}{3}$ yields
+  \begin{equation}
+  \label{eq:cs3-explicit}
+  \tfrac{1}{2}\mathrm{CS}_3[A] = \int_0^1\dd s\,\kappa_{AB}A^A\wedge\Bigl(s\,\dd A^B + \tfrac{s^2}{2}[A,A]^B\Bigr) = \tfrac{1}{2}\kappa_{AB}A^A\wedge\dd A^B + \tfrac{1}{6}f_{ABC}A^A\wedge A^B\wedge A^C.
+  \end{equation}
+  \item \textbf{At $k = 2$ ($P_3(X,Y,Z) = \frac{1}{2}d_{ABC}X^A Y^B Z^C = \tr(X Y Z)|_{\mathrm{sym}} \in (\Sym^3\fg^*)^{\fg}$, where $d_{ABC} := \tr(T_A\{T_B,T_C\})$ satisfies $P_3(X,X,X) = \tr(X^3)$):} Because the $2$-forms $\dd A^B$ and $[A,A]^C$ have even exterior degree, they \emph{commute} under $\wedge$, and $d_{ABC} = d_{ACB}$ is symmetric in $(B,C)$, so the two $s^3$ cross terms $\frac{s^3}{2} + \frac{s^3}{2} = s^3$ \emph{add}:
+  \[
+  P_3(A, F_s, F_s) = \frac{1}{2}d_{ABC}A^A\wedge\Bigl(s^2\,\dd A^B\wedge\dd A^C + s^3\,[A,A]^B\wedge\dd A^C + \frac{s^4}{4}[A,A]^B\wedge[A,A]^C\Bigr).
+  \]
+  Multiplying by $(k+1) = 3$, integrating $3\int_0^1 s^2\,\dd s = 1$, $3\int_0^1 s^3\,\dd s = \frac{3}{4}$, and $3\int_0^1\frac{s^4}{4}\,\dd s = \frac{3}{20}$, and commuting $1$-forms past $2$-forms ($A^A\wedge[A,A]^B = [A,A]^B\wedge A^A$) produces the exact coefficients $(1, \frac{3}{4}, \frac{3}{20})$ (equivalently $\tr(A(\dd A)^2 + \frac{3}{2}A^3\dd A + \frac{3}{5}A^5)$ in matrix wedge notation):
+  \begin{equation}
+  \label{eq:cs5-explicit}
+  \mathrm{CS}_5[A] = \frac{1}{2}d_{ABC}\!\left(A^A\wedge\dd A^B\wedge\dd A^C + \frac{3}{4}[A,A]^A\wedge A^B\wedge\dd A^C + \frac{3}{20}[A,A]^A\wedge[A,A]^B\wedge A^C\right).
+  \end{equation}
+\end{itemize}
+
+\paragraph{2.\ $5\mathrm{D}$ HT Chern--Simons vs.\ topological $\mathrm{CS}_5$, and explicit definition of $F_D[\mathcal{A}]$.}
+Whereas $3\mathrm{D}$ Chern--Simons on $M_3$ has quantized integer level $\kappa_{\mathrm{CS}} \in \ZZ$ governed by the exact Wess--Zumino winding number $N_W[g] \in \ZZ$ (Proposition~\ref{prop:cs3-large-gauge-nw}) and $4\mathrm{D}$ Costello--Witten--Yamazaki Chern--Simons on $\RR^2\times\C$~\cite{CWY18} wedges $\dd z$ with $\mathrm{CS}_3$ at $(H,T)=(1,2)$ (where all bulk loops vanish by $\rho_n(M)^{\wedge 2} = 0$), \emph{commutative $5\mathrm{D}$ HT Chern--Simons} on $\RR_\tau\times\C^2_z$ ($\Omega := \dd z^1\wedge\dd z^2$) wedges $\Omega$ with $\mathrm{CS}_3[\mathcal{A}]$ along $(\tau,\bar{z}^{\bar{1}},\bar{z}^{\bar{2}})$ using the quadratic form $\kappa_{AB}$ (defined for every Lie algebra with invariant $\kappa_{AB}$). By contrast, for $\fg = \fsl_N$ ($N \ge 3$) with symmetric cubic trace tensor $d_{ABC} := \tr(T_A\{T_B,T_C\})$ ($d_{ABC} = 0$ on $\fsl_2$), the alternating holomorphic-jet $3$-cochain $D(X_0\ee^{p^{(0)}\cdot z}, X_1\ee^{p^{(1)}\cdot z}, X_2\ee^{p^{(2)}\cdot z}) := (p^{(0)}_1 p^{(1)}_2 - p^{(0)}_2 p^{(1)}_1)d_{ABC}X_0^A X_1^B X_2^C$ ($p^{(0)}+p^{(1)}+p^{(2)}=0$) defines on $\mathcal{A}^A \in \Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2_z)\otimes\fg[1]$ the position-space local cubic functional
+\begin{equation}
+\label{eq:FD-explicit-definition}
+F_D[\mathcal{A}] := \frac{1}{3}\int_{\RR\times\C^2}\dd z^1\wedge\dd z^2\wedge d_{ABC}\,(\partial_{z^1}\mathcal{A}^A)\wedge(\partial_{z^2}\mathcal{A}^B)\wedge\mathcal{A}^C,
+\end{equation}
+which equals $-\frac{1}{3}$ times the restriction of topological $\int_{\RR\times\C^2}\mathrm{CS}_5[\mathcal{A}]$ to $\Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2_z)$ (Proposition~\ref{prop:cs5-transgression-fd}) and supplies the one-loop anomaly-cancelling counterterm $J_1 = a F_D[\mathcal{A}]$ in Subsection~\ref{subsec:5d-cs-flagship}!
+\end{zkmodule}
+
+\begin{proposition}[{Finite large gauge transformation of $\frac{1}{2}\mathrm{CS}_3[A]$, exact Wess--Zumino winding number $N_W[g] \in \ZZ$, and level quantization $\kappa_{\mathrm{CS}} \in \ZZ$~{\cite{Bott59,Witten89}}}]
+\label{prop:cs3-large-gauge-nw}
+Let $G$ be a compact, connected, simple, simply connected Lie group with Lie algebra $\fg$, dual Coxeter number $h^\vee$, canonical basic $\Ad_G$-invariant bilinear form $\kappa^{\mathrm{norm}}_{AB} := \frac{1}{2h^\vee}\kappa^{\mathrm{Kill}}_{AB}$ normalized so long roots satisfy $(\theta_{\max},\theta_{\max})_{\mathrm{norm}} = 2$ (equivalently $\kappa^{\mathrm{norm}}(X,Y) = \tr_{\C^N}(X Y)$ on $\fg_{\C} = \fsl_N(\C)$ for $G = \SU(N)$), and smooth map $g : M_3 \to G$ on an oriented $3$-manifold $M_3$ with left-invariant Maurer--Cartan $1$-form $\theta_g := g^{-1}\dd g \in \Omega^1(M_3;\fg)$ obeying $\dd\theta_g = -\frac{1}{2}[\theta_g,\theta_g]$.
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Exact local $3$-form transformation aligned with $\delta_\epsilon A = -\dd_\nabla\epsilon$:} Under the finite gauge action $\dd + A^g := g(\dd + A)g^{-1}$, namely
+  \begin{equation}
+  \label{eq:finite-gauge-Ag}
+  A^g := g A g^{-1} - (\dd g)g^{-1} = g(A - \theta_g)g^{-1}
+  \quad\Bigl(g = \exp(+\epsilon) \implies \delta_\epsilon A = -(\dd\epsilon + [A,\epsilon]) = -\dd_\nabla\epsilon\Bigr),
+  \end{equation}
+  any $\Ad_G$-invariant symmetric bilinear form $\kappa$ on $\fg$ satisfies identically
+  \begin{equation}
+  \label{eq:cs3-finite-shift-exact}
+  \frac{1}{2}\mathrm{CS}_3[A^g] - \frac{1}{2}\mathrm{CS}_3[A] = -\frac{1}{2}\,\dd\,\kappa\bigl(g A g^{-1},\, (\dd g)g^{-1}\bigr) + \frac{1}{12}\,\kappa\bigl(\theta_g,\, [\theta_g, \theta_g]\bigr),
+  \end{equation}
+  where $\kappa(g A g^{-1}, (\dd g)g^{-1}) = \kappa(A, \theta_g)$ (whereas parameterizing via the inverse map $h := g^{-1}$ with $A^{[h]} = h^{-1}A h + \theta_h$ flips the Wess--Zumino sign to $-\frac{1}{12}\kappa(\theta_h,[\theta_h,\theta_h])$).
+
+  \item \emph{Exact Wess--Zumino winding number $N_W[g] \in \ZZ$:} For every closed oriented $3$-manifold $M_3$ ($\partial M_3 = \varnothing$) and smooth map $g : M_3 \to G$, the \textbf{Wess--Zumino winding number}
+  \begin{equation}
+  \label{eq:exact-NW-formula}
+  N_W[g] := \frac{1}{48\pi^2}\int_{M_3}\kappa^{\mathrm{norm}}\bigl(\theta_g,\, [\theta_g, \theta_g]\bigr) = \frac{1}{96\pi^2 h^\vee}\int_{M_3}\kappa^{\mathrm{Kill}}\bigl(\theta_g,\, [\theta_g, \theta_g]\bigr) \in \ZZ
+  \end{equation}
+  takes exact integer values, simplifying on $G = \SU(N)$ ($[\theta_g,\theta_g] = 2\theta_g\wedge_{\mathrm{mat}}\theta_g$) to
+  \begin{equation}
+  \label{eq:exact-NW-suN}
+  N_W[g] = \frac{1}{24\pi^2}\int_{M_3}\tr_{\C^N}\!\Bigl(\bigl(g^{-1}\dd g\bigr)^{\wedge 3}\Bigr) \in \ZZ,
+  \end{equation}
+  normalized to $N_W[\id_{S^3}] = +1$ on the orientation-preserving diffeomorphism $S^3 \xrightarrow{\cong} \SU(2)$.
+
+  \item \emph{Chern--Simons action shift and integer level quantization:} On closed $M_3$, the physical Chern--Simons action $S_{L,\mathrm{CS}_3}[A] := \frac{\kappa_{\mathrm{CS}}}{2\pi}\int_{M_3}\frac{1}{2}\mathrm{CS}_3^{\mathrm{norm}}[A]$ (equal on $\SU(N)$ to $\frac{\kappa_{\mathrm{CS}}}{4\pi}\int_{M_3}\tr_{\C^N}(A\wedge\dd A + \frac{2}{3}A^{\wedge 3})$, with $S_E = -\ii S_L$) transforms by
+  \begin{equation}
+  \label{eq:cs3-action-shift-quant}
+  \int_{M_3}\tfrac{1}{2}\mathrm{CS}_3^{\mathrm{norm}}[A^g] - \int_{M_3}\tfrac{1}{2}\mathrm{CS}_3^{\mathrm{norm}}[A] = 4\pi^2 N_W[g],\qquad
+  S_{L,\mathrm{CS}_3}[A^g] - S_{L,\mathrm{CS}_3}[A] = 2\pi\,\kappa_{\mathrm{CS}}\,N_W[g],
+  \end{equation}
+  rendering $\exp(\ii S_{L,\mathrm{CS}_3}[A]/\hbar) = \exp(-S_{E,\mathrm{CS}_3}[A]/\hbar)$ ($\hbar = 1$) gauge-invariant across all homotopy sectors $\pi_3(G) \cong \ZZ$ precisely when $\kappa_{\mathrm{CS}} \in \ZZ$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Part (1): Step-by-step local $3$-form algebra and flat-connection sign verification}
+Differentiating $g^{-1}g = \mathbf{1}$ gives $(\dd g^{-1})g + g^{-1}\dd g = 0 \implies \dd g^{-1} = -\theta_g g^{-1}$, hence $\dd\theta_g = (\dd g^{-1})\wedge_{\mathrm{mat}}\dd g = -\theta_g\wedge_{\mathrm{mat}}\theta_g = -\frac{1}{2}[\theta_g,\theta_g]$ (since $[X,Y]^A = f^A{}_{BC}X^B\wedge Y^C = (X\wedge_{\mathrm{mat}}Y + Y\wedge_{\mathrm{mat}}X)^A$ gives $[X,X] = 2X\wedge_{\mathrm{mat}}X$ on $1$-forms). Setting $B := A - \theta_g \in \Omega^1(M_3;\fg)$ so $A^g = g B g^{-1}$, the graded Leibniz rule on $\dd((g B)g^{-1}) = \dd(g B)g^{-1} - g B\wedge_{\mathrm{mat}}\dd g^{-1}$ gives
+\[
+\begin{aligned}
+\dd A^g &= g\bigl(\dd B + \theta_g\wedge_{\mathrm{mat}}B + B\wedge_{\mathrm{mat}}\theta_g\bigr)g^{-1} = g\bigl(\dd B + [\theta_g, B]\bigr)g^{-1}\\
+&= g\Bigl(\dd A + [\theta_g, A] - \frac{1}{2}[\theta_g,\theta_g]\Bigr)g^{-1},
+\end{aligned}
+\]
+using $-\dd\theta_g - [\theta_g,\theta_g] = (\frac{1}{2} - 1)[\theta_g,\theta_g] = -\frac{1}{2}[\theta_g,\theta_g]$. By $\Ad_G$-invariance $\kappa(g X g^{-1}, g Y g^{-1}) = \kappa(X,Y)$ and total symmetry of $\kappa(X,[Y,Z]) = f_{ABC}X^A\wedge Y^B\wedge Z^C$ on $1$-forms $X,Y,Z$:
+\[
+\begin{aligned}
+\tfrac{1}{2}\kappa(A^g, \dd A^g) &= \tfrac{1}{2}\kappa(A,\dd A) + \tfrac{1}{2}\kappa(A,[\theta_g,A]) - \tfrac{1}{4}\kappa(A,[\theta_g,\theta_g])\\
+&\quad - \tfrac{1}{2}\kappa(\theta_g,\dd A) - \tfrac{1}{2}\kappa(\theta_g,[\theta_g,A]) + \tfrac{1}{4}\kappa(\theta_g,[\theta_g,\theta_g]),\\
+\tfrac{1}{6}\kappa(A^g, [A^g,A^g]) &= \tfrac{1}{6}\kappa(A,[A,A]) - \tfrac{1}{2}\kappa(\theta_g,[A,A]) + \tfrac{1}{2}\kappa(A,[\theta_g,\theta_g]) - \tfrac{1}{6}\kappa(\theta_g,[\theta_g,\theta_g]).
+\end{aligned}
+\]
+Summing both expansions: (i)~the $\theta_g A^2$ terms $+\frac{1}{2}\kappa(A,[\theta_g,A]) - \frac{1}{2}\kappa(\theta_g,[A,A]) = 0$ cancel; (ii)~the $A\theta_g^2$ terms combine as $(-\frac{1}{4}-\frac{1}{2}+\frac{1}{2})\kappa(A,[\theta_g,\theta_g]) = -\frac{1}{4}\kappa(A,-2\,\dd\theta_g) = +\frac{1}{2}\kappa(A,\dd\theta_g)$, which adds to $-\frac{1}{2}\kappa(\theta_g,\dd A) = -\frac{1}{2}\kappa(\dd A,\theta_g)$ (even degree $2\cdot 1 = 2$) via $\dd\kappa(A,\theta_g) = \kappa(\dd A,\theta_g) - \kappa(A,\dd\theta_g)$ to give $-\frac{1}{2}\dd\kappa(A,\theta_g) = -\frac{1}{2}\dd\kappa(g A g^{-1},(\dd g)g^{-1})$; and (iii)~the cubic $\theta_g^3$ terms combine as $(\frac{1}{4}-\frac{1}{6})\kappa(\theta_g,[\theta_g,\theta_g]) = +\frac{1}{12}\kappa(\theta_g,[\theta_g,\theta_g])$, proving~\eqref{eq:cs3-finite-shift-exact}! As an immediate consistency check at $A = 0$, pure gauge $A^g = -(\dd g)g^{-1} = -g\theta_g g^{-1}$ is flat ($F(A^g) = \dd A^g + \frac{1}{2}[A^g,A^g] = 0 \implies \dd A^g = -\frac{1}{2}[A^g,A^g]$), so $\frac{1}{2}\mathrm{CS}_3[A^g]|_{A=0} = (-\frac{1}{4}+\frac{1}{6})\kappa(A^g,[A^g,A^g]) = -\frac{1}{12}\kappa(-\theta_g,[-\theta_g,-\theta_g]) = +\frac{1}{12}\kappa(\theta_g,[\theta_g,\theta_g])$.
+\end{proofpart}
+\begin{proofpart}{Part (2): Explicit evaluation of $N_W[\id_{S^3}] = +1$ on $\SU(2)$ and integrality across simple $G$}
+Identify the unit $3$-sphere $S^3 = \{(x^0,x^1,x^2,x^3) \in \RR^4 : \sum_{\substack{m\in\{0,1,2,3\}\\\mathrm{coords}}}(x^m)^2 = 1\}$ (oriented as $\partial B^4$, so at the north pole $p_N = (1,0,0,0)$ with outward normal $\partial_{x^0}$, $\dd\vol_{S^3}|_{p_N} = \dd x^1\wedge\dd x^2\wedge\dd x^3$) with $\SU(2)$ via $g(x) := x^0\mathbf{1}_2 + \ii(x^1\sigma_1 + x^2\sigma_2 + x^3\sigma_3)$. At $p_N$ ($g(p_N)=\mathbf{1}_2$, $\dd x^0|_{p_N}=0$), $\theta_g|_{p_N} = \ii(\sigma_1\dd x^1 + \sigma_2\dd x^2 + \sigma_3\dd x^3)$. Summing over all $3! = 6$ permutations $\pi \in S_3$ with $\sigma_{\pi(1)}\sigma_{\pi(2)}\sigma_{\pi(3)} = \sgn(\pi)\sigma_1\sigma_2\sigma_3 = \sgn(\pi)\ii\mathbf{1}_2$ and $\dd x^{\pi(1)}\wedge\dd x^{\pi(2)}\wedge\dd x^{\pi(3)} = \sgn(\pi)\dd\vol_{S^3}|_{p_N}$ yields
+\[
+\theta_g^{\wedge 3}\Big|_{p_N} = \ii^3\cdot 6\,(\ii\mathbf{1}_2)\,\dd\vol_{S^3}\Big|_{p_N} = +6\,\mathbf{1}_2\,\dd\vol_{S^3}\Big|_{p_N}\quad\Longrightarrow\quad
+\tr_{\C^2}\!\bigl(\theta_g^{\wedge 3}\bigr)\Big|_{p_N} = +12\,\dd\vol_{S^3}\Big|_{p_N}.
+\]
+Because left multiplication $g \mapsto h g$ ($h \in \SU(2)$) preserves both $\theta_g = g^{-1}\dd g$ and the round metric $\dd s^2_{S^3} = -\frac{1}{2}\tr_{\C^2}(\theta_g^2)$, the equality $\tr_{\C^2}(\theta_g^{\wedge 3}) = 12\,\dd\vol_{S^3}$ (and $\kappa^{\mathrm{norm}}(\theta_g,[\theta_g,\theta_g]) = 2\tr_{\C^2}(\theta_g^{\wedge 3}) = 24\,\dd\vol_{S^3}$) holds pointwise across $S^3$. Multiplying by $\vol(S^3) = \frac{2\pi^2}{\Gamma(2)} = 2\pi^2$ gives
+\[
+\begin{aligned}
+\int_{S^3}\tr_{\C^2}\!\bigl(\theta_g^{\wedge 3}\bigr) &= 12\cdot 2\pi^2 = 24\pi^2,\\
+\int_{S^3}\kappa^{\mathrm{norm}}\bigl(\theta_g,\, [\theta_g, \theta_g]\bigr) &= 24\cdot 2\pi^2 = 48\pi^2\quad\Longrightarrow\quad N_W[\id_{S^3}] = +1!
+\end{aligned}
+\]
+For arbitrary compact, connected, simple, simply connected $G$, Bott's theorem~\cite{Bott59} establishes $\pi_3(G) \cong \ZZ$ generated by the long-root subgroup $\iota_{\theta_{\max}} : \SU(2)_{\theta_{\max}} \hookrightarrow G$ ($(\theta_{\max},\theta_{\max})_{\mathrm{norm}} = 2$), along which $\iota_{\theta_{\max}}^*\kappa^{\mathrm{norm}}_G = \kappa^{\mathrm{norm}}_{\SU(2)}$. Because the Cartan $3$-form $\Omega_3^{\mathrm{WZ}} := \frac{1}{48\pi^2}\kappa^{\mathrm{norm}}(\theta_G,[\theta_G,\theta_G]) \in \Omega^3(G)$ is closed ($\dd\Omega_3^{\mathrm{WZ}} = 0$ by Jacobi) and integrates to $+1$ on the generator $[S^3] \in \pi_3(G) \cong H_3(G;\ZZ)$ (since $\pi_1(G)=\pi_2(G)=0$ implies $H_3(G;\ZZ) \cong \pi_3(G)$ by Hurewicz's theorem), $[\Omega_3^{\mathrm{WZ}}] \in H^3(G;\ZZ)$ is an integral cohomology class, proving $N_W[g] = \int_{M_3}g^*\Omega_3^{\mathrm{WZ}} = \langle g^*[\Omega_3^{\mathrm{WZ}}], [M_3]\rangle \in \ZZ$ for every closed oriented $3$-manifold $M_3$ and smooth map $g : M_3 \to G$.
+\end{proofpart}
+\begin{proofpart}{Part (3): Global Stokes vanishing and level quantization}
+On closed $M_3$ ($\partial M_3 = \varnothing$), Stokes' theorem annihilates $-\frac{1}{2}\int_{M_3}\dd\kappa^{\mathrm{norm}}(g A g^{-1},(\dd g)g^{-1}) = 0$, leaving $\int_{M_3}\frac{1}{2}\mathrm{CS}_3^{\mathrm{norm}}[A^g] - \int_{M_3}\frac{1}{2}\mathrm{CS}_3^{\mathrm{norm}}[A] = \frac{48\pi^2}{12}N_W[g] = 4\pi^2 N_W[g]$. Multiplying by $\frac{\kappa_{\mathrm{CS}}}{2\pi}$ yields $S_{L,\mathrm{CS}_3}[A^g] - S_{L,\mathrm{CS}_3}[A] = 2\pi\kappa_{\mathrm{CS}}N_W[g]$; choosing maps $g : M_3 \to S^3 \xrightarrow{\iota_{\theta_{\max}}} G$ of degree $N_W[g] = 1$ proves $\exp(2\pi\ii\kappa_{\mathrm{CS}}) = 1 \Longleftrightarrow \kappa_{\mathrm{CS}} \in \ZZ$.
+\end{proofpart}
+\end{proof}
+
+\begin{proposition}[{Gauge variation of $\mathrm{CS}_5[A]$ under $\delta_\epsilon A = -\dd_\nabla\epsilon$ and HT restriction $\int\mathrm{CS}_5|_{\mathrm{HT}} = -3 F_D$}]
+\label{prop:cs5-transgression-fd}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Under $\delta_\epsilon A^A = -(\dd_\nabla\epsilon)^A$~\eqref{eq:gauge-var-minus-dnabla}, $\delta_\epsilon\mathrm{CS}_5[A]$ is globally $\dd$-exact:
+  \[
+  \delta_\epsilon\mathrm{CS}_5[A] = -\frac{1}{2}\,\dd\!\left[d_{ABC}\epsilon^A\Bigl(\dd A^B\wedge\dd A^C + \frac{1}{2}[A,A]^B\wedge\dd A^C + \frac{1}{10}[A,A]^B\wedge[A,A]^C\Bigr)\right].
+  \]
+  \item Decomposing the five-dimensional de~Rham differential on $\RR_\tau\times\C^2_z$ as $\dd_{\mathrm{tot}} = \dd z^1\partial_{z^1} + \dd z^2\partial_{z^2} + D_{\mathrm{free}}$ ($D_{\mathrm{free}} = \dd_\tau + \dbar$) and restricting $\mathcal{A}^A$ to the holomorphic--topological superfield space $\Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2_z)\otimes\fsl_N[1]$ yields identically
+  \begin{equation}
+  \label{eq:cs5-equals-minus-3FD}
+  \int_{\RR\times\C^2}\mathrm{CS}_5[\mathcal{A}]\Big|_{\Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2_z)} = -\int_{\RR\times\C^2}\dd z^1\wedge\dd z^2\wedge d_{ABC}\,(\partial_{z^1}\mathcal{A}^A)\wedge(\partial_{z^2}\mathcal{A}^B)\wedge\mathcal{A}^C = -3\,F_D[\mathcal{A}].
+  \end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Exact boundary gauge variation under $\delta_\epsilon A = -\dd_\nabla\epsilon$}
+Under $\delta_\epsilon A = -\dd_\nabla\epsilon = -\dd\epsilon - [A,\epsilon]$, $\delta_\epsilon(\dd A) = -[\dd A,\epsilon] + [A,\dd\epsilon]$ and $\delta_\epsilon[A,A] = -[[A,A],\epsilon] - 2[\dd\epsilon,A]$. Expanding $\delta_\epsilon\mathrm{CS}_5[A]$ in~\eqref{eq:cs5-explicit}, every undifferentiated $\epsilon$ term cancels by $\ad$-invariance $d_{EBC}f^E{}_{AF} + d_{AEC}f^E{}_{BF} + d_{ABE}f^E{}_{CF} = 0$, while collecting terms in $\dd\epsilon^A$ and integrating by parts against $\dd(\dd A) = 0$ and $\dd[A,A] = 2[\dd A,A]$ yields $-\frac{1}{2}\dd[d_{ABC}\epsilon^A(\dd A^B\wedge\dd A^C + \frac{1}{2}[A,A]^B\wedge\dd A^C + \frac{1}{10}[A,A]^B\wedge[A,A]^C)]$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Saturation of $\dd z^1\wedge\dd z^2$ and derivation of $-3 F_D[\mathcal{A}]$}
+An integral over $\RR_\tau\times\C^2_z$ vanishes unless its integrand supplies $\Omega = \dd z^1\wedge\dd z^2$ alongside $\dd\tau\wedge\dd\bar{z}^{\bar{1}}\wedge\dd\bar{z}^{\bar{2}}$. Since $\mathcal{A}^A \in \Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2_z)\otimes\fsl_N[1]$ contains zero $\dd z^1$ or $\dd z^2$ factors, both $\dd z^1$ and $\dd z^2$ must come from $\dd_{\mathrm{tot}}\mathcal{A} = \dd z^i\partial_{z^i}\mathcal{A} + D_{\mathrm{free}}\mathcal{A}$. Hence the quartic ($\frac{3}{8}d_{ABC}[\mathcal{A},\mathcal{A}]^A\wedge\mathcal{A}^B\wedge\dd_{\mathrm{tot}}\mathcal{A}^C$) and quintic ($\frac{3}{40}d_{ABC}[\mathcal{A},\mathcal{A}]^A\wedge[\mathcal{A},\mathcal{A}]^B\wedge\mathcal{A}^C$) terms in~\eqref{eq:cs5-explicit} contain at most one $\dd_{\mathrm{tot}}$ and vanish identically. In the surviving cubic term $\frac{1}{2}d_{ABC}\mathcal{A}^A\wedge(\dd z^i\partial_{z^i}\mathcal{A}^B)\wedge(\dd z^j\partial_{z^j}\mathcal{A}^C)$, $\mathcal{A}$ and $\partial_{z^i}\mathcal{A}$ have total Koszul degree $+1$ (odd): moving $\dd z^2$ past odd $\partial_{z^1}\mathcal{A}^B$ produces $-1$, while moving $\dd z^1$ past odd $\partial_{z^2}\mathcal{A}^B$ followed by $\dd z^2\wedge\dd z^1 = -\dd z^1\wedge\dd z^2$ produces $+1$, giving
+\[
+\begin{aligned}
+&\frac{1}{2}d_{ABC}\mathcal{A}^A\wedge(\dd z^i\partial_{z^i}\mathcal{A}^B)\wedge(\dd z^j\partial_{z^j}\mathcal{A}^C)\\
+&\quad = -\frac{1}{2}\dd z^1\wedge\dd z^2\wedge d_{ABC}\,\mathcal{A}^A\wedge\bigl(\partial_{z^1}\mathcal{A}^B\wedge\partial_{z^2}\mathcal{A}^C - \partial_{z^2}\mathcal{A}^B\wedge\partial_{z^1}\mathcal{A}^C\bigr)\\
+&\quad = -\dd z^1\wedge\dd z^2\wedge d_{ABC}\,(\partial_{z^1}\mathcal{A}^A)\wedge(\partial_{z^2}\mathcal{A}^B)\wedge\mathcal{A}^C,
+\end{aligned}
+\]
+whose integral over $\RR\times\C^2$ equals $-3\,F_D[\mathcal{A}]$, where $\partial_{z^2}\mathcal{A}^B\wedge\partial_{z^1}\mathcal{A}^C = -\partial_{z^1}\mathcal{A}^C\wedge\partial_{z^2}\mathcal{A}^B$ and symmetry $d_{ACB} = d_{ABC}$ double the bracket (cancelling $\frac{1}{2}$), and cyclic permutation of the three odd factors $\mathcal{A}^A, \partial_{z^1}\mathcal{A}^B, \partial_{z^2}\mathcal{A}^C$ carries sign $(-1)^2 = +1$.
+\end{proofpart}
+\end{proof}
+
+\begin{proposition}[{Right-placed antifields, $\delta_\epsilon A^{(1)} = -\dd_\nabla\epsilon$, and AKSZ superconnection equivalence~{\cite{AKSZ97}}}]
+\label{prop:bv-aksz-cs}
+On a closed oriented $3$-manifold $M_3$, equip $\Omega^\bullet(M_3)\otimes\fg[1]$ with total Koszul degree $\deg_{\mathrm{tot}} = \deg_{\mathrm{form}} + \mathrm{gh}$ and assemble the ghost $\ghc^A \in \Omega^0[1]$, connection $A^{(1)A} \in \Omega^1[0]$, connection antifield $A^\ddagger_A \in \Omega^2[-1]$, and ghost antifield $\ghc^\ddagger_A \in \Omega^3[-2]$ into the total-degree-$1$ \emph{AKSZ superconnection}~\cite{AKSZ97}
+\begin{equation}
+\label{eq:aksz-superconnection}
+\mathcal{A}^A := \ghc^A + A^{(1)A} - \kappa^{AB}A^\ddagger_B + \kappa^{AB}\ghc^\ddagger_B \in \Omega^\bullet(M_3)\otimes\fg[1].
+\end{equation}
+Under $s A^{(1)A} = -(\dd_\nabla\ghc)^A = -(\dd\ghc^A + f^A{}_{BC}A^{(1)B}\ghc^C)$ and $s\ghc^A = +\frac{1}{2}f^A{}_{BC}\ghc^B\ghc^C$ ($s^2 = 0$), the minimal Euclidean BV master action with \emph{all antifields placed on the right} coincides term-for-term with the superconnection Chern--Simons functional:
+\begin{equation}
+\label{eq:bv-equals-aksz}
+\begin{aligned}
+S_{E,\mathrm{BV}}[\ghc,A^{(1)},A^\ddagger,\ghc^\ddagger] &:= \int_{M_3}\!\left(\tfrac{1}{2}\kappa_{AB}A^{(1)A}\wedge\dd A^{(1)B} + \tfrac{1}{6}f_{ABC}A^{(1)A}\wedge A^{(1)B}\wedge A^{(1)C}\right.\\
+&\qquad\qquad\left. -\; (\dd_\nabla\ghc)^A\wedge A^\ddagger_A + \tfrac{1}{2}f^A{}_{BC}\ghc^B\ghc^C\wedge\ghc^\ddagger_A\right) = \frac{1}{2}\int_{M_3}\mathrm{CS}_3[\mathcal{A}].
+\end{aligned}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+First, in local coordinates where $A^{(1)A} = \dd x^\mu A_\mu{}^A$ ($A_\mu{}^A$ even), $A^\ddagger_A = \frac{1}{2}\eps_{\nu\rho\sigma}\dd x^\nu\wedge\dd x^\rho A^{\sigma\ddagger}{}_A$ ($A^{\sigma\ddagger}{}_A$ odd), and $\ghc^\ddagger_A = \dd^3x\,\ghc^\ddagger_{(0)A}$ ($\ghc^\ddagger_{(0)A}$ even), commuting odd $\delta_1\ghc^A$ past odd $\dd^3x$ costs $(-1)^{1\cdot 3} = -1$ whereas commuting even $\delta_1 A_\mu{}^A$ past even $\dd x^\nu\wedge\dd x^\rho$ costs $+1$, explaining the relative minus sign $-\kappa^{AB}A^\ddagger_B$ vs.\ $+\kappa^{AB}\ghc^\ddagger_B$ in~\eqref{eq:aksz-superconnection} so $\int_{M_3}\kappa_{AB}\delta_1\mathcal{A}^A\wedge\delta_2\mathcal{A}^B$ induces uniform Darboux brackets $\{A^{\mu\ddagger}{}_A(x), A_\nu{}^B(y)\} = \delta_A{}^B\delta^\mu{}_\nu\delta^{(3)}(x-y)$ and $\{\ghc^\ddagger_{(0)A}(x), \ghc^B(y)\} = \delta_A{}^B\delta^{(3)}(x-y)$, with right derivatives $\delta_r S_{E,\mathrm{BV}}/\delta A^\ddagger_A = -(\dd_\nabla\ghc)^A = s A^{(1)A}$ and $\delta_r S_{E,\mathrm{BV}}/\delta\ghc^\ddagger_A = +\frac{1}{2}f^A{}_{BC}\ghc^B\ghc^C = s\ghc^A$.
+
+Second, every summand of $\mathcal{A}^A$ has total Koszul degree $+1$ (odd), making $f_{ABC}\mathcal{X}^A\wedge\mathcal{Y}^B\wedge\mathcal{Z}^C$ symmetric in $(\mathcal{X},\mathcal{Y},\mathcal{Z})$. Expanding $\frac{1}{2}\int_{M_3}(\kappa_{AB}\mathcal{A}^A\wedge\dd\mathcal{A}^B + \frac{1}{3}f_{ABC}\mathcal{A}^A\wedge\mathcal{A}^B\wedge\mathcal{A}^C)$ selects the form-degree-$3$ partitions: $(1,1)$ gives $\frac{1}{2}\kappa_{AB}A^{(1)A}\wedge\dd A^{(1)B}$; $(0,2)+(2,0)$ gives $\frac{1}{2}\kappa_{AB}[\ghc^A\wedge\dd(-\kappa^{BC}A^\ddagger_C) + (-\kappa^{AC}A^\ddagger_C)\wedge\dd\ghc^B] = -\int_{M_3}(\dd\ghc^C)\wedge A^\ddagger_C$ (using $\dd(\ghc^C\wedge A^\ddagger_C) = (\dd\ghc^C)\wedge A^\ddagger_C - \ghc^C\wedge\dd A^\ddagger_C$ and even $|\dd\ghc^C| = 2$ commuting past $A^\ddagger_C$); $(1,1,1)$ gives $\frac{1}{6}f_{ABC}A^{(1)A}\wedge A^{(1)B}\wedge A^{(1)C}$; the $3! = 6$ permutations of $(1,0,2)$ give $\frac{6}{6}f_{ABC}A^{(1)A}\wedge\ghc^B\wedge(-\kappa^{CE}A^\ddagger_E) = -(f^E{}_{AB}A^{(1)A}\wedge\ghc^B)\wedge A^\ddagger_E$; and the $3$ permutations of $(0,0,3)$ give $\frac{3}{6}f_{ABC}\ghc^A\wedge\ghc^B\wedge(\kappa^{CE}\ghc^\ddagger_E) = +\frac{1}{2}f^E{}_{AB}\ghc^A\ghc^B\wedge\ghc^\ddagger_E$, reproducing~\eqref{eq:bv-equals-aksz} identically.
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.92]
+  % Left: Dimensional ladder on R^T x C^H
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=3pt, draw=NavyBlue!75!black, fill=NavyBlue!2.5, line width=0.55pt] (-3.85,-1.95) rectangle (3.85,1.95);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.62) {(a) $(H,T)$ Dimensional Regimes};
+    \draw[-{Stealth[length=2.0mm,width=1.4mm]}, line width=0.7pt, gray!75!black] (-2.95,-1.35) -- (-2.95,1.30) node[above=1pt, font=\tiny] {$T$};
+    \draw[-{Stealth[length=2.0mm,width=1.4mm]}, line width=0.7pt, gray!75!black] (-2.95,-1.35) -- ( 3.15,-1.35) node[right=1pt, font=\tiny] {$H$};
+    \filldraw[PineGreen!85!black] (-1.65,-1.35) circle (0.06cm) node[below=2pt, font=\tiny] {$(2,0)$};
+    \filldraw[PineGreen!85!black] ( 0.15,-1.35) circle (0.06cm) node[below=2pt, font=\tiny] {$(3,0)$};
+    \filldraw[PineGreen!85!black] ( 1.95,-1.35) circle (0.06cm) node[below=2pt, font=\tiny] {$(5,0)$};
+    \filldraw[BrickRed!85!black]  (-1.65,-0.35) circle (0.06cm) node[right=2pt, font=\tiny] {$(2,1)$ $5\mathrm{D}$ CS};
+    \filldraw[BrickRed!85!black]  ( 1.45,-0.35) circle (0.06cm) node[right=2pt, font=\tiny] {$(5,1)$ $11\mathrm{D}$};
+    \filldraw[gray!75!black]      (-2.35, 0.55) circle (0.055cm) node[right=2pt, font=\tiny] {$(1,2)$ $\rho_n^{\wedge 2}{=}0$};
+    \filldraw[gray!75!black]      (-2.95, 1.10) circle (0.055cm) node[right=2pt, font=\tiny] {$(0,3)$ $\rho_n^{\wedge 3}{=}0$};
+    \draw[dashed, BrickRed!70!black, line width=0.5pt] (-3.10,0.12) -- (3.10,0.12);
+    \node[font=\tiny, text=BrickRed!80!black] at (1.65,0.32) {$T \ge 2$: bulk loops $= 0$};
+  \end{scope}
+
+  % Right: AKSZ superconnection form-degree triangle
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=3pt, draw=PineGreen!75!black, fill=PineGreen!2.5, line width=0.55pt] (-3.85,-1.95) rectangle (3.85,1.95);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.62) {(b) Superconnection $\mathcal{A}^A$ ($\deg_{\mathrm{tot}}=1$)};
+    \foreach \xx/\yy/\lbl/\sub in {
+      -2.55/ 0.45/{\ghc^A}/{$\Omega^0,\ \mathrm{gh}\,{+}1$},
+      -0.90/ 0.45/{A^{(1)A}}/{$\Omega^1,\ \mathrm{gh}\,0$},
+       0.92/ 0.45/{-\kappa^{AB}A^\ddagger_B}/{$\Omega^2,\ \mathrm{gh}\,{-}1$},
+       2.70/ 0.45/{\kappa^{AB}\ghc^\ddagger_B}/{$\Omega^3,\ \mathrm{gh}\,{-}2$}%
+    } {
+      \node[draw=PineGreen!75!black, rounded corners=2pt, fill=white, inner sep=2.6pt, font=\scriptsize] at (\xx,0.45) {$\lbl$};
+      \node[font=\tiny] at (\xx,-0.12) {\sub};
+    }
+    \draw[-{Stealth[length=1.8mm,width=1.3mm]}, line width=0.6pt, NavyBlue!80!black] (-2.12,0.45) -- node[above=1pt, font=\tiny] {$-\dd_\nabla$} (-1.38,0.45);
+    \draw[-{Stealth[length=1.8mm,width=1.3mm]}, line width=0.6pt, NavyBlue!80!black] (-0.38,0.45) -- node[above=1pt, font=\tiny] {$F$} ( 0.16,0.45);
+    \draw[-{Stealth[length=1.8mm,width=1.3mm]}, line width=0.6pt, NavyBlue!80!black] ( 1.66,0.45) -- node[above=1pt, font=\tiny] {$-\dd_\nabla$} ( 2.08,0.45);
+    \node[font=\tiny] at (0,-1.05) {$N_W[g] = \frac{1}{24\pi^2}\int\tr(\theta_g^{\wedge 3})\in\ZZ$;\quad $\int\mathrm{CS}_5|_{\mathrm{HT}} = -3F_D$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Visual dictionary for Background Card~6.1 and Propositions~\ref{prop:cs3-large-gauge-nw}--\ref{prop:bv-aksz-cs}: (a)~phase diagram of $(H,T)$ field theories showing pure holomorphic ($T=0$) and critical HT ($T=1$) regimes below the $T \ge 2$ Pfaffian vanishing line $\rho_n(M)^{\wedge T} = 0$; (b)~AKSZ superconnection tower~\eqref{eq:aksz-superconnection} with right-placed antifields, integer winding $N_W[g]\in\ZZ$, and $-3F_D$ restriction.}
+\label{fig:cs-aksz-ladder}
+\end{figure}
+
+\subsection{Commutative \texorpdfstring{$5\mathrm{D}$}{5D} Chern--Simons Diagrams, In-Situ Whitehead--Vogel Color Ladders, and All-Order Quantization}
+\label{subsec:5d-cs-flagship}
+
+On $X = \RR_\tau\times\C^2_z$ ($H=2, T=1, D=3$, $\Omega = \dd z^1\wedge\dd z^2$; companion paper~\fivedpdf), commutative $5\mathrm{D}$ Chern--Simons has $\mathcal{A}^A \in \Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2)\otimes\fg[1]$ and $S_{E,\mathrm{cl}}[\mathcal{A}] = \int_{\RR\times\C^2}\Omega\wedge(\frac{1}{2}\kappa_{AB}\mathcal{A}^A D_{\mathrm{free}}\mathcal{A}^B + \frac{1}{6}f_{ABC}\mathcal{A}^A\mathcal{A}^B\mathcal{A}^C)$. We first isolate the holomorphic--topological local complex and compute the spacetime integrals of the two-loop Feynman diagrams, and then introduce the Lie--Whitehead and Vogel split-Casimir background cards right at the step where the diagram color factors must be contracted and classified.
+
+\begin{lemma}[{$8$-summand Koszul decomposition $V \cong \bigoplus_{S\subset\{1,2,3\}}V_S$ vs.\ $\eta_v$-contraction projection~{\cite{WW24,Repo9e833c8}}}]
+\label{lem:5d-cs-8summands}
+Let $V := \mathrm{Loc}_{\mathrm{trans}}(\mathcal{E})$ denote the cochain complex of translation-invariant local functionals of $\mathcal{A}^A \in \Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^2_z)\otimes\fg[1]$ under $Q_0 = \{S_{E,\mathrm{cl}}, -\}$.
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Expanding polyform densities in the constant basis $(e_1,e_2,e_3) := (\dd\tau, \dd\bar{z}^{\bar{1}}, \dd\bar{z}^{\bar{2}})$ splits $V = \bigoplus_{\substack{S\subseteq\{1,2,3\}\\\mathrm{form\ subsets}}}V_S$ into $2^3 = 8$ $Q_0$-closed summands, containing non-holomorphic ghost-$0$ cohomology classes such as $G_\eps = \int_{\RR\times\C^2}\dd\tau\wedge\dd z^1\wedge\dd z^2\wedge\dd\bar{z}^{\bar{1}}\,\kappa_{AB}\mathcal{A}^A\partial_\tau\mathcal{A}^B$ and $T_\lambda = \int_{\RR\times\C^2}\dd z^1\wedge\dd z^2\wedge\dd\bar{z}^{\bar{1}}\wedge\dd\bar{z}^{\bar{2}}\,f_{ABC}\mathcal{A}^A\mathcal{A}^B\partial_\tau\mathcal{A}^C$ outside the top $(\dd\tau\wedge\dd\bar{z}^{\bar{1}}\wedge\dd\bar{z}^{\bar{2}})$-sector.
+
+  \item Imposing odd interior-contraction invariance $\eta_v F = 0$ for all $v \in \{\partial_\tau, \partial_{\bar{z}^{\bar{1}}}, \partial_{\bar{z}^{\bar{2}}}\}$ (automatic for $S_{E,\mathrm{cl}}$ and every Costello heat-kernel Feynman graph built from $D_{\mathrm{free}}$-invariant vertices and $D^* K_t$) kills the $7$ lower summands $S \subsetneq \{1,2,3\}$ and identifies the surviving holomorphic--topological subcomplex $V_{\mathrm{ht}} := V_{\{1,2,3\}}$ quasi-isomorphically with shifted balanced current cochains:
+  \begin{equation}
+  \label{eq:5d-vht-iso}
+  H^g(V_{\mathrm{ht}}, Q_0) \cong H^{g+3}\!\bigl((C^0_{\fg[[z^1,z^2]]})^G,\, d_{\mathrm{CE}}\bigr).
+  \end{equation}
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Decoupling of $D_{\mathrm{free}}$ on translation-invariant jets}
+On translation-invariant local functionals, integration by parts identifies total derivatives $\partial_\tau(\cdots) = \dbar_{\bar{\jmath}}(\cdots) = 0$, annihilating the kinetic operator $D_{\mathrm{free}} = \dd\tau\partial_\tau + \dd\bar{z}^{\bar{\jmath}}\dbar_{\bar{\jmath}}$ inside $Q_0$ and reducing $Q_0$ purely to the $\fg[[z^1,z^2,\tau,\bar{z}]]$-jet Chevalley--Eilenberg differential preserving each exterior subset $S \subseteq \{1,2,3\}$. Direct cocycle evaluation confirms $Q_0 G_\eps = Q_0 T_\lambda = 0$ with $G_\eps \in V_{\{1,2\}}$ and $T_\lambda \in V_{\{2,3\}}$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Interior contraction projection and $(\tau,\bar{z})$-Poincar\'e retraction}
+On $\mathcal{A} = \sum_{\substack{I\subseteq\{1,2,3\}\\\mathrm{components}}}e_I\mathcal{A}_I$, the derivation $\eta_{\partial_{a}}$ acts as $\partial/\partial e_a$ on explicit $1$-forms, so $\bigcap_{\substack{a\in\{1,2,3\}\\\mathrm{dirs}}}\ker\eta_{\partial_a} = V_{\{1,2,3\}}$ consists precisely of full-wedge functionals $\int\Omega\wedge\dd\tau\wedge\dd\bar{z}^{\bar{1}}\wedge\dd\bar{z}^{\bar{2}}\,\mathcal{L}(\mathcal{A},\partial_z^\alpha\mathcal{A})$ evaluated on the superfield $\mathcal{A}$ without explicit $(\partial_\tau,\partial_{\bar{z}})$ jet insertions, shifting ghost degree by $+3$ to yield~\eqref{eq:5d-vht-iso}.
+\end{proofpart}
+\end{proof}
+
+\paragraph{Spacetime evaluation of the two-loop $5\mathrm{D}$ Chern--Simons Feynman diagrams before color contraction.}
+Because $T = 1$, odd loop orders vanish ($O_{2m+1} = 0$). At two loops ($n = 2, D = 3, |I| = 7, |V| = 6$, $E_{\mathrm{ext}} = 4$ external gauge legs), $3$-Laman admissibility~\eqref{eq:d-laman-inequalities} admits two tight Feynman topologies: $\theta(1,3,3)$ and $\theta(2,2,3)$ (Figure~\ref{fig:5d-9d-cs}(a)). In Worked Example~\ref{ex:pareto-and-5d-theta}, Theorem~\ref{thm:theta-closed} evaluated their exact spacetime Schwinger integrals to $K_{133} = -\frac{\pi}{20}[p^{(1)}p^{(2)}][p^{(3)}p^{(4)}]$ and $K_{223} = +\frac{\pi}{30}[p^{(1)}p^{(2)}][p^{(3)}p^{(4)}]$. Dressing the six trivalent vertices with $f_{ABC}$ and the seven propagators with $\kappa^{EF}$ assembles the two-loop QME obstruction $[O_2] = -\frac{U\hbar^2}{3072\pi^4}[F_{223}]$ ($U \in \{\pm 1\}$) inside $H^4((C^0_{\fg[[z^1,z^2]]})^G)$. Determining (a)~for which Lie algebras $[F_{223}]$ vanishes modulo coboundaries $d_{\mathrm{CE}}([q^{(0)}q^{(1)}]^2 f_{ABC})$ and (b)~for which Lie algebras an order-$\hbar$ counterterm $J_1$ can cancel $[O_2]$ now requires two Lie-algebraic tools, which we present in situ as Background Cards~6.2 and~6.3.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.89]
+  % Left: 5D CS theta + central exchange
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=NavyBlue!60!black, fill=NavyBlue!2.5, line width=0.5pt] (-3.85,-1.70) rectangle (3.85,1.70);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.38) {(a) $5\mathrm{D}$ CS: $\bigoplus\fsl_{N_u}$ \& $\fg\oplus\C\mathbf{1}$};
+    \begin{scope}[shift={(-1.75,0.08)}]
+      \coordinate (l) at (-0.80,0); \coordinate (r) at (0.80,0);
+      \draw[prop] (l) .. controls (-0.30,0.58) and (0.30,0.58) .. node[pos=0.33, vbiv, scale=0.8] (a1) {} node[pos=0.67, vbiv, scale=0.8] (a2) {} (r);
+      \draw[prop] (l)--(r);
+      \draw[prop] (l) .. controls (-0.30,-0.58) and (0.30,-0.58) .. node[pos=0.33, vbiv, scale=0.8] (b1) {} node[pos=0.67, vbiv, scale=0.8] (b2) {} (r);
+      \draw[extleg] (a1)--++(0,0.20); \draw[extleg] (a2)--++(0,0.20);
+      \draw[extleg] (b1)--++(0,-0.20); \draw[extleg] (b2)--++(0,-0.20);
+      \filldraw[v0] (l) circle (0.05cm); \filldraw[v0] (r) circle (0.05cm);
+      \node[font=\tiny] at (0,-0.92) {$\theta(1,3,3): -\frac{\pi}{20}$};
+    \end{scope}
+    \begin{scope}[shift={(1.75,0.08)}]
+      \coordinate (xl) at (-0.80,0); \coordinate (xr) at (0.80,0);
+      \draw[cprop] (xl) .. controls (-0.30,0.58) and (0.30,0.58) .. (xr);
+      \draw[prop] (xl) -- node[pos=0.35, vbiv, scale=0.8] (xa) {} node[pos=0.68, vbiv, scale=0.8] (xb) {} (xr);
+      \draw[prop] (xl) .. controls (-0.30,-0.58) and (0.30,-0.58) .. node[pos=0.35, vbiv, scale=0.8] (xc) {} node[pos=0.68, vbiv, scale=0.8] (xd) {} (xr);
+      \draw[extleg] (xa)--++(0,0.20); \draw[extleg] (xb)--++(0,0.20);
+      \draw[extleg] (xc)--++(0,-0.20); \draw[extleg] (xd)--++(0,-0.20);
+      \node[vtcent, scale=0.82] at (xl) {}; \node[vtcent, scale=0.82] at (xr) {};
+      \node[font=\tiny] at (0,-0.92) {$\mathbf{1}$ exchange: $\frac{\chi^2}{8\ell}G_{kk}$};
+    \end{scope}
+    \node[font=\tiny] at (0,-1.38) {$50$-graph $i_4 > 0$ ($\forall\,N\ge 2$)};
+  \end{scope}
+
+  % Right: 9D CS theta(1,5,5)..theta(3,4,4) -> sl_2, sl_3
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=PineGreen!65!black, fill=PineGreen!2.5, line width=0.5pt] (-3.85,-1.70) rectangle (3.85,1.70);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.38) {(b) $9\mathrm{D}$ HT CS: $\fsl_2, \fsl_3$ Sole Cure};
+    \coordinate (nl) at (-1.55,0.12); \coordinate (nr) at (1.55,0.12);
+    \draw[prop] (nl) .. controls (-0.60,0.72) and (0.60,0.72) .. (nr);
+    \draw[prop] (nl)--(nr);
+    \draw[prop] (nl) .. controls (-0.60,-0.52) and (0.60,-0.52) .. (nr);
+    \foreach \tt in {0.2,0.4,0.6,0.8} {
+      \path (nl) -- coordinate[pos=\tt] (pm) (nr); \filldraw[vbiv] (pm) circle (0.045cm);
+      \path (nl) .. controls (-0.60,-0.52) and (0.60,-0.52) .. coordinate[pos=\tt] (pd) (nr); \filldraw[vbiv] (pd) circle (0.045cm);
+    }
+    \filldraw[v0] (nl) circle (0.054cm); \filldraw[v0] (nr) circle (0.054cm);
+    \node[font=\tiny] at (0,-0.88) {$\theta(1,5,5)\dots\theta(3,4,4)$ ($8$ legs)};
+    \node[font=\tiny] at (0,-1.38) {$[O_2] = \frac{U'\hbar^2}{7077888\pi^8}[F_{155}]$;\ $\fsl_3$: $a = \pm\frac{1}{512\pi^4}$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Two-loop Chern--Simons Feynman diagrams whose color contractions motivate Background Cards~6.2--6.3 (Theorems~\ref{thm:5d-cs-allorders} and~\ref{thm:9d-10d-cs}): (a)~$5\mathrm{D}$ CS $4$-leg theta topologies $\theta(1,3,3), \theta(2,2,3)$, central $\mathbf{1}$ exchange, and $50$-graph $\hbar^4$ lift; (b)~$9\mathrm{D}$ CS $8$-leg theta topologies $\theta(1,5,5)\dots\theta(3,4,4)$ leaving $\fsl_2, \fsl_3$ as the sole simple solutions.}
+\label{fig:5d-9d-cs}
+\end{figure}
+
+\phantomsection\label{subsec:lie-whitehead}
+\begin{zkmodule}{Chevalley Casimirs, $\fg$-Invariants vs.\ $\Hom_{\fg}$, Whitehead's Theorem, and Cubic Tensors}{low-rank-isomorphisms-cubic-invariants}
+Let $\fg$ be a finite-dimensional complex simple Lie algebra of dimension $d_{\fg} = \dim_{\C}\fg$ and rank $r_{\fg} = \dim_{\C}\fh$, with root decomposition $\fg = \fh \oplus \bigoplus_{\substack{\alpha\in\Phi\\\mathrm{roots}}}\fg_\alpha$, Killing form $\kappa^{\mathrm{Kill}}_{AB} := \Tr_{\fg}(\ad(T_A)\ad(T_B)) = 2h^\vee\kappa^{\mathrm{norm}}_{AB}$ (dual Coxeter number $h^\vee$), and Weyl group $W$.
+
+\paragraph{1.\ What the Chevalley generators $(P_1,\dots,P_{r_{\fg}})$ mean.}
+An element $P \in \Sym^d(\fg^*)$ is a degree-$d$ homogeneous polynomial on $\fg$; it is $\ad$-invariant ($P \in \Sym^d(\fg^*)^{\fg}$) when $P([Z,X],\dots,X) = 0$ for all $X,Z \in \fg$, corresponding under PBW symmetrization to a central Casimir operator in $Z(U(\fg))$. \emph{Chevalley's restriction theorem} states that restricting polynomials from $\fg$ to $\fh$ induces a graded algebra isomorphism $\Sym(\fg^*)^{\fg} \xrightarrow{\cong} \Sym(\fh^*)^W \cong \C[P_1,\dots,P_{r_{\fg}}]$, generated by $r_{\fg}$ algebraically independent homogeneous \emph{primitive Casimir generators} $P_1,\dots,P_{r_{\fg}}$ of degrees $d_1 \le \dots \le d_{r_{\fg}}$ ($\sum_{\substack{s\in\{1,\dots,r_{\fg}\}\\\mathrm{generators}}}(2d_s - 1) = d_{\fg}$):
+\begin{itemize}[leftmargin=*]
+  \item $A_{N-1} = \fsl_N(\C)$ ($r_{\fg} = N-1$): degrees $2, 3, 4, \dots, N$, realized by matrix power traces $P_{k-1}(X) = \tr_{\C^N}(X^k)$ ($k=2,\dots,N$). Crucially, \emph{$\fsl_N$ with $N \ge 3$ is the sole simple family possessing a degree-$3$ generator $P_2(X) = \tr(X^3)$!}
+  \item $B_r = \fso_{2r+1}$ and $C_r = \fsp_{2r}$: purely even degrees $2, 4, \dots, 2r$ (since $-\mathbf{1} \in W$ kills all odd-$d$ Weyl invariants).
+  \item $D_r = \fso_{2r}$ ($r \ge 3$): degrees $2, 4, \dots, 2r-2$ plus the degree-$r$ Pfaffian $\Pf(X)$ (giving a second quartic at $D_4 = \fso_8$, where $\Spin(8)$ triality permutes $8_v, 8_s, 8_c$, and a quintic Pfaffian at $D_5 = \fso_{10}$, while $D_3 \cong A_3$ recovers $\fso_6 \cong \fsl_4$, alongside $A_1 \cong B_1 \cong C_1$, $B_2 \cong C_2$, and $D_2 \cong \fsl_2\oplus\fsl_2$).
+  \item Exceptionals $G_2$ ($2,6$), $F_4$ ($2,6,8,12$), $E_6$ ($2,5,6,8,9,12$), $E_7$ ($2,6,8,10,12,14,18$), $E_8$ ($2,8,12,14,18,20,24,30$): zero degree-$3$ generators ($E_6$ has a quintic $\tr_{\mathbf{27}}(X^5)$ tested in $9\mathrm{D}$ CS).
+\end{itemize}
+
+\paragraph{2.\ Meaning of $\fg$-invariants $V^{\fg}$ and $\fg$-equivariant maps $\Hom_{\fg}(V,W)$.}
+For $\fg$-representations $(V,\rho_V)$ and $(W,\rho_W)$:
+\begin{equation}
+\label{eq:Vg-and-Homg-def}
+\begin{aligned}
+V^{\fg} &:= \bigl\{v \in V : \rho_V(Z)v = 0\ \ \forall\,Z\in\fg\bigr\},\\
+\Hom_{\fg}(V,W) &:= \bigl\{\Phi \in \Hom_{\C}(V,W) : \rho_W(Z)\circ\Phi = \Phi\circ\rho_V(Z)\ \ \forall\,Z\in\fg\bigr\}.
+\end{aligned}
+\end{equation}
+Via $(V^*\otimes W)^{\fg} \cong \Hom_{\fg}(V,W)$ and Killing self-duality $\fg \cong \fg^*$, trilinear invariant tensors split as $(\fg^{*\otimes 3})^{\fg} \cong \Hom_{\fg}(\fg\otimes\fg, \fg) \cong \Hom_{\fg}(\Lambda^2\fg, \fg) \oplus \Hom_{\fg}(\Sym^2\fg, \fg)$.
+\end{zkmodule}
+
+\begin{proposition}[Whitehead's lemmas, $H^3(\fg;\C) \cong \C$, and uniqueness of $f_{ABC}$ and $d_{ABC}$]
+\label{prop:whitehead-cubic-proof}
+For every finite-dimensional complex simple Lie algebra $\fg$:
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+  \item $H^1(\fg;V) = H^2(\fg;V) = 0$ for every finite-dimensional $\fg$-module $V$, and $H^\bullet(\fg;\C) \cong (\Lambda^\bullet\fg^*)^{\fg}$;
+  \item $H^3(\fg;\C) \cong (\Lambda^3\fg^*)^{\fg} = \C\cdot f_{ABC}$ is $1$-dimensional, so $\dim\Hom_{\fg}(\Lambda^2\fg,\fg) = 1$ (spanned by $[\cdot,\cdot]$);
+  \item $\dim(\Sym^3\fg^*)^{\fg} = 1$ for $\fg \cong \fsl_N$ ($N \ge 3$, spanned by $d_{ABC} := \frac{1}{2}\tr_{\C^N}(T_A\{T_B,T_C\})$) and $0$ for every other simple $\fg$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Part (a): Casimir homotopy proof of Whitehead's lemmas}
+By Weyl complete reducibility, reduce to irreducible $V$. When $V = \C$, $d_{\mathrm{CE}}\alpha(X,Y) = -\alpha([X,Y])$ vanishes on $[\fg,\fg] = \fg$, so $H^1(\fg;\C) = 0$. When $V \neq \C$ is nontrivial irreducible, the quadratic Casimir $C_2^V := \kappa^{AB}\rho_V(T_A)\rho_V(T_B) \in \End_{\fg}(V)$ acts by a nonzero scalar $c_V \neq 0$ (trace check via Weyl's dimension formula). Defining the degree-$(-1)$ contracting homotopy $h : C^p(\fg;V) \to C^{p-1}(\fg;V)$ by $(h\omega)(X_1,\dots,X_{p-1}) := \kappa^{AB}\rho_V(T_A)\,\omega(T_B, X_1,\dots,X_{p-1})$, standard Cartan calculus $[d_{\mathrm{CE}},\iota_Z] + \iota_Z d_{\mathrm{CE}} = \mathcal{L}_Z$ gives $(d_{\mathrm{CE}}h + h d_{\mathrm{CE}})\omega = C_2^V\omega = c_V\omega$, proving $H^p(\fg;V) = 0$ for all $p \ge 0$ on nontrivial irreducible $V$, and leaving $H^p(\fg;\C) \cong (\Lambda^p\fg^*)^{\fg}$ because $\mathcal{L}_Z = \iota_Z d_{\mathrm{CE}} + d_{\mathrm{CE}}\iota_Z$ vanishes on $(\Lambda^\bullet\fg^*)^{\fg}$. At $p=2$, any $\omega \in (\Lambda^2\fg^*)^{\fg}$ defines $J \in \Hom_{\fg}(\fg,\fg)$ via $\omega(X,Y) = \kappa(JX,Y)$; Schur's lemma forces $J = c\,\id_{\fg}$, hence $\omega(-,-) = -\omega(-,-) = 0$ and $H^2(\fg;\C) = 0$.
+\end{proofpart}
+\begin{proofpart}{Part (b): One-dimensionality of $(\Lambda^3\fg^*)^{\fg}$ and $\Hom_{\fg}(\Lambda^2\fg,\fg)$}
+First, $f_{ABC} = \kappa(T_A,[T_B,T_C])$ is totally skew and $d_{\mathrm{CE}}$-closed by Jacobi, with $f_{ABC}\kappa^{AE}f^E{}_{BF} = -\kappa^{\mathrm{Kill}}_{CF} \neq 0$, so $\dim(\Lambda^3\fg^*)^{\fg} \ge 1$. Conversely, any $\omega \in (\Lambda^3\fg^*)^{\fg}$ defines an intertwiner $\Phi \in \Hom_{\fg}(\Lambda^2\fg,\fg)$ via $\kappa(X,\Phi(Y\wedge Z)) = \omega(X,Y,Z)$. On the highest-root vector $E_\theta \in \fg_\theta$, weight conservation maps $\Lambda^2\fg$ onto $\fg_\theta$ via root pairs $\alpha + \beta = \theta$, fixing $\Phi$ up to a single scalar multiple of $[\cdot,\cdot]$ by simplicity of $\fg$ (equivalently via Hopf's theorem $H^\bullet(G;\C) \cong \Lambda^\bullet(x_{2d_1-1},\dots,x_{2d_{r_{\fg}}-1})$ with unique degree-$3$ generator $x_3$ from $d_1 = 2$).
+\end{proofpart}
+\begin{proofpart}{Part (c): Symmetric cubic invariants}
+Polarizing degree-$3$ polynomials in $\Sym(\fg^*)^{\fg} \cong \C[P_1,\dots,P_{r_{\fg}}]$ shows $\dim(\Sym^3\fg^*)^{\fg}$ counts primitive generators of degree $d_s = 3$, which equals $1$ for $A_{N-1}$ ($N \ge 3$) and $0$ for $A_1, B_r, C_r, D_r, G_2, F_4, E_{6,7,8}$.
+\end{proofpart}
+\end{proof}
+
+\begin{example}[Explicit cubic check on $\fsl_2$ vs.\ $\fsl_3$]
+\label{ex:sl2-sl3-cubic}
+For $X \in \fsl_2(\C)$ ($\tr X = 0$), Cayley--Hamilton $X^2 - \frac{1}{2}(\tr X^2)\mathbf{1}_2 = 0$ multiplies by $X$ and traces to give $\tr(X^3) = \frac{1}{2}(\tr X^2)(\tr X) = 0$ identically, confirming $(\Sym^3\fsl_2^*)^{\fsl_2} = 0$. For $X = \diag(1,1,-2) \in \fsl_3(\C)$, $\tr(X^3) = 1 + 1 - 8 = -6 \neq 0$, witnessing $d_{ABC} \neq 0$.
+\end{example}
+
+\phantomsection\label{subsec:vogel-plane}
+\begin{zkmodule}{Split Casimir Ladders $m_k, n_k$, Semisimple vs.\ Simple $X_2$, and Vogel's Plane}{vogel-universal-plane}
+To contract the six structure constants $f_{ABC}$ inside the two-loop $5\mathrm{D}$ Chern--Simons theta graphs $\theta(1,3,3)$ and $\theta(2,2,3)$ uniformly across all Lie types, note that those contractions form two parallel adjoint lines joined by $k = 4$ Killing-inverse rungs $(\kappa^{\mathrm{Kill},-1})^{FG}$. For any representations $(V,\rho_V)$ and $(W,\rho_W)$ of a Lie algebra $\fg$ equipped with nondegenerate $\ad$-invariant symmetric form $\kappa_{AB}$ (inverse $\kappa^{AB}$), define the quadratic Casimir $C_2(V) := \kappa^{AB}\rho_V(T_A)\rho_V(T_B)$ and \emph{split Casimir operator} $\Omega_{V\otimes W} := \kappa^{AB}\rho_V(T_A)\otimes\rho_W(T_B) \in \End_{\fg}(V\otimes W)$. On $V = W = \fg_{\mathrm{ad}}$ in Killing normalization $\kappa = \kappa^{\mathrm{Kill}}$, set $\Omega_{\mathrm{ad}} := \Omega_{\fg\otimes\fg}$ and tensor-flip $P_{\mathrm{ex}}(X\otimes Y) := Y\otimes X$, with planar and M\"obius ladder traces (Figure~\ref{fig:split-casimir-vogel}):
+\begin{equation}
+\label{eq:mk-nk-traces}
+m_k := \Tr_{\fg\otimes\fg}\bigl(\Omega_{\mathrm{ad}}^k\bigr),\qquad
+n_k := \Tr_{\fg\otimes\fg}\bigl(P_{\mathrm{ex}}\Omega_{\mathrm{ad}}^k\bigr)\qquad (k \in \ZZ_{\ge 1}).
+\end{equation}
+Decomposing $\fg\otimes\fg = \Lambda^2\fg \oplus \Sym^2\fg$ ($P_{\mathrm{ex}}|_{\Lambda^2\fg} = -1$, $P_{\mathrm{ex}}|_{\Sym^2\fg} = +1$), Proposition~\ref{prop:casimir-x2-semisimple} and Theorem~\ref{thm:vogel-dim-and-8n4} establish the exact hypotheses and eigenvalues on both sectors:
+\begin{enumerate}[leftmargin=*]
+  \item \emph{Antisymmetric square $\Lambda^2\fg$ (\textbf{valid for every semisimple $\fg$}):} Whenever $\fg$ is \emph{semisimple}, $[\cdot,\cdot] : \Lambda^2\fg \twoheadrightarrow \fg$ is surjective ($[\fg,\fg] = \fg$) and splits $\fg$-equivariantly into $\Lambda^2\fg = \fg_{\mathrm{ad}} \oplus X_2$, where $X_2 := \ker([\cdot,\cdot] : \Lambda^2\fg \to \fg)$ has dimension $\dim X_2 = \binom{d_{\fg}}{2} - d_{\fg} = \frac{1}{2}d_{\fg}(d_{\fg} - 3)$ (vanishing among nonzero semisimple $\fg$ precisely for $\fg \cong \fsl_2$), with $\Omega_{\mathrm{ad}}|_{\fg_{\mathrm{ad}}} = -\frac{1}{2}\id_{\fg_{\mathrm{ad}}}$ and $\Omega_{\mathrm{ad}}|_{X_2} = 0$!
+  \item \emph{Symmetric square $\Sym^2\fg$ (\textbf{requires $\fg$ to be simple}):} When $\fg$ is \emph{simple} (so $(\Sym^2\fg)^{\fg} = \C\cdot c_{\mathrm{Kill}}$ is $1$-dimensional, whereas semisimple $\fg = \bigoplus_{\substack{u\in\{1,\dots,m\}\\\mathrm{ideals}}}\fg_u$ with $m \ge 2$ has $\dim(\Sym^2\fg)^{\fg} = m$ plus mixed summands $\fg_u\otimes\fg_v$), Vogel and Mkrtchyan--Sergeev--Veselov~\cite{MSV11} decompose $\Sym^2\fg = \C\oplus Y_2(v_1)\oplus Y_2(v_2)\oplus Y_2(v_3)$ in projective \emph{Vogel parameters} $(v_1 : v_2 : v_3) \in \mathbb{CP}^2/S_3$ ($t_V := v_1 + v_2 + v_3 \neq 0$, $C_2^{\mathrm{Kill}}|_{Y_2(v_s)} = (2 - \frac{v_s}{t_V})\id$):
+  \begin{equation}
+  \label{eq:vogel-dim-and-eigen}
+  d_{\fg} = \frac{(v_1 - 2t_V)(v_2 - 2t_V)(v_3 - 2t_V)}{v_1 v_2 v_3},\qquad
+  \Omega_{\mathrm{ad}}\big|_{\C} = -1,\qquad
+  \Omega_{\mathrm{ad}}\big|_{Y_2(v_s)} = -\frac{v_s}{2t_V}\,\id.
+  \end{equation}
+\end{enumerate}
+\end{zkmodule}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.92]
+  % 1-rung Omega_ad
+  \begin{scope}[shift={(-5.30,0)}]
+    \draw[rounded corners=2.5pt, draw=NavyBlue!65!black, fill=NavyBlue!2.5, line width=0.5pt] (-2.25,-1.55) rectangle (2.25,1.55);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.25) {(a) Rung $\Omega_{\mathrm{ad}}$};
+    \draw[prop] (-1.20,0.45) -- (1.20,0.45);
+    \draw[prop] (-1.20,-0.45) -- (1.20,-0.45);
+    \draw[prop, BrickRed!85!black] (0,0.45) -- node[right=2pt, font=\tiny, text=BrickRed!85!black] {$\kappa^{-1}$} (0,-0.45);
+    \filldraw[v0] (0,0.45) circle (0.055cm);
+    \filldraw[v0] (0,-0.45) circle (0.055cm);
+    \node[font=\tiny] at (0,-1.12) {$\lambda_{X_2}=0,\ \lambda_{\fg}=-\frac{1}{2}$};
+  \end{scope}
+
+  % Planar ladder m_k
+  \begin{scope}[shift={(0,0)}]
+    \draw[rounded corners=2.5pt, draw=PineGreen!65!black, fill=PineGreen!2.5, line width=0.5pt] (-2.25,-1.55) rectangle (2.25,1.55);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.25) {(b) Planar $m_k$};
+    \draw[prop, PineGreen!85!black] (0,0.08) circle (0.72cm);
+    \draw[prop, PineGreen!85!black] (0,0.08) circle (0.38cm);
+    \foreach \ang in {45,135,225,315} {
+      \draw[prop, BrickRed!85!black] ($(0,0.08)+({\ang}:0.38cm)$) -- ($(0,0.08)+({\ang}:0.72cm)$);
+    }
+    \node[font=\tiny] at (0,-1.12) {$m_k = \Tr_{\fg^{\otimes 2}}(\Omega_{\mathrm{ad}}^k)$};
+  \end{scope}
+
+  % Moebius ladder n_k
+  \begin{scope}[shift={(5.30,0)}]
+    \draw[rounded corners=2.5pt, draw=Plum!65!black, fill=Plum!2.5, line width=0.5pt] (-2.25,-1.55) rectangle (2.25,1.55);
+    \node[font=\scriptsize\bfseries, text=Plum!85!black] at (0,1.25) {(c) M\"obius $n_k$};
+    \draw[prop] (-1.45,0.45) -- (0.35,0.45);
+    \draw[prop] (-1.45,-0.40) -- (0.35,-0.40);
+    \draw[prop, Plum!85!black] (0.35,0.45) -- (1.25,-0.40);
+    \draw[prop, Plum!85!black] (0.35,-0.40) -- (1.25,0.45);
+    \foreach \xx in {-1.05,-0.45,0.15} \draw[prop, BrickRed!85!black] (\xx,0.45) -- (\xx,-0.40);
+    \node[font=\tiny, text=Plum!85!black] at (1.05,0.68) {$P_{\mathrm{ex}}$};
+    \node[font=\tiny] at (0,-1.12) {$8n_4 - 3d_{\fg} \Longleftrightarrow X_2$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Split Casimir ladder operators of Background Card~6.3: (a)~single Killing-inverse rung $\Omega_{\mathrm{ad}}$ annihilating $X_2 = \ker[\cdot,\cdot]$; (b)~planar $k$-rung annulus trace $m_k$; (c)~single-twist M\"obius trace $n_k$ governing the two-loop $5\mathrm{D}$ Chern--Simons color contraction~\eqref{eq:vogel-8n4-proof-eq}.}
+\label{fig:split-casimir-vogel}
+\end{figure}
+
+\begin{proposition}[{Proof of $C_2(V\otimes W) = C_2(V)\otimes\id + \id\otimes C_2(W) + 2\Omega_{V\otimes W}$, semisimple vs.\ simple hypotheses on $X_2$, and Jacobi vanishing $\Omega_{\mathrm{ad}}|_{X_2} = 0$}]
+\label{prop:casimir-x2-semisimple}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Tensor-product Casimir expansion and $C_2^{\mathrm{Kill}}(\fg_{\mathrm{ad}}) = \mathbf{1}_{\fg}$:} For any finite-dimensional Lie algebra $\fg$ with nondegenerate $\ad$-invariant symmetric bilinear form $\kappa_{AB}$ (inverse $\kappa^{AB}$) and any $\fg$-representations $(V,\rho_V), (W,\rho_W)$,
+  \begin{equation}
+  \label{eq:casimir-tensor-expansion}
+  C_2(V\otimes W) = C_2(V)\otimes\id_W + \id_V\otimes C_2(W) + 2\,\Omega_{V\otimes W}.
+  \end{equation}
+  When $\fg = \bigoplus_{\substack{u\in\{1,\dots,m\}\\\mathrm{simple\ ideals}}}\fg_u$ is complex \textbf{semisimple} in Killing normalization $\kappa = \kappa^{\mathrm{Kill}}$, $C_2^{\mathrm{Kill}}(\fg_{\mathrm{ad}}) = \mathbf{1}_{\fg}$, hence $\Omega_{\mathrm{ad}} = \frac{1}{2}\bigl(C_2^{\mathrm{Kill}}(\fg\otimes\fg) - 2\mathbf{1}_{\fg\otimes\fg}\bigr)$.
+
+  \item \emph{Semisimple sufficiency for $\Lambda^2\fg = \fg_{\mathrm{ad}}\oplus X_2$ vs.\ simple necessity for Vogel's $\Sym^2\fg$:} For \textbf{every semisimple} $\fg$ (whereas non-semisimple reductive algebras with center $\mathfrak{z}(\fg) \neq 0$, such as $\fgl_N = \fsl_N\oplus\C\mathbf{1}$, fail surjectivity $[\fg,\fg]\subsetneq\fg$), $[\cdot,\cdot] : \Lambda^2\fg \twoheadrightarrow \fg$ ($X\wedge Y \mapsto [X,Y]$, $X\wedge Y := X\otimes Y - Y\otimes X$) is surjective with $\fg$-equivariant right inverse $2s : \fg \hookrightarrow \Lambda^2\fg$, $s(Z) := -\frac{1}{2}(\kappa^{\mathrm{Kill},-1})^{AB}[Z,T_A]\wedge T_B$, splitting $\Lambda^2\fg = 2s(\fg)\oplus X_2 \cong \fg_{\mathrm{ad}}\oplus X_2$ with $\dim X_2 = \binom{d_{\fg}}{2} - d_{\fg} = \frac{1}{2}d_{\fg}(d_{\fg}-3)$. Moreover, the Jacobi identity gives on all of $\Lambda^2\fg$
+  \begin{equation}
+  \label{eq:omega-on-wedge2}
+  \Omega_{\mathrm{ad}}(X\wedge Y) = -s\bigl([X,Y]\bigr)
+  \quad\Longrightarrow\quad
+  \Omega_{\mathrm{ad}}\big|_{\fg_{\mathrm{ad}}} = -\frac{1}{2}\,\id_{\fg_{\mathrm{ad}}},\qquad
+  \Omega_{\mathrm{ad}}\big|_{X_2} = 0.
+  \end{equation}
+  By contrast, Vogel's four-summand decomposition~\eqref{eq:vogel-dim-and-eigen} requires $\fg$ to be \textbf{simple}: for semisimple $\fg = \bigoplus_{\substack{u\in\{1,\dots,m\}\\\mathrm{ideals}}}\fg_u$ with $m \ge 2$, $(\Sym^2\fg)^{\fg} = \bigoplus_{\substack{u\in\{1,\dots,m\}\\\mathrm{ideals}}}(\Sym^2\fg_u)^{\fg_u} \cong \C^m$ has dimension $m \ge 2$ and $\Sym^2\fg$ acquires mixed bi-adjoint summands $\bigoplus_{\substack{1\le u < v \le m\\\mathrm{pairs}}}(\fg_u\otimes\fg_v)$ annihilated by $\Omega_{\mathrm{ad}}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Part (1): Derivation of $C_2(V\otimes W)$ and Killing normalization $C_2^{\mathrm{Kill}}(\fg_{\mathrm{ad}}) = \mathbf{1}_{\fg}$}
+On $V\otimes W$, $\fg$ acts as a derivation $\rho_{V\otimes W}(T_A) := \rho_V(T_A)\otimes\id_W + \id_V\otimes\rho_W(T_A)$. Expanding $C_2(V\otimes W) = \kappa^{AB}\rho_{V\otimes W}(T_A)\rho_{V\otimes W}(T_B)$ gives
+\[
+\begin{aligned}
+C_2(V\otimes W) &= \kappa^{AB}\Bigl(\rho_V(T_A)\rho_V(T_B)\otimes\id_W + \id_V\otimes\rho_W(T_A)\rho_W(T_B)\\
+&\qquad\qquad +\; \rho_V(T_A)\otimes\rho_W(T_B) + \rho_V(T_B)\otimes\rho_W(T_A)\Bigr)\\
+&= C_2(V)\otimes\id_W + \id_V\otimes C_2(W) + 2\,\Omega_{V\otimes W},
+\end{aligned}
+\]
+where symmetry $\kappa^{BA} = \kappa^{AB}$ relabels $(A\leftrightarrow B)$ in $\kappa^{AB}\rho_V(T_B)\otimes\rho_W(T_A) = \Omega_{V\otimes W}$. For semisimple $\fg = \bigoplus_{\substack{u\in\{1,\dots,m\}\\\mathrm{ideals}}}\fg_u$, $[\fg_u,\fg_v] = 0$ ($u\neq v$) block-diagonalizes $\kappa^{\mathrm{Kill}}_{\fg} = \bigoplus_{\substack{u\in\{1,\dots,m\}\\\mathrm{ideals}}}\kappa^{\mathrm{Kill}}_{\fg_u}$ (nondegenerate by Cartan's criterion). On each simple ideal $\fg_u$, irreducibility of $(\fg_u)_{\mathrm{ad}}$ and Schur's lemma force $C_2^{\mathrm{Kill}}(\fg_u) = \lambda_u\mathbf{1}_{\fg_u}$, and tracing over $\fg_u$ gives $\lambda_u\dim\fg_u = (\kappa_{\fg_u}^{\mathrm{Kill},-1})^{AB}\Tr_{\fg_u}(\ad T_A\ad T_B) = \delta^A{}_A = \dim\fg_u \implies \lambda_u = 1$, hence $C_2^{\mathrm{Kill}}(\fg_{\mathrm{ad}}) = \mathbf{1}_{\fg}$.
+\end{proofpart}
+\begin{proofpart}{Part (2): Semisimple splitting of $\Lambda^2\fg$ and three-line Jacobi proof of $\Omega_{\mathrm{ad}}|_{X_2} = 0$}
+Each simple ideal satisfies $[\fg_u,\fg_u] = \fg_u$, so $[\fg,\fg] = \fg$ for every semisimple $\fg$. Applying $[\cdot,\cdot](U\wedge V) = [U,V]$ to $s(Z) = -\frac{1}{2}(\kappa^{\mathrm{Kill},-1})^{AB}[Z,T_A]\wedge T_B$ gives $[\cdot,\cdot](s(Z)) = -\frac{1}{2}(\kappa^{\mathrm{Kill},-1})^{AB}[[Z,T_A],T_B] = +\frac{1}{2}(\kappa^{\mathrm{Kill},-1})^{AB}\ad(T_B)\ad(T_A)Z = \frac{1}{2}C_2^{\mathrm{Kill}}(\fg_{\mathrm{ad}})(Z) = \frac{1}{2}Z$; thus $[\cdot,\cdot]\circ(2s) = \id_{\fg}$, splitting $\Lambda^2\fg = 2s(\fg)\oplus\ker[\cdot,\cdot] = \fg_{\mathrm{ad}}\oplus X_2$ with $\dim X_2 = \binom{d_{\fg}}{2} - d_{\fg} = \frac{1}{2}d_{\fg}(d_{\fg}-3)$. Next, pairing $\Omega_{\mathrm{ad}}(X\wedge Y) = (\kappa^{\mathrm{Kill},-1})^{EF}([T_E,X]\otimes[T_F,Y] - [T_E,Y]\otimes[T_F,X])$ against $T_G\otimes T_H$ via $\kappa^{\mathrm{Kill}}$ gives $(\kappa^{\mathrm{Kill},-1})^{EF}(f_{GEC}f_{HFD} - f_{GED}f_{HFC})X^C Y^D$. By the Jacobi identity $\kappa^{\mathrm{Kill}}(T_H, [T_G,[T_C,T_D]] + [T_C,[T_D,T_G]] + [T_D,[T_G,T_C]]) = 0$ and total skew-symmetry of $f_{ABC}$, $(\kappa^{\mathrm{Kill},-1})^{EF}(f_{GEC}f_{HFD} - f_{GED}f_{HFC}) = +(\kappa^{\mathrm{Kill},-1})^{EF}f_{EGH}f_{FCD}$, which equals the $(G,H)$ component of $-s([X,Y])$, proving~\eqref{eq:omega-on-wedge2}: $\Omega_{\mathrm{ad}}|_{X_2} = -s\circ[\cdot,\cdot]|_{X_2} = 0$ and $\Omega_{\mathrm{ad}}(2s(Z)) = -s([\cdot,\cdot](2s(Z))) = -s(Z) = -\frac{1}{2}(2s(Z))$. Finally, when $\fg = \fg_1\oplus\fg_2$ has $m \ge 2$ simple ideals, independent Killing forms on $\fg_u$ yield $\dim(\Sym^2\fg)^{\fg} = m \ge 2$ and $\Omega_{\mathrm{ad}}(x_1\otimes x_2) = 0$ on $\fg_1\otimes\fg_2$ since $[\fg_1,\fg_2] = 0$.
+\end{proofpart}
+\end{proof}
+
+\begin{theorem}[{Proof of Vogel's $\Sym^2\fg$ eigenvalues and dimension formula, universal M\"obius identity $8n_4 - 3d_{\fg}$, and $\fso_{32}$ sextic factorization~{\cite{MSV11,Repo9e833c8}}}]
+\label{thm:vogel-dim-and-8n4}
+\phantomsection\label{prop:vogel-8n4-identity}\phantomsection\label{lem:vogel-sln-so8}
+Let $\fg$ be a finite-dimensional complex \textbf{simple} Lie algebra.
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Proof of~\eqref{eq:vogel-dim-and-eigen}:} On $\Sym^2\fg = \C\cdot c_{\mathrm{Kill}} \oplus Y_2(v_1)\oplus Y_2(v_2)\oplus Y_2(v_3)$ ($c_{\mathrm{Kill}} := (\kappa^{\mathrm{Kill},-1})^{AB}T_A\otimes T_B$, $C_2^{\mathrm{Kill}}|_{Y_2(v_s)} = (2 - \frac{v_s}{t_V})\id$, $t_V = v_1+v_2+v_3 \neq 0$), Proposition~\ref{prop:casimir-x2-semisimple}(1) gives $\Omega_{\mathrm{ad}}|_{\C} = -1$ and $\Omega_{\mathrm{ad}}|_{Y_2(v_s)} = -\frac{v_s}{2t_V}\id =: \lambda_s\id$ ($\lambda_1+\lambda_2+\lambda_3 = -\frac{1}{2}$), and the trace of the cubic minimal polynomial $\prod_{\substack{s\in\{1,2,3\}\\\mathrm{branches}}}(\Omega_{\mathrm{ad}} - \lambda_s\id)|_{(\Sym^2\fg)_\circ} = 0$ proves $d_{\fg} = \frac{(v_1 - 2t_V)(v_2 - 2t_V)(v_3 - 2t_V)}{v_1 v_2 v_3}$.
+
+  \item \emph{Universal M\"obius trace $8n_4 - 3d_{\fg}$ and Vandermonde branch dimensions:} The four-rung M\"obius trace $n_4 = \Tr_{\fg\otimes\fg}(P_{\mathrm{ex}}\Omega_{\mathrm{ad}}^4)$ obeys
+  \begin{equation}
+  \label{eq:vogel-8n4-proof-eq}
+  8n_4 - 3d_{\fg} = \frac{3\dim(X_2)\,v_1 v_2 v_3}{2t_V^3} = \frac{3d_{\fg}(d_{\fg} - 3)\,v_1 v_2 v_3}{4t_V^3},
+  \end{equation}
+  vanishing among simple Lie algebras precisely when $\fg \cong \fsl_2$, while the branch dimensions equal $\dim Y_2(v_1) = -\frac{t_V(v_2-2t_V)(v_3-2t_V)(t_V+v_2)(t_V+v_3)(2t_V-3v_1)}{v_1^2 v_2 v_3(v_1-v_2)(v_1-v_3)}$ (and cyclic permutations). In particular, on $\fsl_N(\C)$ ($N \ge 2$) at $(-2,2,N;N)$, $\dim Y_2(-2,2,N) = \bigl(\frac{N^2(N+1)(N-3)}{4}, \frac{N^2(N-1)(N+3)}{4}, N^2-1\bigr)$ ($N \ge 3$) and $8n_4 - 3(N^2-1) = -\frac{3(N^2-1)(N^2-4)}{N^2}$.
+
+  \item \emph{$\fso_{32}$ sextic factorization:} On $\fso_N$ ($N \ge 3$), $\Tr_{\mathrm{ad}}x^6 = (N-32)p_6 + 15p_2 p_4$ ($p_j := \tr_{\mathrm{fund}}x^j$) is divisible by $p_2$ precisely for $N \in \{3, 5, 32\}$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Part (1): Minimal-polynomial trace proof of Vogel's dimension formula~\eqref{eq:vogel-dim-and-eigen}}
+Since $\rho_{\fg\otimes\fg}(Z)(c_{\mathrm{Kill}}) = 0$, $C_2^{\mathrm{Kill}}(\C) = 0 \implies \Omega_{\mathrm{ad}}|_{\C} = \frac{1}{2}(0-2) = -1$, while $C_2^{\mathrm{Kill}}|_{Y_2(v_s)} = (2 - \frac{v_s}{t_V})\id$ gives $\Omega_{\mathrm{ad}}|_{Y_2(v_s)} = \frac{1}{2}(C_2^{\mathrm{Kill}} - 2\id)|_{Y_2(v_s)} = -\frac{v_s}{2t_V}\id = \lambda_s\id$ with $e_1 := \lambda_1+\lambda_2+\lambda_3 = -\frac{t_V}{2t_V} = -\frac{1}{2}$. Set $(\Sym^2\fg)_\circ := \C^\perp = \bigoplus_{\substack{s\in\{1,2,3\}\\\mathrm{branches}}}Y_2(v_s)$ and $S_k := \Tr_{(\Sym^2\fg)_\circ}(\Omega_{\mathrm{ad}}^k) = m_k - d_{\fg}(-\frac{1}{2})^k - (-1)^k$ ($k \ge 1$), with $S_0 = \binom{d_{\fg}+1}{2} - 1 = \frac{1}{2}(d_{\fg}-1)(d_{\fg}+2)$. Directly from $\kappa^{\mathrm{Kill}}_{AB} = \Tr_{\fg}(\ad T_A\ad T_B)$ and $\Tr_{\fg}(\ad T_A) = 0$:
+\[
+\begin{aligned}
+m_1 &= (\kappa^{\mathrm{Kill},-1})^{AB}\Tr_{\fg}(\ad T_A)\Tr_{\fg}(\ad T_B) = 0 &&\Longrightarrow\quad S_1 = \tfrac{1}{2}d_{\fg} + 1 = \tfrac{1}{2}(d_{\fg} + 2),\\
+m_2 &= (\kappa^{\mathrm{Kill},-1})^{AB}(\kappa^{\mathrm{Kill},-1})^{CD}\kappa^{\mathrm{Kill}}_{AC}\kappa^{\mathrm{Kill}}_{BD} = d_{\fg} &&\Longrightarrow\quad S_2 = \tfrac{3}{4}d_{\fg} - 1.
+\end{aligned}
+\]
+At $k = 3$, $\ad$-skew-symmetry makes $\Tr_{\fg}(\ad T_A\ad T_C\ad T_E) \in (\Lambda^3\fg^*)^{\fg} = \C\cdot f_{ACE}$ (Proposition~\ref{prop:whitehead-cubic-proof}(b)); contracting with $f^{ACE}$ via $f^{ACE}\Tr_{\fg}(\ad T_A\ad T_C\ad T_E) = \frac{1}{2}f^{ACE}f^G{}_{CE}\kappa^{\mathrm{Kill}}_{AG} = -\frac{1}{2}d_{\fg} = \frac{1}{2}f^{ACE}f_{ACE}$ fixes $\Tr_{\fg}(\ad T_A\ad T_C\ad T_E) = +\frac{1}{2}f_{ACE}$, so $m_3 = \frac{1}{4}f_{ACE}f^{ACE} = -\frac{1}{4}d_{\fg}$ and $S_3 = -\frac{1}{4}d_{\fg} - (-\frac{1}{8}d_{\fg}) - (-1) = -\frac{1}{8}d_{\fg} + 1$. Because $(\Omega_{\mathrm{ad}} - \lambda_1\id)(\Omega_{\mathrm{ad}} - \lambda_2\id)(\Omega_{\mathrm{ad}} - \lambda_3\id) = \Omega_{\mathrm{ad}}^3 - e_1\Omega_{\mathrm{ad}}^2 + e_2\Omega_{\mathrm{ad}} - e_3\id = 0$ on $(\Sym^2\fg)_\circ$ ($e_1 = -\frac{1}{2}$, $e_2 := \lambda_1\lambda_2+\lambda_2\lambda_3+\lambda_3\lambda_1$, $e_3 := \lambda_1\lambda_2\lambda_3$), tracing over $(\Sym^2\fg)_\circ$ yields
+\[
+0 = S_3 + \tfrac{1}{2}S_2 + e_2 S_1 - e_3 S_0 = \tfrac{1}{4}(d_{\fg} + 2) + \tfrac{1}{2}e_2(d_{\fg} + 2) - \tfrac{1}{2}e_3(d_{\fg} - 1)(d_{\fg} + 2).
+\]
+Dividing out $\frac{1}{2}(d_{\fg} + 2) > 0$ gives $\frac{1}{2} + e_2 - e_3(d_{\fg} - 1) = 0$. Since $\frac{1}{2} = 1 + e_1$, solving for $d_{\fg}$ produces
+\[
+d_{\fg} = \frac{1 + e_1 + e_2 + e_3}{e_3} = \frac{(1 + \lambda_1)(1 + \lambda_2)(1 + \lambda_3)}{\lambda_1\lambda_2\lambda_3} = \frac{(v_1 - 2t_V)(v_2 - 2t_V)(v_3 - 2t_V)}{v_1 v_2 v_3}.
+\]
+\end{proofpart}
+\begin{proofpart}{Part (2): Four-line derivation of $8n_4 - 3d_{\fg}$ and Vandermonde branch dimensions}
+Multiplying $\Omega_{\mathrm{ad}}^3 + \frac{1}{2}\Omega_{\mathrm{ad}}^2 + e_2\Omega_{\mathrm{ad}} - e_3\id = 0$ on $(\Sym^2\fg)_\circ$ by $\Omega_{\mathrm{ad}}$, taking the trace $S_4 = -\frac{1}{2}S_3 - e_2 S_2 + e_3 S_1$, and substituting $e_2 = e_3(d_{\fg}-1) - \frac{1}{2}$ yields
+\[
+1 + S_4 = \Bigl[1 - \tfrac{1}{2}\bigl(-\tfrac{1}{8}d_{\fg}+1\bigr) + \tfrac{1}{2}\bigl(\tfrac{3}{4}d_{\fg}-1\bigr)\Bigr] + e_3\bigl[S_1 - (d_{\fg}-1)S_2\bigr] = \tfrac{7}{16}d_{\fg} - \tfrac{3}{4}d_{\fg}(d_{\fg}-3)\,e_3.
+\]
+Since $n_4 = \Tr_{\Sym^2\fg}(\Omega_{\mathrm{ad}}^4) - \Tr_{\Lambda^2\fg}(\Omega_{\mathrm{ad}}^4) = (1 + S_4) - \frac{1}{16}d_{\fg} = \frac{3}{8}d_{\fg} - \frac{3}{4}d_{\fg}(d_{\fg}-3)e_3$ and $e_3 = \lambda_1\lambda_2\lambda_3 = -\frac{v_1 v_2 v_3}{8t_V^3}$, multiplying by $8$ and subtracting $3d_{\fg}$ gives~\eqref{eq:vogel-8n4-proof-eq} directly; since $v_1 v_2 v_3 \neq 0$ for simple $\fg$, $8n_4 - 3d_{\fg} = 0 \Longleftrightarrow d_{\fg} = 3 \Longleftrightarrow \fg \cong \fsl_2$. Solving the $3\times 3$ Vandermonde system $\sum_{\substack{s\in\{1,2,3\}\\\mathrm{branches}}}\lambda_s^k\dim Y_2(v_s) = S_k$ ($k=0,1,2$) yields the universal formula for $\dim Y_2(v_1)$, which at $(-2,2,N;N)$ ($v_1 v_2 v_3 = -4N$) gives $8n_4 - 3(N^2-1) = \frac{3(N^2-1)(N^2-4)(-4N)}{4N^3} = -\frac{3(N^2-1)(N^2-4)}{N^2}$.
+\end{proofpart}
+\begin{proofpart}{Part (3): Divisibility $p_2 \mid \Tr_{\mathrm{ad}}x^6$ on $\fso_N$}
+For $N \ge 7$, $p_2, p_4, p_6$ are algebraically independent in $\C[P_1,\dots,P_r]$ (while at $N=6$, $\fso_6\cong\fsl_4$ retains $-4(\Pf x)^2$), so $p_2 \mid ((N-32)p_6 + 15p_2 p_4) \Longleftrightarrow N = 32$, alongside $N=3$ ($\fso_3\cong\fsl_2$) and $N=5$ ($\fso_5\cong\fsp_4$, where Cayley--Hamilton $x^5 - \frac{1}{2}p_2 x^3 + \frac{1}{8}(p_2^2-2p_4)x = 0$ gives $p_6 = \frac{3}{4}p_2 p_4 - \frac{1}{8}p_2^3$).
+\end{proofpart}
+\end{proof}
+
+\begin{example}[Concrete Vogel evaluations on $\fsl_2$, $\fsl_N$, $\fso_8$, and $E_8$]
+\label{ex:vogel-benchmarks}
+Substituting standard Vogel triples $(v_1,v_2,v_3; t_V)$ into~\eqref{eq:vogel-dim-and-eigen} and~\eqref{eq:vogel-8n4-proof-eq}:
+\begin{itemize}[leftmargin=*]
+  \item $\fsl_2$ ($N=2$): $(-2, 2, 2; 2) \implies d_{\fg} = \frac{(-6)(-2)(-2)}{-8} = 3$, $\dim X_2 = 0$, $n_4 = \frac{9}{8}$, $8n_4 - 3d_{\fg} = 0$;
+  \item $\fsl_N$ ($N \ge 3$): $(-2, 2, N; N) \implies d_{\fg} = N^2 - 1$, $8n_4 - 3d_{\fg} = -\frac{3(N^2-1)(N^2-4)}{N^2}$ ($-\frac{40}{3}$ at $\fsl_3$, where $n_4 = 1 + 27(-\frac{1}{3})^4 = \frac{4}{3}$);
+  \item $\fso_8$: $(-2, 4, 4; 6) \implies d_{\fg} = 28$, $\dim X_2 = 350$, $8n_4 - 3d_{\fg} = -\frac{700}{9}$;
+  \item $E_8$: $(-2, 12, 20; 30) \implies d_{\fg} = \frac{(-62)(-48)(-40)}{-480} = 248$, $\dim Y_2(-2,12,20) = (27{,}000,\,3{,}875,\,0)$, $n_4 = -\frac{124}{15}$, $8n_4 - 3d_{\fg} = -\frac{12152}{15}$.
+\end{itemize}
+\end{example}
+
+With Background Cards~6.2 and~6.3 in hand, the complete multi-loop classification of commutative $5\mathrm{D}$ Chern--Simons follows immediately.
+
+\begin{theorem}[Complete $5\mathrm{D}$ Chern--Simons classification, $50$-graph $\hbar^4$ primitive $i_4$, and central escape~{\cite{Costello16,Repo9e833c8}}]
+\label{thm:5d-cs-allorders}
+In commutative $5\mathrm{D}$ Chern--Simons on $\RR_\tau\times\C^2_z$:
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Two-loop Vogel detector and rank-uniform semisimple classification:} Evaluating the coboundary-killing detector on $[O_2] = -\frac{U\hbar^2}{3072\pi^4}[F_{223}]$ via Theorem~\ref{thm:vogel-dim-and-8n4}(2) gives $\varpi(F_{223}) = 2d_{\fg}(8n_4 - 3d_{\fg}) = \frac{3d_{\fg}\dim(X_2)v_1 v_2 v_3}{t_V^3}$, proving $[O_2] = 0 \Longleftrightarrow \fg \cong \fsl_2$ among simple Lie algebras.
+
+  For any simple $\fg \notin \{\fsl_N\}_{N\ge 2}$, Proposition~\ref{prop:whitehead-cubic-proof}(c) gives $(\Sym^3\fg^*)^{\fg} = 0$, and the polynomial line-integral primitive $H(v) := \int_0^1 D_2 P(tv,0)[v]\,\dd t$ proves $H^3(C^0_{\fg})_{(p,q)} = 0$ for all $p+q > 0$ at every rank and derivative order. Conversely, on $\fsl_N$ ($N \ge 3$), adjoining $J_1 = a F_D[\mathcal{A}]$---where $F_D[\mathcal{A}] = -\frac{1}{3}\int\mathrm{CS}_5[\mathcal{A}]|_{\mathrm{HT}}$ is the twisted $5$-form functional of~\eqref{eq:FD-explicit-definition} (Proposition~\ref{prop:cs5-transgression-fd}) with $a^2 = \epsilon U\frac{N^2}{256\pi^4}$---cancels $[O_2]$, and cyclic/two-trace cohomology $H^3_{\deg=2w} = 0$, $\dim(H^4_{\deg=2w})^{\SL_2} = \delta_{w,2}$ lifts $\fsl_N$ uniquely to all formal orders $\hbar^w$ ($F_{\fu}$ and $F_{D_3}$ denoting the local functionals of symbols $[p_0 p_1]^2 f_{ABC}$ and $[p_0 p_1]^3 d_{ABC}$):
+  \begin{equation}
+  \label{eq:5d-cs-action-thru-h4}
+  S_E = S_{E,\mathrm{cl}} + \hbar\,a F_D + \hbar^2\epsilon U\frac{3N^2+10}{1280\pi^4}F_{\fu} + \hbar^3 a\epsilon U\frac{2N^2+5}{1920\pi^4}F_{D_3} + \hbar^4 I_4 + \mathcal{O}(\hbar^5),
+  \end{equation}
+  specializing cleanly to $N = 2$ with $J_1 = I_{2k+1} = 0$! Hence a complex semisimple $\fg$ quantizes $\mathrm{U}(2)$-equivariantly in $V_{\mathrm{ht}}$ \textbf{precisely when $\fg \cong \bigoplus_{\substack{u\\\mathrm{ideals}}}\fsl_{N_u}$ ($N_u \ge 2$)}.
+
+  \item \emph{Exhaustive $50$-graph $\hbar^4$ primitive $i_4$:} Passing all $66{,}554$ subset $3$-Laman bounds selects $3\text{ SP} + 0\ W_4 + 8\text{ DK} + 28\text{ Prism} + 11\ K_{3,3} = 50$ tight four-loop graphs (Figure~\ref{fig:5d-9d-cs}(a)), yielding at $\epsilon U = +1$ the strictly positive transcendental primitive ($\forall\,N \ge 2$):
+  \begin{equation}
+  \label{eq:i4-5d-cs}
+  i_4 = \frac{1}{4096\pi^8}\!\left[\frac{1}{24} + N^2\!\left(\frac{1102559}{5443200} - \frac{35701\pi^2}{1935360}\right) + N^4\!\left(\frac{4216}{212625} - \frac{130727\pi^2}{92897280}\right)\right][p_0 p_1]^4 f.
+  \end{equation}
+
+  \item \emph{Two-loop central-field escape on $\fg\oplus\C\mathbf{1}$ and Moyal $1/e$ bridge:} Adjoining one central field $\mathbf{1}$ ($\kappa(\mathbf{1},\mathbf{1}) = \ell \neq 0$) with mixed symmetric cubic $T(X,Y,\mathbf{1}) = \chi\kappa(X,Y)$, $T(\mathbf{1},\mathbf{1},\mathbf{1}) = \gamma$ solves the complete order-$\hbar^2$ QME across all $5$ central leg sectors via $\gamma = \ell\chi$ and $\chi^2 = \frac{\epsilon U\ell a_{\mathrm{cent}}}{384\pi^4}$ on $\fso_5\oplus\C\mathbf{1}$ ($87{,}846$ integer entries) and all five exceptionals $G_2,F_4,E_6,E_7,E_8$. In Costello's Moyal action $s_e$~\cite{Costello16}, sending $e \to 0$ produces a Laurent pole $\delta^2\frac{t_{\mathrm{pole}}}{e}D_{\fsl}$ unless $e = s\hbar$ pairs with $t\hbar D_{\fsl}$ obeying $t(s+t) = \frac{\epsilon U N^2}{256\pi^4}$ (while $\mathrm{D}6/\mathrm{O}6$ orientifolds force $e=0$).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), $[F_{133}] = -[F_{223}]$ modulo $\beta_{\mathrm{cob}} := d_{\mathrm{CE}}([q^{(0)}q^{(1)}]^2 f)$ gives $[O_2]$; differentiating the $3$-cocycle equation $P(p,q)+P(p+q,r)=P(q,r)+P(p,q+r)$ at $r=0$ yields $P(p,q) = P(0,0)+H(p+q)-H(p)-H(q)$, which is $d_{\mathrm{CE}}$-exact for $p+q>0$ whenever $(\Sym^3\fg^*)^{\fg}=0$; on $\fsl_N$, $\frac{1}{2}\{D,D\} = \frac{1}{12N^2}F_{223} + \frac{N^2+4}{2N^2}\beta_{\mathrm{cob}}$ cancels $[O_2]$ and polygon bar-duality kills higher obstructions. In~(2), summing trees, $J_1/I_2$-marked thetas, and all $50$ four-loop half-integer kernels gives~\eqref{eq:i4-5d-cs}, positive by $\pi^2 < 10$. In~(3), Pl\"ucker's identity forces $\gamma = \ell\chi$ in the $2$-central sector while central exchange generates $\frac{\chi^2}{8\ell}G_{kk}$ cancelling $F_{223} = x\beta_{\mathrm{cob}} + a_{\mathrm{cent}}G_{kk}$.
+\end{proof}
+
+\begin{example}[Explicit arithmetic spot check on $\fg = \fsl_3(\C)$ at orders $\hbar^2$ and $\hbar^3$]
+\label{ex:sl3-spotcheck}
+Setting $N = 3$ in Theorem~\ref{thm:5d-cs-allorders}(1) gives $a^2 = \epsilon U\frac{9}{256\pi^4}$ and $i_2 = \epsilon U(\frac{13}{512} + \frac{9}{2560})\frac{u_2 f}{\pi^4} = \epsilon U\frac{37}{1280\pi^4}u_2 f = \epsilon U\frac{3(3^2)+10}{1280\pi^4}u_2 f$. At $\hbar^3$, $\{D, -\frac{37}{20}u_2 f\} = -\frac{37}{60}d_{\mathrm{CE}}D_3$ combines with the $12$ $J_1$-marked thetas $-\frac{9}{60}d_{\mathrm{CE}}D_3$ into $-\frac{23}{30}d_{\mathrm{CE}}D_3$, giving $i_3 = a\epsilon U\frac{23}{1920\pi^4}D_3 = a\epsilon U\frac{2(3^2)+5}{1920\pi^4}D_3$.
+\end{example}
+
+\subsection{Dimensional Collapse in \texorpdfstring{$9\mathrm{D}$}{9D} HT Chern--Simons and \texorpdfstring{$10\mathrm{D}$}{10D} Green--Schwarz Factorization}
+\label{subsec:9d-10d-cs}
+
+\begin{theorem}[$9\mathrm{D}$ HT CS $\fsl_2, \fsl_3$-sole quantization vs.\ $10\mathrm{D}$ hCS Green--Schwarz list~{\cite{Repo9e833c8}}]
+\label{thm:9d-10d-cs}
+At $D = H+T = 5$ (four tight two-loop theta graphs $\theta(1,5,5),\theta(2,4,5),\theta(3,3,5),\theta(3,4,4)$, Figure~\ref{fig:5d-9d-cs}(b)):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Minimal $9\mathrm{D}$ SYM twist $\mathrm{Map}(\C^4\times\RR_{\mathrm{dR}}, B\fg)$ at $(4,1)$:} Odd loops vanish ($O_1 = O_3 = 0$). At two loops, $K/\pi$ values $(\frac{1}{5184}, -\frac{1}{9072}, \frac{1}{10080}, -\frac{1}{22680})$ and cohomology ratios $(1,-1,1,-\frac{3}{2})$ sum to
+  \begin{equation}
+  \label{eq:9d-cs-o2}
+  \begin{aligned}
+  [o'] &= \frac{1}{6912}[F_{155}] = -\frac{1}{32N}[R_{kkkk}] + \frac{N}{1152}[R_{44}] - \frac{1}{144}[Q_{23,23}] - \frac{N}{1440}[Q_{5,23}],\\
+  [O_2] &= \frac{U'\hbar^2}{7077888\,\pi^8}[F_{155}],
+  \end{aligned}
+  \end{equation}
+  with $[O_2] = 0 \Longleftrightarrow \fg \cong \fsl_2$ across all simple $\fg$. Unlike $5\mathrm{D}$ CS, a $\mathrm{U}(4)$-equivariant arity-$5$ counterterm $J_1 = a\int\dd^4z\,\eps^{ijkl}T(A,\partial_i A,\dots)$ ($T \in (\Sym^5\fg^*)^{\fg}$) cures $[O_2]$ through $\hbar^2$ \textbf{solely for $\fg \in \{\fsl_2, \fsl_3\}$}: for $N \ge 9$, $q[a j_5 + b j_{23}]$ has zero $[R_{kkkk}]$ coefficient while $-\frac{1}{32N} \neq 0$; $\fsl_{6..8}, \fso_{10}, E_6$ fail on the Cartan detector; $\fsl_5$ misses the rank-$1$ quadratic cone ($c_{5,23}^2 - c_{55}c_{23,23} = -\frac{25}{82944} \neq 0$); $\fsl_4$ fails Cayley--Hamilton span; whereas at $\fsl_3$, $\tr X^4 = \frac{1}{2}(\tr X^2)^2$ collapses $o' = -\frac{1}{256}Q_{23,23} + d_{\mathrm{CE}}\eta$, cured uniquely by $j = a j_{23}$ with $a = \pm\frac{1}{512\pi^4}$ ($I_2$ unique mod $B^7$, $O_3 = 0$).
+
+  \item \emph{$10\mathrm{D}$ hCS on $\C^5$ at $(5,0)$:} Since $P_6(h) = \sum_{\substack{\alpha\in\Phi\\\mathrm{roots}}}\alpha(h)^6 > 0$ on real coroots, pure $10\mathrm{D}$ hCS has $[O_1] \neq 0$ (and $d_{\mathrm{CE}}o_2 = -Q_{(1)}o_1 \neq 0$) for every simple $\fg$. Closed-sector Green--Schwarz factorization $P_2 \mid P_6$ ($\Tr_{\mathrm{ad}}X^6 \in \kappa\cdot\Sym^4(\fg^*)^{\fg}$) holds \textbf{precisely for $\fg \in \{\fsl_2, \fso_5\cong\fsp_4, \fso_{32}, E_8\}$} (realized at $\fso_{32}$ by Type~I Kodaira--Spencer exchange~\cite{CL19}).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), Theorem~\ref{thm:theta-closed} evaluates the four $(4,1)$ theta kernels; at $N \ge 9$, $\dim C^{6,7,8}_{\mathrm{inv}} = (4,37,179)$ and $\rk d_{6,7,8} = (3,34,141)$ give $\dim H^8_{\mathrm{inv}} = 4$, where $q[a j_5 + b j_{23}] = -\frac{25a^2}{2N}[R_{44}] + ab[Q_{5,23}] + b^2[Q_{23,23}]$ lacks $[R_{kkkk}]$ ($\rk[B;Q] = 37 < \rk[B;Q;o'] = 38$); explicit modular/rational rank checks establish $\fsl_3$ ($x_{Q_{23,23}} = -\frac{1}{256}$) and rule out $\fsl_{4..8}, \fso_{10}, E_6$. In~(2), Chevalley degree tables in Background Card~6.2 and Theorem~\ref{thm:vogel-dim-and-8n4}(3) across $A_r,B_r,C_r,D_r,G_2,F_4,E_{6,7,8}$ isolate $\{\fsl_2,\fso_5,\fso_{32},E_8\}$.
+\end{proof}
+
+\begin{lemma}[{Summation of the four $9\mathrm{D}$ theta graphs and $\fsl_5$ Veronese cone obstruction vs.\ $\fsl_3$ cure}]
+\label{lem:9d-cs-sl5-sl3}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item At $(H,T) = (4,1)$ ($D=5$, $2\Gamma(\frac{11}{2}) = \frac{945}{16}\sqrt{\pi}$), Theorem~\ref{thm:theta-closed} yields $K/\pi = (\frac{1}{5184}, -\frac{1}{9072}, \frac{1}{10080}, -\frac{1}{22680})$ on $\theta(1,5,5), \theta(2,4,5), \theta(3,3,5), \theta(3,4,4)$, whose automorphism- and cohomology-weighted sum equals $\frac{1}{6912}[F_{155}]$.
+
+  \item On $\fsl_5$, $[o']$ misses the rank-$1$ quadratic cone of tree-exchange squares $q[a j_5 + b j_{23}]$ over $\C$ because $c_{5,23}^2 - c_{55}c_{23,23} = -\frac{25}{82944} \neq 0$, whereas on $\fsl_3$ ($\tr X^5 = \frac{5}{6}\tr X^2\tr X^3$, $\tr X^4 = \frac{1}{2}(\tr X^2)^2$) $j = a j_{23}$ cures $[o']$ with $a = \pm\frac{1}{512\pi^4}$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Explicit $(4,1)$ theta kernels and rational assembly}
+Evaluating Theorem~\ref{thm:theta-closed} gives $+\frac{\frac{105}{16}\pi^{3/2}}{0!\,4!\,4!\cdot\frac{945}{16}\sqrt{\pi}} = +\frac{\pi}{5184}$ on $\theta(1,5,5)$, $-\frac{\frac{15}{8}\cdot\frac{1}{2}\pi^{3/2}}{1!\,3!\,4!\cdot\frac{945}{16}\sqrt{\pi}} = -\frac{\pi}{9072}$ on $\theta(2,4,5)$, $+\frac{(\frac{3}{4})^2\pi^{3/2}}{2!\,2!\,4!\cdot\frac{945}{16}\sqrt{\pi}} = +\frac{\pi}{10080}$ on $\theta(3,3,5)$, and $-\frac{\frac{3}{4}\cdot(\frac{1}{2})^2\pi^{3/2}}{2!\,3!\,3!\cdot\frac{945}{16}\sqrt{\pi}} = -\frac{\pi}{22680}$ on $\theta(3,4,4)$. Weighting by $\frac{1}{|\Aut\theta|} = (\frac{1}{4},\frac{1}{2},\frac{1}{4},\frac{1}{4})$ and cohomology ratios $(1,-1,1,-\frac{3}{2})$ sums to $\frac{35 + 40 + 18 + 12}{725760} = \frac{105}{725760} = \frac{1}{6912}$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Off-cone discriminant on $\fsl_5$ vs.\ rank-$1$ collapse on $\fsl_3$}
+Every symmetric square $(a j_5 + b j_{23})^{\vee 2}$ lies on the Veronese conic $\{X_{5,23}^2 - X_{55}X_{23,23} = 0\} \subset \mathbb{P}^2_{\C}$, missed by $[o']$ on $\fsl_5$ since $c_{5,23}^2 - c_{55}c_{23,23} = -\frac{25}{82944} \neq 0$. On $\fsl_3$, $j_5 = \frac{5}{6}j_{23}$ and $\tr X^4 = \frac{1}{2}(\tr X^2)^2$ collapse $H^8_{\mathrm{inv}}$ to $\C[Q_{23,23}]$ with $[o'] = -\frac{1}{256}[Q_{23,23}]$, solved by $a = \pm\frac{1}{512\pi^4}$.
+\end{proofpart}
+\end{proof}
+
+\subsection{In-Situ ESW Twist Taxonomy and \texorpdfstring{$14$}{14}-Twist One-Loop Anomaly Match}
+\label{subsec:esw-taxonomy}
+
+Turning from pure Chern--Simons models to general supersymmetric gauge twists across dimensions $2 \le d \le 10$, we introduce the Elliott--Safronov--Williams pure-spinor classification right before computing their one-loop anomalies and multi-loop supercharges.
+
+\begin{zkmodule}{Elliott--Safronov--Williams $10\mathrm{D}\to 2\mathrm{D}$ Twist Taxonomy and Loop Selection Laws}{esw-twist-taxonomy-oneloop-anomaly-table}
+Across dimensions $2 \le d \le 10$, Elliott, Safronov, and Williams~\cite{ESW} classify every supersymmetric gauge twist on $X = \RR^T\times\C^H$ ($D = H+T$) into four BV target classes:
+\begin{enumerate}[label=(\roman*),leftmargin=*]
+  \item \textbf{CS class:} $\mathrm{Map}(\C^H\times\RR^T_{\mathrm{dR}}, B\fg)$ with cubic interaction $\mathcal{A}^3$ and propagator $\mathcal{A}\text{--}\mathcal{A}$ (realized in $10\mathrm{D}$ $\mathcal{N}=(1,0)$ at $(5,0)$, $9\mathrm{D}$ $\mathcal{N}=1$ at $(4,1)$, $8\mathrm{D}$ $(3,2)$, $7\mathrm{D}$ $(2,3)$, $6\mathrm{D}$ $(1,4)$, $5\mathrm{D}$ $(0,5)$, and $3\mathrm{D}$ B-twist $(0,3)$; commutative $5\mathrm{D}$ CS at $(2,1)$ is an intrinsic AKSZ theory outside SYM twists);
+  \item \textbf{$BF$ class:} $T^*[-1]\mathrm{Map}(\C^H\times\RR^T_{\mathrm{dR}}, X/\fg)$ ($X \in \{\mathrm{pt}, R, \fg, T[1](R/\fg), \C^H_{\mathrm{Dol}}\}$), linear in cotangent fields;
+  \item \textbf{$U\sslash\fg$ class:} $\mathrm{Sect}(M, (U\otimes K^{1/2})\sslash\fg)$ for symplectic $(U,\omega)$ ($U = T^*R$ reduces to $\ZZ$-graded $BF$);
+  \item \textbf{$\mathrm{Hod}_{t\neq 0}$ class:} Generalized Hodge deformation $Q_t = Q_0 + t\bar{Q}_0$ at $t \neq 0$, whose linearized complex is contractible.
+\end{enumerate}
+Five universal selection laws govern all loop orders~\cite{Repo9e833c8}: \textbf{(S1)} in $BF$ and $U\sslash\fg$, $|I| \le V_{BAA} + V_{uAu} = |V|$ forces $b_1(\Gamma_{\mathrm{bulk}}) \le 1$, so $O_{n\ge 2} \equiv 0$; \textbf{(S2)} $n=1$ $D$-Laman balance forces $|V| = D + 1$ (the $(D+1)$-gon); \textbf{(S3)} at $T \ge 2$, $\rho_n(M)\wedge\rho_n(M) = 0$ forces $O_{n\ge 1} = Q_{n\ge 1} = 0$; \textbf{(S4)} at $T = 1$, $\rho_{\mathrm{odd}} = 0$ forces $O_{\mathrm{odd}} = Q_{\mathrm{odd}} = 0$; and \textbf{(S5)} $\mathrm{Hod}_{t\neq 0}$ is perturbatively trivial (Table~\ref{tab:esw-full-taxonomy}).
+\end{zkmodule}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.9pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}rll>{\raggedright\arraybackslash}Xlcll@{}}
+\toprule
+$d$ & $\mathcal{N}$ & \textbf{ESW} & \textbf{Pure-Spinor Twist \& BV Target Theory} & $(H,T)$ & \textbf{Class} & \textbf{Bulk $O_n$} & \textbf{Local $Q_n$} \\
+\midrule
+$10$ & $(1,0)$ & 4.4 & Holomorphic ($\SU(5)$ stab.): hCS $\mathrm{Map}(\C^5,B\fg)$ & $(5,0)$ & CS & all $n$ & all $n$ \\
+$9$ & $1$ & 5.2 & Minimal ($\SU(4)$ stab.): $\mathrm{Map}(\C^4\times\RR_{\mathrm{dR}},B\fg)$ & $(4,1)$ & CS & even $n$ & even $n$ \\
+$8$ & $1$ & 6.1 & Holomorphic ($\mathrm{U}(4)$): $T^*[-1]\mathrm{Map}(\C^4,B\fg)$ & $(4,0)$ & $BF$ & $n=1$ & all $n$ \\
+$8$ & $1$ & 6.5 / 6.4 & Partially top.\ CS $\C^3\times\RR^2$ / $\Spin(7)$ Hodge & $(3,2)$ / --- & CS / Hod & $0$ & $0$ \\
+$7$ & $1$ & 7.2 & Minimal ($\mathrm{U}(3)$): $T^*[-1]\mathrm{Map}(\C^3\times\RR_{\mathrm{dR}},B\fg)$ & $(3,1)$ & $BF$ & $0$ & even $n$ \\
+$7$ & $1$ & 7.6 / 7.4 & Partially top.\ CS $\C^2\times\RR^3$ / $G_2$ Hodge & $(2,3)$ / --- & CS / Hod & $0$ & $0$ \\
+$6$ & $(1,0)$ & 8.1 / 8.2 & Holomorphic: $(U\otimes K^{1/2})\sslash\fg$ / $BF$ $R/\fg$ on $\C^3$ & $(3,0)$ & $U\sslash\fg, BF$ & $n=1$ & all $n$ \\
+$6$ & $(1,1)$ & 8.3 & Holomorphic: $BF$ $\fg/\fg$ ($=$ hCS on $\C^{3|2}$) & $(3,0)$ & $BF$ & $n=1$ & all $n$ \\
+$6$ & $(1,1)$ & \S8 / 8.7 & Rank $(1,1)$ $BF$ $\C^2\times\RR^2$ / Rank $(2,2)$ CS $\C\times\RR^4$ & $(2,2),(1,4)$ & $BF$ / CS & $0$ & $0$ \\
+$5$ & $1$ & 9.2 / 9.3 & Minimal: $U\sslash\fg$ / $BF$ $R/\fg$ on $\C^2\times\RR_{\mathrm{dR}}$ & $(2,1)$ & $U\sslash\fg, BF$ & $0$ & even $n$ \\
+$5$ & $2$ & \S9 & Minimal $BF$ $\fg/\fg$ $(2,1)$ / Rank-$2$ $(1,3)$ / Rank-$4$ CS $\RR^5$ & $(2,1)$ / $(T{\ge}3)$ & $BF$ / CS & $0$ & even / $0$ \\
+$4$ & $1, 2$ & 10.1,2 & Holomorphic: $BF$ $R/\fg$ and $BF$ $(U\otimes K^{1/2}[2n])\sslash\fg$ & $(2,0)$ & $BF$ & $n=1$ & all $n$ \\
+$4$ & $2$ & 10.7 / 10.6 & Rank $(1,1)$ $\C\times\RR^2$ / Rank $(2,0)$ Donaldson Hodge & $(1,2)$ / --- & $BF$ / Hod & $0$ & $0$ \\
+$4$ & $4$ & 10.9 & Holomorphic ($\mathrm{U}(2)$): $T^*[-1]\mathrm{Map}(\C^2_{\mathrm{Dol}},B\fg)$ & $(2,0)$ & $BF$ & $n=1$ & all $n$ \\
+$4$ & $4$ & 10.11,13 & Rank $(1,1)$ $\C_{\mathrm{Dol}}\times\RR^2$ / KW $(0,4)$ ($s=1$) or Hod & $(1,2),(0,4)$ & $BF$ / Hod & $0$ & $0$ \\
+$3$ & $2, 4, 8$ & 11.1,3,8 & Minimal ($\mathrm{U}(1)$): $BF$ ($R/\fg$, $U\sslash\fg$, $\C_{\mathrm{Dol}}\times\RR$) & $(1,1)$ & $BF$ & $0$ & even $n$ \\
+$3$ & $4, 8$ & 11.4--11 & Topological A-twist (Hod) / B-twist RW CS or $BF$ $\RR^3$ & --- / $(0,3)$ & Hod / CS,$BF$ & $0$ & $0$ \\
+$2$ & $(2,2)$..$(8,8)$ & 12.1,7 & Holomorphic: $BF$ $T[1](R/\fg)$, $T[1](U\sslash\fg)$, $T[1]\fg/\fg$ & $(1,0)$ & $BF$ & $n=1$ & all $n$ \\
+$2$ & $(\mathcal{N}_+,0)$ & 12.16--18 & Chiral holomorphic: $BF + \beta\gamma$ on $\C$ & $(1,0)$ & $BF$ & $n=1$ & all $n$ \\
+\bottomrule
+\end{tabularx}
+\caption{Complete Elliott--Safronov--Williams pure-spinor twist classification from $10\mathrm{D}$ to $2\mathrm{D}$~\cite{ESW,Repo9e833c8}, together with exact bulk $O_n$ and local-operator $Q_n$ survival governed by laws (S1)--(S5).}
+\label{tab:esw-full-taxonomy}
+\end{table}
+
+\begin{theorem}[Exact $(H+1)$-gon kernel and universal $14$-twist match $\mathcal{S}_H = -I^{\mathrm{phys}}_{d+2}$~{\cite{GW18,Repo9e833c8}}]
+\label{thm:esw-oneloop}
+On $\C^H$ ($T = 0$, $H \ge 1$), let $\Gamma_{\mathrm{poly}(H+1)}$ be the directed $(H+1)$-gon with external holomorphic momenta $\lambda_0,\dots,\lambda_H$ ($\sum_{\substack{j\in\{0,\dots,H\}\\\mathrm{vertices}}}\lambda_j = 0$) and determinant $\Delta := \det(\lambda_0,\dots,\lambda_{H-1})$.
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Solving Kirchhoff's laws $y_e = \ell + Q_e$ ($\ell = -U^{-1}\sum_{\substack{e\in\{0,\dots,H-1\}\\\mathrm{edges}}}t_e Q_e$, $U = \sum_{\substack{e\in\{0,\dots,H\}\\\mathrm{edges}}}t_e$) yields $[\Omega]_{\dd t_0\cdots\dd t_{H-1}} = U^{-H}(t_H/U)\Delta$ and exact simplex integral
+  \begin{equation}
+  \label{eq:polygon-cH}
+  K_{\mathrm{poly}(H+1)}(\lambda) = \frac{(-1)^H}{H!}\,\Delta = c_H\,\Delta,\qquad
+  c_H = \left(-1,\; +\tfrac{1}{2},\; -\tfrac{1}{6},\; +\tfrac{1}{24},\; -\tfrac{1}{120}\right)\quad (H=1,\dots,5).
+  \end{equation}
+  \item Summing Berezinian matter/gauge loops $\mathcal{S}_H(x) := \sum_{\substack{V\\\mathrm{pairs}}}\Str_V\rho_V(x)^{H+1} + \frac{1}{2}\sum_{\substack{V\\\mathrm{self-paired}}}\Str_V\rho_V(x)^{H+1}$ matches the physical $(d+2)$-form chiral gauge anomaly polynomial across \textbf{all $14$ ESW holomorphic twists} ($38/38$ exact checks, Table~\ref{tab:esw-14-oneloop}):
+  \begin{equation}
+  \label{eq:SH-equals-minus-Iphys}
+  \mathcal{S}_H(x) = -I^{\mathrm{phys}}_{d+2}(x),\qquad
+  [O_1] = 0 \iff \mathcal{S}_H \equiv 0.
+  \end{equation}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), $\det(y_0,\dots,y_{H-1}) = \det(Q_0+\ell,\dots,Q_{H-1}+\ell) = (1 - U^{-1}\sum_{\substack{e<H\\\mathrm{edges}}}t_e)\Delta = (t_H/U)\Delta$, so $D = (-1)^H\Delta\,U^{-H-1}$ integrates over $\Delta^H$ ($\vol(\Delta^H) = 1/H!$) to~\eqref{eq:polygon-cH}. In~(2), $\Str_{V^\vee[H-1]}((-\rho^{\vee})^{H+1}) = \Str_V\rho^{H+1}$ equates conjugate orientations, $\log\Ber(\dbar + \rho(A))$ matches the Atiyah--Singer chiral Dirac index density $-\sum_{\substack{\chi=\pm 1\\\mathrm{chirality}}}\frac{1}{2}\chi\Tr_E F^{H+1}$ row by row across all $14$ twists in Table~\ref{tab:esw-14-oneloop}, and the First Fundamental Theorem for $\SL_H(\C)$ kills $\SL_H$-invariant $H$-input degree-$H$ counterterms ($B^1 = 0$).
+\end{proof}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.3pt}
+\renewcommand{\arraystretch}{1.14}
+\begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}Xll@{}}
+\toprule
+\textbf{Physical Theory} & \textbf{ESW} & \textbf{$c_H$} & \textbf{Twisted Bundle $V$ (Parity)} & \textbf{Twisted $\mathcal{S}_H(x)$} & \textbf{Physical $I^{\mathrm{phys}}_{d+2}$} \\
+\midrule
+$2\mathrm{D}$ $\mathcal{N}=(2,2),(4,4),(8,8)$ & 12.1,7 & $-1$ & $\varepsilon$-doubled / Dolbeault pairs & $0$ & $0$ \\
+$2\mathrm{D}$ $\mathcal{N}=(0,2)$ ($R$, Fermi $F$) & 12.16 & $-1$ & $\fg[1](-), R(+), F(-)$ & $-\Tr_{\mathrm{ad}}+\Tr_R-\Tr_F$ & $+\Tr_{\mathrm{ad}}-\Tr_R+\Tr_F$ \\
+$2\mathrm{D}$ $\mathcal{N}=(4,0)$ (hyper $U$) & 12.17 & $-1$ & $\fg[1](-), \fg^\vee[-1](-), U(+)$ & $-2\Tr_{\mathrm{ad}}+\Tr_U$ & $+2\Tr_{\mathrm{ad}}-\Tr_U$ \\
+$2\mathrm{D}$ $\mathcal{N}=(\mathcal{N}_+,0)$ pure & 12.18 & $-1$ & $\fg[1](-)$; self $\fg\otimes\C^{\mathcal{N}_+-2}(-)$ & $-\frac{1}{2}\mathcal{N}_+\Tr_{\mathrm{ad}}$ & $+\frac{1}{2}\mathcal{N}_+\Tr_{\mathrm{ad}}$ \\
+$4\mathrm{D}$ $\mathcal{N}=1$ (chiral $R$) & 10.1 & $+\frac{1}{2}$ & $\fg[1](-), R(+)$ ($\Tr_{\mathrm{ad}}x^3\equiv 0$) & $+\Tr_R$ & $-\Tr_R$ \\
+$4\mathrm{D}$ $\mathcal{N}=2, 4$ & 10.2,9 & $+\frac{1}{2}$ & symplectic $U$ / $\fg[1]\otimes\Lambda[\dd z_{1,2}]$ & $0$ & $0$ \\
+$6\mathrm{D}$ $\mathcal{N}=(1,0)$ ($U\sslash\fg$ / $BF$) & 8.1,2 & $-\frac{1}{6}$ & $\fg[1](-)$; self $U(+)$ (or $R(+)$) & $-\Tr_{\mathrm{ad}}+\frac{1}{2}\Tr_U$ & $+\Tr_{\mathrm{ad}}-\frac{1}{2}\Tr_U$ \\
+$6\mathrm{D}$ $\mathcal{N}=(1,1)$ ($\C^{3|2}$) & 8.3 & $-\frac{1}{6}$ & $\fg[1](-), \fg(+)$ & $0$ & $0$ \\
+$8\mathrm{D}$ $\mathcal{N}=1$ ($BF$ $\C^4$) & 6.1 & $+\frac{1}{24}$ & $\fg[1](-)$ ($\Tr_{\mathrm{ad}}x^5\equiv 0$) & $0$ & $0$ \\
+$10\mathrm{D}$ $\mathcal{N}=(1,0)$ (hCS $\C^5$) & 4.4 & $-\frac{1}{120}$ & self-paired $\fg[1](-)$ & $-\frac{1}{2}\Tr_{\mathrm{ad}}$ & $+\frac{1}{2}\Tr_{\mathrm{ad}}$ \\
+\bottomrule
+\end{tabularx}
+\caption{Complete one-loop $(H+1)$-gon anomaly dictionary across all $14$ ESW holomorphic twists ($\Tr_X := \Tr_X\rho(x)^{H+1}$), verifying $\mathcal{S}_H = -I^{\mathrm{phys}}_{d+2}$ identically~\cite{ESW,GW18,Repo9e833c8}.}
+\label{tab:esw-14-oneloop}
+\end{table}
+
+\paragraph{Explicit fundamental-trace Casimir decompositions ($p_j := \tr_{\mathrm{fund}}x^j$).}
+Across classical families, expanding $\Tr_{\mathrm{ad}}x^{2k}$ in $p_j$ gives exact Green--Schwarz criteria~\cite{Repo9e833c8}:
+\begin{equation}
+\label{eq:classical-casimir-traces}
+\begin{aligned}
+\fsl_N:\quad &\Tr_{\mathrm{ad}}x^{2,4,6} = \bigl(2N p_2,\; 2N p_4 + 6p_2^2,\; 2N p_6 + 30p_2 p_4 - 20p_3^2\bigr),\\
+\fso_N / \fsp_N:\quad &\Tr_{\mathrm{ad}}x^{2,4,6} = \bigl((N\mp 2)p_2,\; (N\mp 8)p_4 + 3p_2^2,\; (N\mp 32)p_6 + 15p_2 p_4\bigr).
+\end{aligned}
+\end{equation}
+
+\begin{lemma}[{Evaluation of the $(H+1)$-gon simplex kernel $c_H = (-1)^H/H!$ and $6\mathrm{D}$ $\mathcal{N}=(1,0)$ box cancellation}]
+\label{lem:polygon-cH-and-6d}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item On the directed $(H+1)$-gon $\Gamma_{\mathrm{poly}(H+1)}$ on $\C^H$ ($U = \sum_{\substack{e\in\{0,\dots,H\}\\\mathrm{edges}}}t_e$) with partial sums $Q_e := \sum_{\substack{j\in\{0,\dots,e\}\\\mathrm{prefix}}}\lambda_j$ ($Q_H = 0$), solving $B y = \lambda$ and $\sum_{\substack{e\in\{0,\dots,H\}\\\mathrm{edges}}}t_e y_e = 0$ on $t_H = 1$ integrates to $c_H = (-1)^H/H!$ in~\eqref{eq:polygon-cH}.
+
+  \item In $6\mathrm{D}$ $\mathcal{N}=(1,0)$ gauge theory on $\fg = \fsl_N$ with $n_{\mathrm{full}}$ fundamental hypermultiplets ($U = (\C^N\oplus(\C^N)^*)^{\oplus n_{\mathrm{full}}}$), setting $n_{\mathrm{full}} = 2N$ cancels $p_4$ for all $N \ge 2$ while retaining $-6p_2^2 \neq 0$ for $N \ge 3$, whereas $\fsl_2$ with $n_{\mathrm{full}} = 16$ cancels the entire box anomaly ($\mathcal{S}_3 = 0$) identically.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Polygon current determinant and simplex beta integral}
+Setting $y_e = \ell + Q_e$ satisfies $y_e - y_{e-1} = \lambda_e$ ($Q_{-1} := Q_H = 0$), and $\sum_{\substack{e\in\{0,\dots,H\}\\\mathrm{edges}}}t_e(\ell + Q_e) = 0$ fixes $\ell = -U^{-1}\sum_{\substack{e\in\{0,\dots,H-1\}\\\mathrm{edges}}}t_e Q_e$. On $t_H = 1$, wedging $\psi_{1,i}$ across $i=1,\dots,H$ extracts $\det(y_0,\dots,y_{H-1}) = U^{-1}\det(\lambda_0,\dots,\lambda_{H-1})$ with Koszul sign $(-1)^H$; iterated integration via $\int_0^\infty(A + t_{H-1})^{-k-1}\dd t_{H-1} = \frac{1}{k}A^{-k}$ for $k = H,\dots,1$ yields $\frac{(-1)^H}{H!}\Delta$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Quartic trace balance on $\fsl_N$ vs.\ $\fsl_2 + 16\mathrm{F}$}
+From~\eqref{eq:classical-casimir-traces}, $-\Tr_{\mathrm{ad}}x^4 + \frac{1}{2}\Tr_U x^4 = (n_{\mathrm{full}}-2N)p_4 - 6p_2^2$: for $N \ge 3$, $p_4$ and $p_2^2$ are algebraically independent, whereas at $\fsl_2$ ($N=2$), Cayley--Hamilton $x^2 = \frac{1}{2}p_2\mathbf{1}_2$ gives $p_4 = \frac{1}{2}p_2^2$ and $(\frac{1}{2}n_{\mathrm{full}} - 8)p_2^2 = 0$ at $n_{\mathrm{full}} = 16$ (Theorem~\ref{thm:6d-8d-twistor}(3)).
+\end{proofpart}
+\end{proof}
+
+\subsection{Multi-Loop \texorpdfstring{$3\mathrm{D}/5\mathrm{D}/7\mathrm{D}$}{3D/5D/7D} HT Supercharges, \texorpdfstring{$\eps_2=-1$}{eps\_2=-1}, \texorpdfstring{$55$}{55} Tadpole Moments, and \texorpdfstring{$J_w=20$}{J\_w=20}}
+\label{subsec:3d-ht-complete}
+
+\begin{theorem}[{$3\mathrm{D}$ $\mathcal{N}=2$ $\eps_2=-1$ orientation, $55$ \texttt{tadpole(5,0)} moments, $\GL(2)$ $J_w=20$, and $\mathcal{N}\ge 4$ HT twists~{\cite{CDG20,GKW,Repo9e833c8}}}]
+\label{thm:3d-n2-complete}
+On $X = \RR_\tau\times\C_z$ ($H=1, T=1, D=2$; repairing the factor-$2$ propagator closure in~\cite{CDG20} and $2\pi^3$ normalization in~\cite{GKW}, Appendix~\ref{app:periods-errata}):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Exact $\eps_2 = -1$ orientation and $55$ four-loop \texttt{tadpole(5,0)} moments:} Comparing ordered position-space Gaussian pushforwards against cycle Pfaffians across all $5$ omitted-time cofactors proves $I^{\mathrm{GKW}} = -(4\pi)^{-1}K^{\mathrm{htk}}$ (\textbf{$\eps_2 = -1$}, $N_2 = \frac{\hbar^2}{16\pi^2}$, $N_4 = N_2^2$). At two loops, $\hat{Q}_2|_{z=0} = \frac{1}{6}I_{\mathrm{fan},2}(\partial) + \frac{1}{3}d^V_{ABC}\partial^2\ghc^C\partial^2/(\partial\mathcal{B}_A\partial\mathcal{B}_B)$ satisfies $\{Q_0,\hat{Q}_2\}=0$. At four loops, integrating $6{,}089$ scalar periods of the $55$-term Pfaffian density $D = P_{55}(t)/U^{9/2}$ evaluates \textbf{all $55$ original-edge moments} through degree $2$, giving on the four root edges $(15,25,35,45)$ at $\lambda_0 = -\lambda_5$:
+  \begin{equation}
+  \label{eq:tadpole50-moments}
+  \begin{aligned}
+  K_{(5,0)} &= \frac{\pi^2}{630}\lambda_0^4,\qquad
+  \int D\,(y_{15},y_{25},y_{35},y_{45}) = \frac{\pi^2\lambda_0^5}{18900}(8,7,7,8),\\
+  \left(\int D\,y_{p5}y_{q5}\right)_{p,q=1}^4 &= \frac{\pi^2\lambda_0^6}{2910600}\begin{pmatrix}470&246&243&273\\246&370&219&243\\243&219&370&246\\273&243&246&470\end{pmatrix}
+  \end{aligned}
+  \end{equation}
+  (outer entry $\frac{273\pi^2}{2910600}\lambda_0^6 = \frac{13\pi^2}{138600}\lambda_0^6$), confirming $(Q^2)_{\hbar^4} = 0$ with derivative letters across $1{,}175 + 947$ equations!
+
+  \item \emph{Radiatively induced CS lifts and $30{,}272$-monomial $\GL(2)+1\mathrm{F}$ cohomology at $J_w = 20$:} For $J_w \le 16$, $E_3(\kappa_{\mathrm{CS}}=0) = H(Q_0,\kappa_{\mathrm{CS}}\neq 0)$ in $\mathrm{U}(1)+1\mathrm{F}$ and $\GL(2)+1\mathrm{F}$. At \textbf{$J_w = 20$} on $\GL(2)+1\mathrm{F}$ ($\kappa_{\mathrm{CS}}=0$, $30{,}272$ monomials, $64$ $H(Q_0)$ classes; $1{,}372$ cancelling $2/3$-letter commutator pairs across $178 + 2{,}248$ inputs), $d_2$ reduces $\dim H(Q_0) = 64 \to \dim E_3 = 32$ with \textbf{nonzero $R_w = 12, 24$ lifts} (Table~\ref{tab:gl2-jw20})!
+
+  \item \emph{$3\mathrm{D}$ $\mathcal{N}=4,8$ and $5\mathrm{D}/7\mathrm{D}$ HT twists:} $(Q^2)_{\hbar^4} = 0$ holds in $3\mathrm{D}$ $\mathcal{N}=4$ ($\mathrm{SQED}_{1,2}$, $\SU(2)+1\mathrm{F}$) and $\mathcal{N}=8$, and $\{Q_0,Q_2\} = 0$ holds in $5\mathrm{D}$ $\mathcal{N}=1,2$ (requiring all $5$ fan+tadpole shapes in $\mathcal{N}=1$) and $7\mathrm{D}$ $\mathcal{N}=1$, with $\rk d_2 = 0$ across all $11$ scanned low-weight tables.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Symbolic cofactor division proves $\Omega^{\mathrm{GKW}} = -(4\pi)^{-1}\Omega^{\mathrm{htk}}$ in~(1), and strict cut margin $\ge \frac{1}{2}$ across all $55 + 1{,}212 + 10{,}854$ monomials guarantees absolute convergence of~\eqref{eq:tadpole50-moments}. In~(2), antifield grading $\mathrm{af} = N_{\mathcal{B}}+N_\psi$ splits $Q_0$ and $\widehat{Q}_2$, and differential-order-$\le 3$ locality proves $\{Q_0,\widehat{Q}_2\}=0$ on the entire $30{,}272$-dimensional space from $2/3$-letter checks. Direct \texttt{qn-ht} evaluation establishes~(3).
+\end{proof}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{5.2pt}
+\renewcommand{\arraystretch}{1.14}
+\begin{tabular}{@{}lrrrrrrrrrrr@{}}
+\toprule
+$R$-weight $R_w$ & $0$ & $4$ & $8$ & $12$ & $16$ & $20$ & $24$ & $28$ & $32$ & $36$ & \textbf{Total} \\
+\midrule
+Cochain $\dim C_{J_w=20, R_w}$ & $70$ & $716$ & $2{,}872$ & $6{,}272$ & $8{,}364$ & $7{,}042$ & $3{,}672$ & $1{,}100$ & $158$ & $6$ & $\mathbf{30{,}272}$ \\
+Classical $\dim H(Q_0)$ & $0$ & $5$ & $15$ & $11$ & $6$ & $15$ & $11$ & $1$ & $0$ & $0$ & $\mathbf{64}$ \\
+Outgoing $\rk d_2$ & $0$ & $3$ & $4$ & $\mathbf{1}$ & $3$ & $4$ & $\mathbf{1}$ & $0$ & $0$ & $0$ & $\mathbf{16}$ \\
+Two-loop page $\dim E_3$ & $0$ & $2$ & $8$ & $6$ & $2$ & $8$ & $6$ & $0$ & $0$ & $0$ & $\mathbf{32}$ \\
+\bottomrule
+\end{tabular}
+\caption{Complete $J_w = 20$ gauge-Cartan-weight-$0$ cohomology and two-loop spectral differential $d_2$ in $3\mathrm{D}$ $\mathcal{N}=2$ $\GL(2)+1\mathrm{F}$ at bare $\kappa_{\mathrm{CS}} = 0$ ($\dim E_3$ subtracts both outgoing and incoming $d_2$ ranks)~\cite{Repo9e833c8}.}
+\label{tab:gl2-jw20}
+\end{table}
+
+\subsection{Multi-Loop \texorpdfstring{$4\mathrm{D}/6\mathrm{D}/8\mathrm{D}$}{4D/6D/8D} Holomorphic Twists, Spectator Audit, and Twistor Line Defects}
+\label{subsec:6d-8d-twistor}
+
+\begin{theorem}[{$4\mathrm{D}$ $\mathcal{N}=2$ $b_0$ lifts, $6\mathrm{D}$ $(1,1)$ $Q_4$ \& lifting, corrected $6\mathrm{D}$ $(1,0)$ rank-$5$ weights, $\C^3$ $\fso_8$ GS, and twistor defects~{\cite{BSS22,BW23,FP24,Repo9e833c8}}}]
+\label{thm:6d-8d-twistor}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{$4\mathrm{D}$ $\mathcal{N}=2$ one-loop $\beta$-function lifts:} With hypermultiplets $U$, $Q_1\mathcal{O}_J = b_0\,T$ where $b_0 = 2T(\mathrm{adj}) - T(U)$ ($\rk d_1 = 1$ for $\SU(2)$ $N_f = 1,2,3$, whereas $d_1 = d_2 = 0$ at superconformal $N_f = 4$).
+
+  \item \emph{$6\mathrm{D}$ $\mathcal{N}=(1,1)$ on $\C^{3|2}$:} Treewidth-$2$ rooted $3$-Laman graphs ($|R_n| = 1,2,5,15,49,\dots$) satisfy $(Q^2)_{\hbar^4} = 0$ at full rank $15/15$ (including block-triangular $\Gamma_{11}$); harmonic potential ordering $h_1 > \dots > h_n$ on the $n$-box ladder proves $Q_n \neq 0 \pmod{\partial}$ at fixed $\fsl_2$ for \textbf{every} $n \ge 1$; and Casimir differentials prove $E_1 = E_\infty$ on the regular-semisimple locus $\Delta_{\mathrm{disc}}^{-1}$.
+
+  \item \emph{Spectator-color audit, unique rational $6\mathrm{D}$ $\mathcal{N}=(1,0)$ rank-$5$ weights, and $8\mathrm{D}$ replay:} Restoring untouched spectator input colors in composed operators (leaving $6\mathrm{D}$ $(1,1)$ $\ghb^5 \to \ghc^5\gamma_1\gamma_2$ unaffected; Appendix~\ref{app:periods-errata}) and integrating $74{,}458$ exact rational simplex kernels ($4{,}344$ integer color contractions) on $\fsl_2 + 16\mathrm{F}$ ($\gamma^\vee\gamma^\vee u \to \gamma^4 u$) yields a non-singular $8\times 5$ rational system whose top $5\times 5$ minor equals $-\frac{40218192879848296158871138572416947490900261260590322}{5450370668490234375} \neq 0$ (tree-restricted rank $2 < 3$ proving unicyclic necessity), uniquely fixing \textbf{all five order-$2$ weights} (Table~\ref{tab:6d10-weights}):
+  \begin{equation}
+  \label{eq:6d10-rank5-weights}
+  \bigl(\kappa_{\texttt{G2.1}}, \kappa_{\texttt{G2.2}}, \kappa_{\texttt{G2.3u}}, \kappa_{\texttt{G2.4u}}, \kappa_{\texttt{G2.5u}}\bigr) = \left(\frac{1}{2},\, \frac{1}{2},\, 1,\, \frac{1}{2},\, \frac{1}{2}\right) = \frac{1}{|\Aut\Gamma|}.
+  \end{equation}
+  Replaying all $18$ affected $8\mathrm{D}$ $\fso_5$ compositions confirms order-$2$ rank $3/3$ with $(-\frac{1}{2},-1,-\frac{1}{6})$ and unique all-minus sign survival ($1/4{,}096$) at order-$3$ rank $2/12$.
+
+  \item \emph{$6\mathrm{D}$ $\C^3$ hCS $3$-loop $\fso_8$ Green--Schwarz and all-loop twistor defect OPEs:} In bosonic hCS on $\C^3$ ($B^4_{\SL_3} = 0$, $\omega_2 = \omega_4 = 0$), the four $\zeta(3)$-bearing $3$-loop $K_4$ subdivisions cancel via $(\frac{1}{8400} - \frac{1}{16800} - \frac{2}{16800} + \frac{1}{16800})w = 0$, leaving $T_3(\fso_N) = \frac{(N-8)(N-5)(N+4)}{829440}\tr x^4 - \frac{N^2-11N+36}{276480}(\tr x^2)^2$ ($T_3^{\mathrm{irr}} = 0 \Longleftrightarrow N = 8$, while $\fgl(N|N)$ develops $\frac{\Delta^3\prod_{q=1}^4\str x_q}{368640\pi^9}$). On $\C^2$ Poisson $BF$~\cite{BW23}, $K^{\mathrm{Poisson}}_{\mathrm{fan}(n)} = \frac{[\lambda^{(1)}\lambda^{(n+1)}]^{2n+1}}{2^n n!(n+1)!(2n+1)!}$, and attaching $m+1$ bulk vertices to a twistor line defect $C \subset \C^3$~\cite{BSS22,FP24} maps spoke ratios onto $1 > u_1 > \dots > u_{m+1} > 0$, proving the Fern\'andez--Paquette quadratic associativity recursion to all loop orders (Figure~\ref{fig:3d-6d-gauge}).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Direct \texttt{qn-holomorphic} evaluation proves~(1). Discrete harmonic maximum principles give $h_1 > \dots > h_n$ and Vandermonde positivity in~(2). Exact polynomial antiderivatives and degree-$\le 2$ flavor interpolation ($74{,}690$ checks) establish~\eqref{eq:6d10-rank5-weights} in~(3). Explicit $9$-graph $3$-loop summation and boundary integration by parts at $u_{m+1} = u_m$ prove~(4).
+\end{proof}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}llrrl@{}}
+\toprule
+\textbf{Rooted Graph} & \textbf{Topology Class} & \textbf{$|\Aut\Gamma|$} & \textbf{Exact Weight $\kappa_\Gamma$} & \textbf{Role in $8\times 5$ Nilpotency System} \\
+\midrule
+\texttt{G2.1} & $2$-vertex rooted tree & $2$ & $\frac{1}{2}$ & Tree sector (rank $2 <$ augmented rank $3$ alone) \\
+\texttt{G2.2} & $2$-vertex rooted tree & $2$ & $\frac{1}{2}$ & Tree sector (requires unicyclic completion) \\
+\texttt{G2.3u} & Asymmetric unicyclic $1$-loop & $1$ & $1$ & Restores full rational rank $5/5$ ($\det M_{1..5}\neq 0$) \\
+\texttt{G2.4u} & Symmetric unicyclic $1$-loop & $2$ & $\frac{1}{2}$ & Cancels matter-loop flavor contractions \\
+\texttt{G2.5u} & Symmetric unicyclic $1$-loop & $2$ & $\frac{1}{2}$ & Closes all $8/8$ rational functional residuals \\
+\bottomrule
+\end{tabular}
+\caption{All five order-$2$ rooted and unicyclic supercharge graph weights in $6\mathrm{D}$ $\mathcal{N}=(1,0)$ $\fsl_2 + 16\mathrm{F}$ uniquely determined by $74{,}458$ exact rational simplex integrals~\cite{Repo9e833c8}.}
+\label{tab:6d10-weights}
+\end{table}
+
+\begin{example}[{Two-loop $3\mathrm{D}$ $\mathcal{N}=2$ bitriangle orientation $\eps_2 = -1$ from ordered Gaussian pushforwards}]
+\label{ex:3d-eps2-sign}
+On the $2$-loop bitriangle $\Gamma_{\mathrm{fan},2}$ with ordered edges $(0,1),(1,2),(1,3),(2,0),(3,2)$ and root $3$ on $\RR_u\times\C_z$~\cite{GKW,Repo9e833c8}, each edge propagator carries $(t_e\dd\bar{z}_e - \bar{z}_e\dd t_e)\wedge(t_e\dd u_e - \frac{1}{2}u_e\dd t_e) = t_e^{7/2}\dd Y_e\wedge\dd s_e$ ($Y_e = \bar{z}_e/t_e$, $s_e = u_e/\sqrt{t_e}$). Starting from $(\dd z_0\wedge\dd z_1\wedge\dd z_2)\wedge(\dd\bar{z}_0\wedge\dd u_0\wedge\dd\bar{z}_1\wedge\dd u_1\wedge\dd\bar{z}_2\wedge\dd u_2)$, moving $\dd z_2$ past $4$ one-forms and $\dd z_1$ past $2$ one-forms carries total Koszul sign $(-1)^{4+2} = +1$.
+
+Completing the Gaussian squares on $(z_v,\bar{z}_v,u_v)_{v=0}^2$ (real covariance $\frac{1}{2}L_{(3)}^{-1}$, antiholomorphic mean $L_{(3)}^{-1}\lambda$) produces $\pi^{-1}(\prod_{\substack{e\in\{0,\dots,4\}\\\mathrm{edges}}}t_e)^{-2}U^{-3/2}$ times $-\frac{1}{8}(\prod_{\substack{e\in\{0,\dots,4\}\\\mathrm{edges}}}t_e)^2\lambda_0(\lambda_0+\lambda_1+\lambda_2)U^{-1}\iota_E(\dd t_0\wedge\cdots\wedge\dd t_4)$, yielding $\Omega^{\mathrm{GKW}} = -\frac{\lambda_0(\lambda_0+\lambda_1+\lambda_2)}{8\pi U^{5/2}}\iota_E(\dd t_0\wedge\cdots\wedge\dd t_4)$ versus $\Omega^{\mathrm{htk}} = +\frac{\lambda_0(\lambda_0+\lambda_1+\lambda_2)}{2U^{5/2}}\iota_E(\dd t_0\wedge\cdots\wedge\dd t_4)$ from Theorem~\ref{thm:theta-closed} at $(1,1)$, proving $I^{\mathrm{GKW}} = -(4\pi)^{-1}K^{\mathrm{htk}}$ and $\eps_2 = -1$.
+\end{example}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.89]
+  % (a) 3D tadpole(5,0) + fan(2)
+  \begin{scope}[xshift=-5.35cm]
+    \draw[rounded corners=2.5pt, draw=NavyBlue!55, fill=white, line width=0.5pt] (-2.30,-1.55) rectangle (2.30,1.55);
+    \node[font=\tiny\bfseries, text=NavyBlue!85!black] at (0,1.25) {(a) $3\mathrm{D}$ $\mathcal{N}=2$ ($\eps_2=-1$)};
+    \coordinate (fh) at (0,0.62); \coordinate (fa) at (-1.05,-0.32); \coordinate (fb) at (0,-0.32); \coordinate (fc) at (1.05,-0.32);
+    \draw[prop] (fh)--(fa)--(fb)--(fc)--(fh); \draw[prop] (fh)--(fb);
+    \draw[extleg] (fa)--++(-0.28,0); \draw[extleg] (fc)--++(0.28,0);
+    \foreach \pt in {fh,fa,fb,fc} \filldraw[v0] (\pt) circle (0.05cm);
+    \node[font=\tiny] at (0,-0.88) {$55$ \texttt{tad(5,0)} moments};
+    \node[font=\tiny] at (0,-1.25) {$\GL(2)$ $J_w{=}20$: $30{,}272$ mon.};
+  \end{scope}
+  % (b) 6D (1,1) box ladder & (1,0) unicyclic
+  \begin{scope}[xshift=0cm]
+    \draw[rounded corners=2.5pt, draw=PineGreen!55, fill=white, line width=0.5pt] (-2.30,-1.55) rectangle (2.30,1.55);
+    \node[font=\tiny\bfseries, text=PineGreen!85!black] at (0,1.25) {(b) $6\mathrm{D}$ $(1,1)$ \& $(1,0)$};
+    \foreach \idx/\xx in {0/-1.05, 1/-0.35, 2/0.35, 3/1.05} {
+      \coordinate (u\idx) at (\xx,0.58); \coordinate (d\idx) at (\xx,-0.25);
+      \draw[prop] (u\idx)--(d\idx);
+      \filldraw[v0] (u\idx) circle (0.048cm); \filldraw[v0] (d\idx) circle (0.048cm);
+    }
+    \draw[prop, PineGreen!85!black] (u0)--(u1)--(u2)--(u3);
+    \draw[prop, PineGreen!85!black] (d0)--(d1)--(d2)--(d3);
+    \node[font=\tiny] at (0,-0.88) {$(1,1)$: $h_1>\dots>h_n$};
+    \node[font=\tiny] at (0,-1.25) {$(1,0)$: $\kappa = (\frac{1}{2},\frac{1}{2},1,\frac{1}{2},\frac{1}{2})$};
+  \end{scope}
+  % (c) Twistor ordered line defect
+  \begin{scope}[xshift=5.35cm]
+    \draw[rounded corners=2.5pt, draw=Plum!65, fill=white, line width=0.5pt] (-2.30,-1.55) rectangle (2.30,1.55);
+    \node[font=\tiny\bfseries, text=Plum!85!black] at (0,1.25) {(c) Twistor Line Defect};
+    \draw[line width=1.2pt, draw=Plum!85!black] (-1.35,0.68)--(1.35,0.68);
+    \coordinate (w1) at (-0.85,0.68); \coordinate (w2) at (0,0.68); \coordinate (w3) at (0.85,0.68);
+    \coordinate (bv1) at (-0.42,-0.25); \coordinate (bv2) at (0.42,-0.25);
+    \draw[prop] (w1)--(bv1); \draw[prop] (w2)--(bv1); \draw[prop] (w2)--(bv2); \draw[prop] (w3)--(bv2); \draw[prop] (bv1)--(bv2);
+    \foreach \pt in {w1,w2,w3} \filldraw[vbiv] (\pt) circle (0.05cm);
+    \filldraw[v0] (bv1) circle (0.05cm); \filldraw[v0] (bv2) circle (0.05cm);
+    \node[font=\tiny] at (0,-0.88) {$1 > u_1 > \dots > u_{m+1} > 0$};
+    \node[font=\tiny] at (0,-1.25) {$\C^3$ hCS: $(N-8)(N-5)(N+4)$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Multi-loop gauge-twist structures of Theorems~\ref{thm:3d-n2-complete} and~\ref{thm:6d-8d-twistor}: (a)~$3\mathrm{D}$ $\mathcal{N}=2$ supercharge graphs; (b)~$6\mathrm{D}$ $\mathcal{N}=(1,1)$ box ladders and $\mathcal{N}=(1,0)$ rank-$5$ weights; (c)~ordered twistor line-defect simplex and $6\mathrm{D}$ $\C^3$ $\fso_8$ factorization.}
+\label{fig:3d-6d-gauge}
+\end{figure}

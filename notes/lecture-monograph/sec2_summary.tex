@@ -1,0 +1,164 @@
+% ============================================================================
+\section{Typed Index Variance Ledger and Catalogue of Principal Theorems}
+\label{sec:summary-ledger}
+% ============================================================================
+
+Before entering the perturbative derivations, we codify our global index-variance contract (`Background Card~2.1`, synchronized with \zkmat) and assemble a self-contained reference ledger of the principal theorems proved across Sections~\ref{sec:ward-bv-primer}--\ref{sec:sugra-bcov-holo}.
+
+\subsection{Typed Abstract and Component Index Variance Ledger}
+\label{subsec:notation-ledger}
+
+\begin{zkmodule}{Global Typed Abstract and Component Index Variance Ledger}{typed-index-variance-ledger}
+Let $\mathcal{V} \cong \C^H$ denote the model holomorphic tangent vector space of $X = \RR^T \times \C^H$ ($D := H + T$), with complex-linear dual $\mathcal{V}^* := \Hom_{\C}(\mathcal{V}, \C)$ and complex-conjugate space $\overline{\mathcal{V}}$. In general $(H,T)$ chapters, lowercase Latin letters $\mathsf{a},\mathsf{b},\mathsf{c}$ (or $a,b,c$ when four-dimensional Weyl spinors are absent; in four-dimensional spinorial formulas, $a,b \in \{+,-\}$ and $\dot{a},\dot{b} \in \{\dot{+},\dot{-}\}$ denote chiral and antichiral $\Spin(4)$ Weyl spinor slots as detailed in Appendix~\ref{app:conventions}) denote basis-independent abstract tensor slots on $\mathcal{V}$ and $\mathcal{V}^*$ ($v^{\mathsf{a}} \in \mathcal{V}$, $w_{\mathsf{a}} \in \mathcal{V}^*$, canonical evaluation $w_{\mathsf{a}}v^{\mathsf{a}} \in \C$, identity endomorphism $\delta^{\mathsf{a}}{}_{\mathsf{b}} \in \mathcal{V}\otimes\mathcal{V}^*$). Fixing a basis $(e_i)^{\mathsf{a}}$ of $\mathcal{V}$ and dual basis $(e^i)_{\mathsf{a}}$ of $\mathcal{V}^*$ indexed by $i,j \in \{1,\dots,H\}$ gives
+\begin{equation}
+\label{eq:tetrad-bridge}
+(e_i)^{\mathsf{a}}(e^j)_{\mathsf{a}} = \delta_i{}^j,\qquad
+(e_i)^{\mathsf{a}}(e^i)_{\mathsf{b}} = \delta^{\mathsf{a}}{}_{\mathsf{b}},\qquad
+v^{\mathsf{a}} = v^i(e_i)^{\mathsf{a}},\qquad
+w_{\mathsf{a}} = w_i(e^i)_{\mathsf{a}},
+\end{equation}
+where repeated opposite-variance component indices contract by Einstein summation over $\{1,\dots,H\}$. Complex conjugation maps $v^i \mapsto \bar{v}^{\bar{\imath}} \in \overline{\mathcal{V}}$ at the identical upper height; pairing $\mathcal{V}$ with $\overline{\mathcal{V}}$ always inserts the flat K\"ahler metric $\delta_{i\bar{\jmath}} \in \mathcal{V}^*\otimes\overline{\mathcal{V}}^*$ and its inverse $\delta^{\bar{\jmath}i}$.
+
+Seven typed index families govern the field-theoretic, Lie-algebraic, spinorial, and electrical-network constructions across all chapters (Table~\ref{tab:variance-ledger} and Table~\ref{tab:zk-module-index}):
+\begin{itemize}[leftmargin=*]
+  \item \emph{Holomorphic chart indices} $i,j,k \in \{1,\dots,H\}$ and conjugate $\bar{\imath},\bar{\jmath} \in \{1,\dots,H\}$ on $\C^H$, alongside real topological coordinates $\tau^\rho$ ($\rho,\sigma \in \{1,\dots,T\}$; metric $\delta_{\rho\sigma}$) on $\RR^T$;
+  \item \emph{Four-dimensional Euclidean spacetime, Weyl, and Weinberg--Srednicki spinor indices}: Lorentz $\mu,\nu \in \{0,1,2,3\}$ ($g_{\mu\nu} = \delta_{\mu\nu}$), chiral Weyl $a,b \in \{+,-\}$, antichiral Weyl $\dot{a},\dot{b} \in \{\dot{+},\dot{-}\}$ (bispinor $x^{a\dot{a}} = x^\mu(\bar{\sigma}_\mu)^{\dot{a}a}$), and four-component Majorana $\alpha,\beta \in \{1,2,3,4\}$ ($\bar{\lambda}^{\alpha A} := \lambda_\beta{}^A C^{\beta\alpha}$);
+  \item \emph{Lie-algebra slots} $A,B,C,E$ on $\fg$ and $\fg^*$ ($d_{\fg} := \dim_{\C}\fg$; omitting $D$ to avoid collision with $D = H+T$ and auxiliary $D^A$), with invariant bilinear form $\kappa_{AB} \in \Sym^2(\fg^*)^{\fg}$, inverse $\kappa^{AB}$, and structure constants $[t_B, t_C] = \ii C^A{}_{BC}t_A$ (or complex basis $[T_B, T_C] = f^A{}_{BC}T_A$ with $f_{ABC} := \kappa_{AE}f^E{}_{BC}$);
+  \item \emph{Matter representation indices} $I,J,K \in \{1,\dots,\dim\cR\}$ on $\cR$ ($\phi^I, \psi_a{}^I, F^I, \beta^I \in \cR$) and dual $\cR^*$ ($\bar{\phi}_I, \bar{\psi}_{\dot{a}I}, \bar{F}_I, \gamma_I \in \cR^*$);
+  \item \emph{Superspace Grassmann indices} $\hat{\alpha},\hat{\beta} \in \{1,\dots,N_{\theta}\}$ for odd coordinates $\theta^{\hat{\alpha}}$ and derivatives $\partial_{\hat{\alpha}}$ on $\C^{H|N_{\theta}}$;
+  \item \emph{Typed Schwinger electrical-network spaces and holomorphic cycle $1$-forms $\psi_{r,\mathsf{a}}$}: For a connected oriented graph $\Gamma = (V,I)$ with $|V|$ vertices, $|I|$ internal edges, loop number $n := |I| - |V| + 1 \ge 1$, and grounded root vertex $v_0 \in V$, we distinguish the edge space $\mathcal{E} := \RR^{|I|}$ ($e,f \in \{1,\dots,|I|\}$), grounded vertex space $\mathcal{W}_{\mathrm{vert}} := \RR^{|V|-1}$ ($u,v \in \{1,\dots,|V|-1\}$), and cycle space $\mathcal{H}_1 := H_1(\Gamma;\RR) \cong \RR^n$ ($r,s \in \{1,\dots,n\}$). Assigning each edge $e$ its Schwinger proper time as resistance $R_{ef}(t) := t_e\delta_{ef}$ (conductance $G^{ef}(t) := t_e^{-1}\delta^{ef}$), the incidence map $B^u{}_e : \mathcal{E} \to \mathcal{W}_{\mathrm{vert}}$ and cycle-selection map $C_r{}^e : \mathcal{E}^* \to \mathcal{H}_1^*$ ($B^u{}_e C_r{}^f\delta^{eg}\delta_{fg} = 0$) define the grounded nodal Laplacian $\Lambda^{uv}(t) := B^u{}_e G^{ef}(t) B^v{}_f$ and loop-resistance Symanzik matrix $M_{rs}(t) := C_r{}^e R_{ef}(t) C_s{}^f$ ($U_\Gamma(t) := \det M(t)$). Injecting balanced external holomorphic momenta $\lambda^u{}_{\mathsf{a}} \in \mathcal{W}_{\mathrm{vert}}\otimes\mathcal{V}^*$ drives potential drops $\varphi_{u,\mathsf{a}} = (\Lambda^{-1})_{uv}\lambda^v{}_{\mathsf{a}}$ and Ohm edge currents $y^e{}_{\mathsf{a}}(t;\lambda) := G^{ef}B^u{}_f(\Lambda^{-1})_{uv}\lambda^v{}_{\mathsf{a}}$ obeying Kirchhoff's current law $B^u{}_e y^e{}_{\mathsf{a}} = \lambda^u{}_{\mathsf{a}}$ and voltage law $C_r{}^e R_{ef} y^f{}_{\mathsf{a}} = 0$. Pairing the resistance differentials $\dd t^e \in \Omega^1(\RR^{|I|}_{>0};\mathcal{E})$ against $y^f{}_{\mathsf{a}}$ along cycle $r$ defines the \emph{holomorphic cycle $1$-form}
+  \begin{equation}
+  \label{eq:psi-cycle-def}
+  \psi_{r,\mathsf{a}} := C_r{}^e R_{ef}'\,y^f{}_{\mathsf{a}}\,\dd t^e = \sum_{\substack{e \in I\\\mathrm{edges\ in\ }r}} C_r{}^e\,y^e{}_{\mathsf{a}}(t;\lambda)\,\dd t^e \in \Omega^1\!\bigl(\RR^{|I|}_{>0}\bigr)\otimes\mathcal{H}_1^*\otimes\mathcal{V}^*,
+  \end{equation}
+  whose radial contraction $\iota_E\psi_{r,\mathsf{a}} = C_r{}^e R_{ef} y^f{}_{\mathsf{a}} = 0$ along $E = \sum_{\substack{e\in I\\\mathrm{edges}}} t^e\partial_{t^e}$ vanishes identically by Kirchhoff's voltage law, ensuring descent to projective Schwinger space $\mathbb{RP}^{|I|-1}_{>0}$! Moreover, partitioning any subnetwork $S \subset \Gamma$ into boundary terminals $\partial S$ and eliminated interior vertices $S^\circ$ splits its conductance Laplacian into $L_{\partial\partial}, L_{\partial\circ}, L_{\circ\partial}$, and the positive-definite $|S^\circ|\times|S^\circ|$ \emph{interior Dirichlet conductance Laplacian}
+  \begin{equation}
+  \label{eq:Lcirc-ledger-def}
+  (L_{\circ\circ})^{uv} := \left(\sum_{\substack{e\in I(S)\\ e\ni u}} g_e\right)\delta^{uv} - \sum_{\substack{e\in I(S)\\ e=(u,v)}} g_e\qquad (u,v \in S^\circ,\ g_e := t_e^{-1}).
+  \end{equation}
+\end{itemize}
+\end{zkmodule}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.4pt}
+\renewcommand{\arraystretch}{1.16}
+\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Index Family} & \textbf{Carrier Space / Bundle} & \textbf{Contravariant (Upper) Objects} & \textbf{Covariant (Lower) Objects} \\
+\midrule
+$\mathsf{a},\mathsf{b},\mathsf{c}$ & Abstract $\mathcal{V} \cong \C^H$ vs.\ $\mathcal{V}^*$ & $z^{\mathsf{a}}, \mu^{\mathsf{a}}, (e_i)^{\mathsf{a}}$ & $p_{\mathsf{a}}, \lambda^u{}_{\mathsf{a}}, y^e{}_{\mathsf{a}}, \psi_{r,\mathsf{a}}, (e^i)_{\mathsf{a}}$ \\
+$i,j;\ \bar{\imath},\bar{\jmath} \in \{1..H\}$ & $\C^H$ chart \& conjugate $\overline{\mathcal{V}}$ & $z^i, \bar{z}^{\bar{\imath}}, \mu^i, \delta^{\bar{\jmath}i}, \eps^{i_1\cdots i_H}$ & $\partial_i, \dbar_{\bar{\imath}}, \gamma_i, \delta_{i\bar{\jmath}}, \eps_{i_1\cdots i_H}$ \\
+$\mu,\nu;\ a,\dot{a};\ \alpha,\beta$ & $4\mathrm{D}$ $\RR^4$, Weyl $S_\pm$, Majorana & $x^\mu, x^{a\dot{a}}, \xi^a, \bar{\lambda}^{\dot{a}A}, \bar{\lambda}^{\alpha A}, C^{\alpha\beta}$ & $\partial_\mu, V_\mu{}^A, \lambda_a{}^A, \bar{\lambda}_{\dot{a}}{}^A, \lambda_\alpha{}^A, C_{\alpha\beta}$ \\
+$A,B,C,E$ & Lie algebra $\fg$ vs.\ dual $\fg^*$ & $\mathcal{A}^A, V_\mu{}^A, \ghc^A, \kappa^{AB}, C^A{}_{BC}$ & $\mathcal{B}_A, \ghb_A, A^\ddagger_A, \ghc^\ddagger_A, \kappa_{AB}, f_{ABC}$ \\
+$I,J,K \in \{1..\dim\cR\}$ & Matter module $\cR$ vs.\ $\cR^*$ & $\phi^I, \psi_a{}^I, F^I, \beta^I, \bar{F}^{\ddagger I}, \Wb^{IJK}$ & $\bar{\phi}_I, \bar{\psi}_{\dot{a}I}, \bar{F}_I, \gamma_I, \phi^\ddagger_I, W_{IJK}$ \\
+$e,f \in \{1..|I|\}$ & Schwinger edge space $\mathcal{E}$ & $t^e, \dd t^e, y^e{}_{\mathsf{a}}, G^{ef}$ & $z_e{}^{\mathsf{a}}, R_{ef}, B^u{}_e$ \\
+$u,v;\ r,s$ & Grounded $\mathcal{W}_{\mathrm{vert}}$; cycles $\mathcal{H}_1$ & $\lambda^u{}_{\mathsf{a}}, \Lambda^{uv}, (L_{\circ\circ})^{uv}, (M^{-1})^{rs}$ & $\varphi_{u,\mathsf{a}}, (\Lambda^{-1})_{uv}, M_{rs}, C_r{}^e, \psi_{r,\mathsf{a}}$ \\
+\bottomrule
+\end{tabularx}
+\caption{Global typed index variance ledger enforced across all derivations, Feynman diagrams, and in-situ Background Cards.}
+\label{tab:variance-ledger}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{In-Situ Background Card} & \textbf{Zettelkasten Link} & \textbf{Adjacent Calculation Motivating Placement (Proximity Principle)} \\
+\midrule
+Card~2.1 (\S\ref{subsec:notation-ledger}) & \zkcard{typed-index-variance-ledger} & Global index variance, Kirchhoff/Ohm $\psi_{r,\mathsf{a}}$, and $L_{\circ\circ}$ across all chapters \\
+Card~3.1 (\S\ref{subsec:bv-graded-module}) & \zkcard{bv-linfty-physics-grading} & Universal BV grading, codifferential $D^*$, and $4$-stage derivation of $\Omega_\Gamma$ \\
+Card~5.1 (\S\ref{subsec:universal-quartic-product}) & \zkcard{offshell-n1-bv-master-action} & Off-shell $4\mathrm{D}$ $\mathcal{N}=1,4 \to BF$--$\beta\gamma$ / $\C^{2|3}$ hCS right before open-color $\Wb$ products \\
+Card~6.1 (\S\ref{subsec:cs-aksz-lecture}) & \zkcard{aksz-superconnection-ht-cs-ladder} & $\mathrm{CS}_{3,5}$, exact $N_W[g]\in\ZZ$, AKSZ, \& $-3F_D$ right before $5\mathrm{D}$--$10\mathrm{D}$ CS loops \\
+Card~6.2 (\S\ref{subsec:5d-cs-flagship}) & \zkcard{low-rank-isomorphisms-cubic-invariants} & Chevalley Casimirs \& Whitehead $H^3(\fg;\C)$ right at $5\mathrm{D}$ CS two-loop color step \\
+Card~6.3 (\S\ref{subsec:5d-cs-flagship}) & \zkcard{vogel-universal-plane} & Split Casimir $m_k,n_k$, $X_2$, \& Vogel $8n_4-3d_{\fg}$ right at $5\mathrm{D}$ CS $\theta$-graph contraction \\
+Card~6.4 (\S\ref{subsec:esw-taxonomy}) & \zkcard{esw-twist-taxonomy-oneloop-anomaly-table} & ESW $10\mathrm{D}\to 2\mathrm{D}$ twist classes \& $O_1 = -I^{\mathrm{phys}}_{d+2}$ right before $2\mathrm{D}$--$8\mathrm{D}$ gauge twists \\
+Card~7.1 (\S\ref{subsec:11d-two-loop}) & \zkcard{minimal-11d-sugra-e510-model} & Pure-spinor $11\mathrm{D}$ CJS SUGRA $\to E(5|10)$ right before $11\mathrm{D}$ two-loop theta sum \\
+Card~7.2 (\S\ref{subsec:ks-type1-bcov}) & \zkcard{ks-type1-wzw4-minimal-bcov} & Calabi--Yau $\partial_\Omega$, $P_{\mathrm{BCOV}}$, \& $\mathrm{D}3$ flux $NF_{\mathrm{BM}}$ right before $4$-loop KS \& $g=4$ BCOV \\
+Card~7.3 (\S\ref{subsec:holography-allorder}) & \zkcard{chang-yin-superfield-letters} & Super-polyvectors $\mathrm{PV}^{\ge 1}_\Delta(\C^{2|3})$ \& $\fpsl(3|3)$ right before $\mathcal{N}=4$ twisted holography \\
+\bottomrule
+\end{tabularx}
+\caption{In-situ Background Cards placed directly alongside the Feynman-diagram and cohomology calculations that require them, synchronized bidirectionally with the local Ospero Zettelkasten (\texttt{http://127.0.0.1:9124/}).}
+\label{tab:zk-module-index}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.92]
+  % Left: Grounded IEC resistor network
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=3pt, draw=PineGreen!75!black, fill=PineGreen!2.5, line width=0.55pt] (-3.85,-1.95) rectangle (3.85,1.95);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.62) {(a) Grounded IEC Network};
+    \coordinate (g0) at (-2.45,-1.05);
+    \coordinate (g1) at (-2.45, 0.75);
+    \coordinate (g2) at ( 0.35, 0.75);
+    \coordinate (g3) at ( 0.35,-1.05);
+    \draw[prop] (g0) -- node[iecres, rotate=90, scale=0.62] {} node[left=4pt, font=\tiny] {$t_1$} (g1);
+    \draw[prop] (g1) -- node[iecres, scale=0.62] {} node[above=3pt, font=\tiny] {$t_2$} (g2);
+    \draw[prop] (g2) -- node[iecres, rotate=90, scale=0.62] {} node[right=4pt, font=\tiny] {$t_3$} (g3);
+    \draw[prop] (g0) -- node[iecres, scale=0.62] {} node[below=3pt, font=\tiny] {$t_4$} (g3);
+    \draw[prop] (g1) -- node[iecres, sloped, scale=0.58] {} node[above right=-1pt, font=\tiny] {$t_5$} (g3);
+    \draw[extleg] (g1) -- ++(-0.42,0.28) node[left=-1pt, font=\tiny] {$\lambda^1{}_{\mathsf{a}}$};
+    \draw[extleg] (g2) -- ++( 0.42,0.28) node[right=-1pt, font=\tiny] {$\lambda^2{}_{\mathsf{a}}$};
+    \draw[extleg] (g3) -- ++( 0.42,-0.25) node[right=-1pt, font=\tiny] {$\lambda^3{}_{\mathsf{a}}$};
+    \filldraw[v0] (g1) circle (0.055cm);
+    \filldraw[v0] (g2) circle (0.055cm);
+    \filldraw[v0] (g3) circle (0.055cm);
+    \filldraw[vbiv] (g0) circle (0.06cm) node[below left=1pt, font=\tiny] {$v_0$};
+    \node[font=\tiny] at (2.45, 0.25) {$B^u{}_e y^e{}_{\mathsf{a}} = \lambda^u{}_{\mathsf{a}}$};
+    \node[font=\tiny] at (2.45,-0.35) {$C_r{}^e R_{ef} y^f{}_{\mathsf{a}} = 0$};
+  \end{scope}
+
+  % Right: Two-loop tight theta graph \theta(n_1,n_2,n_3)
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=3pt, draw=NavyBlue!75!black, fill=NavyBlue!2.5, line width=0.55pt] (-3.85,-1.95) rectangle (3.85,1.95);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.62) {(b) Tight Theta $\theta(n_1,n_2,n_3)$};
+    \coordinate (VL) at (-2.35,-0.05);
+    \coordinate (VR) at ( 2.35,-0.05);
+    \draw[prop, NavyBlue!85!black] (VL) .. controls (-1.20,1.15) and (1.20,1.15) .. coordinate[pos=0.33] (p1a) coordinate[pos=0.67] (p1b) (VR);
+    \draw[prop, PineGreen!85!black] (VL) -- coordinate[pos=0.50] (p2a) (VR);
+    \draw[prop, BrickRed!85!black] (VL) .. controls (-1.20,-1.25) and (1.20,-1.25) .. coordinate[pos=0.33] (p3a) coordinate[pos=0.67] (p3b) (VR);
+    \foreach \pt in {p1a,p1b,p2a,p3a,p3b} \filldraw[vbiv] (\pt) circle (0.055cm);
+    \draw[extleg] (-3.05,-0.05) -- (VL);
+    \draw[extleg] (VR) -- (3.05,-0.05);
+    \filldraw[v0] (VL) circle (0.06cm) node[below left=1pt, font=\tiny] {$v_{\mathrm{bot}}$};
+    \filldraw[v0] (VR) circle (0.06cm) node[below right=1pt, font=\tiny] {$v_{\mathrm{top}}$};
+    \node[font=\tiny, text=NavyBlue!85!black] at (0,1.08) {$R_1$ ($n_1$ edges)};
+    \node[font=\tiny, text=PineGreen!85!black] at (0,0.22) {$R_2$ ($n_2$ edges)};
+    \node[font=\tiny, text=BrickRed!85!black] at (0,-1.18) {$R_3$ ($n_3$ edges)};
+  \end{scope}
+\end{tikzpicture}
+\caption{Fundamental Schwinger electrical-network structures from Background Card~2.1: (a)~grounded IEC white-rectangle resistor network with root $v_0$, external vertex currents $\lambda^u{}_{\mathsf{a}}$, Kirchhoff current law $B^u{}_e y^e{}_{\mathsf{a}} = \lambda^u{}_{\mathsf{a}}$, and cycle voltage law $C_r{}^e R_{ef} y^f{}_{\mathsf{a}} = 0$ generating $\psi_{r,\mathsf{a}}$~\eqref{eq:psi-cycle-def}; (b)~two-loop tight theta topology $\theta(n_1,n_2,n_3)$ ($n_1+n_2+n_3 = 2D+1$, $1 \le n_P \le D$) with trivalent poles $v_{\mathrm{bot}}, v_{\mathrm{top}}$ and red bivalent source insertions.}
+\label{fig:iec-and-theta}
+\end{figure}
+
+\subsection{Self-Contained Catalogue of Principal Theorems}
+\label{subsec:catalogue-results}
+
+\begin{enumerate}[label=\textbf{Result~\arabic*.},leftmargin=*]
+  \item \textbf{Four-Stage Heat-Kernel Resistor-Network Derivation, $D$-Laman Admissibility, and $\mathrm{B}\supsetneq\mathrm{SP}$ (Theorems~\ref{thm:heat-kernel-omega-gamma} and~\ref{thm:d-laman}).} Integrating Costello's heat-kernel propagator $P(\eps,L) = \int_\eps^L\dd t\,D^* K_t$ across the $|V|-1$ ungrounded vertices of an $n$-loop graph on $\RR^T\times\C^H$ yields $\Omega_\Gamma = U_\Gamma^{-H}\rho_n(M)^{\wedge T}\wedge\bigwedge_{i=1}^H\bigwedge_{r=1}^n\psi_{r,i}$. Tight UV-convergent graphs obey $|I| = Dn+1$, $|V| = (D-1)n+2$, and $(D-1)|I_S| \le D|V_S|-D-1$, with unsourced star--triangle class $\mathrm{B}$ strictly larger than $\mathrm{SP}$ for every $D \ge 3, n \ge 3$.
+
+  \item \textbf{Universal Two-Loop Theta Kernels, $T\ge 2$ Vanishing, and Ohm/Segre Locality (Theorems~\ref{thm:theta-closed}--\ref{thm:ohm-locality}).} Closed determinants evaluate all tight $\theta(n_1,n_2,n_3)$ kernels at $T\in\{0,1\}$; Newton's identities prove $\rho_n(M)\wedge\rho_n(M) = 0$ (eliminating all bulk loops for $T \ge 2$); and Schur complementation proves $\Omega_\Gamma = \eps\,\Omega_S\wedge(\Omega_{\mathrm{out}}\circ p_{\mathrm{out}})$ with $T=1$ Dirichlet contact $\langle\xi_u\xi_v\rangle = \frac{1}{2}(L_{\circ\circ})_{uv}$ and codimension-$\frac{1}{2}k(k-3)$ Segre quadrics at valence $k \ge 4$.
+
+  \item \textbf{Fixed-Core de~Rham Stabilization and Sharp $n$-Spoke Wheel Span (Theorems~\ref{thm:core-stabilization} and~\ref{thm:wheel-span}).} Relative algebraic de~Rham cohomology on Hepp cubes proves $\dim_{\QQ}\bigcup_{r\ge 1}\mathcal{P}_r(G) < \infty$ and $\mathcal{P}_q(G) = \mathcal{P}_{q+1}(G)$ ($q\gg 1$), while bilateral Laplace parity and the factorial bound $L_{21} > \frac{5}{4} > \zeta(3)$ prove $\mathcal{P}_q(W_n) = \QQ + \sum_{\substack{j\in\{2,\dots,n-1\}\\\mathrm{odd\ zetas}}}\QQ\zeta(2j-1)$ for all $n \ge 3$ and $q \ge \max(3,n-1)$ without assuming $\QQ$-independence of odd zetas.
+
+  \item \textbf{Non-Planar $K_5$ Closure Through $q=9$ and All Three Six-Loop $\C^2$ Kernels (Theorems~\ref{thm:k5-periods} and~\ref{thm:sixloop-k5}).} Vertex IBP plus dimension shift closes all convergent $K_5$ orbits for $q \le 8$ ($54{,}391$ orbits) and all $73$ Wishart/Cayley--Menger guarded $q=9$ orbits in $\QQ + \QQ\zeta(3) + \QQ\zeta(5)$ (with radial-wheel proof of $J_2 = 4J_3^{(14)}+16J_3^{(6)}+\frac{16}{3}J_3^{(5)}$), and reciprocal conductance inversion ($35 \to 15$) evaluates all three admissible six-loop $\C^2$ $K_5$ subdivisions.
+
+  \item \textbf{$T=1$ Four-Loop $5{,}054$-Period Completion, $3$-Terminal Locality, and $5$-Loop $\C^3$ $\zeta(3)^2$ (Theorems~\ref{thm:t1-completion} and~\ref{thm:bulk3-five-loop}).} Closing $55{,}074$ IBP rows determines $5{,}054$ half-integer prism/$K_{3,3}$ periods in $\QQ\pi^2\oplus\QQ\pi^4$ ($K_{K_{3,3}}\equiv 0$ by degree-$6$ Vandermonde parity while edge $03$ current equals $\frac{2243\pi^2}{4725}-\frac{121\pi^4}{2520}$), three-terminal Markov truncation ($\alpha_{r_1}\wedge\alpha_{r_2}\wedge\alpha_{r_3}=0$) gives $K_{\mathrm{prism}}(1,1,0,-1,0,-1) = \frac{311}{630}\pi^2 - \frac{17}{360}\pi^4$, and $92$ five-loop $\C^3$ bare polynomials include $K_{62} = \frac{2804909}{1866590853120} - \frac{9019\zeta(3)}{3600676800} + \frac{29\zeta(3)^2}{27783000}$.
+
+  \item \textbf{Universal Forest Elimination, Cube Series, $5$-Loop $K_{3,3}+e$, and $200/200$ Census (Theorems~\ref{thm:forest-cube-series}--\ref{thm:k33e-completion}).} Post-order elimination ($\le 3$ neighbors on $1{,}135$ forests), $\tau_\Gamma n!$ MST cubes with $(2n+1)\times(2n+1)$ determinant drop $4n \to 2n+1$, $19$-loop paired-star Schur reduction, $128$-loop spoke transfer, and $17$ parametric annihilators evaluate $K_{K_{3,3}+e}(1,0;2,1;-3,-1) = \frac{1187-816\zeta(3)}{435456000} > 0$, completing all $200/200$ five-loop $\C^2$ forests and the $468$-monomial $K_5-e$ current polynomial.
+
+  \item \textbf{Off-Shell $4\mathrm{D}$ $\mathcal{N}=1,4$ Twists, Universal Open-Color $\zeta(3)$ Cancellation, $4$-Loop $\ghb^2$, and $6$-Current Jets (Proposition~\ref{prop:4d-offshell-twist}, Theorems~\ref{thm:universal-quartic} and~\ref{thm:simplex-jets}).} Eliminating $Q_-$-contractible pairs in off-shell $4\mathrm{D}$ $\mathcal{N}=1$ gauge-matter theory yields holomorphic $BF$--$\beta\gamma$ on $\C^2$ (and $\C^{2|3}$ hCS at $\mathcal{N}=4$), in which representation commutators $[t_A,t_B] - \ii C^C{}_{AB}t_C \equiv 0$ cancel $\zeta(3)$ identically for all pure-matter $\deg\Wb \ge 3$, across the $324$-matching four-loop $\ghb^2$ product, and across all simultaneous input derivative jets via the closed $6$-form $\omega_{F_q} = F_q(J)\,\dd^2 J_{WA}\wedge\dd^2 J_{WB}\wedge\dd^2 J_{AB}$ on $K_4$ ($46$ null $+ 16$ SP faces).
+
+  \item \textbf{Exact Finite $\mathrm{CS}_3$ Gauge Shift, Winding $N_W[g] \in \ZZ$, AKSZ Collapse, and Vogel Identity $8n_4 - 3d_{\fg}$ (Propositions~\ref{prop:cs3-large-gauge-nw}--\ref{prop:casimir-x2-semisimple}, Theorem~\ref{thm:vogel-dim-and-8n4}).} Under $A^g = g A g^{-1} - (\dd g)g^{-1}$ ($\theta_g := g^{-1}\dd g$, matching $\delta_\epsilon A = -\dd_\nabla\epsilon$), $\frac{1}{2}\mathrm{CS}_3[A^g] - \frac{1}{2}\mathrm{CS}_3[A] = -\frac{1}{2}\dd\kappa(g A g^{-1},(\dd g)g^{-1}) + \frac{1}{12}\kappa(\theta_g,[\theta_g,\theta_g])$, integrating on closed $M_3$ to $4\pi^2 N_W[g]$ with $N_W[g] := \frac{1}{48\pi^2}\int_{M_3}\kappa^{\mathrm{norm}}(\theta_g,[\theta_g,\theta_g]) = \frac{1}{24\pi^2}\int_{M_3}\tr_{\C^N}((g^{-1}\dd g)^{\wedge 3}) \in \ZZ$ ($N_W[\id_{S^3}] = +1$), while right-placed antifields package $S_{E,\mathrm{BV}} = \frac{1}{2}\int_{M_3}\mathrm{CS}_3[\mathcal{A}]$ and $\int_{\RR\times\C^2}\mathrm{CS}_5[\mathcal{A}]|_{\mathrm{HT}} = -3F_D[\mathcal{A}]$. Semisimple $\fg$ splits $\Lambda^2\fg = \fg_{\mathrm{ad}}\oplus X_2$ with $\Omega_{\mathrm{ad}}|_{X_2} = 0$, whereas simple $\fg$ decomposes $\Sym^2\fg = \C\oplus\bigoplus_{\substack{s\in\{1,2,3\}\\\mathrm{branches}}}Y_2(v_s)$ ($\Omega_{\mathrm{ad}}|_{Y_2(v_s)} = -\frac{v_s}{2t_V}\id$) with $d_{\fg} = \frac{(v_1-2t_V)(v_2-2t_V)(v_3-2t_V)}{v_1 v_2 v_3}$ and $8n_4 - 3d_{\fg} = \frac{3d_{\fg}(d_{\fg}-3)v_1 v_2 v_3}{4t_V^3}$.
+
+  \item \textbf{Commutative $5\mathrm{D}$, $9\mathrm{D}$, and $10\mathrm{D}$ Chern--Simons Classification (Lemma~\ref{lem:5d-cs-8summands}, Theorems~\ref{thm:5d-cs-allorders} and~\ref{thm:9d-10d-cs}).} Contraction invariance $\eta_v F = 0$ projects $8$-summand local functionals onto $H^g(V_{\mathrm{ht}})\cong H^{g+3}((C^0_{\fg})^G)$, where commutative $5\mathrm{D}$ CS quantizes on semisimple $\fg$ precisely when $\fg \cong \bigoplus_{\substack{u\\\mathrm{ideals}}}\fsl_{N_u}$ (with explicit $i_4 > 0$ and $\fg\oplus\C\mathbf{1}$ escape on $\fso_5\oplus\C\mathbf{1}$ and $G_2..E_8$), whereas $9\mathrm{D}$ HT CS quantizes $\mathrm{U}(4)$-equivariantly through $\hbar^2$ solely for $\fsl_2$ and $\fsl_3$ ($a = \pm\frac{1}{512\pi^4}$), and $10\mathrm{D}$ hCS satisfies $P_2 \mid P_6$ solely for $\{\fsl_2, \fso_5, \fso_{32}, E_8\}$.
+
+  \item \textbf{$14$-Twist ESW One-Loop Match and Multi-Loop $3\mathrm{D}/4\mathrm{D}/6\mathrm{D}/8\mathrm{D}$ Gauge Supercharges (Theorems~\ref{thm:esw-oneloop}--\ref{thm:6d-8d-twistor}).} Across all $14$ ESW holomorphic twists, $(H+1)$-gon Berezinian supertraces satisfy $K_{\mathrm{poly}(H+1)} = \frac{(-1)^H}{H!}\Delta$ and $\mathcal{S}_H = -I^{\mathrm{phys}}_{d+2}$ ($38/38$ checks), accompanied by exact orientation $\eps_2 = -1$, $55$ four-loop tadpole moments, and $30{,}272$-monomial $\GL(2)+1\mathrm{F}$ $J_w=20$ lifts in $3\mathrm{D}$ $\mathcal{N}=2$, $4\mathrm{D}$ $\mathcal{N}=2$ $b_0$ lifts, $6\mathrm{D}$ $\mathcal{N}=(1,1)$ $Q_4$ and $\mathcal{N}=(1,0)$ rank-$5$ weights $(\frac{1}{2},\frac{1}{2},1,\frac{1}{2},\frac{1}{2})$, $6\mathrm{D}$ $\C^3$ $\fso_8$ GS, and all-loop twistor defect OPEs.
+
+  \item \textbf{Pure-Spinor $11\mathrm{D}$ Supergravity, Delayed Genus-$4$ BCOV, and All-Order $\mathcal{N}=4$ Twisted Holography (Theorems~\ref{thm:11d-from-scratch}--\ref{thm:holography-allorder}).} Twisting $11\mathrm{D}$ CJS supergravity via $q = \mathbf{1} \in \Lambda^0 V^* \subset S_{32}$ yields $E(5|10)$ with two-loop obstruction $-\frac{63g}{256\pi^{10}}$ on $\mathcal{Z}_{3+6}$ and further-twist Koszul $g$-torsion; Kodaira--Spencer and minimal BCOV gravity yield $D_4 > 0$ and delayed $g=4$ response $\frac{31}{64012032000}$; and $\mathcal{N}=4$ twisted holography yields $\mathcal{O}(\hbar^2 N^{-2})$ $3\to 1$ trace fusion, Bessel $I_0$ detectors, $\frac{\sinh(x/2)}{x/2}$ handle limit, determinant branes, $k=2$ mesons, and $2J_L \ge 2n-1$ spin selection.
+\end{enumerate}

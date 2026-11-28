@@ -12,6 +12,11 @@ Status tags in all reports: [chk] exact check (script and log in the folder), [d
 
 ## Most important results
 
+### Self-contained pedagogical lecture monographs
+
+- **Comprehensive program lecture monograph (62 pages):** [Perturbative Holomorphic and Holomorphic–Topological Feynman Diagrams: Multi-Loop Resistor Networks, Fixed-Core Periods, Quantum Anomalies, and All-Order Holography](notes/lecture-monograph/README.md) — [PDF](notes/lecture-monograph/holomorphic_twist_monograph.pdf) · [LaTeX](notes/lecture-monograph/holomorphic_twist_monograph.tex). Organized by proximity (`就近原则`) with universal Ward/BV heat-kernel foundations upfront and ten in-situ Background Cards (Chern–Simons transgression & exact Wess–Zumino winding $N_W[g]\in\mathbb{Z}$, Whitehead & Vogel split-Casimir color ladders with complete proofs, off-shell $4\mathrm{D}$ twists, ESW taxonomy, pure-spinor $11\mathrm{D}$ supergravity, Calabi–Yau/BCOV polyvectors, and $\mathfrak{psl}(3|3)$) placed directly alongside the Feynman-diagram calculations that invoke them.
+- **5d Chern–Simons companion lecture monograph & 50-graph atlas:** [Five-Dimensional Holomorphic–Topological Chern–Simons Lecture Monograph](notes/5d-cs-lecture-monograph/README.md) — [PDF](notes/5d-cs-lecture-monograph/fived_cs_monograph.pdf) · [LaTeX](notes/5d-cs-lecture-monograph/fived_cs_monograph.tex) · [50-Graph Atlas](notes/5d-cs-lecture-monograph/atlas_50_graphs.tex).
+
 ### New exact calculations and evaluator
 
 - **Complete topological four-loop cores:** [Prism and K33](explore/circuit-general/topological-completion/README.md), with all five independent original sources and all nine original first currents. The 5,054 new half-integer scalar periods satisfy all 55,074 original relation rows and 785 independent dimension-shift identities. The bare K33 kernel vanishes identically while its first-current kernels are nonzero. Absolute convergence is checked before any symmetry cancellation.
@@ -181,6 +186,7 @@ Not included: intermediate data above 0.5 MB (pickles, SQLite, binary caches, th
 | `PLAN.md` | problem list; §10: circuit-reduction formalism by $(H,T)$ with every result and its folder |
 | `code/htk/` | kernel engine: graphs, series–parallel and $Y$–$\Delta$ reduction, brute-force oracle, conventions |
 | `explore/circuit-general/` | atlas, cores, symmetry, graphical functions, locality, five-loop, $K_5$, assembly |
+| `notes/lecture-monograph/`, `notes/5d-cs-lecture-monograph/` | self-contained pedagogical lecture monographs (62-page program monograph with in-situ Background Cards + 5d CS monograph with 50-graph TikZ atlas) |
 | `notes/flagship/`, `deepen/` | 5d Chern–Simons manuscript and its computations |
 | `explore/sugra-11d-qme/`, `explore/iib-bcov/`, `explore/kodaira-spencer/`, `explore/type-i/`, `explore/twistor-type-i/` | twisted supergravity and string field theories |
 | `explore/twisted-holography-N4/` | twisted holography of $\mathcal N=4$ |

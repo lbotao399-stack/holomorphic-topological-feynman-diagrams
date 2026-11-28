@@ -1,0 +1,73 @@
+% ============================================================================
+\section{Five-Loop Benchmark Ledger, Spectator-Color Audit, and Literature Errata}
+\label{app:periods-errata}
+% ============================================================================
+
+This second appendix records key quantitative tables supporting Sections~\ref{sec:schwinger-periods-k5}--\ref{sec:sugra-bcov-holo}: (1)~the five-loop $\C^2$ forest and $\C^3$ \texttt{bulk3} benchmark constants; (2)~the complete scope ledger of the spectator-color audit; and (3)~six concrete published/preprint formula errata caught by exact rational and multi-prime modular verification~\cite{Repo9e833c8}.
+
+\subsection{Five-Loop Forest and \texorpdfstring{$\C^3$}{C\^3} Bulk Period Benchmarks}
+\label{subsec:app-fiveloop-ledger}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Topology / Family} & \textbf{Space \& Pole $q$} & \textbf{Exact Certified Value / Census Breakdown} \\
+\midrule
+$K_{3,3}+e$ forest $(1,0;2,1;-3,-1)$ & $\C^2$ ($n=5, q=7$) & $\frac{1187 - 816\zeta(3)}{435456000} > 0$ ($17$ annihilators; $+\frac{57527}{106920}\zeta(5)$ cancels) \\
+$K_5-e$ physical quartic forest & $\C^2$ ($n=5, q=7,8$) & $16$ bare $+ 468$ current monomials ($1{,}334$ coeffs in $\QQ+\QQ\zeta(3)+\QQ\zeta(5)$) \\
+All $200$ five-loop product forests & $\C^2$ ($n=5$, $2{,}200$ spinors) & $10$ zero bare ($10/10$ nonzero currents), $107\in\QQ$, $77\in\QQ+\QQ\zeta(3)$, $6$ with $\zeta(5)$ \\
+\texttt{prism} \& $K_{3,3}$ $T=1$ completion & $\RR\times\C$ ($n=4, q\le\frac{11}{2}$) & $5{,}054$ half-integer periods; $K_{\mathrm{prism}}=\frac{311}{630}\pi^2-\frac{17}{360}\pi^4$; $K_{K_{3,3}}\equiv 0$ \\
+\texttt{bulk3(3,5)} graph $K_{46}$ (\texttt{prism} core) & $\C^3$ ($n=5, q=8$) & $-\frac{61437767}{18517766400000} - \frac{189281}{21432600000}\zeta(3) + \frac{4}{297675}\zeta(5)$ \\
+\texttt{bulk3(3,5)} graph $K_{62}$ ($K_4\oplus_2 K_4$) & $\C^3$ ($n=5, q=8$) & $\frac{2804909}{1866590853120} - \frac{9019}{3600676800}\zeta(3) + \frac{29}{27783000}\zeta(3)^2$ (weight-$6$ $\zeta(3)^2$) \\
+Guarded interior $K_5$ orbit & $\C^2$ ($n=6, q=9$) & $\frac{1637270809}{3295339407360000} + \frac{50430067}{22884301440000}\zeta(3) - \frac{551}{181621440}\zeta(5)$ ($73$ orbits) \\
+\bottomrule
+\end{tabularx}
+\caption{Representative five- and six-loop certified period evaluations across $\C^2$, $\RR\times\C$, and $\C^3$~\cite{Repo9e833c8}.}
+\label{tab:app-fiveloop-ledger}
+\end{table}
+
+\subsection{Spectator-Color Audit Scope Table}
+\label{subsec:app-spectator-audit}
+
+In the pooled multi-operator contraction module, an original input letter untouched by both operators in a composition \texttt{op2|op1} previously had its functional color summed alone instead of contracted with its input color vector~\cite{Repo9e833c8}. Restoring exact spectator-color and integer color contractions establishes the complete audit status in Table~\ref{tab:spectator-audit}.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.8pt}
+\renewcommand{\arraystretch}{1.16}
+\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Calculation Sector} & \textbf{Audit Status} & \textbf{Verified Resolution / Consequence} \\
+\midrule
+$6\mathrm{D}$ $\mathcal{N}=(1,1)$ order-$4$ ($\ghb^5 \to \ghc^5\gamma_1\gamma_2$) & \textbf{Unaffected} & Input and final letter types disjoint; rank-$15/15$ proof stands unchanged \\
+$6\mathrm{D}$ $\mathcal{N}=(1,0)$ ($\gamma^\vee\gamma^\vee u \to \gamma^4 u$, $\fsl_2+16\mathrm{F}$) & \textbf{Replaced (Exact $\QQ$)} & $74{,}458$ rational simplex integrals give rank $5/5$: $\kappa = (\frac{1}{2},\frac{1}{2},1,\frac{1}{2},\frac{1}{2})$ \\
+$8\mathrm{D}$ $\mathcal{N}=1$ $\fso_5$ order-$2$ ($(\gamma^\vee)^3 \to \gamma^6\gamma^\vee$) & \textbf{Replayed \& Passed} & $12\times 3$ system has rank $3/3$ with $\kappa_2 = (-\frac{1}{2},-1,-\frac{1}{6})$ ($0$ residuals) \\
+$8\mathrm{D}$ $\mathcal{N}=1$ $\fso_5$ order-$3$ ($(\gamma^\vee)^4 \to \gamma^8\gamma^\vee$) & \textbf{Replayed ($18/18$)} & All $18$ reverse/mixed compositions match; rank $2/12$, unique all-minus sign ($1/4{,}096$) \\
+$3\mathrm{D}$ \texttt{ht3d} / \texttt{qn-ht}, graph kernels, trace anomalies & \textbf{Unaffected} & Separate engines without pooled spectator contraction ($30{,}272$-monomial $J_w=20$ verified) \\
+\bottomrule
+\end{tabularx}
+\caption{Complete scope and resolution ledger of the composed-operator spectator-color audit~\cite{Repo9e833c8}.}
+\label{tab:spectator-audit}
+\end{table}
+
+\subsection{Six Published and Preprint Formula Errata Caught by Zero-Import Verification}
+\label{subsec:app-errata}
+
+\begin{enumerate}[label=\textbf{Erratum~\arabic*.},leftmargin=*]
+  \item \textbf{Costello--Dimofte--Gaiotto~\cite{CDG20}, eq.~(5.7):} The printed $3\mathrm{D}$ HT propagator fails $D_{\mathrm{free}}$-closedness away from $0$ ($D_{\mathrm{free}}[\cdots] = \frac{2\tau^2-|z|^2}{2|x|^5}\dd\tau\wedge\dd\bar{z}\wedge\dd z \neq 0$), repaired by restoring the factor-$2$ in $(2\bar{z}\dd\tau - \tau\dd\bar{z})/(8\pi\ii|x|^3)$.
+
+  \item \textbf{Gaiotto--Kulp--Wu~\cite{GKW}, eq.~(3.59) \& HTML eq.~(109):} Eq.~(3.59) differs from eq.~(3.52) by $2\pi^3$, and the printed bitriangle sign/magnitude differs from the direct Gaussian pushforward $I^{\mathrm{GKW}} = -(4\pi)^{-1}K^{\mathrm{htk}}$ ($\eps_2 = -1$, Theorem~\ref{thm:3d-n2-complete}(1)).
+
+  \item \textbf{Wang--Williams~\cite{WW24}, eq.~(22):} Heat-kernel normalization factor-$4$ discrepancy relative to $[D_{\mathrm{free}}, D^*] = -\delta^{\rho\sigma}\partial_{\tau^\rho}\partial_{\tau^\sigma} - 4\delta^{\bar{\jmath}i}\partial_i\dbar_{\bar{\jmath}}$~\eqref{eq:ht-heat-kernel-explicit}.
+
+  \item \textbf{Costello--Li~\cite{CL19}, eq.~(85):} Missing holomorphic derivative factor $\partial A$ in the printed Type~I open-closed coupling.
+
+  \item \textbf{Oh--Zhou, Fig.~12:} Differential-form wedge-commutation sign slip rendering a printed vertex expression zero.
+
+  \item \textbf{Ketov $\mathrm{WZW}_4$ background connection:} Nonvanishing curvature in the stated background connection (Theorem~\ref{thm:ks-bcov}(2)).
+\end{enumerate}

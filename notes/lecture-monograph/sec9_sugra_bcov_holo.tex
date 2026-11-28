@@ -1,0 +1,364 @@
+% ============================================================================
+\section{Minimal \texorpdfstring{$11\mathrm{D}$}{11D} Supergravity, Four-Loop Kodaira--Spencer/BCOV Gravity, and All-Order \texorpdfstring{$\mathcal{N}=4$}{N=4} Twisted Holography}
+\label{sec:sugra-bcov-holo}
+% ============================================================================
+
+Pushing our perturbative $(H,T)$ engines from gauge theories into gravitational twists and AdS/CFT holography, we establish three multi-loop gravitational pillars---introducing each gravitational background card immediately ahead of the loop computation that uses it: (1)~the pure-spinor twist of physical eleven-dimensional supergravity followed by its two-loop $-\frac{63g}{256\pi^{10}}$ QME obstruction and further-twist Koszul $g$-torsion~\cite{CJS78,Cederwall10,RSW21,HPR25,Repo9e833c8}; (2)~Calabi--Yau polyvectors and minimal BCOV gravity followed by four-loop Kodaira--Spencer invariants, Type~I $\SO(32)$, and delayed genus-$4$ BCOV~\cite{BCOV94,CL19,LW26,Repo9e833c8}; and (3)~$\fpsl(3|3)$ super-polyvectors followed by all-order finite-$N$ and nonplanar $4\mathrm{D}$ $\mathcal{N}=4$ twisted holography~\cite{CG18,SW,FPW24,BG26,Repo9e833c8}.
+
+\subsection{In-Situ Pure-Spinor \texorpdfstring{$11\mathrm{D}$}{11D} Twist, Two-Loop Obstruction, and Koszul \texorpdfstring{$g$}{g}-Torsion}
+\label{subsec:11d-two-loop}
+\phantomsection\label{subsec:11d-pure-spinor}
+
+\begin{zkmodule}{From Physical $11\mathrm{D}$ Cremmer--Julia--Scherk Supergravity to $S_{E,11\mathrm{D}}$ and $E(5|10)$}{minimal-11d-sugra-e510-model}
+Physical eleven-dimensional supergravity~\cite{CJS78} on $M_{11}$ has field multiplet $(e_M{}^{\underline{A}}, C_3, \Psi_M)$: elfbein $e_M{}^{\underline{A}}$ ($44$ on-shell bosonic states), $3$-form gauge potential $C_3$ with curvature $G_4 := \dd C_3$ ($84$ states), and Majorana gravitino $1$-form $\Psi_M^\alpha$ ($\alpha \in \{1,\dots,32\}$, $128$ fermionic states), governed by
+\begin{equation}
+\label{eq:cjs-action}
+\begin{aligned}
+S_{\mathrm{CJS}}[e,C_3,\Psi] = \frac{1}{2\kappa_{11}^2}\int_{M_{11}}\!\Bigl(&eR\,\dd^{11}x - \tfrac{1}{2}G_4\wedge *G_4 - \tfrac{1}{6}C_3\wedge G_4\wedge G_4\\
+&-\ii e\bar{\Psi}_M\Gamma^{MNP}D_N\Psi_P\,\dd^{11}x + \mathcal{O}(\Psi^2 G_4, \Psi^4)\Bigr),
+\end{aligned}
+\end{equation}
+invariant under $\delta_\epsilon e_M{}^{\underline{A}} = \ii\bar{\epsilon}\Gamma^{\underline{A}}\Psi_M$, $\delta_\epsilon C_{MNP} = -3\ii\bar{\epsilon}\Gamma_{[MN}\Psi_{P]}$, and $\delta_\epsilon\Psi_M = \widehat{\nabla}_M\epsilon$, whose off-shell Rarita--Schwinger commutator non-closure is completed in BV by bosonic SUSY ghost $\chi^\alpha$ and quadratic gravitino antifields $\frac{1}{2}\Psi^{\ddagger M}\mathcal{R}_{MN}(\chi)\Psi^{\ddagger N}$~\cite{Cederwall10,RSW21}.
+\end{zkmodule}
+
+\begin{theorem}[Pure-spinor derivation of minimal twisted $11\mathrm{D}$ supergravity and Kac's $E(5|10)$~{\cite{Cederwall10,RSW21}}]
+\label{thm:11d-from-scratch}
+Linearize~\eqref{eq:cjs-action} around $M_{11} = \RR_\tau \times \C^5_z$ ($V := T^{1,0}\C^5 \cong \C^5$, $\Omega := \dd z^1\wedge\cdots\wedge\dd z^5$, $\mathcal{A}^\bullet := \Omega^\bullet(\RR_\tau)\widehat{\otimes}\Omega^{0,\bullet}(\C^5)$) and realize the $32$-component $\Spin(11,\C)$ spinor module as the Fock exterior algebra $S_{32} \cong \bigoplus_{\substack{p\in\{0,\dots,5\}\\\mathrm{form\ degree}}}\Lambda^p V^*$ ($1+5+10+10+5+1 = 32$) with Clifford operators $\Gamma_i = \sqrt{2}\,\iota_{\partial_i}$, $\Gamma_{\bar{\imath}} = \sqrt{2}\,\dd\bar{z}^{\bar{\imath}}\wedge\cdot$, $\Gamma_\tau = (-1)^p$, and Mukai pairing $C(\eta_1,\eta_2) := (-1)^{\binom{p}{2}}[\eta_1\wedge\eta_2]_{\Lambda^5 V^*}$.
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Selecting the $\SU(5)$-invariant pure spinor $q := \mathbf{1} \in \Lambda^0 V^*$ satisfies $C(q,\Gamma^M q) = [\mathbf{1}\wedge\Gamma^M\mathbf{1}]_{\Lambda^5 V^*} = 0$ ($\deg \le 1 < 5 \implies Q_q^2 = 0$), $\Gamma_i q = 0$ (preserving holomorphic $\partial_{z^1},\dots,\partial_{z^5}$), and $\Gamma_\tau q = \mathbf{1}$, $\Gamma_{\bar{\imath}}q = \sqrt{2}\dd\bar{z}^{\bar{\imath}}$ (rendering $\partial_\tau, \dbar_{\bar{1}},\dots,\dbar_{\bar{5}}$ exact).
+  \item Eliminating the $Q_q$-contractible metric/gravitino and $C_3$/gravitino pairs retains four $\mathcal{A}^\bullet$-superfields $(\mu^i, \gamma_i, \beta, \nu)$ ($\mu^i \in \mathcal{A}^1\otimes V$, $\gamma_i\,\dd z^i \in \Omega^{1,0}(\C^5)\otimes\mathcal{A}^2$, $\beta \in \mathcal{A}^3$, $\nu \in \mathcal{A}^0$), on which $-\frac{1}{6}\int C_3\wedge\dd C_3\wedge\dd C_3$ wedges $(1+2+2)=5$ $\dd z$'s and $(2+2+2)=6$ $(\tau,\bar{z})$-degrees directly into ($D_{\mathrm{free}} = \dd_\tau + \dbar$):
+  \begin{equation}
+  \label{eq:11d-twisted-action}
+  \begin{aligned}
+  S_{E,11\mathrm{D}}[\mu,\gamma,\beta,\nu] = \int_{\RR\times\C^5}\Omega\wedge\Bigl[&\gamma_i D_{\mathrm{free}}\mu^i + \beta D_{\mathrm{free}}\nu + \beta\,\partial_i\mu^i\\
+  &+ \frac{1}{1-\nu}\mu^i\mu^j\partial_i\gamma_j + \frac{g}{6}\eps^{ijklm}\gamma_i\partial_j\gamma_k\partial_l\gamma_m\Bigr].
+  \end{aligned}
+  \end{equation}
+  \item Setting $X^i := (1-\nu)^{-1}\mu^i$ and integrating out $(\beta,\nu)$ enforces $\partial_i X^i = 0$ and realizes Kac's exceptional infinite-dimensional simple Lie superalgebra $E(5|10) = E(5|10)_{\mathrm{even}}\oplus E(5|10)_{\mathrm{odd}}$ ($E(5|10)_{\mathrm{even}} = \{X^i(z)\partial_i : \partial_i X^i = 0\}$, $E(5|10)_{\mathrm{odd}} = \{F = \frac{1}{2}F_{ij}(z)\dd z^i\wedge\dd z^j : \partial_{[k}F_{ij]} = 0\}$) with odd-odd bracket $[F,\widetilde{F}]^i = \frac{1}{4}\eps^{ijklm}F_{jk}\widetilde{F}_{lm}$ satisfying $\partial_i[F,\widetilde{F}]^i = 0$ identically by $\dd F = \dd\widetilde{F} = 0$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Pure-spinor nilpotency and exact translations}
+From $\{\Gamma_i,\Gamma_{\bar{\jmath}}\} = 2\delta_{i\bar{\jmath}}$ and $\Gamma_\tau^2 = \mathbf{1}$, the Fock operators furnish $\mathrm{Cl}(11,\C)$. Because $\mathbf{1} \in \Lambda^0 V^*$ and $\Gamma^M\mathbf{1} \in \Lambda^0 V^*\oplus\Lambda^1 V^*$, the top $\Lambda^5 V^*$ component of $\mathbf{1}\wedge\Gamma^M\mathbf{1}$ vanishes identically, proving $Q_q^2 = 0$; $\{Q_q, \widehat{Q}_\eta\} = C(q,\Gamma^M\eta)\partial_M$ hits $\partial_\tau$ (via $\eta \in \Lambda^5 V^*$) and $\dbar_{\bar{\imath}}$ (via $\eta \in \Lambda^4 V^*$).
+\end{proofpart}
+\begin{proofpart}{Claim 2: Doublet elimination and $(3+4+4=11)$ CJS descent}
+Under $\delta_q e_M{}^{\underline{A}} = \ii C(q,\Gamma^{\underline{A}}\Psi_M)$ and $\delta_q C_{MNP} = -3\ii C(q,\Gamma_{[MN}\Psi_{P]})$, $\Psi_{\Lambda^{4,5}}$ pairs with $(h_{M\tau}, h_{M\bar{\jmath}})$ and $\Psi_{\Lambda^3}$ pairs with $C_{\bar{\imath}\bar{\jmath}P}$. On $C_3^{\mathrm{surv}} = \gamma_i\,\dd z^i$, $\dd C_3^{\mathrm{surv}} = \partial_j\gamma_k\,\dd z^j\wedge\dd z^k + D_{\mathrm{free}}\gamma_k\wedge\dd z^k$, so $C_3^{\mathrm{surv}}\wedge(\dd C_3^{\mathrm{surv}})^2$ saturates $\Omega = \dd^5 z$ via $\gamma_i\partial_j\gamma_k\partial_l\gamma_m\,\eps^{ijklm}\Omega$, yielding~\eqref{eq:11d-twisted-action} (Figure~\ref{fig:11d-fock-spinor}).
+\end{proofpart}
+\begin{proofpart}{Claim 3: Closure of Kac's $E(5|10)$}
+Differentiating $[F,\widetilde{F}]^i = \frac{1}{4}\eps^{ijklm}F_{jk}\widetilde{F}_{lm}$ gives $\partial_i[F,\widetilde{F}]^i = \frac{1}{4}\eps^{ijklm}(\partial_i F_{jk})\widetilde{F}_{lm} + \frac{1}{4}\eps^{ijklm}F_{jk}(\partial_i\widetilde{F}_{lm}) = 0$ because $\eps^{ijklm}\partial_i F_{jk} = \eps^{ijklm}\partial_{[i}F_{jk]} = 0$ on $\dd$-closed $2$-forms $F, \widetilde{F}$.
+\end{proofpart}
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.92]
+  \draw[rounded corners=3pt, draw=NavyBlue!75!black, fill=NavyBlue!2.5, line width=0.55pt] (-7.65,-1.45) rectangle (7.65,1.55);
+  \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.22) {$\Spin(11,\C)$ Fock Pure-Spinor Filtration $S_{32} = \bigoplus_{p=0}^5 \Lambda^p V^*$ ($q = \mathbf{1} \in \Lambda^0 V^*$)};
+  \foreach \pp/\xx/\dimv/\col/\tag in {
+    0/-6.05/1/PineGreen!85!black/{$q=\mathbf{1}$},
+    1/-3.65/5/PineGreen!80!black/{$\mu^i$},
+    2/-1.25/10/PineGreen!80!black/{$\gamma_i$},
+    3/ 1.25/10/BrickRed!80!black/{paired $C_{\bar{\imath}\bar{\jmath}}$},
+    4/ 3.65/5/BrickRed!80!black/{paired $h_{M\bar{\jmath}}$},
+    5/ 6.05/1/BrickRed!80!black/{paired $h_{M\tau}$}%
+  } {
+    \node[draw=\col, rounded corners=2pt, fill=white, inner sep=3.2pt, font=\scriptsize] (L\pp) at (\xx,0.22) {$\Lambda^{\pp}V^*$ ($\dimv$)};
+    \node[font=\tiny, text=\col] at (\xx,-0.45) {\tag};
+  }
+  \foreach \a/\b in {0/1,1/2,2/3,3/4,4/5} {
+    \draw[-{Stealth[length=1.7mm,width=1.2mm]}, line width=0.55pt, gray!75!black] (L\a.east) -- node[above=1pt, font=\tiny] {$\Gamma_{\bar{\imath}}$} (L\b.west);
+  }
+  \node[font=\tiny] at (0,-1.08) {$-\frac{1}{6}C_3\wedge G_4\wedge G_4 \;\longmapsto\; \frac{g}{6}\Omega\wedge\eps^{ijklm}\gamma_i\partial_j\gamma_k\partial_l\gamma_m\quad (E(5|10))$};
+\end{tikzpicture}
+\caption{In-situ $\SU(5)$ exterior grading of the $32$-component $\Spin(11,\C)$ spinor representation (Background Card~7.1 and Theorem~\ref{thm:11d-from-scratch}): $\Lambda^{3,4,5}V^*$ form $Q_q$-contractible pairs, whereas $\Lambda^{0,1,2}V^*$ retain $(\nu,\mu^i,\gamma_i,\beta)$ and descend the CJS topological coupling directly to $E(5|10)$.}
+\label{fig:11d-fock-spinor}
+\end{figure}
+
+\begin{theorem}[Two-loop $-\frac{63g}{256\pi^{10}}$ obstruction, rank-$80\to 83$ self-bracket elimination, and further-twist $g$-torsion~{\cite{RSW21,HPR25,Repo9e833c8}}]
+\label{thm:11d-obstruction}
+In minimal twisted $11\mathrm{D}$ supergravity~\eqref{eq:11d-twisted-action} on $\RR_\tau\times\C^5_z$ ($H=5, T=1, D=6$):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Exact $1008\pi$ pairing across all five $12$-vertex theta topologies:} Odd loops vanish ($O_{2m+1}=0$). At two loops ($|V|=12, |I|=13$, five tight topologies $\theta(1,6,6), \theta(2,5,6), \theta(3,4,6), \theta(3,5,5), \theta(4,4,5)$, Figure~\ref{fig:11d-thetas} and Table~\ref{tab:11d-theta-pairings}), $\beta\partial_i\mu^i$ decouples by column linearity of $D_\theta$ and all $65$ zero-time contacts vanish. Evaluated on the $Q_0$-closed $23$-derivative balanced cycle $\mathcal{Z}_{3+6}$ ($\mu^9\gamma^1$) via $99$-bit multi-prime CRT across $2{,}160$ path partitions, the five fractional contributions sum to the \textbf{exact integer multiple $1008\pi$}:
+  \begin{equation}
+  \label{eq:11d-63-pairing}
+  \bigl\langle O_2^{(g=1)},\, \mathcal{Z}_{3+6}\bigr\rangle_{\mathrm{unrooted}} = -\frac{1008\pi\,g}{4096\pi^{11}} = -\frac{63g}{256\pi^{10}} \neq 0,\qquad
+  \bigl\langle Q_2\mathcal{I},\, \mathcal{Z}_{3+6}\bigr\rangle_{\mathrm{rooted}} = -\frac{189g}{64\pi^{10}},
+  \end{equation}
+  descending to a nonzero class in $H^{15}_{\mathrm{GF}}(E(5|10))/(\kappa H^{12}_{\mathrm{GF}}(E(5|10)))$.
+
+  \item \emph{Elimination of $\frac{1}{2}\{I_1,I_1\}|_{\mathcal{O}(g)}$:} For any $Q_0$-closed homogeneous full-wedge $1$-loop counterterm $I_1 = I_1^{(0)} + g I_1^{(1)} + \cdots$, outgoing $Q_0$ on the $83$-dimensional $I_1^{(1)}$ symbol space has rank $80$ and \textbf{jumps to $83$} upon adjoining $Q_g(I_1^{(0)})$ ($\dim I_1^{(0)} = 3$), forcing $I_1^{(0)} = 0$ and $\frac{1}{2}\{I_1,I_1\}|_{\mathcal{O}(g)} = 0$ on $\mathcal{Z}_{3+6}$.
+
+  \item \emph{Compact $T^{2r}\times\C^{5-r}$ routing and further-twist Koszul $g$-torsion:} On $S^1\times T^{2r}\times\C^{5-r}$ ($1\le r\le 5$), compact rank equals $\dim\Span A + \dim\Span B + \dim\Span C - \dim(\Span A\cap\Span B\cap\Span C)$, requiring $\ge 2r$ compact-momentum slots (attained sharply on $\theta(1,6,6)$ with $K_{166} = -\frac{\pi}{158400}$, vanishing on zero modes). In RSW's constant-$2$-form further twist $\delta X = -p\wedge\iota_X(\dd z^1\wedge\dd z^2)$, $\delta F = g(\dd z^1\wedge\dd z^2\wedge F)^\sharp$ (fixed-momentum strata $p|_{\C^3}\neq 0 \mapsto (0,0)$, $p|_{\C^3}=0,p\neq 0 \mapsto (4,4)$, $p=0 \mapsto (2,7)$), the normal-momentum complex over $R = \C[g,q_3,q_4,q_5]$ is $0 \to R \xrightarrow{q} R^3 \xrightarrow{g\,q\wedge} R^3 \xrightarrow{q\cdot} R \to 0$, carrying $g$-torsion $H^{\mathrm{even}} = \ker(q\cdot)/(g\,\ker(q\cdot))$ ($\dim_{\C}(H^{\mathrm{even}})_m = m(m+2)$), zero-momentum fiber $\Tor_j^R = \Lambda^j\C^3$, and $H^{\mathrm{even}}|_{q_3=t,q_{4,5}=0} = (\C[g,t]/(gt))^2$ forbidding any translation-invariant finite-jet contraction $\delta h + h\delta = \id$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{thm:theta-closed} evaluates the five $(5,1)$ theta kernels, summed over $2{,}160$ partitions on $\mathcal{Z}_{3+6}$ in~(1). Bareiss elimination modulo $1009$ and $251$ proves the $80 \to 83$ rank jump in~(2). Kernel calculation on $(a,b,c)\mapsto(a+b,b+c)$ and homology of $g\,q\wedge\cdot$ over $R$ prove~(3).
+\end{proof}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lcrr@{}}
+\toprule
+\textbf{Theta Topology} & \textbf{Geometric Kernel $K/\pi$ at $(5,1)$} & \textbf{Symmetry $|\Aut|$} & \textbf{Exact Cycle Pairing on $\mathcal{Z}_{3+6}$ (times $\pi$)} \\
+\midrule
+$\theta(1,6,6)$ & $-\frac{1}{158400}$ & $2$ & $+\frac{3568529267}{12168702}$ \\
+$\theta(2,5,6)$ & $+\frac{1}{249480}$ & $1$ & $+\frac{390374345071}{1338557220}$ \\
+$\theta(3,4,6)$ & $-\frac{1}{266112}$ & $1$ & $+\frac{130687286941}{514829700}$ \\
+$\theta(3,5,5)$ & $+\frac{1}{532224}$ & $2$ & $+\frac{1673839750871}{20078358300}$ \\
+$\theta(4,4,5)$ & $-\frac{1}{498960}$ & $2$ & $+\frac{344930551643}{4015671660}$ \\
+\midrule
+\textbf{Total Sum} & $5$ tight $6$-Laman shapes ($2{,}160$ partitions) & --- & $\mathbf{1008}\quad\bigl(\implies O_2 = -\frac{1008\pi g}{4096\pi^{11}} = -\frac{63g}{256\pi^{10}}\bigr)$ \\
+\bottomrule
+\end{tabular}
+\caption{Exact fractional cancellation across all five $12$-vertex two-loop theta topologies of minimal twisted $11\mathrm{D}$ supergravity summing to $1008\pi$ on $\mathcal{Z}_{3+6}$~\cite{Repo9e833c8}.}
+\label{tab:11d-theta-pairings}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.88]
+  \foreach \xx/\lbl/\nA/\nB/\nC in {
+    -6.30/{\theta(1,6,6)}/0/5/5,
+    -3.15/{\theta(2,5,6)}/1/4/5,
+     0.00/{\theta(3,4,6)}/2/3/5,
+     3.15/{\theta(3,5,5)}/2/4/4,
+     6.30/{\theta(4,4,5)}/3/3/4%
+  } {
+    \begin{scope}[shift={(\xx, 0)}]
+      \draw[rounded corners=2pt, draw=NavyBlue!50, fill=white, line width=0.45pt] (-1.45,-0.95) rectangle (1.45,0.95);
+      \node[font=\tiny\bfseries, text=NavyBlue!85!black] at (0,0.72) {$\lbl$};
+      \coordinate (tl) at (-0.88,-0.05); \coordinate (tr) at (0.88,-0.05);
+      \draw[prop] (tl) .. controls (-0.35,0.42) and (0.35,0.42) .. (tr);
+      \draw[prop] (tl)--(tr);
+      \draw[prop] (tl) .. controls (-0.35,-0.52) and (0.35,-0.52) .. (tr);
+      \filldraw[v0] (tl) circle (0.048cm); \filldraw[v0] (tr) circle (0.048cm);
+      \ifnum\nA>0
+        \foreach \k in {1,...,\nA} {
+          \pgfmathsetmacro{\tt}{\k/(\nA+1)}
+          \path (tl) .. controls (-0.35,0.42) and (0.35,0.42) .. coordinate[pos=\tt] (pa) (tr);
+          \filldraw[vbiv] (pa) circle (0.04cm);
+        }
+      \fi
+      \foreach \k in {1,...,\nB} {
+        \pgfmathsetmacro{\tt}{\k/(\nB+1)}
+        \path (tl) -- coordinate[pos=\tt] (pb) (tr);
+        \filldraw[vbiv] (pb) circle (0.04cm);
+      }
+      \foreach \k in {1,...,\nC} {
+        \pgfmathsetmacro{\tt}{\k/(\nC+1)}
+        \path (tl) .. controls (-0.35,-0.52) and (0.35,-0.52) .. coordinate[pos=\tt] (pc) (tr);
+        \filldraw[vbiv] (pc) circle (0.04cm);
+      }
+    \end{scope}
+  }
+\end{tikzpicture}
+\caption{All five $6$-Laman two-loop theta Feynman topologies of minimal twisted $11\mathrm{D}$ supergravity ($|V|=12, |I|=13$, $10$ red bivalent source insertions per graph), summing to $1008\pi$ and $-\frac{63g}{256\pi^{10}}$ on $\mathcal{Z}_{3+6}$ (Theorem~\ref{thm:11d-obstruction}).}
+\label{fig:11d-thetas}
+\end{figure}
+
+\subsection{In-Situ BCOV Background, Four-Loop Kodaira--Spencer \texorpdfstring{$D_4 > 0$}{D\_4 > 0}, and Delayed Genus-\texorpdfstring{$4$}{4} BCOV}
+\label{subsec:ks-type1-bcov}
+\phantomsection\label{subsec:bcov-lecture}
+
+\begin{zkmodule}{Kodaira--Spencer Gravity, Tian--Todorov Divergence, and Minimal BCOV Theory}{ks-type1-wzw4-minimal-bcov}
+Whereas open topological B-model strings on a Calabi--Yau $d$-fold $(Y,\Omega)$ ($d=3$ or $d=5$, $\Omega = \dd z^1\wedge\cdots\wedge\dd z^d$ on $\C^d$) yield holomorphic Chern--Simons gauge theory, closed B-model strings govern deformations of complex structure and generalized Calabi--Yau geometry via \emph{Bershadsky--Cecotti--Ooguri--Vafa (BCOV) theory}~\cite{BCOV94,CL19}.
+
+\paragraph{1.\ Polyvector fields $\mathrm{PV}^{p,q}(\C^d)$, Calabi--Yau contraction $A_\Omega$, and Tian--Todorov divergence $\partial_\Omega$.}
+A $(p,q)$-polyvector field $\alpha \in \mathrm{PV}^{p,q}(\C^d) := \Omega^{0,q}(\C^d, \Lambda^p T^{1,0}\C^d)$ has total cohomological degree $|\alpha| = p + q$. Contracting polyvectors into $\Omega$ defines a linear isomorphism $A_\Omega : \mathrm{PV}^{p,q}(\C^d) \xrightarrow{\cong} \Omega^{d-p,q}(\C^d)$ via $A_\Omega(\alpha) := \iota_\alpha\Omega$, transporting $\partial : \Omega^{d-p,q} \to \Omega^{d-p+1,q}$ back to the \emph{Calabi--Yau divergence operator} $\partial_\Omega := A_\Omega^{-1}\circ\partial\circ A_\Omega : \mathrm{PV}^{p,q} \to \mathrm{PV}^{p-1,q}$ ($\partial_\Omega^2 = 0$; on Beltrami differentials $\mu = \mu^i\partial_i \in \mathrm{PV}^{1,\bullet}$, $\partial_\Omega\mu = \partial_i\mu^i$).
+
+\paragraph{2.\ Heat-kernel resolution of the nonlocal $\dbar\partial_\Omega^{-1}$ kinetic term.}
+Restricting to $\ker\partial_\Omega$ produces the nonlocal BCOV kinetic pairing $S_{E,\mathrm{BCOV,kin}}[\mu] = \frac{1}{2}\int_{\C^d}\Omega\wedge A_\Omega(\mu\wedge\dbar\partial_\Omega^{-1}\mu)$ alongside $\frac{1}{6}\int_{\C^d}\Omega\wedge A_\Omega(\mu\wedge\mu\wedge\mu)$ ($d=3$ Kodaira--Spencer gravity~\cite{BCOV94}). Costello and Li~\cite{CL19} resolve $\partial_\Omega^{-1}$ without nonlocality via the gauge-fixing operator $D^*_{\mathrm{BCOV}} := \partial_\Omega\dbar^*$: $\partial_\Omega$ cancels $\partial_\Omega^{-1}$, yielding the \emph{local derivative-carrying propagator} $P_{\mathrm{BCOV}}(\eps,L) = \int_\eps^L \dd t\,(\partial_\Omega\dbar^*)[K_t]_\Omega$!
+
+\paragraph{3.\ Minimal BCOV on $\C^5$ $=$ Twisted $10\mathrm{D}$ Type~IIB Supergravity and $\mathrm{D}3$-brane flux.}
+On $\C^5$ ($H=5, T=0$), Costello--Li~\cite{CL19} identify $\mathrm{PV}^{\bullet,\bullet}(\C^5)[[u]]$ ($u$ of degree $+2$ encoding worldsheet gravitational descendants with $Q_{\mathrm{BCOV}} = \dbar + u\partial_\Omega$) with the holomorphic twist of physical $10\mathrm{D}$ Type~IIB supergravity: $\phi \in \mathrm{PV}^{0,\bullet}$ is the chiral axio-dilaton/RR $0$-form, $\mu^i\partial_i \in \mathrm{PV}^{1,\bullet}_{\mathrm{div}=0}$ packages metric and $B$-field complex-structure deformations, and $\frac{1}{2}\alpha^{ij}\partial_i\wedge\partial_j \in \mathrm{PV}^{2,\bullet}_{\mathrm{div}=0}$ encodes the self-dual Ramond--Ramond $4$-form ($F_5^{\mathrm{SD}} = \partial A_\Omega(\alpha)$). Placing $N$ $\mathrm{D}3$-branes along $\C^2_z \subset \C^2_z\times\C^3_w$ sources the Bochner--Martinelli RR flux $N F_{\mathrm{BM}}$ on $\C^5\setminus\C^2$ ($\dbar F_{\mathrm{BM}} = \delta_{\C^2}$, $F_{\mathrm{BM}} := \frac{1}{4\pi^2}\partial_{z^1}\wedge\partial_{z^2}\,\eps_{\bar{\imath}\bar{\jmath}\bar{k}}\bar{w}^{\bar{\imath}}\dd\bar{w}^{\bar{\jmath}}\wedge\dd\bar{w}^{\bar{k}}/|w|^6$), deforming the bulk differential to $\dbar + u\partial_\Omega + N[F_{\mathrm{BM}}, -]_{\mathrm{SN}}$ in Costello--Gaiotto twisted holography~\cite{CG18} (Figure~\ref{fig:bcov-geometry}).
+\end{zkmodule}
+
+\begin{lemma}[Tian--Todorov BV identity and Kodaira--Spencer Maurer--Cartan closure~{\cite{TT87,BCOV94}}]
+\label{lem:tian-todorov}
+On $\mathrm{PV}^{\bullet,\bullet}(\C^d)$, $\partial_\Omega$ fails to be a derivation of the exterior wedge product precisely by the Schouten--Nijenhuis bracket:
+\begin{equation}
+\label{eq:tian-todorov}
+(-1)^{|\alpha|-1}[\alpha, \beta]_{\mathrm{SN}} = \partial_\Omega(\alpha\wedge\beta) - (\partial_\Omega\alpha)\wedge\beta - (-1)^{|\alpha|}\alpha\wedge(\partial_\Omega\beta).
+\end{equation}
+Consequently, any divergence-free Beltrami differential $\mu \in \mathrm{PV}^{1,1}(\C^3)$ ($\partial_\Omega\mu = 0$) satisfies $\dbar_\mu^2 := (\dbar + \mu^i\partial_i)^2 = 0$ precisely when $\dbar\mu + \frac{1}{2}[\mu,\mu]_{\mathrm{SN}} = 0$, generated as the Euler--Lagrange equation of $\frac{1}{6}\int_{\C^3}\Omega\wedge A_\Omega(\mu\wedge\mu\wedge\mu)$.
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Tian--Todorov identity}
+By $\Omega^{0,\bullet}$-linearity, check on holomorphic vector fields $X = X^i\partial_i$ ($|\alpha|=1$, $\partial_\Omega X = \partial_i X^i$) and $Y = Y^j\partial_j$: $\partial\iota_{X\wedge Y}\Omega$ gives $\partial_\Omega(X\wedge Y) = [\partial_i(X^i Y^j) - \partial_i(X^j Y^i)]\partial_j = (\partial_\Omega X)Y - X(\partial_\Omega Y) + [X,Y]_{\mathrm{SN}}$, extending to higher $p$ by the odd Poisson Leibniz rule.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Maurer--Cartan closure from the cubic BCOV interaction}
+Acting on $z^k$, $\dbar_\mu^2 z^k = \dbar\mu^k + \frac{1}{2}[\mu,\mu]_{\mathrm{SN}}^k$ since $|\mu| = 2$ is even. Applying~\eqref{eq:tian-todorov} with $\partial_\Omega\mu = 0$ gives $\partial_\Omega(\mu\wedge\mu) = -[\mu,\mu]_{\mathrm{SN}}$ and $\partial_\Omega(\mu\wedge\mu\wedge\mu) = -3[\mu,\mu]_{\mathrm{SN}}\wedge\mu$, so varying $\frac{1}{6}\int_{\C^3}\Omega\wedge A_\Omega(\mu\wedge\mu\wedge\mu)$ reproduces $\frac{1}{2}[\mu,\mu]_{\mathrm{SN}}$.
+\end{proofpart}
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.92]
+  % Left: Polyvector contraction & heat-kernel propagator
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=3pt, draw=NavyBlue!75!black, fill=NavyBlue!2.5, line width=0.55pt] (-3.85,-1.85) rectangle (3.85,1.85);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.52) {(a) Calabi--Yau $A_\Omega$ \& Local $P_{\mathrm{BCOV}}$};
+    \node[draw=NavyBlue!75!black, rounded corners=2pt, fill=white, inner sep=3.5pt, font=\scriptsize] (PV) at (-2.05,0.45) {$\mathrm{PV}^{p,q}(\C^d)$};
+    \node[draw=PineGreen!75!black, rounded corners=2pt, fill=white, inner sep=3.5pt, font=\scriptsize] (OM) at ( 2.05,0.45) {$\Omega^{d-p,q}(\C^d)$};
+    \draw[-{Stealth[length=1.9mm,width=1.4mm]}, line width=0.65pt, NavyBlue!80!black] (PV) -- node[above=1.5pt, font=\tiny] {$A_\Omega = \iota_\bullet\Omega$} (OM);
+    \draw[prop] (-2.25,-0.95) -- node[above=2pt, font=\tiny] {$P_{\mathrm{BCOV}} = \int\dd t\,(\partial_\Omega\dbar^*)[K_t]_\Omega$} (2.25,-0.95);
+    \filldraw[v0] (-2.25,-0.95) circle (0.055cm);
+    \filldraw[v0] ( 2.25,-0.95) circle (0.055cm);
+  \end{scope}
+
+  % Right: D3-brane stack in C^2_z x (C^3_w \setminus 0)
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=3pt, draw=PineGreen!75!black, fill=PineGreen!2.5, line width=0.55pt] (-3.85,-1.85) rectangle (3.85,1.85);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.52) {(b) $N$ $\mathrm{D}3$-Branes in $\C^5\setminus\C^2$};
+    \draw[line width=1.6pt, draw=RoyalBlue!85!black] (-2.85,-0.15) -- (0.65,-0.15);
+    \node[font=\tiny\bfseries, text=RoyalBlue!85!black] at (-1.10,0.85) {$N\ \mathrm{D}3$ along $\C^2_z$};
+    \draw[->, line width=0.7pt, BrickRed!85!black] (-1.10,-0.15) circle (0.62cm);
+    \node[font=\tiny, text=BrickRed!85!black] at (-1.10,-1.08) {$S^5 \subset \C^3_w\setminus\{0\}$};
+    \node[font=\tiny] at (2.25, 0.25) {$\dbar F_{\mathrm{BM}} = \delta_{\C^2}$};
+    \node[font=\tiny] at (2.25,-0.35) {$N[F_{\mathrm{BM}}, -]_{\mathrm{SN}}$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Geometric ingredients of Background Card~7.2: (a)~Calabi--Yau contraction $A_\Omega$ and local derivative-carrying propagator $P_{\mathrm{BCOV}}$ cancelling $\partial_\Omega^{-1}$; (b)~transverse $S^5 \subset \C^3_w\setminus\{0\}$ linking $N$ $\mathrm{D}3$-branes along $\C^2_z$ and sourcing the Bochner--Martinelli flux $N F_{\mathrm{BM}}$.}
+\label{fig:bcov-geometry}
+\end{figure}
+
+\begin{theorem}[Four-loop Kodaira--Spencer $D_4$, Type~I $\SO(32)$, $\mathrm{WZW}_4$, and delayed $g=4$ BCOV~{\cite{CL19,LW26,Repo9e833c8}}]
+\label{thm:ks-bcov}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Kodaira--Spencer on $\C^3$ and $\C^3\times K3/T^4$:} Tensoring with $H^\bullet(K3)$ or $H^\bullet(T^4)$ assigns connected $n$-loop bulk graphs external $R$-degree $4(1-n) < 0$, killing all $n \ge 2$ bulk loops identically~\cite{FPW24}. On minimal $\C^3$, $\iota_{p^{(q)}}F_q = 0$ cancels all $4$-primary contacts, while with one descendant $\psi_i$ ($D_1 = \frac{1}{24}, D_2 = \frac{1}{9720}, D_3 = \frac{411065203}{94152554496000}-\frac{3617}{1009008000}\zeta(3)$), summing all $50$ four-loop graphs yields
+  \begin{equation}
+  \label{eq:ks-D4-value}
+  D_4 = \frac{192761752316371576853}{26469813789619200000000} + \frac{39781234295806109}{204242390352000000}\zeta(3) - \frac{411294138769}{13894040160000}\zeta(5) > 0.
+  \end{equation}
+
+  \item \emph{Type~I $\SO(32)$ two-loop hexagon and $\mathrm{WZW}_4$ finiteness:} Adjoining the two-loop open-closed mixed hexagon ($-\frac{1}{8640}$) to the four $8$-gluon theta graphs on $\C^5$ yields $84$ residual polynomials with monic $\gcd = N - 32$~\cite{CL19}; in flat $4\mathrm{D}$ $\mathrm{WZW}_4$, two-loop logarithmic UV poles cancel in both two-cubic and cubic-quartic sectors for every compact simple $G$.
+
+  \item \emph{Minimal BCOV Ax--Schanuel positivity, delayed genus-$4$ response, and $g=4..6$ Ward targets:} In Li--Wang quantization~\cite{LW26}, $Q_g\phi > 0$ ($g \ge 2$) on real conserved waves $P = (p^{(1)},\dots,p^{(2g+3)})$ precisely when $\rk P = 5$ and $|T| \le g\,\rk\{p^{(q)} : q \in T\}$ ($\forall\,\varnothing\neq T$). On three scalar descendants $A_{k_1}, A_{k_2}, A_{k_3}$ ($k_1+k_2+k_3=4$) weighted by $C_{(4,0,0)}=2, C_{(3,1,0)}=-1, C_{(2,2,0)}=1, C_{(2,1,1)}=0$, donor-fusion identities $C_{\ell_1+1,\ell_2,\ell_3}+C_{\ell_1,\ell_2+1,\ell_3}+C_{\ell_1,\ell_2,\ell_3+1}=0$ ($\ell_1+\ell_2+\ell_3=3$) and vertical Abel rank $3g < 2g+4$ kill $g=0,1,2,3$ and first turn on at $g = 4$ via $6V_{4;(4,0,0)}-6V_{4;(3,1,0)}+3V_{4;(2,2,0)} = -\frac{31}{1024192512000}$ on multiplicity $(3,3,4)$:
+  \begin{equation}
+  \label{eq:delayed-g4-bcov}
+  \begin{aligned}
+  Q_0\phi(0) &= Q_1\phi(0) = Q_2\phi(0) = Q_3\phi(0) = 0,\\
+  (2\pi\ii)^{20}Q_4\phi(0) &= \frac{(4!)^3}{3!\,3!\,4!}\cdot\frac{31}{1024192512000} = \frac{31}{64012032000},
+  \end{aligned}
+  \end{equation}
+  while smooth normal cubics $B(x,y,z)$ ($q_2 = \frac{s(B)}{51840}$) eliminate unknown $q_{4,5,6}$ via $7J_4^{(2)} - 162J_4^{(1)} = -\frac{s(B)^2}{46656}$, $32J_5^{(2)} - 1389J_5^{(1)} = -5040000\,q_2 q_3$, and $13J_6^{(2)} - 1038J_6^{(1)}|_{s(B)=0} = -20180160\,q_3^2 < 0$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Summing the $50$ four-loop \texttt{prism}/$K_{3,3}$/DK/SP periods of Section~\ref{sec:schwinger-periods-k5} gives~\eqref{eq:ks-D4-value} in~(1). Exact $8$-gluon CE elimination proves $\gcd = N-32$ in~(2). Edmonds' matroid partition plus Gao's mixed Ax--Schanuel theorem, Hodge $\lambda_g$ intersections on $(3,3,4)$, and Moyal rigidity $F''(a) = F'''(0)F(a)$ prove~(3).
+\end{proof}
+
+\begin{lemma}[{Donor-fusion cancellation, genus-$4$ delayed constant $\frac{31}{64012032000}$, and Moyal binary Jacobiator ODE}]
+\label{lem:bcov-donor-moyal}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item The symmetric polarization $C_{(4,0,0)}=2, C_{(3,1,0)}=-1, C_{(2,2,0)}=1, C_{(2,1,1)}=0$ satisfies $C_{\ell_1+1,\ell_2,\ell_3}+C_{\ell_1,\ell_2+1,\ell_3}+C_{\ell_1,\ell_2,\ell_3+1} = 0$ on every partition of $3$, vanishes through $g \le 3$, and combines $V_{4;(4,0,0)} = \frac{731}{1024192512000}$, $V_{4;(3,1,0)} = \frac{1493}{438939648000}$, and $V_{4;(2,2,0)} = \frac{157}{29262643200}$ into~\eqref{eq:delayed-g4-bcov}.
+
+  \item Any odd power series $F(s) = \sum_{\substack{g\ge 0\\\mathrm{genera}}}q_g\hbar^g s^{2g+1}$ ($q_0 = 1$) obeying $F(a)F(b-c) + F(b)F(c-a) + F(c)F(a-b) = 0$ satisfies $F''(a) = F'''(0)F(a)$, forcing $q_g = \frac{(6q_1)^g}{(2g+1)!}$ and $7J_4^{(2)} - 162J_4^{(1)}|_{q_1=0} = -57600\,q_2^2$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: String-equation donor cancellation and genus-$4$ volume sum}
+On the partitions $(3,0,0)$, $(2,1,0)$, and $(1,1,1)$, the sums $2 - 1 - 1 = 0$, $-1 + 1 + 0 = 0$, and $3\cdot 0 = 0$ kill every donor fusion; $6 - 24 + 18 = 0$ at $g=0$ and $2g+4 > 3g$ at $g=1,2,3$. At $g=4$, putting the three planar volumes over $1024192512000$ gives $6\cdot 731 - 14\cdot 1493 + 105\cdot 157 = -31$, which multiplied by $-(-1)^4\cdot\frac{13824}{864} = -16$ yields $\frac{496}{1024192512000} = \frac{31}{64012032000}$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Differential Jacobiator reduction}
+Differentiating $F(a)F(b-c)+F(b)F(c-a)+F(c)F(a-b)=0$ at $c=0$ gives $F(a-b) = F(a)F'(b) - F(b)F'(a)$; differentiating twice at $b=0$ ($F''(0)=0$) gives $F''(a) = 6q_1\hbar F(a)$, hence $q_g = \frac{(6q_1)^g}{(2g+1)!}$. From $J_4^{(1)} = 17640\,q_4 - 780\,q_2^2$ and $J_4^{(2)} = 408240\,q_4 - 26280\,q_2^2$ ($\frac{408240}{17640} = \frac{162}{7}$), forming $7J_4^{(2)} - 162J_4^{(1)}$ eliminates $q_4$ and leaves $(-183960 + 126360)q_2^2 = -57600\,q_2^2$.
+\end{proofpart}
+\end{proof}
+
+\subsection{In-Situ \texorpdfstring{$\fpsl(3|3)$}{psl(3|3)} Super-Polyvectors and All-Order \texorpdfstring{$4\mathrm{D}$ $\mathcal{N}=4$}{4D N=4} Twisted Holography}
+\label{subsec:holography-allorder}
+
+\begin{zkmodule}{Super-Polyvectors $\mathrm{PV}^{\ge 1}_\Delta(\C^{2|3})$, Berezinian Divergence, and $\fpsl(3|3)$}{chang-yin-superfield-letters}
+On supermanifold $\C^{2|3}$ with even $(z^1,z^2)$ and odd $(\theta^1,\theta^2,\theta^3)$ preserving holomorphic Berezinian $\Omega_{2|3} = \dd z^1\wedge\dd z^2\otimes(\dd\theta^1\dd\theta^2\dd\theta^3)^{-1}$ (governing $4\mathrm{D}$ $\mathcal{N}=4$ holomorphic Chern--Simons~\eqref{eq:n4-super-hcs}), pairing polyvectors with odd cotangent fibres $\xi_i$ (parity $1$) and even cotangent fibres $\psi_{\hat{\alpha}}$ (parity $0$) defines the BV divergence $\Delta_{\mathrm{div}} := \sum_{\substack{i\in\{1,2\}\\\mathrm{even}}}\frac{\partial^2}{\partial z^i\partial\xi_i} + \sum_{\substack{\hat{\alpha}\in\{1,2,3\}\\\mathrm{odd}}}\frac{\partial^2}{\partial\theta^{\hat{\alpha}}\partial\psi_{\hat{\alpha}}}$ ($\Delta_{\mathrm{div}}^2 = 0$), cutting out divergence-free super-polyvectors $\mathrm{PV}^{\ge 1}_\Delta(\C^{2|3}) := \{P : \Delta_{\mathrm{div}}P = 0\}$ under the Schouten--Nijenhuis bracket. On linear supervector fields $V = V^i\partial_{z^i} + \Upsilon^{\hat{\alpha}}\partial_{\theta^{\hat{\alpha}}}$, super-divergence $\partial_{z^i}V^i - (-1)^{|V|}\partial_{\theta^{\hat{\alpha}}}\Upsilon^{\hat{\alpha}} = 0$ embeds the projective superconformal symmetry algebra $\fpsl(3|3) := \fsl(3|3)/\C\mathbf{1}_{3|3}$---the $3|3$ block supermatrices $M = \bigl(\begin{smallmatrix}A & B\\ C & D\end{smallmatrix}\bigr)$ obeying $\str(M) := \tr_{\C^3}(A) - \tr_{\C^3}(D) = 0$ modulo $\mathbf{1}_{3|3}$ ($17$ even $+ 18$ odd $= 35$ generators)---directly into $\mathrm{PV}^1_\Delta(\C^{2|3})$~\cite{CG18,SW}.
+\end{zkmodule}
+
+\begin{theorem}[All-order finite-$N$ and nonplanar $4\mathrm{D}$ $\mathcal{N}=4$ twisted holography~{\cite{CG18,BG26,Repo9e833c8}}]
+\label{thm:holography-allorder}
+Comparing boundary $4\mathrm{D}$ $\mathcal{N}=4$ $\mathrm{U}(N)$ (or $\SU(N)$) SYM on $\C^{2|3}$ against minimal BCOV theory on $\C^5\setminus\C^2$ with Bochner--Martinelli flux $N F_{\mathrm{BM}}$ (Figure~\ref{fig:holography-visual}):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{Planar \v{C}ech match, $\mathrm{U}(1)$ excess, and $\mathcal{O}(\hbar^2 N^{-2})$ non-formality:} Bulk cohomology under $t\partial + N\{F_{\mathrm{BM}},-\}$ matches planar single-trace cohomology $\bigoplus_{\substack{p\ge 1\\\mathrm{length}}}B^p(\C^{2|3})$ modulo $B^1 = \{\dd\Tr C\}$ through $t^{30}$ ($6{,}300$ weight slices; regular excess $M_1\cup\{1^5\}$ $=$ $\mathrm{U}(1)$ Hamiltonian sources). At finite $N$, the third-order Koszul--Akman symbol $\Phi^3_{Q_2}(a_1,a_2,a_3) = Q_2(a_1 a_2 a_3) \neq 0$ fuses $3\to 1$ traces at $\mathcal{O}(\hbar^2 N^{-2})$, refuting product-compatible conjugacy!
+
+  \item \emph{Nonplanar $\frac{\sinh(x/2)}{x/2}$ handle limit, $\mathrm{D}3$ normal poles, and $k=2$ BG mesons:} Ribbon face counting $f = n+2-r-b-2h \ge 0$ yields the handle double-scaling limit
+  \begin{equation}
+  \label{eq:sinh-handle-limit}
+  \lim_{\substack{n,N\to\infty\\ n^2/N\to x}}\sum_{\substack{h\in\{0,\dots,\lfloor n/2\rfloor\}\\\mathrm{handles}}}\frac{P_{n+1,h}}{N^{2h}} = \sum_{\substack{h\ge 0\\\mathrm{handles}}}\frac{(x/2)^{2h}}{(2h+1)!} = \frac{\sinh(x/2)}{x/2},
+  \end{equation}
+  while bulk genus-$2,3,4$ BCOV vertices with $N F_{\mathrm{BM}}$ generate normal poles $w_1^{-1}w_2^{-1}w_3^{-(2g+1)}$ of orders $5,7,9$. Passing from $k=1$ to $k=2$ Budzik--Gaiotto meson complexes~\cite{BG26} eliminates every computed $k=1$ spurious class across levels $16$--$20$, matching Murthy's giant-graviton threshold $2(k+1)(N+k+1) = 30 > 24$ at $N=2$.
+
+  \item \emph{All-order $(n+1)$-graviton Bessel $I_0$ detectors, bulk $P\wedge P=0$ vs.\ glueball kernel, determinant branes, and spin bound $2J_L \ge 2n-1$:} On $\mathcal{O}_0^{(n)} = G_1 G_2 G_3 G_4^{n-2}$ ($n \ge 2$), $Q_k\mathcal{O}_0^{(n)}|_{\eps_+\eps_-} = 0$ for all $k \neq n$, resumming $\mathbf{Q}(G_1 G_2 G_3/(1-u G_4))|_{\eps_+\eps_-}$ into $I_0\!\bigl(2\sqrt{\ii g\tau\hbar u\Delta[p,q]/(32\pi^2)}\bigr)$; in the bulk, $(P\wedge Y_1)\wedge(P\wedge Y_2) = 0$ ($P = \partial_{z^1}\wedge\partial_{z^2}$) kills every bare primary tree, evaded by the Grothendieck residue $(h_2-h_1)$ and twice-derived glueball kernel $\{\{NF_{\mathrm{BM}},\phi\},\psi\} = -\frac{N}{w_1 w_2 w_3}[\partial\phi,\partial\psi]_z$. On $\det(m\mathbf{1}+\gamma^1+\sum_{\substack{I\\\mathrm{flavors}}}\eta_I\beta_I + v\ghb)$, $[\eta_1\eta_2\eta_3 v^{n-2}\eps_+\eps_-]\mathbf{Q}\det(\cdots) = -\frac{\hbar^n(\ii g\tau[p,q])^n}{(32\pi^2)^n(n!)^2(n-2)!}\mathcal{C}_{n+1}$ ($N_{\min} = n+2$ even, $n+1$ odd; $1$-loop brane contact $\{Q_1,R_0\}(\ghb_B\psi) \neq 0$). Finally, contracting $\ge 3n$ $\theta$'s forces $Q_n\mathcal{O} = 0$ whenever $2J_L(\mathcal{O}) < 2n-1$; since all known $3$-loop $\SO(11..13)$ lifting primaries~\cite{LLC} have $2J_L = 1 < 3$, $Q_{n\ge 2}\mathcal{O}_j \equiv 0$ and \textbf{$d_3[\mathcal{O}_0] = [Q_1\mathcal{O}_2]$ arises purely from $Q_1^3$}!
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Loday--Quillen--Tsygan cyclic homology and $3\to 1$ fan evaluation on $\SU(2)$ prove~(1). Unmarked spoke-permutation generating functions give $[m^{4h}]P_{m,h} = 2^{-2h}/(2h+1)!$ and~\eqref{eq:sinh-handle-limit}, while two-prime sparse C++ elimination proves $k=2$ meson convergence in~(2). Berezin $\theta$-counting on $G_4^{n-2}$, rank-$2$ polyvector wedge saturation $P\wedge P = 0$, cofactor expansion of $\det(\cdots)$, and Grassmann $\theta$-degree balance $3n - (n+1) = 2n-1 \le 2J_L$ prove~(3).
+\end{proof}
+
+\begin{lemma}[{Grassmann spin bound $2J_L \ge 2n-1$ and Bessel $I_0$ $(n+1)$-graviton generating series}]
+\label{lem:bessel-spin-bound}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Every $n$-loop superfield operation $Q_n$ on $\C^{2|3}$ acting on $(n+1)$ input letters absorbs at least $2n-1$ input holomorphic derivatives $\partial_{+\dot{a}}$, forcing $Q_n\mathcal{O} = 0$ whenever $2J_L(\mathcal{O}) < 2n-1$ ($Q_{n\ge 2}\mathcal{O}_j \equiv 0$ for every $J_L = \frac{1}{2}$ primary).
+
+  \item On $\mathcal{O}_0^{(n)} = G_1 G_2 G_3 G_4^{n-2}$ ($n \ge 2$) where $[\eps_+\eps_-]Q_k\mathcal{O}_0^{(n)} = \delta_{k,n}\frac{(\ii g\tau\hbar\Delta[p,q])^n}{(32\pi^2)^n(n!)^2}\,\mathcal{W}$, setting $z := \frac{\ii g\tau\hbar u\Delta[p,q]}{32\pi^2}$ gives
+  \[
+  \sum_{\substack{n\ge 2\\\mathrm{loops}}}u^{n-2}[\eps_+\eps_-]\mathbf{Q}\mathcal{O}_0^{(n)} = u^{-2}\bigl(I_0(2\sqrt{z}) - 1 - z\bigr)\mathcal{W}.
+  \]
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Berezin $\theta$-degree balance}
+The $n$ cubic super-Chern--Simons vertices carry $3n$ odd $\theta$ integrations while the $(n+1)$ spoke legs and output slot absorb at most $(n+1)$ odd $\theta$ variables without differentiating propagators; translation invariance converts the remaining $\ge 3n - (n+1) = 2n-1$ odd contractions into $\partial_{+\dot{a}}$ derivatives lowering $2J_L$ by $\ge 2n-1$, annihilating $2J_L = 1$ primaries for all $n \ge 2$.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Single-order Bessel resummation}
+Substituting $[\eps_+\eps_-]\mathbf{Q}\mathcal{O}_0^{(n)} = [\eps_+\eps_-]Q_n\mathcal{O}_0^{(n)}$ into the $u$-series yields $u^{-2}\sum_{\substack{n\ge 2\\\mathrm{loops}}}\frac{z^n}{(n!)^2}\mathcal{W} = u^{-2}(I_0(2\sqrt{z}) - 1 - z)\mathcal{W}$.
+\end{proofpart}
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.90]
+  % Left: (n+1)-spoke Q_n ribbon fan -> Bessel I_0 & sinh(x/2)/(x/2)
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=PineGreen!65!black, fill=PineGreen!2.5, line width=0.5pt] (-3.85,-1.65) rectangle (3.85,1.65);
+    \node[font=\scriptsize\bfseries, text=PineGreen!85!black] at (0,1.35) {(a) $(n+1)$-Graviton Fan \& $I_0$};
+    \coordinate (qn) at (-1.85,0.68);
+    \foreach \idx/\xx in {1/-3.05, 2/-2.25, 3/-1.45, 4/-0.65} {
+      \coordinate (sp\idx) at (\xx,-0.45);
+      \draw[prop, PineGreen!85!black] (qn)--(sp\idx);
+      \filldraw[vbiv] (sp\idx) circle (0.048cm);
+    }
+    \draw[line width=1.1pt, draw=NavyBlue!85!black] (-3.25,-0.45)--(-0.45,-0.45);
+    \filldraw[v0] (qn) circle (0.056cm) node[above=1pt, font=\tiny] {$Q_n$};
+    \node[font=\tiny] at (1.75, 0.38) {$\mathcal{O}_0^{(n)} \mapsto I_0(2\sqrt{\cdots})$};
+    \node[font=\tiny] at (1.75,-0.18) {$\frac{\sinh(x/2)}{x/2}$ ($n^2/N\to x$)};
+    \node[font=\tiny] at (0,-1.25) {$2J_L \ge 2n-1 \implies \SO(13)\ d_3 = Q_1^3$};
+  \end{scope}
+
+  % Right: Determinant brane & bulk glueball kernel
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=2.5pt, draw=Plum!65!black, fill=Plum!2.5, line width=0.5pt] (-3.85,-1.65) rectangle (3.85,1.65);
+    \node[font=\scriptsize\bfseries, text=Plum!85!black] at (0,1.35) {(b) Determinant Brane \& Glueball};
+    \coordinate (dc) at (-2.05,0.12);
+    \draw[prop, Plum!85!black, line width=0.9pt] (dc) circle (0.55cm);
+    \draw[prop] (dc)--++( 0.39, 0.39); \draw[prop] (dc)--++(-0.39, 0.39);
+    \draw[prop] (dc)--++(-0.39,-0.39); \draw[prop] (dc)--++( 0.39,-0.39);
+    \filldraw[v0] (dc) circle (0.054cm);
+    \node[font=\tiny] at (1.55, 0.42) {$\mathbf{Q}\det M \mapsto \mathcal{C}_{n+1}$};
+    \node[font=\tiny] at (1.55,-0.15) {$P\wedge P = 0$ (bare trees)};
+    \node[font=\tiny] at (0,-1.25) {$\{\{NF_{\mathrm{BM}},\phi\},\psi\} = -\frac{N}{w_1 w_2 w_3}[\partial\phi,\partial\psi]_z$};
+  \end{scope}
+\end{tikzpicture}
+\caption{All-order $\mathcal{N}=4$ twisted holography mechanisms of Theorem~\ref{thm:holography-allorder}: (a)~$(n+1)$-spoke fan isolating $Q_n$ on $\mathcal{O}_0^{(n)}$ (Bessel $I_0$), nonplanar $\frac{\sinh(x/2)}{x/2}$ handles, and the $2J_L \ge 2n-1$ spin bound; (b)~giant-graviton determinant brane $\det M$ and bulk $P\wedge P=0$ evasion via the twice-derived glueball kernel.}
+\label{fig:holography-visual}
+\end{figure}

@@ -1,0 +1,449 @@
+% ============================================================================
+\section{\texorpdfstring{$(H,T)$}{(H,T)} Schwinger Resistor Networks, Wheel Stabilization, \texorpdfstring{$K_5$}{K\_5} Through \texorpdfstring{$q=9$}{q=9}, and \texorpdfstring{$T=1 / \C^3$}{T=1 / C\^3} Bulk Completions}
+\label{sec:schwinger-periods-k5}
+% ============================================================================
+
+On $X = \RR^T\times\C^H$ ($D := H+T \ge 1$), combining $[K_{t_e}]_\Omega - \dd t_e\wedge[D^* K_{t_e}]_\Omega$ from~\eqref{eq:ht-heat-kernel-explicit} across each internal edge $e \in I$ of a connected $n$-loop graph $\Gamma = (V,I)$ ($n = |I|-|V|+1$) converts position-space Feynman integration into an exact electrical-network problem~\cite{Mathews,LLC,WW24,Repo9e833c8}. Each Schwinger proper time $t_e > 0$ acts as an Ohmic resistance ($g_e := t_e^{-1}$ conductance), each anti-holomorphic vertex coordinate $\frac{1}{2}\bar{z}_v{}^{\bar{\imath}}$ acts as an electrostatic node potential, and each external holomorphic momentum $\lambda^v{}_{\mathsf{a}}$ ($\sum_{\substack{v\in V\\\mathrm{vertices}}}\lambda^v{}_{\mathsf{a}} = 0$) acts as an injected conserved current.
+
+Completing the Gaussian square over the $|V|-1$ ungrounded vertex positions enforces Kirchhoff's current law $B^v{}_e y^e{}_{\mathsf{a}} = \lambda^v{}_{\mathsf{a}}$ and Ohm's cycle voltage law $C_r{}^e R_{ef}(t)y^f{}_{\mathsf{a}} = 0$, producing the \emph{master projective $(|I|-1)$-form} on $\mathbb{RP}^{|I|-1}_{>0}$:
+\begin{equation}
+\label{eq:master-omega-gamma}
+\begin{aligned}
+\Omega_\Gamma &:= U_\Gamma^{-H}\,\rho_n(M)^{\wedge T}\wedge\bigwedge_{i=1}^H\bigwedge_{r=1}^n\psi_{r,i},\qquad
+\rho_n(M) := (\det M)^{-1/2}\Pf\!\left(-\tfrac{1}{2}\dd M\,M^{-1}\dd M\right),\\
+K_\Gamma(\lambda;z) &:= \int_{\mathbb{RP}^{|I|-1}_{>0}}\ee^{-y^e{}_{\mathsf{a}}z_e{}^{\mathsf{a}}}\,\Omega_\Gamma,
+\end{aligned}
+\end{equation}
+where $M_{rs}(t) = C_r{}^e R_{ef}(t)C_s{}^f$, $U_\Gamma(t) = \det M(t)$, and $\psi_{r,\mathsf{a}} = C_r{}^e y^f{}_{\mathsf{a}}\delta_{ef}\,\dd t^e$~\eqref{eq:psi-cycle-def}.
+
+Relative to a source support $S_{\mathrm{src}} \subseteq V$, four elementary Kron network reductions act on $(\Gamma, S_{\mathrm{src}})$: \textbf{Series ($\mathrm{S}$)} and \textbf{Parallel ($\mathrm{P}$)} merges (class $\mathrm{SP}$); \textbf{Unsourced Star--Triangle ($\mathrm{Y}_0$)} elimination at $v \notin S_{\mathrm{src}}$ ($t_{vu_1} = R_{12}R_{31}/P_\Delta$, $P_\Delta := R_{12}+R_{23}+R_{31}$, keeping sources polynomial; class $\mathrm{B}$ uses $\{\mathrm{S},\mathrm{P},\mathrm{Y}_0\}$); \textbf{Sourced Star--Triangle ($\mathrm{Y}_1$)} elimination at $v \in S_{\mathrm{src}}$ (shifting $\lambda^{u_1}{}_{\mathsf{a}} \mapsto \lambda^{u_1}{}_{\mathsf{a}} + \frac{R_{23}}{P_\Delta}\lambda^v{}_{\mathsf{a}}$; class $\mathrm{R}_k$ requires $k$ moves $\mathrm{Y}_1$); and irreducible minimum-degree-$\ge 4$ cores (class $\mathrm{I}$).
+
+\subsection{Generalized \texorpdfstring{$D$}{D}-Laman Admissibility and Strict Inclusion \texorpdfstring{$\mathrm{B}\supsetneq\mathrm{SP}$}{B > SP}}
+\label{subsec:d-laman}
+
+\begin{theorem}[Generalized $D$-Laman admissibility and strict inclusion $\mathrm{B}\supsetneq\mathrm{SP}$~{\cite{WW24,Repo9e833c8}}]
+\label{thm:d-laman}
+Let $\Gamma = (V,I)$ be a connected multigraph of loop number $n \ge 1$ on $X = \RR^T\times\C^H$ ($D = H+T \ge 1$).
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Form-degree saturation $\deg\Omega_\Gamma = nD = |I|-1$ and ultraviolet convergence across all nonempty subgraph contractions $t_e \mapsto \rho_{\mathrm{UV}}t_e$ ($e \in I_S$, $\rho_{\mathrm{UV}} \to 0$) hold precisely when
+  \begin{equation}
+  \label{eq:d-laman-inequalities}
+  |I| = Dn + 1,\qquad
+  |V| = (D-1)n + 2,\qquad
+  (D-1)|I_S| \le D|V_S| - D - 1\quad (\forall\,S \subseteq \Gamma,\ |I_S| \ge 1),
+  \end{equation}
+  implying $2$-vertex-connectivity, girth $\ge D+1$, and $E_{\mathrm{ext}} = 3|V|-2|I| = (D-3)n + 4$ bivalent external vertices when $\deg v \in \{2,3\}$.
+
+  \item At $T = 0$, every graph in class $\mathrm{B}$ evaluates to a rational polynomial $K_\Gamma(\lambda;0) \in \QQ[\lambda]$ via Dirichlet simplex beta integrals. Under full sourcing $S_{\mathrm{src}} = V$, $\mathrm{B} = \mathrm{SP}$; under generic bivalent sourcing $S_{\mathrm{src}} = \{v \in V : \deg v = 2\}$, \textbf{$\mathrm{B}$ strictly contains $\mathrm{SP}$ for every $D \ge 3$ and $n \ge 3$} (Table~\ref{tab:laman-census}; Figure~\ref{fig:nonsp-core-gallery}).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), $\deg\Omega_\Gamma = nT + nH = nD$ matches $\dim\mathbb{RP}^{|I|-1}_{>0} = |I|-1$ precisely when $|I| = Dn+1$; rescaling $t_e \mapsto \rho_{\mathrm{UV}}t_e$ on $S \subseteq \Gamma$ scales $U_\Gamma$ by $\rho_{\mathrm{UV}}^{n_S}$ ($n_S = |I_S|-|V_S|+c_S$) and the simplex radial measure by $\rho_{\mathrm{UV}}^{|I_S|-1}\dd\rho_{\mathrm{UV}}$, converging at $\rho_{\mathrm{UV}} = 0$ precisely when $|I_S|-1 - Dn_S \ge 0$, which for connected $S$ ($c_S=1$) gives~\eqref{eq:d-laman-inequalities}. In~(2), take the $n=3$ $K_4$ subdivision $\Gamma_{[1,1,1,D-1,D-1,D]}$ ($D \ge 3$) with core vertices $u_0,u_1,u_2,u_3$, three length-$1$ spokes at $u_0$, and base chains of lengths $D-1, D-1, D$ ($|I|=3D+1$, girth $D+1$). Series-eliminating all interior degree-$2$ base vertices deposits external sources onto $\{u_1,u_2,u_3\}$ while keeping $\lambda^{u_0}{}_{\mathsf{a}} \equiv 0$, so unsourced $\mathrm{Y}_0$ at $u_0$ reduces the $K_4$ minor without $\mathrm{Y}_1$ ($\Gamma \in \mathrm{B}\setminus\mathrm{SP}$, extending to $n > 3$ by $D$-ear attachments).
+\end{proof}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.14}
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+$(D,n)$ & $|V|, |I|$ & Total & $\mathrm{SP}$ & $\mathrm{B}$ (\texttt{gen}) & $\mathrm{B}\setminus\mathrm{SP}$ & $\mathrm{R}_1$ & $\mathrm{R}_2, \mathrm{R}_3$ & $\mathrm{I}$ ($K_5$ core) \\
+\midrule
+$(2,4)$ & $6, 9$ & $13$ & $5$ & $13$ & $8$ & $0$ & $0, 0$ & $0$ \\
+$(2,5)$ & $7, 11$ & $70$ & $12$ & $62$ & $50$ & $6$ & $2, 0$ & $0$ \\
+$(2,6)$ & $8, 13$ & $608$ & $39$ & $426$ & $387$ & $84$ & $62, 4$ & $32$ \\
+$(3,3)$ & $8, 10$ & $16$ & $10$ & $11$ & $1$ & $5$ & $0, 0$ & $0$ \\
+$(3,4)$ & $10, 13$ & $230$ & $66$ & $77$ & $11$ & $89$ & $59, 5$ & $0$ \\
+$(6,3)$ & $17, 19$ & $242$ & $111$ & $112$ & $1$ & $130$ & $0, 0$ & $0$ \\
+\bottomrule
+\end{tabular}
+\caption{Exhaustive Kron census of tight $D$-Laman multigraphs with $\deg v \in \{2,3\}$ under generic bivalent sourcing~\cite{Repo9e833c8}.}
+\label{tab:laman-census}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.89]
+  % 1. K_4
+  \begin{scope}[shift={(-6.40,0)}]
+    \draw[rounded corners=2pt, draw=NavyBlue!55, fill=white, line width=0.45pt] (-1.45,-1.25) rectangle (1.45,1.25);
+    \node[font=\tiny\bfseries, text=NavyBlue!85!black] at (0,0.98) {$K_4 = W_3$};
+    \coordinate (k0) at (0,0.08);
+    \foreach \idx/\ang in {1/90, 2/210, 3/330} \coordinate (k\idx) at ($(0,0.08)+({\ang}:0.65cm)$);
+    \draw[prop] (k1)--(k2)--(k3)--cycle;
+    \foreach \idx in {1,2,3} \draw[prop, NavyBlue!85!black] (k0)--(k\idx);
+    \foreach \idx in {0,1,2,3} \filldraw[v0] (k\idx) circle (0.052cm);
+    \node[font=\tiny] at (0,-0.92) {$n=3$: $\zeta(3)$};
+  \end{scope}
+  % 2. W_4
+  \begin{scope}[shift={(-3.20,0)}]
+    \draw[rounded corners=2pt, draw=PineGreen!55, fill=white, line width=0.45pt] (-1.45,-1.25) rectangle (1.45,1.25);
+    \node[font=\tiny\bfseries, text=PineGreen!85!black] at (0,0.98) {Wheel $W_4$};
+    \coordinate (w0) at (0,0.08);
+    \foreach \idx/\ang in {1/45, 2/135, 3/225, 4/315} \coordinate (w\idx) at ($(0,0.08)+({\ang}:0.64cm)$);
+    \draw[prop] (w1)--(w2)--(w3)--(w4)--cycle;
+    \foreach \idx in {1,2,3,4} \draw[prop, PineGreen!85!black] (w0)--(w\idx);
+    \filldraw[vbiv] (w0) circle (0.055cm);
+    \foreach \idx in {1,2,3,4} \filldraw[v0] (w\idx) circle (0.05cm);
+    \node[font=\tiny] at (0,-0.92) {$n=4$: $\zeta(5)$};
+  \end{scope}
+  % 3. Prism
+  \begin{scope}[shift={(0,0)}]
+    \draw[rounded corners=2pt, draw=RoyalBlue!55, fill=white, line width=0.45pt] (-1.45,-1.25) rectangle (1.45,1.25);
+    \node[font=\tiny\bfseries, text=RoyalBlue!85!black] at (0,0.98) {Prism $K_3\square K_2$};
+    \foreach \idx/\ang in {1/90, 2/210, 3/330} {
+      \coordinate (po\idx) at ($(0,0.08)+({\ang}:0.68cm)$);
+      \coordinate (pi\idx) at ($(0,0.08)+({\ang}:0.28cm)$);
+    }
+    \draw[prop] (po1)--(po2)--(po3)--cycle;
+    \draw[prop, RoyalBlue!85!black] (pi1)--(pi2)--(pi3)--cycle;
+    \foreach \idx in {1,2,3} { \draw[prop] (po\idx)--(pi\idx); \filldraw[v0] (po\idx) circle (0.05cm); \filldraw[v0] (pi\idx) circle (0.048cm); }
+    \node[font=\tiny] at (0,-0.92) {$n=4$: $\zeta(3),\zeta(5)$};
+  \end{scope}
+  % 4. K_{3,3}
+  \begin{scope}[shift={(3.20,0)}]
+    \draw[rounded corners=2pt, draw=Plum!60, fill=white, line width=0.45pt] (-1.45,-1.25) rectangle (1.45,1.25);
+    \node[font=\tiny\bfseries, text=Plum!85!black] at (0,0.98) {Bipartite $K_{3,3}$};
+    \foreach \idx/\xx in {1/-0.65, 2/0.0, 3/0.65} { \coordinate (ka\idx) at (\xx,0.50); \coordinate (kb\idx) at (\xx,-0.32); }
+    \foreach \p in {1,2,3} \foreach \q in {1,2,3} \draw[prop, Plum!80!black] (ka\p)--(kb\q);
+    \foreach \idx in {1,2,3} { \filldraw[v0] (ka\idx) circle (0.052cm); \filldraw[vbiv] (kb\idx) circle (0.052cm); }
+    \node[font=\tiny] at (0,-0.92) {$n=4$ non-planar};
+  \end{scope}
+  % 5. K_5
+  \begin{scope}[shift={(6.40,0)}]
+    \draw[rounded corners=2pt, draw=BrickRed!65, fill=white, line width=0.45pt] (-1.45,-1.25) rectangle (1.45,1.25);
+    \node[font=\tiny\bfseries, text=BrickRed!85!black] at (0,0.98) {Complete $K_5$};
+    \foreach \idx/\ang in {0/90, 1/18, 2/306, 3/234, 4/162} \coordinate (c\idx) at ($(0,0.08)+({\ang}:0.66cm)$);
+    \draw[prop] (c0)--(c1)--(c2)--(c3)--(c4)--cycle;
+    \draw[prop, BrickRed!85!black] (c0)--(c2)--(c4)--(c1)--(c3)--cycle;
+    \foreach \idx in {0,1,2,3,4} \filldraw[vbiv] (c\idx) circle (0.054cm);
+    \node[font=\tiny] at (0,-0.92) {$n=6$ Segre core};
+  \end{scope}
+\end{tikzpicture}
+\caption{Canonical $3$-connected non-series--parallel Feynman cores named in Obstacle~2(b): $K_4 = W_3$ ($n=3$), $W_4$, the planar prism $K_3\square K_2$, the non-planar Kuratowski graph $K_{3,3}$ ($n=4$), and the $4$-regular non-planar complete graph $K_5$ ($n=6$).}
+\label{fig:nonsp-core-gallery}
+\end{figure}
+
+\subsection{Closed Two-Loop Theta Kernels, \texorpdfstring{$T\ge 2$}{T>=2} Vanishing, and Ohm/Segre Locality}
+\label{subsec:theta-t2-ohm}
+
+\begin{theorem}[Closed two-loop $\theta(n_1,n_2,n_3)$ kernels across $(H,T)$ and all-loop companion families~{\cite{Repo9e833c8}}]
+\label{thm:theta-closed}
+For a tight two-loop theta graph $\theta(n_1,n_2,n_3)$ ($n_1+n_2+n_3 = 2D+1$, $1 \le n_P \le D$) with path resistances $R_P = \sum_{\substack{q\in\{1,\dots,n_P\}\\\mathrm{path\ edges}}}t_{P,q}$, interior source matrices $\Lambda_P \in \C^{H\times(n_P-1)}$, $2H\times 2H$ determinants $D_\theta(\lambda) := \det\bigl(\begin{smallmatrix}\Lambda_1 & \Lambda_2 & 0\\ 0 & \Lambda_2 & \Lambda_3\end{smallmatrix}\bigr)$ ($T=1$) and $Q(v) := \det\bigl(\begin{smallmatrix}v & 0 & \Lambda_1 & \Lambda_2 & 0\\ 0 & v & 0 & \Lambda_2 & \Lambda_3\end{smallmatrix}\bigr)$ ($T=0$), and mean source $\bar{L}_i := \lambda^{\mathrm{top}}_i + \sum_{\substack{P\in\{1,2,3\}\\\mathrm{paths}}}\sum_{\substack{m\in\{1,\dots,n_P-1\}\\\mathrm{interior\ verts}}}\frac{n_P-m}{n_P}\lambda^{P,m}_i$, in cycle basis $C_3$ ($K_{\mathrm{htk}} = (-1)^{(n_2+1)D}K[C_3]$):
+\begin{equation}
+\label{eq:theta-closed-both}
+\begin{aligned}
+K_{T=1}[C_3](\lambda;0) &= (-1)^{\frac{H(H+1)}{2}}\frac{D_\theta(\lambda)\prod_{P=1}^3\Gamma(H+\frac{3}{2}-n_P)}{2\,\Gamma(H+\frac{3}{2})\prod_{P=1}^3(n_P-1)!},\\
+K_{T=0}[C_3](\lambda;0) &= (-1)^{\frac{H(H+1)}{2}+1}\frac{\prod_{P=1}^3(H-n_P)!\,Q(\bar{L})}{(H+1)!\prod_{P=1}^3(n_P-1)!}.
+\end{aligned}
+\end{equation}
+Moreover, even-$n$ $(1,1)$ endpoint fans evaluate to $\frac{(4\pi)^{n/2}}{(n+1)(n!)^2}(\lambda_1\lambda_{n+1})^{n/2}$, $\C^3$ $n$-box ladders evaluate to $\frac{(-1)^{n-1}2^{n+1}\Delta^n}{(n+2)!(n!)^2((n+1)!)^2}$, and $(0,1)$ $N$-edge bananas ($n=N-1$) evaluate to $\pi^{n/2}$ ($n$ even, $0$ odd), assembling the Moyal weight $2^{-N}$.
+\end{theorem}
+
+\begin{proof}
+At $T=1$, $\rho_2(M) = (R_1\dd R_2\wedge\dd R_3 - R_2\dd R_1\wedge\dd R_3 + R_3\dd R_1\wedge\dd R_2)/(2U_\theta^{3/2})$ annihilates $\dd\log(R_1/R_2)$ and $\dd\log(R_2/R_3)$, eliminating endpoint potential differentials and factoring the integral into $\prod_{P=1}^3\vol(\Delta^{n_P-1})$ times a Dirichlet half-integer beta integral in $w_P = R_P^{-1}/(R_1^{-1}+R_2^{-1}+R_3^{-1})$. At $T=0$, quadratic polarization of $Q(L(x))$ vanishes on collinear columns within a single $\Lambda_P$, so simplex expectation commutes with $Q$: $\mathbb{E}_x[Q(L(x))] = Q(\bar{L})$.
+\end{proof}
+
+\begin{example}[Pareto $\alpha_{\mathrm{Par}} = 6/5$ Monte Carlo trap and $5\mathrm{D}$ CS $\theta(1,3,3), \theta(2,2,3)$ evaluation]
+\label{ex:pareto-and-5d-theta}
+Near the codimension-$3$ corner $U_\theta \to \rho_{\mathrm{corner}}$ of $\Delta^4$ on $\theta(1,2,2)$ at $(H,T)=(1,1)$, $|D(t)| = |D_\theta|/(2U_\theta^{5/2})$ follows $\mathbb{P}(|D| > x) = 8(c/x)^{6/5} + \mathcal{O}(x^{-8/5})$ ($\alpha_{\mathrm{Par}} = \frac{6}{5} < 2$), giving $\mathbb{E}[D^2] = \infty$ under naive uniform simplex sampling!
+
+Exact evaluation~\eqref{eq:theta-closed-both} at $(H,T) = (2,1)$ ($D=3$, $H+\frac{3}{2} = \frac{7}{2}$, $\Gamma(\frac{7}{2}) = \frac{15}{8}\sqrt{\pi}$) yields for external momenta $p^{(1)},\dots,p^{(4)}$:
+\[
+\begin{aligned}
+K_{133} &= -\frac{\frac{3}{4}\pi^{3/2}}{2\cdot\frac{15}{8}\sqrt{\pi}\cdot 0!\,2!\,2!}[p^{(1)}p^{(2)}][p^{(3)}p^{(4)}] = -\frac{\pi}{20}[p^{(1)}p^{(2)}][p^{(3)}p^{(4)}],\\
+K_{223} &= +\frac{\pi}{30}[p^{(1)}p^{(2)}][p^{(3)}p^{(4)}],
+\end{aligned}
+\]
+where $(-1)^{(2+1)\cdot 3} = -1$ flips the sign on $\theta(2,2,3)$.
+\end{example}
+
+\begin{theorem}[Algebraic Pfaffian vanishing $\rho_n(M)\wedge\rho_n(M) = 0$ for $T \ge 2$ and Ohm/Segre locality~{\cite{Repo9e833c8}}]
+\label{thm:ohm-locality}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item \emph{All-loop bulk vanishing at $T \ge 2$:} For every smooth positive-definite symmetric $n\times n$ matrix family $M_{rs}(t)$ ($n \ge 1$), $\rho_n(M)\wedge\rho_n(M) = 0$; hence at $T \ge 2$ and zero topological momentum ($\kappa = 0$), $\Omega_\Gamma = 0$ and $K_\Gamma(\lambda;z) = 0$ identically for all $n \ge 1$ ($4\mathrm{D}$ CS on $\RR^2\times\C$, $3\mathrm{D}$ CS on $\RR^3$).
+
+  \item \emph{Differential-form Ohm locality, $T=1$ contact, $k=2$ closing edge, and $k\ge 4$ Segre quadrics:} Partitioning $\Gamma = S \cup O$ along $k = |\partial S|$ boundary terminals with interior $S^\circ$, Schur complement $L_{\mathrm{red}} := L_{\partial\partial} - L_{\partial\circ}L_{\circ\circ}^{-1}L_{\circ\partial}$, impedance $Z := L_{\mathrm{red}}^+$, and harmonic transfer $h^a{}_u := -(L_{\circ\circ}^{-1})^{uw}(L_{\circ\partial})_{wa}$ ($p_{\mathrm{out}} : t_S \mapsto (Z,h)$) factors $\Omega_\Gamma = \eps\,\Omega_S\wedge(\Omega_{\mathrm{out}}\circ p_{\mathrm{out}})$ ($\eps \in \{\pm 1\}$).
+
+  At $T = 1$, conditioning $\tau_\circ$ leaves an internal fluctuation source $\xi_u$ with covariance $\langle\xi_u\xi_v\rangle = \frac{1}{2}(L_{\circ\circ})_{uv}$ (Figure~\ref{fig:ohm-segre}(a)). At $k=2$, closing $S$ by $e_*$ into $\widehat{S} := S\cup\{e_*\}$ satisfies $\int P_{\mathrm{num}}U_S^{-p_1}U_{S/pq}^{-p_2}\iota_E\mathrm{dvol}_S = \frac{\Gamma(p_1+p_2)}{\Gamma(p_1)\Gamma(p_2)}I_{p_1+p_2}(\widehat{S}; \alpha_S, \alpha_{e_*}=p_1)$. At valence $k \ge 4$, star elimination produces rank-$1$ conductances $c_{pq} = g_p g_q / G_{\mathrm{tot}}$ cut out by the codimension-$\frac{1}{2}k(k-3)$ \textbf{Segre determinantal quadrics} $c_{pq}c_{lm} = c_{pl}c_{qm} = c_{pm}c_{ql}$ (codimension $2$ at $k=4$ on $K_5 \to K_4$, Figure~\ref{fig:ohm-segre}(b)).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), set $X^r{}_s := (M^{-1})^{rp}\dd M_{ps}$. Since $A_{rs} = -\frac{1}{2}\dd M_{rp}(M^{-1})^{pq}\dd M_{qs}$ has entries in the commutative ring $\Omega^{\mathrm{even}}$, $\Pf(A)^2 = \det(A)$ gives $\rho_n(M)\wedge\rho_n(M) = (-\frac{1}{2})^n\det(X\wedge X)$. Cyclically shifting the last odd $1$-form $X^{r_{2j}}{}_{r_1}$ across $2j-1$ odd $1$-forms gives $\tr((X\wedge X)^j) = -\tr((X\wedge X)^j) = 0$ ($\forall\,j\ge 1$), so Newton's identities force $\det(X\wedge X) = 0$. In~(2), splitting internal currents into harmonic terminal flows and Dirichlet flows block-diagonalizes $M_\Gamma = \diag(M_S, M_O + D_{\mathrm{inc}}\text{-block})$; completing the Gaussian square on $\tau_\circ$ gives $\langle\xi_u\xi_v\rangle = \frac{1}{2}(L_{\circ\circ})_{uv}$; beta integration on $t_{e_*}$ proves the $k=2$ identity; and rank-$1$ $2\times 2$ minors of $(g_p g_q)$ cut out the Segre variety.
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.90]
+  % Left: k=2 Ohm factorization & closing edge
+  \begin{scope}[shift={(-4.10,0)}]
+    \draw[rounded corners=3pt, draw=NavyBlue!70!black, fill=NavyBlue!2.5, line width=0.55pt] (-3.85,-1.75) rectangle (3.85,1.75);
+    \node[font=\scriptsize\bfseries, text=NavyBlue!85!black] at (0,1.42) {(a) $k=2$ Closing Edge $\widehat{S}$};
+    \draw[rounded corners=5pt, draw=PineGreen!75!black, fill=white, line width=0.6pt] (-3.35,-0.85) rectangle (-1.20,0.85);
+    \node[font=\tiny\bfseries, text=PineGreen!85!black] at (-2.28,0.58) {$S$};
+    \coordinate (tp) at (-1.20, 0.35); \coordinate (tq) at (-1.20,-0.35);
+    \draw[prop] (-2.75,0) -- (-2.05,0.35) -- (tp);
+    \draw[prop] (-2.75,0) -- (-2.05,-0.35) -- (tq);
+    \draw[prop] (-2.05,0.35) -- node[iecres, rotate=90, scale=0.55] {} (-2.05,-0.35);
+    \filldraw[v0] (-2.75,0) circle (0.05cm) node[left=1pt, font=\tiny] {$S^\circ$};
+    \filldraw[vbiv] (tp) circle (0.052cm); \filldraw[vbiv] (tq) circle (0.052cm);
+    \node[font=\scriptsize] at (-0.35,0) {$\Longrightarrow$};
+    \coordinate (ep) at (1.15, 0.48); \coordinate (eq) at (1.15,-0.48);
+    \draw[prop] (ep) -- node[iecres, rotate=90, scale=0.75, draw=PineGreen!85!black] (Reff) {} (eq);
+    \node[left=2pt, font=\tiny, text=PineGreen!85!black] at (Reff.west) {$R_{\mathrm{eff}}$};
+    \draw[line width=0.8pt, densely dashed, draw=RoyalBlue!85!black] (ep) .. controls (2.45,0.75) and (2.45,-0.75) .. node[right=1pt, font=\tiny, text=RoyalBlue!85!black] {$e_*$} (eq);
+    \filldraw[vbiv] (ep) circle (0.052cm); \filldraw[vbiv] (eq) circle (0.052cm);
+    \node[font=\tiny] at (0,-1.28) {$\langle\xi_u\xi_v\rangle = \frac{1}{2}(L_{\circ\circ})_{uv}$};
+  \end{scope}
+
+  % Right: k=4 Segre star elimination
+  \begin{scope}[shift={(4.10,0)}]
+    \draw[rounded corners=3pt, draw=BrickRed!75!black, fill=BrickRed!2.5, line width=0.55pt] (-3.85,-1.75) rectangle (3.85,1.75);
+    \node[font=\scriptsize\bfseries, text=BrickRed!85!black] at (0,1.42) {(b) $k=4$ Segre Star ($K_5\to K_4$)};
+    \begin{scope}[shift={(-1.95,0.08)}]
+      \coordinate (sv) at (0,0);
+      \foreach \idx/\ang in {1/45, 2/135, 3/225, 4/315} {
+        \coordinate (u\idx) at (\ang:0.88cm);
+        \draw[prop] (sv) -- node[iecres, sloped, scale=0.52] {} (u\idx);
+        \filldraw[vbiv] (u\idx) circle (0.05cm);
+      }
+      \filldraw[v0] (sv) circle (0.056cm) node[above=2pt, font=\tiny] {$v$};
+    \end{scope}
+    \node[font=\scriptsize, text=BrickRed!85!black] at (-0.15,0.08) {$\longrightarrow$};
+    \begin{scope}[shift={(1.85,0.08)}]
+      \foreach \idx/\ang in {1/45, 2/135, 3/225, 4/315} \coordinate (w\idx) at (\ang:0.86cm);
+      \draw[prop, BrickRed!85!black] (w1)--(w2)--(w3)--(w4)--cycle;
+      \draw[prop, BrickRed!85!black] (w1)--(w3);
+      \draw[prop, BrickRed!85!black] (w2) .. controls (0.15,0.15) .. (w4);
+      \foreach \idx in {1,2,3,4} \filldraw[vbiv] (w\idx) circle (0.05cm);
+    \end{scope}
+    \node[font=\tiny, text=BrickRed!85!black] at (0,-1.28) {$c_{12}c_{34} = c_{13}c_{24} = c_{14}c_{23}$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Ohm locality vs.\ Segre obstruction in Theorem~\ref{thm:ohm-locality}(2): (a)~two-terminal Schur reduction onto $R_{\mathrm{eff}} = U_{S/pq}/U_S$ with closing edge $e_*$ and $T=1$ Dirichlet covariance $\frac{1}{2}(L_{\circ\circ})_{uv}$; (b)~four-terminal star elimination inside $K_5$ restricting $c_{pq} = g_p g_q/G_{\mathrm{tot}}$ to the codimension-$2$ Segre quadric locus.}
+\label{fig:ohm-segre}
+\end{figure}
+
+\subsection{Fixed-Core Algebraic de~Rham Stabilization and Sharp \texorpdfstring{$n$}{n}-Spoke Wheel Span}
+\label{subsec:stabilization-wheels}
+
+For a fixed connected core graph $G = (V,E)$ ($N = |E| \ge 2$, loop number $h_G = N-|V|+1$), define the integer-pole period space $\mathcal{P}_q(G) := \Span_{\QQ}\{I_q(G;\alpha) : \alpha_e \in \ZZ_{>0},\ \sum_{\substack{e\in E\\\mathrm{edges}}}\alpha_e = q h_G,\ \sum_{\substack{e\in S\\\mathrm{subset}}}\alpha_e > q\,h(S)\ \forall\,\varnothing\neq S\subsetneq E\}$, where $I_q(G;\alpha) := \int_{\mathbb{RP}^{N-1}_{>0}}(\prod_{\substack{e\in E\\\mathrm{edges}}}t_e^{\alpha_e-1})U_G(t)^{-q}\Omega_G$ carries unnormalized Schwinger weights without $\Gamma(\alpha_e)$ factors.
+
+\begin{theorem}[Fixed-core relative algebraic de~Rham finiteness and pole stabilization~{\cite{Panzer15,Repo9e833c8}}]
+\label{thm:core-stabilization}
+For every connected core graph $G = (V,E)$ ($m := |E|-1$):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item On each Hepp sector $0 < t_{\sigma(1)} < \dots < t_{\sigma(N)} = 1$ ($t_{\sigma(p)} = \prod_{\substack{j\in\{p,\dots,m\}\\\mathrm{sector\ vars}}}x_j$), Kruskal's greedy spanning tree factors $U_G(t(x)) = (\prod_{\substack{j\in\{1,\dots,m\}\\\mathrm{prefixes}}}x_j^{h(S_j)})U_\sigma(x)$ with $U_\sigma \in 1 + \ZZ_{\ge 0}[x_1,\dots,x_m]$ and $1 \le U_\sigma(x) \le \tau_G$ on $[0,1]^m$. Signed $\omega_{P,q} = P(t)U_G(t)^{-q}\Omega_G$ converges absolutely precisely when every collected monomial of $P$ obeys $\sum_{\substack{e\in S\\\mathrm{subset}}}\alpha_e > q\,h(S)$ ($\forall\,\varnothing\neq S\subsetneq E$).
+
+  \item Every convergent $\omega_{P,q}$ pulls back into the finite-dimensional relative algebraic de~Rham quotient ($A_\sigma := \QQ[x_1,\dots,x_m, U_\sigma^{-1}]$, $X_\sigma := \mathbb{A}^m_{\QQ}\setminus\{U_\sigma=0\}$, $B_\sigma := \bigcup_{\substack{p\in\{1,\dots,m\}\\\mathrm{faces}}}\{x_p(1-x_p)=0\}$):
+  \begin{equation}
+  \label{eq:rel-dr-quotient}
+  H^m_{\mathrm{dR}}(X_\sigma, B_\sigma; \QQ) = \frac{A_\sigma}{\sum_{\substack{p\in\{1,\dots,m\}\\\mathrm{cube\ coords}}}\partial_{x_p}\bigl(x_p(1-x_p)A_\sigma\bigr)},\qquad
+  \dim_{\QQ}\bigcup_{r\ge 1}\mathcal{P}_r(G) < \infty,
+  \end{equation}
+  and cotree pole-raising $I_q(G;\alpha) = \sum_{\substack{T\subset G\\\mathrm{spanning\ trees}}}I_{q+1}(G;\alpha + \mathbf{1}_{E\setminus T})$ proves $\mathcal{P}_q(G) \subseteq \mathcal{P}_{q+1}(G)$ and $\mathcal{P}_q(G) = \bigcup_{r\ge 1}\mathcal{P}_r(G)$ for all sufficiently large $q$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), every spanning tree $T$ satisfies $|(E\setminus T)\cap S_j| \ge h(S_j)$ with simultaneous equality attained by Kruskal's greedy tree~\cite{Panzer15}; distinct homogeneous $t$-monomials map to distinct $x$-monomials, preventing cancellation of any $x_p^{r}$ ($r \le -1$) divergence on $\{x_p=0\}\cap(0,1)^{m-1}$. In~(2), the affine log complex $\Omega^\bullet_{X_\sigma}(\log B_\sigma)(-B_\sigma)$ computes $H^m_{\mathrm{dR}}(X_\sigma,B_\sigma;\QQ)$ as~\eqref{eq:rel-dr-quotient}, which is finite-dimensional by Grothendieck's algebraic de~Rham theorem; multiplying the integrand by $U_G(t)/U_G(t) = \sum_{\substack{T\\\mathrm{trees}}}(\prod_{\substack{e\notin T\\\mathrm{cotree}}}t_e)/U_G(t)$ preserves $\sum_{\substack{e\in S\\\mathrm{subset}}}(\alpha_e + \mathbf{1}_{e\notin T}) \ge \sum_{\substack{e\in S\\\mathrm{subset}}}\alpha_e + h(S) > (q+1)h(S)$, embedding $\mathcal{P}_q(G) \subseteq \mathcal{P}_{q+1}(G)$ inside a finite-dimensional $\QQ$-space.
+\end{proof}
+
+\begin{theorem}[Complete $n$-spoke wheel scalar period span without $\QQ$-independence assumptions~{\cite{Repo9e833c8}}]
+\label{thm:wheel-span}
+For every $n$-spoke wheel $W_n$ ($n \ge 3$) and every integer $q \ge \max(3, n-1)$,
+\begin{equation}
+\label{eq:wheel-exact-span}
+\mathcal{P}_q(W_n) = \QQ + \sum_{\substack{j\in\{2,\dots,n-1\}\\\mathrm{odd\ zetas}}}\QQ\,\zeta(2j-1).
+\end{equation}
+\end{theorem}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Step 1: Upper inclusion via bilateral Laplace oddness}
+Expanding $I_q(W_n;\alpha)$ in $\RR^{2q}$ spherical harmonics of degree $\nu \ge 0$ ($s = \nu+q-1$) produces $\sum_{\substack{s\ge q-1\\\mathrm{modes}}}M_q(s)F(s)$, where $M_q(-s) = M_q(s)$ has a double zero at $s=0$ and bilateral Laplace convolution makes $F(-s) = -F(s)$ odd of pole order $\le 2n-1$. Opposite shifted poles $\pm h$ cancel all even zeta values, leaving rational harmonic sums plus $\zeta(3),\zeta(5),\dots,\zeta(2n-3)$.
+\end{proofpart}
+\begin{proofpart}{Step 2: Triangular odd-zeta basis and all-$q$ factorial positivity on $K_4 = W_3$}
+Radial wheels ($a_p = q'-1, \rho_p = 1$, $2 \le q' \le n-1$) have lowest zeta $\zeta(2n-2q'+1)$ with nonzero coefficient $2\binom{2n-2}{n-1}/(2q'-2)!$, triangulating $\zeta(3),\dots,\zeta(2n-3) \in \mathcal{P}_{n-1}(W_n)$ after multiplying by $U_{W_n}^{n-1-q'}$. On $K_4$ at path-complementary weights $(q-1,1,1;1,q-1,q-1)$, pairing shifts gives $I_q = R_q + \frac{12((q-2)!)^2}{(2q-2)!}\zeta(3)$ ($R_3 = -\frac{1}{6}$, $R_4 = \frac{7}{360}$, $R_q > 0$ checked for $4 \le q \le 20$). On $\Delta^5$, $U_{K_4}(t) \le \binom{6}{3}(\frac{1}{6})^3 = \frac{5}{54}$, giving $I_q \ge (\frac{54}{5})^q\frac{((q-2)!)^3}{(3q-1)!}$. Dividing by the $\zeta(3)$ coefficient defines $L_q := (\frac{54}{5})^q\frac{(q-2)!(2q-2)!}{12(3q-1)!}$, which obeys $\frac{L_{q+1}}{L_q} = \frac{36(q-1)(2q-1)}{5(3q+1)(3q+2)} > 1$ for $q \ge 6$ and $L_{21} > \frac{5}{4} > \zeta(3)$, proving $R_q > 0$ for all $q \ge 21$! Star--triangle and parallel merges embed $K_4$ into $W_n$ at $q=n-1$ with prefactor $1/((q-2)!)^3$, placing $1 \in \mathcal{P}_{n-1}(W_n)$ and proving~\eqref{eq:wheel-exact-span}.
+\end{proofpart}
+\end{proof}
+
+\begin{lemma}[{Two-terminal closing-edge beta identity and $K_4$ simplex bound $U_{K_4} \le \frac{2}{27}$}]
+\label{lem:closing-edge-k4}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Let $S$ be a $2$-terminal resistor network with terminals $\{p,q\}$, Kirchhoff polynomials $U_S(t)$ and $U_{S/pq}(t) = R_{\mathrm{eff}}(t)U_S(t)$, and closing edge $e_* = \{p,q\}$ forming $\widehat{S} := S\cup\{e_*\}$ ($U_{\widehat{S}}(t,t_{e_*}) = t_{e_*}U_S(t) + U_{S/pq}(t)$). For every monomial $P_{\mathrm{num}}(t) = \prod_{\substack{e\in S\\\mathrm{edges}}}t_e^{\alpha_e-1}$ and $p_1,p_2 > 0$ with $\sum_{\substack{e\in S\\\mathrm{edges}}}\alpha_e = (p_1+p_2)h_S + p_2$,
+  \[
+  \int_{\mathbb{RP}^{|S|-1}_{>0}}\frac{P_{\mathrm{num}}(t)}{U_S(t)^{p_1}U_{S/pq}(t)^{p_2}}\,\iota_E\mathrm{dvol}_S = \frac{\Gamma(p_1+p_2)}{\Gamma(p_1)\Gamma(p_2)}\,I_{p_1+p_2}(\widehat{S};\, \alpha_S, \alpha_{e_*} = p_1).
+  \]
+
+  \item On $K_4$ ($16$ spanning trees out of $\binom{6}{3} = 20$ edge triples), $U_{K_4}(t) \le \frac{2}{27} < \frac{5}{54}$ across $\Delta^5$, $\frac{L_7}{L_6} = \frac{99}{95} > 1$, and $R_q \neq 0$ implies $1 \in \mathcal{P}_q(K_4)$ purely algebraically without invoking $\QQ$-irrationality of $\zeta(3)$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Closing-edge Euler beta integral}
+Deprojectivize $\widehat{S}$ by fixing $t_{e_0} = 1$ inside $S$ and integrating $t_{e_*} \in (0,\infty)$ via $t_{e_*} = u\,U_{S/pq}(t)/U_S(t)$:
+\[
+\int_0^\infty\frac{t_{e_*}^{p_1-1}\,\dd t_{e_*}}{\bigl(t_{e_*}U_S(t) + U_{S/pq}(t)\bigr)^{p_1+p_2}} = \frac{\Gamma(p_1)\Gamma(p_2)}{\Gamma(p_1+p_2)}\,U_S(t)^{-p_1}U_{S/pq}(t)^{-p_2},
+\]
+which integrates over $\mathbb{RP}^{|S|-1}_{>0}$ to the stated identity.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Simplex maximum and rational isolation of $R_q$}
+On $\Delta^5$ ($\sum_{\substack{e\in E(K_4)\\\mathrm{edges}}}t_e = 1$), Maclaurin's inequality gives $e_3(t) \le \binom{6}{3}(\frac{1}{6})^3 = \frac{5}{54}$, and subtracting the $4$ triangle cycles at the log-concave symmetric maximum $t_e = \frac{1}{6}$ attains $U_{K_4}(\frac{1}{6},\dots,\frac{1}{6}) = 16\cdot 6^{-3} = \frac{2}{27} < \frac{5}{54}$, while $\frac{L_7}{L_6} = \frac{36\cdot 5\cdot 11}{5\cdot 19\cdot 20} = \frac{99}{95} > 1$. Since $I_3(K_4;1^6) = 6\zeta(3)$ lifts into $\mathcal{P}_q(K_4)$ via $U_{K_4}^{q-3}$, subtracting $\frac{2((q-2)!)^2}{(2q-2)!}$ times that lifted vector from $I_q(K_4;q-1,1,1,1,q-1,q-1) = R_q + \frac{12((q-2)!)^2}{(2q-2)!}\zeta(3)$ isolates $R_q \in \mathcal{P}_q(K_4)\cap\QQ^\times$, proving $1 \in \mathcal{P}_q(K_4)$ unconditionally.
+\end{proofpart}
+\end{proof}
+
+\subsection{Non-Planar \texorpdfstring{$K_5$}{K\_5} Through \texorpdfstring{$q=9$}{q=9} and All Three Six-Loop \texorpdfstring{$\C^2$}{C\^2} Kernels}
+\label{subsec:k5-periods-sixloop}
+
+On $\C^2$ at four loops ($13$ graphs, $2{,}359$ bracket coefficients), sliding Ward identities on the $60$ seven-vertex graphs have exact rational rank $2{,}344/2{,}359$ (concentrating all $15$ null vectors on $W_4$, restricting to $0$ on all $23$ four-loop product forests!), and $5$ Graph-$9$ laws $+ 8$ wheel IBPs $+ 2$ Gegenbauer masters $20\zeta(5)$ and $\frac{5}{3}(\zeta(3)-\zeta(5))$ close all $3{,}892$ triples in $\QQ+\QQ\zeta(3)+\QQ\zeta(5)$ (while the $5$-loop zigzag $Z_5$ carries $P(Z_5) = \frac{441}{8}\zeta(7)$~\cite{Schnetz10}).
+
+\begin{theorem}[Non-planar $K_5$ closure through $q=8$, tower-input derivation, and $73$ guarded $q=9$ orbits~{\cite{CSS13,Repo9e833c8}}]
+\label{thm:k5-periods}
+Complete $K_5$ ($|V|=5,|E|=10$) at $\infty$ to $K_6$ ($\beta_e = q - \alpha_e$, $J_q(\beta) := \Gamma(q)I_q(K_5;q-\beta)/\prod_{\substack{e\subset K_5\\\mathrm{edges}}}\Gamma(\beta_e)$).
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Because $10$ propagators on $4$ integration vertices in $\RR^{2q}$ match $\binom{5}{2} = 10$ scalar products, vertex IBP $(\mathrm{X})$ plus dimension shift $(\mathrm{DS})$ solves \textbf{all $54{,}391$ convergent $K_5$ orbits for $q \le 8$} ($1.07\times 10^7$ rows) in $\QQ + \QQ\zeta(3) + \QQ\zeta(5)$ (e.g.\ $I_5(K_5;3^{10}) = -\frac{13}{15120} + \frac{19}{720}\zeta(3) - \frac{5}{168}\zeta(5)$), with zero $\zeta(7)$ or $\zeta(3)^2$.
+
+  \item Combining $11$ $(\mathrm{X})$ rows $+ 1$ $(\mathrm{DS})$ row ($J_2 - 24J_3^{(9)} - 20J_3^{(14)} = 0$) with the cross-dimension radial-wheel relation $12I_3(W_4;\mathrm{rad}) + I_2(W_4;\mathrm{rad}) = \frac{10}{3}I_2(W_3;\mathrm{rad})$ ($J_2 + 6J_3^{(9)} = 20J_3^{(6)} + \frac{20}{3}J_3^{(5)}$) and telescoping $I_3(K_4;2,1,1;1,2,2) = \frac{1}{2}\zeta(3)-\frac{1}{6}$ proves the tower-input identity $J_2 = 4J_3^{(14)} + 16J_3^{(6)} + \frac{16}{3}J_3^{(5)}$ analytically.
+
+  \item Wishart transverse Gram integration yields the $130$-term Cayley--Menger downward identity $J_q(\beta) = -\frac{1}{4(q-2)(2q-3)(2q-5)}\sum_{\substack{m\\\mathrm{cycle\ covers}}}c_m J_{q-1}(\beta-m)$, which converges termwise precisely when $\beta_e \le q-2$ ($\forall\,e\subset K_6$) and $\sum_{\substack{e\subset S\\\mathrm{triangles}}}\beta_e \le 2q-3$ ($\forall\,|S|=3$), evaluating \textbf{all $73$ guarded $q=9$ $K_5$ orbits} ($4{,}905$ vectors: $13$ generic, $7\ T_1$, $53\ T_2$; e.g.\ $I_9(K_5;3,5,6,6,5,6,6,6,6,5) = \frac{1637270809}{3295339407360000} + \frac{50430067}{22884301440000}\zeta(3) - \frac{551}{181621440}\zeta(5)$).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In~(1), Gaussian row elimination on $(\mathrm{X})+(\mathrm{DS})$ expresses interior $K_5$ weights via boundary $K_5-e \leftrightarrow \mathrm{prism}$ orbits closed in $\QQ+\QQ\zeta(3)+\QQ\zeta(5)$. In~(2), $M_{q+1}(s) = \frac{s^2-(q-1)^2}{2q(2q-1)}M_q(s)$ gives the radial-wheel recurrence, and eliminating $J_3^{(9)} = 2I_3(W_4;\mathrm{rad})$ between $J_2 = 24J_3^{(9)} + 20J_3^{(14)}$ and $J_2 + 6J_3^{(9)} = 20J_3^{(6)} + \frac{20}{3}J_3^{(5)}$ yields the $J_2$ relation. In~(3), comparing Wishart Jacobians at $m=2q-1$ vs.\ $2q-3$ inserts $\det S = -\frac{1}{16}\det_{\mathrm{CM}}$~\cite{CSS13}; Hamiltonian $6$-cycles prove necessity and sufficiency of the strict-cut guard, satisfied on all $73\times 130 = 9{,}490$ $q=9\to 8$ terms.
+\end{proof}
+
+Both hypotheses of the strict-cut guard in Theorem~\ref{thm:k5-periods}(3) are sharp and unavoidable when splitting the Gram integrand into separate lower-$q$ periods. At $q = 5$, the convergent weight $\alpha = (2,2,3,4,2,3,3,4,3,4)$ spawns a formal $q = 4$ term $\alpha' = (1,1,3,3,1,3,3,3,3,3)$ with positive edge weights whose triangle $012$ sum $1+1+1 = 3$ falls below the strict threshold $4 = 4\cdot 1$ (carrying Cayley--Menger coefficient $\frac{1}{8}$ and falling factorial $1$), diverging at $\{t_{01}=t_{02}=t_{12}=0\}$; similarly, at $q = 3$, naively dropping zero falling-factorial terms loses a finite boundary period!
+
+\begin{theorem}[Reciprocal conductance reduction ($35\to 15$) and all three six-loop $\C^2$ $K_5$ kernels~{\cite{Repo9e833c8}}]
+\label{thm:sixloop-k5}
+At $(H,n) = (2,6)$ ($|V|=8, |I|=13$), $2$-Laman admissibility selects $30+10+60 = 100$ labelled $K_5$ subdivisions across three isomorphism classes (Figure~\ref{fig:sixloop-k5}). Contracting series chains and inverting $R_c = 1/g_c$ to $Q(g) := (\prod_{\substack{c\in\{1,\dots,10\}\\\mathrm{chains}}}g_c^5)\overline{P}(1/g)$ drops degree from $35$ to $15$ ($1.79\times 10^9 \to 683{,}834$ graphic-flat points/prime; $7$ primes $= 217$ bits $>$ Mahler bound $197$ bits), evaluating all three bare kernels at conserved benchmark sources:
+\begin{equation}
+\label{eq:sixloop-k5-values}
+\begin{aligned}
+K_{\mathrm{path+edge}} &= \frac{823413972469}{182891520000} - \frac{10923017647}{635040000}\zeta(3) + \frac{37445089}{2352000}\zeta(5) > 0,\\
+K_{\mathrm{triangle}} &= \frac{362193894187}{18289152000} + \frac{1985715463}{42336000}\zeta(3) - \frac{12884579}{176400}\zeta(5) > 0,\\
+K_{3\text{-}\mathrm{path}} &= -\frac{482542848959}{15240960000} - \frac{210499252657}{3810240000}\zeta(3) + \frac{20153461}{201600}\zeta(5) > 0.
+\end{aligned}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Each chain $c$ obeys $\deg_{R_c}\overline{P} \le n\,\rk C_{\{c\}} - 1 = 5$, so $Q(g)$ is a polynomial; nodal $K_5$ potentials have $\deg_g \le v-2 = 3$, bounding $\deg_g Q \le (n-1)(v-2) = 15$, reconstructed modulo $7$ primes and mapped into Theorem~\ref{thm:k5-periods}(1).
+\end{proof}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.88]
+  % Shape 1
+  \begin{scope}[xshift=-5.35cm]
+    \draw[rounded corners=2.5pt, draw=NavyBlue!55, fill=white, line width=0.5pt] (-2.30,-1.55) rectangle (2.30,1.55);
+    \node[font=\tiny\bfseries, text=NavyBlue!85!black] at (0,1.25) {$P_3\sqcup K_2$ ($30$)};
+    \foreach \v/\ang in {0/90, 1/18, 2/306, 3/234, 4/162} \coordinate (p\v) at ({\ang}:0.86cm);
+    \draw[line width=1.0pt, draw=BrickRed!85!black] (p0) -- node[vbiv, scale=0.82] (s5) {} (p1);
+    \draw[prop] (p1)--(p2);
+    \draw[line width=1.0pt, draw=BrickRed!85!black] (p2) -- node[vbiv, scale=0.82] (s6) {} (p3);
+    \draw[line width=1.0pt, draw=BrickRed!85!black] (p3) -- node[vbiv, scale=0.82] (s7) {} (p4);
+    \draw[prop] (p4)--(p0);
+    \draw[prop, gray!85!black] (p0)--(p2)--(p4)--(p1)--(p3)--cycle;
+    \draw[extleg] (s5)--++(54:0.24cm); \draw[extleg] (s6)--++(270:0.24cm); \draw[extleg] (s7)--++(198:0.24cm);
+    \foreach \v in {0,1,2,3,4} \filldraw[v0] (p\v) circle (0.05cm);
+    \node[font=\tiny] at (0,-1.22) {$\tau = 504$};
+  \end{scope}
+  % Shape 2
+  \begin{scope}[xshift=0cm]
+    \draw[rounded corners=2.5pt, draw=PineGreen!55, fill=white, line width=0.5pt] (-2.30,-1.55) rectangle (2.30,1.55);
+    \node[font=\tiny\bfseries, text=PineGreen!85!black] at (0,1.25) {Triangle $C_3$ ($10$)};
+    \foreach \v/\ang in {0/90, 1/18, 2/306, 3/234, 4/162} \coordinate (q\v) at ({\ang}:0.86cm);
+    \draw[prop, gray!85!black] (q2)--(q4)--(q1)--(q3)--(q0);
+    \draw[prop] (q2)--(q3)--(q4)--(q0);
+    \draw[line width=1.0pt, draw=PineGreen!85!black] (q0) -- node[vbiv, scale=0.82] (t5) {} (q1);
+    \draw[line width=1.0pt, draw=PineGreen!85!black] (q1) -- node[vbiv, scale=0.82] (t7) {} (q2);
+    \draw[line width=1.0pt, draw=PineGreen!85!black] (q0) -- node[pos=0.45, vbiv, scale=0.82] (t6) {} (q2);
+    \draw[extleg] (t5)--++(54:0.24cm); \draw[extleg] (t7)--++(342:0.24cm); \draw[extleg] (t6)--++(18:0.22cm);
+    \foreach \v in {0,1,2,3,4} \filldraw[v0] (q\v) circle (0.05cm);
+    \node[font=\tiny] at (0,-1.22) {$\tau = 490$};
+  \end{scope}
+  % Shape 3
+  \begin{scope}[xshift=5.35cm]
+    \draw[rounded corners=2.5pt, draw=Plum!65, fill=white, line width=0.5pt] (-2.30,-1.55) rectangle (2.30,1.55);
+    \node[font=\tiny\bfseries, text=Plum!85!black] at (0,1.25) {$3$-Path $P_4$ ($60$)};
+    \foreach \v/\ang in {0/90, 1/18, 2/306, 3/234, 4/162} \coordinate (r\v) at ({\ang}:0.86cm);
+    \draw[prop, gray!85!black] (r0)--(r2)--(r4)--(r1)--(r3)--cycle;
+    \draw[prop] (r3)--(r4)--(r0);
+    \draw[line width=1.0pt, draw=Plum!85!black] (r0) -- node[vbiv, scale=0.82] (u5) {} (r1);
+    \draw[line width=1.0pt, draw=Plum!85!black] (r1) -- node[vbiv, scale=0.82] (u6) {} (r2);
+    \draw[line width=1.0pt, draw=Plum!85!black] (r2) -- node[vbiv, scale=0.82] (u7) {} (r3);
+    \draw[extleg] (u5)--++(54:0.24cm); \draw[extleg] (u6)--++(342:0.24cm); \draw[extleg] (u7)--++(270:0.24cm);
+    \foreach \v in {0,1,2,3,4} \filldraw[v0] (r\v) circle (0.05cm);
+    \node[font=\tiny] at (0,-1.22) {$\tau = 496$};
+  \end{scope}
+\end{tikzpicture}
+\caption{All three $2$-Laman admissible six-loop $K_5$ subdivision Feynman topologies on $\C^2$ ($|V|=8, |I|=13$, red dots $=$ bivalent external source vertices) evaluated in Theorem~\ref{thm:sixloop-k5}.}
+\label{fig:sixloop-k5}
+\end{figure}
+
+\subsection{Complete \texorpdfstring{$T=1$}{T=1} Four-Loop Prism/\texorpdfstring{$K_{3,3}$}{K\_\{3,3\}}, \texorpdfstring{$3$}{3}-Terminal Locality, and \texorpdfstring{$5$}{5}-Loop \texorpdfstring{$\C^3$}{C\^3} \texorpdfstring{$\zeta(3)^2$}{zeta(3)\^2}}
+\label{subsec:t1-and-bulk3}
+
+\begin{theorem}[$5{,}054$ half-integer periods, $K_{K_{3,3}}\equiv 0$ parity vs.\ nonzero currents, and $3$-terminal $T=1$ locality~{\cite{Repo9e833c8}}]
+\label{thm:t1-completion}
+At $(H,T) = (1,1)$ and $n=4$ loops ($|V|=6, |I|=9$, $1{,}204$ bare + first-current monomials in $\QQ\pi^2\oplus\QQ\pi^4$):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item Closing $55{,}074$ regulator-free IBP rows uniquely determines \textbf{all $5{,}054$ convergent half-integer scalar periods} on $K_{3,3}$ ($q \in \{\frac{7}{2},\frac{9}{2},\frac{11}{2}\}$: $16+154+936$) and \texttt{prism} ($q = \frac{11}{2}$: $3{,}948$, complementing $615$ at $q=\frac{9}{2}$).
+
+  \item On $K_{3,3}$, swapping two vertices in either part permutes $3$ edges ($\chi = (-1)^3 = -1$), requiring $K_{K_{3,3}}(\lambda)$ to be divisible by $\Delta_{012}(\lambda)\Delta_{345}(\lambda)$ of degree $3+3 = 6 > 4$, hence \textbf{$K_{K_{3,3}}(\lambda) \equiv 0$ identically}! Inserting $y_{03}$ breaks $S_3\times S_3 \to S_2\times S_2$ ($\deg 2 \le 5$), leaving a $5$-dimensional divergence-free current space with $\int_{\mathbb{RP}^8_{>0}}D\,y_{03} = \frac{2243\pi^2}{4725} - \frac{121\pi^4}{2520} \neq 0$ at $(1,-1,0,1,0,-1)$.
+
+  \item Deleting star vertex $0$ on \texttt{prism} ($G = g_1+g_2+g_3$) splits $X_0 = \sum_{\substack{p\in\{1,2,3\}\\\mathrm{terminals}}}h_p X_p + \xi$ ($\mathbb{E}\xi^2 = \frac{1}{2G}$), where cycle conservation $\sum_{\substack{p\in\{1,2,3\}\\\mathrm{star}}}C_{r,0p} = 0$ confines $\alpha_r$ to a $2$-dimensional span ($\alpha_{r_1}\wedge\alpha_{r_2}\wedge\alpha_{r_3} = 0$), truncating the Gaussian contact series at one pair ($49$-dimensional covariant solution space reconstructed from $14$ rational source points, $2{,}230$ nonzero coefficients) and yielding via the bijective chart $t_{0p} = R_{pq}R_{pr}/P_\Delta$ ($|\det\partial t/\partial R| = R_{12}R_{13}R_{23}/P_\Delta^3$):
+  \begin{equation}
+  \label{eq:prism-t1-benchmark}
+  K_{\mathrm{prism}}(1,1,0,-1,0,-1) = \frac{311}{630}\pi^2 - \frac{17}{360}\pi^4.
+  \end{equation}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Full modular rank modulo $2^{31}-1$ and $785$ cotree shifts certify~(1). Vandermonde bi-antisymmetry proves $K_{K_{3,3}}\equiv 0$ in~(2), while $S_2\times S_2$ covariance reconstructs all $5$ current basis vectors from $3$ rational source points. In~(3), $\alpha_r \in \Span\{g_1\dd t_{01}-g_3\dd t_{03}, g_2\dd t_{02}-g_3\dd t_{03}\}$ forces $\Lambda^3\Span\{\alpha_r\} = 0$, matching the $5\times 5$ Pfaffian on all $1{,}204$ coefficients and at the independent test source $(1,2,3,4,5,-15)$.
+\end{proof}
+
+\begin{lemma}[{Bipartite parity vanishing $K_{K_{3,3}}\equiv 0$ vs.\ $S_2\times S_2$ current dimension and $3$-terminal contact truncation}]
+\label{lem:k33-parity-prism}
+\leavevmode
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item On $K_{3,3}$ with parts $\{0,1,2\}$ and $\{3,4,5\}$ on $X = \RR\times\C$ ($n=4$, $|I|=9$), odd edge-simplex orientation under $(01) \in S_3\times S_3$ forces $K_{K_{3,3}}(\lambda) \equiv 0$, while distinguishing edge $03$ leaves a $5$-dimensional $S_2\times S_2$-equivariant polynomial space for $M_{03}(\lambda) = \int_{\mathbb{RP}^8_{>0}}D\,y_{03}$.
+
+  \item Eliminating star vertex $0$ (incident to $01,02,03$ with conductances $g_1,g_2,g_3$, $G = g_1+g_2+g_3$) on \texttt{prism} confines the topological $1$-forms $\alpha_r = \sum_{\substack{p\in\{1,2,3\}\\\mathrm{star}}}C_{r,0p}g_p\,\dd t_{0p}$ to a $2$-dimensional subspace, truncating $\mathbb{E}_\xi[\exp(\xi\alpha\text{-contacts})]$ at linear order in $\mathbb{E}[\xi^2] = \frac{1}{2G}$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}\leavevmode
+\begin{proofpart}{Claim 1: Vandermonde degree $6 > 4$ vs.\ $S_2\times S_2$ current count}
+Swapping vertices $0$ and $1$ swaps $(03,13), (04,14), (05,15)$ with sign $(-1)^3 = -1$ on $\dd t_0\wedge\cdots\wedge\dd t_8$, and likewise on $\{3,4,5\}$. Thus $K_{K_{3,3}}(\lambda)$ (degree $nH = 4$) is divisible by $(\lambda_0-\lambda_1)(\lambda_0-\lambda_2)(\lambda_1-\lambda_2)(\lambda_3-\lambda_4)(\lambda_3-\lambda_5)(\lambda_4-\lambda_5)$ of degree $6 > 4$, forcing $K_{K_{3,3}}(\lambda) \equiv 0$. Marking edge $03$ restricts the stabilizer to $S_{\{1,2\}}\times S_{\{4,5\}}$, whose alternating factor $(\lambda_1-\lambda_2)(\lambda_4-\lambda_5)$ of degree $2$ leaves a $5$-dimensional degree-$3$ symmetric cofactor space under $\sum_{\substack{v\in\{0,\dots,5\}\\\mathrm{verts}}}\lambda_v = 0$ and Kirchhoff conservation.
+\end{proofpart}
+\begin{proofpart}{Claim 2: Rank-$2$ cycle conservation at star vertex $0$}
+Every cycle $r$ entering $0$ exits $0$, giving $C_{r,03} = -C_{r,01} - C_{r,02}$ and $\alpha_r = C_{r,01}(g_1\dd t_{01} - g_3\dd t_{03}) + C_{r,02}(g_2\dd t_{02} - g_3\dd t_{03})$. Each Gaussian Wick contraction contributes a $2$-form $\frac{1}{2G}\alpha_{r_1}\wedge\alpha_{r_2}$, so two or more simultaneous contractions lie in $\Lambda^{\ge 4}\Span\{\alpha_r\} = 0$ and vanish identically.
+\end{proofpart}
+\end{proof}
+
+\begin{theorem}[Five-loop $\C^3$ (\texttt{bulk3}) $\zeta(3)^2$ kernels and unified \texttt{evaluate\_bulk} dispatcher~{\cite{Repo9e833c8}}]
+\label{thm:bulk3-five-loop}
+For connected cubic-plus-bivalent \texttt{bulk3} graphs on $\C^3$ ($H=3, T=0$) at $n=5$ loops ($|V|=12, |I|=16$, $4$ bivalent source vertices $s_0,\dots,s_3$):
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item $\GL_3(\C)$ covariance fixes the entire source polynomial without interpolation via $K_\Gamma(\lambda;0) = \det(\lambda_{s_0},\lambda_{s_1},\lambda_{s_2})^5 c_{\mathrm{bare}}$ from one unit-frame $24\times 24$ linear minor plus chain-fraction pre-integration before multiplying by $\mathrm{adj}\,M(R)$, completing \textbf{$92$ bare polynomials ($89$ non-SP)} and \textbf{$37$ first-current tensors ($592$ vectors, $1{,}776$ source coefficients)} out of $410$ topologies, including the weight-$6$ double-zeta kernel on $V_{8,0} = K_4\oplus_2 K_4$:
+  \begin{equation}
+  \label{eq:k62-zeta3-squared}
+  K_{62} = \frac{2804909}{1866590853120} - \frac{9019}{3600676800}\zeta(3) + \frac{29}{27783000}\zeta(3)^2.
+  \end{equation}
+
+  \item Across all admissible $(H,T)$ bulk graphs and finite holomorphic current words, \texttt{evaluate\_bulk} dispatches exact $T\ge 2$ / odd-$T=1$ vanishing, saved $(1,1)$ polynomials, SP integration, \texttt{BulkPolynomial} (including algebraic polarization of an $(H+1)$-th Gaussian edge noise at $T=1, n\in\{2,4\}$), and squared-cube \texttt{ExactBulkSeries} ($x_j \mapsto x_j^2$ at half-integer $q \in \ZZ+\frac{1}{2}$ around integer square $c_0^2$) with a priori certified rational error bounds.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Under $g \in \GL_3(\C)$, each of the $5$ loop-current rows per $\C^3$ component transforms by $g$, multiplying $\Omega_\Gamma$ by $(\det g)^5$ and extending polynomially to singular frames. Integrating $P$ and $P t_e$ on chain simplices before multiplying by $\mathrm{adj}\,M(R)$ reduces $V_{8,0}$ onto $K_4\oplus_2 K_4$ period products, yielding~\eqref{eq:k62-zeta3-squared}; squaring $x_j \mapsto x_j^2$ clears half-integer boundary roots while preserving $1 \le \widetilde{U}(x^2) \le \tau_G$.
+\end{proof}

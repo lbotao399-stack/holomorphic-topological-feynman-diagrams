@@ -1,0 +1,528 @@
+\ifdefined\pdfoutput\pdfoutput=1\fi
+\ifdefined\pdfsuppresswarningpagegroup\pdfsuppresswarningpagegroup=1\fi
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2.20cm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,slashed}
+\let\Bbbk\relax
+\IfFileExists{newpxtext.sty}{\usepackage{newpxtext}\usepackage{newpxmath}}{\usepackage{mathpazo}\usepackage{courier}}
+\usepackage{microtype}
+\usepackage{booktabs,array,tabularx,longtable}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,decorations.markings,decorations.pathmorphing,backgrounds}
+\usepackage{float}
+\usepackage{needspace}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage[
+  colorlinks=true,
+  linkcolor=NavyBlue!85!black,
+  citecolor=PineGreen!85!black,
+  urlcolor=RoyalBlue!85!black,
+  pdftitle={Perturbative Holomorphic and Holomorphic-Topological Feynman Diagrams: Multi-Loop Resistor Networks, Fixed-Core Periods, Quantum Anomalies, and All-Order Holography},
+  pdfauthor={Botao Li}
+]{hyperref}
+\usepackage{bookmark}
+
+\renewcommand{\topfraction}{0.90}
+\renewcommand{\bottomfraction}{0.82}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.82}
+\setlength{\emergencystretch}{2.0em}
+\allowdisplaybreaks[2]
+\setlist{itemsep=2.2pt,topsep=4pt,parsep=0pt}
+\captionsetup{font=small,labelfont=bf,aboveskip=5pt,belowskip=3pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Perturbative Holomorphic and Holomorphic--Topological Feynman Diagrams}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Theorem Environments ---
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{inputthm}[theorem]{Input}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Worked Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% --- Visually Delimited Breakable Proof, Proof-Part, Example, Summary, and ZK Boxes ---
+\AddToHook{env/proof/before}{\needspace{9\baselineskip}}
+\tcolorboxenvironment{proof}{
+  breakable,
+  lines before break=7,
+  enhanced,
+  colback=black!2.2,
+  colframe=black!38,
+  boxrule=0.45pt,
+  left=7pt, right=7pt, top=4.5pt, bottom=4.5pt,
+  arc=1.4pt,
+  before skip=6pt, after skip=8pt,
+  parbox=false
+}
+
+\newtcolorbox{proofpart}[1]{
+  enhanced,
+  colback=white,
+  colframe=black!26,
+  boxrule=0.4pt,
+  borderline west={1.6pt}{0pt}{NavyBlue!65!black},
+  left=6.5pt, right=6.5pt, top=4pt, bottom=4pt,
+  before skip=4pt, after skip=4pt,
+  arc=1.2pt,
+  fonttitle=\normalfont\bfseries\small,
+  coltitle=NavyBlue!80!black,
+  attach title to upper={.\enspace},
+  title={#1},
+  parbox=false
+}
+
+\tcolorboxenvironment{example}{
+  breakable,
+  enhanced,
+  colback=NavyBlue!2.5,
+  colframe=NavyBlue!45,
+  boxrule=0.5pt,
+  arc=1.5pt,
+  left=7pt, right=7pt, top=5pt, bottom=5pt,
+  before skip=7pt, after skip=8pt,
+  parbox=false
+}
+
+\newtcolorbox{summaryblock}[1]{
+  breakable,
+  enhanced,
+  colback=white,
+  colframe=MidnightBlue!55!black,
+  colbacktitle=MidnightBlue!8,
+  coltitle=MidnightBlue!90!black,
+  boxrule=0.5pt,
+  titlerule=0.4pt,
+  arc=1.5pt,
+  left=7pt, right=7pt, top=5pt, bottom=5pt,
+  before skip=7pt, after skip=8pt,
+  fonttitle=\small\bfseries,
+  title={#1},
+  parbox=false
+}
+
+\newtcolorbox{zkmodule}[2]{
+  breakable,
+  lines before break=6,
+  enhanced,
+  colback=TealBlue!3,
+  colframe=TealBlue!68!black,
+  colbacktitle=TealBlue!12,
+  coltitle=TealBlue!55!black,
+  fonttitle=\bfseries\footnotesize,
+  halign title=flush left,
+  boxrule=0.55pt,
+  borderline west={2.2pt}{0pt}{TealBlue!75!black},
+  arc=1.5pt,
+  left=7.5pt, right=7.5pt, top=5.5pt, bottom=5.5pt,
+  toptitle=3.5pt, bottomtitle=3.5pt,
+  before skip=8pt, after skip=9pt,
+  parbox=false,
+  title={Background Card:\ #1\hfill{\normalfont\scriptsize\href{http://127.0.0.1:9124/?stack=#2}{\texttt{[ZK:\detokenize{#2}]}}}}
+}
+
+% --- Operators and Semantic Macros ---
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Str}{Str}
+\DeclareMathOperator{\str}{str}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Pf}{Pf}
+\DeclareMathOperator{\Haf}{Haf}
+\DeclareMathOperator{\Lie}{Lie}
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\alt}{alt}
+\DeclareMathOperator{\ad}{ad}
+\DeclareMathOperator{\Ad}{Ad}
+\DeclareMathOperator{\Tor}{Tor}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\USp}{USp}
+\DeclareMathOperator{\SU}{SU}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\Spin}{Spin}
+\DeclareMathOperator{\Ber}{Ber}
+\let\Re\relax
+\let\Im\relax
+\DeclareMathOperator{\Re}{Re}
+\DeclareMathOperator{\Im}{Im}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\dbar}{\bar{\partial}}
+
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\ff}{\mathfrak{f}}
+\newcommand{\fh}{\mathfrak{h}}
+\newcommand{\fu}{\mathfrak{u}}
+\newcommand{\fsl}{\mathfrak{sl}}
+\newcommand{\fgl}{\mathfrak{gl}}
+\newcommand{\fso}{\mathfrak{so}}
+\newcommand{\fsp}{\mathfrak{sp}}
+\newcommand{\fsu}{\mathfrak{su}}
+\newcommand{\fosp}{\mathfrak{osp}}
+\newcommand{\fpsl}{\mathfrak{psl}}
+\newcommand{\ghc}{\mathfrak{c}}
+\newcommand{\ghb}{\mathfrak{b}}
+\newcommand{\SymHat}{\widehat{\Sym}}
+\newcommand{\sslash}{/\mkern-6mu/}
+
+\newcommand{\sE}{\mathcal{E}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\QBV}{Q_{\mathrm{BV}}}
+\newcommand{\QGF}{Q^{\mathrm{GF}}}
+\newcommand{\Wb}{\overline{W}}
+\newcommand{\Ihol}{S_{E,\mathrm{hol,int}}}
+\newcommand{\fpp}{f_{++}}
+
+% --- Companion Zettelkasten & Dedicated 5D CS Paper Links ---
+\newcommand{\zkcard}[1]{\href{http://127.0.0.1:9124/?stack=#1}{\texttt{ZK:\detokenize{#1}}}}
+\newcommand{\zkmat}{\href{http://127.0.0.1:9124/?view=matrix}{\texttt{ZK:Matrix}}}
+\newcommand{\fivedpdf}{\href{file:///Users/libotao/.gemini/antigravity/scratch/holomorphic_5d_cs_paper/fived_cs_monograph.pdf}{\texttt{fived\_cs\_monograph.pdf}}}
+
+% --- Shared TikZ Styles for Feynman Topologies & IEC White-Rectangle Resistors ---
+\tikzset{
+  prop/.style={line width=0.78pt, draw=black!85},
+  cprop/.style={line width=0.82pt, densely dashed, draw=RoyalBlue!85!black},
+  extleg/.style={line width=0.82pt, draw=BrickRed!85!black},
+  cextleg/.style={line width=0.85pt, densely dashed, draw=RoyalBlue!90!black},
+  v0/.style={circle, fill=black!88, draw=white, line width=0.3pt, inner sep=1.65pt},
+  vbiv/.style={circle, fill=BrickRed!88!black, draw=white, line width=0.3pt, inner sep=1.55pt},
+  vj1/.style={diamond, fill=RoyalBlue!85!black, draw=white, line width=0.35pt, inner sep=1.65pt},
+  vi2/.style={regular polygon, regular polygon sides=4, fill=PineGreen!85!black, draw=white, line width=0.35pt, inner sep=1.5pt},
+  vtcent/.style={circle, fill=Plum!85!black, draw=white, line width=0.35pt, inner sep=1.75pt},
+  iecres/.style={draw=black!82, fill=white, line width=0.65pt, minimum width=6.0mm, minimum height=2.2mm, inner sep=0pt},
+  fglu/.style={line width=0.6pt, draw=black!85, decorate, decoration={coil, aspect=0.38, segment length=3.0pt, amplitude=1.25pt}},
+  fgho/.style={line width=0.7pt, densely dotted, draw=MidnightBlue!85!black}
+}
+
+\pdfstringdefDisableCommands{%
+  \def\mathcal#1{#1}%
+  \def\mathfrak#1{#1}%
+  \def\widetilde#1{#1}%
+  \def\widehat#1{#1}%
+  \def\mathbb#1{#1}%
+  \def\dbar{dbar}%
+}
+
+\title{\vspace{-1.2em}\textbf{Perturbative Holomorphic and Holomorphic--Topological Feynman Diagrams:\\
+Multi-Loop Resistor Networks, Fixed-Core Periods, Quantum Anomalies, and All-Order Holography}\\[6pt]
+{\large Self-Contained Mathematical-Physics Lecture Monograph with Chern--Simons/AKSZ, Exact Wess--Zumino Winding,\\
+Lie--Vogel, Pure-Spinor Supergravity, and Calabi--Yau/BCOV Foundations}}
+\author{Botao Li}
+\date{November 28, 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+\noindent
+Supersymmetric twists on $\RR^T \times \C^H$ isolate nilpotent supercharges whose quantum loop corrections govern protected operator spectra, local anomalies, and twisted holography across dimensions two through eleven. In this self-contained, pedagogically oriented lecture monograph---organized by proximity so that domain-specific background cards enter directly alongside the Feynman-diagram calculations that require them---we first construct the universal Euclidean Ward-identity and Batalin--Vilkovisky heat-kernel foundation deriving the master $(H,T)$ resistor-network form. At the level of multi-loop Feynman diagrams, we then establish fixed-core wheel stabilization, non-planar $K_5$ reduction through six loops and $q=9$, $5{,}054$ half-integer $T=1$ periods, all $200$ five-loop product forests including $K_{3,3}+e$, universal open-color $\zeta(3)$ cancellation across nonrenormalizable superpotentials, and closed six-current jet reduction. Finally, introducing Chern--Simons transgression with exact Wess--Zumino winding numbers, Lie--Vogel color ladders, pure-spinor twists, and Calabi--Yau/BCOV polyvectors in situ, we classify multi-loop anomalies and supercharges across five-, nine-, and ten-dimensional Chern--Simons theories, two- to eight-dimensional gauge twists, minimal eleven-dimensional supergravity, BCOV gravity, and all-order $\mathcal{N}=4$ twisted holography.
+\end{abstract}
+
+\newpage
+{\small\setcounter{tocdepth}{2}\tableofcontents}
+\newpage
+
+\input{sec1_intro}
+\input{sec2_summary}
+\input{sec3_ward_bmhv_cs}
+\input{sec6_schwinger_periods_k5}
+\input{sec7_forests_quartic_jets}
+\input{sec8_cs_gauge_twists}
+\input{sec9_sugra_bcov_holo}
+\input{sec10_conclusion}
+
+\appendix
+\input{appendix_conventions}
+\input{appendix_periods_errata}
+
+\begin{thebibliography}{99}\footnotesize\raggedright\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}
+
+\bibitem{AKSZ97}
+M.~Alexandrov, M.~Kontsevich, A.~Schwarz, and O.~Zaboronsky,
+\emph{The geometry of the master equation and topological quantum field theory},
+Int.\ J.\ Mod.\ Phys.\ A \textbf{12} (1997), 1405--1429, arXiv:hep-th/9502010.
+
+\bibitem{BBH}
+G.~Barnich, F.~Brandt, and M.~Henneaux,
+\emph{Local BRST cohomology in gauge theories},
+Phys.\ Rept.\ \textbf{338} (2000), 439--569, arXiv:hep-th/0002245.
+
+\bibitem{BCOV94}
+M.~Bershadsky, S.~Cecotti, H.~Ooguri, and C.~Vafa,
+\emph{Kodaira--Spencer theory of gravity and exact results for quantum string amplitudes},
+Commun.\ Math.\ Phys.\ \textbf{165} (1994), 311--428, arXiv:hep-th/9309140.
+
+\bibitem{BBKP18}
+T.~Bitoun, C.~Bogner, R.~P.~Klausen, and E.~Panzer,
+\emph{Feynman integral relations from parametric annihilators},
+Lett.\ Math.\ Phys.\ \textbf{109} (2019), 497--564, arXiv:1712.09215.
+
+\bibitem{BSS22}
+R.~Bittleston, A.~Sharma, and D.~Skinner,
+\emph{Quantizing the non-linear graviton},
+Commun.\ Math.\ Phys.\ \textbf{403} (2023), 1543--1609, arXiv:2208.12701.
+
+\bibitem{Bott59}
+R.~Bott,
+\emph{The stable homotopy of the classical groups},
+Ann.\ of Math.\ (2) \textbf{70} (1959), 313--337.
+
+\bibitem{BW23}
+P.~Bomans and J.~Wu,
+\emph{Unravelling the holomorphic twist: central charges},
+JHEP \textbf{04} (2024), 052, arXiv:2311.04304.
+
+\bibitem{BG26}
+K.~Budzik and D.~Gaiotto,
+\emph{Finite-$N$ BPS Hilbert spaces and Koszul dual D-brane meson complexes},
+arXiv:2611.18539 (2026).
+
+\bibitem{BGKWY}
+K.~Budzik, D.~Gaiotto, J.~Kulp, J.~Wu, and M.~Yu,
+\emph{Feynman diagrams in four-dimensional holomorphic theories and the operatope},
+JHEP \textbf{07} (2023), 127, arXiv:2207.14321.
+
+\bibitem{BGKWWY}
+K.~Budzik, D.~Gaiotto, J.~Kulp, B.~R.~Williams, J.~Wu, and M.~Yu,
+\emph{Semi-chiral operators in 4d $\mathcal{N}=1$ gauge theories},
+JHEP \textbf{05} (2024), 245, arXiv:2306.01039.
+
+\bibitem{BK}
+K.~Budzik and J.~Kulp,
+\emph{Loop corrected supercharges from holomorphic anomalies},
+arXiv:2512.07771 (2025).
+
+\bibitem{CDSW}
+F.~Cachazo, M.~R.~Douglas, N.~Seiberg, and E.~Witten,
+\emph{Chiral rings and anomalies in supersymmetric gauge theory},
+JHEP \textbf{12} (2002), 071, arXiv:hep-th/0211170.
+
+\bibitem{CSS13}
+S.~Caracciolo, A.~D.~Sokal, and A.~Sportiello,
+\emph{Algebraic/combinatorial proofs of Cayley-type identities for derivatives of determinants and pfaffians},
+Adv.\ Appl.\ Math.\ \textbf{50} (2013), 474--594, arXiv:1105.6270.
+
+\bibitem{Cederwall10}
+M.~Cederwall,
+\emph{$D=11$ supergravity with manifest supersymmetry},
+Mod.\ Phys.\ Lett.\ A \textbf{25} (2010), 3201--3212, arXiv:1001.0112.
+
+\bibitem{ChangLin}
+C.-M.~Chang and Y.-H.~Lin,
+\emph{Words to describe a black hole},
+JHEP \textbf{02} (2023), 109, arXiv:2209.06728.
+
+\bibitem{ChangYin}
+C.-M.~Chang and X.~Yin,
+\emph{$1/16$ BPS states in $\mathcal{N}=4$ super-Yang--Mills theory},
+Phys.\ Rev.\ D \textbf{88} (2013), 106005, arXiv:1305.6314.
+
+\bibitem{Costello}
+K.~Costello,
+\emph{Renormalization and Effective Field Theory},
+Mathematical Surveys and Monographs \textbf{170}, American Mathematical Society (2011).
+
+\bibitem{CostelloNotes}
+K.~Costello,
+\emph{Notes on supersymmetric and holomorphic field theories in dimensions $2$ and $4$},
+Pure Appl.\ Math.\ Q.\ \textbf{9} (2013), 73--165, arXiv:1111.4234.
+
+\bibitem{Costello16}
+K.~Costello,
+\emph{M-theory in the Omega-background and 5-dimensional non-commutative gauge theory},
+arXiv:1610.04144 (2016).
+
+\bibitem{CDG20}
+K.~Costello, T.~Dimofte, and D.~Gaiotto,
+\emph{Boundary chiral algebras and holomorphic twists},
+Commun.\ Math.\ Phys.\ \textbf{399} (2023), 1203--1290, arXiv:2005.00083.
+
+\bibitem{CG18}
+K.~Costello and D.~Gaiotto,
+\emph{Twisted holography},
+arXiv:1812.09257 (2018).
+
+\bibitem{CG2}
+K.~Costello and O.~Gwilliam,
+\emph{Factorization Algebras in Quantum Field Theory, Vol.~2},
+Cambridge University Press (2021).
+
+\bibitem{CL19}
+K.~Costello and S.~Li,
+\emph{Anomaly cancellation in the topological string},
+Adv.\ Theor.\ Math.\ Phys.\ \textbf{24} (2020), 1723--1771, arXiv:1905.09269.
+
+\bibitem{CWY18}
+K.~Costello, E.~Witten, and M.~Yamazaki,
+\emph{Gauge theory and integrability, I},
+ICCM Not.\ \textbf{6} (2018), 46--119, arXiv:1709.09993.
+
+\bibitem{CJS78}
+E.~Cremmer, B.~Julia, and J.~Scherk,
+\emph{Supergravity theory in $11$ dimensions},
+Phys.\ Lett.\ B \textbf{76} (1978), 409--412.
+
+\bibitem{ESW}
+C.~Elliott, P.~Safronov, and B.~R.~Williams,
+\emph{A taxonomy of twists of supersymmetric Yang--Mills theory},
+Selecta Math.\ \textbf{28} (2022), 73, arXiv:2002.10517.
+
+\bibitem{FP24}
+V.~E.~Fern\'andez and N.~M.~Paquette,
+\emph{Associativity is enough: an all-orders 2d chiral algebra for 4d form factors},
+arXiv:2412.17168 (2024).
+
+\bibitem{FPW24}
+V.~E.~Fern\'andez, N.~M.~Paquette, and B.~R.~Williams,
+\emph{Twisted holography on $\mathrm{AdS}_3\times S^3\times K3$ and the planar chiral algebra},
+arXiv:2404.14318 (2024).
+
+\bibitem{GKW}
+D.~Gaiotto, J.~Kulp, and J.~Wu,
+\emph{Higher operations in perturbation theory},
+JHEP \textbf{05} (2025), 230, arXiv:2403.13049.
+
+\bibitem{GWW}
+Z.~Gui, M.~Wang, and B.~R.~Williams,
+\emph{Higher-dimensional chiral algebras in the Jouanolou model and free-field realization},
+arXiv:2510.26608 (2025).
+
+\bibitem{GW18}
+O.~Gwilliam and B.~R.~Williams,
+\emph{Higher Kac--Moody algebras and symmetries of holomorphic field theories},
+Adv.\ Theor.\ Math.\ Phys.\ \textbf{25} (2021), 129--239, arXiv:1810.06534.
+
+\bibitem{HPR25}
+F.~Hahner, N.~M.~Paquette, and S.~Raghavendran,
+\emph{Higher symmetries in twisted eleven-dimensional supergravity},
+arXiv:2506.02246 (2025).
+
+\bibitem{Konishi}
+K.~Konishi,
+\emph{Anomalous supersymmetry transformation of some composite operators in SQCD},
+Phys.\ Lett.\ B \textbf{135} (1984), 439--444.
+
+\bibitem{LLC}
+B.~Li, K.~Liu, and C.-M.~Chang,
+\emph{Holomorphic Feynman diagrams in four dimensions and the quantum BPS ring},
+arXiv:2611.24160 (2026).
+
+\bibitem{LW26}
+S.~Li and Z.~Wang,
+\emph{Flat-space quantization and higher-genus vertices of minimal BCOV theory},
+arXiv:2610.21927 (2026).
+
+\bibitem{Mathews}
+J.~Mathews,
+\emph{Application of linear network analysis to Feynman diagrams},
+Phys.\ Rev.\ \textbf{113} (1959), 381--385.
+
+\bibitem{MSV11}
+R.~L.~Mkrtchyan, A.~N.~Sergeev, and A.~P.~Veselov,
+\emph{Casimir eigenvalues for universal Lie algebra},
+J.\ Math.\ Phys.\ \textbf{53} (2012), 102106, arXiv:1105.0115.
+
+\bibitem{Panzer15}
+E.~Panzer,
+\emph{Algorithms for the symbolic integration of hyperlogarithms with applications to Feynman integrals},
+Comput.\ Phys.\ Commun.\ \textbf{188} (2015), 148--166, arXiv:1403.3385.
+
+\bibitem{RSW21}
+S.~Raghavendran, I.~Saberi, and B.~R.~Williams,
+\emph{Twisted eleven-dimensional supergravity},
+Commun.\ Math.\ Phys.\ \textbf{402} (2023), 1103--1166, arXiv:2111.03049.
+
+\bibitem{Repo9e833c8}
+B.~Li,
+\emph{Exact network reduction, multi-loop periods, and anomaly classification in holomorphic-topological Feynman diagrams},
+research archive \texttt{holomorphic-topological-feynman-diagrams} through commit \texttt{9e833c8} (2026).
+
+\bibitem{SW}
+I.~Saberi and B.~R.~Williams,
+\emph{Twisted characters and holomorphic symmetries},
+Lett.\ Math.\ Phys.\ \textbf{110} (2020), 2779--2853, arXiv:1906.04221.
+
+\bibitem{Schnetz10}
+O.~Schnetz,
+\emph{Quantum periods: a census of $\phi^4$-transcendentals},
+Commun.\ Number Theory Phys.\ \textbf{4} (2010), 1--48, arXiv:0801.2856.
+
+\bibitem{TT87}
+G.~Tian,
+\emph{Smoothness of the universal deformation space of compact Calabi--Yau manifolds and its Petersson--Weil metric},
+in \emph{Mathematical Aspects of String Theory}, World Scientific (1987), 629--646.
+
+\bibitem{Wang}
+M.~Wang,
+\emph{Feynman graph integrals on $\mathbb{C}^d$},
+arXiv:2401.08113 (2025).
+
+\bibitem{WW24}
+M.~Wang and B.~R.~Williams,
+\emph{On the renormalization and quantization of topological-holomorphic field theories},
+arXiv:2407.08667 (2026).
+
+\bibitem{Weinberg}
+S.~Weinberg,
+\emph{The Quantum Theory of Fields, Vol.~III: Supersymmetry},
+Cambridge University Press (2000).
+
+\bibitem{Williams}
+B.~R.~Williams,
+\emph{Renormalization for holomorphic field theories},
+Commun.\ Math.\ Phys.\ \textbf{374} (2020), 1693--1742, arXiv:1809.02661.
+
+\bibitem{Witten89}
+E.~Witten,
+\emph{Quantum field theory and the Jones polynomial},
+Commun.\ Math.\ Phys.\ \textbf{121} (1989), 351--399.
+
+\end{thebibliography}
+
+\end{document}

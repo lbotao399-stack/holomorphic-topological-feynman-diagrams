@@ -1,0 +1,67 @@
+% ============================================================================
+\section{Gauge-Group, Spinor, Bispinor, and Electrical Conventions}
+\label{app:conventions}
+% ============================================================================
+
+This appendix records the gauge-algebra, Euclidean Weyl- and Weinberg--Srednicki four-component spinor, bispinor $\RR^4\cong\C^2$, and $(H,T)$ electrical-network conventions used throughout Sections~\ref{sec:summary-ledger}--\ref{sec:conclusion}, matching~\cite[Ch.~26]{Weinberg} and~\cite{LLC,Repo9e833c8}.
+
+\paragraph{Gauge Lie algebra, matter representations, and covariant derivatives.}
+Let $G$ be a compact Lie group with complexified Lie algebra $\fg$ ($\dim_{\C}\fg = d_{\fg}$) and dual $\fg^*$. Uppercase Latin letters $A,B,C,E$ denote basis-independent slots on $\fg$ ($x^A \in \fg$) and $\fg^*$ ($\omega_A \in \fg^*$), related to a basis $(e_m)^A$ and dual $(e^m)_A$ ($m \in \{1,\dots,d_{\fg}\}$) by $x^A = x^m(e_m)^A$ and $\omega_A = \omega_m(e^m)_A$. On semisimple $\fg$, $\kappa_{AB} \in \Sym^2(\fg^*)^{\fg}$ has inverse $\kappa^{AB}$, and Hermitian generators $t_B$ satisfy $[t_B, t_C] = \ii C^A{}_{BC}t_A$ (anti-Hermitian $T_A := \ii t_A$ obey $[T_B, T_C] = -C^A{}_{BC}T_A$). On chiral matter $\cR = \bigoplus_{\substack{s\in\{1,\dots,M\}\\\mathrm{multiplets}}}\cR_s$ ($I,J,K \in \{1,\dots,\dim\cR\}$) with $\mathrm{U}(1)_R$ charges $r_I \in (0,2)$, Euclidean covariant derivatives and field strengths on $\RR^4$ ($g_{\mu\nu} = \delta_{\mu\nu}$) read
+\begin{equation}
+\label{eq:sum-cov}
+\begin{aligned}
+(\nabla_\mu\phi)^I &:= \partial_\mu\phi^I + \ii g V_\mu{}^A(t_A)^I{}_J\phi^J, &\qquad
+(\nabla_\mu\bar{\phi})_I &:= \partial_\mu\bar{\phi}_I - \ii g V_\mu{}^A\bar{\phi}_J(t_A)^J{}_I,\\
+f_{\mu\nu}{}^A &:= \partial_\mu V_\nu{}^A - \partial_\nu V_\mu{}^A - g C^A{}_{BC}V_\mu{}^B V_\nu{}^C, &\qquad
+(\nabla_\mu\ghc)^A &:= \partial_\mu\ghc^A - g C^A{}_{BC}V_\mu{}^B\ghc^C,
+\end{aligned}
+\end{equation}
+bridging directly to the differential-form connection $A^{(1)} = A^{(1)A}T_A$ ($\delta_\epsilon A^{(1)A} = -(\dd_\nabla\epsilon)^A$) of Section~\ref{subsec:cs-aksz-lecture} via $A^{(1)A}|_{4\mathrm{D}} = g V_\mu{}^A\dd x^\mu$, $f^A{}_{BC} = -C^A{}_{BC}$, and $\epsilon^A = -g\ghc^A$ ($s A^{(1)A} = -(\dd_\nabla\epsilon)^A = g(\nabla_\mu\ghc)^A\dd x^\mu$).
+
+\paragraph{Euclidean Weyl spinors and Weinberg--Srednicki four-component Majorana spinors.}
+Under $\Spin(4) \cong \SU(2)_+ \times \SU(2)_-$, chiral spinors $S_+ \cong \C^2$ ($a,b \in \{+,-\}$) and antichiral spinors $S_- \cong \C^2$ ($\dot{a},\dot{b} \in \{\dot{+},\dot{-}\}$) carry $\eps^{+-} = -\eps^{-+} = +1 = -\eps_{+-} = \eps_{-+}$ and $\eps^{\dot{+}\dot{-}} = -\eps^{\dot{-}\dot{+}} = +1 = -\eps_{\dot{+}\dot{-}} = \eps_{\dot{-}\dot{+}}$, raising and lowering via $\psi^a = \eps^{ab}\psi_b$, $\psi_b = \eps_{bc}\psi^c$, $\bar{\psi}^{\dot{a}} = \eps^{\dot{a}\dot{b}}\bar{\psi}_{\dot{b}}$, and $\bar{\psi}_{\dot{b}} = \eps_{\dot{b}\dot{c}}\bar{\psi}^{\dot{c}}$.
+
+With $(\sigma^\mu)_{a\dot{b}} := (-\ii\mathbf{1}_2, \sigma_1, \sigma_2, \sigma_3)$ and $(\bar{\sigma}^\mu)^{\dot{a}b} := (-\ii\mathbf{1}_2, -\sigma_1, -\sigma_2, -\sigma_3)$, $(\sigma^\mu)_{a\dot{c}}(\bar{\sigma}^\nu)^{\dot{c}b} + (\sigma^\nu)_{a\dot{c}}(\bar{\sigma}^\mu)^{\dot{c}b} = -2\delta^{\mu\nu}\delta_a{}^b$. In four-component Majorana notation ($\alpha,\beta \in \{1,2,3,4\}$), $\lambda_\alpha{}^A := (\lambda_a{}^A, \bar{\lambda}^{\dot{a}A})_\alpha$, $C^{\alpha\beta} := \diag(\eps^{ab}, \eps_{\dot{a}\dot{b}})^{\alpha\beta} = -C_{\alpha\beta}$, $\bar{\lambda}^{\alpha A} := \lambda_\beta{}^A C^{\beta\alpha}$, $(\gamma^\mu)_\alpha{}^\beta := \bigl(\begin{smallmatrix}0 & \ii(\sigma^\mu)_{a\dot{b}}\\ \ii(\bar{\sigma}^\mu)^{\dot{a}b} & 0\end{smallmatrix}\bigr)$, and $(\gamma_5)_\alpha{}^\beta := \diag(\mathbf{1}_2, -\mathbf{1}_2)_\alpha{}^\beta$ satisfy $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbf{1}_4$.
+
+\paragraph{Bispinor coordinates on $\RR^4\cong\C^2$ and self-dual curvature.}
+Setting $x^{a\dot{a}} := x^\mu(\bar{\sigma}_\mu)^{\dot{a}a}$ and $\partial_{a\dot{a}} := (\sigma^\mu)_{a\dot{a}}\partial_\mu = -2\partial/\partial x^{a\dot{a}}$ gives
+\begin{equation}
+\label{eq:z-coords}
+\begin{aligned}
+x^{+\dot{+}} &= -(x^3 + \ii x^0), & x^{+\dot{-}} &= -(x^1 + \ii x^2), &
+x^{-\dot{+}} &= -(x^1 - \ii x^2), & x^{-\dot{-}} &= x^3 - \ii x^0,\\
+\partial_{+\dot{+}} &= \partial_3 - \ii\partial_0, & \partial_{+\dot{-}} &= \partial_1 - \ii\partial_2, &
+\partial_{-\dot{+}} &= \partial_1 + \ii\partial_2, & \partial_{-\dot{-}} &= -\partial_3 - \ii\partial_0,
+\end{aligned}
+\end{equation}
+with $\Omega := 2\,\dd x^{+\dot{+}}\wedge\dd x^{+\dot{-}}$, $\dbar := \frac{1}{2}\dd x^-_{\dot{a}}\partial_-{}^{\dot{a}}$, $V_{a\dot{a}}{}^A := (\sigma^\mu)_{a\dot{a}}V_\mu{}^A$, $V^{\ddagger a\dot{a}}{}_A := -\frac{1}{2}(\bar{\sigma}_\mu)^{\dot{a}a}V^{\mu\ddagger}{}_A$, and $f_{++}{}^A := \partial_{+\dot{a}}V_+{}^{\dot{a}A} - \frac{g}{2}C^A{}_{BC}V_{+\dot{a}}{}^B V_+{}^{\dot{a}C}$.
+
+\begin{proposition}[Bispinor Laplacian, volume form, and gaugino--ghost soldering~{\cite{LLC}}]
+\label{prop:spinor-soldering}
+On $\RR^4 \cong \C^2$: (1)~$\partial_{a\dot{a}}(x^{b\dot{b}}) = -2\delta_a{}^b\delta_{\dot{a}}{}^{\dot{b}}$, $-\nabla^2 = \partial_{+\dot{a}}\partial_-{}^{\dot{a}}$, and $\Omega\wedge\dd x^{-\dot{+}}\wedge\dd x^{-\dot{-}} = -8\,\dd^4x$; (2)~specializing $Q_\xi V_\mu{}^A = -\xi^b(\sigma_\mu)_{b\dot{c}}\bar{\lambda}^{\dot{c}A}$ to $\xi_0{}^b = \delta^b{}_-$ yields $(s_{\mathrm{BRST}}+Q_-)V_{+\dot{a}}{}^A = (\nabla_{+\dot{a}}\ghc)^A - 2\bar{\lambda}_{\dot{a}}{}^A$ and $Q_- V_{-\dot{a}}{}^A = 0$.
+\end{proposition}
+
+\begin{proof}
+Contracting $(\sigma^\mu)_{a\dot{a}}(\bar{\sigma}_\mu)^{\dot{b}b} = -2\delta_a{}^b\delta_{\dot{a}}{}^{\dot{b}}$ and expanding~\eqref{eq:z-coords} proves~(1); $Q_\xi V_{a\dot{a}}{}^A = 2\xi_a\bar{\lambda}_{\dot{a}}{}^A$ evaluated at $\xi_{0,+}=-1, \xi_{0,-}=0$ proves~(2).
+\end{proof}
+
+\paragraph{Electrical-network incidence, cycle, and Kirchhoff cotree/tree duality.}
+Let $\Gamma = (V,I)$ be a connected oriented multigraph of loop number $n = |I|-|V|+1$ with resistance tensor $R_{ef}(t) = t_e\delta_{ef}$ and conductance tensor $G^{ef}(t) = t_e^{-1}\delta^{ef}$ ($t_e > 0$). Fix a root vertex $v_0 \in V$ ($|V|-1$ ungrounded vertices $u,w \in V\setminus\{v_0\}$) and a spanning tree $T_0 \subset I$ whose $n$ complementary chords $c_1,\dots,c_n \in I\setminus T_0$ define fundamental cycles $C_r{}^e \in \{-1,0,+1\}$.
+
+\begin{proposition}[Orthogonal cut--cycle decomposition and Kirchhoff matrix-tree/cotree identity~{\cite{Mathews,WW24,Repo9e833c8}}]
+\label{prop:kirchhoff-duality}
+Let $B^u{}_e \in \{-1,0,+1\}$ be the grounded vertex--edge incidence matrix, $L^{uw}(t) := B^u{}_e G^{ef}(t)B^w{}_f$ the grounded conductance Laplacian, and $M_{rs}(t) := C_r{}^e R_{ef}(t)C_s{}^f$ the cycle-resistance matrix in any $\ZZ$-basis of $H_1(\Gamma;\ZZ)$. Then:
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+  \item $B^u{}_e C_r{}^e = 0$ identically, and for every conserved source $\lambda^u{}_{\mathsf{a}}$ ($\lambda^{v_0}{}_{\mathsf{a}} = -\sum_{\substack{u\neq v_0\\\mathrm{ungrounded}}}\lambda^u{}_{\mathsf{a}}$) there exists a unique current $y^e{}_{\mathsf{a}}(t,\lambda) = G^{ef}(t)B^u{}_f(L^{-1})_{uw}(t)\lambda^w{}_{\mathsf{a}}$ obeying $B^u{}_e y^e{}_{\mathsf{a}} = \lambda^u{}_{\mathsf{a}}$ and $C_r{}^e R_{ef}(t)y^f{}_{\mathsf{a}} = 0$.
+
+  \item Across all spanning trees $T \subset \Gamma$, cotree cycle determinants and grounded conductance determinants coincide:
+  \begin{equation}
+  \label{eq:kirchhoff-tree-cotree}
+  U_\Gamma(t) := \det M(t) = \sum_{\substack{T\subset\Gamma\\\mathrm{spanning\ trees}}}\prod_{\substack{e\in I\setminus T\\\mathrm{cotree\ chords}}}t_e = \left(\prod_{\substack{e\in I\\\mathrm{all\ edges}}}t_e\right)\det L(t).
+  \end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+In~(1), every closed cycle $r$ enters and leaves each vertex $u$ an equal number of times, giving $B^u{}_e C_r{}^e = 0$; positive-definiteness of $R_{ef}(t)$ on $\RR^{|I|}$ splits $\RR^{|I|} = \im(G B^\dagger) \oplus_R \im(C^\dagger)$, making $y^e{}_{\mathsf{a}} = G^{ef}B^u{}_f(L^{-1})_{uw}\lambda^w{}_{\mathsf{a}}$ the unique simultaneous solution of $B y = \lambda$ and $C R y = 0$. In~(2), Cauchy--Binet on $M = C R C^\dagger$ sums $(\det C|_{I\setminus T})^2\prod_{\substack{e\notin T\\\mathrm{cotree}}}t_e$ over $|I\setminus T| = n$ subsets, where unimodularity gives $(\det C|_{I\setminus T})^2 = 1$ on spanning cotrees and $0$ otherwise; similarly, Cauchy--Binet on $L = B G B^\dagger$ gives $\det L = \sum_{\substack{T\\\mathrm{trees}}}\prod_{\substack{e\in T\\\mathrm{tree}}}t_e^{-1}$, and multiplying by $\prod_{\substack{e\in I\\\mathrm{edges}}}t_e$ yields~\eqref{eq:kirchhoff-tree-cotree}.
+\end{proof}

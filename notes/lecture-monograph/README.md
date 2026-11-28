@@ -1,0 +1,21 @@
+# Perturbative Holomorphic and Holomorphic–Topological Feynman Diagrams: Self-Contained Lecture Monograph
+
+[Read the monograph PDF](holomorphic_twist_monograph.pdf) · [Main LaTeX source](holomorphic_twist_monograph.tex)
+
+This 62-page self-contained mathematical-physics lecture monograph synthesizes the exact perturbative Feynman-diagram, period, Chern–Simons, gauge-twist, twisted-supergravity, BCOV, and twisted-holography results of this repository with complete pedagogical derivations.
+
+## Proximity Organization (`就近原则` / In-Situ Background Cards)
+
+Universal foundations required across every chapter—Euclidean Ward–Takahashi identities, right-placed Batalin–Vilkovisky antifields, and the four-stage heat-kernel derivation of the master $(H,T)$ resistor-network form $\Omega_\Gamma$—are established once in **Section 3**. All concrete algebraic, field-theoretic, and geometric background modules enter **in situ** as explicitly badged **`Background Card`** boxes directly adjacent to the Feynman-diagram or cohomology calculation that first invokes them:
+
+- **Section 4 (`sec6_schwinger_periods_k5.tex`):** Generalized $D$-Laman admissibility, closed two-loop $\theta(n_1,n_2,n_3)$ kernels, $T\ge 2$ Pfaffian loop vanishing, Ohm/Segre locality, fixed-core algebraic de Rham stabilization, sharp $n$-spoke wheel span $q\ge\max(3,n-1)$, non-planar $K_5$ through $q=9$ and all three six-loop $\mathbb{C}^2$ kernels, $5{,}054$ half-integer $T=1$ four-loop $\mathrm{prism}/K_{3,3}$ periods, three-terminal locality, and $92$ five-loop $\mathbb{C}^3$ kernels including $\zeta(3)^2$.
+- **Section 5 (`sec7_forests_quartic_jets.tex`):** Terminating post-order forest elimination, spanning-tree cube series, $19$-loop paired stars, $128$-loop fans, five-loop $K_{3,3}+e$ and $200/200$ forest census, **in-situ Background Card 5.1** (off-shell $4\mathrm{D}$ $\mathcal{N}=1 \mapsto BF\text{--}\beta\gamma$ and $\mathcal{N}=4 \mapsto \mathbb{C}^{2|3}$ hCS), universal open-color $\zeta(3)$ cancellation across all $\deg\overline{W}\ge 3$, four-loop $\mathfrak{b}^2$ product, and closed six-current simplex jets.
+- **Section 6 (`sec8_cs_gauge_twists.tex`):** **In-situ Background Card 6.1** (Chern–Weil transgression, finite large gauge shift of $\frac{1}{2}\mathrm{CS}_3[A]$ with exact Wess–Zumino winding $N_W[g]\in\mathbb{Z}$, AKSZ superconnection, and $-3F_D$), evaluation of the two-loop $5\mathrm{D}$ Chern–Simons $\theta(1,3,3)$ and $\theta(2,2,3)$ diagrams, **in-situ Background Cards 6.2 & 6.3** right at the Lie color contraction step (with complete proofs of Whitehead rigidity, $C_2(V\otimes W)$, semisimple vs. simple hypotheses on $\Lambda^2\mathfrak{g}=\mathfrak{g}_{\mathrm{ad}}\oplus X_2$ and $\Omega_{\mathrm{ad}}|_{X_2}=0$, Vogel's $\operatorname{Sym}^2\mathfrak{g}$ eigenvalues $-\frac{v_s}{2t_V}$, dimension formula $d_{\mathfrak{g}}$, and universal Möbius trace $8n_4 - 3d_{\mathfrak{g}}$), all-order $5\mathrm{D}$ Chern–Simons quantization ($50$-graph $\hbar^4$ primitive $i_4$ and $\mathfrak{g}\oplus\mathbb{C}\mathbf{1}$ central-field escape), $9\mathrm{D}/10\mathrm{D}$ CS, **in-situ Background Card 6.4** (ESW $10\mathrm{D}\to 2\mathrm{D}$ taxonomy and $14$-twist $O_1 = -I^{\mathrm{phys}}_{d+2}$), and multi-loop $2\mathrm{D}$–$8\mathrm{D}$ gauge supercharges.
+- **Section 7 (`sec9_sugra_bcov_holo.tex`):** **In-situ Background Card 7.1** (pure-spinor $11\mathrm{D}$ CJS supergravity $\mapsto E(5|10)$) followed by the two-loop $-\frac{63g}{256\pi^{10}}$ obstruction and further-twist Koszul $g$-torsion; **in-situ Background Card 7.2** (Calabi–Yau polyvectors, Tian–Todorov $\partial_\Omega$, and minimal BCOV) followed by four-loop Kodaira–Spencer $D_4>0$, Type I $\mathrm{SO}(32)$, and delayed genus-$4$ BCOV; and **in-situ Background Card 7.3** ($\mathrm{PV}^{\ge 1}_\Delta(\mathbb{C}^{2|3})$ and $\mathfrak{psl}(3|3)$) followed by all-order finite-$N$ and nonplanar $4\mathrm{D}$ $\mathcal{N}=4$ twisted holography.
+- **Section 8 & Appendices A–B (`sec10_conclusion.tex`, `appendix_conventions.tex`, `appendix_periods_errata.tex`):** Turnkey four-step practitioner recipe, five-paper roadmap, Weinberg–Srednicki spinor and IEC electrical conventions, five-loop benchmark ledger, spectator-color audit, and literature errata.
+
+## Build
+
+```bash
+latexmk -pdf -interaction=nonstopmode holomorphic_twist_monograph.tex
+```
